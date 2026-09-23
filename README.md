@@ -126,13 +126,8 @@ answered `no`, and a compound question is settled only when the record settles e
 
 ## Results
 
-Model outputs and graded results are not part of this repository. The harness writes each run
-under `results/<OUTROOT>/` and the grader writes `results/stage2_<OUTROOT>.json`; `eval/bootstrap_ci.py`
-reads two such files for a paired contrast.
-
-**Not in this repository.** The video clips (fetch them with `scripts/fetch_videos.py`); all model
-outputs and grades; the retrieval caches; the temporal-window training of the paper's §3.5.1; and the second grader's marks
-for the agreement audit of Appendix L, of which only the sampled lists are released.
+The harness writes each run under `results/<OUTROOT>/` and the grader writes
+`results/stage2_<OUTROOT>.json`; `eval/bootstrap_ci.py` reads two such files for a paired contrast.
 
 ## Licence and citation
 
