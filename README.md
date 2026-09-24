@@ -30,8 +30,8 @@ never to write a finding.
 
 ## Videos
 
-The clips are not redistributed: 17 of the 66 source articles are published under CC BY-NC-ND and
-one states no licence, and CC BY-NC-ND does not permit derivative works. `scripts/fetch_videos.py` fetches each article's
+The clips are not redistributed: 18 of the 66 source articles are published under CC BY-NC-ND,
+which does not permit derivative works. `scripts/fetch_videos.py` fetches each article's
 supplementary files and re-encodes the videos as H.264 for local use only (see Licence). Each benchmark clip is an excerpt of under
 30 s around the interval in which the sign is expressed; `data/clips.json` records the excerpt's
 duration and frame rate and `data/cases.json` the sign it shows. Every clip must be H.264 and
@@ -144,12 +144,11 @@ case in `source.licence` / `source.annotation_licence` of `data/cases.json` and 
 | CC BY 4.0 | 37 | 37 | CC BY 4.0 |
 | CC BY-NC 4.0 | 9 | 9 | CC BY-NC 4.0, non-commercial use only |
 | CC BY-NC-SA 4.0 | 2 | 2 | CC BY-NC-SA 4.0, non-commercial, share alike |
-| CC BY-NC-ND 4.0 | 17 | 22 | research evaluation only; do not redistribute these cases or any adaptation of them |
-| no licence stated | 1 | 1 | research evaluation only; do not redistribute |
+| CC BY-NC-ND 4.0 | 18 | 23 | research evaluation only; do not redistribute these cases or any adaptation of them |
 
 The clips are never redistributed. `scripts/fetch_videos.py` downloads each article's own
 supplementary files for local use; the trimmed and re-encoded excerpts it produces are adaptations
-and must not be shared, whatever the source licence, and for the CC BY-NC-ND and unlicensed sources
+and must not be shared, whatever the source licence, and for the CC BY-NC-ND sources
 they may be made only for private research use.
 
 ```bibtex
