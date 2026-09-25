@@ -18,13 +18,14 @@ never to write a finding.
 | `data/cases.json` | the 71 cases: source PMCID and licence, confirmed diagnosis, visible sign, Stage 1 acceptance lists and the final-diagnosis acceptance lists (`final_diagnosis`), documented symptom table with its yes/no/unknown answering rule, investigation chart on the shared menu of the case's disease line: results reported in the source article (`p: reported`) and values expected for the presentation (`p: derived`), with `decisive` flags and `explicit_only` therapeutic trials |
 | `data/clips.json` | per clip: source article, licence, duration, frame rate, resolution, scene cuts |
 | `data/source_licences.json` | the 66 source articles with title, journal, year and licence |
+| `data/equivalent_entries.json` | the 90 verified equivalences between chart entries of the same case that report the same finding from the same kind of investigation, used when scoring τ (§3.3, Appendix C) |
 | `data/decidability.json` | the 22 clips the neurologist judged unidentifiable from video alone and the 49 judged identifiable (paper Appendix B) |
 | `data/reference_audit.json` | the visual-grounding audit of all 71 reference descriptions: 286 atomic claims, each classed observable / not observable (Appendix B) |
 | `pipeline/` | how a case report becomes a case (below) |
 | `prompts/PROMPTS.md` | every prompt, verbatim: the model under test, the patient and chart matchers, retrieval, grading |
-| `eval/` | the evaluation harness: Stage 1 sweep and judge; Stage 2 batch and multi-round consultations; grader; paired bootstrap; `part2_lie2.py` (corrupted-history stress test, Appendix I) |
-| `eval/retrieval/` | literature retrieval and decontamination (§3.5.2, Appendix H): HPO normalisation, Europe PMC query and cause extraction, the source-PMCID / DOI / near-duplicate / answer-string filters |
-| `eval/controls/` | investigation-selection controls (Appendix G): ten-item budget, fixed checklist and random arms replayed on the released consultations, and the τ decomposition of Appendix C |
+| `eval/` | the evaluation harness: Stage 1 sweep and judge; Stage 2 batch and multi-round consultations; grader; paired bootstrap; `tau.py` (source-workup coverage τ with equivalent entries); `part2_lie2.py` (corrupted-history stress test, Appendix G) |
+| `eval/retrieval/` | literature retrieval and decontamination (§3.5.2, Appendix F; prompts in Appendix H): HPO normalisation, Europe PMC query and cause extraction, the source-PMCID / DOI / near-duplicate / answer-string filters |
+| `eval/controls/` | investigation-selection controls (Appendix C.2): ten-item budget, fixed checklist and random arms replayed on the released consultations, and the τ decomposition of Appendix C |
 | `eval/analysis/` | decidability split and dataset-characteristics tables (Appendices A, B) |
 | `scripts/fetch_videos.py` | downloads the source videos from Europe PMC and re-encodes them |
 
@@ -103,7 +104,7 @@ temperature 0, one pinned provider per model.
 |---|---|
 | blind | `NOVIDEO=1` |
 | single frame | `KFRAMES=1` |
-| shuffled | `SHUFFLE=1` (a per-clip seeded permutation; run three seeds) |
+| shuffled | `SHUFFLE=1 SHUFFLE_SEED=0`, `1`, `2` (three independent per-clip permutations; the paper averages the three runs) |
 | video | none |
 | own words | `SIGNTEXT=self SELFFILE=<the model's Stage-1 descriptions>` |
 | reference | `SIGNTEXT=gt` (the audited clinician description in `data/cases.json`) |
@@ -118,7 +119,7 @@ JSON variant is kept under `PROMPT=new` but is not what the paper reports.
 final-diagnosis acceptance lists (`final_diagnosis`) and returns `accurate` / `partial` / `none`,
 the three grades of the paper (Appendix H); accuracy is the `accurate` rate with 71 as denominator
 (a case without a usable answer counts as wrong).
-Source-workup coverage τ is the share of `decisive` chart entries obtained, pooled over cases. Every
+Source-workup coverage τ (`eval/tau.py`) is the share of `decisive` chart entries acquired, pooled over the 71 cases; a decisive entry counts as acquired when it or a verified equivalent entry of the same chart (`data/equivalent_entries.json`) is returned, entries are deduplicated within a case, and a case without a usable consultation contributes zero. Every
 contrast between conditions is a paired case-level percentile bootstrap with 10,000 resamples.
 
 **The chart.** 6,398 entries over the 71 cases: 426 read from the source article

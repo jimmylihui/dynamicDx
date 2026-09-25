@@ -20,6 +20,9 @@ import threading
 import time
 import urllib.request
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from tau import acquired, DEC                                     # noqa: E402
+
 B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ORKEY = os.environ["ORKEY"]
 JUDGE = os.environ.get("JUDGE", "openai/gpt-5.6-luna")
@@ -92,8 +95,8 @@ def work():
         with lock:
             res[d["video"]] = dict(line=c["line"], dx=d["dx"], grade=(v or {}).get("grade"),
                                    reason=(v or {}).get("reason"),
-                                   n_dec=d.get("n_decisive", 0),
-                                   dec_served=len(d.get("decisive_served") or []),
+                                   n_dec=len(DEC[d["video"]]),
+                                   dec_served=len(acquired(d["video"], d.get("served"))),
                                    n_q=len(d.get("questions") or []),
                                    n_yes=d.get("n_yes_answers", 0),
                                    n_orders=len(d.get("orders") or []),

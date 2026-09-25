@@ -2,9 +2,10 @@
 
 The doctor's questions are held at what the original run asked - the patient has not yet spoken
 when they are put, so a lie cannot change them. Everything downstream is re-run: a fixed fraction
-of the yes/no replies is flipped, the doctor orders investigations against the corrupted history,
-the chart answers those orders, and the doctor diagnoses. A flip in either direction is a lie:
-no->yes invents a symptom the patient does not have, yes->no denies one it does.
+of the yes/no/unknown replies is flipped, the doctor orders investigations against the corrupted
+history, the chart answers those orders, and the doctor diagnoses. Every flip is a lie: yes->no
+denies a documented feature, no->yes and unknown->yes assert one the record does not support
+(paper Appendix G).
 
 Output is written in the same schema as part2_full.py, so part2_full_judge3.py grades it unchanged.
 
@@ -128,14 +129,15 @@ def run(src):
     d = json.load(open(src))
     c = cases[d["video"]]
     qs = d["questions"]
-    truth = [str(d["answers"].get(str(i), "no")).lower() for i in range(1, len(qs) + 1)]
+    truth = [str(d["answers"].get(str(i), "unknown")).lower() for i in range(1, len(qs) + 1)]
+    truth = [t if t in ("yes", "no") else "unknown" for t in truth]
 
     nflip = int(round(len(qs) * RATIO / 100.0))
     rng = random.Random(hash((d["video"], RATIO, SEED)) & 0xFFFFFFFF)
     idx = sorted(rng.sample(range(len(qs)), nflip))
     a = list(truth)
     for i in idx:
-        a[i] = "no" if a[i] == "yes" else "yes"
+        a[i] = "no" if a[i] == "yes" else "yes"      # yes->no; no->yes; unknown->yes
 
     tmp = tempfile.mkdtemp(prefix="lie2_")
     try:
@@ -181,7 +183,7 @@ def run(src):
     return dict(questions=qs, answers={str(i + 1): v for i, v in enumerate(a)},
                 truthful_answers={str(i + 1): v for i, v in enumerate(truth)},
                 flipped=[i + 1 for i in idx], ratio=RATIO,
-                n_fabricated=sum(1 for i in idx if truth[i] == "no"),
+                n_fabricated=sum(1 for i in idx if truth[i] != "yes"),
                 n_denied=sum(1 for i in idx if truth[i] == "yes"),
                 n_yes_answers=sum(1 for v in a if v == "yes"),
                 orders=tests, served=served, results=lines, dx_raw=t_dx,

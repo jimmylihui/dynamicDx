@@ -19,7 +19,7 @@ Three rules are enforced against the doctor:
   - a therapeutic trial is returned only when named specifically, never for a blanket request
 
 usage: part2_full.py [NTHREADS]
-env:   ORKEY, SPACE (none|model|oracle), KFRAMES, OUTROOT, MODEL, JUDGE, NOVIDEO, SHUFFLE, SIGNTEXT,
+env:   ORKEY, SPACE (none|model|oracle), KFRAMES, OUTROOT, MODEL, JUDGE, NOVIDEO, SHUFFLE, SHUFFLE_SEED, SIGNTEXT,
        ORACLE
 """
 import base64
@@ -75,6 +75,7 @@ K = int(os.environ.get("KFRAMES", "32"))
 # video. The complaint is the first affirmative entry of the case's own symptom table, so it is
 # patient-reported and taken from the record rather than written for this experiment.
 SHUFFLE = os.environ.get("SHUFFLE", "0") == "1"
+SHUFFLE_SEED = int(os.environ.get("SHUFFLE_SEED", "0"))   # paper: three permutations, seeds 0, 1, 2
 CHIEF = os.environ.get("CHIEF", "0") == "1"
 OUTROOT = os.environ.get("OUTROOT", "part2_full_" + SPACE)
 FF = os.environ.get("FFMPEG", "ffmpeg")
@@ -340,7 +341,7 @@ def run(c):
         fs, dur = frames("%s/dataset/videos/%s/%s" % (B, c["line"], c["video"]), K, tmp)
         b64 = [base64.b64encode(open(f, "rb").read()).decode() for f in fs]
         if SHUFFLE:
-            random.Random(c["video"]).shuffle(b64)
+            random.Random(c["video"] if SHUFFLE_SEED == 0 else "%s#%d" % (c["video"], SHUFFLE_SEED)).shuffle(b64)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     cands = space.get(c["video"], {}).get("causes") if SRC else None
@@ -392,7 +393,7 @@ def run(c):
         return dict(questions=qs, answers=ans, n_yes_answers=sum(
             1 for v in ans.values() if str(v).lower() == "yes"),
             orders=[], served=dec, results=lines, dx_raw=t_dx, order_style="oracle",
-            novideo=NOVIDEO, signtext=SIGNTEXT, role=ROLE, shuffled=SHUFFLE, chief=CHIEF, order_raw="", rationale=[],
+            novideo=NOVIDEO, signtext=SIGNTEXT, role=ROLE, shuffled=SHUFFLE, shuffle_seed=SHUFFLE_SEED if SHUFFLE else None, chief=CHIEF, order_raw="", rationale=[],
             leading=None,
             dx=(m.group(1).strip() if m else (t_dx.strip().splitlines() or [""])[0]),
             decisive_served=dec, n_decisive=len(dec),

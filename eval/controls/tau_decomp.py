@@ -1,6 +1,9 @@
 """(A) availability of what the model asked for, per condition; (B) failure decomposition in the
 video condition; (C) joint report at the 10-atomic-test budget: accuracy, tau, availability."""
 import os
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from tau import acquired                                           # noqa: E402
 import glob, json, collections, statistics as st
 ACCURATE = {"accurate", "exact"}   # grade names: current grader / earlier result files
 B = os.environ.get("DDX_ROOT", ".")
@@ -40,7 +43,7 @@ for nm, tag, lad in MODELS:
         yes = [d.get("n_yes_answers", 0) for d in R.values()]
         av = [avail(d) for d in R.values()]
         no = sum(a[0] for a in av); nn = sum(a[1] for a in av)
-        tau = 100.0 * sum(len(set(d.get("decisive_served") or [])) for d in R.values()) / sum(ND(v) for v in R)
+        tau = 100.0 * sum(len(acquired(v, d.get("served"))) for v, d in R.items()) / sum(ND(v) for v in C)
         avail_tab[(nm, cond)] = (100.0 * nn / max(no, 1))
         print("%-14s %-13s %5d %6.1f %8.1f %9.1f %7.1f %6.1f %7.1f" % (nm, cond, len(R), st.mean(q), 100.0 * sum(yes) / max(sum(q), 1),
               st.mean(a[0] for a in av), 100.0 * nn / max(no, 1), st.mean(a[2] for a in av), tau))
@@ -57,7 +60,7 @@ for nm, tag, lad in MODELS:
     for v in wrong:
         d = R.get(v)
         if not d: c += 1; continue
-        if d.get("decisive_served"): a += 1
+        if acquired(v, d.get("served")): a += 1
         elif (d.get("served") or []): b += 1
         else: c += 1
     n = len(wrong)
@@ -72,20 +75,20 @@ for arm, D in ARMS.items():
     R = load(os.environ.get("DDX_WORK", "/tmp") + "/ord/%s/**/*.json" % D)
     G = json.load(open(os.environ.get("DDX_WORK", "/tmp") + "/ord/judge_luna_%s.json" % JUD[arm]))
     acc = 100.0 * sum(1 for v in R if G.get(v, {}).get("grade") in ACCURATE) / 71
-    tau = 100.0 * sum(len(set(d.get("decisive_served") or [])) for d in R.values()) / sum(ND(v) for v in R)
+    tau = 100.0 * sum(len(acquired(v, d.get("served"))) for v, d in R.items()) / sum(ND(v) for v in C)
     av = [avail(d) for d in R.values()]; unav = 100.0 * sum(a[1] for a in av) / max(sum(a[0] for a in av), 1)
     entr = st.mean(a[2] for a in av)
     print("%-22s %6.1f %6.1f %7.1f %7.1f" % (arm, acc, tau, unav, entr))
 R = load(B + "/results/part2_lunathink_vid_doctor/*/*.json"); G = json.load(open(os.environ.get("DDX_WORK", "/tmp") + "/fulljudge_part2_lunathink_vid_doctor.json"))
 av = [avail(d) for d in R.values()]
 print("%-22s %6.1f %6.1f %7.1f %7.1f | (free budget: %.1f orders/case)" % ("released (free)", 100.0 * sum(1 for v in R if G.get(v, {}).get("grade") in ACCURATE) / 71,
-      100.0 * sum(len(set(d.get("decisive_served") or [])) for d in R.values()) / sum(ND(v) for v in R), 100.0 * sum(a[1] for a in av) / sum(a[0] for a in av), st.mean(a[2] for a in av), st.mean(a[0] for a in av)))
+      100.0 * sum(len(acquired(v, d.get("served"))) for v, d in R.items()) / sum(ND(v) for v in C), 100.0 * sum(a[1] for a in av) / sum(a[0] for a in av), st.mean(a[2] for a in av), st.mean(a[0] for a in av)))
 print("\nD. DOES OBTAINING A DECISIVE ENTRY TRACK THE DIAGNOSIS?  (10-test arms pooled)")
 JG = {arm: json.load(open(os.environ.get("DDX_WORK", "/tmp") + "/ord/judge_luna_%s.json" % JUD[arm])) for arm in ARMS}
 RR_ = {arm: load(os.environ.get("DDX_WORK", "/tmp") + "/ord/%s/**/*.json" % D) for arm, D in ARMS.items()}
 got = collections.defaultdict(list)
 for arm in ARMS:
     for v, d in RR_[arm].items():
-        got[bool(d.get("decisive_served"))].append(JG[arm].get(v, {}).get("grade") in ACCURATE)
+        got[bool(acquired(v, d.get("served")))].append(JG[arm].get(v, {}).get("grade") in ACCURATE)
 print("  decisive obtained: accuracy %.1f%% (n=%d) | not obtained: accuracy %.1f%% (n=%d)" % (
     100.0 * st.mean(got[True]), len(got[True]), 100.0 * st.mean(got[False]), len(got[False])))

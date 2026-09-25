@@ -13,6 +13,8 @@ import json
 import os
 import random
 import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from tau import acquired, DEC                                     # noqa: E402
 ACCURATE = {"accurate", "exact"}   # grade names: current grader / earlier result files
 
 B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -21,7 +23,7 @@ rng = random.Random(0)
 
 MODELS = [("GPT-5.6-luna", "lunathink", "luna"), ("Gemma-4-31B", "gemmathink", "gemma"),
           ("MiMo-v2.5", "mimothink", "mimo"), ("MiniMax-M3", "minimaxthink", "minimax"),
-          ("Qwen3.7-Plus", "qwen", "qwen")]
+          ("Qwen3.8-flash", "qwen38", "qwen38")]
 
 
 def judge(root):
@@ -43,7 +45,7 @@ def load(root):
         if not v or not (j.get(v) or {}).get("grade"):
             continue
         out[v] = (1 if j[v]["grade"] in ACCURATE else 0,
-                  len(set(d.get("decisive_served") or [])), d.get("n_decisive", 0))
+                  len(acquired(v, d.get("served"))), len(DEC[v]))
     return out
 
 
