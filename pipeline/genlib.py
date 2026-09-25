@@ -109,7 +109,9 @@ def build(line, panel, cases, out=None):
             true_diagnosis=c["dx"],
             part1_video_only=dict(task="name the primary disease from the frames alone",
                                   visible_sign=c["sign"], accept_as_correct=c["correct"],
-                                  accept_as_partial=c["partial"]),
+                                  accept_as_partial=c["partial"],
+                                  accept_as_coverage=c["correct"],
+                                  related_but_not_covered=c["partial"]),
             final_diagnosis=dict(accept_as_accurate=c["correct"], accept_as_partial=c["partial"]),
             part2_yes_no=dict(
                 answering_rule="Answer yes, no, or unknown. Use symptom_table: yes when it "

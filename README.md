@@ -15,7 +15,7 @@ never to write a finding.
 
 | path | what it is |
 |---|---|
-| `data/cases.json` | the 71 cases: source PMCID and licence, confirmed diagnosis, visible sign, Stage 1 acceptance lists and the final-diagnosis acceptance lists (`final_diagnosis`), documented symptom table with its yes/no/unknown answering rule, investigation chart on the shared menu of the case's disease line: results reported in the source article (`p: reported`) and values expected for the presentation (`p: derived`), with `decisive` flags and `explicit_only` therapeutic trials |
+| `data/cases.json` | the 71 cases: source PMCID and licence, confirmed diagnosis, visible sign, Stage 1 lists (`accept_as_coverage`, `related_but_not_covered`) and the final-diagnosis acceptance lists (`final_diagnosis`), documented symptom table with its yes/no/unknown answering rule, investigation chart on the shared menu of the case's disease line: results reported in the source article (`p: reported`) and values expected for the presentation (`p: derived`), with `decisive` flags and `explicit_only` therapeutic trials |
 | `data/clips.json` | per clip: source article, licence, duration, frame rate, resolution, scene cuts |
 | `data/source_licences.json` | the 66 source articles with title, journal, year and licence |
 | `data/equivalent_entries.json` | the 90 verified equivalences between chart entries of the same case that report the same finding from the same kind of investigation, used when scoring τ (§3.3, Appendix C) |
@@ -82,7 +82,7 @@ export DDX_ROOT=$(pwd)      # repository root; clips are expected under dataset/
 
 # Stage 1: describe the sign from K frames (paper budgets K = 1,2,4,8,16,32,64,128), then grade
 MODEL=openai/gpt-5.6-luna PROVIDER=OpenAI OUTROOT=part1_luna python eval/part1_sweep.py 1,2,4,8,16,32,64,128 4
-SRCROOT=part1_luna python eval/part1_judge.py 6
+python eval/part1_judge.py luna=part1_luna    # sign, differential and uncapped rank probe (Appendix H)
 
 # Stage 2: batch consultation (video condition: K = 32 ordered frames), then grade
 MODEL=openai/gpt-5.6-luna PROVIDER=OpenAI REASONING='{"enabled": true}' KFRAMES=32 \
