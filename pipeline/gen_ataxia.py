@@ -340,10 +340,16 @@ def build(c):
         part1_video_only=dict(task="name the primary disease from the frames alone",
                               visible_sign=c["sign"],
                               accept_as_correct=c["correct"],
-                              accept_as_partial=c["partial"]),
+                              accept_as_partial=c["partial"],
+                              accept_as_coverage=c["correct"],
+                              related_but_not_covered=c["partial"]),
+        final_diagnosis=dict(accept_as_accurate=c["correct"], accept_as_partial=c["partial"]),
         part2_yes_no=dict(
-            answering_rule="Answer strictly yes or no. Use symptom_table; any feature not listed "
-                           "is answered NO.",
+            answering_rule="Answer yes, no, or unknown. Use symptom_table: yes when it documents "
+                           "the feature as present, no when it documents the feature as absent, "
+                           "unknown when the feature is not listed or the documented features do "
+                           "not settle the whole question. A feature absent from the table is "
+                           "unreported, never NO.",
             demographics=c["who"], symptom_table=table),
         investigation_rules=dict(
             default_for_unlisted="not performed / not available",

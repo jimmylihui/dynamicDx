@@ -156,13 +156,17 @@ T2 = """The patient answered:
 
 %s
 
-You may now investigate. There is no fixed list to choose from - name whatever you would actually
-order, in your own words: bedside examination manoeuvres, blood tests, imaging, electrophysiology,
-invasive procedures, or a therapeutic trial. A therapeutic trial is returned only if you name that
-specific trial; asking to "try treatment" returns nothing.
+You may now investigate. There is no fixed list to choose from.
+Name whatever you would actually order, in your own words:
+bedside examination manoeuvres, blood tests, imaging,
+electrophysiology, invasive procedures, or a therapeutic trial.
+A therapeutic trial is returned only if you name that specific
+trial. Asking to "try treatment" returns nothing.
 
-Order as many or as few investigations as you judge this patient needs. Stop when another test
-would not change what you think is wrong. Most likely to settle the diagnosis first.
+Order as many or as few investigations as you judge this patient
+needs. Stop when another test would not change what you think is
+wrong. Put the investigations most likely to settle the diagnosis
+first.
 
 One investigation per line, numbered. Name the test, not what you expect it to show. Nothing else."""
 

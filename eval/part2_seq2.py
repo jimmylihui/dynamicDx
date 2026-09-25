@@ -13,7 +13,7 @@ carry as many questions, or as many investigations, as the doctor wants - what t
 forbids is not the batching but the second round: there, the history is over before the first
 result is read. It stops when it wants to, within MAXROUND rounds.
 
-Every rule of the batch protocol is unchanged: a symptom not in the table is answered no, an
+Every rule of the batch protocol is unchanged: the patient answers yes, no or unknown from the record, an
 investigation not on the menu returns "not performed / not available", a therapeutic trial is
 returned only when named specifically. The judge is used ONLY for matching, never to write a value.
 

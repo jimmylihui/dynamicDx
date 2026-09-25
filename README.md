@@ -26,7 +26,7 @@ never to write a finding.
 | `eval/` | the evaluation harness: Stage 1 sweep and judge; Stage 2 batch and multi-round consultations; grader; paired bootstrap; `tau.py` (source-workup coverage τ with equivalent entries); `part2_lie2.py` (corrupted-history stress test, Appendix G) |
 | `eval/retrieval/` | literature retrieval and decontamination (§3.5.2, Appendix F; prompts in Appendix H): HPO normalisation, Europe PMC query and cause extraction, the source-PMCID / DOI / near-duplicate / answer-string filters |
 | `eval/controls/` | investigation-selection controls (Appendix C.2): ten-item budget, fixed checklist and random arms replayed on the released consultations, and the τ decomposition of Appendix C |
-| `eval/analysis/` | decidability split and dataset-characteristics tables (Appendices A, B) |
+| `eval/analysis/` | `decidability.py`: results by clinician-judged decidability (Appendix B, Tables 8 and 9), read from `data/decidability.json`, the Stage 1 judge output and the Stage 2 grades |
 | `scripts/fetch_videos.py` | downloads the source videos from Europe PMC and re-encodes them |
 
 ## Videos
