@@ -15,7 +15,7 @@ never to write a finding.
 
 | path | what it is |
 |---|---|
-| `data/cases.json` | the 71 cases: source PMCID and licence, confirmed diagnosis, visible sign, acceptance lists for grading, documented symptom table with its yes/no/unknown answering rule, investigation chart holding only results reported in the source article (`p: reported`), with `decisive` flags and `explicit_only` therapeutic trials |
+| `data/cases.json` | the 71 cases: source PMCID and licence, confirmed diagnosis, visible sign, Stage 1 acceptance lists and the final-diagnosis acceptance lists (`final_diagnosis`), documented symptom table with its yes/no/unknown answering rule, investigation chart on the shared menu of the case's disease line: results reported in the source article (`p: reported`) and values expected for the presentation (`p: derived`), with `decisive` flags and `explicit_only` therapeutic trials |
 | `data/clips.json` | per clip: source article, licence, duration, frame rate, resolution, scene cuts |
 | `data/source_licences.json` | the 66 source articles with title, journal, year and licence |
 | `data/decidability.json` | the 22 clips the neurologist judged unidentifiable from video alone and the 49 judged identifiable (paper Appendix B) |
@@ -50,16 +50,22 @@ python scripts/fetch_videos.py PMC10051035
    result. Nothing here decides anything; it is the evidence base the case is written from.
 2. **Brief** (`brief.py`). A compact per-case summary of what the article records about *this*
    patient, used by the annotator.
-3. **Per-line generation** (`genlib.py`, `gen_<line>.py`). Each disease line has a panel of test
-   names and tiers, with no values. Per case, the chart holds only the results the source article
-   reports (`p: reported`); the generator flags the tests that established the diagnosis as
-   `decisive`, gates therapeutic trials behind `explicit_only`, and writes the symptom table and
-   the acceptance lists used for grading. The module docstrings record every relabelling made
+3. **Per-line generation** (`genlib.py`, `gen_<line>.py`). Every case of a disease line offers the
+   same investigation menu, so which entries hold a result cannot identify the case. Each case
+   overrides the entries its own article reports (`p: reported`); the remaining menu entries carry
+   a value expected for the presentation (`p: derived`), written by the annotators in the line
+   files. A generic panel of commonly ordered tests (`generic_panel.json`) is filled per case by
+   `fill_generic.py` (GPT-5.6-luna, given the confirmed diagnosis and the reported chart, answering
+   normal unless the diagnosis specifically changes the test; output `generic_values.json`), with
+   `dedupe_generic.py` / `verify_dupes.py` removing generic entries that duplicate a line entry
+   (`generic_drop.json`). The generator flags the entries that decide the diagnosis as `decisive`,
+   gates therapeutic trials behind `explicit_only`, and writes the symptom table and the
+   acceptance lists used for grading. The module docstrings record every relabelling made
    against the original clip labels, with the sentence in the source that justified it.
    `verify_split.py` checks pairwise that no two chart entries of a case name the same test.
 4. **Assembly** (`assemble.py`). Concatenates the per-line files and checks the invariants: one
-   case per video, every chart entry reported in the source, at least one decisive entry per case,
-   therapeutic trials still gated.
+   case per video, an identical menu across each line, no investigation key unique to one case of
+   its line, therapeutic trials still gated.
 
 Eight visible-sign descriptions were edited after a visual-grounding audit (see the paper's
 appendix); `visible_sign_original` keeps the pre-audit text for those cases.
@@ -108,16 +114,20 @@ temperature 0, one pinned provider per model.
 Stage 1 uses the paper's prompt by default (`PROMPT=old` in `eval/part1_probe.py`); a structured
 JSON variant is kept under `PROMPT=new` but is not what the paper reports.
 
-**Grades.** The grader returns `exact` / `core` / `category` / `none`. The paper reports them as
-ACCURATE (= `exact`), PARTIAL (= `core` + `category`) and NOT ACCURATE (= `none`); its accuracy is
-the `exact` rate with 71 as denominator (a case without a usable answer counts as wrong).
+**Grades.** `eval/part2_full_judge3.py` grades the primary diagnosis against the case's
+final-diagnosis acceptance lists (`final_diagnosis`) and returns `accurate` / `partial` / `none`,
+the three grades of the paper (Appendix H); accuracy is the `accurate` rate with 71 as denominator
+(a case without a usable answer counts as wrong).
 Source-workup coverage τ is the share of `decisive` chart entries obtained, pooled over cases. Every
 contrast between conditions is a paired case-level percentile bootstrap with 10,000 resamples.
 
-**The chart.** Every chart entry is a result read from the source article (`p: reported`): 426
-entries over the 71 cases, 256 of them `decisive`, and every case keeps at least one decisive
-entry. An order the chart does not hold returns "not performed / not available"; no result is
-filled in for a test the source did not report.
+**The chart.** 6,398 entries over the 71 cases: 426 read from the source article
+(`p: reported`) and 5,972 values expected for the presentation on the shared line menu
+(`p: derived`; 2,473 from the line files, 3,499 from the generic panel), most of them normal, not
+performed or not recorded. 301 entries are `decisive` (256 reported, 45 derived), and every case
+keeps at least one decisive entry. All values are fixed before evaluation; the matcher only maps
+an order to entry names, and an order the chart does not hold returns
+"not performed / not available".
 
 **The patient's answers.** The environment returns `yes` / `no` only for features the record
 documents as present / absent and `unknown` otherwise; a feature the record does not mention is never

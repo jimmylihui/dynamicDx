@@ -1,15 +1,15 @@
-"""Grade the end-to-end diagnosis.
+"""Grade the end-to-end diagnosis (paper Appendix H, Part 2).
 
-The same four grades as Part 1, so the number is comparable to the video-only figure: the whole
-point of the consultation is how far it moves the diagnosis past what the frames alone gave.
-
-  exact    - the disease entity and its cause, at the specificity of the true diagnosis
-  core     - the right syndrome or the right cause, but not both, or named too vaguely
-  category - the right family of disease only
-  none     - anything else
+Three grades, against the case's final-diagnosis acceptance lists (`final_diagnosis` in
+data/cases.json):
+  accurate - matches a case-specific accepted correct diagnosis, including an accepted broader
+             disease or syndrome formulation
+  partial  - matches the case-specific partial-credit criteria but not the correct-answer criteria
+  none     - satisfies neither
 
 Graded from the doctor's stated primary diagnosis. Alternatives are recorded but not credited:
 a consultation that ends in "one of these four things" has not diagnosed the patient.
+Accuracy is the ACCURATE rate with 71 as denominator.
 """
 import glob
 import json
@@ -26,25 +26,28 @@ JUDGE = os.environ.get("JUDGE", "openai/gpt-5.6-luna")
 ROOT = os.environ.get("ROOT", "part2_full_none")
 cases = {c["video"]: c for c in json.load(open(B + "/data/cases.json"))}
 
-P = """You are grading a doctor who watched a video of a patient, took a yes/no history, ordered
-investigations, and then named a diagnosis.
+P = """You are grading a doctor who watched a video of a patient, took a yes/no history,
+ordered investigations, and then named a diagnosis.
 
 GROUND TRUTH
   true diagnosis : %s
-  count as CORRECT (the actual disease entity) : %s
-  count as PARTIAL (right syndrome or category, not the cause) : %s
+  count as accurate (the actual disease entity) : %s
+  Accepted as partial: %s
 
 THE DOCTOR'S PRIMARY DIAGNOSIS
 %s
 
 Grade the primary diagnosis alone.
-  exact    : the same disease entity as the truth or the CORRECT list, at comparable specificity
-  core     : the right syndrome or the right cause but not both, or the correct entity named too
-             vaguely to act on
-  category : only the right broad family of disease
-  none     : anything else
+  accurate : matches a case-specific accepted correct diagnosis,
+             including an accepted broader disease or syndrome
+             formulation; equivalent clinical terminology counts
+  partial  : matches the case-specific partial-credit criteria,
+             including a related syndrome, cause, or broad disease
+             family, but does not satisfy the correct-answer criteria
+  none     : satisfies neither the correct-answer criteria nor
+             the partial-credit criteria
 
-Reply with ONLY {"grade":"exact|core|category|none","reason":"<= 12 words"}"""
+Reply with ONLY {"grade":"accurate|partial|none","reason":"<= 12 words"}"""
 
 res, lock = {}, threading.Lock()
 q = sorted(glob.glob("%s/results/%s/*/*.json" % (B, ROOT)))
@@ -83,8 +86,8 @@ def work():
         c = cases.get(d["video"])
         if not c or not d.get("dx"):
             continue
-        p1 = c["part1_video_only"]
-        v = ask(P % (c["true_diagnosis"], p1.get("accept_as_correct"), p1.get("accept_as_partial"),
+        fd = c["final_diagnosis"]
+        v = ask(P % (c["true_diagnosis"], fd.get("accept_as_accurate"), fd.get("accept_as_partial"),
                      d["dx"]))
         with lock:
             res[d["video"]] = dict(line=c["line"], dx=d["dx"], grade=(v or {}).get("grade"),
@@ -104,11 +107,11 @@ json.dump(res, open(B + "/results/stage2%s_%s.json" % (os.environ.get("OUTTAG", 
 
 ok = [r for r in res.values() if r["grade"]]
 n = len(ok)
-g = {k: sum(1 for r in ok if r["grade"] == k) for k in ("exact", "core", "category", "none")}
+g = {k: sum(1 for r in ok if r["grade"] == k) for k in ("accurate", "partial", "none")}
 print("cases              : %d" % n)
-print("EXACT              : %.1f%% (%d)" % (100.0 * g["exact"] / n, g["exact"]))
-print("EXACT + CORE       : %.1f%% (%d)" % (100.0 * (g["exact"] + g["core"]) / n,
-                                            g["exact"] + g["core"]))
+print("ACCURATE (of 71)   : %.1f%% (%d)" % (100.0 * g["accurate"] / 71, g["accurate"]))
+print("ACCURATE + PARTIAL : %.1f%% (%d)" % (100.0 * (g["accurate"] + g["partial"]) / 71,
+                                            g["accurate"] + g["partial"]))
 print("   breakdown       : %s" % g)
 print("questions asked    : %.1f  (patient said yes to %.1f)"
       % (sum(r["n_q"] for r in ok) / n, sum(r["n_yes"] for r in ok) / n))
@@ -120,6 +123,6 @@ print("decisive obtained  : %.1f%% (%d/%d)"
 for k in (0, 1):
     sub = [r for r in ok if (r["dec_served"] > 0) == bool(k)]
     if sub:
-        print("   %s decisive -> exact %.1f%% (n=%d)"
+        print("   %s decisive -> accurate %.1f%% (n=%d)"
               % ("with" if k else "without",
-                 100.0 * sum(1 for r in sub if r["grade"] == "exact") / len(sub), len(sub)))
+                 100.0 * sum(1 for r in sub if r["grade"] == "accurate") / len(sub), len(sub)))

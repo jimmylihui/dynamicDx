@@ -268,7 +268,7 @@ Reply with ONLY {"n_listed": <int>, "rank": <int>}
 
 ### Part 2: the committed diagnosis
 
-Only the primary diagnosis is graded; the alternatives the model is allowed to append are recorded but not credited.
+Only the primary diagnosis is graded; the alternatives the model is allowed to append are recorded but not credited. The two lists are the case's `final_diagnosis.accept_as_accurate` and `final_diagnosis.accept_as_partial` in `data/cases.json`.
 
 ```text
 You are grading a doctor who watched a video of a patient, took a yes/no history,
@@ -276,19 +276,21 @@ ordered investigations, and then named a diagnosis.
 
 GROUND TRUTH
   true diagnosis : <true diagnosis>
-  count as CORRECT (the actual disease entity) : <accept-as-correct>
-  count as PARTIAL (right syndrome or category, not the cause) : <accept-as-partial>
+  count as accurate (the actual disease entity) : <accept-as-accurate>
+  Accepted as partial: <accept-as-partial>
 
 THE DOCTOR'S PRIMARY DIAGNOSIS
 <the diagnosis>
 
 Grade the primary diagnosis alone.
-  exact    : the same disease entity as the truth or the CORRECT list, at
-             comparable specificity
-  core     : the right syndrome or the right cause but not both, or the correct
-             entity named too vaguely to act on
-  category : only the right broad family of disease
-  none     : anything else
+  accurate : matches a case-specific accepted correct diagnosis,
+             including an accepted broader disease or syndrome
+             formulation; equivalent clinical terminology counts
+  partial  : matches the case-specific partial-credit criteria,
+             including a related syndrome, cause, or broad disease
+             family, but does not satisfy the correct-answer criteria
+  none     : satisfies neither the correct-answer criteria nor
+             the partial-credit criteria
 
-Reply with ONLY {"grade":"exact|core|category|none","reason":"<= 12 words"}
+Reply with ONLY {"grade":"accurate|partial|none","reason":"<= 12 words"}
 ```

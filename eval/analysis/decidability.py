@@ -3,6 +3,7 @@ independent, diagnosis-blind label; report model Part-1 recognition and Part-2 a
 subset; audit the reference phenomenology for non-visual content."""
 import os
 import glob, json, os, random, re, threading, urllib.request, time
+ACCURATE = {"accurate", "exact"}   # grade names: current grader / earlier result files
 
 B = os.environ.get("DDX_ROOT", ".")
 C = {c["video"]: c for c in json.load(open(B + "/data/cases.json"))}
@@ -60,16 +61,16 @@ print("\nPART 2 diagnosis accuracy, video condition (%%)")
 print("%-14s %14s %16s %8s %22s" % ("system", "decidable(49)", "undecidable(22)", "gap", "95% CI of gap"))
 for nm, root in P2:
     g = {v: d.get("grade") for v, d in json.load(open(os.environ.get("DDX_WORK", "/tmp") + "/fulljudge_%s.json" % root)).items()}
-    a, b = rate(g, DEC, {"exact"}), rate(g, UNDL, {"exact"}); lo, hi = boot_diff(g, g, DEC, UNDL, {"exact"})
+    a, b = rate(g, DEC, ACCURATE), rate(g, UNDL, ACCURATE); lo, hi = boot_diff(g, g, DEC, UNDL, ACCURATE)
     line = "%-14s %14.1f %16.1f %+8.1f   [%+.1f, %+.1f]" % (nm, a, b, a - b, lo, hi)
     if nm in BL:
         gb = {v: d.get("grade") for v, d in json.load(open(os.environ.get("DDX_WORK", "/tmp") + "/fulljudge_%s.json" % BL[nm])).items()}
-        line += "   video-blind: decidable %+.1f, undecidable %+.1f" % (a - rate(gb, DEC, {"exact"}), b - rate(gb, UNDL, {"exact"}))
+        line += "   video-blind: decidable %+.1f, undecidable %+.1f" % (a - rate(gb, DEC, ACCURATE), b - rate(gb, UNDL, ACCURATE))
     print(line)
 H = B + "/human_study/"; cl = {}
 for n in ("2", "3"):
     for d in json.load(open(H + "doctor_graded%s.json" % n)).values(): cl[d["video"]] = d.get("grade")
-print("%-14s %14.1f %16.1f" % ("Clinician", rate(cl, DEC, {"exact"}), rate(cl, UNDL, {"exact"})))
+print("%-14s %14.1f %16.1f" % ("Clinician", rate(cl, DEC, ACCURATE), rate(cl, UNDL, ACCURATE)))
 
 # ---- reference phenomenology audit -------------------------------------------------------
 ORKEY = os.environ["ORKEY"]

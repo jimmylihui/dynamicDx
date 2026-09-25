@@ -25,77 +25,94 @@ LINE = "functional"
 PANEL = {
     # bedside - the diagnostic core of this line
     "distractibility testing (complex motor task with the unaffected side)":
-        {"tier": "bedside"},
+        {"v": "no change in the movement", "p": "derived", "tier": "bedside"},
     "entrainment testing (tap to an externally paced rhythm)":
-        {"tier": "bedside"},
+        {"v": "no entrainment", "p": "derived", "tier": "bedside"},
     "co-activation sign on passive movement of the affected limb":
-        {"tier": "bedside"},
+        {"v": "absent", "p": "derived", "tier": "bedside"},
     "'whack-a-mole' sign (restrain the affected limb and watch the others)":
-        {"tier": "bedside"},
+        {"v": "no movement elsewhere", "p": "derived", "tier": "bedside"},
     "anticipatory jerk to a feigned tendon-hammer approach (Hallett sign)":
-        {"tier": "bedside"},
+        {"v": "absent", "p": "derived", "tier": "bedside"},
     "suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment')":
-        {"tier": "bedside"},
+        {"v": "no change", "p": "derived", "tier": "bedside"},
     "variability of amplitude, frequency and axis over the examination":
-        {"tier": "bedside"},
-    "Hoover sign / hip-abductor sign": {"tier": "bedside"},
-    "tandem gait": {"tier": "bedside"},
-    "walking backward": {"tier": "bedside"},
-    "running": {"tier": "bedside"},
+        {"v": "constant", "p": "derived", "tier": "bedside"},
+    "Hoover sign / hip-abductor sign": {"v": "negative", "p": "derived", "tier": "bedside"},
+    "tandem gait": {"v": "normal", "p": "derived", "tier": "bedside"},
+    "walking backward": {"v": "same pattern as walking forward", "p": "derived",
+                         "tier": "bedside"},
+    "running": {"v": "not attempted", "p": "derived", "tier": "bedside"},
     "gait with a distracting or automatic task (dancing, counting backwards)":
-        {"tier": "bedside"},
-    "Romberg test, repeated with distraction": {"tier": "bedside"},
+        {"v": "unchanged", "p": "derived", "tier": "bedside"},
+    "Romberg test, repeated with distraction": {"v": "negative", "p": "derived",
+                                                "tier": "bedside"},
     "observation for excessive slowness or uneconomic posture":
-        {"tier": "bedside"},
-    "knee buckling / astasia-abasia on walking": {"tier": "bedside"},
-    "muscle tone (spasticity, rigidity, paratonia)": {"tier": "bedside"},
-    "deep tendon reflexes and plantar responses": {"tier": "bedside"},
+        {"v": "not present", "p": "derived", "tier": "bedside"},
+    "knee buckling / astasia-abasia on walking": {"v": "not present", "p": "derived",
+                                                  "tier": "bedside"},
+    "muscle tone (spasticity, rigidity, paratonia)": {"v": "normal", "p": "derived",
+                                                      "tier": "bedside"},
+    "deep tendon reflexes and plantar responses": {"v": "normal, flexor plantars",
+                                                   "p": "derived", "tier": "bedside"},
     "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)":
-        {"tier": "bedside"},
-    "finger-tapping for bradykinesia and decrement": {"tier": "bedside"},
-    "MRC power in all four limbs": {"tier": "bedside"},
+        {"v": "normal", "p": "derived", "tier": "bedside"},
+    "finger-tapping for bradykinesia and decrement": {"v": "no decrement", "p": "derived",
+                                                      "tier": "bedside"},
+    "MRC power in all four limbs": {"v": "5/5 throughout", "p": "derived", "tier": "bedside"},
     "sensory examination (including midline splitting, allodynia)":
-        {"tier": "bedside"},
-    "cranial nerve examination": {"tier": "bedside"},
-    "cognitive screen": {"tier": "bedside"},
+        {"v": "normal", "p": "derived", "tier": "bedside"},
+    "cranial nerve examination": {"v": "normal", "p": "derived", "tier": "bedside"},
+    "cognitive screen": {"v": "normal", "p": "derived", "tier": "bedside"},
     "psychosocial history (stressors, prior functional symptoms, illness beliefs)":
-        {"tier": "bedside"},
-    "trial of physiotherapy / motor retraining": {"tier": "bedside"},
-    "trial of benzodiazepine (diazepam)": {"tier": "bedside"},
-    "levodopa challenge": {"tier": "bedside"},
+        {"v": "nothing volunteered", "p": "derived", "tier": "bedside"},
+    "trial of physiotherapy / motor retraining": {"v": "not yet tried", "p": "derived",
+                                                  "tier": "bedside"},
+    "trial of benzodiazepine (diazepam)": {"v": "no change", "p": "derived", "tier": "bedside"},
+    "levodopa challenge": {"v": "no response", "p": "derived", "tier": "bedside"},
     # blood
-    "full blood count, renal and liver profile": {"tier": "blood"},
-    "TSH / free T4": {"tier": "blood"},
-    "copper and ceruloplasmin": {"tier": "blood"},
-    "creatine kinase": {"tier": "blood"},
-    "vitamin B12 and vitamin E": {"tier": "blood"},
-    "glucose / HbA1c": {"tier": "blood"},
-    "anti-GAD65 antibodies": {"tier": "blood"},
+    "full blood count, renal and liver profile": {"v": "normal", "p": "derived", "tier": "blood"},
+    "TSH / free T4": {"v": "normal", "p": "derived", "tier": "blood"},
+    "copper and ceruloplasmin": {"v": "normal", "p": "derived", "tier": "blood"},
+    "creatine kinase": {"v": "normal", "p": "derived", "tier": "blood"},
+    "vitamin B12 and vitamin E": {"v": "normal", "p": "derived", "tier": "blood"},
+    "glucose / HbA1c": {"v": "normal", "p": "derived", "tier": "blood"},
+    "anti-GAD65 antibodies": {"v": "negative", "p": "derived", "tier": "blood"},
     "neuronal surface / paraneoplastic antibody panel (amphiphysin, glycine receptor, DPPX)":
-        {"tier": "blood"},
-    "coeliac serology": {"tier": "blood"},
-    "HIV and syphilis serology": {"tier": "blood"},
-    "hereditary ataxia / repeat-expansion panel": {"tier": "blood"},
-    "dystonia gene panel (including TOR1A)": {"tier": "blood"},
-    "drug and toxin screen (neuroleptics, lithium, stimulants)": {"tier": "blood"},
+        {"v": "negative", "p": "derived", "tier": "blood"},
+    "coeliac serology": {"v": "negative", "p": "derived", "tier": "blood"},
+    "HIV and syphilis serology": {"v": "negative", "p": "derived", "tier": "blood"},
+    "hereditary ataxia / repeat-expansion panel": {"v": "no expansion", "p": "derived",
+                                                   "tier": "blood"},
+    "dystonia gene panel (including TOR1A)": {"v": "no pathogenic variant", "p": "derived",
+                                              "tier": "blood"},
+    "drug and toxin screen (neuroleptics, lithium, stimulants)": {"v": "negative", "p": "derived",
+                                                                  "tier": "blood"},
     # imaging
-    "MRI brain": {"tier": "imaging"},
-    "MRI cervical and thoracic spine": {"tier": "imaging"},
-    "DaTSCAN (dopamine transporter SPECT)": {"tier": "imaging"},
-    "FDG-PET brain": {"tier": "imaging"},
-    "CT chest / abdomen / pelvis (tumour search)": {"tier": "imaging"},
+    "MRI brain": {"v": "normal", "p": "derived", "tier": "imaging"},
+    "MRI cervical and thoracic spine": {"v": "normal cord, no compression", "p": "derived",
+                                        "tier": "imaging"},
+    "DaTSCAN (dopamine transporter SPECT)": {"v": "normal tracer uptake", "p": "derived",
+                                             "tier": "imaging"},
+    "FDG-PET brain": {"v": "no focal hypometabolism", "p": "derived", "tier": "imaging"},
+    "CT chest / abdomen / pelvis (tumour search)": {"v": "no malignancy", "p": "derived",
+                                                    "tier": "imaging"},
     # invasive / neurophysiology
     "surface EMG tremor analysis with accelerometry (frequency, coherence)":
-        {"tier": "invasive"},
+        {"v": "not performed", "p": "derived", "tier": "invasive"},
     "needle EMG (continuous motor unit activity at rest)":
-        {"tier": "invasive"},
-    "nerve conduction studies": {"tier": "invasive"},
+        {"v": "no continuous activity", "p": "derived", "tier": "invasive"},
+    "nerve conduction studies": {"v": "normal", "p": "derived", "tier": "invasive"},
     "back-averaged EEG for a Bereitschaftspotential before the movements":
-        {"tier": "invasive"},
-    "somatosensory evoked potentials (giant SEP, C-reflex)": {"tier": "invasive"},
-    "jerk latency and burst-duration measurement": {"tier": "invasive"},
-    "lumbar puncture / CSF (cells, protein, oligoclonal bands)": {"tier": "invasive"},
-    "video-EEG monitoring with limb surface electrodes": {"tier": "invasive"},
+        {"v": "not performed", "p": "derived", "tier": "invasive"},
+    "somatosensory evoked potentials (giant SEP, C-reflex)": {"v": "normal, no giant SEP",
+                                                              "p": "derived", "tier": "invasive"},
+    "jerk latency and burst-duration measurement": {"v": "not performed", "p": "derived",
+                                                    "tier": "invasive"},
+    "lumbar puncture / CSF (cells, protein, oligoclonal bands)": {"v": "normal", "p": "derived",
+                                                                  "tier": "invasive"},
+    "video-EEG monitoring with limb surface electrodes": {"v": "not performed", "p": "derived",
+                                                          "tier": "invasive"},
 }
 
 CASES = [
@@ -158,6 +175,8 @@ CASES = [
        {"v": "no bradykinesia, no parkinsonian features", "p": "reported"},
    "psychosocial history (stressors, prior functional symptoms, illness beliefs)":
        {"v": "years of intractable pain with pronounced psychosocial stress", "p": "reported"},
+   "finger-tapping for bradykinesia and decrement":
+       {"v": "no decrement - argues against Parkinson disease", "p": "derived"},
   },
   dont_miss="A limb with this surgical history genuinely can develop complex regional pain "
             "syndrome or a peripherally induced tremor, and the pain itself needs treating "
@@ -197,10 +216,18 @@ CASES = [
        {"v": "long and VARIABLE latency with a long duration of muscle contraction - the pattern "
              "of voluntary movement, not of cortical myoclonus", "p": "reported",
         "decisive": True},
+   "back-averaged EEG for a Bereitschaftspotential before the movements":
+       {"v": "Bereitschaftspotential present before the jerks", "p": "derived", "decisive": True},
+   "somatosensory evoked potentials (giant SEP, C-reflex)":
+       {"v": "normal, no giant SEP and no C-reflex - excludes cortical reflex myoclonus",
+        "p": "derived", "decisive": True},
    "variability of amplitude, frequency and axis over the examination":
        {"v": "the jerks are inconsistent in size and timing", "p": "reported"},
    "cranial nerve examination": {"v": "normal - 'neurologic exam otherwise normal'",
                                  "p": "reported"},
+   "MRI brain": {"v": "normal", "p": "derived"},
+   "video-EEG monitoring with limb surface electrodes":
+       {"v": "no epileptiform discharge accompanies the jerks", "p": "derived"},
   },
   dont_miss="Stimulus-sensitive myoclonus is also the presentation of cortical myoclonus and of "
             "post-hypoxic myoclonus, both of which are progressive and treatable - the "
@@ -240,6 +267,17 @@ CASES = [
    "distractibility testing (complex motor task with the unaffected side)":
        {"v": "POSITIVE - marked decrease in tremor amplitude with distraction", "p": "reported",
         "decisive": True},
+   "entrainment testing (tap to an externally paced rhythm)":
+       {"v": "POSITIVE - the head tremor takes up the paced frequency", "p": "derived",
+        "decisive": True},
+   "muscle tone (spasticity, rigidity, paratonia)":
+       {"v": "normal; no cervical dystonic posturing and no sensory trick", "p": "derived",
+        "decisive": True},
+   "MRI brain": {"v": "normal for age", "p": "derived"},
+   "DaTSCAN (dopamine transporter SPECT)": {"v": "normal tracer uptake", "p": "derived"},
+   "TSH / free T4": {"v": "normal", "p": "derived"},
+   "surface EMG tremor analysis with accelerometry (frequency, coherence)":
+       {"v": "variable frequency, poor coherence between segments", "p": "derived"},
   },
   dont_miss="Head tremor in an 83-year-old is far more often essential tremor or dystonic head "
             "tremor, and functional tremor can sit on top of either - the positive signs are what "
@@ -275,6 +313,18 @@ CASES = [
    "variability of amplitude, frequency and axis over the examination":
        {"v": "amplitude and directionality both vary during the examination", "p": "reported",
         "decisive": True},
+   "entrainment testing (tap to an externally paced rhythm)":
+       {"v": "POSITIVE", "p": "derived", "decisive": True},
+   "suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment')":
+       {"v": "tremor changes with the sham stimulus", "p": "derived", "decisive": True},
+   "muscle tone (spasticity, rigidity, paratonia)":
+       {"v": "normal; no dystonic head posture, no sensory trick", "p": "derived",
+        "decisive": True},
+   "MRI brain": {"v": "normal", "p": "derived"},
+   "DaTSCAN (dopamine transporter SPECT)": {"v": "normal tracer uptake", "p": "derived"},
+   "hereditary ataxia / repeat-expansion panel": {"v": "no expansion", "p": "derived"},
+   "surface EMG tremor analysis with accelerometry (frequency, coherence)":
+       {"v": "frequency shifts with distraction", "p": "derived"},
   },
   dont_miss="A third of patients with functional tremor have head tremor and they carry greater "
             "overall functional-disorder severity - the head tremor is a marker to act on, not an "
@@ -309,6 +359,19 @@ CASES = [
    "observation for excessive slowness or uneconomic posture":
        {"v": "INCONGRUENT - repeated falls with no injury at all, and an unaided recovery each "
              "time", "p": "reported", "decisive": True},
+   "Hoover sign / hip-abductor sign": {"v": "POSITIVE", "p": "derived", "decisive": True},
+   "gait with a distracting or automatic task (dancing, counting backwards)":
+       {"v": "the pattern changes or normalises", "p": "derived", "decisive": True},
+   "MRC power in all four limbs":
+       {"v": "5/5 throughout - a slow controlled descent of this kind requires intact quadriceps "
+             "strength", "p": "derived", "decisive": True},
+   "video-EEG monitoring with limb surface electrodes":
+       {"v": "no ictal discharge accompanies the falls", "p": "derived", "decisive": True},
+   "deep tendon reflexes and plantar responses": {"v": "normal, flexor plantars", "p": "derived"},
+   "MRI cervical and thoracic spine": {"v": "normal cord, no compression", "p": "derived"},
+   "MRI brain": {"v": "normal", "p": "derived"},
+   "nerve conduction studies": {"v": "normal", "p": "derived"},
+   "creatine kinase": {"v": "normal - no rhabdomyolysis from repeated falls", "p": "derived"},
   },
   dont_miss="Repeated falls are also syncope, cardiac arrhythmia, cataplexy and atonic seizures - "
             "all of which injure the patient sooner or later, and the first two of which kill. "
@@ -341,6 +404,23 @@ CASES = [
    "walking backward":
        {"v": "the scissoring DISAPPEARS on walking backward; in spasticity it persists",
         "p": "reported", "decisive": True},
+   "muscle tone (spasticity, rigidity, paratonia)":
+       {"v": "normal tone on passive movement despite the scissoring gait", "p": "derived",
+        "decisive": True},
+   "deep tendon reflexes and plantar responses":
+       {"v": "normal reflexes, FLEXOR plantar responses, no clonus", "p": "derived",
+        "decisive": True},
+   "gait with a distracting or automatic task (dancing, counting backwards)":
+       {"v": "the pattern changes or normalises", "p": "derived", "decisive": True},
+   "tandem gait": {"v": "better than free walking", "p": "derived", "decisive": True},
+   "MRI cervical and thoracic spine": {"v": "normal cord, no compression, no signal change",
+                                       "p": "derived"},
+   "MRI brain": {"v": "normal, no periventricular lesions", "p": "derived"},
+   "hereditary ataxia / repeat-expansion panel": {"v": "no expansion", "p": "derived"},
+   "vitamin B12 and vitamin E": {"v": "normal", "p": "derived"},
+   "HIV and syphilis serology": {"v": "negative", "p": "derived"},
+   "lumbar puncture / CSF (cells, protein, oligoclonal bands)": {"v": "normal, no oligoclonal "
+                                                                      "bands", "p": "derived"},
   },
   dont_miss="Hereditary spastic paraplegia, cervical myelopathy, B12 deficiency and multiple "
             "sclerosis all scissor - all of them keep scissoring when the patient walks backward, "
@@ -370,13 +450,36 @@ CASES = [
       "the problem began suddenly", "double vision", "memory loss",
       "loss of bladder control", "numbness in the legs", "weakness of the arms"],
   inv={
+   "anti-GAD65 antibodies":
+       {"v": "MARKEDLY ELEVATED (high-titre, typically >2000 U/mL) - diagnostic in this clinical "
+             "context", "p": "derived", "decisive": True},
+   "needle EMG (continuous motor unit activity at rest)":
+       {"v": "CONTINUOUS motor unit activity at rest in agonist and antagonist simultaneously, "
+             "abolished by diazepam", "p": "derived", "decisive": True},
+   "trial of benzodiazepine (diazepam)":
+       {"v": "clear improvement in stiffness and in the gait", "p": "derived", "decisive": True},
+   "muscle tone (spasticity, rigidity, paratonia)":
+       {"v": "genuine axial and lower-limb rigidity on passive movement", "p": "derived",
+        "decisive": True},
    "walking backward": {"v": "the slow, guarded, wide-based pattern PERSISTS", "p": "reported",
                         "decisive": True},
    "running": {"v": "cannot run; the pattern does not normalise", "p": "reported",
                "decisive": True},
+   "gait with a distracting or automatic task (dancing, counting backwards)":
+       {"v": "no change - the gait is not distractible", "p": "derived", "decisive": True},
+   "Hoover sign / hip-abductor sign": {"v": "negative", "p": "derived"},
    "observation for excessive slowness or uneconomic posture":
        {"v": "deliberately slow and broad-based; lumbar hyperlordosis is LACKING in this patient",
         "p": "reported"},
+   "neuronal surface / paraneoplastic antibody panel (amphiphysin, glycine receptor, DPPX)":
+       {"v": "negative - amphiphysin would point to a paraneoplastic stiff-person spectrum",
+        "p": "derived"},
+   "glucose / HbA1c": {"v": "may show type 1 diabetes, which is commonly comorbid", "p": "derived"},
+   "MRI cervical and thoracic spine": {"v": "normal cord", "p": "derived"},
+   "MRI brain": {"v": "normal", "p": "derived"},
+   "CT chest / abdomen / pelvis (tumour search)": {"v": "no malignancy", "p": "derived"},
+   "lumbar puncture / CSF (cells, protein, oligoclonal bands)":
+       {"v": "oligoclonal bands may be present", "p": "derived"},
   },
   dont_miss="This is the treatable one. High-dose benzodiazepines, and then IVIG or rituximab, "
             "change the course of stiff-person syndrome; a patient labelled functional loses all "

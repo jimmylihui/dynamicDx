@@ -5,6 +5,7 @@ import collections
 import json
 import random
 import re
+ACCURATE = {"accurate", "exact"}   # grade names: current grader / earlier result files
 
 B = os.environ.get("DDX_ROOT", ".")
 C = json.load(open(B + "/data/cases.json"))
@@ -123,12 +124,12 @@ MODELS = [("GPT-5.6-luna", "part2_lunathink_vid_doctor"), ("Gemma-4-31B", "part2
 grades = {}
 for nm, t in MODELS:
     g = json.load(open(os.environ.get("DDX_WORK", "/tmp") + "/fulljudge_%s.json" % t))
-    grades[nm] = {v: 1.0 if d.get("grade") == "exact" else 0.0 for v, d in g.items()}
+    grades[nm] = {v: 1.0 if d.get("grade") in ACCURATE else 0.0 for v, d in g.items()}
 H = B + "/human_study/"
 cl = {}
 for n in ("2", "3"):
     for d in json.load(open(H + "doctor_graded%s.json" % n)).values():
-        cl[d["video"]] = 1.0 if d.get("grade") == "exact" else 0.0
+        cl[d["video"]] = 1.0 if d.get("grade") in ACCURATE else 0.0
 grades["Clinician"] = cl
 vids = [r["video"] for r in rows]
 byv = {r["video"]: r for r in rows}
@@ -191,7 +192,7 @@ for nm, g in grades.items():
 for nm, vt, bt in (("GPT-5.6-luna", "part2_lunathink_vid_doctor", "part2_lunathink_novid_doctor"),
                    ("Qwen3.8-flash", "part2_qwen38_vid_doctor", "part2_qwen38_novid_doctor")):
     gv = grades[nm]
-    gb = {v: 1.0 if d.get("grade") == "exact" else 0.0 for v, d in json.load(open(os.environ.get("DDX_WORK", "/tmp") + "/fulljudge_%s.json" % bt)).items()}
+    gb = {v: 1.0 if d.get("grade") in ACCURATE else 0.0 for v, d in json.load(open(os.environ.get("DDX_WORK", "/tmp") + "/fulljudge_%s.json" % bt)).items()}
     diff = {v: gv.get(v, 0.0) - gb.get(v, 0.0) for v in vids}
     a = boot(diff)
     b = boot(diff, cluster=True)

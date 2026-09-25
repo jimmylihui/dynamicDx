@@ -13,6 +13,7 @@ import json
 import os
 import random
 import sys
+ACCURATE = {"accurate", "exact"}   # grade names: current grader / earlier result files
 
 B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 NB = int(sys.argv[1]) if len(sys.argv) > 1 else 10000
@@ -31,7 +32,7 @@ def judge(root):
 
 
 def load(root):
-    """per case: (exact 0/1, decisive obtained, decisive available)"""
+    """per case: (accurate 0/1, decisive obtained, decisive available)"""
     j = judge(root)
     if j is None:
         return None
@@ -41,7 +42,7 @@ def load(root):
         v = d.get("video")
         if not v or not (j.get(v) or {}).get("grade"):
             continue
-        out[v] = (1 if j[v]["grade"] == "exact" else 0,
+        out[v] = (1 if j[v]["grade"] in ACCURATE else 0,
                   len(set(d.get("decisive_served") or [])), d.get("n_decisive", 0))
     return out
 
@@ -127,7 +128,7 @@ for name, tag, _ in MODELS:
     lo, hi = boot(base, lit, ks, d_exact)
     dd = d_dec([(base[k], lit[k]) for k in ks])
     dlo, dhi = boot(base, lit, ks, d_dec)
-    print("%-13s n=%-3d  exact %+5.1f [%+5.1f,%+5.1f]   decisive %+5.1f [%+5.1f,%+5.1f]"
+    print("%-13s n=%-3d  accurate %+5.1f [%+5.1f,%+5.1f]   decisive %+5.1f [%+5.1f,%+5.1f]"
           % (name, len(ks), d, lo, hi, dd, dlo, dhi))
 
 print()
@@ -144,5 +145,5 @@ for name, tag, short in MODELS:
     lo, hi = boot(base, lie, ks, d_exact)
     dd = d_dec([(base[k], lie[k]) for k in ks])
     dlo, dhi = boot(base, lie, ks, d_dec)
-    print("%-13s n=%-3d  exact %+5.1f [%+5.1f,%+5.1f]   decisive %+5.1f [%+5.1f,%+5.1f]"
+    print("%-13s n=%-3d  accurate %+5.1f [%+5.1f,%+5.1f]   decisive %+5.1f [%+5.1f,%+5.1f]"
           % (name, len(ks), d, lo, hi, dd, dlo, dhi))

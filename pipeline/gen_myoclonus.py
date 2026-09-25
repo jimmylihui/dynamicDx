@@ -13,38 +13,48 @@ PANEL = {
     # added 2026-07-31: the line had no genetic entry, so the progressive myoclonic epilepsies
     # could not be excluded even in principle
     "progressive myoclonic epilepsy gene panel (EPM1/CSTB, EPM2A, NHLRC1, KCNC1)":
-        {"tier": "blood"},
-    "observation of the jerks": {"tier": "bedside"},
-    "provocation by action or posture": {"tier": "bedside"},
-    "provocation by startle": {"tier": "bedside"},
-    "effect of sleep": {"tier": "bedside"},
-    "medication review": {"tier": "bedside"},
-    "cognitive screen (MMSE / ACE-R)": {"tier": "bedside"},
-    "vital signs": {"tier": "bedside"},
-    "full blood count": {"tier": "blood"},
-    "renal function (urea, creatinine)": {"tier": "blood"},
-    "liver function and ammonia": {"tier": "blood"},
-    "electrolytes (Na, K, Ca, Mg)": {"tier": "blood"},
-    "glucose": {"tier": "blood"},
-    "TSH / free T4": {"tier": "blood"},
-    "vitamin B12 / folate": {"tier": "blood"},
-    "copper / caeruloplasmin": {"tier": "blood"},
-    "coeliac serology (tissue transglutaminase IgA)": {"tier": "blood"},
-    "autoimmune and paraneoplastic antibody panel": {"tier": "blood"},
-    "anti-measles antibody titres (serum)": {"tier": "blood"},
-    "toxicology screen": {"tier": "blood"},
-    "ESR / CRP": {"tier": "blood"},
-    "HIV / syphilis serology": {"tier": "blood"},
-    "brain MRI": {"tier": "imaging"},
-    "MRI brainstem / dentato-rubro-olivary pathway": {"tier": "imaging"},
-    "CT chest / abdomen / pelvis (occult tumour)": {"tier": "imaging"},
-    "EEG": {"tier": "invasive"},
-    "EEG-EMG polygraphy (back-averaging)": {"tier": "invasive"},
-    "somatosensory evoked potentials": {"tier": "invasive"},
-    "EMG burst duration": {"tier": "invasive"},
-    "lumbar puncture / CSF": {"tier": "invasive"},
-    "CSF 14-3-3 / RT-QuIC (prion)": {"tier": "invasive"},
-    "upper GI endoscopy with duodenal biopsy": {"tier": "invasive"},
+        {"v": "no pathogenic variant", "p": "derived", "tier": "blood"},
+    "observation of the jerks": {"v": "brief shock-like jerks", "p": "derived", "tier": "bedside"},
+    "provocation by action or posture": {"v": "not clearly action-sensitive", "p": "derived",
+                                         "tier": "bedside"},
+    "provocation by startle": {"v": "no startle sensitivity", "p": "derived", "tier": "bedside"},
+    "effect of sleep": {"v": "jerks disappear in sleep", "p": "derived", "tier": "bedside"},
+    "medication review": {"v": "no culprit drug identified", "p": "derived", "tier": "bedside"},
+    "cognitive screen (MMSE / ACE-R)": {"v": "normal", "p": "derived", "tier": "bedside"},
+    "vital signs": {"v": "normal, afebrile", "p": "derived", "tier": "bedside"},
+    "full blood count": {"v": "normal", "p": "derived", "tier": "blood"},
+    "renal function (urea, creatinine)": {"v": "normal", "p": "derived", "tier": "blood"},
+    "liver function and ammonia": {"v": "normal", "p": "derived", "tier": "blood"},
+    "electrolytes (Na, K, Ca, Mg)": {"v": "normal", "p": "derived", "tier": "blood"},
+    "glucose": {"v": "normal", "p": "derived", "tier": "blood"},
+    "TSH / free T4": {"v": "normal", "p": "derived", "tier": "blood"},
+    "vitamin B12 / folate": {"v": "normal", "p": "derived", "tier": "blood"},
+    "copper / caeruloplasmin": {"v": "normal", "p": "derived", "tier": "blood"},
+    "coeliac serology (tissue transglutaminase IgA)": {"v": "negative", "p": "derived",
+                                                       "tier": "blood"},
+    "autoimmune and paraneoplastic antibody panel": {"v": "negative", "p": "derived",
+                                                     "tier": "blood"},
+    "anti-measles antibody titres (serum)": {"v": "not raised", "p": "derived", "tier": "blood"},
+    "toxicology screen": {"v": "negative", "p": "derived", "tier": "blood"},
+    "ESR / CRP": {"v": "normal", "p": "derived", "tier": "blood"},
+    "HIV / syphilis serology": {"v": "negative", "p": "derived", "tier": "blood"},
+    "brain MRI": {"v": "no relevant structural lesion", "p": "derived", "tier": "imaging"},
+    "MRI brainstem / dentato-rubro-olivary pathway": {"v": "normal; no inferior olivary "
+                                                          "hypertrophy", "p": "derived",
+                                                      "tier": "imaging"},
+    "CT chest / abdomen / pelvis (occult tumour)": {"v": "no malignancy", "p": "derived",
+                                                    "tier": "imaging"},
+    "EEG": {"v": "no epileptiform discharges", "p": "derived", "tier": "invasive"},
+    "EEG-EMG polygraphy (back-averaging)": {"v": "no cortical correlate preceding the jerks",
+                                            "p": "derived", "tier": "invasive"},
+    "somatosensory evoked potentials": {"v": "normal, no giant SSEP", "p": "derived",
+                                        "tier": "invasive"},
+    "EMG burst duration": {"v": "not recorded", "p": "derived", "tier": "invasive"},
+    "lumbar puncture / CSF": {"v": "normal cells, protein and glucose; no oligoclonal bands",
+                              "p": "derived", "tier": "invasive"},
+    "CSF 14-3-3 / RT-QuIC (prion)": {"v": "negative", "p": "derived", "tier": "invasive"},
+    "upper GI endoscopy with duodenal biopsy": {"v": "not performed", "p": "derived",
+                                                "tier": "invasive"},
 }
 
 CASES = [
@@ -68,6 +78,8 @@ CASES = [
    "observation of the jerks": {"v": "rhythmic palatal movements at 2-3 Hz with bilateral "
                                      "acoustic clicks, louder on the right", "p": "reported",
                                 "decisive": True},
+   "effect of sleep": {"v": "palatal tremor PERSISTS in sleep - characteristic of palatal tremor "
+                            "rather than true myoclonus", "p": "derived", "decisive": True},
    "MRI brainstem / dentato-rubro-olivary pathway": {"v": "inflammatory brainstem involvement in "
                                                          "the Guillain-Mollaret triangle",
                                                      "p": "reported", "decisive": True},
@@ -183,6 +195,8 @@ CASES = [
                                                "contractures developed afterwards", "p": "reported",
                                           "tier": "bedside", "decisive": True},
    "brain MRI": {"v": "hypoxic-ischaemic injury", "p": "reported", "decisive": True},
+   "CSF 14-3-3 / RT-QuIC (prion)": {"v": "negative - excludes Creutzfeldt-Jakob disease",
+                                    "p": "derived", "decisive": True},
    "modified Ashworth scale (spasticity)": {"v": "grade 3 in both upper and lower limbs before "
                                                 "treatment; improved to grade 1+ in the upper "
                                                 "limbs and grade 2 in the lower limbs after "
@@ -195,6 +209,8 @@ CASES = [
    "joint range of motion": {"v": "multiple contractures of shoulders, elbows, wrists, hips, "
                                   "knees and ankles; unchanged by treatment", "p": "reported",
                              "tier": "bedside"},
+   "EEG": {"v": "diffuse encephalopathic changes without periodic sharp wave complexes",
+           "p": "derived"},
   },
   dont_miss="Post-hypoxic myoclonus is disabling but treatable symptomatically; intrathecal "
             "baclofen relieved the jerks, the sleep disturbance and the distress even when "
@@ -233,6 +249,7 @@ CASES = [
                                                      "4-12 years later, but onset here was in "
                                                      "adulthood", "p": "reported",
                                                  "tier": "bedside", "decisive": True},
+   "CSF 14-3-3 / RT-QuIC (prion)": {"v": "negative", "p": "derived"},
    "observation of the jerks": {"v": "periodic myoclonus with a SLOW relaxation phase involving "
                                      "bilateral shoulder abductors and hip flexors",
                                 "p": "reported", "decisive": True},

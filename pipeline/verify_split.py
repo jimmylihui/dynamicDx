@@ -1,6 +1,7 @@
 """Verify the duplicate candidates that split the decisive flag, one pair at a time.
 
-A list-against-list pass over-fires, so each pair is judged alone. Only pairs confirmed as the same investigation are a defect; the rest are
+Reuses the pairwise question of verify_dupes.py: a list-against-list pass over-fires, so each pair
+is judged alone. Only pairs confirmed as the same investigation are a defect; the rest are
 different tests that happen to share words.
 """
 import json

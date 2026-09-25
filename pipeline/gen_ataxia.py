@@ -1,46 +1,60 @@
 """Build the ataxia cases on documented aetiologies.
 
-The line panel names the tests an ataxia work-up draws on, with their tier and no values. Each
-case's chart holds only the results its own article reports, and flags the ones that actually
-decide the diagnosis.
+Two layers. The line panel is the menu every ataxia case offers, so ordering behaviour is
+comparable across cases; its entries carry the result a patient with this presentation would
+normally have. Each case then overrides the entries its own article reports, and flags the ones
+that actually decide the diagnosis.
+
+Provenance is explicit: "reported" means the value appears in the source article, "derived" means
+it is the expected result for this presentation and was not measured in that paper.
 """
-from genlib import build
+import json
+import os
+import re
 
 LINE = "ataxia"
 
 PANEL = {
-    "gait examination": {"tier": "bedside"},
-    "finger-nose / heel-shin testing": {"tier": "bedside"},
-    "Romberg test": {"tier": "bedside"},
-    "bedside eye-movement exam": {"tier": "bedside"},
-    "SARA score": {"tier": "bedside"},
-    "vital signs": {"tier": "bedside"},
-    "full blood count": {"tier": "blood"},
-    "renal and liver function": {"tier": "blood"},
-    "electrolytes (Na, K, Ca, Mg)": {"tier": "blood"},
-    "glucose / HbA1c": {"tier": "blood"},
-    "TSH / free T4": {"tier": "blood"},
-    "vitamin B12 / folate": {"tier": "blood"},
-    "vitamin E": {"tier": "blood"},
-    "serum thiamine (vitamin B1)": {"tier": "blood"},
-    "copper / caeruloplasmin": {"tier": "blood"},
-    "serum lithium and drug levels": {"tier": "blood"},
-    "alcohol history / GGT / CDT": {"tier": "blood"},
-    "ESR / CRP": {"tier": "blood"},
-    "coeliac serology (anti-TTG)": {"tier": "blood"},
-    "paraneoplastic antibody panel (serum)": {"tier": "blood"},
-    "anti-GQ1b / anti-ganglioside antibodies": {"tier": "blood"},
-    "anti-GAD antibodies": {"tier": "blood"},
-    "HIV / syphilis serology": {"tier": "blood"},
-    "genetic ataxia panel": {"tier": "blood"},
-    "brain MRI": {"tier": "imaging"},
-    "MR angiography (posterior circulation)": {"tier": "imaging"},
-    "CT chest / abdomen / pelvis (occult tumour)": {"tier": "imaging"},
-    "FDG-PET (occult tumour)": {"tier": "imaging"},
-    "lumbar puncture / CSF": {"tier": "invasive"},
-    "nerve conduction studies / EMG": {"tier": "invasive"},
-    "EEG": {"tier": "invasive"},
-    "somatosensory evoked potentials": {"tier": "invasive"},
+    "gait examination": {"v": "wide-based, unsteady gait", "p": "derived", "tier": "bedside"},
+    "finger-nose / heel-shin testing": {"v": "dysmetria", "p": "derived", "tier": "bedside"},
+    "Romberg test": {"v": "negative - swaying is not worse with the eyes closed",
+                     "p": "derived", "tier": "bedside"},
+    "bedside eye-movement exam": {"v": "normal", "p": "derived", "tier": "bedside"},
+    "SARA score": {"v": "not recorded", "p": "derived", "tier": "bedside"},
+    "vital signs": {"v": "normal, afebrile", "p": "derived", "tier": "bedside"},
+    "full blood count": {"v": "normal", "p": "derived", "tier": "blood"},
+    "renal and liver function": {"v": "normal", "p": "derived", "tier": "blood"},
+    "electrolytes (Na, K, Ca, Mg)": {"v": "normal", "p": "derived", "tier": "blood"},
+    "glucose / HbA1c": {"v": "normal", "p": "derived", "tier": "blood"},
+    "TSH / free T4": {"v": "normal", "p": "derived", "tier": "blood"},
+    "vitamin B12 / folate": {"v": "normal", "p": "derived", "tier": "blood"},
+    "vitamin E": {"v": "normal", "p": "derived", "tier": "blood"},
+    "serum thiamine (vitamin B1)": {"v": "normal", "p": "derived", "tier": "blood"},
+    "copper / caeruloplasmin": {"v": "normal - excludes Wilson disease", "p": "derived",
+                                "tier": "blood"},
+    "serum lithium and drug levels": {"v": "not detected", "p": "derived", "tier": "blood"},
+    "alcohol history / GGT / CDT": {"v": "no alcohol excess; markers normal", "p": "derived",
+                                    "tier": "blood"},
+    "ESR / CRP": {"v": "normal", "p": "derived", "tier": "blood"},
+    "coeliac serology (anti-TTG)": {"v": "negative", "p": "derived", "tier": "blood"},
+    "paraneoplastic antibody panel (serum)": {"v": "negative", "p": "derived", "tier": "blood"},
+    "anti-GQ1b / anti-ganglioside antibodies": {"v": "negative", "p": "derived", "tier": "blood"},
+    "anti-GAD antibodies": {"v": "negative", "p": "derived", "tier": "blood"},
+    "HIV / syphilis serology": {"v": "negative", "p": "derived", "tier": "blood"},
+    "genetic ataxia panel": {"v": "no pathogenic repeat expansion or variant", "p": "derived",
+                             "tier": "blood"},
+    "brain MRI": {"v": "no cerebellar atrophy, no focal lesion", "p": "derived",
+                  "tier": "imaging"},
+    "MR angiography (posterior circulation)": {"v": "normal", "p": "derived", "tier": "imaging"},
+    "CT chest / abdomen / pelvis (occult tumour)": {"v": "no malignancy", "p": "derived",
+                                                   "tier": "imaging"},
+    "FDG-PET (occult tumour)": {"v": "no hypermetabolic lesion", "p": "derived",
+                                "tier": "imaging"},
+    "lumbar puncture / CSF": {"v": "normal cells, protein and glucose; no oligoclonal bands",
+                              "p": "derived", "tier": "invasive"},
+    "nerve conduction studies / EMG": {"v": "normal", "p": "derived", "tier": "invasive"},
+    "EEG": {"v": "normal", "p": "derived", "tier": "invasive"},
+    "somatosensory evoked potentials": {"v": "normal", "p": "derived", "tier": "invasive"},
 }
 
 CASES = [
@@ -106,6 +120,7 @@ CASES = [
    "paraneoplastic antibody panel (serum)": {"v": "negative in this patient (neuronal antibodies "
                                                  "are found in only about half of such cases)",
                                              "p": "reported"},
+   "brain MRI": {"v": "no structural lesion; cerebellar atrophy develops later", "p": "derived"},
    "CT chest / abdomen / pelvis (occult tumour)": {"v": "known anal squamous cell carcinoma; no "
                                                         "new lesion", "p": "reported"},
   },
@@ -208,6 +223,8 @@ CASES = [
    "FDG-PET (occult tumour)": {"v": "suspicious thymic and testicular sites; both were removed "
                                     "surgically and NO tumour was found", "p": "reported"},
    "CT chest / abdomen / pelvis (occult tumour)": {"v": "no tumour identified", "p": "reported"},
+   "levodopa trial": {"v": "no meaningful response", "p": "derived", "tier": "bedside"},
+   "brain MRI": {"v": "no structural lesion accounting for the syndrome", "p": "derived"},
   },
   dont_miss="Rapidly progressive PSP-like disease in a young patient is paraneoplastic until "
             "proven otherwise - send anti-Ri and hunt for a tumour; immunotherapy is the "
@@ -254,7 +271,101 @@ CASES = [
            "ophthalmoplegia - the triad is complete in a minority of patients"),
 ]
 
-# this line was written before genlib and states the trial rule without the examples
-build(LINE, PANEL, CASES, explicit_only_rule=(
-    "Entries flagged explicit_only are therapeutic trials, not tests. Return one only when the "
-    "doctor names that specific trial. A blanket or category-level request returns nothing."))
+
+_HISTORY = re.compile(r"history|clinical course|course /|follow.?up", re.I)
+_TRIAL = re.compile(r"\btrial\b|\bchallenge\b", re.I)
+
+
+def _is_trial(key):
+    """A therapeutic trial is an intervention the doctor gives the patient.
+
+    Matching on the words trial/challenge alone over-fires: "clinical course",
+    "tuberculosis treatment history" and the functional-sign entry "suggestibility / sham stimulus
+    (tuning fork or vibration applied as 'treatment')" are history or bedside examination, not
+    interventions, and flagging them would let the harness withhold a plain history question.
+    """
+    return bool(_TRIAL.search(key)) and not _HISTORY.search(key)
+
+
+def _neutral(key, tier):
+    """What a sibling case returns for a test it never had."""
+    if _HISTORY.search(key):
+        return "not recorded"
+    if _is_trial(key):
+        return "not tried"
+    if tier in ("imaging", "invasive"):
+        return "not performed"
+    return "normal / non-contributory"
+
+# Promote every key any case overrides into the shared menu, so the menu itself cannot identify
+# the case. Written out here rather than imported because this file predates genlib.
+_GENERIC = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                       "generic_panel.json")))["entries"]
+_GVALS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                     "generic_values.json")))
+_GDROP = set(json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                        "generic_drop.json"))).get(LINE, []))
+for _k, _t in _GENERIC.items():
+    if _k not in _GDROP:                          # this line already has that test
+        PANEL.setdefault(_k, {"v": "normal", "p": "derived", "tier": _t})
+
+for _c in CASES:
+    for _k, _v in _c["inv"].items():
+        if _k not in PANEL:
+            _t = _v.get("tier", "blood")
+            PANEL[_k] = {"v": _neutral(_k, _t), "p": "derived", "tier": _t}
+for _k in PANEL:
+    if _is_trial(_k):
+        PANEL[_k]["explicit_only"] = True
+
+
+def build(c):
+    inv = {k: dict(v) for k, v in PANEL.items()}
+    for k, v in (_GVALS.get(c["video"]) or {}).items():
+        if k in PANEL and k in _GENERIC and k not in c["inv"]:
+            inv[k] = {"v": v, "p": "derived", "tier": _GENERIC[k]}
+    for k, v in c["inv"].items():
+        base = inv.get(k, {"tier": v.get("tier", "blood")})
+        base.update(v)
+        base.setdefault("tier", "blood")
+        if _is_trial(k):
+            base["explicit_only"] = True
+        inv[k] = base
+    table = {s: "yes" for s in c["yes"]}
+    table.update({s: "no" for s in c["no"]})
+    return dict(
+        video=c["video"], line=LINE,
+        source={"pmcid": c["pmcid"]},
+        true_diagnosis=c["dx"],
+        part1_video_only=dict(task="name the primary disease from the frames alone",
+                              visible_sign=c["sign"],
+                              accept_as_correct=c["correct"],
+                              accept_as_partial=c["partial"]),
+        part2_yes_no=dict(
+            answering_rule="Answer strictly yes or no. Use symptom_table; any feature not listed "
+                           "is answered NO.",
+            demographics=c["who"], symptom_table=table),
+        investigation_rules=dict(
+            default_for_unlisted="not performed / not available",
+            explicit_only="Entries flagged explicit_only are therapeutic trials, not tests. "
+                          "Return one only when the doctor names that specific trial. A blanket "
+                          "or category-level request returns nothing.",
+            fields="v value | p reported=from the source article, derived=expected for this "
+                   "presentation | tier bedside<blood<imaging<invasive | decisive=confirms or "
+                   "excludes | explicit_only=must be named individually"),
+        investigations=inv,
+        scoring=dict(treatable_dont_miss=c["dont_miss"], must_not_conclude=c["must_not"]))
+
+
+out = [build(c) for c in CASES]
+json.dump(out, open("cases_%s.json" % LINE, "w"), indent=1, ensure_ascii=False)
+for c in out:
+    inv = c["investigations"]
+    print("%-52s inv=%-3d reported=%-3d decisive=%d  yes/no=%d/%d"
+          % (c["video"][:52], len(inv),
+             sum(1 for v in inv.values() if v["p"] == "reported"),
+             sum(1 for v in inv.values() if v.get("decisive")),
+             sum(1 for v in c["part2_yes_no"]["symptom_table"].values() if v == "yes"),
+             sum(1 for v in c["part2_yes_no"]["symptom_table"].values() if v == "no")))
+assert len({frozenset(c["investigations"]) for c in out}) == 1, "menu differs across cases"
+print("\nwrote cases_%s.json (%d cases, identical %d-item menu)" % (LINE, len(out), len(PANEL)))

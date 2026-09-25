@@ -6,7 +6,7 @@ of the yes/no replies is flipped, the doctor orders investigations against the c
 the chart answers those orders, and the doctor diagnoses. A flip in either direction is a lie:
 no->yes invents a symptom the patient does not have, yes->no denies one it does.
 
-Output is written in the same schema as part2_full.py, so part2_full_judge.py grades it unchanged.
+Output is written in the same schema as part2_full.py, so part2_full_judge3.py grades it unchanged.
 
 usage: part2_lie2.py [NTHREADS]
 env:   ORKEY, SRCRUN, RATIO (percent of answers flipped), OUTROOT, MODEL, PROVIDER, REASONING

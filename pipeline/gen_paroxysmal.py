@@ -14,38 +14,48 @@ from genlib import build
 LINE = "paroxysmal"
 
 PANEL = {
-    "witnessed description of the event": {"tier": "bedside"},
-    "duration of the events": {"tier": "bedside"},
-    "time of day / relation to sleep": {"tier": "bedside"},
-    "trigger or provoking activity": {"tier": "bedside"},
-    "aura before the event": {"tier": "bedside"},
-    "awareness and recall during the event": {"tier": "bedside"},
-    "post-event confusion or sleepiness": {"tier": "bedside"},
-    "tongue biting, incontinence or injury": {"tier": "bedside"},
-    "stereotypy across events": {"tier": "bedside"},
-    "developmental and birth history": {"tier": "bedside"},
-    "family history of epilepsy or febrile convulsions": {"tier": "bedside"},
-    "head injury history": {"tier": "bedside"},
-    "medication and anaesthetic exposure": {"tier": "bedside"},
-    "cognitive screen (MMSE)": {"tier": "bedside"},
-    "neurological examination between events": {"tier": "bedside"},
-    "full blood count and biochemistry": {"tier": "blood"},
-    "glucose, calcium, magnesium, sodium": {"tier": "blood"},
-    "liver and renal function": {"tier": "blood"},
-    "toxicology and drug levels": {"tier": "blood"},
-    "metabolic screen (tandem mass spectrometry, urine organic acids)": {"tier": "blood"},
-    "autoimmune and paraneoplastic antibody panel": {"tier": "blood"},
-    "genetic testing (exome / epilepsy panel)": {"tier": "blood"},
-    "chromosomal microarray": {"tier": "blood"},
-    "brain MRI": {"tier": "imaging"},
-    "advanced diffusion imaging / tractography": {"tier": "imaging"},
-    "interictal EEG": {"tier": "invasive"},
-    "video-EEG monitoring of a typical event": {"tier": "invasive"},
-    "video-polygraphy (EEG with EMG)": {"tier": "invasive"},
-    "provocation testing (the suspected trigger)": {"tier": "invasive"},
-    "lumbar puncture / CSF": {"tier": "invasive"},
-    "CSF 14-3-3 / RT-QuIC (prion)": {"tier": "invasive"},
-    "antiseizure medication trial": {"tier": "bedside"},
+    "witnessed description of the event": {"v": "not obtained", "p": "derived", "tier": "bedside"},
+    "duration of the events": {"v": "not recorded", "p": "derived", "tier": "bedside"},
+    "time of day / relation to sleep": {"v": "no clear relation", "p": "derived",
+                                        "tier": "bedside"},
+    "trigger or provoking activity": {"v": "none identified", "p": "derived", "tier": "bedside"},
+    "aura before the event": {"v": "none", "p": "derived", "tier": "bedside"},
+    "awareness and recall during the event": {"v": "preserved", "p": "derived", "tier": "bedside"},
+    "post-event confusion or sleepiness": {"v": "none", "p": "derived", "tier": "bedside"},
+    "tongue biting, incontinence or injury": {"v": "none", "p": "derived", "tier": "bedside"},
+    "stereotypy across events": {"v": "events are stereotyped", "p": "derived", "tier": "bedside"},
+    "developmental and birth history": {"v": "unremarkable", "p": "derived", "tier": "bedside"},
+    "family history of epilepsy or febrile convulsions": {"v": "none", "p": "derived",
+                                                          "tier": "bedside"},
+    "head injury history": {"v": "none", "p": "derived", "tier": "bedside"},
+    "medication and anaesthetic exposure": {"v": "nothing relevant", "p": "derived",
+                                            "tier": "bedside"},
+    "cognitive screen (MMSE)": {"v": "normal", "p": "derived", "tier": "bedside"},
+    "neurological examination between events": {"v": "normal", "p": "derived", "tier": "bedside"},
+    "full blood count and biochemistry": {"v": "normal", "p": "derived", "tier": "blood"},
+    "glucose, calcium, magnesium, sodium": {"v": "normal", "p": "derived", "tier": "blood"},
+    "liver and renal function": {"v": "normal", "p": "derived", "tier": "blood"},
+    "toxicology and drug levels": {"v": "negative", "p": "derived", "tier": "blood"},
+    "metabolic screen (tandem mass spectrometry, urine organic acids)": {"v": "normal",
+                                                                        "p": "derived",
+                                                                        "tier": "blood"},
+    "autoimmune and paraneoplastic antibody panel": {"v": "negative", "p": "derived",
+                                                     "tier": "blood"},
+    "genetic testing (exome / epilepsy panel)": {"v": "no pathogenic variant", "p": "derived",
+                                                 "tier": "blood"},
+    "chromosomal microarray": {"v": "no copy number abnormality", "p": "derived", "tier": "blood"},
+    "brain MRI": {"v": "no epileptogenic lesion", "p": "derived", "tier": "imaging"},
+    "advanced diffusion imaging / tractography": {"v": "not performed", "p": "derived",
+                                                  "tier": "imaging"},
+    "interictal EEG": {"v": "no epileptiform discharges", "p": "derived", "tier": "invasive"},
+    "video-EEG monitoring of a typical event": {"v": "no ictal correlate captured",
+                                                "p": "derived", "tier": "invasive"},
+    "video-polygraphy (EEG with EMG)": {"v": "not performed", "p": "derived", "tier": "invasive"},
+    "provocation testing (the suspected trigger)": {"v": "not performed", "p": "derived",
+                                                    "tier": "invasive"},
+    "lumbar puncture / CSF": {"v": "normal", "p": "derived", "tier": "invasive"},
+    "CSF 14-3-3 / RT-QuIC (prion)": {"v": "negative", "p": "derived", "tier": "invasive"},
+    "antiseizure medication trial": {"v": "not started", "p": "derived", "tier": "bedside"},
 }
 
 STATUS_SHARED = {
@@ -100,6 +110,9 @@ CASES = [
    "genetic testing (exome / epilepsy panel)": {"v": "PRNP mutation - familial CJD, which accounts "
                                                     "for about 10-15% of cases and is most often "
                                                     "E200K", "p": "reported", "decisive": True},
+   "CSF 14-3-3 / RT-QuIC (prion)": {"v": "positive", "p": "derived", "decisive": True},
+   "antiseizure medication trial": {"v": "epilepsia partialis continua in CJD is typically "
+                                         "refractory to antiseizure drugs", "p": "derived"},
   },
   dont_miss="Epilepsia partialis continua that resists antiseizure drugs, with basal-ganglia and "
             "cortical restricted diffusion, is prion disease; the family history changes "
@@ -137,6 +150,7 @@ CASES = [
                                          "twice daily and levetiracetam 500 mg twice daily, with "
                                          "no relapse on follow-up", "p": "reported",
                                     "decisive": True},
+   "brain MRI": {"v": "no acute lesion", "p": "derived"},
   },
   dont_miss="Myoclonus appearing days after an anaesthetic is usually benign and self-limiting; "
             "recognise it so the patient is not labelled epileptic for life.",
@@ -297,6 +311,7 @@ CASES = [
                                           "decisive": True},
    "awareness and recall during the event": {"v": "the patient could not recall the events",
                                              "p": "reported"},
+   "brain MRI": {"v": "post-traumatic encephalomalacia", "p": "derived"},
   },
   dont_miss="A purposeful-looking movement in a limb that is too weak to perform it voluntarily "
             "is an ictal automatism; the mismatch between MMT 1 and the reaching movement is the "
@@ -360,6 +375,9 @@ CASES = [
   inv=dict(STATUS_SHARED, **{
    "family history of epilepsy or febrile convulsions": {"v": "personal history of febrile "
                                                               "convulsions", "p": "reported"},
+   "antiseizure medication trial": {"v": "responded to appropriate broad-spectrum antiseizure "
+                                         "medication - NOT refractory", "p": "derived",
+                                    "decisive": True},
   }),
   dont_miss="Ictal body turning in a generalized epilepsy is a semiological curiosity, not "
             "evidence of a focal onset; the treatment is a broad-spectrum drug.",
@@ -385,6 +403,9 @@ CASES = [
       "the events are triggered by a specific activity", "recent infection", "fever now",
       "continuous twitching of one hand", "a recent anaesthetic"],
   inv=dict(STATUS_SHARED, **{
+   "awareness and recall during the event": {"v": "awareness recovers between seizures - this is "
+                                                  "not status epilepticus", "p": "derived",
+                                             "decisive": True},
    "family history of epilepsy or febrile convulsions": {"v": "family history of epilepsy",
                                                          "p": "reported"},
   }),

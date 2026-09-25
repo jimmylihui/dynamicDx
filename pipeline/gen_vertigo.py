@@ -14,40 +14,49 @@ from genlib import build
 LINE = "vertigo_central"
 
 PANEL = {
-    "nystagmus: direction and whether it changes with gaze": {"tier": "bedside"},
-    "smooth pursuit and saccades": {"tier": "bedside"},
-    "adduction in horizontal gaze (each eye)": {"tier": "bedside"},
-    "abducting nystagmus of the fellow eye": {"tier": "bedside"},
-    "vertical gaze and convergence": {"tier": "bedside"},
-    "skew deviation / alternating cover test": {"tier": "bedside"},
-    "ocular torsion and head tilt": {"tier": "bedside"},
-    "subjective visual vertical": {"tier": "bedside"},
-    "head impulse test": {"tier": "bedside"},
-    "pupil size and light reaction": {"tier": "bedside"},
-    "ptosis / lid position": {"tier": "bedside"},
-    "limb and truncal ataxia": {"tier": "bedside"},
-    "gait and tandem walking": {"tier": "bedside"},
-    "hearing and tinnitus": {"tier": "bedside"},
-    "facial dysmorphism and general examination": {"tier": "bedside"},
-    "full blood count and biochemistry": {"tier": "blood"},
-    "glucose / HbA1c": {"tier": "blood"},
-    "lipids and vascular risk assessment": {"tier": "blood"},
-    "ESR / CRP": {"tier": "blood"},
-    "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)": {"tier": "blood"},
-    "paraneoplastic and autoimmune antibody panel (serum)": {"tier": "blood"},
-    "anti-acetylcholine receptor antibodies": {"tier": "blood"},
-    "TSH / free T4": {"tier": "blood"},
-    "genetic testing (exome)": {"tier": "blood"},
-    "MRI brain with DWI": {"tier": "imaging"},
-    "MRI sella and orbits": {"tier": "imaging"},
-    "CT head (non-contrast)": {"tier": "imaging"},
-    "CT / MR angiography (posterior circulation)": {"tier": "imaging"},
-    "CT chest / abdomen / pelvis (occult tumour)": {"tier": "imaging"},
-    "visual fields (perimetry)": {"tier": "imaging"},
-    "lumbar puncture / CSF": {"tier": "invasive"},
-    "CSF metagenomic sequencing": {"tier": "invasive"},
-    "EEG": {"tier": "invasive"},
-    "forced duction test": {"tier": "invasive"},
+    "nystagmus: direction and whether it changes with gaze": {"v": "no nystagmus", "p": "derived",
+                                                              "tier": "bedside"},
+    "smooth pursuit and saccades": {"v": "normal", "p": "derived", "tier": "bedside"},
+    "adduction in horizontal gaze (each eye)": {"v": "full", "p": "derived", "tier": "bedside"},
+    "abducting nystagmus of the fellow eye": {"v": "absent", "p": "derived", "tier": "bedside"},
+    "vertical gaze and convergence": {"v": "normal", "p": "derived", "tier": "bedside"},
+    "skew deviation / alternating cover test": {"v": "no vertical misalignment", "p": "derived",
+                                                "tier": "bedside"},
+    "ocular torsion and head tilt": {"v": "none", "p": "derived", "tier": "bedside"},
+    "subjective visual vertical": {"v": "within normal limits", "p": "derived", "tier": "bedside"},
+    "head impulse test": {"v": "normal - no corrective saccade", "p": "derived", "tier": "bedside"},
+    "pupil size and light reaction": {"v": "equal and reactive", "p": "derived", "tier": "bedside"},
+    "ptosis / lid position": {"v": "none", "p": "derived", "tier": "bedside"},
+    "limb and truncal ataxia": {"v": "absent", "p": "derived", "tier": "bedside"},
+    "gait and tandem walking": {"v": "normal", "p": "derived", "tier": "bedside"},
+    "hearing and tinnitus": {"v": "normal", "p": "derived", "tier": "bedside"},
+    "facial dysmorphism and general examination": {"v": "unremarkable", "p": "derived",
+                                                   "tier": "bedside"},
+    "full blood count and biochemistry": {"v": "normal", "p": "derived", "tier": "blood"},
+    "glucose / HbA1c": {"v": "normal", "p": "derived", "tier": "blood"},
+    "lipids and vascular risk assessment": {"v": "normal", "p": "derived", "tier": "blood"},
+    "ESR / CRP": {"v": "normal", "p": "derived", "tier": "blood"},
+    "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)": {"v": "all negative", "p": "derived",
+                                                           "tier": "blood"},
+    "paraneoplastic and autoimmune antibody panel (serum)": {"v": "negative", "p": "derived",
+                                                             "tier": "blood"},
+    "anti-acetylcholine receptor antibodies": {"v": "negative", "p": "derived", "tier": "blood"},
+    "TSH / free T4": {"v": "normal", "p": "derived", "tier": "blood"},
+    "genetic testing (exome)": {"v": "no pathogenic variant", "p": "derived", "tier": "blood"},
+    "MRI brain with DWI": {"v": "no acute infarct, no lesion", "p": "derived", "tier": "imaging"},
+    "MRI sella and orbits": {"v": "normal pituitary and orbits", "p": "derived", "tier": "imaging"},
+    "CT head (non-contrast)": {"v": "normal", "p": "derived", "tier": "imaging"},
+    "CT / MR angiography (posterior circulation)": {"v": "normal", "p": "derived",
+                                                    "tier": "imaging"},
+    "CT chest / abdomen / pelvis (occult tumour)": {"v": "no malignancy", "p": "derived",
+                                                    "tier": "imaging"},
+    "visual fields (perimetry)": {"v": "full", "p": "derived", "tier": "imaging"},
+    "lumbar puncture / CSF": {"v": "normal cells and protein; no oligoclonal bands",
+                              "p": "derived", "tier": "invasive"},
+    "CSF metagenomic sequencing": {"v": "no pathogen sequences", "p": "derived",
+                                   "tier": "invasive"},
+    "EEG": {"v": "normal", "p": "derived", "tier": "invasive"},
+    "forced duction test": {"v": "not performed", "p": "derived", "tier": "invasive"},
 }
 
 CASES = [
@@ -82,6 +91,10 @@ CASES = [
                                                        "cerebral artery", "p": "reported"},
    "glucose / HbA1c": {"v": "fasting glucose 10.88 mmol/L (ref 3.89-6.11) and HbA1c 9% (ref 4-6) "
                             "- uncontrolled diabetes", "p": "reported"},
+   "MRI sella and orbits": {"v": "normal - no parasellar or suprasellar mass", "p": "derived",
+                            "decisive": True},
+   "visual fields (perimetry)": {"v": "FULL - no bitemporal hemianopia, so no chiasmal "
+                                      "compression", "p": "derived"},
   },
   dont_miss="See-saw nystagmus is central, and the accompanying INO localises it to the pons - "
             "this is a posterior-circulation stroke needing urgent DWI and secondary prevention, "
@@ -155,6 +168,8 @@ CASES = [
                                "p": "reported", "decisive": True},
    "diffusion tensor imaging": {"v": "horizontally aligned superior cerebellar peduncles with "
                                      "lack of decussation", "p": "reported", "tier": "imaging"},
+   "renal and retinal screening": {"v": "required - ciliopathies involve kidney and retina",
+                                   "p": "derived", "tier": "imaging"},
   },
   dont_miss="Ocular motor apraxia with head thrusts in a developmentally delayed child means "
             "imaging for the molar tooth sign; Joubert syndrome needs kidney and retinal "
@@ -188,6 +203,10 @@ CASES = [
    "limb and truncal ataxia": {"v": "truncal ataxia, mild dysmetria and an ataxic gait",
                                "p": "reported"},
    "paraneoplastic and autoimmune antibody panel (serum)": {"v": "negative", "p": "reported"},
+   "MRI brain with DWI": {"v": "no acute lesion", "p": "derived"},
+   "CT chest / abdomen / pelvis (occult tumour)": {"v": "no malignancy - argues against a "
+                                                       "paraneoplastic cause", "p": "derived",
+                                                   "decisive": True},
   },
   dont_miss="Ocular flutter after an infection is a treatable immune-mediated syndrome; send the "
             "full ganglioside panel, because anti-GT1a can be positive when anti-GQ1b is not.",
@@ -346,6 +365,10 @@ CASES = [
    "MRI sella and orbits": {"v": "subtle MEDIAL ORBITAL WALL FRACTURE with medial rectus "
                                  "involvement; no brainstem pathology", "p": "reported",
                             "decisive": True},
+   "forced duction test": {"v": "restriction consistent with a mechanical cause", "p": "derived",
+                           "decisive": True},
+   "anti-acetylcholine receptor antibodies": {"v": "negative - excludes ocular myasthenia, the "
+                                                  "commonest cause of pseudo-INO", "p": "derived"},
    "clinical course": {"v": "managed conservatively with gradual improvement in motility and "
                             "resolution of diplopia over two weeks", "p": "reported",
                        "tier": "bedside"},
@@ -388,6 +411,7 @@ CASES = [
    "diffusion tensor tractography": {"v": "reduced integrity of the IPSILATERAL medial "
                                           "longitudinal fasciculus", "p": "reported",
                                      "tier": "imaging", "decisive": True},
+   "CT / MR angiography (circle of Willis)": {"v": "no aneurysm", "p": "derived", "decisive": True},
    "treatment": {"v": "dual antiplatelet therapy", "p": "reported", "tier": "bedside"},
   },
   dont_miss="Pupil-sparing does not mean microvascular: a small midbrain infarct produces the same "

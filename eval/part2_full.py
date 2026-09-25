@@ -13,8 +13,9 @@ judge rather than the doctor.
 Three rules are enforced against the doctor:
   - the patient answers yes / no only for features the record documents as present / absent, and
     unknown otherwise: a feature the record does not mention is never answered no
-  - the chart holds only results the source article reports; an investigation it does not
-    hold returns "not performed / not available"
+  - the chart holds the case's fixed entries: results the source article reports (p: reported)
+    and, on the shared line menu, values expected for the presentation (p: derived); an
+    investigation it does not hold returns "not performed / not available"
   - a therapeutic trial is returned only when named specifically, never for a blanket request
 
 usage: part2_full.py [NTHREADS]
