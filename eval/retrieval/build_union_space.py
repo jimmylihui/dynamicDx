@@ -1,24 +1,22 @@
-"""Build the candidate space the deployed system would actually have.
+"""Candidate list for the retrieval conditions (Section 3.5.2): the model's own video-only
+differential followed by the retrieved causes.
 
-Section 5.2 showed the model's own differential and literature retrieval recover different
-patients: they agree on 5-7 clips and retrieval adds 5-11 the model never proposed, so the union
-covers 7-16 points more than either alone. The Part 2 model arm was given only the retrieved half,
-and gained nothing. This builds the union - the diagnoses the model itself offered from the video,
-followed by the causes retrieved for the sign it described - so the consultation can be run on the
-candidate set that actually has the better coverage.
+The model's own hypotheses are extracted once from its K=32 Stage 1 answer by a DeepSeek prompt
+that only lists what is there, and cached in own_dx_<TAG>.json (the Own candidates list), so that
+Original, Source-clean and Strict no-answer all start from the same own differential.
 
-The model's own hypotheses are extracted from its K=32 free-prose answer by a judge that only
-lists what is there.
+usage: TAG=luna SPACEFILE=<openspace.py output> [ANSROOT=part1_luna] [OUTFILE=...] build_union_space.py
 """
 import glob
 import json
 import os
 import re
+import sys
 import threading
 import time
 import urllib.request
 
-B = os.environ.get("DDX_ROOT", ".")
+B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 ORKEY = os.environ["ORKEY"]
 JUDGE = os.environ.get("JUDGE", "deepseek/deepseek-v4.1-flash")
 JPROV = os.environ.get("JPROVIDER", "")
@@ -34,18 +32,24 @@ uses; do not add, rename, or infer any diagnosis it did not state.
 
 Reply with ONLY a JSON array of strings."""
 
-SPACEFILE = os.environ.get("SPACEFILE", os.environ.get("DDX_WORK", "/tmp") + "/openspace_part1_oldp_%s.json" % TAG)
-OUTFILE = os.environ.get("OUTFILE", os.environ.get("DDX_WORK", "/tmp") + "/openspace_union.json")
+SPACEFILE = os.environ.get("SPACEFILE", os.environ.get("DDX_WORK", "/tmp") + "/openspace_part1_%s_clean.json" % TAG)   # drive_decontam.sh output
+OUTFILE = os.environ.get("OUTFILE", os.path.join(os.path.dirname(SPACEFILE),
+                         "union_" + os.path.basename(SPACEFILE)))   # one file per filter
 space = json.load(open(SPACEFILE))
 answers = {}
-ANSROOT = os.environ.get("ANSROOT", "part1_oldp_%s" % TAG)
+ANSROOT = os.environ.get("ANSROOT", "part1_%s" % TAG)
 for f in glob.glob("%s/results/%s/*/*.json" % (B, ANSROOT)):
     d = json.load(open(f))
     if d.get("k") == 32 and (d.get("ans") or d.get("raw")):
         answers[os.path.basename(f).split("__")[0] + ".mp4"] = d.get("ans") or d.get("raw")
 
+OWNFILE = os.environ.get("OWNFILE", os.environ.get("DDX_WORK", "/tmp") + "/own_dx_%s.json" % TAG)
 out, lock = {}, threading.Lock()
-q = list(answers.items())
+if os.path.exists(OWNFILE):                        # extracted once, reused by every filter
+    out = json.load(open(OWNFILE))
+q = [(v, a) for v, a in answers.items() if v not in out]
+if not answers and not out:
+    sys.exit("no Stage 1 answers under results/%s (set ANSROOT)" % ANSROOT)
 
 
 def ask(p):
@@ -81,7 +85,7 @@ def work():
 ts = [threading.Thread(target=work) for _ in range(8)]
 [t.start() for t in ts]
 [t.join() for t in ts]
-json.dump(out, open(os.environ.get("DDX_WORK", "/tmp") + "/own_dx_%s.json" % TAG, "w"), indent=1, ensure_ascii=False)
+json.dump(out, open(OWNFILE, "w"), indent=1, ensure_ascii=False)
 
 union = {}
 for vid, own in out.items():
@@ -96,7 +100,7 @@ for vid, own in out.items():
         union[vid] = dict(line=(space.get(vid) or {}).get("line"), causes=merged,
                           n_own=len(own), n_ret=len(ret))
 json.dump(union, open(OUTFILE, "w"), indent=1, ensure_ascii=False)
-n = len(union)
+n = max(len(union), 1)
 print("cases with a union space : %d" % n)
 print("own hypotheses per case  : %.1f" % (sum(v["n_own"] for v in union.values()) / n))
 print("retrieved causes per case: %.1f" % (sum(v["n_ret"] for v in union.values()) / n))

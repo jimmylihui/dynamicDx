@@ -43,6 +43,8 @@ JUDGE = os.environ.get("JUDGE", "deepseek/deepseek-v4.1-flash")
 PROVIDER = os.environ.get("PROVIDER", "OpenAI")
 JPROVIDER = os.environ.get("JPROVIDER", "")
 REASONING = json.loads(os.environ.get("REASONING", '{"enabled": false}'))
+# the DeepSeek matcher and grader decode the same way in every run, whatever the model under test does
+JUDGE_REASONING = json.loads(os.environ.get("JUDGE_REASONING", '{"enabled": false}'))
 # 0 = send no max_tokens at all and let the provider decide
 MAXTOK = int(os.environ.get("MAXTOK", "-1"))
 TIMEOUT = int(os.environ.get("TIMEOUT", "300"))
@@ -83,13 +85,15 @@ SHUFFLE_SEED = int(os.environ.get("SHUFFLE_SEED", "0"))   # paper: three permuta
 CHIEF = os.environ.get("CHIEF", "0") == "1"
 OUTROOT = os.environ.get("OUTROOT", "part2_full_" + SPACE + ("_shuf%d" % SHUFFLE_SEED if SHUFFLE else ""))
 FF = os.environ.get("FFMPEG", "ffmpeg")
-SRC = {"model": os.environ.get("DDX_WORK", "/tmp") + "/openspace_part1_oldp_luna.json",
-       "oracle": os.environ.get("DDX_WORK", "/tmp") + "/openspace_oracle.json",
-       # the model own hypotheses followed by the retrieved causes: the two recover different
-       # patients, so their union is what a deployed system would actually hold
-       "union": os.environ.get("DDX_WORK", "/tmp") + "/openspace_union.json",
-       "union_old": os.environ.get("DDX_WORK", "/tmp") + "/openspace_union_old.json",
-       "union_own": os.environ.get("UNIONFILE", "")}.get(SPACE)
+# Retrieval conditions and their list controls (Section 3.5.2): SPACE=union_own UNIONFILE=<list>,
+# where the list is the model's own video-only differential followed by the retrieved causes
+# (build_union_space.py), the own differential alone (Own candidates) or the mismatched list
+# (build_mismatched.py). Like Own words, these conditions start Stage 2 from the model's Stage 1
+# output instead of the video (Section 3.2): its own description of the sign (SELFFILE, from
+# eval/stage1_description.py) followed by the candidate list, without frames.
+SRC = os.environ.get("UNIONFILE", "") if SPACE != "none" else ""
+if SRC and not SELFFILE:
+    sys.exit("the retrieval conditions need SELFFILE=<eval/stage1_description.py output>")
 
 CAND = """A literature search on the signs visible in this video returned the following reported causes.
 The list is not guaranteed to contain this patient's cause, and most entries in it are wrong for
@@ -296,7 +300,8 @@ def frames(p, k, tmp):
 
 def post(model, messages, mx, imgs=0):
     payload = {"model": model, "temperature": 0, "messages": messages,
-               "reasoning": REASONING, "usage": {"include": True},
+               "reasoning": JUDGE_REASONING if (model == JUDGE and JUDGE != MODEL) else REASONING,
+               "usage": {"include": True},
                **({"provider": {"order": [_prov(model)], "allow_fallbacks": False, "sort": "price"}} if _prov(model) else {})}
     cap = mx if MAXTOK < 0 else MAXTOK
     if cap:
@@ -346,8 +351,8 @@ space = json.load(open(SRC)) if SRC else {}
 # candidate files are {video: {"causes": [...]}}; own-candidate lists ({video: [...]}) are accepted too
 space = {k: (v if isinstance(v, dict) else {"causes": v}) for k, v in space.items()}
 cases = json.load(open(B + "/data/cases.json"))
-todo = [c for c in cases if not SRC or space.get(c["video"], {}).get("causes")]
-# a case without candidates is not run; downstream scoring counts it as not accurate (denominator 71)
+# every case is run; a case whose list is empty gets no candidate block
+todo = list(cases)
 print("SPACE=%s -> %d cases -> results/%s" % (SPACE, len(todo), OUTROOT), flush=True)
 lock = threading.Lock()
 
@@ -364,10 +369,10 @@ def run(c):
     cands = space.get(c["video"], {}).get("causes") if SRC else None
     head = CAND % "; ".join(cands) if cands else ""
 
-    if SIGNTEXT:
+    if SIGNTEXT or SRC:
         b64 = []
-        sign = (selfsign.get(c["video"]) if SIGNTEXT == "self"
-                else c["part1_video_only"]["visible_sign"])
+        sign = (c["part1_video_only"]["visible_sign"] if SIGNTEXT == "gt"
+                else selfsign.get(c["video"]))
         if not sign or sign.strip().upper() == "NONE":
             return dict(error="no self description")
         body = T1_TEXT % sign

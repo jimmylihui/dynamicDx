@@ -172,7 +172,7 @@ DROP = ANATOMY
 # free wording rather than the canonical label.
 _VOC = json.load(open(os.environ.get("DDX_WORK", "/tmp") + "/hpo_vocab.json"))
 _icv = os.environ.get("DDX_WORK", "/tmp") + "/icvd_vocab.json"
-if os.path.exists(_icv):
+if os.environ.get("ICVD") == "1" and os.path.exists(_icv):       # optional, off by default (HPO only)
     for _h, _d in json.load(open(_icv)).items():
         _VOC.setdefault(_h, _d)
 LABEL2FORMS = {}

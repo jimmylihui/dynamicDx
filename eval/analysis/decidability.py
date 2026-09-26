@@ -4,19 +4,20 @@ The neurologist judged 22 clips unidentifiable from the video alone (data/decida
 Table 8: Stage-1 sign recognition at K = 32 (sign graded "correct" by eval/part1_judge.py) and
 Stage-2 accuracy in the video condition, decidable / undecidable, with a 10,000-resample bootstrap
 interval of the gap. Table 9: Stage-2 accuracy with video, shuffled and single-frame input on the 49
-decidable clips, with paired case-level bootstrap intervals.
+decidable clips, with paired case-level bootstrap intervals; a clip's shuffled accuracy is the mean
+over the three permutation runs.
 
 usage: decidability.py      env DDX_ROOT (repository root, results/ underneath)
 """
-import glob, json, os, random
+import glob, json, os, random, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+import runs                                                           # noqa: E402
 
 B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 D = json.load(open(B + "/data/decidability.json"))
 DEC, UND = sorted(D["decidable"]), sorted(D["undecidable"])
 ACCURATE = {"accurate", "exact"}
-SYS = [("GPT-5.6-luna", "luna"), ("Gemma-4-31B", "gemma"), ("MiMo-v2.5", "mimo"), ("MiniMax-M3", "minimax"),
-       ("Qwen3.8-flash", "qwen38")]
-STAGE2 = {"video": "part2_%s_vid", "shuffled": "part2_%s_shuf32", "single": "part2_%s_frame1"}   # OUTROOT names
+SYS = runs.MODELS
 rng = random.Random(0)
 
 
@@ -28,11 +29,19 @@ def sign32(tag):
 
 
 def acc(root):
-    p = "%s/results/stage2_%s.json" % (B, root)
-    if not os.path.exists(p):   # a missing run must not silently read as 0% accuracy
-        raise FileNotFoundError(p)
-    g = json.load(open(p))
+    g = runs.grades(root)       # a missing run raises rather than reading as 0% accuracy
     return {v: 1.0 if (r.get("grade") in ACCURATE) else 0.0 for v, r in g.items()}
+
+
+def acc_shuffled(tag):
+    """per-clip mean over the three Shuffled permutations"""
+    gs = [acc(r) for r in runs.shuffled(tag)]
+    return {v: sum(g.get(v, 0.0) for g in gs) / len(gs) for v in DEC + UND}
+
+
+def stage2(tag):
+    return {"video": acc(runs.run(tag, "video")), "shuffled": acc_shuffled(tag),
+            "single": acc(runs.run(tag, "single"))}
 
 
 rate = lambda g, s: 100.0 * sum(g.get(v, 0.0) for v in s) / len(s)
@@ -56,7 +65,7 @@ def paired_ci(g1, g2, cases, n=10000):
 
 print("Table 8  (decidable n=%d / undecidable n=%d)" % (len(DEC), len(UND)))
 for name, tag in SYS:
-    s, a = sign32(tag), acc(STAGE2["video"] % tag)
+    s, a = sign32(tag), acc(runs.run(tag, "video"))
     (l1, h1), (l2, h2) = gap_ci(s), gap_ci(a)
     print("%-14s sign %5.1f / %5.1f  %+5.1f [%+.1f, %+.1f] | accuracy %5.1f / %5.1f  %+5.1f [%+.1f, %+.1f]" % (
         name, rate(s, DEC), rate(s, UND), rate(s, DEC) - rate(s, UND), l1, h1,
@@ -64,7 +73,7 @@ for name, tag in SYS:
 
 print("\nTable 9  (49 decidable clips)")
 for name, tag in SYS:
-    g = {k: acc(r % tag) for k, r in STAGE2.items()}
+    g = stage2(tag)
     row = "%-14s video %5.1f shuffled %5.1f single %5.1f" % (name, rate(g["video"], DEC), rate(g["shuffled"], DEC), rate(g["single"], DEC))
     for a, b in (("video", "shuffled"), ("video", "single"), ("shuffled", "single")):
         lo, hi = paired_ci(g[a], g[b], DEC)

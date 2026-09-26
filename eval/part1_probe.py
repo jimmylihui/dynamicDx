@@ -23,7 +23,7 @@ env:   BACKEND  or | ollama          (default or)
                 it for those.
        PROVIDER=auto skips the pin entirely, for models whose cheapest endpoints cannot see
                 images.
-       REASONING  off | on (default on). gemma-4-31b-it emits no reasoning tokens at all, so a
+       REASONING  off | on (default off, as the Stage 2 harness). gemma-4-31b-it emits no reasoning tokens at all, so a
                   comparison against a reasoning model confounds the model with the presence of
                   a reasoning trace; REASONING=off matches the conditions. Note that turning it
                   off does NOT make the model reproducible - three repeats at temperature 0 still
@@ -61,7 +61,7 @@ MODEL = os.environ.get("MODEL",
 HOST = os.environ.get("OLLAMA", "http://localhost:11434")
 ORKEY = os.environ.get("ORKEY")
 PROVIDER = os.environ.get("PROVIDER", "CoreWeave")
-REASONING = os.environ.get("REASONING", "on")
+REASONING = os.environ.get("REASONING", "off")   # as the Stage 2 harness
 MAXTOK = int(os.environ.get("MAXTOK", "700"))
 FF = os.environ.get("FFMPEG", "ffmpeg")
 

@@ -23,7 +23,7 @@ used solely to *match* free text to record entries, never to write a finding.
 | `data/decidability.json` | the 22 clips the neurologist judged unidentifiable from video alone and the 49 judged identifiable (paper Appendix B) |
 | `data/reference_audit.json` | the visual-grounding audit of all 71 reference descriptions: 286 atomic claims, each classed observable / not observable (Appendix B) |
 | `pipeline/` | how a case report becomes a case (below) |
-| `prompts/PROMPTS.md` | every prompt, verbatim: the model under test, the patient and chart matchers, retrieval, grading |
+| `prompts/PROMPTS.md` | every prompt, verbatim: the benchmark prompts of Appendix H (the model under test, the patient and chart matchers, retrieval, grading), then every other prompt the scripts send |
 | `eval/` | the evaluation harness: Stage 1 sweep and judge; Stage 2 batch and multi-round consultations; grader; paired bootstrap; `tau.py` (source-workup coverage τ with equivalent entries); `part2_lie2.py` (corrupted-history stress test, Appendix G) |
 | `eval/retrieval/` | literature retrieval and decontamination (§3.5.2, Appendix F; prompts in Appendix H): HPO normalisation, Europe PMC query and cause extraction, the source-PMCID / DOI / near-duplicate / answer-string filters |
 | `eval/controls/` | investigation-selection controls (Appendix C.3): ten-item budget, fixed checklist and random arms replayed from a Stage 2 video run (history held fixed, chart matched by the same DeepSeek matcher), and the τ decomposition of Appendix C |
@@ -97,6 +97,12 @@ ROOT=part2_luna_vid python eval/part2_full_judge3.py 6
 # Multi-round consultation (blocks of questions / orders per round, at most ten rounds)
 MODEL=openai/gpt-5.6-luna PROVIDER=OpenAI MAXROUND=10 OUTROOT=part2_luna_seq python eval/part2_seq2.py 6
 
+# Oracle evidence: replays the Video run's history, the decisive entries replace the investigations
+ORACLE=1 ORACLE_SRC=part2_luna_vid OUTROOT=part2_luna_oracle python eval/part2_full.py 6
+
+# Corrupted history (Appendix G), replayed from the Video run with the same decoding
+TAG=luna RATIO=80 python eval/part2_lie2.py
+
 # Paired case-level bootstrap between two graded runs (10,000 percentile resamples)
 python eval/bootstrap_ci.py
 
@@ -110,15 +116,23 @@ python eval/stage1_description.py part1_luna 32          # -> results/self_descr
 # same-patient audit of the Source-clean records, then the two list controls
 DESCFILE=results/self_description_part1_luna.json python eval/retrieval/hpo_normalize.py answers part1_luna
 sh eval/retrieval/drive_decontam.sh part1_luna
-TAG=luna SPACEFILE=$DDX_WORK/openspace_part1_luna_clean.json python eval/retrieval/build_union_space.py
+for C in orig clean strict; do
+  TAG=luna SPACEFILE=$DDX_WORK/openspace_part1_luna_$C.json python eval/retrieval/build_union_space.py
+done                                                       # -> union_openspace_part1_luna_<C>.json
 python eval/retrieval/build_mismatched.py $DDX_WORK/own_dx_luna.json \
   $DDX_WORK/openspace_part1_luna_clean.json results/mismatched_luna.json
 
 # Investigation-selection controls (Appendix C.3), replayed per clip from a Stage 2 video run
-MODE=budget K=10 python eval/controls/part2_orders.py <video-run clip json> <out json>
-MODE=atomic_named LIST=C10 python eval/controls/part2_orders.py <video-run clip json> <out json>
-MODE=atomic_matched LIST=C10 python eval/controls/part2_orders.py <video-run clip json> <out json>
-MODE=budget_single BUDGET_FILE=<this clip's budget-arm json> python eval/controls/part2_orders.py <video-run clip json> <out json>
+# (one call per clip; write results/<run>/<category>/<clip>.json with the run names of eval/runs.py)
+for f in results/part2_luna_vid/*/*.json; do o=${f#results/part2_luna_vid/}
+  MODE=budget K=10 python eval/controls/part2_orders.py $f results/part2_luna_budget10/$o
+  MODE=checklist LIST=C10 python eval/controls/part2_orders.py $f results/part2_luna_chk10/$o
+  MODE=random K=10 python eval/controls/part2_orders.py $f results/part2_luna_rand10/$o
+  MODE=atomic_named LIST=C10 python eval/controls/part2_orders.py $f results/part2_luna_atomic_named/$o
+  MODE=atomic_matched LIST=C10 python eval/controls/part2_orders.py $f results/part2_luna_atomic_matched/$o
+  MODE=budget_single BUDGET_FILE=results/part2_luna_budget10/$o \
+    python eval/controls/part2_orders.py $f results/part2_luna_budget_single/$o
+done
 
 # Temporal-window training (§3.5.1, Appendix I; needs a GPU and window/requirements.txt)
 python window/teacher.py                                   # one teacher call per clip
@@ -136,7 +150,8 @@ python window/judge_sentences.py results/window/describe_window_k32.json \
 ```
 
 The seven conditions of the paper's Table 2 (§3.4) are flags of `eval/part2_full.py`; everything
-else about the consultation stays fixed. Defaults are the paper's: `ROLE=doctor`, `KFRAMES=32`,
+else about the consultation stays fixed. Name each run `OUTROOT=part2_<model>_<condition>` as in `eval/runs.py`
+(for Shuffled, `part2_<model>_shuf0`, `_shuf1`, `_shuf2`) so that the analysis scripts find it. Defaults are the paper's: `ROLE=doctor`, `KFRAMES=32`,
 temperature 0, one pinned provider per model under evaluation (`PROVIDER`); the auxiliary
 DeepSeek-V4.1-Flash calls are unpinned unless `JPROVIDER` is set.
 
@@ -149,7 +164,7 @@ DeepSeek-V4.1-Flash calls are unpinned unless `JPROVIDER` is set.
 | own words | `SIGNTEXT=self SELFFILE=<eval/stage1_description.py output>` (the model's Stage 1 description without its differential) |
 | reference | `SIGNTEXT=gt` (the audited clinician description in `data/cases.json`) |
 | oracle evidence | `ORACLE=1 ORACLE_SRC=<video run>` (replays the Video run's history; the decisive entries replace investigation selection) |
-| retrieval arms (§3.5.2) | `SPACE=union_own UNIONFILE=<candidate file>`: Original / Source-clean / Strict no-answer (`build_union_space.py` on `openspace.py` output with `CLEAN=orig/clean/strict`), Own candidates (`own_dx_<TAG>.json`), Mismatched retrieval (`build_mismatched.py`) |
+| retrieval arms (§3.5.2) | `SPACE=union_own UNIONFILE=<candidate file> SELFFILE=<eval/stage1_description.py output>` (Stage 2 starts from the model's own description and the list, without frames): Original / Source-clean / Strict no-answer (`build_union_space.py` on `openspace.py` output with `CLEAN=orig/clean/strict`), Own candidates (`own_dx_<TAG>.json`), Mismatched retrieval (`build_mismatched.py`) |
 | multi-turn | `eval/part2_seq2.py` |
 
 Stage 1 uses the paper's prompt by default (`PROMPT=old` in `eval/part1_probe.py`); a structured
@@ -178,7 +193,8 @@ answered `no`, and a compound question is settled only when the record settles e
 ## Results
 
 The harness writes each run under `results/<OUTROOT>/` and the grader writes
-`results/stage2_<OUTROOT>.json`; `eval/bootstrap_ci.py` reads the runs named in its `MODELS` table
+`results/stage2_<OUTROOT>.json`. Run names follow `eval/runs.py` (`part2_<model>_<condition>`, e.g.
+`part2_luna_vid`, `part2_luna_shuf0`-`2`, `part2_luna_lit_clean`); `eval/bootstrap_ci.py` reads those runs
 and scores every arm over all 71 cases (a missing or failed consultation counts as not accurate).
 
 ## Licence and citation

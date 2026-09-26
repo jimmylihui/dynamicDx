@@ -7,6 +7,8 @@ components of the reference - body part, laterality (only when the reference sta
 movement character, activation condition - and says which sentence is closer overall, or a tie.
 The judge never sees the diagnosis, the video, or which model wrote which sentence.
 
+Only clips with a usable teacher record are judged (TEACHER, default results/window/teacher.json).
+
 usage: python window/judge_sentences.py FIRST_JSON SECOND_JSON [OUT_JSON]
        inputs are infer_student.py outputs ({video: {"sentence": ...}}) or {video: sentence}
 env:   ORKEY, JUDGE (default deepseek/deepseek-v4.1-flash), JPROVIDER
@@ -80,7 +82,9 @@ def ask(p):
 
 
 first, second = sentences(A_FILE), sentences(B_FILE)
-todo = sorted(set(first) & set(second))
+# the clips with a usable teacher record (68 of 71 in the paper), as in Appendix D
+usable = set(W.load_targets(os.environ.get("TEACHER", W.B + "/results/window/teacher.json")))
+todo = sorted(set(first) & set(second) & usable)
 out, lock = {}, threading.Lock()
 
 

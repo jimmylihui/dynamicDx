@@ -3,14 +3,15 @@
 For each case the list handed to the model is its own Stage 1 differential followed by
 source-clean causes retrieved for a donor case from ANOTHER category, truncated so that the list
 has the same length as the case's real source-clean list (own differential followed by its own
-retrieved causes). The donor is drawn with a fixed per-clip seed. The list therefore matches the
+retrieved causes). The donor is drawn with a fixed per-clip seed (further donors, in the same seeded order, extend
+a list that would otherwise be shorter). The list therefore matches the
 real retrieval list in length and form but not in content.
 
 usage: build_mismatched.py OWN_FILE CLEAN_FILE OUT_FILE
   OWN_FILE    {video: [own diagnoses]}                   (own_dx_<TAG>.json, build_union_space.py)
   CLEAN_FILE  {video: {"causes": [...], ...}}            source-clean retrieval (openspace.py,
                                                          CLEAN=clean), retrieved causes only
-  OUT_FILE    {video: {"causes": [...], "donor": video, "n_own": n, "n_mismatched": n}}
+  OUT_FILE    {video: {"causes": [...], "donor": video, "donors": [...], "n_own": n, "n_mismatched": n}}
               - pass it to eval/part2_full.py as the candidate file (SPACE/UNIONFILE)
 """
 import json
@@ -46,9 +47,18 @@ for v in sorted(line):
     donors = sorted(u for u in line if line[u] != line[v] and retrieved(u))
     if not donors:
         continue
-    donor = random.Random("mismatched|%s" % v).choice(donors)
-    merged = dedup(mine + retrieved(donor))[:len(real)]
-    out[v] = dict(line=line[v], causes=merged, donor=donor,
+    # donors in a fixed per-clip order; if the first donor's list is too short to reach the real
+    # list's length, the next donor's causes continue it, so every list matches in length
+    order = list(donors)
+    random.Random("mismatched|%s" % v).shuffle(order)
+    merged, used = list(mine), []
+    for donor in order:
+        if len(merged) >= len(real):
+            break
+        merged = dedup(merged + retrieved(donor))
+        used.append(donor)
+    merged = merged[:len(real)]
+    out[v] = dict(line=line[v], causes=merged, donor=used[0] if used else None, donors=used,
                   n_own=len(mine), n_mismatched=len(merged) - len(mine), n_real=len(real))
 
 json.dump(out, open(sys.argv[3], "w"), indent=1, ensure_ascii=False)

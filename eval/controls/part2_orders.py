@@ -36,6 +36,8 @@ MODE = os.environ.get("MODE", "budget")
 JUDGE = os.environ.get("JUDGE", "deepseek/deepseek-v4.1-flash")
 JPROV = os.environ.get("JPROVIDER", "")
 K = int(os.environ.get("K", "10"))
+REASONING = json.loads(os.environ.get("REASONING", '{"enabled": false}'))            # as part2_full.py
+JUDGE_REASONING = json.loads(os.environ.get("JUDGE_REASONING", '{"enabled": false}'))
 LIST = os.environ.get("LIST", "C10")
 SRC, OUT = sys.argv[1], sys.argv[2]
 FF = os.environ.get("FFMPEG", "ffmpeg")
@@ -144,7 +146,8 @@ CHECKLISTS = {
 def post(model, messages, mx=4000, imgs=0):
     prov = JPROV if model == JUDGE and JUDGE != MODEL else PROV
     body = json.dumps({"model": model, "temperature": 0, "messages": messages,
-                       "reasoning": {"enabled": True}, "max_tokens": mx,
+                       "reasoning": JUDGE_REASONING if (model == JUDGE and JUDGE != MODEL) else REASONING,
+                       "max_tokens": mx,
                        **({"provider": {"order": [prov], "allow_fallbacks": False, "sort": "price"}} if prov else {})}).encode()
     err = None
     for _ in range(5):

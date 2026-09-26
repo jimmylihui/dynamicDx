@@ -58,7 +58,9 @@ for _h, _l in MODIFIERS.items():
 # Terms added to the ontology change the ENCODING, so they change every downstream number and
 # have to be versioned like any other parameter. LOCALSET=v1 is the set as of round 12, v2 adds
 # the two terms introduced in round 14.
-LOCALSET = os.environ.get("LOCALSET", "v2")
+# the paper queries with HPO terms only (Section 3.5.2): project-declared terms are an optional
+# extension, off by default (LOCALSET=v1/v2 to enable)
+LOCALSET = os.environ.get("LOCALSET", "none")
 _LOCAL_V1 = {
         "LOCAL:0001": ("Skew deviation", ["skew deviation", "ocular skew deviation",
                                           "vertical ocular misalignment"], "HP:0000496"),
@@ -75,12 +77,12 @@ _LOCAL_V2 = dict(_LOCAL_V1, **{
         "LOCAL:0004": ("Scissoring gait", ["scissoring gait", "scissor gait",
                                            "scissoring of the legs"], "HP:0001288"),
 })
-for _h, (_l, _t, _p) in (_LOCAL_V1 if LOCALSET == "v1" else _LOCAL_V2).items():
+for _h, (_l, _t, _p) in ({"v1": _LOCAL_V1, "v2": _LOCAL_V2}.get(LOCALSET) or {}).items():
     vocab[_h] = dict(label=_l, terms=_t, parents=[_p])
 
 import os as _os
 _icvd = _os.environ.get("DDX_WORK", "/tmp") + "/icvd_vocab.json"   # same location openspace.py reads
-if _os.path.exists(_icvd):
+if _os.environ.get("ICVD") == "1" and _os.path.exists(_icvd):     # optional, off by default
     for _h, _v in json.load(open(_icvd)).items():
         vocab.setdefault(_h, _v)          # never overwrite the local declarations above
     print("loaded %d Barany ICVD ocular-motor terms" % len(json.load(open(_icvd))))
@@ -169,7 +171,8 @@ if sys.argv[1] == "answers":
     files = sorted(glob.glob("%s/results/%s/*/*.json" % (B, root)))
     DESC = json.load(open(os.environ["DESCFILE"])) if os.environ.get("DESCFILE") else {}
     if not DESC:
-        print("warning: no DESCFILE - normalising the full Stage 1 answer, differential included")
+        sys.exit("set DESCFILE to the eval/stage1_description.py output: the query is built from the "
+                 "model's own description of the sign, not from its differential")
     out, lock = {}, threading.Lock()
     done = [0]
     t0 = time.time()

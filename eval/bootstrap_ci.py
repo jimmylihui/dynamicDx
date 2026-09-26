@@ -15,22 +15,18 @@ import random
 import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from tau import acquired, DEC                                     # noqa: E402
+import runs                                                        # noqa: E402
 ACCURATE = {"accurate", "exact"}   # grade names: current grader / earlier result files
 
 B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 NB = int(sys.argv[1]) if len(sys.argv) > 1 else 10000
 rng = random.Random(0)
 
-MODELS = [("GPT-5.6-luna", "lunathink", "luna"), ("Gemma-4-31B", "gemmathink", "gemma"),
-          ("MiMo-v2.5", "mimothink", "mimo"), ("MiniMax-M3", "minimaxthink", "minimax"),
-          ("Qwen3.8-flash", "qwen38", "qwen38")]
+MODELS = [(name, tag, tag) for name, tag in runs.MODELS]
 
 
 def judge(root):
-    p = "%s/results/judge/fulljudge_%s.json" % (B, root)
-    if not os.path.exists(p):
-        p = B + "/results/stage2_%s.json" % root
-    return json.load(open(p)) if os.path.exists(p) else None
+    return runs.grades(root, required=False)
 
 
 def load(root):
@@ -90,9 +86,9 @@ print("=" * 96)
 print("%-13s %4s  %-18s %-18s %-18s %-18s" % ("model", "n", "blind", "video", "own words", "reference"))
 rows = {}
 for name, tag, _ in MODELS:
-    arms = {a: load("part2_%s_%s_doctor" % (tag, s))
-            for a, s in (("blind", "novid"), ("video", "vid"),
-                         ("own", "textself"), ("ref", "textgt"))}
+    arms = {a: load(runs.run(tag, c))
+            for a, c in (("blind", "blind"), ("video", "video"),
+                         ("own", "own"), ("ref", "reference"))}
     if any(v is None for v in arms.values()):
         print("%-13s  (incomplete)" % name)
         continue
@@ -124,8 +120,8 @@ print("=" * 96)
 print("RETRIEVAL   lit - base, paired on the same 71 cases")
 print("=" * 96)
 for name, tag, _ in MODELS:
-    base = load("part2_%s_vid_doctor" % tag)
-    lit = load("part2_%s_lit_doctor" % tag)
+    base = load(runs.run(tag, "video"))
+    lit = load(runs.run(tag, "source_clean"))
     if base is None or lit is None:
         continue
     ks = sorted(set(base) & set(lit))
@@ -141,8 +137,8 @@ print("=" * 96)
 print("CORRUPTION  80% of answers flipped - truthful, paired")
 print("=" * 96)
 for name, tag, short in MODELS:
-    base = load("part2_%s_vid_doctor" % tag)
-    lie = load("part2_lie80_%s" % short)
+    base = load(runs.run(tag, "video"))
+    lie = load(runs.run(tag, "lie80"))
     if base is None or lie is None:
         continue
     ks = sorted(set(base) & set(lie))

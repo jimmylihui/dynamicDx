@@ -32,14 +32,17 @@ MODEL = os.environ.get("MODEL", "openai/gpt-5.6-luna")
 JUDGE = os.environ.get("JUDGE", "deepseek/deepseek-v4.1-flash")
 PROVIDER = os.environ.get("PROVIDER", "OpenAI")
 JPROVIDER = os.environ.get("JPROVIDER", "")
-REASONING = json.loads(os.environ.get("REASONING", '{"enabled": true}'))
+REASONING = json.loads(os.environ.get("REASONING", '{"enabled": false}'))   # as eval/part2_full.py
+# the DeepSeek matcher and grader decode the same way in every run, whatever the model under test does
+JUDGE_REASONING = json.loads(os.environ.get("JUDGE_REASONING", '{"enabled": false}'))
 K = int(os.environ.get("KFRAMES", "32"))
-TIMEOUT = int(os.environ.get("TIMEOUT", "90"))
+TIMEOUT = int(os.environ.get("TIMEOUT", "300"))   # decoding as the uncorrupted run (part2_full.py)
 FF = os.environ.get("FFMPEG", os.environ.get("FFMPEG", "ffmpeg"))
-SRCRUN = os.environ.get("SRCRUN", "part2_lunathink_vid_doctor")
+TAG = os.environ.get("TAG", "luna")                                  # model tag (eval/runs.py)
+SRCRUN = os.environ.get("SRCRUN", "part2_%s_vid" % TAG)
 RATIO = int(os.environ.get("RATIO", "40"))
 SEED = int(os.environ.get("SEED", "0"))
-OUTROOT = os.environ.get("OUTROOT", "part2_lie%d_luna" % RATIO)
+OUTROOT = os.environ.get("OUTROOT", "part2_%s_lie%d" % (TAG, RATIO))
 ONLY = [x for x in os.environ.get("ONLY", "").split(",") if x]
 
 _src = open(B + "/eval/part2_full.py").read()
@@ -70,7 +73,8 @@ def frames(p, k, tmp):
 
 def post(model, messages, mx=0, imgs=0, reasoning=None):
     payload = {"model": model, "temperature": 0, "messages": messages,
-               "reasoning": REASONING if reasoning is None else reasoning,
+               "reasoning": (reasoning if reasoning is not None
+                             else JUDGE_REASONING if (model == JUDGE and JUDGE != MODEL) else REASONING),
                "usage": {"include": True},
                **({"provider": {"order": [_prov(model)], "allow_fallbacks": False, "sort": "price"}} if _prov(model) else {})}
     if mx:
@@ -155,7 +159,7 @@ def run(src):
             {"role": "assistant",
              "content": "\n".join("%d. %s" % (i, q) for i, q in enumerate(qs, 1))},
             {"role": "user", "content": T2 % "\n".join(qa)}]
-    t_ord, u2 = post(MODEL, msgs, imgs=len(b64))
+    t_ord, u2 = post(MODEL, msgs, 4000, imgs=len(b64))
     tests = [t.split("---", 1)[0].strip() for t in numbered(t_ord)]
     if not tests:
         return dict(error="no orders")
@@ -164,7 +168,7 @@ def run(src):
     menu = "\n".join("- %s%s" % (k, " [NAMED-ONLY]" if v.get("explicit_only") else "")
                      for k, v in inv.items())
     t_cov, u_cov = post(JUDGE, [{"role": "user", "content": MATCH_I % (
-        "\n".join("%d. %s" % (i, t) for i, t in enumerate(tests, 1)), menu)}])
+        "\n".join("%d. %s" % (i, t) for i, t in enumerate(tests, 1)), menu)}], 2500)
     cov = as_json(t_cov) or {}
     lines, served = [], []
     for i, t in enumerate(tests, 1):
@@ -179,7 +183,7 @@ def run(src):
 
     msgs += [{"role": "assistant", "content": t_ord},
              {"role": "user", "content": T3 % "\n".join(lines)}]
-    t_dx, u3 = post(MODEL, msgs)
+    t_dx, u3 = post(MODEL, msgs, 1500)
     m = re.search(r"DIAGNOS\w*\s*:\s*(.+)", t_dx)
     return dict(questions=qs, answers={str(i + 1): v for i, v in enumerate(a)},
                 truthful_answers={str(i + 1): v for i, v in enumerate(truth)},

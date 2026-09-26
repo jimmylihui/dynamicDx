@@ -39,7 +39,9 @@ MODEL = os.environ.get("MODEL", "openai/gpt-5.6-luna")
 JUDGE = os.environ.get("JUDGE", "deepseek/deepseek-v4.1-flash")
 PROVIDER = os.environ.get("PROVIDER", "OpenAI")
 JPROVIDER = os.environ.get("JPROVIDER", "")
-REASONING = json.loads(os.environ.get("REASONING", '{"enabled": true}'))
+REASONING = json.loads(os.environ.get("REASONING", '{"enabled": false}'))   # as eval/part2_full.py
+# the DeepSeek matcher and grader decode the same way in every run, whatever the model under test does
+JUDGE_REASONING = json.loads(os.environ.get("JUDGE_REASONING", '{"enabled": false}'))
 MAXTOK = int(os.environ.get("MAXTOK", "-1"))
 TIMEOUT = int(os.environ.get("TIMEOUT", "300"))
 K = int(os.environ.get("KFRAMES", "32"))
@@ -197,7 +199,8 @@ def framesof(p, k, tmp):
 
 def post(model, messages, mx, imgs=0):
     payload = {"model": model, "temperature": 0, "messages": messages,
-               "reasoning": REASONING, "usage": {"include": True}}
+               "reasoning": JUDGE_REASONING if (model == JUDGE and JUDGE != MODEL) else REASONING,
+               "usage": {"include": True}}
     # empty or "auto" = let OpenRouter route it: minimax's video endpoints are not all on one provider
     if _prov(model) not in ("", "auto"):
         payload["provider"] = {"order": [_prov(model)], "allow_fallbacks": False,
