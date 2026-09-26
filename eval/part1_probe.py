@@ -127,10 +127,10 @@ def call_ollama(images, ask):
 
 
 def call_or(images, ask):
-    """Images first so the prefix caches, the varying question last."""
-    content = ([{"type": "image_url",
-                 "image_url": {"url": "data:image/jpeg;base64," + b}} for b in images]
-               + [{"type": "text", "text": ask}])
+    """The prompt ("Below are <K> frame(s) ...") comes first and the frames follow it (Appendix H)."""
+    content = ([{"type": "text", "text": ask}]
+               + [{"type": "image_url",
+                   "image_url": {"url": "data:image/jpeg;base64," + b}} for b in images])
     payload = {"model": MODEL, "temperature": 0, "max_tokens": MAXTOK,
                "messages": [{"role": "user", "content": content}],
                "usage": {"include": True}}

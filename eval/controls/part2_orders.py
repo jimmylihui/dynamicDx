@@ -11,12 +11,20 @@ at what the published run produced - only the investigation turn changes:
                   checklist is submitted on its behalf
   MODE=random     K test names drawn at random (seeded per clip) from the
                   pooled investigation vocabulary of every chart
+  MODE=atomic_named    the ten-item checklist, each item resolved beforehand to a
+                  single named chart entry of the case; only that entry is
+                  released, and an item with no such entry returns "not
+                  performed / not available"
+  MODE=atomic_matched  the checklist submitted as written; the matcher releases at
+                  most one entry per order, the one that most exactly names it
+  MODE=budget_single   the budget arm's own orders (BUDGET_FILE, this clip's
+                  MODE=budget output) resubmitted under the one-entry rule
 
 Everything downstream (matching, chart release, diagnosis) is unchanged, so
 the result is directly comparable with the released arms.
 
 usage: part2_orders.py SRC_RUN OUT_JSON
-env:   ORKEY, MODE, K, LIST, MODEL, PROVIDER, JUDGE (chart matcher), JPROVIDER, ROLE
+env:   ORKEY, MODE, K, LIST, MODEL, PROVIDER, JUDGE (chart matcher), JPROVIDER, ROLE, BUDGET_FILE
 """
 import base64, glob, json, os, re, shutil, subprocess, sys, tempfile, urllib.request
 
@@ -36,6 +44,23 @@ src = open(B + "/eval/part2_full.py").read()
 def grab(n):
     return re.search(r'^%s = """(.*?)"""' % n, src, re.S | re.M).group(1)
 T1, T3, MATCH_I = grab("T1"), grab("T3"), grab("MATCH_I")
+SINGLE = MODE in ("atomic_named", "atomic_matched", "budget_single")   # one chart entry per order
+
+# the one-entry release rule of the atomic-checklist arms (Appendix C.3)
+MATCH_ONE = """A doctor ordered these investigations, one test per line.
+
+%s
+
+This chart holds results for exactly these entries:
+
+%s
+
+For each numbered order, give AT MOST ONE chart entry: the entry that most exactly names the test
+ordered, matching on what the test is, not on wording. Give none if no entry is that test. Entries
+marked [NAMED-ONLY] are therapeutic trials: give one only if that specific trial is named.
+
+Reply with ONLY a JSON object mapping each order number to a list of zero or one chart entry
+names, exactly as written above: {"1": ["..."], "2": [], ...}"""
 T1_NOVID = grab("T1_NOVID")
 _OPENING = {"neurologist": "You are a neurologist seeing a new patient.",
             "doctor": "You are a doctor seeing a new patient."}[os.environ.get("ROLE", "doctor")]
@@ -191,8 +216,27 @@ else:
 msgs = [{"role": "user", "content": content1},
         {"role": "assistant", "content": "\n".join("%d. %s" % (i, q) for i, q in enumerate(qs, 1))}]
 
-if MODE in ("checklist", "random"):
-    if MODE == "random":
+inv = c["investigations"]
+menu = "\n".join("- %s%s" % (k, " [NAMED-ONLY]" if v.get("explicit_only") else "")
+                 for k, v in inv.items())
+named = {}
+if MODE in ("checklist", "random", "atomic_named", "atomic_matched", "budget_single"):
+    if MODE == "budget_single":
+        tests = list(json.load(open(os.environ["BUDGET_FILE"]))["orders"])
+    elif MODE == "atomic_named":
+        # resolve each checklist item to one named chart entry of this case; the order the model
+        # is shown is that entry's name, and only that entry is released
+        items = list(CHECKLISTS[LIST])
+        res = as_json(post(JUDGE, [{"role": "user", "content": MATCH_ONE % (
+            "\n".join("%d. %s" % (i, t) for i, t in enumerate(items, 1)), menu)}], 8000)) or {}
+        tests = []
+        for i, t in enumerate(items, 1):
+            got = [k for k in (res.get(str(i)) or []) if k in inv][:1]
+            tests.append(got[0] if got else t)
+            named[len(tests)] = got
+    elif MODE == "atomic_matched":
+        tests = list(CHECKLISTS[LIST])
+    elif MODE == "random":
         import random as _r
         # a deliberately unskilled strategy: K test names drawn uniformly from the vocabulary of
         # every chart in the benchmark, seeded by the clip so the draw is reproducible
@@ -211,11 +255,13 @@ else:
         sys.exit(0)
     msgs += [{"role": "assistant", "content": t_ord}]
 
-inv = c["investigations"]
-menu = "\n".join("- %s%s" % (k, " [NAMED-ONLY]" if v.get("explicit_only") else "")
-                 for k, v in inv.items())
-cov = as_json(post(JUDGE, [{"role": "user", "content": MATCH_I % (
-    "\n".join("%d. %s" % (i, t) for i, t in enumerate(tests, 1)), menu)}], 8000)) or {}
+if MODE == "atomic_named":
+    cov = {str(i): g for i, g in named.items()}
+else:
+    cov = as_json(post(JUDGE, [{"role": "user", "content": (MATCH_ONE if SINGLE else MATCH_I) % (
+        "\n".join("%d. %s" % (i, t) for i, t in enumerate(tests, 1)), menu)}], 8000)) or {}
+    if SINGLE:
+        cov = {i: list(v or [])[:1] for i, v in cov.items()}
 lines, served = [], []
 for i, t in enumerate(tests, 1):
     got = [k for k in (cov.get(str(i)) or []) if k in inv]
@@ -232,7 +278,9 @@ t_dx = post(MODEL, msgs, 1500)
 mo = re.search(r"DIAGNOS\w*\s*:\s*(.+)", t_dx)
 served_u = sorted(set(served))
 r = dict(video=d["video"], line=c["line"], mode=MODE, budget=(len(tests)),
-         list=(LIST if MODE == "checklist" else MODE), questions=qs, answers=ans,
+         list=(LIST if MODE in ("checklist", "atomic_named", "atomic_matched") else MODE),
+         release_rule=("one entry per order" if SINGLE else "all matched entries"),
+         questions=qs, answers=ans,
          orders=tests, served=served_u, results=lines, order_raw=t_ord,
          dx=(mo.group(1).strip() if mo else (t_dx.strip().splitlines() or [""])[0]), dx_raw=t_dx,
          decisive_served=[k for k in served_u if inv[k].get("decisive")],

@@ -28,6 +28,7 @@ used solely to *match* free text to record entries, never to write a finding.
 | `eval/retrieval/` | literature retrieval and decontamination (§3.5.2, Appendix F; prompts in Appendix H): HPO normalisation, Europe PMC query and cause extraction, the source-PMCID / DOI / near-duplicate / answer-string filters |
 | `eval/controls/` | investigation-selection controls (Appendix C.3): ten-item budget, fixed checklist and random arms replayed from a Stage 2 video run (history held fixed, chart matched by the same DeepSeek matcher), and the τ decomposition of Appendix C |
 | `eval/analysis/` | `decidability.py`: results by clinician-judged decidability (Appendix B, Tables 8 and 9), read from `data/decidability.json`, the Stage 1 judge output and the Stage 2 grades |
+| `window/` | teacher-guided temporal-window training (§3.5.1, Appendix I): the GPT-5.6-luna teacher, Qwen3.5-4B LoRA student training, two-pass out-of-fold inference for the Window, Random, sign-only and untrained arms, and the blinded sentence judge of Appendix D |
 | `scripts/fetch_videos.py` | downloads the source videos from Europe PMC and re-encodes them |
 
 ## Videos
@@ -98,6 +99,40 @@ MODEL=openai/gpt-5.6-luna PROVIDER=OpenAI MAXROUND=10 OUTROOT=part2_luna_seq pyt
 
 # Paired case-level bootstrap between two graded runs (10,000 percentile resamples)
 python eval/bootstrap_ci.py
+
+# Shuffled: three permutations (SHUFFLE=1 SHUFFLE_SEED=0,1,2), averaged per case
+python eval/analysis/shuffle_mean.py part2_luna_vid part2_luna_shuf0 part2_luna_shuf1 part2_luna_shuf2
+
+# Own words and the retrieval query both start from the model's own Stage 1 description
+python eval/stage1_description.py part1_luna 32          # -> results/self_description_part1_luna.json
+
+# Retrieval (§3.5.2, Appendix F): HPO normalisation of the description, Europe PMC, three filters,
+# same-patient audit of the Source-clean records, then the two list controls
+DESCFILE=results/self_description_part1_luna.json python eval/retrieval/hpo_normalize.py answers part1_luna
+sh eval/retrieval/drive_decontam.sh part1_luna
+TAG=luna SPACEFILE=$DDX_WORK/openspace_part1_luna_clean.json python eval/retrieval/build_union_space.py
+python eval/retrieval/build_mismatched.py $DDX_WORK/own_dx_luna.json \
+  $DDX_WORK/openspace_part1_luna_clean.json results/mismatched_luna.json
+
+# Investigation-selection controls (Appendix C.3), replayed per clip from a Stage 2 video run
+MODE=budget K=10 python eval/controls/part2_orders.py <video-run clip json> <out json>
+MODE=atomic_named LIST=C10 python eval/controls/part2_orders.py <video-run clip json> <out json>
+MODE=atomic_matched LIST=C10 python eval/controls/part2_orders.py <video-run clip json> <out json>
+MODE=budget_single BUDGET_FILE=<this clip's budget-arm json> python eval/controls/part2_orders.py <video-run clip json> <out json>
+
+# Temporal-window training (§3.5.1, Appendix I; needs a GPU and window/requirements.txt)
+python window/teacher.py                                   # one teacher call per clip
+for K in 8 16 32; do for F in 0 1 2 3 4; do
+  python window/train_student.py window $K $F; python window/train_student.py sign_only $K $F
+done; done
+python window/infer_student.py window 32
+python window/infer_student.py random 32
+python window/infer_student.py sign_only 32
+WINDOWS_FROM=results/window/describe_window_k32.json python window/infer_student.py untrained 32
+SIGNTEXT=self SELFFILE=results/window/describe_window_k32_selffile.json MODEL=openai/gpt-5.6-luna \
+  PROVIDER=OpenAI OUTROOT=part2_luna_window_k32 python eval/part2_full.py 6
+python window/judge_sentences.py results/window/describe_window_k32.json \
+  results/window/describe_untrained_k32.json
 ```
 
 The seven conditions of the paper's Table 2 (§3.4) are flags of `eval/part2_full.py`; everything
@@ -111,10 +146,10 @@ DeepSeek-V4.1-Flash calls are unpinned unless `JPROVIDER` is set.
 | single frame | `KFRAMES=1` |
 | shuffled | `SHUFFLE=1 SHUFFLE_SEED=0`, `1`, `2` (three independent per-clip permutations; the paper averages the three runs) |
 | video | none |
-| own words | `SIGNTEXT=self SELFFILE=<the model's Stage-1 descriptions>` |
+| own words | `SIGNTEXT=self SELFFILE=<eval/stage1_description.py output>` (the model's Stage 1 description without its differential) |
 | reference | `SIGNTEXT=gt` (the audited clinician description in `data/cases.json`) |
-| oracle evidence | `ORACLE=1` |
-| retrieval arms (§3.5.2) | `SPACE=union_own UNIONFILE=<candidate file from eval/retrieval/>` |
+| oracle evidence | `ORACLE=1 ORACLE_SRC=<video run>` (replays the Video run's history; the decisive entries replace investigation selection) |
+| retrieval arms (§3.5.2) | `SPACE=union_own UNIONFILE=<candidate file>`: Original / Source-clean / Strict no-answer (`build_union_space.py` on `openspace.py` output with `CLEAN=orig/clean/strict`), Own candidates (`own_dx_<TAG>.json`), Mismatched retrieval (`build_mismatched.py`) |
 | multi-turn | `eval/part2_seq2.py` |
 
 Stage 1 uses the paper's prompt by default (`PROMPT=old` in `eval/part1_probe.py`); a structured

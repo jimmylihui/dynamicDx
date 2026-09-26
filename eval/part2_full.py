@@ -60,6 +60,10 @@ SIGNTEXT = os.environ.get("SIGNTEXT", "")
 # hand the decisive evidence over instead of letting the model choose what to order: the gap
 # between this arm and the ordinary consultation is what acquisition costs
 ORACLE = os.environ.get("ORACLE", "0") == "1"
+# the Oracle condition keeps the Video condition's frames and history (method, Section 3.4): with
+# ORACLE_SRC=<video run under results/>, each case's questions and patient answers are replayed from
+# that run and only the investigation turn is replaced by the decisive entries
+ORACLE_SRC = os.environ.get("ORACLE_SRC", "")
 # "self" hands back the model's own Part 1 description, stripped of its differential
 SELFFILE = os.environ.get("SELFFILE", "")
 selfsign = json.load(open(SELFFILE)) if SELFFILE else {}
@@ -77,7 +81,7 @@ K = int(os.environ.get("KFRAMES", "32"))
 SHUFFLE = os.environ.get("SHUFFLE", "0") == "1"
 SHUFFLE_SEED = int(os.environ.get("SHUFFLE_SEED", "0"))   # paper: three permutations, seeds 0, 1, 2
 CHIEF = os.environ.get("CHIEF", "0") == "1"
-OUTROOT = os.environ.get("OUTROOT", "part2_full_" + SPACE)
+OUTROOT = os.environ.get("OUTROOT", "part2_full_" + SPACE + ("_shuf%d" % SHUFFLE_SEED if SHUFFLE else ""))
 FF = os.environ.get("FFMPEG", "ffmpeg")
 SRC = {"model": os.environ.get("DDX_WORK", "/tmp") + "/openspace_part1_oldp_luna.json",
        "oracle": os.environ.get("DDX_WORK", "/tmp") + "/openspace_oracle.json",
@@ -277,7 +281,13 @@ def duration(p):
 
 
 def frames(p, k, tmp):
+    """k frames evenly across the clip; k=1 (Single frame) takes the middle frame, as in Stage 1"""
     d = duration(p)
+    if k == 1:
+        subprocess.run([FF, "-y", "-ss", "%.3f" % (d / 2), "-i", p, "-frames:v", "1",
+                        "-vf", "scale=512:-1", tmp + "/f_001.jpg"],
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        return sorted(glob.glob(tmp + "/*.jpg")), d
     subprocess.run([FF, "-y", "-i", p, "-vf", "fps=%.5f,scale=512:-1" % (k / max(d, 0.1)),
                     "-frames:v", str(k), tmp + "/f_%03d.jpg"],
                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -378,14 +388,22 @@ def run(c):
                      for b in b64]
                     + [{"type": "text", "text": T1 % (_OPENING, len(fs), "%.0f" % dur, head)}])
     msgs = [{"role": "user", "content": content1}]
-    t_ask, u1 = post(MODEL, msgs, 4000, len(b64))
-    qs = numbered(t_ask)
-    if not qs:
-        return dict(error="no questions")
+    if ORACLE and ORACLE_SRC:
+        p = "%s/results/%s/%s/%s.json" % (B, ORACLE_SRC, c["line"], c["video"].rsplit(".", 1)[0])
+        src = json.load(open(p)) if os.path.exists(p) else {}
+        if not src.get("questions") or src.get("error"):
+            return dict(error="no video-condition history to replay")
+        qs, ans, u1 = src["questions"], src.get("answers") or {}, {}
+        t_ask = "\n".join("%d. %s" % (i, q) for i, q in enumerate(qs, 1))
+    else:
+        t_ask, u1 = post(MODEL, msgs, 4000, len(b64))
+        qs = numbered(t_ask)
+        if not qs:
+            return dict(error="no questions")
 
-    ans = as_json(post(JUDGE, [{"role": "user", "content": MATCH_Q % (
-        "\n".join("%d. %s" % (i, q) for i, q in enumerate(qs, 1)),
-        symptom_table(c))}], 1500)[0]) or {}
+        ans = as_json(post(JUDGE, [{"role": "user", "content": MATCH_Q % (
+            "\n".join("%d. %s" % (i, q) for i, q in enumerate(qs, 1)),
+            symptom_table(c))}], 1500)[0]) or {}
     qa = ["%d. %s  ->  %s" % (i, q, three_valued(ans.get(str(i), "unknown")))
           for i, q in enumerate(qs, 1)]
 
@@ -444,7 +462,8 @@ def run(c):
     m = re.search(r"DIAGNOS\w*\s*:\s*(.+)", t_dx)
     return dict(questions=qs, answers=ans, n_yes_answers=sum(
         1 for v in ans.values() if str(v).lower() == "yes"),
-        orders=tests, served=served, results=lines, dx_raw=t_dx, order_style=ORDERSTYLE, novideo=NOVIDEO, signtext=SIGNTEXT, role=ROLE, shuffled=SHUFFLE, chief=CHIEF,
+        orders=tests, served=served, results=lines, dx_raw=t_dx, order_style=ORDERSTYLE, novideo=NOVIDEO, signtext=SIGNTEXT, role=ROLE, shuffled=SHUFFLE,
+        shuffle_seed=SHUFFLE_SEED if SHUFFLE else None, chief=CHIEF,
         leading=leading, order_raw=t_ord, rationale=rationale,
         dx=(m.group(1).strip() if m else (t_dx.strip().splitlines() or [""])[0]),
         decisive_served=[k for k in served if inv[k].get("decisive")],

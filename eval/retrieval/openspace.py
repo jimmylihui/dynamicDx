@@ -26,7 +26,9 @@ EXTRACT_MODEL = os.environ.get("EXTRACT_MODEL", "deepseek/deepseek-v4.1-flash")
 EXTRACT_PROV = os.environ.get("EXTRACT_PROVIDER", "")
 NPAPERS = int(os.environ.get("NPAPERS", "250"))
 SCOPE = os.environ.get("SCOPE", "broad")
-USE_VARIANTS = os.environ.get("VARIANTS", "1") == "1"
+# the paper queries Europe PMC with HPO terms (Section 3.5.2); model-generated phrasings are an
+# optional extension and are off by default
+USE_VARIANTS = os.environ.get("VARIANTS", "0") == "1"
 SUBTYPE_CAP = int(os.environ.get("SUBTYPE_CAP", "10"))
 PERCONCEPT = int(os.environ.get("PERCONCEPT", "250"))
 MODE = sys.argv[1]
@@ -46,6 +48,7 @@ CLEAN = os.environ.get("CLEAN", "orig")
 # where the raw Europe PMC records are cached, one file per case, so every condition sees
 # the same corpus and the search is paid for once
 RECDIR = os.environ.get("RECDIR", "")
+RETAINDIR = os.environ.get("RETAINDIR", "")   # write the records that survive filtering
 if RECDIR:
     os.makedirs(RECDIR, exist_ok=True)
 JACCARD = float(os.environ.get("JACCARD", "0.85"))
@@ -95,7 +98,7 @@ def answer_strings(case):
     dropped: matching those would delete the corpus rather than the answer.
     """
     out = []
-    td = (case.get("true_diagnosis") or "").split(" - ")[0]
+    td = re.split(r"\s[-\u2013\u2014]\s", case.get("true_diagnosis") or "", maxsplit=1)[0]   # first dash
     for t in [td] + list(case["part1_video_only"].get("accept_as_correct") or []):
         w = norm_words(t)
         if w and len(" ".join(w)) >= 4:
@@ -164,11 +167,9 @@ MODIFIER = re.compile(r"^(bilateral|unilateral|left|right|generalized|focal|mult
 DROP = ANATOMY
 
 
-# Standardising the terminology improved the encoding and hurt the retrieval: authors title their
-# papers with free wording, so a paper on lithium cerebellar toxicity says "cerebellar dysfunction"
-# and never "gait ataxia". 15 of 27 misses were the query failing to reach the case's OWN source
-# paper. The fix is expansion, not further standardisation - query with every surface form the
-# ontology carries for the concept, plus its ancestors' forms.
+# Each normalised HPO concept is queried with every surface form the ontology carries for it
+# (label and exact/narrow synonyms) plus its ancestors' forms, since authors title their papers with
+# free wording rather than the canonical label.
 _VOC = json.load(open(os.environ.get("DDX_WORK", "/tmp") + "/hpo_vocab.json"))
 _icv = os.environ.get("DDX_WORK", "/tmp") + "/icvd_vocab.json"
 if os.path.exists(_icv):
@@ -180,27 +181,18 @@ for _h, _d in _VOC.items():
     LABEL2FORMS[_d["label"]].add(_d["label"].lower())
 
 
-# HPO carries about two surface forms per concept, which is far short of how many ways authors
-# actually write a sign - "gait ataxia" appears in the literature as unsteady gait, wide-based
-# gait, staggering gait, cerebellar gait, gait instability, ataxic gait. The ontology synonyms are
-# kept and a cached set of free-text variants is generated once per concept and reused.
+# Optional (VARIANTS=1, off by default): a cached set of free-text phrasings generated once per
+# concept and reused.
 VARIANT_CACHE = os.environ.get("DDX_WORK", "/tmp") + "/sign_variants.json"
 _variants = json.load(open(VARIANT_CACHE)) if os.path.exists(VARIANT_CACHE) else {}
 _vlock = threading.Lock()
 
-# Synonyms of the concept were not enough. Papers are titled with the SUBTYPE, not the umbrella
-# term: the NIID case is "Unilateral Wing-Beating Tremor", the anti-IgLON5 case is "Pisa
-# syndrome", the vaccine case is "Hemichorea-Hemiballism" - none of which a query for tremor,
-# dystonia or chorea reaches. Expansion therefore goes downward into named subtypes as well as
-# sideways into synonyms.
 VASK = """A clinical author is writing the title of a case report about the sign "%s".
 
 Give 10 lines, nothing else:
 - first, 4 ways to write that sign itself, as an author would phrase it
-- then 6 NAMED SUBTYPES or named variants of that sign that have their own name in the
-  literature. For tremor these would include wing-beating tremor, Holmes tremor, orthostatic
-  tremor, palatal tremor. For chorea, hemichorea, hemiballismus, choreoathetosis. For dystonia,
-  Pisa syndrome, blepharospasm, torticollis, camptocormia.
+- then 6 named subtypes or named variants of that sign that have their own name in the
+  literature.
 
 Use only real published terminology. Do not name any disease or cause."""
 
@@ -468,6 +460,12 @@ def work(q):
                            for x in papers], open(rec, "w"), indent=1, ensure_ascii=False)
         pmcid = ((cases[v].get("source") or {}).get("pmcid") or "")
         papers, removed, flagged = decontaminate(papers, cases[v], pmcid)
+        if RETAINDIR:                  # the retained records, for the same-patient audit (Appendix F)
+            os.makedirs(RETAINDIR, exist_ok=True)
+            json.dump([{k: x.get(k) for k in ("id", "pmcid", "pmid", "doi", "title", "abstractText",
+                                              "authorString", "pubYear", "journalTitle")}
+                       for x in papers], open("%s/%s.json" % (RETAINDIR, v.split(".")[0]), "w"),
+                      indent=1, ensure_ascii=False)
         entries = []
         for p in papers:
             t = (p.get("title") or "").strip()
@@ -477,7 +475,8 @@ def work(q):
             entries.append("%s%s" % (t, (" || " + ab) if ab else ""))
         titles = entries
         causes = []
-        for i in range(0, min(len(entries), NPAPERS), 40):     # batch so the reply is not cut off
+        entries = entries[:NPAPERS]                              # at most NPAPERS records per case
+        for i in range(0, len(entries), 40):                     # batch so the reply is not cut off
             rep = extract(entries[i:i + 40])
             for line in rep.splitlines():
                 s = re.sub(r"^\s*[-*\d.)]+\s*", "", line).strip()

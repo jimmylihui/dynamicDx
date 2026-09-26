@@ -9,7 +9,12 @@ The model is not asked to diagnose, and it is not shown the diagnosis. It is a v
 translator, which is a much weaker and more checkable role than judging.
 
 usage: hpo_normalize.py gt            encode the 71 ground-truth visible_sign fields
-       hpo_normalize.py answers ROOT  encode one model run's prose answers
+       hpo_normalize.py answers ROOT  encode one model run's Stage 1 answers
+
+The retrieval query is built from the model's own description of the sign, not from its
+differential (paper, Section 3.5.2 and Appendix H): with DESCFILE=<output of
+eval/stage1_description.py> each answer is replaced by its extracted description before
+normalisation.
 """
 import glob
 import json
@@ -20,7 +25,7 @@ import threading
 import time
 import urllib.request
 
-B = os.environ.get("DDX_ROOT", ".")
+B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 ORKEY = os.environ["ORKEY"]
 MODEL = os.environ.get("NORM_MODEL", "deepseek/deepseek-v4.1-flash")
 PROV = os.environ.get("NORM_PROVIDER", "")
@@ -74,7 +79,7 @@ for _h, (_l, _t, _p) in (_LOCAL_V1 if LOCALSET == "v1" else _LOCAL_V2).items():
     vocab[_h] = dict(label=_l, terms=_t, parents=[_p])
 
 import os as _os
-_icvd = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "icvd_vocab.json")
+_icvd = _os.environ.get("DDX_WORK", "/tmp") + "/icvd_vocab.json"   # same location openspace.py reads
 if _os.path.exists(_icvd):
     for _h, _v in json.load(open(_icvd)).items():
         vocab.setdefault(_h, _v)          # never overwrite the local declarations above
@@ -162,6 +167,9 @@ def to_hpo(reply):
 if sys.argv[1] == "answers":
     root = sys.argv[2]
     files = sorted(glob.glob("%s/results/%s/*/*.json" % (B, root)))
+    DESC = json.load(open(os.environ["DESCFILE"])) if os.environ.get("DESCFILE") else {}
+    if not DESC:
+        print("warning: no DESCFILE - normalising the full Stage 1 answer, differential included")
     out, lock = {}, threading.Lock()
     done = [0]
     t0 = time.time()
@@ -174,7 +182,10 @@ if sys.argv[1] == "answers":
                 f = q.pop()
             d = json.load(open(f))
             key = "%s__k%d" % (d["video"][:-4], d["k"])
-            txt = (d.get("raw") or "")[:20000]
+            if DESC:
+                txt = DESC.get("%s__k%d" % (d["video"][:-4], d["k"])) or DESC.get(d["video"]) or ""
+            else:
+                txt = (d.get("raw") or "")[:20000]
             try:
                 rep = ask(txt) if txt.strip() else ""
             except Exception as e:                                # noqa: BLE001
