@@ -15,7 +15,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.environ.get("OUT", os.path.join(ROOT, "videos_raw")); FF = os.environ.get("FFMPEG", "ffmpeg")
 VID = re.compile(r"\.(mp4|mov|avi|wmv|m4v|mpg|mpeg|mkv)$", re.I)
 clips = json.load(open(os.path.join(ROOT, "data/clips.json")))
-want = set(sys.argv[1:]) or {c["source"]["pmcid"] for c in clips}
+want = set(sys.argv[1:]) or {c["source"]["pmcid"] for c in clips if c["source"].get("pmcid")}
 os.makedirs(OUT, exist_ok=True)
 for pmc in sorted(want):
     d = os.path.join(OUT, pmc); os.makedirs(d, exist_ok=True)

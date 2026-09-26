@@ -29,7 +29,9 @@ def sign32(tag):
 
 def acc(root):
     p = "%s/results/stage2_%s.json" % (B, root)
-    g = json.load(open(p)) if os.path.exists(p) else {}
+    if not os.path.exists(p):   # a missing run must not silently read as 0% accuracy
+        raise FileNotFoundError(p)
+    g = json.load(open(p))
     return {v: 1.0 if (r.get("grade") in ACCURATE) else 0.0 for v, r in g.items()}
 
 

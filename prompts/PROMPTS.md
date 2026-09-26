@@ -203,40 +203,81 @@ SKIP if no cause is named.
 ```text
 You are grading a vision model that was shown a short clinical video of one
 patient and asked, with NO history and NO test results, to describe what it saw
-and name the disease. It answered in free prose, so read the whole answer and
-extract its position.
+and propose possible diagnoses.
+
+Evaluate two separate outcomes:
+(1) recognition of the visible phenomenology;
+(2) coverage of a diagnostic hypothesis compatible with the reference case.
+
+Diagnostic coverage does NOT require exact identification of the confirmed
+disease. A clinically appropriate syndrome or broader aetiological category
+may qualify under the case-specific acceptance criteria below.
 
 GROUND TRUTH
-  true diagnosis : <true diagnosis>
-  the sign a competent viewer should name from the clip : <reference sign>
-  answers to score as CORRECT (the actual disease entity) : <accept-as-correct>
-  answers to score as PARTIAL (right syndrome or category, but not the cause) :
-    <accept-as-partial>
+  confirmed diagnosis : <true diagnosis>
+  reference visible phenomenology : <reference sign>
+  additional hypotheses accepted as COVERAGE, including qualifying syndromes
+  and broader aetiological categories : <accept-as-coverage>
+  related but insufficient hypotheses, NOT accepted as coverage :
+    <related-but-not-covered>
 
 THE MODEL'S ANSWER (free prose)
 <the answer>
 
-Grade on two axes, using the same standard you would apply to a structured answer.
+Read the whole answer. Grade SIGN and DIAGNOSIS independently.
+Correct sign recognition does not by itself establish diagnostic coverage,
+and an incorrect sign description does not rule out diagnostic coverage.
 
-SIGN - did it name the visible abnormality correctly?
-  correct : names the same phenomenology as the ground-truth sign anywhere in the
-            prose (synonyms count: "ataxic gait" for "unsteady wide-based walking")
-  partial : describes the abnormality in the right body region but names the wrong
-            phenomenology, or describes it only vaguely without naming a sign
-  wrong   : names a different phenomenology, wrong body region, or says nothing
-            abnormal is visible
+SIGN - did it identify the visible abnormality?
+  correct : identifies the reference phenomenology or an equivalent physical
+            description anywhere in the answer; clinical synonyms count.
+  partial : describes a relevant abnormality in the correct body region,
+            but the description is incomplete or too vague to establish
+            the reference phenomenology.
+  wrong   : identifies an incompatible phenomenology or the wrong body
+            region, or does not describe a relevant visible abnormality.
 
-DIAGNOSIS - the prose may list several. Treat the one it presents first or most
-confidently as dx1, the next two as dx2 and dx3, and leave a slot "wrong" if it
-offered fewer.
-  correct : the same disease entity as the true diagnosis or as one of the CORRECT
-            list, at comparable specificity. A strictly vaguer answer is NOT
-            correct.
-  partial : matches the PARTIAL list, or is the right syndrome/category but not the
-            cause, or is the correct entity named too vaguely.
-  wrong   : anything else.
+DIAGNOSIS - does a proposed hypothesis cover the reference case?
+  correct : identifies the confirmed disease or an equivalent diagnosis,
+            OR identifies a syndrome or broader aetiological category
+            included in the case-specific COVERAGE list.
+            Equivalent clinical terminology is accepted.
+            Exact disease identification and equal specificity to the
+            confirmed diagnosis are NOT required for accepted hypotheses.
+  partial : proposes a clinically related hypothesis that does not satisfy
+            the COVERAGE criteria, including an entry in the
+            related-but-not-covered list.
+  wrong   : proposes an incompatible or unrelated hypothesis, or does not
+            propose a diagnostic hypothesis.
 
-Reply with ONLY this JSON, no prose around it:
+Apply these rules:
+- Do not reject an accepted hypothesis merely because it is broader than
+  the confirmed disease.
+- Do not automatically accept every broad syndrome or disease category.
+  Broad hypotheses must match the case-specific COVERAGE list or an
+  equivalent clinical expression.
+- Merely repeating the visible sign does not establish coverage unless
+  that expression also names an explicitly accepted diagnostic syndrome.
+- Count hypotheses the model proposes as possibilities, even if they are
+  not its leading diagnosis.
+- Do not count a diagnosis mentioned only to deny or explicitly rule it out.
+- Do not infer a diagnostic hypothesis that the model did not express.
+
+Assign dx1 to the explicitly designated primary diagnosis, if present;
+otherwise use the first proposed diagnosis. Assign dx2 and dx3 to the next
+two distinct proposed diagnoses in presentation order.
+Use "wrong" for missing slots.
+
+Assign best using ALL distinct proposed diagnoses in the complete answer,
+including diagnoses beyond dx3:
+  correct : at least one hypothesis is graded correct.
+  partial : none is correct, but at least one is partial.
+  wrong   : all are wrong, or no diagnostic hypothesis is proposed.
+
+The binary aetiological-coverage outcome is 1 if best is "correct",
+and 0 otherwise. Partial hypotheses do not receive coverage credit.
+
+Reply with ONLY this JSON:
 {"sign":"correct|partial|wrong",
  "dx1":"correct|partial|wrong",
  "dx2":"correct|partial|wrong",
@@ -247,23 +288,37 @@ Reply with ONLY this JSON, no prose around it:
 
 ### Part 1: the uncapped rank probe
 
-Models list more diagnoses than the three slots above admit, so the aetiology reported in \S comes from this probe, which reads the whole answer and returns the rank of the first entry judged correct.
+This probe reads the complete answer and records the number of distinct proposed diagnoses and the rank of the first hypothesis satisfying the case-specific aetiological-coverage criteria (paper, Section 3.3). Accepted syndromes and broader aetiological categories qualify; exact identification of the confirmed disease is not required.
 
 ```text
-A model was shown frames from a video of one patient and asked to describe what it
-saw and to name the disease, listing as many alternative diagnoses as it wished.
+A model was shown frames from a video of one patient and asked to describe
+what it saw and propose possible diagnoses, with no history or test results.
 
 TRUE DIAGNOSIS: <true diagnosis>
-Also acceptable as correct: <accept-as-correct>
+Additional hypotheses accepted as COVERAGE, including qualifying
+syndromes and broader aetiological categories: <accept-as-coverage>
+Related but insufficient hypotheses, NOT accepted as coverage:
+<related-but-not-covered>
 
 THE MODEL'S ANSWER:
 <the answer>
 
-Read the whole answer and list, in the order the model presents them, every
-distinct diagnosis it offers. Then give the position of the first one that is
-correct - the same disease entity as the truth or as an acceptable answer, at
-comparable specificity. A strictly vaguer answer is not correct. Use 0 if none of
-them is correct.
+Read the whole answer and list, in order of first appearance, every
+distinct diagnosis proposed as a possibility. Merge synonymous entries
+and exclude diagnoses mentioned only to rule them out.
+
+Return the rank of the first hypothesis that covers the reference case:
+either the confirmed disease or an explicitly accepted syndrome or
+broader aetiological category. Equivalent clinical terminology counts.
+Exact disease identification and equal specificity to the confirmed
+diagnosis are NOT required. Do not accept other broad hypotheses unless
+equivalent to an explicitly accepted hypothesis. Merely repeating the
+visible sign does not qualify unless it names an accepted syndrome.
+
+n_listed is the total number of distinct proposed diagnoses.
+rank is the 1-based position of the first qualifying hypothesis.
+Use rank = 0 if none qualifies. Consider the entire list, not only
+the first three entries.
 
 Reply with ONLY {"n_listed": <int>, "rank": <int>}
 ```

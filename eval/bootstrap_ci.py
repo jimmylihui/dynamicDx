@@ -34,15 +34,18 @@ def judge(root):
 
 
 def load(root):
-    """per case: (accurate 0/1, decisive obtained, decisive available)"""
+    """per case: (accurate 0/1, decisive obtained, decisive available), over all 71 cases.
+
+    A case without a usable, graded consultation counts as not accurate and contributes zero
+    acquired decisive entries, as in the paper, so every arm has the same 71-case denominator."""
     j = judge(root)
     if j is None:
         return None
-    out = {}
+    out = {v: (0, 0, len(DEC[v])) for v in DEC}
     for f in glob.glob("%s/results/%s/*/*.json" % (B, root)):
         d = json.load(open(f))
         v = d.get("video")
-        if not v or not (j.get(v) or {}).get("grade"):
+        if v not in out or d.get("error") or not (j.get(v) or {}).get("grade"):
             continue
         out[v] = (1 if j[v]["grade"] in ACCURATE else 0,
                   len(acquired(v, d.get("served"))), len(DEC[v]))
@@ -118,7 +121,7 @@ for name, _, _ in MODELS:
 
 print()
 print("=" * 96)
-print("RETRIEVAL   lit - base, paired on the clips retrieval covered")
+print("RETRIEVAL   lit - base, paired on the same 71 cases")
 print("=" * 96)
 for name, tag, _ in MODELS:
     base = load("part2_%s_vid_doctor" % tag)
@@ -135,7 +138,7 @@ for name, tag, _ in MODELS:
 
 print()
 print("=" * 96)
-print("CORRUPTION  80%% of answers flipped - truthful, paired")
+print("CORRUPTION  80% of answers flipped - truthful, paired")
 print("=" * 96)
 for name, tag, short in MODELS:
     base = load("part2_%s_vid_doctor" % tag)

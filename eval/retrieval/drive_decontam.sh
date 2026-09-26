@@ -12,8 +12,8 @@ mkdir -p "$W" results
 
 for C in orig clean strict; do
   CLEAN=$C OUTFILE=$W/openspace_oracle_$C.json $PY eval/retrieval/openspace.py oracle \
-      > results/decon_$C.log 2>&1 || { echo "$C 失败"; tail -5 results/decon_$C.log; exit 1; }
-  echo "[$(date +%H:%M)] CLEAN=$C 完成  ($(ls $RECDIR | wc -l) 个病例的原始记录已缓存)"
+      > results/decon_$C.log 2>&1 || { echo "$C failed"; tail -5 results/decon_$C.log; exit 1; }
+  echo "[$(date +%H:%M)] CLEAN=$C done  (raw records cached for $(ls $RECDIR | wc -l) cases)"
 done
 
 W="$W" $PY - <<'PY'
@@ -21,7 +21,7 @@ import json, collections, os
 import numpy as np
 D = {c: json.load(open(os.environ['W'] + '/openspace_oracle_%s.json' % c)) for c in ('orig','clean','strict')}
 rules = ['source_pmcid','shared_doi','near_duplicate','answer_string']
-print('\n%-22s %10s %14s' % ('过滤规则','移除记录数','受影响病例'))
+print('\n%-22s %10s %14s' % ('filter rule','records removed','cases affected'))
 tot = collections.Counter(); aff = collections.Counter()
 for v, x in D['strict'].items():
     for r in rules:
@@ -30,7 +30,7 @@ for v, x in D['strict'].items():
         if n: aff[r] += 1
 for r in rules:
     print('%-22s %10d %10d/%d' % (r, tot[r], aff[r], len(D['strict'])))
-print('\n%-8s %12s %12s' % ('条件','平均语料','平均候选数'))
+print('\n%-8s %12s %12s' % ('condition','mean corpus','mean causes'))
 for c in ('orig','clean','strict'):
     print('%-8s %12.0f %12.0f' % (c,
         np.mean([x['n_papers'] for x in D[c].values()]),

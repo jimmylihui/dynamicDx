@@ -26,7 +26,7 @@ import threading
 import time
 import urllib.request
 
-B = os.environ.get("DDX_ROOT", ".")
+B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ORKEY = os.environ["ORKEY"]
 MODEL = os.environ.get("MODEL", "openai/gpt-5.6-luna")
 JUDGE = os.environ.get("JUDGE", "deepseek/deepseek-v4.1-flash")
@@ -133,7 +133,8 @@ def run(src):
     truth = [t if t in ("yes", "no") else "unknown" for t in truth]
 
     nflip = int(round(len(qs) * RATIO / 100.0))
-    rng = random.Random(hash((d["video"], RATIO, SEED)) & 0xFFFFFFFF)
+    # string seed: stable across processes (str hash() is salted per interpreter run)
+    rng = random.Random("%s|%d|%d" % (d["video"], RATIO, SEED))
     idx = sorted(rng.sample(range(len(qs)), nflip))
     a = list(truth)
     for i in idx:

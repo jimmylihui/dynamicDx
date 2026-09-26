@@ -242,7 +242,9 @@ NUM = re.compile(r"^\s*\d+[.)]\s*(.+)")
 
 def parse_round(t):
     """One move per round: a block of questions, a block of orders, or the final diagnosis."""
-    m = re.search(r"DIAGNOS\w*\s*:\s*(.+)", t, re.I)
+    # anchored to the start of a line, so an order such as "MRI (to support diagnosis: MSA)" does not
+    # end the consultation
+    m = re.search(r"^\s*\**\s*DIAGNOS\w*\s*\**\s*:\s*(.+)", t, re.I | re.M)
     if m:
         return "DIAGNOSIS", [m.group(1).strip().strip("*").strip()]
     kind, items = None, []

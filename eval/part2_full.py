@@ -1,12 +1,12 @@
 """Part 2 end to end: watch, ask, examine, order, diagnose.
 
-Five turns per case. The doctor sees 32 frames and, in the candidate arms, the Part 1 literature
+Three turns per case (history, investigations, diagnosis). The doctor sees 32 frames and, in the candidate arms, the Part 1 literature
 list. It asks yes/no questions; the patient answers. It orders investigations; the chart answers.
 It then names a diagnosis.
 
 Neither the patient nor the chart is improvised. The judge is used ONLY to match free text to the
 case file - which symptom a question is asking about, which menu entries an order covers - and
-every value handed back to the doctor is read out of cases_all.json by this script. A judge that
+every value handed back to the doctor is read out of data/cases.json by this script. A judge that
 also wrote the answers could invent a finding that settles the case, and the run would measure the
 judge rather than the doctor.
 
@@ -333,8 +333,11 @@ def numbered(txt):
 
 
 space = json.load(open(SRC)) if SRC else {}
+# candidate files are {video: {"causes": [...]}}; own-candidate lists ({video: [...]}) are accepted too
+space = {k: (v if isinstance(v, dict) else {"causes": v}) for k, v in space.items()}
 cases = json.load(open(B + "/data/cases.json"))
 todo = [c for c in cases if not SRC or space.get(c["video"], {}).get("causes")]
+# a case without candidates is not run; downstream scoring counts it as not accurate (denominator 71)
 print("SPACE=%s -> %d cases -> results/%s" % (SPACE, len(todo), OUTROOT), flush=True)
 lock = threading.Lock()
 

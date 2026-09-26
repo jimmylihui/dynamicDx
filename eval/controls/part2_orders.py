@@ -2,23 +2,25 @@ import os
 # -*- coding: utf-8 -*-
 """Order-selection ablation, replayed from a published Part-2 run.
 
-The video, the history questions and the patient's (binary) answers are held
+The video, the history questions and the patient's yes/no/unknown answers are held
 at what the published run produced - only the investigation turn changes:
 
   MODE=budget     the model re-orders under an itemised budget of K atomic
                   tests (no bundling, no category orders)
   MODE=checklist  the model does not choose: a fixed, case-independent
                   checklist is submitted on its behalf
+  MODE=random     K test names drawn at random (seeded per clip) from the
+                  pooled investigation vocabulary of every chart
 
 Everything downstream (matching, chart release, diagnosis) is unchanged, so
 the result is directly comparable with the released arms.
 
 usage: part2_orders.py SRC_RUN OUT_JSON
-env:   ORKEY, MODE, K, LIST, MODEL, PROVIDER
+env:   ORKEY, MODE, K, LIST, MODEL, PROVIDER, JUDGE (chart matcher), JPROVIDER, ROLE
 """
 import base64, glob, json, os, re, shutil, subprocess, sys, tempfile, urllib.request
 
-B = os.environ.get("DDX_ROOT", ".")
+B = os.environ.get("DDX_ROOT", os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 ORKEY = os.environ["ORKEY"]
 MODEL = os.environ.get("MODEL", "openai/gpt-5.6-luna")
 PROV = os.environ.get("PROVIDER", "OpenAI")
@@ -35,8 +37,8 @@ def grab(n):
     return re.search(r'^%s = """(.*?)"""' % n, src, re.S | re.M).group(1)
 T1, T3, MATCH_I = grab("T1"), grab("T3"), grab("MATCH_I")
 T1_NOVID = grab("T1_NOVID")
-m = re.search(r'_OPENING = "(.*?)"', src)
-_OPENING = m.group(1) if m else ""
+_OPENING = {"neurologist": "You are a neurologist seeing a new patient.",
+            "doctor": "You are a doctor seeing a new patient."}[os.environ.get("ROLE", "doctor")]
 
 T2_BUDGET = """The patient answered:
 
@@ -133,7 +135,10 @@ def post(model, messages, mx=4000, imgs=0):
 
 def as_json(t):
     m = re.search(r"\{.*\}", t or "", re.S)
-    return json.loads(m.group(0)) if m else None
+    try:
+        return json.loads(m.group(0)) if m else None
+    except ValueError:
+        return None
 
 def numbered(t):
     out = []
@@ -159,7 +164,7 @@ if os.environ.get("THREEVAL") == "1":
         "\n".join("- " + y for y in _yes), "\n".join("- " + n for n in _nos))}], 6000)) or {}
     ans = {str(i): str(_r.get(str(i), "unknown")).lower() for i in range(1, len(qs) + 1)}
 else:
-    ans = {str(i): str(d["answers"].get(str(i), "no")).lower() for i in range(1, len(qs) + 1)}
+    ans = {str(i): str(d["answers"].get(str(i), "unknown")).lower() for i in range(1, len(qs) + 1)}
 qa = ["%d. %s  ->  %s" % (i, q, ans[str(i)]) for i, q in enumerate(qs, 1)]
 
 tmp = tempfile.mkdtemp(prefix="ord_")
@@ -209,7 +214,7 @@ else:
 inv = c["investigations"]
 menu = "\n".join("- %s%s" % (k, " [NAMED-ONLY]" if v.get("explicit_only") else "")
                  for k, v in inv.items())
-cov = as_json(post(MODEL, [{"role": "user", "content": MATCH_I % (
+cov = as_json(post(JUDGE, [{"role": "user", "content": MATCH_I % (
     "\n".join("%d. %s" % (i, t) for i, t in enumerate(tests, 1)), menu)}], 8000)) or {}
 lines, served = [], []
 for i, t in enumerate(tests, 1):

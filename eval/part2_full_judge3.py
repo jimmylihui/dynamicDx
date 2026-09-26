@@ -120,8 +120,9 @@ print("questions asked    : %.1f  (patient said yes to %.1f)"
       % (sum(r["n_q"] for r in ok) / n, sum(r["n_yes"] for r in ok) / n))
 print("orders placed      : %.1f  (chart answered %.1f entries)"
       % (sum(r["n_orders"] for r in ok) / n, sum(r["n_served"] for r in ok) / n))
-nd = sum(r["n_dec"] for r in ok)
-print("decisive obtained  : %.1f%% (%d/%d)"
+# tau pools over all 71 cases: a case without a graded consultation contributes zero acquired entries
+nd = sum(len(v) for v in DEC.values())
+print("decisive obtained  : %.1f%% (%d/%d, tau over 71 cases)"
       % (100.0 * sum(r["dec_served"] for r in ok) / nd, sum(r["dec_served"] for r in ok), nd))
 for k in (0, 1):
     sub = [r for r in ok if (r["dec_served"] > 0) == bool(k)]

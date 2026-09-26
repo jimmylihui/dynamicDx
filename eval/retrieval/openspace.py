@@ -20,7 +20,7 @@ import time
 import urllib.parse
 import urllib.request
 
-B = os.environ.get("DDX_ROOT", ".")
+B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 ORKEY = os.environ["ORKEY"]
 EXTRACT_MODEL = os.environ.get("EXTRACT_MODEL", "deepseek/deepseek-v4.1-flash")
 EXTRACT_PROV = os.environ.get("EXTRACT_PROVIDER", "")
@@ -81,8 +81,9 @@ def source_meta(pmcid):
             break
         except Exception:                                          # noqa: BLE001
             time.sleep(2)
-    with _srclock:
-        _srcmeta[pmcid] = meta
+    if meta:                     # a failed lookup is retried on the next call rather than cached
+        with _srclock:
+            _srcmeta[pmcid] = meta
     return meta
 
 
@@ -225,9 +226,10 @@ def free_variants(label):
                 got.append(v)
     except Exception:                                              # noqa: BLE001
         pass
-    with _vlock:
-        _variants[label] = got[:6]
-        json.dump(_variants, open(VARIANT_CACHE, "w"), indent=1, ensure_ascii=False)
+    if got:                      # an API failure is not cached as "no variants"
+        with _vlock:
+            _variants[label] = got[:6]
+            json.dump(_variants, open(VARIANT_CACHE, "w"), indent=1, ensure_ascii=False)
     return got[:6]
 
 
@@ -446,7 +448,10 @@ def work(q):
         # index and re-querying returned 1000 records for a case in one run and 991 in the next, so
         # running each condition as its own search would confound the filter with search drift.
         # The search is therefore done once, cached to disk, and every condition filters that file.
-        rec = "%s/%s.json" % (RECDIR, v.split(".")[0]) if RECDIR else None
+        # the cache is keyed by query source as well as case: queries built from different models'
+        # descriptions (or from the reference sign) retrieve different corpora
+        rec = ("%s/%s__%s.json" % (RECDIR, os.path.basename(MODE.rstrip("/")), v.split(".")[0])
+               if RECDIR else None)
         if rec and os.path.exists(rec):
             papers = json.load(open(rec))
             seen_t = {(x.get("title") or "").strip() for x in papers}

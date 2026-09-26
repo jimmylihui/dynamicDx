@@ -24,7 +24,7 @@ import urllib.request
 REST = "https://www.ebi.ac.uk/europepmc/webservices/rest"
 STOP = set("""the a an of and or with from due to in on for by as at is are was were this that
 these those case report a rare presenting presentation patient patients disease syndrome
-secondary related associated onset acute chronic severe moderate mild very type形""".split())
+secondary related associated onset acute chronic severe moderate mild very type""".split())
 
 
 def norm(s):

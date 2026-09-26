@@ -1,21 +1,22 @@
 # DynamicDx
 
-**DynamicDx: a process-level benchmark of neurological consultation from patient video.**
-Paper: *[link to be added]* · 71 consultations · 11 phenomenological lines · 66 open-access source reports
+**DynamicDx: Evaluating Evidence Acquisition in Video-Based Diagnosis.**
+Paper: *[link to be added]* · 71 consultations · 11 phenomenological categories (`line` in the code) · 66 open-access source reports
 
 Each case pairs a short patient video with a case-grounded history, an investigation chart and a
 confirmed diagnosis, all taken from the same published case report. A model is evaluated in two
 stages: **Stage 1**, describe the sign and name a differential from the frames alone; **Stage 2**,
 take a yes/no history, order investigations against the chart, and commit to a diagnosis. Nothing
-in the environment is improvised: the patient answers only from the record, the chart returns only
-what the source report performed, and an LLM is used solely to *match* free text to record entries,
-never to write a finding.
+in the environment is improvised: the patient answers only from the record, and the chart returns
+the results the source report gives and, for tests the report did not run, fixed values expected
+for the presentation, set before any model was evaluated (§3.1). During a consultation an LLM is
+used solely to *match* free text to record entries, never to write a finding.
 
 ## Repository layout
 
 | path | what it is |
 |---|---|
-| `data/cases.json` | the 71 cases: source PMCID and licence, confirmed diagnosis, visible sign, Stage 1 lists (`accept_as_coverage`, `related_but_not_covered`) and the final-diagnosis acceptance lists (`final_diagnosis`), documented symptom table with its yes/no/unknown answering rule, investigation chart on the shared menu of the case's disease line: results reported in the source article (`p: reported`) and values expected for the presentation (`p: derived`), with `decisive` flags and `explicit_only` therapeutic trials |
+| `data/cases.json` | the 71 cases: source PMCID and licence, confirmed diagnosis, visible sign, Stage 1 lists (`accept_as_coverage`, `related_but_not_covered`) and the final-diagnosis acceptance lists (`final_diagnosis`), documented symptom table with its yes/no/unknown answering rule, investigation chart on the shared menu of the case's category: results reported in the source article (`p: reported`) and values expected for the presentation (`p: derived`), with `decisive` flags and `explicit_only` therapeutic trials |
 | `data/clips.json` | per clip: source article, licence, duration, frame rate, resolution, scene cuts |
 | `data/source_licences.json` | the 66 source articles with title, journal, year and licence |
 | `data/equivalent_entries.json` | the 90 verified equivalences between chart entries of the same case that report the same finding from the same kind of investigation, used when scoring τ (§3.3, Appendix C) |
@@ -25,7 +26,7 @@ never to write a finding.
 | `prompts/PROMPTS.md` | every prompt, verbatim: the model under test, the patient and chart matchers, retrieval, grading |
 | `eval/` | the evaluation harness: Stage 1 sweep and judge; Stage 2 batch and multi-round consultations; grader; paired bootstrap; `tau.py` (source-workup coverage τ with equivalent entries); `part2_lie2.py` (corrupted-history stress test, Appendix G) |
 | `eval/retrieval/` | literature retrieval and decontamination (§3.5.2, Appendix F; prompts in Appendix H): HPO normalisation, Europe PMC query and cause extraction, the source-PMCID / DOI / near-duplicate / answer-string filters |
-| `eval/controls/` | investigation-selection controls (Appendix C.2): ten-item budget, fixed checklist and random arms replayed on the released consultations, and the τ decomposition of Appendix C |
+| `eval/controls/` | investigation-selection controls (Appendix C.3): ten-item budget, fixed checklist and random arms replayed from a Stage 2 video run (history held fixed, chart matched by the same DeepSeek matcher), and the τ decomposition of Appendix C |
 | `eval/analysis/` | `decidability.py`: results by clinician-judged decidability (Appendix B, Tables 8 and 9), read from `data/decidability.json`, the Stage 1 judge output and the Stage 2 grades |
 | `scripts/fetch_videos.py` | downloads the source videos from Europe PMC and re-encodes them |
 
@@ -101,7 +102,8 @@ python eval/bootstrap_ci.py
 
 The seven conditions of the paper's Table 2 (§3.4) are flags of `eval/part2_full.py`; everything
 else about the consultation stays fixed. Defaults are the paper's: `ROLE=doctor`, `KFRAMES=32`,
-temperature 0, one pinned provider per model.
+temperature 0, one pinned provider per model under evaluation (`PROVIDER`); the auxiliary
+DeepSeek-V4.1-Flash calls are unpinned unless `JPROVIDER` is set.
 
 | condition | flags |
 |---|---|
@@ -126,8 +128,8 @@ Source-workup coverage τ (`eval/tau.py`) is the share of `decisive` chart entri
 contrast between conditions is a paired case-level percentile bootstrap with 10,000 resamples.
 
 **The chart.** 6,398 entries over the 71 cases: 426 read from the source article
-(`p: reported`) and 5,972 values expected for the presentation on the shared line menu
-(`p: derived`; 2,473 from the line files, 3,499 from the generic panel), most of them normal, not
+(`p: reported`) and 5,972 values expected for the presentation on the shared category menu
+(`p: derived`; 2,473 from the category files, 3,499 from the generic panel), most of them normal, not
 performed or not recorded. 301 entries are `decisive` (256 reported, 45 derived), and every case
 keeps at least one decisive entry. All values are fixed before evaluation; the matcher only maps
 an order to entry names, and an order the chart does not hold returns
@@ -141,7 +143,8 @@ answered `no`, and a compound question is settled only when the record settles e
 ## Results
 
 The harness writes each run under `results/<OUTROOT>/` and the grader writes
-`results/stage2_<OUTROOT>.json`; `eval/bootstrap_ci.py` reads two such files for a paired contrast.
+`results/stage2_<OUTROOT>.json`; `eval/bootstrap_ci.py` reads the runs named in its `MODELS` table
+and scores every arm over all 71 cases (a missing or failed consultation counts as not accurate).
 
 ## Licence and citation
 
@@ -161,13 +164,13 @@ case in `source.licence` / `source.annotation_licence` of `data/cases.json` and 
 | CC BY-NC-ND 4.0 | 18 | 23 | research evaluation only; do not redistribute these cases or any adaptation of them |
 
 The clips are never redistributed. `scripts/fetch_videos.py` downloads each article's own
-supplementary files for local use; the trimmed and re-encoded excerpts it produces are adaptations
+supplementary files for local use and re-encodes them; excerpts cut from these files are adaptations
 and must not be shared, whatever the source licence, and for the CC BY-NC-ND sources
 they may be made only for private research use.
 
 ```bibtex
 @article{dynamicdx2026,
-  title  = {DynamicDx: a process-level benchmark of neurological consultation from patient video},
+  title  = {DynamicDx: Evaluating Evidence Acquisition in Video-Based Diagnosis},
   author = {[authors]},
   year   = {2026},
   note   = {[venue / link]}

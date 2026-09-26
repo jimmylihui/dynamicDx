@@ -11,7 +11,7 @@ env:   BACKEND  or | ollama          (default or)
        ORKEY    OpenRouter API key   (required when BACKEND=or)
        MODEL    default google/gemma-4-31b-it on the API, gemma4:31b on Ollama
        PROVIDER pinned OpenRouter provider, default CoreWeave
-       PROMPT   new | old (default new). The old prompt is the one the earlier open-probe runs
+       PROMPT   new | old (default old, the prompt reported in the paper). The old prompt is the one the earlier open-probe runs
                 used, recovered from the session log: free prose, no output schema, no list of
                 example signs, no cap on the number of diagnoses. The new prompt names seven
                 example signs - chorea, dystonia, ataxic gait, ptosis, facial weakness, freezing
