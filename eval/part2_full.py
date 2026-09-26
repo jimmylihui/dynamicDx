@@ -39,9 +39,9 @@ import urllib.request
 B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ORKEY = os.environ["ORKEY"]
 MODEL = os.environ.get("MODEL", "openai/gpt-5.6-luna")
-JUDGE = os.environ.get("JUDGE", "openai/gpt-5.6-luna")
+JUDGE = os.environ.get("JUDGE", "deepseek/deepseek-v4.1-flash")
 PROVIDER = os.environ.get("PROVIDER", "OpenAI")
-JPROVIDER = os.environ.get("JPROVIDER", "OpenAI")
+JPROVIDER = os.environ.get("JPROVIDER", "")
 REASONING = json.loads(os.environ.get("REASONING", '{"enabled": false}'))
 # 0 = send no max_tokens at all and let the provider decide
 MAXTOK = int(os.environ.get("MAXTOK", "-1"))
@@ -287,7 +287,7 @@ def frames(p, k, tmp):
 def post(model, messages, mx, imgs=0):
     payload = {"model": model, "temperature": 0, "messages": messages,
                "reasoning": REASONING, "usage": {"include": True},
-               "provider": {"order": [_prov(model)], "allow_fallbacks": False, "sort": "price"}}
+               **({"provider": {"order": [_prov(model)], "allow_fallbacks": False, "sort": "price"}} if _prov(model) else {})}
     cap = mx if MAXTOK < 0 else MAXTOK
     if cap:
         payload["max_tokens"] = cap

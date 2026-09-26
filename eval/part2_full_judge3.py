@@ -25,7 +25,8 @@ from tau import acquired, DEC                                     # noqa: E402
 
 B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ORKEY = os.environ["ORKEY"]
-JUDGE = os.environ.get("JUDGE", "openai/gpt-5.6-luna")
+JUDGE = os.environ.get("JUDGE", "deepseek/deepseek-v4.1-flash")
+JPROV = os.environ.get("JUDGE_PROVIDER", "")
 ROOT = os.environ.get("ROOT", "part2_full_none")
 cases = {c["video"]: c for c in json.load(open(B + "/data/cases.json"))}
 
@@ -59,8 +60,7 @@ q = sorted(glob.glob("%s/results/%s/*/*.json" % (B, ROOT)))
 def ask(p):
     body = json.dumps({"model": JUDGE, "temperature": 0,
                        "messages": [{"role": "user", "content": p}],
-                       "provider": {"order": [os.environ.get("JUDGE_PROVIDER","OpenAI")], "allow_fallbacks": False,
-                                    "sort": "price"},
+                       **({"provider": {"order": [JPROV], "allow_fallbacks": False, "sort": "price"}} if JPROV else {}),
                        "max_tokens": int(os.environ.get("MAXTOK", "8000")),
                        }).encode()
     for _ in range(4):

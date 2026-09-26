@@ -5,12 +5,12 @@ related but NOT accepted = part1_video_only.related_but_not_covered (data/cases.
 Aetiological coverage = best == "correct"; the rank probe gives coverage over the full list.
 
 usage: part1_judge.py TAG=RUNDIR [TAG=RUNDIR ...]    e.g. luna=part1_luna
-env:   ORKEY, JUDGE (default openai/gpt-5.6-luna), JPROVIDER (default OpenAI), CASES, OUT, PAR
+env:   ORKEY, JUDGE (default deepseek/deepseek-v4.1-flash), JPROVIDER (default unset: OpenRouter routes), CASES, OUT, PAR
 Writes one file per answer under results/part1_judge/<TAG>__<clip>__k<K>.json with the verdict and the rank.
 """
 import glob, json, os, re, sys, threading, time, urllib.request
 B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-ORKEY = os.environ["ORKEY"]; JUDGE = os.environ.get("JUDGE", "openai/gpt-5.6-luna"); JPROV = os.environ.get("JPROVIDER", "OpenAI")
+ORKEY = os.environ["ORKEY"]; JUDGE = os.environ.get("JUDGE", "deepseek/deepseek-v4.1-flash"); JPROV = os.environ.get("JPROVIDER", "")
 CASES = {c["video"]: c for c in json.load(open(os.environ.get("CASES", B + "/data/cases.json")))}
 OUT = os.environ.get("OUT", B + "/results/part1_judge"); PAR = int(os.environ.get("PAR", "12"))
 GRADE = """You are grading a vision model that was shown a short clinical video of one
@@ -128,7 +128,7 @@ the first three entries.
 Reply with ONLY {"n_listed": <int>, "rank": <int>}"""
 def ask(p):
     body = json.dumps({"model": JUDGE, "temperature": 0, "max_tokens": 1000, "messages": [{"role": "user", "content": p}],
-                       "provider": {"order": [JPROV], "allow_fallbacks": False}}).encode()
+                       **({"provider": {"order": [JPROV], "allow_fallbacks": False}} if JPROV else {})}).encode()
     for a in range(5):
         try:
             r = json.loads(urllib.request.urlopen(urllib.request.Request("https://openrouter.ai/api/v1/chat/completions", data=body,

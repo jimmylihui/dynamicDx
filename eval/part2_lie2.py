@@ -29,9 +29,9 @@ import urllib.request
 B = os.environ.get("DDX_ROOT", ".")
 ORKEY = os.environ["ORKEY"]
 MODEL = os.environ.get("MODEL", "openai/gpt-5.6-luna")
-JUDGE = os.environ.get("JUDGE", "openai/gpt-5.6-luna")
+JUDGE = os.environ.get("JUDGE", "deepseek/deepseek-v4.1-flash")
 PROVIDER = os.environ.get("PROVIDER", "OpenAI")
-JPROVIDER = os.environ.get("JPROVIDER", "OpenAI")
+JPROVIDER = os.environ.get("JPROVIDER", "")
 REASONING = json.loads(os.environ.get("REASONING", '{"enabled": true}'))
 K = int(os.environ.get("KFRAMES", "32"))
 TIMEOUT = int(os.environ.get("TIMEOUT", "90"))
@@ -72,7 +72,7 @@ def post(model, messages, mx=0, imgs=0, reasoning=None):
     payload = {"model": model, "temperature": 0, "messages": messages,
                "reasoning": REASONING if reasoning is None else reasoning,
                "usage": {"include": True},
-               "provider": {"order": [_prov(model)], "allow_fallbacks": False, "sort": "price"}}
+               **({"provider": {"order": [_prov(model)], "allow_fallbacks": False, "sort": "price"}} if _prov(model) else {})}
     if mx:
         payload["max_tokens"] = mx
     body = json.dumps(payload).encode()

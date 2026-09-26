@@ -22,7 +22,8 @@ import urllib.request
 
 B = os.environ.get("DDX_ROOT", ".")
 ORKEY = os.environ["ORKEY"]
-EXTRACT_MODEL = os.environ.get("EXTRACT_MODEL", "openai/gpt-5.6-luna")
+EXTRACT_MODEL = os.environ.get("EXTRACT_MODEL", "deepseek/deepseek-v4.1-flash")
+EXTRACT_PROV = os.environ.get("EXTRACT_PROVIDER", "")
 NPAPERS = int(os.environ.get("NPAPERS", "250"))
 SCOPE = os.environ.get("SCOPE", "broad")
 USE_VARIANTS = os.environ.get("VARIANTS", "1") == "1"
@@ -209,8 +210,7 @@ def free_variants(label):
             return _variants[label]
     body = json.dumps({"model": EXTRACT_MODEL, "temperature": 0, "max_tokens": 150,
                        "messages": [{"role": "user", "content": VASK % label}],
-                       "provider": {"order": ["OpenAI"], "allow_fallbacks": False,
-                                    "sort": "price"},
+                       **({"provider": {"order": [EXTRACT_PROV], "allow_fallbacks": False, "sort": "price"}} if EXTRACT_PROV else {}),
                        "reasoning": {"enabled": False}}).encode()
     got = []
     try:
@@ -321,8 +321,7 @@ line, in the same order, nothing else. Write SKIP if no cause is named.
 def extract_raw(prompt):
     body = json.dumps({"model": EXTRACT_MODEL, "temperature": 0, "max_tokens": 1200,
                        "messages": [{"role": "user", "content": prompt}],
-                       "provider": {"order": ["OpenAI"], "allow_fallbacks": False,
-                                    "sort": "price"},
+                       **({"provider": {"order": [EXTRACT_PROV], "allow_fallbacks": False, "sort": "price"}} if EXTRACT_PROV else {}),
                        "reasoning": {"enabled": False}}).encode()
     for _ in range(3):
         try:
@@ -340,8 +339,7 @@ def extract(titles):
     body = json.dumps({"model": EXTRACT_MODEL, "temperature": 0, "max_tokens": 2500,
                        "messages": [{"role": "user",
                                      "content": ASK % "\n".join(titles)}],
-                       "provider": {"order": ["OpenAI"], "allow_fallbacks": False,
-                                    "sort": "price"},
+                       **({"provider": {"order": [EXTRACT_PROV], "allow_fallbacks": False, "sort": "price"}} if EXTRACT_PROV else {}),
                        "reasoning": {"enabled": False}}).encode()
     for _ in range(3):
         try:

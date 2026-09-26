@@ -16,7 +16,8 @@ from itertools import combinations
 B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ORKEY = os.environ["ORKEY"]
 REASONING = json.loads(os.environ.get("REASONING", '{"enabled": false}'))
-JUDGE = os.environ.get("JUDGE", "openai/gpt-5.6-luna")
+JUDGE = os.environ.get("JUDGE", "deepseek/deepseek-v4.1-flash")
+JPROV = os.environ.get("JPROVIDER", "")
 cases = json.load(open(B + "/data/cases.json"))
 
 STOP = set("and or of the with for a an in on to test testing examination assessment level levels "
@@ -62,7 +63,7 @@ q = list(split)
 def ask(p):
     body = json.dumps({"model": JUDGE, "temperature": 0, "max_tokens": 60,
                        "messages": [{"role": "user", "content": p}],
-                       "provider": {"order": ["OpenAI"], "allow_fallbacks": False},
+                       **({"provider": {"order": [JPROV], "allow_fallbacks": False}} if JPROV else {}),
                        "reasoning": REASONING}).encode()
     for _ in range(4):
         try:

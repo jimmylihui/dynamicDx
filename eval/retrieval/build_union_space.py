@@ -20,7 +20,8 @@ import urllib.request
 
 B = os.environ.get("DDX_ROOT", ".")
 ORKEY = os.environ["ORKEY"]
-JUDGE = os.environ.get("JUDGE", "openai/gpt-5.6-luna")
+JUDGE = os.environ.get("JUDGE", "deepseek/deepseek-v4.1-flash")
+JPROV = os.environ.get("JPROVIDER", "")
 TAG = os.environ.get("TAG", "luna")
 
 P = """A model was shown frames from a video of one patient and asked to describe what it saw and
@@ -50,8 +51,7 @@ q = list(answers.items())
 def ask(p):
     body = json.dumps({"model": JUDGE, "temperature": 0, "max_tokens": 400,
                        "messages": [{"role": "user", "content": p}],
-                       "provider": {"order": ["OpenAI"], "allow_fallbacks": False,
-                                    "sort": "price"},
+                       **({"provider": {"order": [JPROV], "allow_fallbacks": False, "sort": "price"}} if JPROV else {}),
                        "reasoning": {"enabled": False}}).encode()
     for _ in range(4):
         try:

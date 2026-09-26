@@ -23,7 +23,8 @@ ORKEY = os.environ["ORKEY"]
 MODEL = os.environ.get("MODEL", "openai/gpt-5.6-luna")
 PROV = os.environ.get("PROVIDER", "OpenAI")
 MODE = os.environ.get("MODE", "budget")
-JUDGE = os.environ.get("JUDGE", MODEL)
+JUDGE = os.environ.get("JUDGE", "deepseek/deepseek-v4.1-flash")
+JPROV = os.environ.get("JPROVIDER", "")
 K = int(os.environ.get("K", "10"))
 LIST = os.environ.get("LIST", "C10")
 SRC, OUT = sys.argv[1], sys.argv[2]
@@ -114,10 +115,10 @@ CHECKLISTS = {
 }
 
 def post(model, messages, mx=4000, imgs=0):
+    prov = JPROV if model == JUDGE and JUDGE != MODEL else PROV
     body = json.dumps({"model": model, "temperature": 0, "messages": messages,
                        "reasoning": {"enabled": True}, "max_tokens": mx,
-                       "provider": {"order": [PROV], "allow_fallbacks": False,
-                                    "sort": "price"}}).encode()
+                       **({"provider": {"order": [prov], "allow_fallbacks": False, "sort": "price"}} if prov else {})}).encode()
     err = None
     for _ in range(5):
         try:

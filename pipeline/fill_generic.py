@@ -25,7 +25,8 @@ import urllib.request
 
 B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ORKEY = os.environ["ORKEY"]
-MODEL = os.environ.get("MODEL", "openai/gpt-5.6-luna")
+MODEL = os.environ.get("MODEL", "deepseek/deepseek-v4.1-flash")
+PROV = os.environ.get("PROVIDER", "")
 PANEL = json.load(open(B + "/pipeline/generic_panel.json"))["entries"]
 cases = json.load(open(B + "/data/cases.json"))
 
@@ -60,8 +61,7 @@ q = list(cases)
 def ask(p):
     body = json.dumps({"model": MODEL, "temperature": 0, "max_tokens": 3000,
                        "messages": [{"role": "user", "content": p}],
-                       "provider": {"order": ["OpenAI"], "allow_fallbacks": False,
-                                    "sort": "price"},
+                       **({"provider": {"order": [PROV], "allow_fallbacks": False, "sort": "price"}} if PROV else {}),
                        "reasoning": {"enabled": False}}).encode()
     for _ in range(5):
         try:

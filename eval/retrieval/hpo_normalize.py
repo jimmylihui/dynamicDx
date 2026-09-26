@@ -22,8 +22,8 @@ import urllib.request
 
 B = os.environ.get("DDX_ROOT", ".")
 ORKEY = os.environ["ORKEY"]
-MODEL = os.environ.get("NORM_MODEL", "openai/gpt-5.6-luna")
-PROV = os.environ.get("NORM_PROVIDER", "OpenAI")
+MODEL = os.environ.get("NORM_MODEL", "deepseek/deepseek-v4.1-flash")
+PROV = os.environ.get("NORM_PROVIDER", "")
 vocab = json.load(open(os.environ.get("DDX_WORK", "/tmp") + "/hpo_vocab.json"))
 
 # HPO files laterality and distribution as clinical MODIFIERS, not as separate phenotypes, which
@@ -120,7 +120,7 @@ Description:
 def ask(text):
     body = json.dumps({"model": MODEL, "temperature": 0, "max_tokens": 200,
                        "messages": [{"role": "user", "content": ASK % text}],
-                       "provider": {"order": [PROV], "allow_fallbacks": False, "sort": "price"},
+                       **({"provider": {"order": [PROV], "allow_fallbacks": False, "sort": "price"}} if PROV else {}),
                        "reasoning": {"enabled": False}}).encode()
     r = json.loads(urllib.request.urlopen(urllib.request.Request(
         "https://openrouter.ai/api/v1/chat/completions", data=body,

@@ -36,9 +36,9 @@ import urllib.request
 B = os.environ.get("DDX_ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ORKEY = os.environ["ORKEY"]
 MODEL = os.environ.get("MODEL", "openai/gpt-5.6-luna")
-JUDGE = os.environ.get("JUDGE", "openai/gpt-5.6-luna")
+JUDGE = os.environ.get("JUDGE", "deepseek/deepseek-v4.1-flash")
 PROVIDER = os.environ.get("PROVIDER", "OpenAI")
-JPROVIDER = os.environ.get("JPROVIDER", "OpenAI")
+JPROVIDER = os.environ.get("JPROVIDER", "")
 REASONING = json.loads(os.environ.get("REASONING", '{"enabled": true}'))
 MAXTOK = int(os.environ.get("MAXTOK", "-1"))
 TIMEOUT = int(os.environ.get("TIMEOUT", "300"))
@@ -198,8 +198,8 @@ def framesof(p, k, tmp):
 def post(model, messages, mx, imgs=0):
     payload = {"model": model, "temperature": 0, "messages": messages,
                "reasoning": REASONING, "usage": {"include": True}}
-    # "auto" = let OpenRouter route it: minimax's video endpoints are not all on one provider
-    if _prov(model) != "auto":
+    # empty or "auto" = let OpenRouter route it: minimax's video endpoints are not all on one provider
+    if _prov(model) not in ("", "auto"):
         payload["provider"] = {"order": [_prov(model)], "allow_fallbacks": False,
                                "sort": "price"}
     cap = mx if MAXTOK < 0 else MAXTOK

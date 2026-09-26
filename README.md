@@ -56,7 +56,7 @@ python scripts/fetch_videos.py PMC10051035
    overrides the entries its own article reports (`p: reported`); the remaining menu entries carry
    a value expected for the presentation (`p: derived`), written by the annotators in the line
    files. A generic panel of commonly ordered tests (`generic_panel.json`) is filled per case by
-   `fill_generic.py` (GPT-5.6-luna, given the confirmed diagnosis and the reported chart, answering
+   `fill_generic.py` (DeepSeek-V4.1-Flash, given the confirmed diagnosis and the reported chart, answering
    normal unless the diagnosis specifically changes the test; output `generic_values.json`), with
    `dedupe_generic.py` / `verify_dupes.py` removing generic entries that duplicate a line entry
    (`generic_drop.json`). The generator flags the entries that decide the diagnosis as `decisive`,
@@ -79,6 +79,9 @@ environment; it is never written to disk.
 ```bash
 export ORKEY=...            # OpenRouter API key
 export DDX_ROOT=$(pwd)      # repository root; clips are expected under dataset/videos/<line>/<video>
+export JUDGE=deepseek/deepseek-v4.1-flash   # grader, patient simulator and chart matcher (the default)
+# Auxiliary models (JUDGE, NORM_MODEL, EXTRACT_MODEL, and MODEL in pipeline/) are routed by OpenRouter
+# unless a provider is pinned: JPROVIDER / JUDGE_PROVIDER / NORM_PROVIDER / EXTRACT_PROVIDER / PROVIDER.
 
 # Stage 1: describe the sign from K frames (paper budgets K = 1,2,4,8,16,32,64,128), then grade
 MODEL=openai/gpt-5.6-luna PROVIDER=OpenAI OUTROOT=part1_luna python eval/part1_sweep.py 1,2,4,8,16,32,64,128 4
