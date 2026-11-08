@@ -17,7 +17,7 @@ used solely to *match* free text to record entries, never to write a finding.
 | path | what it is |
 |---|---|
 | `data/cases.json` | the 71 cases: source PMCID and licence, confirmed diagnosis, visible sign, Stage 1 lists (`accept_as_coverage`, `related_but_not_covered`) and the final-diagnosis acceptance lists (`final_diagnosis`), documented symptom table with its yes/no/unknown answering rule, investigation chart on the shared menu of the case's category: results reported in the source article (`p: reported`) and values expected for the presentation (`p: derived`), with `decisive` flags and `explicit_only` therapeutic trials |
-| `data/clips.json` | per clip: source article, licence, duration, frame rate, resolution, scene cuts |
+| `data/clips.json` | per clip: source article, licence, duration, frame rate, resolution, scene cuts, and the excerpt it was cut from (`excerpt`: source file, start and end time, crop box, rotation) |
 | `data/source_licences.json` | the 66 source articles with title, journal, year and licence |
 | `data/equivalent_entries.json` | the 90 verified equivalences between chart entries of the same case that report the same finding from the same kind of investigation, used when scoring τ (§3.3, Appendix C) |
 | `data/decidability.json` | the 22 clips the neurologist judged unidentifiable from video alone and the 49 judged identifiable (paper Appendix B) |
@@ -29,19 +29,24 @@ used solely to *match* free text to record entries, never to write a finding.
 | `eval/controls/` | investigation-selection controls (Appendix C.3): ten-item budget, fixed checklist and random arms replayed from a Stage 2 video run (history held fixed, chart matched by the same DeepSeek matcher), and the τ decomposition of Appendix C |
 | `eval/analysis/` | `decidability.py`: results by clinician-judged decidability (Appendix B, Tables 8 and 9), read from `data/decidability.json`, the Stage 1 judge output and the Stage 2 grades |
 | `window/` | teacher-guided temporal-window training (§3.5.1, Appendix I): the GPT-5.6-luna teacher, Qwen3.5-4B LoRA student training, two-pass out-of-fold inference for the Window, Random, sign-only and untrained arms, and the blinded sentence judge of Appendix D |
-| `scripts/fetch_videos.py` | downloads the source videos from Europe PMC and re-encodes them |
+| `scripts/fetch_videos.py` | downloads the source videos from Europe PMC, re-encodes them and cuts the 71 clips |
 
 ## Videos
 
 The clips are not redistributed: 18 of the 66 source articles are published under CC BY-NC-ND,
 which does not permit derivative works. `scripts/fetch_videos.py` fetches each article's
-supplementary files and re-encodes the videos as H.264 for local use only (see Licence). Each benchmark clip is an excerpt of under
-30 s around the interval in which the sign is expressed; `data/clips.json` records the excerpt's
-duration and frame rate and `data/cases.json` the sign it shows. Every clip must be H.264 and
-under 30 s before it is used with the harness.
+supplementary files, re-encodes the videos as H.264 for local use only (see Licence), and cuts each
+benchmark clip into `dataset/videos/<category>/<clip>`. Each clip is an excerpt of under 30 s around the
+interval in which the sign is expressed; `data/clips.json` records, under `excerpt`, the source file, the
+start and end time, and for 8 clips the crop box (the patient panel of a split-screen EEG video, or one
+view of a two-view recording) and for one clip a quarter-turn rotation. The excerpts were located by
+frame matching against the archived files, and re-cutting all 71 clips this way reproduces the
+benchmark clips (mean per-frame correlation of 16x16 grey frames at least 0.98, `excerpt.match_corr`).
+`data/cases.json` gives the sign each clip shows. Europe PMC occasionally returns an error page instead
+of the archive; rerun the script for any article it reports as missing.
 
 ```bash
-python scripts/fetch_videos.py            # all 66 articles -> videos_raw/<PMCID>/
+python scripts/fetch_videos.py            # all 66 articles -> videos_raw/<PMCID>/, clips -> dataset/videos/
 python scripts/fetch_videos.py PMC10051035
 ```
 
