@@ -1,0 +1,178 @@
+{
+ "questions": [
+  "Have you been using the crutch for more than one month?",
+  "Did this problem start suddenly after an injury or a neurological event like a stroke?",
+  "Is pain a major reason you are having difficulty walking?",
+  "Do you feel weakness in one of your legs?",
+  "Do you have numbness or tingling in your legs or feet?",
+  "Have you ever had back pain or a spine problem?",
+  "Have you had any recent surgery on your leg, hip, or back?",
+  "Is the problem getting gradually worse?",
+  "Do you have any trouble with double vision, speech, or swallowing?",
+  "Do you have diabetes or any other condition that might affect your nerves?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Complete neurological examination with emphasis on cranial nerves, cerebellar testing, and formal strength grading",
+  "MRI brain with and without contrast",
+  "MRI cervical and thoracic spine with and without contrast",
+  "Lumbar puncture with cell count, protein, glucose, oligoclonal bands, and IgG index",
+  "Acetylcholine receptor antibody level"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)",
+  "MRI brain with gadolinium",
+  "MRI cervical and thoracic spine",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "acetylcholine receptor, MuSK and LRP4 antibodies"
+ ],
+ "results": [
+  "1. Complete neurological examination with emphasis on cranial nerves, cerebellar testing, and formal strength grading",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: symmetric neck and limb rigidity",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: brisk reflexes; normal plantar responses",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: retropulsion; recovers in 2-3 steps",
+  "     fundoscopy: normal",
+  "     cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait): normal",
+  "2. MRI brain with and without contrast",
+  "     MRI brain with gadolinium: progressive bilateral caudate and putaminal necrotic lesions without specific enhancement",
+  "3. MRI cervical and thoracic spine with and without contrast",
+  "     MRI cervical and thoracic spine: normal",
+  "4. Lumbar puncture with cell count, protein, glucose, oligoclonal bands, and IgG index",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: 0.548 g/L",
+  "     CSF glucose: normal",
+  "     CSF oligoclonal bands and IgG index: no oligoclonal bands; no intrathecal synthesis",
+  "5. Acetylcholine receptor antibody level",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Wilson disease\n\nProgressive bilateral caudate and putaminal necrosis, symmetric rigidity with pyramidal signs (brisk reflexes), postural instability, and bulbar symptoms in a young patient, with elevated CSF protein and no inflammatory markers, is highly characteristic of Wilson disease causing hepatic metabolic failure with copper deposition and necrosis in the basal ganglia.\n\nHepatic Wilson disease (without prominent neurological manifestation)\n\nMitochondrial encephalopathy (e.g., Leigh syndrome)\n\nToxic/metabolic basal ganglia necrosis (e.g., carbon monoxide or cyanide exposure)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete neurological examination with emphasis on cranial nerves, cerebellar testing, and formal strength grading\n2. MRI brain with and without contrast\n3. MRI cervical and thoracic spine with and without contrast\n4. Lumbar puncture with cell count, protein, glucose, oligoclonal bands, and IgG index\n5. Acetylcholine receptor antibody level",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Wilson disease",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 452,
+   "completion_tokens": 3584,
+   "total_tokens": 4036,
+   "cost": 0.0010404576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010404576,
+    "upstream_inference_prompt_cost": 3.69376e-05,
+    "upstream_inference_completions_cost": 0.00100352
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3435,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 941,
+   "completion_tokens": 835,
+   "total_tokens": 1776,
+   "cost": 0.0003040744,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003040744,
+    "upstream_inference_prompt_cost": 7.02744e-05,
+    "upstream_inference_completions_cost": 0.0002338
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 754,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1439,
+   "completion_tokens": 2564,
+   "total_tokens": 4003,
+   "cost": 0.0007964488,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 896,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007964488,
+    "upstream_inference_prompt_cost": 7.85288e-05,
+    "upstream_inference_completions_cost": 0.00071792
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2433,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.2,
+ "video": "hornet_sting_parkinsonism_PMC11021691.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 106.3
+}

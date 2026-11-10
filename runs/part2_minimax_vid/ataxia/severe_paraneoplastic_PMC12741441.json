@@ -1,0 +1,171 @@
+{
+ "questions": [
+  "Have you noticed a tremor in your hands, especially when they are resting?",
+  "Do you feel stiff or rigid in your arms, legs, or body?",
+  "Do you feel that your movements have become generally slower than before?",
+  "Do your feet feel like they are stuck to the floor when you start to walk?",
+  "Do you experience sudden freezing episodes where you cannot move forward while walking?",
+  "Have others told you that your face looks serious or lacks expression?",
+  "Have you experienced a loss of your sense of smell?",
+  "Do you act out your dreams while sleeping, such as yelling, kicking, or punching?",
+  "Has your handwriting become noticeably smaller than in the past?",
+  "Do you have a history of stroke or transient ischemic attack?",
+  "Do you have any problems with your memory or thinking ability?",
+  "Do you have any issues with urinary urgency or incontinence?",
+  "Do you experience numbness or tingling in your feet or legs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Observe rapid alternating movements of the fingers and hands to test for bradykinesia.",
+  "Assess tone by passive flexion and extension of the neck and major joints to test for rigidity.",
+  "Perform the pull test to assess postural instability.",
+  "Test vertical eye movements to screen for progressive supranuclear palsy.",
+  "Test coordination with finger-to-nose and heel-to-shin movements to screen for cerebellar signs.",
+  "Measure orthostatic blood pressure to screen for autonomic failure.",
+  "Order an MRI of the brain to look for structural lesions or features of atypical parkinsonism."
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "muscle tone examination",
+  "posture and pull test",
+  "bedside eye-movement exam",
+  "finger-nose / heel-shin testing",
+  "vital signs",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Observe rapid alternating movements of the fingers and hands to test for bradykinesia.",
+  "     coordination examination (limb and truncal): normal",
+  "2. Assess tone by passive flexion and extension of the neck and major joints to test for rigidity.",
+  "     muscle tone examination: normal",
+  "3. Perform the pull test to assess postural instability.",
+  "     posture and pull test: normal",
+  "4. Test vertical eye movements to screen for progressive supranuclear palsy.",
+  "     bedside eye-movement exam: vertical gaze palsy progressing to complete external ophthalmoplegia",
+  "5. Test coordination with finger-to-nose and heel-to-shin movements to screen for cerebellar signs.",
+  "     finger-nose / heel-shin testing: dysmetria",
+  "6. Measure orthostatic blood pressure to screen for autonomic failure.",
+  "     vital signs: normal, afebrile",
+  "7. Order an MRI of the brain to look for structural lesions or features of atypical parkinsonism.",
+  "     brain MRI: no structural lesion accounting for the syndrome"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive supranuclear palsy with cerebellar features (likely PSP-C variant), a neurodegenerative tauopathy\nMultiple system atrophy, cerebellar type (MSA-C)\nCorticobasal degeneration (CBD) with cerebellar features\nIdiopathic Parkinson's disease with coincident cerebellar degeneration",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Observe rapid alternating movements of the fingers and hands to test for bradykinesia.\n2. Assess tone by passive flexion and extension of the neck and major joints to test for rigidity.\n3. Perform the pull test to assess postural instability.\n4. Test vertical eye movements to screen for progressive supranuclear palsy.\n5. Test coordination with finger-to-nose and heel-to-shin movements to screen for cerebellar signs.\n6. Measure orthostatic blood pressure to screen for autonomic failure.\n7. Order an MRI of the brain to look for structural lesions or features of atypical parkinsonism.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Progressive supranuclear palsy with cerebellar features (likely PSP-C variant), a neurodegenerative tauopathy",
+ "decisive_served": [
+  "bedside eye-movement exam"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 2529,
+   "total_tokens": 22967,
+   "cost": 0.00913884,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00913884,
+    "upstream_inference_prompt_cost": 0.00610404,
+    "upstream_inference_completions_cost": 0.0030348
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2640,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 21048,
+   "completion_tokens": 734,
+   "total_tokens": 21782,
+   "cost": 0.00231408,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20338,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00231408,
+    "upstream_inference_prompt_cost": 0.00143328,
+    "upstream_inference_completions_cost": 0.0008808
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 727,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 21467,
+   "completion_tokens": 756,
+   "total_tokens": 22223,
+   "cost": 0.00231258,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20978,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00231258,
+    "upstream_inference_prompt_cost": 0.00140538,
+    "upstream_inference_completions_cost": 0.0009072
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 836,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_paraneoplastic_PMC12741441.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 64.6
+}

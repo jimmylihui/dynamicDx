@@ -1,0 +1,157 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the pain located in your head?",
+  "Did you recently suffer a head injury?",
+  "Do you have a fever?",
+  "Have you vomited since the symptoms started?",
+  "Are you feeling dizzy or lightheaded?",
+  "Do you have blurred vision?",
+  "Do you have a stiff neck?",
+  "Does light bother your eyes?",
+  "Do you have a severe headache?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Continuous video-electroencephalography (EEG) monitoring",
+  "Magnetic resonance imaging (MRI) of the brain with epilepsy protocol",
+  "Serum electrolytes, glucose, calcium, and magnesium levels",
+  "Complete blood count (CBC) and C-reactive protein (CRP)"
+ ],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "brain MRI",
+  "glucose, calcium, magnesium, sodium",
+  "full blood count and biochemistry",
+  "ESR and CRP"
+ ],
+ "results": [
+  "1. Continuous video-electroencephalography (EEG) monitoring",
+  "     interictal EEG: no epileptiform discharges",
+  "     video-EEG monitoring of a typical event: eyelid myoclonia with absences - the Jeavons phenotype",
+  "2. Magnetic resonance imaging (MRI) of the brain with epilepsy protocol",
+  "     brain MRI: punctate FLAIR hyperintensities in the local white matter of both frontal lobes",
+  "3. Serum electrolytes, glucose, calcium, and magnesium levels",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "4. Complete blood count (CBC) and C-reactive protein (CRP)",
+  "     full blood count and biochemistry: normal",
+  "     ESR and CRP: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Jeavons syndrome (Eyelid myoclonia with absences)\nEpileptic encephalopathy with continuous spike-and-wave during sleep (CSWS)\nChildhood absence epilepsy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Continuous video-electroencephalography (EEG) monitoring\n2. Magnetic resonance imaging (MRI) of the brain with epilepsy protocol\n3. Serum electrolytes, glucose, calcium, and magnesium levels\n4. Complete blood count (CBC) and C-reactive protein (CRP)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Jeavons syndrome (Eyelid myoclonia with absences)",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7895,
+   "completion_tokens": 104,
+   "total_tokens": 7999,
+   "cost": 0.00123313,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00123313,
+    "upstream_inference_prompt_cost": 0.00118425,
+    "upstream_inference_completions_cost": 4.888e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8296,
+   "completion_tokens": 63,
+   "total_tokens": 8359,
+   "cost": 0.000262042,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7552,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000262042,
+    "upstream_inference_prompt_cost": 0.000232432,
+    "upstream_inference_completions_cost": 2.961e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8614,
+   "completion_tokens": 46,
+   "total_tokens": 8660,
+   "cost": 0.000233144,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8064,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000233144,
+    "upstream_inference_prompt_cost": 0.000211524,
+    "upstream_inference_completions_cost": 2.162e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.6,
+ "video": "mild_3_neonatal_PMC12440885.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.4
+}

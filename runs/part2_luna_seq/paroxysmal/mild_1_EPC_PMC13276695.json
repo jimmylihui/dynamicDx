@@ -1,0 +1,230 @@
+{
+ "questions": [
+  "Did the involuntary movement begin suddenly during the consultation?",
+  "Were you fully conscious and able to understand what was happening when it occurred?",
+  "Have you experienced similar involuntary movements before?",
+  "Do you have a history of seizures or epilepsy?",
+  "Did the movement occur only in one arm?",
+  "Could you voluntarily stop the arm movement when asked?",
+  "Did the movement stop or change when you were asked to perform a mental task, such as counting backward?",
+  "Did you feel an urge or warning sensation immediately before the movement?",
+  "Was the movement preceded by pain, tingling, or numbness in that arm?",
+  "Did the movement continue when the arm was held or restrained by another person?",
+  "Was the arm movement rhythmic and repetitive?",
+  "Did it consist of brief, shock-like jerks rather than a sustained posture?",
+  "Did the movement occur while you were at rest, without attempting to use the arm?",
+  "Did the movement stop during sleep?",
+  "Did the affected arm feel weak or clumsy after the movements stopped?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Perform a detailed neurological examination during the movement, including assessment of tone, strength, reflexes, sensation, coordination, and whether the posture is dystonic or parkinsonian.",
+  "Perform surface EMG of the affected and contralateral arm during the movement, with accelerometry, to characterize the muscle activation pattern.",
+  "Obtain a routine EEG with simultaneous video-EEG monitoring while attempting to provoke the movement.",
+  "Obtain MRI of the brain with diffusion-weighted imaging and susceptibility-sensitive sequences.",
+  "Perform lumbar puncture for CSF real-time quaking-induced conversion (RT-QuIC) for misfolded prion protein.",
+  "Obtain CSF 14-3-3 protein and total tau concentrations.",
+  "Obtain CSF cell count, protein, glucose, oligoclonal bands, and infectious PCR testing including HSV-1/2 and VZV.",
+  "Obtain serum and CSF autoimmune encephalitis testing, including anti-NMDA receptor, LGI1, CASPR2, GABA-B, AMPA, and GAD65 antibodies."
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "provocation testing (the suspected trigger)",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "brain MRI",
+  "lumbar puncture / CSF",
+  "CSF 14-3-3 / RT-QuIC (prion)",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF culture and viral PCR",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "CSF autoimmune encephalitis panel",
+  "autoimmune and paraneoplastic antibody panel"
+ ],
+ "results": [
+  "R1 ASK Did the involuntary movement begin suddenly during the consultation?; Were you fully conscious and able to understand what was happening when it occurred?; Have you experienced similar involuntary movements before?; Do you have a history of seizures or epilepsy?; Did the movement occur only in one arm? -> ['no', 'yes', 'no', 'no', 'yes']",
+  "R2 ASK Could you voluntarily stop the arm movement when asked?; Did the movement stop or change when you were asked to perform a mental task, such as counting backward?; Did you feel an urge or warning sensation immediately before the movement?; Was the movement preceded by pain, tingling, or numbness in that arm?; Did the movement continue when the arm was held or restrained by another person? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Was the arm movement rhythmic and repetitive?; Did it consist of brief, shock-like jerks rather than a sustained posture?; Did the movement occur while you were at rest, without attempting to use the arm?; Did the movement stop during sleep?; Did the affected arm feel weak or clumsy after the movements stopped? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Perform a detailed neurological examination during the movement, including assessment of tone, strength, reflexes, sensation, coordination, and whether the posture is dystonic or parkinsonian.; Perform surface EMG of the affected and contralateral arm during the movement, with accelerometry, to characterize the muscle activation pattern.; Obtain a routine EEG with simultaneous video-EEG monitoring while attempting to provoke the movement.; Obtain MRI of the brain with diffusion-weighted imaging and susceptibility-sensitive sequences. -> [['muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'posture and pull test'], [], ['interictal EEG', 'video-EEG monitoring of a typical event', 'provocation testing (the suspected trigger)'], ['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'brain MRI']]",
+  "R5 ORDER Perform lumbar puncture for CSF real-time quaking-induced conversion (RT-QuIC) for misfolded prion protein.; Obtain CSF 14-3-3 protein and total tau concentrations.; Obtain CSF cell count, protein, glucose, oligoclonal bands, and infectious PCR testing including HSV-1/2 and VZV.; Obtain serum and CSF autoimmune encephalitis testing, including anti-NMDA receptor, LGI1, CASPR2, GABA-B, AMPA, and GAD65 antibodies. -> [['lumbar puncture / CSF', 'CSF 14-3-3 / RT-QuIC (prion)'], ['lumbar puncture / CSF', 'CSF 14-3-3 / RT-QuIC (prion)'], ['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF culture and viral PCR'], ['lumbar puncture / CSF', 'serum paraneoplastic / neuronal autoantibody panel', 'CSF autoimmune encephalitis panel', 'autoimmune and paraneoplastic antibody panel']]",
+  "R6 DIAGNOSIS Sporadic Creutzfeldt–Jakob disease (prion protein misfolding causing rapidly progressive prion encephalopathy), presenting with a unilateral nonepileptic movement disorder. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did the involuntary movement begin suddenly during the consultation?",
+    "Were you fully conscious and able to understand what was happening when it occurred?",
+    "Have you experienced similar involuntary movements before?",
+    "Do you have a history of seizures or epilepsy?",
+    "Did the movement occur only in one arm?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Could you voluntarily stop the arm movement when asked?",
+    "Did the movement stop or change when you were asked to perform a mental task, such as counting backward?",
+    "Did you feel an urge or warning sensation immediately before the movement?",
+    "Was the movement preceded by pain, tingling, or numbness in that arm?",
+    "Did the movement continue when the arm was held or restrained by another person?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Was the arm movement rhythmic and repetitive?",
+    "Did it consist of brief, shock-like jerks rather than a sustained posture?",
+    "Did the movement occur while you were at rest, without attempting to use the arm?",
+    "Did the movement stop during sleep?",
+    "Did the affected arm feel weak or clumsy after the movements stopped?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Perform a detailed neurological examination during the movement, including assessment of tone, strength, reflexes, sensation, coordination, and whether the posture is dystonic or parkinsonian.",
+    "Perform surface EMG of the affected and contralateral arm during the movement, with accelerometry, to characterize the muscle activation pattern.",
+    "Obtain a routine EEG with simultaneous video-EEG monitoring while attempting to provoke the movement.",
+    "Obtain MRI of the brain with diffusion-weighted imaging and susceptibility-sensitive sequences."
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "limb strength (MRC) examination",
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)",
+     "posture and pull test"
+    ],
+    [],
+    [
+     "interictal EEG",
+     "video-EEG monitoring of a typical event",
+     "provocation testing (the suspected trigger)"
+    ],
+    [
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences",
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Perform lumbar puncture for CSF real-time quaking-induced conversion (RT-QuIC) for misfolded prion protein.",
+    "Obtain CSF 14-3-3 protein and total tau concentrations.",
+    "Obtain CSF cell count, protein, glucose, oligoclonal bands, and infectious PCR testing including HSV-1/2 and VZV.",
+    "Obtain serum and CSF autoimmune encephalitis testing, including anti-NMDA receptor, LGI1, CASPR2, GABA-B, AMPA, and GAD65 antibodies."
+   ],
+   "result": [
+    [
+     "lumbar puncture / CSF",
+     "CSF 14-3-3 / RT-QuIC (prion)"
+    ],
+    [
+     "lumbar puncture / CSF",
+     "CSF 14-3-3 / RT-QuIC (prion)"
+    ],
+    [
+     "lumbar puncture / CSF",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF culture and viral PCR"
+    ],
+    [
+     "lumbar puncture / CSF",
+     "serum paraneoplastic / neuronal autoantibody panel",
+     "CSF autoimmune encephalitis panel",
+     "autoimmune and paraneoplastic antibody panel"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Sporadic Creutzfeldt–Jakob disease (prion protein misfolding causing rapidly progressive prion encephalopathy), presenting with a unilateral nonepileptic movement disorder."
+  }
+ ],
+ "dx": "Sporadic Creutzfeldt–Jakob disease (prion protein misfolding causing rapidly progressive prion encephalopathy), presenting with a unilateral nonepileptic movement disorder.",
+ "dx_raw": "DIAGNOSIS: Sporadic Creutzfeldt–Jakob disease (prion protein misfolding causing rapidly progressive prion encephalopathy), presenting with a unilateral nonepileptic movement disorder.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "CSF 14-3-3 / RT-QuIC (prion)",
+  "brain MRI",
+  "interictal EEG"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0074,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 59.3
+}

@@ -1,0 +1,208 @@
+{
+ "questions": [
+  "Have you experienced any recent headaches?",
+  "Have you had any double vision?",
+  "Have you noticed any new weakness in your arms or legs?",
+  "Have you had any difficulty walking or maintaining balance?",
+  "Have you experienced any nausea or vomiting?",
+  "Have you had any numbness or tingling in your face or body?",
+  "Have you noticed any problems with your hearing?",
+  "Have you had any difficulty with speech or understanding language?",
+  "Have you experienced any seizures?",
+  "Have you had a recent head injury?",
+  "Have you recently started any new medications?",
+  "Have you had any fever or signs of infection?",
+  "Do you have a known history of multiple sclerosis?",
+  "Is there any family history of similar eye movements or neurological disease?",
+  "Have the symptoms been constant, or do they come and go?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Which new medication did you start?",
+  "When did you start the new medication in relation to the eye symptoms beginning?",
+  "Detailed neuro-ophthalmological examination with assessment of nystagmus characteristics and for signs of central versus peripheral vestibular dysfunction",
+  "Magnetic resonance imaging of the brain with attention to the posterior fossa",
+  "Measurement of drug levels for the newly started medication (if applicable and a drug with known toxicity range)",
+  "Basic metabolic panel including liver function tests and thyroid function tests"
+ ],
+ "served": [
+  "medication and oncology history",
+  "medication and oncology history",
+  "clinical course",
+  "cranial nerve examination",
+  "fundoscopy",
+  "nystagmus: direction and whether it changes with gaze",
+  "smooth pursuit and saccades",
+  "adduction in horizontal gaze (each eye)",
+  "abducting nystagmus of the fellow eye",
+  "vertical gaze and convergence",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "subjective visual vertical",
+  "head impulse test",
+  "pupil size and light reaction",
+  "ptosis / lid position",
+  "limb and truncal ataxia",
+  "gait and tandem walking",
+  "hearing and tinnitus",
+  "MRI brain with gadolinium",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. Which new medication did you start?",
+  "     medication and oncology history: anti-PD-L1 durvalumab; symptoms began suddenly after the seventh administration",
+  "2. When did you start the new medication in relation to the eye symptoms beginning?",
+  "     medication and oncology history: anti-PD-L1 durvalumab; symptoms began suddenly after the seventh administration",
+  "     clinical course: not recorded",
+  "3. Detailed neuro-ophthalmological examination with assessment of nystagmus characteristics and for signs of central versus peripheral vestibular dysfunction",
+  "     cranial nerve examination: normal",
+  "     fundoscopy: normal",
+  "     nystagmus: direction and whether it changes with gaze: PENDULAR TORSIONAL nystagmus, isolated",
+  "     smooth pursuit and saccades: normal",
+  "     adduction in horizontal gaze (each eye): full",
+  "     abducting nystagmus of the fellow eye: absent",
+  "     vertical gaze and convergence: normal",
+  "     skew deviation / alternating cover test: no vertical misalignment",
+  "     ocular torsion and head tilt: none",
+  "     subjective visual vertical: within normal limits",
+  "     head impulse test: normal - no corrective saccade",
+  "     pupil size and light reaction: equal and reactive",
+  "     ptosis / lid position: none",
+  "     limb and truncal ataxia: finger-to-nose and heel-to-shin NORMAL and no truncal ataxia - the nystagmus is isolated",
+  "     gait and tandem walking: normal",
+  "     hearing and tinnitus: normal",
+  "4. Magnetic resonance imaging of the brain with attention to the posterior fossa",
+  "     MRI brain with gadolinium: normal",
+  "5. Measurement of drug levels for the newly started medication (if applicable and a drug with known toxicity range)",
+  "     not performed / not available",
+  "6. Basic metabolic panel including liver function tests and thyroid function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Durvalumab-induced autoimmune cerebellitis\n\n1. Paraneoplastic cerebellar degeneration\n2. Medication-induced vestibulotoxicity (durvalumab, though pattern is unusual)\n3. Early multiple sclerosis with isolated cerebellar symptom (despite normal MRI)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Which new medication did you start?\n2. When did you start the new medication in relation to the eye symptoms beginning?\n3. Detailed neuro-ophthalmological examination with assessment of nystagmus characteristics and for signs of central versus peripheral vestibular dysfunction\n4. Magnetic resonance imaging of the brain with attention to the posterior fossa\n5. Measurement of drug levels for the newly started medication (if applicable and a drug with known toxicity range)\n6. Basic metabolic panel including liver function tests and thyroid function tests",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Durvalumab-induced autoimmune cerebellitis",
+ "decisive_served": [
+  "medication and oncology history",
+  "medication and oncology history",
+  "nystagmus: direction and whether it changes with gaze"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 401,
+   "completion_tokens": 435,
+   "total_tokens": 836,
+   "cost": 0.0001515976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001515976,
+    "upstream_inference_prompt_cost": 2.97976e-05,
+    "upstream_inference_completions_cost": 0.0001218
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 249,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 989,
+   "completion_tokens": 945,
+   "total_tokens": 1934,
+   "cost": 0.0003767176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003767176,
+    "upstream_inference_prompt_cost": 0.0001121176,
+    "upstream_inference_completions_cost": 0.0002646
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 837,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1382,
+   "completion_tokens": 789,
+   "total_tokens": 2171,
+   "cost": 0.0004144,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004144,
+    "upstream_inference_prompt_cost": 0.00019348,
+    "upstream_inference_completions_cost": 0.00022092
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 722,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 55.9
+}

@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Have you recently started or changed the dose of a dopamine-blocking medication (such as an antipsychotic or metoclopramide)?",
+  "Do you have a known history of Huntington's disease in your family?",
+  "Have you had a recent stroke?",
+  "Do you have a history of diabetes mellitus?",
+  "Is there any chance you are pregnant?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Bedside examination for Kayser-Fleischer rings using a slit lamp",
+  "Serum ceruloplasmin level",
+  "24-hour urinary copper excretion",
+  "Serum glucose and HbA1c"
+ ],
+ "served": [
+  "fundoscopy",
+  "copper / caeruloplasmin",
+  "24-hour urinary copper",
+  "blood glucose",
+  "HbA1c"
+ ],
+ "results": [
+  "1. Bedside examination for Kayser-Fleischer rings using a slit lamp",
+  "     fundoscopy: normal",
+  "2. Serum ceruloplasmin level",
+  "     copper / caeruloplasmin: normal",
+  "3. 24-hour urinary copper excretion",
+  "     24-hour urinary copper: normal",
+  "4. Serum glucose and HbA1c",
+  "     blood glucose: 2.25 g/L (normal 0.70-1.10) - non-ketotic hyperglycaemia",
+  "     HbA1c: 7.8% with long-standing poor control"
+ ],
+ "dx_raw": "DIAGNOSIS: Hemichorea-hemiballismus secondary to non-ketotic hyperglycemia\nAlternatives: Drug-induced tardive dyskinesia (despite negative history, occult use possible)\nAlternatives: Wilson's disease (atypical presentation with normal copper studies)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination for Kayser-Fleischer rings using a slit lamp\n2. Serum ceruloplasmin level\n3. 24-hour urinary copper excretion\n4. Serum glucose and HbA1c",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hemichorea-hemiballismus secondary to non-ketotic hyperglycemia",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 191,
+   "completion_tokens": 91,
+   "total_tokens": 282,
+   "cost": 7.142e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.142e-05,
+    "upstream_inference_prompt_cost": 2.865e-05,
+    "upstream_inference_completions_cost": 4.277e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 552,
+   "completion_tokens": 48,
+   "total_tokens": 600,
+   "cost": 0.00010536,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010536,
+    "upstream_inference_prompt_cost": 8.28e-05,
+    "upstream_inference_completions_cost": 2.256e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 830,
+   "completion_tokens": 61,
+   "total_tokens": 891,
+   "cost": 8.4562e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.4562e-05,
+    "upstream_inference_prompt_cost": 5.5892e-05,
+    "upstream_inference_completions_cost": 2.867e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.6
+}

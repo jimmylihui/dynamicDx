@@ -1,0 +1,134 @@
+{
+ "questions": [
+  "Did you fall?",
+  "Did you lose consciousness?",
+  "Do you have a history of falls?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Orthostatic vital signs",
+  "Electrocardiogram (ECG)",
+  "Complete blood count and basic metabolic panel"
+ ],
+ "served": [
+  "full blood count, renal and liver profile",
+  "serum electrolytes, urea and creatinine",
+  "glucose / HbA1c"
+ ],
+ "results": [
+  "1. Orthostatic vital signs",
+  "     not performed / not available",
+  "2. Electrocardiogram (ECG)",
+  "     not performed / not available",
+  "3. Complete blood count and basic metabolic panel",
+  "     full blood count, renal and liver profile: normal",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     glucose / HbA1c: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Gait and balance disorder (likely multifactorial, e.g., vestibular or cerebellar dysfunction) causing mechanical fall\n\n1. Orthostatic hypotension\n2. Cardiac arrhythmia\n3. Musculoskeletal instability",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Orthostatic vital signs\n2. Electrocardiogram (ECG)\n3. Complete blood count and basic metabolic panel",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Gait and balance disorder (likely multifactorial, e.g., vestibular or cerebellar dysfunction) causing mechanical fall",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6359,
+   "completion_tokens": 26,
+   "total_tokens": 6385,
+   "cost": 0.00096607,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00096607,
+    "upstream_inference_prompt_cost": 0.00095385,
+    "upstream_inference_completions_cost": 1.222e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6576,
+   "completion_tokens": 29,
+   "total_tokens": 6605,
+   "cost": 0.000193886,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6016,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000193886,
+    "upstream_inference_prompt_cost": 0.000180256,
+    "upstream_inference_completions_cost": 1.363e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 6785,
+   "completion_tokens": 56,
+   "total_tokens": 6841,
+   "cost": 0.000203622,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6272,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000203622,
+    "upstream_inference_prompt_cost": 0.000177302,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 18.3
+}

@@ -1,0 +1,168 @@
+{
+ "questions": [
+  "Have you noticed any change in the size or shape of your head or forehead recently?",
+  "Do you have any headaches?",
+  "Have you noticed any changes in your vision?",
+  "Have you noticed enlargement of your hands, feet, or jaw?",
+  "Do you have any hearing problems?",
+  "Have you had any recent trauma to the head?",
+  "Do you have any pain in your bones or joints?",
+  "Have you noticed any skin changes?",
+  "Do you have any numbness or tingling on your face or scalp?",
+  "Have you noticed any rashes or lesions on your face or scalp?",
+  "Do you have any pain or tenderness on your face or scalp?",
+  "Have you had any fever or chills?",
+  "Do you have any weakness in your facial muscles?",
+  "Have you had any recent illness or infection?",
+  "Do you have any history of skin conditions?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Visual field testing by confrontation",
+  "Extraocular movements testing",
+  "Pupillary light reflex testing",
+  "Facial sensation testing with cotton wisp",
+  "Corneal reflex testing",
+  "Facial muscle strength testing",
+  "Hearing assessment with whispered voice test",
+  "Examination of the scalp and face for any abnormalities"
+ ],
+ "served": [
+  "cranial nerve examination"
+ ],
+ "results": [
+  "R1 ASK Have you noticed any change in the size or shape of your head or forehead recently?; Do you have any headaches?; Have you noticed any changes in your vision?; Have you noticed enlargement of your hands, feet, or jaw?; Do you have any hearing problems?; Have you had any recent trauma to the head?; Do you have any pain in your bones or joints?; Have you noticed any skin changes? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Do you have any numbness or tingling on your face or scalp?; Have you noticed any rashes or lesions on your face or scalp?; Do you have any pain or tenderness on your face or scalp?; Have you had any fever or chills?; Do you have any weakness in your facial muscles?; Have you had any recent illness or infection?; Do you have any history of skin conditions? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Visual field testing by confrontation; Extraocular movements testing; Pupillary light reflex testing; Facial sensation testing with cotton wisp; Corneal reflex testing; Facial muscle strength testing; Hearing assessment with whispered voice test; Examination of the scalp and face for any abnormalities -> [['cranial nerve examination'], ['cranial nerve examination'], ['cranial nerve examination'], ['cranial nerve examination'], ['cranial nerve examination'], ['cranial nerve examination'], ['cranial nerve examination'], []]",
+  "R4 DIAGNOSIS Healthy patient with no identified pathology based on the available examination findings. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any change in the size or shape of your head or forehead recently?",
+    "Do you have any headaches?",
+    "Have you noticed any changes in your vision?",
+    "Have you noticed enlargement of your hands, feet, or jaw?",
+    "Do you have any hearing problems?",
+    "Have you had any recent trauma to the head?",
+    "Do you have any pain in your bones or joints?",
+    "Have you noticed any skin changes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have any numbness or tingling on your face or scalp?",
+    "Have you noticed any rashes or lesions on your face or scalp?",
+    "Do you have any pain or tenderness on your face or scalp?",
+    "Have you had any fever or chills?",
+    "Do you have any weakness in your facial muscles?",
+    "Have you had any recent illness or infection?",
+    "Do you have any history of skin conditions?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Visual field testing by confrontation",
+    "Extraocular movements testing",
+    "Pupillary light reflex testing",
+    "Facial sensation testing with cotton wisp",
+    "Corneal reflex testing",
+    "Facial muscle strength testing",
+    "Hearing assessment with whispered voice test",
+    "Examination of the scalp and face for any abnormalities"
+   ],
+   "result": [
+    [
+     "cranial nerve examination"
+    ],
+    [
+     "cranial nerve examination"
+    ],
+    [
+     "cranial nerve examination"
+    ],
+    [
+     "cranial nerve examination"
+    ],
+    [
+     "cranial nerve examination"
+    ],
+    [
+     "cranial nerve examination"
+    ],
+    [
+     "cranial nerve examination"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Healthy patient with no identified pathology based on the available examination findings."
+  }
+ ],
+ "dx": "Healthy patient with no identified pathology based on the available examination findings.",
+ "dx_raw": "DIAGNOSIS: Healthy patient with no identified pathology based on the available examination findings.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0063,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 35.4
+}

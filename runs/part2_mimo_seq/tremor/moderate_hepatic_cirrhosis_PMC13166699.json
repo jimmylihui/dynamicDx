@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Did these involuntary hand movements start suddenly or gradually?",
+  "Have you experienced any changes in your coordination or balance recently?",
+  "Do you have a family history of neurological movement disorders?",
+  "Have you taken any new prescription or over-the-counter medications in the last month?",
+  "Were there any complications during your birth or early childhood?",
+  "Have you ever had a stroke, head injury, or brain surgery?",
+  "Do you have any history of liver disease or heavy alcohol use?",
+  "Have you been tested for thyroid problems recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Comprehensive metabolic panel including electrolytes, kidney function, and liver function tests",
+  "Serum ammonia level",
+  "Arterial blood gas or oxygen saturation",
+  "Thyroid function tests (TSH and free T4)"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "ammonia",
+  "TSH / free T4"
+ ],
+ "results": [
+  "R1 ASK Did these involuntary hand movements start suddenly or gradually?; Have you experienced any changes in your coordination or balance recently?; Do you have a family history of neurological movement disorders?; Have you taken any new prescription or over-the-counter medications in the last month? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Were there any complications during your birth or early childhood?; Have you ever had a stroke, head injury, or brain surgery?; Do you have any history of liver disease or heavy alcohol use?; Have you been tested for thyroid problems recently? -> ['no', 'no', 'no', 'no']",
+  "R3 ORDER Comprehensive metabolic panel including electrolytes, kidney function, and liver function tests; Serum ammonia level; Arterial blood gas or oxygen saturation; Thyroid function tests (TSH and free T4) -> [['serum electrolytes, urea and creatinine', 'liver function tests'], ['ammonia'], [], ['TSH / free T4']]",
+  "R4 DIAGNOSIS Asterixis (hepatic flap) secondary to hepatic encephalopathy, caused by chronic liver disease (likely cirrhosis, given reduced albumin and elevated transaminases) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did these involuntary hand movements start suddenly or gradually?",
+    "Have you experienced any changes in your coordination or balance recently?",
+    "Do you have a family history of neurological movement disorders?",
+    "Have you taken any new prescription or over-the-counter medications in the last month?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Were there any complications during your birth or early childhood?",
+    "Have you ever had a stroke, head injury, or brain surgery?",
+    "Do you have any history of liver disease or heavy alcohol use?",
+    "Have you been tested for thyroid problems recently?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Comprehensive metabolic panel including electrolytes, kidney function, and liver function tests",
+    "Serum ammonia level",
+    "Arterial blood gas or oxygen saturation",
+    "Thyroid function tests (TSH and free T4)"
+   ],
+   "result": [
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests"
+    ],
+    [
+     "ammonia"
+    ],
+    [],
+    [
+     "TSH / free T4"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Asterixis (hepatic flap) secondary to hepatic encephalopathy, caused by chronic liver disease (likely cirrhosis, given reduced albumin and elevated transaminases)"
+  }
+ ],
+ "dx": "Asterixis (hepatic flap) secondary to hepatic encephalopathy, caused by chronic liver disease (likely cirrhosis, given reduced albumin and elevated transaminases)",
+ "dx_raw": "DIAGNOSIS: Asterixis (hepatic flap) secondary to hepatic encephalopathy, caused by chronic liver disease (likely cirrhosis, given reduced albumin and elevated transaminases)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0027,
+ "n_frames": 32,
+ "duration_s": 11.4,
+ "video": "moderate_hepatic_cirrhosis_PMC13166699.mp4",
+ "line": "tremor",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 58.2
+}

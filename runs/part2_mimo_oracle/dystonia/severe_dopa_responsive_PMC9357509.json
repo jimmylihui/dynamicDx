@@ -1,0 +1,110 @@
+{
+ "questions": [
+  "Do you have pain when you walk?",
+  "Did you suffer an injury recently?",
+  "Do you have a fever?",
+  "Do you have a cough?",
+  "Is the pain worse at night?",
+  "Have you noticed any swelling in your leg or knee?",
+  "Have you lost weight recently?",
+  "Is your back also painful?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "levodopa trial",
+  "dystonia gene panel",
+  "DAT-SPECT"
+ ],
+ "results": [
+  "1. levodopa trial: DRAMATIC improvement within FOUR DAYS, sustained, with no treatment-related fluctuations",
+  "2. dystonia gene panel: GCH1-related dopa-responsive dystonia",
+  "3. DAT-SPECT: normal striatal uptake - distinguishes it from juvenile parkinsonism"
+ ],
+ "dx_raw": "DIAGNOSIS: Dopa-responsive dystonia (GCH1-related)\nJuvenile parkinsonism\nWilson disease\nCerebral palsy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Dopa-responsive dystonia (GCH1-related)",
+ "decisive_served": [
+  "levodopa trial",
+  "dystonia gene panel",
+  "DAT-SPECT"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 1365,
+   "total_tokens": 6420,
+   "cost": 0.0010635576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010635576,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.0003822
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1289,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5399,
+   "completion_tokens": 1107,
+   "total_tokens": 6506,
+   "cost": 0.0003809176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003809176,
+    "upstream_inference_prompt_cost": 7.09576e-05,
+    "upstream_inference_completions_cost": 0.00030996
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1073,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_dopa_responsive_PMC9357509.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 35.5
+}

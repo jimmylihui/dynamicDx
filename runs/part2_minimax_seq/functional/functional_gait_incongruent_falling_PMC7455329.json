@@ -1,0 +1,291 @@
+{
+ "questions": [
+  "Did the patient lose consciousness during or immediately after the fall?",
+  "Did the patient have any warning symptoms (lightheadedness, dizziness, visual changes, weakness) immediately before the fall?",
+  "Has the patient had similar falls before?",
+  "Does the patient have any history of cardiovascular disease, stroke, or Parkinson's disease?",
+  "Is the patient currently on any antihypertensive or cardiac medications?",
+  "Were the warning symptoms specifically dizziness, lightheadedness, or a spinning sensation (vertigo)?",
+  "Do the symptoms or falls tend to occur when you first stand up, when standing still for a long time, or while walking?",
+  "Do you have any history of diabetes, Parkinson's disease, or peripheral neuropathy?",
+  "Have you noticed any memory problems, urinary incontinence, or gait difficulties unrelated to the falls?",
+  "Do you have any neck pain, or do the symptoms occur when turning your head?",
+  "Do the falls/symptoms specifically happen when you first stand up from sitting or lying down (orthostatic)?",
+  "Do the falls/symptoms happen while you are walking (suggesting possible freezing or gait disorder)?",
+  "Do you have any history of ankle or foot problems, arthritis, or balance difficulties?",
+  "Have you ever had your blood pressure checked while standing, and if so, did it drop?",
+  "Do you experience any tremor, slowness of movement, or muscle stiffness?",
+  "Do you have any history of heart palpitations, irregular heartbeat, or fainting spells?",
+  "Do you experience any shaking/tremor, loss of bowel/bladder control, or a \"warning aura\" before the falls?",
+  "Do you have any history of seizures or epilepsy?",
+  "Have you noticed any changes in your walking style (e.g., shuffling, difficulty starting, or feeling like your feet are stuck to the floor)?",
+  "Do you have any history of stroke, mini-strokes, or transient neurological symptoms?",
+  "Can you describe the \"warning symptoms\" more specifically - do you feel weakness in the legs, visual disturbance, chest pain, or a sense of impending faint?",
+  "Do you have any hearing loss, ringing in the ears, or ear fullness?",
+  "Have you noticed any problems with your memory, thinking, or ability to perform daily tasks?",
+  "Does the falling tend to occur when walking upstairs, downstairs, or on uneven ground?",
+  "Do you have any back pain, leg pain, or numbness/tingling in the legs when walking that improves with rest?",
+  "Can you specifically tell me which warning symptom you experience from the list: leg weakness, visual disturbance, chest pain, or impending faint?",
+  "How long do these warning symptoms typically last before the fall - seconds, minutes, or longer?",
+  "Do the falls occur in any particular situation - such as after eating, when emotionally upset, or after exertion?",
+  "Do you ever have symptoms when standing completely still?",
+  "Do you have any history of varicose veins or swelling in your legs?",
+  "From the list (leg weakness, visual disturbance, chest pain, impending faint), which specific symptom(s) do you experience?",
+  "From the list (after eating, emotional upset, after exertion), which specific situation triggers the falls?",
+  "Do the falls occur without any warning at all?",
+  "Do you ever feel like you are going to faint but don't actually lose consciousness (presyncope)?",
+  "Have you ever had your heart rate or blood pressure monitored during an episode?",
+  "I need to narrow down your specific warning symptom - is it leg weakness, visual disturbance, chest pain, or a sense of impending faint?",
+  "Does the symptom only occur after exertion, only after eating, or only when emotionally upset?",
+  "Can you tell me exactly which symptoms or situations apply, since answering \"yes\" without specification is unclear?",
+  "Is the trigger related to standing up, walking, or is it completely random?",
+  "Are you able to break your fall or catch yourself when these symptoms occur?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "yes",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "yes",
+  "27": "no",
+  "28": "yes",
+  "29": "no",
+  "30": "no",
+  "31": "yes",
+  "32": "no",
+  "33": "no",
+  "34": "no",
+  "35": "no",
+  "36": "yes",
+  "37": "no",
+  "38": "no",
+  "39": "yes",
+  "40": "no"
+ },
+ "n_yes_answers": 10,
+ "orders": [
+  "Active stand test (laying to standing) to check for orthostatic hypotension",
+  "12-lead ECG to check for arrhythmia or structural heart disease",
+  "Carotid sinus massage (with continuous ECG and BP monitoring) to evaluate for carotid sinus hypersensitivity"
+ ],
+ "served": [],
+ "results": [
+  "R1 ASK Did the patient lose consciousness during or immediately after the fall?; Did the patient have any warning symptoms (lightheadedness, dizziness, visual changes, weakness) immediately before the fall?; Has the patient had similar falls before?; Does the patient have any history of cardiovascular disease, stroke, or Parkinson's disease?; Is the patient currently on any antihypertensive or cardiac medications? -> ['no', 'yes', 'yes', 'no', 'no']",
+  "R2 ASK Were the warning symptoms specifically dizziness, lightheadedness, or a spinning sensation (vertigo)?; Do the symptoms or falls tend to occur when you first stand up, when standing still for a long time, or while walking?; Do you have any history of diabetes, Parkinson's disease, or peripheral neuropathy?; Have you noticed any memory problems, urinary incontinence, or gait difficulties unrelated to the falls?; Do you have any neck pain, or do the symptoms occur when turning your head? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R3 ASK Do the falls/symptoms specifically happen when you first stand up from sitting or lying down (orthostatic)?; Do the falls/symptoms happen while you are walking (suggesting possible freezing or gait disorder)?; Do you have any history of ankle or foot problems, arthritis, or balance difficulties?; Have you ever had your blood pressure checked while standing, and if so, did it drop?; Do you experience any tremor, slowness of movement, or muscle stiffness? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R4 ASK Do you have any history of heart palpitations, irregular heartbeat, or fainting spells?; Do you experience any shaking/tremor, loss of bowel/bladder control, or a \"warning aura\" before the falls?; Do you have any history of seizures or epilepsy?; Have you noticed any changes in your walking style (e.g., shuffling, difficulty starting, or feeling like your feet are stuck to the floor)?; Do you have any history of stroke, mini-strokes, or transient neurological symptoms? -> ['no', 'no', 'no', 'no', 'no']",
+  "R5 ASK Can you describe the \"warning symptoms\" more specifically - do you feel weakness in the legs, visual disturbance, chest pain, or a sense of impending faint?; Do you have any hearing loss, ringing in the ears, or ear fullness?; Have you noticed any problems with your memory, thinking, or ability to perform daily tasks?; Does the falling tend to occur when walking upstairs, downstairs, or on uneven ground?; Do you have any back pain, leg pain, or numbness/tingling in the legs when walking that improves with rest? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R6 ASK Can you specifically tell me which warning symptom you experience from the list: leg weakness, visual disturbance, chest pain, or impending faint?; How long do these warning symptoms typically last before the fall - seconds, minutes, or longer?; Do the falls occur in any particular situation - such as after eating, when emotionally upset, or after exertion?; Do you ever have symptoms when standing completely still?; Do you have any history of varicose veins or swelling in your legs? -> ['yes', 'no', 'yes', 'no', 'no']",
+  "R7 ASK From the list (leg weakness, visual disturbance, chest pain, impending faint), which specific symptom(s) do you experience?; From the list (after eating, emotional upset, after exertion), which specific situation triggers the falls?; Do the falls occur without any warning at all?; Do you ever feel like you are going to faint but don't actually lose consciousness (presyncope)?; Have you ever had your heart rate or blood pressure monitored during an episode? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R8 ASK I need to narrow down your specific warning symptom - is it leg weakness, visual disturbance, chest pain, or a sense of impending faint?; Does the symptom only occur after exertion, only after eating, or only when emotionally upset?; Can you tell me exactly which symptoms or situations apply, since answering \"yes\" without specification is unclear?; Is the trigger related to standing up, walking, or is it completely random?; Are you able to break your fall or catch yourself when these symptoms occur? -> ['yes', 'no', 'no', 'yes', 'no']",
+  "R9 ORDER Active stand test (laying to standing) to check for orthostatic hypotension; 12-lead ECG to check for arrhythmia or structural heart disease; Carotid sinus massage (with continuous ECG and BP monitoring) to evaluate for carotid sinus hypersensitivity -> [[], [], []]",
+  "R10 DIAGNOSIS Drop attack (cryptogenic drop attack of the elderly) - characterized by sudden falls while walking without loss of consciousness, without warning symptoms, with immediate recovery and ability to resume walking, in an elderly patient using a cane. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did the patient lose consciousness during or immediately after the fall?",
+    "Did the patient have any warning symptoms (lightheadedness, dizziness, visual changes, weakness) immediately before the fall?",
+    "Has the patient had similar falls before?",
+    "Does the patient have any history of cardiovascular disease, stroke, or Parkinson's disease?",
+    "Is the patient currently on any antihypertensive or cardiac medications?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Were the warning symptoms specifically dizziness, lightheadedness, or a spinning sensation (vertigo)?",
+    "Do the symptoms or falls tend to occur when you first stand up, when standing still for a long time, or while walking?",
+    "Do you have any history of diabetes, Parkinson's disease, or peripheral neuropathy?",
+    "Have you noticed any memory problems, urinary incontinence, or gait difficulties unrelated to the falls?",
+    "Do you have any neck pain, or do the symptoms occur when turning your head?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do the falls/symptoms specifically happen when you first stand up from sitting or lying down (orthostatic)?",
+    "Do the falls/symptoms happen while you are walking (suggesting possible freezing or gait disorder)?",
+    "Do you have any history of ankle or foot problems, arthritis, or balance difficulties?",
+    "Have you ever had your blood pressure checked while standing, and if so, did it drop?",
+    "Do you experience any tremor, slowness of movement, or muscle stiffness?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have any history of heart palpitations, irregular heartbeat, or fainting spells?",
+    "Do you experience any shaking/tremor, loss of bowel/bladder control, or a \"warning aura\" before the falls?",
+    "Do you have any history of seizures or epilepsy?",
+    "Have you noticed any changes in your walking style (e.g., shuffling, difficulty starting, or feeling like your feet are stuck to the floor)?",
+    "Do you have any history of stroke, mini-strokes, or transient neurological symptoms?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Can you describe the \"warning symptoms\" more specifically - do you feel weakness in the legs, visual disturbance, chest pain, or a sense of impending faint?",
+    "Do you have any hearing loss, ringing in the ears, or ear fullness?",
+    "Have you noticed any problems with your memory, thinking, or ability to perform daily tasks?",
+    "Does the falling tend to occur when walking upstairs, downstairs, or on uneven ground?",
+    "Do you have any back pain, leg pain, or numbness/tingling in the legs when walking that improves with rest?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Can you specifically tell me which warning symptom you experience from the list: leg weakness, visual disturbance, chest pain, or impending faint?",
+    "How long do these warning symptoms typically last before the fall - seconds, minutes, or longer?",
+    "Do the falls occur in any particular situation - such as after eating, when emotionally upset, or after exertion?",
+    "Do you ever have symptoms when standing completely still?",
+    "Do you have any history of varicose veins or swelling in your legs?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "From the list (leg weakness, visual disturbance, chest pain, impending faint), which specific symptom(s) do you experience?",
+    "From the list (after eating, emotional upset, after exertion), which specific situation triggers the falls?",
+    "Do the falls occur without any warning at all?",
+    "Do you ever feel like you are going to faint but don't actually lose consciousness (presyncope)?",
+    "Have you ever had your heart rate or blood pressure monitored during an episode?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "I need to narrow down your specific warning symptom - is it leg weakness, visual disturbance, chest pain, or a sense of impending faint?",
+    "Does the symptom only occur after exertion, only after eating, or only when emotionally upset?",
+    "Can you tell me exactly which symptoms or situations apply, since answering \"yes\" without specification is unclear?",
+    "Is the trigger related to standing up, walking, or is it completely random?",
+    "Are you able to break your fall or catch yourself when these symptoms occur?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Active stand test (laying to standing) to check for orthostatic hypotension",
+    "12-lead ECG to check for arrhythmia or structural heart disease",
+    "Carotid sinus massage (with continuous ECG and BP monitoring) to evaluate for carotid sinus hypersensitivity"
+   ],
+   "result": [
+    [],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Drop attack (cryptogenic drop attack of the elderly) - characterized by sudden falls while walking without loss of consciousness, without warning symptoms, with immediate recovery and ability to resume walking, in an elderly patient using a cane."
+  }
+ ],
+ "dx": "Drop attack (cryptogenic drop attack of the elderly) - characterized by sudden falls while walking without loss of consciousness, without warning symptoms, with immediate recovery and ability to resume walking, in an elderly patient using a cane.",
+ "dx_raw": "DIAGNOSIS: Drop attack (cryptogenic drop attack of the elderly) - characterized by sudden falls while walking without loss of consciousness, without warning symptoms, with immediate recovery and ability to resume walking, in an elderly patient using a cane.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "cost_usd": 0.0143,
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 93.4
+}

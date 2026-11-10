@@ -1,0 +1,178 @@
+{
+ "questions": [
+  "Are you experiencing a life-threatening emergency?",
+  "Is the onset of your symptoms acute?",
+  "Do you have pain?",
+  "Is the primary symptom localized to one area of the body?",
+  "Is the primary symptom located above the neck?",
+  "Is the primary symptom located in the chest?",
+  "Is the primary symptom located in the abdomen?",
+  "Is the primary symptom located in the pelvis?",
+  "Is the primary symptom located in the extremities?",
+  "Is the primary symptom systemic?",
+  "Is the primary symptom neurological?",
+  "Is the primary symptom psychiatric?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "yes",
+  "12": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Neurological examination of the affected extremity",
+  "Electromyography and Nerve Conduction Studies",
+  "MRI of the brain",
+  "MRI of the spine"
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "nerve conduction studies",
+  "needle electromyography",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)",
+  "MRI cervical and thoracic spine",
+  "MRI whole spine"
+ ],
+ "results": [
+  "1. Neurological examination of the affected extremity",
+  "     muscle tone examination: right-sided rigidity with dystonic posturing of the right fingers",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: brisk right-sided reflexes with pectoral jerk and positive Hoffman sign",
+  "     sensory examination (pinprick, vibration, proprioception): right-sided sensory inattention and astereognosis",
+  "     coordination examination (limb and truncal): right-sided limb apraxia with myoclonic jerks",
+  "2. Electromyography and Nerve Conduction Studies",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal",
+  "3. MRI of the brain",
+  "     MRI brain with gadolinium: markedly asymmetric left-greater-than-right superior parietal and posterior frontal atrophy without abnormal enhancement",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): normal midbrain, ratio within normal limits",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): normal",
+  "     MRI brain - cortical atrophy pattern: moderate global atrophy with MARKEDLY ASYMMETRICAL atrophy of the superior parietal lobules and posterior frontal lobes, left hemisphere worse",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal",
+  "4. MRI of the spine",
+  "     MRI cervical and thoracic spine: normal",
+  "     MRI whole spine: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Corticobasal Degeneration (tauopathy)\nProgressive Supranuclear Palsy\nAlzheimer's Disease\nFrontotemporal Dementia",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Neurological examination of the affected extremity\n2. Electromyography and Nerve Conduction Studies\n3. MRI of the brain\n4. MRI of the spine",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Corticobasal Degeneration (tauopathy)",
+ "decisive_served": [
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 155,
+   "completion_tokens": 4470,
+   "total_tokens": 4625,
+   "cost": 0.0015353,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0015353,
+    "upstream_inference_prompt_cost": 1.55e-05,
+    "upstream_inference_completions_cost": 0.0015198
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4377,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 621,
+   "completion_tokens": 1366,
+   "total_tokens": 1987,
+   "cost": 0.00052654,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 160,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00052654,
+    "upstream_inference_prompt_cost": 6.21e-05,
+    "upstream_inference_completions_cost": 0.00046444
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1377,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1077,
+   "completion_tokens": 1386,
+   "total_tokens": 2463,
+   "cost": 0.00057894,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 608,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00057894,
+    "upstream_inference_prompt_cost": 0.0001077,
+    "upstream_inference_completions_cost": 0.00047124
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1373,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "cbd_apraxic_hand_PMC12371612.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 282.3
+}

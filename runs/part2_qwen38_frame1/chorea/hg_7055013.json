@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your chest or abdomen?",
+  "Do you have a fever?",
+  "Have you recently had surgery?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Complete blood count with differential",
+  "Basic metabolic panel",
+  "C-reactive protein and erythrocyte sedimentation rate",
+  "Urinalysis"
+ ],
+ "served": [
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "inflammatory markers (ESR, CRP)",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Complete blood count with differential",
+  "     full blood count: normal",
+  "2. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "3. C-reactive protein and erythrocyte sedimentation rate",
+  "     inflammatory markers (ESR, CRP): normal",
+  "4. Urinalysis",
+  "     urinalysis: negative ketones"
+ ],
+ "dx_raw": "DIAGNOSIS: Malingering (feigned illness)\nFactitious disorder imposed on self\nSomatic symptom disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Complete blood count with differential\n2. Basic metabolic panel\n3. C-reactive protein and erythrocyte sedimentation rate\n4. Urinalysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Malingering (feigned illness)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 584,
+   "completion_tokens": 41,
+   "total_tokens": 625,
+   "cost": 0.00010687,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010687,
+    "upstream_inference_prompt_cost": 8.76e-05,
+    "upstream_inference_completions_cost": 1.927e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 835,
+   "completion_tokens": 35,
+   "total_tokens": 870,
+   "cost": 9.0244e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.0244e-05,
+    "upstream_inference_prompt_cost": 7.3794e-05,
+    "upstream_inference_completions_cost": 1.645e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1047,
+   "completion_tokens": 27,
+   "total_tokens": 1074,
+   "cost": 8.398e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 640,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.398e-05,
+    "upstream_inference_prompt_cost": 7.129e-05,
+    "upstream_inference_completions_cost": 1.269e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.7
+}

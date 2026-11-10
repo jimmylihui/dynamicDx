@@ -1,0 +1,193 @@
+{
+ "questions": [
+  "Do you have a fever?",
+  "Do you have any pain?",
+  "Is the pain in your chest?",
+  "Is the pain in your abdomen?",
+  "Have you been coughing?",
+  "Have you had shortness of breath?",
+  "Have you felt dizzy or lightheaded?",
+  "Have you noticed any skin rash or unusual marks on your skin?",
+  "Have you experienced any loss of consciousness?",
+  "Is the problem related to an injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Comprehensive physical examination including vital signs, heart and lung auscultation, abdominal palpation, lymph node survey, and neurological examination",
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Thyroid function tests",
+  "Urinalysis",
+  "Electrocardiogram",
+  "Chest radiograph"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "vital signs",
+  "speech assessment",
+  "gait and coordination",
+  "skin examination",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "renal function and eGFR",
+  "blood glucose",
+  "thyroid function (TSH, free T4)",
+  "TSH, free T4 and free T3",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Comprehensive physical examination including vital signs, heart and lung auscultation, abdominal palpation, lymph node survey, and neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: MMSE 27/30; Frontal Assessment Battery 14",
+  "     muscle tone examination: generalized choreiform movements with reduced tone",
+  "     limb strength (MRC) examination: normal, 5/5 throughout",
+  "     deep tendon reflexes and plantar responses: normal reflexes; flexor plantar responses",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): impaired by generalized choreiform movements; no sensory ataxia",
+  "     posture and pull test: choreiform posturing; pull test normal",
+  "     fundoscopy: normal",
+  "     vital signs: pulse 90/min, blood pressure 90/60 mmHg",
+  "     speech assessment: normal",
+  "     gait and coordination: normal",
+  "     skin examination: no rash",
+  "2. Complete blood count",
+  "     full blood count: normal",
+  "3. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: euvolaemic hyponatraemia with low serum osmolality; urea and creatinine normal",
+  "     liver function tests: normal",
+  "     renal function and eGFR: normal",
+  "     blood glucose: random glucose 88 mg/dL, HbA1c 5.6% - normal",
+  "4. Thyroid function tests",
+  "     thyroid function (TSH, free T4): T3 1.19 ng/mL, T4 0.52 ug/dL, TSH 0.96 uIU/mL",
+  "     TSH, free T4 and free T3: T3 1.19 ng/mL, T4 0.52 ug/dL, TSH 0.96 uIU/L - on treatment for hypothyroidism",
+  "5. Urinalysis",
+  "     urinalysis: normal",
+  "6. Electrocardiogram",
+  "     not performed / not available",
+  "7. Chest radiograph",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Wilson's disease\n\nThe combination of generalized choreiform movements with reduced tone, cognitive impairment, and euvolaemic hyponatraemia with low serum osmolality is highly suggestive of Wilson's disease, where hyponatraemia can result from concurrent hepatic dysfunction or SIADH.\n\n1. Serum ceruloplasmin level\n2. 24-hour urine copper excretion\n3. Slit-lamp examination for Kayser-Fleischer rings\n\n**Alternatives still considered:**\n\n1. Autoimmune chorea (e.g., antiphospholipid syndrome or SLE) - would warrant antiphospholipid antibodies and ANA\n2. Paraneoplastic chorea\n3. Early-onset Huntington's disease (juvenile Westphal variant can present with chorea and hyponatraemia)",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Comprehensive physical examination including vital signs, heart and lung auscultation, abdominal palpation, lymph node survey, and neurological examination\n2. Complete blood count\n3. Comprehensive metabolic panel\n4. Thyroid function tests\n5. Urinalysis\n6. Electrocardiogram\n7. Chest radiograph",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Wilson's disease",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 266,
+   "total_tokens": 651,
+   "cost": 0.0001020376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001020376,
+    "upstream_inference_prompt_cost": 2.75576e-05,
+    "upstream_inference_completions_cost": 7.448e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 163,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 782,
+   "completion_tokens": 491,
+   "total_tokens": 1273,
+   "cost": 0.0002206176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002206176,
+    "upstream_inference_prompt_cost": 8.31376e-05,
+    "upstream_inference_completions_cost": 0.00013748
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 423,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1392,
+   "completion_tokens": 723,
+   "total_tokens": 2115,
+   "cost": 0.0002919504,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002919504,
+    "upstream_inference_prompt_cost": 8.95104e-05,
+    "upstream_inference_completions_cost": 0.00020244
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 543,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.2,
+ "video": "c_11098550.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 47.7
+}

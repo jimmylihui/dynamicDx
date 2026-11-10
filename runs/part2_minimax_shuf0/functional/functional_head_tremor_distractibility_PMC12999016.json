@@ -1,0 +1,175 @@
+{
+ "questions": [
+  "Have you noticed a tremor in your hands, especially when they are at rest?",
+  "Do you feel stiffness in your arms or legs?",
+  "Have you noticed that your movements have become slower than before?",
+  "Do you have problems with balance or have you fallen recently?",
+  "Have you experienced a loss of your sense of smell?",
+  "Do you act out your dreams while sleeping, such as punching, kicking, or shouting?",
+  "Do you suffer from chronic constipation?",
+  "Have you noticed your handwriting getting smaller?",
+  "Do you feel that your facial expressions have become more limited or mask-like?",
+  "Has your voice become softer or monotone?",
+  "Are you experiencing any memory problems or difficulty thinking?",
+  "Is there a family history of Parkinson's disease or a similar movement disorder?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe gait with attention to arm swing and turning",
+  "Finger tapping test to assess for bradykinesia",
+  "Passive range of motion testing of the wrists and elbows to assess for cogwheel rigidity",
+  "Assessment for resting tremor with the hands relaxed in the lap",
+  "Pull test for postural stability",
+  "Glabellar tap reflex test",
+  "Assessment of facial expression for masked facies",
+  "Assessment of voice volume and prosody during spontaneous speech"
+ ],
+ "served": [
+  "observation for excessive slowness or uneconomic posture",
+  "finger-tapping for bradykinesia and decrement",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "posture and pull test",
+  "cranial nerve examination",
+  "cranial nerve examination"
+ ],
+ "results": [
+  "1. Observe gait with attention to arm swing and turning",
+  "     observation for excessive slowness or uneconomic posture: not present",
+  "2. Finger tapping test to assess for bradykinesia",
+  "     finger-tapping for bradykinesia and decrement: no decrement",
+  "3. Passive range of motion testing of the wrists and elbows to assess for cogwheel rigidity",
+  "     muscle tone (spasticity, rigidity, paratonia): normal; no dystonic head posture, no sensory trick",
+  "4. Assessment for resting tremor with the hands relaxed in the lap",
+  "     not performed / not available",
+  "5. Pull test for postural stability",
+  "     posture and pull test: normal",
+  "6. Glabellar tap reflex test",
+  "     not performed / not available",
+  "7. Assessment of facial expression for masked facies",
+  "     cranial nerve examination: normal",
+  "8. Assessment of voice volume and prosody during spontaneous speech",
+  "     cranial nerve examination: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: No organic neurological disease; normal neurological examination with no evidence of Parkinson's disease or other movement disorder.\n\nAlternatives:\n1. Functional (psychogenic) movement disorder\n2. Factitious disorder\n3. Malingering",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe gait with attention to arm swing and turning\n2. Finger tapping test to assess for bradykinesia\n3. Passive range of motion testing of the wrists and elbows to assess for cogwheel rigidity\n4. Assessment for resting tremor with the hands relaxed in the lap\n5. Pull test for postural stability\n6. Glabellar tap reflex test\n7. Assessment of facial expression for masked facies\n8. Assessment of voice volume and prosody during spontaneous speech",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "No organic neurological disease; normal neurological examination with no evidence of Parkinson's disease or other movement disorder.",
+ "decisive_served": [
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 1562,
+   "total_tokens": 8624,
+   "cost": 0.00395532,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00395532,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0018744
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1397,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7597,
+   "completion_tokens": 1043,
+   "total_tokens": 8640,
+   "cost": 0.00183942,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00183942,
+    "upstream_inference_prompt_cost": 0.00058782,
+    "upstream_inference_completions_cost": 0.0012516
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 944,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7982,
+   "completion_tokens": 6589,
+   "total_tokens": 14571,
+   "cost": 0.00848172,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7582,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00848172,
+    "upstream_inference_prompt_cost": 0.00057492,
+    "upstream_inference_completions_cost": 0.0079068
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6541,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 26.2,
+ "video": "functional_head_tremor_distractibility_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 88.0
+}

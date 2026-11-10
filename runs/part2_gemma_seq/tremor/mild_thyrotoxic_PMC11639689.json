@@ -1,0 +1,197 @@
+{
+ "questions": [
+  "Is the tremor present when your hands are resting in your lap?",
+  "Does the tremor improve after drinking a small amount of alcohol?",
+  "Do you have a family history of similar tremors?",
+  "Do you feel that your movements have become slower?",
+  "Do you feel stiffness in your limbs?",
+  "Have you noticed any changes in your mood or personality?",
+  "Have you noticed any yellow-green rings around the iris of your eyes?",
+  "Have you had any unexplained weight loss or heat intolerance?",
+  "Do you have any difficulty with balance or walking?",
+  "Do you drink a lot of coffee or energy drinks?",
+  "Are you taking any medications, especially for asthma or steroids?",
+  "Do you feel anxious or stressed lately?",
+  "Does the tremor affect your voice or your head?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Brain MRI",
+  "Finger-to-nose test",
+  "Heel-to-shin test",
+  "Gait analysis (tandem walk)",
+  "Serum ceruloplasmin level",
+  "24-hour urinary copper",
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "Thyroid function tests (TSH, Free T4)"
+ ],
+ "served": [
+  "brain MRI",
+  "coordination examination (limb and truncal)",
+  "kinetic / intention tremor (finger-nose)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "gait examination",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "24-hour urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "TSH / free T4"
+ ],
+ "results": [
+  "R1 ASK Is the tremor present when your hands are resting in your lap?; Does the tremor improve after drinking a small amount of alcohol?; Do you have a family history of similar tremors?; Do you feel that your movements have become slower?; Do you feel stiffness in your limbs? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Have you noticed any changes in your mood or personality?; Have you noticed any yellow-green rings around the iris of your eyes?; Have you had any unexplained weight loss or heat intolerance?; Do you have any difficulty with balance or walking? -> ['no', 'no', 'no', 'no']",
+  "R3 ORDER Brain MRI; Finger-to-nose test; Heel-to-shin test; Gait analysis (tandem walk) -> [['brain MRI'], ['coordination examination (limb and truncal)', 'kinetic / intention tremor (finger-nose)', 'cerebellar signs (dysmetria, dysdiadochokinesia)'], ['coordination examination (limb and truncal)', 'cerebellar signs (dysmetria, dysdiadochokinesia)'], ['coordination examination (limb and truncal)', 'gait examination']]",
+  "R4 ASK Do you drink a lot of coffee or energy drinks?; Are you taking any medications, especially for asthma or steroids?; Do you feel anxious or stressed lately?; Does the tremor affect your voice or your head? -> ['no', 'no', 'no', 'no']",
+  "R5 ORDER Serum ceruloplasmin level; 24-hour urinary copper; Slit-lamp examination for Kayser-Fleischer rings; Thyroid function tests (TSH, Free T4) -> [['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['24-hour urinary copper', 'copper / caeruloplasmin / 24 h urinary copper'], ['slit-lamp examination for Kayser-Fleischer rings'], ['TSH / free T4']]",
+  "R6 DIAGNOSIS Essential tremor -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is the tremor present when your hands are resting in your lap?",
+    "Does the tremor improve after drinking a small amount of alcohol?",
+    "Do you have a family history of similar tremors?",
+    "Do you feel that your movements have become slower?",
+    "Do you feel stiffness in your limbs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any changes in your mood or personality?",
+    "Have you noticed any yellow-green rings around the iris of your eyes?",
+    "Have you had any unexplained weight loss or heat intolerance?",
+    "Do you have any difficulty with balance or walking?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Brain MRI",
+    "Finger-to-nose test",
+    "Heel-to-shin test",
+    "Gait analysis (tandem walk)"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ],
+    [
+     "coordination examination (limb and truncal)",
+     "kinetic / intention tremor (finger-nose)",
+     "cerebellar signs (dysmetria, dysdiadochokinesia)"
+    ],
+    [
+     "coordination examination (limb and truncal)",
+     "cerebellar signs (dysmetria, dysdiadochokinesia)"
+    ],
+    [
+     "coordination examination (limb and truncal)",
+     "gait examination"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you drink a lot of coffee or energy drinks?",
+    "Are you taking any medications, especially for asthma or steroids?",
+    "Do you feel anxious or stressed lately?",
+    "Does the tremor affect your voice or your head?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Serum ceruloplasmin level",
+    "24-hour urinary copper",
+    "Slit-lamp examination for Kayser-Fleischer rings",
+    "Thyroid function tests (TSH, Free T4)"
+   ],
+   "result": [
+    [
+     "serum copper and caeruloplasmin",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "24-hour urinary copper",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "slit-lamp examination for Kayser-Fleischer rings"
+    ],
+    [
+     "TSH / free T4"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Essential tremor"
+  }
+ ],
+ "dx": "Essential tremor",
+ "dx_raw": "DIAGNOSIS: Essential tremor",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "TSH / free T4"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0083,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_thyrotoxic_PMC11639689.mp4",
+ "line": "tremor",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 382.3
+}

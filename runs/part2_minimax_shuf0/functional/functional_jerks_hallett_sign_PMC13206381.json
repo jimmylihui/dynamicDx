@@ -1,0 +1,173 @@
+{
+ "questions": [
+  "Did your symptoms begin suddenly?",
+  "Is your hearing decreased in your left ear?",
+  "Do you have ringing in your left ear?",
+  "Do you have dizziness or vertigo?",
+  "Do you have weakness in your right arm or leg?",
+  "Do you have numbness in your right arm or leg?",
+  "Have you noticed weakness on the left side of your face?",
+  "Have you noticed numbness on the left side of your face?",
+  "Do you have double vision?",
+  "Do you have slurred speech?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI of the brain with and without contrast",
+  "MRI of the cervical spine with and without contrast",
+  "Nerve conduction studies and electromyography",
+  "Serum vitamin B12 level",
+  "Thyroid stimulating hormone (TSH) level",
+  "Hemoglobin A1c"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain",
+  "MRI cervical and thoracic spine",
+  "nerve conduction studies",
+  "needle electromyography",
+  "vitamin B12 with methylmalonic acid",
+  "vitamin B12 and vitamin E",
+  "TSH / free T4",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c"
+ ],
+ "results": [
+  "1. MRI of the brain with and without contrast",
+  "     MRI brain with gadolinium: normal",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain: normal",
+  "2. MRI of the cervical spine with and without contrast",
+  "     MRI cervical and thoracic spine: normal",
+  "3. Nerve conduction studies and electromyography",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: long and variable-latency voluntary-type muscle bursts",
+  "4. Serum vitamin B12 level",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "     vitamin B12 and vitamin E: normal",
+  "5. Thyroid stimulating hormone (TSH) level",
+  "     TSH / free T4: normal",
+  "6. Hemoglobin A1c",
+  "     blood glucose and HbA1c: normal",
+  "     glucose / HbA1c: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder (conversion disorder) with functional limb weakness\nFunctional movement disorder\nSomatoform disorder\nMultiple sclerosis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with and without contrast\n2. MRI of the cervical spine with and without contrast\n3. Nerve conduction studies and electromyography\n4. Serum vitamin B12 level\n5. Thyroid stimulating hormone (TSH) level\n6. Hemoglobin A1c",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional neurological symptom disorder (conversion disorder) with functional limb weakness",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7670,
+   "completion_tokens": 5474,
+   "total_tokens": 13144,
+   "cost": 0.00883212,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00883212,
+    "upstream_inference_prompt_cost": 0.00226332,
+    "upstream_inference_completions_cost": 0.0065688
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5364,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8085,
+   "completion_tokens": 3084,
+   "total_tokens": 11169,
+   "cost": 0.0042891,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7655,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0042891,
+    "upstream_inference_prompt_cost": 0.0005883,
+    "upstream_inference_completions_cost": 0.0037008
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3025,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8415,
+   "completion_tokens": 141,
+   "total_tokens": 8556,
+   "cost": 0.0007569,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8070,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007569,
+    "upstream_inference_prompt_cost": 0.0005877,
+    "upstream_inference_completions_cost": 0.0001692
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 112,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 119.1
+}

@@ -1,0 +1,126 @@
+{
+ "questions": [
+  "Is the movement present during sleep?",
+  "Did the symptoms begin suddenly?",
+  "Do you have a history of diabetes?",
+  "Have you had a stroke in the past?",
+  "Are you currently taking any medications for psychiatric conditions?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain with diffusion-weighted imaging"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences"
+ ],
+ "results": [
+  "1. MRI of the brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the lentiform nucleus"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute ischemic stroke of the subthalamic nucleus causing hemiballismus\nAlternative 1: Lacunar infarction of the basal ganglia\nAlternative 2: Hemorrhagic stroke in the subthalamic region",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with diffusion-weighted imaging",
+ "rationale": [
+  null
+ ],
+ "dx": "Acute ischemic stroke of the subthalamic nucleus causing hemiballismus",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 181,
+   "completion_tokens": 54,
+   "total_tokens": 235,
+   "cost": 5.253e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.253e-05,
+    "upstream_inference_prompt_cost": 2.715e-05,
+    "upstream_inference_completions_cost": 2.538e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 464,
+   "completion_tokens": 11,
+   "total_tokens": 475,
+   "cost": 7.477e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.477e-05,
+    "upstream_inference_prompt_cost": 6.96e-05,
+    "upstream_inference_completions_cost": 5.17e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 604,
+   "completion_tokens": 52,
+   "total_tokens": 656,
+   "cost": 8.0736e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.0736e-05,
+    "upstream_inference_prompt_cost": 5.6296e-05,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 6.0
+}

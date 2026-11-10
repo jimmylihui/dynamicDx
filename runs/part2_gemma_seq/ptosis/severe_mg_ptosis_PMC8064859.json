@@ -1,0 +1,177 @@
+{
+ "questions": [
+  "Does the drooping of your eyelid get worse as the day progresses?",
+  "Do you have any difficulty swallowing?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you have any double vision?",
+  "Did the drooping of your eyelids happen gradually over many years?",
+  "Have you had any surgery on your eyes in the past?",
+  "Do you have any known medical conditions, such as thyroid problems or diabetes?",
+  "Do you feel more tired or cold than usual?",
+  "Did the drooping of your eyelids start suddenly?",
+  "Did the drooping start over a period of a few weeks or months?",
+  "Do you have any shortness of breath or difficulty breathing?",
+  "Do you have any difficulty speaking, such as your voice becoming nasal or weak?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Pupil examination",
+  "Extraocular movement examination",
+  "Facial sweating examination",
+  "Ice pack test",
+  "Sustained upgaze test",
+  "Anti-AChR antibody test",
+  "Anti-MuSK antibody test"
+ ],
+ "served": [
+  "pupil examination (size, light reaction)",
+  "ocular motility examination",
+  "ice-pack test",
+  "sustained upgaze fatigability test",
+  "anti-acetylcholine receptor antibodies",
+  "anti-MuSK antibodies"
+ ],
+ "results": [
+  "R1 ORDER Pupil examination; Extraocular movement examination; Facial sweating examination -> [['pupil examination (size, light reaction)'], ['ocular motility examination'], []]",
+  "R2 ASK Does the drooping of your eyelid get worse as the day progresses?; Do you have any difficulty swallowing?; Do you have any weakness in your arms or legs?; Do you have any double vision? -> ['no', 'no', 'no', 'no']",
+  "R3 ASK Did the drooping of your eyelids happen gradually over many years?; Have you had any surgery on your eyes in the past?; Do you have any known medical conditions, such as thyroid problems or diabetes?; Do you feel more tired or cold than usual? -> ['no', 'no', 'no', 'no']",
+  "R4 ASK Did the drooping of your eyelids start suddenly?; Did the drooping start over a period of a few weeks or months?; Do you have any shortness of breath or difficulty breathing?; Do you have any difficulty speaking, such as your voice becoming nasal or weak? -> ['no', 'yes', 'no', 'no']",
+  "R5 ORDER Ice pack test; Sustained upgaze test; Anti-AChR antibody test; Anti-MuSK antibody test -> [['ice-pack test'], ['sustained upgaze fatigability test'], ['anti-acetylcholine receptor antibodies'], ['anti-MuSK antibodies']]",
+  "R6 DIAGNOSIS Ocular Myasthenia Gravis caused by anti-acetylcholine receptor antibodies -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "order",
+   "items": [
+    "Pupil examination",
+    "Extraocular movement examination",
+    "Facial sweating examination"
+   ],
+   "result": [
+    [
+     "pupil examination (size, light reaction)"
+    ],
+    [
+     "ocular motility examination"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Does the drooping of your eyelid get worse as the day progresses?",
+    "Do you have any difficulty swallowing?",
+    "Do you have any weakness in your arms or legs?",
+    "Do you have any double vision?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did the drooping of your eyelids happen gradually over many years?",
+    "Have you had any surgery on your eyes in the past?",
+    "Do you have any known medical conditions, such as thyroid problems or diabetes?",
+    "Do you feel more tired or cold than usual?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Did the drooping of your eyelids start suddenly?",
+    "Did the drooping start over a period of a few weeks or months?",
+    "Do you have any shortness of breath or difficulty breathing?",
+    "Do you have any difficulty speaking, such as your voice becoming nasal or weak?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Ice pack test",
+    "Sustained upgaze test",
+    "Anti-AChR antibody test",
+    "Anti-MuSK antibody test"
+   ],
+   "result": [
+    [
+     "ice-pack test"
+    ],
+    [
+     "sustained upgaze fatigability test"
+    ],
+    [
+     "anti-acetylcholine receptor antibodies"
+    ],
+    [
+     "anti-MuSK antibodies"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Ocular Myasthenia Gravis caused by anti-acetylcholine receptor antibodies"
+  }
+ ],
+ "dx": "Ocular Myasthenia Gravis caused by anti-acetylcholine receptor antibodies",
+ "dx_raw": "DIAGNOSIS: Ocular Myasthenia Gravis caused by anti-acetylcholine receptor antibodies",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "anti-acetylcholine receptor antibodies",
+  "sustained upgaze fatigability test"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0075,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_mg_ptosis_PMC8064859.mp4",
+ "line": "ptosis",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 212.7
+}

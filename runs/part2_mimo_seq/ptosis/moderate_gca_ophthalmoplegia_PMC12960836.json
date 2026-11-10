@@ -1,0 +1,268 @@
+{
+ "questions": [
+  "\"Have you ever had a previous episode of double vision or vision loss in one eye?\"",
+  "\"Do you have any numbness or tingling in your legs or trunk?\"",
+  "\"Has anyone in your family ever been diagnosed with a similar nerve condition?\"",
+  "\"Do you have any swelling in your ankles or feet?\"",
+  "\"Have you ever had a chest X-ray or CT scan that showed enlarged lymph nodes in your chest?\"",
+  "\"Do you have a chronic cough, shortness of breath, or skin rashes?\"",
+  "\"Has anyone tested you for Lyme disease or HIV in the past?\"",
+  "\"Do you have any weakness in your face, difficulty swallowing, or hoarseness of voice?\"",
+  "\"Have you ever received IVIG or steroid treatments for any neurological condition?\"",
+  "\"Do you have any numbness or weakness specifically in your hands or fingers?\"",
+  "\"Have you noticed any cramping or twitching in your muscles?\"",
+  "\"Do you have any balance problems or difficulty walking in the dark?\"",
+  "\"Are you able to move your eyes fully in all directions, or do you have trouble looking in specific directions?\"",
+  "\"Do you have any weakness in your facial expressions, like trouble closing your eyes tightly or smiling?\"",
+  "\"Have you noticed any double vision recently?\""
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI of the brain and cervical spine with gadolinium contrast",
+  "Serum angiotensin-converting enzyme (ACE) level",
+  "Serum IgG4 level",
+  "Serum calcium level",
+  "Chest X-ray",
+  "CT chest with contrast looking for bilateral hilar lymphadenopathy",
+  "Serum ACE level",
+  "Serum lysozyme level",
+  "Lumbar puncture with CSF analysis for opening pressure, protein, glucose, cell count, cytology, oligoclonal bands, and IgG index",
+  "Nerve conduction studies and electromyography of upper and lower extremities",
+  "Serum anti-ganglioside antibodies (anti-GM1, anti-GQ1b)",
+  "Serum anti-AQP4 (aquaporin-4) antibodies",
+  "Serum anti-MOG (myelin oligodendrocyte glycoprotein) antibodies"
+ ],
+ "served": [
+  "MRI brain with contrast",
+  "MRI spine",
+  "serum calcium, magnesium and phosphate",
+  "CT chest, abdomen and pelvis",
+  "CT chest (thymus)",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "lumbar puncture / CSF",
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "R1 ASK \"Have you ever had a previous episode of double vision or vision loss in one eye?\"; \"Do you have any numbness or tingling in your legs or trunk?\" -> ['yes', 'no']",
+  "R2 ORDER MRI of the brain and cervical spine with gadolinium contrast -> [['MRI brain with contrast', 'MRI spine']]",
+  "R3 ASK \"Has anyone in your family ever been diagnosed with a similar nerve condition?\"; \"Do you have any swelling in your ankles or feet?\" -> ['no', 'no']",
+  "R4 ASK \"Have you ever had a chest X-ray or CT scan that showed enlarged lymph nodes in your chest?\"; \"Do you have a chronic cough, shortness of breath, or skin rashes?\" -> ['no', 'no']",
+  "R5 ORDER Serum angiotensin-converting enzyme (ACE) level; Serum IgG4 level; Serum calcium level; Chest X-ray -> [[], [], ['serum calcium, magnesium and phosphate'], []]",
+  "R6 ORDER CT chest with contrast looking for bilateral hilar lymphadenopathy; Serum ACE level; Serum lysozyme level -> [['CT chest, abdomen and pelvis', 'CT chest (thymus)'], [], []]",
+  "R7 ASK \"Has anyone tested you for Lyme disease or HIV in the past?\"; \"Do you have any weakness in your face, difficulty swallowing, or hoarseness of voice?\"; \"Have you ever received IVIG or steroid treatments for any neurological condition?\" -> ['no', 'no', 'no']",
+  "R8 ORDER Lumbar puncture with CSF analysis for opening pressure, protein, glucose, cell count, cytology, oligoclonal bands, and IgG index; Nerve conduction studies and electromyography of upper and lower extremities; Serum anti-ganglioside antibodies (anti-GM1, anti-GQ1b); Serum anti-AQP4 (aquaporin-4) antibodies; Serum anti-MOG (myelin oligodendrocyte glycoprotein) antibodies -> [['CSF opening pressure', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF cytology and flow cytometry', 'lumbar puncture / CSF'], ['nerve conduction studies', 'needle electromyography'], [], [], []]",
+  "R9 ASK \"Do you have any numbness or weakness specifically in your hands or fingers?\"; \"Have you noticed any cramping or twitching in your muscles?\"; \"Do you have any balance problems or difficulty walking in the dark?\" -> ['no', 'no', 'no']",
+  "R10 ASK \"Are you able to move your eyes fully in all directions, or do you have trouble looking in specific directions?\"; \"Do you have any weakness in your facial expressions, like trouble closing your eyes tightly or smiling?\"; \"Have you noticed any double vision recently?\" -> ['yes', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSES: Chronic inflammatory demyelinating polyradiculoneuropathy (CIDP) with cranial nerve involvement (cranial variant), likely autoimmune/idiopathic\n\nThis diagnosis accounts for the key findings -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "\"Have you ever had a previous episode of double vision or vision loss in one eye?\"",
+    "\"Do you have any numbness or tingling in your legs or trunk?\""
+   ],
+   "result": [
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "MRI of the brain and cervical spine with gadolinium contrast"
+   ],
+   "result": [
+    [
+     "MRI brain with contrast",
+     "MRI spine"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "\"Has anyone in your family ever been diagnosed with a similar nerve condition?\"",
+    "\"Do you have any swelling in your ankles or feet?\""
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "\"Have you ever had a chest X-ray or CT scan that showed enlarged lymph nodes in your chest?\"",
+    "\"Do you have a chronic cough, shortness of breath, or skin rashes?\""
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Serum angiotensin-converting enzyme (ACE) level",
+    "Serum IgG4 level",
+    "Serum calcium level",
+    "Chest X-ray"
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "serum calcium, magnesium and phosphate"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "CT chest with contrast looking for bilateral hilar lymphadenopathy",
+    "Serum ACE level",
+    "Serum lysozyme level"
+   ],
+   "result": [
+    [
+     "CT chest, abdomen and pelvis",
+     "CT chest (thymus)"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "\"Has anyone tested you for Lyme disease or HIV in the past?\"",
+    "\"Do you have any weakness in your face, difficulty swallowing, or hoarseness of voice?\"",
+    "\"Have you ever received IVIG or steroid treatments for any neurological condition?\""
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Lumbar puncture with CSF analysis for opening pressure, protein, glucose, cell count, cytology, oligoclonal bands, and IgG index",
+    "Nerve conduction studies and electromyography of upper and lower extremities",
+    "Serum anti-ganglioside antibodies (anti-GM1, anti-GQ1b)",
+    "Serum anti-AQP4 (aquaporin-4) antibodies",
+    "Serum anti-MOG (myelin oligodendrocyte glycoprotein) antibodies"
+   ],
+   "result": [
+    [
+     "CSF opening pressure",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF cytology and flow cytometry",
+     "lumbar puncture / CSF"
+    ],
+    [
+     "nerve conduction studies",
+     "needle electromyography"
+    ],
+    [],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "\"Do you have any numbness or weakness specifically in your hands or fingers?\"",
+    "\"Have you noticed any cramping or twitching in your muscles?\"",
+    "\"Do you have any balance problems or difficulty walking in the dark?\""
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "\"Are you able to move your eyes fully in all directions, or do you have trouble looking in specific directions?\"",
+    "\"Do you have any weakness in your facial expressions, like trouble closing your eyes tightly or smiling?\"",
+    "\"Have you noticed any double vision recently?\""
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSES: Chronic inflammatory demyelinating polyradiculoneuropathy (CIDP) with cranial nerve involvement (cranial variant), likely autoimmune/idiopathic\n\nThis diagnosis accounts for the key findings"
+  }
+ ],
+ "dx": "Chronic inflammatory demyelinating polyradiculoneuropathy (CIDP) with cranial nerve involvement (cranial variant), likely autoimmune/idiopathic",
+ "dx_raw": "DIAGNOSES: Chronic inflammatory demyelinating polyradiculoneuropathy (CIDP) with cranial nerve involvement (cranial variant), likely autoimmune/idiopathic\n\nThis diagnosis accounts for the key findings:\n- **Cranial nerve III-XII thickening and enhancement** on MRI (multifocal nerve hypertrophy)\n- **Lumbosacral nerve root thickening** (classic for CIDP)\n- **Demyelinating sensorimotor neuropathy** on nerve conduction studies\n- **Chronically elevated CSF protein** (albuminocytologic dissociation)\n- **Inability to walk on heels** (foot drop from peroneal involvement)\n- **Recurrent cranial nerve palsies** (prior episode of vision loss/diplopia)\n- **Eye movement abnormalities** (cranial nerve involvement)\n- **Young patient without systemic disease** (CT chest normal, no sarcoidosis)\n\nThe pattern of diffuse cranial nerve and nerve root hypertrophy with demyelination is characteristic of CIDP, and the cranial-predominant variant explains the striking cranial nerve findings. Treatment typically involves IVIG, plasmapheresis, or immunosuppression.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "MRI brain with contrast",
+  "MRI spine",
+  "nerve conduction studies"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0046,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_gca_ophthalmoplegia_PMC12960836.mp4",
+ "line": "ptosis",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 668.4
+}

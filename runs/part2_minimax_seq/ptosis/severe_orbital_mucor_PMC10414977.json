@@ -1,0 +1,162 @@
+{
+ "questions": [
+  "Is the affected eye painful?",
+  "Have you had any recent fever or systemic illness?",
+  "Is your vision in the affected eye blurred or decreased?",
+  "Have you had any recent eye surgery or injury to the eye?",
+  "Have you had any history of diabetes or immune compromise?",
+  "Do you have a history of sinus infections?",
+  "Is there any discharge from the eye?",
+  "Is the eye protruding (proptosis)?",
+  "Are you experiencing double vision?",
+  "Have you had any dental infections or procedures recently?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "CT scan of the orbits and sinuses with contrast",
+  "MRI of the orbits and brain with contrast",
+  "Nasal endoscopy with biopsy of sinus lesion",
+  "Fungal cultures and KOH prep of sinus tissue"
+ ],
+ "served": [
+  "CT sinuses",
+  "MRI orbits",
+  "MRI brain with contrast",
+  "fungal culture / KOH of nasal tissue"
+ ],
+ "results": [
+  "R1 ASK Is the affected eye painful?; Have you had any recent fever or systemic illness?; Is your vision in the affected eye blurred or decreased?; Have you had any recent eye surgery or injury to the eye? -> ['yes', 'yes', 'no', 'no']",
+  "R2 ORDER CT scan of the orbits and sinuses with contrast -> [['CT sinuses']]",
+  "R3 ASK Have you had any history of diabetes or immune compromise?; Do you have a history of sinus infections?; Is there any discharge from the eye? -> ['no', 'no', 'no']",
+  "R4 ORDER MRI of the orbits and brain with contrast -> [['MRI orbits', 'MRI brain with contrast']]",
+  "R5 ASK Is the eye protruding (proptosis)?; Are you experiencing double vision?; Have you had any dental infections or procedures recently? -> ['no', 'no', 'no']",
+  "R6 ORDER Nasal endoscopy with biopsy of sinus lesion; Fungal cultures and KOH prep of sinus tissue -> [[], ['fungal culture / KOH of nasal tissue']]",
+  "R7 DIAGNOSIS Rhino-orbital mucormycosis - invasive fungal sinusitis with orbital extension caused by Mucorales (e.g., Rhizopus oryzae) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is the affected eye painful?",
+    "Have you had any recent fever or systemic illness?",
+    "Is your vision in the affected eye blurred or decreased?",
+    "Have you had any recent eye surgery or injury to the eye?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "CT scan of the orbits and sinuses with contrast"
+   ],
+   "result": [
+    [
+     "CT sinuses"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you had any history of diabetes or immune compromise?",
+    "Do you have a history of sinus infections?",
+    "Is there any discharge from the eye?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "MRI of the orbits and brain with contrast"
+   ],
+   "result": [
+    [
+     "MRI orbits",
+     "MRI brain with contrast"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Is the eye protruding (proptosis)?",
+    "Are you experiencing double vision?",
+    "Have you had any dental infections or procedures recently?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Nasal endoscopy with biopsy of sinus lesion",
+    "Fungal cultures and KOH prep of sinus tissue"
+   ],
+   "result": [
+    [],
+    [
+     "fungal culture / KOH of nasal tissue"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Rhino-orbital mucormycosis - invasive fungal sinusitis with orbital extension caused by Mucorales (e.g., Rhizopus oryzae)"
+  }
+ ],
+ "dx": "Rhino-orbital mucormycosis - invasive fungal sinusitis with orbital extension caused by Mucorales (e.g., Rhizopus oryzae)",
+ "dx_raw": "DIAGNOSIS: Rhino-orbital mucormycosis - invasive fungal sinusitis with orbital extension caused by Mucorales (e.g., Rhizopus oryzae)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "CT sinuses",
+  "fungal culture / KOH of nasal tissue"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.023,
+ "n_frames": 32,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 43.5
+}

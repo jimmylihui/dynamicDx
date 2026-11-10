@@ -1,0 +1,164 @@
+{
+ "questions": [
+  "Is there pain in the forehead area?",
+  "Do you feel numbness or tingling?",
+  "Is there weakness in the forehead muscles?",
+  "Have you noticed any changes in sensation?",
+  "Do you have difficulty raising your eyebrows?",
+  "Is there any swelling or redness?",
+  "Have you had any recent injury to the head?",
+  "Do you experience headaches?",
+  "Is there any discharge or discharge from the eyes?",
+  "Have you had any recent illnesses or infections?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Complete neurological examination of cranial nerves I through XII",
+  "Detailed assessment of facial nerve (CN VII) function",
+  "Fundoscopic examination",
+  "Complete blood count",
+  "Fasting blood glucose",
+  "Thyroid function tests",
+  "Cranial nerve MRI if any focal deficits detected"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "cranial nerve examination",
+  "fundoscopy",
+  "full blood count",
+  "blood glucose and HbA1c",
+  "TSH / free T4",
+  "MRI brain with gadolinium"
+ ],
+ "results": [
+  "1. Complete neurological examination of cranial nerves I through XII",
+  "     cranial nerve examination: normal",
+  "2. Detailed assessment of facial nerve (CN VII) function",
+  "     cranial nerve examination: normal",
+  "3. Fundoscopic examination",
+  "     fundoscopy: normal",
+  "4. Complete blood count",
+  "     full blood count: normal",
+  "5. Fasting blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "6. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "7. Cranial nerve MRI if any focal deficits detected",
+  "     MRI brain with gadolinium: significant cerebellar atrophy with fourth-ventricle dilatation; no abnormal enhancement"
+ ],
+ "dx_raw": "DIAGNOSOL: Spinocerebellar ataxia\nMultiple system atrophy - cerebellar variant\nIdiopathic late-onset cerebellar ataxia\nHereditary spastic paraplegia with cerebellar involvement",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "Based on the images showing a focused examination of the forehead region and facial muscles, I would order:\n\n1. Complete neurological examination of cranial nerves I through XII\n2. Detailed assessment of facial nerve (CN VII) function\n3. Fundoscopic examination\n4. Complete blood count\n5. Fasting blood glucose\n6. Thyroid function tests\n7. Cranial nerve MRI if any focal deficits detected",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Spinocerebellar ataxia",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 308,
+   "total_tokens": 5363,
+   "cost": 0.0001090376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001090376,
+    "upstream_inference_prompt_cost": 2.27976e-05,
+    "upstream_inference_completions_cost": 8.624e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 201,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5460,
+   "completion_tokens": 723,
+   "total_tokens": 6183,
+   "cost": 0.0002819376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002819376,
+    "upstream_inference_prompt_cost": 7.94976e-05,
+    "upstream_inference_completions_cost": 0.00020244
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 637,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5782,
+   "completion_tokens": 511,
+   "total_tokens": 6293,
+   "cost": 0.000206192,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5440,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000206192,
+    "upstream_inference_prompt_cost": 6.3112e-05,
+    "upstream_inference_completions_cost": 0.00014308
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 457,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 85.8,
+ "dx_old": "DIAGNOSOL: Spinocerebellar ataxia"
+}

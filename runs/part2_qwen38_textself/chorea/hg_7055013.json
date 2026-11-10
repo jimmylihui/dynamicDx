@@ -1,0 +1,131 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Have you recently started or changed the dose of a neuroleptic (antipsychotic) medication?",
+  "Do you have a known history of Huntington's disease in your family?",
+  "Have you had a recent stroke or head injury?",
+  "Is there a history of rheumatic fever in your past?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain with diffusion-weighted imaging",
+  "CT angiography of the head and neck"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences",
+  "MR or CT angiography"
+ ],
+ "results": [
+  "1. MRI of the brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: normal",
+  "2. CT angiography of the head and neck",
+  "     MR or CT angiography: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-stroke hemichorea-hemiballismus\nSydenham chorea\nDrug-induced tardive dyskinesia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with diffusion-weighted imaging\n2. CT angiography of the head and neck",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Post-stroke hemichorea-hemiballismus",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 192,
+   "completion_tokens": 78,
+   "total_tokens": 270,
+   "cost": 6.546e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.546e-05,
+    "upstream_inference_prompt_cost": 2.88e-05,
+    "upstream_inference_completions_cost": 3.666e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 523,
+   "completion_tokens": 22,
+   "total_tokens": 545,
+   "cost": 8.879e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.879e-05,
+    "upstream_inference_prompt_cost": 7.845e-05,
+    "upstream_inference_completions_cost": 1.034e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 688,
+   "completion_tokens": 31,
+   "total_tokens": 719,
+   "cost": 4.9162e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 4.9162e-05,
+    "upstream_inference_prompt_cost": 3.4592e-05,
+    "upstream_inference_completions_cost": 1.457e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.6
+}

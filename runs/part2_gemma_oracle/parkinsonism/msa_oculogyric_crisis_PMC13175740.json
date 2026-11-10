@@ -1,0 +1,120 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have double vision?",
+  "Do you have a severe headache?",
+  "Do you have any weakness in your arms or legs?",
+  "Does the drooping of your eyelid get worse as the day progresses?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "vertical saccades and gaze range (up and down)",
+  "speech assessment (hypophonia, strained-strangled voice, scanning dysarthria)",
+  "lying-and-standing blood pressure",
+  "bladder, bowel and erectile history",
+  "levodopa trial (dose and response)",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)"
+ ],
+ "results": [
+  "1. vertical saccades and gaze range (up and down): NO baseline oculomotor abnormality before levodopa - the upward deviation is drug-induced, not a supranuclear palsy",
+  "2. speech assessment (hypophonia, strained-strangled voice, scanning dysarthria): slurred, high-pitched, strangled speech with mild stammering",
+  "3. lying-and-standing blood pressure: 130 mmHg systolic seated falling to 100 mmHg standing WITHOUT a compensatory rise in pulse rate",
+  "4. bladder, bowel and erectile history: overt urinary incontinence requiring pads; constipation from onset",
+  "5. levodopa trial (dose and response): levodopa/carbidopa escalated 375 -> 750 -> 1125 mg/day; motor symptoms improved, and the oculogyric crises appeared about 30 MINUTES AFTER EACH DOSE and remitted completely by 3 hours",
+  "6. medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium): trazodone, paroxetine, hydrocortisone and verapamil - no dopamine blocker",
+  "7. MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): putaminal atrophy with the rim sign and putaminal hypointensity on susceptibility-weighted imaging"
+ ],
+ "dx_raw": "DIAGNOSIS: Multiple System Atrophy, Parkinsonian type (MSA-P) caused by $\\alpha$-synucleinopathy\n\nParkinson's disease\nProgressive Supranuclear Palsy\nCorticobasal Degeneration",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Multiple System Atrophy, Parkinsonian type (MSA-P) caused by $\\alpha$-synucleinopathy",
+ "decisive_served": [
+  "vertical saccades and gaze range (up and down)",
+  "speech assessment (hypophonia, strained-strangled voice, scanning dysarthria)",
+  "lying-and-standing blood pressure",
+  "bladder, bowel and erectile history",
+  "levodopa trial (dose and response)",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2215,
+   "total_tokens": 10913,
+   "cost": 0.0016229,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0016229,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0007531
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1959,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9257,
+   "completion_tokens": 1999,
+   "total_tokens": 11256,
+   "cost": 0.00160536,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00160536,
+    "upstream_inference_prompt_cost": 0.0009257,
+    "upstream_inference_completions_cost": 0.00067966
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1893,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 168.8
+}

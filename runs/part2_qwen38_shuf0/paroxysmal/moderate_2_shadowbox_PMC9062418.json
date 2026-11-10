@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Do you have a headache?",
+  "Did you lose consciousness at the time of your injury?",
+  "Have you vomited since the injury occurred?",
+  "Is your left arm injured?",
+  "Does moving your head make your symptoms worse?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside neurological examination including assessment of cranial nerves, motor strength, sensation, and coordination",
+  "Cervical spine range of motion assessment with palpation for midline tenderness",
+  "Orthostatic vital signs measurement (blood pressure and heart rate supine and standing)",
+  "Finger-to-nose testing to assess for dysmetria",
+  "Gait and balance assessment"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test"
+ ],
+ "results": [
+  "1. Bedside neurological examination including assessment of cranial nerves, motor strength, sensation, and coordination",
+  "     cranial nerve examination: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "2. Cervical spine range of motion assessment with palpation for midline tenderness",
+  "     not performed / not available",
+  "3. Orthostatic vital signs measurement (blood pressure and heart rate supine and standing)",
+  "     not performed / not available",
+  "4. Finger-to-nose testing to assess for dysmetria",
+  "     coordination examination (limb and truncal): normal",
+  "5. Gait and balance assessment",
+  "     posture and pull test: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological disorder (psychogenic movement disorder)\nAlternative 1: Post-traumatic stress disorder with somatic manifestations\nAlternative 2: Malingering",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside neurological examination including assessment of cranial nerves, motor strength, sensation, and coordination\n2. Cervical spine range of motion assessment with palpation for midline tenderness\n3. Orthostatic vital signs measurement (blood pressure and heart rate supine and standing)\n4. Finger-to-nose testing to assess for dysmetria\n5. Gait and balance assessment",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional neurological disorder (psychogenic movement disorder)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 9431,
+   "completion_tokens": 65,
+   "total_tokens": 9496,
+   "cost": 0.0014452,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014452,
+    "upstream_inference_prompt_cost": 0.00141465,
+    "upstream_inference_completions_cost": 3.055e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9738,
+   "completion_tokens": 81,
+   "total_tokens": 9819,
+   "cost": 0.000280978,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9088,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000280978,
+    "upstream_inference_prompt_cost": 0.000242908,
+    "upstream_inference_completions_cost": 3.807e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 10100,
+   "completion_tokens": 38,
+   "total_tokens": 10138,
+   "cost": 0.00024646,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9600,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00024646,
+    "upstream_inference_prompt_cost": 0.0002286,
+    "upstream_inference_completions_cost": 1.786e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_2_shadowbox_PMC9062418.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 13.8
+}

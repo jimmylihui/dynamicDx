@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Does the drooping get worse as the day goes on?",
+  "Do you have double vision?",
+  "Do you have difficulty speaking or swallowing?",
+  "Do you have weakness in your arms or legs?",
+  "Did this start suddenly?",
+  "Have you had this since birth?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "family history",
+  "genetic testing (targeted panel or exome)",
+  "brain MRI",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. family history: mother, sister and grandmother affected - autosomal dominant pattern",
+  "2. genetic testing (targeted panel or exome): novel heterozygous NONSENSE variant in POU4F1; present in the symptomatic mother, sister and grandmother and absent in a healthy uncle",
+  "3. brain MRI: significant cerebellar atrophy with dilatation of the fourth ventricle",
+  "4. lumbar puncture / CSF: no oligoclonal bands - against multiple sclerosis"
+ ],
+ "dx_raw": "DIAGNOSIS: Autosomal dominant congenital ptosis caused by a POU4F1 mutation\n\n1. Myasthenia gravis\n2. Spinocerebellar ataxia\n3. Kearns-Sayre syndrome",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Autosomal dominant congenital ptosis caused by a POU4F1 mutation",
+ "decisive_served": [
+  "family history",
+  "genetic testing (targeted panel or exome)",
+  "brain MRI",
+  "lumbar puncture / CSF"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1059,
+   "total_tokens": 9757,
+   "cost": 0.00122986,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00122986,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00036006
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 946,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9039,
+   "completion_tokens": 2934,
+   "total_tokens": 11973,
+   "cost": 0.00190146,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00190146,
+    "upstream_inference_prompt_cost": 0.0009039,
+    "upstream_inference_completions_cost": 0.00099756
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2724,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 119.0
+}

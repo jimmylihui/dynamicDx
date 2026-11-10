@@ -1,0 +1,176 @@
+{
+ "questions": [
+  "Have you noticed your eyes feeling irritated, dry, or \"bulging out\" recently?",
+  "Did this wide-eyed appearance start suddenly or gradually?",
+  "Is this how your eyes have always looked, or is this a change from your usual appearance?",
+  "Have other people commented on your eye appearance recently?",
+  "Just to clarify - is this wide-eyed appearance something you've always had, or is it new?",
+  "I understand you're saying \"no\" - to clarify, are you saying this appearance is normal for you and not something new?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform the Helmholtz test (lid lag maneuver): instruct you to look downward while I hold your upper eyelids, to check for eyelid lag behind the eye globe.",
+  "Measure upper eyelid position relative to the superior limbus in both eyes",
+  "Formal Hertel exophthalmometry - measure degree of globe protrusion in millimeters for both eyes",
+  "Serum thyroid function tests - TSH, free T4, free T3"
+ ],
+ "served": [
+  "eyelid function (apraxia of lid opening, blepharospasm, lid retraction)",
+  "TSH / free T4"
+ ],
+ "results": [
+  "R1 ASK Have you noticed your eyes feeling irritated, dry, or \"bulging out\" recently? -> ['no']",
+  "R2 ORDER Perform the Helmholtz test (lid lag maneuver): instruct you to look downward while I hold your upper eyelids, to check for eyelid lag behind the eye globe. -> [['eyelid function (apraxia of lid opening, blepharospasm, lid retraction)']]",
+  "R3 ASK Did this wide-eyed appearance start suddenly or gradually? -> ['no']",
+  "R4 ASK Is this how your eyes have always looked, or is this a change from your usual appearance? -> ['no']",
+  "R5 ASK Have other people commented on your eye appearance recently? -> ['no']",
+  "R6 ASK Just to clarify - is this wide-eyed appearance something you've always had, or is it new? -> ['no']",
+  "R7 ORDER Measure upper eyelid position relative to the superior limbus in both eyes -> [['eyelid function (apraxia of lid opening, blepharospasm, lid retraction)']]",
+  "R8 ASK I understand you're saying \"no\" - to clarify, are you saying this appearance is normal for you and not something new? -> ['no']",
+  "R9 ORDER Formal Hertel exophthalmometry - measure degree of globe protrusion in millimeters for both eyes -> [[]]",
+  "R10 ORDER Serum thyroid function tests - TSH, free T4, free T3 -> [['TSH / free T4']]",
+  "R11 FORCED_DIAGNOSIS DIAGNOSES: Graves' ophthalmopathy (thyroid eye disease) - likely early or subclinical presentation with euthyroid status, given bilateral proptosis with normal thyroid function tests -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you noticed your eyes feeling irritated, dry, or \"bulging out\" recently?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Perform the Helmholtz test (lid lag maneuver): instruct you to look downward while I hold your upper eyelids, to check for eyelid lag behind the eye globe."
+   ],
+   "result": [
+    [
+     "eyelid function (apraxia of lid opening, blepharospasm, lid retraction)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did this wide-eyed appearance start suddenly or gradually?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Is this how your eyes have always looked, or is this a change from your usual appearance?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have other people commented on your eye appearance recently?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Just to clarify - is this wide-eyed appearance something you've always had, or is it new?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Measure upper eyelid position relative to the superior limbus in both eyes"
+   ],
+   "result": [
+    [
+     "eyelid function (apraxia of lid opening, blepharospasm, lid retraction)"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "I understand you're saying \"no\" - to clarify, are you saying this appearance is normal for you and not something new?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Formal Hertel exophthalmometry - measure degree of globe protrusion in millimeters for both eyes"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "Serum thyroid function tests - TSH, free T4, free T3"
+   ],
+   "result": [
+    [
+     "TSH / free T4"
+    ]
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSES: Graves' ophthalmopathy (thyroid eye disease) - likely early or subclinical presentation with euthyroid status, given bilateral proptosis with normal thyroid function tests"
+  }
+ ],
+ "dx": "Graves' ophthalmopathy (thyroid eye disease) - likely early or subclinical presentation with euthyroid status, given bilateral proptosis with normal thyroid function tests",
+ "dx_raw": "DIAGNOSES: Graves' ophthalmopathy (thyroid eye disease) - likely early or subclinical presentation with euthyroid status, given bilateral proptosis with normal thyroid function tests",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "cost_usd": 0.0046,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_wilson_psp_phenotype_PMC12962431.mp4",
+ "line": "parkinsonism",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 236.4
+}

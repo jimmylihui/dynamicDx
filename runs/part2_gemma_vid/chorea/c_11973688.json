@@ -1,0 +1,141 @@
+{
+ "questions": [
+  "Do you have pain in your right knee?",
+  "Was there a recent injury to that knee?",
+  "Is there swelling in the joint?",
+  "Does the pain worsen with activity?",
+  "Do you have stiffness in the morning?",
+  "Do you have pain in your other knee?",
+  "Have you had this pain for more than six weeks?",
+  "Do you have a fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Physical examination of the right knee (inspection, palpation, and range of motion)",
+  "Neurological examination of the right lower limb (sensation, motor strength, and deep tendon reflexes)",
+  "Palpation of peripheral pulses in the right lower limb"
+ ],
+ "served": [
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)"
+ ],
+ "results": [
+  "1. Physical examination of the right knee (inspection, palpation, and range of motion)",
+  "     not performed / not available",
+  "2. Neurological examination of the right lower limb (sensation, motor strength, and deep tendon reflexes)",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "3. Palpation of peripheral pulses in the right lower limb",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Xerosis cutis, age-related\n1. Restless Legs Syndrome, idiopathic\n2. Akathisia, medication-induced\n3. Pruritus, systemic cause (e.g., chronic kidney disease)",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Physical examination of the right knee (inspection, palpation, and range of motion)\n2. Neurological examination of the right lower limb (sensation, motor strength, and deep tendon reflexes)\n3. Palpation of peripheral pulses in the right lower limb",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Xerosis cutis, age-related",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8762,
+   "completion_tokens": 785,
+   "total_tokens": 9547,
+   "cost": 0.0011431,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011431,
+    "upstream_inference_prompt_cost": 0.0008762,
+    "upstream_inference_completions_cost": 0.0002669
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 641,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9120,
+   "completion_tokens": 1533,
+   "total_tokens": 10653,
+   "cost": 0.00143322,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00143322,
+    "upstream_inference_prompt_cost": 0.000912,
+    "upstream_inference_completions_cost": 0.00052122
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1473,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9380,
+   "completion_tokens": 5772,
+   "total_tokens": 15152,
+   "cost": 0.00290048,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00290048,
+    "upstream_inference_prompt_cost": 0.000938,
+    "upstream_inference_completions_cost": 0.00196248
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5357,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 937.2
+}

@@ -1,0 +1,126 @@
+{
+ "questions": [
+  "Can you stop the blinking if you try?",
+  "Do you feel a tension or urge before the blinking occurs?",
+  "Do you lose consciousness or awareness during these episodes?",
+  "Do you have other involuntary movements in other parts of your body?",
+  "Does bright light trigger or worsen the blinking?",
+  "Have you recently started any new medications?",
+  "Does stress or anxiety make the blinking worse?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain"
+ ],
+ "served": [],
+ "results": [
+  "1. MRI Brain",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Eyelid myoclonia with absences caused by idiopathic generalized epilepsy\nEssential blepharospasm\nTic disorder\nFocal motor seizures",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. EEG\n2. MRI Brain",
+ "rationale": [
+  null
+ ],
+ "dx": "Eyelid myoclonia with absences caused by idiopathic generalized epilepsy",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 257,
+   "completion_tokens": 1673,
+   "total_tokens": 1930,
+   "cost": 0.00059452,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00059452,
+    "upstream_inference_prompt_cost": 2.57e-05,
+    "upstream_inference_completions_cost": 0.00056882
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1562,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 613,
+   "completion_tokens": 1092,
+   "total_tokens": 1705,
+   "cost": 0.00043258,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00043258,
+    "upstream_inference_prompt_cost": 6.13e-05,
+    "upstream_inference_completions_cost": 0.00037128
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1056,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 730,
+   "completion_tokens": 3893,
+   "total_tokens": 4623,
+   "cost": 0.00139662,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00139662,
+    "upstream_inference_prompt_cost": 7.3e-05,
+    "upstream_inference_completions_cost": 0.00132362
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3925,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.2,
+ "video": "moderate_1_ocular_flutter_PMC12979508.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 188.7
+}

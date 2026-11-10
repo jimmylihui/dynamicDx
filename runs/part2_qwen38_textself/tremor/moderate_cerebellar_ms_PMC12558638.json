@@ -1,0 +1,160 @@
+{
+ "questions": [
+  "Is the affected eyelid drooping?",
+  "Does the weakness worsen with sustained use of the eye or later in the day?",
+  "Do you have double vision?",
+  "Have you had any recent head trauma or surgery?",
+  "Do you have a history of diabetes?",
+  "Do you have pain around the eye?",
+  "Is your pupil on the affected side larger than the other?",
+  "Do you have difficulty swallowing or speaking?",
+  "Do you have weakness in your arms or legs?",
+  "Have you noticed any weight loss or heat intolerance?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside examination of extraocular movements and pupillary reflexes",
+  "Serum acetylcholine receptor antibodies",
+  "Repetitive nerve stimulation electromyography",
+  "Single-fiber electromyography",
+  "CT scan of the chest"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "video-oculography / eye-movement recording",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "repetitive nerve stimulation",
+  "nerve conduction studies / EMG",
+  "single-fibre electromyography",
+  "CT chest, abdomen and pelvis"
+ ],
+ "results": [
+  "1. Bedside examination of extraocular movements and pupillary reflexes",
+  "     cranial nerve examination: normal",
+  "     video-oculography / eye-movement recording: normal",
+  "2. Serum acetylcholine receptor antibodies",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "3. Repetitive nerve stimulation electromyography",
+  "     repetitive nerve stimulation: normal",
+  "     nerve conduction studies / EMG: normal",
+  "4. Single-fiber electromyography",
+  "     single-fibre electromyography: normal",
+  "5. CT scan of the chest",
+  "     CT chest, abdomen and pelvis: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Myasthenia gravis (seronegative)\nAlternatives:\nLambert-Eaton myasthenic syndrome\nOculopharyngeal muscular dystrophy\nFunctional neurological disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination of extraocular movements and pupillary reflexes\n2. Serum acetylcholine receptor antibodies\n3. Repetitive nerve stimulation electromyography\n4. Single-fiber electromyography\n5. CT scan of the chest",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Myasthenia gravis (seronegative)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 195,
+   "completion_tokens": 127,
+   "total_tokens": 322,
+   "cost": 8.894e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.894e-05,
+    "upstream_inference_prompt_cost": 2.925e-05,
+    "upstream_inference_completions_cost": 5.969e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 644,
+   "completion_tokens": 52,
+   "total_tokens": 696,
+   "cost": 0.00012104,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00012104,
+    "upstream_inference_prompt_cost": 9.66e-05,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 929,
+   "completion_tokens": 47,
+   "total_tokens": 976,
+   "cost": 9.2832e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.2832e-05,
+    "upstream_inference_prompt_cost": 7.0742e-05,
+    "upstream_inference_completions_cost": 2.209e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.2
+}

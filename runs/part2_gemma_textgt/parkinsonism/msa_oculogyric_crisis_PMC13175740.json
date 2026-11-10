@@ -1,0 +1,161 @@
+{
+ "questions": [
+  "Have you recently started a new medication?",
+  "Are you taking a medication for a psychiatric condition?",
+  "Are you taking a medication for nausea?",
+  "Did this happen suddenly?",
+  "Do you have a fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Blood glucose",
+  "Comprehensive metabolic panel",
+  "Toxicology screen",
+  "MRI Brain",
+  "Trial of benztropine"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "drug and toxin screen",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+ ],
+ "results": [
+  "1. Blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "2. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "3. Toxicology screen",
+  "     drug and toxin screen: negative",
+  "4. MRI Brain",
+  "     MRI brain with gadolinium: putaminal atrophy with the rim sign and putaminal hypointensity on susceptibility-weighted imaging",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: putaminal hypointensity",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): no hummingbird sign",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): putaminal atrophy with the rim sign and putaminal hypointensity on susceptibility-weighted imaging",
+  "     MRI brain - cortical atrophy pattern: no focal atrophy",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal",
+  "5. Trial of benztropine",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Multiple System Atrophy, Parkinsonian type (MSA-P) caused by alpha-synucleinopathy\nWilson's disease\nProgressive Supranuclear Palsy\nParkinson's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Blood glucose\n2. Comprehensive metabolic panel\n3. Toxicology screen\n4. MRI Brain\n5. Trial of benztropine",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Multiple System Atrophy, Parkinsonian type (MSA-P) caused by alpha-synucleinopathy",
+ "decisive_served": [
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 172,
+   "completion_tokens": 2530,
+   "total_tokens": 2702,
+   "cost": 0.0008774,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008774,
+    "upstream_inference_prompt_cost": 1.72e-05,
+    "upstream_inference_completions_cost": 0.0008602
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2476,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 442,
+   "completion_tokens": 2178,
+   "total_tokens": 2620,
+   "cost": 0.00078472,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00078472,
+    "upstream_inference_prompt_cost": 4.42e-05,
+    "upstream_inference_completions_cost": 0.00074052
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2086,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 796,
+   "completion_tokens": 4342,
+   "total_tokens": 5138,
+   "cost": 0.00155588,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00155588,
+    "upstream_inference_prompt_cost": 7.96e-05,
+    "upstream_inference_completions_cost": 0.00147628
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4016,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 255.7
+}

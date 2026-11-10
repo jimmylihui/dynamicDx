@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Does the tremor occur when your hands are resting in your lap?",
+  "Does the tremor improve after drinking a small amount of alcohol?",
+  "Have you noticed your movements becoming slower?",
+  "Do you feel stiffness in your limbs?",
+  "Does anyone else in your family have a similar tremor?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Thyroid function tests",
+  "Serum ceruloplasmin",
+  "24-hour urinary copper",
+  "Slit-lamp examination",
+  "MRI Brain"
+ ],
+ "served": [
+  "TSH / free T4",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Thyroid function tests",
+  "     TSH / free T4: normal - not thyrotoxic",
+  "2. Serum ceruloplasmin",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal",
+  "3. 24-hour urinary copper",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal",
+  "4. Slit-lamp examination",
+  "     slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "5. MRI Brain",
+  "     brain MRI: no brain lesion on unenhanced MRI with diffusion imaging"
+ ],
+ "dx_raw": "DIAGNOSIS: Essential Tremor, idiopathic\nEnhanced physiological tremor\nDystonic tremor\nCerebellar tremor",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Thyroid function tests\n2. Serum ceruloplasmin\n3. 24-hour urinary copper\n4. Slit-lamp examination\n5. MRI Brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Essential Tremor, idiopathic",
+ "decisive_served": [
+  "TSH / free T4"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1138,
+   "total_tokens": 9836,
+   "cost": 0.00125672,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00125672,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00038692
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1100,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8998,
+   "completion_tokens": 985,
+   "total_tokens": 9983,
+   "cost": 0.0012347,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012347,
+    "upstream_inference_prompt_cost": 0.0008998,
+    "upstream_inference_completions_cost": 0.0003349
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 919,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9270,
+   "completion_tokens": 1770,
+   "total_tokens": 11040,
+   "cost": 0.0015288,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0015288,
+    "upstream_inference_prompt_cost": 0.000927,
+    "upstream_inference_completions_cost": 0.0006018
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1692,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_thyrotoxic_PMC11639689.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 179.6
+}

@@ -1,0 +1,324 @@
+{
+ "questions": [
+  "Did the weakness in your right arm come on suddenly?",
+  "Do you also have weakness in your right leg?",
+  "Is your speech normal?",
+  "Have you had any headaches?",
+  "Have you had any seizures?",
+  "Has your vision changed in any way?",
+  "How long have you had these symptoms?",
+  "Have you ever been diagnosed with cancer?",
+  "Has your weakness been getting worse over time?",
+  "Is your speech slurred or are you having trouble finding words?",
+  "Have you had any numbness or tingling?",
+  "Are you left-handed or right-handed?",
+  "Have you hit your head recently?",
+  "Have you been on any blood thinners?",
+  "Do you have high blood pressure or diabetes?",
+  "Have you noticed any difficulty swallowing?",
+  "When did the weakness start - days, weeks, or months ago?",
+  "Have you had any problems with balance or coordination?",
+  "Have you noticed any weakness in your face?",
+  "Do you have any family history of neurological disease?",
+  "Have you noticed any personality changes recently?",
+  "Have you had any recent infections?",
+  "Have you lost weight unintentionally?",
+  "Have you had any fever?",
+  "Do you have any family members with foot problems or muscle weakness?",
+  "Do you wear special shoes or have high arches?",
+  "Do you drink alcohol regularly?",
+  "Have you taken any regular medications or supplements?",
+  "Have you been told you have diabetes or pre-diabetes?",
+  "Have you always had the high arches in your feet?",
+  "Have you noticed any hammertoes or foot deformities?",
+  "Have you had these problems since you were a child or teenager?",
+  "Has anyone in your extended family (cousins, aunts, uncles) had foot problems or difficulty walking?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "yes",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "yes",
+  "32": "no",
+  "33": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Formal assessment of pronator drift bilaterally",
+  "Assessment of deep tendon reflexes in all four limbs",
+  "Assessment for Babinski sign bilaterally",
+  "Testing of tone in all four limbs",
+  "Assessment of grip strength and fine motor dexterity bilaterally",
+  "Nerve conduction studies and electromyography (EMG/NCS) of upper and lower limbs",
+  "Lumbar puncture with CSF analysis (protein, glucose, cell count)",
+  "Test for Campylobacter jejuni antibodies (IgM and IgG)",
+  "Test for anti-ganglioside antibodies (anti-GM1, anti-GQ1b)"
+ ],
+ "served": [
+  "limb strength (MRC) examination",
+  "reflexes and plantar responses",
+  "muscle tone examination",
+  "coordination examination (limb and truncal)",
+  "nerve conduction studies",
+  "needle electromyography",
+  "nerve conduction studies / EMG",
+  "lumbar puncture / CSF",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose"
+ ],
+ "results": [
+  "R1 ASK Did the weakness in your right arm come on suddenly?; Do you also have weakness in your right leg?; Is your speech normal? -> ['no', 'yes', 'no']",
+  "R2 ASK Have you had any headaches?; Have you had any seizures?; Has your vision changed in any way?; How long have you had these symptoms?; Have you ever been diagnosed with cancer? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Has your weakness been getting worse over time?; Is your speech slurred or are you having trouble finding words?; Have you had any numbness or tingling?; Are you left-handed or right-handed? -> ['no', 'no', 'no', 'no']",
+  "R4 ASK Have you hit your head recently?; Have you been on any blood thinners?; Do you have high blood pressure or diabetes?; Have you noticed any difficulty swallowing? -> ['no', 'no', 'no', 'no']",
+  "R5 ASK When did the weakness start - days, weeks, or months ago?; Have you had any problems with balance or coordination?; Have you noticed any weakness in your face?; Do you have any family history of neurological disease? -> ['no', 'no', 'no', 'no']",
+  "R6 ASK Have you noticed any personality changes recently?; Have you had any recent infections?; Have you lost weight unintentionally?; Have you had any fever? -> ['no', 'no', 'no', 'no']",
+  "R7 ORDER Formal assessment of pronator drift bilaterally; Assessment of deep tendon reflexes in all four limbs; Assessment for Babinski sign bilaterally; Testing of tone in all four limbs; Assessment of grip strength and fine motor dexterity bilaterally -> [['limb strength (MRC) examination'], ['reflexes and plantar responses'], ['reflexes and plantar responses'], ['muscle tone examination'], ['limb strength (MRC) examination', 'coordination examination (limb and truncal)']]",
+  "R8 ORDER Nerve conduction studies and electromyography (EMG/NCS) of upper and lower limbs; Lumbar puncture with CSF analysis (protein, glucose, cell count); Test for Campylobacter jejuni antibodies (IgM and IgG); Test for anti-ganglioside antibodies (anti-GM1, anti-GQ1b) -> [['nerve conduction studies', 'needle electromyography', 'nerve conduction studies / EMG'], ['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose'], [], []]",
+  "R9 ASK Do you have any family members with foot problems or muscle weakness?; Do you wear special shoes or have high arches?; Do you drink alcohol regularly?; Have you taken any regular medications or supplements?; Have you been told you have diabetes or pre-diabetes? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R10 ASK Have you always had the high arches in your feet?; Have you noticed any hammertoes or foot deformities?; Have you had these problems since you were a child or teenager?; Has anyone in your extended family (cousins, aunts, uncles) had foot problems or difficulty walking? -> ['no', 'yes', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOS: Charcot-Marie-Tooth disease type 2 (CMT2), an inherited axonal sensorimotor neuropathy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did the weakness in your right arm come on suddenly?",
+    "Do you also have weakness in your right leg?",
+    "Is your speech normal?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you had any headaches?",
+    "Have you had any seizures?",
+    "Has your vision changed in any way?",
+    "How long have you had these symptoms?",
+    "Have you ever been diagnosed with cancer?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Has your weakness been getting worse over time?",
+    "Is your speech slurred or are you having trouble finding words?",
+    "Have you had any numbness or tingling?",
+    "Are you left-handed or right-handed?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you hit your head recently?",
+    "Have you been on any blood thinners?",
+    "Do you have high blood pressure or diabetes?",
+    "Have you noticed any difficulty swallowing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "When did the weakness start - days, weeks, or months ago?",
+    "Have you had any problems with balance or coordination?",
+    "Have you noticed any weakness in your face?",
+    "Do you have any family history of neurological disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any personality changes recently?",
+    "Have you had any recent infections?",
+    "Have you lost weight unintentionally?",
+    "Have you had any fever?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Formal assessment of pronator drift bilaterally",
+    "Assessment of deep tendon reflexes in all four limbs",
+    "Assessment for Babinski sign bilaterally",
+    "Testing of tone in all four limbs",
+    "Assessment of grip strength and fine motor dexterity bilaterally"
+   ],
+   "result": [
+    [
+     "limb strength (MRC) examination"
+    ],
+    [
+     "reflexes and plantar responses"
+    ],
+    [
+     "reflexes and plantar responses"
+    ],
+    [
+     "muscle tone examination"
+    ],
+    [
+     "limb strength (MRC) examination",
+     "coordination examination (limb and truncal)"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Nerve conduction studies and electromyography (EMG/NCS) of upper and lower limbs",
+    "Lumbar puncture with CSF analysis (protein, glucose, cell count)",
+    "Test for Campylobacter jejuni antibodies (IgM and IgG)",
+    "Test for anti-ganglioside antibodies (anti-GM1, anti-GQ1b)"
+   ],
+   "result": [
+    [
+     "nerve conduction studies",
+     "needle electromyography",
+     "nerve conduction studies / EMG"
+    ],
+    [
+     "lumbar puncture / CSF",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you have any family members with foot problems or muscle weakness?",
+    "Do you wear special shoes or have high arches?",
+    "Do you drink alcohol regularly?",
+    "Have you taken any regular medications or supplements?",
+    "Have you been told you have diabetes or pre-diabetes?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Have you always had the high arches in your feet?",
+    "Have you noticed any hammertoes or foot deformities?",
+    "Have you had these problems since you were a child or teenager?",
+    "Has anyone in your extended family (cousins, aunts, uncles) had foot problems or difficulty walking?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOS: Charcot-Marie-Tooth disease type 2 (CMT2), an inherited axonal sensorimotor neuropathy"
+  }
+ ],
+ "dx": "Charcot-Marie-Tooth disease type 2 (CMT2), an inherited axonal sensorimotor neuropathy",
+ "dx_raw": "DIAGNOS: Charcot-Marie-Tooth disease type 2 (CMT2), an inherited axonal sensorimotor neuropathy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "nerve conduction studies / EMG"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0061,
+ "n_frames": 32,
+ "duration_s": 21.7,
+ "video": "mild_neuropathic_CMT_PMC11600610.mp4",
+ "line": "tremor",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 333.8
+}

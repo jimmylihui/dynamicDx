@@ -1,0 +1,171 @@
+{
+ "questions": [
+  "Do you have chest pain?",
+  "Did this start suddenly?",
+  "Do you have a fever?",
+  "Do you have a cough?",
+  "Do you have a history of heart failure?",
+  "Do you have a history of asthma or COPD?",
+  "Have you had a recent surgery?",
+  "Do you have swelling in your legs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Neurological examination",
+  "CT head",
+  "Blood glucose",
+  "Full blood count and electrolytes"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "neurological examination between events",
+  "CT head",
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium",
+  "serum electrolytes, urea and creatinine",
+  "full blood count and biochemistry",
+  "glucose, calcium, magnesium, sodium"
+ ],
+ "results": [
+  "1. Neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: mild developmental cognitive delay",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "     neurological examination between events: normal",
+  "2. CT head",
+  "     CT head: normal",
+  "3. Blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "4. Full blood count and electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     full blood count and biochemistry: normal",
+  "     glucose, calcium, magnesium, sodium: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: GLUT1 deficiency syndrome caused by a mutation in the SLC2A1 gene\n\nPyruvate dehydrogenase deficiency\nUrea cycle disorder\nMitochondrial encephalopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Neurological examination\n2. CT head\n3. Blood glucose\n4. Full blood count and electrolytes",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "GLUT1 deficiency syndrome caused by a mutation in the SLC2A1 gene",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 1319,
+   "total_tokens": 1739,
+   "cost": 0.00049046,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00049046,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00044846
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1135,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 760,
+   "completion_tokens": 875,
+   "total_tokens": 1635,
+   "cost": 0.0003735,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003735,
+    "upstream_inference_prompt_cost": 7.6e-05,
+    "upstream_inference_completions_cost": 0.0002975
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 854,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1063,
+   "completion_tokens": 4766,
+   "total_tokens": 5829,
+   "cost": 0.00172674,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00172674,
+    "upstream_inference_prompt_cost": 0.0001063,
+    "upstream_inference_completions_cost": 0.00162044
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4670,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 16.8,
+ "video": "severe_1_generalized_PMC13101308.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 5842.5
+}

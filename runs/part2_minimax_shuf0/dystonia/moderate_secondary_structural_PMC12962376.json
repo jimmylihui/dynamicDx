@@ -1,0 +1,164 @@
+{
+ "questions": [
+  "Is your main pain in your right shoulder?",
+  "Did this pain start after a fall or injury?",
+  "Do you have any numbness or weakness in your right arm or hand?",
+  "Have you had a fever recently?",
+  "Are you experiencing any chest pain?",
+  "Does moving your right arm significantly worsen the pain?",
+  "Is the area around the IV line in your right arm red or tender?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Fingerstick blood glucose",
+  "Non-contrast CT of the head",
+  "12-lead electrocardiogram",
+  "Complete blood count",
+  "Basic metabolic panel",
+  "Coagulation studies (PT/INR/aPTT)",
+  "Serum troponin",
+  "MRI of the brain with diffusion-weighted imaging"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "CT head",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "MRI diffusion-weighted sequences",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Fingerstick blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "2. Non-contrast CT of the head",
+  "     CT head: normal",
+  "3. 12-lead electrocardiogram",
+  "     not performed / not available",
+  "4. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "5. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "6. Coagulation studies (PT/INR/aPTT)",
+  "     not performed / not available",
+  "7. Serum troponin",
+  "     not performed / not available",
+  "8. MRI of the brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: normal",
+  "     brain MRI: no basal-ganglia lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Narcolepsy with cataplexy, due to autoimmune destruction of hypothalamic hypocretin (orexin)-producing neurons\n1. Functional neurological symptom disorder (conversion disorder) presenting as cataplexy-like episodes\n2. Secondary narcolepsy from an occult hypothalamic lesion (e.g., tumor, neurosarcoidosis) missed on standard MRI\n3. Autoimmune or paraneoplastic brainstem encephalitis (e.g., anti-Ma2) presenting with cataplexy-like hypotonia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Fingerstick blood glucose\n2. Non-contrast CT of the head\n3. 12-lead electrocardiogram\n4. Complete blood count\n5. Basic metabolic panel\n6. Coagulation studies (PT/INR/aPTT)\n7. Serum troponin\n8. MRI of the brain with diffusion-weighted imaging",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Narcolepsy with cataplexy, due to autoimmune destruction of hypothalamic hypocretin (orexin)-producing neurons",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 21046,
+   "completion_tokens": 2522,
+   "total_tokens": 23568,
+   "cost": 0.00930276,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00930276,
+    "upstream_inference_prompt_cost": 0.00627636,
+    "upstream_inference_completions_cost": 0.0030264
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2436,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 21398,
+   "completion_tokens": 3566,
+   "total_tokens": 24964,
+   "cost": 0.00565116,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 21031,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00565116,
+    "upstream_inference_prompt_cost": 0.00137196,
+    "upstream_inference_completions_cost": 0.0042792
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3498,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 21706,
+   "completion_tokens": 4029,
+   "total_tokens": 25735,
+   "cost": 0.00621468,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 21383,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00621468,
+    "upstream_inference_prompt_cost": 0.00137988,
+    "upstream_inference_completions_cost": 0.0048348
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3922,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_secondary_structural_PMC12962376.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 126.3
+}

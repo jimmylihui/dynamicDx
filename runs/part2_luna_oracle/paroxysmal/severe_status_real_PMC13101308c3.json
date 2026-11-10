@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Are you having trouble breathing right now?",
+  "Are you having trouble swallowing or managing your saliva?",
+  "Is your neck pain worse than it was earlier?",
+  "Do you have a severe or worsening headache?",
+  "Did you lose consciousness before coming to the hospital?",
+  "Have you vomited since your injury or procedure?",
+  "Are you feeling confused or unusually sleepy?",
+  "Do you have new weakness in either arm or leg?",
+  "Do you have numbness or tingling in your arms, legs, or face?",
+  "Do you have new vision changes or double vision?",
+  "Are you having chest pain?",
+  "Are you having abdominal pain?",
+  "Are you having severe pain anywhere right now?",
+  "Did your symptoms begin after a fall or other injury?",
+  "Were you taking blood thinners before this happened?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "awareness and recall during the event",
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. awareness and recall during the event: awareness recovers between seizures - this is not status epilepticus",
+  "2. interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "3. video-EEG monitoring of a typical event: ictal BODY TURNING, often preceded by head version, but the EEG shows classic GENERALIZED spike-wave or polyspike discharges WITHOUT consistent lateralization"
+ ],
+ "dx_raw": "DIAGNOSIS: Genetic generalized epilepsy causing generalized tonic–clonic seizures with asymmetric tonic body turning (ictal version), without evidence of a focal epileptogenic lesion\n\nFrontal-lobe focal epilepsy with rapid bilateral synchrony\n\nPsychogenic nonepileptic seizures\n\nProgressive or structural symptomatic generalized epilepsy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Genetic generalized epilepsy causing generalized tonic–clonic seizures with asymmetric tonic body turning (ictal version), without evidence of a focal epileptogenic lesion",
+ "decisive_served": [
+  "awareness and recall during the event",
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 420,
+   "total_tokens": 6096,
+   "cost": 0.00030903,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00030903,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.000252
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 239,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6306,
+   "completion_tokens": 324,
+   "total_tokens": 6630,
+   "cost": 0.00033018,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 630,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00033018,
+    "upstream_inference_prompt_cost": 0.00013578,
+    "upstream_inference_completions_cost": 0.0001944
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 257,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 17.1
+}

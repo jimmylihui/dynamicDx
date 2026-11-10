@@ -1,0 +1,153 @@
+{
+ "questions": [
+  "Are you experiencing any pain?",
+  "Do you have a fever?",
+  "Are you experiencing shortness of breath?",
+  "Have you experienced any sudden neurological deficits, such as weakness or numbness?",
+  "Is your primary symptom located in your head or neck?",
+  "Is your primary symptom located in your chest?",
+  "Is your primary symptom located in your abdomen?",
+  "Is your primary symptom located in your extremities?",
+  "Have you experienced any unintentional weight loss?",
+  "Are you experiencing any symptoms of a psychological nature?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Physical examination of the extremities."
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "limb power and wasting",
+  "reflexes and plantar responses",
+  "sensory examination (vibration, pinprick)",
+  "foot deformity (pes cavus)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "gait examination"
+ ],
+ "results": [
+  "1. Physical examination of the extremities.",
+  "     muscle tone examination: parkinsonian rigidity",
+  "     limb strength (MRC) examination: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): unilateral wing-beating tremor",
+  "     posture and pull test: parkinsonian postural instability",
+  "     limb power and wasting: normal bulk and power",
+  "     reflexes and plantar responses: normal",
+  "     sensory examination (vibration, pinprick): normal",
+  "     foot deformity (pes cavus): none",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): absent",
+  "     gait examination: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Wilson's disease caused by ATP7B mutation\nParkinson's disease\nMultiple System Atrophy\nProgressive Supranuclear Palsy",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Physical examination of the extremities.",
+ "rationale": [
+  null
+ ],
+ "dx": "Wilson's disease caused by ATP7B mutation",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 155,
+   "completion_tokens": 3716,
+   "total_tokens": 3871,
+   "cost": 0.00127894,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00127894,
+    "upstream_inference_prompt_cost": 1.55e-05,
+    "upstream_inference_completions_cost": 0.00126344
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3739,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 581,
+   "completion_tokens": 4201,
+   "total_tokens": 4782,
+   "cost": 0.00148644,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00148644,
+    "upstream_inference_prompt_cost": 5.81e-05,
+    "upstream_inference_completions_cost": 0.00142834
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4109,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 831,
+   "completion_tokens": 1474,
+   "total_tokens": 2305,
+   "cost": 0.00058426,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 160,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00058426,
+    "upstream_inference_prompt_cost": 8.31e-05,
+    "upstream_inference_completions_cost": 0.00050116
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1460,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 474.6
+}

@@ -1,0 +1,334 @@
+{
+ "questions": [
+  "Does the drooping of your eyelids become worse after reading or sustained upward gaze?",
+  "Does the drooping improve after rest or sleep?",
+  "Do you experience double vision?",
+  "Do you have difficulty swallowing, speaking, chewing, or breathing?",
+  "Do you have weakness in your arms or legs that worsens with activity?",
+  "Have your pupils remained the same size during these episodes?",
+  "Do your eyelids close involuntarily in repeated spasms?",
+  "Do bright lights, wind, stress, or prolonged visual attention trigger or worsen these episodes?",
+  "Do you have an uncomfortable urge or sensation in or around the eyes that is relieved by blinking or closing them?",
+  "Are you able to keep your eyes open when someone gently holds your eyelids open?",
+  "Did these eyelid movements begin after an eye injury, eye surgery, medication, or exposure to drugs that block dopamine?",
+  "Are you able to open your eyes normally when asked to do so repeatedly?",
+  "Do your eyes open normally during spontaneous activities such as walking, eating, or being startled?",
+  "Do you have difficulty initiating other voluntary movements, such as starting to walk or making a saccade to a target?",
+  "Have you had any slowness, stiffness, tremor, imbalance, or falls?",
+  "Have you had similar episodes of involuntary closure or inability to open the mouth or other muscles?",
+  "Are the rapid horizontal eye movements present continuously when you are relaxed and not trying to produce them?",
+  "Can you voluntarily start or stop the rapid horizontal eye movements?",
+  "Do the eye movements disappear when you are distracted or when you fixate on a target?",
+  "Did these symptoms begin after a recent viral illness, fever, or gastrointestinal infection?",
+  "Have you had weight loss, night sweats, persistent fever, or any known cancer?",
+  "Have you had new headache, confusion, impaired coordination, numbness, or limb weakness?",
+  "Do you have sudden, involuntary jerks of your arms, legs, trunk, or face?",
+  "Have you had new unsteadiness when walking or difficulty coordinating your limbs?",
+  "Have you developed irritability, sleep disturbance, confusion, or other behavioral changes since the illness?",
+  "Did the rapid eye movements begin during or within six weeks after the infection?",
+  "Have you had episodes of loss of awareness or seizures?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "yes",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "yes",
+  "21": "no",
+  "22": "yes",
+  "23": "no",
+  "24": "yes",
+  "25": "no",
+  "26": "no",
+  "27": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Bedside examination documenting eyelid position, pupil size and reactivity in bright and dim light, and ocular motility.",
+  "Bedside apraclonidine 0.5% eye-drop test with reassessment of pupil sizes and eyelid ptosis after 45 minutes.",
+  "Ice-pack test applied to each closed upper eyelid for 2 minutes, followed by measurement of the palpebral fissures and assessment for ptosis.",
+  "Sustained upgaze test for 2 minutes with repeated assessment of eyelid position and ocular motility.",
+  "Repetitive nerve stimulation of the facial and accessory nerves at low frequency.",
+  "Comprehensive movement-disorders examination, including assessment for bradykinesia, rigidity, rest tremor, postural instability, gait, eyelid-opening apraxia, blepharospasm, and levator inhibition.",
+  "Examination of vertical and horizontal saccades and smooth pursuit, specifically documenting slowed or restricted vertical saccades and impaired downgaze.",
+  "Brain MRI with attention to the midbrain, basal ganglia, and frontal-subcortical regions.",
+  "Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, oligoclonal bands, IgG index, bacterial culture, and CSF PCR for HSV, VZV, enterovirus, and other relevant neurotropic viruses.",
+  "Serum and CSF autoimmune/paraneoplastic antibody panels, including anti-Ri, anti-Hu, anti-Ma2, anti-NMDA-receptor, anti-GAD65, anti-DPPX, and anti-GQ1b antibodies.",
+  "Serum infectious testing guided by the preceding illness, including HIV, syphilis, Lyme disease, EBV, CMV, and VZV serology/PCR.",
+  "CT of the chest, abdomen, and pelvis and, if the patient is a child, abdominal/pelvic ultrasound or MRI to screen for occult neuroblastoma or other malignancy."
+ ],
+ "served": [
+  "cranial nerve examination",
+  "pupil size and light reaction",
+  "ptosis / lid position",
+  "repetitive nerve stimulation",
+  "muscle tone examination",
+  "posture and pull test",
+  "gait and tandem walking",
+  "smooth pursuit and saccades",
+  "vertical gaze and convergence",
+  "MRI brain with gadolinium",
+  "lumbar puncture / CSF",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF culture and viral PCR",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "CSF autoimmune encephalitis panel",
+  "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)",
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "HIV and syphilis serology",
+  "CT chest, abdomen and pelvis",
+  "CT chest / abdomen / pelvis (occult tumour)"
+ ],
+ "results": [
+  "R1 ASK Does the drooping of your eyelids become worse after reading or sustained upward gaze?; Does the drooping improve after rest or sleep?; Do you experience double vision?; Do you have difficulty swallowing, speaking, chewing, or breathing?; Do you have weakness in your arms or legs that worsens with activity?; Have your pupils remained the same size during these episodes? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ORDER Bedside examination documenting eyelid position, pupil size and reactivity in bright and dim light, and ocular motility.; Bedside apraclonidine 0.5% eye-drop test with reassessment of pupil sizes and eyelid ptosis after 45 minutes. -> [['cranial nerve examination', 'pupil size and light reaction', 'ptosis / lid position'], ['pupil size and light reaction', 'ptosis / lid position']]",
+  "R3 ORDER Ice-pack test applied to each closed upper eyelid for 2 minutes, followed by measurement of the palpebral fissures and assessment for ptosis.; Sustained upgaze test for 2 minutes with repeated assessment of eyelid position and ocular motility.; Repetitive nerve stimulation of the facial and accessory nerves at low frequency. -> [['ptosis / lid position'], ['ptosis / lid position'], ['repetitive nerve stimulation']]",
+  "R4 ASK Do your eyelids close involuntarily in repeated spasms?; Do bright lights, wind, stress, or prolonged visual attention trigger or worsen these episodes?; Do you have an uncomfortable urge or sensation in or around the eyes that is relieved by blinking or closing them?; Are you able to keep your eyes open when someone gently holds your eyelids open?; Did these eyelid movements begin after an eye injury, eye surgery, medication, or exposure to drugs that block dopamine? -> ['no', 'no', 'no', 'no', 'no']",
+  "R5 ASK Are you able to open your eyes normally when asked to do so repeatedly?; Do your eyes open normally during spontaneous activities such as walking, eating, or being startled?; Do you have difficulty initiating other voluntary movements, such as starting to walk or making a saccade to a target?; Have you had any slowness, stiffness, tremor, imbalance, or falls?; Have you had similar episodes of involuntary closure or inability to open the mouth or other muscles? -> ['no', 'no', 'no', 'yes', 'no']",
+  "R6 ORDER Comprehensive movement-disorders examination, including assessment for bradykinesia, rigidity, rest tremor, postural instability, gait, eyelid-opening apraxia, blepharospasm, and levator inhibition.; Examination of vertical and horizontal saccades and smooth pursuit, specifically documenting slowed or restricted vertical saccades and impaired downgaze.; Brain MRI with attention to the midbrain, basal ganglia, and frontal-subcortical regions. -> [['muscle tone examination', 'posture and pull test', 'ptosis / lid position', 'gait and tandem walking'], ['smooth pursuit and saccades', 'vertical gaze and convergence'], ['MRI brain with gadolinium']]",
+  "R7 ASK Are the rapid horizontal eye movements present continuously when you are relaxed and not trying to produce them?; Can you voluntarily start or stop the rapid horizontal eye movements?; Do the eye movements disappear when you are distracted or when you fixate on a target?; Did these symptoms begin after a recent viral illness, fever, or gastrointestinal infection?; Have you had weight loss, night sweats, persistent fever, or any known cancer?; Have you had new headache, confusion, impaired coordination, numbness, or limb weakness? -> ['no', 'no', 'no', 'yes', 'no', 'yes']",
+  "R8 ASK Do you have sudden, involuntary jerks of your arms, legs, trunk, or face?; Have you had new unsteadiness when walking or difficulty coordinating your limbs?; Have you developed irritability, sleep disturbance, confusion, or other behavioral changes since the illness?; Did the rapid eye movements begin during or within six weeks after the infection?; Have you had episodes of loss of awareness or seizures? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R9 ORDER Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, oligoclonal bands, IgG index, bacterial culture, and CSF PCR for HSV, VZV, enterovirus, and other relevant neurotropic viruses.; Serum and CSF autoimmune/paraneoplastic antibody panels, including anti-Ri, anti-Hu, anti-Ma2, anti-NMDA-receptor, anti-GAD65, anti-DPPX, and anti-GQ1b antibodies.; Serum infectious testing guided by the preceding illness, including HIV, syphilis, Lyme disease, EBV, CMV, and VZV serology/PCR.; CT of the chest, abdomen, and pelvis and, if the patient is a child, abdominal/pelvic ultrasound or MRI to screen for occult neuroblastoma or other malignancy. -> [['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF culture and viral PCR'], ['serum paraneoplastic / neuronal autoantibody panel', 'CSF autoimmune encephalitis panel', 'anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)', 'paraneoplastic and autoimmune antibody panel (serum)'], ['HIV and syphilis serology'], ['CT chest, abdomen and pelvis', 'CT chest / abdomen / pelvis (occult tumour)']]",
+  "R10 DIAGNOSIS Postinfectious anti-GT1a IgG–associated ocular flutter–ataxia syndrome, a regional variant of the Miller Fisher/Guillain–Barré spectrum (without evidence of malignancy or autoimmune encephalitis). -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Does the drooping of your eyelids become worse after reading or sustained upward gaze?",
+    "Does the drooping improve after rest or sleep?",
+    "Do you experience double vision?",
+    "Do you have difficulty swallowing, speaking, chewing, or breathing?",
+    "Do you have weakness in your arms or legs that worsens with activity?",
+    "Have your pupils remained the same size during these episodes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Bedside examination documenting eyelid position, pupil size and reactivity in bright and dim light, and ocular motility.",
+    "Bedside apraclonidine 0.5% eye-drop test with reassessment of pupil sizes and eyelid ptosis after 45 minutes."
+   ],
+   "result": [
+    [
+     "cranial nerve examination",
+     "pupil size and light reaction",
+     "ptosis / lid position"
+    ],
+    [
+     "pupil size and light reaction",
+     "ptosis / lid position"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Ice-pack test applied to each closed upper eyelid for 2 minutes, followed by measurement of the palpebral fissures and assessment for ptosis.",
+    "Sustained upgaze test for 2 minutes with repeated assessment of eyelid position and ocular motility.",
+    "Repetitive nerve stimulation of the facial and accessory nerves at low frequency."
+   ],
+   "result": [
+    [
+     "ptosis / lid position"
+    ],
+    [
+     "ptosis / lid position"
+    ],
+    [
+     "repetitive nerve stimulation"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do your eyelids close involuntarily in repeated spasms?",
+    "Do bright lights, wind, stress, or prolonged visual attention trigger or worsen these episodes?",
+    "Do you have an uncomfortable urge or sensation in or around the eyes that is relieved by blinking or closing them?",
+    "Are you able to keep your eyes open when someone gently holds your eyelids open?",
+    "Did these eyelid movements begin after an eye injury, eye surgery, medication, or exposure to drugs that block dopamine?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Are you able to open your eyes normally when asked to do so repeatedly?",
+    "Do your eyes open normally during spontaneous activities such as walking, eating, or being startled?",
+    "Do you have difficulty initiating other voluntary movements, such as starting to walk or making a saccade to a target?",
+    "Have you had any slowness, stiffness, tremor, imbalance, or falls?",
+    "Have you had similar episodes of involuntary closure or inability to open the mouth or other muscles?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Comprehensive movement-disorders examination, including assessment for bradykinesia, rigidity, rest tremor, postural instability, gait, eyelid-opening apraxia, blepharospasm, and levator inhibition.",
+    "Examination of vertical and horizontal saccades and smooth pursuit, specifically documenting slowed or restricted vertical saccades and impaired downgaze.",
+    "Brain MRI with attention to the midbrain, basal ganglia, and frontal-subcortical regions."
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "posture and pull test",
+     "ptosis / lid position",
+     "gait and tandem walking"
+    ],
+    [
+     "smooth pursuit and saccades",
+     "vertical gaze and convergence"
+    ],
+    [
+     "MRI brain with gadolinium"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Are the rapid horizontal eye movements present continuously when you are relaxed and not trying to produce them?",
+    "Can you voluntarily start or stop the rapid horizontal eye movements?",
+    "Do the eye movements disappear when you are distracted or when you fixate on a target?",
+    "Did these symptoms begin after a recent viral illness, fever, or gastrointestinal infection?",
+    "Have you had weight loss, night sweats, persistent fever, or any known cancer?",
+    "Have you had new headache, confusion, impaired coordination, numbness, or limb weakness?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have sudden, involuntary jerks of your arms, legs, trunk, or face?",
+    "Have you had new unsteadiness when walking or difficulty coordinating your limbs?",
+    "Have you developed irritability, sleep disturbance, confusion, or other behavioral changes since the illness?",
+    "Did the rapid eye movements begin during or within six weeks after the infection?",
+    "Have you had episodes of loss of awareness or seizures?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, oligoclonal bands, IgG index, bacterial culture, and CSF PCR for HSV, VZV, enterovirus, and other relevant neurotropic viruses.",
+    "Serum and CSF autoimmune/paraneoplastic antibody panels, including anti-Ri, anti-Hu, anti-Ma2, anti-NMDA-receptor, anti-GAD65, anti-DPPX, and anti-GQ1b antibodies.",
+    "Serum infectious testing guided by the preceding illness, including HIV, syphilis, Lyme disease, EBV, CMV, and VZV serology/PCR.",
+    "CT of the chest, abdomen, and pelvis and, if the patient is a child, abdominal/pelvic ultrasound or MRI to screen for occult neuroblastoma or other malignancy."
+   ],
+   "result": [
+    [
+     "lumbar puncture / CSF",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF culture and viral PCR"
+    ],
+    [
+     "serum paraneoplastic / neuronal autoantibody panel",
+     "CSF autoimmune encephalitis panel",
+     "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)",
+     "paraneoplastic and autoimmune antibody panel (serum)"
+    ],
+    [
+     "HIV and syphilis serology"
+    ],
+    [
+     "CT chest, abdomen and pelvis",
+     "CT chest / abdomen / pelvis (occult tumour)"
+    ]
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Postinfectious anti-GT1a IgG–associated ocular flutter–ataxia syndrome, a regional variant of the Miller Fisher/Guillain–Barré spectrum (without evidence of malignancy or autoimmune encephalitis)."
+  }
+ ],
+ "dx": "Postinfectious anti-GT1a IgG–associated ocular flutter–ataxia syndrome, a regional variant of the Miller Fisher/Guillain–Barré spectrum (without evidence of malignancy or autoimmune encephalitis).",
+ "dx_raw": "DIAGNOSIS: Postinfectious anti-GT1a IgG–associated ocular flutter–ataxia syndrome, a regional variant of the Miller Fisher/Guillain–Barré spectrum (without evidence of malignancy or autoimmune encephalitis).",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)",
+  "smooth pursuit and saccades"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0073,
+ "n_frames": 32,
+ "duration_s": 15.2,
+ "video": "moderate_1_ocular_flutter_PMC12979508.mp4",
+ "line": "vertigo_central",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 92.0
+}

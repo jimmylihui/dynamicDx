@@ -1,0 +1,201 @@
+{
+ "questions": [
+  "Are you currently awake and aware of your surroundings?",
+  "Have you ever had a seizure or convulsion before?",
+  "Do you take daily medication to prevent seizures?",
+  "Did you miss a dose of that seizure medication in the last 24 hours?",
+  "Do you drink alcohol on a daily basis?",
+  "Was your last alcoholic drink more than 24 hours ago?",
+  "Do you have a history of diabetes?",
+  "Do you take insulin or other diabetes medication?",
+  "Have you had a fever or felt ill recently?",
+  "Do you have a history of head trauma or brain surgery?",
+  "Do you use recreational drugs?",
+  "Is there any chance you might be pregnant?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Capillary blood glucose (fingerstick)",
+  "Basic metabolic panel (Na, K, Cl, HCO3, BUN, Cr, Ca, Mg, phosphate)",
+  "Serum glucose",
+  "CBC with differential",
+  "Non-contrast CT head",
+  "12-lead ECG",
+  "Urine toxicology screen",
+  "Lumbar puncture with CSF analysis",
+  "Continuous video-EEG monitoring",
+  "MRI brain with and without contrast"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "blood glucose",
+  "full blood count",
+  "CT head (non-contrast)",
+  "toxicology screen (urine and serum)",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "lumbar puncture / CSF",
+  "EEG",
+  "brain MRI with contrast"
+ ],
+ "results": [
+  "1. Capillary blood glucose (fingerstick)",
+  "     blood glucose and HbA1c: glucose 2.25 g/L, HbA1c 7.8%",
+  "     blood glucose: 2.25 g/L (normal 0.70-1.10) - non-ketotic hyperglycaemia",
+  "2. Basic metabolic panel (Na, K, Cl, HCO3, BUN, Cr, Ca, Mg, phosphate)",
+  "     serum electrolytes, urea and creatinine: creatinine 17 mg/L, eGFR 31 mL/min/1.73 m2",
+  "     serum calcium, magnesium and phosphate: normal",
+  "3. Serum glucose",
+  "     blood glucose and HbA1c: glucose 2.25 g/L, HbA1c 7.8%",
+  "     blood glucose: 2.25 g/L (normal 0.70-1.10) - non-ketotic hyperglycaemia",
+  "4. CBC with differential",
+  "     full blood count: normal",
+  "5. Non-contrast CT head",
+  "     CT head (non-contrast): no haemorrhage, no hyperdensity, no infarct",
+  "6. 12-lead ECG",
+  "     not performed / not available",
+  "7. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "8. Lumbar puncture with CSF analysis",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal",
+  "     lumbar puncture / CSF: normal cells, protein and glucose; no oligoclonal bands",
+  "9. Continuous video-EEG monitoring",
+  "     EEG: normal",
+  "10. MRI brain with and without contrast",
+  "     brain MRI with contrast: normal basal ganglia, no focal lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperosmolar Hyperglycaemic State (HHS) precipitated by chronic kidney disease and relative insulin deficiency\n\n1. Uraemic encephalopathy\n2. Sepsis-associated encephalopathy\n3. Conversion disorder (functional neurological symptom disorder)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Capillary blood glucose (fingerstick)\n2. Basic metabolic panel (Na, K, Cl, HCO3, BUN, Cr, Ca, Mg, phosphate)\n3. Serum glucose\n4. CBC with differential\n5. Non-contrast CT head\n6. 12-lead ECG\n7. Urine toxicology screen\n8. Lumbar puncture with CSF analysis\n9. Continuous video-EEG monitoring\n10. MRI brain with and without contrast",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperosmolar Hyperglycaemic State (HHS) precipitated by chronic kidney disease and relative insulin deficiency",
+ "decisive_served": [
+  "blood glucose",
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 25302,
+   "completion_tokens": 3303,
+   "total_tokens": 28605,
+   "cost": 0.01151676,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01151676,
+    "upstream_inference_prompt_cost": 0.00755316,
+    "upstream_inference_completions_cost": 0.0039636
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3158,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 25797,
+   "completion_tokens": 1526,
+   "total_tokens": 27323,
+   "cost": 0.00350142,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 25287,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00350142,
+    "upstream_inference_prompt_cost": 0.00167022,
+    "upstream_inference_completions_cost": 0.0018312
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1431,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 26342,
+   "completion_tokens": 9008,
+   "total_tokens": 35350,
+   "cost": 0.01252452,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 25782,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01252452,
+    "upstream_inference_prompt_cost": 0.00171492,
+    "upstream_inference_completions_cost": 0.0108096
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 8954,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 207.7
+}

@@ -1,0 +1,158 @@
+{
+ "questions": [
+  "Do you have a history of heavy alcohol consumption?",
+  "Do you experience dizziness or vertigo when moving your head?",
+  "Do you have numbness, tingling, or weakness in your legs?",
+  "Do you have difficulty seeing in low light or at night?",
+  "Do you have a known diagnosis of Parkinson's disease?",
+  "Do you have urinary incontinence or significant cognitive decline?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Romberg test",
+  "Finger-to-nose and heel-to-shin testing",
+  "Rapid alternating movements assessment",
+  "Serum Vitamin B12 level",
+  "MRI of the brain"
+ ],
+ "served": [
+  "Romberg test",
+  "finger-nose / heel-shin testing",
+  "coordination examination (limb and truncal)",
+  "vitamin B12 / folate",
+  "vitamin B12 with methylmalonic acid",
+  "brain MRI",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences"
+ ],
+ "results": [
+  "1. Romberg test",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "2. Finger-to-nose and heel-to-shin testing",
+  "     finger-nose / heel-shin testing: dysmetria",
+  "3. Rapid alternating movements assessment",
+  "     coordination examination (limb and truncal): limb and truncal ataxia",
+  "4. Serum Vitamin B12 level",
+  "     vitamin B12 / folate: normal",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "5. MRI of the brain",
+  "     brain MRI: cerebellar atrophy on sagittal T1 and axial FLAIR",
+  "     MRI brain with gadolinium: cerebellar atrophy without gadolinium enhancement",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic late-onset cerebellar ataxia\nAlternative 1: Sporadic adult-onset ataxia of unknown etiology (SAOA)\nAlternative 2: Paraneoplastic cerebellar degeneration",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Romberg test\n2. Finger-to-nose and heel-to-shin testing\n3. Rapid alternating movements assessment\n4. Serum Vitamin B12 level\n5. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic late-onset cerebellar ataxia",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 175,
+   "completion_tokens": 90,
+   "total_tokens": 265,
+   "cost": 6.855e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.855e-05,
+    "upstream_inference_prompt_cost": 2.625e-05,
+    "upstream_inference_completions_cost": 4.23e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 534,
+   "completion_tokens": 41,
+   "total_tokens": 575,
+   "cost": 9.937e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.937e-05,
+    "upstream_inference_prompt_cost": 8.01e-05,
+    "upstream_inference_completions_cost": 1.927e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 848,
+   "completion_tokens": 52,
+   "total_tokens": 900,
+   "cost": 8.3032e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.3032e-05,
+    "upstream_inference_prompt_cost": 5.8592e-05,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_sca_genetic_PMC12678565.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 12.3
+}

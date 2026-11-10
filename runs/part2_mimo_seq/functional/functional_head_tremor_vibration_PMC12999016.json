@@ -1,0 +1,313 @@
+{
+ "questions": [
+  "Have you been experiencing neck pain or stiffness?",
+  "Do you have any difficulty moving your head?",
+  "Have you had any recent injuries to your neck or upper back?",
+  "Do you have numbness or tingling in your arms?",
+  "Have you noticed any weakness in your arms or hands?",
+  "Have you noticed any twitching or flickering movements in your muscles?",
+  "Have you noticed any wasting or thinning of your muscles, particularly in your hands or shoulders?",
+  "How long have you been experiencing any symptoms?",
+  "Do you have any difficulty swallowing or changes in your voice?",
+  "Is there any family history of neurological conditions such as ALS or motor neuron disease?",
+  "Have you been told you have cataracts, especially at an early age?",
+  "Do you experience excessive daytime sleepiness or fatigue?",
+  "Have you had any heart rhythm problems or been told you have a heart block?",
+  "Do you have any difficulty with swallowing or gastrointestinal symptoms?",
+  "Have you noticed any droopiness of your eyelids or facial muscles?",
+  "Have you noticed your head pulling or tilting to one side?",
+  "Do you feel any tightness or pulling sensation in your neck or shoulder?",
+  "Has anyone commented that your head posture looks unusual?",
+  "Does the tightness or pulling worsen when you are stressed or fatigued?",
+  "Can you voluntarily correct your head position if asked?",
+  "Are you aware of any involuntary jerking or twitching movements happening that you cannot control?",
+  "Do these movements happen more when you are at rest or when you try to move?",
+  "Have you noticed these movements in specific parts of your body, like your arms, shoulders, or neck?",
+  "Do the movements ever wake you up from sleep?",
+  "Can the movements be stopped temporarily if you place a hand on the affected area?",
+  "Are the movements brief and quick, like a sudden jolt or shock?",
+  "Are the movements rhythmic like a beat, or irregular and unpredictable?",
+  "Do the movements affect both sides of your body equally, or are they worse on one side?",
+  "Do the movements happen more when you are trying to relax or when you are actively doing something?",
+  "Have you noticed any pattern to when the movements occur, such as in certain positions or activities?",
+  "Can you show me exactly where in your body the rhythmic movements occur?",
+  "When did you first notice these movements?",
+  "Are the movements always present or do they come and go?",
+  "Does anything make the movements better or worse?",
+  "Have you tried any medications that affected these movements?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "yes",
+  "22": "no",
+  "23": "yes",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "yes",
+  "28": "no",
+  "29": "no",
+  "30": "yes",
+  "31": "yes",
+  "32": "yes",
+  "33": "yes",
+  "34": "yes",
+  "35": "no"
+ },
+ "n_yes_answers": 8,
+ "orders": [
+  "Examining for presence and characteristics of tremor (resting vs. postural vs. action)",
+  "Spiral drawing test",
+  "Finger-to-nose test",
+  "Test for percussion myotonia of thenar eminence",
+  "Test for percussion myotonia of trapezius muscle",
+  "Test for grip myotonia (ask patient to grip and then release quickly)",
+  "Electromyography (EMG) of trapezius and upper limb muscles",
+  "Serum creatine kinase (CK) level",
+  "Thyroid function tests (TSH, free T4)"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)",
+  "needle electromyography",
+  "creatine kinase",
+  "TSH / free T4"
+ ],
+ "results": [
+  "R1 ASK Have you been experiencing neck pain or stiffness?; Do you have any difficulty moving your head?; Have you had any recent injuries to your neck or upper back?; Do you have numbness or tingling in your arms?; Have you noticed any weakness in your arms or hands? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ORDER Examining for presence and characteristics of tremor (resting vs. postural vs. action); Spiral drawing test; Finger-to-nose test -> [[], [], ['coordination examination (limb and truncal)', 'cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)']]",
+  "R3 ASK Have you noticed any twitching or flickering movements in your muscles?; Have you noticed any wasting or thinning of your muscles, particularly in your hands or shoulders?; How long have you been experiencing any symptoms?; Do you have any difficulty swallowing or changes in your voice?; Is there any family history of neurological conditions such as ALS or motor neuron disease? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Test for percussion myotonia of thenar eminence; Test for percussion myotonia of trapezius muscle; Test for grip myotonia (ask patient to grip and then release quickly) -> [[], [], []]",
+  "R5 ASK Have you been told you have cataracts, especially at an early age?; Do you experience excessive daytime sleepiness or fatigue?; Have you had any heart rhythm problems or been told you have a heart block?; Do you have any difficulty with swallowing or gastrointestinal symptoms?; Have you noticed any droopiness of your eyelids or facial muscles? -> ['no', 'no', 'no', 'no', 'no']",
+  "R6 ORDER Electromyography (EMG) of trapezius and upper limb muscles; Serum creatine kinase (CK) level; Thyroid function tests (TSH, free T4) -> [['needle electromyography'], ['creatine kinase'], ['TSH / free T4']]",
+  "R7 ASK Have you noticed your head pulling or tilting to one side?; Do you feel any tightness or pulling sensation in your neck or shoulder?; Has anyone commented that your head posture looks unusual?; Does the tightness or pulling worsen when you are stressed or fatigued?; Can you voluntarily correct your head position if asked? -> ['no', 'no', 'no', 'no', 'no']",
+  "R8 ASK Are you aware of any involuntary jerking or twitching movements happening that you cannot control?; Do these movements happen more when you are at rest or when you try to move?; Have you noticed these movements in specific parts of your body, like your arms, shoulders, or neck?; Do the movements ever wake you up from sleep?; Can the movements be stopped temporarily if you place a hand on the affected area? -> ['yes', 'no', 'yes', 'no', 'no']",
+  "R9 ASK Are the movements brief and quick, like a sudden jolt or shock?; Are the movements rhythmic like a beat, or irregular and unpredictable?; Do the movements affect both sides of your body equally, or are they worse on one side?; Do the movements happen more when you are trying to relax or when you are actively doing something?; Have you noticed any pattern to when the movements occur, such as in certain positions or activities? -> ['no', 'yes', 'no', 'no', 'yes']",
+  "R10 ASK Can you show me exactly where in your body the rhythmic movements occur?; When did you first notice these movements?; Are the movements always present or do they come and go?; Does anything make the movements better or worse?; Have you tried any medications that affected these movements? -> ['yes', 'yes', 'yes', 'yes', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Essential tremor (benign essential tremor), idiopathic cause -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you been experiencing neck pain or stiffness?",
+    "Do you have any difficulty moving your head?",
+    "Have you had any recent injuries to your neck or upper back?",
+    "Do you have numbness or tingling in your arms?",
+    "Have you noticed any weakness in your arms or hands?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Examining for presence and characteristics of tremor (resting vs. postural vs. action)",
+    "Spiral drawing test",
+    "Finger-to-nose test"
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "coordination examination (limb and truncal)",
+     "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any twitching or flickering movements in your muscles?",
+    "Have you noticed any wasting or thinning of your muscles, particularly in your hands or shoulders?",
+    "How long have you been experiencing any symptoms?",
+    "Do you have any difficulty swallowing or changes in your voice?",
+    "Is there any family history of neurological conditions such as ALS or motor neuron disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Test for percussion myotonia of thenar eminence",
+    "Test for percussion myotonia of trapezius muscle",
+    "Test for grip myotonia (ask patient to grip and then release quickly)"
+   ],
+   "result": [
+    [],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you been told you have cataracts, especially at an early age?",
+    "Do you experience excessive daytime sleepiness or fatigue?",
+    "Have you had any heart rhythm problems or been told you have a heart block?",
+    "Do you have any difficulty with swallowing or gastrointestinal symptoms?",
+    "Have you noticed any droopiness of your eyelids or facial muscles?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Electromyography (EMG) of trapezius and upper limb muscles",
+    "Serum creatine kinase (CK) level",
+    "Thyroid function tests (TSH, free T4)"
+   ],
+   "result": [
+    [
+     "needle electromyography"
+    ],
+    [
+     "creatine kinase"
+    ],
+    [
+     "TSH / free T4"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Have you noticed your head pulling or tilting to one side?",
+    "Do you feel any tightness or pulling sensation in your neck or shoulder?",
+    "Has anyone commented that your head posture looks unusual?",
+    "Does the tightness or pulling worsen when you are stressed or fatigued?",
+    "Can you voluntarily correct your head position if asked?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Are you aware of any involuntary jerking or twitching movements happening that you cannot control?",
+    "Do these movements happen more when you are at rest or when you try to move?",
+    "Have you noticed these movements in specific parts of your body, like your arms, shoulders, or neck?",
+    "Do the movements ever wake you up from sleep?",
+    "Can the movements be stopped temporarily if you place a hand on the affected area?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Are the movements brief and quick, like a sudden jolt or shock?",
+    "Are the movements rhythmic like a beat, or irregular and unpredictable?",
+    "Do the movements affect both sides of your body equally, or are they worse on one side?",
+    "Do the movements happen more when you are trying to relax or when you are actively doing something?",
+    "Have you noticed any pattern to when the movements occur, such as in certain positions or activities?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Can you show me exactly where in your body the rhythmic movements occur?",
+    "When did you first notice these movements?",
+    "Are the movements always present or do they come and go?",
+    "Does anything make the movements better or worse?",
+    "Have you tried any medications that affected these movements?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Essential tremor (benign essential tremor), idiopathic cause"
+  }
+ ],
+ "dx": "Essential tremor (benign essential tremor), idiopathic cause",
+ "dx_raw": "DIAGNOSIS: Essential tremor (benign essential tremor), idiopathic cause",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0029,
+ "n_frames": 32,
+ "duration_s": 22.9,
+ "video": "functional_head_tremor_vibration_PMC12999016.mp4",
+ "line": "functional",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 276.2
+}

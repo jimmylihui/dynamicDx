@@ -1,0 +1,105 @@
+{
+ "questions": [
+  "Are you experiencing pain in your shoulder?",
+  "Do you have difficulty raising your arm above your head?",
+  "Is the pain worse when you lie on that side at night?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "limb power and wasting",
+  "foot deformity (pes cavus)",
+  "genetic testing (targeted panel or exome)",
+  "nerve conduction studies / EMG"
+ ],
+ "results": [
+  "1. limb power and wasting: distal weakness - 4+/5 in the upper limbs, 3/5 in the lower limbs bilaterally",
+  "2. foot deformity (pes cavus): pes cavus present",
+  "3. genetic testing (targeted panel or exome): heterozygous deletion in MPZ and MFN2; ambiguous copy number decrease in PMP22 exons 2-3 - CMT2A",
+  "4. nerve conduction studies / EMG: moderate to severe motor polyneuropathy, axonal more than demyelinating"
+ ],
+ "dx_raw": "DIAGNOSIS: Charcot-Marie-Tooth disease type 2A (CMT2A) caused by a mutation in the MFN2 gene\n\nALTERNATIVES:\n1. Charcot-Marie-Tooth disease type 1B (CMT1B) associated with MPZ mutations\n2. Hereditary Motor and Sensory Neuropathy (HMSN) of unspecified subtype",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Charcot-Marie-Tooth disease type 2A (CMT2A) caused by a mutation in the MFN2 gene",
+ "decisive_served": [
+  "limb power and wasting",
+  "foot deformity (pes cavus)",
+  "genetic testing (targeted panel or exome)",
+  "nerve conduction studies / EMG"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14551,
+   "completion_tokens": 41,
+   "total_tokens": 14592,
+   "cost": 0.00220192,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00220192,
+    "upstream_inference_prompt_cost": 0.00218265,
+    "upstream_inference_completions_cost": 1.927e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 14869,
+   "completion_tokens": 84,
+   "total_tokens": 14953,
+   "cost": 0.000365958,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14208,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000365958,
+    "upstream_inference_prompt_cost": 0.000326478,
+    "upstream_inference_completions_cost": 3.948e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.7,
+ "video": "mild_neuropathic_CMT_PMC11600610.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 11.7
+}

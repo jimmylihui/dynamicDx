@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Did you experience any sudden onset of weakness or numbness on one side of your body?",
+  "Have you noticed any drooping of your face or difficulty speaking?",
+  "Are you currently experiencing any severe headache?",
+  "Have you had any recent falls or head injuries?",
+  "Do you have any problems with balance or coordination?",
+  "Are you experiencing any double vision or blurred vision?",
+  "Have you noticed any weakness or clumsiness specifically in your arms or legs?",
+  "Do you feel any numbness or tingling in your hands or feet?",
+  "Have you had any difficulty swallowing or hoarseness of voice?",
+  "Are you experiencing any nausea or vomiting?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "anticipatory jerk to a feigned tendon-hammer approach (Hallett sign)",
+  "back-averaged EEG for a Bereitschaftspotential before the movements",
+  "somatosensory evoked potentials (giant SEP, C-reflex)",
+  "jerk latency and burst-duration measurement"
+ ],
+ "results": [
+  "1. anticipatory jerk to a feigned tendon-hammer approach (Hallett sign): POSITIVE - the jerk occurs when the hammer is stopped just short of the tendon, provoked by the visual stimulus alone",
+  "2. back-averaged EEG for a Bereitschaftspotential before the movements: Bereitschaftspotential present before the jerks",
+  "3. somatosensory evoked potentials (giant SEP, C-reflex): normal, no giant SEP and no C-reflex - excludes cortical reflex myoclonus",
+  "4. jerk latency and burst-duration measurement: long and VARIABLE latency with a long duration of muscle contraction - the pattern of voluntary movement, not of cortical myoclonus"
+ ],
+ "dx_raw": "DIAGNOSIS: Psychogenic myoclonus",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Psychogenic myoclonus",
+ "decisive_served": [
+  "anticipatory jerk to a feigned tendon-hammer approach (Hallett sign)",
+  "back-averaged EEG for a Bereitschaftspotential before the movements",
+  "somatosensory evoked potentials (giant SEP, C-reflex)",
+  "jerk latency and burst-duration measurement"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5567,
+   "completion_tokens": 537,
+   "total_tokens": 6104,
+   "cost": 0.0009033976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009033976,
+    "upstream_inference_prompt_cost": 0.0007530376,
+    "upstream_inference_completions_cost": 0.00015036
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 393,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6141,
+   "completion_tokens": 1791,
+   "total_tokens": 7932,
+   "cost": 0.0006060712,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5504,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006060712,
+    "upstream_inference_prompt_cost": 0.0001045912,
+    "upstream_inference_completions_cost": 0.00050148
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1776,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 39.4
+}

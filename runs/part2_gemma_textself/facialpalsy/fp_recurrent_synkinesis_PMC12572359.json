@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Did the weakness start suddenly?",
+  "Do you have weakness in your right arm or leg?",
+  "Are you having difficulty speaking?",
+  "Do you have any numbness on the right side of your body?",
+  "Do you have a history of high blood pressure?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI Brain with contrast"
+ ],
+ "served": [
+  "MRI brain with gadolinium"
+ ],
+ "results": [
+  "1. MRI Brain with contrast",
+  "     MRI brain with gadolinium: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional Neurological Disorder caused by psychological distress\n\n1. Lacunar infarct\n2. Amyotrophic Lateral Sclerosis\n3. Multiple Sclerosis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain with contrast",
+ "rationale": [
+  null
+ ],
+ "dx": "Functional Neurological Disorder caused by psychological distress",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 215,
+   "completion_tokens": 2365,
+   "total_tokens": 2580,
+   "cost": 0.0008256,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008256,
+    "upstream_inference_prompt_cost": 2.15e-05,
+    "upstream_inference_completions_cost": 0.0008041
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2258,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 503,
+   "completion_tokens": 494,
+   "total_tokens": 997,
+   "cost": 0.00021826,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00021826,
+    "upstream_inference_prompt_cost": 5.03e-05,
+    "upstream_inference_completions_cost": 0.00016796
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 504,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 622,
+   "completion_tokens": 6810,
+   "total_tokens": 7432,
+   "cost": 0.0023776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0023776,
+    "upstream_inference_prompt_cost": 6.22e-05,
+    "upstream_inference_completions_cost": 0.0023154
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6474,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "fp_recurrent_synkinesis_PMC12572359.mp4",
+ "line": "facialpalsy",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 855.0
+}

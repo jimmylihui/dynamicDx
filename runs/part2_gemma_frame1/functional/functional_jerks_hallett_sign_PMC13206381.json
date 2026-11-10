@@ -1,0 +1,137 @@
+{
+ "questions": [
+  "Do you have weakness in your arms?",
+  "Do you have numbness or tingling in your arms?",
+  "Is this affecting only one side of your body?",
+  "Did these symptoms start suddenly?",
+  "Was there a specific injury to your neck or arm?",
+  "Do you have pain in your neck?",
+  "Do you have difficulty with balance or walking?",
+  "Do you have a history of diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "TSH level",
+  "Free T4 level"
+ ],
+ "served": [
+  "TSH / free T4",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. TSH level",
+  "     TSH / free T4: normal",
+  "2. Free T4 level",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Benign fasciculation syndrome, idiopathic\n\nAmyotrophic lateral sclerosis\nAnxiety-induced hyperreflexia\nHypocalcemia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. TSH level\n2. Free T4 level",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Benign fasciculation syndrome, idiopathic",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 429,
+   "completion_tokens": 859,
+   "total_tokens": 1288,
+   "cost": 0.00033496,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00033496,
+    "upstream_inference_prompt_cost": 4.29e-05,
+    "upstream_inference_completions_cost": 0.00029206
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 746,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 795,
+   "completion_tokens": 6532,
+   "total_tokens": 7327,
+   "cost": 0.00230038,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00230038,
+    "upstream_inference_prompt_cost": 7.95e-05,
+    "upstream_inference_completions_cost": 0.00222088
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6300,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 937,
+   "completion_tokens": 7476,
+   "total_tokens": 8413,
+   "cost": 0.00263554,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00263554,
+    "upstream_inference_prompt_cost": 9.37e-05,
+    "upstream_inference_completions_cost": 0.00254184
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6805,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 480.1
+}

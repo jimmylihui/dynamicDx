@@ -1,0 +1,105 @@
+{
+ "questions": [
+  "Do you have a history of diabetes?",
+  "Do you have numbness or loss of sensation in your feet?",
+  "Have you had any recent back pain or leg weakness?",
+  "Have you experienced any significant psychological stress or trauma recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's gait for foot drop, steppage, or circumduction"
+ ],
+ "served": [
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "tandem gait",
+  "walking backward",
+  "running",
+  "knee buckling / astasia-abasia on walking",
+  "observation for excessive slowness or uneconomic posture"
+ ],
+ "results": [
+  "R1 ASK Do you have a history of diabetes?; Do you have numbness or loss of sensation in your feet?; Have you had any recent back pain or leg weakness? -> ['no', 'no', 'no']",
+  "R2 ORDER Observe the patient's gait for foot drop, steppage, or circumduction -> [['gait with a distracting or automatic task (dancing, counting backwards)', 'tandem gait', 'walking backward', 'running', 'knee buckling / astasia-abasia on walking', 'observation for excessive slowness or uneconomic posture']]",
+  "R3 ASK Have you experienced any significant psychological stress or trauma recently? -> ['no']",
+  "R4 DIAGNOSIS Functional gait disorder -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?",
+    "Do you have numbness or loss of sensation in your feet?",
+    "Have you had any recent back pain or leg weakness?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Observe the patient's gait for foot drop, steppage, or circumduction"
+   ],
+   "result": [
+    [
+     "gait with a distracting or automatic task (dancing, counting backwards)",
+     "tandem gait",
+     "walking backward",
+     "running",
+     "knee buckling / astasia-abasia on walking",
+     "observation for excessive slowness or uneconomic posture"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you experienced any significant psychological stress or trauma recently?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Functional gait disorder"
+  }
+ ],
+ "dx": "Functional gait disorder",
+ "dx_raw": "DIAGNOSIS: Functional gait disorder",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "tandem gait",
+  "walking backward"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0015,
+ "n_frames": 32,
+ "duration_s": 29.7,
+ "video": "functional_gait_scissoring_PMC7455329.mp4",
+ "line": "functional",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 18.3
+}

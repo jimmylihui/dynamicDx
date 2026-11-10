@@ -1,0 +1,120 @@
+{
+ "questions": [
+  "Can you voluntarily stop your leg movements?",
+  "Do you feel an irresistible urge to move your legs?",
+  "Are the movements painful?",
+  "Have you recently started any new medications?",
+  "Have you ever had a seizure before?",
+  "Do you have any weakness in your legs?",
+  "Do you have numbness or tingling in your legs?",
+  "Have you had a fever in the past few days?",
+  "Are you fully aware of your surroundings right now?",
+  "Did these symptoms start suddenly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "CT head (non-contrast)",
+  "trial of glucose correction with insulin"
+ ],
+ "results": [
+  "1. blood glucose: 690 mg/dL with a NORMAL anion gap",
+  "2. HbA1c: 14.7%",
+  "3. ketones (blood or urine): negative - non-ketotic",
+  "4. CT head (non-contrast): HYPERDENSITY in the LEFT basal ganglia with mild involvement of the right basal ganglia - contralateral to the chorea",
+  "5. trial of glucose correction with insulin: insulin alleviated her symptoms"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperglycemic hemichorea (chorea-hyperglycemia-basal ganglia syndrome) secondary to severe non-ketotic diabetes mellitus\n1. Acute hemorrhagic stroke of the left basal ganglia\n2. Acute ischemic stroke of the left basal ganglia\n3. Wilson's disease (copper deposition causing basal ganglia degeneration)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Hyperglycemic hemichorea (chorea-hyperglycemia-basal ganglia syndrome) secondary to severe non-ketotic diabetes mellitus",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "CT head (non-contrast)",
+  "trial of glucose correction with insulin"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 19222,
+   "completion_tokens": 1308,
+   "total_tokens": 20530,
+   "cost": 0.00729852,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00729852,
+    "upstream_inference_prompt_cost": 0.00572892,
+    "upstream_inference_completions_cost": 0.0015696
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1202,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 19674,
+   "completion_tokens": 1727,
+   "total_tokens": 21401,
+   "cost": 0.00336492,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 19207,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00336492,
+    "upstream_inference_prompt_cost": 0.00129252,
+    "upstream_inference_completions_cost": 0.0020724
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1657,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 37.9
+}

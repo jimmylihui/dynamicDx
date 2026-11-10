@@ -1,0 +1,200 @@
+{
+ "questions": [
+  "Did this episode begin suddenly with a loss of awareness or responsiveness?",
+  "Did the patient stiffen or have rhythmic jerking of the arms or legs?",
+  "Were the eyes deviated or rolled upward during the episode?",
+  "Did the patient bite their tongue or lose bladder or bowel control?",
+  "Was the patient confused, unusually sleepy, or difficult to awaken afterward?",
+  "Has the patient had a similar episode before?",
+  "Did the patient sustain a head injury immediately before this episode?",
+  "Did the patient have a fever or recent illness?",
+  "Could the patient have taken an overdose or been exposed to alcohol or recreational drugs?",
+  "Does the patient have diabetes or take medication that can lower blood sugar?",
+  "Is the patient currently pregnant or recently postpartum?",
+  "Is the patient still having trouble breathing or remaining unresponsive?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Complete neurological and mental-status examination during and between episodes",
+  "Twelve-lead electrocardiogram",
+  "Point-of-care capillary blood glucose",
+  "Continuous video-EEG monitoring with attempted capture of a typical episode",
+  "Serum electrolytes, calcium, magnesium, renal function, and complete blood count",
+  "Brain MRI with epilepsy protocol",
+  "Formal psychiatric assessment for functional neurological symptoms and self-injurious behavior"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "cognitive screen (MMSE)",
+  "neurological examination between events",
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium",
+  "video-EEG monitoring of a typical event",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "full blood count and biochemistry",
+  "glucose, calcium, magnesium, sodium",
+  "liver and renal function",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Complete neurological and mental-status examination during and between episodes",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "     cognitive screen (MMSE): normal",
+  "     neurological examination between events: normal",
+  "2. Twelve-lead electrocardiogram",
+  "     not performed / not available",
+  "3. Point-of-care capillary blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "4. Continuous video-EEG monitoring with attempted capture of a typical episode",
+  "     video-EEG monitoring of a typical event: moderate-amplitude rhythmic THETA waves intermittently during the versive seizures",
+  "5. Serum electrolytes, calcium, magnesium, renal function, and complete blood count",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     full blood count and biochemistry: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "     liver and renal function: normal",
+  "6. Brain MRI with epilepsy protocol",
+  "     brain MRI: no epileptogenic lesion",
+  "7. Formal psychiatric assessment for functional neurological symptoms and self-injurious behavior",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Focal epilepsy with versive seizures, most consistent with MRI-negative frontal-lobe epilepsy of unknown structural cause\n\n1. Functional (psychogenic nonepileptic) seizures\n2. MRI-negative temporal-lobe epilepsy\n3. Convulsive syncope due to an undiagnosed cardiac arrhythmia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Complete neurological and mental-status examination during and between episodes\n2. Twelve-lead electrocardiogram\n3. Point-of-care capillary blood glucose\n4. Continuous video-EEG monitoring with attempted capture of a typical episode\n5. Serum electrolytes, calcium, magnesium, renal function, and complete blood count\n6. Brain MRI with epilepsy protocol\n7. Formal psychiatric assessment for functional neurological symptoms and self-injurious behavior",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Focal epilepsy with versive seizures, most consistent with MRI-negative frontal-lobe epilepsy of unknown structural cause",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 505,
+   "completion_tokens": 680,
+   "total_tokens": 1185,
+   "cost": 0.000917,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000917,
+    "upstream_inference_prompt_cost": 0.000101,
+    "upstream_inference_completions_cost": 0.000816
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 500,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1058,
+   "completion_tokens": 404,
+   "total_tokens": 1462,
+   "cost": 0.00074915,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1055,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074915,
+    "upstream_inference_prompt_cost": 0.00026435,
+    "upstream_inference_completions_cost": 0.0004848
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 308,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1561,
+   "completion_tokens": 586,
+   "total_tokens": 2147,
+   "cost": 0.00085065,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1055,
+    "cache_write_tokens": 503,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00085065,
+    "upstream_inference_prompt_cost": 0.00014745,
+    "upstream_inference_completions_cost": 0.0007032
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_2_shadowbox_PMC9062418.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 38.7
+}

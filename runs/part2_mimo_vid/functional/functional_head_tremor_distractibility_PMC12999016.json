@@ -1,0 +1,146 @@
+{
+ "questions": [
+  "Do you notice a shaking or tremor in your hands, particularly when they are resting?",
+  "Do you feel that your muscles are stiff or tight?",
+  "Have you noticed that your movements have become slower than usual?",
+  "Do you have trouble with your balance or walking?",
+  "Have you experienced a loss of your sense of smell?",
+  "Do you act out your dreams or make movements while sleeping?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain",
+  "Blood tests (TSH, Vitamin B12, Glucose, Serum Calcium, Electrolytes)",
+  "Lying and standing blood pressure"
+ ],
+ "served": [
+  "MRI brain",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "vitamin B12 with methylmalonic acid",
+  "TSH / free T4",
+  "vitamin B12 and vitamin E",
+  "glucose / HbA1c"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     MRI brain: normal",
+  "2. Blood tests (TSH, Vitamin B12, Glucose, Serum Calcium, Electrolytes)",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "     TSH / free T4: normal",
+  "     vitamin B12 and vitamin E: normal",
+  "     glucose / HbA1c: normal",
+  "3. Lying and standing blood pressure",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic Parkinson's disease with anosognosia\n\nProgressive supranuclear palsy\nMultiple system atrophy\nNormal pressure hydrocephalus",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Blood tests (TSH, Vitamin B12, Glucose, Serum Calcium, Electrolytes)\n3. Lying and standing blood pressure",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic Parkinson's disease with anosognosia",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 1673,
+   "total_tokens": 6728,
+   "cost": 0.0004912376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004912376,
+    "upstream_inference_prompt_cost": 2.27976e-05,
+    "upstream_inference_completions_cost": 0.00046844
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1525,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5463,
+   "completion_tokens": 3519,
+   "total_tokens": 8982,
+   "cost": 0.001003772,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5440,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001003772,
+    "upstream_inference_prompt_cost": 1.8452e-05,
+    "upstream_inference_completions_cost": 0.00098532
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3480,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5724,
+   "completion_tokens": 655,
+   "total_tokens": 6379,
+   "cost": 0.000238392,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5440,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000238392,
+    "upstream_inference_prompt_cost": 5.4992e-05,
+    "upstream_inference_completions_cost": 0.0001834
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 616,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 26.2,
+ "video": "functional_head_tremor_distractibility_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 161.2
+}

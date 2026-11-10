@@ -1,0 +1,129 @@
+{
+ "questions": [
+  "Do you have involuntary shaking or jerking of the hand being examined?",
+  "Does the shaking lessen or stop when you are distracted or performing a task with the other hand?",
+  "Did these symptoms begin suddenly?",
+  "Do you have weakness or numbness in that arm?",
+  "Do you have similar shaking in the other hand?",
+  "Did the shaking start during or shortly after a significant emotional or physical stressor?",
+  "Is the shaking absent when you are asleep?",
+  "Does the shaking vary markedly in speed or pattern from one moment to another?",
+  "Have you ever had similar unexplained neurological symptoms that later resolved?",
+  "Are you taking any medication or substance known to cause tremor, such as salbutamol, lithium, valproate, stimulants, or excess caffeine?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "yes",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "Bedside tremor entrainment test: have the patient tap a regular rhythm with the unaffected hand while observing whether the affected-hand tremor changes frequency, entrains, or stops.",
+  "Bedside neurologic examination for bradykinesia, rigidity, cerebellar signs, and upper-motor-neuron signs."
+ ],
+ "served": [
+  "entrainment testing (tap to an externally paced rhythm)",
+  "deep tendon reflexes and plantar responses",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)",
+  "finger-tapping for bradykinesia and decrement"
+ ],
+ "results": [
+  "R1 ASK Do you have involuntary shaking or jerking of the hand being examined?; Does the shaking lessen or stop when you are distracted or performing a task with the other hand?; Did these symptoms begin suddenly?; Do you have weakness or numbness in that arm?; Do you have similar shaking in the other hand? -> ['yes', 'yes', 'yes', 'no', 'no']",
+  "R2 ORDER Bedside tremor entrainment test: have the patient tap a regular rhythm with the unaffected hand while observing whether the affected-hand tremor changes frequency, entrains, or stops.; Bedside neurologic examination for bradykinesia, rigidity, cerebellar signs, and upper-motor-neuron signs. -> [['entrainment testing (tap to an externally paced rhythm)'], ['deep tendon reflexes and plantar responses', 'muscle tone (spasticity, rigidity, paratonia)', 'cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)', 'finger-tapping for bradykinesia and decrement']]",
+  "R3 ASK Did the shaking start during or shortly after a significant emotional or physical stressor?; Is the shaking absent when you are asleep?; Does the shaking vary markedly in speed or pattern from one moment to another?; Have you ever had similar unexplained neurological symptoms that later resolved?; Are you taking any medication or substance known to cause tremor, such as salbutamol, lithium, valproate, stimulants, or excess caffeine? -> ['no', 'yes', 'yes', 'no', 'no']",
+  "R4 DIAGNOSIS Functional neurological symptom disorder with functional (psychogenic) tremor, characterized by sudden-onset, unilateral, variable, distractible and entrainable tremor without objective neurological abnormalities; no specific precipitating cause is identified. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have involuntary shaking or jerking of the hand being examined?",
+    "Does the shaking lessen or stop when you are distracted or performing a task with the other hand?",
+    "Did these symptoms begin suddenly?",
+    "Do you have weakness or numbness in that arm?",
+    "Do you have similar shaking in the other hand?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Bedside tremor entrainment test: have the patient tap a regular rhythm with the unaffected hand while observing whether the affected-hand tremor changes frequency, entrains, or stops.",
+    "Bedside neurologic examination for bradykinesia, rigidity, cerebellar signs, and upper-motor-neuron signs."
+   ],
+   "result": [
+    [
+     "entrainment testing (tap to an externally paced rhythm)"
+    ],
+    [
+     "deep tendon reflexes and plantar responses",
+     "muscle tone (spasticity, rigidity, paratonia)",
+     "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)",
+     "finger-tapping for bradykinesia and decrement"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did the shaking start during or shortly after a significant emotional or physical stressor?",
+    "Is the shaking absent when you are asleep?",
+    "Does the shaking vary markedly in speed or pattern from one moment to another?",
+    "Have you ever had similar unexplained neurological symptoms that later resolved?",
+    "Are you taking any medication or substance known to cause tremor, such as salbutamol, lithium, valproate, stimulants, or excess caffeine?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Functional neurological symptom disorder with functional (psychogenic) tremor, characterized by sudden-onset, unilateral, variable, distractible and entrainable tremor without objective neurological abnormalities; no specific precipitating cause is identified."
+  }
+ ],
+ "dx": "Functional neurological symptom disorder with functional (psychogenic) tremor, characterized by sudden-onset, unilateral, variable, distractible and entrainable tremor without objective neurological abnormalities; no specific precipitating cause is identified.",
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder with functional (psychogenic) tremor, characterized by sudden-onset, unilateral, variable, distractible and entrainable tremor without objective neurological abnormalities; no specific precipitating cause is identified.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "entrainment testing (tap to an externally paced rhythm)"
+ ],
+ "n_decisive": 6,
+ "cost_usd": 0.003,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 29.2
+}

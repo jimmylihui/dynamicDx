@@ -1,0 +1,220 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have a severe headache?",
+  "Do you have any pain in the eye?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you have any difficulty swallowing or speaking?",
+  "Do you have any difficulty walking or balance problems?",
+  "Does the drooping of your eyelids get worse as the day goes on?",
+  "Do you have any double vision?",
+  "Did you eat home-canned foods recently?",
+  "Do you have any weakness in your face?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Pupil size comparison",
+  "Extraocular movement examination",
+  "Blood glucose level",
+  "Deep tendon reflexes examination",
+  "MRI of the brain and brainstem",
+  "Ice pack test",
+  "Anti-AChR antibody test",
+  "Repetitive nerve stimulation (RNS)",
+  "MRI of the brain and brainstem",
+  "CSF analysis (protein and cell count)"
+ ],
+ "served": [
+  "pupil size and light reaction",
+  "nystagmus: direction and whether it changes with gaze",
+  "smooth pursuit and saccades",
+  "adduction in horizontal gaze (each eye)",
+  "abducting nystagmus of the fellow eye",
+  "vertical gaze and convergence",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "deep tendon reflexes and plantar responses",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "repetitive nerve stimulation",
+  "MRI brain with gadolinium",
+  "CSF cell count and differential",
+  "CSF protein"
+ ],
+ "results": [
+  "R1 ASK Did this happen suddenly?; Do you have a severe headache?; Do you have any pain in the eye? -> ['yes', 'no', 'no']",
+  "R2 ORDER Pupil size comparison; Extraocular movement examination; Blood glucose level -> [['pupil size and light reaction'], ['nystagmus: direction and whether it changes with gaze', 'smooth pursuit and saccades', 'adduction in horizontal gaze (each eye)', 'abducting nystagmus of the fellow eye', 'vertical gaze and convergence', 'skew deviation / alternating cover test', 'ocular torsion and head tilt'], ['blood glucose and HbA1c', 'glucose / HbA1c']]",
+  "R3 ASK Do you have any weakness in your arms or legs?; Do you have any difficulty swallowing or speaking?; Do you have any difficulty walking or balance problems?; Does the drooping of your eyelids get worse as the day goes on? -> ['no', 'no', 'no', 'no']",
+  "R4 ORDER Deep tendon reflexes examination; MRI of the brain and brainstem -> [['deep tendon reflexes and plantar responses'], []]",
+  "R5 ASK Do you have any double vision?; Did you eat home-canned foods recently?; Do you have any weakness in your face? -> ['yes', 'no', 'no']",
+  "R6 ORDER Ice pack test; Anti-AChR antibody test; Repetitive nerve stimulation (RNS) -> [[], ['acetylcholine receptor, MuSK and LRP4 antibodies', 'anti-acetylcholine receptor antibodies'], ['repetitive nerve stimulation']]",
+  "R7 ORDER MRI of the brain and brainstem; CSF analysis (protein and cell count) -> [['MRI brain with gadolinium'], ['CSF cell count and differential', 'CSF protein']]",
+  "R8 DIAGNOSIS Dorsal paramedian midbrain infarct causing bilateral ptosis and right oculomotor nerve palsy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did this happen suddenly?",
+    "Do you have a severe headache?",
+    "Do you have any pain in the eye?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Pupil size comparison",
+    "Extraocular movement examination",
+    "Blood glucose level"
+   ],
+   "result": [
+    [
+     "pupil size and light reaction"
+    ],
+    [
+     "nystagmus: direction and whether it changes with gaze",
+     "smooth pursuit and saccades",
+     "adduction in horizontal gaze (each eye)",
+     "abducting nystagmus of the fellow eye",
+     "vertical gaze and convergence",
+     "skew deviation / alternating cover test",
+     "ocular torsion and head tilt"
+    ],
+    [
+     "blood glucose and HbA1c",
+     "glucose / HbA1c"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have any weakness in your arms or legs?",
+    "Do you have any difficulty swallowing or speaking?",
+    "Do you have any difficulty walking or balance problems?",
+    "Does the drooping of your eyelids get worse as the day goes on?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Deep tendon reflexes examination",
+    "MRI of the brain and brainstem"
+   ],
+   "result": [
+    [
+     "deep tendon reflexes and plantar responses"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have any double vision?",
+    "Did you eat home-canned foods recently?",
+    "Do you have any weakness in your face?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Ice pack test",
+    "Anti-AChR antibody test",
+    "Repetitive nerve stimulation (RNS)"
+   ],
+   "result": [
+    [],
+    [
+     "acetylcholine receptor, MuSK and LRP4 antibodies",
+     "anti-acetylcholine receptor antibodies"
+    ],
+    [
+     "repetitive nerve stimulation"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "MRI of the brain and brainstem",
+    "CSF analysis (protein and cell count)"
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium"
+    ],
+    [
+     "CSF cell count and differential",
+     "CSF protein"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Dorsal paramedian midbrain infarct causing bilateral ptosis and right oculomotor nerve palsy"
+  }
+ ],
+ "dx": "Dorsal paramedian midbrain infarct causing bilateral ptosis and right oculomotor nerve palsy",
+ "dx_raw": "DIAGNOSIS: Dorsal paramedian midbrain infarct causing bilateral ptosis and right oculomotor nerve palsy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "adduction in horizontal gaze (each eye)",
+  "pupil size and light reaction"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0116,
+ "n_frames": 32,
+ "duration_s": 20.2,
+ "video": "severe_3_oculomotor_palsy_PMC12745546.mp4",
+ "line": "vertigo_central",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 562.5
+}

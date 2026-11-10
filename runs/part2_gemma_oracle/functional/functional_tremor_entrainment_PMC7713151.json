@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Does the shaking occur when your hand is resting?",
+  "Have you noticed that your movements have become slower?",
+  "Do you feel stiffness in your muscles?",
+  "Did the shaking start on one side of your body?",
+  "Have you had any falls or balance problems?",
+  "Has your handwriting become smaller?",
+  "Does alcohol make the shaking better?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "co-activation sign on passive movement of the affected limb",
+  "'whack-a-mole' sign (restrain the affected limb and watch the others)",
+  "variability of amplitude, frequency and axis over the examination",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "results": [
+  "1. distractibility testing (complex motor task with the unaffected side): POSITIVE - the tremor decreases or stops when the left arm performs a task such as drinking from a cup",
+  "2. entrainment testing (tap to an externally paced rhythm): POSITIVE - amplitude falls and the rhythm becomes irregular under repetitive voluntary movement of the other side",
+  "3. co-activation sign on passive movement of the affected limb: POSITIVE - movement of the contralateral arm co-activates the hand with an increase in tremor intensity",
+  "4. 'whack-a-mole' sign (restrain the affected limb and watch the others): POSITIVE - passive fixation of the hand increases movement in the arm and shoulder",
+  "5. variability of amplitude, frequency and axis over the examination: irregular, variable frequency around 4-6 Hz, at times combined with myoclonic jerks",
+  "6. video-EEG monitoring with limb surface electrodes: 24 h recording with right-arm surface electrodes: irregular tremor, relatively high frequency with irregularities, no epileptiform correlate"
+ ],
+ "dx_raw": "DIAGNOSIS: Holmes tremor due to a midbrain lesion\n\nCerebellar tremor\nDystonic tremor\nEssential tremor",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Holmes tremor due to a midbrain lesion",
+ "decisive_served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "co-activation sign on passive movement of the affected limb",
+  "'whack-a-mole' sign (restrain the affected limb and watch the others)",
+  "variability of amplitude, frequency and axis over the examination",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1994,
+   "total_tokens": 10692,
+   "cost": 0.00154776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00154776,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00067796
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1923,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9202,
+   "completion_tokens": 1668,
+   "total_tokens": 10870,
+   "cost": 0.00148732,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00148732,
+    "upstream_inference_prompt_cost": 0.0009202,
+    "upstream_inference_completions_cost": 0.00056712
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1561,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 124.0
+}

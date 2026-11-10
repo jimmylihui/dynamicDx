@@ -1,0 +1,167 @@
+{
+ "questions": [
+  "Are you currently seeing double?",
+  "Did these eye-movement problems begin suddenly?",
+  "Do either of your eyelids droop?",
+  "Does the drooping or double vision worsen when you are tired or later in the day?",
+  "Does it improve after resting or closing your eyes?",
+  "Do you have eye pain or a severe headache?",
+  "Have you noticed unequal pupil sizes?",
+  "Do you have weakness in your arms or legs?",
+  "Do you have difficulty chewing, swallowing, or speaking?",
+  "Do you ever have difficulty breathing?",
+  "Have you had recent facial weakness or numbness?",
+  "Have you experienced episodes of loss of awareness or unusual jerking?",
+  "Are these upward eye movements involuntary?",
+  "Have you recently started or changed any medication?",
+  "Do you take medication for nausea, psychiatric symptoms, or Parkinson’s disease?",
+  "Have you had recent head injury, infection, or exposure to toxins?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "yes",
+  "16": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Directly observed neurologic examination with assessment of ocular motility, eyelid position, pupils, facial movements, jaw, tongue, neck, and limb tone.",
+  "Focused medication reconciliation, including exact drug names, doses, duration, and timing of all antiemetic, antipsychotic, and dopaminergic medications.",
+  "Bedside oropharyngeal and swallowing examination.",
+  "Monitored therapeutic trial of intravenous or intramuscular diphenhydramine 25–50 mg.",
+  "Electrocardiogram."
+ ],
+ "served": [
+  "cranial nerve examination",
+  "muscle tone examination",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "swallowing assessment"
+ ],
+ "results": [
+  "1. Directly observed neurologic examination with assessment of ocular motility, eyelid position, pupils, facial movements, jaw, tongue, neck, and limb tone.",
+  "     cranial nerve examination: normal",
+  "     muscle tone examination: moderate-to-severe asymmetric rigidity, worse on the right, with axial neck rigidity",
+  "2. Focused medication reconciliation, including exact drug names, doses, duration, and timing of all antiemetic, antipsychotic, and dopaminergic medications.",
+  "     medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium): trazodone, paroxetine, hydrocortisone and verapamil - no dopamine blocker",
+  "3. Bedside oropharyngeal and swallowing examination.",
+  "     swallowing assessment: no dysphagia",
+  "4. Monitored therapeutic trial of intravenous or intramuscular diphenhydramine 25–50 mg.",
+  "     not performed / not available",
+  "5. Electrocardiogram.",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Oculogyric crisis with parkinsonian rigidity, most likely an idiopathic (non–dopamine-blocker-induced) dystonia/parkinsonian syndrome\n\nALTERNATIVE 1: Progressive supranuclear palsy\n\nALTERNATIVE 2: Drug-induced oculogyric crisis from a nonrecognized or remote dopamine-blocking medication\n\nALTERNATIVE 3: Focal epileptic seizures with ictal eye deviation",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Directly observed neurologic examination with assessment of ocular motility, eyelid position, pupils, facial movements, jaw, tongue, neck, and limb tone.\n2. Focused medication reconciliation, including exact drug names, doses, duration, and timing of all antiemetic, antipsychotic, and dopaminergic medications.\n3. Bedside oropharyngeal and swallowing examination.\n4. Monitored therapeutic trial of intravenous or intramuscular diphenhydramine 25–50 mg.\n5. Electrocardiogram.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Oculogyric crisis with parkinsonian rigidity, most likely an idiopathic (non–dopamine-blocker-induced) dystonia/parkinsonian syndrome",
+ "decisive_served": [
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 720,
+   "total_tokens": 6396,
+   "cost": 0.001141425,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 5673,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001141425,
+    "upstream_inference_prompt_cost": 0.000709425,
+    "upstream_inference_completions_cost": 0.000432
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6297,
+   "completion_tokens": 532,
+   "total_tokens": 6829,
+   "cost": 0.000453855,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 621,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000453855,
+    "upstream_inference_prompt_cost": 0.000134655,
+    "upstream_inference_completions_cost": 0.0003192
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 414,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 6712,
+   "completion_tokens": 612,
+   "total_tokens": 7324,
+   "cost": 0.000482315,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6294,
+    "cache_write_tokens": 415,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000482315,
+    "upstream_inference_prompt_cost": 0.000115115,
+    "upstream_inference_completions_cost": 0.0003672
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 31.7
+}

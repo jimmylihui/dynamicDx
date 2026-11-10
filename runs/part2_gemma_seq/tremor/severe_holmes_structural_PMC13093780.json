@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Do you have a tremor that occurs when your hands are at rest?",
+  "Have you noticed that your movements have become slower?",
+  "Do you feel stiffness in your muscles?",
+  "Have you noticed a change in your handwriting, such as it becoming smaller?",
+  "Have you experienced any balance problems or frequent falls?",
+  "Are you taking any medications that might cause these symptoms, such as antipsychotics or certain nausea medications?",
+  "Do you have any problems with your blood pressure or bladder control?",
+  "Do you have any difficulty looking up or down?",
+  "Is the tremor more prominent on one side of your body than the other?",
+  "Have you noticed a decrease in your sense of smell?",
+  "Have you noticed that you blink less frequently?",
+  "Do you have a history of REM sleep behavior disorder, such as acting out your dreams?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Levodopa trial",
+  "Tone assessment",
+  "Gait analysis",
+  "Pull test"
+ ],
+ "served": [
+  "muscle tone examination",
+  "gait examination",
+  "posture and pull test"
+ ],
+ "results": [
+  "R1 ASK Do you have a tremor that occurs when your hands are at rest?; Have you noticed that your movements have become slower?; Do you feel stiffness in your muscles?; Have you noticed a change in your handwriting, such as it becoming smaller?; Have you experienced any balance problems or frequent falls? -> ['yes', 'yes', 'no', 'no', 'no']",
+  "R2 ORDER Levodopa trial -> [[]]",
+  "R3 ASK Are you taking any medications that might cause these symptoms, such as antipsychotics or certain nausea medications?; Do you have any problems with your blood pressure or bladder control?; Do you have any difficulty looking up or down? -> ['no', 'no', 'no']",
+  "R4 ORDER Tone assessment; Gait analysis; Pull test -> [['muscle tone examination'], ['gait examination'], ['posture and pull test']]",
+  "R5 ASK Is the tremor more prominent on one side of your body than the other?; Have you noticed a decrease in your sense of smell?; Have you noticed that you blink less frequently?; Do you have a history of REM sleep behavior disorder, such as acting out your dreams? -> ['yes', 'no', 'no', 'no']",
+  "R6 DIAGNOSIS Parkinson's disease, idiopathic -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a tremor that occurs when your hands are at rest?",
+    "Have you noticed that your movements have become slower?",
+    "Do you feel stiffness in your muscles?",
+    "Have you noticed a change in your handwriting, such as it becoming smaller?",
+    "Have you experienced any balance problems or frequent falls?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Levodopa trial"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Are you taking any medications that might cause these symptoms, such as antipsychotics or certain nausea medications?",
+    "Do you have any problems with your blood pressure or bladder control?",
+    "Do you have any difficulty looking up or down?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Tone assessment",
+    "Gait analysis",
+    "Pull test"
+   ],
+   "result": [
+    [
+     "muscle tone examination"
+    ],
+    [
+     "gait examination"
+    ],
+    [
+     "posture and pull test"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Is the tremor more prominent on one side of your body than the other?",
+    "Have you noticed a decrease in your sense of smell?",
+    "Have you noticed that you blink less frequently?",
+    "Do you have a history of REM sleep behavior disorder, such as acting out your dreams?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Parkinson's disease, idiopathic"
+  }
+ ],
+ "dx": "Parkinson's disease, idiopathic",
+ "dx_raw": "DIAGNOSIS: Parkinson's disease, idiopathic",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0077,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 313.9
+}

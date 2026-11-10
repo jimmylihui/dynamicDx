@@ -1,0 +1,261 @@
+{
+ "questions": [
+  "Are you wearing a portable oxygen concentrator?",
+  "Do you have a history of chronic lung disease such as COPD or pulmonary fibrosis?",
+  "Have you noticed any unsteadiness or imbalance when walking?",
+  "Do you have any numbness or tingling in your legs or feet?",
+  "Have you had any episodes of fainting or near-fainting?",
+  "Do you experience dizziness or a spinning sensation (vertigo)?",
+  "Do you feel lightheaded when you stand up from sitting or lying down?",
+  "Have you noticed any tremor or shaking in your hands?",
+  "Have you had any recent falls?",
+  "Do you have a history of heart problems such as atrial fibrillation or heart failure?",
+  "Are you currently taking any heart rhythm medications?",
+  "Do you feel your heart racing or skipping beats?",
+  "Have you been told you have an irregular heartbeat or arrhythmia?",
+  "Do you have any episodes of weakness on one side of your body?",
+  "Have you had any recent infections or fevers?",
+  "Do you have any history of stroke or mini-strokes (TIAs)?",
+  "Did the unsteadiness start around the time of your recent infection?",
+  "Do you have any difficulty speaking or swallowing?",
+  "Have you noticed any changes in your vision?",
+  "Do you have any neck stiffness or severe headaches?",
+  "Do you have double vision or drooping eyelids?",
+  "Is your speech slurred or hoarse?",
+  "Do you have any weakness in your arms or legs?",
+  "Have you had any vomiting or nausea with the unsteadiness?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "yes",
+  "16": "no",
+  "17": "yes",
+  "18": "yes",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "yes",
+  "23": "no",
+  "24": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "MRI brain with contrast",
+  "Lumbar puncture for CSF analysis (cell count, protein, glucose, oligoclonal bands, viral PCR)",
+  "Anti-GQ1b antibody testing",
+  "Nerve conduction studies/EMG"
+ ],
+ "served": [
+  "brain MRI",
+  "MRI brain with gadolinium",
+  "lumbar puncture / CSF",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF culture and viral PCR",
+  "anti-GQ1b / anti-ganglioside antibodies",
+  "nerve conduction studies / EMG",
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "R1 ASK Are you wearing a portable oxygen concentrator?; Do you have a history of chronic lung disease such as COPD or pulmonary fibrosis?; Have you noticed any unsteadiness or imbalance when walking?; Do you have any numbness or tingling in your legs or feet? -> ['no', 'no', 'yes', 'no']",
+  "R2 ASK Have you had any episodes of fainting or near-fainting?; Do you experience dizziness or a spinning sensation (vertigo)?; Do you feel lightheaded when you stand up from sitting or lying down?; Have you noticed any tremor or shaking in your hands? -> ['no', 'no', 'no', 'no']",
+  "R3 ASK Have you had any recent falls?; Do you have a history of heart problems such as atrial fibrillation or heart failure?; Are you currently taking any heart rhythm medications?; Do you feel your heart racing or skipping beats? -> ['no', 'no', 'no', 'no']",
+  "R4 ASK Have you been told you have an irregular heartbeat or arrhythmia?; Do you have any episodes of weakness on one side of your body?; Have you had any recent infections or fevers?; Do you have any history of stroke or mini-strokes (TIAs)? -> ['no', 'no', 'yes', 'no']",
+  "R5 ASK Did the unsteadiness start around the time of your recent infection?; Do you have any difficulty speaking or swallowing?; Have you noticed any changes in your vision?; Do you have any neck stiffness or severe headaches? -> ['yes', 'yes', 'no', 'no']",
+  "R6 ASK Do you have double vision or drooping eyelids?; Is your speech slurred or hoarse?; Do you have any weakness in your arms or legs?; Have you had any vomiting or nausea with the unsteadiness? -> ['no', 'yes', 'no', 'no']",
+  "R7 ORDER MRI brain with contrast -> [['brain MRI', 'MRI brain with gadolinium']]",
+  "R8 ORDER Lumbar puncture for CSF analysis (cell count, protein, glucose, oligoclonal bands, viral PCR) -> [['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF culture and viral PCR']]",
+  "R9 ORDER Anti-GQ1b antibody testing; Nerve conduction studies/EMG -> [['anti-GQ1b / anti-ganglioside antibodies'], ['nerve conduction studies / EMG', 'nerve conduction studies', 'needle electromyography']]",
+  "R10 DIAGNOSIS Post-infectious opsoclonus-myoclonus-ataxia syndrome (post-infectious autoimmune encephalitis with myoclonus and ataxia) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you wearing a portable oxygen concentrator?",
+    "Do you have a history of chronic lung disease such as COPD or pulmonary fibrosis?",
+    "Have you noticed any unsteadiness or imbalance when walking?",
+    "Do you have any numbness or tingling in your legs or feet?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you had any episodes of fainting or near-fainting?",
+    "Do you experience dizziness or a spinning sensation (vertigo)?",
+    "Do you feel lightheaded when you stand up from sitting or lying down?",
+    "Have you noticed any tremor or shaking in your hands?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you had any recent falls?",
+    "Do you have a history of heart problems such as atrial fibrillation or heart failure?",
+    "Are you currently taking any heart rhythm medications?",
+    "Do you feel your heart racing or skipping beats?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you been told you have an irregular heartbeat or arrhythmia?",
+    "Do you have any episodes of weakness on one side of your body?",
+    "Have you had any recent infections or fevers?",
+    "Do you have any history of stroke or mini-strokes (TIAs)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Did the unsteadiness start around the time of your recent infection?",
+    "Do you have any difficulty speaking or swallowing?",
+    "Have you noticed any changes in your vision?",
+    "Do you have any neck stiffness or severe headaches?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have double vision or drooping eyelids?",
+    "Is your speech slurred or hoarse?",
+    "Do you have any weakness in your arms or legs?",
+    "Have you had any vomiting or nausea with the unsteadiness?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "MRI brain with contrast"
+   ],
+   "result": [
+    [
+     "brain MRI",
+     "MRI brain with gadolinium"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Lumbar puncture for CSF analysis (cell count, protein, glucose, oligoclonal bands, viral PCR)"
+   ],
+   "result": [
+    [
+     "lumbar puncture / CSF",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF culture and viral PCR"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Anti-GQ1b antibody testing",
+    "Nerve conduction studies/EMG"
+   ],
+   "result": [
+    [
+     "anti-GQ1b / anti-ganglioside antibodies"
+    ],
+    [
+     "nerve conduction studies / EMG",
+     "nerve conduction studies",
+     "needle electromyography"
+    ]
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Post-infectious opsoclonus-myoclonus-ataxia syndrome (post-infectious autoimmune encephalitis with myoclonus and ataxia)"
+  }
+ ],
+ "dx": "Post-infectious opsoclonus-myoclonus-ataxia syndrome (post-infectious autoimmune encephalitis with myoclonus and ataxia)",
+ "dx_raw": "DIAGNOSIS: Post-infectious opsoclonus-myoclonus-ataxia syndrome (post-infectious autoimmune encephalitis with myoclonus and ataxia)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "nerve conduction studies / EMG"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0505,
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "moderate_postinfectious_millerfisher_PMC13224678.mp4",
+ "line": "ataxia",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 109.3
+}

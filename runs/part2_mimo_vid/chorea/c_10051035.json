@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Have you ever had a seizure before?",
+  "Did you hit your head recently?",
+  "Are you taking blood thinners?",
+  "Do you have a history of high blood pressure?",
+  "Have you had a fever or stiff neck recently?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Non-contrast CT head",
+  "Blood glucose level",
+  "Serum electrolytes",
+  "Complete blood count",
+  "Coagulation profile",
+  "Electrocardiogram",
+  "CT angiography of cerebral vessels"
+ ],
+ "served": [
+  "CT head (non-contrast)",
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "full blood count",
+  "MR or CT angiography"
+ ],
+ "results": [
+  "1. Non-contrast CT head",
+  "     CT head (non-contrast): ischaemic stroke - 92.9% of the series were ischaemic and one was haemorrhagic",
+  "2. Blood glucose level",
+  "     blood glucose: normal - non-ketotic hyperglycaemia was an exclusion criterion for this series",
+  "3. Serum electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "4. Complete blood count",
+  "     full blood count: normal",
+  "5. Coagulation profile",
+  "     not performed / not available",
+  "6. Electrocardiogram",
+  "     not performed / not available",
+  "7. CT angiography of cerebral vessels",
+  "     MR or CT angiography: middle cerebral artery in 64.3%, anterior cerebral artery in 21.4%, posterior cerebral artery in 14.3%"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute ischemic stroke in the middle cerebral artery territory, likely thromboembolic.\n\nAlternative considerations:\n1. Hemorrhagic transformation of an ischemic infarct.\n2. Cerebral venous sinus thrombosis.\n3. Stroke mimic (e.g., postictal Todd's paralysis).",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Non-contrast CT head\n2. Blood glucose level\n3. Serum electrolytes\n4. Complete blood count\n5. Coagulation profile\n6. Electrocardiogram\n7. CT angiography of cerebral vessels",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Acute ischemic stroke in the middle cerebral artery territory, likely thromboembolic.",
+ "decisive_served": [
+  "CT head (non-contrast)",
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 2634,
+   "total_tokens": 7689,
+   "cost": 0.0007603176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007603176,
+    "upstream_inference_prompt_cost": 2.27976e-05,
+    "upstream_inference_completions_cost": 0.00073752
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2510,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5412,
+   "completion_tokens": 380,
+   "total_tokens": 5792,
+   "cost": 0.0001791776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001791776,
+    "upstream_inference_prompt_cost": 7.27776e-05,
+    "upstream_inference_completions_cost": 0.0001064
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 329,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5731,
+   "completion_tokens": 386,
+   "total_tokens": 6117,
+   "cost": 0.0001289288,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5696,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001289288,
+    "upstream_inference_prompt_cost": 2.08488e-05,
+    "upstream_inference_completions_cost": 0.00010808
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 315,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 91.1
+}

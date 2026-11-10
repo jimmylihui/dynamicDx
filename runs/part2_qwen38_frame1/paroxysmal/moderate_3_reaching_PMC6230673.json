@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Did this injury happen within the last 48 hours?",
+  "Is the affected area your right leg?",
+  "Do you have a known allergy to latex?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Inspect the left lower extremity for signs of acute trauma, swelling, or deformity",
+  "Assess active and passive range of motion of the left hip, knee, and ankle joints",
+  "Palpate the left lower extremity for tenderness, crepitus, or muscle spasm",
+  "Perform a focused neurological examination of the left lower limb including sensation, reflexes, and strength"
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)"
+ ],
+ "results": [
+  "1. Inspect the left lower extremity for signs of acute trauma, swelling, or deformity",
+  "     not performed / not available",
+  "2. Assess active and passive range of motion of the left hip, knee, and ankle joints",
+  "     not performed / not available",
+  "3. Palpate the left lower extremity for tenderness, crepitus, or muscle spasm",
+  "     not performed / not available",
+  "4. Perform a focused neurological examination of the left lower limb including sensation, reflexes, and strength",
+  "     muscle tone examination: increased tone in the right limbs",
+  "     limb strength (MRC) examination: right-sided hemiplegia, MRC grade 1",
+  "     deep tendon reflexes and plantar responses: brisk right-sided reflexes with extensor right plantar response",
+  "     sensory examination (pinprick, vibration, proprioception): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Chronic right-sided hemiplegia secondary to a left cerebral hemisphere lesion (e.g., prior stroke)\nLeft middle cerebral artery territory infarction\nHemorrhagic stroke in the left basal ganglia or internal capsule\nSpace-occupying lesion (tumor or abscess) in the left cerebral hemisphere",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Inspect the left lower extremity for signs of acute trauma, swelling, or deformity\n2. Assess active and passive range of motion of the left hip, knee, and ankle joints\n3. Palpate the left lower extremity for tenderness, crepitus, or muscle spasm\n4. Perform a focused neurological examination of the left lower limb including sensation, reflexes, and strength",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Chronic right-sided hemiplegia secondary to a left cerebral hemisphere lesion (e.g., prior stroke)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 344,
+   "completion_tokens": 48,
+   "total_tokens": 392,
+   "cost": 7.416e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.416e-05,
+    "upstream_inference_prompt_cost": 5.16e-05,
+    "upstream_inference_completions_cost": 2.256e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 609,
+   "completion_tokens": 85,
+   "total_tokens": 694,
+   "cost": 0.0001313,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001313,
+    "upstream_inference_prompt_cost": 9.135e-05,
+    "upstream_inference_completions_cost": 3.995e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 973,
+   "completion_tokens": 70,
+   "total_tokens": 1043,
+   "cost": 0.000127394,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000127394,
+    "upstream_inference_prompt_cost": 9.4494e-05,
+    "upstream_inference_completions_cost": 3.29e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 17.6
+}

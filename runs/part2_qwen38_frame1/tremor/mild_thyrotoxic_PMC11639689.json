@@ -1,0 +1,134 @@
+{
+ "questions": [
+  "Do you have a history of diabetes?",
+  "Do you experience numbness or tingling in your hands?",
+  "Do you have pain in your neck?",
+  "Do you feel weakness when gripping objects?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform the Phalen's test",
+  "Perform the Tinel's sign at the wrist",
+  "Order nerve conduction studies and electromyography (NCS/EMG) of the upper extremities"
+ ],
+ "served": [
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. Perform the Phalen's test",
+  "     not performed / not available",
+  "2. Perform the Tinel's sign at the wrist",
+  "     not performed / not available",
+  "3. Order nerve conduction studies and electromyography (NCS/EMG) of the upper extremities",
+  "     nerve conduction studies: normal conduction velocity with neurogenic changes in the C7-C8 myotome",
+  "     needle electromyography: neurogenic changes in the C7-C8 myotome"
+ ],
+ "dx_raw": "DIAGNOSIS: Cervical radiculopathy (C7-C8) secondary to cervical spondylosis or disc herniation\n1. Thoracic outlet syndrome\n2. Amyotrophic lateral sclerosis (ALS)\n3. Brachial plexopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Perform the Phalen's test\n2. Perform the Tinel's sign at the wrist\n3. Order nerve conduction studies and electromyography (NCS/EMG) of the upper extremities",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Cervical radiculopathy (C7-C8) secondary to cervical spondylosis or disc herniation",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 296,
+   "completion_tokens": 48,
+   "total_tokens": 344,
+   "cost": 6.696e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.696e-05,
+    "upstream_inference_prompt_cost": 4.44e-05,
+    "upstream_inference_completions_cost": 2.256e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 561,
+   "completion_tokens": 45,
+   "total_tokens": 606,
+   "cost": 0.0001053,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001053,
+    "upstream_inference_prompt_cost": 8.415e-05,
+    "upstream_inference_completions_cost": 2.115e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 809,
+   "completion_tokens": 57,
+   "total_tokens": 866,
+   "cost": 9.6684e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.6684e-05,
+    "upstream_inference_prompt_cost": 6.9894e-05,
+    "upstream_inference_completions_cost": 2.679e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "mild_thyrotoxic_PMC11639689.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 22.9
+}

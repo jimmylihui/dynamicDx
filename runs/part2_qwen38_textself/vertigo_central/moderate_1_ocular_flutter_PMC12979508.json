@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Is the movement involuntary?",
+  "Does the patient have a history of epilepsy or seizures?",
+  "Are there any other abnormal movements in the face, neck, or limbs?",
+  "Does the patient report dry eyes, irritation, or pain?",
+  "Has the patient recently started any new medications, particularly antipsychotics or antiemetics?",
+  "Does the blinking worsen with stress or fatigue?",
+  "Can the patient voluntarily suppress the blinking for a short period?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient performing rapid finger tapping and serial subtraction to assess for distractibility and cognitive load effects on blinking rate",
+  "Ask the patient to perform voluntary eye closure and opening at a self-paced rhythm, then attempt to match an externally paced metronome, observing for entrainment or loss of rhythmicity",
+  "Examine the eyelids for signs of mechanical restriction, ptosis, or lagophthalmos during attempted full closure",
+  "Assess for presence of positive sensory phenomena (premonitory urge) by asking if the patient feels a need to blink before the movement occurs"
+ ],
+ "served": [
+  "mental status / cognitive screen",
+  "video-oculography / eye-movement recording",
+  "video-oculography / eye-movement recording",
+  "ptosis / lid position",
+  "forced duction test"
+ ],
+ "results": [
+  "1. Observe the patient performing rapid finger tapping and serial subtraction to assess for distractibility and cognitive load effects on blinking rate",
+  "     mental status / cognitive screen: normal",
+  "     video-oculography / eye-movement recording: horizontal conjugate saccadic oscillations without intersaccadic intervals",
+  "2. Ask the patient to perform voluntary eye closure and opening at a self-paced rhythm, then attempt to match an externally paced metronome, observing for entrainment or loss of rhythmicity",
+  "     video-oculography / eye-movement recording: horizontal conjugate saccadic oscillations without intersaccadic intervals",
+  "3. Examine the eyelids for signs of mechanical restriction, ptosis, or lagophthalmos during attempted full closure",
+  "     ptosis / lid position: none",
+  "     forced duction test: not performed",
+  "4. Assess for presence of positive sensory phenomena (premonitory urge) by asking if the patient feels a need to blink before the movement occurs",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Oculoclonus (likely paraneoplastic or post-infectious)\n1. Opsoclonus-myoclonus syndrome\n2. Nystagmus",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient performing rapid finger tapping and serial subtraction to assess for distractibility and cognitive load effects on blinking rate\n2. Ask the patient to perform voluntary eye closure and opening at a self-paced rhythm, then attempt to match an externally paced metronome, observing for entrainment or loss of rhythmicity\n3. Examine the eyelids for signs of mechanical restriction, ptosis, or lagophthalmos during attempted full closure\n4. Assess for presence of positive sensory phenomena (premonitory urge) by asking if the patient feels a need to blink before the movement occurs",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Oculoclonus (likely paraneoplastic or post-infectious)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 190,
+   "completion_tokens": 104,
+   "total_tokens": 294,
+   "cost": 7.738e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.738e-05,
+    "upstream_inference_prompt_cost": 2.85e-05,
+    "upstream_inference_completions_cost": 4.888e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 581,
+   "completion_tokens": 121,
+   "total_tokens": 702,
+   "cost": 0.00014402,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00014402,
+    "upstream_inference_prompt_cost": 8.715e-05,
+    "upstream_inference_completions_cost": 5.687e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1012,
+   "completion_tokens": 42,
+   "total_tokens": 1054,
+   "cost": 0.000102932,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000102932,
+    "upstream_inference_prompt_cost": 8.3192e-05,
+    "upstream_inference_completions_cost": 1.974e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.2,
+ "video": "moderate_1_ocular_flutter_PMC12979508.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 11.3
+}

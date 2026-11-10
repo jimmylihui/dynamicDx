@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Are you experiencing pain in your head?",
+  "Is the pain located on one side of your head?",
+  "Do you have a fever?",
+  "Have you had any recent head trauma or injury?",
+  "Does touching your scalp cause significant tenderness?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "family history",
+  "genetic testing (targeted panel or exome)",
+  "brain MRI",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. family history: mother, sister and grandmother affected - autosomal dominant pattern",
+  "2. genetic testing (targeted panel or exome): novel heterozygous NONSENSE variant in POU4F1; present in the symptomatic mother, sister and grandmother and absent in a healthy uncle",
+  "3. brain MRI: significant cerebellar atrophy with dilatation of the fourth ventricle",
+  "4. lumbar puncture / CSF: no oligoclonal bands - against multiple sclerosis"
+ ],
+ "dx_raw": "DIAGNOSIS: Spinocerebellar ataxia type 17 (SCA17) caused by a heterozygous nonsense variant in the POU4F1 gene",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Spinocerebellar ataxia type 17 (SCA17) caused by a heterozygous nonsense variant in the POU4F1 gene",
+ "decisive_served": [
+  "family history",
+  "genetic testing (targeted panel or exome)",
+  "brain MRI",
+  "lumbar puncture / CSF"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 59,
+   "total_tokens": 4882,
+   "cost": 0.00075118,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075118,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.773e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5169,
+   "completion_tokens": 41,
+   "total_tokens": 5210,
+   "cost": 0.0001943,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001943,
+    "upstream_inference_prompt_cost": 0.00017503,
+    "upstream_inference_completions_cost": 1.927e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.5
+}

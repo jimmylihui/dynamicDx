@@ -1,0 +1,116 @@
+{
+ "questions": [
+  "Was there a traumatic injury that started this?",
+  "Is the weakness progressive?",
+  "Did the weakness start in your legs?",
+  "Do you have numbness or tingling in your limbs?",
+  "Do you have muscle twitching?",
+  "Do you have difficulty swallowing?",
+  "Do you have difficulty breathing?",
+  "Is there a family history of similar muscle weakness?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "genetic testing (exome / epilepsy panel)",
+  "brain MRI",
+  "interictal EEG",
+  "video-polygraphy (EEG with EMG)",
+  "CSF 14-3-3 / RT-QuIC (prion)"
+ ],
+ "results": [
+  "1. genetic testing (exome / epilepsy panel): PRNP mutation - familial CJD, which accounts for about 10-15% of cases and is most often E200K",
+  "2. brain MRI: restricted diffusion with matching T2/FLAIR hyperintensity in the right caudate, anterior lentiform nucleus, cingulate gyrus and insula, and less prominently the right frontal, parietal and temporal cortex",
+  "3. interictal EEG: generalized periodic discharges recurring every 1-2 seconds as the illness progressed",
+  "4. video-polygraphy (EEG with EMG): lateralized periodic discharges over the RIGHT fronto-central-temporal region, TIME-LOCKED with brief EMG bursts under 100 ms in the LEFT wrist flexors and extensors - electrophysiological proof of epilepsia partialis continua",
+  "5. CSF 14-3-3 / RT-QuIC (prion): positive"
+ ],
+ "dx_raw": "DIAGNOSIS: Familial Creutzfeldt-Jakob Disease caused by a PRNP mutation\n\nSporadic Creutzfeldt-Jakob Disease\nGerstmann-Sträussler-Scheinker syndrome\nFatal Familial Insomnia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Familial Creutzfeldt-Jakob Disease caused by a PRNP mutation",
+ "decisive_served": [
+  "genetic testing (exome / epilepsy panel)",
+  "brain MRI",
+  "interictal EEG",
+  "video-polygraphy (EEG with EMG)",
+  "CSF 14-3-3 / RT-QuIC (prion)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8570,
+   "completion_tokens": 1185,
+   "total_tokens": 9755,
+   "cost": 0.0012599,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012599,
+    "upstream_inference_prompt_cost": 0.000857,
+    "upstream_inference_completions_cost": 0.0004029
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1081,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9064,
+   "completion_tokens": 771,
+   "total_tokens": 9835,
+   "cost": 0.00116854,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00116854,
+    "upstream_inference_prompt_cost": 0.0009064,
+    "upstream_inference_completions_cost": 0.00026214
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 687,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 68.2
+}

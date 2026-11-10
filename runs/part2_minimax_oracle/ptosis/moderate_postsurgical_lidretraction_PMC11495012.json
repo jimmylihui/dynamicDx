@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Are you currently experiencing double vision?",
+  "Is the double vision worse when you look to your right?",
+  "Do you tilt your head to the left to see better?",
+  "Have you had any recent head injury?",
+  "Do you have high blood pressure or diabetes?",
+  "Have you had this problem since childhood?",
+  "Do you have any pain in or around your eyes?",
+  "Do you have a history of thyroid disease?",
+  "Do you have any other neurological symptoms, such as weakness or numbness?",
+  "Do you have any drooping of your eyelids?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "lid position and measurement (MRD1 both sides)",
+  "TSH / free T4 / TRAb",
+  "surgical history"
+ ],
+ "results": [
+  "1. lid position and measurement (MRD1 both sides): MRD1 raised on the LEFT (retraction); right lid height normal - the right eye is NOT ptotic",
+  "2. TSH / free T4 / TRAb: normal, TRAb negative - excludes thyroid eye disease",
+  "3. surgical history: closed-approach structural rhinoplasty; retraction noted on postoperative day 6"
+ ],
+ "dx_raw": "DIAGNOSIS: Iatrogenic left upper eyelid retraction secondary to recent closed-approach structural rhinoplasty (likely due to local anesthetic myotoxicity or intramuscular hematoma/fibrosis of the levator-superior rectus complex).\nSuperior orbital mass or structural lesion (e.g., tumor, cyst) causing mechanical retraction\nOcular myasthenia gravis (presenting with isolated or asymmetric lid retraction)\nIdiopathic or spontaneous levator palpebrae superioris fibrosis",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Iatrogenic left upper eyelid retraction secondary to recent closed-approach structural rhinoplasty (likely due to local anesthetic myotoxicity or intramuscular hematoma/fibrosis of the levator-superior rectus complex).",
+ "decisive_served": [
+  "lid position and measurement (MRD1 both sides)",
+  "TSH / free T4 / TRAb",
+  "surgical history"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 12820,
+   "total_tokens": 19882,
+   "cost": 0.01746492,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01746492,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.015384
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 12700,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7528,
+   "completion_tokens": 6211,
+   "total_tokens": 13739,
+   "cost": 0.00802032,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00802032,
+    "upstream_inference_prompt_cost": 0.00056712,
+    "upstream_inference_completions_cost": 0.0074532
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6114,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 185.2
+}

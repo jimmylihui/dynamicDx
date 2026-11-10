@@ -1,0 +1,157 @@
+{
+ "questions": [
+  "Did this start suddenly after an injury?",
+  "Has the weakness progressed over time?",
+  "Do you have numbness or tingling in your limbs?",
+  "Do you have difficulty breathing?",
+  "Do you have weakness in your legs?",
+  "Do you have weakness in your arms?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Neurological examination",
+  "MRI of the brain and spinal cord",
+  "Electromyography (EMG) and Nerve Conduction Studies (NCS)"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "brain MRI",
+  "MRI cervical and thoracic spine",
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. Neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: MMSE 26/30",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "2. MRI of the brain and spinal cord",
+  "     brain MRI: restricted diffusion with matching T2/FLAIR hyperintensity in the right caudate, anterior lentiform nucleus, cingulate gyrus and insula, and less prominently the right frontal, parietal and temporal cortex",
+  "     MRI cervical and thoracic spine: normal",
+  "3. Electromyography (EMG) and Nerve Conduction Studies (NCS)",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: brief time-locked EMG bursts under 100 ms in the left wrist flexors and extensors"
+ ],
+ "dx_raw": "DIAGNOSIS: Cortical myoclonus due to Right Middle Cerebral Artery (MCA) Infarct\n\nRight Middle Cerebral Artery (MCA) Infarct\nRight-sided stroke with Alien Hand Syndrome\nRight-sided stroke with apraxia",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Neurological examination\n2. MRI of the brain and spinal cord\n3. Electromyography (EMG) and Nerve Conduction Studies (NCS)",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Cortical myoclonus due to Right Middle Cerebral Artery (MCA) Infarct",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8570,
+   "completion_tokens": 1827,
+   "total_tokens": 10397,
+   "cost": 0.00147818,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00147818,
+    "upstream_inference_prompt_cost": 0.000857,
+    "upstream_inference_completions_cost": 0.00062118
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1723,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8870,
+   "completion_tokens": 1949,
+   "total_tokens": 10819,
+   "cost": 0.00154966,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00154966,
+    "upstream_inference_prompt_cost": 0.000887,
+    "upstream_inference_completions_cost": 0.00066266
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1909,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9222,
+   "completion_tokens": 5310,
+   "total_tokens": 14532,
+   "cost": 0.0027276,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0027276,
+    "upstream_inference_prompt_cost": 0.0009222,
+    "upstream_inference_completions_cost": 0.0018054
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5059,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 321.4
+}

@@ -1,0 +1,163 @@
+{
+ "questions": [
+  "Did the bruising and swelling begin after a recent facial injury or surgery?",
+  "Have you recently had injections or other cosmetic treatment around your nose, cheeks, or eyes?",
+  "Did the symptoms begin suddenly within the last few days?",
+  "Do you have significant pain or tenderness around either eye?",
+  "Have you noticed blurred vision, double vision, loss of vision, or difficulty moving either eye?",
+  "Do you have fever, chills, or worsening redness and warmth around the eyes or nose?",
+  "Have you had bleeding from your nose or clear fluid draining from it?",
+  "Do you take blood thinners, aspirin, or medicines that affect bleeding?",
+  "Have you had unusual bruising or bleeding elsewhere on your body?",
+  "Did anyone cause an injury to your face?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Focused periorbital examination with palpation for nodules, induration, fluctuance, warmth, and blanching.",
+  "Visual acuity, pupillary responses, extraocular movements, and visual-field examination.",
+  "Slit-lamp examination with fluorescein staining.",
+  "Intraocular pressure measurement.",
+  "High-frequency ultrasound of the periorbital and infraorbital soft tissues.",
+  "Complete blood count with platelet count and peripheral blood smear.",
+  "PT/INR and aPTT."
+ ],
+ "served": [
+  "pain and periorbital inspection",
+  "ocular motility examination",
+  "pupil examination (size, light reaction)",
+  "visual acuity and colour vision",
+  "full blood count"
+ ],
+ "results": [
+  "1. Focused periorbital examination with palpation for nodules, induration, fluctuance, warmth, and blanching.",
+  "     pain and periorbital inspection: no lagophthalmos and no corneal erosion",
+  "2. Visual acuity, pupillary responses, extraocular movements, and visual-field examination.",
+  "     ocular motility examination: full in all directions",
+  "     pupil examination (size, light reaction): equal and reactive",
+  "     visual acuity and colour vision: normal",
+  "3. Slit-lamp examination with fluorescein staining.",
+  "     not performed / not available",
+  "4. Intraocular pressure measurement.",
+  "     not performed / not available",
+  "5. High-frequency ultrasound of the periorbital and infraorbital soft tissues.",
+  "     not performed / not available",
+  "6. Complete blood count with platelet count and peripheral blood smear.",
+  "     full blood count: normal",
+  "7. PT/INR and aPTT.",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Bilateral infraorbital ecchymosis and discoloration caused by recent periorbital cosmetic injection, most likely hyaluronic-acid tear-trough dermal filler\n\nALTERNATIVE 1: Chronic idiopathic periorbital hyperpigmentation (“dark circles”)\n\nALTERNATIVE 2: Delayed inflammatory reaction to dermal filler\n\nALTERNATIVE 3: Allergic or irritant contact dermatitis from a cosmetic product",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Focused periorbital examination with palpation for nodules, induration, fluctuance, warmth, and blanching.\n2. Visual acuity, pupillary responses, extraocular movements, and visual-field examination.\n3. Slit-lamp examination with fluorescein staining.\n4. Intraocular pressure measurement.\n5. High-frequency ultrasound of the periorbital and infraorbital soft tissues.\n6. Complete blood count with platelet count and peripheral blood smear.\n7. PT/INR and aPTT.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Bilateral infraorbital ecchymosis and discoloration caused by recent periorbital cosmetic injection, most likely hyaluronic-acid tear-trough dermal filler",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 328,
+   "total_tokens": 6004,
+   "cost": 0.000906225,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 5673,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000906225,
+    "upstream_inference_prompt_cost": 0.000709425,
+    "upstream_inference_completions_cost": 0.0001968
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 150,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6206,
+   "completion_tokens": 303,
+   "total_tokens": 6509,
+   "cost": 0.00030508,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 530,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00030508,
+    "upstream_inference_prompt_cost": 0.00012328,
+    "upstream_inference_completions_cost": 0.0001818
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 187,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 6609,
+   "completion_tokens": 397,
+   "total_tokens": 7006,
+   "cost": 0.000350905,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6203,
+    "cache_write_tokens": 403,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000350905,
+    "upstream_inference_prompt_cost": 0.000112705,
+    "upstream_inference_completions_cost": 0.0002382
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 298,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 21.1
+}

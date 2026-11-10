@@ -1,0 +1,154 @@
+{
+ "questions": [
+  "Is the main reason you are in the hospital today related to your abdomen?",
+  "Are you experiencing abdominal pain?",
+  "Have you had nausea or vomiting?",
+  "Have you had a fever?",
+  "Do you have a history of liver disease?",
+  "Do you have a history of heart failure?",
+  "Do you have a history of cancer?",
+  "Have you experienced any recent unintentional weight loss?",
+  "Are you experiencing shortness of breath?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Abdominal ultrasound",
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Brain natriuretic peptide",
+  "Chest radiograph"
+ ],
+ "served": [
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "renal function (urea, creatinine)",
+  "glucose"
+ ],
+ "results": [
+  "1. Abdominal ultrasound",
+  "     not performed / not available",
+  "2. Complete blood count",
+  "     full blood count: white cells mildly raised at 11.8 x10^9/L",
+  "3. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: urea nitrogen 24 mg/dL and creatinine 1.62 mg/dL, stable",
+  "     liver function tests: normal",
+  "     renal function (urea, creatinine): blood urea nitrogen 24 mg/dL, creatinine 1.62 mg/dL - stable",
+  "     glucose: normal",
+  "4. Brain natriuretic peptide",
+  "     not performed / not available",
+  "5. Chest radiograph",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Ascites secondary to chronic kidney disease\n\nDifferentials:\n1. Malignant ascites\n2. Cardiac ascites\n3. Tuberculous peritonitis",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Abdominal ultrasound\n2. Complete blood count\n3. Comprehensive metabolic panel\n4. Brain natriuretic peptide\n5. Chest radiograph",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Ascites secondary to chronic kidney disease",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 13142,
+   "completion_tokens": 3166,
+   "total_tokens": 16308,
+   "cost": 0.00771444,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00771444,
+    "upstream_inference_prompt_cost": 0.00391524,
+    "upstream_inference_completions_cost": 0.0037992
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3421,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 13520,
+   "completion_tokens": 3783,
+   "total_tokens": 17303,
+   "cost": 0.00546552,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 13042,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00546552,
+    "upstream_inference_prompt_cost": 0.00092592,
+    "upstream_inference_completions_cost": 0.0045396
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4155,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 13784,
+   "completion_tokens": 794,
+   "total_tokens": 14578,
+   "cost": 0.00186576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 13426,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00186576,
+    "upstream_inference_prompt_cost": 0.00091296,
+    "upstream_inference_completions_cost": 0.0009528
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 906,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 114.3
+}

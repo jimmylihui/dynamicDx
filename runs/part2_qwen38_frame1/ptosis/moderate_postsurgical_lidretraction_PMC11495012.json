@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Do you have a history of thyroid disease?",
+  "Have you noticed any recent changes in your vision, such as double vision or blurriness?",
+  "Do you experience dryness, grittiness, or pain in your eyes?",
+  "Have you had any recent weight loss, heart palpitations, or heat intolerance?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Measure intraocular pressure with tonometry",
+  "Assess for lid lag and lid retraction on downward gaze",
+  "Check for proptosis using a Hertel exophthalmometer",
+  "Order serum TSH, free T4, and thyroid-stimulating immunoglobulin (TSI) levels"
+ ],
+ "served": [
+  "proptosis / exophthalmometry",
+  "lid position and measurement (MRD1 both sides)",
+  "ocular motility examination",
+  "proptosis / exophthalmometry",
+  "TSH / free T4 / TRAb"
+ ],
+ "results": [
+  "1. Measure intraocular pressure with tonometry",
+  "     proptosis / exophthalmometry: no proptosis",
+  "2. Assess for lid lag and lid retraction on downward gaze",
+  "     lid position and measurement (MRD1 both sides): MRD1 raised on the LEFT (retraction); right lid height normal - the right eye is NOT ptotic",
+  "     ocular motility examination: full in all directions",
+  "3. Check for proptosis using a Hertel exophthalmometer",
+  "     proptosis / exophthalmometry: no proptosis",
+  "4. Order serum TSH, free T4, and thyroid-stimulating immunoglobulin (TSI) levels",
+  "     TSH / free T4 / TRAb: normal, TRAb negative - excludes thyroid eye disease"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic unilateral upper eyelid retraction\nAlternative diagnosis: Prior blepharoplasty with post-surgical lid retraction\nAlternative diagnosis: Sympathetic overactivity (e.g., pain, anxiety) causing transient lid retraction",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Measure intraocular pressure with tonometry\n2. Assess for lid lag and lid retraction on downward gaze\n3. Check for proptosis using a Hertel exophthalmometer\n4. Order serum TSH, free T4, and thyroid-stimulating immunoglobulin (TSI) levels",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic unilateral upper eyelid retraction",
+ "decisive_served": [
+  "lid position and measurement (MRD1 both sides)",
+  "TSH / free T4 / TRAb"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 296,
+   "completion_tokens": 72,
+   "total_tokens": 368,
+   "cost": 7.824e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.824e-05,
+    "upstream_inference_prompt_cost": 4.44e-05,
+    "upstream_inference_completions_cost": 3.384e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 609,
+   "completion_tokens": 65,
+   "total_tokens": 674,
+   "cost": 0.0001219,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001219,
+    "upstream_inference_prompt_cost": 9.135e-05,
+    "upstream_inference_completions_cost": 3.055e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 940,
+   "completion_tokens": 55,
+   "total_tokens": 995,
+   "cost": 0.000115394,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000115394,
+    "upstream_inference_prompt_cost": 8.9544e-05,
+    "upstream_inference_completions_cost": 2.585e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.6
+}

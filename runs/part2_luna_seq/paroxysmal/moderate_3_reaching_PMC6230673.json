@@ -1,0 +1,268 @@
+{
+ "questions": [
+  "Did your inability to move your legs begin immediately after a physical injury or accident?",
+  "Do you have severe back pain?",
+  "Do you have numbness or loss of sensation in either leg?",
+  "Do you have difficulty controlling urination or bowel movements?",
+  "Were you previously told that imaging showed a fracture or dislocation of your spine?",
+  "Can you move your legs normally when you are alone or believe nobody is watching?",
+  "Are you intentionally pretending that you cannot move your legs?",
+  "Did the right-sided weakness begin suddenly, over seconds to minutes?",
+  "Do you have weakness or drooping of the right side of your face?",
+  "Do you have difficulty speaking or understanding speech?",
+  "Have you had a sudden severe headache or loss of vision?",
+  "Do you have a history of high blood pressure, diabetes, atrial fibrillation, or prior stroke?",
+  "Does the right-sided weakness fluctuate or improve when you are distracted?",
+  "Did the weakness develop gradually over hours, days, or weeks rather than suddenly?",
+  "Have you had a recent infection, fever, or vaccination before the weakness began?",
+  "Have you experienced major emotional stress or trauma shortly before the weakness began?",
+  "Have you ever had an episode like this before that later resolved?",
+  "Do you have seizures, episodes of loss of awareness, or abnormal movements?",
+  "Did the weakness begin immediately after one of these seizure episodes?",
+  "Were the seizures witnessed with rhythmic jerking of the limbs and loss of consciousness?",
+  "Did the right-sided weakness resolve completely after the seizure episodes in the past?",
+  "Are you currently taking an antiseizure medication?",
+  "Have you ever been diagnosed with epilepsy?",
+  "Did you previously suffer a significant head injury, especially involving the left side of your brain?",
+  "Has the right-sided weakness been present continuously since that head injury?",
+  "Did the seizures or abnormal episodes begin after the head injury?",
+  "Have you ever had neurosurgery or prolonged loss of consciousness after a head injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "yes",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Perform a focused neurological examination of both lower limbs, including observed voluntary hip, knee, and ankle power, tone, patellar and Achilles reflexes, plantar responses, and sensory testing.",
+  "Perform Hoover’s sign and the hip-abduction test while the patient is distracted.",
+  "MRI of the brain with diffusion-weighted imaging and contrast.",
+  "MRI of the cervical and thoracic spinal cord with contrast.",
+  "Repeat a functional neurological examination during distraction, specifically Hoover’s sign, the hip-abduction sign, and observation of spontaneous use of the right arm and leg during transfers and walking.",
+  "Perform routine EEG with video monitoring."
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI cervical and thoracic spine",
+  "neurological examination between events",
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "R1 ASK Did your inability to move your legs begin immediately after a physical injury or accident?; Do you have severe back pain?; Do you have numbness or loss of sensation in either leg?; Do you have difficulty controlling urination or bowel movements?; Were you previously told that imaging showed a fracture or dislocation of your spine?; Can you move your legs normally when you are alone or believe nobody is watching?; Are you intentionally pretending that you cannot move your legs? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ORDER Perform a focused neurological examination of both lower limbs, including observed voluntary hip, knee, and ankle power, tone, patellar and Achilles reflexes, plantar responses, and sensory testing.; Perform Hoover’s sign and the hip-abduction test while the patient is distracted. -> [['muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)'], []]",
+  "R3 ASK Did the right-sided weakness begin suddenly, over seconds to minutes?; Do you have weakness or drooping of the right side of your face?; Do you have difficulty speaking or understanding speech?; Have you had a sudden severe headache or loss of vision?; Do you have a history of high blood pressure, diabetes, atrial fibrillation, or prior stroke? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Does the right-sided weakness fluctuate or improve when you are distracted?; Did the weakness develop gradually over hours, days, or weeks rather than suddenly?; Have you had a recent infection, fever, or vaccination before the weakness began?; Have you experienced major emotional stress or trauma shortly before the weakness began?; Have you ever had an episode like this before that later resolved?; Do you have seizures, episodes of loss of awareness, or abnormal movements? -> ['no', 'no', 'no', 'no', 'no', 'yes']",
+  "R5 ASK Did the weakness begin immediately after one of these seizure episodes?; Were the seizures witnessed with rhythmic jerking of the limbs and loss of consciousness?; Did the right-sided weakness resolve completely after the seizure episodes in the past?; Are you currently taking an antiseizure medication?; Have you ever been diagnosed with epilepsy? -> ['no', 'no', 'no', 'no', 'no']",
+  "R6 ORDER MRI of the brain with diffusion-weighted imaging and contrast.; MRI of the cervical and thoracic spinal cord with contrast. -> [['MRI brain with gadolinium', 'MRI diffusion-weighted sequences'], ['MRI cervical and thoracic spine']]",
+  "R7 ASK Did you previously suffer a significant head injury, especially involving the left side of your brain?; Has the right-sided weakness been present continuously since that head injury?; Did the seizures or abnormal episodes begin after the head injury?; Have you ever had neurosurgery or prolonged loss of consciousness after a head injury? -> ['no', 'no', 'no', 'no']",
+  "R8 ORDER Repeat a functional neurological examination during distraction, specifically Hoover’s sign, the hip-abduction sign, and observation of spontaneous use of the right arm and leg during transfers and walking.; Perform routine EEG with video monitoring. -> [['neurological examination between events'], ['interictal EEG', 'video-EEG monitoring of a typical event']]",
+  "R9 DIAGNOSIS Functional neurological symptom disorder (conversion disorder) presenting as persistent right hemiplegia with psychogenic nonepileptic events; the left-frontal post-traumatic gliosis and interictal epileptiform discharges indicate an underlying epileptic substrate but do not explain the recorded event or the non-acute weakness. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did your inability to move your legs begin immediately after a physical injury or accident?",
+    "Do you have severe back pain?",
+    "Do you have numbness or loss of sensation in either leg?",
+    "Do you have difficulty controlling urination or bowel movements?",
+    "Were you previously told that imaging showed a fracture or dislocation of your spine?",
+    "Can you move your legs normally when you are alone or believe nobody is watching?",
+    "Are you intentionally pretending that you cannot move your legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Perform a focused neurological examination of both lower limbs, including observed voluntary hip, knee, and ankle power, tone, patellar and Achilles reflexes, plantar responses, and sensory testing.",
+    "Perform Hoover’s sign and the hip-abduction test while the patient is distracted."
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "limb strength (MRC) examination",
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did the right-sided weakness begin suddenly, over seconds to minutes?",
+    "Do you have weakness or drooping of the right side of your face?",
+    "Do you have difficulty speaking or understanding speech?",
+    "Have you had a sudden severe headache or loss of vision?",
+    "Do you have a history of high blood pressure, diabetes, atrial fibrillation, or prior stroke?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Does the right-sided weakness fluctuate or improve when you are distracted?",
+    "Did the weakness develop gradually over hours, days, or weeks rather than suddenly?",
+    "Have you had a recent infection, fever, or vaccination before the weakness began?",
+    "Have you experienced major emotional stress or trauma shortly before the weakness began?",
+    "Have you ever had an episode like this before that later resolved?",
+    "Do you have seizures, episodes of loss of awareness, or abnormal movements?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Did the weakness begin immediately after one of these seizure episodes?",
+    "Were the seizures witnessed with rhythmic jerking of the limbs and loss of consciousness?",
+    "Did the right-sided weakness resolve completely after the seizure episodes in the past?",
+    "Are you currently taking an antiseizure medication?",
+    "Have you ever been diagnosed with epilepsy?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "MRI of the brain with diffusion-weighted imaging and contrast.",
+    "MRI of the cervical and thoracic spinal cord with contrast."
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium",
+     "MRI diffusion-weighted sequences"
+    ],
+    [
+     "MRI cervical and thoracic spine"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Did you previously suffer a significant head injury, especially involving the left side of your brain?",
+    "Has the right-sided weakness been present continuously since that head injury?",
+    "Did the seizures or abnormal episodes begin after the head injury?",
+    "Have you ever had neurosurgery or prolonged loss of consciousness after a head injury?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Repeat a functional neurological examination during distraction, specifically Hoover’s sign, the hip-abduction sign, and observation of spontaneous use of the right arm and leg during transfers and walking.",
+    "Perform routine EEG with video monitoring."
+   ],
+   "result": [
+    [
+     "neurological examination between events"
+    ],
+    [
+     "interictal EEG",
+     "video-EEG monitoring of a typical event"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Functional neurological symptom disorder (conversion disorder) presenting as persistent right hemiplegia with psychogenic nonepileptic events; the left-frontal post-traumatic gliosis and interictal epileptiform discharges indicate an underlying epileptic substrate but do not explain the recorded event or the non-acute weakness."
+  }
+ ],
+ "dx": "Functional neurological symptom disorder (conversion disorder) presenting as persistent right hemiplegia with psychogenic nonepileptic events; the left-frontal post-traumatic gliosis and interictal epileptiform discharges indicate an underlying epileptic substrate but do not explain the recorded event or the non-acute weakness.",
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder (conversion disorder) presenting as persistent right hemiplegia with psychogenic nonepileptic events; the left-frontal post-traumatic gliosis and interictal epileptiform discharges indicate an underlying epileptic substrate but do not explain the recorded event or the non-acute weakness.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "interictal EEG",
+  "neurological examination between events"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0077,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 98.5
+}

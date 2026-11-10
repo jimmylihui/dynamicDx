@@ -1,0 +1,127 @@
+{
+ "questions": [
+  "Did you recently have surgery on your nose?",
+  "Are you experiencing double vision?",
+  "Do you have a history of an overactive thyroid gland?",
+  "Do you have a history of diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Measure intraocular pressure",
+  "Orbital CT",
+  "Edrophonium test"
+ ],
+ "served": [
+  "CT / MR angiography (posterior circulation)",
+  "repetitive nerve stimulation"
+ ],
+ "results": [
+  "R1 ASK Did you recently have surgery on your nose?; Are you experiencing double vision? -> ['no', 'no']",
+  "R2 ORDER Measure intraocular pressure -> [[]]",
+  "R3 ASK Do you have a history of an overactive thyroid gland? -> ['no']",
+  "R4 ORDER Orbital CT -> [['CT / MR angiography (posterior circulation)']]",
+  "R5 ASK Do you have a history of diabetes? -> ['no']",
+  "R6 ORDER Edrophonium test -> [['repetitive nerve stimulation']]",
+  "R7 DIAGNOSIS Functional (psychogenic) gaze palsy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did you recently have surgery on your nose?",
+    "Are you experiencing double vision?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Measure intraocular pressure"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of an overactive thyroid gland?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Orbital CT"
+   ],
+   "result": [
+    [
+     "CT / MR angiography (posterior circulation)"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Edrophonium test"
+   ],
+   "result": [
+    [
+     "repetitive nerve stimulation"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Functional (psychogenic) gaze palsy"
+  }
+ ],
+ "dx": "Functional (psychogenic) gaze palsy",
+ "dx_raw": "DIAGNOSIS: Functional (psychogenic) gaze palsy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0012,
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 32.4
+}

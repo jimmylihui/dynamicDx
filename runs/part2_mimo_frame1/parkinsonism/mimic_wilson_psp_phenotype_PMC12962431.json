@@ -1,0 +1,143 @@
+{
+ "questions": [
+  "Do you have a fever?",
+  "Do you have a headache?",
+  "Are you experiencing nausea or vomiting?",
+  "How long have you felt unwell? (This requires a duration, which might not be strictly yes/no, but the constraint is the patient answers only yes or no. Let me rephrase: Have you felt unwell for more than one day?)",
+  "Is the pain severe?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Thyroid function tests",
+  "Complete blood count",
+  "Visual acuity test",
+  "Ophthalmological examination with proptosis measurement",
+  "MRI orbits"
+ ],
+ "served": [
+  "TSH / free T4",
+  "full blood count, renal and liver profile"
+ ],
+ "results": [
+  "1. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "2. Complete blood count",
+  "     full blood count, renal and liver profile: liver and kidney function normal",
+  "3. Visual acuity test",
+  "     not performed / not available",
+  "4. Ophthalmological examination with proptosis measurement",
+  "     not performed / not available",
+  "5. MRI orbits",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Euthyroid Graves' ophthalmopathy\n\n1. Thyroid eye disease can occur with normal thyroid function tests in approximately 5-10% of cases\n2. The patient demonstrates classic Dalrymple sign (lid retraction) creating a startled/frightened appearance\n3. The patient appears otherwise well with no systemic symptoms\n\n---\n\n**Differential:**\n\n1. **Graves' disease with preclinical/subclinical hyperthyroidism** - early disease with autoimmune orbital involvement preceding biochemical changes\n\n2. **Idiopathic orbital inflammation (orbital pseudotumor)** - would typically present with more pain\n\n3. **Myasthenia gravis with lid retraction** - less likely given the bilateral symmetrical presentation\n\n---\n\n**Recommended to confirm:**\n\n- TSI (thyroid-stimulating immunoglobulin) antibodies\n- Anti-TPO antibodies  \n- CT or MRI orbits (to assess extraocular muscle enlargement pattern)\n- Formal ophthalmological assessment",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Thyroid function tests\n2. Complete blood count\n3. Visual acuity test\n4. Ophthalmological examination with proptosis measurement\n5. MRI orbits",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Euthyroid Graves' ophthalmopathy",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 832,
+   "completion_tokens": 286,
+   "total_tokens": 1118,
+   "cost": 0.0001702176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001702176,
+    "upstream_inference_prompt_cost": 9.01376e-05,
+    "upstream_inference_completions_cost": 8.008e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 200,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1172,
+   "completion_tokens": 491,
+   "total_tokens": 1663,
+   "cost": 0.0001874096,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 832,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001874096,
+    "upstream_inference_prompt_cost": 4.99296e-05,
+    "upstream_inference_completions_cost": 0.00013748
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 453,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1387,
+   "completion_tokens": 669,
+   "total_tokens": 2056,
+   "cost": 0.0003551576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003551576,
+    "upstream_inference_prompt_cost": 0.0001678376,
+    "upstream_inference_completions_cost": 0.00018732
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 462,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 29.5,
+ "video": "mimic_wilson_psp_phenotype_PMC12962431.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 78.9
+}

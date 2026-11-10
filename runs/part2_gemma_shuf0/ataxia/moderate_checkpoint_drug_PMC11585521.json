@@ -1,0 +1,157 @@
+{
+ "questions": [
+  "Did you have a stroke?",
+  "Did you have a traumatic brain injury?",
+  "Did you have a spinal cord injury?",
+  "Do you have weakness in your arms?",
+  "Is this a new problem?",
+  "Do you have pain in your legs?",
+  "Can you move your legs voluntarily?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Lower limb deep tendon reflexes",
+  "Lower limb muscle tone",
+  "Sensory level examination",
+  "Bulbocavernosus reflex",
+  "MRI of the thoracic and lumbar spine",
+  "EMG and Nerve Conduction Studies of the lower limbs"
+ ],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "muscle tone examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "nerve conduction studies / EMG",
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. Lower limb deep tendon reflexes",
+  "     deep tendon reflexes and plantar responses: normal",
+  "2. Lower limb muscle tone",
+  "     muscle tone examination: normal",
+  "3. Sensory level examination",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "4. Bulbocavernosus reflex",
+  "     not performed / not available",
+  "5. MRI of the thoracic and lumbar spine",
+  "     not performed / not available",
+  "6. EMG and Nerve Conduction Studies of the lower limbs",
+  "     nerve conduction studies / EMG: normal",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional Neurological Disorder, psychogenic\n\n1. Malingering\n2. Somatic Symptom Disorder\n3. Atypical spinal cord pathology",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Lower limb deep tendon reflexes\n2. Lower limb muscle tone\n3. Sensory level examination\n4. Bulbocavernosus reflex\n5. MRI of the thoracic and lumbar spine\n6. EMG and Nerve Conduction Studies of the lower limbs",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional Neurological Disorder, psychogenic",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1596,
+   "total_tokens": 10294,
+   "cost": 0.00141244,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00141244,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00054264
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1480,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9016,
+   "completion_tokens": 2555,
+   "total_tokens": 11571,
+   "cost": 0.0017703,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0017703,
+    "upstream_inference_prompt_cost": 0.0009016,
+    "upstream_inference_completions_cost": 0.0008687
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2497,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9291,
+   "completion_tokens": 1487,
+   "total_tokens": 10778,
+   "cost": 0.00143468,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00143468,
+    "upstream_inference_prompt_cost": 0.0009291,
+    "upstream_inference_completions_cost": 0.00050558
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1534,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 238.4
+}

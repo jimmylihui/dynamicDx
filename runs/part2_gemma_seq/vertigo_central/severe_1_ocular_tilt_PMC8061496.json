@@ -1,0 +1,106 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have double vision?",
+  "Do you have a headache?",
+  "Is the drooping of your eyelid worse in the evening?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Do you have any pain in or around your eye?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Neurological examination including pupil assessment, external ophthalmoplegia, and deep tendon reflexes.",
+  "MRI of the brain and orbits."
+ ],
+ "served": [
+  "cranial nerve examination",
+  "deep tendon reflexes and plantar responses",
+  "pupil size and light reaction",
+  "MRI brain with gadolinium",
+  "MRI sella and orbits"
+ ],
+ "results": [
+  "R1 ASK Did this happen suddenly?; Do you have double vision?; Do you have a headache?; Is the drooping of your eyelid worse in the evening?; Do you have diabetes?; Do you have high blood pressure?; Do you have any pain in or around your eye? -> ['yes', 'yes', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ORDER Neurological examination including pupil assessment, external ophthalmoplegia, and deep tendon reflexes.; MRI of the brain and orbits. -> [['cranial nerve examination', 'deep tendon reflexes and plantar responses', 'pupil size and light reaction'], ['MRI brain with gadolinium', 'MRI sella and orbits']]",
+  "R3 DIAGNOSIS Left rostral pontine and caudal mesencephalic infarct due to ischemic stroke. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did this happen suddenly?",
+    "Do you have double vision?",
+    "Do you have a headache?",
+    "Is the drooping of your eyelid worse in the evening?",
+    "Do you have diabetes?",
+    "Do you have high blood pressure?",
+    "Do you have any pain in or around your eye?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Neurological examination including pupil assessment, external ophthalmoplegia, and deep tendon reflexes.",
+    "MRI of the brain and orbits."
+   ],
+   "result": [
+    [
+     "cranial nerve examination",
+     "deep tendon reflexes and plantar responses",
+     "pupil size and light reaction"
+    ],
+    [
+     "MRI brain with gadolinium",
+     "MRI sella and orbits"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "diagnosis",
+   "text": "Left rostral pontine and caudal mesencephalic infarct due to ischemic stroke."
+  }
+ ],
+ "dx": "Left rostral pontine and caudal mesencephalic infarct due to ischemic stroke.",
+ "dx_raw": "DIAGNOSIS: Left rostral pontine and caudal mesencephalic infarct due to ischemic stroke.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 2,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0047,
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 236.2
+}

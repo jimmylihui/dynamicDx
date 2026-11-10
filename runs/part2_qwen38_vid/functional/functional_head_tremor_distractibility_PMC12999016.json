@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Do you have a history of Parkinson's disease?",
+  "Do you experience difficulty initiating movement, such as when getting out of a chair or starting to walk?",
+  "Do you feel that your steps become shorter and faster once you start walking (a sensation known as festination)?",
+  "Do you tend to lean forward when standing or walking?",
+  "Do you have trouble turning around while walking without losing your balance?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform the Romberg test (standing with feet together, eyes open then closed)",
+  "Assess for retropulsion by pulling on the patient's shoulders while they stand",
+  "Evaluate for paratonia (gegenhalten) in the upper extremities during passive movement",
+  "Check for primitive reflexes (glabellar tap, snout, palmomental, grasp)",
+  "Order an MRI of the brain to evaluate for hydrocephalus and white matter changes"
+ ],
+ "served": [
+  "Romberg test, repeated with distraction",
+  "posture and pull test",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "cognitive screen",
+  "MRI brain"
+ ],
+ "results": [
+  "1. Perform the Romberg test (standing with feet together, eyes open then closed)",
+  "     Romberg test, repeated with distraction: negative",
+  "2. Assess for retropulsion by pulling on the patient's shoulders while they stand",
+  "     posture and pull test: normal",
+  "3. Evaluate for paratonia (gegenhalten) in the upper extremities during passive movement",
+  "     muscle tone (spasticity, rigidity, paratonia): normal; no dystonic head posture, no sensory trick",
+  "4. Check for primitive reflexes (glabellar tap, snout, palmomental, grasp)",
+  "     cognitive screen: normal",
+  "5. Order an MRI of the brain to evaluate for hydrocephalus and white matter changes",
+  "     MRI brain: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional gait disorder (psychogenic gait)\n\n1. Malingering\n2. Frontal lobe pathology (e.g., frontal gait apraxia) not detected on standard MRI",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Perform the Romberg test (standing with feet together, eyes open then closed)\n2. Assess for retropulsion by pulling on the patient's shoulders while they stand\n3. Evaluate for paratonia (gegenhalten) in the upper extremities during passive movement\n4. Check for primitive reflexes (glabellar tap, snout, palmomental, grasp)\n5. Order an MRI of the brain to evaluate for hydrocephalus and white matter changes",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional gait disorder (psychogenic gait)",
+ "decisive_served": [
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 91,
+   "total_tokens": 4914,
+   "cost": 0.00076622,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00076622,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 4.277e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5178,
+   "completion_tokens": 99,
+   "total_tokens": 5277,
+   "cost": 0.00022291,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00022291,
+    "upstream_inference_prompt_cost": 0.00017638,
+    "upstream_inference_completions_cost": 4.653e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5535,
+   "completion_tokens": 47,
+   "total_tokens": 5582,
+   "cost": 0.000183412,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000183412,
+    "upstream_inference_prompt_cost": 0.000161322,
+    "upstream_inference_completions_cost": 2.209e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 26.2,
+ "video": "functional_head_tremor_distractibility_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 16.0
+}

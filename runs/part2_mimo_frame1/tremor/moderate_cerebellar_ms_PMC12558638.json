@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Is pain your primary symptom right now?",
+  "Is the pain located in your head?",
+  "Is the pain centered around or behind your eyes?",
+  "Is there sensitivity to light?",
+  "Do you feel nauseous?",
+  "Is the pain throbbing?",
+  "Did the symptoms begin suddenly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Urinalysis",
+  "Complete metabolic panel",
+  "Thyroid function tests (TSH, free T4)",
+  "B-type natriuretic peptide",
+  "Ophthalmologic examination including visual acuity, eye movements, and fundoscopy"
+ ],
+ "served": [
+  "urinalysis",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "TSH / free T4",
+  "fundoscopy"
+ ],
+ "results": [
+  "1. Urinalysis",
+  "     urinalysis: normal",
+  "2. Complete metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "3. Thyroid function tests (TSH, free T4)",
+  "     TSH / free T4: normal",
+  "4. B-type natriuretic peptide",
+  "     not performed / not available",
+  "5. Ophthalmologic examination including visual acuity, eye movements, and fundoscopy",
+  "     fundoscopy: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Myasthenia gravis (ocular type)\n\nChronic progressive external ophthalmoplegia\nCongenital ptosis\nAponeurotic ptosis (age-related)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Urinalysis\n2. Complete metabolic panel\n3. Thyroid function tests (TSH, free T4)\n4. B-type natriuretic peptide\n5. Ophthalmologic examination including visual acuity, eye movements, and fundoscopy",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Myasthenia gravis (ocular type)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 528,
+   "completion_tokens": 3136,
+   "total_tokens": 3664,
+   "cost": 0.0009256576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009256576,
+    "upstream_inference_prompt_cost": 4.75776e-05,
+    "upstream_inference_completions_cost": 0.00087808
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3070,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 838,
+   "completion_tokens": 589,
+   "total_tokens": 1427,
+   "cost": 0.0002558976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002558976,
+    "upstream_inference_prompt_cost": 9.09776e-05,
+    "upstream_inference_completions_cost": 0.00016492
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 533,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1093,
+   "completion_tokens": 510,
+   "total_tokens": 1603,
+   "cost": 0.0002694776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002694776,
+    "upstream_inference_prompt_cost": 0.0001266776,
+    "upstream_inference_completions_cost": 0.0001428
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 467,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 170.5
+}

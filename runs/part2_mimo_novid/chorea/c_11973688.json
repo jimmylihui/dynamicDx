@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Are you experiencing any acute symptoms that require immediate attention?"
+ ],
+ "answers": {
+  "1": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Are you experiencing any pain right now?"
+ ],
+ "served": [],
+ "results": [
+  "1. Are you experiencing any pain right now?",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSN: Insufficient data to make a diagnosis - the patient has only been asked one yes/no question indicating no acute symptoms, and no investigations were performed.\n\nAlternative considerations:\n1. Chronic disease requiring routine follow-up (referral for ongoing management)\n2. Incidental finding from prior investigation requiring specialist review\n3. Asymptomatic screening abnormality\n\n---\n\n*Note: I apologize for the confusion in my response sequence. I mistakenly asked another history question during what appears to have been the investigation phase, so that question was not performed. With only the information that the patient has no acute symptoms requiring immediate attention and was referred (reason unknown), I cannot reasonably narrow a diagnosis. I would need to restart the history-taking process or receive guidance on how to proceed.*",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "2. Are you experiencing any pain right now?",
+ "rationale": [
+  null
+ ],
+ "dx": "Insufficient data to make a diagnosis - the patient has only been asked one yes/no question indicating no acute symptoms, and no investigations were performed.",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 199,
+   "total_tokens": 584,
+   "cost": 6.5716e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.5716e-05,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 5.572e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 183,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 563,
+   "completion_tokens": 278,
+   "total_tokens": 841,
+   "cost": 0.000112756,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000112756,
+    "upstream_inference_prompt_cost": 3.4916e-05,
+    "upstream_inference_completions_cost": 7.784e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 265,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 685,
+   "completion_tokens": 591,
+   "total_tokens": 1276,
+   "cost": 0.0002086952,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002086952,
+    "upstream_inference_prompt_cost": 4.32152e-05,
+    "upstream_inference_completions_cost": 0.00016548
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 431,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 24.3,
+ "dx_old": "DIAGNOSN: Insufficient data to make a diagnosis - the patient has only been asked one yes/no question indicating no acute symptoms, and no investigations were performed."
+}

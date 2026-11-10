@@ -1,0 +1,111 @@
+{
+ "questions": [
+  "Do you have a tremor in your hands?",
+  "Does the tremor occur when your hands are resting?",
+  "Have you noticed a slowing of your movements?",
+  "Do you have a history of heart problems?",
+  "Do you have a history of thyroid disease?",
+  "Do you have asthma?",
+  "Do you have stiffness in your muscles?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "nerve conduction studies / EMG",
+  "EEG",
+  "somatosensory evoked potentials",
+  "SARS-CoV-2 testing"
+ ],
+ "results": [
+  "1. nerve conduction studies / EMG: rhythmic bursts in both hands, synchronised with the visible jerks",
+  "2. EEG: no abnormality, and no EEG-EMG correlation on video-EEG - the myoclonus is subcortical",
+  "3. somatosensory evoked potentials: NO giant SSEP - argues against a cortical origin",
+  "4. SARS-CoV-2 testing: recent COVID-19 infection"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-COVID-19 myoclonus caused by SARS-CoV-2 infection\n\nAutoimmune encephalitis\nMetabolic encephalopathy\nParaneoplastic myoclonus",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Post-COVID-19 myoclonus caused by SARS-CoV-2 infection",
+ "decisive_served": [
+  "nerve conduction studies / EMG",
+  "EEG",
+  "somatosensory evoked potentials",
+  "SARS-CoV-2 testing"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8890,
+   "completion_tokens": 3346,
+   "total_tokens": 12236,
+   "cost": 0.00202664,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00202664,
+    "upstream_inference_prompt_cost": 0.000889,
+    "upstream_inference_completions_cost": 0.00113764
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3228,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9264,
+   "completion_tokens": 1127,
+   "total_tokens": 10391,
+   "cost": 0.00130958,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00130958,
+    "upstream_inference_prompt_cost": 0.0009264,
+    "upstream_inference_completions_cost": 0.00038318
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 974,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "moderate_postinfectious_millerfisher_PMC13224678.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 137.5
+}

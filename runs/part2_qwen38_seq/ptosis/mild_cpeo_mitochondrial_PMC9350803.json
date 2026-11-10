@@ -1,0 +1,153 @@
+{
+ "questions": [
+  "Are you currently experiencing double vision?",
+  "Do your eyes feel like they are bulging out of their sockets?",
+  "Have you been diagnosed with a thyroid condition in the past?",
+  "Do you have difficulty opening your eyelids?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Measure the distance between the lateral orbital rims and the corneal apex (exophthalmometry)",
+  "Cover-uncover test",
+  "Fundoscopy",
+  "Serum thyroid function tests",
+  "Serum acetylcholine receptor antibodies"
+ ],
+ "served": [
+  "proptosis / exophthalmometry",
+  "cover test / ocular alignment",
+  "fundoscopy",
+  "thyroid function (TSH, free T4)",
+  "anti-acetylcholine receptor antibodies"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing double vision?; Do your eyes feel like they are bulging out of their sockets?; Have you been diagnosed with a thyroid condition in the past? -> ['yes', 'no', 'no']",
+  "R2 ORDER Measure the distance between the lateral orbital rims and the corneal apex (exophthalmometry) -> [['proptosis / exophthalmometry']]",
+  "R3 ORDER Cover-uncover test -> [['cover test / ocular alignment']]",
+  "R4 ASK Do you have difficulty opening your eyelids? -> ['no']",
+  "R5 ORDER Fundoscopy -> [['fundoscopy']]",
+  "R6 ORDER Serum thyroid function tests -> [['thyroid function (TSH, free T4)']]",
+  "R7 ORDER Serum acetylcholine receptor antibodies -> [['anti-acetylcholine receptor antibodies']]",
+  "R8 DIAGNOSIS Myasthenia Gravis -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing double vision?",
+    "Do your eyes feel like they are bulging out of their sockets?",
+    "Have you been diagnosed with a thyroid condition in the past?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Measure the distance between the lateral orbital rims and the corneal apex (exophthalmometry)"
+   ],
+   "result": [
+    [
+     "proptosis / exophthalmometry"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Cover-uncover test"
+   ],
+   "result": [
+    [
+     "cover test / ocular alignment"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty opening your eyelids?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Fundoscopy"
+   ],
+   "result": [
+    [
+     "fundoscopy"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Serum thyroid function tests"
+   ],
+   "result": [
+    [
+     "thyroid function (TSH, free T4)"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Serum acetylcholine receptor antibodies"
+   ],
+   "result": [
+    [
+     "anti-acetylcholine receptor antibodies"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Myasthenia Gravis"
+  }
+ ],
+ "dx": "Myasthenia Gravis",
+ "dx_raw": "DIAGNOSIS: Myasthenia Gravis",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "anti-acetylcholine receptor antibodies"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0017,
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "mild_cpeo_mitochondrial_PMC9350803.mp4",
+ "line": "ptosis",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 41.2
+}

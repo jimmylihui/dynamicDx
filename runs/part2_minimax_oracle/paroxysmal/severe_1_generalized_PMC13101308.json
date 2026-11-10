@@ -1,0 +1,107 @@
+{
+ "questions": [
+  "Do you have a history of seizures?",
+  "Are you currently experiencing an aura?",
+  "Did you lose consciousness?",
+  "Do you have a severe headache?",
+  "Are you taking any anti-seizure medication?",
+  "Do you feel dizzy right now?",
+  "Do you feel confused?",
+  "Is your left leg injured?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "2. video-EEG monitoring of a typical event: ictal body turning preceded by head version; although the clinical onset looked focal, the EEG showed generalized beta fast activity for 0.5 s followed by a generalized 2.5-3 Hz spike-wave discharge with maximum bifrontal amplitude"
+ ],
+ "dx_raw": "DIAGNOSIS: Juvenile Absence Epilepsy, an idiopathic (genetic) generalized epilepsy syndrome.\nALTERNATIVES:\n1. Juvenile Myoclonic Epilepsy (if the body turning represents axial myoclonia)\n2. Epilepsy with Generalized Tonic-Clonic Seizures Alone (if the interictal 2-3 Hz discharges are subclinical and not true absence seizures)\n3. Frontal Lobe Epilepsy (given the strong clinical focal features, though the generalized EEG makes this unlikely)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Juvenile Absence Epilepsy, an idiopathic (genetic) generalized epilepsy syndrome.",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2599,
+   "total_tokens": 9661,
+   "cost": 0.00519972,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00519972,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0031188
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2528,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7443,
+   "completion_tokens": 10116,
+   "total_tokens": 17559,
+   "cost": 0.01268082,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01268082,
+    "upstream_inference_prompt_cost": 0.00054162,
+    "upstream_inference_completions_cost": 0.0121392
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 10013,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.8,
+ "video": "severe_1_generalized_PMC13101308.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 145.9
+}

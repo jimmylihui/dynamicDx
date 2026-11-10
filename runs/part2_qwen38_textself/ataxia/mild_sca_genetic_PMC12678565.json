@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Do you have a history of heavy alcohol use?",
+  "Do you experience double vision or difficulty focusing your eyes?",
+  "Do you have numbness, tingling, or loss of sensation in your feet?",
+  "Do you feel dizzy or lightheaded when standing up from a sitting position?",
+  "Do you have a known diagnosis of multiple sclerosis?",
+  "Do you have a family history of similar walking difficulties?",
+  "Do you take any medications for seizures or mood stabilization?",
+  "Do you have a history of head trauma or brain surgery?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain and cervical spine",
+  "Genetic testing for spinocerebellar ataxias (SCA panel)"
+ ],
+ "served": [
+  "brain MRI",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI cervical and thoracic spine",
+  "genetic ataxia panel"
+ ],
+ "results": [
+  "1. MRI of the brain and cervical spine",
+  "     brain MRI: cerebellar atrophy on sagittal T1 and axial FLAIR",
+  "     MRI brain with gadolinium: cerebellar atrophy without gadolinium enhancement",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI cervical and thoracic spine: normal",
+  "2. Genetic testing for spinocerebellar ataxias (SCA panel)",
+  "     genetic ataxia panel: 112 and 29 CTG repeats in ATXN8OS - confirms SCA8"
+ ],
+ "dx_raw": "DIAGNOSIS: Spinocerebellar ataxia type 8 (SCA8)\nAlternative: Friedreich's ataxia\nAlternative: Idiopathic late-onset cerebellar ataxia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain and cervical spine\n2. Genetic testing for spinocerebellar ataxias (SCA panel)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Spinocerebellar ataxia type 8 (SCA8)",
+ "decisive_served": [
+  "brain MRI",
+  "genetic ataxia panel"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 192,
+   "completion_tokens": 122,
+   "total_tokens": 314,
+   "cost": 8.614e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.614e-05,
+    "upstream_inference_prompt_cost": 2.88e-05,
+    "upstream_inference_completions_cost": 5.734e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 623,
+   "completion_tokens": 27,
+   "total_tokens": 650,
+   "cost": 0.00010614,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010614,
+    "upstream_inference_prompt_cost": 9.345e-05,
+    "upstream_inference_completions_cost": 1.269e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 876,
+   "completion_tokens": 44,
+   "total_tokens": 920,
+   "cost": 8.3472e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.3472e-05,
+    "upstream_inference_prompt_cost": 6.2792e-05,
+    "upstream_inference_completions_cost": 2.068e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_sca_genetic_PMC12678565.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.1
+}

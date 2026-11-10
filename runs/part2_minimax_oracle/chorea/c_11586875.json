@@ -1,0 +1,120 @@
+{
+ "questions": [
+  "Are the movements in your hands and arms involuntary?",
+  "Are you currently feeling confused or having difficulty concentrating?",
+  "Do you have a history of kidney disease or are you on dialysis?",
+  "Do you have a history of liver disease or cirrhosis?",
+  "Do you have a history of severe lung disease or heart failure?",
+  "Do you have diabetes?",
+  "Do you drink alcohol on a daily basis?",
+  "Have you had a fever or any recent infections?",
+  "Do you have a history of seizures?",
+  "Are you currently experiencing any pain?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "brain MRI with contrast",
+  "trial of glucose correction with insulin"
+ ],
+ "results": [
+  "1. blood glucose: 799 mg/dL (normal 74-106)",
+  "2. HbA1c: 11%",
+  "3. ketones (blood or urine): NEGATIVE - non-ketotic",
+  "4. brain MRI with contrast: HYPOSIGNAL involving the corpus striatum bilaterally, extending to the medial cerebral crus on T2 and FLAIR, with mild T1 HYPERSIGNAL in the basal nuclei",
+  "5. trial of glucose correction with insulin: diazepam and insulin gave partial improvement, but the extrapyramidal symptoms persisted; she was readmitted a year later with a hyperosmolar episode"
+ ],
+ "dx_raw": "DIAGNOSIS: Diabetic striatopathy (non-ketotic hyperglycemic hemichorea) caused by poorly controlled type 2 diabetes mellitus presenting during hyperosmolar hyperglycemic state\nAlternatives to consider:\n1. Wilson's disease (would expect T2 hyperintensity, \"face of the giant panda\" sign, and younger onset)\n2. Manganese deposition (e.g., from TPN or chronic liver disease – though liver disease denied)\n3. Creutzfeldt-Jakob disease (would expect cortical/limbic DWI changes and rapidly progressive dementia)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Diabetic striatopathy (non-ketotic hyperglycemic hemichorea) caused by poorly controlled type 2 diabetes mellitus presenting during hyperosmolar hyperglycemic state",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "brain MRI with contrast",
+  "trial of glucose correction with insulin"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 3964,
+   "total_tokens": 24402,
+   "cost": 0.01085052,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01085052,
+    "upstream_inference_prompt_cost": 0.00609372,
+    "upstream_inference_completions_cost": 0.0047568
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3847,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 20950,
+   "completion_tokens": 941,
+   "total_tokens": 21891,
+   "cost": 0.00251268,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20423,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00251268,
+    "upstream_inference_prompt_cost": 0.00138348,
+    "upstream_inference_completions_cost": 0.0011292
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 825,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 55.6
+}

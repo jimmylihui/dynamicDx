@@ -1,0 +1,134 @@
+{
+ "questions": [
+  "Do you have Cushing's syndrome?",
+  "Do you take corticosteroid medications?",
+  "Do you have purple stretch marks on your abdomen?",
+  "Do you have a fat pad on your upper back?",
+  "Do you have central obesity?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Serum IGF-1",
+  "Serum Growth Hormone",
+  "Urinary glycosaminoglycans",
+  "Abdominal ultrasound"
+ ],
+ "served": [],
+ "results": [
+  "1. Serum IGF-1",
+  "     not performed / not available",
+  "2. Serum Growth Hormone",
+  "     not performed / not available",
+  "3. Urinary glycosaminoglycans",
+  "     not performed / not available",
+  "4. Abdominal ultrasound",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Mucopolysaccharidosis type I (Hurler syndrome) due to alpha-L-iduronidase deficiency\n\nAchondroplasia\nGrowth hormone deficiency\nCongenital hypothyroidism",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Serum IGF-1\n2. Serum Growth Hormone\n3. Urinary glycosaminoglycans\n4. Abdominal ultrasound",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Mucopolysaccharidosis type I (Hurler syndrome) due to alpha-L-iduronidase deficiency",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 199,
+   "completion_tokens": 7508,
+   "total_tokens": 7707,
+   "cost": 0.00257262,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00257262,
+    "upstream_inference_prompt_cost": 1.99e-05,
+    "upstream_inference_completions_cost": 0.00255272
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7076,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 479,
+   "completion_tokens": 3279,
+   "total_tokens": 3758,
+   "cost": 0.00116276,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00116276,
+    "upstream_inference_prompt_cost": 4.79e-05,
+    "upstream_inference_completions_cost": 0.00111486
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2894,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 657,
+   "completion_tokens": 5872,
+   "total_tokens": 6529,
+   "cost": 0.00206218,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00206218,
+    "upstream_inference_prompt_cost": 6.57e-05,
+    "upstream_inference_completions_cost": 0.00199648
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5554,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_ms_demyelinating_PMC13085407.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 3768.4
+}

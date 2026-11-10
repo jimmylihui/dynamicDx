@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Does your muscle weakness get worse as the day goes on?",
+  "Is there anyone else in your family with similar muscle weakness?",
+  "Do you have difficulty closing your eyes tightly?",
+  "Do you have trouble drinking from a water bottle without spilling?",
+  "Did this weakness start when you were a teenager?",
+  "Do your muscles feel painful or crampy?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Serum creatine kinase level",
+  "Genetic testing for Facioscapulohumeral Muscular Dystrophy (FSHD)"
+ ],
+ "served": [
+  "creatine kinase"
+ ],
+ "results": [
+  "1. Serum creatine kinase level",
+  "     creatine kinase: normal",
+  "2. Genetic testing for Facioscapulohumeral Muscular Dystrophy (FSHD)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Facioscapulohumeral muscular dystrophy (FSHD) - autosomal dominant, likely sporadic given negative family history, caused by D4Z4 repeat contraction on chromosome 4\n\nAlternatives:\n1. Congenital myopathy (e.g., nemaline myopathy or centronuclear myopathy)\n2. Spinal muscular atrophy, scapuloperoneal distribution\n3. Emery-Dreifuss muscular dystrophy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Serum creatine kinase level\n2. Genetic testing for Facioscapulohumeral Muscular Dystrophy (FSHD)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Facioscapulohumeral muscular dystrophy (FSHD) - autosomal dominant, likely sporadic given negative family history, caused by D4Z4 repeat contraction on chromosome 4",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 2188,
+   "total_tokens": 7243,
+   "cost": 0.0012939976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012939976,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00061264
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2108,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5388,
+   "completion_tokens": 11958,
+   "total_tokens": 17346,
+   "cost": 0.0034176576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0034176576,
+    "upstream_inference_prompt_cost": 6.94176e-05,
+    "upstream_inference_completions_cost": 0.00334824
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 11927,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5555,
+   "completion_tokens": 743,
+   "total_tokens": 6298,
+   "cost": 0.0002481528,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5376,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002481528,
+    "upstream_inference_prompt_cost": 4.01128e-05,
+    "upstream_inference_completions_cost": 0.00020804
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 642,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_PMC12904113.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 306.9
+}

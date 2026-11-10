@@ -1,0 +1,177 @@
+{
+ "questions": [
+  "Are you having any chest pain or pressure?",
+  "Are you experiencing shortness of breath?",
+  "Do you have a fever?",
+  "Are you dizzy or have you fainted recently?",
+  "Are you having severe abdominal pain?",
+  "Are you vomiting or have you had bloody stools?",
+  "Do you have a severe headache?",
+  "Have you had any recent injuries?",
+  "Are you experiencing any weakness or numbness?",
+  "Do you have a cough?",
+  "Have you lost weight without trying?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you smoke or use tobacco?",
+  "Are you currently taking any prescription medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Focused neurological examination assessing motor strength, sensation, reflexes, and coordination",
+  "Complete blood count",
+  "Basic metabolic panel including electrolytes",
+  "Thyroid stimulating hormone level",
+  "Vitamin B12 and folate levels",
+  "Hemoglobin A1c",
+  "Erythrocyte sedimentation rate",
+  "Magnetic resonance imaging of the brain",
+  "Magnetic resonance imaging of the cervical spine",
+  "Nerve conduction studies and electromyography"
+ ],
+ "served": [],
+ "results": [
+  "1. Focused neurological examination assessing motor strength, sensation, reflexes, and coordination",
+  "     not performed / not available",
+  "2. Complete blood count",
+  "     not performed / not available",
+  "3. Basic metabolic panel including electrolytes",
+  "     not performed / not available",
+  "4. Thyroid stimulating hormone level",
+  "     not performed / not available",
+  "5. Vitamin B12 and folate levels",
+  "     not performed / not available",
+  "6. Hemoglobin A1c",
+  "     not performed / not available",
+  "7. Erythrocyte sedimentation rate",
+  "     not performed / not available",
+  "8. Magnetic resonance imaging of the brain",
+  "     not performed / not available",
+  "9. Magnetic resonance imaging of the cervical spine",
+  "     not performed / not available",
+  "10. Nerve conduction studies and electromyography",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Cervical spondylotic myelopathy\nPeripheral neuropathy (e.g., B12 deficiency)\nMultiple sclerosis",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "16. Focused neurological examination assessing motor strength, sensation, reflexes, and coordination\n17. Complete blood count\n18. Basic metabolic panel including electrolytes\n19. Thyroid stimulating hormone level\n20. Vitamin B12 and folate levels\n21. Hemoglobin A1c\n22. Erythrocyte sedimentation rate\n23. Magnetic resonance imaging of the brain\n24. Magnetic resonance imaging of the cervical spine\n25. Nerve conduction studies and electromyography",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Cervical spondylotic myelopathy",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 3476,
+   "total_tokens": 3861,
+   "cost": 0.000983276,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000983276,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 0.00097328
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3318,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 917,
+   "completion_tokens": 510,
+   "total_tokens": 1427,
+   "cost": 0.0002184952,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002184952,
+    "upstream_inference_prompt_cost": 7.56952e-05,
+    "upstream_inference_completions_cost": 0.0001428
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 396,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1296,
+   "completion_tokens": 262,
+   "total_tokens": 1558,
+   "cost": 0.0001318688,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 896,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001318688,
+    "upstream_inference_prompt_cost": 5.85088e-05,
+    "upstream_inference_completions_cost": 7.336e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 228,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 114.6
+}

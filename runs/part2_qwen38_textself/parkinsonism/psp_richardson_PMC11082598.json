@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Is the arm painful?",
+  "Did this start suddenly?",
+  "Do you have a history of stroke?",
+  "Do you have Parkinson's disease?",
+  "Are you currently taking any antipsychotic medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Assess for presence of tremor at rest and during action",
+  "Evaluate for cogwheel rigidity in the contralateral arm",
+  "Check for bradykinesia via finger tapping or hand opening/closing speed",
+  "Perform a levodopa challenge test"
+ ],
+ "served": [
+  "tremor characterisation (rest, postural, action)",
+  "limb rigidity and axial (neck) rigidity",
+  "finger tapping for bradykinesia and decrement"
+ ],
+ "results": [
+  "1. Assess for presence of tremor at rest and during action",
+  "     tremor characterisation (rest, postural, action): no tremor",
+  "2. Evaluate for cogwheel rigidity in the contralateral arm",
+  "     limb rigidity and axial (neck) rigidity: SEVERE in the neck, mild in the upper limbs - axial predominance",
+  "3. Check for bradykinesia via finger tapping or hand opening/closing speed",
+  "     finger tapping for bradykinesia and decrement: normal",
+  "4. Perform a levodopa challenge test",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Dystonia (specifically focal dystonia of the right upper limb)\nAlternative 1: Parkinson's disease (atypical presentation with axial rigidity but no tremor or bradykinesia)\nAlternative 2: Functional neurological disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Assess for presence of tremor at rest and during action\n2. Evaluate for cogwheel rigidity in the contralateral arm\n3. Check for bradykinesia via finger tapping or hand opening/closing speed\n4. Perform a levodopa challenge test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Dystonia (specifically focal dystonia of the right upper limb)",
+ "decisive_served": [
+  "limb rigidity and axial (neck) rigidity"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 198,
+   "completion_tokens": 50,
+   "total_tokens": 248,
+   "cost": 5.32e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.32e-05,
+    "upstream_inference_prompt_cost": 2.97e-05,
+    "upstream_inference_completions_cost": 2.35e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 473,
+   "completion_tokens": 57,
+   "total_tokens": 530,
+   "cost": 9.774e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.774e-05,
+    "upstream_inference_prompt_cost": 7.095e-05,
+    "upstream_inference_completions_cost": 2.679e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 757,
+   "completion_tokens": 56,
+   "total_tokens": 813,
+   "cost": 0.000105566,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000105566,
+    "upstream_inference_prompt_cost": 7.9246e-05,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "psp_richardson_PMC11082598.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.3
+}

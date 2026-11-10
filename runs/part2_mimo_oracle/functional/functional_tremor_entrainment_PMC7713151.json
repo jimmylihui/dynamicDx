@@ -1,0 +1,115 @@
+{
+ "questions": [
+  "Is the problem with your left arm?",
+  "Do you have any pain?",
+  "Do you have any numbness?",
+  "Is the arm weak?",
+  "Does the arm feel stiff?",
+  "Does the arm shake?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "co-activation sign on passive movement of the affected limb",
+  "'whack-a-mole' sign (restrain the affected limb and watch the others)",
+  "variability of amplitude, frequency and axis over the examination",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "results": [
+  "1. distractibility testing (complex motor task with the unaffected side): POSITIVE - the tremor decreases or stops when the left arm performs a task such as drinking from a cup",
+  "2. entrainment testing (tap to an externally paced rhythm): POSITIVE - amplitude falls and the rhythm becomes irregular under repetitive voluntary movement of the other side",
+  "3. co-activation sign on passive movement of the affected limb: POSITIVE - movement of the contralateral arm co-activates the hand with an increase in tremor intensity",
+  "4. 'whack-a-mole' sign (restrain the affected limb and watch the others): POSITIVE - passive fixation of the hand increases movement in the arm and shoulder",
+  "5. variability of amplitude, frequency and axis over the examination: irregular, variable frequency around 4-6 Hz, at times combined with myoclonic jerks",
+  "6. video-EEG monitoring with limb surface electrodes: 24 h recording with right-arm surface electrodes: irregular tremor, relatively high frequency with irregularities, no epileptiform correlate"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological disorder (functional tremor)\nDystonic tremor\nEssential tremor\nParkinsonian tremor",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional neurological disorder (functional tremor)",
+ "decisive_served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "co-activation sign on passive movement of the affected limb",
+  "'whack-a-mole' sign (restrain the affected limb and watch the others)",
+  "variability of amplitude, frequency and axis over the examination",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 1909,
+   "total_tokens": 6964,
+   "cost": 0.0012158776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012158776,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00053452
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1857,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5500,
+   "completion_tokens": 2691,
+   "total_tokens": 8191,
+   "cost": 0.0008385776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008385776,
+    "upstream_inference_prompt_cost": 8.50976e-05,
+    "upstream_inference_completions_cost": 0.00075348
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2658,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 63.6
+}

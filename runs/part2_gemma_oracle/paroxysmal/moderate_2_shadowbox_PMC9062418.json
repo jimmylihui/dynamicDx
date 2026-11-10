@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Did you lose consciousness?",
+  "Are you taking any blood-thinning medications?",
+  "Have you been vomiting?",
+  "Do you have a severe headache?",
+  "Are you feeling dizzy?",
+  "Do you have any weakness in your limbs?",
+  "Is your vision blurred?",
+  "Did you fall?",
+  "Was this a high-impact accident?",
+  "Do you have a history of seizures?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "provocation testing (the suspected trigger)"
+ ],
+ "results": [
+  "1. interictal EEG: intermittent sharp waves from the LEFT FRONTAL to anterior temporal regions",
+  "2. video-EEG monitoring of a typical event: moderate-amplitude rhythmic THETA waves intermittently during the versive seizures",
+  "3. provocation testing (the suspected trigger): supervised shadowboxing of 3 minutes per trial reproduced the seizures, with induction latencies of about 11 seconds and durations around 18 seconds"
+ ],
+ "dx_raw": "DIAGNOSIS: Reflex epilepsy triggered by shadowboxing caused by a focal cortical lesion in the left frontal and anterior temporal regions.\n\n1. Focal epilepsy with exercise-induced seizures\n2. Frontal lobe epilepsy\n3. Paroxysmal kinesigenic dyskinesia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Reflex epilepsy triggered by shadowboxing caused by a focal cortical lesion in the left frontal and anterior temporal regions.",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "provocation testing (the suspected trigger)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8410,
+   "completion_tokens": 1409,
+   "total_tokens": 9819,
+   "cost": 0.00132006,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00132006,
+    "upstream_inference_prompt_cost": 0.000841,
+    "upstream_inference_completions_cost": 0.00047906
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1317,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 8828,
+   "completion_tokens": 1874,
+   "total_tokens": 10702,
+   "cost": 0.00151996,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00151996,
+    "upstream_inference_prompt_cost": 0.0008828,
+    "upstream_inference_completions_cost": 0.00063716
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1979,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_2_shadowbox_PMC9062418.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 102.6
+}

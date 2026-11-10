@@ -1,0 +1,179 @@
+{
+ "questions": [
+  "Are you experiencing severe pain right now?",
+  "Is your main problem involving your hands or wrists?",
+  "Is your main problem involving your legs or feet?",
+  "Did this problem begin suddenly?",
+  "Did it begin after an injury or accident?",
+  "Do you have numbness or weakness in either arm or leg?",
+  "Do you have swelling, redness, or warmth in either leg?",
+  "Do you have chest pain?",
+  "Are you short of breath?",
+  "Do you have a fever?",
+  "Have you recently started any new medication?",
+  "Do you have diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Focused bilateral lower-extremity examination, including gait, active and passive range of motion, strength, reflexes, sensation, and joint stability",
+  "Bilateral lower-extremity vascular examination, including femoral, popliteal, dorsalis pedis, and posterior tibial pulses, capillary refill, skin temperature, and color",
+  "Handheld Doppler assessment of bilateral lower-extremity arterial pulses",
+  "Point-of-care glucose measurement",
+  "Complete blood count",
+  "Serum electrolytes, calcium, magnesium, renal function, and creatine kinase",
+  "Plain radiographs of the symptomatic lower-extremity joint(s) in two or more views"
+ ],
+ "served": [
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "gait and coordination",
+  "blood glucose",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "creatine kinase"
+ ],
+ "results": [
+  "1. Focused bilateral lower-extremity examination, including gait, active and passive range of motion, strength, reflexes, sensation, and joint stability",
+  "     limb strength (MRC) examination: 5/5 throughout",
+  "     deep tendon reflexes and plantar responses: normal reflexes and flexor plantar responses",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     gait and coordination: normal",
+  "2. Bilateral lower-extremity vascular examination, including femoral, popliteal, dorsalis pedis, and posterior tibial pulses, capillary refill, skin temperature, and color",
+  "     not performed / not available",
+  "3. Handheld Doppler assessment of bilateral lower-extremity arterial pulses",
+  "     not performed / not available",
+  "4. Point-of-care glucose measurement",
+  "     blood glucose: 30.63 mmol/L (551.3 mg/dL) with glycosuria and NO ketonuria",
+  "5. Complete blood count",
+  "     full blood count: normal",
+  "6. Serum electrolytes, calcium, magnesium, renal function, and creatine kinase",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     creatine kinase: normal",
+  "7. Plain radiographs of the symptomatic lower-extremity joint(s) in two or more views",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Newly diagnosed type 2 diabetes mellitus with severe nonketotic hyperglycemia causing acute bilateral lower-limb symptoms\n\nALTERNATIVE: Early hyperosmolar hyperglycemic state\n\nALTERNATIVE: Acute lower-extremity vascular occlusion\n\nALTERNATIVE: Functional or transient lower-limb movement disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Focused bilateral lower-extremity examination, including gait, active and passive range of motion, strength, reflexes, sensation, and joint stability\n2. Bilateral lower-extremity vascular examination, including femoral, popliteal, dorsalis pedis, and posterior tibial pulses, capillary refill, skin temperature, and color\n3. Handheld Doppler assessment of bilateral lower-extremity arterial pulses\n4. Point-of-care glucose measurement\n5. Complete blood count\n6. Serum electrolytes, calcium, magnesium, renal function, and creatine kinase\n7. Plain radiographs of the symptomatic lower-extremity joint(s) in two or more views\n",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Newly diagnosed type 2 diabetes mellitus with severe nonketotic hyperglycemia causing acute bilateral lower-limb symptoms",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 448,
+   "completion_tokens": 646,
+   "total_tokens": 1094,
+   "cost": 0.0008648,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008648,
+    "upstream_inference_prompt_cost": 8.96e-05,
+    "upstream_inference_completions_cost": 0.0007752
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 901,
+   "completion_tokens": 383,
+   "total_tokens": 1284,
+   "cost": 0.0006398,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006398,
+    "upstream_inference_prompt_cost": 0.0001802,
+    "upstream_inference_completions_cost": 0.0004596
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 236,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1418,
+   "completion_tokens": 428,
+   "total_tokens": 1846,
+   "cost": 0.00086795,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1415,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00086795,
+    "upstream_inference_prompt_cost": 0.00035435,
+    "upstream_inference_completions_cost": 0.0005136
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 356,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "hyperglycemic_hemichorea_PMC12596229.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 40.4
+}

@@ -1,0 +1,200 @@
+{
+ "questions": [
+  "Do you have a known history of thyroid disease (such as Graves' disease or hyperthyroidism)?",
+  "Have you noticed your eyes appearing to bulge forward recently?",
+  "Do you experience double vision when looking at objects?",
+  "Do you have a history of diabetes mellitus?",
+  "Do you have a history of hypertension?",
+  "Did the double vision start suddenly or gradually?",
+  "Did the double vision start suddenly (over hours to days)?",
+  "Do you have a history of head trauma or recent surgery?",
+  "Do you have a history of myasthenia gravis or other autoimmune diseases?",
+  "Do you have a history of migraine headaches?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Perform the forced duction test to differentiate restrictive from paralytic strabismus.",
+  "Measure intraocular pressure in primary gaze and on upgaze (to check for elevation-induced IOP rise).",
+  "Examine the pupils for relative afferent pupillary defect (RAPD) and perform visual field testing by confrontation.",
+  "MRI of the orbits with fat suppression (STIR sequences) to evaluate for extraocular muscle enlargement and tendon involvement.",
+  "Bedside ice pack test (apply ice to the ptotic eyelid for 2 minutes and observe for improvement in lid elevation).",
+  "Serum thyroid function tests (TSH, Free T4) and Thyroid Stimulating Immunoglobulin (TSI)."
+ ],
+ "served": [
+  "forced duction test",
+  "pupil size and light reaction",
+  "visual fields (perimetry)",
+  "MRI sella and orbits",
+  "ptosis / lid position",
+  "TSH / free T4",
+  "anti-thyroid antibodies"
+ ],
+ "results": [
+  "R1 ASK Do you have a known history of thyroid disease (such as Graves' disease or hyperthyroidism)?; Have you noticed your eyes appearing to bulge forward recently?; Do you experience double vision when looking at objects? -> ['no', 'no', 'yes']",
+  "R2 ORDER Perform the forced duction test to differentiate restrictive from paralytic strabismus.; Measure intraocular pressure in primary gaze and on upgaze (to check for elevation-induced IOP rise).; Examine the pupils for relative afferent pupillary defect (RAPD) and perform visual field testing by confrontation. -> [['forced duction test'], [], ['pupil size and light reaction', 'visual fields (perimetry)']]",
+  "R3 ASK Do you have a history of diabetes mellitus?; Do you have a history of hypertension?; Did the double vision start suddenly or gradually? -> ['no', 'no', 'yes']",
+  "R4 ASK Did the double vision start suddenly (over hours to days)?; Do you have a history of head trauma or recent surgery? -> ['yes', 'no']",
+  "R5 ORDER MRI of the orbits with fat suppression (STIR sequences) to evaluate for extraocular muscle enlargement and tendon involvement. -> [['MRI sella and orbits']]",
+  "R6 ASK Do you have a history of myasthenia gravis or other autoimmune diseases? -> ['no']",
+  "R7 ORDER Bedside ice pack test (apply ice to the ptotic eyelid for 2 minutes and observe for improvement in lid elevation). -> [['ptosis / lid position']]",
+  "R8 ORDER Serum thyroid function tests (TSH, Free T4) and Thyroid Stimulating Immunoglobulin (TSI). -> [['TSH / free T4', 'anti-thyroid antibodies']]",
+  "R9 ASK Do you have a history of migraine headaches? -> ['no']",
+  "R10 DIAGNOSIS Idiopathic orbital inflammatory disease (orbital myositis) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a known history of thyroid disease (such as Graves' disease or hyperthyroidism)?",
+    "Have you noticed your eyes appearing to bulge forward recently?",
+    "Do you experience double vision when looking at objects?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Perform the forced duction test to differentiate restrictive from paralytic strabismus.",
+    "Measure intraocular pressure in primary gaze and on upgaze (to check for elevation-induced IOP rise).",
+    "Examine the pupils for relative afferent pupillary defect (RAPD) and perform visual field testing by confrontation."
+   ],
+   "result": [
+    [
+     "forced duction test"
+    ],
+    [],
+    [
+     "pupil size and light reaction",
+     "visual fields (perimetry)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes mellitus?",
+    "Do you have a history of hypertension?",
+    "Did the double vision start suddenly or gradually?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Did the double vision start suddenly (over hours to days)?",
+    "Do you have a history of head trauma or recent surgery?"
+   ],
+   "result": [
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "MRI of the orbits with fat suppression (STIR sequences) to evaluate for extraocular muscle enlargement and tendon involvement."
+   ],
+   "result": [
+    [
+     "MRI sella and orbits"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of myasthenia gravis or other autoimmune diseases?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Bedside ice pack test (apply ice to the ptotic eyelid for 2 minutes and observe for improvement in lid elevation)."
+   ],
+   "result": [
+    [
+     "ptosis / lid position"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Serum thyroid function tests (TSH, Free T4) and Thyroid Stimulating Immunoglobulin (TSI)."
+   ],
+   "result": [
+    [
+     "TSH / free T4",
+     "anti-thyroid antibodies"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of migraine headaches?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Idiopathic orbital inflammatory disease (orbital myositis)"
+  }
+ ],
+ "dx": "Idiopathic orbital inflammatory disease (orbital myositis)",
+ "dx_raw": "DIAGNOSIS: Idiopathic orbital inflammatory disease (orbital myositis)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0022,
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 45.0
+}

@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Did you remain conscious throughout both falls?",
+  "Did you have any warning immediately before you fell?",
+  "Did your legs suddenly give way without pain?",
+  "Were you able to get up immediately after each fall?",
+  "Have you had similar sudden falls before?",
+  "Do these episodes occur only while standing or walking?",
+  "Have you ever collapsed while sitting or lying down?",
+  "Did you feel dizzy or light-headed before falling?",
+  "Did you feel that the room was spinning?",
+  "Did you experience palpitations, chest pain, or shortness of breath before falling?",
+  "Did you have weakness or numbness on one side before falling?",
+  "Did you have difficulty speaking or seeing before falling?",
+  "Did you have shaking, tongue biting, or loss of bladder control during the episodes?",
+  "Were the falls triggered by laughter, surprise, anger, or another strong emotion?",
+  "Do you have ongoing difficulty with balance or walking between episodes?",
+  "Have you recently started or changed any medicines?",
+  "Have you sustained any injury from these falls?",
+  "Do you have a history of seizures, fainting, heart disease, stroke, or Parkinson’s disease?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [],
+ "served": [
+  "Hoover sign / hip-abductor sign",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "MRC power in all four limbs",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "results": [
+  "1. Hoover sign / hip-abductor sign: POSITIVE",
+  "2. gait with a distracting or automatic task (dancing, counting backwards): the pattern changes or normalises",
+  "3. observation for excessive slowness or uneconomic posture: INCONGRUENT - repeated falls with no injury at all, and an unaided recovery each time",
+  "4. knee buckling / astasia-abasia on walking: POSITIVE - the patient sinks to the floor twice during one corridor walk, slowly and without a protective reaction",
+  "5. MRC power in all four limbs: 5/5 throughout - a slow controlled descent of this kind requires intact quadriceps strength",
+  "6. video-EEG monitoring with limb surface electrodes: no ictal discharge accompanies the falls"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder (conversion disorder) presenting as a functional gait disorder with functional drop attacks—an involuntary functional motor symptom without evidence of epilepsy or structural weakness; a specific psychological trigger is not established.\n\nALTERNATIVE: Cataplexy\n\nALTERNATIVE: Atonic epileptic seizures\n\nALTERNATIVE: Syncope or another cardiovascular collapse disorder",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional neurological symptom disorder (conversion disorder) presenting as a functional gait disorder with functional drop attacks—an involuntary functional motor symptom without evidence of epilepsy or structural weakness; a specific psychological trigger is not established.",
+ "decisive_served": [
+  "Hoover sign / hip-abductor sign",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "MRC power in all four limbs",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7532,
+   "completion_tokens": 571,
+   "total_tokens": 8103,
+   "cost": 0.00041819,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7529,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00041819,
+    "upstream_inference_prompt_cost": 7.559e-05,
+    "upstream_inference_completions_cost": 0.0003426
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 319,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 8365,
+   "completion_tokens": 334,
+   "total_tokens": 8699,
+   "cost": 0.000380115,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7529,
+    "cache_write_tokens": 833,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000380115,
+    "upstream_inference_prompt_cost": 0.000179715,
+    "upstream_inference_completions_cost": 0.0002004
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 251,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 18.0
+}

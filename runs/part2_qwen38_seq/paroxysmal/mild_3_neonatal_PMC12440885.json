@@ -1,0 +1,191 @@
+{
+ "questions": [
+  "Is the child currently experiencing a seizure or convulsions?",
+  "Did the child have a fever recently?",
+  "Has the child been diagnosed with epilepsy in the past?",
+  "Did the child lose consciousness or responsiveness during the episode?",
+  "Did the child experience a sudden, severe headache before this episode?",
+  "Did the child have a recent viral illness or upper respiratory infection in the past few weeks?",
+  "Did the child have a head injury or fall recently?",
+  "Did the child have a recent vaccination?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Review the EEG recording and report (if available) to assess for epileptiform discharges or encephalopathy.",
+  "MRI of the brain",
+  "Lumbar puncture (CSF analysis)"
+ ],
+ "served": [
+  "interictal EEG",
+  "brain MRI",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel",
+  "lumbar puncture / CSF",
+  "CSF 14-3-3 / RT-QuIC (prion)"
+ ],
+ "results": [
+  "R1 ASK Is the child currently experiencing a seizure or convulsions?; Did the child have a fever recently?; Has the child been diagnosed with epilepsy in the past? -> ['no', 'no', 'no']",
+  "R2 ORDER Review the EEG recording and report (if available) to assess for epileptiform discharges or encephalopathy. -> [['interictal EEG']]",
+  "R3 ASK Did the child lose consciousness or responsiveness during the episode? -> ['no']",
+  "R4 ASK Did the child experience a sudden, severe headache before this episode? -> ['no']",
+  "R5 ORDER MRI of the brain -> [['brain MRI']]",
+  "R6 ASK Did the child have a recent viral illness or upper respiratory infection in the past few weeks? -> ['no']",
+  "R7 ASK Did the child have a head injury or fall recently? -> ['no']",
+  "R8 ASK Did the child have a recent vaccination? -> ['no']",
+  "R9 ORDER Lumbar puncture (CSF analysis) -> [['CSF opening pressure', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF cytology and flow cytometry', 'CSF culture and viral PCR', 'CSF autoimmune encephalitis panel', 'lumbar puncture / CSF', 'CSF 14-3-3 / RT-QuIC (prion)']]",
+  "R10 DIAGNOSIS Acute encephalopathy (likely post-infectious or metabolic) with non-specific white matter changes -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is the child currently experiencing a seizure or convulsions?",
+    "Did the child have a fever recently?",
+    "Has the child been diagnosed with epilepsy in the past?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Review the EEG recording and report (if available) to assess for epileptiform discharges or encephalopathy."
+   ],
+   "result": [
+    [
+     "interictal EEG"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did the child lose consciousness or responsiveness during the episode?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Did the child experience a sudden, severe headache before this episode?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "MRI of the brain"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Did the child have a recent viral illness or upper respiratory infection in the past few weeks?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Did the child have a head injury or fall recently?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Did the child have a recent vaccination?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Lumbar puncture (CSF analysis)"
+   ],
+   "result": [
+    [
+     "CSF opening pressure",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF cytology and flow cytometry",
+     "CSF culture and viral PCR",
+     "CSF autoimmune encephalitis panel",
+     "lumbar puncture / CSF",
+     "CSF 14-3-3 / RT-QuIC (prion)"
+    ]
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Acute encephalopathy (likely post-infectious or metabolic) with non-specific white matter changes"
+  }
+ ],
+ "dx": "Acute encephalopathy (likely post-infectious or metabolic) with non-specific white matter changes",
+ "dx_raw": "DIAGNOSIS: Acute encephalopathy (likely post-infectious or metabolic) with non-specific white matter changes",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "cost_usd": 0.0029,
+ "n_frames": 32,
+ "duration_s": 15.6,
+ "video": "mild_3_neonatal_PMC12440885.mp4",
+ "line": "paroxysmal",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 48.7
+}

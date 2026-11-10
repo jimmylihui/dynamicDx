@@ -1,0 +1,65 @@
+{
+ "questions": [
+  "Have you had a recent seizure or episode of shaking/jerking movements that you couldn't control?",
+  "Do you feel dizzy or have trouble seeing clearly right now?",
+  "Have you recently had a head injury or trauma to your body?",
+  "Have you been taking any prescription drugs, supplements, or other substances in the last 7 days?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Have you had a recent seizure or episode of shaking/jerking movements that you couldn't control?; Do you feel dizzy or have trouble seeing clearly right now?; Have you recently had a head injury or trauma to your body?; Have you been taking any prescription drugs, supplements, or other substances in the last 7 days? -> ['no', 'no', 'no', 'no']",
+  "R2 DIAGNOSIS Catatonia, likely idiopathic or secondary to underlying psychiatric disorder (schizophrenia spectrum or mood disorder) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you had a recent seizure or episode of shaking/jerking movements that you couldn't control?",
+    "Do you feel dizzy or have trouble seeing clearly right now?",
+    "Have you recently had a head injury or trauma to your body?",
+    "Have you been taking any prescription drugs, supplements, or other substances in the last 7 days?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "diagnosis",
+   "text": "Catatonia, likely idiopathic or secondary to underlying psychiatric disorder (schizophrenia spectrum or mood disorder)"
+  }
+ ],
+ "dx": "Catatonia, likely idiopathic or secondary to underlying psychiatric disorder (schizophrenia spectrum or mood disorder)",
+ "dx_raw": "ORDER:\n1. Neurological examination - specifically testing for catatonia (abulia, mutism, posturing, stereotypies, grimacing, stereotyped movements, mannerisms, grimacing, echolalia, echopraxia)\n2. Bush-Francis Catatonia Rating Scale assessment\n\nDIAGNOSIS: Catatonia, likely idiopathic or secondary to underlying psychiatric disorder (schizophrenia spectrum or mood disorder)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 1,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0012,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 63.5
+}

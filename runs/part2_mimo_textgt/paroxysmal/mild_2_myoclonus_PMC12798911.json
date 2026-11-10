@@ -1,0 +1,150 @@
+{
+ "questions": [
+  "Do you lose consciousness during these jerks?",
+  "Do these jerks happen when you're falling asleep?",
+  "Are the jerks triggered by sudden noise or movement?",
+  "Have these jerks been getting worse over time?",
+  "Do you have any confusion or memory problems?",
+  "Have you had any recent illness or infection?",
+  "Are you taking any new medications or drugs?",
+  "Do other family members have similar jerks?",
+  "Is this the first time you've experienced these jerks?",
+  "Do you have any difficulty with walking or balance?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Electroencephalogram (EEG) - to rule out epileptic seizures",
+  "Magnetic resonance imaging (MRI) of the brain - to rule out structural cause",
+  "Startle reflex testing - to confirm exaggerated startle response",
+  "Genetic testing for hyperekplexia - to confirm diagnosis"
+ ],
+ "served": [
+  "interictal EEG",
+  "brain MRI",
+  "genetic testing (exome / epilepsy panel)"
+ ],
+ "results": [
+  "1. Electroencephalogram (EEG) - to rule out epileptic seizures",
+  "     interictal EEG: occasional OCCIPITAL SHARP WAVES only (normal in the second patient) - no ictal pattern",
+  "2. Magnetic resonance imaging (MRI) of the brain - to rule out structural cause",
+  "     brain MRI: no acute lesion",
+  "3. Startle reflex testing - to confirm exaggerated startle response",
+  "     not performed / not available",
+  "4. Genetic testing for hyperekplexia - to confirm diagnosis",
+  "     genetic testing (exome / epilepsy panel): no pathogenic variant"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperekplexia (startle disease) - idiopathic/likely genetic form with unidentified mutation\n\n1. Startle epilepsy (occipital lobe epilepsy triggered by acoustic stimulus) - less likely given no ictal EEG pattern and no loss of consciousness, but occipital sharp waves noted\n2. Exaggerated acoustic startle reflex - non-epileptic benign variant with hypersensitive startle circuitry\n3. Reticular reflex myoclonus - brainstem-origin myoclonus triggered by external stimuli",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Electroencephalogram (EEG) - to rule out epileptic seizures\n2. Magnetic resonance imaging (MRI) of the brain - to rule out structural cause\n3. Startle reflex testing - to confirm exaggerated startle response\n4. Genetic testing for hyperekplexia - to confirm diagnosis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperekplexia (startle disease) - idiopathic/likely genetic form with unidentified mutation",
+ "decisive_served": [
+  "interictal EEG"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 176,
+   "completion_tokens": 2269,
+   "total_tokens": 2445,
+   "cost": 0.00065996,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00065996,
+    "upstream_inference_prompt_cost": 2.464e-05,
+    "upstream_inference_completions_cost": 0.00063532
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2147,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 613,
+   "completion_tokens": 1772,
+   "total_tokens": 2385,
+   "cost": 0.00058198,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00058198,
+    "upstream_inference_prompt_cost": 8.582e-05,
+    "upstream_inference_completions_cost": 0.00049616
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1706,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1119,
+   "completion_tokens": 1115,
+   "total_tokens": 2234,
+   "cost": 0.0004425176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004425176,
+    "upstream_inference_prompt_cost": 0.0001303176,
+    "upstream_inference_completions_cost": 0.0003122
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 998,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 90.5
+}

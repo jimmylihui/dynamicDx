@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Did you have a recent injury to this leg?",
+  "Is the area warm to the touch?",
+  "Do you have a fever?",
+  "Is there pain in your calf?",
+  "Have you recently traveled for a long period or had surgery?",
+  "Is the swelling present in both legs?",
+  "Do you have diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Duplex ultrasound of the affected leg",
+  "D-dimer blood test"
+ ],
+ "served": [],
+ "results": [
+  "1. Duplex ultrasound of the affected leg",
+  "     not performed / not available",
+  "2. D-dimer blood test",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Lymphedema\nDeep vein thrombosis\nChronic venous insufficiency\nPelvic venous obstruction",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Duplex ultrasound of the affected leg\n2. D-dimer blood test",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Lymphedema",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 1246,
+   "total_tokens": 1666,
+   "cost": 0.00046564,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00046564,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00042364
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1031,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 748,
+   "completion_tokens": 429,
+   "total_tokens": 1177,
+   "cost": 0.00022066,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00022066,
+    "upstream_inference_prompt_cost": 7.48e-05,
+    "upstream_inference_completions_cost": 0.00014586
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 417,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 896,
+   "completion_tokens": 2082,
+   "total_tokens": 2978,
+   "cost": 0.00079748,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00079748,
+    "upstream_inference_prompt_cost": 8.96e-05,
+    "upstream_inference_completions_cost": 0.00070788
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1968,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 140.8
+}

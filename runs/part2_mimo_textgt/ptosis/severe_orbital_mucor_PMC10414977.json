@@ -1,0 +1,159 @@
+{
+ "questions": [
+  "Is the eye painful?",
+  "Is there fever?",
+  "Do you have a headache?",
+  "Has vision in that eye changed?",
+  "Was there any recent trauma to the head or face?",
+  "Have you had any recent sinus or dental infections?",
+  "Is there numbness or tingling on the face?",
+  "Can you move the eye normally in all directions?",
+  "Has the swelling been getting worse over days?",
+  "Have you noticed any double vision?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Urgent CT orbit with contrast",
+  "Visual acuity testing",
+  "Pupil examination",
+  "Fundoscopy",
+  "Blood tests: full blood count, ESR, CRP, thyroid function"
+ ],
+ "served": [
+  "visual acuity and colour vision",
+  "pupil examination (size, light reaction)",
+  "fundoscopy",
+  "ESR / CRP",
+  "full blood count",
+  "thyroid function (TSH, free T4)"
+ ],
+ "results": [
+  "1. Urgent CT orbit with contrast",
+  "     not performed / not available",
+  "2. Visual acuity testing",
+  "     visual acuity and colour vision: normal",
+  "3. Pupil examination",
+  "     pupil examination (size, light reaction): equal and reactive",
+  "4. Fundoscopy",
+  "     fundoscopy: right optic disc edema",
+  "5. Blood tests: full blood count, ESR, CRP, thyroid function",
+  "     ESR / CRP: normal",
+  "     full blood count: leukocytosis, white cells 21.4 x10^9/L",
+  "     thyroid function (TSH, free T4): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Orbital apex syndrome, likely of inflammatory/granulomatous etiology (Tolosa-Hunt syndrome)\n\nCavernous sinus thrombosis\n\nOrbital cellulitis\n\nIdiopathic orbital inflammatory pseudotumor",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Urgent CT orbit with contrast\n2. Visual acuity testing\n3. Pupil examination\n4. Fundoscopy\n5. Blood tests: full blood count, ESR, CRP, thyroid function",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Orbital apex syndrome, likely of inflammatory/granulomatous etiology (Tolosa-Hunt syndrome)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 399,
+   "completion_tokens": 344,
+   "total_tokens": 743,
+   "cost": 0.0001170568,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001170568,
+    "upstream_inference_prompt_cost": 2.07368e-05,
+    "upstream_inference_completions_cost": 9.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 241,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 798,
+   "completion_tokens": 760,
+   "total_tokens": 1558,
+   "cost": 0.0002718352,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002718352,
+    "upstream_inference_prompt_cost": 5.90352e-05,
+    "upstream_inference_completions_cost": 0.0002128
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 713,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1071,
+   "completion_tokens": 609,
+   "total_tokens": 1680,
+   "cost": 0.0002150904,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002150904,
+    "upstream_inference_prompt_cost": 4.45704e-05,
+    "upstream_inference_completions_cost": 0.00017052
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 556,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 26.7
+}

@@ -1,0 +1,171 @@
+{
+ "questions": [
+  "Did the symptoms begin suddenly?",
+  "Is there pain in or around the eye?",
+  "Is this the worst headache you have ever had?",
+  "Is the eyelid droop worse at the end of the day or when you are tired?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Do you have double vision?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you have any numbness or tingling?",
+  "Do you have any difficulty with speech or swallowing?",
+  "Have you had a recent head injury?",
+  "Do you have a history of cancer?",
+  "Have you had any recent infection or illness?",
+  "Do you smoke?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Bedside nine-position extraocular muscle examination with documentation of nystagmus, ptosis, and range of motion in all cardinal positions of gaze",
+  "Convergence test assessing adduction during near fixation",
+  "Measurement of pupil size and reactivity in light and dark",
+  "MRI brain with and without gadolinium, including FLAIR and DWI sequences, with thin-section imaging through the brainstem and skull base"
+ ],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "adduction in horizontal gaze (each eye)",
+  "vertical gaze and convergence",
+  "ptosis / lid position",
+  "vertical gaze and convergence",
+  "pupil size and light reaction",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI brain with DWI"
+ ],
+ "results": [
+  "1. Bedside nine-position extraocular muscle examination with documentation of nystagmus, ptosis, and range of motion in all cardinal positions of gaze",
+  "     nystagmus: direction and whether it changes with gaze: no nystagmus",
+  "     adduction in horizontal gaze (each eye): on left gaze the right eye fails to adduct, and the contralateral eye shows NO abducting nystagmus - unlike a classic INO",
+  "     vertical gaze and convergence: mild vertical limitation and mildly impaired convergence",
+  "     ptosis / lid position: partial ptosis",
+  "2. Convergence test assessing adduction during near fixation",
+  "     vertical gaze and convergence: mild vertical limitation and mildly impaired convergence",
+  "3. Measurement of pupil size and reactivity in light and dark",
+  "     pupil size and light reaction: pupils EQUALLY REACTIVE - pupil-sparing",
+  "4. MRI brain with and without gadolinium, including FLAIR and DWI sequences, with thin-section imaging through the brainstem and skull base",
+  "     MRI brain with gadolinium: small dorsal paramedian midbrain infarct",
+  "     MRI diffusion-weighted sequences: small dorsal paramedian midbrain infarct with restricted diffusion",
+  "     MRI brain with DWI: small DORSAL PARAMEDIAN MIDBRAIN INFARCT on diffusion-weighted imaging"
+ ],
+ "dx_raw": "DIAGNOSIS: Partial fascicular/nuclear oculomotor (CN III) palsy caused by an acute dorsal paramedian midbrain infarct from occlusion of a paramedian perforator artery (branch of the basilar tip / P1 PCA).\n\nAlternatives to consider:\n1. Internuclear ophthalmoplegia (atypical, without abducting nystagmus) with adjacent CN III fascicular involvement\n2. Top-of-the-basilar embolic stroke with partially established deficit\n3. Midbrain demyelination (e.g., multiple sclerosis plaque) mimicking acute infarct on DWI",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Bedside nine-position extraocular muscle examination with documentation of nystagmus, ptosis, and range of motion in all cardinal positions of gaze\n2. Convergence test assessing adduction during near fixation\n3. Measurement of pupil size and reactivity in light and dark\n4. MRI brain with and without gadolinium, including FLAIR and DWI sequences, with thin-section imaging through the brainstem and skull base",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Partial fascicular/nuclear oculomotor (CN III) palsy caused by an acute dorsal paramedian midbrain infarct from occlusion of a paramedian perforator artery (branch of the basilar tip / P1 PCA).",
+ "decisive_served": [
+  "adduction in horizontal gaze (each eye)",
+  "pupil size and light reaction",
+  "MRI brain with DWI"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 328,
+   "completion_tokens": 6192,
+   "total_tokens": 6520,
+   "cost": 0.00750144,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00750144,
+    "upstream_inference_prompt_cost": 7.104e-05,
+    "upstream_inference_completions_cost": 0.0074304
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6477,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 837,
+   "completion_tokens": 4269,
+   "total_tokens": 5106,
+   "cost": 0.00531582,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00531582,
+    "upstream_inference_prompt_cost": 0.00019302,
+    "upstream_inference_completions_cost": 0.0051228
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4779,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1284,
+   "completion_tokens": 1622,
+   "total_tokens": 2906,
+   "cost": 0.00230424,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00230424,
+    "upstream_inference_prompt_cost": 0.00035784,
+    "upstream_inference_completions_cost": 0.0019464
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1599,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 20.2,
+ "video": "severe_3_oculomotor_palsy_PMC12745546.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 128.6
+}

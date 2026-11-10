@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Are the movements involuntary?",
+  "Are you in the hospital because of these movements?",
+  "Did they start suddenly?",
+  "Do you have a family history of similar movements?",
+  "Have you had a stroke?",
+  "Are you taking any antipsychotic medications?",
+  "Do you have diabetes?",
+  "Do you have any memory problems?",
+  "Do you have any weakness in your limbs?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Comprehensive metabolic panel (including renal and liver function tests and electrolytes)",
+  "Brain MRI"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "blood glucose",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences"
+ ],
+ "results": [
+  "1. Comprehensive metabolic panel (including renal and liver function tests and electrolytes)",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     blood glucose: NORMAL - no diabetes and no hyperglycaemia",
+  "2. Brain MRI",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Huntington's disease caused by CAG repeat expansion in the HTT gene.\n\nAutoimmune chorea\nParaneoplastic chorea\nTardive dyskinesia",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Comprehensive metabolic panel (including renal and liver function tests and electrolytes)\n2. EEG\n3. Brain MRI",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Huntington's disease caused by CAG repeat expansion in the HTT gene.",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2816,
+   "total_tokens": 11514,
+   "cost": 0.00182724,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00182724,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00095744
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2673,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9064,
+   "completion_tokens": 809,
+   "total_tokens": 9873,
+   "cost": 0.00118146,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00118146,
+    "upstream_inference_prompt_cost": 0.0009064,
+    "upstream_inference_completions_cost": 0.00027506
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 861,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9256,
+   "completion_tokens": 2694,
+   "total_tokens": 11950,
+   "cost": 0.00184156,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00184156,
+    "upstream_inference_prompt_cost": 0.0009256,
+    "upstream_inference_completions_cost": 0.00091596
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2543,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 213.4
+}

@@ -1,0 +1,153 @@
+{
+ "questions": [
+  "Do you feel your heart racing?",
+  "Have you lost weight recently without trying?",
+  "Do you feel unusually hot?",
+  "Do you have tremors in your hands?",
+  "Do you have a headache?",
+  "Do you have weakness on one side of your body?",
+  "Do you have difficulty speaking?",
+  "Are you feeling anxious or panicked right now?",
+  "Is your vision blurred?",
+  "Do you have pain in your eyes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Free T4",
+  "MRI of the orbits and brain"
+ ],
+ "served": [
+  "TSH / free T4",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+ ],
+ "results": [
+  "1. Free T4",
+  "     TSH / free T4: normal",
+  "2. MRI of the orbits and brain",
+  "     MRI brain with gadolinium: predominant midbrain atrophy with midbrain-to-pons ratio 0.20 and mild cerebral and cerebellar atrophy; no abnormal enhancement",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: bilateral basal ganglia copper deposition",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): predominant midbrain atrophy with midbrain-to-pons ratio 0.20 (normal >0.52), plus mild cerebral and cerebellar atrophy - THIS LOOKS LIKE PSP AND IS NOT",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): normal",
+  "     MRI brain - cortical atrophy pattern: no focal atrophy",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Wilson's disease (ATP7B mutation)\nProgressive Supranuclear Palsy\nMultiple System Atrophy\nParkinson's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. TSH\n2. Free T4\n3. MRI of the orbits and brain",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Wilson's disease (ATP7B mutation)",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 1827,
+   "total_tokens": 2247,
+   "cost": 0.00066318,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00066318,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00062118
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1648,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 816,
+   "completion_tokens": 2195,
+   "total_tokens": 3011,
+   "cost": 0.0008279,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008279,
+    "upstream_inference_prompt_cost": 8.16e-05,
+    "upstream_inference_completions_cost": 0.0007463
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2091,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1135,
+   "completion_tokens": 1183,
+   "total_tokens": 2318,
+   "cost": 0.00051572,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00051572,
+    "upstream_inference_prompt_cost": 0.0001135,
+    "upstream_inference_completions_cost": 0.00040222
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1140,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 29.5,
+ "video": "mimic_wilson_psp_phenotype_PMC12962431.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 177.4
+}

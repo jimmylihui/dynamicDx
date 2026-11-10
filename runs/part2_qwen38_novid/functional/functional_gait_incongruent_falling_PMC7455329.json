@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your chest?",
+  "Does the pain radiate to your left arm or jaw?",
+  "Do you have shortness of breath?",
+  "Have you had a fever in the last 48 hours?",
+  "Do you have a cough?",
+  "Is there blood in your stool?",
+  "Do you have a history of heart disease?",
+  "Do you have a history of diabetes?",
+  "Are you currently taking any prescription medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "Physical examination of the abdomen for tenderness, masses, or organomegaly",
+  "Complete blood count with differential",
+  "Comprehensive metabolic panel"
+ ],
+ "served": [
+  "full blood count, renal and liver profile",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c"
+ ],
+ "results": [
+  "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "     not performed / not available",
+  "2. Physical examination of the abdomen for tenderness, masses, or organomegaly",
+  "     not performed / not available",
+  "3. Complete blood count with differential",
+  "     full blood count, renal and liver profile: normal",
+  "4. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Asymptomatic healthy individual with no active disease identified\nDifferential diagnosis: Functional somatic syndrome (e.g., anxiety or stress-related referral)\nDifferential diagnosis: Early-stage malignancy not yet detectable by standard screening\nDifferential diagnosis: Psychogenic referral",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation\n2. Physical examination of the abdomen for tenderness, masses, or organomegaly\n3. Complete blood count with differential\n4. Comprehensive metabolic panel",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Asymptomatic healthy individual with no active disease identified",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 116,
+   "total_tokens": 282,
+   "cost": 7.942e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.942e-05,
+    "upstream_inference_prompt_cost": 2.49e-05,
+    "upstream_inference_completions_cost": 5.452e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 593,
+   "completion_tokens": 52,
+   "total_tokens": 645,
+   "cost": 0.00011339,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011339,
+    "upstream_inference_prompt_cost": 8.895e-05,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 868,
+   "completion_tokens": 60,
+   "total_tokens": 928,
+   "cost": 8.9792e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.9792e-05,
+    "upstream_inference_prompt_cost": 6.1592e-05,
+    "upstream_inference_completions_cost": 2.82e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 11.5
+}

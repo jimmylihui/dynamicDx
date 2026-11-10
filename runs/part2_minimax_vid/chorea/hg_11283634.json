@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Is your primary symptom a headache?",
+  "Is the pain severe?",
+  "Did the headache begin very suddenly?",
+  "Are you currently feeling nauseous?",
+  "Is bright light bothering your eyes?",
+  "Do you have a fever?",
+  "Is your abdomen or stomach painful?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Capillary blood glucose",
+  "Complete blood count",
+  "Basic metabolic panel",
+  "Urinalysis",
+  "Electrocardiogram"
+ ],
+ "served": [
+  "blood glucose",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Capillary blood glucose",
+  "     blood glucose: 2.25 g/L (normal 0.70-1.10) - non-ketotic hyperglycaemia",
+  "2. Complete blood count",
+  "     full blood count: normal",
+  "3. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: creatinine 17 mg/L, eGFR 31 mL/min/1.73 m2",
+  "4. Urinalysis",
+  "     urinalysis: glucosuria, negative ketones",
+  "5. Electrocardiogram",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Uncontrolled diabetes mellitus (likely type 2) with chronic kidney disease stage 3b\n1. Steroid-induced hyperglycaemia\n2. New-onset latent autoimmune diabetes in adults\n3. Pancreatic disease (e.g., chronic pancreatitis or pancreatic neoplasm)",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Capillary blood glucose\n2. Complete blood count\n3. Basic metabolic panel\n4. Urinalysis\n5. Electrocardiogram",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Uncontrolled diabetes mellitus (likely type 2) with chronic kidney disease stage 3b",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 25302,
+   "completion_tokens": 2226,
+   "total_tokens": 27528,
+   "cost": 0.01023444,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01023444,
+    "upstream_inference_prompt_cost": 0.00756324,
+    "upstream_inference_completions_cost": 0.0026712
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2419,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 25602,
+   "completion_tokens": 475,
+   "total_tokens": 26077,
+   "cost": 0.00220212,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 25202,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00220212,
+    "upstream_inference_prompt_cost": 0.00163212,
+    "upstream_inference_completions_cost": 0.00057
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 517,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 25841,
+   "completion_tokens": 414,
+   "total_tokens": 26255,
+   "cost": 0.00210846,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 25586,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00210846,
+    "upstream_inference_prompt_cost": 0.00161166,
+    "upstream_inference_completions_cost": 0.0004968
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 417,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 65.5
+}

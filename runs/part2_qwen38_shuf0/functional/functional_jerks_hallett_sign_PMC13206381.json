@@ -1,0 +1,154 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Do you have a history of diabetes?",
+  "Have you had any recent head injuries?",
+  "Do you have a history of migraines?",
+  "Are you experiencing any pain right now?",
+  "Do you have numbness or tingling in your hands or feet?",
+  "Have you had any recent viral illnesses?",
+  "Do you have a history of multiple sclerosis?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Visual acuity testing",
+  "Fundoscopy",
+  "Pupillary light reflex examination (including swinging flashlight test)",
+  "Extraocular movement examination",
+  "Confrontation visual field testing",
+  "Optical coherence tomography"
+ ],
+ "served": [
+  "fundoscopy",
+  "cranial nerve examination",
+  "video-oculography / eye-movement recording"
+ ],
+ "results": [
+  "1. Visual acuity testing",
+  "     not performed / not available",
+  "2. Fundoscopy",
+  "     fundoscopy: normal",
+  "3. Pupillary light reflex examination (including swinging flashlight test)",
+  "     cranial nerve examination: normal - 'neurologic exam otherwise normal'",
+  "4. Extraocular movement examination",
+  "     video-oculography / eye-movement recording: normal",
+  "5. Confrontation visual field testing",
+  "     not performed / not available",
+  "6. Optical coherence tomography",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological disorder (conversion disorder) presenting as functional visual loss\nAlternative 1: Malingering\nAlternative 2: Cortical blindness",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Visual acuity testing\n2. Fundoscopy\n3. Pupillary light reflex examination (including swinging flashlight test)\n4. Extraocular movement examination\n5. Confrontation visual field testing\n6. Optical coherence tomography",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional neurological disorder (conversion disorder) presenting as functional visual loss",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5335,
+   "completion_tokens": 95,
+   "total_tokens": 5430,
+   "cost": 0.0008449,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008449,
+    "upstream_inference_prompt_cost": 0.00080025,
+    "upstream_inference_completions_cost": 4.465e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5710,
+   "completion_tokens": 50,
+   "total_tokens": 5760,
+   "cost": 0.000211072,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000211072,
+    "upstream_inference_prompt_cost": 0.000187572,
+    "upstream_inference_completions_cost": 2.35e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5969,
+   "completion_tokens": 35,
+   "total_tokens": 6004,
+   "cost": 0.000174264,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5504,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000174264,
+    "upstream_inference_prompt_cost": 0.000157814,
+    "upstream_inference_completions_cost": 1.645e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.8
+}

@@ -1,0 +1,178 @@
+{
+ "questions": [
+  "Did you have a stroke that brought you to the hospital?",
+  "Did you have recent hip or knee surgery (replacement or repair)?",
+  "Did a fall bring you to the hospital?",
+  "Is one side of your body weaker than the other?",
+  "Did your symptoms start suddenly (within minutes or hours)?",
+  "Do you currently have pain in your hip, leg, or back?",
+  "Do you experience dizziness or a spinning sensation when standing or turning?",
+  "Have you been diagnosed with Parkinson's disease?",
+  "Were you able to walk independently on your own before this started?",
+  "Have you had a recent heart attack, heart surgery, or been hospitalized for a heart problem?",
+  "Do you have numbness, tingling, or loss of feeling on one side of your body?",
+  "Do you have difficulty speaking, seeing, or understanding others since this started?",
+  "Have you had any episodes of confusion or memory loss?",
+  "Do you have a history of osteoporosis or fragile bones?",
+  "Do you get short of breath with light activity?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "30-second heart rhythm monitoring (telemetry) for atrial fibrillation",
+  "Bedside carotid auscultation for carotid bruit",
+  "Echocardiogram (transthoracic) to look for intracardiac thrombus or valvular disease",
+  "CT scan of the head without contrast",
+  "CT angiography of the head and neck (carotid and intracranial arteries)",
+  "Magnetic resonance imaging (MRI) of the brain",
+  "Fasting lipid profile blood test",
+  "HbA1c blood test"
+ ],
+ "served": [
+  "CT head",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "blood glucose and HbA1c"
+ ],
+ "results": [
+  "1. 30-second heart rhythm monitoring (telemetry) for atrial fibrillation",
+  "     not performed / not available",
+  "2. Bedside carotid auscultation for carotid bruit",
+  "     not performed / not available",
+  "3. Echocardiogram (transthoracic) to look for intracardiac thrombus or valvular disease",
+  "     not performed / not available",
+  "4. CT scan of the head without contrast",
+  "     CT head: cerebral atrophy with mild midbrain atrophy",
+  "5. CT angiography of the head and neck (carotid and intracranial arteries)",
+  "     not performed / not available",
+  "6. Magnetic resonance imaging (MRI) of the brain",
+  "     MRI brain with gadolinium: mild midbrain atrophy with hummingbird sign; no abnormal enhancement",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "7. Fasting lipid profile blood test",
+  "     not performed / not available",
+  "8. HbA1c blood test",
+  "     blood glucose and HbA1c: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive supranuclear palsy (PSP), a 4R-tau neurodegenerative disorder, supported by midbrain atrophy with the hummingbird sign on MRI, postural instability, and absence of an alternative cause.\n- Parkinson disease\n- Multiple system atrophy\n- Normal pressure hydrocephalus",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. 30-second heart rhythm monitoring (telemetry) for atrial fibrillation\n2. Bedside carotid auscultation for carotid bruit\n3. Echocardiogram (transthoracic) to look for intracardiac thrombus or valvular disease\n4. CT scan of the head without contrast\n5. CT angiography of the head and neck (carotid and intracranial arteries)\n6. Magnetic resonance imaging (MRI) of the brain\n7. Fasting lipid profile blood test\n8. HbA1c blood test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Progressive supranuclear palsy (PSP), a 4R-tau neurodegenerative disorder, supported by midbrain atrophy with the hummingbird sign on MRI, postural instability, and absence of an alternative cause.",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 521,
+   "completion_tokens": 1635,
+   "total_tokens": 2156,
+   "cost": 0.00209094,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00209094,
+    "upstream_inference_prompt_cost": 0.00012894,
+    "upstream_inference_completions_cost": 0.001962
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1612,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1179,
+   "completion_tokens": 108,
+   "total_tokens": 1287,
+   "cost": 0.00045594,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00045594,
+    "upstream_inference_prompt_cost": 0.00032634,
+    "upstream_inference_completions_cost": 0.0001296
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1584,
+   "completion_tokens": 363,
+   "total_tokens": 1947,
+   "cost": 0.00060528,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1273,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00060528,
+    "upstream_inference_prompt_cost": 0.00016968,
+    "upstream_inference_completions_cost": 0.0004356
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 350,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "psp_richardson_PMC11082598.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 43.9
+}

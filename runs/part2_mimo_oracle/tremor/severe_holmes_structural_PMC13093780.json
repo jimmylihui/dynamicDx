@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Are these movements in your arms and hands involuntary and hard to control?",
+  "Did these movements start in the past few days or weeks?",
+  "Do you feel pain in your arms, hands, or joints when you have these movements?",
+  "Have you taken any new prescription medications recently before these began?",
+  "Do these movements get worse when you feel stressed or anxious?",
+  "Have you had a head injury or spinal injury in the past?",
+  "Do you have numbness, tingling, or weakness in your hands or arms?",
+  "Is there a family history of similar involuntary movements?",
+  "Have you been exposed to any chemicals, poisons, or heavy metals recently?",
+  "Do these movements stop when you sleep or when you try to consciously suppress them?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "tremor frequency estimate",
+  "brain MRI",
+  "tuberculosis treatment history"
+ ],
+ "results": [
+  "1. tremor frequency estimate: slow, under about 4.5 Hz, with a wing-beating quality",
+  "2. brain MRI: thalamic lesion (tuberculoma) that DECREASED in size after anti-tuberculous treatment, with no gliosis",
+  "3. tuberculosis treatment history: CNS tuberculoma treated with anti-tuberculous therapy; the tremor began after treatment was completed"
+ ],
+ "dx_raw": "DIAGNOSIS: Rubral tremor secondary to thalamic tuberculoma (sequelae of CNS tuberculosis)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Rubral tremor secondary to thalamic tuberculoma (sequelae of CNS tuberculosis)",
+ "decisive_served": [
+  "tremor frequency estimate",
+  "brain MRI",
+  "tuberculosis treatment history"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14783,
+   "completion_tokens": 427,
+   "total_tokens": 15210,
+   "cost": 0.0021628376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0021628376,
+    "upstream_inference_prompt_cost": 0.0020432776,
+    "upstream_inference_completions_cost": 0.00011956
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 263,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15339,
+   "completion_tokens": 7931,
+   "total_tokens": 23270,
+   "cost": 0.002348556,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.002348556,
+    "upstream_inference_prompt_cost": 0.000127876,
+    "upstream_inference_completions_cost": 0.00222068
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7901,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 96.6
+}

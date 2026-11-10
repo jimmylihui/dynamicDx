@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Do you have a tremor?",
+  "Is the tremor present when you are at rest?",
+  "Does the tremor worsen when you hold your arms out?",
+  "Is the tremor on both sides?",
+  "Do you have a tremor in your head or voice?",
+  "Do you have a family history of tremors?",
+  "Do you have difficulty with balance or walking?",
+  "Do you have pain?",
+  "Do you have weakness?",
+  "Do you have numbness or tingling?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "limb power and wasting",
+  "foot deformity (pes cavus)",
+  "genetic testing (targeted panel or exome)",
+  "nerve conduction studies / EMG"
+ ],
+ "results": [
+  "1. limb power and wasting: distal weakness - 4+/5 in the upper limbs, 3/5 in the lower limbs bilaterally",
+  "2. foot deformity (pes cavus): pes cavus present",
+  "3. genetic testing (targeted panel or exome): heterozygous deletion in MPZ and MFN2; ambiguous copy number decrease in PMP22 exons 2-3 - CMT2A",
+  "4. nerve conduction studies / EMG: moderate to severe motor polyneuropathy, axonal more than demyelinating"
+ ],
+ "dx_raw": "DIAGNOSIS: Charcot-Marie-Tooth disease type 2A (CMT2A) caused by a mutation in the MFN2 gene\n\nCharcot-Marie-Tooth disease type 1B (CMT1B)\nCharcot-Marie-Tooth disease type 1A (CMT1A)\nHereditary neuropathy with liability to pressure palsies (HNPP)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Charcot-Marie-Tooth disease type 2A (CMT2A) caused by a mutation in the MFN2 gene",
+ "decisive_served": [
+  "limb power and wasting",
+  "foot deformity (pes cavus)",
+  "genetic testing (targeted panel or exome)",
+  "nerve conduction studies / EMG"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 3440,
+   "total_tokens": 12138,
+   "cost": 0.0020394,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0020394,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0011696
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2987,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9168,
+   "completion_tokens": 1085,
+   "total_tokens": 10253,
+   "cost": 0.0012857,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012857,
+    "upstream_inference_prompt_cost": 0.0009168,
+    "upstream_inference_completions_cost": 0.0003689
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 886,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.7,
+ "video": "mild_neuropathic_CMT_PMC11600610.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 156.7
+}

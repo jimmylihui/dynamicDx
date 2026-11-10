@@ -1,0 +1,187 @@
+{
+ "questions": [
+  "Have you experienced these movements before?",
+  "Do you ever lose awareness during these episodes?",
+  "Have you had a seizure with loss of consciousness?",
+  "Do the movements stop when you are asleep?",
+  "Were you completely well before this started?",
+  "Did these movements begin suddenly?",
+  "Are the movements only in your arms and body?",
+  "Is your head also affected by these movements?",
+  "Do your eyes ever roll back or blink excessively during the episodes?",
+  "Have you noticed any other changes in your movement, like stiffness or slowness?",
+  "Have you recently started any new medications?",
+  "Do you drink alcohol regularly?",
+  "Have you suffered a recent head injury?",
+  "Have you experienced any recent infections, like a flu or stomach bug?",
+  "Do you have a family history of similar movements or epilepsy?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Video-EEG with sleep recording",
+  "Brain MRI with and without contrast",
+  "Serum ceruloplasmin and copper studies",
+  "Serum and CSF anti-NMDA receptor antibodies",
+  "Serum anti-GAD antibodies",
+  "Paraneoplastic antibody panel",
+  "Serum ammonia and lactate",
+  "CT chest, abdomen, and pelvis"
+ ],
+ "served": [
+  "EEG",
+  "brain MRI with contrast",
+  "copper / caeruloplasmin",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "autoimmune encephalopathy / paraneoplastic antibody panel",
+  "CSF autoimmune encephalitis panel",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "autoimmune encephalopathy / paraneoplastic antibody panel",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "autoimmune encephalopathy / paraneoplastic antibody panel",
+  "serum ammonia",
+  "CT chest, abdomen and pelvis"
+ ],
+ "results": [
+  "1. Video-EEG with sleep recording",
+  "     EEG: normal",
+  "2. Brain MRI with and without contrast",
+  "     brain MRI with contrast: no structural lesion",
+  "3. Serum ceruloplasmin and copper studies",
+  "     copper / caeruloplasmin: normal",
+  "4. Serum and CSF anti-NMDA receptor antibodies",
+  "     serum paraneoplastic / neuronal autoantibody panel: normal",
+  "     autoimmune encephalopathy / paraneoplastic antibody panel: negative",
+  "     CSF autoimmune encephalitis panel: normal",
+  "5. Serum anti-GAD antibodies",
+  "     serum paraneoplastic / neuronal autoantibody panel: normal",
+  "     autoimmune encephalopathy / paraneoplastic antibody panel: negative",
+  "6. Paraneoplastic antibody panel",
+  "     serum paraneoplastic / neuronal autoantibody panel: normal",
+  "     autoimmune encephalopathy / paraneoplastic antibody panel: negative",
+  "7. Serum ammonia and lactate",
+  "     serum ammonia: normal",
+  "8. CT chest, abdomen, and pelvis",
+  "     CT chest, abdomen and pelvis: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional myoclonus\n\nPropriospinal myoclonus\n\nCortical excitability disorder (non-epileptic cortical myoclonus)\n\nEarly sporadic Creutzfeldt-Jakob disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Video-EEG with sleep recording\n2. Brain MRI with and without contrast\n3. Serum ceruloplasmin and copper studies\n4. Serum and CSF anti-NMDA receptor antibodies\n5. Serum anti-GAD antibodies\n6. Paraneoplastic antibody panel\n7. Serum ammonia and lactate\n8. CT chest, abdomen, and pelvis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional myoclonus",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 459,
+   "completion_tokens": 410,
+   "total_tokens": 869,
+   "cost": 0.0001527176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001527176,
+    "upstream_inference_prompt_cost": 3.79176e-05,
+    "upstream_inference_completions_cost": 0.0001148
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 225,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1045,
+   "completion_tokens": 656,
+   "total_tokens": 1701,
+   "cost": 0.0002685144,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002685144,
+    "upstream_inference_prompt_cost": 8.48344e-05,
+    "upstream_inference_completions_cost": 0.00018368
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 574,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1451,
+   "completion_tokens": 3003,
+   "total_tokens": 4454,
+   "cost": 0.0009034872,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1024,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009034872,
+    "upstream_inference_prompt_cost": 6.26472e-05,
+    "upstream_inference_completions_cost": 0.00084084
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2950,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "c_9815763.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 86.7
+}

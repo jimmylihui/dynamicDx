@@ -1,0 +1,203 @@
+{
+ "questions": [
+  "Have you experienced any seizures recently?",
+  "Did you fall and injure your right leg recently?",
+  "Do you have a history of epilepsy or prior seizures before this episode?",
+  "Did you lose consciousness during the seizure?",
+  "Are you experiencing any confusion or memory problems right now?",
+  "Do you have any headache at the moment?",
+  "Was your right leg already in a cast before the seizure started?",
+  "When did the seizure occur - was it today or earlier?",
+  "How did your leg get injured if you didn't fall?",
+  "Have you noticed any weakness on one side of your body?",
+  "Have you had any fever recently?",
+  "Do you have a history of cancer?",
+  "Do you drink alcohol regularly?",
+  "Have you used any recreational drugs recently?",
+  "Are you taking any medications currently?",
+  "Have you been sleep deprived lately?",
+  "Do you have any family history of epilepsy or seizures?",
+  "Did you see any flashing lights or have unusual sensations before the seizure started?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "yes",
+  "18": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "CT head without contrast",
+  "Complete blood count",
+  "Basic metabolic panel",
+  "Liver function tests",
+  "Continuous EEG monitoring (the patient already appears to have EEG leads applied)",
+  "Serum prolactin level"
+ ],
+ "served": [
+  "CT head",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "R1 ASK Have you experienced any seizures recently?; Did you fall and injure your right leg recently? -> ['yes', 'no']",
+  "R2 ASK Do you have a history of epilepsy or prior seizures before this episode?; Did you lose consciousness during the seizure?; Are you experiencing any confusion or memory problems right now?; Do you have any headache at the moment?; Was your right leg already in a cast before the seizure started? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK When did the seizure occur - was it today or earlier?; How did your leg get injured if you didn't fall?; Have you noticed any weakness on one side of your body?; Have you had any fever recently?; Do you have a history of cancer? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ORDER CT head without contrast; Complete blood count; Basic metabolic panel; Liver function tests -> [['CT head'], ['full blood count and biochemistry'], ['serum electrolytes, urea and creatinine'], ['liver function tests']]",
+  "R5 ASK Do you drink alcohol regularly?; Have you used any recreational drugs recently?; Are you taking any medications currently?; Have you been sleep deprived lately?; Do you have any family history of epilepsy or seizures?; Did you see any flashing lights or have unusual sensations before the seizure started? -> ['no', 'no', 'no', 'no', 'yes', 'no']",
+  "R6 ORDER Continuous EEG monitoring (the patient already appears to have EEG leads applied); Serum prolactin level -> [['video-EEG monitoring of a typical event'], []]",
+  "R7 DIAGNOSIS Idiopathic generalized epilepsy (likely juvenile myoclonic epilepsy or juvenile absence epilepsy), characterized by generalized 2.5-3 Hz spike-wave discharges on EEG with bifrontal maximum, positive family history, normal neuroimaging, and first documented generalized seizure event -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you experienced any seizures recently?",
+    "Did you fall and injure your right leg recently?"
+   ],
+   "result": [
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of epilepsy or prior seizures before this episode?",
+    "Did you lose consciousness during the seizure?",
+    "Are you experiencing any confusion or memory problems right now?",
+    "Do you have any headache at the moment?",
+    "Was your right leg already in a cast before the seizure started?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "When did the seizure occur - was it today or earlier?",
+    "How did your leg get injured if you didn't fall?",
+    "Have you noticed any weakness on one side of your body?",
+    "Have you had any fever recently?",
+    "Do you have a history of cancer?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "CT head without contrast",
+    "Complete blood count",
+    "Basic metabolic panel",
+    "Liver function tests"
+   ],
+   "result": [
+    [
+     "CT head"
+    ],
+    [
+     "full blood count and biochemistry"
+    ],
+    [
+     "serum electrolytes, urea and creatinine"
+    ],
+    [
+     "liver function tests"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you drink alcohol regularly?",
+    "Have you used any recreational drugs recently?",
+    "Are you taking any medications currently?",
+    "Have you been sleep deprived lately?",
+    "Do you have any family history of epilepsy or seizures?",
+    "Did you see any flashing lights or have unusual sensations before the seizure started?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Continuous EEG monitoring (the patient already appears to have EEG leads applied)",
+    "Serum prolactin level"
+   ],
+   "result": [
+    [
+     "video-EEG monitoring of a typical event"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Idiopathic generalized epilepsy (likely juvenile myoclonic epilepsy or juvenile absence epilepsy), characterized by generalized 2.5-3 Hz spike-wave discharges on EEG with bifrontal maximum, positive family history, normal neuroimaging, and first documented generalized seizure event"
+  }
+ ],
+ "dx": "Idiopathic generalized epilepsy (likely juvenile myoclonic epilepsy or juvenile absence epilepsy), characterized by generalized 2.5-3 Hz spike-wave discharges on EEG with bifrontal maximum, positive family history, normal neuroimaging, and first documented generalized seizure event",
+ "dx_raw": "ASK:\n1. Have you ever had brief jerking of your arms or legs, especially in the morning?\n2. Have you ever had episodes where you \"zoned out\" or stared blankly that others noticed?\n3. Was your leg injury from this current seizure event?\n\nDIAGNOSIS: Idiopathic generalized epilepsy (likely juvenile myoclonic epilepsy or juvenile absence epilepsy), characterized by generalized 2.5-3 Hz spike-wave discharges on EEG with bifrontal maximum, positive family history, normal neuroimaging, and first documented generalized seizure event",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "cost_usd": 0.0033,
+ "n_frames": 32,
+ "duration_s": 16.8,
+ "video": "severe_1_generalized_PMC13101308.mp4",
+ "line": "paroxysmal",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 216.4
+}

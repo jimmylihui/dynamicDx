@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Did these symptoms start suddenly?",
+  "Do you have numbness or tingling in your feet or hands?",
+  "Do you find it helpful to look at your feet while walking?",
+  "Is your speech slurred?",
+  "Do you feel a spinning sensation?",
+  "Are you experiencing double vision?",
+  "Are you feeling confused?",
+  "Do you have weakness in your limbs?",
+  "Have you had a recent head injury?",
+  "Do you drink alcohol regularly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI Brain",
+  "Cerebellar examination"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)",
+  "coordination examination (limb and truncal)",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     MRI brain with gadolinium: normal",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): normal midbrain, ratio within normal limits",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): normal",
+  "     MRI brain - cortical atrophy pattern: MRI brain and whole spine NORMAL",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal",
+  "2. Cerebellar examination",
+  "     coordination examination (limb and truncal): chorea and orofacial dyskinesia; limb coordination normal",
+  "     cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Tardive dyskinesia caused by neuroleptic medications\n\nHuntington's disease\nWilson's disease\nSydenham's chorea",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Cerebellar examination",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Tardive dyskinesia caused by neuroleptic medications",
+ "decisive_served": [
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 237,
+   "completion_tokens": 4358,
+   "total_tokens": 4595,
+   "cost": 0.00150542,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00150542,
+    "upstream_inference_prompt_cost": 2.37e-05,
+    "upstream_inference_completions_cost": 0.00148172
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3882,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 639,
+   "completion_tokens": 1290,
+   "total_tokens": 1929,
+   "cost": 0.0005025,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005025,
+    "upstream_inference_prompt_cost": 6.39e-05,
+    "upstream_inference_completions_cost": 0.0004386
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1290,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 922,
+   "completion_tokens": 5520,
+   "total_tokens": 6442,
+   "cost": 0.001969,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001969,
+    "upstream_inference_prompt_cost": 9.22e-05,
+    "upstream_inference_completions_cost": 0.0018768
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4969,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 323.7
+}

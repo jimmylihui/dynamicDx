@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Is the blood pressure cuff on the same arm as the IV site?"
+ ],
+ "answers": {
+  "1": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "CT head",
+  "Neurological examination",
+  "Blood glucose"
+ ],
+ "served": [
+  "CT head",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "blood glucose and HbA1c"
+ ],
+ "results": [
+  "1. CT head",
+  "     CT head: normal",
+  "2. Neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "3. Blood glucose",
+  "     blood glucose and HbA1c: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Medical simulation mannequin\n\nSimulation training scenario\nHealthy human\nCatatonic stupor",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. CT head\n2. Neurological examination\n3. Blood glucose",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Medical simulation mannequin",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 250,
+   "completion_tokens": 10259,
+   "total_tokens": 10509,
+   "cost": 0.00351306,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00351306,
+    "upstream_inference_prompt_cost": 2.5e-05,
+    "upstream_inference_completions_cost": 0.00348806
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9353,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 434,
+   "completion_tokens": 3886,
+   "total_tokens": 4320,
+   "cost": 0.00136464,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00136464,
+    "upstream_inference_prompt_cost": 4.34e-05,
+    "upstream_inference_completions_cost": 0.00132124
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3650,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 667,
+   "completion_tokens": 1524,
+   "total_tokens": 2191,
+   "cost": 0.00058486,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00058486,
+    "upstream_inference_prompt_cost": 6.67e-05,
+    "upstream_inference_completions_cost": 0.00051816
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1504,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 453.4
+}

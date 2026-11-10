@@ -1,0 +1,218 @@
+{
+ "questions": [
+  "Are you here for a routine check-up?",
+  "Are you experiencing any pain?",
+  "Are you short of breath?",
+  "Do you have a fever?",
+  "Is the pain in your chest?",
+  "Is the pain in your abdomen?",
+  "Is the pain in your back?",
+  "Is the pain in your legs?",
+  "Do you have a cough?",
+  "Have you had any recent injuries?",
+  "Do you have any known medical conditions?",
+  "Are you taking any medications?",
+  "Have you noticed any swelling?",
+  "Do you have any numbness or tingling?",
+  "Have you had any changes in your bowel or bladder function?",
+  "Are you feeling depressed or anxious?",
+  "Could you be pregnant?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "yes",
+  "15": "no",
+  "16": "no",
+  "17": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Neurological examination",
+  "HbA1c",
+  "Vitamin B12 level",
+  "Nerve conduction studies",
+  "Serum creatinine"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "tremor at rest",
+  "postural tremor (arms outstretched)",
+  "kinetic / intention tremor (finger-nose)",
+  "tremor frequency estimate",
+  "effect of alcohol on the tremor",
+  "asterixis (wrist extension)",
+  "limb power and wasting",
+  "reflexes and plantar responses",
+  "sensory examination (vibration, pinprick)",
+  "foot deformity (pes cavus)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "gait examination",
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "vitamin B12 with methylmalonic acid",
+  "vitamin B12 / folate",
+  "nerve conduction studies",
+  "nerve conduction studies / EMG",
+  "serum electrolytes, urea and creatinine"
+ ],
+ "results": [
+  "1. Neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): left upper-limb dysmetria and dysdiadochokinesia; truncal coordination normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "     tremor at rest: present",
+  "     postural tremor (arms outstretched): present",
+  "     kinetic / intention tremor (finger-nose): present and worse on reaching",
+  "     tremor frequency estimate: slow, under about 4.5 Hz, with a wing-beating quality",
+  "     effect of alcohol on the tremor: no effect",
+  "     asterixis (wrist extension): absent",
+  "     limb power and wasting: normal bulk and power",
+  "     reflexes and plantar responses: normal",
+  "     sensory examination (vibration, pinprick): normal",
+  "     foot deformity (pes cavus): none",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): dysmetria and dysdiadochokinesia in the left upper limb",
+  "     gait examination: normal",
+  "     cognitive screen (MMSE / MoCA / FAB): normal",
+  "2. HbA1c",
+  "     blood glucose and HbA1c: normal",
+  "     glucose / HbA1c: normal",
+  "3. Vitamin B12 level",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "     vitamin B12 / folate: normal",
+  "4. Nerve conduction studies",
+  "     nerve conduction studies: normal",
+  "     nerve conduction studies / EMG: normal",
+  "5. Serum creatinine",
+  "     serum electrolytes, urea and creatinine: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Wilson's disease caused by ATP7B mutation\n\nMultiple sclerosis\nEssential tremor\nEarly-onset Parkinson's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Neurological examination\n2. HbA1c\n3. Vitamin B12 level\n4. Nerve conduction studies\n5. Serum creatinine\n6. TSH",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Wilson's disease caused by ATP7B mutation",
+ "decisive_served": [
+  "tremor frequency estimate"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 4204,
+   "total_tokens": 4624,
+   "cost": 0.00147136,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00147136,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00142936
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3652,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 994,
+   "completion_tokens": 1255,
+   "total_tokens": 2249,
+   "cost": 0.0005261,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005261,
+    "upstream_inference_prompt_cost": 9.94e-05,
+    "upstream_inference_completions_cost": 0.0004267
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1152,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1505,
+   "completion_tokens": 1196,
+   "total_tokens": 2701,
+   "cost": 0.00055714,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00055714,
+    "upstream_inference_prompt_cost": 0.0001505,
+    "upstream_inference_completions_cost": 0.00040664
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1139,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 262.0
+}

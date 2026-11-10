@@ -1,0 +1,231 @@
+{
+ "questions": [
+  "Did this patient suffer a sudden collapse or acute neurological event (such as a stroke) prior to admission?",
+  "Was there a recent head injury or fall that caused the head bandage?",
+  "Did the patient undergo recent brain or cranial surgery?",
+  "Is the patient currently conscious and able to follow simple commands?",
+  "Is the device around the neck a tracheostomy tube?",
+  "Does the patient have a known brain tumor or malignancy?",
+  "Has the patient had a recent infection such as meningitis or encephalitis?",
+  "Has the patient had a recent cardiac arrest or hypoxic event?",
+  "Is there a ventricular drain or shunt in place?",
+  "Has the patient been having seizures?",
+  "Was therapeutic hypothermia/targeted temperature management used after the cardiac arrest?",
+  "Does the patient show any signs of brainstem reflexes (e.g., pupillary light reflex, corneal reflex)?",
+  "Has an EEG been performed, and if so, did it show severe diffuse slowing or burst-suppression?",
+  "Are the limbs showing decorticate or decerebrate posturing, or are they flaccid?",
+  "Are the pupils fixed and dilated, and is there no pupillary response to light?",
+  "Is there no corneal reflex when the cornea is touched?",
+  "Is there no gag reflex or cough reflex with tracheal suctioning?",
+  "Does the patient still have spontaneous respiratory effort (gasping or breathing movements)?",
+  "How long has it been since the cardiac arrest (more than 24 hours)?",
+  "Is the patient completely dependent on mechanical ventilation with no spontaneous breathing?",
+  "Has an apnea test been performed, and if so, was there no respiratory effort?",
+  "Is the body temperature currently normal (not hypothermic)?",
+  "Is systolic blood pressure above 100 mmHg without vasopressor support?",
+  "Was the cardiac arrest the primary cause of the current neurological state, or did it happen in a patient with a pre-existing chronic neurological condition?",
+  "Is the patient's current state consistent with a chronic vegetative or minimally conscious state?",
+  "Does the patient have a known diagnosis of amyotrophic lateral sclerosis (ALS) or motor neuron disease?",
+  "How long has the patient been bedridden with a tracheostomy (more than 1 month)?",
+  "Has the patient been gradually deteriorating over weeks to months, with progressive muscle wasting and weakness?",
+  "Does the patient have a diagnosis of advanced dementia (e.g., severe Alzheimer's disease) prior to the cardiac arrest?",
+  "Was the patient living in a long-term care facility or nursing home before this admission?",
+  "Did the patient have severe pre-existing comorbidities such as end-stage renal disease, advanced heart failure, or terminal cancer before the cardiac arrest?",
+  "Was the cardiac arrest unwitnessed with prolonged downtime before resuscitation?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "yes",
+  "25": "yes",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Did this patient suffer a sudden collapse or acute neurological event (such as a stroke) prior to admission?; Was there a recent head injury or fall that caused the head bandage?; Did the patient undergo recent brain or cranial surgery?; Is the patient currently conscious and able to follow simple commands?; Is the device around the neck a tracheostomy tube? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Does the patient have a known brain tumor or malignancy?; Has the patient had a recent infection such as meningitis or encephalitis?; Has the patient had a recent cardiac arrest or hypoxic event?; Is there a ventricular drain or shunt in place?; Has the patient been having seizures? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R3 ASK Was therapeutic hypothermia/targeted temperature management used after the cardiac arrest?; Does the patient show any signs of brainstem reflexes (e.g., pupillary light reflex, corneal reflex)?; Has an EEG been performed, and if so, did it show severe diffuse slowing or burst-suppression?; Are the limbs showing decorticate or decerebrate posturing, or are they flaccid? -> ['no', 'no', 'no', 'no']",
+  "R4 ASK Are the pupils fixed and dilated, and is there no pupillary response to light?; Is there no corneal reflex when the cornea is touched?; Is there no gag reflex or cough reflex with tracheal suctioning?; Does the patient still have spontaneous respiratory effort (gasping or breathing movements)?; How long has it been since the cardiac arrest (more than 24 hours)? -> ['no', 'no', 'no', 'no', 'no']",
+  "R5 ASK Is the patient completely dependent on mechanical ventilation with no spontaneous breathing?; Has an apnea test been performed, and if so, was there no respiratory effort?; Is the body temperature currently normal (not hypothermic)?; Is systolic blood pressure above 100 mmHg without vasopressor support? -> ['no', 'no', 'no', 'no']",
+  "R6 ASK Was the cardiac arrest the primary cause of the current neurological state, or did it happen in a patient with a pre-existing chronic neurological condition?; Is the patient's current state consistent with a chronic vegetative or minimally conscious state?; Does the patient have a known diagnosis of amyotrophic lateral sclerosis (ALS) or motor neuron disease?; How long has the patient been bedridden with a tracheostomy (more than 1 month)?; Has the patient been gradually deteriorating over weeks to months, with progressive muscle wasting and weakness? -> ['yes', 'yes', 'no', 'no', 'no']",
+  "R7 ASK Does the patient have a diagnosis of advanced dementia (e.g., severe Alzheimer's disease) prior to the cardiac arrest?; Was the patient living in a long-term care facility or nursing home before this admission?; Did the patient have severe pre-existing comorbidities such as end-stage renal disease, advanced heart failure, or terminal cancer before the cardiac arrest?; Was the cardiac arrest unwitnessed with prolonged downtime before resuscitation? -> ['no', 'no', 'no', 'no']",
+  "R8 DIAGNOSIS Hypoxic-ischemic encephalopathy following out-of-hospital cardiac arrest, resulting in a persistent vegetative state. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did this patient suffer a sudden collapse or acute neurological event (such as a stroke) prior to admission?",
+    "Was there a recent head injury or fall that caused the head bandage?",
+    "Did the patient undergo recent brain or cranial surgery?",
+    "Is the patient currently conscious and able to follow simple commands?",
+    "Is the device around the neck a tracheostomy tube?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Does the patient have a known brain tumor or malignancy?",
+    "Has the patient had a recent infection such as meningitis or encephalitis?",
+    "Has the patient had a recent cardiac arrest or hypoxic event?",
+    "Is there a ventricular drain or shunt in place?",
+    "Has the patient been having seizures?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Was therapeutic hypothermia/targeted temperature management used after the cardiac arrest?",
+    "Does the patient show any signs of brainstem reflexes (e.g., pupillary light reflex, corneal reflex)?",
+    "Has an EEG been performed, and if so, did it show severe diffuse slowing or burst-suppression?",
+    "Are the limbs showing decorticate or decerebrate posturing, or are they flaccid?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Are the pupils fixed and dilated, and is there no pupillary response to light?",
+    "Is there no corneal reflex when the cornea is touched?",
+    "Is there no gag reflex or cough reflex with tracheal suctioning?",
+    "Does the patient still have spontaneous respiratory effort (gasping or breathing movements)?",
+    "How long has it been since the cardiac arrest (more than 24 hours)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Is the patient completely dependent on mechanical ventilation with no spontaneous breathing?",
+    "Has an apnea test been performed, and if so, was there no respiratory effort?",
+    "Is the body temperature currently normal (not hypothermic)?",
+    "Is systolic blood pressure above 100 mmHg without vasopressor support?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Was the cardiac arrest the primary cause of the current neurological state, or did it happen in a patient with a pre-existing chronic neurological condition?",
+    "Is the patient's current state consistent with a chronic vegetative or minimally conscious state?",
+    "Does the patient have a known diagnosis of amyotrophic lateral sclerosis (ALS) or motor neuron disease?",
+    "How long has the patient been bedridden with a tracheostomy (more than 1 month)?",
+    "Has the patient been gradually deteriorating over weeks to months, with progressive muscle wasting and weakness?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Does the patient have a diagnosis of advanced dementia (e.g., severe Alzheimer's disease) prior to the cardiac arrest?",
+    "Was the patient living in a long-term care facility or nursing home before this admission?",
+    "Did the patient have severe pre-existing comorbidities such as end-stage renal disease, advanced heart failure, or terminal cancer before the cardiac arrest?",
+    "Was the cardiac arrest unwitnessed with prolonged downtime before resuscitation?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Hypoxic-ischemic encephalopathy following out-of-hospital cardiac arrest, resulting in a persistent vegetative state."
+  }
+ ],
+ "dx": "Hypoxic-ischemic encephalopathy following out-of-hospital cardiac arrest, resulting in a persistent vegetative state.",
+ "dx_raw": "DIAGNOSIS: Hypoxic-ischemic encephalopathy following out-of-hospital cardiac arrest, resulting in a persistent vegetative state.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0115,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 81.5
+}

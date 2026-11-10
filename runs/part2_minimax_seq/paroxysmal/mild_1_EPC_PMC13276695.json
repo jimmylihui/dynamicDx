@@ -1,0 +1,242 @@
+{
+ "questions": [
+  "Have you been experiencing episodes of palpitations, dizziness, or fainting?",
+  "Have you noticed any weakness in your hands, arms, or legs?",
+  "Have you been losing weight unintentionally?",
+  "Do you have any difficulty swallowing or speaking?",
+  "Is the test being performed related to your heart rhythm or blood pressure?",
+  "Have you experienced excessive sweating, temperature intolerance, or changes in skin color?",
+  "Do you have any numbness or tingling sensations in your extremities?",
+  "Do you have shortness of breath at rest or with exertion?",
+  "Do you experience chest pain or tightness?",
+  "Have you been coughing or wheezing?",
+  "Is the test being performed a nerve conduction study or EMG?",
+  "Have you noticed any changes in the appearance of your muscles (wasting, twitching)?",
+  "Do you have any history of seizures, stroke, or neurological problems?",
+  "Where exactly are you noticing the muscle wasting or twitching?",
+  "Is it symmetric (affecting both sides of the body equally)?",
+  "Have you noticed fasciculations (visible muscle twitching under the skin)?",
+  "Have you noticed weakness that started in one hand or arm and progressed?",
+  "Do you have difficulty with fine motor tasks like buttoning shirts or writing?",
+  "Is the test you are undergoing an EMG (electromyography)?",
+  "Why are you using a wheelchair?",
+  "Did your muscle symptoms start after a specific injury or event?",
+  "Have you had any problems with bladder or bowel control?",
+  "Have you noticed any involuntary movements or stiffness in your body?",
+  "Do you have any pain in your muscles or joints?",
+  "Are the muscles wasting in your shoulders or upper arms?",
+  "Have you noticed worsening of these movements under stress or when you are anxious?",
+  "Do you have a family history of similar symptoms?",
+  "Does alcohol temporarily improve your symptoms?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "yes",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "yes",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "yes",
+  "28": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Have you been experiencing episodes of palpitations, dizziness, or fainting? -> ['no']",
+  "R2 ASK Have you noticed any weakness in your hands, arms, or legs?; Have you been losing weight unintentionally?; Do you have any difficulty swallowing or speaking? -> ['no', 'no', 'no']",
+  "R3 ASK Is the test being performed related to your heart rhythm or blood pressure?; Have you experienced excessive sweating, temperature intolerance, or changes in skin color?; Do you have any numbness or tingling sensations in your extremities? -> ['no', 'no', 'no']",
+  "R4 ASK Do you have shortness of breath at rest or with exertion?; Do you experience chest pain or tightness?; Have you been coughing or wheezing? -> ['no', 'no', 'no']",
+  "R5 ASK Is the test being performed a nerve conduction study or EMG?; Have you noticed any changes in the appearance of your muscles (wasting, twitching)?; Do you have any history of seizures, stroke, or neurological problems? -> ['no', 'yes', 'no']",
+  "R6 ASK Where exactly are you noticing the muscle wasting or twitching?; Is it symmetric (affecting both sides of the body equally)?; Have you noticed fasciculations (visible muscle twitching under the skin)? -> ['yes', 'no', 'yes']",
+  "R7 ASK Have you noticed weakness that started in one hand or arm and progressed?; Do you have difficulty with fine motor tasks like buttoning shirts or writing?; Is the test you are undergoing an EMG (electromyography)? -> ['no', 'no', 'no']",
+  "R8 ASK Why are you using a wheelchair?; Did your muscle symptoms start after a specific injury or event?; Have you had any problems with bladder or bowel control? -> ['no', 'no', 'no']",
+  "R9 ASK Have you noticed any involuntary movements or stiffness in your body?; Do you have any pain in your muscles or joints?; Are the muscles wasting in your shoulders or upper arms? -> ['yes', 'no', 'no']",
+  "R10 ASK Have you noticed worsening of these movements under stress or when you are anxious?; Do you have a family history of similar symptoms?; Does alcohol temporarily improve your symptoms? -> ['no', 'yes', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Huntington's disease (autosomal dominant CAG trinucleotide repeat expansion in the HTT gene on chromosome 4p16.3) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you been experiencing episodes of palpitations, dizziness, or fainting?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any weakness in your hands, arms, or legs?",
+    "Have you been losing weight unintentionally?",
+    "Do you have any difficulty swallowing or speaking?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Is the test being performed related to your heart rhythm or blood pressure?",
+    "Have you experienced excessive sweating, temperature intolerance, or changes in skin color?",
+    "Do you have any numbness or tingling sensations in your extremities?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have shortness of breath at rest or with exertion?",
+    "Do you experience chest pain or tightness?",
+    "Have you been coughing or wheezing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Is the test being performed a nerve conduction study or EMG?",
+    "Have you noticed any changes in the appearance of your muscles (wasting, twitching)?",
+    "Do you have any history of seizures, stroke, or neurological problems?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Where exactly are you noticing the muscle wasting or twitching?",
+    "Is it symmetric (affecting both sides of the body equally)?",
+    "Have you noticed fasciculations (visible muscle twitching under the skin)?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Have you noticed weakness that started in one hand or arm and progressed?",
+    "Do you have difficulty with fine motor tasks like buttoning shirts or writing?",
+    "Is the test you are undergoing an EMG (electromyography)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Why are you using a wheelchair?",
+    "Did your muscle symptoms start after a specific injury or event?",
+    "Have you had any problems with bladder or bowel control?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any involuntary movements or stiffness in your body?",
+    "Do you have any pain in your muscles or joints?",
+    "Are the muscles wasting in your shoulders or upper arms?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Have you noticed worsening of these movements under stress or when you are anxious?",
+    "Do you have a family history of similar symptoms?",
+    "Does alcohol temporarily improve your symptoms?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Huntington's disease (autosomal dominant CAG trinucleotide repeat expansion in the HTT gene on chromosome 4p16.3)"
+  }
+ ],
+ "dx": "Huntington's disease (autosomal dominant CAG trinucleotide repeat expansion in the HTT gene on chromosome 4p16.3)",
+ "dx_raw": "DIAGNOSIS: Huntington's disease (autosomal dominant CAG trinucleotide repeat expansion in the HTT gene on chromosome 4p16.3)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0284,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 92.4
+}

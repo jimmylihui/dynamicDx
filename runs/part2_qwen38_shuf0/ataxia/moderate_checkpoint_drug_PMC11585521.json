@@ -1,0 +1,133 @@
+{
+ "questions": [
+  "Is the pain in your leg caused by a recent injury or accident?",
+  "Do you have a history of blood clots (DVT) or pulmonary embolism?",
+  "Are you currently taking any medications to prevent blood clots?",
+  "Have you recently had surgery or been hospitalized for another reason?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Lower extremity venous duplex ultrasound",
+  "D-dimer blood test",
+  "Complete blood count (CBC)"
+ ],
+ "served": [
+  "clinical course / follow-up",
+  "full blood count"
+ ],
+ "results": [
+  "1. Lower extremity venous duplex ultrasound",
+  "     clinical course / follow-up: not recorded",
+  "2. D-dimer blood test",
+  "     not performed / not available",
+  "3. Complete blood count (CBC)",
+  "     full blood count: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute limb ischemia secondary to arterial thromboembolism\n\n1. Deep vein thrombosis\n2. Ruptured popliteal cyst (Baker's cyst)\n3. Cellulitis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Lower extremity venous duplex ultrasound\n2. D-dimer blood test\n3. Complete blood count (CBC)",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Acute limb ischemia secondary to arterial thromboembolism",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 69,
+   "total_tokens": 4892,
+   "cost": 0.00075588,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075588,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 3.243e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5130,
+   "completion_tokens": 27,
+   "total_tokens": 5157,
+   "cost": 0.00018187,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00018187,
+    "upstream_inference_prompt_cost": 0.00016918,
+    "upstream_inference_completions_cost": 1.269e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5309,
+   "completion_tokens": 50,
+   "total_tokens": 5359,
+   "cost": 0.000150922,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000150922,
+    "upstream_inference_prompt_cost": 0.000127422,
+    "upstream_inference_completions_cost": 2.35e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 13.2
+}

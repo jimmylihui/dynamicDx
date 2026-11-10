@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Do you have a history of thyroid disease?",
+  "Have you had any recent trauma to your face or head?",
+  "Are you experiencing double vision?",
+  "Is this condition present in both eyes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "yes",
+  "4": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Cover-uncover and alternate cover test in all directions of gaze",
+  "Forced duction test",
+  "CT scan of the orbits with bone windows",
+  "MRI of the brain and orbits"
+ ],
+ "served": [
+  "skew deviation / alternating cover test",
+  "forced duction test"
+ ],
+ "results": [
+  "1. Cover-uncover and alternate cover test in all directions of gaze",
+  "     skew deviation / alternating cover test: no vertical misalignment",
+  "2. Forced duction test",
+  "     forced duction test: restriction consistent with a mechanical cause",
+  "3. CT scan of the orbits with bone windows",
+  "     not performed / not available",
+  "4. MRI of the brain and orbits",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Traumatic medial rectus muscle entrapment (orbital floor/blowout fracture)\nTraumatic oculomotor nerve palsy\nOrbital compartment syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Cover-uncover and alternate cover test in all directions of gaze\n2. Forced duction test\n3. CT scan of the orbits with bone windows\n4. MRI of the brain and orbits",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Traumatic medial rectus muscle entrapment (orbital floor/blowout fracture)",
+ "decisive_served": [
+  "forced duction test"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 248,
+   "completion_tokens": 47,
+   "total_tokens": 295,
+   "cost": 5.929e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.929e-05,
+    "upstream_inference_prompt_cost": 3.72e-05,
+    "upstream_inference_completions_cost": 2.209e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 511,
+   "completion_tokens": 42,
+   "total_tokens": 553,
+   "cost": 9.639e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.639e-05,
+    "upstream_inference_prompt_cost": 7.665e-05,
+    "upstream_inference_completions_cost": 1.974e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 736,
+   "completion_tokens": 39,
+   "total_tokens": 775,
+   "cost": 7.7274e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.7274e-05,
+    "upstream_inference_prompt_cost": 5.8944e-05,
+    "upstream_inference_completions_cost": 1.833e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.0
+}

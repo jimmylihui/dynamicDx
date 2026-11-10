@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have double vision?",
+  "Does the drooping get worse as the day goes on?",
+  "Are you having difficulty swallowing?",
+  "Are you having difficulty speaking?",
+  "Do you have weakness in your arms or legs?",
+  "Do you have any numbness in your face or body?",
+  "Do you have any pain in your eye or head?",
+  "Have you had a fever recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI Brain and Orbits with contrast",
+  "MRA Head and Neck",
+  "ESR and CRP",
+  "Pupil examination (check for anisocoria)",
+  "Check for facial anhidrosis"
+ ],
+ "served": [
+  "MRI orbits",
+  "MRI brain with contrast",
+  "CT / MR angiography (circle of Willis)",
+  "ESR / CRP",
+  "pupil examination (size, light reaction)",
+  "cranial nerve examination"
+ ],
+ "results": [
+  "1. MRI Brain and Orbits with contrast",
+  "     MRI orbits: orbital involvement with apical disease",
+  "     MRI brain with contrast: no lesion, no cranial nerve enhancement",
+  "2. MRA Head and Neck",
+  "     CT / MR angiography (circle of Willis): no aneurysm",
+  "3. ESR and CRP",
+  "     ESR / CRP: normal",
+  "4. Pupil examination (check for anisocoria)",
+  "     pupil examination (size, light reaction): equal and reactive",
+  "5. Check for facial anhidrosis",
+  "     cranial nerve examination: failure to adduct the right eye"
+ ],
+ "dx_raw": "DIAGNOSIS: Tolosa-Hunt Syndrome (idiopathic granulomatous inflammation of the cavernous sinus and/or superior orbital fissure)\nIgG4-related disease\nSarcoidosis\nOrbital inflammatory pseudotumor",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI Brain and Orbits with contrast\n2. MRA Head and Neck\n3. ESR and CRP\n4. Pupil examination (check for anisocoria)\n5. Check for facial anhidrosis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Tolosa-Hunt Syndrome (idiopathic granulomatous inflammation of the cavernous sinus and/or superior orbital fissure)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1450,
+   "total_tokens": 10148,
+   "cost": 0.0013628,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013628,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.000493
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1251,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9080,
+   "completion_tokens": 1494,
+   "total_tokens": 10574,
+   "cost": 0.00141596,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00141596,
+    "upstream_inference_prompt_cost": 0.000908,
+    "upstream_inference_completions_cost": 0.00050796
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1407,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9338,
+   "completion_tokens": 2364,
+   "total_tokens": 11702,
+   "cost": 0.00173756,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00173756,
+    "upstream_inference_prompt_cost": 0.0009338,
+    "upstream_inference_completions_cost": 0.00080376
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2281,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 230.6
+}

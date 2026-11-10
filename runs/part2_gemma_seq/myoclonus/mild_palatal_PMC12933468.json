@@ -1,0 +1,203 @@
+{
+ "questions": [
+  "Do you smoke?",
+  "Do you drink alcohol?",
+  "Have you noticed any lumps in your neck?",
+  "Have you had any unexplained weight loss?",
+  "Do you have difficulty swallowing?",
+  "Do you have a persistent sore throat?",
+  "Is the mass painful?",
+  "Have you had any night sweats?",
+  "Have you had any fevers?",
+  "Has the mass grown rapidly over the last few weeks?",
+  "Do you have any other lumps in your body?",
+  "Have you had any recent upper respiratory infections?",
+  "Has this mass been present for more than five years?",
+  "Do you have any history of childhood tonsillitis?",
+  "Do you have any history of HPV infection?",
+  "Do you have any ear pain on the left side?",
+  "Have you noticed any changes in your voice?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Palpation of the left tonsillar mass.",
+  "Palpation of the cervical lymph nodes.",
+  "Biopsy of the left tonsillar mass.",
+  "CT scan of the neck with contrast.",
+  "Fine needle aspiration biopsy of the left tonsillar mass.",
+  "Complete Blood Count (CBC) with differential.",
+  "Flexible nasopharyngoscopy.",
+  "Left tonsillectomy for histopathological analysis.",
+  "MRI of the neck with contrast."
+ ],
+ "served": [
+  "full blood count"
+ ],
+ "results": [
+  "R1 ASK Do you smoke?; Do you drink alcohol?; Have you noticed any lumps in your neck?; Have you had any unexplained weight loss?; Do you have difficulty swallowing?; Do you have a persistent sore throat? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ORDER Palpation of the left tonsillar mass.; Palpation of the cervical lymph nodes.; Biopsy of the left tonsillar mass. -> [[], [], []]",
+  "R3 ASK Is the mass painful?; Have you had any night sweats?; Have you had any fevers?; Has the mass grown rapidly over the last few weeks?; Do you have any other lumps in your body?; Have you had any recent upper respiratory infections? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R4 ORDER CT scan of the neck with contrast.; Fine needle aspiration biopsy of the left tonsillar mass. -> [[], []]",
+  "R5 ORDER Complete Blood Count (CBC) with differential.; Flexible nasopharyngoscopy. -> [['full blood count'], []]",
+  "R6 ASK Has this mass been present for more than five years?; Do you have any history of childhood tonsillitis?; Do you have any history of HPV infection?; Do you have any ear pain on the left side?; Have you noticed any changes in your voice? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 ORDER Left tonsillectomy for histopathological analysis.; MRI of the neck with contrast. -> [[], []]",
+  "R8 DIAGNOSIS Squamous cell carcinoma of the tonsil caused by Human Papillomavirus (HPV) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you smoke?",
+    "Do you drink alcohol?",
+    "Have you noticed any lumps in your neck?",
+    "Have you had any unexplained weight loss?",
+    "Do you have difficulty swallowing?",
+    "Do you have a persistent sore throat?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Palpation of the left tonsillar mass.",
+    "Palpation of the cervical lymph nodes.",
+    "Biopsy of the left tonsillar mass."
+   ],
+   "result": [
+    [],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Is the mass painful?",
+    "Have you had any night sweats?",
+    "Have you had any fevers?",
+    "Has the mass grown rapidly over the last few weeks?",
+    "Do you have any other lumps in your body?",
+    "Have you had any recent upper respiratory infections?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "CT scan of the neck with contrast.",
+    "Fine needle aspiration biopsy of the left tonsillar mass."
+   ],
+   "result": [
+    [],
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Complete Blood Count (CBC) with differential.",
+    "Flexible nasopharyngoscopy."
+   ],
+   "result": [
+    [
+     "full blood count"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Has this mass been present for more than five years?",
+    "Do you have any history of childhood tonsillitis?",
+    "Do you have any history of HPV infection?",
+    "Do you have any ear pain on the left side?",
+    "Have you noticed any changes in your voice?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Left tonsillectomy for histopathological analysis.",
+    "MRI of the neck with contrast."
+   ],
+   "result": [
+    [],
+    []
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Squamous cell carcinoma of the tonsil caused by Human Papillomavirus (HPV)"
+  }
+ ],
+ "dx": "Squamous cell carcinoma of the tonsil caused by Human Papillomavirus (HPV)",
+ "dx_raw": "DIAGNOSIS: Squamous cell carcinoma of the tonsil caused by Human Papillomavirus (HPV)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0113,
+ "n_frames": 32,
+ "duration_s": 9.0,
+ "video": "mild_palatal_PMC12933468.mp4",
+ "line": "myoclonus",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 1088.8
+}

@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Are you experiencing any pain right now?",
+  "Do you have a fever or chills?",
+  "Have you had any recent falls or injuries?",
+  "Are you currently taking any prescription medications?",
+  "Do you have difficulty breathing?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside neurological examination including assessment of muscle tone, power, and reflexes",
+  "Serum creatine kinase level",
+  "MRI of the brain"
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "creatine kinase",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Bedside neurological examination including assessment of muscle tone, power, and reflexes",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "2. Serum creatine kinase level",
+  "     creatine kinase: normal",
+  "3. MRI of the brain",
+  "     brain MRI: no structural lesion accounting for the syndrome"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological disorder (psychogenic gait disturbance)\nAlternatives:\n1. Malingering\n2. Factitious disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside neurological examination including assessment of muscle tone, power, and reflexes\n2. Serum creatine kinase level\n3. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional neurological disorder (psychogenic gait disturbance)",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 600,
+   "completion_tokens": 55,
+   "total_tokens": 655,
+   "cost": 0.00011585,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011585,
+    "upstream_inference_prompt_cost": 9e-05,
+    "upstream_inference_completions_cost": 2.585e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 883,
+   "completion_tokens": 33,
+   "total_tokens": 916,
+   "cost": 9.6504e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.6504e-05,
+    "upstream_inference_prompt_cost": 8.0994e-05,
+    "upstream_inference_completions_cost": 1.551e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1099,
+   "completion_tokens": 33,
+   "total_tokens": 1132,
+   "cost": 9.46e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 640,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.46e-05,
+    "upstream_inference_prompt_cost": 7.909e-05,
+    "upstream_inference_completions_cost": 1.551e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "severe_paraneoplastic_PMC12741441.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.2
+}

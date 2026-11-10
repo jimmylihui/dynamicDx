@@ -1,0 +1,134 @@
+{
+ "questions": [
+  "Do you have a history of Parkinson's disease?",
+  "Do you experience freezing of gait, where your feet feel stuck to the floor?",
+  "Do you take medication for blood pressure or other heart conditions?",
+  "Do you have a history of falls?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI of the brain",
+  "Dopamine transporter (DaT) SPECT scan",
+  "Trial of carbidopa-levodopa"
+ ],
+ "served": [
+  "MRI brain",
+  "DaTSCAN (dopamine transporter SPECT)",
+  "levodopa challenge"
+ ],
+ "results": [
+  "1. MRI of the brain",
+  "     MRI brain: normal, no periventricular lesions",
+  "2. Dopamine transporter (DaT) SPECT scan",
+  "     DaTSCAN (dopamine transporter SPECT): normal tracer uptake",
+  "3. Trial of carbidopa-levodopa",
+  "     levodopa challenge: no response"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional gait disorder (Functional neurological disorder)\n\n1. Idiopathic Normal Pressure Hydrocephalus\n2. Cerebellar degeneration",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain\n2. Dopamine transporter (DaT) SPECT scan\n3. Trial of carbidopa-levodopa",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional gait disorder (Functional neurological disorder)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6359,
+   "completion_tokens": 59,
+   "total_tokens": 6418,
+   "cost": 0.00098158,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00098158,
+    "upstream_inference_prompt_cost": 0.00095385,
+    "upstream_inference_completions_cost": 2.773e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6646,
+   "completion_tokens": 32,
+   "total_tokens": 6678,
+   "cost": 0.000205796,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6016,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000205796,
+    "upstream_inference_prompt_cost": 0.000190756,
+    "upstream_inference_completions_cost": 1.504e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 6849,
+   "completion_tokens": 35,
+   "total_tokens": 6884,
+   "cost": 0.000169048,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000169048,
+    "upstream_inference_prompt_cost": 0.000152598,
+    "upstream_inference_completions_cost": 1.645e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.7,
+ "video": "functional_gait_scissoring_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.0
+}

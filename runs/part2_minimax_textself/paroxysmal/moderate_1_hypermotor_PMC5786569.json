@@ -1,0 +1,143 @@
+{
+ "questions": [
+  "Do you remember these nighttime episodes when you wake up?",
+  "Has this happened more than once?",
+  "Do you ever act out vivid dreams while sleeping?",
+  "Do you have a history of seizures or epilepsy?",
+  "Are you currently taking any prescription medications?",
+  "Do you feel excessively sleepy or tired during the day?",
+  "Do you snore loudly or have you been told you stop breathing during sleep?",
+  "Do you have a family history of similar nighttime behaviors or sleep disorders?",
+  "Have you ever woken up with a bitten tongue or lost bladder control during the night?",
+  "Do you have any neurological conditions or a history of significant head injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Prolonged video-EEG telemetry (overnight, with sleep deprivation if needed to capture an event)",
+  "MRI brain with thin-cut epilepsy protocol (including dedicated frontal lobe sequences)"
+ ],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Prolonged video-EEG telemetry (overnight, with sleep deprivation if needed to capture an event)",
+  "     interictal EEG: no epileptiform discharges",
+  "     video-EEG monitoring of a typical event: the diagnosis was made on SEMIOLOGY from clinically documented video-EEG; there was NO interpretable ictal EEG correlate because of movement artefact",
+  "2. MRI brain with thin-cut epilepsy protocol (including dedicated frontal lobe sequences)",
+  "     brain MRI: no epileptogenic lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Non-REM parasomnia (sleep terror / confusional arousal), arising from disordered arousal out of N3 slow-wave sleep\n\nAlternatives (in order of likelihood):\n1. Nocturnal frontal lobe epilepsy (despite negative interictal EEG and normal MRI, an ictal EEG was obscured by movement artefact)\n2. REM sleep behaviour disorder (despite denial of dream enactment, recall is often poor in RBD)\n3. Psychogenic non-epileptic sleep-related events",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Prolonged video-EEG telemetry (overnight, with sleep deprivation if needed to capture an event)\n2. MRI brain with thin-cut epilepsy protocol (including dedicated frontal lobe sequences)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Non-REM parasomnia (sleep terror / confusional arousal), arising from disordered arousal out of N3 slow-wave sleep",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 387,
+   "completion_tokens": 1573,
+   "total_tokens": 1960,
+   "cost": 0.00197634,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00197634,
+    "upstream_inference_prompt_cost": 8.874e-05,
+    "upstream_inference_completions_cost": 0.0018876
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1619,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 858,
+   "completion_tokens": 1073,
+   "total_tokens": 1931,
+   "cost": 0.00151764,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00151764,
+    "upstream_inference_prompt_cost": 0.00023004,
+    "upstream_inference_completions_cost": 0.0012876
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1259,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1091,
+   "completion_tokens": 2183,
+   "total_tokens": 3274,
+   "cost": 0.00276594,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 754,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00276594,
+    "upstream_inference_prompt_cost": 0.00014634,
+    "upstream_inference_completions_cost": 0.0026196
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2348,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 65.2
+}

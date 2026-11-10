@@ -1,0 +1,130 @@
+{
+ "questions": [
+  "Did this walking difficulty begin suddenly?",
+  "Did it begin after an injury, illness, or emotional stress?",
+  "Do you feel pain in your back, hips, or legs when walking?",
+  "Do either of your legs feel weak?",
+  "Do you have numbness or tingling in either leg?",
+  "Do you feel dizzy or as if the room is spinning?",
+  "Have you had fainting, loss of consciousness, or seizures?",
+  "Have you had trouble speaking, seeing, swallowing, or controlling one side of your body?",
+  "Have you lost control of your bladder or bowels?",
+  "Is your walking problem getting progressively worse?",
+  "Does your walking vary substantially from moment to moment?",
+  "Can you walk normally when you are alone or not concentrating on walking?",
+  "Can you walk backward normally?",
+  "Can you stand still with your feet together without holding on?",
+  "Have you previously had a stroke, multiple sclerosis, Parkinson’s disease, neuropathy, or another neurologic condition?",
+  "Have you recently started or changed any medications, alcohol use, or recreational drugs?",
+  "Have you had similar episodes before?",
+  "Do you believe you might fall even when you are not actually losing your balance?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "genetic ataxia panel",
+  "brain MRI",
+  "Simplified Functional Movement Disorders Rating Scale (S-FMDRS)"
+ ],
+ "results": [
+  "1. genetic ataxia panel: 112 and 29 CTG repeats in ATXN8OS - confirms SCA8",
+  "2. brain MRI: cerebellar atrophy on sagittal T1 and axial FLAIR",
+  "3. Simplified Functional Movement Disorders Rating Scale (S-FMDRS): 3 - mild gait disturbance that normalises with distraction"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional gait disorder (functional neurological symptom disorder) superimposed on genetically confirmed spinocerebellar ataxia type 8 due to pathogenic ATXN8OS CTG-repeat expansion\n\nALTERNATIVE: Progressive cerebellar gait ataxia directly attributable to SCA8\n\nALTERNATIVE: Other hereditary spinocerebellar ataxia\n\nALTERNATIVE: Acquired cerebellar or neurodegenerative ataxia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional gait disorder (functional neurological symptom disorder) superimposed on genetically confirmed spinocerebellar ataxia type 8 due to pathogenic ATXN8OS CTG-repeat expansion",
+ "decisive_served": [
+  "genetic ataxia panel",
+  "brain MRI",
+  "Simplified Functional Movement Disorders Rating Scale (S-FMDRS)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 17964,
+   "completion_tokens": 515,
+   "total_tokens": 18479,
+   "cost": 0.00048891,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00048891,
+    "upstream_inference_prompt_cost": 0.00017991,
+    "upstream_inference_completions_cost": 0.000309
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 252,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 18740,
+   "completion_tokens": 324,
+   "total_tokens": 19064,
+   "cost": 0.00047131,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 776,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00047131,
+    "upstream_inference_prompt_cost": 0.00027691,
+    "upstream_inference_completions_cost": 0.0001944
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 225,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_sca_genetic_PMC12678565.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 16.4
+}

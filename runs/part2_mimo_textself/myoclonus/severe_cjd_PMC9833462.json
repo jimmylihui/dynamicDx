@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Are you experiencing any chest pain?",
+  "Do you have any sudden weakness or numbness on one side of your body?",
+  "Are you having difficulty breathing?",
+  "Are you bleeding from any place that won't stop?",
+  "Have you had a fever over 101°F (38.3°C) for more than three days?",
+  "Have you lost weight without trying in the last six months?",
+  "Have you ever been told you have high blood pressure?",
+  "Have you ever been told you have diabetes?",
+  "Are you experiencing severe, sudden abdominal pain?",
+  "Have you had a seizure?",
+  "Are you feeling confused or having trouble speaking?",
+  "Have you been exposed to anyone with a contagious illness like tuberculosis or COVID-19 recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Are you here for a prescription or medication?",
+  "Are you currently taking any controlled substances like opioids or benzodiazepines?",
+  "Do you have chronic pain anywhere?",
+  "Have you been told previously that you have a substance use disorder?",
+  "Are you experiencing thoughts of self-harm or suicide?",
+  "Is this visit related to a psychiatric or mental health concern?"
+ ],
+ "served": [],
+ "results": [
+  "1. Are you here for a prescription or medication?",
+  "     not performed / not available",
+  "2. Are you currently taking any controlled substances like opioids or benzodiazepines?",
+  "     not performed / not available",
+  "3. Do you have chronic pain anywhere?",
+  "     not performed / not available",
+  "4. Have you been told previously that you have a substance use disorder?",
+  "     not performed / not available",
+  "5. Are you experiencing thoughts of self-harm or suicide?",
+  "     not performed / not available",
+  "6. Is this visit related to a psychiatric or mental health concern?",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Non-compliance with the evaluation process; no active medical condition identified based on available history.\n\nElevated cardiovascular risk based on unknown history.\nAsymptomatic, previously undiagnosed chronic disease (e.g., hypertension, diabetes).\nPrimary psychiatric condition impacting the ability to engage in the evaluation.",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Are you here for a prescription or medication?\n2. Are you currently taking any controlled substances like opioids or benzodiazepines?\n3. Do you have chronic pain anywhere?\n4. Have you been told previously that you have a substance use disorder?\n5. Are you experiencing thoughts of self-harm or suicide?\n6. Is this visit related to a psychiatric or mental health concern?",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Non-compliance with the evaluation process; no active medical condition identified based on available history.",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 398,
+   "completion_tokens": 319,
+   "total_tokens": 717,
+   "cost": 0.0001186976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001186976,
+    "upstream_inference_prompt_cost": 2.93776e-05,
+    "upstream_inference_completions_cost": 8.932e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 150,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 937,
+   "completion_tokens": 596,
+   "total_tokens": 1533,
+   "cost": 0.0002717176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002717176,
+    "upstream_inference_prompt_cost": 0.0001048376,
+    "upstream_inference_completions_cost": 0.00016688
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 513,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1234,
+   "completion_tokens": 259,
+   "total_tokens": 1493,
+   "cost": 0.0001223488,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 896,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001223488,
+    "upstream_inference_prompt_cost": 4.98288e-05,
+    "upstream_inference_completions_cost": 7.252e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 190,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 30.5
+}

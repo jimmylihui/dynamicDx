@@ -1,0 +1,159 @@
+{
+ "questions": [
+  "Are you between the ages of 5 and 40?",
+  "Have you ever been diagnosed with or told you have liver disease or hepatitis?",
+  "Have you experienced unexplained mood or behavioral changes, such as depression or irritability?",
+  "Have you had trouble with your speech or swallowing?",
+  "Have you ever been told you have yellow rings around your eyes?",
+  "Does drinking a small amount of alcohol make your tremor better?",
+  "Is there a family history of tremor?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Slit-lamp examination of the eyes",
+  "Serum ceruloplasmin level",
+  "24-hour urine copper",
+  "Brain MRI",
+  "Neurological examination for cerebellar signs, gait, and Kayser-Fleischer rings"
+ ],
+ "served": [
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "brain MRI",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "gait examination",
+  "slit-lamp examination for Kayser-Fleischer rings"
+ ],
+ "results": [
+  "1. Slit-lamp examination of the eyes",
+  "     slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "2. Serum ceruloplasmin level",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease",
+  "3. 24-hour urine copper",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease",
+  "4. Brain MRI",
+  "     brain MRI: no structural lesion",
+  "5. Neurological examination for cerebellar signs, gait, and Kayser-Fleischer rings",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): absent",
+  "     gait examination: normal",
+  "     slit-lamp examination for Kayser-Fleischer rings: no rings"
+ ],
+ "dx_raw": "**DIAGNOSIS: Dystonic tremor**\n\nWilson's disease is excluded by the copper studies. No structural lesion or cerebellar signs. The slow, large-amplitude, proximal quality of this postural tremor is characteristic of dystonia-driven tremor — which can occur as the sole manifestation without overt dystonia.\n\n**Alternatives:**\n\n1. Essential tremor, proximal variant\n2. Functional (psychogenic) tremor\n3. Dopa-responsive dystonia (Segawa syndrome)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "Let me analyze this case. The description of a **slow, large-amplitude proximal tremor** triggered by **sustained posture** is the classic **\"wing-beating\" tremor** — most characteristic of **Wilson's disease**, though the age response (over 40) makes it less typical. Other considerations include cerebellar pathology, midbrain lesions, or dystonic tremor.\n\nMy priority is to settle the diagnosis:\n\n1. Slit-lamp examination of the eyes\n2. Serum ceruloplasmin level\n3. 24-hour urine copper\n4. Brain MRI\n5. Neurological examination for cerebellar signs, gait, and Kayser-Fleischer rings",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Dystonic tremor**",
+ "decisive_served": [
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "copper / caeruloplasmin / 24 h urinary copper"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 406,
+   "completion_tokens": 3341,
+   "total_tokens": 3747,
+   "cost": 0.0009659776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009659776,
+    "upstream_inference_prompt_cost": 3.04976e-05,
+    "upstream_inference_completions_cost": 0.00093548
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3234,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 796,
+   "completion_tokens": 864,
+   "total_tokens": 1660,
+   "cost": 0.0003270176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003270176,
+    "upstream_inference_prompt_cost": 8.50976e-05,
+    "upstream_inference_completions_cost": 0.00024192
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 714,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1232,
+   "completion_tokens": 1300,
+   "total_tokens": 2532,
+   "cost": 0.0004311104,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004311104,
+    "upstream_inference_prompt_cost": 6.71104e-05,
+    "upstream_inference_completions_cost": 0.000364
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1191,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 2076.4
+}

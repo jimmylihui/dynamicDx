@@ -1,0 +1,194 @@
+{
+ "questions": [
+  "Is your main difficulty related to walking or standing (needing help to move)?",
+  "Did this problem start suddenly or gradually?",
+  "Do you feel pain when you try to walk or stand?",
+  "Have you fallen or injured yourself recently because of this issue?",
+  "Do you have numbness, tingling, or weakness in your legs?",
+  "Have you ever had a stroke or a neurological condition (like Parkinson’s disease)?",
+  "Are you currently taking medications that make you dizzy or affect your balance?",
+  "Is this the first time you’ve needed help walking, or has it happened before?",
+  "Do you have weakness in your arms as well, or only in your legs?",
+  "Have you had a recent illness (like a flu or infection) before this started?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Cervical spine MRI",
+  "Brain MRI",
+  "Lumbar spine MRI",
+  "Complete blood count",
+  "Serum vitamin B12 level",
+  "Thyroid function tests",
+  "Comprehensive metabolic panel",
+  "Quantitative gait assessment",
+  "Electromyography and nerve conduction studies",
+  "Diagnostic lumbar puncture (if neuroimaging suggests normal pressure hydrocephalus)"
+ ],
+ "served": [
+  "MRI cervical and thoracic spine",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)",
+  "full blood count, renal and liver profile",
+  "vitamin B12",
+  "TSH / free T4",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "nerve conduction studies",
+  "needle electromyography",
+  "CSF opening pressure"
+ ],
+ "results": [
+  "1. Cervical spine MRI",
+  "     MRI cervical and thoracic spine: normal",
+  "2. Brain MRI",
+  "     MRI brain with gadolinium: mild midbrain atrophy with hummingbird sign; no abnormal enhancement",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): mild hummingbird sign with cerebral atrophy",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): normal",
+  "     MRI brain - cortical atrophy pattern: no focal atrophy",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal",
+  "3. Lumbar spine MRI",
+  "     not performed / not available",
+  "4. Complete blood count",
+  "     full blood count, renal and liver profile: normal",
+  "5. Serum vitamin B12 level",
+  "     vitamin B12: normal",
+  "6. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "7. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "8. Quantitative gait assessment",
+  "     not performed / not available",
+  "9. Electromyography and nerve conduction studies",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal",
+  "10. Diagnostic lumbar puncture (if neuroimaging suggests normal pressure hydrocephalus)",
+  "     CSF opening pressure: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy (PSP-Richardson syndrome), a 4-repeat tauopathy\n\n1. Multiple system atrophy (parkinsonian type)\n2. Normal pressure hydrocephalus\n3. Cervical spondylotic myelopathy with gait apraxia",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "Based on the clinical picture (elderly woman with progressive, painless gait difficulty requiring bilateral assistance, no sensory symptoms, no recent acute onset), here are my investigations:\n\n1. Cervical spine MRI\n2. Brain MRI\n3. Lumbar spine MRI\n4. Complete blood count\n5. Serum vitamin B12 level\n6. Thyroid function tests\n7. Comprehensive metabolic panel\n8. Quantitative gait assessment\n9. Electromyography and nerve conduction studies\n10. Diagnostic lumbar puncture (if neuroimaging suggests normal pressure hydrocephalus)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Progressive Supranuclear Palsy (PSP-Richardson syndrome), a 4-repeat tauopathy",
+ "decisive_served": [
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 1024,
+   "total_tokens": 6079,
+   "cost": 0.0003095176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003095176,
+    "upstream_inference_prompt_cost": 2.27976e-05,
+    "upstream_inference_completions_cost": 0.00028672
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 848,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5589,
+   "completion_tokens": 762,
+   "total_tokens": 6351,
+   "cost": 0.0003109176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003109176,
+    "upstream_inference_prompt_cost": 9.75576e-05,
+    "upstream_inference_completions_cost": 0.00021336
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 636,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 6125,
+   "completion_tokens": 552,
+   "total_tokens": 6677,
+   "cost": 0.0002481304,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5568,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002481304,
+    "upstream_inference_prompt_cost": 9.35704e-05,
+    "upstream_inference_completions_cost": 0.00015456
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 483,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "psp_richardson_PMC11082598.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 88.5
+}

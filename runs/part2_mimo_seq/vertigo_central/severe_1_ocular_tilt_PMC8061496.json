@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Have you noticed any double vision or changes in your vision, such as blurriness?",
+  "Have you experienced symptoms of an overactive thyroid, such as palpitations, weight loss, or heat intolerance?",
+  "Do your eyes feel dry, gritty, or irritated?",
+  "Have you noticed any swelling around your eyes or any redness?",
+  "Do you feel any pain when you move your eyes?",
+  "Have you noticed any lumps or swelling elsewhere in your body?",
+  "Has anyone ever commented that your eyes appear to be protruding or bulging?",
+  "Have you ever been diagnosed with or treated for any thyroid problems in the past?",
+  "Do you have any family members with thyroid disease or eye problems?",
+  "Do you smoke or have you ever smoked?",
+  "Are you taking any medications, including over-the-counter supplements?",
+  "Have you noticed any recent weight changes or tremors in your hands?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Blood glucose level (fasting or HbA1c)",
+  "MRI brain and orbits with contrast (to evaluate for compressive lesions, aneurysm, or structural abnormalities)",
+  "MR angiography of the circle of Willis (to rule out posterior communicating artery aneurysm)"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "MRI brain with gadolinium",
+  "CT / MR angiography (circle of Willis)"
+ ],
+ "results": [
+  "R1 ASK Have you noticed any double vision or changes in your vision, such as blurriness?; Have you experienced symptoms of an overactive thyroid, such as palpitations, weight loss, or heat intolerance?; Do your eyes feel dry, gritty, or irritated? -> ['yes', 'no', 'no']",
+  "R2 ASK Have you noticed any swelling around your eyes or any redness?; Do you feel any pain when you move your eyes?; Have you noticed any lumps or swelling elsewhere in your body? -> ['no', 'no', 'no']",
+  "R3 ASK Has anyone ever commented that your eyes appear to be protruding or bulging?; Have you ever been diagnosed with or treated for any thyroid problems in the past?; Do you have any family members with thyroid disease or eye problems? -> ['no', 'no', 'no']",
+  "R4 ASK Do you smoke or have you ever smoked?; Are you taking any medications, including over-the-counter supplements?; Have you noticed any recent weight changes or tremors in your hands? -> ['no', 'no', 'no']",
+  "R5 ORDER Blood glucose level (fasting or HbA1c); MRI brain and orbits with contrast (to evaluate for compressive lesions, aneurysm, or structural abnormalities); MR angiography of the circle of Willis (to rule out posterior communicating artery aneurysm) -> [['blood glucose and HbA1c', 'glucose / HbA1c'], ['MRI brain with gadolinium'], ['CT / MR angiography (circle of Willis)']]",
+  "R6 DIAGNOSIS Ischemic stroke (infarcts) in the left pons and midbrain (caudal mesencephalon), likely due to small vessel occlusive disease. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any double vision or changes in your vision, such as blurriness?",
+    "Have you experienced symptoms of an overactive thyroid, such as palpitations, weight loss, or heat intolerance?",
+    "Do your eyes feel dry, gritty, or irritated?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any swelling around your eyes or any redness?",
+    "Do you feel any pain when you move your eyes?",
+    "Have you noticed any lumps or swelling elsewhere in your body?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Has anyone ever commented that your eyes appear to be protruding or bulging?",
+    "Have you ever been diagnosed with or treated for any thyroid problems in the past?",
+    "Do you have any family members with thyroid disease or eye problems?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you smoke or have you ever smoked?",
+    "Are you taking any medications, including over-the-counter supplements?",
+    "Have you noticed any recent weight changes or tremors in your hands?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Blood glucose level (fasting or HbA1c)",
+    "MRI brain and orbits with contrast (to evaluate for compressive lesions, aneurysm, or structural abnormalities)",
+    "MR angiography of the circle of Willis (to rule out posterior communicating artery aneurysm)"
+   ],
+   "result": [
+    [
+     "blood glucose and HbA1c",
+     "glucose / HbA1c"
+    ],
+    [
+     "MRI brain with gadolinium"
+    ],
+    [
+     "CT / MR angiography (circle of Willis)"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Ischemic stroke (infarcts) in the left pons and midbrain (caudal mesencephalon), likely due to small vessel occlusive disease."
+  }
+ ],
+ "dx": "Ischemic stroke (infarcts) in the left pons and midbrain (caudal mesencephalon), likely due to small vessel occlusive disease.",
+ "dx_raw": "DIAGNOSIS: Ischemic stroke (infarcts) in the left pons and midbrain (caudal mesencephalon), likely due to small vessel occlusive disease.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0027,
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 143.8
+}

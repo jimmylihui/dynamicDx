@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Did you have a fever in the 24 hours prior to the seizure?",
+  "Do you have a history of epilepsy diagnosed before this event?",
+  "Were you taking any medications, including over-the-counter drugs or supplements, at the time of the seizure?",
+  "Had you consumed alcohol or recreational drugs in the 24 hours prior to the seizure?",
+  "Are you currently pregnant?",
+  "Did you experience a head injury in the days leading up to the seizure?",
+  "Have you ever had a stroke or brain tumor?",
+  "Is there a family history of seizures or epilepsy?",
+  "Did you feel an aura (such as a strange smell, taste, or visual change) immediately before the convulsion started?",
+  "Was the body turning movement observed by witnesses to be rhythmic and repetitive?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Serum glucose, sodium, calcium, magnesium, and renal function tests"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c"
+ ],
+ "results": [
+  "1. Serum glucose, sodium, calcium, magnesium, and renal function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Genetic epilepsy with febrile seizures plus (GEFS+) spectrum disorder presenting as a first unprovoked generalized tonic-clonic seizure\nAlternative 1: Idiopathic generalized epilepsy (e.g., Juvenile Myoclonic Epilepsy or Generalized Tonic-Clonic Seizures only)\nAlternative 2: Psychogenic non-epileptic seizure (PNES)",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Serum glucose, sodium, calcium, magnesium, and renal function tests",
+ "rationale": [
+  null
+ ],
+ "dx": "Genetic epilepsy with febrile seizures plus (GEFS+) spectrum disorder presenting as a first unprovoked generalized tonic-clonic seizure",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 180,
+   "completion_tokens": 177,
+   "total_tokens": 357,
+   "cost": 0.00011019,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011019,
+    "upstream_inference_prompt_cost": 2.7e-05,
+    "upstream_inference_completions_cost": 8.319e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 729,
+   "completion_tokens": 15,
+   "total_tokens": 744,
+   "cost": 0.0001164,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001164,
+    "upstream_inference_prompt_cost": 0.00010935,
+    "upstream_inference_completions_cost": 7.05e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 897,
+   "completion_tokens": 84,
+   "total_tokens": 981,
+   "cost": 0.000105422,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000105422,
+    "upstream_inference_prompt_cost": 6.5942e-05,
+    "upstream_inference_completions_cost": 3.948e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.8,
+ "video": "severe_1_generalized_PMC13101308.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 21.6
+}

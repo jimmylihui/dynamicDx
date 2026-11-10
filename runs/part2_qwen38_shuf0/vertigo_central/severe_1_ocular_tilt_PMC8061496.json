@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Do you have a history of thyroid disease?",
+  "Have you ever been diagnosed with myasthenia gravis?",
+  "Are your symptoms worse when you are tired or at the end of the day?",
+  "Do you experience double vision?",
+  "Do you have difficulty swallowing or chewing?",
+  "Do you have a history of diabetes or high blood pressure?",
+  "Do you have a droopy eyelid that is present all the time, even when you wake up in the morning?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Ice pack test",
+  "Serum acetylcholine receptor antibodies",
+  "Serum muscle-specific kinase (MuSK) antibodies",
+  "Repetitive nerve stimulation",
+  "CT scan of the chest"
+ ],
+ "served": [
+  "ptosis / lid position",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "repetitive nerve stimulation",
+  "CT chest / abdomen / pelvis (occult tumour)"
+ ],
+ "results": [
+  "1. Ice pack test",
+  "     ptosis / lid position: none",
+  "2. Serum acetylcholine receptor antibodies",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "3. Serum muscle-specific kinase (MuSK) antibodies",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "4. Repetitive nerve stimulation",
+  "     repetitive nerve stimulation: normal",
+  "5. CT scan of the chest",
+  "     CT chest / abdomen / pelvis (occult tumour): no malignancy"
+ ],
+ "dx_raw": "DIAGNOSIS: Voluntary nystagmus (saccadic oscillations)\n\n1. Functional neurological disorder (psychogenic gaze palsy)\n2. Congenital nystagmus",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Ice pack test\n2. Serum acetylcholine receptor antibodies\n3. Serum muscle-specific kinase (MuSK) antibodies\n4. Repetitive nerve stimulation\n5. CT scan of the chest",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Voluntary nystagmus (saccadic oscillations)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4822,
+   "completion_tokens": 109,
+   "total_tokens": 4931,
+   "cost": 0.00077453,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00077453,
+    "upstream_inference_prompt_cost": 0.0007233,
+    "upstream_inference_completions_cost": 5.123e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5221,
+   "completion_tokens": 44,
+   "total_tokens": 5265,
+   "cost": 0.00020351,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020351,
+    "upstream_inference_prompt_cost": 0.00018283,
+    "upstream_inference_completions_cost": 2.068e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5489,
+   "completion_tokens": 43,
+   "total_tokens": 5532,
+   "cost": 0.000174632,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000174632,
+    "upstream_inference_prompt_cost": 0.000154422,
+    "upstream_inference_completions_cost": 2.021e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 24.7
+}

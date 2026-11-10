@@ -1,0 +1,180 @@
+{
+ "questions": [
+  "Does the eyelid drooping improve after rest or sleep?",
+  "Does the drooping tend to worsen later in the day?",
+  "Do you have double vision?",
+  "Does the double vision or eyelid drooping fluctuate during the day?",
+  "Do you have difficulty chewing, swallowing, or keeping food or liquids from going down the wrong way?",
+  "Does your speech become slurred or softer when you talk for a while?",
+  "Do you develop facial weakness or difficulty smiling after prolonged activity?",
+  "Do your neck, arm, or leg muscles become weak with use and improve with rest?",
+  "Have you had any shortness of breath, especially when lying down or after exertion?",
+  "Did the eyelid drooping begin suddenly?",
+  "Is the drooping present in both eyes?",
+  "Do you have severe headache or pain around the affected eye?",
+  "Is the pupil of the affected eye noticeably larger or smaller than the other pupil?",
+  "Have you had any recent injury, surgery, or infection involving your head, neck, or eye?",
+  "Do you have a history of thyroid disease or another autoimmune disease?",
+  "Are you taking any medicines known to cause muscle weakness or eyelid drooping?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside sustained upgaze and repetitive eyelid-opening examination",
+  "Ice-pack test applied to the more ptotic eyelid",
+  "Serum acetylcholine-receptor antibody panel",
+  "Serum muscle-specific tyrosine kinase antibody",
+  "Single-fiber electromyography of a facial muscle",
+  "Repetitive nerve stimulation of facial and proximal limb muscles",
+  "Chest computed tomography with contrast"
+ ],
+ "served": [
+  "sustained upgaze fatigability test",
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "anti-MuSK antibodies",
+  "single-fibre EMG",
+  "repetitive nerve stimulation",
+  "CT chest (thymus)"
+ ],
+ "results": [
+  "1. Bedside sustained upgaze and repetitive eyelid-opening examination",
+  "     sustained upgaze fatigability test: 'PRONOUNCED PTOSIS' on counting 1 to 100 - the right eye closed completely while the left droop increased",
+  "2. Ice-pack test applied to the more ptotic eyelid",
+  "     ice-pack test: partial improvement",
+  "3. Serum acetylcholine-receptor antibody panel",
+  "     anti-acetylcholine receptor antibodies: 16.63 nmol/L - elevated",
+  "4. Serum muscle-specific tyrosine kinase antibody",
+  "     anti-MuSK antibodies: negative",
+  "5. Single-fiber electromyography of a facial muscle",
+  "     single-fibre EMG: normal jitter",
+  "6. Repetitive nerve stimulation of facial and proximal limb muscles",
+  "     repetitive nerve stimulation: decremental response in facial and spinal accessory nerves",
+  "7. Chest computed tomography with contrast",
+  "     CT chest (thymus): no thymoma"
+ ],
+ "dx_raw": "DIAGNOSIS: Seropositive autoimmune ocular myasthenia gravis due to pathogenic acetylcholine-receptor antibodies, without thymoma\n\nAlternative: Seronegative or antibody-misclassified congenital myasthenic syndrome\n\nAlternative: Lambert–Eaton myasthenic syndrome\n\nAlternative: Thyroid eye disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Bedside sustained upgaze and repetitive eyelid-opening examination\n2. Ice-pack test applied to the more ptotic eyelid\n3. Serum acetylcholine-receptor antibody panel\n4. Serum muscle-specific tyrosine kinase antibody\n5. Single-fiber electromyography of a facial muscle\n6. Repetitive nerve stimulation of facial and proximal limb muscles\n7. Chest computed tomography with contrast\n",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Seropositive autoimmune ocular myasthenia gravis due to pathogenic acetylcholine-receptor antibodies, without thymoma",
+ "decisive_served": [
+  "sustained upgaze fatigability test",
+  "anti-acetylcholine receptor antibodies",
+  "repetitive nerve stimulation"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 161,
+   "completion_tokens": 556,
+   "total_tokens": 717,
+   "cost": 0.0003497,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003497,
+    "upstream_inference_prompt_cost": 1.61e-05,
+    "upstream_inference_completions_cost": 0.0003336
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 296,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 894,
+   "completion_tokens": 243,
+   "total_tokens": 1137,
+   "cost": 0.0002352,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002352,
+    "upstream_inference_prompt_cost": 8.94e-05,
+    "upstream_inference_completions_cost": 0.0001458
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 151,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1271,
+   "completion_tokens": 206,
+   "total_tokens": 1477,
+   "cost": 0.0002824,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1268,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002824,
+    "upstream_inference_prompt_cost": 0.0001588,
+    "upstream_inference_completions_cost": 0.0001236
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 134,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_mg_ptosis_PMC8064859.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 25.0
+}

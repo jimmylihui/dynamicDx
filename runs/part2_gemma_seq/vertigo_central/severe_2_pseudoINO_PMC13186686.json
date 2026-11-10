@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Is the left pupil dilated?",
+  "Does the patient have double vision?",
+  "Was there a direct blow to the face?",
+  "Is there weakness in the limbs?",
+  "Is there difficulty swallowing?",
+  "Is there difficulty breathing?",
+  "Is there numbness or tingling in the extremities?",
+  "Is there ataxia or balance problems?",
+  "Was there a head injury?",
+  "Is there fluid leaking from the nose?",
+  "Is there bruising behind the ears?",
+  "Did you have a sudden, severe headache?",
+  "Do you have a history of pituitary tumors?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "CT scan of the orbits"
+ ],
+ "served": [],
+ "results": [
+  "R1 ORDER CT scan of the orbits -> [[]]",
+  "R2 ASK Is the left pupil dilated?; Does the patient have double vision?; Was there a direct blow to the face? -> ['no', 'yes', 'no']",
+  "R3 ASK Is there weakness in the limbs?; Is there difficulty swallowing?; Is there difficulty breathing?; Is there numbness or tingling in the extremities?; Is there ataxia or balance problems? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Was there a head injury?; Is there fluid leaking from the nose?; Is there bruising behind the ears?; Did you have a sudden, severe headache?; Do you have a history of pituitary tumors? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R5 DIAGNOSIS Basilar skull fracture of the anterior cranial fossa due to head injury -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "order",
+   "items": [
+    "CT scan of the orbits"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Is the left pupil dilated?",
+    "Does the patient have double vision?",
+    "Was there a direct blow to the face?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Is there weakness in the limbs?",
+    "Is there difficulty swallowing?",
+    "Is there difficulty breathing?",
+    "Is there numbness or tingling in the extremities?",
+    "Is there ataxia or balance problems?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Was there a head injury?",
+    "Is there fluid leaking from the nose?",
+    "Is there bruising behind the ears?",
+    "Did you have a sudden, severe headache?",
+    "Do you have a history of pituitary tumors?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Basilar skull fracture of the anterior cranial fossa due to head injury"
+  }
+ ],
+ "dx": "Basilar skull fracture of the anterior cranial fossa due to head injury",
+ "dx_raw": "DIAGNOSIS: Basilar skull fracture of the anterior cranial fossa due to head injury",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.009,
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 306.6
+}

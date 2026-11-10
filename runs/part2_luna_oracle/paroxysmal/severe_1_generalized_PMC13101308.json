@@ -1,0 +1,115 @@
+{
+ "questions": [
+  "Did you come to the hospital because of an injury to your left leg?",
+  "Did the injury happen after a fall or accident?",
+  "Is your left leg currently causing you significant pain?",
+  "Has your left leg become more swollen, red, or warm since the injury?",
+  "Have you had surgery on your left leg recently?",
+  "Are you currently short of breath?",
+  "Are you having chest pain?",
+  "Have you felt faint, confused, or unusually drowsy?",
+  "Do you have numbness or weakness in either leg?",
+  "Do you have a fever or chills?",
+  "Have you previously had a blood clot in your leg or lungs?",
+  "Are you taking a blood thinner?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "2. video-EEG monitoring of a typical event: ictal body turning preceded by head version; although the clinical onset looked focal, the EEG showed generalized beta fast activity for 0.5 s followed by a generalized 2.5-3 Hz spike-wave discharge with maximum bifrontal amplitude"
+ ],
+ "dx_raw": "DIAGNOSIS: Genetic generalized epilepsy, with generalized-onset tonic–clonic seizures showing focal-appearing head version and body turning (generalized epilepsy with focal semiology)\n\nALTERNATIVES:  \n1. Focal epilepsy with very rapid secondary bilateral synchrony  \n2. Symptomatic generalized epilepsy, such as Lennox–Gastaut syndrome  \n3. Psychogenic nonepileptic events occurring in a patient with incidental generalized epileptiform discharges",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Genetic generalized epilepsy, with generalized-onset tonic–clonic seizures showing focal-appearing head version and body turning (generalized epilepsy with focal semiology)",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 1190,
+   "total_tokens": 6866,
+   "cost": 0.00077103,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00077103,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.000714
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1034,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6236,
+   "completion_tokens": 587,
+   "total_tokens": 6823,
+   "cost": 0.00047923,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 560,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00047923,
+    "upstream_inference_prompt_cost": 0.00012703,
+    "upstream_inference_completions_cost": 0.0003522
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 489,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.8,
+ "video": "severe_1_generalized_PMC13101308.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 24.4
+}

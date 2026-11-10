@@ -1,0 +1,166 @@
+{
+ "questions": [
+  "Have you recently suffered any injury to your head or face?",
+  "Are you experiencing a severe headache right now?",
+  "Did the droopy eyelid or double vision start suddenly?",
+  "Have you recently had any surgery on your nose, sinuses, or head?",
+  "Have you been diagnosed with diabetes?",
+  "Do you have high blood pressure?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you have any numbness in your face?",
+  "Do you see double when you look with both eyes open?",
+  "Have you ever been diagnosed with cancer?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "CT head and facial bones (non-contrast) with thin cuts through the orbits",
+  "CT angiography of the head and neck",
+  "Visual acuity testing of the left eye",
+  "Intraocular pressure measurement of the left eye",
+  "Forced duction test of the left eye",
+  "Slit lamp examination of the left eye",
+  "Fundoscopy of the left eye"
+ ],
+ "served": [
+  "CT head (non-contrast)",
+  "CT / MR angiography (posterior circulation)",
+  "CT / MR angiography (circle of Willis)",
+  "forced duction test",
+  "fundoscopy"
+ ],
+ "results": [
+  "1. CT head and facial bones (non-contrast) with thin cuts through the orbits",
+  "     CT head (non-contrast): multiple skull fractures and epidural haemorrhage; NO evidence of brainstem injury",
+  "2. CT angiography of the head and neck",
+  "     CT / MR angiography (posterior circulation): normal",
+  "     CT / MR angiography (circle of Willis): normal / non-contributory",
+  "3. Visual acuity testing of the left eye",
+  "     not performed / not available",
+  "4. Intraocular pressure measurement of the left eye",
+  "     not performed / not available",
+  "5. Forced duction test of the left eye",
+  "     forced duction test: restriction consistent with a mechanical cause",
+  "6. Slit lamp examination of the left eye",
+  "     not performed / not available",
+  "7. Fundoscopy of the left eye",
+  "     fundoscopy: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Orbital floor (blowout) fracture with inferior rectus muscle entrapment, complicated by traumatic ipsilateral oculomotor (CN III) nerve palsy\nOrbital medial wall fracture with medial rectus entrapment and traumatic oculomotor nerve palsy\nTraumatic carotid-cavernous fistula with secondary orbital signs\nOrbital apex syndrome from facial/skull fracture involving both the inferior rectus and the oculomotor nerve",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. CT head and facial bones (non-contrast) with thin cuts through the orbits\n2. CT angiography of the head and neck\n3. Visual acuity testing of the left eye\n4. Intraocular pressure measurement of the left eye\n5. Forced duction test of the left eye\n6. Slit lamp examination of the left eye\n7. Fundoscopy of the left eye",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Orbital floor (blowout) fracture with inferior rectus muscle entrapment, complicated by traumatic ipsilateral oculomotor (CN III) nerve palsy",
+ "decisive_served": [
+  "CT head (non-contrast)",
+  "forced duction test"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 455,
+   "completion_tokens": 6171,
+   "total_tokens": 6626,
+   "cost": 0.00751434,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00751434,
+    "upstream_inference_prompt_cost": 0.00010914,
+    "upstream_inference_completions_cost": 0.0074052
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6776,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 892,
+   "completion_tokens": 4176,
+   "total_tokens": 5068,
+   "cost": 0.00525144,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00525144,
+    "upstream_inference_prompt_cost": 0.00024024,
+    "upstream_inference_completions_cost": 0.0050112
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4666,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1237,
+   "completion_tokens": 4002,
+   "total_tokens": 5239,
+   "cost": 0.00499254,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 754,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00499254,
+    "upstream_inference_prompt_cost": 0.00019014,
+    "upstream_inference_completions_cost": 0.0048024
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4687,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 169.7
+}

@@ -1,0 +1,150 @@
+{
+ "questions": [
+  "Did you experience a sudden change in how your eyelid or facial muscles function recently?",
+  "Have you noticed drooping of your eyelid before this appointment?",
+  "Did you have an infection or illness in the weeks before this symptom began?",
+  "Do you feel numbness or tingling around your eye and forehead?",
+  "Have you had trouble fully closing your eye when blinking or sleeping?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Assess thyroid gland by palpation",
+  "Blood tests for thyroid function (TSH, free T4, free T3)",
+  "Blood tests for thyroid antibodies (anti-TPO, TSH receptor antibodies)",
+  "Measure degree of eye protrusion with exophthalmometer",
+  "Assess extraocular movements in all directions",
+  "Check for lid retraction and lid lag",
+  "Orbital imaging (CT or MRI orbits)"
+ ],
+ "served": [
+  "TSH / free T4",
+  "anti-thyroid antibodies",
+  "vertical saccades and gaze range (up and down)",
+  "eyelid function (apraxia of lid opening, blepharospasm, lid retraction)"
+ ],
+ "results": [
+  "1. Assess thyroid gland by palpation",
+  "     not performed / not available",
+  "2. Blood tests for thyroid function (TSH, free T4, free T3)",
+  "     TSH / free T4: normal",
+  "3. Blood tests for thyroid antibodies (anti-TPO, TSH receptor antibodies)",
+  "     anti-thyroid antibodies: normal",
+  "4. Measure degree of eye protrusion with exophthalmometer",
+  "     not performed / not available",
+  "5. Assess extraocular movements in all directions",
+  "     vertical saccades and gaze range (up and down): vertical DOWNGAZE PALSY with broken smooth pursuit and slow hypometric saccades",
+  "6. Check for lid retraction and lid lag",
+  "     eyelid function (apraxia of lid opening, blepharospasm, lid retraction): normal",
+  "7. Orbital imaging (CT or MRI orbits)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOPSIS: Progressive Supranuclear Palsy (PSP) - Richardson syndrome variant\n\nAlternative considerations:\n1. Dorsal midbrain lesion (Parinaud syndrome or other structural cause)\n2. Niemann-Pick disease type C (adult onset)\n3. Normal pressure hydrocephalus with midbrain compression",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Assess thyroid gland by palpation\n2. Blood tests for thyroid function (TSH, free T4, free T3)\n3. Blood tests for thyroid antibodies (anti-TPO, TSH receptor antibodies)\n4. Measure degree of eye protrusion with exophthalmometer\n5. Assess extraocular movements in all directions\n6. Check for lid retraction and lid lag\n7. Orbital imaging (CT or MRI orbits)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "DIAGNOPSIS: Progressive Supranuclear Palsy (PSP) - Richardson syndrome variant",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14783,
+   "completion_tokens": 422,
+   "total_tokens": 15205,
+   "cost": 0.000168196,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000168196,
+    "upstream_inference_prompt_cost": 5.0036e-05,
+    "upstream_inference_completions_cost": 0.00011816
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 337,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 15119,
+   "completion_tokens": 601,
+   "total_tokens": 15720,
+   "cost": 0.000265356,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000265356,
+    "upstream_inference_prompt_cost": 9.7076e-05,
+    "upstream_inference_completions_cost": 0.00016828
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 507,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 15492,
+   "completion_tokens": 613,
+   "total_tokens": 16105,
+   "cost": 0.0002682512,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 15104,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002682512,
+    "upstream_inference_prompt_cost": 9.66112e-05,
+    "upstream_inference_completions_cost": 0.00017164
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 545,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_wilson_psp_phenotype_PMC12962431.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 34.2
+}

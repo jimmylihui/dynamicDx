@@ -1,0 +1,206 @@
+{
+ "questions": [
+  "Are these movements involuntary?",
+  "Is there a family history of similar movements?",
+  "Have you had a sore throat or fever in the last few months?",
+  "Have you noticed any changes in your mood or personality?",
+  "Do you have any difficulty with your balance or walking?",
+  "Do you have a history of chronic liver disease or cirrhosis?",
+  "Are you receiving total parenteral nutrition (TPN)?",
+  "Are you taking any medications, specifically antipsychotics or antiemetics?",
+  "Have you had any recent head trauma or a stroke?",
+  "Do you have any known autoimmune diseases?",
+  "Have you recently received intravenous immunoglobulin (IVIG) therapy?",
+  "Do you work in an industry involving welding, mining, or smelting?",
+  "Have you had any recent episodes of jaundice or acute liver failure?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Brain MRI",
+  "Thyroid function tests",
+  "Glucose level",
+  "Renal and liver function tests",
+  "Autoimmune screen (ANA, anti-dsDNA)",
+  "Abdominal ultrasound",
+  "Serum ceruloplasmin",
+  "Serum copper level",
+  "24-hour urinary copper excretion"
+ ],
+ "served": [
+  "brain MRI",
+  "TSH / free T4",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "liver function and albumin/globulin",
+  "antinuclear antibodies and anti-dsDNA",
+  "abdominal ultrasound / liver imaging",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "24-hour urinary copper"
+ ],
+ "results": [
+  "R1 ASK Are these movements involuntary?; Is there a family history of similar movements?; Have you had a sore throat or fever in the last few months?; Have you noticed any changes in your mood or personality?; Do you have any difficulty with your balance or walking? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R2 ORDER Brain MRI; Thyroid function tests; Glucose level; Renal and liver function tests; Autoimmune screen (ANA, anti-dsDNA) -> [['brain MRI'], ['TSH / free T4'], ['blood glucose and HbA1c', 'glucose / HbA1c'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'liver function and albumin/globulin'], ['antinuclear antibodies and anti-dsDNA']]",
+  "R3 ASK Do you have a history of chronic liver disease or cirrhosis?; Are you receiving total parenteral nutrition (TPN)?; Are you taking any medications, specifically antipsychotics or antiemetics?; Have you had any recent head trauma or a stroke?; Do you have any known autoimmune diseases? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Have you recently received intravenous immunoglobulin (IVIG) therapy?; Do you work in an industry involving welding, mining, or smelting?; Have you had any recent episodes of jaundice or acute liver failure? -> ['no', 'no', 'no']",
+  "R5 ORDER Abdominal ultrasound; Serum ceruloplasmin; Serum copper level; 24-hour urinary copper excretion -> [['abdominal ultrasound / liver imaging'], ['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['24-hour urinary copper', 'copper / caeruloplasmin / 24 h urinary copper']]",
+  "R6 DIAGNOSIS Acquired hepatocerebral degeneration due to cirrhosis -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are these movements involuntary?",
+    "Is there a family history of similar movements?",
+    "Have you had a sore throat or fever in the last few months?",
+    "Have you noticed any changes in your mood or personality?",
+    "Do you have any difficulty with your balance or walking?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Brain MRI",
+    "Thyroid function tests",
+    "Glucose level",
+    "Renal and liver function tests",
+    "Autoimmune screen (ANA, anti-dsDNA)"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ],
+    [
+     "TSH / free T4"
+    ],
+    [
+     "blood glucose and HbA1c",
+     "glucose / HbA1c"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests",
+     "liver function and albumin/globulin"
+    ],
+    [
+     "antinuclear antibodies and anti-dsDNA"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of chronic liver disease or cirrhosis?",
+    "Are you receiving total parenteral nutrition (TPN)?",
+    "Are you taking any medications, specifically antipsychotics or antiemetics?",
+    "Have you had any recent head trauma or a stroke?",
+    "Do you have any known autoimmune diseases?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you recently received intravenous immunoglobulin (IVIG) therapy?",
+    "Do you work in an industry involving welding, mining, or smelting?",
+    "Have you had any recent episodes of jaundice or acute liver failure?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Abdominal ultrasound",
+    "Serum ceruloplasmin",
+    "Serum copper level",
+    "24-hour urinary copper excretion"
+   ],
+   "result": [
+    [
+     "abdominal ultrasound / liver imaging"
+    ],
+    [
+     "serum copper and caeruloplasmin",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "serum copper and caeruloplasmin",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "24-hour urinary copper",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Acquired hepatocerebral degeneration due to cirrhosis"
+  }
+ ],
+ "dx": "Acquired hepatocerebral degeneration due to cirrhosis",
+ "dx_raw": "DIAGNOSIS: Acquired hepatocerebral degeneration due to cirrhosis",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "abdominal ultrasound / liver imaging",
+  "brain MRI",
+  "liver function and albumin/globulin"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0074,
+ "n_frames": 32,
+ "duration_s": 11.4,
+ "video": "moderate_hepatic_cirrhosis_PMC13166699.mp4",
+ "line": "tremor",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 148.2
+}

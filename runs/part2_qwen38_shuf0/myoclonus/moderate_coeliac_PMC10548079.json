@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Are you experiencing pain in your shoulder?",
+  "Do you have a history of cancer?",
+  "Have you had any recent trauma or injury to this arm?",
+  "Is the pain worse when you try to lift your arm?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform the finger-to-nose test bilaterally",
+  "Assess for rebound phenomenon (Stewart-Holmes sign)",
+  "Evaluate rapid alternating movements (dysdiadochokinesia)",
+  "Check muscle tone in the upper extremities",
+  "MRI of the brain"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "coordination examination (limb and truncal)",
+  "coordination examination (limb and truncal)",
+  "muscle tone examination",
+  "MRI brain with gadolinium"
+ ],
+ "results": [
+  "1. Perform the finger-to-nose test bilaterally",
+  "     coordination examination (limb and truncal): limb and truncal ataxia with action myoclonus",
+  "2. Assess for rebound phenomenon (Stewart-Holmes sign)",
+  "     coordination examination (limb and truncal): limb and truncal ataxia with action myoclonus",
+  "3. Evaluate rapid alternating movements (dysdiadochokinesia)",
+  "     coordination examination (limb and truncal): limb and truncal ataxia with action myoclonus",
+  "4. Check muscle tone in the upper extremities",
+  "     muscle tone examination: normal",
+  "5. MRI of the brain",
+  "     MRI brain with gadolinium: mild diffuse atrophy only, no enhancement"
+ ],
+ "dx_raw": "DIAGNOSIS: Paraneoplastic cerebellar degeneration (likely anti-Yo or anti-Hu antibody mediated)\nAlternative 1: Creutzfeldt-Jakob disease (sporadic)\nAlternative 2: Idiopathic late-onset cerebellar ataxia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Perform the finger-to-nose test bilaterally\n2. Assess for rebound phenomenon (Stewart-Holmes sign)\n3. Evaluate rapid alternating movements (dysdiadochokinesia)\n4. Check muscle tone in the upper extremities\n5. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Paraneoplastic cerebellar degeneration (likely anti-Yo or anti-Hu antibody mediated)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 52,
+   "total_tokens": 4875,
+   "cost": 0.00074789,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074789,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5096,
+   "completion_tokens": 63,
+   "total_tokens": 5159,
+   "cost": 0.00019369,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00019369,
+    "upstream_inference_prompt_cost": 0.00016408,
+    "upstream_inference_completions_cost": 2.961e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5419,
+   "completion_tokens": 61,
+   "total_tokens": 5480,
+   "cost": 0.000189744,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4864,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000189744,
+    "upstream_inference_prompt_cost": 0.000161074,
+    "upstream_inference_completions_cost": 2.867e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "moderate_coeliac_PMC10548079.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 27.8
+}

@@ -1,0 +1,118 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a fever?",
+  "Have you been vomiting recently?",
+  "Do you feel short of breath?",
+  "Is your heart beating irregularly or very fast right now?",
+  "Do you feel dizzy or lightheaded when you sit up?",
+  "Have you had any diarrhea?",
+  "Do you feel confused or disoriented?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "medication, supplement and herbal history",
+  "liver function and albumin/globulin",
+  "whole-blood manganese",
+  "brain MRI",
+  "abdominal ultrasound / liver imaging"
+ ],
+ "results": [
+  "1. medication, supplement and herbal history: long-term hepatotoxic traditional Chinese medicine, notably Psoralea corylifolia, plus manganese-containing supplements",
+  "2. liver function and albumin/globulin: albumin 35.1 g/L (ref 35-52), globulin 30.8 g/L RAISED (ref 15-30), A/G ratio 1.14 LOW (ref 1.2-2.4)",
+  "3. whole-blood manganese: ELEVATED; fell after the supplements were stopped but remained above normal",
+  "4. brain MRI: bilateral T1 HYPERINTENSITY in the basal ganglia - manganese deposition",
+  "5. abdominal ultrasound / liver imaging: cirrhosis"
+ ],
+ "dx_raw": "DIAGNOSIS: Manganese-induced parkinsonism (manganism) secondary to chronic manganese supplementation and impaired biliary excretion due to liver cirrhosis.\n\n1. Hepatic encephalopathy\n2. Idiopathic Parkinson's disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Manganese-induced parkinsonism (manganism) secondary to chronic manganese supplementation and impaired biliary excretion due to liver cirrhosis.",
+ "decisive_served": [
+  "medication, supplement and herbal history",
+  "liver function and albumin/globulin",
+  "whole-blood manganese",
+  "brain MRI",
+  "abdominal ultrasound / liver imaging"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14551,
+   "completion_tokens": 90,
+   "total_tokens": 14641,
+   "cost": 0.00222495,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00222495,
+    "upstream_inference_prompt_cost": 0.00218265,
+    "upstream_inference_completions_cost": 4.23e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15023,
+   "completion_tokens": 53,
+   "total_tokens": 15076,
+   "cost": 0.000374488,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14208,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000374488,
+    "upstream_inference_prompt_cost": 0.000349578,
+    "upstream_inference_completions_cost": 2.491e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.4,
+ "video": "moderate_hepatic_cirrhosis_PMC13166699.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 11.1
+}

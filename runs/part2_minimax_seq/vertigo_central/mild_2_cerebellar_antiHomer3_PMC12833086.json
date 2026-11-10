@@ -1,0 +1,253 @@
+{
+ "questions": [
+  "Is the main reason you came to see me related to your eyes or vision?",
+  "Do you have difficulty moving your eyes quickly from one object to another?",
+  "Do you find you need to blink or move your head to help shift your gaze to the side?",
+  "Have you had any unexplained falls recently, particularly backwards?",
+  "Do you feel slow or stiff in your movements compared to before?",
+  "Do you have any tremor in your hands?",
+  "Do you have any double vision?",
+  "Do you have any drooping of your eyelids?",
+  "Do you have any difficulty swallowing or speaking?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you have any numbness or tingling?",
+  "Do you have any difficulty with balance or coordination?",
+  "Is the balance problem worse when you are in the dark or close your eyes?",
+  "Do you feel unsteady when you turn quickly?",
+  "Do you have any hearing loss or ringing in your ears?",
+  "Do you have any dizziness or vertigo?",
+  "Do you have any nausea or vomiting?",
+  "Do you have any headaches?",
+  "Is the dizziness a spinning sensation (vertigo)?",
+  "Does the dizziness come on with changes in head position?",
+  "Have you had any recent infections, especially of the ear?",
+  "Do you feel lightheaded or like you might faint?",
+  "Do you have any chest pain or shortness of breath?",
+  "Do you have any history of heart problems or high blood pressure?",
+  "Does the lightheadedness happen when you stand up?",
+  "Do you feel generally fatigued or weak?",
+  "Have you noticed any changes in your weight or appetite?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "yes",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Orthostatic vital signs (blood pressure and heart rate supine and standing)",
+  "Basic blood tests (CBC, electrolytes, glucose)"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "blood glucose and HbA1c",
+  "full blood count and biochemistry"
+ ],
+ "results": [
+  "R1 ASK Is the main reason you came to see me related to your eyes or vision?; Do you have difficulty moving your eyes quickly from one object to another?; Do you find you need to blink or move your head to help shift your gaze to the side? -> ['no', 'no', 'no']",
+  "R2 ASK Have you had any unexplained falls recently, particularly backwards?; Do you feel slow or stiff in your movements compared to before?; Do you have any tremor in your hands? -> ['no', 'no', 'no']",
+  "R3 ASK Do you have any double vision?; Do you have any drooping of your eyelids?; Do you have any difficulty swallowing or speaking? -> ['no', 'no', 'no']",
+  "R4 ASK Do you have any weakness in your arms or legs?; Do you have any numbness or tingling?; Do you have any difficulty with balance or coordination? -> ['no', 'no', 'yes']",
+  "R5 ASK Is the balance problem worse when you are in the dark or close your eyes?; Do you feel unsteady when you turn quickly?; Do you have any hearing loss or ringing in your ears? -> ['no', 'no', 'no']",
+  "R6 ASK Do you have any dizziness or vertigo?; Do you have any nausea or vomiting?; Do you have any headaches? -> ['yes', 'no', 'no']",
+  "R7 ASK Is the dizziness a spinning sensation (vertigo)?; Does the dizziness come on with changes in head position?; Have you had any recent infections, especially of the ear? -> ['no', 'no', 'no']",
+  "R8 ASK Do you feel lightheaded or like you might faint?; Do you have any chest pain or shortness of breath?; Do you have any history of heart problems or high blood pressure? -> ['yes', 'no', 'no']",
+  "R9 ASK Does the lightheadedness happen when you stand up?; Do you feel generally fatigued or weak?; Have you noticed any changes in your weight or appetite? -> ['no', 'no', 'no']",
+  "R10 ORDER Orthostatic vital signs (blood pressure and heart rate supine and standing); Basic blood tests (CBC, electrolytes, glucose) -> [[], ['serum electrolytes, urea and creatinine', 'blood glucose and HbA1c', 'full blood count and biochemistry']]",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Persistent postural-perceptual dizziness (PPPD), a chronic functional vestibular disorder of uncertain cause, likely triggered by a prior vestibular insult. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is the main reason you came to see me related to your eyes or vision?",
+    "Do you have difficulty moving your eyes quickly from one object to another?",
+    "Do you find you need to blink or move your head to help shift your gaze to the side?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you had any unexplained falls recently, particularly backwards?",
+    "Do you feel slow or stiff in your movements compared to before?",
+    "Do you have any tremor in your hands?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have any double vision?",
+    "Do you have any drooping of your eyelids?",
+    "Do you have any difficulty swallowing or speaking?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have any weakness in your arms or legs?",
+    "Do you have any numbness or tingling?",
+    "Do you have any difficulty with balance or coordination?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Is the balance problem worse when you are in the dark or close your eyes?",
+    "Do you feel unsteady when you turn quickly?",
+    "Do you have any hearing loss or ringing in your ears?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have any dizziness or vertigo?",
+    "Do you have any nausea or vomiting?",
+    "Do you have any headaches?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Is the dizziness a spinning sensation (vertigo)?",
+    "Does the dizziness come on with changes in head position?",
+    "Have you had any recent infections, especially of the ear?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you feel lightheaded or like you might faint?",
+    "Do you have any chest pain or shortness of breath?",
+    "Do you have any history of heart problems or high blood pressure?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Does the lightheadedness happen when you stand up?",
+    "Do you feel generally fatigued or weak?",
+    "Have you noticed any changes in your weight or appetite?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "Orthostatic vital signs (blood pressure and heart rate supine and standing)",
+    "Basic blood tests (CBC, electrolytes, glucose)"
+   ],
+   "result": [
+    [],
+    [
+     "serum electrolytes, urea and creatinine",
+     "blood glucose and HbA1c",
+     "full blood count and biochemistry"
+    ]
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Persistent postural-perceptual dizziness (PPPD), a chronic functional vestibular disorder of uncertain cause, likely triggered by a prior vestibular insult."
+  }
+ ],
+ "dx": "Persistent postural-perceptual dizziness (PPPD), a chronic functional vestibular disorder of uncertain cause, likely triggered by a prior vestibular insult.",
+ "dx_raw": "DIAGNOSIS: Persistent postural-perceptual dizziness (PPPD), a chronic functional vestibular disorder of uncertain cause, likely triggered by a prior vestibular insult.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0184,
+ "n_frames": 32,
+ "duration_s": 25.4,
+ "video": "mild_2_cerebellar_antiHomer3_PMC12833086.mp4",
+ "line": "vertigo_central",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 86.2
+}

@@ -1,0 +1,113 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Is the right side of your body weak?",
+  "Do you have difficulty speaking?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Do you have a history of heart disease?",
+  "Did you have a sudden, severe headache?",
+  "Do you feel numbness on the right side?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "speed of onset",
+  "blood glucose",
+  "CT head (non-contrast)",
+  "brain MRI with contrast"
+ ],
+ "results": [
+  "1. speed of onset: chorea was the INITIAL manifestation of the stroke in 57% of the series; two patients within 24 hours, three between days 2 and 5",
+  "2. blood glucose: normal - non-ketotic hyperglycaemia was an exclusion criterion for this series",
+  "3. CT head (non-contrast): ischaemic stroke - 92.9% of the series were ischaemic and one was haemorrhagic",
+  "4. brain MRI with contrast: lesions in the LENTIFORM NUCLEUS (50%), insula (35.7%), caudate (14.3%) and thalamus (14.3%); cortical in 35.7%, deep in 35.7%, both in 28.6%"
+ ],
+ "dx_raw": "DIAGNOSIS: Ischaemic stroke of the basal ganglia presenting as chorea\n\n1. Haemorrhagic stroke of the basal ganglia\n2. Non-ketotic hyperglycaemic chorea\n3. Huntington's disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Ischaemic stroke of the basal ganglia presenting as chorea",
+ "decisive_served": [
+  "speed of onset",
+  "blood glucose",
+  "CT head (non-contrast)",
+  "brain MRI with contrast"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1712,
+   "total_tokens": 10410,
+   "cost": 0.00145188,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00145188,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00058208
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1555,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9161,
+   "completion_tokens": 881,
+   "total_tokens": 10042,
+   "cost": 0.00121564,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00121564,
+    "upstream_inference_prompt_cost": 0.0009161,
+    "upstream_inference_completions_cost": 0.00029954
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 854,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 94.9
+}

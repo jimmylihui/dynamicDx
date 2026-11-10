@@ -1,0 +1,110 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the pain located in your abdomen?",
+  "Did this condition start suddenly?",
+  "Have you had a fever recently?",
+  "Do you have a history of seizures or epilepsy?",
+  "Are you currently taking any medications?",
+  "Have you experienced any recent head trauma?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "sodium and serum osmolality",
+  "morning cortisol, ACTH and pituitary hormones",
+  "brain MRI with contrast"
+ ],
+ "results": [
+  "1. sodium and serum osmolality: HYPONATRAEMIA with LOW serum osmolality, euvolaemic",
+  "2. morning cortisol, ACTH and pituitary hormones: LOW ACTH, low prolactin and low testosterone - secondary adrenal insufficiency with anterior pituitary failure",
+  "3. brain MRI with contrast: EMPTY SELLA sign"
+ ],
+ "dx_raw": "DIAGNOSIS: Secondary adrenal insufficiency due to panhypopituitarism caused by an empty sella syndrome.\n\n1. Pituitary apoplexy (resolved)\n2. Lymphocytic hypophysitis\n3. Infiltrative pituitary disease (e.g., sarcoidosis or hemochromatosis)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Secondary adrenal insufficiency due to panhypopituitarism caused by an empty sella syndrome.",
+ "decisive_served": [
+  "sodium and serum osmolality",
+  "morning cortisol, ACTH and pituitary hormones",
+  "brain MRI with contrast"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14039,
+   "completion_tokens": 73,
+   "total_tokens": 14112,
+   "cost": 0.00214016,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00214016,
+    "upstream_inference_prompt_cost": 0.00210585,
+    "upstream_inference_completions_cost": 3.431e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 14393,
+   "completion_tokens": 72,
+   "total_tokens": 14465,
+   "cost": 0.000357526,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 13696,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000357526,
+    "upstream_inference_prompt_cost": 0.000323686,
+    "upstream_inference_completions_cost": 3.384e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.2,
+ "video": "c_11098550.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 11.1
+}

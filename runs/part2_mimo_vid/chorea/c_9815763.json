@@ -1,0 +1,167 @@
+{
+ "questions": [
+  "Is the discomfort in your abdomen?",
+  "Is the pain localized to your right side?",
+  "Did this start suddenly?",
+  "Is the pain worsening over time?",
+  "Are you experiencing nausea?",
+  "Is the area tender when you press it?",
+  "Did you have any recent injury to your abdomen?",
+  "Is there any fever associated with this?",
+  "Is the pain sharp or aching?",
+  "Is the pain worse when you try to move?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Is the discomfort in your pelvic region?",
+  "Is the discomfort in your lower back?",
+  "Are you having any urinary symptoms?",
+  "Are you experiencing any vaginal bleeding or discharge?",
+  "Is the discomfort related to your menstrual cycle?",
+  "Are you experiencing bloating or feeling of fullness?",
+  "Do you feel the need to pass stool?",
+  "Is the discomfort burning in nature?",
+  "Are you feeling anxious or stressed about something?",
+  "Is the discomfort in your chest?"
+ ],
+ "served": [],
+ "results": [
+  "1. Is the discomfort in your pelvic region?",
+  "     not performed / not available",
+  "2. Is the discomfort in your lower back?",
+  "     not performed / not available",
+  "3. Are you having any urinary symptoms?",
+  "     not performed / not available",
+  "4. Are you experiencing any vaginal bleeding or discharge?",
+  "     not performed / not available",
+  "5. Is the discomfort related to your menstrual cycle?",
+  "     not performed / not available",
+  "6. Are you experiencing bloating or feeling of fullness?",
+  "     not performed / not available",
+  "7. Do you feel the need to pass stool?",
+  "     not performed / not available",
+  "8. Is the discomfort burning in nature?",
+  "     not performed / not available",
+  "9. Are you feeling anxious or stressed about something?",
+  "     not performed / not available",
+  "10. Is the discomfort in your chest?",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Primary dysmenorrhea\n\nDifferential:\n1. Mechanical low back strain\n2. Urinary tract infection\n3. Ovarian cyst",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "I notice the patient is clearly uncomfortable based on her movements, yet all my initial questions about abdominal pain were negative. Let me refocus and ask more targeted yes/no questions to localize the actual issue.\n\n1. Is the discomfort in your pelvic region?\n2. Is the discomfort in your lower back?\n3. Are you having any urinary symptoms?\n4. Are you experiencing any vaginal bleeding or discharge?\n5. Is the discomfort related to your menstrual cycle?\n6. Are you experiencing bloating or feeling of fullness?\n7. Do you feel the need to pass stool?\n8. Is the discomfort burning in nature?\n9. Are you feeling anxious or stressed about something?\n10. Is the discomfort in your chest?",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Primary dysmenorrhea",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 647,
+   "total_tokens": 5702,
+   "cost": 0.0002039576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002039576,
+    "upstream_inference_prompt_cost": 2.27976e-05,
+    "upstream_inference_completions_cost": 0.00018116
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 536,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5459,
+   "completion_tokens": 520,
+   "total_tokens": 5979,
+   "cost": 0.0002249576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002249576,
+    "upstream_inference_prompt_cost": 7.93576e-05,
+    "upstream_inference_completions_cost": 0.0001456
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 372,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5874,
+   "completion_tokens": 439,
+   "total_tokens": 6313,
+   "cost": 0.000198912,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5440,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000198912,
+    "upstream_inference_prompt_cost": 7.5992e-05,
+    "upstream_inference_completions_cost": 0.00012292
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 401,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "c_9815763.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 46.0
+}

@@ -1,0 +1,187 @@
+{
+ "questions": [
+  "Did these abnormal hand movements begin suddenly?",
+  "Do the movements stop when you are asleep?",
+  "Can you voluntarily suppress or stop the movements for a few seconds?",
+  "Do the movements lessen when your attention is diverted or you perform another task?",
+  "Do you have numbness or weakness in either arm?",
+  "Did the movements begin after an injury, illness, surgery, or other stressful event?",
+  "Have you recently started or increased a medication?",
+  "Do you have similar involuntary movements of your face, tongue, jaw, or legs?",
+  "Do the movements consist of sustained abnormal postures or twisting of the wrists and fingers?",
+  "Do you feel an inner urge to move, with relief after moving?",
+  "Have you ever had similar movements before this illness?",
+  "Have you taken dopamine-blocking medicines such as metoclopramide, prochlorperazine, haloperidol, or an antipsychotic?",
+  "Do you have difficulty walking, speaking, swallowing, or coordinating your movements?",
+  "Have you noticed memory or thinking problems?",
+  "Do close relatives have similar involuntary movements or a neurologic disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside neurologic examination specifically assessing for asterixis and myoclonus, including arms outstretched with wrists dorsiflexed, sustained posture, finger-to-nose testing, tone, reflexes, and mental status.",
+  "Serum electrolytes, glucose, calcium, magnesium, urea, creatinine, liver-function tests, and ammonia.",
+  "Arterial blood gas.",
+  "Noncontrast brain MRI including diffusion-weighted, T1-weighted, T2-weighted, and susceptibility-sensitive sequences, specifically assessing the basal ganglia for diabetic striatopathy.",
+  "Serum beta-hydroxybutyrate, measured serum osmolality, and urinalysis for ketones."
+ ],
+ "served": [
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "deep tendon reflexes and plantar responses",
+  "coordination examination (limb and truncal)",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "serum ammonia",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "urinalysis",
+  "ketones (blood or urine)",
+  "sodium and serum osmolality"
+ ],
+ "results": [
+  "R1 ASK Did these abnormal hand movements begin suddenly?; Do the movements stop when you are asleep?; Can you voluntarily suppress or stop the movements for a few seconds?; Do the movements lessen when your attention is diverted or you perform another task?; Do you have numbness or weakness in either arm?; Did the movements begin after an injury, illness, surgery, or other stressful event?; Have you recently started or increased a medication? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Do you have similar involuntary movements of your face, tongue, jaw, or legs?; Do the movements consist of sustained abnormal postures or twisting of the wrists and fingers?; Do you feel an inner urge to move, with relief after moving?; Have you ever had similar movements before this illness?; Have you taken dopamine-blocking medicines such as metoclopramide, prochlorperazine, haloperidol, or an antipsychotic?; Do you have difficulty walking, speaking, swallowing, or coordinating your movements?; Have you noticed memory or thinking problems?; Do close relatives have similar involuntary movements or a neurologic disease? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Bedside neurologic examination specifically assessing for asterixis and myoclonus, including arms outstretched with wrists dorsiflexed, sustained posture, finger-to-nose testing, tone, reflexes, and mental status.; Serum electrolytes, glucose, calcium, magnesium, urea, creatinine, liver-function tests, and ammonia.; Arterial blood gas. -> [['mental status / cognitive screen', 'muscle tone examination', 'deep tendon reflexes and plantar responses', 'coordination examination (limb and truncal)'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'serum calcium, magnesium and phosphate', 'blood glucose and HbA1c', 'serum ammonia'], []]",
+  "R4 ORDER Noncontrast brain MRI including diffusion-weighted, T1-weighted, T2-weighted, and susceptibility-sensitive sequences, specifically assessing the basal ganglia for diabetic striatopathy.; Serum beta-hydroxybutyrate, measured serum osmolality, and urinalysis for ketones. -> [['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences'], ['urinalysis', 'ketones (blood or urine)', 'sodium and serum osmolality']]",
+  "R5 DIAGNOSIS Bilateral diabetic striatopathy—nonketotic hyperglycemia–induced chorea (chorea/ballismus) from severe uncontrolled diabetes, with bilateral striatal involvement. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did these abnormal hand movements begin suddenly?",
+    "Do the movements stop when you are asleep?",
+    "Can you voluntarily suppress or stop the movements for a few seconds?",
+    "Do the movements lessen when your attention is diverted or you perform another task?",
+    "Do you have numbness or weakness in either arm?",
+    "Did the movements begin after an injury, illness, surgery, or other stressful event?",
+    "Have you recently started or increased a medication?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have similar involuntary movements of your face, tongue, jaw, or legs?",
+    "Do the movements consist of sustained abnormal postures or twisting of the wrists and fingers?",
+    "Do you feel an inner urge to move, with relief after moving?",
+    "Have you ever had similar movements before this illness?",
+    "Have you taken dopamine-blocking medicines such as metoclopramide, prochlorperazine, haloperidol, or an antipsychotic?",
+    "Do you have difficulty walking, speaking, swallowing, or coordinating your movements?",
+    "Have you noticed memory or thinking problems?",
+    "Do close relatives have similar involuntary movements or a neurologic disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Bedside neurologic examination specifically assessing for asterixis and myoclonus, including arms outstretched with wrists dorsiflexed, sustained posture, finger-to-nose testing, tone, reflexes, and mental status.",
+    "Serum electrolytes, glucose, calcium, magnesium, urea, creatinine, liver-function tests, and ammonia.",
+    "Arterial blood gas."
+   ],
+   "result": [
+    [
+     "mental status / cognitive screen",
+     "muscle tone examination",
+     "deep tendon reflexes and plantar responses",
+     "coordination examination (limb and truncal)"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests",
+     "serum calcium, magnesium and phosphate",
+     "blood glucose and HbA1c",
+     "serum ammonia"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Noncontrast brain MRI including diffusion-weighted, T1-weighted, T2-weighted, and susceptibility-sensitive sequences, specifically assessing the basal ganglia for diabetic striatopathy.",
+    "Serum beta-hydroxybutyrate, measured serum osmolality, and urinalysis for ketones."
+   ],
+   "result": [
+    [
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences"
+    ],
+    [
+     "urinalysis",
+     "ketones (blood or urine)",
+     "sodium and serum osmolality"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Bilateral diabetic striatopathy—nonketotic hyperglycemia–induced chorea (chorea/ballismus) from severe uncontrolled diabetes, with bilateral striatal involvement."
+  }
+ ],
+ "dx": "Bilateral diabetic striatopathy—nonketotic hyperglycemia–induced chorea (chorea/ballismus) from severe uncontrolled diabetes, with bilateral striatal involvement.",
+ "dx_raw": "DIAGNOSIS: Bilateral diabetic striatopathy—nonketotic hyperglycemia–induced chorea (chorea/ballismus) from severe uncontrolled diabetes, with bilateral striatal involvement.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "ketones (blood or urine)"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.008,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 38.7
+}

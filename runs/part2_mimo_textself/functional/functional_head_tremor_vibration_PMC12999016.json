@@ -1,0 +1,162 @@
+{
+ "questions": [
+  "Are you currently taking any medications for psychiatric conditions?",
+  "Did these movements start suddenly or gradually over time?",
+  "Do you feel pain or discomfort in your neck?",
+  "Have you noticed any position or action that temporarily relieves these movements?",
+  "Do these movements continue when you are asleep?",
+  "Have your symptoms been getting progressively worse?",
+  "Do you have any family history of similar movement problems?",
+  "Do your eyes ever squeeze shut involuntarily?",
+  "Have you noticed any trembling in your hands?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Brain MRI with and without contrast",
+  "Cervical spine MRI",
+  "Serum ceruloplasmin level",
+  "Serum copper level",
+  "Thyroid function tests",
+  "Electromyography of cervical paraspinal and sternocleidomastoid muscles",
+  "Botulinum toxin injection trial into cervical muscles"
+ ],
+ "served": [
+  "MRI brain",
+  "MRI brain with gadolinium",
+  "copper and ceruloplasmin",
+  "copper and ceruloplasmin",
+  "TSH / free T4",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. Brain MRI with and without contrast",
+  "     MRI brain: normal for age",
+  "     MRI brain with gadolinium: normal",
+  "2. Cervical spine MRI",
+  "     not performed / not available",
+  "3. Serum ceruloplasmin level",
+  "     copper and ceruloplasmin: normal",
+  "4. Serum copper level",
+  "     copper and ceruloplasmin: normal",
+  "5. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "6. Electromyography of cervical paraspinal and sternocleidomastoid muscles",
+  "     needle electromyography: normal",
+  "7. Botulinum toxin injection trial into cervical muscles",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic cervical dystonia with dystonic tremor\n\n**Key supporting features:**\n- Sensory trick present (geste antagoniste)\n- Movements cease during sleep\n- No progressive course\n- Normal brain imaging\n- Normal copper studies (excludes Wilson's, though age atypical anyway)\n- Normal EMG (no denervation suggesting neuropathic or myopathic cause)\n- Hand tremor consistent with dystonic tremor (occurs in ~50% of cervical dystonia)\n\n---\n\n**Alternatives still considered:**\n\n1. **Tardive cervical dystonia** (if occult antipsychotic/metoclopramide exposure not captured by medication history)\n\n2. **Dopa-responsive dystonia** (though typically earlier onset, would consider trial of levodopa if uncertain)\n\n3. **Segmental dystonia with possible cranial involvement developing** (monitor for blephalospasm, oromandibular movements)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Brain MRI with and without contrast\n2. Cervical spine MRI\n3. Serum ceruloplasmin level\n4. Serum copper level\n5. Thyroid function tests\n6. Electromyography of cervical paraspinal and sternocleidomastoid muscles\n7. Botulinum toxin injection trial into cervical muscles",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic cervical dystonia with dystonic tremor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 503,
+   "completion_tokens": 744,
+   "total_tokens": 1247,
+   "cost": 0.0002523976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002523976,
+    "upstream_inference_prompt_cost": 4.40776e-05,
+    "upstream_inference_completions_cost": 0.00020832
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 632,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 913,
+   "completion_tokens": 673,
+   "total_tokens": 1586,
+   "cost": 0.0002547944,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002547944,
+    "upstream_inference_prompt_cost": 6.63544e-05,
+    "upstream_inference_completions_cost": 0.00018844
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 598,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1225,
+   "completion_tokens": 695,
+   "total_tokens": 1920,
+   "cost": 0.0002431688,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 896,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002431688,
+    "upstream_inference_prompt_cost": 4.85688e-05,
+    "upstream_inference_completions_cost": 0.0001946
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 492,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.9,
+ "video": "functional_head_tremor_vibration_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 54.5
+}

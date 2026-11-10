@@ -1,0 +1,183 @@
+{
+ "questions": [
+  "Are you currently experiencing severe or worsening abdominal pain?",
+  "Did the abdominal discoloration appear after an injury or other physical trauma?",
+  "Is the area of discoloration painful or tender to touch?",
+  "Have you had repeated vomiting?",
+  "Have you had a fever or chills?",
+  "Have you felt faint, unusually weak, confused, or short of breath?",
+  "Have you noticed blood in your vomit, stool, or urine?",
+  "Have you had black, tarry stools?",
+  "Have you recently undergone abdominal surgery or another medical procedure?",
+  "Have you taken blood-thinning medication or aspirin recently?",
+  "Do you drink alcohol heavily or regularly?",
+  "Have you ever had pancreatitis, liver disease, or a bleeding disorder?",
+  "Has your abdomen become swollen or rigid?",
+  "Have you been unable to pass stool or gas?",
+  "Are you pregnant or could you be pregnant?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Full set of vital signs, including orthostatic blood pressure and heart rate",
+  "Bedside abdominal examination with assessment for ecchymosis, tenderness, guarding, rigidity, and palpable masses",
+  "Complete blood count",
+  "Comprehensive metabolic panel, including liver function tests",
+  "Serum lipase and amylase",
+  "Prothrombin time/INR and activated partial thromboplastin time",
+  "Urinalysis",
+  "Contrast-enhanced CT scan of the abdomen and pelvis"
+ ],
+ "served": [
+  "vital signs",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "renal function (urea, creatinine)",
+  "glucose",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Full set of vital signs, including orthostatic blood pressure and heart rate",
+  "     vital signs: normal, afebrile",
+  "2. Bedside abdominal examination with assessment for ecchymosis, tenderness, guarding, rigidity, and palpable masses",
+  "     not performed / not available",
+  "3. Complete blood count",
+  "     full blood count: white cells mildly raised at 11.8 x10^9/L",
+  "4. Comprehensive metabolic panel, including liver function tests",
+  "     serum electrolytes, urea and creatinine: urea nitrogen 24 mg/dL and creatinine 1.62 mg/dL, stable",
+  "     liver function tests: normal",
+  "     renal function (urea, creatinine): blood urea nitrogen 24 mg/dL, creatinine 1.62 mg/dL - stable",
+  "     glucose: normal",
+  "5. Serum lipase and amylase",
+  "     not performed / not available",
+  "6. Prothrombin time/INR and activated partial thromboplastin time",
+  "     not performed / not available",
+  "7. Urinalysis",
+  "     urinalysis: normal",
+  "8. Contrast-enhanced CT scan of the abdomen and pelvis",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Benign abdominal wall ecchymosis (spontaneous superficial bruising) of uncertain cause\n\nALTERNATIVE 1: Cullen sign from occult intra-abdominal or retroperitoneal hemorrhage\n\nALTERNATIVE 2: Abdominal wall hematoma, including spontaneous rectus-sheath hematoma\n\nALTERNATIVE 3: Acute pancreatitis with periumbilical ecchymosis (Cullen sign)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Full set of vital signs, including orthostatic blood pressure and heart rate\n2. Bedside abdominal examination with assessment for ecchymosis, tenderness, guarding, rigidity, and palpable masses\n3. Complete blood count\n4. Comprehensive metabolic panel, including liver function tests\n5. Serum lipase and amylase\n6. Prothrombin time/INR and activated partial thromboplastin time\n7. Urinalysis\n8. Contrast-enhanced CT scan of the abdomen and pelvis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Benign abdominal wall ecchymosis (spontaneous superficial bruising) of uncertain cause",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 505,
+   "completion_tokens": 380,
+   "total_tokens": 885,
+   "cost": 0.000557,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000557,
+    "upstream_inference_prompt_cost": 0.000101,
+    "upstream_inference_completions_cost": 0.000456
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 184,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1105,
+   "completion_tokens": 260,
+   "total_tokens": 1365,
+   "cost": 0.0005881,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1102,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005881,
+    "upstream_inference_prompt_cost": 0.0002761,
+    "upstream_inference_completions_cost": 0.000312
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 149,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1551,
+   "completion_tokens": 613,
+   "total_tokens": 2164,
+   "cost": 0.00086974,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1102,
+    "cache_write_tokens": 446,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00086974,
+    "upstream_inference_prompt_cost": 0.00013414,
+    "upstream_inference_completions_cost": 0.0007356
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 30.0
+}

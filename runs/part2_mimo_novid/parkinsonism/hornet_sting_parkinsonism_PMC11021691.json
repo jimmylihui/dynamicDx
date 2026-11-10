@@ -1,0 +1,153 @@
+{
+ "questions": [
+  "Are you experiencing any pain or discomfort anywhere in your body right now?",
+  "Do you have a fever?",
+  "Are you feeling unusually tired or weak?",
+  "Have you recently been short of breath?",
+  "Do you have a cough?",
+  "Have you had any recent vomiting or diarrhea?",
+  "Are you experiencing any dizziness or lightheadedness?",
+  "Have you had any unusual bleeding or bruising?",
+  "Have you recently injured yourself?",
+  "Do you have a known medical condition you are being monitored for?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Complete physical examination including abdominal palpation, lymph node survey, and cardiac auscultation",
+  "Complete blood count with differential",
+  "Comprehensive metabolic panel",
+  "Urinalysis with microscopy",
+  "Electrocardiogram"
+ ],
+ "served": [
+  "full blood count, renal and liver profile",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Complete physical examination including abdominal palpation, lymph node survey, and cardiac auscultation",
+  "     not performed / not available",
+  "2. Complete blood count with differential",
+  "     full blood count, renal and liver profile: normal",
+  "3. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "4. Urinalysis with microscopy",
+  "     urinalysis: normal",
+  "5. Electrocardiogram",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Essential hypertension (essential/primary), newly detected on screening\n\nAlternatives still considered:\n\nIncidental finding on prior imaging or testing prompting referral\n\nBenign condition requiring monitoring (e.g., prehypertension, incidentally discovered bradycardia)\n\nEarly/asymptomatic endocrine disorder (e.g., early hyperthyroidism, pheochromocytoma)\n\n---\n\n**Reasoning:** This patient was *referred* — meaning something was flagged — yet they have zero symptoms and completely normal basic bloodwork. The most common scenario fitting this picture is hypertension discovered on routine screening: it causes no symptoms, doesn't alter standard labs, yet warrants referral. The fact that I couldn't complete the physical exam (which would include blood pressure measurement) or the ECG leaves this unresolved. My first priority would have been to repeat the physical exam with careful vital signs and complete the ECG — both of which were unavailable.",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete physical examination including abdominal palpation, lymph node survey, and cardiac auscultation\n2. Complete blood count with differential\n3. Comprehensive metabolic panel\n4. Urinalysis with microscopy\n5. Electrocardiogram",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Essential hypertension (essential/primary), newly detected on screening",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 302,
+   "total_tokens": 687,
+   "cost": 9.4556e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.4556e-05,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 8.456e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 185,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 810,
+   "completion_tokens": 596,
+   "total_tokens": 1406,
+   "cost": 0.0002275952,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002275952,
+    "upstream_inference_prompt_cost": 6.07152e-05,
+    "upstream_inference_completions_cost": 0.00016688
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 545,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1055,
+   "completion_tokens": 788,
+   "total_tokens": 1843,
+   "cost": 0.0002629704,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002629704,
+    "upstream_inference_prompt_cost": 4.23304e-05,
+    "upstream_inference_completions_cost": 0.00022064
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 590,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.2,
+ "video": "hornet_sting_parkinsonism_PMC11021691.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 70.9
+}

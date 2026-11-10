@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Are your eye movements involuntary and difficult to control?",
+  "Did these abnormal eye movements begin suddenly?",
+  "Do you see double during these episodes?",
+  "Do you feel that the environment is moving or bouncing?",
+  "Do you have dizziness or vertigo?",
+  "Do you have difficulty walking or keeping your balance?",
+  "Do you have weakness, numbness, facial drooping, trouble speaking, or difficulty swallowing?",
+  "Do you have a severe or new headache?",
+  "Have you had loss of consciousness, confusion, or a seizure?",
+  "Do the eye movements occur when you look straight ahead, or only when looking to one side?",
+  "Do they worsen when you look in a particular direction?",
+  "Do they improve when you close either eye?",
+  "Have you noticed any loss or blurring of vision?",
+  "Do you have eye pain, light sensitivity, discharge, or marked redness?",
+  "Have you recently had a head injury?",
+  "Have you recently had a fever or viral illness?",
+  "Have you recently started, stopped, or changed any medications?",
+  "Have you used alcohol or recreational drugs recently?",
+  "Have you had similar episodes before?",
+  "Do you have a history of neurological disease, multiple sclerosis, stroke, or migraine?",
+  "Do you have a history of ear disease, hearing loss, or ringing in the ears?",
+  "Have you previously had eye surgery or a serious eye injury?",
+  "Are you currently pregnant or recently postpartum?",
+  "Do you have diabetes, thyroid disease, or another major medical condition?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "MRI brain with DWI",
+  "CT / MR angiography (posterior circulation)"
+ ],
+ "results": [
+  "1. nystagmus: direction and whether it changes with gaze: ipsilesional torsional nystagmus",
+  "2. skew deviation / alternating cover test: skew deviation with LATERAL ALTERNATION - right eye hypotropic, left eye hypertropic",
+  "3. ocular torsion and head tilt: RIGHT-sided head tilt; right eye excyclotorted and left eye incyclotorted - the complete ocular tilt reaction",
+  "4. MRI brain with DWI: LEFT rostral pontine infarct and a caudal mesencephalic infarct extending along the paramedian line to the midline",
+  "5. CT / MR angiography (posterior circulation): TOP-OF-THE-BASILAR OCCLUSION; thrombectomy was deferred as he was well preserved"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute top-of-the-basilar ischemic syndrome due to basilar artery occlusion, causing left rostral pontine and caudal paramedian midbrain infarction with a complete ocular tilt reaction and alternating skew deviation.\nAlternative: Acute vertebrobasilar embolic brainstem infarction from another posterior-circulation source.\nAlternative: Central vestibular syndrome from a small cerebellar or brainstem infarct not fully visualized on MRI.\nAlternative: Peripheral vestibulopathy such as vestibular neuritis.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Acute top-of-the-basilar ischemic syndrome due to basilar artery occlusion, causing left rostral pontine and caudal paramedian midbrain infarction with a complete ocular tilt reaction and alternating skew deviation.",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "MRI brain with DWI",
+  "CT / MR angiography (posterior circulation)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 613,
+   "total_tokens": 6289,
+   "cost": 0.00042483,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00042483,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0003678
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 282,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6702,
+   "completion_tokens": 445,
+   "total_tokens": 7147,
+   "cost": 0.001104675,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 6699,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001104675,
+    "upstream_inference_prompt_cost": 0.000837675,
+    "upstream_inference_completions_cost": 0.000267
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 332,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 16.8
+}

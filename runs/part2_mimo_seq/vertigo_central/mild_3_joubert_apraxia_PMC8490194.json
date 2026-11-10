@@ -1,0 +1,257 @@
+{
+ "questions": [
+  "Is this infant less than 3 months of age?",
+  "Was there a history of perinatal hypoxia (the baby was born with low oxygen, needed resuscitation at birth)?",
+  "Does the infant have difficulty with feeding or swallowing?",
+  "Is there a family history of movement disorders or neurological conditions?",
+  "Was the infant large for gestational age at birth (over 4 kg)?",
+  "Was there any concern for low blood sugar in the neonatal period?",
+  "Did the infant have jaundice (yellow skin) at birth?",
+  "Are there any visible skin lesions or unusual skin findings on the body?",
+  "Has this abnormal tongue and mouth posture been present since birth?",
+  "Does the tongue movement get worse when the infant is upset or stressed?",
+  "Is there any concern about delayed motor development (not rolling, not sitting at expected ages)?",
+  "Are the parents consanguineous (related by blood)?",
+  "What was the result of the brain MRI?",
+  "Was there an abnormal startle response (exaggerated Moro reflex) to loud noise?",
+  "Was the muscle tone found to be increased (rigid/stiff) or decreased (floppy)?",
+  "Is the tongue movement continuous or does it come in episodes/attacks?",
+  "Are there any other abnormal movements besides the tongue (limbs, eyes, face)?",
+  "Does the infant seem to have seizures or unusual spells?",
+  "Has the infant been evaluated by a metabolic specialist?",
+  "Are the eye movements abnormal (rolling upward or side to side)?",
+  "Are the movements worse during sleep or do they persist during sleep?",
+  "Has there been any regression of skills the infant previously had?",
+  "Is there excessive drooling (sialorrhea)?",
+  "Do the abnormal movements come in sudden bursts or attacks that last minutes?",
+  "Between the episodes, is the infant relatively normal?",
+  "Does the infant have excessive sweating?",
+  "Is the temperature regulation abnormal (episodic fevers without infection)?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "yes",
+  "18": "no",
+  "19": "no",
+  "20": "yes",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Serum TSH (thyroid-stimulating hormone) level",
+  "Serum free T4 level",
+  "Blood film to assess red blood cell morphology",
+  "Measurement of head circumference, length, and weight compared to growth percentiles",
+  "Genetic testing specifically for DDC gene (AADC deficiency)",
+  "Genetic testing for ADCY5-related dyskinesia",
+  "Urine organic acids including 5-hydroxytryptophan"
+ ],
+ "served": [
+  "TSH / free T4"
+ ],
+ "results": [
+  "R1 ASK Is this infant less than 3 months of age?; Was there a history of perinatal hypoxia (the baby was born with low oxygen, needed resuscitation at birth)?; Does the infant have difficulty with feeding or swallowing?; Is there a family history of movement disorders or neurological conditions? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Was the infant large for gestational age at birth (over 4 kg)?; Was there any concern for low blood sugar in the neonatal period?; Did the infant have jaundice (yellow skin) at birth?; Are there any visible skin lesions or unusual skin findings on the body? -> ['no', 'no', 'no', 'no']",
+  "R3 ORDER Serum TSH (thyroid-stimulating hormone) level; Serum free T4 level; Blood film to assess red blood cell morphology; Measurement of head circumference, length, and weight compared to growth percentiles -> [['TSH / free T4'], ['TSH / free T4'], [], []]",
+  "R4 ASK Has this abnormal tongue and mouth posture been present since birth?; Does the tongue movement get worse when the infant is upset or stressed?; Is there any concern about delayed motor development (not rolling, not sitting at expected ages)?; Are the parents consanguineous (related by blood)? -> ['no', 'no', 'yes', 'yes']",
+  "R5 ASK What was the result of the brain MRI?; Was there an abnormal startle response (exaggerated Moro reflex) to loud noise?; Was the muscle tone found to be increased (rigid/stiff) or decreased (floppy)? -> ['no', 'no', 'no']",
+  "R6 ASK Is the tongue movement continuous or does it come in episodes/attacks?; Are there any other abnormal movements besides the tongue (limbs, eyes, face)?; Does the infant seem to have seizures or unusual spells?; Has the infant been evaluated by a metabolic specialist? -> ['no', 'yes', 'no', 'no']",
+  "R7 ASK Are the eye movements abnormal (rolling upward or side to side)?; Are the movements worse during sleep or do they persist during sleep?; Has there been any regression of skills the infant previously had?; Is there excessive drooling (sialorrhea)? -> ['yes', 'no', 'no', 'no']",
+  "R8 ASK Do the abnormal movements come in sudden bursts or attacks that last minutes?; Between the episodes, is the infant relatively normal?; Does the infant have excessive sweating?; Is the temperature regulation abnormal (episodic fevers without infection)? -> ['no', 'no', 'no', 'no']",
+  "R9 ORDER Genetic testing specifically for DDC gene (AADC deficiency); Genetic testing for ADCY5-related dyskinesia; Urine organic acids including 5-hydroxytryptophan -> [[], [], []]",
+  "R10 DIAGNOSIS Aromatic L-amino acid decarboxylase (AADC) deficiency - autosomal recessive dopamine and serotonin synthesis defect due to DDC gene mutation, suggested by the clinical triad of orofacial dyskinesia, oculogyric crises (upward eye deviation), developmental delay, with consanguinity supporting autosomal recessive inheritance -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is this infant less than 3 months of age?",
+    "Was there a history of perinatal hypoxia (the baby was born with low oxygen, needed resuscitation at birth)?",
+    "Does the infant have difficulty with feeding or swallowing?",
+    "Is there a family history of movement disorders or neurological conditions?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Was the infant large for gestational age at birth (over 4 kg)?",
+    "Was there any concern for low blood sugar in the neonatal period?",
+    "Did the infant have jaundice (yellow skin) at birth?",
+    "Are there any visible skin lesions or unusual skin findings on the body?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Serum TSH (thyroid-stimulating hormone) level",
+    "Serum free T4 level",
+    "Blood film to assess red blood cell morphology",
+    "Measurement of head circumference, length, and weight compared to growth percentiles"
+   ],
+   "result": [
+    [
+     "TSH / free T4"
+    ],
+    [
+     "TSH / free T4"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Has this abnormal tongue and mouth posture been present since birth?",
+    "Does the tongue movement get worse when the infant is upset or stressed?",
+    "Is there any concern about delayed motor development (not rolling, not sitting at expected ages)?",
+    "Are the parents consanguineous (related by blood)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "What was the result of the brain MRI?",
+    "Was there an abnormal startle response (exaggerated Moro reflex) to loud noise?",
+    "Was the muscle tone found to be increased (rigid/stiff) or decreased (floppy)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Is the tongue movement continuous or does it come in episodes/attacks?",
+    "Are there any other abnormal movements besides the tongue (limbs, eyes, face)?",
+    "Does the infant seem to have seizures or unusual spells?",
+    "Has the infant been evaluated by a metabolic specialist?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Are the eye movements abnormal (rolling upward or side to side)?",
+    "Are the movements worse during sleep or do they persist during sleep?",
+    "Has there been any regression of skills the infant previously had?",
+    "Is there excessive drooling (sialorrhea)?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do the abnormal movements come in sudden bursts or attacks that last minutes?",
+    "Between the episodes, is the infant relatively normal?",
+    "Does the infant have excessive sweating?",
+    "Is the temperature regulation abnormal (episodic fevers without infection)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Genetic testing specifically for DDC gene (AADC deficiency)",
+    "Genetic testing for ADCY5-related dyskinesia",
+    "Urine organic acids including 5-hydroxytryptophan"
+   ],
+   "result": [
+    [],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Aromatic L-amino acid decarboxylase (AADC) deficiency - autosomal recessive dopamine and serotonin synthesis defect due to DDC gene mutation, suggested by the clinical triad of orofacial dyskinesia, oculogyric crises (upward eye deviation), developmental delay, with consanguinity supporting autosomal recessive inheritance"
+  }
+ ],
+ "dx": "Aromatic L-amino acid decarboxylase (AADC) deficiency - autosomal recessive dopamine and serotonin synthesis defect due to DDC gene mutation, suggested by the clinical triad of orofacial dyskinesia, oculogyric crises (upward eye deviation), developmental delay, with consanguinity supporting autosomal recessive inheritance",
+ "dx_raw": "ASK:\n1. Are there episodes where the eyes roll upward and stay there for seconds to minutes?\n2. Is the tongue constantly protruding or does it move in and out?\n3. Are there any swallowing difficulties or aspiration episodes?\n4. Has the infant had any infections requiring hospitalization?\n\nORDER:\n1. Whole exome sequencing (WES)\n2. Neurotransmitter analysis in CSF - specifically AADC enzyme activity\n3. Urine biogenic amines including 3-O-methyldopa (3-OMD), homovanillic acid (HVA), and 5-hydroxyindoleacetic acid (5-HIAA)\n4. Serum prolactin level (elevated in dopamine synthesis defects)\n\nDIAGNOSIS: Aromatic L-amino acid decarboxylase (AADC) deficiency - autosomal recessive dopamine and serotonin synthesis defect due to DDC gene mutation, suggested by the clinical triad of orofacial dyskinesia, oculogyric crises (upward eye deviation), developmental delay, with consanguinity supporting autosomal recessive inheritance",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0029,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_3_joubert_apraxia_PMC8490194.mp4",
+ "line": "vertigo_central",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 207.8
+}

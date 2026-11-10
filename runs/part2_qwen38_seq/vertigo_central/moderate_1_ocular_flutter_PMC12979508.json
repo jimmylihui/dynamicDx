@@ -1,0 +1,191 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does your eyelid droop get worse when you look up for a long time or at the end of the day?",
+  "Have you noticed any weakness in your arms, legs, or difficulty swallowing?",
+  "Do you have difficulty walking up stairs or getting out of a chair?",
+  "Do you have difficulty swallowing or chewing?",
+  "Do you have difficulty opening your eyes after closing them tightly?",
+  "Do you have difficulty releasing your grip after shaking hands?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Repetitive nerve stimulation (3 Hz) of the facial nerve",
+  "Serum creatine kinase",
+  "Serum anti-acetylcholine receptor antibodies",
+  "Serum anti-MuSK antibodies",
+  "Serum potassium"
+ ],
+ "served": [
+  "repetitive nerve stimulation",
+  "creatine kinase",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "serum electrolytes, urea and creatinine"
+ ],
+ "results": [
+  "R1 ASK Do you have double vision?; Does your eyelid droop get worse when you look up for a long time or at the end of the day?; Have you noticed any weakness in your arms, legs, or difficulty swallowing? -> ['no', 'no', 'yes']",
+  "R2 ASK Do you have difficulty walking up stairs or getting out of a chair? -> ['no']",
+  "R3 ASK Do you have difficulty swallowing or chewing? -> ['no']",
+  "R4 ORDER Repetitive nerve stimulation (3 Hz) of the facial nerve -> [['repetitive nerve stimulation']]",
+  "R5 ORDER Serum creatine kinase -> [['creatine kinase']]",
+  "R6 ASK Do you have difficulty opening your eyes after closing them tightly? -> ['no']",
+  "R7 ORDER Serum anti-acetylcholine receptor antibodies -> [['acetylcholine receptor, MuSK and LRP4 antibodies', 'anti-acetylcholine receptor antibodies']]",
+  "R8 ORDER Serum anti-MuSK antibodies -> [['acetylcholine receptor, MuSK and LRP4 antibodies']]",
+  "R9 ORDER Serum potassium -> [['serum electrolytes, urea and creatinine']]",
+  "R10 ASK Do you have difficulty releasing your grip after shaking hands? -> ['no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Seronegative myasthenia gravis -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have double vision?",
+    "Does your eyelid droop get worse when you look up for a long time or at the end of the day?",
+    "Have you noticed any weakness in your arms, legs, or difficulty swallowing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty walking up stairs or getting out of a chair?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty swallowing or chewing?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Repetitive nerve stimulation (3 Hz) of the facial nerve"
+   ],
+   "result": [
+    [
+     "repetitive nerve stimulation"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Serum creatine kinase"
+   ],
+   "result": [
+    [
+     "creatine kinase"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty opening your eyes after closing them tightly?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Serum anti-acetylcholine receptor antibodies"
+   ],
+   "result": [
+    [
+     "acetylcholine receptor, MuSK and LRP4 antibodies",
+     "anti-acetylcholine receptor antibodies"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Serum anti-MuSK antibodies"
+   ],
+   "result": [
+    [
+     "acetylcholine receptor, MuSK and LRP4 antibodies"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Serum potassium"
+   ],
+   "result": [
+    [
+     "serum electrolytes, urea and creatinine"
+    ]
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty releasing your grip after shaking hands?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Seronegative myasthenia gravis"
+  }
+ ],
+ "dx": "Seronegative myasthenia gravis",
+ "dx_raw": "DIAGNOSIS: Seronegative myasthenia gravis",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0022,
+ "n_frames": 32,
+ "duration_s": 15.2,
+ "video": "moderate_1_ocular_flutter_PMC12979508.mp4",
+ "line": "vertigo_central",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 49.8
+}

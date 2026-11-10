@@ -1,0 +1,173 @@
+{
+ "questions": [
+  "Do you have a tremor in your hands?",
+  "Do you have trouble controlling your bladder?",
+  "Have you noticed any memory loss?",
+  "Do you feel stiffness in your muscles?",
+  "Do you feel like your feet are stuck to the floor when you try to start walking?",
+  "Have you had any falls recently?",
+  "Have you had a stroke in the past?",
+  "Are you taking any medications for psychiatric conditions?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Full neurological examination",
+  "MRI Brain",
+  "Romberg's test",
+  "Serum B12 level"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)",
+  "vitamin B12"
+ ],
+ "results": [
+  "1. Full neurological examination",
+  "     cranial nerve examination: dysarthria, dysphagia, broken pursuit eye movements and orofacial dyskinesia",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal limb and neck tone with leftward truncal dystonic flexion and antecollis",
+  "     limb strength (MRC) examination: normal power",
+  "     deep tendon reflexes and plantar responses: normal reflexes and flexor plantar responses",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): chorea and orofacial dyskinesia; limb coordination normal",
+  "     posture and pull test: about 70 degrees of leftward trunk tilt on walking with antecollis; normal stance and tilt disappears when recumbent",
+  "     fundoscopy: normal",
+  "2. MRI Brain",
+  "     MRI brain with gadolinium: normal",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): normal midbrain, ratio within normal limits",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): normal",
+  "     MRI brain - cortical atrophy pattern: MRI brain and whole spine NORMAL",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal",
+  "3. Romberg's test",
+  "     not performed / not available",
+  "4. Serum B12 level",
+  "     vitamin B12: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Huntington's disease (CAG repeat expansion in the HTT gene)\nTardive dyskinesia\nWilson's disease\nNeuroacanthocytosis",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Full neurological examination\n2. MRI Brain\n3. Romberg's test\n4. Serum B12 level",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Huntington's disease (CAG repeat expansion in the HTT gene)",
+ "decisive_served": [
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1388,
+   "total_tokens": 10086,
+   "cost": 0.00134172,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00134172,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00047192
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1196,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9074,
+   "completion_tokens": 2003,
+   "total_tokens": 11077,
+   "cost": 0.00158842,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00158842,
+    "upstream_inference_prompt_cost": 0.0009074,
+    "upstream_inference_completions_cost": 0.00068102
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1812,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9523,
+   "completion_tokens": 3825,
+   "total_tokens": 13348,
+   "cost": 0.0022528,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0022528,
+    "upstream_inference_prompt_cost": 0.0009523,
+    "upstream_inference_completions_cost": 0.0013005
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3402,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 3783.5
+}

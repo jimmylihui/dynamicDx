@@ -1,0 +1,129 @@
+{
+ "questions": [
+  "Do you see double when looking to either side?",
+  "Have you had sudden weakness or numbness in your face, arm, or leg?",
+  "Have you had difficulty speaking, swallowing, or walking?",
+  "Have you recently had a severe headache?",
+  "Do your eyes make involuntary jerking or rolling movements even when you are not trying to move them?",
+  "Have you had urinary urgency, urinary incontinence, or difficulty emptying your bladder?",
+  "Have you had dizziness or fainting when standing up?",
+  "Have you developed slowness, stiffness, or a tremor predominantly on one side?",
+  "Have you had symptoms for less than three years?",
+  "Have you had dream-enactment behaviors during sleep?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "yes",
+  "6": "yes",
+  "7": "yes",
+  "8": "yes",
+  "9": "no",
+  "10": "yes"
+ },
+ "n_yes_answers": 6,
+ "orders": [
+  "Perform a bedside neurologic examination including characterization of the eye movements with fixation removed, assessment of saccades and smooth pursuit, alternate-cover testing, gait, limb coordination, and cranial nerves.",
+  "MRI brain with and without gadolinium, including the brainstem and cerebellum."
+ ],
+ "served": [
+  "cranial nerve examination",
+  "coordination examination (limb and truncal)",
+  "gait observation including turning and doorways",
+  "smooth pursuit and saccade velocity",
+  "MRI brain with gadolinium",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)"
+ ],
+ "results": [
+  "R1 ASK Do you see double when looking to either side?; Have you had sudden weakness or numbness in your face, arm, or leg?; Have you had difficulty speaking, swallowing, or walking?; Have you recently had a severe headache?; Do your eyes make involuntary jerking or rolling movements even when you are not trying to move them? -> ['no', 'no', 'yes', 'no', 'yes']",
+  "R2 ORDER Perform a bedside neurologic examination including characterization of the eye movements with fixation removed, assessment of saccades and smooth pursuit, alternate-cover testing, gait, limb coordination, and cranial nerves.; MRI brain with and without gadolinium, including the brainstem and cerebellum. -> [['cranial nerve examination', 'coordination examination (limb and truncal)', 'gait observation including turning and doorways', 'smooth pursuit and saccade velocity'], ['MRI brain with gadolinium', 'MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)']]",
+  "R3 ASK Have you had urinary urgency, urinary incontinence, or difficulty emptying your bladder?; Have you had dizziness or fainting when standing up?; Have you developed slowness, stiffness, or a tremor predominantly on one side?; Have you had symptoms for less than three years?; Have you had dream-enactment behaviors during sleep? -> ['yes', 'yes', 'yes', 'no', 'yes']",
+  "R4 DIAGNOSIS Multiple system atrophy, parkinsonian type (MSA-P), a sporadic α-synucleinopathy causing neurodegeneration of the striatonigral and autonomic systems. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you see double when looking to either side?",
+    "Have you had sudden weakness or numbness in your face, arm, or leg?",
+    "Have you had difficulty speaking, swallowing, or walking?",
+    "Have you recently had a severe headache?",
+    "Do your eyes make involuntary jerking or rolling movements even when you are not trying to move them?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Perform a bedside neurologic examination including characterization of the eye movements with fixation removed, assessment of saccades and smooth pursuit, alternate-cover testing, gait, limb coordination, and cranial nerves.",
+    "MRI brain with and without gadolinium, including the brainstem and cerebellum."
+   ],
+   "result": [
+    [
+     "cranial nerve examination",
+     "coordination examination (limb and truncal)",
+     "gait observation including turning and doorways",
+     "smooth pursuit and saccade velocity"
+    ],
+    [
+     "MRI brain with gadolinium",
+     "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you had urinary urgency, urinary incontinence, or difficulty emptying your bladder?",
+    "Have you had dizziness or fainting when standing up?",
+    "Have you developed slowness, stiffness, or a tremor predominantly on one side?",
+    "Have you had symptoms for less than three years?",
+    "Have you had dream-enactment behaviors during sleep?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "yes",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Multiple system atrophy, parkinsonian type (MSA-P), a sporadic α-synucleinopathy causing neurodegeneration of the striatonigral and autonomic systems."
+  }
+ ],
+ "dx": "Multiple system atrophy, parkinsonian type (MSA-P), a sporadic α-synucleinopathy causing neurodegeneration of the striatonigral and autonomic systems.",
+ "dx_raw": "DIAGNOSIS: Multiple system atrophy, parkinsonian type (MSA-P), a sporadic α-synucleinopathy causing neurodegeneration of the striatonigral and autonomic systems.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "cost_usd": 0.0031,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 28.9
+}

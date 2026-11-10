@@ -1,0 +1,167 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Is the weakness on only one side of your body?",
+  "Do you have any difficulty speaking?",
+  "Do you have any numbness or tingling?",
+  "Do you have any pain?",
+  "Do you feel dizzy?",
+  "Have you had a recent fall?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Neurological examination",
+  "Brain MRI",
+  "Vitamin B12 level"
+ ],
+ "served": [
+  "gait examination",
+  "finger-nose / heel-shin testing",
+  "Romberg test",
+  "bedside eye-movement exam",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "brain MRI",
+  "vitamin B12 / folate"
+ ],
+ "results": [
+  "1. Neurological examination",
+  "     gait examination: wide-based, unsteady gait",
+  "     finger-nose / heel-shin testing: dysmetria",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "     bedside eye-movement exam: vertical gaze palsy progressing to complete external ophthalmoplegia",
+  "     cranial nerve examination: vertical gaze palsy progressing to complete external ophthalmoplegia",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "2. Brain MRI",
+  "     brain MRI: no structural lesion accounting for the syndrome",
+  "3. Vitamin B12 level",
+  "     vitamin B12 / folate: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Wernicke encephalopathy due to thiamine deficiency\n\nMiller Fisher syndrome\nBickerstaff brainstem encephalitis\nProgressive supranuclear palsy",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Neurological examination\n2. Brain MRI\n3. Vitamin B12 level",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Wernicke encephalopathy due to thiamine deficiency",
+ "decisive_served": [
+  "bedside eye-movement exam"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1354,
+   "total_tokens": 10052,
+   "cost": 0.00133016,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00133016,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00046036
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1245,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9068,
+   "completion_tokens": 1114,
+   "total_tokens": 10182,
+   "cost": 0.00128556,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00128556,
+    "upstream_inference_prompt_cost": 0.0009068,
+    "upstream_inference_completions_cost": 0.00037876
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1046,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9382,
+   "completion_tokens": 2766,
+   "total_tokens": 12148,
+   "cost": 0.00187864,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00187864,
+    "upstream_inference_prompt_cost": 0.0009382,
+    "upstream_inference_completions_cost": 0.00094044
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2622,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_paraneoplastic_PMC12741441.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 355.7
+}

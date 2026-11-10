@@ -1,0 +1,189 @@
+{
+ "questions": [
+  "Are you experiencing weakness in your legs?",
+  "Has this weakness gotten worse recently?",
+  "Do you feel pain in your legs?",
+  "Have you noticed your muscles shrinking?",
+  "Do you have trouble walking?",
+  "Have you had any numbness or tingling?",
+  "Do you have difficulty breathing?",
+  "Have you had any fever or chills?",
+  "Do you have trouble swallowing?",
+  "Have you lost weight recently?",
+  "Have you been in the hospital before for this?",
+  "Are you taking any medications?",
+  "Do you have a family history of muscle disease?",
+  "Have you had any recent injuries?",
+  "Do you have any other symptoms I should know about?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "yes"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Formal neurological examination (coordination, cerebellar signs, gait assessment)",
+  "MRI of the brain",
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Thyroid function tests",
+  "Vitamin B12 level",
+  "Medication review"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "gait and coordination",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "renal function and eGFR",
+  "blood glucose",
+  "thyroid function (TSH, free T4)",
+  "TSH, free T4 and free T3",
+  "vitamin B12 with methylmalonic acid",
+  "medication and vaccination history"
+ ],
+ "results": [
+  "1. Formal neurological examination (coordination, cerebellar signs, gait assessment)",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     gait and coordination: normal",
+  "2. MRI of the brain",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "3. Complete blood count",
+  "     full blood count: normal",
+  "4. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     renal function and eGFR: normal",
+  "     blood glucose: 690 mg/dL with a NORMAL anion gap",
+  "5. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH, free T4 and free T3: normal",
+  "6. Vitamin B12 level",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "7. Medication review",
+  "     medication and vaccination history: nothing relevant"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperosmolar hyperglycemic state (HHS) secondary to undiagnosed type 2 diabetes mellitus\n\nThe critical finding is a blood glucose of 690 mg/dL with a normal anion gap - this is the hallmark of HHS, distinguishing it from diabetic ketoacidosis. The trouble walking likely results from severe dehydration and neurological effects of marked hyperosmolality.\n\n- Diabetic ketoacidosis (less likely given normal anion gap)\n- Encephalopathy from other metabolic cause\n- Osmotic demyelination syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "Based on the answers - trouble walking but no weakness, no pain, no numbness, on medications, and other symptoms - this sounds like a coordination/balance problem rather than true weakness. Let me order appropriate workup.\n\n1. Formal neurological examination (coordination, cerebellar signs, gait assessment)\n2. MRI of the brain\n3. Complete blood count\n4. Comprehensive metabolic panel\n5. Thyroid function tests\n6. Vitamin B12 level\n7. Medication review",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperosmolar hyperglycemic state (HHS) secondary to undiagnosed type 2 diabetes mellitus",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14271,
+   "completion_tokens": 725,
+   "total_tokens": 14996,
+   "cost": 0.0002516024,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14208,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002516024,
+    "upstream_inference_prompt_cost": 4.86024e-05,
+    "upstream_inference_completions_cost": 0.000203
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 569,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 14799,
+   "completion_tokens": 533,
+   "total_tokens": 15332,
+   "cost": 0.0002717624,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14208,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002717624,
+    "upstream_inference_prompt_cost": 0.0001225224,
+    "upstream_inference_completions_cost": 0.00014924
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 428,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 15204,
+   "completion_tokens": 493,
+   "total_tokens": 15697,
+   "cost": 0.0002382352,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14784,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002382352,
+    "upstream_inference_prompt_cost": 0.0001001952,
+    "upstream_inference_completions_cost": 0.00013804
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 368,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 53.8
+}

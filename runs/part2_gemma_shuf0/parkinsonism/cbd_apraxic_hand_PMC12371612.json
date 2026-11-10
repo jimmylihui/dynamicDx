@@ -1,0 +1,146 @@
+{
+ "questions": [
+  "Is this affecting both sides of your body?",
+  "Did these symptoms start suddenly?",
+  "Have you noticed any weakness in your limbs?",
+  "Do you have any numbness or tingling?",
+  "Have you had any changes in your vision?",
+  "Do you have trouble with your balance or walking?",
+  "Have you experienced any unexpected bladder or bowel changes?",
+  "Have you noticed any muscle twitching?",
+  "Do you have any difficulty speaking or swallowing?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI Brain"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): normal midbrain, ratio within normal limits",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): normal",
+  "     MRI brain - cortical atrophy pattern: moderate global atrophy with MARKEDLY ASYMMETRICAL atrophy of the superior parietal lobules and posterior frontal lobes, left hemisphere worse",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Corticobasal Degeneration (Tauopathy)\nProgressive Supranuclear Palsy\nFrontotemporal Dementia\nAlzheimer's Disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI Brain",
+ "rationale": [
+  null
+ ],
+ "dx": "Corticobasal Degeneration (Tauopathy)",
+ "decisive_served": [
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 3133,
+   "total_tokens": 11831,
+   "cost": 0.00193502,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00193502,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00106522
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2931,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9090,
+   "completion_tokens": 634,
+   "total_tokens": 9724,
+   "cost": 0.00112456,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00112456,
+    "upstream_inference_prompt_cost": 0.000909,
+    "upstream_inference_completions_cost": 0.00021556
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 603,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9327,
+   "completion_tokens": 1456,
+   "total_tokens": 10783,
+   "cost": 0.00142774,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00142774,
+    "upstream_inference_prompt_cost": 0.0009327,
+    "upstream_inference_completions_cost": 0.00049504
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1397,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "cbd_apraxic_hand_PMC12371612.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 221.6
+}

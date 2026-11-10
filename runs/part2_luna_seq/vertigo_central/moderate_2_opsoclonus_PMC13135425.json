@@ -1,0 +1,255 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Do you feel dizzy or as though the room is spinning?",
+  "Have you had new weakness, numbness, trouble speaking, or difficulty walking?",
+  "Have you recently used alcohol, sedatives, opioids, or other recreational drugs?",
+  "Have you had nausea or vomiting?",
+  "Have you recently had a head injury?",
+  "Did the abnormal eye movements and balance problems begin suddenly over hours to a few days?",
+  "Have you recently had a flu-like illness, diarrhea, or another infection?",
+  "Have you had unexplained weight loss, night sweats, or fevers?",
+  "Have you noticed a breast lump or abnormal vaginal bleeding?",
+  "Do you have a history of breast, ovarian, uterine, or lung cancer?",
+  "Have you had jerking movements of the limbs, face, or trunk?",
+  "Have you had new irritability, sleep disturbance, or behavioral changes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Bedside neurological examination including mental status, cranial nerves, visual fields, extraocular movements, nystagmus, limb strength, sensation, coordination, and gait",
+  "Finger-stick blood glucose",
+  "Noncontrast CT scan of the head",
+  "CT angiography of the head and neck",
+  "MRI brain with diffusion-weighted imaging if CT does not show an acute lesion",
+  "Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, oligoclonal bands, IgG index, infectious PCR/serology, and cytology/flow cytometry",
+  "Serum and CSF paraneoplastic/autoimmune encephalitis antibody panel, specifically including anti-Ri (ANNA-2), anti-Hu, anti-Yo, CRMP5, Ma2, amphiphysin, NMDA-receptor, GABA-B, AMPA, LGI1, CASPR2, and DPPX antibodies",
+  "CT scan of the chest, abdomen, and pelvis with contrast",
+  "Mammography and breast MRI",
+  "Pelvic ultrasound with gynecologic evaluation",
+  "Serum vitamin B1, vitamin E, copper, thyroid studies, and comprehensive metabolic/toxicology testing"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "nystagmus: direction and whether it changes with gaze",
+  "smooth pursuit and saccades",
+  "vertical gaze and convergence",
+  "gait and tandem walking",
+  "visual fields (perimetry)",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "CT head (non-contrast)",
+  "CT / MR angiography (posterior circulation)",
+  "CT / MR angiography (circle of Willis)",
+  "MRI diffusion-weighted sequences",
+  "MRI brain with DWI",
+  "lumbar puncture / CSF",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "CSF autoimmune encephalitis panel",
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CT chest, abdomen and pelvis",
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "serum vitamin E",
+  "serum vitamin B1 (thiamine)",
+  "serum copper and caeruloplasmin",
+  "toxicology screen (urine and serum)",
+  "serum ethanol",
+  "heavy metal screen",
+  "TSH / free T4"
+ ],
+ "results": [
+  "R1 ASK Do you have double vision?; Do you feel dizzy or as though the room is spinning?; Have you had new weakness, numbness, trouble speaking, or difficulty walking?; Have you recently used alcohol, sedatives, opioids, or other recreational drugs?; Have you had nausea or vomiting?; Have you recently had a head injury? -> ['no', 'no', 'yes', 'no', 'no', 'no']",
+  "R2 ORDER Bedside neurological examination including mental status, cranial nerves, visual fields, extraocular movements, nystagmus, limb strength, sensation, coordination, and gait; Finger-stick blood glucose; Noncontrast CT scan of the head; CT angiography of the head and neck; MRI brain with diffusion-weighted imaging if CT does not show an acute lesion -> [['cranial nerve examination', 'mental status / cognitive screen', 'limb strength (MRC) examination', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'nystagmus: direction and whether it changes with gaze', 'smooth pursuit and saccades', 'vertical gaze and convergence', 'gait and tandem walking', 'visual fields (perimetry)'], ['blood glucose and HbA1c', 'glucose / HbA1c'], ['CT head (non-contrast)'], ['CT / MR angiography (posterior circulation)', 'CT / MR angiography (circle of Willis)'], ['MRI diffusion-weighted sequences', 'MRI brain with DWI']]",
+  "R3 ASK Did the abnormal eye movements and balance problems begin suddenly over hours to a few days?; Have you recently had a flu-like illness, diarrhea, or another infection?; Have you had unexplained weight loss, night sweats, or fevers?; Have you noticed a breast lump or abnormal vaginal bleeding?; Do you have a history of breast, ovarian, uterine, or lung cancer?; Have you had jerking movements of the limbs, face, or trunk?; Have you had new irritability, sleep disturbance, or behavioral changes? -> ['no', 'no', 'no', 'no', 'no', 'yes', 'no']",
+  "R4 ORDER Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, oligoclonal bands, IgG index, infectious PCR/serology, and cytology/flow cytometry; Serum and CSF paraneoplastic/autoimmune encephalitis antibody panel, specifically including anti-Ri (ANNA-2), anti-Hu, anti-Yo, CRMP5, Ma2, amphiphysin, NMDA-receptor, GABA-B, AMPA, LGI1, CASPR2, and DPPX antibodies; CT scan of the chest, abdomen, and pelvis with contrast; Mammography and breast MRI; Pelvic ultrasound with gynecologic evaluation; Serum vitamin B1, vitamin E, copper, thyroid studies, and comprehensive metabolic/toxicology testing -> [['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF cytology and flow cytometry', 'CSF culture and viral PCR'], ['serum paraneoplastic / neuronal autoantibody panel', 'CSF autoimmune encephalitis panel', 'paraneoplastic and autoimmune antibody panel (serum)'], ['CT chest, abdomen and pelvis', 'CT chest / abdomen / pelvis (occult tumour)'], [], [], ['serum electrolytes, urea and creatinine', 'liver function tests', 'serum calcium, magnesium and phosphate', 'blood glucose and HbA1c', 'serum vitamin E', 'serum vitamin B1 (thiamine)', 'serum copper and caeruloplasmin', 'toxicology screen (urine and serum)', 'serum ethanol', 'heavy metal screen', 'TSH / free T4']]",
+  "R5 DIAGNOSIS Adult-onset opsoclonus–myoclonus–ataxia syndrome (OMS), most consistent with a seronegative autoimmune/idiopathic cause after negative infectious, metabolic, structural, toxic, and paraneoplastic evaluation. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have double vision?",
+    "Do you feel dizzy or as though the room is spinning?",
+    "Have you had new weakness, numbness, trouble speaking, or difficulty walking?",
+    "Have you recently used alcohol, sedatives, opioids, or other recreational drugs?",
+    "Have you had nausea or vomiting?",
+    "Have you recently had a head injury?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Bedside neurological examination including mental status, cranial nerves, visual fields, extraocular movements, nystagmus, limb strength, sensation, coordination, and gait",
+    "Finger-stick blood glucose",
+    "Noncontrast CT scan of the head",
+    "CT angiography of the head and neck",
+    "MRI brain with diffusion-weighted imaging if CT does not show an acute lesion"
+   ],
+   "result": [
+    [
+     "cranial nerve examination",
+     "mental status / cognitive screen",
+     "limb strength (MRC) examination",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)",
+     "nystagmus: direction and whether it changes with gaze",
+     "smooth pursuit and saccades",
+     "vertical gaze and convergence",
+     "gait and tandem walking",
+     "visual fields (perimetry)"
+    ],
+    [
+     "blood glucose and HbA1c",
+     "glucose / HbA1c"
+    ],
+    [
+     "CT head (non-contrast)"
+    ],
+    [
+     "CT / MR angiography (posterior circulation)",
+     "CT / MR angiography (circle of Willis)"
+    ],
+    [
+     "MRI diffusion-weighted sequences",
+     "MRI brain with DWI"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did the abnormal eye movements and balance problems begin suddenly over hours to a few days?",
+    "Have you recently had a flu-like illness, diarrhea, or another infection?",
+    "Have you had unexplained weight loss, night sweats, or fevers?",
+    "Have you noticed a breast lump or abnormal vaginal bleeding?",
+    "Do you have a history of breast, ovarian, uterine, or lung cancer?",
+    "Have you had jerking movements of the limbs, face, or trunk?",
+    "Have you had new irritability, sleep disturbance, or behavioral changes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, oligoclonal bands, IgG index, infectious PCR/serology, and cytology/flow cytometry",
+    "Serum and CSF paraneoplastic/autoimmune encephalitis antibody panel, specifically including anti-Ri (ANNA-2), anti-Hu, anti-Yo, CRMP5, Ma2, amphiphysin, NMDA-receptor, GABA-B, AMPA, LGI1, CASPR2, and DPPX antibodies",
+    "CT scan of the chest, abdomen, and pelvis with contrast",
+    "Mammography and breast MRI",
+    "Pelvic ultrasound with gynecologic evaluation",
+    "Serum vitamin B1, vitamin E, copper, thyroid studies, and comprehensive metabolic/toxicology testing"
+   ],
+   "result": [
+    [
+     "lumbar puncture / CSF",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF cytology and flow cytometry",
+     "CSF culture and viral PCR"
+    ],
+    [
+     "serum paraneoplastic / neuronal autoantibody panel",
+     "CSF autoimmune encephalitis panel",
+     "paraneoplastic and autoimmune antibody panel (serum)"
+    ],
+    [
+     "CT chest, abdomen and pelvis",
+     "CT chest / abdomen / pelvis (occult tumour)"
+    ],
+    [],
+    [],
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests",
+     "serum calcium, magnesium and phosphate",
+     "blood glucose and HbA1c",
+     "serum vitamin E",
+     "serum vitamin B1 (thiamine)",
+     "serum copper and caeruloplasmin",
+     "toxicology screen (urine and serum)",
+     "serum ethanol",
+     "heavy metal screen",
+     "TSH / free T4"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Adult-onset opsoclonus–myoclonus–ataxia syndrome (OMS), most consistent with a seronegative autoimmune/idiopathic cause after negative infectious, metabolic, structural, toxic, and paraneoplastic evaluation."
+  }
+ ],
+ "dx": "Adult-onset opsoclonus–myoclonus–ataxia syndrome (OMS), most consistent with a seronegative autoimmune/idiopathic cause after negative infectious, metabolic, structural, toxic, and paraneoplastic evaluation.",
+ "dx_raw": "DIAGNOSIS: Adult-onset opsoclonus–myoclonus–ataxia syndrome (OMS), most consistent with a seronegative autoimmune/idiopathic cause after negative infectious, metabolic, structural, toxic, and paraneoplastic evaluation.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "smooth pursuit and saccades"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0038,
+ "n_frames": 32,
+ "duration_s": 14.8,
+ "video": "moderate_2_opsoclonus_PMC13135425.mp4",
+ "line": "vertigo_central",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 54.4
+}

@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Are the repeated movements of your left leg or foot involuntary?",
+  "Do you feel an uncomfortable urge to move that leg before the movement occurs?",
+  "Does moving the leg relieve that uncomfortable feeling?",
+  "Are these symptoms worse when you are sitting or lying still?",
+  "Are they worse in the evening or at night?",
+  "Did these movements begin recently?",
+  "Have they been getting progressively worse?",
+  "Do the movements occur while you are asleep?",
+  "Do you have pain, cramping, or burning in that leg?",
+  "Do you have numbness or tingling in that leg or foot?",
+  "Do you feel weakness in that leg?",
+  "Have you had back pain that travels down the leg?",
+  "Have you had any recent injury or surgery involving your back or leg?",
+  "Have you noticed similar movements in the other leg?",
+  "Do your hands, face, or jaw make involuntary movements?",
+  "Do you have tremors when your limbs are resting?",
+  "Do you have stiffness or slowness of movement?",
+  "Have you had difficulty walking or problems with balance?",
+  "Have you lost control of your bladder or bowels?",
+  "Have you recently started or changed any medications?",
+  "Do you take medication for nausea, psychiatric symptoms, or seizures?",
+  "Have you recently reduced or stopped alcohol, sedatives, or another substance?",
+  "Do you use caffeine, stimulants, or recreational drugs?",
+  "Have you previously been diagnosed with anemia, iron deficiency, kidney disease, or thyroid disease?",
+  "Have you ever had similar symptoms before?",
+  "Has anyone in your family had a movement disorder?",
+  "Have you had episodes of loss of awareness, tongue biting, or incontinence?",
+  "Have you had a sudden facial droop, trouble speaking, or weakness on one side?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "HbA1c",
+  "CT head (non-contrast)",
+  "brain MRI with contrast",
+  "trial of glucose correction with insulin"
+ ],
+ "results": [
+  "1. blood glucose: 30.63 mmol/L (551.3 mg/dL) with glycosuria and NO ketonuria",
+  "2. HbA1c: very high on admission; 5.73% at first follow-up once glucose was controlled",
+  "3. CT head (non-contrast): HYPERDENSE LEFT caudate and lentiform nucleus - contralateral to the movements",
+  "4. brain MRI with contrast: a coexisting LACUNAR INFARCT in addition to the striatal signal change",
+  "5. trial of glucose correction with insulin: glucose fell to 5.9 mmol/L (106.2 mg/dL) at follow-up with improvement in the movements"
+ ],
+ "dx_raw": "DIAGNOSIS: Nonketotic hyperglycemia–induced hemichorea/hemiballismus (diabetic striatopathy from severe hyperglycemia), with a coexisting basal-ganglia lacunar infarct\n\nALTERNATIVE: Hemichorea/hemiballismus caused primarily by the basal-ganglia lacunar infarct\n\nALTERNATIVE: Focal motor seizure presenting as unilateral repetitive movements\n\nALTERNATIVE: Drug-induced dyskinesia or other secondary choreiform movement disorder",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Nonketotic hyperglycemia–induced hemichorea/hemiballismus (diabetic striatopathy from severe hyperglycemia), with a coexisting basal-ganglia lacunar infarct",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c",
+  "CT head (non-contrast)",
+  "brain MRI with contrast",
+  "trial of glucose correction with insulin"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 9996,
+   "completion_tokens": 676,
+   "total_tokens": 10672,
+   "cost": 0.00050583,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9993,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00050583,
+    "upstream_inference_prompt_cost": 0.00010023,
+    "upstream_inference_completions_cost": 0.0004056
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 287,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 11145,
+   "completion_tokens": 431,
+   "total_tokens": 11576,
+   "cost": 0.000502455,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9993,
+    "cache_write_tokens": 1149,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000502455,
+    "upstream_inference_prompt_cost": 0.000243855,
+    "upstream_inference_completions_cost": 0.0002586
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 322,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hyperglycemic_hemichorea_PMC12596229.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 17.1
+}

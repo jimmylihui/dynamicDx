@@ -1,0 +1,219 @@
+{
+ "questions": [
+  "Do you have tremors in your hands?",
+  "Do you have a tremor in your head?",
+  "Do you have difficulty speaking?",
+  "Do you have difficulty swallowing?",
+  "Are you taking any medications for psychiatric conditions?",
+  "Are you taking any medications for nausea or vomiting?",
+  "Are you taking any medications for stomach problems?",
+  "Have you ever taken antipsychotic medications in the past?",
+  "Do you have any other involuntary movements in your body?",
+  "Did this start suddenly?",
+  "Do you have any involuntary blinking or closing of your eyes?",
+  "Do you have a family history of similar movements?",
+  "Have you had any head injuries?",
+  "Do you have any cognitive or memory problems?",
+  "Do you have any mood changes?",
+  "Have these movements been present for more than a year?",
+  "Did they start after taking a new medication?",
+  "Have you taken any medication for many years?",
+  "Have you ever been diagnosed with a neurological condition?",
+  "Do you feel unsteady on your feet?",
+  "Are you taking metoclopramide?",
+  "Are you taking haloperidol?",
+  "Are you taking risperidone?",
+  "Are you taking olanzapine?",
+  "Are you taking quetiapine?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "yes",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Finger tapping test",
+  "Wrist and ankle tone assessment for cogwheel rigidity",
+  "Pull test for postural stability",
+  "Assessment of gait and arm swing"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "muscle tone examination",
+  "posture and pull test"
+ ],
+ "results": [
+  "R1 ASK Do you have tremors in your hands?; Do you have a tremor in your head?; Do you have difficulty speaking?; Do you have difficulty swallowing?; Are you taking any medications for psychiatric conditions? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ORDER Finger tapping test; Wrist and ankle tone assessment for cogwheel rigidity; Pull test for postural stability; Assessment of gait and arm swing -> [['coordination examination (limb and truncal)'], ['muscle tone examination'], ['posture and pull test'], ['coordination examination (limb and truncal)']]",
+  "R3 ASK Are you taking any medications for nausea or vomiting?; Are you taking any medications for stomach problems?; Have you ever taken antipsychotic medications in the past?; Do you have any other involuntary movements in your body?; Did this start suddenly? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Do you have any involuntary blinking or closing of your eyes?; Do you have a family history of similar movements?; Have you had any head injuries?; Do you have any cognitive or memory problems?; Do you have any mood changes? -> ['no', 'no', 'no', 'no', 'no']",
+  "R5 ASK Have these movements been present for more than a year?; Did they start after taking a new medication?; Have you taken any medication for many years?; Have you ever been diagnosed with a neurological condition?; Do you feel unsteady on your feet? -> ['yes', 'no', 'yes', 'no', 'no']",
+  "R6 ASK Are you taking metoclopramide?; Are you taking haloperidol?; Are you taking risperidone?; Are you taking olanzapine?; Are you taking quetiapine? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 DIAGNOSIS Idiopathic orofacial dyskinesia -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have tremors in your hands?",
+    "Do you have a tremor in your head?",
+    "Do you have difficulty speaking?",
+    "Do you have difficulty swallowing?",
+    "Are you taking any medications for psychiatric conditions?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Finger tapping test",
+    "Wrist and ankle tone assessment for cogwheel rigidity",
+    "Pull test for postural stability",
+    "Assessment of gait and arm swing"
+   ],
+   "result": [
+    [
+     "coordination examination (limb and truncal)"
+    ],
+    [
+     "muscle tone examination"
+    ],
+    [
+     "posture and pull test"
+    ],
+    [
+     "coordination examination (limb and truncal)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Are you taking any medications for nausea or vomiting?",
+    "Are you taking any medications for stomach problems?",
+    "Have you ever taken antipsychotic medications in the past?",
+    "Do you have any other involuntary movements in your body?",
+    "Did this start suddenly?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have any involuntary blinking or closing of your eyes?",
+    "Do you have a family history of similar movements?",
+    "Have you had any head injuries?",
+    "Do you have any cognitive or memory problems?",
+    "Do you have any mood changes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have these movements been present for more than a year?",
+    "Did they start after taking a new medication?",
+    "Have you taken any medication for many years?",
+    "Have you ever been diagnosed with a neurological condition?",
+    "Do you feel unsteady on your feet?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Are you taking metoclopramide?",
+    "Are you taking haloperidol?",
+    "Are you taking risperidone?",
+    "Are you taking olanzapine?",
+    "Are you taking quetiapine?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Idiopathic orofacial dyskinesia"
+  }
+ ],
+ "dx": "Idiopathic orofacial dyskinesia",
+ "dx_raw": "DIAGNOSIS: Idiopathic orofacial dyskinesia",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0106,
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "moderate_tardive_PMC10656108.mp4",
+ "line": "dystonia",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 641.2
+}

@@ -1,0 +1,110 @@
+{
+ "questions": [
+  "Do you have a tremor in your hands at rest?",
+  "Have you noticed your movements have become slower?",
+  "Do you feel stiffness or rigidity in your limbs?",
+  "Have you noticed a decrease in your ability to smell?",
+  "Do you act out your dreams while sleeping?",
+  "Do you have trouble with your balance?",
+  "Are you taking any medications, such as for nausea or mental health conditions?",
+  "Do you have a history of strokes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "genetic ataxia panel",
+  "brain MRI",
+  "Simplified Functional Movement Disorders Rating Scale (S-FMDRS)"
+ ],
+ "results": [
+  "1. genetic ataxia panel: 112 and 29 CTG repeats in ATXN8OS - confirms SCA8",
+  "2. brain MRI: cerebellar atrophy on sagittal T1 and axial FLAIR",
+  "3. Simplified Functional Movement Disorders Rating Scale (S-FMDRS): 3 - mild gait disturbance that normalises with distraction"
+ ],
+ "dx_raw": "DIAGNOSIS: Spinocerebellar ataxia type 8 (SCA8) due to a pathogenic CTG trinucleotide repeat expansion in the ATXN8OS gene.\nFunctional neurological disorder (functional gait disorder), potentially as a comorbid condition given the S-FMDRS score.\nAlcohol-related cerebellar degeneration.\nOther hereditary spinocerebellar ataxias (e.g., SCA6).",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Spinocerebellar ataxia type 8 (SCA8) due to a pathogenic CTG trinucleotide repeat expansion in the ATXN8OS gene.",
+ "decisive_served": [
+  "genetic ataxia panel",
+  "brain MRI",
+  "Simplified Functional Movement Disorders Rating Scale (S-FMDRS)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 1755,
+   "total_tokens": 22193,
+   "cost": 0.00819972,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00819972,
+    "upstream_inference_prompt_cost": 0.00609372,
+    "upstream_inference_completions_cost": 0.002106
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1658,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 20839,
+   "completion_tokens": 3528,
+   "total_tokens": 24367,
+   "cost": 0.00558378,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20423,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00558378,
+    "upstream_inference_prompt_cost": 0.00135018,
+    "upstream_inference_completions_cost": 0.0042336
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3447,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_sca_genetic_PMC12678565.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 69.0
+}

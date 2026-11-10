@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Do you have blurred or reduced vision in either eye?",
+  "Do you have eye pain or pain with eye movement?",
+  "Did these eye-movement symptoms begin after recent nasal or facial surgery?",
+  "Have you had recent head or facial trauma?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Bedside ocular motility examination in the nine diagnostic positions of gaze, documenting ductions and versions.",
+  "Alternate cover test in primary gaze and in all nine positions to measure ocular misalignment.",
+  "Bedside pupillary examination, including direct and consensual light responses and an afferent pupillary defect test.",
+  "Noncontrast CT of the orbits and head to assess for orbital fracture, extraocular muscle entrapment, and intracranial traumatic injury.",
+  "Forced-duction test of the right eye to assess mechanical restriction of adduction.",
+  "Saccadic velocity comparison of right-eye adduction with vestibulo-ocular (oculocephalic) testing to distinguish medial rectus dysfunction from a medial longitudinal fasciculus lesion.",
+  "Thin-slice CT of the orbits with multiplanar reconstruction, specifically assessing the right medial rectus muscle, orbital apex, and extraocular muscle entrapment.",
+  "Thin-slice CT of the orbits with coronal and sagittal reconstructions to identify a medial orbital-wall fracture and right medial rectus entrapment or contusion."
+ ],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "smooth pursuit and saccades",
+  "adduction in horizontal gaze (each eye)",
+  "abducting nystagmus of the fellow eye",
+  "vertical gaze and convergence",
+  "skew deviation / alternating cover test",
+  "pupil size and light reaction",
+  "CT head (non-contrast)",
+  "forced duction test",
+  "video-oculography / eye-movement recording",
+  "head impulse test"
+ ],
+ "results": [
+  "R1 ASK Do you have double vision?; Do you have blurred or reduced vision in either eye?; Do you have eye pain or pain with eye movement?; Did these eye-movement symptoms begin after recent nasal or facial surgery?; Have you had recent head or facial trauma? -> ['yes', 'no', 'no', 'no', 'yes']",
+  "R2 ORDER Bedside ocular motility examination in the nine diagnostic positions of gaze, documenting ductions and versions.; Alternate cover test in primary gaze and in all nine positions to measure ocular misalignment.; Bedside pupillary examination, including direct and consensual light responses and an afferent pupillary defect test.; Noncontrast CT of the orbits and head to assess for orbital fracture, extraocular muscle entrapment, and intracranial traumatic injury. -> [['nystagmus: direction and whether it changes with gaze', 'smooth pursuit and saccades', 'adduction in horizontal gaze (each eye)', 'abducting nystagmus of the fellow eye', 'vertical gaze and convergence'], ['skew deviation / alternating cover test'], ['pupil size and light reaction'], ['CT head (non-contrast)']]",
+  "R3 ORDER Forced-duction test of the right eye to assess mechanical restriction of adduction.; Saccadic velocity comparison of right-eye adduction with vestibulo-ocular (oculocephalic) testing to distinguish medial rectus dysfunction from a medial longitudinal fasciculus lesion.; Thin-slice CT of the orbits with multiplanar reconstruction, specifically assessing the right medial rectus muscle, orbital apex, and extraocular muscle entrapment. -> [['forced duction test'], ['video-oculography / eye-movement recording', 'smooth pursuit and saccades', 'adduction in horizontal gaze (each eye)', 'head impulse test'], []]",
+  "R4 ORDER Thin-slice CT of the orbits with coronal and sagittal reconstructions to identify a medial orbital-wall fracture and right medial rectus entrapment or contusion. -> [[]]",
+  "R5 DIAGNOSIS Traumatic pseudo-internuclear ophthalmoplegia caused by mechanical restriction/entrapment of the right medial rectus muscle, most likely from an occult medial orbital-wall fracture after head trauma. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have double vision?",
+    "Do you have blurred or reduced vision in either eye?",
+    "Do you have eye pain or pain with eye movement?",
+    "Did these eye-movement symptoms begin after recent nasal or facial surgery?",
+    "Have you had recent head or facial trauma?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Bedside ocular motility examination in the nine diagnostic positions of gaze, documenting ductions and versions.",
+    "Alternate cover test in primary gaze and in all nine positions to measure ocular misalignment.",
+    "Bedside pupillary examination, including direct and consensual light responses and an afferent pupillary defect test.",
+    "Noncontrast CT of the orbits and head to assess for orbital fracture, extraocular muscle entrapment, and intracranial traumatic injury."
+   ],
+   "result": [
+    [
+     "nystagmus: direction and whether it changes with gaze",
+     "smooth pursuit and saccades",
+     "adduction in horizontal gaze (each eye)",
+     "abducting nystagmus of the fellow eye",
+     "vertical gaze and convergence"
+    ],
+    [
+     "skew deviation / alternating cover test"
+    ],
+    [
+     "pupil size and light reaction"
+    ],
+    [
+     "CT head (non-contrast)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Forced-duction test of the right eye to assess mechanical restriction of adduction.",
+    "Saccadic velocity comparison of right-eye adduction with vestibulo-ocular (oculocephalic) testing to distinguish medial rectus dysfunction from a medial longitudinal fasciculus lesion.",
+    "Thin-slice CT of the orbits with multiplanar reconstruction, specifically assessing the right medial rectus muscle, orbital apex, and extraocular muscle entrapment."
+   ],
+   "result": [
+    [
+     "forced duction test"
+    ],
+    [
+     "video-oculography / eye-movement recording",
+     "smooth pursuit and saccades",
+     "adduction in horizontal gaze (each eye)",
+     "head impulse test"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Thin-slice CT of the orbits with coronal and sagittal reconstructions to identify a medial orbital-wall fracture and right medial rectus entrapment or contusion."
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Traumatic pseudo-internuclear ophthalmoplegia caused by mechanical restriction/entrapment of the right medial rectus muscle, most likely from an occult medial orbital-wall fracture after head trauma."
+  }
+ ],
+ "dx": "Traumatic pseudo-internuclear ophthalmoplegia caused by mechanical restriction/entrapment of the right medial rectus muscle, most likely from an occult medial orbital-wall fracture after head trauma.",
+ "dx_raw": "DIAGNOSIS: Traumatic pseudo-internuclear ophthalmoplegia caused by mechanical restriction/entrapment of the right medial rectus muscle, most likely from an occult medial orbital-wall fracture after head trauma.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "CT head (non-contrast)",
+  "adduction in horizontal gaze (each eye)",
+  "forced duction test"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0037,
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 37.0
+}

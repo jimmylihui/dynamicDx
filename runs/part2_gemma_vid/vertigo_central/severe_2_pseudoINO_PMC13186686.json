@@ -1,0 +1,131 @@
+{
+ "questions": [
+  "Did you have a recent injury to your head or face?",
+  "Are you seeing double?",
+  "Did you lose consciousness?",
+  "Do you have a severe headache?",
+  "Do you have any numbness in your face?",
+  "Do you have any weakness in your limbs?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "CT head and facial bones (including orbits)",
+  "Beta-2 transferrin test of nasal discharge"
+ ],
+ "served": [
+  "CT head (non-contrast)"
+ ],
+ "results": [
+  "1. CT head and facial bones (including orbits)",
+  "     CT head (non-contrast): multiple skull fractures and epidural haemorrhage; NO evidence of brainstem injury",
+  "2. Beta-2 transferrin test of nasal discharge",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Bilateral internuclear ophthalmoplegia due to traumatic brain injury\nBilateral third nerve palsy\nMultiple sclerosis\nBrainstem stroke",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. CT head and facial bones (including orbits)\n2. Beta-2 transferrin test of nasal discharge",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Bilateral internuclear ophthalmoplegia due to traumatic brain injury",
+ "decisive_served": [
+  "CT head (non-contrast)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8890,
+   "completion_tokens": 2527,
+   "total_tokens": 11417,
+   "cost": 0.00174818,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00174818,
+    "upstream_inference_prompt_cost": 0.000889,
+    "upstream_inference_completions_cost": 0.00085918
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2227,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9190,
+   "completion_tokens": 700,
+   "total_tokens": 9890,
+   "cost": 0.001157,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001157,
+    "upstream_inference_prompt_cost": 0.000919,
+    "upstream_inference_completions_cost": 0.000238
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 724,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9365,
+   "completion_tokens": 3798,
+   "total_tokens": 13163,
+   "cost": 0.00222782,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00222782,
+    "upstream_inference_prompt_cost": 0.0009365,
+    "upstream_inference_completions_cost": 0.00129132
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3494,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 288.8
+}

@@ -1,0 +1,130 @@
+{
+ "questions": [
+  "Are you aware of what is happening throughout these episodes?",
+  "Can you hear and understand people speaking to you during an episode?",
+  "Can you answer questions or follow commands during an episode?",
+  "Do you remember the episode afterward?",
+  "Do these episodes begin and end suddenly?",
+  "Do they usually last longer than five minutes?",
+  "Do you lose consciousness completely during any of these episodes?",
+  "Are you confused or unusually sleepy after an episode?",
+  "Have you ever bitten your tongue during an episode?",
+  "Do you lose bladder or bowel control during an episode?",
+  "Have you injured yourself during one of these episodes?",
+  "Do you have a history of epileptic seizures?",
+  "Have you had similar episodes before?",
+  "Are these episodes triggered by stress, emotional upset, pain, or being watched?",
+  "Do you take antiseizure medication?",
+  "Have antiseizure medications reduced or stopped these episodes?",
+  "Have you previously had an EEG or video-EEG during one of these episodes?",
+  "Did that EEG show abnormal seizure activity?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "provocation testing (the suspected trigger)"
+ ],
+ "results": [
+  "1. interictal EEG: intermittent sharp waves from the LEFT FRONTAL to anterior temporal regions",
+  "2. video-EEG monitoring of a typical event: moderate-amplitude rhythmic THETA waves intermittently during the versive seizures",
+  "3. provocation testing (the suspected trigger): supervised shadowboxing of 3 minutes per trial reproduced the seizures, with induction latencies of about 11 seconds and durations around 18 seconds"
+ ],
+ "dx_raw": "DIAGNOSIS: Exercise-/praxis-induced reflex focal epilepsy with versive seizures, arising from a left frontal–anterior temporal epileptogenic focus\n\nALTERNATIVE: Focal epilepsy of left frontal lobe onset with seizure activity triggered by complex motor activity\n\nALTERNATIVE: Temporal lobe focal epilepsy with rapid frontal propagation\n\nALTERNATIVE: Psychogenic nonepileptic seizures (less likely given the ictal EEG changes)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Exercise-/praxis-induced reflex focal epilepsy with versive seizures, arising from a left frontal–anterior temporal epileptogenic focus",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "provocation testing (the suspected trigger)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 11820,
+   "completion_tokens": 746,
+   "total_tokens": 12566,
+   "cost": 0.00056607,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 11817,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00056607,
+    "upstream_inference_prompt_cost": 0.00011847,
+    "upstream_inference_completions_cost": 0.0004476
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 12540,
+   "completion_tokens": 347,
+   "total_tokens": 12887,
+   "cost": 0.00041667,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 11817,
+    "cache_write_tokens": 720,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00041667,
+    "upstream_inference_prompt_cost": 0.00020847,
+    "upstream_inference_completions_cost": 0.0002082
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 253,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_2_shadowbox_PMC9062418.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 20.0
+}

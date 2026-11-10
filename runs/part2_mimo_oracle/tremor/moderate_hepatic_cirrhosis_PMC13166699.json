@@ -1,0 +1,116 @@
+{
+ "questions": [
+  "Are your hands moving in an uncontrolled way that you can't stop right now?",
+  "Did this hand movement problem start suddenly without any warning?",
+  "Do you feel numbness or tingling in your hands or arms?",
+  "Have you ever had this exact kind of hand movement issue before?",
+  "Have you had a fever or felt unwell before this hand problem began?",
+  "Are you having trouble with balance or walking right now?",
+  "Have you noticed any changes in your ability to speak clearly?",
+  "Do you have a history of any brain or neurological health conditions?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "medication, supplement and herbal history",
+  "liver function and albumin/globulin",
+  "whole-blood manganese",
+  "brain MRI",
+  "abdominal ultrasound / liver imaging"
+ ],
+ "results": [
+  "1. medication, supplement and herbal history: long-term hepatotoxic traditional Chinese medicine, notably Psoralea corylifolia, plus manganese-containing supplements",
+  "2. liver function and albumin/globulin: albumin 35.1 g/L (ref 35-52), globulin 30.8 g/L RAISED (ref 15-30), A/G ratio 1.14 LOW (ref 1.2-2.4)",
+  "3. whole-blood manganese: ELEVATED; fell after the supplements were stopped but remained above normal",
+  "4. brain MRI: bilateral T1 HYPERINTENSITY in the basal ganglia - manganese deposition",
+  "5. abdominal ultrasound / liver imaging: cirrhosis"
+ ],
+ "dx_raw": "DIAGNOSIS: Manganism secondary to herbal-induced liver cirrhosis\nWilson's disease\nHepatic encephalopathy\nEssential tremor",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Manganism secondary to herbal-induced liver cirrhosis",
+ "decisive_served": [
+  "medication, supplement and herbal history",
+  "liver function and albumin/globulin",
+  "whole-blood manganese",
+  "brain MRI",
+  "abdominal ultrasound / liver imaging"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14783,
+   "completion_tokens": 828,
+   "total_tokens": 15611,
+   "cost": 0.0022751176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0022751176,
+    "upstream_inference_prompt_cost": 0.0020432776,
+    "upstream_inference_completions_cost": 0.00023184
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 695,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15329,
+   "completion_tokens": 1898,
+   "total_tokens": 17227,
+   "cost": 0.0005788888,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 15296,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005788888,
+    "upstream_inference_prompt_cost": 4.74488e-05,
+    "upstream_inference_completions_cost": 0.00053144
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1861,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.4,
+ "video": "moderate_hepatic_cirrhosis_PMC13166699.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 48.7
+}

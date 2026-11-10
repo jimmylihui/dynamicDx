@@ -1,0 +1,296 @@
+{
+ "questions": [
+  "Did this eyelid drooping start suddenly, within the past 72 hours?",
+  "Have you experienced any new double vision along with the drooping eyelid?",
+  "Have you had a severe headache or eye pain in the days before this started?",
+  "Have you noticed any weakness or numbness in your arm, leg, or face on either side?",
+  "Have you had any recent infection, like a cold or sinus infection, or a history of diabetes?",
+  "Does the eyelid drooping get worse later in the day or after using your eyes for a long time?",
+  "Does the drooping improve after you rest or sleep?",
+  "Have you noticed any difficulty swallowing or slurred speech?",
+  "Do you have any family history of autoimmune diseases like thyroid problems or myasthenia gravis?",
+  "Have you had any drooping in both eyelids at the same time?",
+  "When did you first notice this drooping - was it weeks, months, or years ago?",
+  "Have you ever had eye surgery or any trauma to that eye?",
+  "Do you wear contact lenses?",
+  "Have you ever noticed that one of your pupils looked smaller than the other?",
+  "Do you feel like your left eye looks \"staring\" or more open than the right eye?",
+  "Have you ever been told your left eye looks different or unusual?",
+  "Have you noticed any blurriness or changes in vision in either eye?",
+  "Do you have any dryness, grittiness, or tearing in either eye?",
+  "When you look downward slowly, does your left eyelid follow smoothly or does it seem to hang up or move slower than expected?",
+  "Have you ever had your thyroid tested or been told you have any thyroid problems, even if it was years ago?",
+  "Are you currently taking any medications, including over-the-counter supplements or thyroid medications?",
+  "Does anyone in your family have thyroid problems or any eye conditions?",
+  "Have you ever had any treatment for this eyelid appearance or been evaluated by an eye doctor before?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bright light / dim light anisocoria assessment (document pupil size difference in bright versus dim conditions)",
+  "Measurement of right upper eyelid fissure height in millimeters",
+  "Assessment of eyelid excursion (levator function) on the right side",
+  "Measurement of proptosis using Hertel exophthalmometry (both eyes in millimeters)",
+  "Assessment of extraocular movements (ductions and versions)",
+  "Assessment for lid lag on downgaze (asking patient to look down while observing upper eyelid movement)",
+  "Serum TSH, free T4, and free T3",
+  "Anti-thyroid peroxidase (anti-TPO) and TSH receptor antibodies (TRAb)",
+  "Ice test on the left upper eyelid (applying ice pack for 2 minutes, then measuring for any improvement in retraction - improvement would suggest myasthenia gravis)",
+  "Assessment of right upper eyelid excursion (levator function) in millimeters",
+  "Measurement of bilateral eyelid fissure widths in primary gaze",
+  "Orbital MRI with fat suppression and contrast (to evaluate extraocular muscles, orbital fat, and rule out structural lesion causing eyelid retraction)",
+  "Forced duction testing of the left eye (to assess for any mechanical restriction)"
+ ],
+ "served": [
+  "pupil examination (size, light reaction)",
+  "lid position and measurement (MRD1 both sides)",
+  "proptosis / exophthalmometry",
+  "ocular motility examination",
+  "thyroid function (TSH, free T4)",
+  "anti-thyroid antibodies",
+  "TSH / free T4 / TRAb",
+  "ice-pack test",
+  "MRI orbits"
+ ],
+ "results": [
+  "R1 ASK Did this eyelid drooping start suddenly, within the past 72 hours?; Have you experienced any new double vision along with the drooping eyelid?; Have you had a severe headache or eye pain in the days before this started?; Have you noticed any weakness or numbness in your arm, leg, or face on either side?; Have you had any recent infection, like a cold or sinus infection, or a history of diabetes? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Does the eyelid drooping get worse later in the day or after using your eyes for a long time?; Does the drooping improve after you rest or sleep?; Have you noticed any difficulty swallowing or slurred speech?; Do you have any family history of autoimmune diseases like thyroid problems or myasthenia gravis?; Have you had any drooping in both eyelids at the same time? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK When did you first notice this drooping - was it weeks, months, or years ago?; Have you ever had eye surgery or any trauma to that eye?; Do you wear contact lenses?; Have you ever noticed that one of your pupils looked smaller than the other? -> ['yes', 'no', 'no', 'no']",
+  "R4 ORDER Bright light / dim light anisocoria assessment (document pupil size difference in bright versus dim conditions); Measurement of right upper eyelid fissure height in millimeters; Assessment of eyelid excursion (levator function) on the right side -> [['pupil examination (size, light reaction)'], ['lid position and measurement (MRD1 both sides)'], []]",
+  "R5 ORDER Measurement of proptosis using Hertel exophthalmometry (both eyes in millimeters); Assessment of extraocular movements (ductions and versions); Assessment for lid lag on downgaze (asking patient to look down while observing upper eyelid movement); Serum TSH, free T4, and free T3; Anti-thyroid peroxidase (anti-TPO) and TSH receptor antibodies (TRAb) -> [['proptosis / exophthalmometry'], ['ocular motility examination'], [], ['thyroid function (TSH, free T4)'], ['anti-thyroid antibodies', 'TSH / free T4 / TRAb']]",
+  "R6 ASK Do you feel like your left eye looks \"staring\" or more open than the right eye?; Have you ever been told your left eye looks different or unusual?; Have you noticed any blurriness or changes in vision in either eye?; Do you have any dryness, grittiness, or tearing in either eye? -> ['no', 'no', 'no', 'no']",
+  "R7 ORDER Ice test on the left upper eyelid (applying ice pack for 2 minutes, then measuring for any improvement in retraction - improvement would suggest myasthenia gravis); Assessment of right upper eyelid excursion (levator function) in millimeters; Measurement of bilateral eyelid fissure widths in primary gaze -> [['ice-pack test'], ['lid position and measurement (MRD1 both sides)'], ['lid position and measurement (MRD1 both sides)']]",
+  "R8 ASK When you look downward slowly, does your left eyelid follow smoothly or does it seem to hang up or move slower than expected? -> ['no']",
+  "R9 ASK Have you ever had your thyroid tested or been told you have any thyroid problems, even if it was years ago?; Are you currently taking any medications, including over-the-counter supplements or thyroid medications?; Does anyone in your family have thyroid problems or any eye conditions?; Have you ever had any treatment for this eyelid appearance or been evaluated by an eye doctor before? -> ['no', 'no', 'no', 'no']",
+  "R10 ORDER Orbital MRI with fat suppression and contrast (to evaluate extraocular muscles, orbital fat, and rule out structural lesion causing eyelid retraction); Forced duction testing of the left eye (to assess for any mechanical restriction) -> [['MRI orbits'], []]",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Idiopathic left upper eyelid retraction -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did this eyelid drooping start suddenly, within the past 72 hours?",
+    "Have you experienced any new double vision along with the drooping eyelid?",
+    "Have you had a severe headache or eye pain in the days before this started?",
+    "Have you noticed any weakness or numbness in your arm, leg, or face on either side?",
+    "Have you had any recent infection, like a cold or sinus infection, or a history of diabetes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Does the eyelid drooping get worse later in the day or after using your eyes for a long time?",
+    "Does the drooping improve after you rest or sleep?",
+    "Have you noticed any difficulty swallowing or slurred speech?",
+    "Do you have any family history of autoimmune diseases like thyroid problems or myasthenia gravis?",
+    "Have you had any drooping in both eyelids at the same time?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "When did you first notice this drooping - was it weeks, months, or years ago?",
+    "Have you ever had eye surgery or any trauma to that eye?",
+    "Do you wear contact lenses?",
+    "Have you ever noticed that one of your pupils looked smaller than the other?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Bright light / dim light anisocoria assessment (document pupil size difference in bright versus dim conditions)",
+    "Measurement of right upper eyelid fissure height in millimeters",
+    "Assessment of eyelid excursion (levator function) on the right side"
+   ],
+   "result": [
+    [
+     "pupil examination (size, light reaction)"
+    ],
+    [
+     "lid position and measurement (MRD1 both sides)"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Measurement of proptosis using Hertel exophthalmometry (both eyes in millimeters)",
+    "Assessment of extraocular movements (ductions and versions)",
+    "Assessment for lid lag on downgaze (asking patient to look down while observing upper eyelid movement)",
+    "Serum TSH, free T4, and free T3",
+    "Anti-thyroid peroxidase (anti-TPO) and TSH receptor antibodies (TRAb)"
+   ],
+   "result": [
+    [
+     "proptosis / exophthalmometry"
+    ],
+    [
+     "ocular motility examination"
+    ],
+    [],
+    [
+     "thyroid function (TSH, free T4)"
+    ],
+    [
+     "anti-thyroid antibodies",
+     "TSH / free T4 / TRAb"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you feel like your left eye looks \"staring\" or more open than the right eye?",
+    "Have you ever been told your left eye looks different or unusual?",
+    "Have you noticed any blurriness or changes in vision in either eye?",
+    "Do you have any dryness, grittiness, or tearing in either eye?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Ice test on the left upper eyelid (applying ice pack for 2 minutes, then measuring for any improvement in retraction - improvement would suggest myasthenia gravis)",
+    "Assessment of right upper eyelid excursion (levator function) in millimeters",
+    "Measurement of bilateral eyelid fissure widths in primary gaze"
+   ],
+   "result": [
+    [
+     "ice-pack test"
+    ],
+    [
+     "lid position and measurement (MRD1 both sides)"
+    ],
+    [
+     "lid position and measurement (MRD1 both sides)"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "When you look downward slowly, does your left eyelid follow smoothly or does it seem to hang up or move slower than expected?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Have you ever had your thyroid tested or been told you have any thyroid problems, even if it was years ago?",
+    "Are you currently taking any medications, including over-the-counter supplements or thyroid medications?",
+    "Does anyone in your family have thyroid problems or any eye conditions?",
+    "Have you ever had any treatment for this eyelid appearance or been evaluated by an eye doctor before?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "Orbital MRI with fat suppression and contrast (to evaluate extraocular muscles, orbital fat, and rule out structural lesion causing eyelid retraction)",
+    "Forced duction testing of the left eye (to assess for any mechanical restriction)"
+   ],
+   "result": [
+    [
+     "MRI orbits"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Idiopathic left upper eyelid retraction"
+  }
+ ],
+ "dx": "Idiopathic left upper eyelid retraction",
+ "dx_raw": "DIAGNOSIS: Idiopathic left upper eyelid retraction",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "TSH / free T4 / TRAb",
+  "lid position and measurement (MRD1 both sides)"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0032,
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 269.6
+}

@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Are you having difficulty breathing?",
+  "Is your nose blocked?",
+  "Is this a new symptom?",
+  "Do you snore?",
+  "Do you have allergies?",
+  "Do you have a fever?",
+  "Did you put something in your nose?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Oropharyngeal examination",
+  "Anterior rhinoscopy",
+  "Dental examination",
+  "Neurological examination of the face"
+ ],
+ "served": [
+  "cranial nerve examination"
+ ],
+ "results": [
+  "1. Oropharyngeal examination",
+  "     not performed / not available",
+  "2. Anterior rhinoscopy",
+  "     not performed / not available",
+  "3. Dental examination",
+  "     not performed / not available",
+  "4. Neurological examination of the face",
+  "     cranial nerve examination: ocular motor apraxia with compensatory head thrusts; facial dysmorphism"
+ ],
+ "dx_raw": "DIAGNOSIS: Joubert Syndrome due to genetic mutation\nCerebellar Ataxia with Ocular Motor Apraxia (CAOMA)\nMiller-Dieker Syndrome\nAngelman Syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Oropharyngeal examination\n2. Anterior rhinoscopy\n3. Dental examination\n4. Neurological examination of the face",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Joubert Syndrome due to genetic mutation",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 165,
+   "completion_tokens": 2307,
+   "total_tokens": 2472,
+   "cost": 0.00080088,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00080088,
+    "upstream_inference_prompt_cost": 1.65e-05,
+    "upstream_inference_completions_cost": 0.00078438
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2041,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 463,
+   "completion_tokens": 2522,
+   "total_tokens": 2985,
+   "cost": 0.00090378,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00090378,
+    "upstream_inference_prompt_cost": 4.63e-05,
+    "upstream_inference_completions_cost": 0.00085748
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2465,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 656,
+   "completion_tokens": 4054,
+   "total_tokens": 4710,
+   "cost": 0.00144396,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00144396,
+    "upstream_inference_prompt_cost": 6.56e-05,
+    "upstream_inference_completions_cost": 0.00137836
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3669,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_3_joubert_apraxia_PMC8490194.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 258.5
+}

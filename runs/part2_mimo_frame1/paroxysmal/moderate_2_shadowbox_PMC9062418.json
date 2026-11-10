@@ -1,0 +1,173 @@
+{
+ "questions": [
+  "Are you in pain?",
+  "Are you hearing voices that others cannot hear?",
+  "Have you taken any illegal drugs today?",
+  "Are you trying to hurt yourself or someone else right now?",
+  "Do you know where you are?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Point-of-care blood glucose",
+  "Complete metabolic panel (electrolytes, kidney function, liver function)",
+  "Complete blood count with differential",
+  "Urine drug screen",
+  "Urinalysis with culture",
+  "Blood alcohol level",
+  "CT head without contrast",
+  "Vital signs including temperature",
+  "Blood cultures if febrile",
+  "Ammonia level"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "liver and renal function",
+  "full blood count and biochemistry",
+  "toxicology screen (urine and serum)",
+  "urinalysis",
+  "serum ethanol",
+  "CT head",
+  "serum ammonia"
+ ],
+ "results": [
+  "1. Point-of-care blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "2. Complete metabolic panel (electrolytes, kidney function, liver function)",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     liver and renal function: normal",
+  "3. Complete blood count with differential",
+  "     full blood count and biochemistry: normal",
+  "4. Urine drug screen",
+  "     toxicology screen (urine and serum): normal",
+  "5. Urinalysis with culture",
+  "     urinalysis: normal",
+  "6. Blood alcohol level",
+  "     serum ethanol: normal",
+  "7. CT head without contrast",
+  "     CT head: normal",
+  "8. Vital signs including temperature",
+  "     not performed / not available",
+  "9. Blood cultures if febrile",
+  "     not performed / not available",
+  "10. Ammonia level",
+  "     serum ammonia: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Delirium, unspecified\n\n1. Metabolic encephalopathy\n2. Viral encephalitis\n3. Acute psychosis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Point-of-care blood glucose\n2. Complete metabolic panel (electrolytes, kidney function, liver function)\n3. Complete blood count with differential\n4. Urine drug screen\n5. Urinalysis with culture\n6. Blood alcohol level\n7. CT head without contrast\n8. Vital signs including temperature\n9. Blood cultures if febrile\n10. Ammonia level\n11. TSH",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Delirium, unspecified",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 672,
+   "completion_tokens": 195,
+   "total_tokens": 867,
+   "cost": 0.0001223376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001223376,
+    "upstream_inference_prompt_cost": 6.77376e-05,
+    "upstream_inference_completions_cost": 5.46e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 142,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 946,
+   "completion_tokens": 588,
+   "total_tokens": 1534,
+   "cost": 0.0002707376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002707376,
+    "upstream_inference_prompt_cost": 0.0001060976,
+    "upstream_inference_completions_cost": 0.00016464
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 496,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1317,
+   "completion_tokens": 1566,
+   "total_tokens": 2883,
+   "cost": 0.0005965176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005965176,
+    "upstream_inference_prompt_cost": 0.0001580376,
+    "upstream_inference_completions_cost": 0.00043848
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1529,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_2_shadowbox_PMC9062418.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 129.0
+}

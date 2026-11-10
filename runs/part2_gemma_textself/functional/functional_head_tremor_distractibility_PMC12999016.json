@@ -1,0 +1,130 @@
+{
+ "questions": [
+  "Did these symptoms start on one side of your body?",
+  "Do you have a tremor in your hands or legs?",
+  "Have you taken medications for psychiatric conditions?",
+  "Do you have difficulty looking up or down?",
+  "Do you experience dizziness or lightheadedness when standing up?",
+  "Do you have problems with bladder control?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Brain MRI",
+  "Levodopa trial"
+ ],
+ "served": [
+  "MRI brain"
+ ],
+ "results": [
+  "1. Brain MRI",
+  "     MRI brain: normal",
+  "2. Levodopa trial",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Parkinson's Disease, caused by the loss of dopaminergic neurons in the substantia nigra pars compacta.\nProgressive Supranuclear Palsy\nMultiple System Atrophy\nDrug-induced parkinsonism",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Brain MRI\n2. Levodopa trial",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Parkinson's Disease, caused by the loss of dopaminergic neurons in the substantia nigra pars compacta.",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 349,
+   "completion_tokens": 1533,
+   "total_tokens": 1882,
+   "cost": 0.00055612,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00055612,
+    "upstream_inference_prompt_cost": 3.49e-05,
+    "upstream_inference_completions_cost": 0.00052122
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1368,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 673,
+   "completion_tokens": 1998,
+   "total_tokens": 2671,
+   "cost": 0.00074662,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074662,
+    "upstream_inference_prompt_cost": 6.73e-05,
+    "upstream_inference_completions_cost": 0.00067932
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1907,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 806,
+   "completion_tokens": 9297,
+   "total_tokens": 10103,
+   "cost": 0.00324158,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00324158,
+    "upstream_inference_prompt_cost": 8.06e-05,
+    "upstream_inference_completions_cost": 0.00316098
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 8345,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 26.2,
+ "video": "functional_head_tremor_distractibility_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 365.2
+}

@@ -1,0 +1,190 @@
+{
+ "questions": [
+  "Are you in pain right now?",
+  "Did your symptoms begin suddenly?",
+  "Is the pain severe?",
+  "Do you have chest pain?",
+  "Are you short of breath?",
+  "Do you have weakness on one side of your body?",
+  "Do you have a severe headache?",
+  "Have you had a fever?",
+  "Have you lost weight without trying?",
+  "Have you noticed any bleeding from anywhere?",
+  "Have you had any recent injury or trauma?",
+  "Do you have nausea or vomiting?",
+  "Have you had a change in your bowel movements?",
+  "Have you had a change in urination?",
+  "Do you have a history of any chronic medical conditions?",
+  "Do you take any medications regularly?",
+  "Do you have any allergies?",
+  "Do you smoke or have you ever smoked?",
+  "Do you drink alcohol regularly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "yes",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Oxygen saturation on room air",
+  "Electrocardiogram",
+  "Chest X-ray",
+  "Complete blood count with hemoglobin",
+  "D-dimer",
+  "N-terminal pro-B-type natriuretic peptide",
+  "Coagulation studies (PT/INR, PTT)",
+  "Serum creatinine and BUN",
+  "Type and crossmatch",
+  "CT pulmonary angiogram"
+ ],
+ "served": [
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "full blood count and biochemistry"
+ ],
+ "results": [
+  "1. Oxygen saturation on room air",
+  "     not performed / not available",
+  "2. Electrocardiogram",
+  "     not performed / not available",
+  "3. Chest X-ray",
+  "     not performed / not available",
+  "4. Complete blood count with hemoglobin",
+  "     full blood count and biochemistry: normal",
+  "5. D-dimer",
+  "     not performed / not available",
+  "6. N-terminal pro-B-type natriuretic peptide",
+  "     not performed / not available",
+  "7. Coagulation studies (PT/INR, PTT)",
+  "     not performed / not available",
+  "8. Serum creatinine and BUN",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     full blood count and biochemistry: normal",
+  "9. Type and crossmatch",
+  "     not performed / not available",
+  "10. CT pulmonary angiogram",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Alveolar hemorrhage syndrome, most likely due to small-vessel vasculitis (e.g., granulomatosis with polyangiitis) or medication-related (e.g., anticoagulant-induced) pulmonary hemorrhage\n\n1. Pulmonary embolism with pulmonary infarction and hemoptysis\n2. Decompensated heart failure in a patient anticoagulated for atrial fibrillation or other indication, with concurrent bleeding\n3. Diffuse alveolar damage from an undetermined cause (e.g., connective tissue disease flare)",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Oxygen saturation on room air\n2. Electrocardiogram\n3. Chest X-ray\n4. Complete blood count with hemoglobin\n5. D-dimer\n6. N-terminal pro-B-type natriuretic peptide\n7. Coagulation studies (PT/INR, PTT)\n8. Serum creatinine and BUN\n9. Type and crossmatch\n10. CT pulmonary angiogram",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Alveolar hemorrhage syndrome, most likely due to small-vessel vasculitis (e.g., granulomatosis with polyangiitis) or medication-related (e.g., anticoagulant-induced) pulmonary hemorrhage",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 3995,
+   "total_tokens": 4309,
+   "cost": 0.00486084,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00486084,
+    "upstream_inference_prompt_cost": 6.684e-05,
+    "upstream_inference_completions_cost": 0.004794
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4174,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 914,
+   "completion_tokens": 382,
+   "total_tokens": 1296,
+   "cost": 0.00067452,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00067452,
+    "upstream_inference_prompt_cost": 0.00021612,
+    "upstream_inference_completions_cost": 0.0004584
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 311,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1258,
+   "completion_tokens": 1706,
+   "total_tokens": 2964,
+   "cost": 0.00221292,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 882,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00221292,
+    "upstream_inference_prompt_cost": 0.00016572,
+    "upstream_inference_completions_cost": 0.0020472
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1935,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 89.1
+}

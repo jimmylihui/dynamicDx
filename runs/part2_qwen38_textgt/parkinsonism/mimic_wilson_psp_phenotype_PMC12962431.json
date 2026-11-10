@@ -1,0 +1,137 @@
+{
+ "questions": [
+  "Do you have difficulty walking down stairs?",
+  "Have you noticed your eyes seem to move slowly or not follow objects smoothly?",
+  "Do you experience frequent falls, especially backward?",
+  "Have you developed a change in your voice, such as it becoming quieter or more monotone?",
+  "Do you have difficulty swallowing food or liquids?",
+  "Have you experienced significant personality changes, such as apathy or impulsivity?",
+  "Do you have tremors in your hands?",
+  "Have you had any recent head trauma?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "yes",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "MRI of the brain with sagittal T1-weighted sequences to assess midbrain atrophy",
+  "DaTscan (Dopamine Transporter SPECT)"
+ ],
+ "served": [
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "DAT-SPECT / FP-CIT PET"
+ ],
+ "results": [
+  "1. MRI of the brain with sagittal T1-weighted sequences to assess midbrain atrophy",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): predominant midbrain atrophy with midbrain-to-pons ratio 0.20 (normal >0.52), plus mild cerebral and cerebellar atrophy - THIS LOOKS LIKE PSP AND IS NOT",
+  "2. DaTscan (Dopamine Transporter SPECT)",
+  "     DAT-SPECT / FP-CIT PET: not performed"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy (PSP)\nAlternative 1: Corticobasal Degeneration\nAlternative 2: Multiple System Atrophy",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with sagittal T1-weighted sequences to assess midbrain atrophy\n2. DaTscan (Dopamine Transporter SPECT)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Progressive Supranuclear Palsy (PSP)",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 199,
+   "completion_tokens": 115,
+   "total_tokens": 314,
+   "cost": 8.39e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.39e-05,
+    "upstream_inference_prompt_cost": 2.985e-05,
+    "upstream_inference_completions_cost": 5.405e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 616,
+   "completion_tokens": 35,
+   "total_tokens": 651,
+   "cost": 0.00010885,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010885,
+    "upstream_inference_prompt_cost": 9.24e-05,
+    "upstream_inference_completions_cost": 1.645e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 865,
+   "completion_tokens": 36,
+   "total_tokens": 901,
+   "cost": 7.8062e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.8062e-05,
+    "upstream_inference_prompt_cost": 6.1142e-05,
+    "upstream_inference_completions_cost": 1.692e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_wilson_psp_phenotype_PMC12962431.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 17.5
+}

@@ -1,0 +1,162 @@
+{
+ "questions": [
+  "Have you experienced any chest pain?",
+  "Have you felt your heart racing or skipping a beat?",
+  "Have you experienced any dizziness or fainting?",
+  "Do you have any numbness or tingling in your arms or legs?",
+  "Have you noticed any muscle weakness?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "12-lead electrocardiogram",
+  "Holter monitor for 24-48 hours",
+  "Echocardiogram",
+  "Basic metabolic panel",
+  "Complete blood count",
+  "Thyroid function tests",
+  "Tilt table test",
+  "Nerve conduction study",
+  "Electromyography"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "full blood count and biochemistry",
+  "thyroid function (TSH, free T4)",
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. 12-lead electrocardiogram",
+  "     not performed / not available",
+  "2. Holter monitor for 24-48 hours",
+  "     not performed / not available",
+  "3. Echocardiogram",
+  "     not performed / not available",
+  "4. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "5. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "6. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal",
+  "7. Tilt table test",
+  "     not performed / not available",
+  "8. Nerve conduction study",
+  "     nerve conduction studies: normal",
+  "9. Electromyography",
+  "     needle electromyography: brief time-locked EMG bursts under 100 ms in the left wrist flexors and extensors"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional myoclonus (functional neurological disorder)\n\nAlternatives:\n1. Cortical myoclonus\n2. Essential myoclonus",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. 12-lead electrocardiogram\n2. Holter monitor for 24-48 hours\n3. Echocardiogram\n4. Basic metabolic panel\n5. Complete blood count\n6. Thyroid function tests\n7. Tilt table test\n8. Nerve conduction study\n9. Electromyography",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional myoclonus (functional neurological disorder)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 752,
+   "completion_tokens": 1723,
+   "total_tokens": 2475,
+   "cost": 0.0005613776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005613776,
+    "upstream_inference_prompt_cost": 7.89376e-05,
+    "upstream_inference_completions_cost": 0.00048244
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1661,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1044,
+   "completion_tokens": 486,
+   "total_tokens": 1530,
+   "cost": 0.0002558976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002558976,
+    "upstream_inference_prompt_cost": 0.0001198176,
+    "upstream_inference_completions_cost": 0.00013608
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 410,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1389,
+   "completion_tokens": 548,
+   "total_tokens": 1937,
+   "cost": 0.0002513112,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 704,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002513112,
+    "upstream_inference_prompt_cost": 9.78712e-05,
+    "upstream_inference_completions_cost": 0.00015344
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 511,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 125.4
+}

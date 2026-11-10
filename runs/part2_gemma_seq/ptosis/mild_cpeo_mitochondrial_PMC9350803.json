@@ -1,0 +1,279 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Do you have weakness in your limbs?",
+  "Do you have numbness or tingling in your limbs?",
+  "Have you had any sudden loss of vision in one eye?",
+  "Have you had a recent stroke?",
+  "Does your weakness get worse as the day goes on or with repeated use of the muscles?",
+  "Do you have difficulty swallowing or speaking?",
+  "Do you have drooping eyelids that get worse throughout the day?",
+  "Did the symptoms start suddenly or gradually?",
+  "Have you had a recent upper respiratory tract infection or diarrhea?",
+  "Have you experienced any confusion, drowsiness, or changes in your level of consciousness?",
+  "Do you have any difficulty walking or a feeling of imbalance (ataxia)?",
+  "Do you have any history of diabetes or hypertension?",
+  "Have you started any new medications recently?",
+  "Is the double vision present when only one eye is open?",
+  "Is the weakness more prominent in the proximal muscles (shoulders, hips) than the distal muscles (hands, feet)?",
+  "Is the weakness symmetric on both sides of the body?",
+  "Do you have any difficulty breathing or shortness of breath?",
+  "Have you noticed any changes in your pupils or vision other than double vision?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Deep tendon reflex examination",
+  "Gait assessment",
+  "Lumbar puncture",
+  "Nerve conduction studies and Electromyography",
+  "MRI of the brain and spinal cord",
+  "Serum electrolytes (including potassium, calcium, magnesium)",
+  "Serum creatine kinase (CK)",
+  "Thyroid function tests (TSH, Free T4)",
+  "Anti-GQ1b antibodies",
+  "Anti-AChR antibodies",
+  "Anti-MuSK antibodies",
+  "Tensilon test"
+ ],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel",
+  "lumbar puncture / CSF",
+  "nerve conduction studies",
+  "needle electromyography",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI cervical and thoracic spine",
+  "MRI spine",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "creatine kinase",
+  "creatine kinase and lactate",
+  "thyroid function (TSH, free T4)",
+  "TSH / free T4 / TRAb",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "anti-MuSK antibodies"
+ ],
+ "results": [
+  "R1 ASK Do you have double vision?; Do you have weakness in your limbs?; Do you have numbness or tingling in your limbs?; Have you had any sudden loss of vision in one eye?; Have you had a recent stroke? -> ['yes', 'yes', 'no', 'no', 'no']",
+  "R2 ORDER Deep tendon reflex examination; Gait assessment; Lumbar puncture; Nerve conduction studies and Electromyography -> [['deep tendon reflexes and plantar responses'], [], ['CSF opening pressure', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF cytology and flow cytometry', 'CSF culture and viral PCR', 'CSF autoimmune encephalitis panel', 'lumbar puncture / CSF'], ['nerve conduction studies', 'needle electromyography']]",
+  "R3 ASK Does your weakness get worse as the day goes on or with repeated use of the muscles?; Do you have difficulty swallowing or speaking?; Do you have drooping eyelids that get worse throughout the day?; Did the symptoms start suddenly or gradually? -> ['no', 'no', 'no', 'no']",
+  "R4 ASK Have you had a recent upper respiratory tract infection or diarrhea?; Have you experienced any confusion, drowsiness, or changes in your level of consciousness?; Do you have any difficulty walking or a feeling of imbalance (ataxia)?; Do you have any history of diabetes or hypertension?; Have you started any new medications recently? -> ['no', 'no', 'no', 'no', 'no']",
+  "R5 ORDER MRI of the brain and spinal cord; Serum electrolytes (including potassium, calcium, magnesium); Serum creatine kinase (CK); Thyroid function tests (TSH, Free T4) -> [['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'MRI cervical and thoracic spine', 'MRI spine'], ['serum electrolytes, urea and creatinine', 'serum calcium, magnesium and phosphate'], ['creatine kinase', 'creatine kinase and lactate'], ['thyroid function (TSH, free T4)', 'TSH / free T4 / TRAb']]",
+  "R6 ASK Is the double vision present when only one eye is open?; Is the weakness more prominent in the proximal muscles (shoulders, hips) than the distal muscles (hands, feet)?; Is the weakness symmetric on both sides of the body?; Do you have any difficulty breathing or shortness of breath?; Have you noticed any changes in your pupils or vision other than double vision? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 ORDER Anti-GQ1b antibodies; Anti-AChR antibodies; Anti-MuSK antibodies; Tensilon test -> [[], ['acetylcholine receptor, MuSK and LRP4 antibodies', 'anti-acetylcholine receptor antibodies'], ['acetylcholine receptor, MuSK and LRP4 antibodies', 'anti-MuSK antibodies'], []]",
+  "R8 DIAGNOSIS Myasthenia gravis due to anti-acetylcholine receptor antibodies -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have double vision?",
+    "Do you have weakness in your limbs?",
+    "Do you have numbness or tingling in your limbs?",
+    "Have you had any sudden loss of vision in one eye?",
+    "Have you had a recent stroke?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Deep tendon reflex examination",
+    "Gait assessment",
+    "Lumbar puncture",
+    "Nerve conduction studies and Electromyography"
+   ],
+   "result": [
+    [
+     "deep tendon reflexes and plantar responses"
+    ],
+    [],
+    [
+     "CSF opening pressure",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF cytology and flow cytometry",
+     "CSF culture and viral PCR",
+     "CSF autoimmune encephalitis panel",
+     "lumbar puncture / CSF"
+    ],
+    [
+     "nerve conduction studies",
+     "needle electromyography"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Does your weakness get worse as the day goes on or with repeated use of the muscles?",
+    "Do you have difficulty swallowing or speaking?",
+    "Do you have drooping eyelids that get worse throughout the day?",
+    "Did the symptoms start suddenly or gradually?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you had a recent upper respiratory tract infection or diarrhea?",
+    "Have you experienced any confusion, drowsiness, or changes in your level of consciousness?",
+    "Do you have any difficulty walking or a feeling of imbalance (ataxia)?",
+    "Do you have any history of diabetes or hypertension?",
+    "Have you started any new medications recently?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "MRI of the brain and spinal cord",
+    "Serum electrolytes (including potassium, calcium, magnesium)",
+    "Serum creatine kinase (CK)",
+    "Thyroid function tests (TSH, Free T4)"
+   ],
+   "result": [
+    [
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences",
+     "MRI cervical and thoracic spine",
+     "MRI spine"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "serum calcium, magnesium and phosphate"
+    ],
+    [
+     "creatine kinase",
+     "creatine kinase and lactate"
+    ],
+    [
+     "thyroid function (TSH, free T4)",
+     "TSH / free T4 / TRAb"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Is the double vision present when only one eye is open?",
+    "Is the weakness more prominent in the proximal muscles (shoulders, hips) than the distal muscles (hands, feet)?",
+    "Is the weakness symmetric on both sides of the body?",
+    "Do you have any difficulty breathing or shortness of breath?",
+    "Have you noticed any changes in your pupils or vision other than double vision?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Anti-GQ1b antibodies",
+    "Anti-AChR antibodies",
+    "Anti-MuSK antibodies",
+    "Tensilon test"
+   ],
+   "result": [
+    [],
+    [
+     "acetylcholine receptor, MuSK and LRP4 antibodies",
+     "anti-acetylcholine receptor antibodies"
+    ],
+    [
+     "acetylcholine receptor, MuSK and LRP4 antibodies",
+     "anti-MuSK antibodies"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Myasthenia gravis due to anti-acetylcholine receptor antibodies"
+  }
+ ],
+ "dx": "Myasthenia gravis due to anti-acetylcholine receptor antibodies",
+ "dx_raw": "DIAGNOSIS: Myasthenia gravis due to anti-acetylcholine receptor antibodies",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "anti-acetylcholine receptor antibodies"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0125,
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "mild_cpeo_mitochondrial_PMC9350803.mp4",
+ "line": "ptosis",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 483.4
+}

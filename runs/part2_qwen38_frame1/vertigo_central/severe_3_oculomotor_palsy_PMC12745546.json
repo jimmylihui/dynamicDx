@@ -1,0 +1,161 @@
+{
+ "questions": [
+  "Do you have a history of diabetes?",
+  "Did this double vision or eye misalignment start suddenly?",
+  "Are you currently experiencing any pain in or around the eyes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside examination of extraocular movements, including assessment for ptosis and pupil reactivity to light",
+  "Blood glucose and HbA1c levels",
+  "MRI of the brain with attention to the midbrain and cavernous sinus"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "nystagmus: direction and whether it changes with gaze",
+  "smooth pursuit and saccades",
+  "adduction in horizontal gaze (each eye)",
+  "abducting nystagmus of the fellow eye",
+  "vertical gaze and convergence",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "subjective visual vertical",
+  "head impulse test",
+  "pupil size and light reaction",
+  "ptosis / lid position",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "MRI brain with gadolinium",
+  "MRI sella and orbits"
+ ],
+ "results": [
+  "1. Bedside examination of extraocular movements, including assessment for ptosis and pupil reactivity to light",
+  "     cranial nerve examination: partial right oculomotor palsy with right adduction failure, mild vertical gaze limitation, mildly impaired convergence, and partial ptosis; pupils equally reactive",
+  "     nystagmus: direction and whether it changes with gaze: no nystagmus",
+  "     smooth pursuit and saccades: normal",
+  "     adduction in horizontal gaze (each eye): on left gaze the right eye fails to adduct, and the contralateral eye shows NO abducting nystagmus - unlike a classic INO",
+  "     abducting nystagmus of the fellow eye: absent",
+  "     vertical gaze and convergence: mild vertical limitation and mildly impaired convergence",
+  "     skew deviation / alternating cover test: no vertical misalignment",
+  "     ocular torsion and head tilt: none",
+  "     subjective visual vertical: within normal limits",
+  "     head impulse test: normal - no corrective saccade",
+  "     pupil size and light reaction: pupils EQUALLY REACTIVE - pupil-sparing",
+  "     ptosis / lid position: partial ptosis",
+  "2. Blood glucose and HbA1c levels",
+  "     blood glucose and HbA1c: normal",
+  "     glucose / HbA1c: normal",
+  "3. MRI of the brain with attention to the midbrain and cavernous sinus",
+  "     MRI brain with gadolinium: small dorsal paramedian midbrain infarct",
+  "     MRI sella and orbits: normal pituitary and orbits"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute dorsal paramedian midbrain infarction causing a pupil-sparing partial oculomotor nerve palsy\nAlternative 1: Cavernous sinus pathology (e.g., aneurysm or tumor) compressing the third cranial nerve\nAlternative 2: Microvascular ischemic oculomotor neuropathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination of extraocular movements, including assessment for ptosis and pupil reactivity to light\n2. Blood glucose and HbA1c levels\n3. MRI of the brain with attention to the midbrain and cavernous sinus",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Acute dorsal paramedian midbrain infarction causing a pupil-sparing partial oculomotor nerve palsy",
+ "decisive_served": [
+  "adduction in horizontal gaze (each eye)",
+  "pupil size and light reaction"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 600,
+   "completion_tokens": 40,
+   "total_tokens": 640,
+   "cost": 0.0001088,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001088,
+    "upstream_inference_prompt_cost": 9e-05,
+    "upstream_inference_completions_cost": 1.88e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 845,
+   "completion_tokens": 51,
+   "total_tokens": 896,
+   "cost": 9.9264e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.9264e-05,
+    "upstream_inference_prompt_cost": 7.5294e-05,
+    "upstream_inference_completions_cost": 2.397e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1314,
+   "completion_tokens": 69,
+   "total_tokens": 1383,
+   "cost": 0.00014377,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 640,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00014377,
+    "upstream_inference_prompt_cost": 0.00011134,
+    "upstream_inference_completions_cost": 3.243e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 20.2,
+ "video": "severe_3_oculomotor_palsy_PMC12745546.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 27.1
+}

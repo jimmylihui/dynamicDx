@@ -1,0 +1,131 @@
+{
+ "questions": [
+  "Do you have any weakness on the right side of your body?",
+  "Do you have any difficulty speaking?",
+  "Did this happen suddenly?",
+  "Do you have a history of hypertension?",
+  "Do you have a history of diabetes?",
+  "Do you have double vision?",
+  "Have you been feeling more tired than usual?",
+  "Have you noticed any weight gain?",
+  "Do you feel colder than other people?",
+  "Have you noticed your skin becoming drier?",
+  "Have you had any constipation?",
+  "Have you noticed your rings or shoes becoming too tight?",
+  "Have you noticed any changes in the size of your hands or feet?",
+  "Have you noticed any new onset of joint pain?",
+  "Have you noticed any changes in your voice, such as it becoming deeper?",
+  "Are you taking any medications, specifically steroids?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Do you have any weakness on the right side of your body?; Do you have any difficulty speaking?; Did this happen suddenly?; Do you have a history of hypertension?; Do you have a history of diabetes?; Do you have double vision? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Have you been feeling more tired than usual?; Have you noticed any weight gain?; Do you feel colder than other people?; Have you noticed your skin becoming drier?; Have you had any constipation? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Have you noticed your rings or shoes becoming too tight?; Have you noticed any changes in the size of your hands or feet?; Have you noticed any new onset of joint pain?; Have you noticed any changes in your voice, such as it becoming deeper?; Are you taking any medications, specifically steroids? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R4 DIAGNOSIS Iatrogenic Cushing's syndrome due to exogenous steroid use -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have any weakness on the right side of your body?",
+    "Do you have any difficulty speaking?",
+    "Did this happen suddenly?",
+    "Do you have a history of hypertension?",
+    "Do you have a history of diabetes?",
+    "Do you have double vision?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you been feeling more tired than usual?",
+    "Have you noticed any weight gain?",
+    "Do you feel colder than other people?",
+    "Have you noticed your skin becoming drier?",
+    "Have you had any constipation?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you noticed your rings or shoes becoming too tight?",
+    "Have you noticed any changes in the size of your hands or feet?",
+    "Have you noticed any new onset of joint pain?",
+    "Have you noticed any changes in your voice, such as it becoming deeper?",
+    "Are you taking any medications, specifically steroids?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Iatrogenic Cushing's syndrome due to exogenous steroid use"
+  }
+ ],
+ "dx": "Iatrogenic Cushing's syndrome due to exogenous steroid use",
+ "dx_raw": "DIAGNOSIS: Iatrogenic Cushing's syndrome due to exogenous steroid use",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0062,
+ "n_frames": 32,
+ "duration_s": 14.8,
+ "video": "moderate_2_opsoclonus_PMC13135425.mp4",
+ "line": "vertigo_central",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 563.9
+}

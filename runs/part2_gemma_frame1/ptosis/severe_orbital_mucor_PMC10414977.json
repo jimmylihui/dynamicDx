@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have pain in your eye?",
+  "Do you have a fever?",
+  "Are you seeing double?",
+  "Is your vision blurred?",
+  "Have you had a recent sinus infection?",
+  "Do you have a history of thyroid disease?",
+  "Do you feel weakness in your face?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the orbits with contrast",
+  "Thyroid function tests",
+  "Visual acuity and pupillary exam",
+  "Extraocular movement exam"
+ ],
+ "served": [
+  "MRI orbits",
+  "thyroid function (TSH, free T4)",
+  "pupil examination (size, light reaction)",
+  "visual acuity and colour vision",
+  "ocular motility examination"
+ ],
+ "results": [
+  "1. MRI of the orbits with contrast",
+  "     MRI orbits: orbital involvement with apical disease",
+  "2. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal",
+  "3. Visual acuity and pupillary exam",
+  "     pupil examination (size, light reaction): equal and reactive",
+  "     visual acuity and colour vision: normal",
+  "4. Extraocular movement exam",
+  "     ocular motility examination: failure to adduct the right eye"
+ ],
+ "dx_raw": "DIAGNOSIS: Tolosa-Hunt Syndrome\nIdiopathic Orbital Inflammation Syndrome\nSarcoidosis\nGranulomatosis with polyangiitis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the orbits with contrast\n2. Thyroid function tests\n3. Visual acuity and pupillary exam\n4. Extraocular movement exam",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Tolosa-Hunt Syndrome",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 1579,
+   "total_tokens": 1999,
+   "cost": 0.00057886,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00057886,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00053686
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1441,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 754,
+   "completion_tokens": 508,
+   "total_tokens": 1262,
+   "cost": 0.00024812,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00024812,
+    "upstream_inference_prompt_cost": 7.54e-05,
+    "upstream_inference_completions_cost": 0.00017272
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 502,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 971,
+   "completion_tokens": 2145,
+   "total_tokens": 3116,
+   "cost": 0.0008264,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008264,
+    "upstream_inference_prompt_cost": 9.71e-05,
+    "upstream_inference_completions_cost": 0.0007293
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2100,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 144.8
+}

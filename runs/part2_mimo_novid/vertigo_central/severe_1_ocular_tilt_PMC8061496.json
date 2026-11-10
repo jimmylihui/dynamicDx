@@ -1,0 +1,113 @@
+{
+ "questions": [
+  "Are you experiencing a new or different symptom that prompted you to seek medical attention today?"
+ ],
+ "answers": {
+  "1": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Is the symptom located in your head, neck, or above the collarbones?"
+ ],
+ "served": [],
+ "results": [
+  "1. Is the symptom located in your head, neck, or above the collarbones?",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Tension-type headache.\n\nAlternatives:\nMigraine without aura.\nNew-onset primary palpitations.\nAcute bronchitis.",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Is the symptom located in your head, neck, or above the collarbones?",
+ "rationale": [
+  null
+ ],
+ "dx": "Tension-type headache.",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 223,
+   "total_tokens": 608,
+   "cost": 7.2436e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.2436e-05,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 6.244e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 201,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 575,
+   "completion_tokens": 559,
+   "total_tokens": 1134,
+   "cost": 0.0001843352,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001843352,
+    "upstream_inference_prompt_cost": 2.78152e-05,
+    "upstream_inference_completions_cost": 0.00015652
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 538,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 713,
+   "completion_tokens": 263,
+   "total_tokens": 976,
+   "cost": 0.0001032136,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001032136,
+    "upstream_inference_prompt_cost": 2.95736e-05,
+    "upstream_inference_completions_cost": 7.364e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 227,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 23.8
+}

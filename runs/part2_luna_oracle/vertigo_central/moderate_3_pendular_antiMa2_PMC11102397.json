@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Did you recently injure your head, face, or eyes, including from a fall, blow, or assault?",
+  "Did you lose consciousness, feel confused, or have memory loss after the possible injury?",
+  "Do you currently have a severe or worsening headache, repeated vomiting, unusual sleepiness, weakness, numbness, or difficulty speaking?",
+  "Do you have new vision loss, blurred vision, double vision, or halos around lights?",
+  "Does it hurt when you move either eye, or are you unable to move either eye normally?",
+  "Have you noticed blood inside the eye, bleeding from the nose or ears, or clear fluid coming from the nose?",
+  "Did the swelling or bruising appear suddenly without an obvious injury?",
+  "Are both eyes becoming increasingly swollen, red, painful, or difficult to open?",
+  "Do you have fever or feel significantly unwell?",
+  "Have you recently had eye, facial, dental, or sinus surgery or a medical procedure?",
+  "Are you taking blood thinners, aspirin, steroids, or medicines that increase bleeding or bruising?",
+  "Do you have a known bleeding disorder, liver disease, or a history of unusually easy bruising?",
+  "Did you recently start a new medication or have a new food, cosmetic, or chemical exposure?",
+  "Do you have trouble breathing, swelling of your lips or tongue, or widespread hives?",
+  "Have you had recent severe coughing, vomiting, straining, or heavy lifting?",
+  "Do you wear contact lenses, or could anything have entered or scratched either eye?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "lumbar puncture / CSF",
+  "medication and oncology history"
+ ],
+ "results": [
+  "1. nystagmus: direction and whether it changes with gaze: PENDULAR TORSIONAL nystagmus, isolated",
+  "2. paraneoplastic and autoimmune antibody panel (serum): ANTI-MA2 antibodies detected in BOTH serum and CSF, with the typical neuronal nucleolar staining pattern",
+  "3. CT chest / abdomen / pelvis (occult tumour): bulky perihilar mass in the left upper lung with vascular and mediastinal invasion and ipsilateral lymphadenopathy",
+  "4. lumbar puncture / CSF: CSF-restricted oligoclonal bands",
+  "5. medication and oncology history: anti-PD-L1 durvalumab; symptoms began suddenly after the seventh administration"
+ ],
+ "dx_raw": "DIAGNOSIS: Anti-Ma2–associated paraneoplastic encephalitis with brainstem/cerebellar ocular-motor involvement, caused by an occult left lung carcinoma and precipitated or unmasked by durvalumab (anti-PD-L1 therapy).\n\nAlternative 1: Durvalumab-associated autoimmune encephalitis without a paraneoplastic mechanism.\n\nAlternative 2: Anti-Hu or anti-GABA-B receptor paraneoplastic encephalitis associated with small-cell lung carcinoma.\n\nAlternative 3: Paraneoplastic brainstem/cerebellar syndrome from an occult lung malignancy with antibody-negative or non-Ma2 autoimmunity.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Anti-Ma2–associated paraneoplastic encephalitis with brainstem/cerebellar ocular-motor involvement, caused by an occult left lung carcinoma and precipitated or unmasked by durvalumab (anti-PD-L1 therapy).",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "lumbar puncture / CSF",
+  "medication and oncology history"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 519,
+   "total_tokens": 6195,
+   "cost": 0.00036843,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00036843,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0003114
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 189,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6644,
+   "completion_tokens": 427,
+   "total_tokens": 7071,
+   "cost": 0.00043423,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 968,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00043423,
+    "upstream_inference_prompt_cost": 0.00017803,
+    "upstream_inference_completions_cost": 0.0002562
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 290,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 19.7
+}

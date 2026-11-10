@@ -1,0 +1,104 @@
+{
+ "questions": [
+  "Do you have urinary incontinence?",
+  "Do you have memory loss?",
+  "Do you have a tremor in your hands?",
+  "Do you have muscle stiffness?",
+  "Do you have difficulty starting to walk?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "serum thiamine (vitamin B1)",
+  "brain MRI",
+  "empirical IV thiamine trial"
+ ],
+ "results": [
+  "1. serum thiamine (vitamin B1): 0.97 ng/mL (reference 1.7-10) - LOW; 2539.27 ng/mL after supplementation, 2.24 ng/mL on maintenance",
+  "2. brain MRI: bilateral symmetric hyperintensity in the mammillary bodies, thalami and periaqueductal midbrain, with the LENTIFORM FORK SIGN; reversed after treatment",
+  "3. empirical IV thiamine trial: marked clinical and radiological improvement"
+ ],
+ "dx_raw": "DIAGNOSIS: Wernicke's encephalopathy due to thiamine deficiency\n\nKorsakoff syndrome\nAlcohol-related brain damage\nVitamin B12 deficiency",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Wernicke's encephalopathy due to thiamine deficiency",
+ "decisive_served": [
+  "serum thiamine (vitamin B1)",
+  "brain MRI",
+  "empirical IV thiamine trial"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1631,
+   "total_tokens": 10329,
+   "cost": 0.00142434,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00142434,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00055454
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1476,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9028,
+   "completion_tokens": 916,
+   "total_tokens": 9944,
+   "cost": 0.00121424,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00121424,
+    "upstream_inference_prompt_cost": 0.0009028,
+    "upstream_inference_completions_cost": 0.00031144
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 884,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 88.3
+}

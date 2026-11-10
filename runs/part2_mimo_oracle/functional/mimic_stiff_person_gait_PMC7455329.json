@@ -1,0 +1,126 @@
+{
+ "questions": [
+  "Do you have a leg injury?",
+  "Is this injury recent?",
+  "Is the injury painful?",
+  "Does the injury affect one leg?",
+  "Have you experienced swelling or bruising?",
+  "Have you consulted a doctor about this before?",
+  "Are you taking any medication for the injury?",
+  "Is the pain improving?",
+  "Can you bear weight on the injured leg?",
+  "Do you have other health conditions affecting your legs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "walking backward",
+  "running",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "trial of benzodiazepine (diazepam)",
+  "anti-GAD65 antibodies",
+  "needle EMG (continuous motor unit activity at rest)"
+ ],
+ "results": [
+  "1. walking backward: the slow, guarded, wide-based pattern PERSISTS",
+  "2. running: cannot run; the pattern does not normalise",
+  "3. gait with a distracting or automatic task (dancing, counting backwards): no change - the gait is not distractible",
+  "4. muscle tone (spasticity, rigidity, paratonia): genuine axial and lower-limb rigidity on passive movement",
+  "5. trial of benzodiazepine (diazepam): clear improvement in stiffness and in the gait",
+  "6. anti-GAD65 antibodies: MARKEDLY ELEVATED (high-titre, typically >2000 U/mL) - diagnostic in this clinical context",
+  "7. needle EMG (continuous motor unit activity at rest): CONTINUOUS motor unit activity at rest in agonist and antagonist simultaneously, abolished by diazepam"
+ ],
+ "dx_raw": "DIAGNOSIS: Stiff-person syndrome due to high-titre anti-GAD65 antibodies.\n\n1. Progressive encephalomyelitis with rigidity and myoclonus (PERM).\n2. Stiff-limb syndrome (a focal variant of stiff-person syndrome).\n3. Severe generalized anxiety disorder with psychogenic gait disorder.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Stiff-person syndrome due to high-titre anti-GAD65 antibodies.",
+ "decisive_served": [
+  "walking backward",
+  "running",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "trial of benzodiazepine (diazepam)",
+  "anti-GAD65 antibodies",
+  "needle EMG (continuous motor unit activity at rest)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6591,
+   "completion_tokens": 908,
+   "total_tokens": 7499,
+   "cost": 0.0011506376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011506376,
+    "upstream_inference_prompt_cost": 0.0008963976,
+    "upstream_inference_completions_cost": 0.00025424
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 801,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7119,
+   "completion_tokens": 550,
+   "total_tokens": 7669,
+   "cost": 0.0002550184,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002550184,
+    "upstream_inference_prompt_cost": 0.0001010184,
+    "upstream_inference_completions_cost": 0.000154
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 474,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 29.4
+}

@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Have you noticed difficulty walking or keeping your balance?",
+  "Did these walking or balance problems begin suddenly?",
+  "Have they been getting worse over time?",
+  "Do you feel weakness on one side of your body?",
+  "Is your right side weaker than your left?",
+  "Do you have numbness or tingling in an arm or leg?",
+  "Have you had any recent falls?",
+  "Do you have pain in your back, hips, legs, or feet when walking?",
+  "Do you have dizziness or a spinning sensation?",
+  "Have you had any new difficulty speaking, understanding speech, seeing, or swallowing?",
+  "Have you noticed a tremor in your hands or elsewhere?",
+  "Do your muscles feel unusually stiff or slow?",
+  "Do you have trouble starting to walk or turning around?",
+  "Have you recently lost control of your bladder or bowels?",
+  "Do you have numbness around your groin or inner thighs?",
+  "Have you recently injured your head, neck, back, or limbs?",
+  "Have you had a stroke, transient ischemic attack, or other neurological condition before?",
+  "Have you had any recent illness or infection?",
+  "Are you taking any medicines that affect your balance, strength, alertness, or movement?",
+  "Has a doctor previously diagnosed the problem you are being assessed for?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "observation of the jerks",
+  "anti-measles antibody titres (serum)",
+  "EEG",
+  "lumbar puncture / CSF",
+  "measles vaccination and infection history"
+ ],
+ "results": [
+  "1. observation of the jerks: periodic myoclonus with a SLOW relaxation phase involving bilateral shoulder abductors and hip flexors",
+  "2. anti-measles antibody titres (serum): raised, with CSF-restricted synthesis",
+  "3. EEG: periodic slow wave complexes TIME-LOCKED to the myoclonic jerks",
+  "4. lumbar puncture / CSF: intrathecal synthesis of anti-measles IgG",
+  "5. measles vaccination and infection history: measles in infancy; SSPE typically follows 4-12 years later, but onset here was in adulthood"
+ ],
+ "dx_raw": "DIAGNOSIS: Adult-onset subacute sclerosing panencephalitis (SSPE) caused by persistent measles virus infection following childhood measles\n\nAlternative 1: Sporadic Creutzfeldt–Jakob disease\n\nAlternative 2: Progressive myoclonic epilepsy\n\nAlternative 3: Autoimmune encephalitis with myoclonus",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Adult-onset subacute sclerosing panencephalitis (SSPE) caused by persistent measles virus infection following childhood measles",
+ "decisive_served": [
+  "observation of the jerks",
+  "anti-measles antibody titres (serum)",
+  "EEG",
+  "lumbar puncture / CSF",
+  "measles vaccination and infection history"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 638,
+   "total_tokens": 6314,
+   "cost": 0.00043983,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00043983,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0003828
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 354,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6551,
+   "completion_tokens": 198,
+   "total_tokens": 6749,
+   "cost": 0.000285205,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 875,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000285205,
+    "upstream_inference_prompt_cost": 0.000166405,
+    "upstream_inference_completions_cost": 0.0001188
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 120,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "severe_sspe_PMC13071100.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 14.3
+}

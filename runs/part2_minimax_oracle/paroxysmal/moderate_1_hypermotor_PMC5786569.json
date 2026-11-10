@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Do you remember these episodes when you wake up the next morning?",
+  "Do you act out your dreams physically, such as punching, kicking, or moving your arms?",
+  "Do you feel a sudden rush of intense fear or a sense of impending doom when you wake up?",
+  "Do you feel unable to move or speak when you first wake up?",
+  "Do you snore loudly, or has anyone told you that you stop breathing while you sleep?",
+  "Do you have a history of seizures?",
+  "Do you have a history of anxiety or panic disorder?",
+  "Do you have a history of Parkinson's disease or other neurological conditions?",
+  "Do you have vivid, frightening dreams that you can clearly remember?",
+  "Do you wake up with a bitten tongue or wet the bed?",
+  "Do you feel tired or unrefreshed during the day, even after a full night's sleep?",
+  "Do you wake up with a dry mouth, sore throat, or headache?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "duration of the events",
+  "time of day / relation to sleep",
+  "head injury history",
+  "advanced diffusion imaging / tractography",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. duration of the events: about 15 seconds",
+  "2. time of day / relation to sleep: predominantly out of sleep at night",
+  "3. head injury history: mild repetitive non-penetrating traumatic brain injury, none requiring hospitalisation",
+  "4. advanced diffusion imaging / tractography: multishell diffusion MRI showed disrupted white matter tracts",
+  "5. video-EEG monitoring of a typical event: the diagnosis was made on SEMIOLOGY from clinically documented video-EEG; there was NO interpretable ictal EEG correlate because of movement artefact"
+ ],
+ "dx_raw": "DIAGNOSIS: Nocturnal frontal lobe epilepsy, secondary to repetitive traumatic brain injury.\nAlternatives:\n1. REM sleep behaviour disorder\n2. Non-REM parasomnia (disorder of arousal)\n3. Psychogenic non-epileptic seizures",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Nocturnal frontal lobe epilepsy, secondary to repetitive traumatic brain injury.",
+ "decisive_served": [
+  "duration of the events",
+  "time of day / relation to sleep",
+  "head injury history",
+  "advanced diffusion imaging / tractography",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 9494,
+   "completion_tokens": 7001,
+   "total_tokens": 16495,
+   "cost": 0.01121172,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01121172,
+    "upstream_inference_prompt_cost": 0.00281052,
+    "upstream_inference_completions_cost": 0.0084012
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6800,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 10164,
+   "completion_tokens": 388,
+   "total_tokens": 10552,
+   "cost": 0.00123984,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9479,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00123984,
+    "upstream_inference_prompt_cost": 0.00077424,
+    "upstream_inference_completions_cost": 0.0004656
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 338,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 76.8
+}

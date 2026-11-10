@@ -1,0 +1,177 @@
+{
+ "questions": [
+  "Did the asymmetry begin suddenly, within the last 48 hours?",
+  "Do you have weakness or numbness in an arm or leg on the same side?",
+  "Do you have difficulty speaking or understanding speech?",
+  "Is the affected side of your face unable to wrinkle the forehead or fully close the eye?",
+  "Have you had ear pain, a rash near the ear, or a recent viral illness?",
+  "Have you had episodes of involuntary twitching or spasms on one side of the face?",
+  "Have you ever had a complete episode of facial weakness or facial paralysis on this side?",
+  "Do the facial spasms primarily involve forceful closure of one eye?",
+  "When you smile or blink, does the corner of your mouth on the same side move involuntarily?",
+  "Do the spasms occur in brief, irregular bursts rather than continuously?",
+  "Do the spasms worsen with stress, fatigue, or voluntary facial movements?",
+  "Have these spasms been present for more than three months?",
+  "Does the affected side of the face remain visibly weak or droopy between spasms?",
+  "Does the involuntary eye closure occur when you voluntarily smile, purse your lips, or wrinkle your nose?",
+  "Do the spasms involve only the eyelid, without twitching of the forehead or cheek?",
+  "Are the eye-closing movements rhythmic and repetitive, occurring many times per minute?",
+  "Do the spasms stop completely when you are asleep?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "yes",
+  "7": "yes",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "Focused cranial-nerve examination documenting forehead movement, eye closure strength, smile symmetry, and synkinetic movements during forceful eye closure and smiling",
+  "Electromyography and facial-nerve conduction study, including blink-reflex testing, of both sides of the face",
+  "MRI of the brain and internal auditory canals with and without gadolinium contrast, focusing on the facial-nerve course and cerebellopontine angle"
+ ],
+ "served": [
+  "facial nerve examination (House-Brackmann)",
+  "forehead movement",
+  "eye closure",
+  "smile symmetry",
+  "synkinesis assessment (eye closure with platysma/frontalis)",
+  "electroneuronography / facial EMG",
+  "blink reflex study",
+  "MRI brain and internal auditory canal with contrast"
+ ],
+ "results": [
+  "R1 ASK Did the asymmetry begin suddenly, within the last 48 hours?; Do you have weakness or numbness in an arm or leg on the same side?; Do you have difficulty speaking or understanding speech?; Is the affected side of your face unable to wrinkle the forehead or fully close the eye?; Have you had ear pain, a rash near the ear, or a recent viral illness?; Have you had episodes of involuntary twitching or spasms on one side of the face? -> ['no', 'no', 'no', 'no', 'yes', 'yes']",
+  "R2 ASK Have you ever had a complete episode of facial weakness or facial paralysis on this side?; Do the facial spasms primarily involve forceful closure of one eye?; When you smile or blink, does the corner of your mouth on the same side move involuntarily?; Do the spasms occur in brief, irregular bursts rather than continuously?; Do the spasms worsen with stress, fatigue, or voluntary facial movements?; Have these spasms been present for more than three months? -> ['yes', 'yes', 'no', 'no', 'no', 'no']",
+  "R3 ASK Does the affected side of the face remain visibly weak or droopy between spasms?; Does the involuntary eye closure occur when you voluntarily smile, purse your lips, or wrinkle your nose?; Do the spasms involve only the eyelid, without twitching of the forehead or cheek?; Are the eye-closing movements rhythmic and repetitive, occurring many times per minute?; Do the spasms stop completely when you are asleep? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Focused cranial-nerve examination documenting forehead movement, eye closure strength, smile symmetry, and synkinetic movements during forceful eye closure and smiling; Electromyography and facial-nerve conduction study, including blink-reflex testing, of both sides of the face; MRI of the brain and internal auditory canals with and without gadolinium contrast, focusing on the facial-nerve course and cerebellopontine angle -> [['facial nerve examination (House-Brackmann)', 'forehead movement', 'eye closure', 'smile symmetry', 'synkinesis assessment (eye closure with platysma/frontalis)'], ['electroneuronography / facial EMG', 'blink reflex study'], ['MRI brain and internal auditory canal with contrast']]",
+  "R5 DIAGNOSIS Post-paralytic facial synkinesis (aberrant facial-nerve regeneration) following a prior peripheral facial nerve palsy, most consistent with resolved idiopathic/Bell’s palsy; no evidence of active denervation, tumour, or central lesion. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did the asymmetry begin suddenly, within the last 48 hours?",
+    "Do you have weakness or numbness in an arm or leg on the same side?",
+    "Do you have difficulty speaking or understanding speech?",
+    "Is the affected side of your face unable to wrinkle the forehead or fully close the eye?",
+    "Have you had ear pain, a rash near the ear, or a recent viral illness?",
+    "Have you had episodes of involuntary twitching or spasms on one side of the face?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you ever had a complete episode of facial weakness or facial paralysis on this side?",
+    "Do the facial spasms primarily involve forceful closure of one eye?",
+    "When you smile or blink, does the corner of your mouth on the same side move involuntarily?",
+    "Do the spasms occur in brief, irregular bursts rather than continuously?",
+    "Do the spasms worsen with stress, fatigue, or voluntary facial movements?",
+    "Have these spasms been present for more than three months?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Does the affected side of the face remain visibly weak or droopy between spasms?",
+    "Does the involuntary eye closure occur when you voluntarily smile, purse your lips, or wrinkle your nose?",
+    "Do the spasms involve only the eyelid, without twitching of the forehead or cheek?",
+    "Are the eye-closing movements rhythmic and repetitive, occurring many times per minute?",
+    "Do the spasms stop completely when you are asleep?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Focused cranial-nerve examination documenting forehead movement, eye closure strength, smile symmetry, and synkinetic movements during forceful eye closure and smiling",
+    "Electromyography and facial-nerve conduction study, including blink-reflex testing, of both sides of the face",
+    "MRI of the brain and internal auditory canals with and without gadolinium contrast, focusing on the facial-nerve course and cerebellopontine angle"
+   ],
+   "result": [
+    [
+     "facial nerve examination (House-Brackmann)",
+     "forehead movement",
+     "eye closure",
+     "smile symmetry",
+     "synkinesis assessment (eye closure with platysma/frontalis)"
+    ],
+    [
+     "electroneuronography / facial EMG",
+     "blink reflex study"
+    ],
+    [
+     "MRI brain and internal auditory canal with contrast"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Post-paralytic facial synkinesis (aberrant facial-nerve regeneration) following a prior peripheral facial nerve palsy, most consistent with resolved idiopathic/Bell’s palsy; no evidence of active denervation, tumour, or central lesion."
+  }
+ ],
+ "dx": "Post-paralytic facial synkinesis (aberrant facial-nerve regeneration) following a prior peripheral facial nerve palsy, most consistent with resolved idiopathic/Bell’s palsy; no evidence of active denervation, tumour, or central lesion.",
+ "dx_raw": "DIAGNOSIS: Post-paralytic facial synkinesis (aberrant facial-nerve regeneration) following a prior peripheral facial nerve palsy, most consistent with resolved idiopathic/Bell’s palsy; no evidence of active denervation, tumour, or central lesion.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "MRI brain and internal auditory canal with contrast",
+  "synkinesis assessment (eye closure with platysma/frontalis)"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0084,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "fp_recurrent_synkinesis_PMC12572359.mp4",
+ "line": "facialpalsy",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 53.2
+}

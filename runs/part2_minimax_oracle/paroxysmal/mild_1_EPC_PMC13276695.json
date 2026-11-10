@@ -1,0 +1,120 @@
+{
+ "questions": [
+  "Are you currently experiencing chest pain or discomfort?",
+  "Are you experiencing shortness of breath?",
+  "Have you had any recent fainting spells or severe dizziness?",
+  "Is the need for a wheelchair a new problem for you?",
+  "Did the weakness that requires the wheelchair start suddenly?",
+  "Do you have weakness on one entire side of your body?",
+  "Have you ever had a stroke before?",
+  "Do you have a history of atrial fibrillation?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "genetic testing (exome / epilepsy panel)",
+  "brain MRI",
+  "interictal EEG",
+  "video-polygraphy (EEG with EMG)",
+  "CSF 14-3-3 / RT-QuIC (prion)"
+ ],
+ "results": [
+  "1. genetic testing (exome / epilepsy panel): PRNP mutation - familial CJD, which accounts for about 10-15% of cases and is most often E200K",
+  "2. brain MRI: restricted diffusion with matching T2/FLAIR hyperintensity in the right caudate, anterior lentiform nucleus, cingulate gyrus and insula, and less prominently the right frontal, parietal and temporal cortex",
+  "3. interictal EEG: generalized periodic discharges recurring every 1-2 seconds as the illness progressed",
+  "4. video-polygraphy (EEG with EMG): lateralized periodic discharges over the RIGHT fronto-central-temporal region, TIME-LOCKED with brief EMG bursts under 100 ms in the LEFT wrist flexors and extensors - electrophysiological proof of epilepsia partialis continua",
+  "5. CSF 14-3-3 / RT-QuIC (prion): positive"
+ ],
+ "dx_raw": "DIAGNOSIS: Familial Creutzfeldt-Jakob disease (PRNP E200K mutation) with epilepsia partialis continua involving the left upper limb\n\nAlternatives:\n1. Sporadic CJD with an incidental benign PRNP polymorphism\n2. Other familial prion disease (e.g., Gerstmann-Sträussler-Scheinker syndrome)\n3. Autoimmune encephalitis (e.g., anti-NMDA, anti-LGI1) with secondary RT-QuIC positivity and epilepsia partialis continua",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Familial Creutzfeldt-Jakob disease (PRNP E200K mutation) with epilepsia partialis continua involving the left upper limb",
+ "decisive_served": [
+  "genetic testing (exome / epilepsy panel)",
+  "brain MRI",
+  "interictal EEG",
+  "video-polygraphy (EEG with EMG)",
+  "CSF 14-3-3 / RT-QuIC (prion)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 16790,
+   "completion_tokens": 3207,
+   "total_tokens": 19997,
+   "cost": 0.00884772,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00884772,
+    "upstream_inference_prompt_cost": 0.00499932,
+    "upstream_inference_completions_cost": 0.0038484
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3090,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 17354,
+   "completion_tokens": 648,
+   "total_tokens": 18002,
+   "cost": 0.0019578,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 16775,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0019578,
+    "upstream_inference_prompt_cost": 0.0011802,
+    "upstream_inference_completions_cost": 0.0007776
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 540,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 56.0
+}

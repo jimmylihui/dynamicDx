@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Are your leg and foot movements involuntary?",
+  "Do you feel an uncomfortable urge to move your legs before these movements occur?",
+  "Does moving your legs relieve that uncomfortable sensation?",
+  "Are these symptoms worse when you are resting or lying still?",
+  "Are they worse in the evening or at night?",
+  "Do the movements stop when you are asleep?",
+  "Have you noticed true weakness in either leg?",
+  "Have you had numbness or tingling in either leg?",
+  "Are you experiencing significant leg or back pain?",
+  "Have you recently developed difficulty walking or maintaining your balance?",
+  "Have you lost control of your bladder or bowels?",
+  "Did these symptoms begin suddenly?",
+  "Did they begin after an injury, surgery, illness, or hospitalization?",
+  "Have you recently started or increased a medication?",
+  "Have you recently stopped alcohol, sedatives, or another medication?",
+  "Do you feel generally unable to sit still or compelled to move your whole body?",
+  "Have you had similar episodes before?",
+  "Do the movements lessen when your attention is focused on something else?",
+  "Have you recently experienced unusual stress, anxiety, or emotional distress?",
+  "Do you have a history of anemia or iron deficiency?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "CT head (non-contrast)",
+  "trial of glucose correction with insulin"
+ ],
+ "results": [
+  "1. blood glucose: 690 mg/dL with a NORMAL anion gap",
+  "2. HbA1c: 14.7%",
+  "3. ketones (blood or urine): negative - non-ketotic",
+  "4. CT head (non-contrast): HYPERDENSITY in the LEFT basal ganglia with mild involvement of the right basal ganglia - contralateral to the chorea",
+  "5. trial of glucose correction with insulin: insulin alleviated her symptoms"
+ ],
+ "dx_raw": "DIAGNOSIS: Nonketotic hyperglycemia–induced hemichorea-hemiballismus (diabetic striatopathy) due to severe uncontrolled diabetes mellitus\n\nIschemic or hemorrhagic basal-ganglia stroke\n\nFocal motor seizures presenting as epilepsia partialis continua\n\nDrug-induced chorea or dyskinesia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Nonketotic hyperglycemia–induced hemichorea-hemiballismus (diabetic striatopathy) due to severe uncontrolled diabetes mellitus",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "CT head (non-contrast)",
+  "trial of glucose correction with insulin"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 16748,
+   "completion_tokens": 683,
+   "total_tokens": 17431,
+   "cost": 0.00057755,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 16745,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00057755,
+    "upstream_inference_prompt_cost": 0.00016775,
+    "upstream_inference_completions_cost": 0.0004098
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 419,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 17560,
+   "completion_tokens": 222,
+   "total_tokens": 17782,
+   "cost": 0.00040245,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 16745,
+    "cache_write_tokens": 812,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00040245,
+    "upstream_inference_prompt_cost": 0.00026925,
+    "upstream_inference_completions_cost": 0.0001332
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 145,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 17.7
+}

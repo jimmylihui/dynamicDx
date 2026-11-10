@@ -1,0 +1,170 @@
+{
+ "questions": [
+  "Did this begin suddenly within the past 24 hours?",
+  "Do you take any medication for psychosis, schizophrenia, or severe nausea/vomiting?",
+  "Did you start a new medication or change your dose within the past week?",
+  "Do you have neck stiffness, pain, or twisting?",
+  "Have you ever had an episode like this before?",
+  "Do you have a history of Parkinson's disease?",
+  "Can you voluntarily move your eyes downward on command?",
+  "Do you feel a compelling urge to move or restlessness?",
+  "Are you able to speak normally?",
+  "Have you had a fever or recent infection?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI brain with thin-section midbrain views (looking for midbrain atrophy/hummingbird sign)",
+  "Serum ceruloplasmin level",
+  "24-hour urinary copper excretion",
+  "Slit-lamp examination of the cornea for Kayser-Fleischer rings",
+  "Trial of oral levodopa (e.g., 250 mg three times daily for several days)",
+  "Serum copper level",
+  "Liver function tests",
+  "DAT (dopamine transporter) SPECT scan if diagnosis remains uncertain"
+ ],
+ "served": [
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "serum ceruloplasmin",
+  "24-hour urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "serum copper and caeruloplasmin",
+  "liver function tests",
+  "DAT-SPECT / FP-CIT PET"
+ ],
+ "results": [
+  "1. MRI brain with thin-section midbrain views (looking for midbrain atrophy/hummingbird sign)",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): no hummingbird sign",
+  "2. Serum ceruloplasmin level",
+  "     serum ceruloplasmin: normal",
+  "3. 24-hour urinary copper excretion",
+  "     24-hour urinary copper: normal",
+  "4. Slit-lamp examination of the cornea for Kayser-Fleischer rings",
+  "     slit-lamp examination for Kayser-Fleischer rings: not performed",
+  "5. Trial of oral levodopa (e.g., 250 mg three times daily for several days)",
+  "     not performed / not available",
+  "6. Serum copper level",
+  "     serum copper and caeruloplasmin: normal",
+  "7. Liver function tests",
+  "     liver function tests: normal",
+  "8. DAT (dopamine transporter) SPECT scan if diagnosis remains uncertain",
+  "     DAT-SPECT / FP-CIT PET: not performed"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive supranuclear palsy (PSP, Richardson syndrome) — sporadic tauopathy of the midbrain tegmentum causing vertical supranuclear gaze palsy with eyelid-opening apraxia and pseudobulbar dysarthria\n\n1. Drug-induced (occult) oculogyric crisis — re-explore all prescribed, OTC, and recreational dopamine-blocking or dopaminergic agents (including metoclopramide, prochlorperazine, aripiprazole, levodopa withdrawal)\n2. Anti-basal ganglia / anti-Ma2 / anti-GAD paraneoplastic or post-infectious encephalitis with brainstem involvement\n3. Adult-onset Niemann-Pick type C with vertical supranuclear gaze palsy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI brain with thin-section midbrain views (looking for midbrain atrophy/hummingbird sign)\n2. Serum ceruloplasmin level\n3. 24-hour urinary copper excretion\n4. Slit-lamp examination of the cornea for Kayser-Fleischer rings\n5. Trial of oral levodopa (e.g., 250 mg three times daily for several days)\n6. Serum copper level\n7. Liver function tests\n8. DAT (dopamine transporter) SPECT scan if diagnosis remains uncertain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Progressive supranuclear palsy (PSP, Richardson syndrome) — sporadic tauopathy of the midbrain tegmentum causing vertical supranuclear gaze palsy with eyelid-opening apraxia and pseudobulbar dysarthria",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 332,
+   "completion_tokens": 2946,
+   "total_tokens": 3278,
+   "cost": 0.00360408,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00360408,
+    "upstream_inference_prompt_cost": 6.888e-05,
+    "upstream_inference_completions_cost": 0.0035352
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3197,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 787,
+   "completion_tokens": 1193,
+   "total_tokens": 1980,
+   "cost": 0.00163698,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00163698,
+    "upstream_inference_prompt_cost": 0.00020538,
+    "upstream_inference_completions_cost": 0.0014316
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1174,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1194,
+   "completion_tokens": 1032,
+   "total_tokens": 2226,
+   "cost": 0.00141228,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00141228,
+    "upstream_inference_prompt_cost": 0.00017388,
+    "upstream_inference_completions_cost": 0.0012384
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 998,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 57.1
+}

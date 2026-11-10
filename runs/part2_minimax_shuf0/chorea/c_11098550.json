@@ -1,0 +1,171 @@
+{
+ "questions": [
+  "Do you have a history of epilepsy or seizures?",
+  "Have you been drinking alcohol heavily in the past 48 hours?",
+  "Do you have diabetes?",
+  "Do you have a fever?",
+  "Have you suffered a recent head injury?",
+  "Are you pregnant?",
+  "Did you take your anti-seizure medication today?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Capillary blood glucose test",
+  "12-lead electrocardiogram",
+  "Basic metabolic panel",
+  "Urine toxicology screen",
+  "Non-contrast CT scan of the head",
+  "Lumbar puncture with CSF analysis",
+  "Continuous video EEG monitoring"
+ ],
+ "served": [
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose",
+  "renal function and eGFR",
+  "toxicology screen (urine and serum)",
+  "CT head (non-contrast)",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "lumbar puncture / CSF",
+  "EEG"
+ ],
+ "results": [
+  "1. Capillary blood glucose test",
+  "     blood glucose: random glucose 88 mg/dL, HbA1c 5.6% - normal",
+  "2. 12-lead electrocardiogram",
+  "     not performed / not available",
+  "3. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: euvolaemic hyponatraemia with low serum osmolality; urea and creatinine normal",
+  "     blood glucose: random glucose 88 mg/dL, HbA1c 5.6% - normal",
+  "     renal function and eGFR: normal",
+  "4. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "5. Non-contrast CT scan of the head",
+  "     CT head (non-contrast): no haemorrhage, no hyperdensity, no infarct",
+  "6. Lumbar puncture with CSF analysis",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: 2 lymphocytes; normal",
+  "     CSF protein: 32 mg/dL",
+  "     CSF glucose: 66 mg/dL",
+  "     lumbar puncture / CSF: protein 32 mg/dL, glucose 66 mg/dL against a blood sugar of 100, two lymphocytes - normal",
+  "7. Continuous video EEG monitoring",
+  "     EEG: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Psychogenic non-epileptic seizures (PNES) manifesting as convulsive pseudoseizures, most likely secondary to underlying somatoform/conversion disorder or factitious disorder (given normal investigations and bilateral motor activity without autonomic signs).\n\nDifferential diagnosis 1: Tonic-clonic epileptic seizure\nDifferential diagnosis 2: Delirium tremens / alcohol withdrawal seizure\nDifferential diagnosis 3: Acute symptomatic seizure from electrolyte derangement (e.g., hypoglycaemia, hyponatraemia)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Capillary blood glucose test\n2. 12-lead electrocardiogram\n3. Basic metabolic panel\n4. Urine toxicology screen\n5. Non-contrast CT scan of the head\n6. Lumbar puncture with CSF analysis\n7. Continuous video EEG monitoring",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Psychogenic non-epileptic seizures (PNES) manifesting as convulsive pseudoseizures, most likely secondary to underlying somatoform/conversion disorder or factitious disorder (given normal investigations and bilateral motor activity without autonomic signs).",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 19222,
+   "completion_tokens": 4065,
+   "total_tokens": 23287,
+   "cost": 0.01060716,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01060716,
+    "upstream_inference_prompt_cost": 0.00572916,
+    "upstream_inference_completions_cost": 0.004878
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3994,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 19544,
+   "completion_tokens": 1506,
+   "total_tokens": 21050,
+   "cost": 0.00306072,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 19207,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00306072,
+    "upstream_inference_prompt_cost": 0.00125352,
+    "upstream_inference_completions_cost": 0.0018072
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1451,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 19949,
+   "completion_tokens": 109,
+   "total_tokens": 20058,
+   "cost": 0.00142854,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 19529,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00142854,
+    "upstream_inference_prompt_cost": 0.00129774,
+    "upstream_inference_completions_cost": 0.0001308
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.2,
+ "video": "c_11098550.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 91.5
+}

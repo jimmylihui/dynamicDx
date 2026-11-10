@@ -1,0 +1,340 @@
+{
+ "questions": [
+  "Do you have a tremor in your right hand that is worse when you are at rest?",
+  "Have you noticed your movements becoming slower than before?",
+  "Have you been experiencing stiffness or rigidity in your limbs?",
+  "Do you have any trouble with your balance or have you had any falls recently?",
+  "Is the tremor on one side of your body only?",
+  "Does the tremor happen when you are holding your hands out in front of you (like holding a tray)?",
+  "Does the tremor get worse when you try to write or bring a cup to your mouth?",
+  "Have you noticed the tremor worsening over time?",
+  "Does alcohol make the tremor better?",
+  "Do you have a family history of tremor?",
+  "Does the tremor occur only when you are using your hand (like reaching for something)?",
+  "Is the tremor present in your right hand only, not the left?",
+  "Does the tremor occur when you are holding a posture (e.g., arms outstretched)?",
+  "Have you noticed any weakness in your right arm or leg?",
+  "Have you noticed any abnormal sensations (numbness, tingling) in your right arm or leg?",
+  "Is the tremor a fine, fast tremor (like a vibration) rather than a slow, coarse one?",
+  "Does the tremor get worse when you are stressed or anxious?",
+  "Have you noticed any changes in your handwriting (becoming smaller or shakier)?",
+  "Do you have any history of thyroid problems?",
+  "Do you drink a lot of caffeine (coffee, tea, energy drinks)?",
+  "Is the tremor a slow, coarse \"pill-rolling\" type movement?",
+  "Does the tremor continue even when you are distracted?",
+  "Have you noticed any changes in your sense of smell?",
+  "Do you have any trouble sleeping or acting out your dreams?",
+  "Have you noticed any changes in your mood or memory?",
+  "Does the tremor only appear when you maintain a specific posture (like holding a phone to your ear or holding a cup)?",
+  "Does the tremor disappear completely when your hand is resting on your lap?",
+  "Is the tremor worse at the end of a movement (like touching your nose)?",
+  "Have you ever had a head injury or stroke?",
+  "Are you taking any medications that could cause tremor (like asthma inhalers, antidepressants, or mood stabilizers)?",
+  "Does the tremor worsen when you are tired?",
+  "Have you noticed any muscle twitching or spasms in your right hand?",
+  "Is the tremor worse in the morning or improves throughout the day?",
+  "Does the tremor improve after a small amount of alcohol?",
+  "Does the tremor occur only with specific tasks like writing (task-specific tremor)?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "yes",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "no",
+  "33": "no",
+  "34": "no",
+  "35": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Examine the patient's outstretched hands with a piece of paper on them to see if the tremor is a \"wing-beating\" tremor (suggesting Wilson's disease)",
+  "Test finger-to-nose coordination to assess for cerebellar/intention tremor",
+  "Assess tone in the right arm for rigidity",
+  "Check for a postural tremor by having the patient hold arms outstretched",
+  "Assess gait and balance",
+  "Check the patient's thyroid function tests (TSH, free T4)",
+  "Check serum ceruloplasmin level",
+  "Check liver function tests",
+  "Perform an EMG/nerve conduction study of the right upper limb",
+  "Perform a functional assessment - have the patient draw a spiral or write to look for task-specific tremor"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "posture and pull test",
+  "tandem gait",
+  "walking backward",
+  "running",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "Romberg test, repeated with distraction",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "TSH / free T4",
+  "copper and ceruloplasmin",
+  "liver function tests",
+  "full blood count, renal and liver profile",
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "R1 ASK Do you have a tremor in your right hand that is worse when you are at rest?; Have you noticed your movements becoming slower than before?; Have you been experiencing stiffness or rigidity in your limbs?; Do you have any trouble with your balance or have you had any falls recently?; Is the tremor on one side of your body only? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R2 INVALID \n\n:\n1. Does the tremor happen when you are holding your hands out in front of you (like holding a tray)?\n2. Does the tremor get worse when you try to write or bring a cup to your mouth?\n3. Have you no -> ",
+  "R3 ASK Does the tremor happen when you are holding your hands out in front of you (like holding a tray)?; Does the tremor get worse when you try to write or bring a cup to your mouth?; Have you noticed the tremor worsening over time?; Does alcohol make the tremor better?; Do you have a family history of tremor? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Does the tremor occur only when you are using your hand (like reaching for something)?; Is the tremor present in your right hand only, not the left?; Does the tremor occur when you are holding a posture (e.g., arms outstretched)?; Have you noticed any weakness in your right arm or leg?; Have you noticed any abnormal sensations (numbness, tingling) in your right arm or leg? -> ['no', 'yes', 'yes', 'no', 'no']",
+  "R5 ASK Is the tremor a fine, fast tremor (like a vibration) rather than a slow, coarse one?; Does the tremor get worse when you are stressed or anxious?; Have you noticed any changes in your handwriting (becoming smaller or shakier)?; Do you have any history of thyroid problems?; Do you drink a lot of caffeine (coffee, tea, energy drinks)? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R6 ASK Is the tremor a slow, coarse \"pill-rolling\" type movement?; Does the tremor continue even when you are distracted?; Have you noticed any changes in your sense of smell?; Do you have any trouble sleeping or acting out your dreams?; Have you noticed any changes in your mood or memory? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 ORDER Examine the patient's outstretched hands with a piece of paper on them to see if the tremor is a \"wing-beating\" tremor (suggesting Wilson's disease); Test finger-to-nose coordination to assess for cerebellar/intention tremor; Assess tone in the right arm for rigidity; Check for a postural tremor by having the patient hold arms outstretched; Assess gait and balance -> [[], ['coordination examination (limb and truncal)', 'cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)'], ['muscle tone (spasticity, rigidity, paratonia)'], [], ['posture and pull test', 'tandem gait', 'walking backward', 'running', 'gait with a distracting or automatic task (dancing, counting backwards)', 'Romberg test, repeated with distraction', 'observation for excessive slowness or uneconomic posture', 'knee buckling / astasia-abasia on walking']]",
+  "R8 ASK Does the tremor only appear when you maintain a specific posture (like holding a phone to your ear or holding a cup)?; Does the tremor disappear completely when your hand is resting on your lap?; Is the tremor worse at the end of a movement (like touching your nose)?; Have you ever had a head injury or stroke?; Are you taking any medications that could cause tremor (like asthma inhalers, antidepressants, or mood stabilizers)? -> ['no', 'no', 'no', 'no', 'no']",
+  "R9 ORDER Check the patient's thyroid function tests (TSH, free T4); Check serum ceruloplasmin level; Check liver function tests; Perform an EMG/nerve conduction study of the right upper limb; Perform a functional assessment - have the patient draw a spiral or write to look for task-specific tremor -> [['TSH / free T4'], ['copper and ceruloplasmin'], ['liver function tests', 'full blood count, renal and liver profile'], ['nerve conduction studies', 'needle electromyography'], []]",
+  "R10 ASK Does the tremor worsen when you are tired?; Have you noticed any muscle twitching or spasms in your right hand?; Is the tremor worse in the morning or improves throughout the day?; Does the tremor improve after a small amount of alcohol?; Does the tremor occur only with specific tasks like writing (task-specific tremor)? -> ['no', 'no', 'no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Essential tremor (focal/unilateral presentation), likely primary/idiopathic, though focal dystonic tremor remains a differential given the strictly unilateral nature. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a tremor in your right hand that is worse when you are at rest?",
+    "Have you noticed your movements becoming slower than before?",
+    "Have you been experiencing stiffness or rigidity in your limbs?",
+    "Do you have any trouble with your balance or have you had any falls recently?",
+    "Is the tremor on one side of your body only?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "invalid",
+   "text": "\n\n:\n1. Does the tremor happen when you are holding your hands out in front of you (like holding a tray)?\n2. Does the tremor get worse when you try to write or bring a cup to your mouth?\n3. Have you no"
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Does the tremor happen when you are holding your hands out in front of you (like holding a tray)?",
+    "Does the tremor get worse when you try to write or bring a cup to your mouth?",
+    "Have you noticed the tremor worsening over time?",
+    "Does alcohol make the tremor better?",
+    "Do you have a family history of tremor?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Does the tremor occur only when you are using your hand (like reaching for something)?",
+    "Is the tremor present in your right hand only, not the left?",
+    "Does the tremor occur when you are holding a posture (e.g., arms outstretched)?",
+    "Have you noticed any weakness in your right arm or leg?",
+    "Have you noticed any abnormal sensations (numbness, tingling) in your right arm or leg?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Is the tremor a fine, fast tremor (like a vibration) rather than a slow, coarse one?",
+    "Does the tremor get worse when you are stressed or anxious?",
+    "Have you noticed any changes in your handwriting (becoming smaller or shakier)?",
+    "Do you have any history of thyroid problems?",
+    "Do you drink a lot of caffeine (coffee, tea, energy drinks)?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Is the tremor a slow, coarse \"pill-rolling\" type movement?",
+    "Does the tremor continue even when you are distracted?",
+    "Have you noticed any changes in your sense of smell?",
+    "Do you have any trouble sleeping or acting out your dreams?",
+    "Have you noticed any changes in your mood or memory?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Examine the patient's outstretched hands with a piece of paper on them to see if the tremor is a \"wing-beating\" tremor (suggesting Wilson's disease)",
+    "Test finger-to-nose coordination to assess for cerebellar/intention tremor",
+    "Assess tone in the right arm for rigidity",
+    "Check for a postural tremor by having the patient hold arms outstretched",
+    "Assess gait and balance"
+   ],
+   "result": [
+    [],
+    [
+     "coordination examination (limb and truncal)",
+     "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)"
+    ],
+    [
+     "muscle tone (spasticity, rigidity, paratonia)"
+    ],
+    [],
+    [
+     "posture and pull test",
+     "tandem gait",
+     "walking backward",
+     "running",
+     "gait with a distracting or automatic task (dancing, counting backwards)",
+     "Romberg test, repeated with distraction",
+     "observation for excessive slowness or uneconomic posture",
+     "knee buckling / astasia-abasia on walking"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Does the tremor only appear when you maintain a specific posture (like holding a phone to your ear or holding a cup)?",
+    "Does the tremor disappear completely when your hand is resting on your lap?",
+    "Is the tremor worse at the end of a movement (like touching your nose)?",
+    "Have you ever had a head injury or stroke?",
+    "Are you taking any medications that could cause tremor (like asthma inhalers, antidepressants, or mood stabilizers)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Check the patient's thyroid function tests (TSH, free T4)",
+    "Check serum ceruloplasmin level",
+    "Check liver function tests",
+    "Perform an EMG/nerve conduction study of the right upper limb",
+    "Perform a functional assessment - have the patient draw a spiral or write to look for task-specific tremor"
+   ],
+   "result": [
+    [
+     "TSH / free T4"
+    ],
+    [
+     "copper and ceruloplasmin"
+    ],
+    [
+     "liver function tests",
+     "full blood count, renal and liver profile"
+    ],
+    [
+     "nerve conduction studies",
+     "needle electromyography"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Does the tremor worsen when you are tired?",
+    "Have you noticed any muscle twitching or spasms in your right hand?",
+    "Is the tremor worse in the morning or improves throughout the day?",
+    "Does the tremor improve after a small amount of alcohol?",
+    "Does the tremor occur only with specific tasks like writing (task-specific tremor)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Essential tremor (focal/unilateral presentation), likely primary/idiopathic, though focal dystonic tremor remains a differential given the strictly unilateral nature."
+  }
+ ],
+ "dx": "Essential tremor (focal/unilateral presentation), likely primary/idiopathic, though focal dystonic tremor remains a differential given the strictly unilateral nature.",
+ "dx_raw": "DIAGNOSIS: Essential tremor (focal/unilateral presentation), likely primary/idiopathic, though focal dystonic tremor remains a differential given the strictly unilateral nature.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": false,
+ "invalid_replies": 1,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "cost_usd": 0.0094,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 102.5
+}

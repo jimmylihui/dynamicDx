@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Is the baby having trouble feeding?",
+  "Is the tongue usually sticking out like this?",
+  "Is the baby unusually sleepy or lethargic?",
+  "Does the baby have constipation?",
+  "Was the baby's birth weight unusually high?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Electroencephalogram (EEG)",
+  "Brain MRI without contrast",
+  "Serum calcium, magnesium, and glucose levels"
+ ],
+ "served": [
+  "EEG",
+  "MRI diffusion-weighted sequences",
+  "MRI brain with DWI",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c"
+ ],
+ "results": [
+  "1. Electroencephalogram (EEG)",
+  "     EEG: normal",
+  "2. Brain MRI without contrast",
+  "     MRI diffusion-weighted sequences: molar tooth sign with cerebellar vermis hypoplasia; no restricted diffusion",
+  "     MRI brain with DWI: MOLAR TOOTH SIGN with cerebellar vermis hypoplasia and horizontally aligned superior cerebellar peduncles",
+  "3. Serum calcium, magnesium, and glucose levels",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal",
+  "     glucose / HbA1c: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Joubert syndrome (autosomal recessive ciliopathy associated with cerebellar vermis hypoplasia and molar tooth sign on MRI)\n\nAlternatives:\n1. Joubert syndrome-related disorder (various ciliopathy gene variants)\n2. Meckel syndrome (Meckel-Gruber syndrome) - milder presentation\n3. Dandy-Walker malformation with secondary brainstem anomalies",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Electroencephalogram (EEG)\n2. Brain MRI without contrast\n3. Serum calcium, magnesium, and glucose levels",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Joubert syndrome (autosomal recessive ciliopathy associated with cerebellar vermis hypoplasia and molar tooth sign on MRI)",
+ "decisive_served": [
+  "MRI brain with DWI"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 1639,
+   "total_tokens": 6694,
+   "cost": 0.0011402776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011402776,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00045892
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1585,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5331,
+   "completion_tokens": 483,
+   "total_tokens": 5814,
+   "cost": 0.0001966776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001966776,
+    "upstream_inference_prompt_cost": 6.14376e-05,
+    "upstream_inference_completions_cost": 0.00013524
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 453,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5581,
+   "completion_tokens": 601,
+   "total_tokens": 6182,
+   "cost": 0.0002208136,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5312,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002208136,
+    "upstream_inference_prompt_cost": 5.25336e-05,
+    "upstream_inference_completions_cost": 0.00016828
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 509,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_3_joubert_apraxia_PMC8490194.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 71.7
+}

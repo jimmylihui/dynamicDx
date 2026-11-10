@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Are you experiencing double vision?",
+  "Do you have any pain in or around your eye?",
+  "Does the drooping get worse as the day goes on?",
+  "Do you have any weakness in your arms or legs?",
+  "Have you noticed your pupil is larger on the affected side?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Levator function measurement",
+  "Cogan's lid switch test",
+  "Ice pack test",
+  "MRI of the brain and orbits"
+ ],
+ "served": [
+  "eyelid function (apraxia of lid opening, blepharospasm, lid retraction)",
+  "eyelid function (apraxia of lid opening, blepharospasm, lid retraction)",
+  "MRI brain with gadolinium"
+ ],
+ "results": [
+  "1. Levator function measurement",
+  "     eyelid function (apraxia of lid opening, blepharospasm, lid retraction): normal",
+  "2. Cogan's lid switch test",
+  "     eyelid function (apraxia of lid opening, blepharospasm, lid retraction): normal",
+  "3. Ice pack test",
+  "     not performed / not available",
+  "4. MRI of the brain and orbits",
+  "     MRI brain with gadolinium: putaminal atrophy with the rim sign and putaminal hypointensity on susceptibility-weighted imaging"
+ ],
+ "dx_raw": "DIAGNOSIS: Multiple System Atrophy (alpha-synucleinopathy)\nProgressive Supranuclear Palsy\nParkinson's Disease\nCorticobasal Degeneration",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Levator function measurement\n2. Cogan's lid switch test\n3. Ice pack test\n4. MRI of the brain and orbits",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Multiple System Atrophy (alpha-synucleinopathy)",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 1225,
+   "total_tokens": 1645,
+   "cost": 0.0004585,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004585,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.0004165
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1086,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 738,
+   "completion_tokens": 895,
+   "total_tokens": 1633,
+   "cost": 0.0003781,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003781,
+    "upstream_inference_prompt_cost": 7.38e-05,
+    "upstream_inference_completions_cost": 0.0003043
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 835,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 979,
+   "completion_tokens": 3623,
+   "total_tokens": 4602,
+   "cost": 0.00132972,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00132972,
+    "upstream_inference_prompt_cost": 9.79e-05,
+    "upstream_inference_completions_cost": 0.00123182
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3282,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 230.5
+}

@@ -1,0 +1,187 @@
+{
+ "questions": [
+  "Are you having pain right now?",
+  "Is the problem in your chest?",
+  "Are you short of breath?",
+  "Do you have a fever?",
+  "Is the problem in your abdomen?",
+  "Are you bleeding in any way?",
+  "Is this the worst you have ever felt?",
+  "Has this been going on for more than a week?",
+  "Do you have any nausea or vomiting?",
+  "Are you dizzy?",
+  "Do you have a cough?",
+  "Have you ever been told you have heart problems?",
+  "Did this start suddenly?",
+  "Does anything make it worse?",
+  "Is the pain on one side of your body?",
+  "Have you lost weight recently?",
+  "Do you feel worse at night?",
+  "Is your urine normal in color?",
+  "Have you traveled recently?",
+  "Are you taking any new medications?",
+  "Do you have a family history of cancer?",
+  "Are you able to eat?",
+  "Have you noticed any lumps or swelling?",
+  "Is this related to an injury?",
+  "Do you feel anxious or panicked?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "yes",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Urinalysis",
+  "Basic metabolic panel",
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "CT abdomen and pelvis without contrast",
+  "Renal ultrasound"
+ ],
+ "served": [
+  "urinalysis",
+  "serum electrolytes, urea and creatinine",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests"
+ ],
+ "results": [
+  "1. Urinalysis",
+  "     urinalysis: normal",
+  "2. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "3. Complete blood count",
+  "     not performed / not available",
+  "4. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "5. CT abdomen and pelvis without contrast",
+  "     not performed / not available",
+  "6. Renal ultrasound",
+  "     not performed / not available"
+ ],
+ "dx_raw": "1. Urine myoglobin\n2. AST and ALT\n3. Hepatitis panel\n4. CT abdomen and pelvis with contrast\n5. Lipase",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Urinalysis\n2. Basic metabolic panel\n3. Complete blood count\n4. Comprehensive metabolic panel\n5. CT abdomen and pelvis without contrast\n6. Renal ultrasound",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "1. Urine myoglobin",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 539,
+   "total_tokens": 924,
+   "cost": 0.000160916,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000160916,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 0.00015092
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 291,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1147,
+   "completion_tokens": 878,
+   "total_tokens": 2025,
+   "cost": 0.0003537352,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003537352,
+    "upstream_inference_prompt_cost": 0.0001078952,
+    "upstream_inference_completions_cost": 0.00024584
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 836,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1382,
+   "completion_tokens": 1032,
+   "total_tokens": 2414,
+   "cost": 0.0003331664,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1088,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003331664,
+    "upstream_inference_prompt_cost": 4.42064e-05,
+    "upstream_inference_completions_cost": 0.00028896
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 996,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 48.2
+}

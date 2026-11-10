@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Are you currently experiencing pain in your right shoulder?",
+  "Did this injury happen recently, such as within the last few hours?",
+  "Have you been given medication to help you relax or sleep?",
+  "Do you have a history of seizures or epilepsy?",
+  "Were you brought here by police or against your will?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's spontaneous movements and muscle tone while he is lying quietly in bed.",
+  "Perform a passive range of motion examination of the right shoulder, specifically testing abduction and external rotation.",
+  "Assess for the presence of clonus at the right ankle.",
+  "Check deep tendon reflexes in the upper extremities."
+ ],
+ "served": [
+  "muscle tone examination",
+  "deep tendon reflexes and plantar responses",
+  "deep tendon reflexes and plantar responses"
+ ],
+ "results": [
+  "1. Observe the patient's spontaneous movements and muscle tone while he is lying quietly in bed.",
+  "     muscle tone examination: increased tone in the right limbs",
+  "2. Perform a passive range of motion examination of the right shoulder, specifically testing abduction and external rotation.",
+  "     not performed / not available",
+  "3. Assess for the presence of clonus at the right ankle.",
+  "     deep tendon reflexes and plantar responses: brisk right-sided reflexes with extensor right plantar response",
+  "4. Check deep tendon reflexes in the upper extremities.",
+  "     deep tendon reflexes and plantar responses: brisk right-sided reflexes with extensor right plantar response"
+ ],
+ "dx_raw": "DIAGNOSIS: Right-sided spastic hemiparesis secondary to a left hemisphere upper motor neuron lesion (e.g., stroke or mass)\n\n1. Todd's paralysis following an unwitnessed focal seizure\n2. Functional neurological disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient's spontaneous movements and muscle tone while he is lying quietly in bed.\n2. Perform a passive range of motion examination of the right shoulder, specifically testing abduction and external rotation.\n3. Assess for the presence of clonus at the right ankle.\n4. Check deep tendon reflexes in the upper extremities.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Right-sided spastic hemiparesis secondary to a left hemisphere upper motor neuron lesion (e.g., stroke or mass)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6359,
+   "completion_tokens": 72,
+   "total_tokens": 6431,
+   "cost": 0.00098769,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00098769,
+    "upstream_inference_prompt_cost": 0.00095385,
+    "upstream_inference_completions_cost": 3.384e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6676,
+   "completion_tokens": 72,
+   "total_tokens": 6748,
+   "cost": 0.000229096,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6016,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000229096,
+    "upstream_inference_prompt_cost": 0.000195256,
+    "upstream_inference_completions_cost": 3.384e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 6986,
+   "completion_tokens": 51,
+   "total_tokens": 7037,
+   "cost": 0.000197118,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000197118,
+    "upstream_inference_prompt_cost": 0.000173148,
+    "upstream_inference_completions_cost": 2.397e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 22.0
+}

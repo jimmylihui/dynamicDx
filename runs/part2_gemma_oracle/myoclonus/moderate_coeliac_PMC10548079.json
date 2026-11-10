@@ -1,0 +1,111 @@
+{
+ "questions": [
+  "Is the tremor present when you are resting?",
+  "Do you feel that your movements have slowed down?",
+  "Do you have a family history of similar movement disorders?",
+  "Do you have a history of liver disease?",
+  "Do you have involuntary, jerky movements?",
+  "Have you noticed any changes in your mood or personality?",
+  "Do you have difficulty with balance or frequent falls?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "coeliac serology (tissue transglutaminase IgA)",
+  "EEG-EMG polygraphy (back-averaging)",
+  "somatosensory evoked potentials",
+  "upper GI endoscopy with duodenal biopsy"
+ ],
+ "results": [
+  "1. coeliac serology (tissue transglutaminase IgA): 23 U/mL (normal up to 10) - RAISED",
+  "2. EEG-EMG polygraphy (back-averaging): electropositive polyspikes equally at Cz and C4; cortical potential 11 ms before the jerk - CORTICAL myoclonus",
+  "3. somatosensory evoked potentials: GIANT median nerve SSEP",
+  "4. upper GI endoscopy with duodenal biopsy: flattened villi - coeliac disease"
+ ],
+ "dx_raw": "DIAGNOSIS: Gluten ataxia caused by coeliac disease\n\nAlternatives:\n1. Paraneoplastic cerebellar degeneration\n2. Autoimmune cerebellar ataxia\n3. Metabolic encephalopathy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Gluten ataxia caused by coeliac disease",
+ "decisive_served": [
+  "coeliac serology (tissue transglutaminase IgA)",
+  "EEG-EMG polygraphy (back-averaging)",
+  "somatosensory evoked potentials",
+  "upper GI endoscopy with duodenal biopsy"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 3699,
+   "total_tokens": 12397,
+   "cost": 0.00212746,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00212746,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00125766
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3475,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9114,
+   "completion_tokens": 1491,
+   "total_tokens": 10605,
+   "cost": 0.00141834,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00141834,
+    "upstream_inference_prompt_cost": 0.0009114,
+    "upstream_inference_completions_cost": 0.00050694
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1428,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "moderate_coeliac_PMC10548079.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 182.9
+}

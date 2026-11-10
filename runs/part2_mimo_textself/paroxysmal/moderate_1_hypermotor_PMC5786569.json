@@ -1,0 +1,137 @@
+{
+ "questions": [
+  "During the event, were you aware of your surroundings or actions?",
+  "Do you have any memory of the event after waking?",
+  "Did you feel fully awake and alert immediately after getting out of bed?",
+  "Have you ever hurt yourself or someone else during sleep?",
+  "Do you ever sleepwalk or perform complex actions while asleep?",
+  "Do you often feel extremely tired or sleepy during the day?",
+  "Do you ever witness yourself stop breathing during sleep?",
+  "Has anyone ever seen you have a convulsion or seizure?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Nocturnal video-EEG monitoring",
+  "MRI of the brain (with epilepsy protocol)"
+ ],
+ "served": [
+  "video-EEG monitoring of a typical event",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Nocturnal video-EEG monitoring",
+  "     video-EEG monitoring of a typical event: the diagnosis was made on SEMIOLOGY from clinically documented video-EEG; there was NO interpretable ictal EEG correlate because of movement artefact",
+  "2. MRI of the brain (with epilepsy protocol)",
+  "     brain MRI: no epileptogenic lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Sleep-related hypermotor epilepsy (nocturnal frontal lobe epilepsy)\n\nFrontal lobe seizure with hypermotor semiology, likely arising from deep medial frontal or orbitofrontal cortex (explaining the absent scalp EEG correlate)\n\n2. NREM parasomnia (sleep-related confusional arousal)\n3. REM sleep behavior disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Nocturnal video-EEG monitoring\n2. MRI of the brain (with epilepsy protocol)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Sleep-related hypermotor epilepsy (nocturnal frontal lobe epilepsy)",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 462,
+   "completion_tokens": 340,
+   "total_tokens": 802,
+   "cost": 0.0001335376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001335376,
+    "upstream_inference_prompt_cost": 3.83376e-05,
+    "upstream_inference_completions_cost": 9.52e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 218,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 879,
+   "completion_tokens": 591,
+   "total_tokens": 1470,
+   "cost": 0.0002270744,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002270744,
+    "upstream_inference_prompt_cost": 6.15944e-05,
+    "upstream_inference_completions_cost": 0.00016548
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 566,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1071,
+   "completion_tokens": 574,
+   "total_tokens": 1645,
+   "cost": 0.0001965096,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 832,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001965096,
+    "upstream_inference_prompt_cost": 3.57896e-05,
+    "upstream_inference_completions_cost": 0.00016072
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 499,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 40.9
+}

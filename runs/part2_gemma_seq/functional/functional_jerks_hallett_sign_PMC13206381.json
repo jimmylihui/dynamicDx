@@ -1,0 +1,154 @@
+{
+ "questions": [
+  "Do you have weakness in your limbs?",
+  "Do you have numbness or tingling in your hands or feet?",
+  "Did these symptoms start suddenly over a few days or weeks?",
+  "Did you have a respiratory or gastrointestinal infection in the last few weeks?",
+  "Do you have difficulty breathing or swallowing?",
+  "Do you have any problems with your balance or coordination?",
+  "Do you have any vision or hearing loss?",
+  "Do you have a family history of similar symptoms?",
+  "Do you have any problems with your heart rhythm or blood pressure?",
+  "Do you have any problems with your skin or nails?",
+  "Do you feel a sudden stiffness in your muscles when you are startled or when there is a loud noise?",
+  "Do you have a tendency to fall over when you are surprised or startled?",
+  "Did you have these symptoms as a baby or young child?",
+  "Do you feel that your muscles are generally stiff, especially in your back or legs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Nerve conduction studies and electromyography (EMG) of the upper and lower limbs",
+  "TSH and free T4 levels",
+  "Serum creatine kinase (CK) level"
+ ],
+ "served": [
+  "nerve conduction studies",
+  "needle electromyography",
+  "TSH / free T4",
+  "creatine kinase"
+ ],
+ "results": [
+  "R1 ASK Do you have weakness in your limbs?; Do you have numbness or tingling in your hands or feet?; Did these symptoms start suddenly over a few days or weeks?; Did you have a respiratory or gastrointestinal infection in the last few weeks?; Do you have difficulty breathing or swallowing? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Do you have any problems with your balance or coordination?; Do you have any vision or hearing loss?; Do you have a family history of similar symptoms?; Do you have any problems with your heart rhythm or blood pressure?; Do you have any problems with your skin or nails? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Nerve conduction studies and electromyography (EMG) of the upper and lower limbs; TSH and free T4 levels; Serum creatine kinase (CK) level -> [['nerve conduction studies', 'needle electromyography'], ['TSH / free T4'], ['creatine kinase']]",
+  "R4 ASK Do you feel a sudden stiffness in your muscles when you are startled or when there is a loud noise?; Do you have a tendency to fall over when you are surprised or startled?; Did you have these symptoms as a baby or young child?; Do you feel that your muscles are generally stiff, especially in your back or legs? -> ['no', 'no', 'no', 'no']",
+  "R5 DIAGNOSIS Hyperekplexia caused by a mutation in the GLRA1 gene -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have weakness in your limbs?",
+    "Do you have numbness or tingling in your hands or feet?",
+    "Did these symptoms start suddenly over a few days or weeks?",
+    "Did you have a respiratory or gastrointestinal infection in the last few weeks?",
+    "Do you have difficulty breathing or swallowing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have any problems with your balance or coordination?",
+    "Do you have any vision or hearing loss?",
+    "Do you have a family history of similar symptoms?",
+    "Do you have any problems with your heart rhythm or blood pressure?",
+    "Do you have any problems with your skin or nails?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Nerve conduction studies and electromyography (EMG) of the upper and lower limbs",
+    "TSH and free T4 levels",
+    "Serum creatine kinase (CK) level"
+   ],
+   "result": [
+    [
+     "nerve conduction studies",
+     "needle electromyography"
+    ],
+    [
+     "TSH / free T4"
+    ],
+    [
+     "creatine kinase"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you feel a sudden stiffness in your muscles when you are startled or when there is a loud noise?",
+    "Do you have a tendency to fall over when you are surprised or startled?",
+    "Did you have these symptoms as a baby or young child?",
+    "Do you feel that your muscles are generally stiff, especially in your back or legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Hyperekplexia caused by a mutation in the GLRA1 gene"
+  }
+ ],
+ "dx": "Hyperekplexia caused by a mutation in the GLRA1 gene",
+ "dx_raw": "DIAGNOSIS: Hyperekplexia caused by a mutation in the GLRA1 gene",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0066,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 235.3
+}

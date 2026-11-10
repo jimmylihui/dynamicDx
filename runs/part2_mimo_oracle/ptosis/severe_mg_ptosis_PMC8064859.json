@@ -1,0 +1,115 @@
+{
+ "questions": [
+  "Do you have any weakness in your arm or leg?",
+  "Did this start suddenly?",
+  "Do you have any numbness in your face?",
+  "Do you have pain behind your ear?",
+  "Have you had any difficulty speaking?",
+  "Have you recently had a cold or the flu?",
+  "Is your hearing unusually sensitive to loud sounds?",
+  "Have you noticed a change in your sense of taste?",
+  "Do you have diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "repetitive nerve stimulation",
+  "sustained upgaze fatigability test",
+  "anti-acetylcholine receptor antibodies",
+  "neostigmine / edrophonium challenge"
+ ],
+ "results": [
+  "1. repetitive nerve stimulation: decremental response in facial and spinal accessory nerves",
+  "2. sustained upgaze fatigability test: 'PRONOUNCED PTOSIS' on counting 1 to 100 - the right eye closed completely while the left droop increased",
+  "3. anti-acetylcholine receptor antibodies: 16.63 nmol/L - elevated",
+  "4. neostigmine / edrophonium challenge: ptosis improved (partially right, completely left) with improvement in neck muscle power"
+ ],
+ "dx_raw": "DIAGNOSIS: Generalized Myasthenia Gravis (MG) due to anti-acetylcholine receptor antibodies.\nAlternative 1: Lambert-Eaton Myasthenic Syndrome.\nAlternative 2: Oculopharyngeal muscular dystrophy.\nAlternative 3: Botulism.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Generalized Myasthenia Gravis (MG) due to anti-acetylcholine receptor antibodies.",
+ "decisive_served": [
+  "repetitive nerve stimulation",
+  "sustained upgaze fatigability test",
+  "anti-acetylcholine receptor antibodies",
+  "neostigmine / edrophonium challenge"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 5122,
+   "total_tokens": 10177,
+   "cost": 0.0021155176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0021155176,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00143416
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5000,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5496,
+   "completion_tokens": 540,
+   "total_tokens": 6036,
+   "cost": 0.0002357376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002357376,
+    "upstream_inference_prompt_cost": 8.45376e-05,
+    "upstream_inference_completions_cost": 0.0001512
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 475,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_mg_ptosis_PMC8064859.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 65.1
+}

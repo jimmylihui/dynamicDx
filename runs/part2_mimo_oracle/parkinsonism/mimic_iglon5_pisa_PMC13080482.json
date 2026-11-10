@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Have you experienced a stroke or a mini - stroke (transient ischemic attack) in the past?",
+  "Have you suffered a head injury or concussion at any time?",
+  "Are you currently taking any medications that could impact your balance (such as sedatives, blood pressure medications, or others)?",
+  "Do you notice any tremors or stiffness in your arms or legs?",
+  "Have you recently experienced double vision or changes in your eyesight?",
+  "Do you have any numbness, tingling, or weakness in your arms or legs?",
+  "Have you had any recent illnesses or infections that might affect your nervous system?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "reflexes, plantar responses and frontal release signs",
+  "trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "results": [
+  "1. reflexes, plantar responses and frontal release signs: normal power in limb and neck muscles, normal reflexes, flexor plantars",
+  "2. trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine: about 70 degrees of leftward trunk tilt on walking, with a normal stance; the tilt DISAPPEARS when recumbent",
+  "3. medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium): no dopamine-blocking drug - excludes drug-induced Pisa syndrome",
+  "4. neuronal surface antibody panel including anti-IgLON5: STRONGLY POSITIVE for anti-IgLON5 (3+ on semi-quantitative grading, 1:10 serum dilution, transfected-cell assay)",
+  "5. MRI brain - cortical atrophy pattern: MRI brain and whole spine NORMAL"
+ ],
+ "dx_raw": "DIAGNOSIS: Anti-IgLON5 disease\n\nProgressive supranuclear palsy (PSP)\nParkinson's disease\nMultiple system atrophy (MSA)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Anti-IgLON5 disease",
+ "decisive_served": [
+  "reflexes, plantar responses and frontal release signs",
+  "trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 665,
+   "total_tokens": 5720,
+   "cost": 0.0008675576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008675576,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.0001862
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 531,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5634,
+   "completion_tokens": 719,
+   "total_tokens": 6353,
+   "cost": 0.0003051776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003051776,
+    "upstream_inference_prompt_cost": 0.0001038576,
+    "upstream_inference_completions_cost": 0.00020132
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 678,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 25.4
+}

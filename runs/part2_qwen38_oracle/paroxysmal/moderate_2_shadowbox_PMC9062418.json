@@ -1,0 +1,106 @@
+{
+ "questions": [
+  "Are you currently experiencing a severe headache?",
+  "Do you feel dizzy or like the room is spinning?",
+  "Did these symptoms start immediately after your head injury occurred?",
+  "Have you vomited since the injury?",
+  "Is it difficult for you to keep your eyes open?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "provocation testing (the suspected trigger)"
+ ],
+ "results": [
+  "1. interictal EEG: intermittent sharp waves from the LEFT FRONTAL to anterior temporal regions",
+  "2. video-EEG monitoring of a typical event: moderate-amplitude rhythmic THETA waves intermittently during the versive seizures",
+  "3. provocation testing (the suspected trigger): supervised shadowboxing of 3 minutes per trial reproduced the seizures, with induction latencies of about 11 seconds and durations around 18 seconds"
+ ],
+ "dx_raw": "DIAGNOSIS: Reflex epilepsy (specifically proprioception-induced seizures) secondary to a left frontal structural lesion\n\n1. Focal epilepsy with versive seizures\n2. Psychogenic non-epileptic seizures (PNES)\n3. Post-traumatic epilepsy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Reflex epilepsy (specifically proprioception-induced seizures) secondary to a left frontal structural lesion",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "provocation testing (the suspected trigger)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 9431,
+   "completion_tokens": 64,
+   "total_tokens": 9495,
+   "cost": 0.00144473,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00144473,
+    "upstream_inference_prompt_cost": 0.00141465,
+    "upstream_inference_completions_cost": 3.008e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9772,
+   "completion_tokens": 56,
+   "total_tokens": 9828,
+   "cost": 0.000274328,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9088,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000274328,
+    "upstream_inference_prompt_cost": 0.000248008,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_2_shadowbox_PMC9062418.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.4
+}

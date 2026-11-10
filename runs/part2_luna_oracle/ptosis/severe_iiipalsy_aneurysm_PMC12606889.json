@@ -1,0 +1,127 @@
+{
+ "questions": [
+  "Have you noticed the unequal pupil sizes suddenly or within the past few days?",
+  "Is the difference in pupil size more noticeable in bright light?",
+  "Is the difference more noticeable in dim light or darkness?",
+  "Has either upper eyelid started drooping?",
+  "Are you having double vision?",
+  "Is either eye unable to move normally, especially upward, downward, or inward?",
+  "Do you have a new severe headache, eye pain, or neck pain?",
+  "Have you had any recent injury to your head, neck, or eye?",
+  "Have you had recent eye, head, neck, or chest surgery?",
+  "Have you had weakness, numbness, facial drooping, difficulty speaking, or trouble walking?",
+  "Have you noticed reduced sweating on one side of your face?",
+  "Have you experienced blurred vision, loss of vision, eye redness, nausea, or vomiting?",
+  "Have you used any eye drops, skin patches, inhalers, or medications that could have gotten into one eye?",
+  "Have you ever been told that your pupils were unequal before?",
+  "Do old photographs show that your pupils were already unequal?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "pupil examination (size, light reaction)",
+  "MRI orbits",
+  "CT / MR angiography (circle of Willis)",
+  "ocular surgical history"
+ ],
+ "results": [
+  "1. pupil examination (size, light reaction): mild anisocoria; the RIGHT pupil is unreactive to dim light, with involuntary pupillary spasms that are irregular in both frequency and duration and unrelated to eye position",
+  "2. MRI orbits: atrophy of the extraocular muscles, particularly the medial rectus - a long-standing, not acute, palsy",
+  "3. CT / MR angiography (circle of Willis): NO aneurysm",
+  "4. ocular surgical history: previous strabismus surgery and levator muscle surgery"
+ ],
+ "dx_raw": "DIAGNOSIS: Chronic postoperative right oculomotor (CN III) palsy with a tonic, pupillary-involving component—secondary to prior strabismus/levator surgery, with irregular tonic pupillary spasms (pseudotonic pupil)\n\nHolmes–Adie tonic pupil due to postganglionic parasympathetic denervation\n\nAberrant regeneration of the right oculomotor nerve\n\nPharmacologic mydriasis of the right eye",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Chronic postoperative right oculomotor (CN III) palsy with a tonic, pupillary-involving component—secondary to prior strabismus/levator surgery, with irregular tonic pupillary spasms (pseudotonic pupil)",
+ "decisive_served": [
+  "pupil examination (size, light reaction)",
+  "MRI orbits",
+  "CT / MR angiography (circle of Willis)",
+  "ocular surgical history"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 1087,
+   "total_tokens": 6763,
+   "cost": 0.00070923,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00070923,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0006522
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 843,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6433,
+   "completion_tokens": 617,
+   "total_tokens": 7050,
+   "cost": 0.000521855,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 757,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000521855,
+    "upstream_inference_prompt_cost": 0.000151655,
+    "upstream_inference_completions_cost": 0.0003702
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_iiipalsy_aneurysm_PMC12606889.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 22.1
+}

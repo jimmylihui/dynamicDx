@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Are you having difficulty breathing?",
+  "Did you lose consciousness before arriving here?",
+  "Have you ever had a seizure before?",
+  "Are you feeling confused or disoriented right now?",
+  "Do you have a severe headache?",
+  "Have you fallen or hit your head in the last 24 hours?",
+  "Do you have any weakness or numbness in your arms or legs?",
+  "Do you take blood thinners?",
+  "Are you allergic to any medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "antiseizure medication trial"
+ ],
+ "results": [
+  "1. interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "2. video-EEG monitoring of a typical event: ictal BODY TURNING, often preceded by head version, but the EEG shows classic GENERALIZED spike-wave or polyspike discharges WITHOUT consistent lateralization",
+  "3. antiseizure medication trial: responded to appropriate broad-spectrum antiseizure medication - NOT refractory"
+ ],
+ "dx_raw": "DIAGNOSIS: Juvenile Myoclonic Epilepsy, a genetic generalized epilepsy syndrome\nALTERNATIVE 1: Frontal lobe epilepsy (less likely given the generalized ictal EEG without consistent lateralization)\nALTERNATIVE 2: Juvenile Absence Epilepsy (possible given the 2-3 Hz generalized spike-wave discharges)\nALTERNATIVE 3: Epilepsy with Generalized Tonic-Clonic Seizures Alone (if myoclonia is absent)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Juvenile Myoclonic Epilepsy, a genetic generalized epilepsy syndrome",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "antiseizure medication trial"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 1075,
+   "total_tokens": 8137,
+   "cost": 0.00337092,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00337092,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.00129
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 969,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7525,
+   "completion_tokens": 2863,
+   "total_tokens": 10388,
+   "cost": 0.00400182,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00400182,
+    "upstream_inference_prompt_cost": 0.00056622,
+    "upstream_inference_completions_cost": 0.0034356
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2770,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 41.9
+}

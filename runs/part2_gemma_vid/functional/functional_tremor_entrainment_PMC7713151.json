@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Do you feel that your movements have become slower?",
+  "Do you feel stiffness in your muscles?",
+  "Does the shaking in your hand happen mostly when it is at rest?",
+  "Have you noticed your handwriting becoming smaller?",
+  "Do you have trouble with your balance?",
+  "Have you noticed a decrease in your facial expressions?",
+  "Is the shaking present on both sides of your body?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain",
+  "Finger-to-nose test",
+  "Rapid alternating movements test",
+  "Heel-to-shin test"
+ ],
+ "served": [
+  "MRI brain",
+  "coordination examination (limb and truncal)",
+  "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)",
+  "coordination examination (limb and truncal)",
+  "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)",
+  "coordination examination (limb and truncal)",
+  "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     MRI brain: normal",
+  "2. Finger-to-nose test",
+  "     coordination examination (limb and truncal): normal",
+  "     cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus): normal",
+  "3. Rapid alternating movements test",
+  "     coordination examination (limb and truncal): normal",
+  "     cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus): normal",
+  "4. Heel-to-shin test",
+  "     coordination examination (limb and truncal): normal",
+  "     cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Essential tremor, idiopathic\n\n1. Enhanced physiological tremor\n2. Dystonic tremor\n3. Drug-induced tremor",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Finger-to-nose test\n3. Rapid alternating movements test\n4. Heel-to-shin test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Essential tremor, idiopathic",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1628,
+   "total_tokens": 10326,
+   "cost": 0.00142332,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00142332,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00055352
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1615,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9052,
+   "completion_tokens": 1283,
+   "total_tokens": 10335,
+   "cost": 0.00134142,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00134142,
+    "upstream_inference_prompt_cost": 0.0009052,
+    "upstream_inference_completions_cost": 0.00043622
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1243,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9322,
+   "completion_tokens": 2293,
+   "total_tokens": 11615,
+   "cost": 0.00171182,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00171182,
+    "upstream_inference_prompt_cost": 0.0009322,
+    "upstream_inference_completions_cost": 0.00077962
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2118,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 192.9
+}

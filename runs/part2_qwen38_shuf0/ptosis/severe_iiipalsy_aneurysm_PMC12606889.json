@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Do you have a known diagnosis of myasthenia gravis?",
+  "Are your symptoms worse in the evening or after periods of sustained eye use?",
+  "Do you experience double vision when looking straight ahead?",
+  "Have you noticed any weakness in your arms, legs, or difficulty swallowing?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Ice pack test",
+  "Serum acetylcholine receptor antibodies",
+  "Repetitive nerve stimulation",
+  "CT scan of the chest"
+ ],
+ "served": [
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "repetitive nerve stimulation",
+  "CT chest (thymus)"
+ ],
+ "results": [
+  "1. Ice pack test",
+  "     ice-pack test: negative",
+  "2. Serum acetylcholine receptor antibodies",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "3. Repetitive nerve stimulation",
+  "     repetitive nerve stimulation: normal",
+  "4. CT scan of the chest",
+  "     CT chest (thymus): no thymic mass"
+ ],
+ "dx_raw": "DIAGNOSIS: Congenital fibrosis of the extraocular muscles (CFEOM)\nCongenital ptosis with compensatory frontalis overaction and secondary eyelid retraction on upgaze\nMyasthenia gravis (seronegative)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Ice pack test\n2. Serum acetylcholine receptor antibodies\n3. Repetitive nerve stimulation\n4. CT scan of the chest",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Congenital fibrosis of the extraocular muscles (CFEOM)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 66,
+   "total_tokens": 4889,
+   "cost": 0.00075447,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075447,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 3.102e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5124,
+   "completion_tokens": 32,
+   "total_tokens": 5156,
+   "cost": 0.00018332,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00018332,
+    "upstream_inference_prompt_cost": 0.00016828,
+    "upstream_inference_completions_cost": 1.504e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5328,
+   "completion_tokens": 58,
+   "total_tokens": 5386,
+   "cost": 0.000157532,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000157532,
+    "upstream_inference_prompt_cost": 0.000130272,
+    "upstream_inference_completions_cost": 2.726e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_iiipalsy_aneurysm_PMC12606889.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 16.4
+}

@@ -1,0 +1,136 @@
+{
+ "questions": [
+  "Is the onset of these symptoms sudden?",
+  "Do you have double vision?",
+  "Does the double vision disappear when you cover one eye?",
+  "Do you have a history of diabetes or hypertension?",
+  "Have you had any recent head trauma?",
+  "Do you have pain behind the eye?",
+  "Is your pupil on the affected side larger than the other?",
+  "Do you have difficulty raising the affected eye?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI of the brain with attention to the midbrain and posterior fossa"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences"
+ ],
+ "results": [
+  "1. MRI of the brain with attention to the midbrain and posterior fossa",
+  "     MRI brain with gadolinium: left rostral pontine and caudal mesencephalic infarcts without enhancement",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the left rostral pons and caudal mesencephalon extending along the paramedian line to the midline",
+  "     MRI susceptibility-weighted sequences: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Left-sided skew deviation secondary to acute ischemic stroke of the rostral pons and caudal midbrain\nAlternative: Ocular tilt reaction due to brainstem infarction\nAlternative: Acute vestibular syndrome with central cause",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with attention to the midbrain and posterior fossa",
+ "rationale": [
+  null
+ ],
+ "dx": "Left-sided skew deviation secondary to acute ischemic stroke of the rostral pons and caudal midbrain",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 184,
+   "completion_tokens": 95,
+   "total_tokens": 279,
+   "cost": 7.225e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.225e-05,
+    "upstream_inference_prompt_cost": 2.76e-05,
+    "upstream_inference_completions_cost": 4.465e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 561,
+   "completion_tokens": 16,
+   "total_tokens": 577,
+   "cost": 9.167e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.167e-05,
+    "upstream_inference_prompt_cost": 8.415e-05,
+    "upstream_inference_completions_cost": 7.52e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 767,
+   "completion_tokens": 53,
+   "total_tokens": 820,
+   "cost": 7.1352e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.1352e-05,
+    "upstream_inference_prompt_cost": 4.6442e-05,
+    "upstream_inference_completions_cost": 2.491e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 17.7
+}

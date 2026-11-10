@@ -1,0 +1,162 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the pain located in your lower back or legs?",
+  "Did this condition start suddenly after an injury or accident?",
+  "Have you had any recent surgery on your hips, knees, or spine?",
+  "Do you have a history of arthritis?",
+  "Do you feel weakness or numbness in your legs?",
+  "Does walking make the symptoms worse?",
+  "Do you have difficulty with balance even when not using crutches?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Romberg test",
+  "Tandem gait assessment",
+  "Finger-to-nose and heel-to-shin coordination testing",
+  "Rapid alternating movements (dysdiadochokinesia) assessment",
+  "MRI of the brain"
+ ],
+ "served": [
+  "Romberg test, repeated with distraction",
+  "tandem gait",
+  "tandem gait",
+  "coordination examination (limb and truncal)",
+  "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)",
+  "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain"
+ ],
+ "results": [
+  "1. Romberg test",
+  "     Romberg test, repeated with distraction: negative",
+  "2. Tandem gait assessment",
+  "     tandem gait: normal",
+  "     tandem gait: normal",
+  "3. Finger-to-nose and heel-to-shin coordination testing",
+  "     coordination examination (limb and truncal): normal",
+  "     cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus): normal",
+  "4. Rapid alternating movements (dysdiadochokinesia) assessment",
+  "     cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus): normal",
+  "5. MRI of the brain",
+  "     MRI brain with gadolinium: normal",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional gait disorder (psychogenic gait)\n1. Malingering\n2. Factitious disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Romberg test\n2. Tandem gait assessment\n3. Finger-to-nose and heel-to-shin coordination testing\n4. Rapid alternating movements (dysdiadochokinesia) assessment\n5. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional gait disorder (psychogenic gait)",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6359,
+   "completion_tokens": 106,
+   "total_tokens": 6465,
+   "cost": 0.00100367,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00100367,
+    "upstream_inference_prompt_cost": 0.00095385,
+    "upstream_inference_completions_cost": 4.982e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6756,
+   "completion_tokens": 52,
+   "total_tokens": 6808,
+   "cost": 0.000231696,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6016,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000231696,
+    "upstream_inference_prompt_cost": 0.000207256,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7080,
+   "completion_tokens": 29,
+   "total_tokens": 7109,
+   "cost": 0.000200878,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000200878,
+    "upstream_inference_prompt_cost": 0.000187248,
+    "upstream_inference_completions_cost": 1.363e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.3
+}

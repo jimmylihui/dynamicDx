@@ -1,0 +1,160 @@
+{
+ "questions": [
+  "Are you experiencing any severe chest pain, difficulty breathing, or sudden confusion?",
+  "Do you have a fever?",
+  "Have you unintentionally lost a significant amount of weight recently?",
+  "Are you experiencing any new, unexplained weakness or numbness, especially on one side of your body?",
+  "Have you had any fainting spells or seizures?",
+  "Are you coughing up any blood?",
+  "Is your urine dark red or have you noticed blood in your stool?",
+  "Have you had a recent injury, even if it seemed minor?",
+  "Are you currently taking any prescription medications?",
+  "Do you have any known chronic medical conditions like diabetes or high blood pressure?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Urinalysis",
+  "Review current medications list and dosages",
+  "Blood pressure measurement"
+ ],
+ "served": [
+  "full blood count",
+  "renal and liver function",
+  "electrolytes (Na, K, Ca, Mg)",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "urinalysis",
+  "medication history",
+  "vital signs"
+ ],
+ "results": [
+  "1. Complete blood count",
+  "     full blood count: normal",
+  "2. Comprehensive metabolic panel",
+  "     renal and liver function: normal",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "3. Urinalysis",
+  "     urinalysis: normal",
+  "4. Review current medications list and dosages",
+  "     medication history: not recorded",
+  "5. Blood pressure measurement",
+  "     vital signs: normal, afebrile"
+ ],
+ "dx_raw": "DIAGNOSI: Well-controlled chronic medical condition requiring routine monitoring — the specific disease entity cannot be determined without knowing the medication history.\n\nAlternatives:\n1. Hypertension, controlled with current medications\n2. Type 2 diabetes mellitus, well-managed on current therapy\n3. Incidental finding or screening referral unrelated to active disease",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete blood count\n2. Comprehensive metabolic panel\n3. Urinalysis\n4. Review current medications list and dosages\n5. Blood pressure measurement",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Well-controlled chronic medical condition requiring routine monitoring — the specific disease entity cannot be determined without knowing the medication history.",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 328,
+   "total_tokens": 713,
+   "cost": 0.000101836,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000101836,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 9.184e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 182,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 868,
+   "completion_tokens": 179,
+   "total_tokens": 1047,
+   "cost": 0.0001189552,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001189552,
+    "upstream_inference_prompt_cost": 6.88352e-05,
+    "upstream_inference_completions_cost": 5.012e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 143,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1104,
+   "completion_tokens": 679,
+   "total_tokens": 1783,
+   "cost": 0.0002305296,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 832,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002305296,
+    "upstream_inference_prompt_cost": 4.04096e-05,
+    "upstream_inference_completions_cost": 0.00019012
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 606,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 34.3,
+ "dx_old": "DIAGNOSI: Well-controlled chronic medical condition requiring routine monitoring — the specific disease entity cannot be determined without knowing the medication history."
+}

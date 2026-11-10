@@ -1,0 +1,153 @@
+{
+ "questions": [
+  "Do you have urinary incontinence?",
+  "Do you have memory problems or difficulty thinking?",
+  "Do you feel light"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Direct observation of gait and posture, including Romberg's sign and walking without crutches if safely possible",
+  "Lower limb neurological examination – tone, power, sensation, reflexes, and plantar responses",
+  "Straight leg raise (Lasègue) test bilaterally",
+  "Examination of the hip joints – log roll, internal rotation, and FABER test",
+  "MRI of the lumbar spine"
+ ],
+ "served": [
+  "posture and pull test",
+  "Romberg test, repeated with distraction",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "MRC power in all four limbs"
+ ],
+ "results": [
+  "1. Direct observation of gait and posture, including Romberg's sign and walking without crutches if safely possible",
+  "     posture and pull test: normal",
+  "     Romberg test, repeated with distraction: negative",
+  "     observation for excessive slowness or uneconomic posture: deliberately slow and broad-based; lumbar hyperlordosis is LACKING in this patient",
+  "     knee buckling / astasia-abasia on walking: not present",
+  "2. Lower limb neurological examination – tone, power, sensation, reflexes, and plantar responses",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     muscle tone (spasticity, rigidity, paratonia): genuine axial and lower-limb rigidity on passive movement",
+  "     MRC power in all four limbs: 5/5 throughout",
+  "3. Straight leg raise (Lasègue) test bilaterally",
+  "     not performed / not available",
+  "4. Examination of the hip joints – log roll, internal rotation, and FABER test",
+  "     not performed / not available",
+  "5. MRI of the lumbar spine",
+  "     not performed / not available"
+ ],
+ "dx_raw": "AGNOSIS: Stiff person syndrome (autoimmune, most likely associated with anti-GAD antibodies)\n\nAlternatives:\n1. Multiple system atrophy, cerebellar type (MSA-C)\n2. Progressive supranuclear palsy (atypical, axial-rigid presentation)\n3. Early ankylosing spondylitis with severe axial and hip involvement",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Direct observation of gait and posture, including Romberg's sign and walking without crutches if safely possible\n2. Lower limb neurological examination – tone, power, sensation, reflexes, and plantar responses\n3. Straight leg raise (Lasègue) test bilaterally\n4. Examination of the hip joints – log roll, internal rotation, and FABER test\n5. MRI of the lumbar spine",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "AGNOSIS: Stiff person syndrome (autoimmune, most likely associated with anti-GAD antibodies)",
+ "decisive_served": [
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 339,
+   "completion_tokens": 8000,
+   "total_tokens": 8339,
+   "cost": 0.0097017,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0097017,
+    "upstream_inference_prompt_cost": 0.0001017,
+    "upstream_inference_completions_cost": 0.0096
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9053,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "length"
+  },
+  "order": {
+   "prompt_tokens": 551,
+   "completion_tokens": 7734,
+   "total_tokens": 8285,
+   "cost": 0.00941538,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00941538,
+    "upstream_inference_prompt_cost": 0.00013458,
+    "upstream_inference_completions_cost": 0.0092808
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 8955,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 957,
+   "completion_tokens": 2383,
+   "total_tokens": 3340,
+   "cost": 0.00305454,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00305454,
+    "upstream_inference_prompt_cost": 0.00019494,
+    "upstream_inference_completions_cost": 0.0028596
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2624,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 248.5
+}

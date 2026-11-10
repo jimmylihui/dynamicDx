@@ -1,0 +1,221 @@
+{
+ "questions": [
+  "Have you noticed any persistent redness or flushing of your face, particularly on the nose and cheeks?",
+  "Do you have any sensitivity or burning sensation in your eyes, or any gritty feeling?",
+  "Have you noticed any bumps, pimples, or pustules on your face, particularly in the red areas?",
+  "Do your symptoms worsen with sun exposure, hot drinks, alcohol, or spicy foods?",
+  "Have you ever been told you have rosacea, lupus, or any skin condition before?",
+  "Do you have any history of autoimmune disease in your family?",
+  "Are you currently taking any medications?",
+  "Have you had any recent fever, joint pains, or fatigue?",
+  "Do you have difficulty swallowing?",
+  "Have you noticed any tightening or thickening of the skin on your fingers, face, or elsewhere?",
+  "Do you have heartburn or acid reflux?",
+  "Have you been feeling short of breath with normal activities?",
+  "Have you noticed any double vision or drooping of your eyelids?",
+  "Do you have any hoarseness or changes in your voice?",
+  "Have you lost any weight unintentionally?",
+  "Do you have any chest pain, particularly with exertion?",
+  "Have you had any pain in your jaw when chewing food?",
+  "Have you noticed any visual loss or vision loss in one eye that came and went?",
+  "Do you have any muscle aches or stiffness in your shoulders or hips?",
+  "Have you ever had a heart attack, stroke, or blood clot?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Examine the skin more closely with a Wood's lamp to check for pigmentation changes or telangiectasia not visible in standard light",
+  "Perform a slit-lamp examination of the eyes to look for any episcleritis or subtle anterior segment abnormalities",
+  "Bilateral hand blood pressure measurement to assess for subclavian steal or vascular asymmetry",
+  "Auscultate the carotid arteries for bruits",
+  "Examine temporal arteries for tenderness, nodularity, and assess pulsation",
+  "Bilateral upper extremity pulse palpation with Allen's test",
+  "Full physical examination with focus on the nose - assess structure, palpate nasal bridge, inspect for ulcers or cartilage collapse",
+  "Full physical examination - assess for any other skin lesions, lymphadenopathy, or systemic signs"
+ ],
+ "served": [
+  "vital signs"
+ ],
+ "results": [
+  "R1 ASK Have you noticed any persistent redness or flushing of your face, particularly on the nose and cheeks?; Do you have any sensitivity or burning sensation in your eyes, or any gritty feeling?; Have you noticed any bumps, pimples, or pustules on your face, particularly in the red areas?; Do your symptoms worsen with sun exposure, hot drinks, alcohol, or spicy foods?; Have you ever been told you have rosacea, lupus, or any skin condition before?; Do you have any history of autoimmune disease in your family?; Are you currently taking any medications?; Have you had any recent fever, joint pains, or fatigue? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ORDER Examine the skin more closely with a Wood's lamp to check for pigmentation changes or telangiectasia not visible in standard light; Perform a slit-lamp examination of the eyes to look for any episcleritis or subtle anterior segment abnormalities -> [[], []]",
+  "R3 ASK Do you have difficulty swallowing?; Have you noticed any tightening or thickening of the skin on your fingers, face, or elsewhere?; Do you have heartburn or acid reflux?; Have you been feeling short of breath with normal activities? -> ['no', 'no', 'no', 'no']",
+  "R4 ORDER Bilateral hand blood pressure measurement to assess for subclavian steal or vascular asymmetry; Auscultate the carotid arteries for bruits -> [['vital signs'], []]",
+  "R5 ASK Have you noticed any double vision or drooping of your eyelids?; Do you have any hoarseness or changes in your voice?; Have you lost any weight unintentionally?; Do you have any chest pain, particularly with exertion? -> ['no', 'no', 'no', 'no']",
+  "R6 ORDER Examine temporal arteries for tenderness, nodularity, and assess pulsation; Bilateral upper extremity pulse palpation with Allen's test -> [[], []]",
+  "R7 ASK Have you had any pain in your jaw when chewing food?; Have you noticed any visual loss or vision loss in one eye that came and went?; Do you have any muscle aches or stiffness in your shoulders or hips?; Have you ever had a heart attack, stroke, or blood clot? -> ['no', 'no', 'no', 'no']",
+  "R8 ORDER Full physical examination with focus on the nose - assess structure, palpate nasal bridge, inspect for ulcers or cartilage collapse; Full physical examination - assess for any other skin lesions, lymphadenopathy, or systemic signs -> [[], []]",
+  "R9 DIAGNOSIS Cannot determine - the patient denies all symptoms and physical examination is not available; most features visible (nose enlargement/bulbous appearance) suggest possible rhinophyma, but a confident diagnosis cannot be made without further information. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any persistent redness or flushing of your face, particularly on the nose and cheeks?",
+    "Do you have any sensitivity or burning sensation in your eyes, or any gritty feeling?",
+    "Have you noticed any bumps, pimples, or pustules on your face, particularly in the red areas?",
+    "Do your symptoms worsen with sun exposure, hot drinks, alcohol, or spicy foods?",
+    "Have you ever been told you have rosacea, lupus, or any skin condition before?",
+    "Do you have any history of autoimmune disease in your family?",
+    "Are you currently taking any medications?",
+    "Have you had any recent fever, joint pains, or fatigue?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Examine the skin more closely with a Wood's lamp to check for pigmentation changes or telangiectasia not visible in standard light",
+    "Perform a slit-lamp examination of the eyes to look for any episcleritis or subtle anterior segment abnormalities"
+   ],
+   "result": [
+    [],
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty swallowing?",
+    "Have you noticed any tightening or thickening of the skin on your fingers, face, or elsewhere?",
+    "Do you have heartburn or acid reflux?",
+    "Have you been feeling short of breath with normal activities?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Bilateral hand blood pressure measurement to assess for subclavian steal or vascular asymmetry",
+    "Auscultate the carotid arteries for bruits"
+   ],
+   "result": [
+    [
+     "vital signs"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any double vision or drooping of your eyelids?",
+    "Do you have any hoarseness or changes in your voice?",
+    "Have you lost any weight unintentionally?",
+    "Do you have any chest pain, particularly with exertion?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Examine temporal arteries for tenderness, nodularity, and assess pulsation",
+    "Bilateral upper extremity pulse palpation with Allen's test"
+   ],
+   "result": [
+    [],
+    []
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Have you had any pain in your jaw when chewing food?",
+    "Have you noticed any visual loss or vision loss in one eye that came and went?",
+    "Do you have any muscle aches or stiffness in your shoulders or hips?",
+    "Have you ever had a heart attack, stroke, or blood clot?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Full physical examination with focus on the nose - assess structure, palpate nasal bridge, inspect for ulcers or cartilage collapse",
+    "Full physical examination - assess for any other skin lesions, lymphadenopathy, or systemic signs"
+   ],
+   "result": [
+    [],
+    []
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Cannot determine - the patient denies all symptoms and physical examination is not available; most features visible (nose enlargement/bulbous appearance) suggest possible rhinophyma, but a confident diagnosis cannot be made without further information."
+  }
+ ],
+ "dx": "Cannot determine - the patient denies all symptoms and physical examination is not available; most features visible (nose enlargement/bulbous appearance) suggest possible rhinophyma, but a confident diagnosis cannot be made without further information.",
+ "dx_raw": "DIAGNOSIS: Cannot determine - the patient denies all symptoms and physical examination is not available; most features visible (nose enlargement/bulbous appearance) suggest possible rhinophyma, but a confident diagnosis cannot be made without further information.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0226,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "fp_recurrent_synkinesis_PMC12572359.mp4",
+ "line": "facialpalsy",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 83.0
+}

@@ -1,0 +1,118 @@
+{
+ "questions": [
+  "Did you come here because of the movement in your legs or feet?",
+  "Are the movements happening right now while you sit there?",
+  "Can you stop these movements when you try?",
+  "Do the movements happen only when you rest, or also when you move?",
+  "Is this movement painful?",
+  "Does it bother you more when you try to sleep?",
+  "Has this been happening for more than a few days?",
+  "Do your hands or arms also move like this?",
+  "Do you take any medications right now?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "HbA1c",
+  "CT head (non-contrast)",
+  "brain MRI with contrast",
+  "trial of glucose correction with insulin"
+ ],
+ "results": [
+  "1. blood glucose: 30.63 mmol/L (551.3 mg/dL) with glycosuria and NO ketonuria",
+  "2. HbA1c: very high on admission; 5.73% at first follow-up once glucose was controlled",
+  "3. CT head (non-contrast): HYPERDENSE LEFT caudate and lentiform nucleus - contralateral to the movements",
+  "4. brain MRI with contrast: a coexisting LACUNAR INFARCT in addition to the striatal signal change",
+  "5. trial of glucose correction with insulin: glucose fell to 5.9 mmol/L (106.2 mg/dL) at follow-up with improvement in the movements"
+ ],
+ "dx_raw": "DIAGNOSIS: Non-ketotic hyperglycemia-induced hemichorea-hemiballismus (caused by uncontrolled Diabetes Mellitus)\nBasal ganglia calcification\nLacunar infarction\nAcquired hepatocerebral degeneration",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Non-ketotic hyperglycemia-induced hemichorea-hemiballismus (caused by uncontrolled Diabetes Mellitus)",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c",
+  "CT head (non-contrast)",
+  "brain MRI with contrast",
+  "trial of glucose correction with insulin"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8639,
+   "completion_tokens": 500,
+   "total_tokens": 9139,
+   "cost": 0.0013231176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013231176,
+    "upstream_inference_prompt_cost": 0.0011831176,
+    "upstream_inference_completions_cost": 0.00014
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 385,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9161,
+   "completion_tokens": 1441,
+   "total_tokens": 10602,
+   "cost": 0.0005093928,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8576,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005093928,
+    "upstream_inference_prompt_cost": 0.0001059128,
+    "upstream_inference_completions_cost": 0.00040348
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1382,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hyperglycemic_hemichorea_PMC12596229.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 35.2
+}

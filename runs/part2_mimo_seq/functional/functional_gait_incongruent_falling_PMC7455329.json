@@ -1,0 +1,269 @@
+{
+ "questions": [
+  "Did you feel dizzy or lightheaded right before you fell?",
+  "Have you had episodes like this (sudden loss of balance or falls) in the past?",
+  "Do you have a personal history of stroke, Parkinson's disease, or other neurological disorder?",
+  "Did you lose consciousness during the fall, or were you aware of what happened?",
+  "Did anyone observe if you were shaking, jerking, or stiffening during the episode?",
+  "Did you wet yourself during the episode?",
+  "Have you noticed any chest pain or palpitations recently?",
+  "Just before you lost consciousness, did you experience any brief visual graying, \"tunnel vision,\" or feeling of \"everything going blank\"?",
+  "Were you standing up quickly or changing position right before the episode?",
+  "Are you currently taking any medications?",
+  "Is there any family history of sudden cardiac death or inherited heart conditions?",
+  "Do you remember anything at all about the moment you fell - any sounds, lights, or sensations?",
+  "Do you have any known heart disease, or have you ever been told your heart has an abnormal rhythm?",
+  "Has anyone ever heard your heart make an unusual sound or murmur?",
+  "Have you ever had a concussion or head injury?",
+  "What specifically do you remember - did you feel nauseous, sweaty, or warm, or did everything just suddenly go black?",
+  "Do you have any chest pain, shortness of breath, or heart racing that comes and goes at other times?",
+  "After you got up, did you feel confused or have a headache?",
+  "Have you ever been told you have a heart murmur?",
+  "What were you doing immediately before you collapsed - walking normally, standing still, or something else?",
+  "When you woke up or regained awareness, how quickly did you feel back to normal?",
+  "Have you been feeling unwell, tired, or fighting any infection recently?",
+  "Do you consume caffeine or energy drinks regularly?",
+  "I want to clarify: when I asked if you felt back to normal quickly after the episode, did you mean it took a long time to feel normal again?",
+  "Did anyone witness your fall and see your face or body movements?",
+  "Have you ever been told you have a heart murmur that comes and goes?",
+  "Is there any family history of epilepsy or seizures?",
+  "Has this ever happened while you were swimming, exercising, or lying down?",
+  "Do you have any family members who died suddenly or unexpectedly before age 50?",
+  "Do you ever feel your heart racing or skipping beats, even briefly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "yes",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "12-lead electrocardiogram",
+  "Echocardiogram",
+  "Tilt table test",
+  "Serum electrolytes, calcium, magnesium"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate"
+ ],
+ "results": [
+  "R1 ASK Did you feel dizzy or lightheaded right before you fell?; Have you had episodes like this (sudden loss of balance or falls) in the past?; Do you have a personal history of stroke, Parkinson's disease, or other neurological disorder? -> ['no', 'no', 'no']",
+  "R2 ASK Did you lose consciousness during the fall, or were you aware of what happened?; Did anyone observe if you were shaking, jerking, or stiffening during the episode?; Did you wet yourself during the episode?; Have you noticed any chest pain or palpitations recently? -> ['yes', 'no', 'no', 'no']",
+  "R3 ASK Just before you lost consciousness, did you experience any brief visual graying, \"tunnel vision,\" or feeling of \"everything going blank\"?; Were you standing up quickly or changing position right before the episode?; Are you currently taking any medications?; Is there any family history of sudden cardiac death or inherited heart conditions? -> ['no', 'no', 'no', 'no']",
+  "R4 ORDER 12-lead electrocardiogram; Echocardiogram; Tilt table test; Serum electrolytes, calcium, magnesium -> [[], [], [], ['serum electrolytes, urea and creatinine', 'serum calcium, magnesium and phosphate']]",
+  "R5 ASK Do you remember anything at all about the moment you fell - any sounds, lights, or sensations?; Do you have any known heart disease, or have you ever been told your heart has an abnormal rhythm?; Has anyone ever heard your heart make an unusual sound or murmur?; Have you ever had a concussion or head injury? -> ['yes', 'no', 'no', 'no']",
+  "R6 ASK What specifically do you remember - did you feel nauseous, sweaty, or warm, or did everything just suddenly go black?; Do you have any chest pain, shortness of breath, or heart racing that comes and goes at other times? -> ['no', 'no']",
+  "R7 ASK After you got up, did you feel confused or have a headache?; Have you ever been told you have a heart murmur? -> ['no', 'no']",
+  "R8 ASK What were you doing immediately before you collapsed - walking normally, standing still, or something else?; When you woke up or regained awareness, how quickly did you feel back to normal?; Have you been feeling unwell, tired, or fighting any infection recently?; Do you consume caffeine or energy drinks regularly? -> ['yes', 'no', 'no', 'no']",
+  "R9 ASK I want to clarify: when I asked if you felt back to normal quickly after the episode, did you mean it took a long time to feel normal again?; Did anyone witness your fall and see your face or body movements?; Have you ever been told you have a heart murmur that comes and goes?; Is there any family history of epilepsy or seizures? -> ['no', 'no', 'no', 'no']",
+  "R10 ASK Has this ever happened while you were swimming, exercising, or lying down?; Do you have any family members who died suddenly or unexpectedly before age 50?; Do you ever feel your heart racing or skipping beats, even briefly? -> ['no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Unexplained syncope, most likely cardiac arrhythmia-induced, pending cardiac workup (ECG, echocardiogram, Holter monitor) to identify or exclude underlying cardiac etiology -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did you feel dizzy or lightheaded right before you fell?",
+    "Have you had episodes like this (sudden loss of balance or falls) in the past?",
+    "Do you have a personal history of stroke, Parkinson's disease, or other neurological disorder?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Did you lose consciousness during the fall, or were you aware of what happened?",
+    "Did anyone observe if you were shaking, jerking, or stiffening during the episode?",
+    "Did you wet yourself during the episode?",
+    "Have you noticed any chest pain or palpitations recently?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Just before you lost consciousness, did you experience any brief visual graying, \"tunnel vision,\" or feeling of \"everything going blank\"?",
+    "Were you standing up quickly or changing position right before the episode?",
+    "Are you currently taking any medications?",
+    "Is there any family history of sudden cardiac death or inherited heart conditions?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "12-lead electrocardiogram",
+    "Echocardiogram",
+    "Tilt table test",
+    "Serum electrolytes, calcium, magnesium"
+   ],
+   "result": [
+    [],
+    [],
+    [],
+    [
+     "serum electrolytes, urea and creatinine",
+     "serum calcium, magnesium and phosphate"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you remember anything at all about the moment you fell - any sounds, lights, or sensations?",
+    "Do you have any known heart disease, or have you ever been told your heart has an abnormal rhythm?",
+    "Has anyone ever heard your heart make an unusual sound or murmur?",
+    "Have you ever had a concussion or head injury?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "What specifically do you remember - did you feel nauseous, sweaty, or warm, or did everything just suddenly go black?",
+    "Do you have any chest pain, shortness of breath, or heart racing that comes and goes at other times?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "After you got up, did you feel confused or have a headache?",
+    "Have you ever been told you have a heart murmur?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "What were you doing immediately before you collapsed - walking normally, standing still, or something else?",
+    "When you woke up or regained awareness, how quickly did you feel back to normal?",
+    "Have you been feeling unwell, tired, or fighting any infection recently?",
+    "Do you consume caffeine or energy drinks regularly?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "I want to clarify: when I asked if you felt back to normal quickly after the episode, did you mean it took a long time to feel normal again?",
+    "Did anyone witness your fall and see your face or body movements?",
+    "Have you ever been told you have a heart murmur that comes and goes?",
+    "Is there any family history of epilepsy or seizures?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Has this ever happened while you were swimming, exercising, or lying down?",
+    "Do you have any family members who died suddenly or unexpectedly before age 50?",
+    "Do you ever feel your heart racing or skipping beats, even briefly?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Unexplained syncope, most likely cardiac arrhythmia-induced, pending cardiac workup (ECG, echocardiogram, Holter monitor) to identify or exclude underlying cardiac etiology"
+  }
+ ],
+ "dx": "Unexplained syncope, most likely cardiac arrhythmia-induced, pending cardiac workup (ECG, echocardiogram, Holter monitor) to identify or exclude underlying cardiac etiology",
+ "dx_raw": "DIAGNOSIS: Unexplained syncope, most likely cardiac arrhythmia-induced, pending cardiac workup (ECG, echocardiogram, Holter monitor) to identify or exclude underlying cardiac etiology",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "cost_usd": 0.0032,
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 327.7
+}

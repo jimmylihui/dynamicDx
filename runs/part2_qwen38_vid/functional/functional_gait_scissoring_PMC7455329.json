@@ -1,0 +1,143 @@
+{
+ "questions": [
+  "Are you currently experiencing pain in your legs or feet?",
+  "Do you have a history of stroke, multiple sclerosis, or Parkinson's disease?",
+  "Have you recently had an injury to your head, neck, back, or legs?",
+  "Do you feel dizzy or lightheaded when you walk?",
+  "Is the difficulty with walking constant throughout the day?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's gait from behind and from the side, specifically looking for foot drop or circumduction.",
+  "Perform a focused neurological examination of the lower limbs, testing power in ankle dorsiflexion (L4/L5) and eversion (S1), and checking reflexes.",
+  "Palpate the anterior aspect of the leg to assess for compartment tension and perform passive stretch of the toes/ankle to elicit pain.",
+  "Order serum Creatine Kinase (CK) levels."
+ ],
+ "served": [
+  "MRC power in all four limbs",
+  "deep tendon reflexes and plantar responses",
+  "creatine kinase"
+ ],
+ "results": [
+  "1. Observe the patient's gait from behind and from the side, specifically looking for foot drop or circumduction.",
+  "     not performed / not available",
+  "2. Perform a focused neurological examination of the lower limbs, testing power in ankle dorsiflexion (L4/L5) and eversion (S1), and checking reflexes.",
+  "     MRC power in all four limbs: 5/5 throughout",
+  "     deep tendon reflexes and plantar responses: normal reflexes, FLEXOR plantar responses, no clonus",
+  "3. Palpate the anterior aspect of the leg to assess for compartment tension and perform passive stretch of the toes/ankle to elicit pain.",
+  "     not performed / not available",
+  "4. Order serum Creatine Kinase (CK) levels.",
+  "     creatine kinase: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional gait disorder (psychogenic gait)\n\n1. Cerebellar ataxia\n2. Sensory ataxia (e.g., due to Vitamin B12 deficiency or peripheral neuropathy)\n3. Normal pressure hydrocephalus",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient's gait from behind and from the side, specifically looking for foot drop or circumduction.\n2. Perform a focused neurological examination of the lower limbs, testing power in ankle dorsiflexion (L4/L5) and eversion (S1), and checking reflexes.\n3. Palpate the anterior aspect of the leg to assess for compartment tension and perform passive stretch of the toes/ankle to elicit pain.\n4. Order serum Creatine Kinase (CK) levels.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional gait disorder (psychogenic gait)",
+ "decisive_served": [
+  "deep tendon reflexes and plantar responses"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6359,
+   "completion_tokens": 82,
+   "total_tokens": 6441,
+   "cost": 0.00099239,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00099239,
+    "upstream_inference_prompt_cost": 0.00095385,
+    "upstream_inference_completions_cost": 3.854e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6696,
+   "completion_tokens": 111,
+   "total_tokens": 6807,
+   "cost": 0.000250426,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6016,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000250426,
+    "upstream_inference_prompt_cost": 0.000198256,
+    "upstream_inference_completions_cost": 5.217e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7080,
+   "completion_tokens": 59,
+   "total_tokens": 7139,
+   "cost": 0.000214978,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000214978,
+    "upstream_inference_prompt_cost": 0.000187248,
+    "upstream_inference_completions_cost": 2.773e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.7,
+ "video": "functional_gait_scissoring_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.8
+}

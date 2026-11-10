@@ -1,0 +1,147 @@
+{
+ "questions": [
+  "Are these movements involuntary?",
+  "Do you have a family history of similar movements?",
+  "Have you noticed changes in your mood or personality?",
+  "Do you have difficulty with your memory or thinking?",
+  "Do you have difficulty speaking?",
+  "Do you have difficulty swallowing?",
+  "Do you have a tremor?",
+  "Do you have muscle stiffness?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI Brain",
+  "Blood glucose",
+  "ANA and anti-phospholipid antibodies",
+  "Thyroid function tests"
+ ],
+ "served": [
+  "brain MRI",
+  "glucose",
+  "antinuclear antibodies and anti-dsDNA",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     brain MRI: mild diffuse atrophy only",
+  "2. Blood glucose",
+  "     glucose: normal",
+  "3. ANA and anti-phospholipid antibodies",
+  "     antinuclear antibodies and anti-dsDNA: normal",
+  "4. Thyroid function tests",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Huntington's disease caused by CAG repeat expansion in the HTT gene\n\n1. Tardive dyskinesia\n2. Paraneoplastic chorea\n3. Benign hereditary chorea",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Blood glucose\n3. ANA and anti-phospholipid antibodies\n4. Thyroid function tests",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Huntington's disease caused by CAG repeat expansion in the HTT gene",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 4532,
+   "total_tokens": 13230,
+   "cost": 0.00241068,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00241068,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00154088
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4299,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9042,
+   "completion_tokens": 716,
+   "total_tokens": 9758,
+   "cost": 0.00114764,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00114764,
+    "upstream_inference_prompt_cost": 0.0009042,
+    "upstream_inference_completions_cost": 0.00024344
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 723,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9226,
+   "completion_tokens": 4207,
+   "total_tokens": 13433,
+   "cost": 0.00235298,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00235298,
+    "upstream_inference_prompt_cost": 0.0009226,
+    "upstream_inference_completions_cost": 0.00143038
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3967,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "moderate_coeliac_PMC10548079.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 369.3
+}

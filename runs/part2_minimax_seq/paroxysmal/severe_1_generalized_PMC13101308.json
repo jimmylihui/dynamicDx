@@ -1,0 +1,170 @@
+{
+ "questions": [
+  "Have you been experiencing episodes of seizures or loss of consciousness that brought you in for this EEG monitoring?",
+  "During these episodes, do you lose awareness of your surroundings or are you aware but unable to respond?",
+  "Have you experienced generalized tonic-clonic seizures (shaking of all four limbs, tongue biting, or urinary incontinence)?",
+  "Have you had any recent head trauma, brain surgery, or neurological infections (meningitis/encephalitis)?",
+  "Is there a family history of epilepsy or seizure disorders?",
+  "Are your seizures typically triggered by specific stimuli such as flashing lights, emotional stress, sleep deprivation, or loud noises?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "yes",
+  "6": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Serum electrolytes, calcium, magnesium, and glucose level to rule out metabolic causes.",
+  "MRI of the brain to rule out structural lesions.",
+  "EEG telemetry review during the 17-second observation to assess for interictal epileptiform discharges and correlate with seizure semiology."
+ ],
+ "served": [
+  "glucose, calcium, magnesium, sodium",
+  "brain MRI",
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "R1 ASK Have you been experiencing episodes of seizures or loss of consciousness that brought you in for this EEG monitoring? -> ['yes']",
+  "R2 ASK During these episodes, do you lose awareness of your surroundings or are you aware but unable to respond? -> ['yes']",
+  "R3 ASK Have you experienced generalized tonic-clonic seizures (shaking of all four limbs, tongue biting, or urinary incontinence)? -> ['yes']",
+  "R4 ASK Have you had any recent head trauma, brain surgery, or neurological infections (meningitis/encephalitis)? -> ['no']",
+  "R5 ASK Is there a family history of epilepsy or seizure disorders? -> ['yes']",
+  "R6 ORDER Serum electrolytes, calcium, magnesium, and glucose level to rule out metabolic causes. -> [['glucose, calcium, magnesium, sodium']]",
+  "R7 ASK Are your seizures typically triggered by specific stimuli such as flashing lights, emotional stress, sleep deprivation, or loud noises? -> ['no']",
+  "R8 ORDER MRI of the brain to rule out structural lesions. -> [['brain MRI']]",
+  "R9 ORDER EEG telemetry review during the 17-second observation to assess for interictal epileptiform discharges and correlate with seizure semiology. -> [['interictal EEG', 'video-EEG monitoring of a typical event']]",
+  "R10 DIAGNOSIS Idiopathic Generalized Epilepsy (Juvenile Myoclonic Epilepsy) — genetic generalized epilepsy syndrome supported by generalized 2-3 Hz polyspike-and-slow-wave discharges, normal MRI, positive family history, and absence of structural/metabolic cause. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you been experiencing episodes of seizures or loss of consciousness that brought you in for this EEG monitoring?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "During these episodes, do you lose awareness of your surroundings or are you aware but unable to respond?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you experienced generalized tonic-clonic seizures (shaking of all four limbs, tongue biting, or urinary incontinence)?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you had any recent head trauma, brain surgery, or neurological infections (meningitis/encephalitis)?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Is there a family history of epilepsy or seizure disorders?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Serum electrolytes, calcium, magnesium, and glucose level to rule out metabolic causes."
+   ],
+   "result": [
+    [
+     "glucose, calcium, magnesium, sodium"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Are your seizures typically triggered by specific stimuli such as flashing lights, emotional stress, sleep deprivation, or loud noises?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "MRI of the brain to rule out structural lesions."
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "EEG telemetry review during the 17-second observation to assess for interictal epileptiform discharges and correlate with seizure semiology."
+   ],
+   "result": [
+    [
+     "interictal EEG",
+     "video-EEG monitoring of a typical event"
+    ]
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Idiopathic Generalized Epilepsy (Juvenile Myoclonic Epilepsy) — genetic generalized epilepsy syndrome supported by generalized 2-3 Hz polyspike-and-slow-wave discharges, normal MRI, positive family history, and absence of structural/metabolic cause."
+  }
+ ],
+ "dx": "Idiopathic Generalized Epilepsy (Juvenile Myoclonic Epilepsy) — genetic generalized epilepsy syndrome supported by generalized 2-3 Hz polyspike-and-slow-wave discharges, normal MRI, positive family history, and absence of structural/metabolic cause.",
+ "dx_raw": "DIAGNOSIS: Idiopathic Generalized Epilepsy (Juvenile Myoclonic Epilepsy) — genetic generalized epilepsy syndrome supported by generalized 2-3 Hz polyspike-and-slow-wave discharges, normal MRI, positive family history, and absence of structural/metabolic cause.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "cost_usd": 0.0066,
+ "n_frames": 32,
+ "duration_s": 16.8,
+ "video": "severe_1_generalized_PMC13101308.mp4",
+ "line": "paroxysmal",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 64.0
+}

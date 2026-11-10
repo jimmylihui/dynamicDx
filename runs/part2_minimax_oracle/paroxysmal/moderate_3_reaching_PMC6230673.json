@@ -1,0 +1,111 @@
+{
+ "questions": [
+  "Have you used any drugs or alcohol in the last 24 hours?",
+  "Are you hearing voices right now?",
+  "Do you feel like people are trying to hurt you?",
+  "Have you tried to harm yourself recently?",
+  "Do you want to hurt someone else right now?",
+  "Have you gone without sleep for several days?",
+  "Are you currently experiencing any physical pain?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "witnessed description of the event",
+  "head injury history",
+  "neurological examination between events",
+  "interictal EEG"
+ ],
+ "results": [
+  "1. witnessed description of the event: the right arm reaches and grasps and takes a DYSTONIC posture during the movement, despite a manual muscle testing score of 1 - the movement is ictal, not voluntary",
+  "2. head injury history: traumatic brain injury after being thrown from a horse",
+  "3. neurological examination between events: right-sided hemiplegia, manual muscle testing grade 1",
+  "4. interictal EEG: repetitive sharp waves predominantly in the LEFT FRONTAL area during sleep, with pseudocontinuous 3 Hz slow waves in the same region on awakening"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-traumatic focal epilepsy of the left frontal lobe, secondary to prior traumatic brain injury, with associated right hemiplegia from the underlying structural lesion.\n\n1. Non-lesional (genetic/idiopathic) focal epilepsy arising from the left frontal lobe\n2. Frontal lobe epilepsy due to a post-traumatic encephalomalacic/gliotic scar in the left frontal region\n3. Epilepsia partialis continua (Rasmussen-related) involving the left motor cortex",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Post-traumatic focal epilepsy of the left frontal lobe, secondary to prior traumatic brain injury, with associated right hemiplegia from the underlying structural lesion.",
+ "decisive_served": [
+  "witnessed description of the event",
+  "head injury history",
+  "neurological examination between events",
+  "interictal EEG"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8886,
+   "completion_tokens": 1839,
+   "total_tokens": 10725,
+   "cost": 0.00483492,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00483492,
+    "upstream_inference_prompt_cost": 0.00262812,
+    "upstream_inference_completions_cost": 0.0022068
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1758,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9301,
+   "completion_tokens": 487,
+   "total_tokens": 9788,
+   "cost": 0.00124566,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8871,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00124566,
+    "upstream_inference_prompt_cost": 0.00066126,
+    "upstream_inference_completions_cost": 0.0005844
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 388,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 32.5
+}

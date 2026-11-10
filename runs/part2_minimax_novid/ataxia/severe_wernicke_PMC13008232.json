@@ -1,0 +1,159 @@
+{
+ "questions": [
+  "Is the reason for your visit a new or recently changed symptom?",
+  "Is pain your main symptom?",
+  "Is the pain in your chest?",
+  "Is the pain in your abdomen?",
+  "Is the pain in your head?",
+  "Is the pain in a joint, arm, or leg?",
+  "Have you had a fever?",
+  "Have you felt short of breath?",
+  "Have you had nausea or vomiting?",
+  "Have you had any weakness or numbness?",
+  "Have you had any changes in your bowel movements?",
+  "Have you noticed blood in your stool, urine, or vomit?",
+  "Have you lost weight without trying?",
+  "Have you had night sweats?",
+  "Do you have any chronic medical conditions?",
+  "Do you take any prescription medications?",
+  "Do you have any medication allergies?",
+  "Do you currently smoke cigarettes?",
+  "Do you drink alcohol more than a few times per week?",
+  "Have you used recreational drugs in the past year?",
+  "Have you had any recent travel outside the country?",
+  "Have you been hospitalized or had surgery in the past year?",
+  "Have you been around anyone who is sick?",
+  "Is there anything that makes your symptom worse?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "yes",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "yes"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Would you describe your main symptom as unintentional weight loss with no other clear physical complaint?"
+ ],
+ "served": [],
+ "results": [
+  "1. Would you describe your main symptom as unintentional weight loss with no other clear physical complaint?",
+  "     not performed / not available"
+ ],
+ "dx_raw": "The patient declined to answer that follow-up, so I still don't know whether the weight loss is the main complaint or whether there are other symptoms (such as fatigue, mood changes, or appetite changes) that the patient did not consider a \"symptom.\" Before naming a diagnosis, I would ask more yes/no questions, not order investigations.\n\nDIAGNOSIS: Cannot be determined from the information given.\n\nAlternatives to still consider:\n1. Malignancy (e.g., gastrointestinal, pancreatic, lung, or hematologic cancer) causing unexplained weight loss\n2. Hyperthyroidism causing unintentional weight loss\n3. Depression or another psychiatric cause of weight loss",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Would you describe your main symptom as unintentional weight loss with no other clear physical complaint?",
+ "rationale": [
+  null
+ ],
+ "dx": "Cannot be determined from the information given.",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 2456,
+   "total_tokens": 2770,
+   "cost": 0.0029694,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0029694,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.0029472
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2415,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1087,
+   "completion_tokens": 20,
+   "total_tokens": 1107,
+   "cost": 0.00029202,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00029202,
+    "upstream_inference_prompt_cost": 0.00026802,
+    "upstream_inference_completions_cost": 2.4e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1227,
+   "completion_tokens": 134,
+   "total_tokens": 1361,
+   "cost": 0.00026658,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1093,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00026658,
+    "upstream_inference_prompt_cost": 0.00010578,
+    "upstream_inference_completions_cost": 0.0001608
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 36.7
+}

@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Is the inability to move your eyes sideways present since birth?",
+  "Do you have difficulty moving your eyes vertically (up and down)?",
+  "Do you experience double vision when looking straight ahead?",
+  "Have you had any recent head trauma or neck injury?",
+  "Do you have a history of seizures?",
+  "Are there other family members with similar eye movement problems?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside examination of voluntary saccades and pursuit in all directions",
+  "Video-oculography (VOG) to quantify horizontal saccade velocity and amplitude",
+  "MRI of the brain with thin cuts through the pons and midbrain"
+ ],
+ "served": [
+  "smooth pursuit and saccades",
+  "video-oculography / eye-movement recording",
+  "MRI brain with gadolinium"
+ ],
+ "results": [
+  "1. Bedside examination of voluntary saccades and pursuit in all directions",
+  "     smooth pursuit and saccades: ocular motor apraxia - failure to initiate voluntary horizontal saccades with compensatory head thrusts",
+  "2. Video-oculography (VOG) to quantify horizontal saccade velocity and amplitude",
+  "     video-oculography / eye-movement recording: failure to initiate voluntary horizontal saccades with compensatory head thrusts; ocular motor apraxia",
+  "3. MRI of the brain with thin cuts through the pons and midbrain",
+  "     MRI brain with gadolinium: cerebellar vermis hypoplasia with molar tooth sign; no abnormal enhancement"
+ ],
+ "dx_raw": "DIAGNOSIS: Joubert syndrome (caused by a mutation in genes involved in primary cilia function, such as C5orf42 or TMEM67)\nAlternatives: COACH syndrome (Cerebellar vermis hypoplasia, Oligophrenia, Ataxia, Coloboma, Hepatic fibrosis)\nAlternatives: Arima syndrome",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination of voluntary saccades and pursuit in all directions\n2. Video-oculography (VOG) to quantify horizontal saccade velocity and amplitude\n3. MRI of the brain with thin cuts through the pons and midbrain",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Joubert syndrome (caused by a mutation in genes involved in primary cilia function, such as C5orf42 or TMEM67)",
+ "decisive_served": [
+  "smooth pursuit and saccades"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 184,
+   "completion_tokens": 82,
+   "total_tokens": 266,
+   "cost": 6.614e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.614e-05,
+    "upstream_inference_prompt_cost": 2.76e-05,
+    "upstream_inference_completions_cost": 3.854e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 527,
+   "completion_tokens": 53,
+   "total_tokens": 580,
+   "cost": 0.00010396,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010396,
+    "upstream_inference_prompt_cost": 7.905e-05,
+    "upstream_inference_completions_cost": 2.491e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 827,
+   "completion_tokens": 83,
+   "total_tokens": 910,
+   "cost": 9.4452e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.4452e-05,
+    "upstream_inference_prompt_cost": 5.5442e-05,
+    "upstream_inference_completions_cost": 3.901e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_3_joubert_apraxia_PMC8490194.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 21.6
+}

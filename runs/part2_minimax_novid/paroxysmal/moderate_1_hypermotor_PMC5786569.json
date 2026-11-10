@@ -1,0 +1,210 @@
+{
+ "questions": [
+  "Are you here today because of a symptom that is bothering you?",
+  "Is this a new symptom (started within the past 3 months)?",
+  "Do you currently have pain?",
+  "Have you had any unintentional weight loss in the past 6 months?",
+  "Do you have a fever or feel feverish?",
+  "Do you have night sweats?",
+  "Do you feel more fatigued than usual?",
+  "Do you have chest pain or discomfort?",
+  "Do you have shortness of breath?",
+  "Do you have a cough?",
+  "Do you have abdominal pain?",
+  "Do you have nausea or vomiting?",
+  "Do you have a headache?",
+  "Have you had any weakness, numbness, or tingling?",
+  "Do you have any chronic medical conditions?",
+  "Do you take any prescription medications?",
+  "Do you have any allergies to medications?",
+  "Do you smoke?",
+  "Do you drink alcohol regularly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Blood pressure measurement",
+  "Heart rate and rhythm assessment",
+  "Body mass index calculation",
+  "Cardiac auscultation",
+  "Pulmonary auscultation",
+  "Abdominal palpation",
+  "Peripheral pulse examination",
+  "Skin examination",
+  "Lymph node palpation",
+  "Complete blood count",
+  "Basic metabolic panel",
+  "Fasting lipid panel",
+  "Hemoglobin A1c",
+  "Urinalysis",
+  "Resting 12-lead electrocardiogram"
+ ],
+ "served": [
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose and HbA1c",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Blood pressure measurement",
+  "     not performed / not available",
+  "2. Heart rate and rhythm assessment",
+  "     not performed / not available",
+  "3. Body mass index calculation",
+  "     not performed / not available",
+  "4. Cardiac auscultation",
+  "     not performed / not available",
+  "5. Pulmonary auscultation",
+  "     not performed / not available",
+  "6. Abdominal palpation",
+  "     not performed / not available",
+  "7. Peripheral pulse examination",
+  "     not performed / not available",
+  "8. Skin examination",
+  "     not performed / not available",
+  "9. Lymph node palpation",
+  "     not performed / not available",
+  "10. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "11. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "12. Fasting lipid panel",
+  "     not performed / not available",
+  "13. Hemoglobin A1c",
+  "     blood glucose and HbA1c: normal",
+  "14. Urinalysis",
+  "     urinalysis: normal",
+  "15. Resting 12-lead electrocardiogram",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: No active disease identified; healthy asymptomatic patient (routine health maintenance encounter)\nSubclinical hypothyroidism\nOccult malignancy (e.g., early hematologic or solid tumor)\nLatent tuberculosis infection",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Blood pressure measurement\n2. Heart rate and rhythm assessment\n3. Body mass index calculation\n4. Cardiac auscultation\n5. Pulmonary auscultation\n6. Abdominal palpation\n7. Peripheral pulse examination\n8. Skin examination\n9. Lymph node palpation\n10. Complete blood count\n11. Basic metabolic panel\n12. Fasting lipid panel\n13. Hemoglobin A1c\n14. Urinalysis\n15. Resting 12-lead electrocardiogram",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "No active disease identified; healthy asymptomatic patient (routine health maintenance encounter)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 8089,
+   "total_tokens": 8403,
+   "cost": 0.009729,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.009729,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.0097068
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 8746,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 940,
+   "completion_tokens": 4117,
+   "total_tokens": 5057,
+   "cost": 0.00516432,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00516432,
+    "upstream_inference_prompt_cost": 0.00022392,
+    "upstream_inference_completions_cost": 0.0049404
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4527,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1350,
+   "completion_tokens": 204,
+   "total_tokens": 1554,
+   "cost": 0.00043812,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 882,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00043812,
+    "upstream_inference_prompt_cost": 0.00019332,
+    "upstream_inference_completions_cost": 0.0002448
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 197,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 155.4
+}

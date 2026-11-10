@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Do you have a history of thyroid disease?",
+  "Have you had any recent trauma to your head or eyes?",
+  "Are you currently experiencing double vision?",
+  "Do you have pain when moving your eyes?",
+  "Is the bulging in your eyes new or has it been present for a long time?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "adduction in horizontal gaze (each eye)",
+  "MRI brain with DWI",
+  "MRI sella and orbits"
+ ],
+ "results": [
+  "1. nystagmus: direction and whether it changes with gaze: see-saw nystagmus",
+  "2. adduction in horizontal gaze (each eye): adduction paresis of the LEFT eye with dissociated abducting paresis of the right eye on rightward gaze - internuclear ophthalmoplegia",
+  "3. MRI brain with DWI: bilateral dorsomedial PONTINE and LEFT THALAMIC infarction",
+  "4. MRI sella and orbits: normal - no parasellar or suprasellar mass"
+ ],
+ "dx_raw": "DIAGNOSIS: Bilateral internuclear ophthalmoplegia and see-saw nystagmus secondary to acute bilateral dorsomedial pontine and left thalamic infarction (paramedian basilar artery syndrome)\n\n1. Parinaud's syndrome (dorsal midbrain syndrome)\n2. Wernicke encephalopathy\n3. Myasthenia gravis",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Bilateral internuclear ophthalmoplegia and see-saw nystagmus secondary to acute bilateral dorsomedial pontine and left thalamic infarction (paramedian basilar artery syndrome)",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "adduction in horizontal gaze (each eye)",
+  "MRI brain with DWI",
+  "MRI sella and orbits"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 70,
+   "total_tokens": 4893,
+   "cost": 0.00075635,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075635,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 3.29e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5196,
+   "completion_tokens": 83,
+   "total_tokens": 5279,
+   "cost": 0.00021809,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00021809,
+    "upstream_inference_prompt_cost": 0.00017908,
+    "upstream_inference_completions_cost": 3.901e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.2,
+ "video": "mild_1_seesaw_INO_PMC6883617.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 11.8
+}

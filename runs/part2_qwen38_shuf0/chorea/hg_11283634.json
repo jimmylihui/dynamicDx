@@ -1,0 +1,153 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the pain located in your right leg?",
+  "Did this issue start after a fall or injury?",
+  "Do you have a history of seizures or epilepsy?",
+  "Are you currently taking any medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside neurological examination assessing tone, power, and reflexes in all four limbs",
+  "Serum electrolytes (sodium, potassium, calcium, magnesium)",
+  "Serum creatine kinase level",
+  "Urine myoglobin test",
+  "MRI of the brain"
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "creatine kinase",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences"
+ ],
+ "results": [
+  "1. Bedside neurological examination assessing tone, power, and reflexes in all four limbs",
+  "     muscle tone examination: reduced tone with continuous involuntary movements",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "2. Serum electrolytes (sodium, potassium, calcium, magnesium)",
+  "     serum electrolytes, urea and creatinine: creatinine 17 mg/L, eGFR 31 mL/min/1.73 m2",
+  "     serum calcium, magnesium and phosphate: normal",
+  "3. Serum creatine kinase level",
+  "     creatine kinase: normal",
+  "4. Urine myoglobin test",
+  "     not performed / not available",
+  "5. MRI of the brain",
+  "     MRI diffusion-weighted sequences: no restricted diffusion",
+  "     MRI susceptibility-weighted sequences: no susceptibility abnormality"
+ ],
+ "dx_raw": "DIAGNOSIS: Drug-induced acute dystonia (likely secondary to dopamine receptor blocking agents)\n\nAlternatives:\n1. Tardive dyskinesia\n2. Acute choreiform movement disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside neurological examination assessing tone, power, and reflexes in all four limbs\n2. Serum electrolytes (sodium, potassium, calcium, magnesium)\n3. Serum creatine kinase level\n4. Urine myoglobin test\n5. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Drug-induced acute dystonia (likely secondary to dopamine receptor blocking agents)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 18646,
+   "completion_tokens": 57,
+   "total_tokens": 18703,
+   "cost": 0.00282369,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00282369,
+    "upstream_inference_prompt_cost": 0.0027969,
+    "upstream_inference_completions_cost": 2.679e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 18933,
+   "completion_tokens": 58,
+   "total_tokens": 18991,
+   "cost": 0.000414474,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 18304,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000414474,
+    "upstream_inference_prompt_cost": 0.000387214,
+    "upstream_inference_completions_cost": 2.726e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 19267,
+   "completion_tokens": 43,
+   "total_tokens": 19310,
+   "cost": 0.000388916,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 18816,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000388916,
+    "upstream_inference_prompt_cost": 0.000368706,
+    "upstream_inference_completions_cost": 2.021e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 23.4
+}

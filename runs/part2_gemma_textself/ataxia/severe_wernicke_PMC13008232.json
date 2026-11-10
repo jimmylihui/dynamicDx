@@ -1,0 +1,131 @@
+{
+ "questions": [
+  "Do you have trouble controlling your bladder?",
+  "Have you noticed a decline in your memory or thinking?",
+  "Do you have a tremor in your hands or legs?",
+  "Do you feel numbness or tingling in your feet?",
+  "Did these symptoms start suddenly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI Brain",
+  "Large volume lumbar puncture"
+ ],
+ "served": [
+  "brain MRI",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     brain MRI: bilateral symmetric hyperintensity in the mammillary bodies, thalami and periaqueductal midbrain, with the LENTIFORM FORK SIGN; reversed after treatment",
+  "2. Large volume lumbar puncture",
+  "     lumbar puncture / CSF: normal cells, protein and glucose; no oligoclonal bands"
+ ],
+ "dx_raw": "DIAGNOSIS: Wernicke encephalopathy due to thiamine deficiency\nKorsakoff syndrome\nB12 deficiency\nMetabolic encephalopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Large volume lumbar puncture",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Wernicke encephalopathy due to thiamine deficiency",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 254,
+   "completion_tokens": 1642,
+   "total_tokens": 1896,
+   "cost": 0.00058368,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00058368,
+    "upstream_inference_prompt_cost": 2.54e-05,
+    "upstream_inference_completions_cost": 0.00055828
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1463,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 542,
+   "completion_tokens": 1652,
+   "total_tokens": 2194,
+   "cost": 0.00061588,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00061588,
+    "upstream_inference_prompt_cost": 5.42e-05,
+    "upstream_inference_completions_cost": 0.00056168
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1619,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 720,
+   "completion_tokens": 474,
+   "total_tokens": 1194,
+   "cost": 0.00023316,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00023316,
+    "upstream_inference_prompt_cost": 7.2e-05,
+    "upstream_inference_completions_cost": 0.00016116
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 428,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 117.5
+}

@@ -1,0 +1,190 @@
+{
+ "questions": [
+  "Do you have a history of Parkinson's disease?",
+  "Are you currently taking any medications for Parkinson's disease?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of stroke?",
+  "Do you have a history of essential tremor?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's hands at rest on his lap for 30 seconds to check for a pill-rolling tremor or other involuntary movements.",
+  "Perform a bedside neurological examination of the cranial nerves, specifically testing for extraocular movements and ptosis.",
+  "Perform a bedside neurological examination of the upper limbs, specifically testing for muscle tone (rigidity) and strength.",
+  "Perform a bedside neurological examination of the lower limbs, specifically testing for muscle tone (rigidity) and strength.",
+  "Perform a bedside neurological examination of the face, specifically testing for facial symmetry and involuntary movements (e.g., blepharospasm).",
+  "Perform a bedside neurological examination of the neck, specifically palpating the sternocleidomastoid and trapezius muscles for tone abnormalities or asymmetry."
+ ],
+ "served": [
+  "observation for excessive slowness or uneconomic posture",
+  "cranial nerve examination",
+  "video-oculography / eye-movement recording",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "MRC power in all four limbs"
+ ],
+ "results": [
+  "R1 ASK Do you have a history of Parkinson's disease?; Are you currently taking any medications for Parkinson's disease? -> ['no', 'no']",
+  "R2 ORDER Observe the patient's hands at rest on his lap for 30 seconds to check for a pill-rolling tremor or other involuntary movements. -> [['observation for excessive slowness or uneconomic posture']]",
+  "R3 ASK Do you have a history of diabetes? -> ['no']",
+  "R4 ORDER Perform a bedside neurological examination of the cranial nerves, specifically testing for extraocular movements and ptosis. -> [['cranial nerve examination', 'video-oculography / eye-movement recording']]",
+  "R5 ORDER Perform a bedside neurological examination of the upper limbs, specifically testing for muscle tone (rigidity) and strength. -> [['muscle tone (spasticity, rigidity, paratonia)', 'MRC power in all four limbs']]",
+  "R6 ORDER Perform a bedside neurological examination of the lower limbs, specifically testing for muscle tone (rigidity) and strength. -> [['muscle tone (spasticity, rigidity, paratonia)', 'MRC power in all four limbs']]",
+  "R7 ASK Do you have a history of stroke? -> ['no']",
+  "R8 ORDER Perform a bedside neurological examination of the face, specifically testing for facial symmetry and involuntary movements (e.g., blepharospasm). -> [['cranial nerve examination']]",
+  "R9 ORDER Perform a bedside neurological examination of the neck, specifically palpating the sternocleidomastoid and trapezius muscles for tone abnormalities or asymmetry. -> [[]]",
+  "R10 ASK Do you have a history of essential tremor? -> ['no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Cervical dystonia (spasmodic torticollis) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of Parkinson's disease?",
+    "Are you currently taking any medications for Parkinson's disease?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Observe the patient's hands at rest on his lap for 30 seconds to check for a pill-rolling tremor or other involuntary movements."
+   ],
+   "result": [
+    [
+     "observation for excessive slowness or uneconomic posture"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Perform a bedside neurological examination of the cranial nerves, specifically testing for extraocular movements and ptosis."
+   ],
+   "result": [
+    [
+     "cranial nerve examination",
+     "video-oculography / eye-movement recording"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Perform a bedside neurological examination of the upper limbs, specifically testing for muscle tone (rigidity) and strength."
+   ],
+   "result": [
+    [
+     "muscle tone (spasticity, rigidity, paratonia)",
+     "MRC power in all four limbs"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Perform a bedside neurological examination of the lower limbs, specifically testing for muscle tone (rigidity) and strength."
+   ],
+   "result": [
+    [
+     "muscle tone (spasticity, rigidity, paratonia)",
+     "MRC power in all four limbs"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of stroke?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Perform a bedside neurological examination of the face, specifically testing for facial symmetry and involuntary movements (e.g., blepharospasm)."
+   ],
+   "result": [
+    [
+     "cranial nerve examination"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Perform a bedside neurological examination of the neck, specifically palpating the sternocleidomastoid and trapezius muscles for tone abnormalities or asymmetry."
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of essential tremor?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Cervical dystonia (spasmodic torticollis)"
+  }
+ ],
+ "dx": "Cervical dystonia (spasmodic torticollis)",
+ "dx_raw": "DIAGNOSIS: Cervical dystonia (spasmodic torticollis)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0023,
+ "n_frames": 32,
+ "duration_s": 22.9,
+ "video": "functional_head_tremor_vibration_PMC12999016.mp4",
+ "line": "functional",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 48.9
+}

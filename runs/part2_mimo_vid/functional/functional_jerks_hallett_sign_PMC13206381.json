@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Are you feeling weak in your arms or legs?",
+  "Do you have numbness or tingling anywhere?",
+  "Have you noticed any changes in your vision?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Detailed cranial nerve examination",
+  "Facial sensation testing with cotton wisp",
+  "Facial sensation testing with pinprick",
+  "Corneal reflex testing",
+  "Jaw jerk reflex testing",
+  "MRI of brain"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "cranial nerve examination",
+  "cranial nerve examination",
+  "MRI brain"
+ ],
+ "results": [
+  "1. Detailed cranial nerve examination",
+  "     cranial nerve examination: normal - 'neurologic exam otherwise normal'",
+  "2. Facial sensation testing with cotton wisp",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "3. Facial sensation testing with pinprick",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "4. Corneal reflex testing",
+  "     cranial nerve examination: normal - 'neurologic exam otherwise normal'",
+  "5. Jaw jerk reflex testing",
+  "     cranial nerve examination: normal - 'neurologic exam otherwise normal'",
+  "6. MRI of brain",
+  "     MRI brain: normal"
+ ],
+ "dx_raw": "DIAGNOSIS:\nPersistent idiopathic facial pain\n\nAtypical trigeminal neuralgia\nMigraine with orofacial features\nTemporomandibular joint dysfunction",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "Based on the video frames showing a doctor using a tuning fork to test facial sensation and examining the trigeminal nerve area:\n\n1. Detailed cranial nerve examination\n2. Facial sensation testing with cotton wisp\n3. Facial sensation testing with pinprick\n4. Corneal reflex testing\n5. Jaw jerk reflex testing\n6. MRI of brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Persistent idiopathic facial pain",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5567,
+   "completion_tokens": 1964,
+   "total_tokens": 7531,
+   "cost": 0.0005741512,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5504,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005741512,
+    "upstream_inference_prompt_cost": 2.42312e-05,
+    "upstream_inference_completions_cost": 0.00054992
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1926,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5799,
+   "completion_tokens": 529,
+   "total_tokens": 6328,
+   "cost": 0.0002048312,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5504,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002048312,
+    "upstream_inference_prompt_cost": 5.67112e-05,
+    "upstream_inference_completions_cost": 0.00014812
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 453,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 6100,
+   "completion_tokens": 632,
+   "total_tokens": 6732,
+   "cost": 0.000240688,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5760,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000240688,
+    "upstream_inference_prompt_cost": 6.3728e-05,
+    "upstream_inference_completions_cost": 0.00017696
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 592,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 54.3
+}

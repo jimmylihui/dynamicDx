@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Do you have weakness in your arms or legs?",
+  "Do you have difficulty swallowing?",
+  "Do you have trouble balancing?",
+  "Do you have any changes in your vision?",
+  "Do you feel any numbness or tingling?",
+  "Have you had a stroke before?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Do you have a history of heart disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "action specificity and task dependence",
+  "medication and toxin exposure history",
+  "dystonia rating scale (BFM / OMDRS)"
+ ],
+ "results": [
+  "1. action specificity and task dependence: dystonia appears on INITIATING SPEECH; asymptomatic at rest",
+  "2. medication and toxin exposure history: methotrexate 15 mg weekly for six years for psoriatic arthritis; the dystonia improved after switching to sulfasalazine",
+  "3. dystonia rating scale (BFM / OMDRS): Oromandibular Dystonia Rating Scale 177 at baseline, 103 three months after the drug switch, 75 after adding botulinum toxin"
+ ],
+ "dx_raw": "DIAGNOSIS: Methotrexate-induced oromandibular dystonia\n\nPrimary oromandibular dystonia\nDrug-induced dystonia\nTardive dyskinesia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Methotrexate-induced oromandibular dystonia",
+ "decisive_served": [
+  "action specificity and task dependence",
+  "medication and toxin exposure history",
+  "dystonia rating scale (BFM / OMDRS)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1700,
+   "total_tokens": 10398,
+   "cost": 0.0014478,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014478,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.000578
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1557,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9151,
+   "completion_tokens": 835,
+   "total_tokens": 9986,
+   "cost": 0.001199,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001199,
+    "upstream_inference_prompt_cost": 0.0009151,
+    "upstream_inference_completions_cost": 0.0002839
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 858,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "moderate_tardive_PMC10656108.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 86.6
+}

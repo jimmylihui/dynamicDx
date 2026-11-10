@@ -1,0 +1,158 @@
+{
+ "questions": [
+  "Does the shaking get worse as you reach for an object?",
+  "Does the shaking happen when your arm is resting?",
+  "Do you have trouble with your balance?",
+  "Have you ever had a stroke?",
+  "Do you have similar movements in other parts of your body?",
+  "Do you have stiffness in your muscles?",
+  "Have you noticed your handwriting getting smaller?",
+  "Do you have a family history of similar shaking?",
+  "Are you taking any medications that could cause this?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Thyroid function tests",
+  "Liver function tests",
+  "Serum electrolytes and glucose",
+  "MRI Brain"
+ ],
+ "served": [
+  "thyroid function (TSH, free T4)",
+  "TSH, free T4 and free T3",
+  "liver function tests",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences"
+ ],
+ "results": [
+  "1. Thyroid function tests",
+  "     thyroid function (TSH, free T4): suppressed TSH with elevated free T4",
+  "     TSH, free T4 and free T3: T3 8.26 nmol/L (normal 0.92-2.79) and free T4 58.13 pmol/L (normal 11.50-22.70) with suppressed TSH",
+  "2. Liver function tests",
+  "     liver function tests: normal",
+  "3. Serum electrolytes and glucose",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     blood glucose: normal",
+  "4. MRI Brain",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperthyroidism\nGraves' disease\nToxic multinodular goiter\nToxic adenoma",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Thyroid function tests\n2. Liver function tests\n3. Serum electrolytes and glucose\n4. MRI Brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperthyroidism",
+ "decisive_served": [
+  "TSH, free T4 and free T3",
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 4155,
+   "total_tokens": 12853,
+   "cost": 0.0022825,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0022825,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0014127
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3830,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9104,
+   "completion_tokens": 1729,
+   "total_tokens": 10833,
+   "cost": 0.00149826,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00149826,
+    "upstream_inference_prompt_cost": 0.0009104,
+    "upstream_inference_completions_cost": 0.00058786
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1658,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9381,
+   "completion_tokens": 1025,
+   "total_tokens": 10406,
+   "cost": 0.0012866,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012866,
+    "upstream_inference_prompt_cost": 0.0009381,
+    "upstream_inference_completions_cost": 0.0003485
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 942,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "c_9815763.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 304.9
+}

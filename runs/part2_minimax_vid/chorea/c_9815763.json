@@ -1,0 +1,146 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the pain in your hands or wrists?",
+  "Do you have numbness or tingling in your fingers?",
+  "Is the pain worse at night?",
+  "Do you have morning stiffness in your hands?",
+  "Do you have pain in any other joints?",
+  "Do you have a fever?",
+  "Have you recently injured your hands or wrists?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Measure vital signs (blood pressure, heart rate, respiratory rate, temperature)",
+  "Inspect hands and upper extremities for visible skin changes, swelling, or deformity",
+  "Palpate peripheral pulses",
+  "Auscultate heart and lungs",
+  "Test range of motion in shoulders, elbows, wrists, and fingers"
+ ],
+ "served": [
+  "vital signs",
+  "skin examination"
+ ],
+ "results": [
+  "1. Measure vital signs (blood pressure, heart rate, respiratory rate, temperature)",
+  "     vital signs: normal, afebrile",
+  "2. Inspect hands and upper extremities for visible skin changes, swelling, or deformity",
+  "     skin examination: no rash",
+  "3. Palpate peripheral pulses",
+  "     not performed / not available",
+  "4. Auscultate heart and lungs",
+  "     not performed / not available",
+  "5. Test range of motion in shoulders, elbows, wrists, and fingers",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional (psychogenic) movement disorder\nAlternatives:\nEssential tremor\nAkathisia\nTic disorder",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Measure vital signs (blood pressure, heart rate, respiratory rate, temperature)\n2. Inspect hands and upper extremities for visible skin changes, swelling, or deformity\n3. Palpate peripheral pulses\n4. Auscultate heart and lungs\n5. Test range of motion in shoulders, elbows, wrists, and fingers",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional (psychogenic) movement disorder",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2111,
+   "total_tokens": 9173,
+   "cost": 0.00462444,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00462444,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.0025332
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2236,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7409,
+   "completion_tokens": 1130,
+   "total_tokens": 8539,
+   "cost": 0.00189246,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00189246,
+    "upstream_inference_prompt_cost": 0.00053646,
+    "upstream_inference_completions_cost": 0.001356
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1325,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7675,
+   "completion_tokens": 592,
+   "total_tokens": 8267,
+   "cost": 0.00126522,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7282,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00126522,
+    "upstream_inference_prompt_cost": 0.00055482,
+    "upstream_inference_completions_cost": 0.0007104
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 697,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "c_9815763.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 57.9
+}

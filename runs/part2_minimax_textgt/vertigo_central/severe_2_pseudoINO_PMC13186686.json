@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Did the double vision come on suddenly?",
+  "Have you had any recent head injury, facial injury, or surgery?",
+  "Are you over the age of 50?",
+  "Do you have a history of multiple sclerosis?",
+  "Have you ever had any previous episodes of double vision, vision loss, or neurological symptoms?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Do you have atrial fibrillation or heart disease?",
+  "Do you have any weakness, numbness, or clumsiness in your arms or legs?",
+  "Do you have vertigo or difficulty with balance?",
+  "Do you have difficulty swallowing or slurred speech?",
+  "Do you have a history of cancer?",
+  "Have you had any recent infections or tick bites?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Forced duction test on the eye that fails to adduct",
+  "MRI brain with and without contrast, with thin-section imaging through the brainstem and MRA of the posterior circulation"
+ ],
+ "served": [
+  "forced duction test",
+  "MRI brain with gadolinium",
+  "CT / MR angiography (posterior circulation)"
+ ],
+ "results": [
+  "1. Forced duction test on the eye that fails to adduct",
+  "     forced duction test: restriction consistent with a mechanical cause",
+  "2. MRI brain with and without contrast, with thin-section imaging through the brainstem and MRA of the posterior circulation",
+  "     MRI brain with gadolinium: normal brainstem; subtle medial orbital wall fracture with medial rectus involvement",
+  "     CT / MR angiography (posterior circulation): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Traumatic pseudo-internuclear ophthalmoplegia due to medial rectus entrapment from a medial orbital wall fracture\n\nTrue internuclear ophthalmoplegia from a brainstem (MLF) lesion\nCongenital cranial dysinnervation disorder (e.g., Duane's syndrome or congenital fibrosis of the medial rectus)\nThyroid eye disease with medial rectus restriction",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Forced duction test on the eye that fails to adduct\n2. MRI brain with and without contrast, with thin-section imaging through the brainstem and MRA of the posterior circulation",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Traumatic pseudo-internuclear ophthalmoplegia due to medial rectus entrapment from a medial orbital wall fracture",
+ "decisive_served": [
+  "forced duction test"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 341,
+   "completion_tokens": 8526,
+   "total_tokens": 8867,
+   "cost": 0.01030614,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01030614,
+    "upstream_inference_prompt_cost": 7.494e-05,
+    "upstream_inference_completions_cost": 0.0102312
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9504,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 871,
+   "completion_tokens": 7227,
+   "total_tokens": 8098,
+   "cost": 0.00887562,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00887562,
+    "upstream_inference_prompt_cost": 0.00020322,
+    "upstream_inference_completions_cost": 0.0086724
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7983,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1093,
+   "completion_tokens": 633,
+   "total_tokens": 1726,
+   "cost": 0.00090654,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 754,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00090654,
+    "upstream_inference_prompt_cost": 0.00014694,
+    "upstream_inference_completions_cost": 0.0007596
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 630,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 181.5
+}

@@ -1,0 +1,150 @@
+{
+ "questions": [
+  "Is the movement present during sleep?",
+  "Do you have a family history of similar movements or neurological disease?",
+  "Have you recently started any new medications, particularly antipsychotics or antiemetics?",
+  "Do you have a known history of Huntington's disease?",
+  "Are you currently experiencing significant stress or anxiety?",
+  "Do you have a history of stroke or traumatic brain injury?",
+  "Is the movement suppressible by voluntary effort for short periods?",
+  "Do you have a history of Wilson's disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI of the brain with attention to the basal ganglia",
+  "Serum ceruloplasmin and 24-hour urinary copper",
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "Peripheral blood smear for acanthocytes"
+ ],
+ "served": [
+  "brain MRI with contrast",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin",
+  "peripheral blood film for acanthocytes"
+ ],
+ "results": [
+  "1. MRI of the brain with attention to the basal ganglia",
+  "     brain MRI with contrast: 1.5T with gadolinium - frontal-predominant atrophy but NO focal lesion, with normal basal ganglia structure and volume",
+  "2. Serum ceruloplasmin and 24-hour urinary copper",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin: normal",
+  "3. Slit-lamp examination for Kayser-Fleischer rings",
+  "     not performed / not available",
+  "4. Peripheral blood smear for acanthocytes",
+  "     peripheral blood film for acanthocytes: no acanthocytes"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic hemichorea-hemiballismus\nHuntington's disease (preclinical or early stage)\nNeuroacanthocytosis (despite negative smear, due to low sensitivity)\nFunctional movement disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with attention to the basal ganglia\n2. Serum ceruloplasmin and 24-hour urinary copper\n3. Slit-lamp examination for Kayser-Fleischer rings\n4. Peripheral blood smear for acanthocytes",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic hemichorea-hemiballismus",
+ "decisive_served": [
+  "brain MRI with contrast"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 189,
+   "completion_tokens": 115,
+   "total_tokens": 304,
+   "cost": 8.24e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.24e-05,
+    "upstream_inference_prompt_cost": 2.835e-05,
+    "upstream_inference_completions_cost": 5.405e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 606,
+   "completion_tokens": 54,
+   "total_tokens": 660,
+   "cost": 0.00011628,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011628,
+    "upstream_inference_prompt_cost": 9.09e-05,
+    "upstream_inference_completions_cost": 2.538e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 896,
+   "completion_tokens": 52,
+   "total_tokens": 948,
+   "cost": 9.0232e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.0232e-05,
+    "upstream_inference_prompt_cost": 6.5792e-05,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11093232.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.6
+}

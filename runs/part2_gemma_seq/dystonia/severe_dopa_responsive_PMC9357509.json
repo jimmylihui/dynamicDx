@@ -1,0 +1,131 @@
+{
+ "questions": [
+  "Do you have weakness in your right foot?",
+  "Do you have numbness in your right foot?",
+  "Did this start suddenly?",
+  "Have you had any recent trauma to your right leg?",
+  "Do you have diabetes?",
+  "Do you have any weakness in your other leg?",
+  "Do you have any weakness in your arms?",
+  "Do you have any back pain?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Physical examination of the lower limbs (muscle bulk, tone, reflexes, sensation)",
+  "Nerve conduction study (NCS) and Electromyography (EMG) of the right lower limb",
+  "Manual muscle testing of the right ankle dorsiflexors",
+  "Assessment of gait while the patient is distracted"
+ ],
+ "served": [
+  "muscle tone examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "nerve conduction studies",
+  "needle EMG of the affected muscles",
+  "limb strength (MRC) examination",
+  "coordination examination (limb and truncal)"
+ ],
+ "results": [
+  "R1 ASK Do you have weakness in your right foot?; Do you have numbness in your right foot?; Did this start suddenly?; Have you had any recent trauma to your right leg?; Do you have diabetes?; Do you have any weakness in your other leg?; Do you have any weakness in your arms?; Do you have any back pain? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ORDER Physical examination of the lower limbs (muscle bulk, tone, reflexes, sensation); Nerve conduction study (NCS) and Electromyography (EMG) of the right lower limb -> [['muscle tone examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)'], ['nerve conduction studies', 'needle EMG of the affected muscles']]",
+  "R3 ORDER Manual muscle testing of the right ankle dorsiflexors; Assessment of gait while the patient is distracted -> [['limb strength (MRC) examination'], ['coordination examination (limb and truncal)']]",
+  "R4 DIAGNOSIS Functional Neurological Disorder (Functional Gait Disorder) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have weakness in your right foot?",
+    "Do you have numbness in your right foot?",
+    "Did this start suddenly?",
+    "Have you had any recent trauma to your right leg?",
+    "Do you have diabetes?",
+    "Do you have any weakness in your other leg?",
+    "Do you have any weakness in your arms?",
+    "Do you have any back pain?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Physical examination of the lower limbs (muscle bulk, tone, reflexes, sensation)",
+    "Nerve conduction study (NCS) and Electromyography (EMG) of the right lower limb"
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)"
+    ],
+    [
+     "nerve conduction studies",
+     "needle EMG of the affected muscles"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Manual muscle testing of the right ankle dorsiflexors",
+    "Assessment of gait while the patient is distracted"
+   ],
+   "result": [
+    [
+     "limb strength (MRC) examination"
+    ],
+    [
+     "coordination examination (limb and truncal)"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Functional Neurological Disorder (Functional Gait Disorder)"
+  }
+ ],
+ "dx": "Functional Neurological Disorder (Functional Gait Disorder)",
+ "dx_raw": "DIAGNOSIS: Functional Neurological Disorder (Functional Gait Disorder)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0062,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_dopa_responsive_PMC9357509.mp4",
+ "line": "dystonia",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 397.8
+}

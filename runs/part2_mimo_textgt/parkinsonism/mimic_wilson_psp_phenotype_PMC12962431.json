@@ -1,0 +1,143 @@
+{
+ "questions": [
+  "Did your symptoms start suddenly?",
+  "Have you had any falls recently?",
+  "Do you have difficulty swallowing food or liquids?",
+  "Have you noticed your voice becoming slurred or quieter?",
+  "Do you feel stiffness or slowness in your movements?",
+  "Do you have trouble looking downward, such as when walking or reading?",
+  "Have you experienced any changes in your memory or thinking?",
+  "Have you had any tremors?",
+  "Have you experienced double or blurred vision?",
+  "Have you had any headaches or vomiting recently?",
+  "Are you taking any new medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "yes",
+  "5": "yes",
+  "6": "yes",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "Brain MRI (sagittal and axial sequences through the midbrain)",
+  "Detailed oculomotor examination: vertical eye movements with head tilting (doll's eye maneuver) to differentiate supranuclear from nuclear/infranuclear gaze palsy"
+ ],
+ "served": [
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "vertical saccades and gaze range (up and down)",
+  "doll's head (oculocephalic) manoeuvre"
+ ],
+ "results": [
+  "1. Brain MRI (sagittal and axial sequences through the midbrain)",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): predominant midbrain atrophy with midbrain-to-pons ratio 0.20 (normal >0.52), plus mild cerebral and cerebellar atrophy - THIS LOOKS LIKE PSP AND IS NOT",
+  "2. Detailed oculomotor examination: vertical eye movements with head tilting (doll's eye maneuver) to differentiate supranuclear from nuclear/infranuclear gaze palsy",
+  "     vertical saccades and gaze range (up and down): vertical DOWNGAZE PALSY with broken smooth pursuit and slow hypometric saccades",
+  "     doll's head (oculocephalic) manoeuvre: not performed"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive supranuclear palsy (PSP) — 4-repeat tauopathy causing midbrain-predominant neurodegeneration\n\nAlternatives:\n1. Corticobasal degeneration\n2. Multiple system atrophy — parkinsonian variant\n3. Paraneoplastic brainstem encephalitis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Brain MRI (sagittal and axial sequences through the midbrain)\n2. Detailed oculomotor examination: vertical eye movements with head tilting (doll's eye maneuver) to differentiate supranuclear from nuclear/infranuclear gaze palsy",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Progressive supranuclear palsy (PSP) — 4-repeat tauopathy causing midbrain-predominant neurodegeneration",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 418,
+   "completion_tokens": 3083,
+   "total_tokens": 3501,
+   "cost": 0.0008954176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008954176,
+    "upstream_inference_prompt_cost": 3.21776e-05,
+    "upstream_inference_completions_cost": 0.00086324
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2955,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 870,
+   "completion_tokens": 827,
+   "total_tokens": 1697,
+   "cost": 0.0003270176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003270176,
+    "upstream_inference_prompt_cost": 9.54576e-05,
+    "upstream_inference_completions_cost": 0.00023156
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 772,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1181,
+   "completion_tokens": 2575,
+   "total_tokens": 3756,
+   "cost": 0.0007721896,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 832,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007721896,
+    "upstream_inference_prompt_cost": 5.11896e-05,
+    "upstream_inference_completions_cost": 0.000721
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2503,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_wilson_psp_phenotype_PMC12962431.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 1362.4
+}

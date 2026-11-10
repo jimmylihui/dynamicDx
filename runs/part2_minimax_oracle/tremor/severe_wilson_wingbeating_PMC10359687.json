@@ -1,0 +1,127 @@
+{
+ "questions": [
+  "Is the tremor in your hands worse on one side than the other?",
+  "Is the tremor present even when your hands are completely at rest?",
+  "Have you noticed slowness in your daily activities, such as getting dressed or walking?",
+  "Do you feel stiffness or rigidity in your arms or legs?",
+  "Does drinking alcohol reduce the tremor?",
+  "Do you have any family members with a similar tremor?",
+  "Have you experienced a loss of smell?",
+  "Do you act out your dreams while sleeping (such as punching or kicking)?",
+  "Have you become more constipated recently?",
+  "Has your handwriting become smaller or more difficult to read?",
+  "Do you have difficulty with your balance or have you had any falls?",
+  "Are you currently taking any medications for this condition?",
+  "Did the symptoms begin gradually over months to years?",
+  "Have you ever been diagnosed with a stroke or brain lesion?",
+  "Are you over the age of 60?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "genetic testing (targeted panel or exome)",
+  "skin biopsy"
+ ],
+ "results": [
+  "1. cognitive screen (MMSE / MoCA / FAB): MMSE 23/30 and Frontal Assessment Battery 9/18 - frontal/executive dysfunction",
+  "2. copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease",
+  "3. genetic testing (targeted panel or exome): NOTCH2NLC GGC repeat expansion - genetically confirmed NIID",
+  "4. skin biopsy: eosinophilic, p62- and ubiquitin-POSITIVE intranuclear inclusions in adipocytes, sweat gland cells and fibroblasts - diagnostic of NIID"
+ ],
+ "dx_raw": "DIAGNOSIS: Adult-onset Neuronal Intranuclear Inclusion Disease (NIID), caused by a pathogenic GGC repeat expansion in the NOTCH2NLC gene.\n\nAlternatives to consider:\n1. Fragile X-associated tremor/ataxia syndrome (FXTAS)\n2. Spinocerebellar ataxia (SCA) with parkinsonian features\n3. Corticobasal degeneration (given the asymmetric action tremor and cortical dysfunction)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Adult-onset Neuronal Intranuclear Inclusion Disease (NIID), caused by a pathogenic GGC repeat expansion in the NOTCH2NLC gene.",
+ "decisive_served": [
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "genetic testing (targeted panel or exome)",
+  "skin biopsy"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6454,
+   "completion_tokens": 997,
+   "total_tokens": 7451,
+   "cost": 0.00309492,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00309492,
+    "upstream_inference_prompt_cost": 0.00189852,
+    "upstream_inference_completions_cost": 0.0011964
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 795,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7148,
+   "completion_tokens": 436,
+   "total_tokens": 7584,
+   "cost": 0.00112224,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6439,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00112224,
+    "upstream_inference_prompt_cost": 0.00059904,
+    "upstream_inference_completions_cost": 0.0005232
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 344,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 25.4
+}

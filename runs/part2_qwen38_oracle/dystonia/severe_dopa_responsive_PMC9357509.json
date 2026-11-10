@@ -1,0 +1,116 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a fever or feel hot and cold?",
+  "Have you had a cough recently?",
+  "Do you have difficulty breathing?",
+  "Have you been in contact with anyone who was sick?",
+  "Do you have a headache?",
+  "Do you have nausea or vomiting?",
+  "Do you have diarrhea?",
+  "Do you have body aches?",
+  "Do you have a rash?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "levodopa trial",
+  "dystonia gene panel",
+  "DAT-SPECT"
+ ],
+ "results": [
+  "1. levodopa trial: DRAMATIC improvement within FOUR DAYS, sustained, with no treatment-related fluctuations",
+  "2. dystonia gene panel: GCH1-related dopa-responsive dystonia",
+  "3. DAT-SPECT: normal striatal uptake - distinguishes it from juvenile parkinsonism"
+ ],
+ "dx_raw": "DIAGNOSIS: Dopa-responsive dystonia (Segawa disease) due to GTP cyclohydrolase 1 (GCH1) deficiency",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Dopa-responsive dystonia (Segawa disease) due to GTP cyclohydrolase 1 (GCH1) deficiency",
+ "decisive_served": [
+  "levodopa trial",
+  "dystonia gene panel",
+  "DAT-SPECT"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 104,
+   "total_tokens": 4927,
+   "cost": 0.00077233,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00077233,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 4.888e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5235,
+   "completion_tokens": 34,
+   "total_tokens": 5269,
+   "cost": 0.00020091,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020091,
+    "upstream_inference_prompt_cost": 0.00018493,
+    "upstream_inference_completions_cost": 1.598e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_dopa_responsive_PMC9357509.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 11.7
+}

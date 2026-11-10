@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Are the hand movements involuntary?",
+  "Can you completely stop them when you try?",
+  "Did these movements begin suddenly?",
+  "Do they occur in both hands?",
+  "Do they continue while you are asleep?",
+  "Do you remain fully aware during the movements?",
+  "Have you had any episodes of loss of consciousness?",
+  "Have you noticed weakness on one side of your body?",
+  "Have you had numbness or tingling?",
+  "Have you had difficulty speaking or understanding speech?",
+  "Have you had any new trouble walking or keeping your balance?",
+  "Do the movements worsen when you hold your arms straight out?",
+  "Do they worsen when you reach for or hold an object?",
+  "Do they improve when you rest your hands?",
+  "Have you had similar movements before this illness?",
+  "Have you recently started or increased any medication?",
+  "Have you recently taken an antipsychotic, anti-nausea, antidepressant, or seizure medication?",
+  "Have you recently stopped taking alcohol, sedatives, or another regularly used drug?",
+  "Have you had fever or a recent infection?",
+  "Do you have liver disease?",
+  "Do you have kidney disease?",
+  "Have you had vomiting or diarrhea recently?",
+  "Have you had markedly reduced food or fluid intake recently?",
+  "Have you experienced confusion or unusual sleepiness?",
+  "Have you had a recent head injury?",
+  "Have you had a recent stroke or brain injury?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "yes",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "brain MRI with contrast",
+  "trial of glucose correction with insulin"
+ ],
+ "results": [
+  "1. blood glucose: 799 mg/dL (normal 74-106)",
+  "2. HbA1c: 11%",
+  "3. ketones (blood or urine): NEGATIVE - non-ketotic",
+  "4. brain MRI with contrast: HYPOSIGNAL involving the corpus striatum bilaterally, extending to the medial cerebral crus on T2 and FLAIR, with mild T1 HYPERSIGNAL in the basal nuclei",
+  "5. trial of glucose correction with insulin: diazepam and insulin gave partial improvement, but the extrapyramidal symptoms persisted; she was readmitted a year later with a hyperosmolar episode"
+ ],
+ "dx_raw": "DIAGNOSIS: Bilateral diabetic striatopathy (nonketotic hyperglycemia–induced chorea/ballism) due to severe uncontrolled type 2 diabetes with hyperosmolar hyperglycemia\n\nALTERNATIVE 1: Huntington disease\n\nALTERNATIVE 2: Wilson disease\n\nALTERNATIVE 3: Autoimmune or infectious basal-ganglia encephalitis",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Bilateral diabetic striatopathy (nonketotic hyperglycemia–induced chorea/ballism) due to severe uncontrolled type 2 diabetes with hyperosmolar hyperglycemia",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "brain MRI with contrast",
+  "trial of glucose correction with insulin"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 17964,
+   "completion_tokens": 797,
+   "total_tokens": 18761,
+   "cost": 0.00065811,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00065811,
+    "upstream_inference_prompt_cost": 0.00017991,
+    "upstream_inference_completions_cost": 0.0004782
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 486,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 18932,
+   "completion_tokens": 299,
+   "total_tokens": 19231,
+   "cost": 0.00048031,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 968,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00048031,
+    "upstream_inference_prompt_cost": 0.00030091,
+    "upstream_inference_completions_cost": 0.0001794
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 215,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 20.0
+}

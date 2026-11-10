@@ -1,0 +1,134 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain in your lower back?",
+  "Is the pain in your hips?",
+  "Is the pain in your knees?",
+  "Is the pain in your feet or ankles?",
+  "Do you have any weakness in your legs?",
+  "Do you have any numbness or tingling in your legs?",
+  "Do you feel unsteady when you walk?",
+  "Do you have any stiffness in your joints?",
+  "Do you have any swelling in your joints?",
+  "Have you had any recent falls?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of high blood pressure?",
+  "Have you ever had a stroke or TIA?",
+  "Do you have a fever?",
+  "Do you have shortness of breath?",
+  "Do you have chest pain?",
+  "Do you smoke?",
+  "Do you drink alcohol?",
+  "Have you had any recent surgeries?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "levodopa trial",
+  "dystonia gene panel",
+  "DAT-SPECT"
+ ],
+ "results": [
+  "1. levodopa trial: DRAMATIC improvement within FOUR DAYS, sustained, with no treatment-related fluctuations",
+  "2. dystonia gene panel: GCH1-related dopa-responsive dystonia",
+  "3. DAT-SPECT: normal striatal uptake - distinguishes it from juvenile parkinsonism"
+ ],
+ "dx_raw": "DIAGNOSIS: Dopa-responsive dystonia (Segawa disease) due to GCH1 gene mutation\n1. Other genetic causes of dopa-responsive dystonia (e.g., tyrosine hydroxylase or sepiapterin reductase deficiency)\n2. Juvenile-onset parkinsonism (e.g., Parkin or PINK1 mutations) - though largely excluded by the normal DAT-SPECT\n3. Early-onset isolated dystonia (e.g., DYT1 or other dystonias) - though typically less dramatically responsive to levodopa",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Dopa-responsive dystonia (Segawa disease) due to GCH1 gene mutation",
+ "decisive_served": [
+  "levodopa trial",
+  "dystonia gene panel",
+  "DAT-SPECT"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 3916,
+   "total_tokens": 10978,
+   "cost": 0.00678012,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00678012,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0046992
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3722,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7705,
+   "completion_tokens": 2159,
+   "total_tokens": 9864,
+   "cost": 0.00321102,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00321102,
+    "upstream_inference_prompt_cost": 0.00062022,
+    "upstream_inference_completions_cost": 0.0025908
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2050,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_dopa_responsive_PMC9357509.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 67.9
+}

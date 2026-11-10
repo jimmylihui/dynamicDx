@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Are you currently taking any medications that affect your eyes, such as muscle relaxants or sedatives?",
+  "Do you have a history of thyroid disease?",
+  "Have you recently experienced double vision?",
+  "Do you have a history of myasthenia gravis?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Ice pack test",
+  "Serum acetylcholine receptor antibodies",
+  "Repetitive nerve stimulation",
+  "CT scan of the chest"
+ ],
+ "served": [
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "repetitive nerve stimulation",
+  "CT chest, abdomen and pelvis",
+  "CT chest / abdomen / pelvis (occult tumour)"
+ ],
+ "results": [
+  "1. Ice pack test",
+  "     not performed / not available",
+  "2. Serum acetylcholine receptor antibodies",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "3. Repetitive nerve stimulation",
+  "     repetitive nerve stimulation: normal",
+  "4. CT scan of the chest",
+  "     CT chest, abdomen and pelvis: no tumour found",
+  "     CT chest / abdomen / pelvis (occult tumour): no tumour found - idiopathic rather than paraneoplastic"
+ ],
+ "dx_raw": "DIAGNOSIS: Seronegative generalized myasthenia gravis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Ice pack test\n2. Serum acetylcholine receptor antibodies\n3. Repetitive nerve stimulation\n4. CT scan of the chest",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Seronegative generalized myasthenia gravis",
+ "decisive_served": [
+  "CT chest / abdomen / pelvis (occult tumour)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 61,
+   "total_tokens": 4884,
+   "cost": 0.00075212,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075212,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.867e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5114,
+   "completion_tokens": 32,
+   "total_tokens": 5146,
+   "cost": 0.00018182,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00018182,
+    "upstream_inference_prompt_cost": 0.00016678,
+    "upstream_inference_completions_cost": 1.504e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5363,
+   "completion_tokens": 18,
+   "total_tokens": 5381,
+   "cost": 0.000143982,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000143982,
+    "upstream_inference_prompt_cost": 0.000135522,
+    "upstream_inference_completions_cost": 8.46e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.8,
+ "video": "moderate_2_opsoclonus_PMC13135425.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 40.7
+}

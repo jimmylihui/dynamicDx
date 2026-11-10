@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Did this start suddenly?",
+  "Do you have a history of stroke?",
+  "Do you have a history of multiple sclerosis?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you have any numbness or tingling?",
+  "Do you have any difficulty speaking?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "MRI brain with DWI",
+  "CT / MR angiography (posterior circulation)"
+ ],
+ "results": [
+  "1. nystagmus: direction and whether it changes with gaze: ipsilesional torsional nystagmus",
+  "2. skew deviation / alternating cover test: skew deviation with LATERAL ALTERNATION - right eye hypotropic, left eye hypertropic",
+  "3. ocular torsion and head tilt: RIGHT-sided head tilt; right eye excyclotorted and left eye incyclotorted - the complete ocular tilt reaction",
+  "4. MRI brain with DWI: LEFT rostral pontine infarct and a caudal mesencephalic infarct extending along the paramedian line to the midline",
+  "5. CT / MR angiography (posterior circulation): TOP-OF-THE-BASILAR OCCLUSION; thrombectomy was deferred as he was well preserved"
+ ],
+ "dx_raw": "DIAGNOSIS: Left rostral pontine and caudal mesencephalic infarct due to top-of-the-basilar artery occlusion\n\nAlternatives:\n1. Top-of-the-basilar syndrome\n2. Basilar artery thrombosis\n3. Midbrain stroke",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Left rostral pontine and caudal mesencephalic infarct due to top-of-the-basilar artery occlusion",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "MRI brain with DWI",
+  "CT / MR angiography (posterior circulation)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8697,
+   "completion_tokens": 2400,
+   "total_tokens": 11097,
+   "cost": 0.0016857,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0016857,
+    "upstream_inference_prompt_cost": 0.0008697,
+    "upstream_inference_completions_cost": 0.000816
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2081,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9123,
+   "completion_tokens": 1528,
+   "total_tokens": 10651,
+   "cost": 0.00143182,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00143182,
+    "upstream_inference_prompt_cost": 0.0009123,
+    "upstream_inference_completions_cost": 0.00051952
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1466,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 162.3
+}

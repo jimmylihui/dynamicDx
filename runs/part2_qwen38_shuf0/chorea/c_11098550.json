@@ -1,0 +1,147 @@
+{
+ "questions": [
+  "Are you experiencing pain?",
+  "Is the pain located in your abdomen?",
+  "Did this start suddenly?",
+  "Have you had a seizure or convulsion recently?",
+  "Do you have a fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside neurological examination including assessment of muscle tone, reflexes, and coordination",
+  "Electroencephalogram (EEG)"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "EEG"
+ ],
+ "results": [
+  "1. Bedside neurological examination including assessment of muscle tone, reflexes, and coordination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: MMSE 27/30; Frontal Assessment Battery 14",
+  "     muscle tone examination: generalized choreiform movements with reduced tone",
+  "     limb strength (MRC) examination: normal, 5/5 throughout",
+  "     deep tendon reflexes and plantar responses: normal reflexes; flexor plantar responses",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): impaired by generalized choreiform movements; no sensory ataxia",
+  "     posture and pull test: choreiform posturing; pull test normal",
+  "     fundoscopy: normal",
+  "2. Electroencephalogram (EEG)",
+  "     EEG: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Huntington's disease\nSydenham chorea\nDrug-induced chorea",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside neurological examination including assessment of muscle tone, reflexes, and coordination\n2. Electroencephalogram (EEG)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Huntington's disease",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14039,
+   "completion_tokens": 49,
+   "total_tokens": 14088,
+   "cost": 0.00212888,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00212888,
+    "upstream_inference_prompt_cost": 0.00210585,
+    "upstream_inference_completions_cost": 2.303e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 14310,
+   "completion_tokens": 30,
+   "total_tokens": 14340,
+   "cost": 0.000325336,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 13696,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000325336,
+    "upstream_inference_prompt_cost": 0.000311236,
+    "upstream_inference_completions_cost": 1.41e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 14617,
+   "completion_tokens": 21,
+   "total_tokens": 14638,
+   "cost": 0.000332852,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 13952,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000332852,
+    "upstream_inference_prompt_cost": 0.000322982,
+    "upstream_inference_completions_cost": 9.87e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.2,
+ "video": "c_11098550.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 20.3
+}

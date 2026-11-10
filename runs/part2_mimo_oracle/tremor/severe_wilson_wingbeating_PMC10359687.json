@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Do your hands shake when you hold them out like that?",
+  "Is the shaking worse when you are trying to do something, like holding a cup or using a pen?",
+  "Do you sometimes find yourself making repetitive movements with your hands that are hard to stop?",
+  "Are you taking any medication for the shaking?",
+  "Has the shaking improved since you started taking medication?",
+  "Does the shaking make it difficult to perform everyday tasks, like eating or writing?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "yes",
+  "6": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "genetic testing (targeted panel or exome)",
+  "skin biopsy"
+ ],
+ "results": [
+  "1. cognitive screen (MMSE / MoCA / FAB): MMSE 23/30 and Frontal Assessment Battery 9/18 - frontal/executive dysfunction",
+  "2. copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease",
+  "3. genetic testing (targeted panel or exome): NOTCH2NLC GGC repeat expansion - genetically confirmed NIID",
+  "4. skin biopsy: eosinophilic, p62- and ubiquitin-POSITIVE intranuclear inclusions in adipocytes, sweat gland cells and fibroblasts - diagnostic of NIID"
+ ],
+ "dx_raw": "DIAGNOSIS: Neuronal intranuclear inclusion disease (NIID) caused by NOTCH2NLC GGC trinucleotide repeat expansion\n\nHuntington disease-like syndrome\nSpinocerebellar ataxia\nMultiple system atrophy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Neuronal intranuclear inclusion disease (NIID) caused by NOTCH2NLC GGC trinucleotide repeat expansion",
+ "decisive_served": [
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "genetic testing (targeted panel or exome)",
+  "skin biopsy"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4543,
+   "completion_tokens": 922,
+   "total_tokens": 5465,
+   "cost": 0.0008678376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008678376,
+    "upstream_inference_prompt_cost": 0.0006096776,
+    "upstream_inference_completions_cost": 0.00025816
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 816,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5003,
+   "completion_tokens": 464,
+   "total_tokens": 5467,
+   "cost": 0.000215684,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000215684,
+    "upstream_inference_prompt_cost": 8.5764e-05,
+    "upstream_inference_completions_cost": 0.00012992
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 407,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 26.3
+}

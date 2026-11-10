@@ -1,0 +1,163 @@
+{
+ "questions": [
+  "Are you experiencing any pain in your chest?",
+  "Do you have a history of high blood pressure?",
+  "Have you ever been diagnosed with diabetes?",
+  "Do you currently smoke cigarettes?",
+  "Is there a family history of heart disease or stroke?",
+  "Do you experience shortness of breath when walking on flat ground?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside examination of extraocular movements (H-test)",
+  "Fundoscopy",
+  "Fasting blood glucose and HbA1c",
+  "Thyroid function tests (TSH, Free T4)",
+  "Complete blood count and comprehensive metabolic panel",
+  "MRI of the brain with attention to the orbits and cavernous sinuses"
+ ],
+ "served": [
+  "ocular motility examination",
+  "fundoscopy",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "thyroid function (TSH, free T4)",
+  "TSH / free T4 / TRAb",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "MRI orbits",
+  "MRI brain with contrast"
+ ],
+ "results": [
+  "1. Bedside examination of extraocular movements (H-test)",
+  "     ocular motility examination: full in all directions",
+  "2. Fundoscopy",
+  "     fundoscopy: normal",
+  "3. Fasting blood glucose and HbA1c",
+  "     blood glucose and HbA1c: normal",
+  "     glucose / HbA1c: normal",
+  "4. Thyroid function tests (TSH, Free T4)",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH / free T4 / TRAb: normal, TRAb negative",
+  "5. Complete blood count and comprehensive metabolic panel",
+  "     full blood count: normal",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "6. MRI of the brain with attention to the orbits and cavernous sinuses",
+  "     MRI orbits: normal extraocular muscles, no mass",
+  "     MRI brain with contrast: no lesion, no cranial nerve enhancement"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional (psychogenic) ptosis\nFunctional (psychogenic) blepharospasm\nMyasthenia gravis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination of extraocular movements (H-test)\n2. Fundoscopy\n3. Fasting blood glucose and HbA1c\n4. Thyroid function tests (TSH, Free T4)\n5. Complete blood count and comprehensive metabolic panel\n6. MRI of the brain with attention to the orbits and cavernous sinuses",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional (psychogenic) ptosis",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 75,
+   "total_tokens": 4898,
+   "cost": 0.0007587,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007587,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 3.525e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5150,
+   "completion_tokens": 75,
+   "total_tokens": 5225,
+   "cost": 0.00020743,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020743,
+    "upstream_inference_prompt_cost": 0.00017218,
+    "upstream_inference_completions_cost": 3.525e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5526,
+   "completion_tokens": 32,
+   "total_tokens": 5558,
+   "cost": 0.000175012,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000175012,
+    "upstream_inference_prompt_cost": 0.000159972,
+    "upstream_inference_completions_cost": 1.504e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_mg_ptosis_PMC8064859.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 20.7
+}

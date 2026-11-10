@@ -1,0 +1,336 @@
+{
+ "questions": [
+  "Have you had any difficulty walking for a long time, or did this start recently?",
+  "Do you have any weakness in your legs?",
+  "Have you ever had a stroke or brain injury?",
+  "Do you have any involuntary movements of your arms, legs, or face?",
+  "Has anyone in your family had similar movement or walking problems?",
+  "Do the involuntary movements stop when you try to hold them still?",
+  "Are the movements worse on one side of your body than the other?",
+  "Have you ever had rheumatic fever or heart problems?",
+  "Did the movements start before age 18?",
+  "Do you have any problems with your speech or swallowing?",
+  "Are the involuntary movements rhythmic and shaking, like a tremor?",
+  "Does the tremor happen mostly when your hands are at rest?",
+  "Do you move slowly or feel stiff in your body?",
+  "Have you lost your sense of smell?",
+  "Do you have constipation, dizziness when standing, or trouble sleeping?",
+  "Are the involuntary movements brief, sudden jerks?",
+  "Do the jerks happen mostly when you are falling asleep or waking up?",
+  "Can you briefly suppress the jerks if you focus?",
+  "Do the movements affect your hands, face, or shoulders more than other parts?",
+  "Have you had any recent infections or fever before the movements started?",
+  "Are the involuntary movements slow, twisting, or writhing (rather than fast jerking)?",
+  "Do the movements look like restless, dance-like flinging of the limbs?",
+  "Have you had any behavioral changes, depression, or memory problems?",
+  "Are you currently taking or have you ever taken any psychiatric or anti-seizure medications?",
+  "Do you feel unsteady or off-balance when you walk, especially in the dark?",
+  "Are the slow, twisting movements mainly in your hands or feet?",
+  "Are the movements continuous and flowing rather than jerky?",
+  "Do they worsen when you are tense or active?",
+  "Do they disappear completely during sleep?",
+  "Has your walking pattern changed to a wide-based or clumsy walk?",
+  "Do the movements occur only when you are walking or standing, and stop when you sit or lie down?",
+  "Do you feel an irresistible urge to move your legs, especially at rest or at night?",
+  "Are the movements always on both sides of the body?",
+  "Do your toes or feet curl or flex downward involuntarily when you walk?",
+  "Have you noticed any numbness, tingling, or pain in your legs?",
+  "Do the involuntary movements look like your arms, legs, or body are flexing and extending over and over?",
+  "Do the movements look like writhing, twisting, or curling of fingers and toes?",
+  "Do the movements come and go in episodes, or are they continuous?",
+  "Are the movements more obvious in your face, tongue, or jaw?",
+  "Have you been diagnosed with any kidney or liver disease?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "yes",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "no",
+  "33": "yes",
+  "34": "no",
+  "35": "no",
+  "36": "no",
+  "37": "no",
+  "38": "no",
+  "39": "no",
+  "40": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "MRI brain",
+  "Serum ceruloplasmin",
+  "24-hour urinary copper",
+  "Serum copper",
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "Complete blood count, liver function tests",
+  "EEG (electroencephalogram)"
+ ],
+ "served": [
+  "brain MRI",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "24-hour urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "full blood count and biochemistry",
+  "liver function"
+ ],
+ "results": [
+  "R1 ASK Have you had any difficulty walking for a long time, or did this start recently?; Do you have any weakness in your legs?; Have you ever had a stroke or brain injury?; Do you have any involuntary movements of your arms, legs, or face?; Has anyone in your family had similar movement or walking problems? -> ['yes', 'no', 'no', 'yes', 'no']",
+  "R2 ASK Do the involuntary movements stop when you try to hold them still?; Are the movements worse on one side of your body than the other?; Have you ever had rheumatic fever or heart problems?; Did the movements start before age 18?; Do you have any problems with your speech or swallowing? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER MRI brain; Serum ceruloplasmin; 24-hour urinary copper; Serum copper; Slit-lamp examination for Kayser-Fleischer rings; Complete blood count, liver function tests -> [['brain MRI'], ['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['24-hour urinary copper', 'copper / caeruloplasmin / 24 h urinary copper'], ['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['slit-lamp examination for Kayser-Fleischer rings'], ['full blood count and biochemistry', 'liver function']]",
+  "R4 ASK Are the involuntary movements rhythmic and shaking, like a tremor?; Does the tremor happen mostly when your hands are at rest?; Do you move slowly or feel stiff in your body?; Have you lost your sense of smell?; Do you have constipation, dizziness when standing, or trouble sleeping? -> ['no', 'no', 'no', 'no', 'no']",
+  "R5 ORDER EEG (electroencephalogram) -> [[]]",
+  "R6 ASK Are the involuntary movements brief, sudden jerks?; Do the jerks happen mostly when you are falling asleep or waking up?; Can you briefly suppress the jerks if you focus?; Do the movements affect your hands, face, or shoulders more than other parts?; Have you had any recent infections or fever before the movements started? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 ASK Are the involuntary movements slow, twisting, or writhing (rather than fast jerking)?; Do the movements look like restless, dance-like flinging of the limbs?; Have you had any behavioral changes, depression, or memory problems?; Are you currently taking or have you ever taken any psychiatric or anti-seizure medications?; Do you feel unsteady or off-balance when you walk, especially in the dark? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R8 ASK Are the slow, twisting movements mainly in your hands or feet?; Are the movements continuous and flowing rather than jerky?; Do they worsen when you are tense or active?; Do they disappear completely during sleep?; Has your walking pattern changed to a wide-based or clumsy walk? -> ['no', 'no', 'no', 'no', 'no']",
+  "R9 ASK Do the movements occur only when you are walking or standing, and stop when you sit or lie down?; Do you feel an irresistible urge to move your legs, especially at rest or at night?; Are the movements always on both sides of the body?; Do your toes or feet curl or flex downward involuntarily when you walk?; Have you noticed any numbness, tingling, or pain in your legs? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R10 ASK Do the involuntary movements look like your arms, legs, or body are flexing and extending over and over?; Do the movements look like writhing, twisting, or curling of fingers and toes?; Do the movements come and go in episodes, or are they continuous?; Are the movements more obvious in your face, tongue, or jaw?; Have you been diagnosed with any kidney or liver disease? -> ['no', 'no', 'no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS I am not confident in a single diagnosis based on the information gathered. The video and history show involuntary movements with a wide-based, unsteady gait, but the key features I tried to character -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you had any difficulty walking for a long time, or did this start recently?",
+    "Do you have any weakness in your legs?",
+    "Have you ever had a stroke or brain injury?",
+    "Do you have any involuntary movements of your arms, legs, or face?",
+    "Has anyone in your family had similar movement or walking problems?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do the involuntary movements stop when you try to hold them still?",
+    "Are the movements worse on one side of your body than the other?",
+    "Have you ever had rheumatic fever or heart problems?",
+    "Did the movements start before age 18?",
+    "Do you have any problems with your speech or swallowing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "MRI brain",
+    "Serum ceruloplasmin",
+    "24-hour urinary copper",
+    "Serum copper",
+    "Slit-lamp examination for Kayser-Fleischer rings",
+    "Complete blood count, liver function tests"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ],
+    [
+     "serum copper and caeruloplasmin",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "24-hour urinary copper",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "serum copper and caeruloplasmin",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "slit-lamp examination for Kayser-Fleischer rings"
+    ],
+    [
+     "full blood count and biochemistry",
+     "liver function"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Are the involuntary movements rhythmic and shaking, like a tremor?",
+    "Does the tremor happen mostly when your hands are at rest?",
+    "Do you move slowly or feel stiff in your body?",
+    "Have you lost your sense of smell?",
+    "Do you have constipation, dizziness when standing, or trouble sleeping?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "EEG (electroencephalogram)"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Are the involuntary movements brief, sudden jerks?",
+    "Do the jerks happen mostly when you are falling asleep or waking up?",
+    "Can you briefly suppress the jerks if you focus?",
+    "Do the movements affect your hands, face, or shoulders more than other parts?",
+    "Have you had any recent infections or fever before the movements started?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Are the involuntary movements slow, twisting, or writhing (rather than fast jerking)?",
+    "Do the movements look like restless, dance-like flinging of the limbs?",
+    "Have you had any behavioral changes, depression, or memory problems?",
+    "Are you currently taking or have you ever taken any psychiatric or anti-seizure medications?",
+    "Do you feel unsteady or off-balance when you walk, especially in the dark?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Are the slow, twisting movements mainly in your hands or feet?",
+    "Are the movements continuous and flowing rather than jerky?",
+    "Do they worsen when you are tense or active?",
+    "Do they disappear completely during sleep?",
+    "Has your walking pattern changed to a wide-based or clumsy walk?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do the movements occur only when you are walking or standing, and stop when you sit or lie down?",
+    "Do you feel an irresistible urge to move your legs, especially at rest or at night?",
+    "Are the movements always on both sides of the body?",
+    "Do your toes or feet curl or flex downward involuntarily when you walk?",
+    "Have you noticed any numbness, tingling, or pain in your legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do the involuntary movements look like your arms, legs, or body are flexing and extending over and over?",
+    "Do the movements look like writhing, twisting, or curling of fingers and toes?",
+    "Do the movements come and go in episodes, or are they continuous?",
+    "Are the movements more obvious in your face, tongue, or jaw?",
+    "Have you been diagnosed with any kidney or liver disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "I am not confident in a single diagnosis based on the information gathered. The video and history show involuntary movements with a wide-based, unsteady gait, but the key features I tried to character"
+  }
+ ],
+ "dx": "Idiopathic (primary) generalized dystonia",
+ "dx_raw": "I am not confident in a single diagnosis based on the information gathered. The video and history show involuntary movements with a wide-based, unsteady gait, but the key features I tried to characterize did not clearly match a single entity. I should have ordered more targeted tests or asked better questions about the actual movement phenomenology.\n\nDIAGNOSIS: Idiopathic (primary) generalized dystonia",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0114,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_dopa_responsive_PMC9357509.mp4",
+ "line": "dystonia",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 129.7
+}

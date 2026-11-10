@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Do you have pain in your legs?",
+  "Is the pain located in your lower back or buttocks?",
+  "Does the pain radiate down one or both legs?",
+  "Do you experience numbness or tingling in your feet?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient standing from a seated position without using hands",
+  "Assess lower extremity muscle strength (hip flexion, knee extension, ankle dorsiflexion)",
+  "Check deep tendon reflexes at the patella and Achilles tendon",
+  "Perform straight leg raise test bilaterally"
+ ],
+ "served": [
+  "posture and pull test",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses"
+ ],
+ "results": [
+  "1. Observe the patient standing from a seated position without using hands",
+  "     posture and pull test: abnormal severe retrocollis; pull test preserved",
+  "2. Assess lower extremity muscle strength (hip flexion, knee extension, ankle dorsiflexion)",
+  "     limb strength (MRC) examination: normal",
+  "3. Check deep tendon reflexes at the patella and Achilles tendon",
+  "     deep tendon reflexes and plantar responses: normal",
+  "4. Perform straight leg raise test bilaterally",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Cervical dystonia (spasmodic torticollis)\nAlternative diagnosis: Idiopathic adult-onset focal dystonia\nAlternative diagnosis: Tardive dystonia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient standing from a seated position without using hands\n2. Assess lower extremity muscle strength (hip flexion, knee extension, ankle dorsiflexion)\n3. Check deep tendon reflexes at the patella and Achilles tendon\n4. Perform straight leg raise test bilaterally",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Cervical dystonia (spasmodic torticollis)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 296,
+   "completion_tokens": 55,
+   "total_tokens": 351,
+   "cost": 7.025e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.025e-05,
+    "upstream_inference_prompt_cost": 4.44e-05,
+    "upstream_inference_completions_cost": 2.585e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 575,
+   "completion_tokens": 64,
+   "total_tokens": 639,
+   "cost": 0.00011633,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011633,
+    "upstream_inference_prompt_cost": 8.625e-05,
+    "upstream_inference_completions_cost": 3.008e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 850,
+   "completion_tokens": 42,
+   "total_tokens": 892,
+   "cost": 9.5784e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.5784e-05,
+    "upstream_inference_prompt_cost": 7.6044e-05,
+    "upstream_inference_completions_cost": 1.974e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_genetic_DYT_PMC9982172.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.3
+}

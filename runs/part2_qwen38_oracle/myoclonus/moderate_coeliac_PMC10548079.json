@@ -1,0 +1,105 @@
+{
+ "questions": [
+  "Are you experiencing weakness in your right arm?",
+  "Do you have difficulty coordinating the movements of your arms and legs?",
+  "Have you recently had a stroke or brain injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "coeliac serology (tissue transglutaminase IgA)",
+  "EEG-EMG polygraphy (back-averaging)",
+  "somatosensory evoked potentials",
+  "upper GI endoscopy with duodenal biopsy"
+ ],
+ "results": [
+  "1. coeliac serology (tissue transglutaminase IgA): 23 U/mL (normal up to 10) - RAISED",
+  "2. EEG-EMG polygraphy (back-averaging): electropositive polyspikes equally at Cz and C4; cortical potential 11 ms before the jerk - CORTICAL myoclonus",
+  "3. somatosensory evoked potentials: GIANT median nerve SSEP",
+  "4. upper GI endoscopy with duodenal biopsy: flattened villi - coeliac disease"
+ ],
+ "dx_raw": "DIAGNOSIS: Cortical myoclonus secondary to coeliac disease (Gluten sensitivity with action myoclonus)\n\n1. Unverricht-Lundborg disease\n2. Progressive myoclonic epilepsy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Cortical myoclonus secondary to coeliac disease (Gluten sensitivity with action myoclonus)",
+ "decisive_served": [
+  "coeliac serology (tissue transglutaminase IgA)",
+  "EEG-EMG polygraphy (back-averaging)",
+  "somatosensory evoked potentials",
+  "upper GI endoscopy with duodenal biopsy"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 41,
+   "total_tokens": 4864,
+   "cost": 0.00074272,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074272,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 1.927e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5139,
+   "completion_tokens": 48,
+   "total_tokens": 5187,
+   "cost": 0.00019309,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00019309,
+    "upstream_inference_prompt_cost": 0.00017053,
+    "upstream_inference_completions_cost": 2.256e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "moderate_coeliac_PMC10548079.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.8
+}

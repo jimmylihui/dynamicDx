@@ -1,0 +1,188 @@
+{
+ "questions": [
+  "Are you experiencing any pain?",
+  "Is the pain localized to one specific area?",
+  "Have you experienced a recent fever?",
+  "Have you experienced shortness of breath?",
+  "Have you noticed a new rash or skin changes?",
+  "Have you experienced unexplained weight loss?",
+  "Have you experienced unexplained weight gain?",
+  "Have you felt unusually fatigued recently?",
+  "Have you experienced nausea or vomiting?",
+  "Have you experienced changes in your bowel movements?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Complete blood count with differential",
+  "Comprehensive metabolic panel",
+  "Thyroid-stimulating hormone",
+  "Fasting plasma glucose",
+  "Hemoglobin A1c",
+  "Urinalysis",
+  "Chest X-ray",
+  "Tuberculin skin test or interferon-gamma release assay",
+  "Lactate dehydrogenase",
+  "Serum cortisol (morning)"
+ ],
+ "served": [
+  "full blood count",
+  "renal and liver function",
+  "electrolytes (Na, K, Ca, Mg)",
+  "glucose / HbA1c",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "TSH / free T4",
+  "glucose / HbA1c",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "blood glucose and HbA1c",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Complete blood count with differential",
+  "     full blood count: normal",
+  "2. Comprehensive metabolic panel",
+  "     renal and liver function: end-stage renal disease on maintenance haemodialysis",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     glucose / HbA1c: HbA1c 5.9% (reference 4.0-6.0) - normal",
+  "     serum electrolytes, urea and creatinine: abnormal; end-stage renal failure with elevated urea and creatinine",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "3. Thyroid-stimulating hormone",
+  "     TSH / free T4: normal",
+  "4. Fasting plasma glucose",
+  "     glucose / HbA1c: HbA1c 5.9% (reference 4.0-6.0) - normal",
+  "     blood glucose and HbA1c: normal; HbA1c 5.9%",
+  "5. Hemoglobin A1c",
+  "     glucose / HbA1c: HbA1c 5.9% (reference 4.0-6.0) - normal",
+  "     blood glucose and HbA1c: normal; HbA1c 5.9%",
+  "6. Urinalysis",
+  "     urinalysis: normal",
+  "7. Chest X-ray",
+  "     not performed / not available",
+  "8. Tuberculin skin test or interferon-gamma release assay",
+  "     not performed / not available",
+  "9. Lactate dehydrogenase",
+  "     not performed / not available",
+  "10. Serum cortisol (morning)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: End-stage renal disease with protein-energy wasting (malnutrition)\n\nOccult malignancy (e.g., renal cell carcinoma, lymphoma, gastrointestinal)\nChronic infection (e.g., tuberculosis, HIV)\nPrimary adrenal insufficiency",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete blood count with differential  \n2. Comprehensive metabolic panel  \n3. Thyroid-stimulating hormone  \n4. Fasting plasma glucose  \n5. Hemoglobin A1c  \n6. Urinalysis  \n7. Chest X-ray  \n8. Tuberculin skin test or interferon-gamma release assay  \n9. Lactate dehydrogenase  \n10. Serum cortisol (morning)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "End-stage renal disease with protein-energy wasting (malnutrition)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 272,
+   "total_tokens": 657,
+   "cost": 8.6156e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.6156e-05,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 7.616e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 158,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 795,
+   "completion_tokens": 299,
+   "total_tokens": 1094,
+   "cost": 0.0001423352,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001423352,
+    "upstream_inference_prompt_cost": 5.86152e-05,
+    "upstream_inference_completions_cost": 8.372e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 212,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1326,
+   "completion_tokens": 1103,
+   "total_tokens": 2429,
+   "cost": 0.0003891104,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003891104,
+    "upstream_inference_prompt_cost": 8.02704e-05,
+    "upstream_inference_completions_cost": 0.00030884
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1049,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 40.4
+}

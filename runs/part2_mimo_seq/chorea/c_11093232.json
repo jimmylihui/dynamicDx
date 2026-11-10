@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Does this tremor occur when your hands are at rest on your lap, or only when you hold them up/move them?",
+  "Have you experienced any stiffness in your limbs, or trouble starting movements like walking or rising from a chair?",
+  "Is there a family history of tremors, Parkinson's disease, or similar neurological conditions in your relatives?",
+  "I notice your hands are making unusual positions - can you describe in your own words what your hands are doing or feeling?",
+  "Did these movements start suddenly, or did they come on gradually over time?",
+  "Do the movements happen all the time, or do they come and go?",
+  "Do you notice the movements get worse when you are stressed or anxious?",
+  "Have you had any recent emotional stress, trauma, or major life changes before this started?",
+  "When exactly did you first notice these hand movements - months ago, or years ago?",
+  "Are these movements painful, or just uncomfortable?",
+  "Are you taking any medications regularly, including over-the-counter drugs or supplements?",
+  "Have you ever been on medications for nausea, mental health conditions, or blood pressure that contained things like metoclopramide, prochlorperazine, or haloperidol?",
+  "Do the movements affect your ability to use your hands for daily tasks like buttoning clothes, eating, or writing?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Neurological examination for distractibility of movements - observe if hand movements stop or change when the patient performs simultaneous cognitive tasks (e.g., mental arithmetic, tapping rhythm with opposite hand)",
+  "Detailed assessment of movement patterns - check if the abnormal postures shift location, vary in character, or follow non-anatomical distribution"
+ ],
+ "served": [
+  "effect of voluntary action and anxiety",
+  "distribution of the movements (one side, both, face, limbs)"
+ ],
+ "results": [
+  "R1 ASK Does this tremor occur when your hands are at rest on your lap, or only when you hold them up/move them?; Have you experienced any stiffness in your limbs, or trouble starting movements like walking or rising from a chair?; Is there a family history of tremors, Parkinson's disease, or similar neurological conditions in your relatives? -> ['no', 'no', 'no']",
+  "R2 ASK I notice your hands are making unusual positions - can you describe in your own words what your hands are doing or feeling?; Did these movements start suddenly, or did they come on gradually over time?; Do the movements happen all the time, or do they come and go?; Do you notice the movements get worse when you are stressed or anxious?; Have you had any recent emotional stress, trauma, or major life changes before this started? -> ['yes', 'yes', 'no', 'no', 'no']",
+  "R3 ORDER Neurological examination for distractibility of movements - observe if hand movements stop or change when the patient performs simultaneous cognitive tasks (e.g., mental arithmetic, tapping rhythm with opposite hand); Detailed assessment of movement patterns - check if the abnormal postures shift location, vary in character, or follow non-anatomical distribution -> [['effect of voluntary action and anxiety'], ['distribution of the movements (one side, both, face, limbs)']]",
+  "R4 ASK When exactly did you first notice these hand movements - months ago, or years ago?; Are these movements painful, or just uncomfortable?; Are you taking any medications regularly, including over-the-counter drugs or supplements?; Have you ever been on medications for nausea, mental health conditions, or blood pressure that contained things like metoclopramide, prochlorperazine, or haloperidol?; Do the movements affect your ability to use your hands for daily tasks like buttoning clothes, eating, or writing? -> ['no', 'no', 'no', 'no', 'no']",
+  "R5 DIAGNOSIS Functional movement disorder (functional neurological symptom disorder) - characterized by variable, bizarre, non-sustained hand postures affecting both hands inconsistently, with non-anatomical distribution and dramatic/variable patterns across frames inconsistent with organic movement disorders -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Does this tremor occur when your hands are at rest on your lap, or only when you hold them up/move them?",
+    "Have you experienced any stiffness in your limbs, or trouble starting movements like walking or rising from a chair?",
+    "Is there a family history of tremors, Parkinson's disease, or similar neurological conditions in your relatives?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "I notice your hands are making unusual positions - can you describe in your own words what your hands are doing or feeling?",
+    "Did these movements start suddenly, or did they come on gradually over time?",
+    "Do the movements happen all the time, or do they come and go?",
+    "Do you notice the movements get worse when you are stressed or anxious?",
+    "Have you had any recent emotional stress, trauma, or major life changes before this started?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Neurological examination for distractibility of movements - observe if hand movements stop or change when the patient performs simultaneous cognitive tasks (e.g., mental arithmetic, tapping rhythm with opposite hand)",
+    "Detailed assessment of movement patterns - check if the abnormal postures shift location, vary in character, or follow non-anatomical distribution"
+   ],
+   "result": [
+    [
+     "effect of voluntary action and anxiety"
+    ],
+    [
+     "distribution of the movements (one side, both, face, limbs)"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "When exactly did you first notice these hand movements - months ago, or years ago?",
+    "Are these movements painful, or just uncomfortable?",
+    "Are you taking any medications regularly, including over-the-counter drugs or supplements?",
+    "Have you ever been on medications for nausea, mental health conditions, or blood pressure that contained things like metoclopramide, prochlorperazine, or haloperidol?",
+    "Do the movements affect your ability to use your hands for daily tasks like buttoning clothes, eating, or writing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Functional movement disorder (functional neurological symptom disorder) - characterized by variable, bizarre, non-sustained hand postures affecting both hands inconsistently, with non-anatomical distribution and dramatic/variable patterns across frames inconsistent with organic movement disorders"
+  }
+ ],
+ "dx": "Functional movement disorder (functional neurological symptom disorder) - characterized by variable, bizarre, non-sustained hand postures affecting both hands inconsistently, with non-anatomical distribution and dramatic/variable patterns across frames inconsistent with organic movement disorders",
+ "dx_raw": "ASK:\n1. Can you tell me if anyone else has examined you for these movements before, and what did they say was causing them?\n2. Do these movements stop completely when you are asleep?\n\nORDER:\n1. Detailed video review and characterization of movement patterns - assess for entrainment, variability, distractibility, and variability of rhythm\n\nDIAGNOSIS: Functional movement disorder (functional neurological symptom disorder) - characterized by variable, bizarre, non-sustained hand postures affecting both hands inconsistently, with non-anatomical distribution and dramatic/variable patterns across frames inconsistent with organic movement disorders",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0033,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11093232.mp4",
+ "line": "chorea",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 411.2
+}

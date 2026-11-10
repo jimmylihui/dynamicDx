@@ -1,0 +1,186 @@
+{
+ "questions": [
+  "Are the movements on the left side of your body?",
+  "Did the movements start suddenly?",
+  "Do you have any weakness on the same side as the movements?",
+  "Have you ever had a seizure?",
+  "Do you have trouble with your memory or thinking?",
+  "Is there any pain with the movements?",
+  "Do the movements stop completely when you sleep?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Brain MRI with and without contrast",
+  "Comprehensive metabolic panel including calcium, magnesium, copper, and ceruloplasmin",
+  "Thyroid function tests",
+  "Lumbar puncture",
+  "Genetic testing panel for hereditary movement disorders"
+ ],
+ "served": [
+  "brain MRI with contrast",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "renal function and eGFR",
+  "blood glucose",
+  "copper / caeruloplasmin",
+  "thyroid function (TSH, free T4)",
+  "TSH, free T4 and free T3",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel",
+  "lumbar puncture / CSF",
+  "HTT CAG repeat testing (Huntington disease)",
+  "chorea gene panel (VPS13A, JPH3, C9orf72, FRRS1L)",
+  "Huntington HTT CAG repeat testing"
+ ],
+ "results": [
+  "1. Brain MRI with and without contrast",
+  "     brain MRI with contrast: normal basal ganglia, no focal lesion",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "2. Comprehensive metabolic panel including calcium, magnesium, copper, and ceruloplasmin",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     renal function and eGFR: normal",
+  "     blood glucose: 690 mg/dL with a NORMAL anion gap",
+  "     copper / caeruloplasmin: normal",
+  "3. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH, free T4 and free T3: normal",
+  "4. Lumbar puncture",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal",
+  "     CSF oligoclonal bands and IgG index: normal",
+  "     CSF cytology and flow cytometry: normal",
+  "     CSF culture and viral PCR: normal",
+  "     CSF autoimmune encephalitis panel: normal",
+  "     lumbar puncture / CSF: normal cells, protein and glucose; no oligoclonal bands",
+  "5. Genetic testing panel for hereditary movement disorders",
+  "     HTT CAG repeat testing (Huntington disease): normal repeat length",
+  "     chorea gene panel (VPS13A, JPH3, C9orf72, FRRS1L): no pathogenic variant",
+  "     Huntington HTT CAG repeat testing: normal repeat length"
+ ],
+ "dx_raw": "**DIAGNOSIS:** Non-ketotic hyperglycemia-induced hemichorea-hemiballismus\n\nHemichorea-hemiballismus secondary to hyperglycaemia (690 mg/dL with a normal anion gap, indicating a non-ketotic state) in the context of uncontrolled diabetes mellitus. This is a well-described clinicoradiological entity where severe non-ketotic hyperglycaemia produces contralateral choreiform movements through metabolic disruption of the basal ganglia, often without MRI-detectable structural change.\n\nEarly Huntington disease or Huntington-like neurodegenerative disorder\nDrug-induced dyskinesia (e.g. from antipsychotics, levodopa, or other agents)\nParoxysmal non-kinesigenic dyskinesia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Brain MRI with and without contrast\n2. Comprehensive metabolic panel including calcium, magnesium, copper, and ceruloplasmin\n3. Thyroid function tests\n4. EEG\n5. Lumbar puncture\n6. Genetic testing panel for hereditary movement disorders",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "** Non-ketotic hyperglycemia-induced hemichorea-hemiballismus",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 398,
+   "completion_tokens": 286,
+   "total_tokens": 684,
+   "cost": 0.0001094576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001094576,
+    "upstream_inference_prompt_cost": 2.93776e-05,
+    "upstream_inference_completions_cost": 8.008e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 205,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 513,
+   "completion_tokens": 896,
+   "total_tokens": 1409,
+   "cost": 0.0003227,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003227,
+    "upstream_inference_prompt_cost": 7.182e-05,
+    "upstream_inference_completions_cost": 0.00025088
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 838,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1237,
+   "completion_tokens": 1518,
+   "total_tokens": 2755,
+   "cost": 0.0005718776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005718776,
+    "upstream_inference_prompt_cost": 0.0001468376,
+    "upstream_inference_completions_cost": 0.00042504
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1347,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 66.9
+}

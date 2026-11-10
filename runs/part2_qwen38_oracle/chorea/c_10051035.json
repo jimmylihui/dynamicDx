@@ -1,0 +1,107 @@
+{
+ "questions": [
+  "Are you experiencing pain?",
+  "Is the pain located in your lower back or legs?",
+  "Did this problem start after a specific injury or accident?",
+  "Do you have difficulty walking normally?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "speed of onset",
+  "blood glucose",
+  "CT head (non-contrast)",
+  "brain MRI with contrast"
+ ],
+ "results": [
+  "1. speed of onset: chorea was the INITIAL manifestation of the stroke in 57% of the series; two patients within 24 hours, three between days 2 and 5",
+  "2. blood glucose: normal - non-ketotic hyperglycaemia was an exclusion criterion for this series",
+  "3. CT head (non-contrast): ischaemic stroke - 92.9% of the series were ischaemic and one was haemorrhagic",
+  "4. brain MRI with contrast: lesions in the LENTIFORM NUCLEUS (50%), insula (35.7%), caudate (14.3%) and thalamus (14.3%); cortical in 35.7%, deep in 35.7%, both in 28.6%"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute ischemic stroke of the basal ganglia (specifically lentiform nucleus) presenting with hemichorea-hemiballismus\n\n1. Non-ketotic hyperglycemic hemichorea (excluded by normal blood glucose)\n2. Hemorrhagic stroke of the basal ganglia (less likely given CT findings in series, but possible)\n3. Post-stroke movement disorder secondary to thalamic or caudate infarction",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Acute ischemic stroke of the basal ganglia (specifically lentiform nucleus) presenting with hemichorea-hemiballismus",
+ "decisive_served": [
+  "speed of onset",
+  "blood glucose",
+  "CT head (non-contrast)",
+  "brain MRI with contrast"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 46,
+   "total_tokens": 4869,
+   "cost": 0.00074507,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074507,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.162e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5208,
+   "completion_tokens": 100,
+   "total_tokens": 5308,
+   "cost": 0.00022788,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00022788,
+    "upstream_inference_prompt_cost": 0.00018088,
+    "upstream_inference_completions_cost": 4.7e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.9
+}

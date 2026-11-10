@@ -1,0 +1,112 @@
+{
+ "questions": [
+  "Do you have difficulty opening your mouth?",
+  "Does chewing cause pain in the area I am pointing to?",
+  "Do you hear a clicking or popping sound when you open or close your jaw?",
+  "Have you noticed any swelling on this side of your face?",
+  "Do you grind or clench your teeth, especially at night?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "synkinesis assessment (eye closure with platysma/frontalis)",
+  "palpebral fissure width both sides",
+  "family history",
+  "MRI brain and internal auditory canal with contrast",
+  "clinical course"
+ ],
+ "results": [
+  "1. synkinesis assessment (eye closure with platysma/frontalis): co-contraction of eye closure with the left platysma and left frontalis; right lower-lip curling on speech and mastication",
+  "2. palpebral fissure width both sides: narrowed LEFT palpebral fissure from established synkinesis",
+  "3. family history: five of fourteen siblings have had a facial palsy; two affected brothers had recurrent episodes with synkinesis",
+  "4. MRI brain and internal auditory canal with contrast: no tumour, no perineural enhancement, no central lesion",
+  "5. clinical course: left facial palsy treated with acyclovir 400 mg five times daily for 10 days and prednisone 50 mg for five days with taper; right palsy at age 64 with retroauricular pain, hyperacusis and dysgeusia; right synkinesis appeared five months later"
+ ],
+ "dx_raw": "DIAGNOSIS: Melkersson-Rosenthal syndrome (recurrent facial nerve palsy with synkinesis)\n\nALTERNATIVES:\n1. Familial Bell's palsy (Hereditary Recurrent Facial Palsy)\n2. Sarcoidosis (Heerfordt's syndrome variant)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Melkersson-Rosenthal syndrome (recurrent facial nerve palsy with synkinesis)",
+ "decisive_served": [
+  "synkinesis assessment (eye closure with platysma/frontalis)",
+  "palpebral fissure width both sides",
+  "family history",
+  "MRI brain and internal auditory canal with contrast",
+  "clinical course"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14551,
+   "completion_tokens": 76,
+   "total_tokens": 14627,
+   "cost": 0.00221837,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00221837,
+    "upstream_inference_prompt_cost": 0.00218265,
+    "upstream_inference_completions_cost": 3.572e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15023,
+   "completion_tokens": 66,
+   "total_tokens": 15089,
+   "cost": 0.000380598,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14208,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000380598,
+    "upstream_inference_prompt_cost": 0.000349578,
+    "upstream_inference_completions_cost": 3.102e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "fp_recurrent_synkinesis_PMC12572359.mp4",
+ "line": "facialpalsy",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 22.4
+}

@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Have you been experiencing any confusion, drowsiness, or difficulty concentrating lately?",
+  "Do you have a history of liver disease, such as cirrhosis or hepatitis?",
+  "Do you have a history of kidney disease or are you currently on dialysis?",
+  "Do you have a severe lung condition, such as COPD, that causes shortness of breath?",
+  "Are you currently taking any medications, such as for seizures, mood, or nausea?",
+  "Have you been drinking alcohol heavily or do you have a history of alcohol abuse?",
+  "Do you have a family history of tremor or movement disorders?",
+  "Do you notice a shaking or tremor in your hands when they are completely at rest in your lap?",
+  "Do you feel stiffness or rigidity in your arms or legs?",
+  "Have you noticed your handwriting becoming very small and cramped?",
+  "Do you have an overactive thyroid or experience unexplained weight loss and feeling hot?",
+  "Do you experience any numbness, tingling, or weakness in your arms or legs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "medication, supplement and herbal history",
+  "liver function and albumin/globulin",
+  "whole-blood manganese",
+  "brain MRI",
+  "abdominal ultrasound / liver imaging"
+ ],
+ "results": [
+  "1. medication, supplement and herbal history: long-term hepatotoxic traditional Chinese medicine, notably Psoralea corylifolia, plus manganese-containing supplements",
+  "2. liver function and albumin/globulin: albumin 35.1 g/L (ref 35-52), globulin 30.8 g/L RAISED (ref 15-30), A/G ratio 1.14 LOW (ref 1.2-2.4)",
+  "3. whole-blood manganese: ELEVATED; fell after the supplements were stopped but remained above normal",
+  "4. brain MRI: bilateral T1 HYPERINTENSITY in the basal ganglia - manganese deposition",
+  "5. abdominal ultrasound / liver imaging: cirrhosis"
+ ],
+ "dx_raw": "DIAGNOSIS: Manganese neurotoxicity (manganism) due to impaired biliary excretion from cirrhosis and chronic manganese supplementation\nHepatic encephalopathy\nWilson's disease\nIdiopathic Parkinson's disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Manganese neurotoxicity (manganism) due to impaired biliary excretion from cirrhosis and chronic manganese supplementation",
+ "decisive_served": [
+  "medication, supplement and herbal history",
+  "liver function and albumin/globulin",
+  "whole-blood manganese",
+  "brain MRI",
+  "abdominal ultrasound / liver imaging"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 7074,
+   "total_tokens": 27512,
+   "cost": 0.01458252,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01458252,
+    "upstream_inference_prompt_cost": 0.00609372,
+    "upstream_inference_completions_cost": 0.0084888
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6868,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 21151,
+   "completion_tokens": 1969,
+   "total_tokens": 23120,
+   "cost": 0.00380658,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20423,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00380658,
+    "upstream_inference_prompt_cost": 0.00144378,
+    "upstream_inference_completions_cost": 0.0023628
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1927,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.4,
+ "video": "moderate_hepatic_cirrhosis_PMC13166699.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 113.0
+}

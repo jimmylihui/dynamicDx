@@ -1,0 +1,122 @@
+{
+ "questions": [
+  "Are you experiencing pain?",
+  "Is the pain in your lower abdomen or pelvic area?",
+  "Did the pain start suddenly?",
+  "Is the pain constant?",
+  "Do you have a fever?",
+  "Are you experiencing nausea or vomiting?",
+  "Do you have pain or burning when you urinate?",
+  "Have you noticed any blood in your urine?",
+  "Is this pain related to your menstrual cycle?",
+  "Could you be pregnant?",
+  "Are you experiencing any abnormal vaginal bleeding?",
+  "Have you had similar pain in the past?",
+  "Does the pain radiate to your back?",
+  "Is the pain worse with movement?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "tremor frequency estimate",
+  "brain MRI",
+  "tuberculosis treatment history"
+ ],
+ "results": [
+  "1. tremor frequency estimate: slow, under about 4.5 Hz, with a wing-beating quality",
+  "2. brain MRI: thalamic lesion (tuberculoma) that DECREASED in size after anti-tuberculous treatment, with no gliosis",
+  "3. tuberculosis treatment history: CNS tuberculoma treated with anti-tuberculous therapy; the tremor began after treatment was completed"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-tuberculoma tremor caused by a thalamic tuberculoma\n\nRubral tremor\nCerebellar ataxia\nEssential tremor",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Post-tuberculoma tremor caused by a thalamic tuberculoma",
+ "decisive_served": [
+  "tremor frequency estimate",
+  "brain MRI",
+  "tuberculosis treatment history"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 3137,
+   "total_tokens": 11835,
+   "cost": 0.00193638,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00193638,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00106658
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2765,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9243,
+   "completion_tokens": 2045,
+   "total_tokens": 11288,
+   "cost": 0.0016196,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0016196,
+    "upstream_inference_prompt_cost": 0.0009243,
+    "upstream_inference_completions_cost": 0.0006953
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2055,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 186.5
+}

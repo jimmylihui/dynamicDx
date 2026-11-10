@@ -1,0 +1,111 @@
+{
+ "questions": [
+  "Did you have a head injury?",
+  "Did you have brain surgery?",
+  "Do you have a history of stroke?",
+  "Are you having trouble breathing?",
+  "Are you in pain?",
+  "Do you have a history of seizures?",
+  "Do you feel weak in your limbs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "brain MRI",
+  "CSF 14-3-3 / RT-QuIC (prion)",
+  "history of the precipitating event",
+  "intrathecal baclofen trial"
+ ],
+ "results": [
+  "1. brain MRI: hypoxic-ischaemic injury",
+  "2. CSF 14-3-3 / RT-QuIC (prion): negative - excludes Creutzfeldt-Jakob disease",
+  "3. history of the precipitating event: cardiac arrest with resuscitation; myoclonus and contractures developed afterwards",
+  "4. intrathecal baclofen trial: 50 mcg bolus on day 1, 75 mcg on day 2; Unified Myoclonus Rating Scale improved progressively with dose; sleep and positioning improved"
+ ],
+ "dx_raw": "DIAGNOSIS: Hypoxic-ischaemic encephalopathy due to cardiac arrest\n\nLance-Adams syndrome\nPost-hypoxic myoclonus\nCreutzfeldt-Jakob disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Hypoxic-ischaemic encephalopathy due to cardiac arrest",
+ "decisive_served": [
+  "brain MRI",
+  "CSF 14-3-3 / RT-QuIC (prion)",
+  "history of the precipitating event",
+  "intrathecal baclofen trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1468,
+   "total_tokens": 10166,
+   "cost": 0.00136892,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00136892,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00049912
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1345,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9077,
+   "completion_tokens": 1530,
+   "total_tokens": 10607,
+   "cost": 0.0014279,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014279,
+    "upstream_inference_prompt_cost": 0.0009077,
+    "upstream_inference_completions_cost": 0.0005202
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1426,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 97.6
+}

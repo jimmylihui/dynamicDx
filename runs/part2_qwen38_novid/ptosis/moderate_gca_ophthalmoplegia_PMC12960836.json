@@ -1,0 +1,136 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your chest?",
+  "Does the pain radiate to your left arm or jaw?",
+  "Do you have shortness of breath?",
+  "Are you sweating profusely?",
+  "Do you feel nauseous or have vomited?",
+  "Have you had a fever in the last 24 hours?",
+  "Do you have a cough?",
+  "Is there blood in your urine?",
+  "Is there blood in your stool?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation"
+ ],
+ "served": [
+  "vital signs"
+ ],
+ "results": [
+  "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "     vital signs: normal, afebrile"
+ ],
+ "dx_raw": "DIAGNOSIS: No acute pathology identified; patient is asymptomatic with normal vital signs.",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+ "rationale": [
+  null
+ ],
+ "dx": "No acute pathology identified; patient is asymptomatic with normal vital signs.",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 115,
+   "total_tokens": 281,
+   "cost": 7.895e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.895e-05,
+    "upstream_inference_prompt_cost": 2.49e-05,
+    "upstream_inference_completions_cost": 5.405e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 591,
+   "completion_tokens": 19,
+   "total_tokens": 610,
+   "cost": 6.3276e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.3276e-05,
+    "upstream_inference_prompt_cost": 5.4346e-05,
+    "upstream_inference_completions_cost": 8.93e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 743,
+   "completion_tokens": 20,
+   "total_tokens": 763,
+   "cost": 5.2242e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.2242e-05,
+    "upstream_inference_prompt_cost": 4.2842e-05,
+    "upstream_inference_completions_cost": 9.4e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_gca_ophthalmoplegia_PMC12960836.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 23.3
+}

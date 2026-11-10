@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Do you have a tremor in your hands when they are at rest?",
+  "Have you noticed that your movements are slower than they used to be?",
+  "Do you experience stiffness in your arms, legs, or neck?",
+  "Have you recently started losing your balance or falling?",
+  "Do you shuffle your feet when you walk?",
+  "Do you have difficulty with daily tasks like buttoning clothes or writing?",
+  "Have you lost your sense of smell?",
+  "Do you act out your dreams while sleeping?",
+  "Do you suffer from chronic constipation?",
+  "Are you taking any medications, such as antipsychotics, that could cause these symptoms?",
+  "Have you ever had a stroke?",
+  "Does anyone in your family have Parkinson's disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment')",
+  "variability of amplitude, frequency and axis over the examination",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "results": [
+  "1. distractibility testing (complex motor task with the unaffected side): POSITIVE and prominent - the head tremor abates during a non-finger motor task",
+  "2. entrainment testing (tap to an externally paced rhythm): POSITIVE",
+  "3. suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment'): tremor changes with the sham stimulus",
+  "4. variability of amplitude, frequency and axis over the examination: amplitude and directionality both vary during the examination",
+  "5. muscle tone (spasticity, rigidity, paratonia): normal; no dystonic head posture, no sensory trick"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional (psychogenic) head tremor due to a functional neurological disorder\nAlternatives:\n1. Dystonic tremor\n2. Essential tremor\n3. Cervical myoclonus",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional (psychogenic) head tremor due to a functional neurological disorder",
+ "decisive_served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment')",
+  "variability of amplitude, frequency and axis over the examination",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2801,
+   "total_tokens": 9863,
+   "cost": 0.00544212,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00544212,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0033612
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2646,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7651,
+   "completion_tokens": 2129,
+   "total_tokens": 9780,
+   "cost": 0.00315882,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00315882,
+    "upstream_inference_prompt_cost": 0.00060402,
+    "upstream_inference_completions_cost": 0.0025548
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2088,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 26.2,
+ "video": "functional_head_tremor_distractibility_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 51.2
+}

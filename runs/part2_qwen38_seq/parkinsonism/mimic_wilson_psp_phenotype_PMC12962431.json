@@ -1,0 +1,135 @@
+{
+ "questions": [
+  "Is the person performing the eye examination a doctor or ophthalmologist?",
+  "Are you currently experiencing any pain in your eyes?",
+  "Is the person performing this maneuver a traditional healer or faith healer?",
+  "Is the person performing this maneuver a magician or illusionist?",
+  "Is the person performing this maneuver a relative or friend of yours?",
+  "Is the person performing this maneuver a stranger?",
+  "Is the person performing this maneuver a medical student or trainee?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Ask the person performing the maneuver to explain what they are doing and why (history of present illness)."
+ ],
+ "served": [],
+ "results": [
+  "R1 ASK Is the person performing the eye examination a doctor or ophthalmologist?; Are you currently experiencing any pain in your eyes? -> ['no', 'no']",
+  "R2 ORDER Ask the person performing the maneuver to explain what they are doing and why (history of present illness). -> [[]]",
+  "R3 ASK Is the person performing this maneuver a traditional healer or faith healer? -> ['no']",
+  "R4 ASK Is the person performing this maneuver a magician or illusionist? -> ['no']",
+  "R5 ASK Is the person performing this maneuver a relative or friend of yours? -> ['no']",
+  "R6 ASK Is the person performing this maneuver a stranger? -> ['no']",
+  "R7 ASK Is the person performing this maneuver a medical student or trainee? -> ['yes']",
+  "R8 DIAGNOSIS Medical student performing a physical examination maneuver (likely testing for lid lag or exophthalmos) on a patient with suspected thyroid eye disease (Graves' ophthalmopathy). -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is the person performing the eye examination a doctor or ophthalmologist?",
+    "Are you currently experiencing any pain in your eyes?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Ask the person performing the maneuver to explain what they are doing and why (history of present illness)."
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Is the person performing this maneuver a traditional healer or faith healer?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Is the person performing this maneuver a magician or illusionist?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Is the person performing this maneuver a relative or friend of yours?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Is the person performing this maneuver a stranger?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Is the person performing this maneuver a medical student or trainee?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Medical student performing a physical examination maneuver (likely testing for lid lag or exophthalmos) on a patient with suspected thyroid eye disease (Graves' ophthalmopathy)."
+  }
+ ],
+ "dx": "Medical student performing a physical examination maneuver (likely testing for lid lag or exophthalmos) on a patient with suspected thyroid eye disease (Graves' ophthalmopathy).",
+ "dx_raw": "DIAGNOSIS: Medical student performing a physical examination maneuver (likely testing for lid lag or exophthalmos) on a patient with suspected thyroid eye disease (Graves' ophthalmopathy).",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "cost_usd": 0.0043,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_wilson_psp_phenotype_PMC12962431.mp4",
+ "line": "parkinsonism",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 51.7
+}

@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Do you have a family history of similar movements or cognitive decline?",
+  "Are you under 20 years old?",
+  "Have you had a sore throat or fever in the last few months?",
+  "Are you taking any antipsychotic medications?",
+  "Have you noticed any changes in your mood or personality?",
+  "Do you have any joint pain or a skin rash?",
+  "Have you noticed any yellowing of your skin or eyes?",
+  "Do you have a racing heart or unexplained weight loss?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Slit-lamp examination",
+  "Serum ceruloplasmin",
+  "Brain MRI"
+ ],
+ "served": [
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Slit-lamp examination",
+  "     slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "2. Serum ceruloplasmin",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal",
+  "3. Brain MRI",
+  "     brain MRI: thalamic lesion (tuberculoma) that DECREASED in size after anti-tuberculous treatment, with no gliosis"
+ ],
+ "dx_raw": "DIAGNOSIS: Chorea caused by a thalamic tuberculoma\n\nNeurosyphilis\nToxoplasmosis\nBrain abscess",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Slit-lamp examination\n2. Serum ceruloplasmin\n3. Brain MRI\n4. ANA\n5. TSH",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Chorea caused by a thalamic tuberculoma",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 199,
+   "completion_tokens": 3683,
+   "total_tokens": 3882,
+   "cost": 0.00127212,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00127212,
+    "upstream_inference_prompt_cost": 1.99e-05,
+    "upstream_inference_completions_cost": 0.00125222
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3380,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 603,
+   "completion_tokens": 1874,
+   "total_tokens": 2477,
+   "cost": 0.00069746,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00069746,
+    "upstream_inference_prompt_cost": 6.03e-05,
+    "upstream_inference_completions_cost": 0.00063716
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1650,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 827,
+   "completion_tokens": 2194,
+   "total_tokens": 3021,
+   "cost": 0.00082866,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00082866,
+    "upstream_inference_prompt_cost": 8.27e-05,
+    "upstream_inference_completions_cost": 0.00074596
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2042,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 235.2
+}

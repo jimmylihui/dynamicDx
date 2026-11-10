@@ -1,0 +1,263 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the pain located in your abdomen?",
+  "Have you had a fever or chills?",
+  "Have you experienced any vomiting or nausea?",
+  "Are you experiencing shortness of breath or difficulty breathing?",
+  "Have you noticed any swelling in your legs or ankles?",
+  "Have you had any chest pain or palpitations?",
+  "Do you have any history of heart problems?",
+  "Do you have any neurological symptoms like weakness, numbness, or difficulty speaking?",
+  "Have you experienced any recent headaches or dizziness?",
+  "Do you have any history of seizures?",
+  "Are you currently taking any medications?",
+  "Is the weakness or numbness on one side of your body?",
+  "When did the neurological symptoms start?",
+  "Have you experienced any changes in your vision?",
+  "Have you noticed any difficulty with balance or coordination?",
+  "Do you have any history of diabetes?",
+  "Do you have any history of high blood pressure?",
+  "Have you experienced any memory problems or confusion?",
+  "Have you noticed any tingling or burning sensation in your hands or feet?",
+  "Is the weakness/numbness primarily in your legs?",
+  "Is the weakness/numbness primarily in your arms or hands?",
+  "Have you noticed any tremor or shaking?",
+  "Do you have any history of thyroid problems?",
+  "Have you had any recent injuries or falls?",
+  "Is the weakness/numbness in your face?",
+  "Have you had any difficulty swallowing?",
+  "Have you had any changes in your speech?",
+  "Is the weakness/numbness generalized throughout your body?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "yes",
+  "18": "yes",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Neurological examination - assess strength, sensation, and coordination in all extremities",
+  "Blood glucose level - rule out hypoglycemia/hyperglycemia",
+  "CT head - rule out stroke/intracranial hemorrhage"
+ ],
+ "served": [
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "blood glucose",
+  "CT head (non-contrast)"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing pain?; Is the pain located in your abdomen?; Have you had a fever or chills?; Have you experienced any vomiting or nausea? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Are you experiencing shortness of breath or difficulty breathing?; Have you noticed any swelling in your legs or ankles?; Have you had any chest pain or palpitations?; Do you have any history of heart problems? -> ['no', 'no', 'no', 'no']",
+  "R3 ASK Do you have any neurological symptoms like weakness, numbness, or difficulty speaking?; Have you experienced any recent headaches or dizziness?; Do you have any history of seizures?; Are you currently taking any medications? -> ['yes', 'no', 'no', 'yes']",
+  "R4 ASK Is the weakness or numbness on one side of your body?; When did the neurological symptoms start?; Have you experienced any changes in your vision? -> ['no', 'no', 'no']",
+  "R5 ASK Have you noticed any difficulty with balance or coordination?; Do you have any history of diabetes?; Do you have any history of high blood pressure?; Have you experienced any memory problems or confusion? -> ['no', 'yes', 'yes', 'no']",
+  "R6 ASK Have you noticed any tingling or burning sensation in your hands or feet?; Is the weakness/numbness primarily in your legs? -> ['no', 'no']",
+  "R7 ASK Is the weakness/numbness primarily in your arms or hands?; Have you noticed any tremor or shaking?; Do you have any history of thyroid problems?; Have you had any recent injuries or falls? -> ['no', 'no', 'no', 'no']",
+  "R8 ASK Is the weakness/numbness in your face?; Have you had any difficulty swallowing?; Have you had any changes in your speech?; Is the weakness/numbness generalized throughout your body? -> ['no', 'no', 'no', 'no']",
+  "R9 ORDER Neurological examination - assess strength, sensation, and coordination in all extremities; Blood glucose level - rule out hypoglycemia/hyperglycemia; CT head - rule out stroke/intracranial hemorrhage -> [['limb strength (MRC) examination', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)'], ['blood glucose'], ['CT head (non-contrast)']]",
+  "R10 DIAGNOSIS Acute right cerebellar ischemic stroke (lacunar infarct), likely secondary to small vessel disease from poorly controlled diabetes mellitus and hypertension; non-ketotic hyperglycemia is a contributing risk factor but the focal cerebellar sign points to a posterior circulation stroke rather than hyperglycemic hemichorea (which typically affects basal ganglia). -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing pain?",
+    "Is the pain located in your abdomen?",
+    "Have you had a fever or chills?",
+    "Have you experienced any vomiting or nausea?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Are you experiencing shortness of breath or difficulty breathing?",
+    "Have you noticed any swelling in your legs or ankles?",
+    "Have you had any chest pain or palpitations?",
+    "Do you have any history of heart problems?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have any neurological symptoms like weakness, numbness, or difficulty speaking?",
+    "Have you experienced any recent headaches or dizziness?",
+    "Do you have any history of seizures?",
+    "Are you currently taking any medications?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Is the weakness or numbness on one side of your body?",
+    "When did the neurological symptoms start?",
+    "Have you experienced any changes in your vision?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any difficulty with balance or coordination?",
+    "Do you have any history of diabetes?",
+    "Do you have any history of high blood pressure?",
+    "Have you experienced any memory problems or confusion?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any tingling or burning sensation in your hands or feet?",
+    "Is the weakness/numbness primarily in your legs?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Is the weakness/numbness primarily in your arms or hands?",
+    "Have you noticed any tremor or shaking?",
+    "Do you have any history of thyroid problems?",
+    "Have you had any recent injuries or falls?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Is the weakness/numbness in your face?",
+    "Have you had any difficulty swallowing?",
+    "Have you had any changes in your speech?",
+    "Is the weakness/numbness generalized throughout your body?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Neurological examination - assess strength, sensation, and coordination in all extremities",
+    "Blood glucose level - rule out hypoglycemia/hyperglycemia",
+    "CT head - rule out stroke/intracranial hemorrhage"
+   ],
+   "result": [
+    [
+     "limb strength (MRC) examination",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)"
+    ],
+    [
+     "blood glucose"
+    ],
+    [
+     "CT head (non-contrast)"
+    ]
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Acute right cerebellar ischemic stroke (lacunar infarct), likely secondary to small vessel disease from poorly controlled diabetes mellitus and hypertension; non-ketotic hyperglycemia is a contributing risk factor but the focal cerebellar sign points to a posterior circulation stroke rather than hyperglycemic hemichorea (which typically affects basal ganglia)."
+  }
+ ],
+ "dx": "Acute right cerebellar ischemic stroke (lacunar infarct), likely secondary to small vessel disease from poorly controlled diabetes mellitus and hypertension; non-ketotic hyperglycemia is a contributing risk factor but the focal cerebellar sign points to a posterior circulation stroke rather than hyperglycemic hemichorea (which typically affects basal ganglia).",
+ "dx_raw": "I have very important findings now:\n\n1. **Neurological examination**: Normal limb strength and sensation, but there is **right-sided dysmetria on finger-nose testing** (cerebellar sign)\n2. **Blood glucose**: 2.25 g/L = **225 mg/dL** = significant hyperglycemia (non-ketotic)\n3. **CT head**: Normal - no hemorrhage, no hyperdensity, no infarct\n\nThe combination of:\n- Right-sided cerebellar dysmetria (ipsilateral cerebellar sign)\n- Significant non-ketotic hyperglycemia\n- Normal CT head\n- Normal limb strength and sensation\n\nThis is highly suggestive of **hyperglycemia-induced hemichorea/hemiballismus** or more specifically, given the presentation, this could be **diabetic striatopathy** (also known as hyperglycemic hemichorea). However, the patient has cerebellar signs rather than basal ganglia signs.\n\nWait - let me reconsider. The findings show:\n- Right-sided dysmetria (cerebellar sign)\n- Hyperglycemia\n- Normal CT\n\nThis could indicate a small cerebellar infarct not visible on CT (CT can miss early ischemic strokes, especially in the posterior fossa). Given the patient's risk factors (diabetes, hypertension), an acute cerebellar stroke is a strong consideration, even with a normal CT.\n\nHowever, the glucose is markedly elevated at 225 mg/dL. Let me think about this more carefully.\n\nActually, looking at the video - they appear to be resting. The \"weakness/numbness\" complaints were somewhat vague. The key findings are:\n- Right cerebellar dysmetria \n- Hyperglycemia\n- Normal CT\n\nThe most likely diagnosis considering all findings is an **acute cerebellar stroke** (likely lacunar or small ischemic stroke in the right cerebellar hemisphere) that was not yet visible on the non-contrast CT, in a patient with poorly controlled diabetes and hypertension.\n\nDIAGNOSIS: Acute right cerebellar ischemic stroke (lacunar infarct), likely secondary to small vessel disease from poorly controlled diabetes mellitus and hypertension; non-ketotic hyperglycemia is a contributing risk factor but the focal cerebellar sign points to a posterior circulation stroke rather than hyperglycemic hemichorea (which typically affects basal ganglia).",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0299,
+ "n_frames": 32,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 109.1
+}

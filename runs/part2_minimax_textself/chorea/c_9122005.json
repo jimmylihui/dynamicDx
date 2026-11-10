@@ -1,0 +1,200 @@
+{
+ "questions": [
+  "Are you aware of your legs moving?",
+  "Do you have an uncomfortable urge to move your legs?",
+  "Does moving your legs relieve the discomfort?",
+  "Are the symptoms worse when you are lying still or at night?",
+  "Have you recently started or stopped any medication?",
+  "Can you stop the movement if you try?",
+  "Are you in pain?",
+  "Do you feel a need to get out of bed?",
+  "Do you have kidney disease?",
+  "Do you have diabetes?",
+  "Do you have a history of psychiatric illness or take antipsychotic/antidepressant medication?",
+  "Have you had any recent surgery or anesthesia?",
+  "Do you need to urinate or have a catheter causing discomfort?",
+  "Are you able to tell me where you are and what day it is?",
+  "Have you had fever, infection, or been unwell recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Capillary blood glucose",
+  "Venous blood gas including lactate and glucose",
+  "Serum sodium, potassium, urea, creatinine, calcium, magnesium",
+  "Full blood count and CRP",
+  "Liver function tests including ammonia",
+  "Creatine kinase",
+  "Serum thyroid-stimulating hormone",
+  "Urine toxicology screen",
+  "Non-contrast CT head",
+  "Electroencephalogram (EEG)"
+ ],
+ "served": [
+  "blood glucose",
+  "venous blood gas",
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "full blood count",
+  "inflammatory markers (ESR, CRP)",
+  "liver function tests",
+  "serum ammonia",
+  "creatine kinase",
+  "thyroid function (TSH, free T4)",
+  "toxicology screen (urine and serum)",
+  "CT head (non-contrast)",
+  "EEG"
+ ],
+ "results": [
+  "1. Capillary blood glucose",
+  "     blood glucose: NORMAL - no diabetes and no hyperglycaemia",
+  "2. Venous blood gas including lactate and glucose",
+  "     venous blood gas: normal",
+  "     blood glucose: NORMAL - no diabetes and no hyperglycaemia",
+  "3. Serum sodium, potassium, urea, creatinine, calcium, magnesium",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "4. Full blood count and CRP",
+  "     full blood count: normal",
+  "     inflammatory markers (ESR, CRP): normal",
+  "5. Liver function tests including ammonia",
+  "     liver function tests: normal",
+  "     serum ammonia: normal",
+  "6. Creatine kinase",
+  "     creatine kinase: normal",
+  "7. Serum thyroid-stimulating hormone",
+  "     thyroid function (TSH, free T4): normal",
+  "8. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "9. Non-contrast CT head",
+  "     CT head (non-contrast): no haemorrhage, no hyperdensity, no infarct",
+  "10. Electroencephalogram (EEG)",
+  "     EEG: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Delirium with psychomotor agitation of undetermined aetiology in a frail elderly patient\n1. Vascular dementia with superimposed delirium\n2. Drug-induced (antidopaminergic) movement disorder from undisclosed medication\n3. Lewy body dementia with fluctuating cognition and motor agitation",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Capillary blood glucose\n2. Venous blood gas including lactate and glucose\n3. Serum sodium, potassium, urea, creatinine, calcium, magnesium\n4. Full blood count and CRP\n5. Liver function tests including ammonia\n6. Creatine kinase\n7. Serum thyroid-stimulating hormone\n8. Urine toxicology screen\n9. Non-contrast CT head\n10. Electroencephalogram (EEG)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Delirium with psychomotor agitation of undetermined aetiology in a frail elderly patient",
+ "decisive_served": [
+  "blood glucose",
+  "blood glucose"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 405,
+   "completion_tokens": 931,
+   "total_tokens": 1336,
+   "cost": 0.00121134,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00121134,
+    "upstream_inference_prompt_cost": 9.414e-05,
+    "upstream_inference_completions_cost": 0.0011172
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 807,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 987,
+   "completion_tokens": 581,
+   "total_tokens": 1568,
+   "cost": 0.00096594,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00096594,
+    "upstream_inference_prompt_cost": 0.00026874,
+    "upstream_inference_completions_cost": 0.0006972
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 493,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1396,
+   "completion_tokens": 2917,
+   "total_tokens": 4313,
+   "cost": 0.00370752,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 882,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00370752,
+    "upstream_inference_prompt_cost": 0.00020712,
+    "upstream_inference_completions_cost": 0.0035004
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3307,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 64.3
+}

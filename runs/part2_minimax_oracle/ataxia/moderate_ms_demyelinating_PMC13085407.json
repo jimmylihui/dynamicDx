@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Is pain your main reason for coming in today?",
+  "Have you had a recent fall or injury?",
+  "Are you experiencing shortness of breath?",
+  "Do you have weakness in your legs?",
+  "Is the pain in your back?",
+  "Do you have any numbness or tingling in your legs?",
+  "Have you ever had a stroke?",
+  "Do you have a history of heart disease?",
+  "Are you diabetic?",
+  "Have you had any recent surgery?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "serum lithium and drug levels",
+  "brain MRI",
+  "medication history"
+ ],
+ "results": [
+  "1. serum lithium and drug levels: serum lithium 4.07 mmol/L on admission; CSF lithium 2.45 mmol/L; later fell below 0.2 mmol/L",
+  "2. brain MRI: cerebellar atrophy at one year; serial imaging over five years shows progressive ISOLATED cerebellar atrophy with no supratentorial abnormality",
+  "3. medication history: no prior lithium use and no psychiatric indication - the exposure was accidental"
+ ],
+ "dx_raw": "DIAGNOSIS: Lithium-induced chronic progressive cerebellar degeneration following acute accidental lithium toxicity (toxic cerebellar atrophy)\nMultiple system atrophy – cerebellar type (MSA-C)\nParaneoplastic cerebellar degeneration\nIdiopathic late-onset cerebellar ataxia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Lithium-induced chronic progressive cerebellar degeneration following acute accidental lithium toxicity (toxic cerebellar atrophy)",
+ "decisive_served": [
+  "serum lithium and drug levels",
+  "brain MRI",
+  "medication history"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 1362,
+   "total_tokens": 21800,
+   "cost": 0.00772812,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00772812,
+    "upstream_inference_prompt_cost": 0.00609372,
+    "upstream_inference_completions_cost": 0.0016344
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1263,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 20870,
+   "completion_tokens": 448,
+   "total_tokens": 21318,
+   "cost": 0.00189708,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20423,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00189708,
+    "upstream_inference_prompt_cost": 0.00135948,
+    "upstream_inference_completions_cost": 0.0005376
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 403,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_ms_demyelinating_PMC13085407.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 26.9
+}

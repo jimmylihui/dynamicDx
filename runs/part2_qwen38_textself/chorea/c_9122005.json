@@ -1,0 +1,161 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Do you have a history of diabetes?",
+  "Have you recently started or stopped any psychiatric medications?",
+  "Do you experience pain in your legs when they are still?",
+  "Is the urge to move your legs relieved by walking?",
+  "Are your symptoms worse at night?",
+  "Do you have a known history of kidney disease?",
+  "Have you had a recent head injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Serum ferritin level",
+  "Comprehensive metabolic panel including renal function and liver enzymes",
+  "Thyroid stimulating hormone (TSH) level",
+  "Neurological examination assessing for extrapyramidal signs, myoclonus, or focal deficits",
+  "Electroencephalogram (EEG)"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "thyroid function (TSH, free T4)",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "EEG"
+ ],
+ "results": [
+  "1. Serum ferritin level",
+  "     not performed / not available",
+  "2. Comprehensive metabolic panel including renal function and liver enzymes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "3. Thyroid stimulating hormone (TSH) level",
+  "     thyroid function (TSH, free T4): normal",
+  "4. Neurological examination assessing for extrapyramidal signs, myoclonus, or focal deficits",
+  "     muscle tone examination: reduced tone in the right limbs",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     coordination examination (limb and truncal): right-sided hemichorea-hemiballismus",
+  "     posture and pull test: involuntary right-sided choreiform and ballistic movements",
+  "5. Electroencephalogram (EEG)",
+  "     EEG: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Hemichorea-hemiballismus secondary to a contralateral basal ganglia lesion (e.g., lacunar infarct or hemorrhage)\n1. Non-ketotic hyperglycemic hemichorea (despite normal current glucose, prior undiagnosed state)\n2. Autoimmune chorea (e.g., Sydenham's chorea or Lupus cerebritis)\n3. Paraneoplastic neurological syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Serum ferritin level\n2. Comprehensive metabolic panel including renal function and liver enzymes\n3. Thyroid stimulating hormone (TSH) level\n4. Neurological examination assessing for extrapyramidal signs, myoclonus, or focal deficits\n5. Electroencephalogram (EEG)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hemichorea-hemiballismus secondary to a contralateral basal ganglia lesion (e.g., lacunar infarct or hemorrhage)",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 192,
+   "completion_tokens": 96,
+   "total_tokens": 288,
+   "cost": 7.392e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.392e-05,
+    "upstream_inference_prompt_cost": 2.88e-05,
+    "upstream_inference_completions_cost": 4.512e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 571,
+   "completion_tokens": 64,
+   "total_tokens": 635,
+   "cost": 0.00011573,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011573,
+    "upstream_inference_prompt_cost": 8.565e-05,
+    "upstream_inference_completions_cost": 3.008e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 918,
+   "completion_tokens": 98,
+   "total_tokens": 1016,
+   "cost": 0.000115152,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000115152,
+    "upstream_inference_prompt_cost": 6.9092e-05,
+    "upstream_inference_completions_cost": 4.606e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 10.6
+}

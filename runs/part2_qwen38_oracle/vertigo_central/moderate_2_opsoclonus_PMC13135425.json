@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Are you currently experiencing double vision?",
+  "Did this problem start suddenly?",
+  "Do you have a history of high blood pressure or diabetes?",
+  "Have you had any recent head trauma?",
+  "Do you have a known history of thyroid disease?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "smooth pursuit and saccades",
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "immunotherapy trial"
+ ],
+ "results": [
+  "1. smooth pursuit and saccades: opsoclonus - chaotic multidirectional saccades without intersaccadic intervals",
+  "2. paraneoplastic and autoimmune antibody panel (serum): unremarkable",
+  "3. CT chest / abdomen / pelvis (occult tumour): no tumour found - idiopathic rather than paraneoplastic",
+  "4. immunotherapy trial: IV methylprednisolone and IV immunoglobulin followed by oral prednisone; myoclonus and ataxia resolved and opsoclonus improved; about 80% back to baseline at three months"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic Opsoclonus-Myoclonus Syndrome (OMS)\n\n1. Paraneoplastic Opsoclonus-Myoclonus Syndrome\n2. Post-infectious Opsoclonus-Myoclonus Syndrome",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Idiopathic Opsoclonus-Myoclonus Syndrome (OMS)",
+ "decisive_served": [
+  "smooth pursuit and saccades",
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "immunotherapy trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 58,
+   "total_tokens": 4881,
+   "cost": 0.00075071,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075071,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.726e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5188,
+   "completion_tokens": 56,
+   "total_tokens": 5244,
+   "cost": 0.0002042,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002042,
+    "upstream_inference_prompt_cost": 0.00017788,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.8,
+ "video": "moderate_2_opsoclonus_PMC13135425.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 28.0
+}

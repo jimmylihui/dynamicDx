@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Is the tremor present at rest?",
+  "Does the tremor worsen with intentional movement toward a target?",
+  "Do you have difficulty walking or maintaining balance?",
+  "Do you experience muscle stiffness or rigidity?",
+  "Have you noticed any changes in your speech or swallowing?",
+  "Do you have a family history of similar symptoms?",
+  "Are you currently taking any medications for psychiatric conditions?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Serum ceruloplasmin level",
+  "24-hour urinary copper excretion",
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "MRI of the brain"
+ ],
+ "served": [
+  "serum copper and caeruloplasmin",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Serum ceruloplasmin level",
+  "     serum copper and caeruloplasmin: normal",
+  "2. 24-hour urinary copper excretion",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease",
+  "3. Slit-lamp examination for Kayser-Fleischer rings",
+  "     slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "4. MRI of the brain",
+  "     brain MRI: no structural lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic dystonic tremor\nAlternative 1: Essential tremor with atypical features\nAlternative 2: Drug-induced parkinsonism (despite negative history, occult exposure)",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Serum ceruloplasmin level\n2. 24-hour urinary copper excretion\n3. Slit-lamp examination for Kayser-Fleischer rings\n4. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic dystonic tremor",
+ "decisive_served": [
+  "copper / caeruloplasmin / 24 h urinary copper"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 187,
+   "completion_tokens": 90,
+   "total_tokens": 277,
+   "cost": 7.035e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.035e-05,
+    "upstream_inference_prompt_cost": 2.805e-05,
+    "upstream_inference_completions_cost": 4.23e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 550,
+   "completion_tokens": 42,
+   "total_tokens": 592,
+   "cost": 0.00010224,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010224,
+    "upstream_inference_prompt_cost": 8.25e-05,
+    "upstream_inference_completions_cost": 1.974e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 805,
+   "completion_tokens": 43,
+   "total_tokens": 848,
+   "cost": 7.2352e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.2352e-05,
+    "upstream_inference_prompt_cost": 5.2142e-05,
+    "upstream_inference_completions_cost": 2.021e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 12.3
+}

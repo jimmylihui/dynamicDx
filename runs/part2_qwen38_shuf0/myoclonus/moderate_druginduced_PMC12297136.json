@@ -1,0 +1,150 @@
+{
+ "questions": [
+  "Are you currently experiencing abdominal pain?",
+  "Does the pain feel like a burning sensation or heartburn?",
+  "Do you have a history of high blood pressure?",
+  "Have you noticed any black, tarry stools recently?",
+  "Is your abdomen feeling bloated or distended?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside examination of the abdomen for distension, tenderness, and bowel sounds",
+  "Complete blood count (CBC) with differential",
+  "Comprehensive metabolic panel (CMP) including liver function tests and electrolytes",
+  "Serum lipase level",
+  "Urinalysis",
+  "Abdominal ultrasound"
+ ],
+ "served": [
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Bedside examination of the abdomen for distension, tenderness, and bowel sounds",
+  "     not performed / not available",
+  "2. Complete blood count (CBC) with differential",
+  "     full blood count: white cells mildly raised at 11.8 x10^9/L",
+  "3. Comprehensive metabolic panel (CMP) including liver function tests and electrolytes",
+  "     serum electrolytes, urea and creatinine: urea nitrogen 24 mg/dL and creatinine 1.62 mg/dL, stable",
+  "     liver function tests: normal",
+  "4. Serum lipase level",
+  "     not performed / not available",
+  "5. Urinalysis",
+  "     urinalysis: normal",
+  "6. Abdominal ultrasound",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Abdominal obesity (central adiposity)\n\n1. Ascites\n2. Large ventral hernia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination of the abdomen for distension, tenderness, and bowel sounds\n2. Complete blood count (CBC) with differential\n3. Comprehensive metabolic panel (CMP) including liver function tests and electrolytes\n4. Serum lipase level\n5. Urinalysis\n6. Abdominal ultrasound",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Abdominal obesity (central adiposity)",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 9431,
+   "completion_tokens": 65,
+   "total_tokens": 9496,
+   "cost": 0.0014452,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014452,
+    "upstream_inference_prompt_cost": 0.00141465,
+    "upstream_inference_completions_cost": 3.055e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9734,
+   "completion_tokens": 66,
+   "total_tokens": 9800,
+   "cost": 0.000273328,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9088,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000273328,
+    "upstream_inference_prompt_cost": 0.000242308,
+    "upstream_inference_completions_cost": 3.102e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 10058,
+   "completion_tokens": 29,
+   "total_tokens": 10087,
+   "cost": 0.00023593,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9600,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00023593,
+    "upstream_inference_prompt_cost": 0.0002223,
+    "upstream_inference_completions_cost": 1.363e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 20.9
+}

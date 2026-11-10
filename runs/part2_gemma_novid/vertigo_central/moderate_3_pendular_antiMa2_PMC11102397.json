@@ -1,0 +1,119 @@
+{
+ "questions": [
+  "Are you experiencing a life-threatening emergency?"
+ ],
+ "answers": {
+  "1": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs",
+  "Full physical examination"
+ ],
+ "served": [
+  "facial dysmorphism and general examination"
+ ],
+ "results": [
+  "1. Vital signs",
+  "     not performed / not available",
+  "2. Full physical examination",
+  "     facial dysmorphism and general examination: unremarkable"
+ ],
+ "dx_raw": "DIAGNOSIS: No disease\nAlternative 1: Subclinical pathology\nAlternative 2: Asymptomatic disease\nAlternative 3: Psychosomatic disorder",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Vital signs\n2. Full physical examination",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "No disease",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 155,
+   "completion_tokens": 6249,
+   "total_tokens": 6404,
+   "cost": 0.00214016,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00214016,
+    "upstream_inference_prompt_cost": 1.55e-05,
+    "upstream_inference_completions_cost": 0.00212466
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6074,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 329,
+   "completion_tokens": 1027,
+   "total_tokens": 1356,
+   "cost": 0.00038208,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 160,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00038208,
+    "upstream_inference_prompt_cost": 3.29e-05,
+    "upstream_inference_completions_cost": 0.00034918
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 994,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 465,
+   "completion_tokens": 2924,
+   "total_tokens": 3389,
+   "cost": 0.00104066,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00104066,
+    "upstream_inference_prompt_cost": 4.65e-05,
+    "upstream_inference_completions_cost": 0.00099416
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2825,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 311.2
+}

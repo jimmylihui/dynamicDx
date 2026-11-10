@@ -1,0 +1,208 @@
+{
+ "questions": [
+  "Are you older than 18?",
+  "Are you older than 65?",
+  "Are you male?",
+  "Are you currently in pain?",
+  "Did your symptoms begin suddenly?",
+  "Is the pain in your chest?",
+  "Is the pain in your abdomen?",
+  "Is the pain in your head?",
+  "Is the pain in your back?",
+  "Are you having difficulty breathing?",
+  "Have you had a fever?",
+  "Have you vomited?",
+  "Do you feel nauseated?",
+  "Do you have diarrhea?",
+  "Do you have a cough?",
+  "Have you coughed up blood?",
+  "Do you have weakness on one side of your body?",
+  "Are you having trouble speaking?",
+  "Have you had a recent injury?",
+  "Are you currently bleeding?",
+  "Do you have a rash?",
+  "Have you lost weight without trying?",
+  "Do you have a history of heart problems?",
+  "Do you have a history of lung problems?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Do you smoke?",
+  "Do you drink alcohol?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Complete physical examination to localize the pain",
+  "Examination of all major joints for swelling, warmth, tenderness, and range of motion",
+  "Complete blood count",
+  "Erythrocyte sedimentation rate and C-reactive protein",
+  "Examination of the ears with otoscopy",
+  "Examination of the throat",
+  "Urinalysis",
+  "X-ray of the area where the pain is located",
+  "Anti-streptolysin O titer",
+  "Antinuclear antibody test"
+ ],
+ "served": [
+  "full blood count",
+  "ESR / CRP",
+  "urinalysis",
+  "antinuclear antibodies and anti-dsDNA"
+ ],
+ "results": [
+  "1. Complete physical examination to localize the pain",
+  "     not performed / not available",
+  "2. Examination of all major joints for swelling, warmth, tenderness, and range of motion",
+  "     not performed / not available",
+  "3. Complete blood count",
+  "     full blood count: leukocytosis, white cells 21.4 x10^9/L",
+  "4. Erythrocyte sedimentation rate and C-reactive protein",
+  "     ESR / CRP: normal",
+  "5. Examination of the ears with otoscopy",
+  "     not performed / not available",
+  "6. Examination of the throat",
+  "     not performed / not available",
+  "7. Urinalysis",
+  "     urinalysis: glucosuria",
+  "8. X-ray of the area where the pain is located",
+  "     not performed / not available",
+  "9. Anti-streptolysin O titer",
+  "     not performed / not available",
+  "10. Antinuclear antibody test",
+  "     antinuclear antibodies and anti-dsDNA: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: New-onset type 1 diabetes mellitus with early diabetic ketoacidosis (pain likely musculoskeletal/cramp from osmotic diuresis and metabolic derangement)\n\n1. Type 1 diabetes mellitus with concurrent bacterial infection (e.g. urinary tract infection) causing the leukocytosis\n2. Renal glucosuria with incidental reactive leukocytosis\n3. Stress hyperglycaemia with an occult infection precipitating the picture",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete physical examination to localize the pain\n2. Examination of all major joints for swelling, warmth, tenderness, and range of motion\n3. Complete blood count\n4. Erythrocyte sedimentation rate and C-reactive protein\n5. Examination of the ears with otoscopy\n6. Examination of the throat\n7. Urinalysis\n8. X-ray of the area where the pain is located\n9. Anti-streptolysin O titer\n10. Antinuclear antibody test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "New-onset type 1 diabetes mellitus with early diabetic ketoacidosis (pain likely musculoskeletal/cramp from osmotic diuresis and metabolic derangement)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 3795,
+   "total_tokens": 4109,
+   "cost": 0.0045762,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0045762,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.004554
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3881,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1069,
+   "completion_tokens": 908,
+   "total_tokens": 1977,
+   "cost": 0.00135222,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00135222,
+    "upstream_inference_prompt_cost": 0.00026262,
+    "upstream_inference_completions_cost": 0.0010896
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 903,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1456,
+   "completion_tokens": 913,
+   "total_tokens": 2369,
+   "cost": 0.00129,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1010,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00129,
+    "upstream_inference_prompt_cost": 0.0001944,
+    "upstream_inference_completions_cost": 0.0010956
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 944,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 83.5
+}

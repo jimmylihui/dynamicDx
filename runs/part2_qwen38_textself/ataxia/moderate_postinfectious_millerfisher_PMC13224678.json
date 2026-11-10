@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Do you have a history of Parkinson's disease?",
+  "Have you had a stroke in the past?",
+  "Do you have multiple sclerosis?",
+  "Are you currently taking any medications for nausea, vomiting, or psychiatric conditions?",
+  "Do you have a known diagnosis of Huntington's disease?",
+  "Have you experienced significant head trauma in the past?",
+  "Do you have Wilson's disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI of the brain with attention to the basal ganglia and cerebellum",
+  "Serum ceruloplasmin, serum copper, and 24-hour urine copper levels",
+  "Peripheral blood smear for acanthocytes",
+  "Genetic testing for CAG repeat expansion in the HTT gene"
+ ],
+ "served": [
+  "brain MRI",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "copper / caeruloplasmin",
+  "24-hour urinary copper",
+  "genetic ataxia panel"
+ ],
+ "results": [
+  "1. MRI of the brain with attention to the basal ganglia and cerebellum",
+  "     brain MRI: no cerebellar atrophy, no focal lesion",
+  "     MRI brain with gadolinium: normal",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "2. Serum ceruloplasmin, serum copper, and 24-hour urine copper levels",
+  "     copper / caeruloplasmin: normal - excludes Wilson disease",
+  "     24-hour urinary copper: normal",
+  "3. Peripheral blood smear for acanthocytes",
+  "     not performed / not available",
+  "4. Genetic testing for CAG repeat expansion in the HTT gene",
+  "     genetic ataxia panel: no pathogenic repeat expansion or variant"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic Parkinson's disease\nAlternative 1: Multiple system atrophy (parkinsonian type)\nAlternative 2: Corticobasal degeneration",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with attention to the basal ganglia and cerebellum\n2. Serum ceruloplasmin, serum copper, and 24-hour urine copper levels\n3. Peripheral blood smear for acanthocytes\n4. Genetic testing for CAG repeat expansion in the HTT gene",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic Parkinson's disease",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 197,
+   "completion_tokens": 88,
+   "total_tokens": 285,
+   "cost": 7.091e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.091e-05,
+    "upstream_inference_prompt_cost": 2.955e-05,
+    "upstream_inference_completions_cost": 4.136e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 556,
+   "completion_tokens": 62,
+   "total_tokens": 618,
+   "cost": 0.00011254,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011254,
+    "upstream_inference_prompt_cost": 8.34e-05,
+    "upstream_inference_completions_cost": 2.914e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 873,
+   "completion_tokens": 37,
+   "total_tokens": 910,
+   "cost": 7.9732e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.9732e-05,
+    "upstream_inference_prompt_cost": 6.2342e-05,
+    "upstream_inference_completions_cost": 1.739e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "moderate_postinfectious_millerfisher_PMC13224678.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.1
+}

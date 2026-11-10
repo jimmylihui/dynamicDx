@@ -1,0 +1,168 @@
+{
+ "questions": [
+  "Did these symptoms start suddenly?",
+  "Does the tremor occur when your hand is resting?",
+  "Does the tremor worsen as you reach for an object?",
+  "Have these symptoms developed gradually over time?",
+  "Do you have difficulty initiating movement?",
+  "Have you noticed your handwriting becoming smaller?",
+  "Do you experience numbness or tingling in your right side?",
+  "Have you noticed any changes in your vision?",
+  "Are you taking any medications for psychiatric conditions?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI Brain",
+  "CT Brain",
+  "Blood glucose",
+  "Neurological examination"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "CT head (non-contrast)",
+  "blood glucose",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     MRI diffusion-weighted sequences: restricted diffusion consistent with a lacunar infarct",
+  "     MRI susceptibility-weighted sequences: left striatal signal abnormality without hemorrhage",
+  "2. CT Brain",
+  "     CT head (non-contrast): HYPERDENSE LEFT caudate and lentiform nucleus - contralateral to the movements",
+  "3. Blood glucose",
+  "     blood glucose: 30.63 mmol/L (551.3 mg/dL) with glycosuria and NO ketonuria",
+  "4. Neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: reduced tone in the left limbs",
+  "     limb strength (MRC) examination: 5/5 throughout",
+  "     deep tendon reflexes and plantar responses: normal reflexes and flexor plantar responses",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): left-sided choreiform and ballistic movements; otherwise normal",
+  "     posture and pull test: left-sided choreiform and ballistic movements; stable on pull test",
+  "     fundoscopy: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Non-ketotic hyperglycemic hemichorea-hemiballismus\nIschemic stroke of the basal ganglia\nHemorrhagic stroke of the basal ganglia\nHuntington's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. CT Brain\n3. Blood glucose\n4. Neurological examination",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Non-ketotic hyperglycemic hemichorea-hemiballismus",
+ "decisive_served": [
+  "CT head (non-contrast)",
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 209,
+   "completion_tokens": 2169,
+   "total_tokens": 2378,
+   "cost": 0.00075836,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075836,
+    "upstream_inference_prompt_cost": 2.09e-05,
+    "upstream_inference_completions_cost": 0.00073746
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2091,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 603,
+   "completion_tokens": 2967,
+   "total_tokens": 3570,
+   "cost": 0.00106908,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00106908,
+    "upstream_inference_prompt_cost": 6.03e-05,
+    "upstream_inference_completions_cost": 0.00100878
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2817,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 954,
+   "completion_tokens": 1978,
+   "total_tokens": 2932,
+   "cost": 0.00076792,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00076792,
+    "upstream_inference_prompt_cost": 9.54e-05,
+    "upstream_inference_completions_cost": 0.00067252
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1959,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hyperglycemic_hemichorea_PMC12596229.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 272.7
+}

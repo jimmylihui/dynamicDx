@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Do you have a history of polio?",
+  "Is your right leg shorter than your left?",
+  "Does your right foot turn inward or downward when you try to walk?",
+  "Are you able to lift the front part of your right foot off the ground while sitting?",
+  "Can you wiggle the toes on your right foot?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "dystonia gene panel",
+  "lysosomal enzyme assay (beta-galactosidase, hexosaminidase)"
+ ],
+ "results": [
+  "1. slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "2. copper / caeruloplasmin / 24 h urinary copper: NORMAL - excludes Wilson disease",
+  "3. dystonia gene panel: biallelic GLB1 variants",
+  "4. lysosomal enzyme assay (beta-galactosidase, hexosaminidase): REDUCED beta-galactosidase, with 5-10% residual activity - type-III GM1 gangliosidosis"
+ ],
+ "dx_raw": "DIAGNOSIS: Type III GM1 gangliosidosis (late-onset juvenile form) caused by biallelic pathogenic variants in the GLB1 gene resulting in deficient beta-galactosidase activity.\n\nAlternatives considered:\n1. Dopa-responsive dystonia (Segawa syndrome) - often presents with similar lower limb dystonia and foot posturing in childhood, though ruled out by genetic/enzymatic findings.\n2. Hereditary spastic paraplegia - can present with leg weakness and gait disturbance, but typically lacks the specific extrapyramidal signs seen here.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Type III GM1 gangliosidosis (late-onset juvenile form) caused by biallelic pathogenic variants in the GLB1 gene resulting in deficient beta-galactosidase activity.",
+ "decisive_served": [
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "dystonia gene panel",
+  "lysosomal enzyme assay (beta-galactosidase, hexosaminidase)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 76,
+   "total_tokens": 4899,
+   "cost": 0.00075917,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075917,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 3.572e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5207,
+   "completion_tokens": 127,
+   "total_tokens": 5334,
+   "cost": 0.00024042,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00024042,
+    "upstream_inference_prompt_cost": 0.00018073,
+    "upstream_inference_completions_cost": 5.969e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_PMC12904113.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.8
+}

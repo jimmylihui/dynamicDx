@@ -1,0 +1,128 @@
+{
+ "questions": [
+  "Were you asleep when this happened?",
+  "Do you remember the event happening?",
+  "Were you confused or disoriented immediately after the event?",
+  "Did you experience tongue biting or urinary incontinence?",
+  "Did you feel a warning sensation, such as a strange smell or feeling, just before it started?",
+  "Do you have a known history of epilepsy?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Polysomnography with EEG"
+ ],
+ "served": [
+  "video-polygraphy (EEG with EMG)"
+ ],
+ "results": [
+  "1. Polysomnography with EEG",
+  "     video-polygraphy (EEG with EMG): not performed"
+ ],
+ "dx_raw": "DIAGNOSIS: Sleep-related hypermotor epilepsy caused by frontal lobe seizures\nREM sleep behavior disorder\nSleep terrors\nGeneralized tonic-clonic seizure",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Polysomnography with EEG",
+ "rationale": [
+  null
+ ],
+ "dx": "Sleep-related hypermotor epilepsy caused by frontal lobe seizures",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 173,
+   "completion_tokens": 2039,
+   "total_tokens": 2212,
+   "cost": 0.00071056,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00071056,
+    "upstream_inference_prompt_cost": 1.73e-05,
+    "upstream_inference_completions_cost": 0.00069326
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1964,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 505,
+   "completion_tokens": 1153,
+   "total_tokens": 1658,
+   "cost": 0.00044252,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00044252,
+    "upstream_inference_prompt_cost": 5.05e-05,
+    "upstream_inference_completions_cost": 0.00039202
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1095,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 633,
+   "completion_tokens": 2923,
+   "total_tokens": 3556,
+   "cost": 0.00105712,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00105712,
+    "upstream_inference_prompt_cost": 6.33e-05,
+    "upstream_inference_completions_cost": 0.00099382
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2900,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 189.8
+}

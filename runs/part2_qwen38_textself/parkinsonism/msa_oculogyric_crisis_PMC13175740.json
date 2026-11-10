@@ -1,0 +1,162 @@
+{
+ "questions": [
+  "Do you have difficulty moving your eyes upward?",
+  "Do you have difficulty moving your eyes downward?",
+  "Can you move your eyes horizontally without difficulty?",
+  "Did these symptoms start suddenly?",
+  "Did these symptoms start gradually?",
+  "Have you experienced any recent head trauma?",
+  "Do you have a history of Parkinson's disease?",
+  "Do you have a history of Progressive Supranuclear Palsy?",
+  "Do you experience frequent falls?",
+  "Do you have difficulty swallowing?",
+  "Do you have cognitive decline or memory problems?",
+  "Is there a family history of similar eye movement disorders?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Bedside examination of vertical and horizontal saccades and pursuit",
+  "MRI of the brain with attention to the midbrain and pons",
+  "Serum acetylcholine receptor antibodies"
+ ],
+ "served": [
+  "vertical saccades and gaze range (up and down)",
+  "smooth pursuit and saccade velocity",
+  "video-oculography / eye-movement recording",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "acetylcholine receptor, MuSK and LRP4 antibodies"
+ ],
+ "results": [
+  "1. Bedside examination of vertical and horizontal saccades and pursuit",
+  "     vertical saccades and gaze range (up and down): NO baseline oculomotor abnormality before levodopa - the upward deviation is drug-induced, not a supranuclear palsy",
+  "     smooth pursuit and saccade velocity: normal",
+  "     video-oculography / eye-movement recording: normal baseline vertical saccades and gaze; dose-related conjugate upward eye deviation with blepharospasm beginning about 30 minutes after levodopa and resolving by 3 hours",
+  "2. MRI of the brain with attention to the midbrain and pons",
+  "     MRI brain with gadolinium: putaminal atrophy with the rim sign and putaminal hypointensity on susceptibility-weighted imaging",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: putaminal hypointensity",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): no hummingbird sign",
+  "3. Serum acetylcholine receptor antibodies",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Multiple System Atrophy-Parkinsonian type (MSA-P) with levodopa-induced oculogyric crisis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination of vertical and horizontal saccades and pursuit\n2. MRI of the brain with attention to the midbrain and pons\n3. Serum acetylcholine receptor antibodies",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Multiple System Atrophy-Parkinsonian type (MSA-P) with levodopa-induced oculogyric crisis",
+ "decisive_served": [
+  "vertical saccades and gaze range (up and down)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 192,
+   "completion_tokens": 140,
+   "total_tokens": 332,
+   "cost": 9.46e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.46e-05,
+    "upstream_inference_prompt_cost": 2.88e-05,
+    "upstream_inference_completions_cost": 6.58e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 675,
+   "completion_tokens": 40,
+   "total_tokens": 715,
+   "cost": 0.00012005,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00012005,
+    "upstream_inference_prompt_cost": 0.00010125,
+    "upstream_inference_completions_cost": 1.88e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1053,
+   "completion_tokens": 29,
+   "total_tokens": 1082,
+   "cost": 0.000102972,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000102972,
+    "upstream_inference_prompt_cost": 8.9342e-05,
+    "upstream_inference_completions_cost": 1.363e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.0
+}

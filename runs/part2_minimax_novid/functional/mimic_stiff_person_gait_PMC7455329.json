@@ -1,0 +1,167 @@
+{
+ "questions": [
+  "Is the main reason for your visit pain?",
+  "Did your symptoms begin suddenly?",
+  "Are you having trouble breathing?",
+  "Do you have chest pain or pressure?",
+  "Do you have abdominal pain?",
+  "Do you have a severe headache?",
+  "Have you had any weakness, numbness, trouble speaking, or vision changes?",
+  "Have you had a fever or chills?",
+  "Have you noticed any bleeding (in vomit, stool, urine, or elsewhere)?",
+  "Have you had any recent injury or trauma?",
+  "Have you felt dizzy or fainted?",
+  "Do you have any chronic medical conditions?",
+  "Do you take any medications regularly?",
+  "Do you have any allergies?",
+  "Have you unintentionally lost weight recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Thyroid-stimulating hormone (TSH)",
+  "Hemoglobin A1c",
+  "Urinalysis"
+ ],
+ "served": [
+  "full blood count, renal and liver profile",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "TSH / free T4",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Complete blood count",
+  "     full blood count, renal and liver profile: normal",
+  "2. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "3. Thyroid-stimulating hormone (TSH)",
+  "     TSH / free T4: normal",
+  "4. Hemoglobin A1c",
+  "     blood glucose and HbA1c: normal",
+  "     glucose / HbA1c: may show type 1 diabetes, which is commonly comorbid",
+  "5. Urinalysis",
+  "     urinalysis: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: No active disease identified; clinically well patient with a stable, quiescent chronic medical condition not requiring pharmacologic therapy.\n\n1. Essential hypertension managed non-pharmacologically\n2. History of a previously treated/resolved condition (e.g., malignancy in remission, prior surgical cure)\n3. Health anxiety / medically unexplained symptoms with normal workup",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete blood count\n2. Comprehensive metabolic panel\n3. Thyroid-stimulating hormone (TSH)\n4. Hemoglobin A1c\n5. Urinalysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "No active disease identified; clinically well patient with a stable, quiescent chronic medical condition not requiring pharmacologic therapy.",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 3346,
+   "total_tokens": 3660,
+   "cost": 0.0040374,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0040374,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.0040152
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3595,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 846,
+   "completion_tokens": 581,
+   "total_tokens": 1427,
+   "cost": 0.00089292,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00089292,
+    "upstream_inference_prompt_cost": 0.00019572,
+    "upstream_inference_completions_cost": 0.0006972
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 627,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1088,
+   "completion_tokens": 1861,
+   "total_tokens": 2949,
+   "cost": 0.00237864,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 754,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00237864,
+    "upstream_inference_prompt_cost": 0.00014544,
+    "upstream_inference_completions_cost": 0.0022332
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2258,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 93.5
+}

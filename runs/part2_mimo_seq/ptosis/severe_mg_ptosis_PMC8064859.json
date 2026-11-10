@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Have you noticed any difficulty with your balance or have you had any falls recently?",
+  "Do you have any trouble moving your eyes, especially looking up or down?",
+  "Do you experience any drooping of your eyelids or double vision?",
+  "Do you have a tremor or stiffness in your arms or legs?",
+  "Have you noticed any changes in your speech or swallowing?",
+  "Does the drooping of your eyelids get worse later in the day or when you are tired?",
+  "Are both eyelids affected, or just one?",
+  "Have you noticed any weakness in your arms or legs that comes and goes?",
+  "Have you had any difficulty chewing or keeping your head up, especially towards the end of a meal?",
+  "Do you have any problems with your breathing or shortness of breath?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Ice pack test (apply ice to closed affected eyelid for 2 minutes, observe for improvement in ptosis)",
+  "Anti-acetylcholine receptor (AChR) antibody blood test",
+  "Anti-MuSK antibody blood test",
+  "Repetitive nerve stimulation study",
+  "CT scan of the chest (to evaluate thymus gland)"
+ ],
+ "served": [
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "anti-MuSK antibodies",
+  "repetitive nerve stimulation",
+  "CT chest (thymus)"
+ ],
+ "results": [
+  "R1 ASK Have you noticed any difficulty with your balance or have you had any falls recently?; Do you have any trouble moving your eyes, especially looking up or down?; Do you experience any drooping of your eyelids or double vision?; Do you have a tremor or stiffness in your arms or legs?; Have you noticed any changes in your speech or swallowing? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R2 ASK Does the drooping of your eyelids get worse later in the day or when you are tired?; Are both eyelids affected, or just one?; Have you noticed any weakness in your arms or legs that comes and goes?; Have you had any difficulty chewing or keeping your head up, especially towards the end of a meal?; Do you have any problems with your breathing or shortness of breath? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Ice pack test (apply ice to closed affected eyelid for 2 minutes, observe for improvement in ptosis); Anti-acetylcholine receptor (AChR) antibody blood test; Anti-MuSK antibody blood test; Repetitive nerve stimulation study; CT scan of the chest (to evaluate thymus gland) -> [['ice-pack test'], ['anti-acetylcholine receptor antibodies'], ['anti-MuSK antibodies'], ['repetitive nerve stimulation'], ['CT chest (thymus)']]",
+  "R4 DIAGNOSIS Ocular myasthenia gravis (anti-AChR antibody positive) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any difficulty with your balance or have you had any falls recently?",
+    "Do you have any trouble moving your eyes, especially looking up or down?",
+    "Do you experience any drooping of your eyelids or double vision?",
+    "Do you have a tremor or stiffness in your arms or legs?",
+    "Have you noticed any changes in your speech or swallowing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Does the drooping of your eyelids get worse later in the day or when you are tired?",
+    "Are both eyelids affected, or just one?",
+    "Have you noticed any weakness in your arms or legs that comes and goes?",
+    "Have you had any difficulty chewing or keeping your head up, especially towards the end of a meal?",
+    "Do you have any problems with your breathing or shortness of breath?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Ice pack test (apply ice to closed affected eyelid for 2 minutes, observe for improvement in ptosis)",
+    "Anti-acetylcholine receptor (AChR) antibody blood test",
+    "Anti-MuSK antibody blood test",
+    "Repetitive nerve stimulation study",
+    "CT scan of the chest (to evaluate thymus gland)"
+   ],
+   "result": [
+    [
+     "ice-pack test"
+    ],
+    [
+     "anti-acetylcholine receptor antibodies"
+    ],
+    [
+     "anti-MuSK antibodies"
+    ],
+    [
+     "repetitive nerve stimulation"
+    ],
+    [
+     "CT chest (thymus)"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Ocular myasthenia gravis (anti-AChR antibody positive)"
+  }
+ ],
+ "dx": "Ocular myasthenia gravis (anti-AChR antibody positive)",
+ "dx_raw": "DIAGNOSIS: Ocular myasthenia gravis (anti-AChR antibody positive)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "anti-acetylcholine receptor antibodies",
+  "repetitive nerve stimulation"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0016,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_mg_ptosis_PMC8064859.mp4",
+ "line": "ptosis",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 92.7
+}

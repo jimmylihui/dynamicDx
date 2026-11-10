@@ -1,0 +1,130 @@
+{
+ "questions": [
+  "Have you had any recent injury or hit to your forehead or scalp?",
+  "Have you had any fever recently?",
+  "Has this lump been present for more than a few days?",
+  "Has it been getting larger or changing shape?",
+  "Have you noticed any drainage or fluid coming out of it?",
+  "Have you had a similar lump in this area before?",
+  "Have you tried any treatment for it already, such as hot compresses or medication?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Point-of-care ultrasound of the forehead mass",
+  "Transillumination of the mass"
+ ],
+ "served": [],
+ "results": [
+  "1. Point-of-care ultrasound of the forehead mass",
+  "     not performed / not available",
+  "2. Transillumination of the mass",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOS diagnosis: Inflamed epidermal inclusion cyst of the forehead\n\nErythematous pilar cyst of the forehead\n\nSmall cutaneous abscess of the forehead\n\nInflamed lipoma of the forehead",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Point-of-care ultrasound of the forehead mass\n2. Transillumination of the mass",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "DIAGNOS diagnosis: Inflamed epidermal inclusion cyst of the forehead",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 506,
+   "completion_tokens": 380,
+   "total_tokens": 886,
+   "cost": 0.0001508976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001508976,
+    "upstream_inference_prompt_cost": 4.44976e-05,
+    "upstream_inference_completions_cost": 0.0001064
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 281,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 880,
+   "completion_tokens": 487,
+   "total_tokens": 1367,
+   "cost": 0.0001980944,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001980944,
+    "upstream_inference_prompt_cost": 6.17344e-05,
+    "upstream_inference_completions_cost": 0.00013636
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 465,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1028,
+   "completion_tokens": 609,
+   "total_tokens": 1637,
+   "cost": 0.0002002896,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 832,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002002896,
+    "upstream_inference_prompt_cost": 2.97696e-05,
+    "upstream_inference_completions_cost": 0.00017052
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 559,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 27.7
+}

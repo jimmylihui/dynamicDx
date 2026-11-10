@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Did you have a recent injury to your face?",
+  "Do you have double vision?",
+  "Do you have any numbness in your cheek or upper lip?",
+  "Did you lose consciousness?",
+  "Do you have any vision loss?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "yes",
+  "5": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "CT scan of the orbits and facial bones",
+  "Forced duction test"
+ ],
+ "served": [
+  "forced duction test"
+ ],
+ "results": [
+  "1. CT scan of the orbits and facial bones",
+  "     not performed / not available",
+  "2. Forced duction test",
+  "     forced duction test: restriction consistent with a mechanical cause"
+ ],
+ "dx_raw": "DIAGNOSIS: Medial orbital wall fracture with entrapment of the medial rectus muscle\n\n1. Orbital floor fracture with inferior rectus entrapment\n2. Traumatic orbital hematoma\n3. Traumatic sixth nerve palsy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. CT scan of the orbits and facial bones\n2. Forced duction test",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Medial orbital wall fracture with entrapment of the medial rectus muscle",
+ "decisive_served": [
+  "forced duction test"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8890,
+   "completion_tokens": 3532,
+   "total_tokens": 12422,
+   "cost": 0.00208988,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00208988,
+    "upstream_inference_prompt_cost": 0.000889,
+    "upstream_inference_completions_cost": 0.00120088
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3323,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9166,
+   "completion_tokens": 2619,
+   "total_tokens": 11785,
+   "cost": 0.00180706,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00180706,
+    "upstream_inference_prompt_cost": 0.0009166,
+    "upstream_inference_completions_cost": 0.00089046
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2281,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9318,
+   "completion_tokens": 1760,
+   "total_tokens": 11078,
+   "cost": 0.0015302,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0015302,
+    "upstream_inference_prompt_cost": 0.0009318,
+    "upstream_inference_completions_cost": 0.0005984
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1718,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 308.9
+}

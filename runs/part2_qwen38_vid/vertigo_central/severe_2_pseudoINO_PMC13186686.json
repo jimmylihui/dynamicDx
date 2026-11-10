@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Did this problem start after a recent head injury or accident?",
+  "Do you have double vision when looking straight ahead?",
+  "Is your right eye unable to move outward (towards the right)?",
+  "Does your right eyelid droop significantly?",
+  "Is your right pupil larger than your left pupil?",
+  "Do you have severe pain around your right eye or forehead?",
+  "Have you been diagnosed with diabetes or high blood pressure?",
+  "Did this condition come on suddenly, over hours or days?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Measure the vertical deviation in primary gaze and assess for limitation of upgaze in the affected eye",
+  "Perform a forced duction test on the right eye to check for mechanical restriction",
+  "Obtain a non-contrast CT scan of the head and orbits with bone windows",
+  "Obtain an MRI of the brain and orbits"
+ ],
+ "served": [
+  "vertical gaze and convergence",
+  "forced duction test",
+  "CT head (non-contrast)",
+  "MRI sella and orbits"
+ ],
+ "results": [
+  "1. Measure the vertical deviation in primary gaze and assess for limitation of upgaze in the affected eye",
+  "     vertical gaze and convergence: normal",
+  "2. Perform a forced duction test on the right eye to check for mechanical restriction",
+  "     forced duction test: restriction consistent with a mechanical cause",
+  "3. Obtain a non-contrast CT scan of the head and orbits with bone windows",
+  "     CT head (non-contrast): multiple skull fractures and epidural haemorrhage; NO evidence of brainstem injury",
+  "4. Obtain an MRI of the brain and orbits",
+  "     MRI sella and orbits: subtle MEDIAL ORBITAL WALL FRACTURE with medial rectus involvement; no brainstem pathology"
+ ],
+ "dx_raw": "DIAGNOSIS: Traumatic entrapment of the medial rectus muscle secondary to a medial orbital wall fracture\nAlternative 1: Orbital floor fracture with inferior rectus entrapment (blowout fracture)\nAlternative 2: Post-traumatic restrictive strabismus due to soft tissue scarring",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Measure the vertical deviation in primary gaze and assess for limitation of upgaze in the affected eye\n2. Perform a forced duction test on the right eye to check for mechanical restriction\n3. Obtain a non-contrast CT scan of the head and orbits with bone windows\n4. Obtain an MRI of the brain and orbits",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Traumatic entrapment of the medial rectus muscle secondary to a medial orbital wall fracture",
+ "decisive_served": [
+  "forced duction test",
+  "CT head (non-contrast)",
+  "MRI sella and orbits"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 3287,
+   "completion_tokens": 114,
+   "total_tokens": 3401,
+   "cost": 0.00054663,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00054663,
+    "upstream_inference_prompt_cost": 0.00049305,
+    "upstream_inference_completions_cost": 5.358e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 3700,
+   "completion_tokens": 69,
+   "total_tokens": 3769,
+   "cost": 0.000192934,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 2944,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000192934,
+    "upstream_inference_prompt_cost": 0.000160504,
+    "upstream_inference_completions_cost": 3.243e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 4013,
+   "completion_tokens": 65,
+   "total_tokens": 4078,
+   "cost": 0.000169396,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 3456,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000169396,
+    "upstream_inference_prompt_cost": 0.000138846,
+    "upstream_inference_completions_cost": 3.055e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 12.3
+}

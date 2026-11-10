@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Did you experience a recent head injury?",
+  "Did you lose consciousness?",
+  "Do you have fluid leaking from your nose or ears?",
+  "Do you have a severe headache?",
+  "Do you have any weakness or numbness in your limbs?",
+  "Do you have difficulty speaking or swallowing?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "CT head (non-contrast)",
+  "CT facial bones and orbits"
+ ],
+ "served": [
+  "CT head (non-contrast)"
+ ],
+ "results": [
+  "1. CT head (non-contrast)",
+  "     CT head (non-contrast): multiple skull fractures and epidural haemorrhage; NO evidence of brainstem injury",
+  "2. CT facial bones and orbits",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Traumatic ophthalmoplegia due to basilar skull fracture\n\nOrbital apex syndrome\nCavernous sinus syndrome\nBrainstem contusion",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. CT head (non-contrast)\n2. CT facial bones and orbits",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Traumatic ophthalmoplegia due to basilar skull fracture",
+ "decisive_served": [
+  "CT head (non-contrast)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 262,
+   "completion_tokens": 1829,
+   "total_tokens": 2091,
+   "cost": 0.00064806,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00064806,
+    "upstream_inference_prompt_cost": 2.62e-05,
+    "upstream_inference_completions_cost": 0.00062186
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1749,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 568,
+   "completion_tokens": 1931,
+   "total_tokens": 2499,
+   "cost": 0.00071334,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00071334,
+    "upstream_inference_prompt_cost": 5.68e-05,
+    "upstream_inference_completions_cost": 0.00065654
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1853,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 731,
+   "completion_tokens": 2140,
+   "total_tokens": 2871,
+   "cost": 0.0008007,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008007,
+    "upstream_inference_prompt_cost": 7.31e-05,
+    "upstream_inference_completions_cost": 0.0007276
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2171,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 180.9
+}

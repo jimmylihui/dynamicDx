@@ -1,0 +1,162 @@
+{
+ "questions": [
+  "Is the problem in your right leg?",
+  "Is the pain in your knee?",
+  "Did you injure it recently?",
+  "Did you hear a pop when it happened?",
+  "Does the knee feel unstable?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Physical examination of the left lower extremity",
+  "Ultrasound of left lower extremity veins",
+  "X-ray of left leg",
+  "Complete blood count",
+  "D-dimer",
+  "Basic metabolic panel"
+ ],
+ "served": [
+  "gait examination",
+  "Romberg test",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "full blood count",
+  "serum electrolytes, urea and creatinine"
+ ],
+ "results": [
+  "1. Physical examination of the left lower extremity",
+  "     gait examination: wide-based, unsteady gait",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): limb and truncal ataxia with dysmetria",
+  "     posture and pull test: broad-based stance and impaired pull response",
+  "2. Ultrasound of left lower extremity veins",
+  "     not performed / not available",
+  "3. X-ray of left leg",
+  "     not performed / not available",
+  "4. Complete blood count",
+  "     full blood count: normal",
+  "5. D-dimer",
+  "     not performed / not available",
+  "6. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Cerebellar stroke (likely left cerebellar hemisphere ischemia)\n\n1. MRI of brain with and without contrast\n2. CT angiography of head and neck\n3. Echocardiogram\n4. Continuous cardiac monitoring\n5. Lipid panel\n6. Hemoglobin A1c",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Physical examination of the left lower extremity\n2. Ultrasound of left lower extremity veins\n3. X-ray of left leg\n4. Complete blood count\n5. D-dimer\n6. Basic metabolic panel",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Cerebellar stroke (likely left cerebellar hemisphere ischemia)",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 3073,
+   "total_tokens": 8128,
+   "cost": 0.0015417976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0015417976,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00086044
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3024,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5321,
+   "completion_tokens": 559,
+   "total_tokens": 5880,
+   "cost": 0.0002165576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002165576,
+    "upstream_inference_prompt_cost": 6.00376e-05,
+    "upstream_inference_completions_cost": 0.00015652
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 510,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5663,
+   "completion_tokens": 446,
+   "total_tokens": 6109,
+   "cost": 0.0001888936,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5312,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001888936,
+    "upstream_inference_prompt_cost": 6.40136e-05,
+    "upstream_inference_completions_cost": 0.00012488
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 376,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 141.1
+}

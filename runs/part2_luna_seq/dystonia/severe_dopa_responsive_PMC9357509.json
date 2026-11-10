@@ -1,0 +1,206 @@
+{
+ "questions": [
+  "Did this walking difficulty begin suddenly?",
+  "Do you feel weakness in either leg?",
+  "Do you have numbness or tingling in either leg?",
+  "Do you have back pain radiating into either leg?",
+  "Do you have difficulty controlling your bladder or bowels?",
+  "Have you ever had a stroke or other neurological illness?",
+  "Do you have diabetes?",
+  "Is walking easier when you are not being watched?",
+  "Do you have pain in your feet or ankles when you walk?",
+  "Do your legs feel stiff or difficult to move?",
+  "Do your feet ever involuntarily turn inward or cross over one another?",
+  "Do you have shaking or jerking movements in your legs?",
+  "Do you feel dizzy or unsteady, as if you might fall?",
+  "Have you had any recent injury, infection, or new medication before this problem began?",
+  "Does the walking problem vary substantially from one occasion to another?",
+  "Can you walk normally when running or walking backward?",
+  "Have you actually fallen because of this walking problem?",
+  "Are you afraid of falling when you walk?",
+  "Did the walking problem begin during or after a period of major emotional stress?",
+  "Do you have significant anxiety or depression?",
+  "Can you stand unsupported for 30 seconds without holding onto anything?",
+  "Can you rise from a chair without using your arms?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside neurological examination including manual lower-limb strength testing, tone, deep-tendon reflexes, plantar responses, vibration and pinprick sensation, finger–nose and heel–shin testing, and observation of normal walking, tandem walking, toe walking, heel walking, walking backward, and a squat-to-stand.",
+  "Bedside functional gait assessment with distraction and dual-task testing, including walking backward, tandem walking, running, hopping on each leg, tiptoe and heel walking, sudden turns, and the chair-gait test.",
+  "Bedside examination for functional lower-limb weakness, including Hoover’s sign, hip-abduction sign, and observation of the patient rising from a chair and walking when attention is diverted."
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)"
+ ],
+ "results": [
+  "R1 ASK Did this walking difficulty begin suddenly?; Do you feel weakness in either leg?; Do you have numbness or tingling in either leg?; Do you have back pain radiating into either leg?; Do you have difficulty controlling your bladder or bowels?; Have you ever had a stroke or other neurological illness?; Do you have diabetes?; Is walking easier when you are not being watched? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Do you have pain in your feet or ankles when you walk?; Do your legs feel stiff or difficult to move?; Do your feet ever involuntarily turn inward or cross over one another?; Do you have shaking or jerking movements in your legs?; Do you feel dizzy or unsteady, as if you might fall?; Have you had any recent injury, infection, or new medication before this problem began?; Does the walking problem vary substantially from one occasion to another?; Can you walk normally when running or walking backward? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Bedside neurological examination including manual lower-limb strength testing, tone, deep-tendon reflexes, plantar responses, vibration and pinprick sensation, finger–nose and heel–shin testing, and observation of normal walking, tandem walking, toe walking, heel walking, walking backward, and a squat-to-stand. -> [['muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)']]",
+  "R4 ORDER Bedside functional gait assessment with distraction and dual-task testing, including walking backward, tandem walking, running, hopping on each leg, tiptoe and heel walking, sudden turns, and the chair-gait test. -> [[]]",
+  "R5 ASK Have you actually fallen because of this walking problem?; Are you afraid of falling when you walk?; Did the walking problem begin during or after a period of major emotional stress?; Do you have significant anxiety or depression?; Can you stand unsupported for 30 seconds without holding onto anything?; Can you rise from a chair without using your arms? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R6 ORDER Bedside examination for functional lower-limb weakness, including Hoover’s sign, hip-abduction sign, and observation of the patient rising from a chair and walking when attention is diverted. -> [['limb strength (MRC) examination']]",
+  "R7 DIAGNOSIS Functional neurological symptom disorder presenting as a functional (psychogenic) gait disorder/astasia–abasia, with no evidence of an underlying structural neurological, sensory, or musculoskeletal cause. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did this walking difficulty begin suddenly?",
+    "Do you feel weakness in either leg?",
+    "Do you have numbness or tingling in either leg?",
+    "Do you have back pain radiating into either leg?",
+    "Do you have difficulty controlling your bladder or bowels?",
+    "Have you ever had a stroke or other neurological illness?",
+    "Do you have diabetes?",
+    "Is walking easier when you are not being watched?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your feet or ankles when you walk?",
+    "Do your legs feel stiff or difficult to move?",
+    "Do your feet ever involuntarily turn inward or cross over one another?",
+    "Do you have shaking or jerking movements in your legs?",
+    "Do you feel dizzy or unsteady, as if you might fall?",
+    "Have you had any recent injury, infection, or new medication before this problem began?",
+    "Does the walking problem vary substantially from one occasion to another?",
+    "Can you walk normally when running or walking backward?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Bedside neurological examination including manual lower-limb strength testing, tone, deep-tendon reflexes, plantar responses, vibration and pinprick sensation, finger–nose and heel–shin testing, and observation of normal walking, tandem walking, toe walking, heel walking, walking backward, and a squat-to-stand."
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "limb strength (MRC) examination",
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Bedside functional gait assessment with distraction and dual-task testing, including walking backward, tandem walking, running, hopping on each leg, tiptoe and heel walking, sudden turns, and the chair-gait test."
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you actually fallen because of this walking problem?",
+    "Are you afraid of falling when you walk?",
+    "Did the walking problem begin during or after a period of major emotional stress?",
+    "Do you have significant anxiety or depression?",
+    "Can you stand unsupported for 30 seconds without holding onto anything?",
+    "Can you rise from a chair without using your arms?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Bedside examination for functional lower-limb weakness, including Hoover’s sign, hip-abduction sign, and observation of the patient rising from a chair and walking when attention is diverted."
+   ],
+   "result": [
+    [
+     "limb strength (MRC) examination"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Functional neurological symptom disorder presenting as a functional (psychogenic) gait disorder/astasia–abasia, with no evidence of an underlying structural neurological, sensory, or musculoskeletal cause."
+  }
+ ],
+ "dx": "Functional neurological symptom disorder presenting as a functional (psychogenic) gait disorder/astasia–abasia, with no evidence of an underlying structural neurological, sensory, or musculoskeletal cause.",
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder presenting as a functional (psychogenic) gait disorder/astasia–abasia, with no evidence of an underlying structural neurological, sensory, or musculoskeletal cause.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0048,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_dopa_responsive_PMC9357509.mp4",
+ "line": "dystonia",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 57.6
+}

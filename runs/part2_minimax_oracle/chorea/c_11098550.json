@@ -1,0 +1,108 @@
+{
+ "questions": [
+  "Is the pain originating in your side or back?",
+  "Is the pain radiating down to your groin?",
+  "Have you seen blood in your urine?",
+  "Are you experiencing nausea or have you vomited?",
+  "Do you have a fever?",
+  "Have you had kidney stones before?",
+  "Is the pain coming and going in severe waves?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "sodium and serum osmolality",
+  "morning cortisol, ACTH and pituitary hormones",
+  "brain MRI with contrast"
+ ],
+ "results": [
+  "1. sodium and serum osmolality: HYPONATRAEMIA with LOW serum osmolality, euvolaemic",
+  "2. morning cortisol, ACTH and pituitary hormones: LOW ACTH, low prolactin and low testosterone - secondary adrenal insufficiency with anterior pituitary failure",
+  "3. brain MRI with contrast: EMPTY SELLA sign"
+ ],
+ "dx_raw": "DIAGNOSIS: Panhypopituitarism secondary to Empty Sella syndrome\nSheehan's syndrome\nPituitary apoplexy\nLymphocytic hypophysitis",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Panhypopituitarism secondary to Empty Sella syndrome",
+ "decisive_served": [
+  "sodium and serum osmolality",
+  "morning cortisol, ACTH and pituitary hormones",
+  "brain MRI with contrast"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 19222,
+   "completion_tokens": 874,
+   "total_tokens": 20096,
+   "cost": 0.00677772,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00677772,
+    "upstream_inference_prompt_cost": 0.00572892,
+    "upstream_inference_completions_cost": 0.0010488
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 800,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 19571,
+   "completion_tokens": 2106,
+   "total_tokens": 21677,
+   "cost": 0.00378882,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 19207,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00378882,
+    "upstream_inference_prompt_cost": 0.00126162,
+    "upstream_inference_completions_cost": 0.0025272
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2070,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.2,
+ "video": "c_11098550.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 45.1
+}

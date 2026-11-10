@@ -1,0 +1,136 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a history of epilepsy or seizures?",
+  "Did you wake up from sleep to perform these movements, or were you awake the whole time?",
+  "Do you have a history of snoring or witnessed apneas?",
+  "Have you ever been told that you act out your dreams (e.g., punching, kicking, talking)?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of sleepwalking?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Review the video for lateralizing signs (e.g., dystonic posturing of one hand, head/eye version) and automatisms",
+  "Bedside capillary blood glucose"
+ ],
+ "served": [
+  "video-oculography / eye-movement recording",
+  "blood glucose and HbA1c"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing any pain?; Do you have a history of epilepsy or seizures?; Did you wake up from sleep to perform these movements, or were you awake the whole time? -> ['no', 'no', 'no']",
+  "R2 ORDER Review the video for lateralizing signs (e.g., dystonic posturing of one hand, head/eye version) and automatisms -> [['video-oculography / eye-movement recording']]",
+  "R3 ASK Do you have a history of snoring or witnessed apneas?; Have you ever been told that you act out your dreams (e.g., punching, kicking, talking)? -> ['no', 'no']",
+  "R4 ASK Do you have a history of diabetes? -> ['no']",
+  "R5 ORDER Bedside capillary blood glucose -> [['blood glucose and HbA1c']]",
+  "R6 ASK Do you have a history of sleepwalking? -> ['no']",
+  "R7 DIAGNOSIS Sleep-related hypermotor epilepsy (SHE) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing any pain?",
+    "Do you have a history of epilepsy or seizures?",
+    "Did you wake up from sleep to perform these movements, or were you awake the whole time?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Review the video for lateralizing signs (e.g., dystonic posturing of one hand, head/eye version) and automatisms"
+   ],
+   "result": [
+    [
+     "video-oculography / eye-movement recording"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of snoring or witnessed apneas?",
+    "Have you ever been told that you act out your dreams (e.g., punching, kicking, talking)?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Bedside capillary blood glucose"
+   ],
+   "result": [
+    [
+     "blood glucose and HbA1c"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of sleepwalking?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Sleep-related hypermotor epilepsy (SHE)"
+  }
+ ],
+ "dx": "Sleep-related hypermotor epilepsy (SHE)",
+ "dx_raw": "DIAGNOSIS: Sleep-related hypermotor epilepsy (SHE)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0021,
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 36.8
+}

@@ -1,0 +1,210 @@
+{
+ "questions": [
+  "Do you snore loudly at night or has anyone told you that you stop breathing during sleep?",
+  "Do you often feel tired or sleepy during the day despite sleeping enough hours?",
+  "Have you noticed weight gain, feeling cold, constipation, or dry skin recently?",
+  "Have you been diagnosed with any medical conditions, particularly thyroid disease, kidney disease, or amyloidosis?",
+  "Have you noticed any recent changes in the size of your tongue, or has it always been larger than normal?",
+  "Do you have any trouble speaking, chewing, or swallowing due to the tongue size?",
+  "Have you noticed changes in your ring or shoe size, or any coarsening of your facial features?",
+  "Do you bruise easily, or have you noticed any swelling in your ankles/legs or puffiness around your eyes?",
+  "Does the tongue appear smooth and lack the normal bumpy texture (papillae) on its surface?",
+  "Have you noticed any soreness, burning sensation, or color changes (redness/pallor) on your tongue?",
+  "Do you have any dental problems, frequent mouth ulcers, or wear dentures?",
+  "Have you experienced any numbness or tingling in your hands or feet?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Complete blood count with peripheral blood smear",
+  "Serum iron, ferritin, total iron-binding capacity (TIBC), and transferrin saturation",
+  "Serum vitamin B12 and folate levels",
+  "Serum zinc level",
+  "Serum iron, ferritin, total iron-binding capacity (TIBC), and transferrin saturation",
+  "Serum zinc level",
+  "Serum albumin and prealbumin",
+  "Serum iron studies",
+  "Serum zinc level",
+  "Serum albumin level",
+  "Serum iron studies (iron, ferritin, TIBC)",
+  "Serum zinc level",
+  "Serum vitamin B1 (thiamine) level"
+ ],
+ "served": [
+  "full blood count",
+  "vitamin B12 with methylmalonic acid",
+  "serum folate",
+  "vitamin B12 / folate",
+  "liver function tests",
+  "liver function and ammonia",
+  "serum vitamin B1 (thiamine)"
+ ],
+ "results": [
+  "R1 ASK Do you snore loudly at night or has anyone told you that you stop breathing during sleep?; Do you often feel tired or sleepy during the day despite sleeping enough hours?; Have you noticed weight gain, feeling cold, constipation, or dry skin recently?; Have you been diagnosed with any medical conditions, particularly thyroid disease, kidney disease, or amyloidosis? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Have you noticed any recent changes in the size of your tongue, or has it always been larger than normal?; Do you have any trouble speaking, chewing, or swallowing due to the tongue size?; Have you noticed changes in your ring or shoe size, or any coarsening of your facial features?; Do you bruise easily, or have you noticed any swelling in your ankles/legs or puffiness around your eyes? -> ['no', 'no', 'no', 'no']",
+  "R3 ASK Does the tongue appear smooth and lack the normal bumpy texture (papillae) on its surface?; Have you noticed any soreness, burning sensation, or color changes (redness/pallor) on your tongue?; Do you have any dental problems, frequent mouth ulcers, or wear dentures?; Have you experienced any numbness or tingling in your hands or feet? -> ['no', 'no', 'yes', 'no']",
+  "R4 ORDER Complete blood count with peripheral blood smear; Serum iron, ferritin, total iron-binding capacity (TIBC), and transferrin saturation; Serum vitamin B12 and folate levels; Serum zinc level -> [['full blood count'], [], ['vitamin B12 with methylmalonic acid', 'serum folate', 'vitamin B12 / folate'], []]",
+  "R5 ORDER Serum iron, ferritin, total iron-binding capacity (TIBC), and transferrin saturation; Serum zinc level; Serum albumin and prealbumin -> [[], [], []]",
+  "R6 ORDER Serum iron studies; Serum zinc level; Serum albumin level -> [[], [], ['liver function tests', 'liver function and ammonia']]",
+  "R7 ORDER Serum iron studies (iron, ferritin, TIBC); Serum zinc level; Serum vitamin B1 (thiamine) level -> [[], [], ['serum vitamin B1 (thiamine)']]",
+  "R8 DIAGNOSIS Atrophic glossitis, most likely due to iron deficiency (iron studies could not be performed to confirm) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you snore loudly at night or has anyone told you that you stop breathing during sleep?",
+    "Do you often feel tired or sleepy during the day despite sleeping enough hours?",
+    "Have you noticed weight gain, feeling cold, constipation, or dry skin recently?",
+    "Have you been diagnosed with any medical conditions, particularly thyroid disease, kidney disease, or amyloidosis?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any recent changes in the size of your tongue, or has it always been larger than normal?",
+    "Do you have any trouble speaking, chewing, or swallowing due to the tongue size?",
+    "Have you noticed changes in your ring or shoe size, or any coarsening of your facial features?",
+    "Do you bruise easily, or have you noticed any swelling in your ankles/legs or puffiness around your eyes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Does the tongue appear smooth and lack the normal bumpy texture (papillae) on its surface?",
+    "Have you noticed any soreness, burning sensation, or color changes (redness/pallor) on your tongue?",
+    "Do you have any dental problems, frequent mouth ulcers, or wear dentures?",
+    "Have you experienced any numbness or tingling in your hands or feet?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Complete blood count with peripheral blood smear",
+    "Serum iron, ferritin, total iron-binding capacity (TIBC), and transferrin saturation",
+    "Serum vitamin B12 and folate levels",
+    "Serum zinc level"
+   ],
+   "result": [
+    [
+     "full blood count"
+    ],
+    [],
+    [
+     "vitamin B12 with methylmalonic acid",
+     "serum folate",
+     "vitamin B12 / folate"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Serum iron, ferritin, total iron-binding capacity (TIBC), and transferrin saturation",
+    "Serum zinc level",
+    "Serum albumin and prealbumin"
+   ],
+   "result": [
+    [],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Serum iron studies",
+    "Serum zinc level",
+    "Serum albumin level"
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "liver function tests",
+     "liver function and ammonia"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Serum iron studies (iron, ferritin, TIBC)",
+    "Serum zinc level",
+    "Serum vitamin B1 (thiamine) level"
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "serum vitamin B1 (thiamine)"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Atrophic glossitis, most likely due to iron deficiency (iron studies could not be performed to confirm)"
+  }
+ ],
+ "dx": "Atrophic glossitis, most likely due to iron deficiency (iron studies could not be performed to confirm)",
+ "dx_raw": "\n\nDIAGNOSIS: Atrophic glossitis, most likely due to iron deficiency (iron studies could not be performed to confirm)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0074,
+ "n_frames": 32,
+ "duration_s": 9.0,
+ "video": "mild_palatal_PMC12933468.mp4",
+ "line": "myoclonus",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 54.2
+}

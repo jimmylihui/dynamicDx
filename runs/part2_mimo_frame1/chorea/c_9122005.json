@@ -1,0 +1,170 @@
+{
+ "questions": [
+  "Are you experiencing pain?",
+  "Is the pain in your chest?",
+  "Is the pain in your stomach or abdomen?",
+  "Are you having trouble breathing?",
+  "Have you had a fever?",
+  "Did your symptoms start suddenly?",
+  "Are you feeling dizzy?",
+  "Have you vomited?",
+  "Do you have any numbness or tingling?",
+  "Did you fall or injure yourself recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Are you feeling weak or tired?",
+  "Have you fainted or passed out?",
+  "Do you feel your heart racing or skipping beats?",
+  "Have you noticed changes in your vision?",
+  "Are you having trouble sleeping?",
+  "Are you experiencing feelings of sadness or hopelessness?",
+  "Do you have any joint swelling?",
+  "Have you noticed changes in your weight?",
+  "Are you having problems with your memory or concentration?",
+  "Are you here because someone else suggested you should come?"
+ ],
+ "served": [],
+ "results": [
+  "1. Are you feeling weak or tired?",
+  "     not performed / not available",
+  "2. Have you fainted or passed out?",
+  "     not performed / not available",
+  "3. Do you feel your heart racing or skipping beats?",
+  "     not performed / not available",
+  "4. Have you noticed changes in your vision?",
+  "     not performed / not available",
+  "5. Are you having trouble sleeping?",
+  "     not performed / not available",
+  "6. Are you experiencing feelings of sadness or hopelessness?",
+  "     not performed / not available",
+  "7. Do you have any joint swelling?",
+  "     not performed / not available",
+  "8. Have you noticed changes in your weight?",
+  "     not performed / not available",
+  "9. Are you having problems with your memory or concentration?",
+  "     not performed / not available",
+  "10. Are you here because someone else suggested you should come?",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Observation/admission for elective workup or pre-procedural evaluation\n\nAlternatives:\n1. Psychiatric admission for evaluation (voluntary or involuntary)\n2. Social admission (safety concerns, housing instability, or safeguarding)\n3. Factitious disorder or malingering requiring further behavioral assessment\n\nThe absence of any reported symptoms, combined with the patient appearing stable in a hospital gown on a medical-surgical bed, suggests admission for non-emergent reasons such as planned evaluation, psychiatric hold, or social circumstances rather than an acute medical condition.",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Are you feeling weak or tired?\n2. Have you fainted or passed out?\n3. Do you feel your heart racing or skipping beats?\n4. Have you noticed changes in your vision?\n5. Are you having trouble sleeping?\n6. Are you experiencing feelings of sadness or hopelessness?\n7. Do you have any joint swelling?\n8. Have you noticed changes in your weight?\n9. Are you having problems with your memory or concentration?\n10. Are you here because someone else suggested you should come?",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Observation/admission for elective workup or pre-procedural evaluation",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 528,
+   "completion_tokens": 694,
+   "total_tokens": 1222,
+   "cost": 0.0002418976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002418976,
+    "upstream_inference_prompt_cost": 4.75776e-05,
+    "upstream_inference_completions_cost": 0.00019432
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 603,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 903,
+   "completion_tokens": 713,
+   "total_tokens": 1616,
+   "cost": 0.0002997176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002997176,
+    "upstream_inference_prompt_cost": 0.0001000776,
+    "upstream_inference_completions_cost": 0.00019964
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 605,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1280,
+   "completion_tokens": 670,
+   "total_tokens": 1950,
+   "cost": 0.0003404576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003404576,
+    "upstream_inference_prompt_cost": 0.0001528576,
+    "upstream_inference_completions_cost": 0.0001876
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 552,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 138.9
+}

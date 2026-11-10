@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Is pain your primary symptom?",
+  "Is the pain in your chest?",
+  "Do you have a fever?",
+  "Do you have a cough?",
+  "Is this problem acute (started suddenly)?",
+  "Is the pain severe?",
+  "Are you short of breath?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Urinalysis",
+  "Thyroid stimulating hormone level"
+ ],
+ "served": [
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "blood glucose",
+  "renal function and eGFR",
+  "urinalysis",
+  "thyroid function (TSH, free T4)",
+  "TSH, free T4 and free T3"
+ ],
+ "results": [
+  "1. Complete blood count",
+  "     full blood count: normal",
+  "2. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     blood glucose: 799 mg/dL (normal 74-106)",
+  "     renal function and eGFR: normal",
+  "3. Urinalysis",
+  "     urinalysis: leukocyturia; negative ketones",
+  "4. Thyroid stimulating hormone level",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH, free T4 and free T3: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Type 2 diabetes mellitus with severe hyperglycemia\n\nDifferential considerations:\n1. New-onset Type 1 diabetes mellitus\n2. Secondary diabetes (e.g., Cushing syndrome, pancreatic disease)\n3. Urinary tract infection (contributing to or discovered incidentally with hyperglycemia)",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete blood count\n2. Comprehensive metabolic panel\n3. Urinalysis\n4. Thyroid stimulating hormone level",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Type 2 diabetes mellitus with severe hyperglycemia",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 3882,
+   "total_tokens": 4267,
+   "cost": 0.001096956,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001096956,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 0.00108696
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3821,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 683,
+   "completion_tokens": 439,
+   "total_tokens": 1122,
+   "cost": 0.0001658552,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001658552,
+    "upstream_inference_prompt_cost": 4.29352e-05,
+    "upstream_inference_completions_cost": 0.00012292
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 411,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 928,
+   "completion_tokens": 592,
+   "total_tokens": 1520,
+   "cost": 0.000207872,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 640,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000207872,
+    "upstream_inference_prompt_cost": 4.2112e-05,
+    "upstream_inference_completions_cost": 0.00016576
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 519,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 95.9
+}

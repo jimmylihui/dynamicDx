@@ -1,0 +1,311 @@
+{
+ "questions": [
+  "Are you here because of weakness on one side of your body?",
+  "Have you had a recent stroke?",
+  "Have you noticed any facial droop?",
+  "Do you have difficulty speaking or finding words?",
+  "Have you had any recent falls?",
+  "Have you noticed any memory problems recently?",
+  "Do you have any trouble with bladder control or urinary incontinence?",
+  "Do you feel your feet are shuffling when you walk?",
+  "Have you had any dizziness or balance problems?",
+  "Are you currently taking any medications?",
+  "Does the dizziness occur when you stand up?",
+  "Does the room feel like it's spinning around you?",
+  "Have you had any nausea or vomiting with the dizziness?",
+  "Do you have any hearing loss or ringing in your ears?",
+  "Have you ever had heart problems or high blood pressure?",
+  "Do you have chest pain or shortness of breath?",
+  "Have you ever fainted or lost consciousness?",
+  "Do you have neck pain?",
+  "Do you have numbness or tingling anywhere in your body?",
+  "Have you been having any headaches?",
+  "Do you drink alcohol?",
+  "Have you ever had problems with alcohol in the past?",
+  "Do you have any liver problems?",
+  "Have you noticed any tremors or shaking in your hands?",
+  "Have you had any confusion or changes in thinking?",
+  "Do you have diabetes?",
+  "Do you have any weight loss or loss of appetite?",
+  "Do you feel numbness or \"pins and needles\" in your legs or feet?",
+  "Are you able to feel the ground clearly when you walk?",
+  "Have you noticed any problems with your vision?",
+  "Has your vision been getting progressively worse?",
+  "Do you have trouble seeing things in dim light or at night?",
+  "Do you have a family history of similar vision problems?",
+  "Do you see any \"floaters\" or flashing lights in your vision?",
+  "Do you have pain in your eyes?",
+  "Do you have any difficulty with coordination in your hands?",
+  "Have you noticed any slowness in your movements?",
+  "Do you have stiffness in your limbs?",
+  "Do you have any trouble swallowing?",
+  "Do you have any changes in your voice or speech?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "yes",
+  "31": "no",
+  "32": "no",
+  "33": "no",
+  "34": "no",
+  "35": "no",
+  "36": "no",
+  "37": "yes",
+  "38": "yes",
+  "39": "no",
+  "40": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Perform a careful physical examination of the patient's gait and balance at the bedside",
+  "Perform visual acuity and visual field testing at the bedside",
+  "Perform a fundoscopic examination"
+ ],
+ "served": [
+  "gait examination",
+  "Romberg test",
+  "posture and pull test",
+  "fundoscopy"
+ ],
+ "results": [
+  "R1 ASK Are you here because of weakness on one side of your body?; Have you had a recent stroke?; Have you noticed any facial droop?; Do you have difficulty speaking or finding words?; Have you had any recent falls? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Have you noticed any memory problems recently?; Do you have any trouble with bladder control or urinary incontinence?; Do you feel your feet are shuffling when you walk?; Have you had any dizziness or balance problems?; Are you currently taking any medications? -> ['no', 'no', 'no', 'yes', 'no']",
+  "R3 ASK Does the dizziness occur when you stand up?; Does the room feel like it's spinning around you?; Have you had any nausea or vomiting with the dizziness?; Do you have any hearing loss or ringing in your ears?; Have you ever had heart problems or high blood pressure? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Do you have chest pain or shortness of breath?; Have you ever fainted or lost consciousness?; Do you have neck pain?; Do you have numbness or tingling anywhere in your body?; Have you been having any headaches? -> ['no', 'no', 'no', 'no', 'no']",
+  "R5 ORDER Perform a careful physical examination of the patient's gait and balance at the bedside -> [['gait examination', 'Romberg test', 'posture and pull test']]",
+  "R6 ASK Do you drink alcohol?; Have you ever had problems with alcohol in the past?; Do you have any liver problems?; Have you noticed any tremors or shaking in your hands?; Have you had any confusion or changes in thinking? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 ASK Do you have diabetes?; Do you have any weight loss or loss of appetite?; Do you feel numbness or \"pins and needles\" in your legs or feet?; Are you able to feel the ground clearly when you walk?; Have you noticed any problems with your vision? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R8 ASK Has your vision been getting progressively worse?; Do you have trouble seeing things in dim light or at night?; Do you have a family history of similar vision problems?; Do you see any \"floaters\" or flashing lights in your vision?; Do you have pain in your eyes? -> ['no', 'no', 'no', 'no', 'no']",
+  "R9 ORDER Perform visual acuity and visual field testing at the bedside; Perform a fundoscopic examination -> [[], ['fundoscopy']]",
+  "R10 ASK Do you have any difficulty with coordination in your hands?; Have you noticed any slowness in your movements?; Do you have stiffness in your limbs?; Do you have any trouble swallowing?; Do you have any changes in your voice or speech? -> ['no', 'yes', 'yes', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Subacute combined degeneration of the spinal cord due to vitamin B12 deficiency. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you here because of weakness on one side of your body?",
+    "Have you had a recent stroke?",
+    "Have you noticed any facial droop?",
+    "Do you have difficulty speaking or finding words?",
+    "Have you had any recent falls?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any memory problems recently?",
+    "Do you have any trouble with bladder control or urinary incontinence?",
+    "Do you feel your feet are shuffling when you walk?",
+    "Have you had any dizziness or balance problems?",
+    "Are you currently taking any medications?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Does the dizziness occur when you stand up?",
+    "Does the room feel like it's spinning around you?",
+    "Have you had any nausea or vomiting with the dizziness?",
+    "Do you have any hearing loss or ringing in your ears?",
+    "Have you ever had heart problems or high blood pressure?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have chest pain or shortness of breath?",
+    "Have you ever fainted or lost consciousness?",
+    "Do you have neck pain?",
+    "Do you have numbness or tingling anywhere in your body?",
+    "Have you been having any headaches?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Perform a careful physical examination of the patient's gait and balance at the bedside"
+   ],
+   "result": [
+    [
+     "gait examination",
+     "Romberg test",
+     "posture and pull test"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you drink alcohol?",
+    "Have you ever had problems with alcohol in the past?",
+    "Do you have any liver problems?",
+    "Have you noticed any tremors or shaking in your hands?",
+    "Have you had any confusion or changes in thinking?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have diabetes?",
+    "Do you have any weight loss or loss of appetite?",
+    "Do you feel numbness or \"pins and needles\" in your legs or feet?",
+    "Are you able to feel the ground clearly when you walk?",
+    "Have you noticed any problems with your vision?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Has your vision been getting progressively worse?",
+    "Do you have trouble seeing things in dim light or at night?",
+    "Do you have a family history of similar vision problems?",
+    "Do you see any \"floaters\" or flashing lights in your vision?",
+    "Do you have pain in your eyes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Perform visual acuity and visual field testing at the bedside",
+    "Perform a fundoscopic examination"
+   ],
+   "result": [
+    [],
+    [
+     "fundoscopy"
+    ]
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you have any difficulty with coordination in your hands?",
+    "Have you noticed any slowness in your movements?",
+    "Do you have stiffness in your limbs?",
+    "Do you have any trouble swallowing?",
+    "Do you have any changes in your voice or speech?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Subacute combined degeneration of the spinal cord due to vitamin B12 deficiency."
+  }
+ ],
+ "dx": "Subacute combined degeneration of the spinal cord due to vitamin B12 deficiency.",
+ "dx_raw": "DIAGNOSIS: Subacute combined degeneration of the spinal cord due to vitamin B12 deficiency.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "cost_usd": 0.0272,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_paraneoplastic_PMC12741441.mp4",
+ "line": "ataxia",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 87.7
+}

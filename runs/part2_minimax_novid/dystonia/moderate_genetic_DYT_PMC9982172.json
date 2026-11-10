@@ -1,0 +1,184 @@
+{
+ "questions": [
+  "Is the primary reason for your visit today a new or worsening symptom, rather than a routine check-up or follow-up of a known condition?",
+  "Do you have chest pain or discomfort?",
+  "Do you have shortness of breath?",
+  "Have you experienced any sudden weakness or numbness, especially on one side of your body?",
+  "Do you have a severe headache or the worst headache of your life?",
+  "Do you have abdominal pain?",
+  "Have you unintentionally lost weight in the past 6 months?",
+  "Do you have a fever or feel feverish?",
+  "Do you have a cough?",
+  "Do you have fatigue or low energy?",
+  "Do you have any chronic medical conditions such as diabetes, hypertension, asthma, or heart disease?",
+  "Are you currently taking any prescription medications?",
+  "Do you have any medication allergies?",
+  "Do you currently smoke or have you ever smoked regularly?",
+  "Do you drink alcohol regularly?",
+  "Are you over 50 years old?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Measure vital signs (blood pressure, heart rate, respiratory rate, temperature, oxygen saturation)",
+  "Auscultate the heart",
+  "Auscultate the lungs",
+  "Palpate the abdomen",
+  "Examine for peripheral lymphadenopathy",
+  "Basic metabolic panel",
+  "Complete blood count",
+  "Fasting lipid panel",
+  "Urinalysis",
+  "Hemoglobin A1c"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "full blood count and biochemistry",
+  "urinalysis",
+  "blood glucose and HbA1c"
+ ],
+ "results": [
+  "1. Measure vital signs (blood pressure, heart rate, respiratory rate, temperature, oxygen saturation)",
+  "     not performed / not available",
+  "2. Auscultate the heart",
+  "     not performed / not available",
+  "3. Auscultate the lungs",
+  "     not performed / not available",
+  "4. Palpate the abdomen",
+  "     not performed / not available",
+  "5. Examine for peripheral lymphadenopathy",
+  "     not performed / not available",
+  "6. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "7. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "8. Fasting lipid panel",
+  "     not performed / not available",
+  "9. Urinalysis",
+  "     urinalysis: normal",
+  "10. Hemoglobin A1c",
+  "     blood glucose and HbA1c: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: No active organic disease identified; healthy adult\n\nAlternatives:\n- Somatic symptom disorder / health anxiety (if unvoiced symptoms exist)\n- Subclinical hypothyroidism (not tested, would require TSH)\n- Early/undiagnosed condition not yet detectable on current workup (e.g., malignancy, autoimmune disease)",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Measure vital signs (blood pressure, heart rate, respiratory rate, temperature, oxygen saturation)\n2. Auscultate the heart\n3. Auscultate the lungs\n4. Palpate the abdomen\n5. Examine for peripheral lymphadenopathy\n6. Basic metabolic panel\n7. Complete blood count\n8. Fasting lipid panel\n9. Urinalysis\n10. Hemoglobin A1c",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "No active organic disease identified; healthy adult",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 13236,
+   "total_tokens": 13550,
+   "cost": 0.0159054,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0159054,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.0158832
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 14328,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 953,
+   "completion_tokens": 4545,
+   "total_tokens": 5498,
+   "cost": 0.00568182,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00568182,
+    "upstream_inference_prompt_cost": 0.00022782,
+    "upstream_inference_completions_cost": 0.005454
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5077,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1296,
+   "completion_tokens": 978,
+   "total_tokens": 2274,
+   "cost": 0.00135072,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 882,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00135072,
+    "upstream_inference_prompt_cost": 0.00017712,
+    "upstream_inference_completions_cost": 0.0011736
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1101,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_genetic_DYT_PMC9982172.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 218.5
+}

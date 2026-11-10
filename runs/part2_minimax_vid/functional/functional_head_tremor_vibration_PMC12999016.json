@@ -1,0 +1,161 @@
+{
+ "questions": [
+  "Do you have a tremor?",
+  "Does it shake when your hands are resting in your lap?",
+  "Is the tremor worse on one side of your body?",
+  "Do you feel stiff in your arms, legs, or neck?",
+  "Do you feel that you are moving slower than you used to?",
+  "Do you have difficulty walking or balancing?",
+  "Do you shuffle your feet when you walk?",
+  "Have you lost your sense of smell?",
+  "Do you have constipation?",
+  "Do you act out your dreams while sleeping?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Ask the patient to hold both arms outstretched horizontally in front of them.",
+  "Perform finger-to-nose testing bilaterally.",
+  "Ask the patient to draw a spiral.",
+  "Assess tandem gait.",
+  "Check for dystonia in the neck and upper extremities.",
+  "Order thyroid function tests.",
+  "Trial of alcohol to assess for tremor improvement."
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)",
+  "tandem gait",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. Ask the patient to hold both arms outstretched horizontally in front of them.",
+  "     not performed / not available",
+  "2. Perform finger-to-nose testing bilaterally.",
+  "     coordination examination (limb and truncal): normal",
+  "     cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus): normal",
+  "3. Ask the patient to draw a spiral.",
+  "     not performed / not available",
+  "4. Assess tandem gait.",
+  "     tandem gait: normal",
+  "5. Check for dystonia in the neck and upper extremities.",
+  "     not performed / not available",
+  "6. Order thyroid function tests.",
+  "     TSH / free T4: normal",
+  "7. Trial of alcohol to assess for tremor improvement.",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Essential tremor (idiopathic action tremor)\nAlternatives:\n1. Enhanced physiological tremor\n2. Drug-induced tremor\n3. Cerebellar outflow tremor (e.g., from a structural lesion)",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Ask the patient to hold both arms outstretched horizontally in front of them.\n2. Perform finger-to-nose testing bilaterally.\n3. Ask the patient to draw a spiral.\n4. Assess tandem gait.\n5. Check for dystonia in the neck and upper extremities.\n6. Order thyroid function tests.\n7. Trial of alcohol to assess for tremor improvement.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Essential tremor (idiopathic action tremor)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 5149,
+   "total_tokens": 12211,
+   "cost": 0.00827004,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00827004,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.0061788
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5438,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7485,
+   "completion_tokens": 2052,
+   "total_tokens": 9537,
+   "cost": 0.00302166,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00302166,
+    "upstream_inference_prompt_cost": 0.00055926,
+    "upstream_inference_completions_cost": 0.0024624
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2372,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7806,
+   "completion_tokens": 132,
+   "total_tokens": 7938,
+   "cost": 0.0007218,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7410,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007218,
+    "upstream_inference_prompt_cost": 0.0005634,
+    "upstream_inference_completions_cost": 0.0001584
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 111,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.9,
+ "video": "functional_head_tremor_vibration_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 105.5
+}

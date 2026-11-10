@@ -1,0 +1,286 @@
+{
+ "questions": [
+  "Is your main problem a very large swelling of the scrotum or genital area?",
+  "Did this swelling develop gradually over months or years?",
+  "Has the swollen area become painful, red, foul-smelling, or ulcerated?",
+  "Is your main problem severe swelling of one or both legs?",
+  "Did you recently sustain a major injury or undergo surgery?",
+  "Are you currently short of breath or having chest pain?",
+  "Do you have a fever?",
+  "Is the main problem confined to one of your legs or feet?",
+  "Is one leg currently immobilized in a cast, splint, or brace?",
+  "Did the problem begin suddenly during the last few days?",
+  "Have you had numbness or weakness in that leg?",
+  "Is your main problem a large swelling or mass of your abdomen?",
+  "Is the mass located in your pelvis or groin?",
+  "Did the mass appear after a recent medical procedure or injury?",
+  "Have you had difficulty passing urine or stool?",
+  "Are you being treated because of a congenital abnormality present since birth?",
+  "Do you have two lower bodies or an extra limb attached to your body?",
+  "Is the visible structure at the foot of the bed a second person who is physically attached to you?",
+  "Have you previously been diagnosed with a parasitic twin?",
+  "Is the prominent object covered by the white sheet a device or prosthesis rather than part of your body?",
+  "Do you have a large ventral abdominal hernia?",
+  "Are you hospitalized primarily because you cannot walk normally?",
+  "Have you had an amputation of either lower limb?",
+  "Is the large rounded structure under the white sheet part of your body?",
+  "Is it attached to your lower abdomen or pelvis?",
+  "Has it been present since birth?",
+  "Is it causing difficulty with walking or sitting?",
+  "Are you hospitalized because of a problem involving your heart or circulation?",
+  "Are you hospitalized because of a problem involving your lungs or breathing?",
+  "Is the object at the foot of the bed another person or animal rather than part of you?",
+  "Are you receiving treatment for a psychiatric or behavioral condition?",
+  "Is your primary diagnosis a cancer or other tumor?",
+  "Are you hospitalized for a gastrointestinal or abdominal surgical condition?",
+  "Is the large white-covered area a postoperative wound or surgical dressing?",
+  "Are you hospitalized because of a problem involving your urinary or reproductive organs?",
+  "Are you hospitalized primarily because of an orthopedic injury or fracture?",
+  "Did you fall or have a motor-vehicle accident before this hospitalization?",
+  "Are you being treated for severe burns?",
+  "Is the large covered object a stuffed toy or other inanimate object placed in the bed?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "no",
+  "33": "no",
+  "34": "no",
+  "35": "no",
+  "36": "no",
+  "37": "no",
+  "38": "no",
+  "39": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Is your main problem a very large swelling of the scrotum or genital area?; Did this swelling develop gradually over months or years?; Has the swollen area become painful, red, foul-smelling, or ulcerated? -> ['no', 'no', 'no']",
+  "R2 ASK Is your main problem severe swelling of one or both legs?; Did you recently sustain a major injury or undergo surgery?; Are you currently short of breath or having chest pain?; Do you have a fever? -> ['no', 'no', 'no', 'no']",
+  "R3 ASK Is the main problem confined to one of your legs or feet?; Is one leg currently immobilized in a cast, splint, or brace?; Did the problem begin suddenly during the last few days?; Have you had numbness or weakness in that leg? -> ['no', 'no', 'no', 'no']",
+  "R4 ASK Is your main problem a large swelling or mass of your abdomen?; Is the mass located in your pelvis or groin?; Did the mass appear after a recent medical procedure or injury?; Have you had difficulty passing urine or stool? -> ['no', 'no', 'no', 'no']",
+  "R5 ASK Are you being treated because of a congenital abnormality present since birth?; Do you have two lower bodies or an extra limb attached to your body?; Is the visible structure at the foot of the bed a second person who is physically attached to you?; Have you previously been diagnosed with a parasitic twin? -> ['no', 'no', 'no', 'no']",
+  "R6 ASK Is the prominent object covered by the white sheet a device or prosthesis rather than part of your body?; Do you have a large ventral abdominal hernia?; Are you hospitalized primarily because you cannot walk normally?; Have you had an amputation of either lower limb? -> ['no', 'no', 'no', 'no']",
+  "R7 ASK Is the large rounded structure under the white sheet part of your body?; Is it attached to your lower abdomen or pelvis?; Has it been present since birth?; Is it causing difficulty with walking or sitting? -> ['no', 'no', 'no', 'no']",
+  "R8 ASK Are you hospitalized because of a problem involving your heart or circulation?; Are you hospitalized because of a problem involving your lungs or breathing?; Is the object at the foot of the bed another person or animal rather than part of you?; Are you receiving treatment for a psychiatric or behavioral condition? -> ['no', 'no', 'no', 'no']",
+  "R9 ASK Is your primary diagnosis a cancer or other tumor?; Are you hospitalized for a gastrointestinal or abdominal surgical condition?; Is the large white-covered area a postoperative wound or surgical dressing?; Are you hospitalized because of a problem involving your urinary or reproductive organs? -> ['no', 'no', 'no', 'no']",
+  "R10 ASK Are you hospitalized primarily because of an orthopedic injury or fracture?; Did you fall or have a motor-vehicle accident before this hospitalization?; Are you being treated for severe burns?; Is the large covered object a stuffed toy or other inanimate object placed in the bed? -> ['no', 'no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: No definitive disease diagnosis can be established from the available visual information and negative history. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is your main problem a very large swelling of the scrotum or genital area?",
+    "Did this swelling develop gradually over months or years?",
+    "Has the swollen area become painful, red, foul-smelling, or ulcerated?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Is your main problem severe swelling of one or both legs?",
+    "Did you recently sustain a major injury or undergo surgery?",
+    "Are you currently short of breath or having chest pain?",
+    "Do you have a fever?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Is the main problem confined to one of your legs or feet?",
+    "Is one leg currently immobilized in a cast, splint, or brace?",
+    "Did the problem begin suddenly during the last few days?",
+    "Have you had numbness or weakness in that leg?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Is your main problem a large swelling or mass of your abdomen?",
+    "Is the mass located in your pelvis or groin?",
+    "Did the mass appear after a recent medical procedure or injury?",
+    "Have you had difficulty passing urine or stool?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Are you being treated because of a congenital abnormality present since birth?",
+    "Do you have two lower bodies or an extra limb attached to your body?",
+    "Is the visible structure at the foot of the bed a second person who is physically attached to you?",
+    "Have you previously been diagnosed with a parasitic twin?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Is the prominent object covered by the white sheet a device or prosthesis rather than part of your body?",
+    "Do you have a large ventral abdominal hernia?",
+    "Are you hospitalized primarily because you cannot walk normally?",
+    "Have you had an amputation of either lower limb?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Is the large rounded structure under the white sheet part of your body?",
+    "Is it attached to your lower abdomen or pelvis?",
+    "Has it been present since birth?",
+    "Is it causing difficulty with walking or sitting?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Are you hospitalized because of a problem involving your heart or circulation?",
+    "Are you hospitalized because of a problem involving your lungs or breathing?",
+    "Is the object at the foot of the bed another person or animal rather than part of you?",
+    "Are you receiving treatment for a psychiatric or behavioral condition?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Is your primary diagnosis a cancer or other tumor?",
+    "Are you hospitalized for a gastrointestinal or abdominal surgical condition?",
+    "Is the large white-covered area a postoperative wound or surgical dressing?",
+    "Are you hospitalized because of a problem involving your urinary or reproductive organs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Are you hospitalized primarily because of an orthopedic injury or fracture?",
+    "Did you fall or have a motor-vehicle accident before this hospitalization?",
+    "Are you being treated for severe burns?",
+    "Is the large covered object a stuffed toy or other inanimate object placed in the bed?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: No definitive disease diagnosis can be established from the available visual information and negative history."
+  }
+ ],
+ "dx": "No definitive disease diagnosis can be established from the available visual information and negative history.",
+ "dx_raw": "DIAGNOSIS: No definitive disease diagnosis can be established from the available visual information and negative history.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "cost_usd": 0.011,
+ "n_frames": 32,
+ "duration_s": 16.8,
+ "video": "severe_1_generalized_PMC13101308.mp4",
+ "line": "paroxysmal",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 103.2
+}

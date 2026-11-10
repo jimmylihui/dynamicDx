@@ -1,0 +1,197 @@
+{
+ "questions": [
+  "Are you having trouble breathing right now?",
+  "Are you having chest pain or pressure right now?",
+  "Did your current symptoms begin suddenly?",
+  "Do you feel weak or numb on one side of your body?",
+  "Is your face drooping or has your speech become difficult or slurred?",
+  "Are you confused or having trouble understanding what is being said?",
+  "Have you fainted or nearly fainted?",
+  "Are you experiencing uncontrolled shaking or jerking movements?",
+  "Are you having severe pain right now?",
+  "Do you have a fever?",
+  "Have you recently fallen or injured your head, neck, or back?",
+  "Have you recently taken alcohol, recreational drugs, or more medication than prescribed?",
+  "Do you have diabetes?",
+  "Have you had a stroke or seizure before?",
+  "Is this the first time you have experienced these symptoms?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside neurological examination during an episode, including level of awareness, responsiveness, eye movements, motor activity, and post-event recovery",
+  "Point-of-care capillary blood glucose",
+  "12-lead electrocardiogram",
+  "Complete blood count, electrolytes, calcium, magnesium, renal and liver function tests",
+  "Medication and toxicology review with serum drug levels where clinically relevant",
+  "Routine electroencephalogram with video recording",
+  "Brain MRI with and without contrast",
+  "Prolonged video-EEG monitoring to capture a typical shaking episode"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "blood glucose and HbA1c",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "full blood count",
+  "medication, supplement and herbal history",
+  "toxicology screen (urine and serum)",
+  "MRI brain with gadolinium",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Bedside neurological examination during an episode, including level of awareness, responsiveness, eye movements, motor activity, and post-event recovery",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: mild cognitive impairment",
+  "     muscle tone examination: increased tone with rigidity",
+  "     limb strength (MRC) examination: normal",
+  "2. Point-of-care capillary blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "3. 12-lead electrocardiogram",
+  "     not performed / not available",
+  "4. Complete blood count, electrolytes, calcium, magnesium, renal and liver function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: mildly raised transaminases with reduced albumin",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     full blood count: normal",
+  "5. Medication and toxicology review with serum drug levels where clinically relevant",
+  "     medication, supplement and herbal history: long-term hepatotoxic traditional Chinese medicine, notably Psoralea corylifolia, plus manganese-containing supplements",
+  "     toxicology screen (urine and serum): normal",
+  "6. Routine electroencephalogram with video recording",
+  "     not performed / not available",
+  "7. Brain MRI with and without contrast",
+  "     MRI brain with gadolinium: bilateral basal ganglia T1 hyperintensity without enhancement",
+  "     brain MRI: bilateral T1 HYPERINTENSITY in the basal ganglia - manganese deposition",
+  "8. Prolonged video-EEG monitoring to capture a typical shaking episode",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Acquired hepatocerebral degeneration with manganese-induced parkinsonism (manganism) from chronic hepatotoxic Psoralea corylifolia use and manganese-containing supplements\n\nALTERNATIVE 1: Idiopathic Parkinson disease\n\nALTERNATIVE 2: Wilson disease\n\nALTERNATIVE 3: Functional (psychogenic) movement disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside neurological examination during an episode, including level of awareness, responsiveness, eye movements, motor activity, and post-event recovery\n2. Point-of-care capillary blood glucose\n3. 12-lead electrocardiogram\n4. Complete blood count, electrolytes, calcium, magnesium, renal and liver function tests\n5. Medication and toxicology review with serum drug levels where clinically relevant\n6. Routine electroencephalogram with video recording\n7. Brain MRI with and without contrast\n8. Prolonged video-EEG monitoring to capture a typical shaking episode",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Acquired hepatocerebral degeneration with manganese-induced parkinsonism (manganism) from chronic hepatotoxic Psoralea corylifolia use and manganese-containing supplements",
+ "decisive_served": [
+  "medication, supplement and herbal history",
+  "brain MRI"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 697,
+   "completion_tokens": 498,
+   "total_tokens": 1195,
+   "cost": 0.000737,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000737,
+    "upstream_inference_prompt_cost": 0.0001394,
+    "upstream_inference_completions_cost": 0.0005976
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 310,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1281,
+   "completion_tokens": 281,
+   "total_tokens": 1562,
+   "cost": 0.0006573,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1278,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006573,
+    "upstream_inference_prompt_cost": 0.0003201,
+    "upstream_inference_completions_cost": 0.0003372
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 156,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1815,
+   "completion_tokens": 234,
+   "total_tokens": 2049,
+   "cost": 0.00044046,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1278,
+    "cache_write_tokens": 534,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00044046,
+    "upstream_inference_prompt_cost": 0.00015966,
+    "upstream_inference_completions_cost": 0.0002808
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 155,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 11.4,
+ "video": "moderate_hepatic_cirrhosis_PMC13166699.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 43.8
+}

@@ -1,0 +1,143 @@
+{
+ "questions": [
+  "Are you having trouble with your vision?",
+  "Is there pain in your eye?",
+  "Is your eye red or swollen?",
+  "Did you get something in your eye?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Visual acuity measurement",
+  "Pupillary light reflex test",
+  "Slit lamp examination",
+  "Dilated fundoscopic examination",
+  "Visual field testing"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "cranial nerve examination",
+  "fundoscopy",
+  "cranial nerve examination"
+ ],
+ "results": [
+  "1. Visual acuity measurement",
+  "     cranial nerve examination: normal - 'neurologic exam otherwise normal'",
+  "2. Pupillary light reflex test",
+  "     cranial nerve examination: normal - 'neurologic exam otherwise normal'",
+  "3. Slit lamp examination",
+  "     not performed / not available",
+  "4. Dilated fundoscopic examination",
+  "     fundoscopy: normal",
+  "5. Visual field testing",
+  "     cranial nerve examination: normal - 'neurologic exam otherwise normal'"
+ ],
+ "dx_raw": "DIAGNOSIS: Convergence insufficiency.\nAlternatives: Mild cranial nerve VI palsy, early accommodative insufficiency, vestibular disorder.",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Visual acuity measurement\n2. Pupillary light reflex test\n3. Slit lamp examination\n4. Dilated fundoscopic examination\n5. Visual field testing",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Convergence insufficiency.",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 544,
+   "completion_tokens": 1288,
+   "total_tokens": 1832,
+   "cost": 0.0004104576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004104576,
+    "upstream_inference_prompt_cost": 4.98176e-05,
+    "upstream_inference_completions_cost": 0.00036064
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1248,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 787,
+   "completion_tokens": 539,
+   "total_tokens": 1326,
+   "cost": 0.0002347576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002347576,
+    "upstream_inference_prompt_cost": 8.38376e-05,
+    "upstream_inference_completions_cost": 0.00015092
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 501,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1017,
+   "completion_tokens": 257,
+   "total_tokens": 1274,
+   "cost": 0.0001440936,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001440936,
+    "upstream_inference_prompt_cost": 7.21336e-05,
+    "upstream_inference_completions_cost": 7.196e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 221,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 85.8
+}

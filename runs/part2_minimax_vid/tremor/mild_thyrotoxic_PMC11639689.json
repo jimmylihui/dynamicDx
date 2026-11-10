@@ -1,0 +1,175 @@
+{
+ "questions": [
+  "Do you have a tremor or shaking in your hands?",
+  "Is the tremor mainly present when your hands are resting?",
+  "Does a small amount of alcohol temporarily relieve the tremor?",
+  "Do you have a family history of tremor?",
+  "Have you noticed a loss of your sense of smell?",
+  "Have you noticed that you are moving slower than you used to?",
+  "Do you feel stiffness in your arms or legs?",
+  "Is the tremor worse on one side of your body?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Perform the finger-to-nose-to-finger test to assess for cerebellar intention tremor",
+  "Test rapid alternating movements (dysdiadochokinesia) in both hands",
+  "Examine for dystonic posturing or sensory tricks in the tremulous limb",
+  "Order thyroid function tests to rule out hyperthyroidism",
+  "Order serum ceruloplasmin and 24-hour urinary copper to rule out Wilson's disease",
+  "Order an MRI brain with focus on the cerebellum and basal ganglia",
+  "Check a comprehensive metabolic panel including electrolytes, calcium, and liver function",
+  "Screen for recent use of tremor-inducing medications or substances (e.g., salbutamol, lithium, valproate, caffeine, stimulants)"
+ ],
+ "served": [
+  "kinetic / intention tremor (finger-nose)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "TSH / free T4",
+  "serum copper and caeruloplasmin",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "brain MRI",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "medication, supplement and herbal history",
+  "toxicology screen (urine and serum)"
+ ],
+ "results": [
+  "1. Perform the finger-to-nose-to-finger test to assess for cerebellar intention tremor",
+  "     kinetic / intention tremor (finger-nose): absent",
+  "2. Test rapid alternating movements (dysdiadochokinesia) in both hands",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): absent",
+  "3. Examine for dystonic posturing or sensory tricks in the tremulous limb",
+  "     not performed / not available",
+  "4. Order thyroid function tests to rule out hyperthyroidism",
+  "     TSH / free T4: normal - not thyrotoxic",
+  "5. Order serum ceruloplasmin and 24-hour urinary copper to rule out Wilson's disease",
+  "     serum copper and caeruloplasmin: normal",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal",
+  "6. Order an MRI brain with focus on the cerebellum and basal ganglia",
+  "     brain MRI: no brain lesion on unenhanced MRI with diffusion imaging",
+  "7. Check a comprehensive metabolic panel including electrolytes, calcium, and liver function",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "8. Screen for recent use of tremor-inducing medications or substances (e.g., salbutamol, lithium, valproate, caffeine, stimulants)",
+  "     medication, supplement and herbal history: nothing relevant",
+  "     toxicology screen (urine and serum): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Focal task-specific dystonic tremor (primary writing tremor) of the dominant upper limb\nAlternatives:\nEssential tremor (asymmetric, non-familial variant)\nFocal/segmental dystonia without overt dystonic posturing\nFunctional (psychogenic) tremor",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Perform the finger-to-nose-to-finger test to assess for cerebellar intention tremor\n2. Test rapid alternating movements (dysdiadochokinesia) in both hands\n3. Examine for dystonic posturing or sensory tricks in the tremulous limb\n4. Order thyroid function tests to rule out hyperthyroidism\n5. Order serum ceruloplasmin and 24-hour urinary copper to rule out Wilson's disease\n6. Order an MRI brain with focus on the cerebellum and basal ganglia\n7. Check a comprehensive metabolic panel including electrolytes, calcium, and liver function\n8. Screen for recent use of tremor-inducing medications or substances (e.g., salbutamol, lithium, valproate, caffeine, stimulants)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Focal task-specific dystonic tremor (primary writing tremor) of the dominant upper limb",
+ "decisive_served": [
+  "TSH / free T4"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 4832,
+   "total_tokens": 11894,
+   "cost": 0.00788964,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00788964,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.0057984
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4992,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7453,
+   "completion_tokens": 972,
+   "total_tokens": 8425,
+   "cost": 0.00171606,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00171606,
+    "upstream_inference_prompt_cost": 0.00054966,
+    "upstream_inference_completions_cost": 0.0011664
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 934,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7996,
+   "completion_tokens": 721,
+   "total_tokens": 8717,
+   "cost": 0.0014856,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7410,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014856,
+    "upstream_inference_prompt_cost": 0.0006204,
+    "upstream_inference_completions_cost": 0.0008652
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 790,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_thyrotoxic_PMC11639689.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 98.7
+}

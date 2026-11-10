@@ -1,0 +1,145 @@
+{
+ "questions": [
+  "Did these eye movements begin suddenly?",
+  "Do you have a known history of multiple sclerosis?",
+  "Are you currently taking any anti-seizure medications?",
+  "Do you experience double vision?",
+  "Have you had a recent head injury?",
+  "Do you have a family history of similar eye movement disorders?",
+  "Is the condition present when your eyes are closed?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI of the brain with and without contrast, focusing on the posterior fossa and brainstem",
+  "CT angiography of the head and neck"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain with DWI",
+  "CT / MR angiography (posterior circulation)",
+  "CT / MR angiography (circle of Willis)"
+ ],
+ "results": [
+  "1. MRI of the brain with and without contrast, focusing on the posterior fossa and brainstem",
+  "     MRI brain with gadolinium: bilateral dorsomedial pontine and left thalamic infarction",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the bilateral dorsomedial pons and left thalamus",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain with DWI: bilateral dorsomedial PONTINE and LEFT THALAMIC infarction",
+  "2. CT angiography of the head and neck",
+  "     CT / MR angiography (posterior circulation): slender left anterior cerebral artery and stenosis of the ipsilateral posterior cerebral artery",
+  "     CT / MR angiography (circle of Willis): normal / non-contributory"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute bilateral dorsomedial pontine and left thalamic infarction secondary to posterior circulation atherosclerotic disease (specifically involving the basilar artery perforators or top-of-the-basilar syndrome)\n1. Cardioembolic stroke with showering of emboli to the posterior circulation\n2. Arterial dissection of the vertebrobasilar system",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with and without contrast, focusing on the posterior fossa and brainstem\n2. CT angiography of the head and neck",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Acute bilateral dorsomedial pontine and left thalamic infarction secondary to posterior circulation atherosclerotic disease (specifically involving the basilar artery perforators or top-of-the-basilar syndrome)",
+ "decisive_served": [
+  "MRI brain with DWI"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 190,
+   "completion_tokens": 84,
+   "total_tokens": 274,
+   "cost": 6.798e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.798e-05,
+    "upstream_inference_prompt_cost": 2.85e-05,
+    "upstream_inference_completions_cost": 3.948e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 541,
+   "completion_tokens": 31,
+   "total_tokens": 572,
+   "cost": 9.572e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.572e-05,
+    "upstream_inference_prompt_cost": 8.115e-05,
+    "upstream_inference_completions_cost": 1.457e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 829,
+   "completion_tokens": 83,
+   "total_tokens": 912,
+   "cost": 9.4752e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.4752e-05,
+    "upstream_inference_prompt_cost": 5.5742e-05,
+    "upstream_inference_completions_cost": 3.901e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.2,
+ "video": "mild_1_seesaw_INO_PMC6883617.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.4
+}

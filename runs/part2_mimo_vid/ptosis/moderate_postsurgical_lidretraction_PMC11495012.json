@@ -1,0 +1,180 @@
+{
+ "questions": [
+  "Do you experience dizziness or a spinning sensation?",
+  "Do you see double when looking at objects?",
+  "Have you had a recent head injury or trauma?",
+  "Do you have ringing in your ears (tinnitus)?",
+  "Have you noticed any blurriness or loss of vision in either eye?",
+  "Do you have a family history of eye or brain problems?",
+  "Have you been diagnosed with any chronic illnesses (e.g., diabetes, hypertension)?",
+  "Are you taking any prescription or over-the-counter medications?",
+  "Do you have frequent headaches, especially around the eyes?",
+  "Have you had a recent cold, flu, or ear infection?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Cover-uncover test",
+  "Alternate cover test with prism measurement",
+  "Full extraocular muscle movement assessment",
+  "Visual acuity testing (Snellen chart)",
+  "Slit-lamp anterior segment examination",
+  "Dilated fundoscopic examination",
+  "Thyroid function tests (TSH, free T4)",
+  "Acetylcholine receptor antibody levels",
+  "MRI of the brain and orbits"
+ ],
+ "served": [
+  "cover test / ocular alignment",
+  "cover test / ocular alignment",
+  "ocular motility examination",
+  "visual acuity and colour vision",
+  "fundoscopy",
+  "thyroid function (TSH, free T4)",
+  "TSH / free T4 / TRAb",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "MRI orbits",
+  "MRI brain with contrast"
+ ],
+ "results": [
+  "1. Cover-uncover test",
+  "     cover test / ocular alignment: orthophoric",
+  "2. Alternate cover test with prism measurement",
+  "     cover test / ocular alignment: orthophoric",
+  "3. Full extraocular muscle movement assessment",
+  "     ocular motility examination: full in all directions",
+  "4. Visual acuity testing (Snellen chart)",
+  "     visual acuity and colour vision: normal",
+  "5. Slit-lamp anterior segment examination",
+  "     not performed / not available",
+  "6. Dilated fundoscopic examination",
+  "     fundoscopy: normal",
+  "7. Thyroid function tests (TSH, free T4)",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH / free T4 / TRAb: normal, TRAb negative - excludes thyroid eye disease",
+  "8. Acetylcholine receptor antibody levels",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "9. MRI of the brain and orbits",
+  "     MRI orbits: no extraocular muscle enlargement, no mass",
+  "     MRI brain with contrast: no dorsal midbrain lesion - excludes Collier sign"
+ ],
+ "dx_raw": "DIAGNOSIS: Intermittent exotropia, likely divergence excess type\n\nIntermittent exotropia with good fusional control during examination\n\nBasic exophoria",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "Based on my observation of the video frames, I can see what appears to be an intermittent outward deviation (exotropia), particularly of one eye, despite the patient being asymptomatic. I will proceed with the following investigations:\n\n1. Cover-uncover test\n2. Alternate cover test with prism measurement\n3. Full extraocular muscle movement assessment\n4. Visual acuity testing (Snellen chart)\n5. Slit-lamp anterior segment examination\n6. Dilated fundoscopic examination\n7. Thyroid function tests (TSH, free T4)\n8. Acetylcholine receptor antibody levels\n9. MRI of the brain and orbits",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Intermittent exotropia, likely divergence excess type",
+ "decisive_served": [
+  "TSH / free T4 / TRAb"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 741,
+   "total_tokens": 5796,
+   "cost": 0.0002302776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002302776,
+    "upstream_inference_prompt_cost": 2.27976e-05,
+    "upstream_inference_completions_cost": 0.00020748
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 590,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5539,
+   "completion_tokens": 669,
+   "total_tokens": 6208,
+   "cost": 0.0002778776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002778776,
+    "upstream_inference_prompt_cost": 9.05576e-05,
+    "upstream_inference_completions_cost": 0.00018732
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 534,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 6006,
+   "completion_tokens": 955,
+   "total_tokens": 6961,
+   "cost": 0.0003530912,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5504,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003530912,
+    "upstream_inference_prompt_cost": 8.56912e-05,
+    "upstream_inference_completions_cost": 0.0002674
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 913,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 52.5
+}

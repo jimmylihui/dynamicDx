@@ -1,0 +1,163 @@
+{
+ "questions": [
+  "Is your main concern today a specific symptom or complaint you've been experiencing?",
+  "Have you had any shortness of breath?",
+  "Have you had any chest pain or discomfort?",
+  "Have you experienced any new weakness in your arms or legs?",
+  "Have you had any recent dizziness or balance problems?",
+  "Have you had a fever in the past week?",
+  "Do you have any chronic medical conditions (such as diabetes or high blood pressure)?",
+  "Have you been feeling more fatigued than usual recently?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Measure vital signs (blood pressure, heart rate, temperature, oxygen saturation)",
+  "Perform a focused physical examination of the area related to your main complaint",
+  "Complete blood count",
+  "Basic metabolic panel",
+  "Urinalysis",
+  "C-reactive protein",
+  "Visual inspection and palpation of any painful or affected area",
+  "Range of motion testing of the affected area"
+ ],
+ "served": [
+  "full blood count, renal and liver profile",
+  "serum electrolytes, urea and creatinine",
+  "urinalysis",
+  "ESR and CRP"
+ ],
+ "results": [
+  "1. Measure vital signs (blood pressure, heart rate, temperature, oxygen saturation)",
+  "     not performed / not available",
+  "2. Perform a focused physical examination of the area related to your main complaint",
+  "     not performed / not available",
+  "3. Complete blood count",
+  "     full blood count, renal and liver profile: normal",
+  "4. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "5. Urinalysis",
+  "     urinalysis: normal",
+  "6. C-reactive protein",
+  "     ESR and CRP: normal",
+  "7. Visual inspection and palpation of any painful or affected area",
+  "     not performed / not available",
+  "8. Range of motion testing of the affected area",
+  "     not performed / not available"
+ ],
+ "dx_raw": "I cannot provide a diagnosis with the information given. The patient has reported a specific complaint, but no physical examination was performed and no information about the nature, location, duration, or character of the symptom was obtained. All laboratory tests returned normal, but these do not substitute for a clinical examination of the affected area.\n\nWithout knowing what the main complaint actually is, any diagnosis would be a guess. I would need to ask open-ended questions about the symptom to formulate a differential.\n\n1. Can you tell me where in your body the problem is?\n2. Can you describe what the symptom feels like?\n3. When did this symptom first start?\n4. Is the symptom constant or does it come and go?\n5. Does anything make it better or worse?\n6. On a scale, how severe is it?\n7. Have you had any injury or illness around the time it started?\n8. Does it affect your daily activities or sleep?",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Measure vital signs (blood pressure, heart rate, temperature, oxygen saturation)\n2. Perform a focused physical examination of the area related to your main complaint\n3. Complete blood count\n4. Basic metabolic panel\n5. Urinalysis\n6. C-reactive protein\n7. Visual inspection and palpation of any painful or affected area\n8. Range of motion testing of the affected area",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "I cannot provide a diagnosis with the information given. The patient has reported a specific complaint, but no physical examination was performed and no information about the nature, location, duration, or character of the symptom was obtained. All laboratory tests returned normal, but these do not substitute for a clinical examination of the affected area.",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 578,
+   "completion_tokens": 2616,
+   "total_tokens": 3194,
+   "cost": 0.00327516,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00327516,
+    "upstream_inference_prompt_cost": 0.00013596,
+    "upstream_inference_completions_cost": 0.0031392
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2511,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 973,
+   "completion_tokens": 441,
+   "total_tokens": 1414,
+   "cost": 0.00078342,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00078342,
+    "upstream_inference_prompt_cost": 0.00025422,
+    "upstream_inference_completions_cost": 0.0005292
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 360,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1295,
+   "completion_tokens": 190,
+   "total_tokens": 1485,
+   "cost": 0.00057882,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00057882,
+    "upstream_inference_prompt_cost": 0.00035082,
+    "upstream_inference_completions_cost": 0.000228
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 29.7,
+ "video": "functional_gait_scissoring_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 59.5
+}

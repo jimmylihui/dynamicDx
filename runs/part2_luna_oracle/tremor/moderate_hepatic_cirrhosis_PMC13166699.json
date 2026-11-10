@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Are your hand movements happening without your intending to move them?",
+  "Can you stop the movements when you try?",
+  "Does one hand ever move as if it has a mind of its own?",
+  "Are you fully aware during the movements?",
+  "Do you lose awareness or become unresponsive during an episode?",
+  "Do the movements occur while you are asleep?",
+  "Did these movements begin suddenly?",
+  "Did they begin after a stroke, head injury, surgery, or other neurological illness?",
+  "Do you have weakness in either arm or leg?",
+  "Do you have numbness or loss of sensation on one side?",
+  "Have you had trouble speaking, understanding speech, seeing, or walking?",
+  "Do you experience an urge or inner restlessness before the movements?",
+  "Can the movements be reduced by concentrating on another task?",
+  "Do the movements worsen when someone watches you?",
+  "Have you recently started, stopped, or changed any medications?",
+  "Have you ever had similar episodes before?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "medication, supplement and herbal history",
+  "liver function and albumin/globulin",
+  "whole-blood manganese",
+  "brain MRI",
+  "abdominal ultrasound / liver imaging"
+ ],
+ "results": [
+  "1. medication, supplement and herbal history: long-term hepatotoxic traditional Chinese medicine, notably Psoralea corylifolia, plus manganese-containing supplements",
+  "2. liver function and albumin/globulin: albumin 35.1 g/L (ref 35-52), globulin 30.8 g/L RAISED (ref 15-30), A/G ratio 1.14 LOW (ref 1.2-2.4)",
+  "3. whole-blood manganese: ELEVATED; fell after the supplements were stopped but remained above normal",
+  "4. brain MRI: bilateral T1 HYPERINTENSITY in the basal ganglia - manganese deposition",
+  "5. abdominal ultrasound / liver imaging: cirrhosis"
+ ],
+ "dx_raw": "DIAGNOSIS: Acquired hepatocerebral degeneration due to manganese neurotoxicity from cirrhosis caused by long-term hepatotoxic Psoralea corylifolia use, compounded by manganese-containing supplements\n\nALTERNATIVE: Manganese-induced parkinsonism\n\nALTERNATIVE: Hepatic encephalopathy with extrapyramidal movements\n\nALTERNATIVE: Wilson disease with basal-ganglia movement disorder",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Acquired hepatocerebral degeneration due to manganese neurotoxicity from cirrhosis caused by long-term hepatotoxic Psoralea corylifolia use, compounded by manganese-containing supplements",
+ "decisive_served": [
+  "medication, supplement and herbal history",
+  "liver function and albumin/globulin",
+  "whole-blood manganese",
+  "brain MRI",
+  "abdominal ultrasound / liver imaging"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 17964,
+   "completion_tokens": 666,
+   "total_tokens": 18630,
+   "cost": 0.00057951,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00057951,
+    "upstream_inference_prompt_cost": 0.00017991,
+    "upstream_inference_completions_cost": 0.0003996
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 450,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 18712,
+   "completion_tokens": 237,
+   "total_tokens": 18949,
+   "cost": 0.00041561,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 748,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00041561,
+    "upstream_inference_prompt_cost": 0.00027341,
+    "upstream_inference_completions_cost": 0.0001422
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 147,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.4,
+ "video": "moderate_hepatic_cirrhosis_PMC13166699.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 17.7
+}

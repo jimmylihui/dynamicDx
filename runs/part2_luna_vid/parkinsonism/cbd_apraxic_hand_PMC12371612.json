@@ -1,0 +1,193 @@
+{
+ "questions": [
+  "Are you experiencing numbness or reduced sensation in your right arm or hand?",
+  "Did these symptoms begin suddenly?",
+  "Do you also have weakness in that arm or hand?",
+  "Do you have numbness or weakness in your right leg?",
+  "Do you have numbness or weakness on the left side of your body?",
+  "Have you had facial drooping, difficulty speaking, or trouble understanding speech?",
+  "Have you had any change in vision, severe dizziness, or difficulty walking?",
+  "Do you have neck pain or back pain?",
+  "Did the symptoms begin after an injury or unusual exertion?",
+  "Have you experienced similar episodes before?",
+  "Do the symptoms come and go?",
+  "Do you have diabetes, multiple sclerosis, or another neurological condition?",
+  "Have you recently had a headache unlike your usual headaches?",
+  "Have you had any loss of bladder or bowel control?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside capillary blood glucose measurement",
+  "Urgent focused neurological examination, including NIH Stroke Scale assessment",
+  "Noncontrast CT scan of the head",
+  "CT angiography of the head and neck",
+  "MRI of the brain with diffusion-weighted imaging",
+  "12-lead electrocardiogram",
+  "Continuous cardiac rhythm monitoring",
+  "Full blood count, electrolytes, renal function, glucose, coagulation profile, and lipid profile",
+  "Transthoracic echocardiogram"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "CT head",
+  "MRI diffusion-weighted sequences",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose and HbA1c",
+  "full blood count, renal and liver profile"
+ ],
+ "results": [
+  "1. Bedside capillary blood glucose measurement",
+  "     blood glucose and HbA1c: normal",
+  "2. Urgent focused neurological examination, including NIH Stroke Scale assessment",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: MoCA 19/30 with constructional apraxia, reduced fluency and poor delayed recall",
+  "     muscle tone examination: right-sided rigidity with dystonic posturing of the right fingers",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: brisk right-sided reflexes with pectoral jerk and positive Hoffman sign",
+  "     sensory examination (pinprick, vibration, proprioception): right-sided sensory inattention and astereognosis",
+  "     coordination examination (limb and truncal): right-sided limb apraxia with myoclonic jerks",
+  "3. Noncontrast CT scan of the head",
+  "     CT head: asymmetric left-greater-than-right parietal and posterior frontal atrophy",
+  "4. CT angiography of the head and neck",
+  "     not performed / not available",
+  "5. MRI of the brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: normal",
+  "6. 12-lead electrocardiogram",
+  "     not performed / not available",
+  "7. Continuous cardiac rhythm monitoring",
+  "     not performed / not available",
+  "8. Full blood count, electrolytes, renal function, glucose, coagulation profile, and lipid profile",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     blood glucose and HbA1c: normal",
+  "     full blood count, renal and liver profile: normal",
+  "9. Transthoracic echocardiogram",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Corticobasal degeneration (4R-tauopathy) causing corticobasal syndrome\n\nProgressive supranuclear palsy with corticobasal syndrome\n\nAtypical Alzheimer disease presenting as posterior cortical atrophy\n\nDementia with Lewy bodies",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Bedside capillary blood glucose measurement\n2. Urgent focused neurological examination, including NIH Stroke Scale assessment\n3. Noncontrast CT scan of the head\n4. CT angiography of the head and neck\n5. MRI of the brain with diffusion-weighted imaging\n6. 12-lead electrocardiogram\n7. Continuous cardiac rhythm monitoring\n8. Full blood count, electrolytes, renal function, glucose, coagulation profile, and lipid profile\n9. Transthoracic echocardiogram",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Corticobasal degeneration (4R-tauopathy) causing corticobasal syndrome",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 709,
+   "total_tokens": 6385,
+   "cost": 0.001134825,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 5673,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001134825,
+    "upstream_inference_prompt_cost": 0.000709425,
+    "upstream_inference_completions_cost": 0.0004254
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6265,
+   "completion_tokens": 500,
+   "total_tokens": 6765,
+   "cost": 0.000430655,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 589,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000430655,
+    "upstream_inference_prompt_cost": 0.000130655,
+    "upstream_inference_completions_cost": 0.0003
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 387,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 6813,
+   "completion_tokens": 194,
+   "total_tokens": 7007,
+   "cost": 0.00024782,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6262,
+    "cache_write_tokens": 548,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00024782,
+    "upstream_inference_prompt_cost": 0.00013142,
+    "upstream_inference_completions_cost": 0.0001164
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 133,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "cbd_apraxic_hand_PMC12371612.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 29.5
+}

@@ -1,0 +1,207 @@
+{
+ "questions": [
+  "Are you fully awake and aware of what is happening right now?",
+  "Do you remember all of the movements shown in the video?",
+  "Were these movements involuntary and difficult to control?",
+  "Did the episode begin suddenly?",
+  "Have you had similar episodes before?",
+  "Did you lose consciousness at any point?",
+  "Did you become confused or unusually sleepy afterward?",
+  "Did you bite your tongue or lose control of your bladder?",
+  "Did you have weakness, numbness, facial drooping, or difficulty speaking?",
+  "Did you have a severe headache, fever, or neck stiffness?",
+  "Did you experience chest pain, shortness of breath, faintness, or palpitations?",
+  "Were the movements associated with abdominal pain, nausea, or vomiting?",
+  "Have you recently started, stopped, or changed any medications?",
+  "Have you used alcohol, recreational drugs, or accidentally taken extra medication recently?",
+  "Do you have a history of seizures, stroke, diabetes, or other neurological disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "yes"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Urgent bedside neurological examination, including level of consciousness, cranial nerves, tone, reflexes, coordination, and characterization of the abnormal movements",
+  "Continuous video-EEG monitoring",
+  "Point-of-care capillary blood glucose",
+  "Complete blood count, serum electrolytes, calcium, magnesium, renal function, and liver function tests",
+  "Brain MRI with and without contrast",
+  "Serum levels of any prescribed antiseizure or dopamine-blocking medications",
+  "Comprehensive toxicology screen, including alcohol and recreational drugs",
+  "Neurology consultation with review of prior neurological records and brain imaging"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "deep tendon reflexes and plantar responses",
+  "coordination examination (limb and truncal)",
+  "distribution of the movements (one side, both, face, limbs)",
+  "effect of voluntary action and anxiety",
+  "effect of sleep",
+  "speed of onset",
+  "EEG",
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "renal function and eGFR",
+  "full blood count",
+  "brain MRI with contrast",
+  "toxicology screen (urine and serum)",
+  "serum ethanol"
+ ],
+ "results": [
+  "1. Urgent bedside neurological examination, including level of consciousness, cranial nerves, tone, reflexes, coordination, and characterization of the abnormal movements",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: reduced tone with continuous involuntary movements",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     coordination examination (limb and truncal): right-sided dysmetria on finger-nose testing",
+  "     distribution of the movements (one side, both, face, limbs): generalized chorea-ballism, more severe on the LEFT",
+  "     effect of voluntary action and anxiety: no clear change",
+  "     effect of sleep: movements stop in sleep",
+  "     speed of onset: not characterised",
+  "2. Continuous video-EEG monitoring",
+  "     EEG: normal",
+  "3. Point-of-care capillary blood glucose",
+  "     blood glucose: 2.25 g/L (normal 0.70-1.10) - non-ketotic hyperglycaemia",
+  "4. Complete blood count, serum electrolytes, calcium, magnesium, renal function, and liver function tests",
+  "     serum electrolytes, urea and creatinine: creatinine 17 mg/L, eGFR 31 mL/min/1.73 m2",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     renal function and eGFR: creatinine 17 mg/L (normal 7-14) with eGFR 31 mL/min/1.73 m2",
+  "     full blood count: normal",
+  "5. Brain MRI with and without contrast",
+  "     brain MRI with contrast: normal basal ganglia, no focal lesion",
+  "6. Serum levels of any prescribed antiseizure or dopamine-blocking medications",
+  "     not performed / not available",
+  "7. Comprehensive toxicology screen, including alcohol and recreational drugs",
+  "     toxicology screen (urine and serum): normal",
+  "     serum ethanol: normal",
+  "8. Neurology consultation with review of prior neurological records and brain imaging",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Nonketotic hyperglycemia–induced generalized chorea-ballismus (diabetic striatopathy), left-predominant\n\nALTERNATIVE: Huntington disease or another hereditary neurodegenerative chorea\n\nALTERNATIVE: Drug-induced/tardive dyskinesia\n\nALTERNATIVE: Autoimmune or metabolic chorea related to the underlying neurological disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Urgent bedside neurological examination, including level of consciousness, cranial nerves, tone, reflexes, coordination, and characterization of the abnormal movements\n2. Continuous video-EEG monitoring\n3. Point-of-care capillary blood glucose\n4. Complete blood count, serum electrolytes, calcium, magnesium, renal function, and liver function tests\n5. Brain MRI with and without contrast\n6. Serum levels of any prescribed antiseizure or dopamine-blocking medications\n7. Comprehensive toxicology screen, including alcohol and recreational drugs\n8. Neurology consultation with review of prior neurological records and brain imaging",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Nonketotic hyperglycemia–induced generalized chorea-ballismus (diabetic striatopathy), left-predominant",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 22284,
+   "completion_tokens": 433,
+   "total_tokens": 22717,
+   "cost": 0.00609045,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 22281,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00609045,
+    "upstream_inference_prompt_cost": 0.00557085,
+    "upstream_inference_completions_cost": 0.0005196
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 215,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 22928,
+   "completion_tokens": 318,
+   "total_tokens": 23246,
+   "cost": 0.00098882,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 22281,
+    "cache_write_tokens": 644,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00098882,
+    "upstream_inference_prompt_cost": 0.00060722,
+    "upstream_inference_completions_cost": 0.0003816
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 188,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 23567,
+   "completion_tokens": 284,
+   "total_tokens": 23851,
+   "cost": 0.00095965,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 22925,
+    "cache_write_tokens": 639,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00095965,
+    "upstream_inference_prompt_cost": 0.00061885,
+    "upstream_inference_completions_cost": 0.0003408
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 201,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 40.4
+}

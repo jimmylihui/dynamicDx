@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Do you have a history of Parkinson's disease?",
+  "Are you currently taking any medications for tremors or movement disorders?",
+  "Do you feel that your hands shake more when they are resting in your lap compared to when you reach for an object?",
+  "Have you noticed any stiffness in your muscles or slowness in your movements recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's hands at rest in his lap for rhythmic oscillations",
+  "Perform finger-to-nose testing to assess for intention tremor and dysmetria",
+  "Assess muscle tone for rigidity (cogwheel or lead-pipe) during passive range of motion",
+  "Evaluate for bradykinesia using rapid repetitive movements (finger tapping, hand opening/closing)",
+  "Check postural reflexes via the pull test",
+  "Order serum thyroid-stimulating hormone (TSH) level"
+ ],
+ "served": [
+  "surface EMG tremor analysis with accelerometry (frequency, coherence)",
+  "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "finger-tapping for bradykinesia and decrement",
+  "posture and pull test",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. Observe the patient's hands at rest in his lap for rhythmic oscillations",
+  "     surface EMG tremor analysis with accelerometry (frequency, coherence): variable frequency, poor coherence between segments",
+  "2. Perform finger-to-nose testing to assess for intention tremor and dysmetria",
+  "     cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus): normal",
+  "3. Assess muscle tone for rigidity (cogwheel or lead-pipe) during passive range of motion",
+  "     muscle tone (spasticity, rigidity, paratonia): normal; no cervical dystonic posturing and no sensory trick",
+  "4. Evaluate for bradykinesia using rapid repetitive movements (finger tapping, hand opening/closing)",
+  "     finger-tapping for bradykinesia and decrement: no decrement",
+  "5. Check postural reflexes via the pull test",
+  "     posture and pull test: normal",
+  "6. Order serum thyroid-stimulating hormone (TSH) level",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Essential tremor\n\n1. Drug-induced tremor\n2. Psychogenic (functional) tremor",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient's hands at rest in his lap for rhythmic oscillations\n2. Perform finger-to-nose testing to assess for intention tremor and dysmetria\n3. Assess muscle tone for rigidity (cogwheel or lead-pipe) during passive range of motion\n4. Evaluate for bradykinesia using rapid repetitive movements (finger tapping, hand opening/closing)\n5. Check postural reflexes via the pull test\n6. Order serum thyroid-stimulating hormone (TSH) level",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Essential tremor",
+ "decisive_served": [
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 76,
+   "total_tokens": 4899,
+   "cost": 0.00075917,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075917,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 3.572e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5144,
+   "completion_tokens": 111,
+   "total_tokens": 5255,
+   "cost": 0.00022345,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00022345,
+    "upstream_inference_prompt_cost": 0.00017128,
+    "upstream_inference_completions_cost": 5.217e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5576,
+   "completion_tokens": 27,
+   "total_tokens": 5603,
+   "cost": 0.000180162,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000180162,
+    "upstream_inference_prompt_cost": 0.000167472,
+    "upstream_inference_completions_cost": 1.269e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.9,
+ "video": "functional_head_tremor_vibration_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.7
+}

@@ -1,0 +1,228 @@
+{
+ "questions": [
+  "Are you experiencing pain or discomfort in your abdomen?",
+  "Is the repetitive rubbing motion of your hands intentional?",
+  "Can you easily stop the movement if you try to?",
+  "Have you recently had a sore throat or fever?",
+  "Does anyone in your family have a similar movement disorder?",
+  "Have you noticed changes in your mood, memory, or behavior recently?",
+  "Have you been diagnosed with tuberculosis in the past?",
+  "Did you experience involuntary movements in your face, jaw, or limbs before starting any treatment?",
+  "Are you currently taking any medication for tuberculosis or movement disorders?",
+  "Did the abnormal hand movements start after you were diagnosed with tuberculosis?",
+  "Do the movements disappear when you are asleep?",
+  "Do you have any weakness or numbness on one side of your body?",
+  "Has the weakness or numbness been getting worse over time?",
+  "Do you have difficulty speaking or swallowing?",
+  "Do you feel anxious or restless, as if you cannot stay still?",
+  "Are the movements always present, even when you are resting quietly?",
+  "Do the movements spread to your face or jaw?",
+  "Have you ever been told you have heart valve problems or rheumatic fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Complete blood count (CBC) with differential",
+  "Serum copper and ceruloplasmin levels",
+  "Brain MRI",
+  "Thyroid function tests (TSH, free T4)",
+  "Antistreptolysin O titer (ASO) and anti-DNase B",
+  "Sleep-deprived EEG",
+  "Serum electrolytes (sodium, potassium, calcium, magnesium)"
+ ],
+ "served": [
+  "full blood count",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "brain MRI",
+  "TSH / free T4",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate"
+ ],
+ "results": [
+  "R1 ASK Are you experiencing pain or discomfort in your abdomen?; Is the repetitive rubbing motion of your hands intentional?; Can you easily stop the movement if you try to? -> ['no', 'no', 'no']",
+  "R2 ASK Have you recently had a sore throat or fever?; Does anyone in your family have a similar movement disorder?; Have you noticed changes in your mood, memory, or behavior recently? -> ['no', 'no', 'no']",
+  "R3 ORDER Complete blood count (CBC) with differential; Serum copper and ceruloplasmin levels; Brain MRI; Thyroid function tests (TSH, free T4) -> [['full blood count'], ['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['brain MRI'], ['TSH / free T4']]",
+  "R4 ASK Have you been diagnosed with tuberculosis in the past?; Did you experience involuntary movements in your face, jaw, or limbs before starting any treatment?; Are you currently taking any medication for tuberculosis or movement disorders? -> ['yes', 'no', 'no']",
+  "R5 ASK Did the abnormal hand movements start after you were diagnosed with tuberculosis?; Do the movements disappear when you are asleep?; Do you have any weakness or numbness on one side of your body? -> ['no', 'no', 'yes']",
+  "R6 ASK Has the weakness or numbness been getting worse over time?; Do you have difficulty speaking or swallowing?; Do you feel anxious or restless, as if you cannot stay still? -> ['no', 'no', 'no']",
+  "R7 ORDER Antistreptolysin O titer (ASO) and anti-DNase B; Sleep-deprived EEG; Serum electrolytes (sodium, potassium, calcium, magnesium) -> [[], [], ['serum electrolytes, urea and creatinine', 'serum calcium, magnesium and phosphate']]",
+  "R8 ASK Are the movements always present, even when you are resting quietly?; Do the movements spread to your face or jaw?; Have you ever been told you have heart valve problems or rheumatic fever? -> ['no', 'no', 'no']",
+  "R9 DIAGNOSIS Post-tuberculous thalamic syndrome (chronic post-infectious thalamic lesion) presenting with unilateral sensory/motor deficit and persistent rubbing/compulsive hand movements. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you experiencing pain or discomfort in your abdomen?",
+    "Is the repetitive rubbing motion of your hands intentional?",
+    "Can you easily stop the movement if you try to?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you recently had a sore throat or fever?",
+    "Does anyone in your family have a similar movement disorder?",
+    "Have you noticed changes in your mood, memory, or behavior recently?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Complete blood count (CBC) with differential",
+    "Serum copper and ceruloplasmin levels",
+    "Brain MRI",
+    "Thyroid function tests (TSH, free T4)"
+   ],
+   "result": [
+    [
+     "full blood count"
+    ],
+    [
+     "serum copper and caeruloplasmin",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "brain MRI"
+    ],
+    [
+     "TSH / free T4"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you been diagnosed with tuberculosis in the past?",
+    "Did you experience involuntary movements in your face, jaw, or limbs before starting any treatment?",
+    "Are you currently taking any medication for tuberculosis or movement disorders?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Did the abnormal hand movements start after you were diagnosed with tuberculosis?",
+    "Do the movements disappear when you are asleep?",
+    "Do you have any weakness or numbness on one side of your body?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Has the weakness or numbness been getting worse over time?",
+    "Do you have difficulty speaking or swallowing?",
+    "Do you feel anxious or restless, as if you cannot stay still?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Antistreptolysin O titer (ASO) and anti-DNase B",
+    "Sleep-deprived EEG",
+    "Serum electrolytes (sodium, potassium, calcium, magnesium)"
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "serum electrolytes, urea and creatinine",
+     "serum calcium, magnesium and phosphate"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Are the movements always present, even when you are resting quietly?",
+    "Do the movements spread to your face or jaw?",
+    "Have you ever been told you have heart valve problems or rheumatic fever?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Post-tuberculous thalamic syndrome (chronic post-infectious thalamic lesion) presenting with unilateral sensory/motor deficit and persistent rubbing/compulsive hand movements."
+  }
+ ],
+ "dx": "Post-tuberculous thalamic syndrome (chronic post-infectious thalamic lesion) presenting with unilateral sensory/motor deficit and persistent rubbing/compulsive hand movements.",
+ "dx_raw": "DIAGNOSIS: Post-tuberculous thalamic syndrome (chronic post-infectious thalamic lesion) presenting with unilateral sensory/motor deficit and persistent rubbing/compulsive hand movements.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0194,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 78.7
+}

@@ -1,0 +1,128 @@
+{
+ "questions": [
+  "Do your eyes close involuntarily?",
+  "Do you have difficulty keeping your eyes open?",
+  "Do you have involuntary movements of your mouth or jaw?",
+  "Are you taking any antipsychotic or anti-nausea medications?",
+  "Have you had any head injuries or strokes in the past?",
+  "Do you have any other neurological symptoms, such as tremors or stiffness?",
+  "Did these symptoms start gradually?",
+  "Do the movements get worse when you are stressed or anxious?",
+  "Does touching your forehead or cheek help the eye closure?",
+  "Have you ever had Bell's palsy or facial paralysis in the past?",
+  "Have these symptoms been present for more than six months?",
+  "Are the movements constant throughout the day?",
+  "Do you have any history of Parkinson's disease?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Do your eyes close involuntarily?; Do you have difficulty keeping your eyes open?; Do you have involuntary movements of your mouth or jaw? -> ['yes', 'yes', 'yes']",
+  "R2 ASK Are you taking any antipsychotic or anti-nausea medications?; Have you had any head injuries or strokes in the past?; Do you have any other neurological symptoms, such as tremors or stiffness? -> ['no', 'no', 'no']",
+  "R3 ASK Did these symptoms start gradually?; Do the movements get worse when you are stressed or anxious?; Does touching your forehead or cheek help the eye closure? -> ['no', 'no', 'no']",
+  "R4 ASK Have you ever had Bell's palsy or facial paralysis in the past?; Have these symptoms been present for more than six months?; Are the movements constant throughout the day?; Do you have any history of Parkinson's disease? -> ['no', 'yes', 'no', 'no']",
+  "R5 DIAGNOSIS Meige syndrome, idiopathic -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do your eyes close involuntarily?",
+    "Do you have difficulty keeping your eyes open?",
+    "Do you have involuntary movements of your mouth or jaw?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Are you taking any antipsychotic or anti-nausea medications?",
+    "Have you had any head injuries or strokes in the past?",
+    "Do you have any other neurological symptoms, such as tremors or stiffness?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did these symptoms start gradually?",
+    "Do the movements get worse when you are stressed or anxious?",
+    "Does touching your forehead or cheek help the eye closure?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you ever had Bell's palsy or facial paralysis in the past?",
+    "Have these symptoms been present for more than six months?",
+    "Are the movements constant throughout the day?",
+    "Do you have any history of Parkinson's disease?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Meige syndrome, idiopathic"
+  }
+ ],
+ "dx": "Meige syndrome, idiopathic",
+ "dx_raw": "DIAGNOSIS: Meige syndrome, idiopathic",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0061,
+ "n_frames": 32,
+ "duration_s": 6.6,
+ "video": "mild_blepharospasm_idiopathic_PMC13049410.mp4",
+ "line": "dystonia",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 267.9
+}

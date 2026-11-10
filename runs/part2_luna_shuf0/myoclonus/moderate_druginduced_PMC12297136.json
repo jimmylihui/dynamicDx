@@ -1,0 +1,176 @@
+{
+ "questions": [
+  "Are you having severe or worsening abdominal pain right now?",
+  "Do you have severe back or flank pain?",
+  "Have you felt dizzy, faint, unusually weak, or clammy?",
+  "Did the abdominal swelling or pulsation begin suddenly?",
+  "Can you feel a strong heartbeat or pulsing in the abdomen?",
+  "Have you vomited or passed blood in your stool?",
+  "Have you been unable to pass stool or gas?",
+  "Have you ever been told that you have an abdominal aortic aneurysm?",
+  "Have you previously had abdominal or vascular surgery?",
+  "Do you have a history of high blood pressure, smoking, or vascular disease?",
+  "Are you taking blood thinners?",
+  "Has your abdomen become progressively larger or more painful over the past few days?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside abdominal examination with inspection, auscultation, percussion, palpation, assessment for fluid wave, and evaluation for ventral or umbilical hernia",
+  "Bedside ultrasound of the abdominal aorta and entire abdomen",
+  "Complete blood count",
+  "Comprehensive metabolic panel including renal function and electrolytes",
+  "Liver function tests and serum albumin",
+  "Urinalysis",
+  "Abdominal and pelvic CT scan with intravenous contrast if ultrasound or examination is abnormal or nondiagnostic"
+ ],
+ "served": [
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "renal function (urea, creatinine)",
+  "electrolytes (Na, K, Ca, Mg)",
+  "glucose",
+  "liver function tests",
+  "urinalysis",
+  "CT chest, abdomen and pelvis",
+  "CT chest / abdomen / pelvis (occult tumour)"
+ ],
+ "results": [
+  "1. Bedside abdominal examination with inspection, auscultation, percussion, palpation, assessment for fluid wave, and evaluation for ventral or umbilical hernia",
+  "     not performed / not available",
+  "2. Bedside ultrasound of the abdominal aorta and entire abdomen",
+  "     not performed / not available",
+  "3. Complete blood count",
+  "     full blood count: white cells mildly raised at 11.8 x10^9/L",
+  "4. Comprehensive metabolic panel including renal function and electrolytes",
+  "     serum electrolytes, urea and creatinine: urea nitrogen 24 mg/dL and creatinine 1.62 mg/dL, stable",
+  "     renal function (urea, creatinine): blood urea nitrogen 24 mg/dL, creatinine 1.62 mg/dL - stable",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     glucose: normal",
+  "5. Liver function tests and serum albumin",
+  "     liver function tests: normal",
+  "6. Urinalysis",
+  "     urinalysis: normal",
+  "7. Abdominal and pelvic CT scan with intravenous contrast if ultrasound or examination is abnormal or nondiagnostic",
+  "     CT chest, abdomen and pelvis: normal",
+  "     CT chest / abdomen / pelvis (occult tumour): no malignancy"
+ ],
+ "dx_raw": "DIAGNOSIS: Obesity-related rectus diastasis with benign abdominal wall laxity and central bulging\n\nALTERNATIVE: Small occult ventral or umbilical hernia\n\nALTERNATIVE: Functional abdominal distension related to constipation or ileus\n\nALTERNATIVE: Early abdominal wall muscle weakness or denervation causing localized bulging",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside abdominal examination with inspection, auscultation, percussion, palpation, assessment for fluid wave, and evaluation for ventral or umbilical hernia  \n2. Bedside ultrasound of the abdominal aorta and entire abdomen  \n3. Complete blood count  \n4. Comprehensive metabolic panel including renal function and electrolytes  \n5. Liver function tests and serum albumin  \n6. Urinalysis  \n7. Abdominal and pelvic CT scan with intravenous contrast if ultrasound or examination is abnormal or nondiagnostic",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Obesity-related rectus diastasis with benign abdominal wall laxity and central bulging",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 11820,
+   "completion_tokens": 478,
+   "total_tokens": 12298,
+   "cost": 0.00352845,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 11817,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00352845,
+    "upstream_inference_prompt_cost": 0.00295485,
+    "upstream_inference_completions_cost": 0.0005736
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 308,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 12353,
+   "completion_tokens": 309,
+   "total_tokens": 12662,
+   "cost": 0.00074099,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 11817,
+    "cache_write_tokens": 533,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074099,
+    "upstream_inference_prompt_cost": 0.00037019,
+    "upstream_inference_completions_cost": 0.0003708
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 200,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 12811,
+   "completion_tokens": 478,
+   "total_tokens": 13289,
+   "cost": 0.0009357,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 12350,
+    "cache_write_tokens": 458,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009357,
+    "upstream_inference_prompt_cost": 0.0003621,
+    "upstream_inference_completions_cost": 0.0005736
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 402,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 39.7
+}

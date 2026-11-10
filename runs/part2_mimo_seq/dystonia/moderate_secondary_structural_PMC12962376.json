@@ -1,0 +1,203 @@
+{
+ "questions": [
+  "Did the stiffness in your left arm and leg exist since you were a baby?",
+  "Was there any lack of oxygen or trauma during your birth?",
+  "Do you have seizures?",
+  "When did the stiffness and weakness in your left arm and leg first start?",
+  "Did it come on suddenly or gradually?",
+  "Do you get severe headaches with nausea or vomiting?",
+  "Has this happened to you before?",
+  "Are the movements in your arm and leg involuntary (not under your control)?",
+  "Did you notice problems with your left side before age 5?",
+  "Has your left arm gotten more stiff over the years?",
+  "Do your limbs jerk or shake sometimes?",
+  "Could you walk normally as a young child before age 5 or 6?",
+  "Do your left arm and leg sometimes twist into unusual positions?",
+  "Does anything make the stiffness or movements better or worse?",
+  "Do you have any difficulty swallowing or with your speech?",
+  "What specifically makes the stiffness better or worse?",
+  "Do you notice any differences in sweating between the left and right sides of your body?",
+  "Is there any port-wine stain or birthmark on your face?",
+  "Has your condition gotten worse over time, or has it stayed about the same?",
+  "Did you start walking much later than other children your age?",
+  "When you say the movements are involuntary, do you mean your arm pulls or contracts on its own without you wanting it to?",
+  "Were you born premature or did you have any complications around birth like jaundice or breathing problems?",
+  "Do you remember approximately what age you were when you first noticed your left arm and leg becoming stiff?",
+  "Did you ever have a high fever or become very sick with an infection as a young child (around age 2-5)?",
+  "Do you notice the involuntary pulling movements more when you try to move the arm on purpose, or does it happen at rest too?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "yes",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "yes",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Did the stiffness in your left arm and leg exist since you were a baby?; Was there any lack of oxygen or trauma during your birth?; Do you have seizures? -> ['no', 'no', 'no']",
+  "R2 ASK When did the stiffness and weakness in your left arm and leg first start?; Did it come on suddenly or gradually?; Do you get severe headaches with nausea or vomiting?; Has this happened to you before? -> ['no', 'no', 'no', 'no']",
+  "R3 ASK Are the movements in your arm and leg involuntary (not under your control)?; Did you notice problems with your left side before age 5?; Has your left arm gotten more stiff over the years?; Do your limbs jerk or shake sometimes? -> ['yes', 'no', 'no', 'no']",
+  "R4 ASK Could you walk normally as a young child before age 5 or 6?; Do your left arm and leg sometimes twist into unusual positions?; Does anything make the stiffness or movements better or worse?; Do you have any difficulty swallowing or with your speech? -> ['no', 'no', 'yes', 'no']",
+  "R5 ASK What specifically makes the stiffness better or worse?; Do you notice any differences in sweating between the left and right sides of your body?; Is there any port-wine stain or birthmark on your face?; Has your condition gotten worse over time, or has it stayed about the same? -> ['yes', 'no', 'no', 'no']",
+  "R6 ASK Did you start walking much later than other children your age?; When you say the movements are involuntary, do you mean your arm pulls or contracts on its own without you wanting it to?; Were you born premature or did you have any complications around birth like jaundice or breathing problems? -> ['no', 'yes', 'no']",
+  "R7 ASK Do you remember approximately what age you were when you first noticed your left arm and leg becoming stiff?; Did you ever have a high fever or become very sick with an infection as a young child (around age 2-5)?; Do you notice the involuntary pulling movements more when you try to move the arm on purpose, or does it happen at rest too? -> ['no', 'no', 'no']",
+  "R8 DIAGNOSIS Hemiplegic cerebral palsy (dyskinetic/spastic mixed type) due to right cerebral hemisphere injury of prenatal or perinatal origin -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did the stiffness in your left arm and leg exist since you were a baby?",
+    "Was there any lack of oxygen or trauma during your birth?",
+    "Do you have seizures?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "When did the stiffness and weakness in your left arm and leg first start?",
+    "Did it come on suddenly or gradually?",
+    "Do you get severe headaches with nausea or vomiting?",
+    "Has this happened to you before?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Are the movements in your arm and leg involuntary (not under your control)?",
+    "Did you notice problems with your left side before age 5?",
+    "Has your left arm gotten more stiff over the years?",
+    "Do your limbs jerk or shake sometimes?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Could you walk normally as a young child before age 5 or 6?",
+    "Do your left arm and leg sometimes twist into unusual positions?",
+    "Does anything make the stiffness or movements better or worse?",
+    "Do you have any difficulty swallowing or with your speech?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "What specifically makes the stiffness better or worse?",
+    "Do you notice any differences in sweating between the left and right sides of your body?",
+    "Is there any port-wine stain or birthmark on your face?",
+    "Has your condition gotten worse over time, or has it stayed about the same?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Did you start walking much later than other children your age?",
+    "When you say the movements are involuntary, do you mean your arm pulls or contracts on its own without you wanting it to?",
+    "Were you born premature or did you have any complications around birth like jaundice or breathing problems?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you remember approximately what age you were when you first noticed your left arm and leg becoming stiff?",
+    "Did you ever have a high fever or become very sick with an infection as a young child (around age 2-5)?",
+    "Do you notice the involuntary pulling movements more when you try to move the arm on purpose, or does it happen at rest too?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Hemiplegic cerebral palsy (dyskinetic/spastic mixed type) due to right cerebral hemisphere injury of prenatal or perinatal origin"
+  }
+ ],
+ "dx": "Hemiplegic cerebral palsy (dyskinetic/spastic mixed type) due to right cerebral hemisphere injury of prenatal or perinatal origin",
+ "dx_raw": "DIAGNOSIS: Hemiplegic cerebral palsy (dyskinetic/spastic mixed type) due to right cerebral hemisphere injury of prenatal or perinatal origin",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0048,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_secondary_structural_PMC12962376.mp4",
+ "line": "dystonia",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 257.4
+}

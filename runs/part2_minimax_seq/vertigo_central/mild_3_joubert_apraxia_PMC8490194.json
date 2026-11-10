@@ -1,0 +1,177 @@
+{
+ "questions": [
+  "Has this mass been present since birth?",
+  "Has the mass grown larger since birth?",
+  "Has the baby had any difficulty breathing?",
+  "Has the baby had any difficulty feeding?",
+  "When did you first notice the mark/spot?",
+  "Has it changed in color?",
+  "Does it become more prominent when the baby cries or strains?",
+  "Is it tender to touch?",
+  "Is the spot flat or raised?",
+  "Does it feel soft or firm when you touch it?",
+  "Can you compress it with pressure?",
+  "Does it pulsate?",
+  "Is the spot still present right now?",
+  "Has the baby ever had bleeding from the spot?",
+  "Is there any similar mark elsewhere on the baby's body?",
+  "Has the baby had any recent illness or fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Transillumination test of the lesion with a penlight",
+  "Ultrasound of the lesion",
+  "Diascopy (pressing a glass slide on the lesion to see if it blanches)"
+ ],
+ "served": [],
+ "results": [
+  "R1 ASK Has this mass been present since birth?; Has the mass grown larger since birth?; Has the baby had any difficulty breathing?; Has the baby had any difficulty feeding? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK When did you first notice the mark/spot?; Has it changed in color?; Does it become more prominent when the baby cries or strains?; Is it tender to touch? -> ['no', 'no', 'no', 'no']",
+  "R3 ORDER Transillumination test of the lesion with a penlight -> [[]]",
+  "R4 ORDER Ultrasound of the lesion -> [[]]",
+  "R5 ASK Is the spot flat or raised?; Does it feel soft or firm when you touch it?; Can you compress it with pressure?; Does it pulsate? -> ['no', 'no', 'no', 'no']",
+  "R6 ORDER Diascopy (pressing a glass slide on the lesion to see if it blanches) -> [[]]",
+  "R7 ASK Is the spot still present right now?; Has the baby ever had bleeding from the spot?; Is there any similar mark elsewhere on the baby's body?; Has the baby had any recent illness or fever? -> ['no', 'no', 'no', 'no']",
+  "R8 DIAGNOSIS Mongolian spot (dermal melanocytosis), congenital benign hyperpigmentation on the forehead. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Has this mass been present since birth?",
+    "Has the mass grown larger since birth?",
+    "Has the baby had any difficulty breathing?",
+    "Has the baby had any difficulty feeding?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "When did you first notice the mark/spot?",
+    "Has it changed in color?",
+    "Does it become more prominent when the baby cries or strains?",
+    "Is it tender to touch?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Transillumination test of the lesion with a penlight"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Ultrasound of the lesion"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Is the spot flat or raised?",
+    "Does it feel soft or firm when you touch it?",
+    "Can you compress it with pressure?",
+    "Does it pulsate?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Diascopy (pressing a glass slide on the lesion to see if it blanches)"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Is the spot still present right now?",
+    "Has the baby ever had bleeding from the spot?",
+    "Is there any similar mark elsewhere on the baby's body?",
+    "Has the baby had any recent illness or fever?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Mongolian spot (dermal melanocytosis), congenital benign hyperpigmentation on the forehead."
+  }
+ ],
+ "dx": "Mongolian spot (dermal melanocytosis), congenital benign hyperpigmentation on the forehead.",
+ "dx_raw": "DIAGNOSIS: Mongolian spot (dermal melanocytosis), congenital benign hyperpigmentation on the forehead.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0072,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_3_joubert_apraxia_PMC8490194.mp4",
+ "line": "vertigo_central",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 48.7
+}

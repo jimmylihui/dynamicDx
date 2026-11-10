@@ -1,0 +1,170 @@
+{
+ "questions": [
+  "Are you currently in the hospital because you recently had surgery or another procedure involving your heart or chest?",
+  "Was your breastbone opened during that procedure?",
+  "Was the procedure performed because of a blocked heart artery or a heart attack?",
+  "Was a heart valve repaired or replaced?",
+  "Was a pacemaker or defibrillator implanted?",
+  "Have you had new or worsening chest pressure or pain since the procedure?",
+  "Are you currently short of breath?",
+  "Have you fainted or nearly fainted recently?",
+  "Have you had a new fast, irregular, or unusually slow heartbeat?",
+  "Have you had fever, chills, or increasing redness or drainage from the chest dressing?",
+  "Have you developed sudden weakness, numbness, trouble speaking, or trouble seeing?",
+  "Do you have severe pain that began suddenly and spreads to your back?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Full set of vital signs, including oxygen saturation and temperature",
+  "Bedside cardiopulmonary examination, including inspection and palpation of the upper chest and dressing",
+  "Twelve-lead electrocardiogram",
+  "Portable chest radiograph",
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Point-of-care blood glucose measurement",
+  "Urine or serum pregnancy test"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "liver and renal function"
+ ],
+ "results": [
+  "1. Full set of vital signs, including oxygen saturation and temperature",
+  "     not performed / not available",
+  "2. Bedside cardiopulmonary examination, including inspection and palpation of the upper chest and dressing",
+  "     not performed / not available",
+  "3. Twelve-lead electrocardiogram",
+  "     not performed / not available",
+  "4. Portable chest radiograph",
+  "     not performed / not available",
+  "5. Complete blood count",
+  "     not performed / not available",
+  "6. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     liver and renal function: normal",
+  "7. Point-of-care blood glucose measurement",
+  "     not performed / not available",
+  "8. Urine or serum pregnancy test",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Insufficient clinical evidence to establish a specific diagnosis\n\nAlternative 1: Catatonia\n\nAlternative 2: Functional neurological disorder\n\nAlternative 3: Unrecognized acute medical or neurological illness requiring examination and vital signs",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Full set of vital signs, including oxygen saturation and temperature\n2. Bedside cardiopulmonary examination, including inspection and palpation of the upper chest and dressing\n3. Twelve-lead electrocardiogram\n4. Portable chest radiograph\n5. Complete blood count\n6. Comprehensive metabolic panel\n7. Point-of-care blood glucose measurement\n8. Urine or serum pregnancy test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Insufficient clinical evidence to establish a specific diagnosis",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 233,
+   "completion_tokens": 700,
+   "total_tokens": 933,
+   "cost": 0.0004433,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004433,
+    "upstream_inference_prompt_cost": 2.33e-05,
+    "upstream_inference_completions_cost": 0.00042
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 794,
+   "completion_tokens": 425,
+   "total_tokens": 1219,
+   "cost": 0.0003344,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003344,
+    "upstream_inference_prompt_cost": 7.94e-05,
+    "upstream_inference_completions_cost": 0.000255
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 337,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1130,
+   "completion_tokens": 569,
+   "total_tokens": 1699,
+   "cost": 0.000482575,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1127,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000482575,
+    "upstream_inference_prompt_cost": 0.000141175,
+    "upstream_inference_completions_cost": 0.0003414
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 38.3
+}

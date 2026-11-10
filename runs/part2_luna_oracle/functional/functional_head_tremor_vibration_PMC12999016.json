@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Have you noticed involuntary movements or shaking of your hands, arms, head, or body?",
+  "Do these movements occur when you are sitting still?",
+  "Do they become worse when you reach for or hold something?",
+  "Do the movements improve when you are distracted or concentrating on another task?",
+  "Have the movements been gradually getting worse?",
+  "Have you noticed stiffness or slowness of your movements?",
+  "Have you had difficulty walking or keeping your balance?",
+  "Have you fallen recently?",
+  "Have you noticed weakness or loss of coordination on one side of your body?",
+  "Have you had numbness or tingling?",
+  "Have you had changes in your speech or swallowing?",
+  "Have you noticed changes in your handwriting?",
+  "Have you had changes in your sense of smell?",
+  "Have you experienced episodes of dizziness or fainting?",
+  "Have you had any recent head, neck, or limb injury?",
+  "Have you started or changed any medications before these symptoms began?",
+  "Do you use medication for nausea, psychiatric conditions, seizures, or asthma?",
+  "Does anyone in your family have tremor, Parkinson’s disease, or another movement disorder?",
+  "Do you drink alcohol, and does it temporarily reduce the movements?",
+  "Have the symptoms interfered with dressing, eating, walking, or other daily activities?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment')",
+  "variability of amplitude, frequency and axis over the examination",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "results": [
+  "1. distractibility testing (complex motor task with the unaffected side): POSITIVE - marked decrease in tremor amplitude with distraction",
+  "2. entrainment testing (tap to an externally paced rhythm): POSITIVE - the head tremor takes up the paced frequency",
+  "3. suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment'): POSITIVE - vibration triggers and modulates the head and limb tremor",
+  "4. variability of amplitude, frequency and axis over the examination: CHANGE IN TREMOR DIRECTIONALITY - specificity 0.91 for functional head tremor in the source cohort",
+  "5. muscle tone (spasticity, rigidity, paratonia): normal; no cervical dystonic posturing and no sensory trick"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder with functional (psychogenic) tremor, predominantly functional head tremor, caused by abnormal involuntary nervous-system motor control rather than structural neurodegeneration\n\nALTERNATIVE: Essential tremor\n\nALTERNATIVE: Dystonic tremor\n\nALTERNATIVE: Parkinsonian tremor",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional neurological symptom disorder with functional (psychogenic) tremor, predominantly functional head tremor, caused by abnormal involuntary nervous-system motor control rather than structural neurodegeneration",
+ "decisive_served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment')",
+  "variability of amplitude, frequency and axis over the examination",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 802,
+   "total_tokens": 6478,
+   "cost": 0.00053823,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00053823,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0004812
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6584,
+   "completion_tokens": 176,
+   "total_tokens": 6760,
+   "cost": 0.00027613,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 908,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00027613,
+    "upstream_inference_prompt_cost": 0.00017053,
+    "upstream_inference_completions_cost": 0.0001056
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 104,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.9,
+ "video": "functional_head_tremor_vibration_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 15.6
+}

@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Is the shaking present when you hold your hands out in front of you?",
+  "Do you have a family history of tremors or Parkinson's disease?",
+  "Does alcohol consumption temporarily reduce the shaking?",
+  "Have you recently started any new medications, including antidepressants or asthma inhalers?",
+  "Do you experience muscle stiffness or slowness of movement?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside examination of the tremor frequency and amplitude using a smartphone accelerometer app or clinical assessment during rest, posture, and action tasks",
+  "Serum thyroid-stimulating hormone (TSH) level",
+  "Serum ceruloplasmin and 24-hour urine copper levels"
+ ],
+ "served": [
+  "surface EMG tremor analysis with accelerometry (frequency, coherence)",
+  "TSH / free T4",
+  "24-hour urinary copper",
+  "copper and ceruloplasmin"
+ ],
+ "results": [
+  "1. Bedside examination of the tremor frequency and amplitude using a smartphone accelerometer app or clinical assessment during rest, posture, and action tasks",
+  "     surface EMG tremor analysis with accelerometry (frequency, coherence): variable frequency, poor coherence between segments",
+  "2. Serum thyroid-stimulating hormone (TSH) level",
+  "     TSH / free T4: normal",
+  "3. Serum ceruloplasmin and 24-hour urine copper levels",
+  "     24-hour urinary copper: normal",
+  "     copper and ceruloplasmin: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional tremor (psychogenic tremor)\nEssential tremor\nParkinson's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination of the tremor frequency and amplitude using a smartphone accelerometer app or clinical assessment during rest, posture, and action tasks\n2. Serum thyroid-stimulating hormone (TSH) level\n3. Serum ceruloplasmin and 24-hour urine copper levels",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional tremor (psychogenic tremor)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 186,
+   "completion_tokens": 79,
+   "total_tokens": 265,
+   "cost": 6.503e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.503e-05,
+    "upstream_inference_prompt_cost": 2.79e-05,
+    "upstream_inference_completions_cost": 3.713e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 519,
+   "completion_tokens": 59,
+   "total_tokens": 578,
+   "cost": 0.00010558,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010558,
+    "upstream_inference_prompt_cost": 7.785e-05,
+    "upstream_inference_completions_cost": 2.773e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 794,
+   "completion_tokens": 25,
+   "total_tokens": 819,
+   "cost": 6.2242e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.2242e-05,
+    "upstream_inference_prompt_cost": 5.0492e-05,
+    "upstream_inference_completions_cost": 1.175e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.9,
+ "video": "functional_head_tremor_vibration_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 20.0
+}

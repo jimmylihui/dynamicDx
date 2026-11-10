@@ -1,0 +1,133 @@
+{
+ "questions": [
+  "Are the movements involuntary?",
+  "Did these movements begin or worsen after zonisamide was stopped?",
+  "Did they improve after zonisamide was restarted?",
+  "Do your arms suddenly lose strength or drop while you are holding them out?",
+  "Do the movements consist of brief, shock-like jerks?",
+  "Do they occur when you are maintaining a posture or using your hands?",
+  "Do they disappear completely during sleep?",
+  "Can you temporarily suppress them?",
+  "Do you feel an urge or unpleasant sensation before making the movement?",
+  "Do the movements lessen when you are distracted?",
+  "Are the movements present when you are relaxed and not using your arms?",
+  "Have you ever lost awareness during these episodes?",
+  "Have you ever fallen or injured yourself because of them?",
+  "Do you have tongue biting, urinary incontinence, or confusion after an episode?",
+  "Do you have weakness, numbness, speech difficulty, or visual symptoms during or after the movements?",
+  "Have you had similar movements in your face, neck, trunk, or legs?",
+  "Have you previously been diagnosed with epilepsy or another seizure disorder?",
+  "Have you recently started, stopped, or changed any other medication?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "genetic testing (targeted panel or exome)",
+  "skin biopsy"
+ ],
+ "results": [
+  "1. cognitive screen (MMSE / MoCA / FAB): MMSE 23/30 and Frontal Assessment Battery 9/18 - frontal/executive dysfunction",
+  "2. copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease",
+  "3. genetic testing (targeted panel or exome): NOTCH2NLC GGC repeat expansion - genetically confirmed NIID",
+  "4. skin biopsy: eosinophilic, p62- and ubiquitin-POSITIVE intranuclear inclusions in adipocytes, sweat gland cells and fibroblasts - diagnostic of NIID"
+ ],
+ "dx_raw": "DIAGNOSIS: Neuronal intranuclear inclusion disease (NIID) caused by a pathogenic NOTCH2NLC GGC-repeat expansion, with associated frontal/executive dysfunction and postural tremor.\n\nAlternative: Fragile X–associated tremor/ataxia syndrome (FMR1 premutation)\n\nAlternative: Essential tremor\n\nAlternative: Parkinsonian or other neurodegenerative tremor syndrome",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Neuronal intranuclear inclusion disease (NIID) caused by a pathogenic NOTCH2NLC GGC-repeat expansion, with associated frontal/executive dysfunction and postural tremor.",
+ "decisive_served": [
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "genetic testing (targeted panel or exome)",
+  "skin biopsy"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 664,
+   "total_tokens": 6340,
+   "cost": 0.00045543,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00045543,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0003984
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 406,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6490,
+   "completion_tokens": 249,
+   "total_tokens": 6739,
+   "cost": 0.00030818,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 814,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00030818,
+    "upstream_inference_prompt_cost": 0.00015878,
+    "upstream_inference_completions_cost": 0.0001494
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 161,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 15.7
+}

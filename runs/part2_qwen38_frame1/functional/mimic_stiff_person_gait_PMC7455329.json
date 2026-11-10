@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Are you currently experiencing pain in the leg you are favoring?",
+  "Did this mobility issue start after a recent injury or surgery?",
+  "Do you have a history of stroke or other neurological conditions?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Gait analysis with observation of foot clearance and pelvic stability",
+  "Manual muscle testing of hip flexors, knee extensors, and ankle dorsiflexors",
+  "Deep tendon reflex assessment including patellar, Achilles, and plantar responses",
+  "Sensory examination for light touch, vibration, and proprioception in lower extremities",
+  "Lumbar spine range of motion and straight leg raise test"
+ ],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)"
+ ],
+ "results": [
+  "1. Gait analysis with observation of foot clearance and pelvic stability",
+  "     not performed / not available",
+  "2. Manual muscle testing of hip flexors, knee extensors, and ankle dorsiflexors",
+  "     not performed / not available",
+  "3. Deep tendon reflex assessment including patellar, Achilles, and plantar responses",
+  "     deep tendon reflexes and plantar responses: normal",
+  "4. Sensory examination for light touch, vibration, and proprioception in lower extremities",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "5. Lumbar spine range of motion and straight leg raise test",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional gait disorder (psychogenic gait)\n1. Malingering\n2. Early-onset Parkinson's disease or atypical parkinsonism\n3. Hereditary spastic paraplegia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Gait analysis with observation of foot clearance and pelvic stability\n2. Manual muscle testing of hip flexors, knee extensors, and ankle dorsiflexors\n3. Deep tendon reflex assessment including patellar, Achilles, and plantar responses\n4. Sensory examination for light touch, vibration, and proprioception in lower extremities\n5. Lumbar spine range of motion and straight leg raise test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional gait disorder (psychogenic gait)",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 344,
+   "completion_tokens": 46,
+   "total_tokens": 390,
+   "cost": 7.322e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.322e-05,
+    "upstream_inference_prompt_cost": 5.16e-05,
+    "upstream_inference_completions_cost": 2.162e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 601,
+   "completion_tokens": 85,
+   "total_tokens": 686,
+   "cost": 0.0001301,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001301,
+    "upstream_inference_prompt_cost": 9.015e-05,
+    "upstream_inference_completions_cost": 3.995e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 920,
+   "completion_tokens": 48,
+   "total_tokens": 968,
+   "cost": 0.000109104,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000109104,
+    "upstream_inference_prompt_cost": 8.6544e-05,
+    "upstream_inference_completions_cost": 2.256e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 13.2
+}

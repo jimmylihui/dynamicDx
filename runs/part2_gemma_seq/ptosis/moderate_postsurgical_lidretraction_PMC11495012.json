@@ -1,0 +1,274 @@
+{
+ "questions": [
+  "Does the drooping of your eyelids get worse as the day goes on?",
+  "Do you experience double vision?",
+  "Do you have difficulty swallowing or speaking?",
+  "Do you have weakness in your arms or legs?",
+  "Was this present since birth?",
+  "Did this develop gradually over a few years?",
+  "Do you have any known thyroid disease?",
+  "Do you have any known muscle or nerve diseases?",
+  "Do you have any shortness of breath or difficulty climbing stairs?",
+  "Did this start suddenly, over a few days or weeks?",
+  "Have you started any new medications recently?",
+  "Have you had any recent viral infections or vaccinations?",
+  "Do you have any pain in your eyes or eyelids?",
+  "Do you have any changes in your vision other than the drooping eyelids?",
+  "Have you noticed any changes in the size of your pupils?",
+  "Have you had any recent fever, weight loss, or new rashes?",
+  "Do you have any history of autoimmune diseases?",
+  "Have you had any recent head or neck trauma?",
+  "Do you have any history of drug or alcohol use?",
+  "Have you had any cosmetic procedures, such as botulinum toxin (Botox) injections, on your face or forehead recently?",
+  "Do you feel unsteady on your feet or have difficulty with balance?",
+  "Have you noticed any loss of reflexes in your limbs?",
+  "Do you have any difficulty with your coordination?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Ice pack test",
+  "Anti-acetylcholine receptor (AChR) antibodies",
+  "Anti-muscle-specific kinase (MuSK) antibodies",
+  "Single-fiber electromyography (SFEMG) of the orbicularis oculi or frontalis muscle",
+  "Repetitive nerve stimulation (RNS) of the facial or ulnar nerve",
+  "MRI of the brain and orbits",
+  "CT scan of the upper face and orbits",
+  "MRI of the muscles of the face and facial own nerves"
+ ],
+ "served": [
+  "ice-pack test",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "anti-MuSK antibodies",
+  "single-fibre EMG",
+  "repetitive nerve stimulation",
+  "MRI orbits",
+  "MRI brain with contrast",
+  "CT sinuses"
+ ],
+ "results": [
+  "R1 ASK Does the drooping of your eyelids get worse as the day goes on?; Do you experience double vision?; Do you have difficulty swallowing or speaking?; Do you have weakness in your arms or legs? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Was this present since birth?; Did this develop gradually over a few years?; Do you have any known thyroid disease?; Do you have any known muscle or nerve diseases?; Do you have any shortness of breath or difficulty climbing stairs? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Did this start suddenly, over a few days or weeks?; Have you started any new medications recently?; Have you had any recent viral infections or vaccinations?; Do you have any pain in your eyes or eyelids?; Do you have any changes in your vision other than the drooping eyelids? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Ice pack test -> [['ice-pack test']]",
+  "R5 ASK Have you noticed any changes in the size of your pupils?; Have you had any recent fever, weight loss, or new rashes?; Do you have any history of autoimmune diseases?; Have you had any recent head or neck trauma?; Do you have any history of drug or alcohol use? -> ['no', 'no', 'no', 'no', 'no']",
+  "R6 ORDER Anti-acetylcholine receptor (AChR) antibodies; Anti-muscle-specific kinase (MuSK) antibodies -> [['acetylcholine receptor, MuSK and LRP4 antibodies', 'anti-acetylcholine receptor antibodies'], ['acetylcholine receptor, MuSK and LRP4 antibodies', 'anti-MuSK antibodies']]",
+  "R7 ORDER Single-fiber electromyography (SFEMG) of the orbicularis oculi or frontalis muscle; Repetitive nerve stimulation (RNS) of the facial or ulnar nerve -> [['single-fibre EMG'], ['repetitive nerve stimulation']]",
+  "R8 ASK Have you had any cosmetic procedures, such as botulinum toxin (Botox) injections, on your face or forehead recently? -> ['no']",
+  "R9 ASK Do you feel unsteady on your feet or have difficulty with balance?; Have you noticed any loss of reflexes in your limbs?; Do you have any difficulty with your coordination? -> ['no', 'no', 'no']",
+  "R10 ORDER MRI of the brain and orbits; CT scan of the upper face and orbits; MRI of the muscles of the face and facial own nerves -> [['MRI orbits', 'MRI brain with contrast'], ['CT sinuses'], []]",
+  "R11 FORCED_DIAGNOSIS  -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Does the drooping of your eyelids get worse as the day goes on?",
+    "Do you experience double vision?",
+    "Do you have difficulty swallowing or speaking?",
+    "Do you have weakness in your arms or legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Was this present since birth?",
+    "Did this develop gradually over a few years?",
+    "Do you have any known thyroid disease?",
+    "Do you have any known muscle or nerve diseases?",
+    "Do you have any shortness of breath or difficulty climbing stairs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did this start suddenly, over a few days or weeks?",
+    "Have you started any new medications recently?",
+    "Have you had any recent viral infections or vaccinations?",
+    "Do you have any pain in your eyes or eyelids?",
+    "Do you have any changes in your vision other than the drooping eyelids?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Ice pack test"
+   ],
+   "result": [
+    [
+     "ice-pack test"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any changes in the size of your pupils?",
+    "Have you had any recent fever, weight loss, or new rashes?",
+    "Do you have any history of autoimmune diseases?",
+    "Have you had any recent head or neck trauma?",
+    "Do you have any history of drug or alcohol use?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Anti-acetylcholine receptor (AChR) antibodies",
+    "Anti-muscle-specific kinase (MuSK) antibodies"
+   ],
+   "result": [
+    [
+     "acetylcholine receptor, MuSK and LRP4 antibodies",
+     "anti-acetylcholine receptor antibodies"
+    ],
+    [
+     "acetylcholine receptor, MuSK and LRP4 antibodies",
+     "anti-MuSK antibodies"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Single-fiber electromyography (SFEMG) of the orbicularis oculi or frontalis muscle",
+    "Repetitive nerve stimulation (RNS) of the facial or ulnar nerve"
+   ],
+   "result": [
+    [
+     "single-fibre EMG"
+    ],
+    [
+     "repetitive nerve stimulation"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Have you had any cosmetic procedures, such as botulinum toxin (Botox) injections, on your face or forehead recently?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you feel unsteady on your feet or have difficulty with balance?",
+    "Have you noticed any loss of reflexes in your limbs?",
+    "Do you have any difficulty with your coordination?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "MRI of the brain and orbits",
+    "CT scan of the upper face and orbits",
+    "MRI of the muscles of the face and facial own nerves"
+   ],
+   "result": [
+    [
+     "MRI orbits",
+     "MRI brain with contrast"
+    ],
+    [
+     "CT sinuses"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": ""
+  }
+ ],
+ "dx": "",
+ "dx_raw": "",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0162,
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 4515.2
+}

@@ -1,0 +1,300 @@
+{
+ "questions": [
+  "Do you have pain in your neck?",
+  "Do you have a headache?",
+  "Have you had any recent trauma to your neck?",
+  "Do you have any weakness in your limbs?",
+  "Do you have any difficulty speaking?",
+  "Have you lost weight recently?",
+  "Do you have a cough?",
+  "Do you have any shortness of breath?",
+  "Do you have a history of smoking?",
+  "Do you have any vision changes?",
+  "Did the drooping of your eyelid happen suddenly?",
+  "Do you have a history of heart disease?",
+  "Do you have a history of any autoimmune diseases?",
+  "Do you have a history of any cancer?",
+  "Do you have any numbness or tingling on one side of your body?",
+  "Do you have any numbness or tingling on your face?",
+  "Do you have any dizziness or vertigo?",
+  "Do you have any difficulty swallowing?",
+  "Do you have any hoarseness in your voice?",
+  "Does the drooping of your eyelid get worse as the day goes on?",
+  "Do you experience double vision?",
+  "Do you have any difficulty chewing or swallowing?",
+  "Do you have any weakness in your arms or legs that gets worse with activity?",
+  "Do you have any difficulty releasing your grip after shaking someone's hand?",
+  "Do you have diabetes?",
+  "Do you have any trouble moving your eye up, down, or to the side?",
+  "Have you noticed any weakness in your other muscles, like your hips or shoulders?",
+  "Do you have any cataracts?",
+  "Can you wrinkle your forehead on the right side?",
+  "Can you close your right eye tightly?",
+  "Do you have any pain behind your eye?",
+  "Have you had any recent infections, like a cold or shingles?",
+  "Do you have any history of high blood pressure?",
+  "Do you have any trouble with your balance or walking?",
+  "Have you noticed any tingling or numbness in your feet or hands?",
+  "Have you been in any wooded areas or had any tick bites recently?",
+  "Do you have any hearing loss or ringing in your ears?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "yes",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "yes",
+  "33": "no",
+  "34": "no",
+  "35": "no",
+  "36": "no",
+  "37": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Test for facial anhidrosis on the right side.",
+  "Chest X-ray.",
+  "CT Angiography of the neck.",
+  "Apraclonidine eye drop test.",
+  "Hydroxyamphetamine eye drop test."
+ ],
+ "served": [
+  "pupil examination (size, light reaction)"
+ ],
+ "results": [
+  "R1 ASK Do you have pain in your neck?; Do you have a headache?; Have you had any recent trauma to your neck?; Do you have any weakness in your limbs?; Do you have any difficulty speaking? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ORDER Test for facial anhidrosis on the right side.; Chest X-ray.; CT Angiography of the neck. -> [[], [], []]",
+  "R3 ASK Have you lost weight recently?; Do you have a cough?; Do you have any shortness of breath?; Do you have a history of smoking?; Do you have any vision changes? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Did the drooping of your eyelid happen suddenly?; Do you have a history of heart disease?; Do you have a history of any autoimmune diseases?; Do you have a history of any cancer? -> ['no', 'no', 'no', 'no']",
+  "R5 ASK Do you have any numbness or tingling on one side of your body?; Do you have any numbness or tingling on your face?; Do you have any dizziness or vertigo?; Do you have any difficulty swallowing?; Do you have any hoarseness in your voice? -> ['no', 'no', 'no', 'no', 'no']",
+  "R6 ORDER Apraclonidine eye drop test.; Hydroxyamphetamine eye drop test. -> [['pupil examination (size, light reaction)'], ['pupil examination (size, light reaction)']]",
+  "R7 ASK Does the drooping of your eyelid get worse as the day goes on?; Do you experience double vision?; Do you have any difficulty chewing or swallowing?; Do you have any weakness in your arms or legs that gets worse with activity? -> ['no', 'no', 'no', 'no']",
+  "R8 ASK Do you have any difficulty releasing your grip after shaking someone's hand?; Do you have diabetes?; Do you have any trouble moving your eye up, down, or to the side?; Have you noticed any weakness in your other muscles, like your hips or shoulders?; Do you have any cataracts? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R9 ASK Can you wrinkle your forehead on the right side?; Can you close your right eye tightly?; Do you have any pain behind your eye?; Have you had any recent infections, like a cold or shingles?; Do you have any history of high blood pressure? -> ['no', 'no', 'no', 'yes', 'no']",
+  "R10 ASK Do you have any trouble with your balance or walking?; Have you noticed any tingling or numbness in your feet or hands?; Have you been in any wooded areas or had any tick bites recently?; Do you have any hearing loss or ringing in your ears? -> ['no', 'no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Bell's palsy caused by Herpes Simplex Virus -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your neck?",
+    "Do you have a headache?",
+    "Have you had any recent trauma to your neck?",
+    "Do you have any weakness in your limbs?",
+    "Do you have any difficulty speaking?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Test for facial anhidrosis on the right side.",
+    "Chest X-ray.",
+    "CT Angiography of the neck."
+   ],
+   "result": [
+    [],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you lost weight recently?",
+    "Do you have a cough?",
+    "Do you have any shortness of breath?",
+    "Do you have a history of smoking?",
+    "Do you have any vision changes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Did the drooping of your eyelid happen suddenly?",
+    "Do you have a history of heart disease?",
+    "Do you have a history of any autoimmune diseases?",
+    "Do you have a history of any cancer?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have any numbness or tingling on one side of your body?",
+    "Do you have any numbness or tingling on your face?",
+    "Do you have any dizziness or vertigo?",
+    "Do you have any difficulty swallowing?",
+    "Do you have any hoarseness in your voice?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Apraclonidine eye drop test.",
+    "Hydroxyamphetamine eye drop test."
+   ],
+   "result": [
+    [
+     "pupil examination (size, light reaction)"
+    ],
+    [
+     "pupil examination (size, light reaction)"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Does the drooping of your eyelid get worse as the day goes on?",
+    "Do you experience double vision?",
+    "Do you have any difficulty chewing or swallowing?",
+    "Do you have any weakness in your arms or legs that gets worse with activity?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have any difficulty releasing your grip after shaking someone's hand?",
+    "Do you have diabetes?",
+    "Do you have any trouble moving your eye up, down, or to the side?",
+    "Have you noticed any weakness in your other muscles, like your hips or shoulders?",
+    "Do you have any cataracts?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Can you wrinkle your forehead on the right side?",
+    "Can you close your right eye tightly?",
+    "Do you have any pain behind your eye?",
+    "Have you had any recent infections, like a cold or shingles?",
+    "Do you have any history of high blood pressure?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you have any trouble with your balance or walking?",
+    "Have you noticed any tingling or numbness in your feet or hands?",
+    "Have you been in any wooded areas or had any tick bites recently?",
+    "Do you have any hearing loss or ringing in your ears?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Bell's palsy caused by Herpes Simplex Virus"
+  }
+ ],
+ "dx": "Bell's palsy caused by Herpes Simplex Virus",
+ "dx_raw": "DIAGNOSIS: Bell's palsy caused by Herpes Simplex Virus",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0165,
+ "n_frames": 32,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 3295.6
+}

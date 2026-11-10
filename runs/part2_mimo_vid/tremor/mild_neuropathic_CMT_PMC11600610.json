@@ -1,0 +1,166 @@
+{
+ "questions": [
+  "Have you had a recent head injury?",
+  "Is the shaking worse when your hands are at rest?",
+  "Is the shaking worse when you try to use your hands?",
+  "Is there a family history of tremors?",
+  "Does alcohol reduce the shaking?",
+  "Do you have trouble walking or maintaining balance?",
+  "Have you started any new medications?",
+  "Do you feel weak on one side of your body?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Neurological examination focusing on cerebellar signs, tone, and gait",
+  "Slit lamp examination for Kayser-Fleischer rings",
+  "Serum ceruloplasmin level",
+  "24-hour urinary copper excretion",
+  "Liver function tests",
+  "Brain MRI"
+ ],
+ "served": [
+  "muscle tone examination",
+  "coordination examination (limb and truncal)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "gait examination",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "liver function tests",
+  "liver function and albumin/globulin",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Neurological examination focusing on cerebellar signs, tone, and gait",
+  "     muscle tone examination: normal",
+  "     coordination examination (limb and truncal): normal",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): absent",
+  "     gait examination: normal",
+  "2. Slit lamp examination for Kayser-Fleischer rings",
+  "     slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "3. Serum ceruloplasmin level",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal",
+  "4. 24-hour urinary copper excretion",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal",
+  "5. Liver function tests",
+  "     liver function tests: normal",
+  "     liver function and albumin/globulin: normal",
+  "6. Brain MRI",
+  "     brain MRI: no structural lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Essential tremor\n\nEnhanced physiologic tremor\nPsychogenic tremor\nEarly Parkinson's disease",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Neurological examination focusing on cerebellar signs, tone, and gait\n2. Slit lamp examination for Kayser-Fleischer rings\n3. Serum ceruloplasmin level\n4. 24-hour urinary copper excretion\n5. Liver function tests\n6. Brain MRI",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Essential tremor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14783,
+   "completion_tokens": 1813,
+   "total_tokens": 16596,
+   "cost": 0.000557676,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000557676,
+    "upstream_inference_prompt_cost": 5.0036e-05,
+    "upstream_inference_completions_cost": 0.00050764
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1721,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 15148,
+   "completion_tokens": 556,
+   "total_tokens": 15704,
+   "cost": 0.000256816,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000256816,
+    "upstream_inference_prompt_cost": 0.000101136,
+    "upstream_inference_completions_cost": 0.00015568
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 490,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 15521,
+   "completion_tokens": 912,
+   "total_tokens": 16433,
+   "cost": 0.0003560312,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 15104,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003560312,
+    "upstream_inference_prompt_cost": 0.0001006712,
+    "upstream_inference_completions_cost": 0.00025536
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 882,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.7,
+ "video": "mild_neuropathic_CMT_PMC11600610.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 97.3
+}

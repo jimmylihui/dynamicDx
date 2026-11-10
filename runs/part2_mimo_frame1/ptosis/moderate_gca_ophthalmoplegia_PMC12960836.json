@@ -1,0 +1,159 @@
+{
+ "questions": [
+  "Are you experiencing any pain?",
+  "Is the pain located in your head or face?",
+  "Is the pain around your eye or temple?",
+  "Are you feeling dizzy or lightheaded?",
+  "Are you having any problems with your vision?",
+  "Do you have a fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Visual acuity test",
+  "Pupillary light reflex examination",
+  "Confrontation visual field testing",
+  "Fundoscopic examination",
+  "Slit lamp examination",
+  "Optical coherence tomography of the optic nerve",
+  "MRI of the brain and orbits"
+ ],
+ "served": [
+  "visual acuity and colour vision",
+  "pupil examination (size, light reaction)",
+  "fundoscopy",
+  "MRI orbits",
+  "MRI brain with contrast"
+ ],
+ "results": [
+  "1. Visual acuity test",
+  "     visual acuity and colour vision: normal",
+  "2. Pupillary light reflex examination",
+  "     pupil examination (size, light reaction): equal and reactive",
+  "3. Confrontation visual field testing",
+  "     not performed / not available",
+  "4. Fundoscopic examination",
+  "     fundoscopy: normal",
+  "5. Slit lamp examination",
+  "     not performed / not available",
+  "6. Optical coherence tomography of the optic nerve",
+  "     not performed / not available",
+  "7. MRI of the brain and orbits",
+  "     MRI orbits: normal extraocular muscles, no mass",
+  "     MRI brain with contrast: bilateral contrast enhancement and THICKENING of cranial nerves III through XII"
+ ],
+ "dx_raw": "DIAGNOSIS: Neurosarcoidosis\nPrimary CNS lymphoma\nInfectious neuritis (such as Lyme disease)\nChronic inflammatory demyelinating polyneuropathy (CIDP)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Visual acuity test\n2. Pupillary light reflex examination\n3. Confrontation visual field testing\n4. Fundoscopic examination\n5. Slit lamp examination\n6. Optical coherence tomography of the optic nerve\n7. MRI of the brain and orbits",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Neurosarcoidosis",
+ "decisive_served": [
+  "MRI brain with contrast"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 528,
+   "completion_tokens": 565,
+   "total_tokens": 1093,
+   "cost": 0.0002057776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002057776,
+    "upstream_inference_prompt_cost": 4.75776e-05,
+    "upstream_inference_completions_cost": 0.0001582
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 501,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 829,
+   "completion_tokens": 278,
+   "total_tokens": 1107,
+   "cost": 0.0001675576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001675576,
+    "upstream_inference_prompt_cost": 8.97176e-05,
+    "upstream_inference_completions_cost": 7.784e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 219,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1124,
+   "completion_tokens": 1599,
+   "total_tokens": 2723,
+   "cost": 0.0005348336,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005348336,
+    "upstream_inference_prompt_cost": 8.71136e-05,
+    "upstream_inference_completions_cost": 0.00044772
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1553,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_gca_ophthalmoplegia_PMC12960836.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 107.7
+}

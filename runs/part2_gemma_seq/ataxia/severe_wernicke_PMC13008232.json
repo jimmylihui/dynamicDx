@@ -1,0 +1,92 @@
+{
+ "questions": [
+  "Do you have urinary incontinence?",
+  "Do you have memory loss?",
+  "Do you have numbness in your feet?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside examination for resting tremor",
+  "Bedside examination for cogwheel rigidity",
+  "Bedside examination for bradykinesia",
+  "Brain MRI"
+ ],
+ "served": [
+  "muscle tone examination",
+  "brain MRI"
+ ],
+ "results": [
+  "R1 ASK Do you have urinary incontinence?; Do you have memory loss?; Do you have numbness in your feet? -> ['no', 'yes', 'no']",
+  "R2 ORDER Bedside examination for resting tremor; Bedside examination for cogwheel rigidity; Bedside examination for bradykinesia; Brain MRI -> [[], ['muscle tone examination'], [], ['brain MRI']]",
+  "R3 DIAGNOSIS Wernicke encephalopathy due to thiamine deficiency -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have urinary incontinence?",
+    "Do you have memory loss?",
+    "Do you have numbness in your feet?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Bedside examination for resting tremor",
+    "Bedside examination for cogwheel rigidity",
+    "Bedside examination for bradykinesia",
+    "Brain MRI"
+   ],
+   "result": [
+    [],
+    [
+     "muscle tone examination"
+    ],
+    [],
+    [
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "diagnosis",
+   "text": "Wernicke encephalopathy due to thiamine deficiency"
+  }
+ ],
+ "dx": "Wernicke encephalopathy due to thiamine deficiency",
+ "dx_raw": "DIAGNOSIS: Wernicke encephalopathy due to thiamine deficiency",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 2,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0033,
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 184.6
+}

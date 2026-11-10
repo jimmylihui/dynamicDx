@@ -1,0 +1,161 @@
+{
+ "questions": [
+  "Do you have a tremor or shaking in your hands?",
+  "Does the shaking occur when your hands are resting?",
+  "Does the shaking occur when you hold a position, as you did in the video?",
+  "Does the shaking occur when you reach for an object?",
+  "Do you have any stiffness in your muscles?",
+  "Have you noticed any changes in your balance or walking?",
+  "Do you have a family history of tremors?",
+  "Do you take any medications that could cause shaking?",
+  "Do you have pain in your arms or shoulders?",
+  "Do you have weakness in your arms?",
+  "Do you have numbness or tingling in your hands?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Thyroid function tests",
+  "MRI Brain",
+  "Finger-to-nose test",
+  "Heel-to-shin test",
+  "Romberg test"
+ ],
+ "served": [
+  "TSH / free T4",
+  "brain MRI",
+  "coordination examination (limb and truncal)",
+  "kinetic / intention tremor (finger-nose)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "coordination examination (limb and truncal)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "posture and pull test"
+ ],
+ "results": [
+  "1. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "2. MRI Brain",
+  "     brain MRI: no structural lesion",
+  "3. Finger-to-nose test",
+  "     coordination examination (limb and truncal): normal",
+  "     kinetic / intention tremor (finger-nose): absent",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): absent",
+  "4. Heel-to-shin test",
+  "     coordination examination (limb and truncal): normal",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): absent",
+  "5. Romberg test",
+  "     posture and pull test: postural tremor; pull test normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Essential tremor, idiopathic\n\nEnhanced physiological tremor\nOrthostatic tremor\nParkinson's disease",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Thyroid function tests\n2. MRI Brain\n3. Finger-to-nose test\n4. Heel-to-shin test\n5. Romberg test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Essential tremor, idiopathic",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 3642,
+   "total_tokens": 12340,
+   "cost": 0.00210808,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00210808,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00123828
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3284,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9190,
+   "completion_tokens": 838,
+   "total_tokens": 10028,
+   "cost": 0.00120392,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00120392,
+    "upstream_inference_prompt_cost": 0.000919,
+    "upstream_inference_completions_cost": 0.00028492
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 842,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9462,
+   "completion_tokens": 1637,
+   "total_tokens": 11099,
+   "cost": 0.00150278,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00150278,
+    "upstream_inference_prompt_cost": 0.0009462,
+    "upstream_inference_completions_cost": 0.00055658
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1679,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.7,
+ "video": "mild_neuropathic_CMT_PMC11600610.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 259.3
+}

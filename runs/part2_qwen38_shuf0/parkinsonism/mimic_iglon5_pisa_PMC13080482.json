@@ -1,0 +1,154 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Do you feel dizzy or lightheaded when you walk?",
+  "Is your walking difficulty caused by weakness in your legs?",
+  "Have you had a stroke in the past?",
+  "Do you have diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's gait and posture",
+  "Perform a comprehensive neurological examination including tone, power, reflexes, coordination, and sensory testing",
+  "Assess for extrapyramidal signs (rigidity, tremor, bradykinesia)"
+ ],
+ "served": [
+  "posture and pull test",
+  "gait observation including turning and doorways",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "limb rigidity and axial (neck) rigidity",
+  "finger tapping for bradykinesia and decrement",
+  "tremor characterisation (rest, postural, action)"
+ ],
+ "results": [
+  "1. Observe the patient's gait and posture",
+  "     posture and pull test: about 70 degrees of leftward trunk tilt on walking with antecollis; normal stance and tilt disappears when recumbent",
+  "     gait observation including turning and doorways: not recorded",
+  "2. Perform a comprehensive neurological examination including tone, power, reflexes, coordination, and sensory testing",
+  "     cranial nerve examination: dysarthria, dysphagia, broken pursuit eye movements and orofacial dyskinesia",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal limb and neck tone with leftward truncal dystonic flexion and antecollis",
+  "     limb strength (MRC) examination: normal power",
+  "     deep tendon reflexes and plantar responses: normal reflexes and flexor plantar responses",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): chorea and orofacial dyskinesia; limb coordination normal",
+  "3. Assess for extrapyramidal signs (rigidity, tremor, bradykinesia)",
+  "     limb rigidity and axial (neck) rigidity: not recorded",
+  "     finger tapping for bradykinesia and decrement: normal",
+  "     tremor characterisation (rest, postural, action): no tremor"
+ ],
+ "dx_raw": "DIAGNOSIS: Huntington's disease\nAlternative 1: Neuroacanthocytosis (Chorea-acanthocytosis)\nAlternative 2: Benign Hereditary Chorea",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient's gait and posture\n2. Perform a comprehensive neurological examination including tone, power, reflexes, coordination, and sensory testing\n3. Assess for extrapyramidal signs (rigidity, tremor, bradykinesia)",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Huntington's disease",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 59,
+   "total_tokens": 4882,
+   "cost": 0.00075118,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075118,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.773e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5114,
+   "completion_tokens": 56,
+   "total_tokens": 5170,
+   "cost": 0.0001931,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001931,
+    "upstream_inference_prompt_cost": 0.00016678,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5551,
+   "completion_tokens": 41,
+   "total_tokens": 5592,
+   "cost": 0.000182992,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000182992,
+    "upstream_inference_prompt_cost": 0.000163722,
+    "upstream_inference_completions_cost": 1.927e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 44.4
+}

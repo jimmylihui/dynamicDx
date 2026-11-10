@@ -1,0 +1,226 @@
+{
+ "questions": [
+  "Did these abnormal movements begin before you were 20 years old?",
+  "Have you had yellowing of the eyes or skin, dark urine, abdominal swelling, or other liver problems?",
+  "Has anyone in your family had similar movements or an unexplained liver or neurological disease?",
+  "Have you noticed difficulty speaking or swallowing?",
+  "Have you had a seizure or loss of consciousness?",
+  "Did the abnormal movements start in one limb and then spread to other limbs or the trunk?",
+  "Are the movements or abnormal postures worse when you try to walk, write, or perform another voluntary action?",
+  "Do the movements improve substantially after sleep?",
+  "Can a light touch to your face or another body part temporarily reduce the abnormal posture?",
+  "Have you ever taken levodopa or a similar Parkinson’s medicine, with clear improvement in the movements?",
+  "Were you born prematurely or did you have a lack of oxygen, severe jaundice, or another serious complication around birth?",
+  "Did you have delayed motor development or difficulty walking during childhood?",
+  "Have these movements steadily worsened over time rather than remaining stable?",
+  "Have you ever taken antipsychotic medicines, metoclopramide, prochlorperazine, or other medicines that can cause abnormal movements?",
+  "Do you have involuntary tongue movements, frequent biting of your tongue, or difficulty keeping your mouth closed?",
+  "Do you have involuntary twisting movements or abnormal postures involving your legs, trunk, or neck in addition to your arms?",
+  "Have you developed problems with balance or walking?",
+  "Have you had progressive forgetfulness, decline in school/work performance, or other cognitive changes?",
+  "Have you had depression, hallucinations, major personality changes, or other psychiatric symptoms?",
+  "Do your symptoms improve after sleep and become worse later in the day?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Slit-lamp examination for Kayser–Fleischer rings",
+  "Serum ceruloplasmin concentration",
+  "24-hour urinary copper excretion",
+  "Serum copper concentration and liver function tests",
+  "Brain MRI with T1-, T2-, and susceptibility-weighted sequences to exclude structural or neurodegenerative causes of generalized dystonia",
+  "Genetic testing for the TOR1A (DYT1) pathogenic variant, including deletion/duplication analysis",
+  "If TOR1A testing is negative, an isolated-dystonia gene panel including THAP1 (DYT6), KMT2B, and GNAL variants"
+ ],
+ "served": [
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "24-hour urinary copper",
+  "liver function",
+  "brain MRI",
+  "MRI susceptibility-weighted sequences",
+  "dystonia gene panel"
+ ],
+ "results": [
+  "R1 ASK Did these abnormal movements begin before you were 20 years old?; Have you had yellowing of the eyes or skin, dark urine, abdominal swelling, or other liver problems?; Has anyone in your family had similar movements or an unexplained liver or neurological disease?; Have you noticed difficulty speaking or swallowing?; Have you had a seizure or loss of consciousness? -> ['yes', 'no', 'no', 'yes', 'no']",
+  "R2 ORDER Slit-lamp examination for Kayser–Fleischer rings; Serum ceruloplasmin concentration; 24-hour urinary copper excretion; Serum copper concentration and liver function tests -> [['slit-lamp examination for Kayser-Fleischer rings'], ['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['24-hour urinary copper', 'copper / caeruloplasmin / 24 h urinary copper'], ['serum copper and caeruloplasmin', 'liver function', 'copper / caeruloplasmin / 24 h urinary copper']]",
+  "R3 ASK Did the abnormal movements start in one limb and then spread to other limbs or the trunk?; Are the movements or abnormal postures worse when you try to walk, write, or perform another voluntary action?; Do the movements improve substantially after sleep?; Can a light touch to your face or another body part temporarily reduce the abnormal posture?; Have you ever taken levodopa or a similar Parkinson’s medicine, with clear improvement in the movements? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Were you born prematurely or did you have a lack of oxygen, severe jaundice, or another serious complication around birth?; Did you have delayed motor development or difficulty walking during childhood?; Have these movements steadily worsened over time rather than remaining stable?; Have you ever taken antipsychotic medicines, metoclopramide, prochlorperazine, or other medicines that can cause abnormal movements?; Do you have involuntary tongue movements, frequent biting of your tongue, or difficulty keeping your mouth closed? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R5 ASK Do you have involuntary twisting movements or abnormal postures involving your legs, trunk, or neck in addition to your arms?; Have you developed problems with balance or walking?; Have you had progressive forgetfulness, decline in school/work performance, or other cognitive changes?; Have you had depression, hallucinations, major personality changes, or other psychiatric symptoms?; Do your symptoms improve after sleep and become worse later in the day? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R6 ORDER Brain MRI with T1-, T2-, and susceptibility-weighted sequences to exclude structural or neurodegenerative causes of generalized dystonia; Genetic testing for the TOR1A (DYT1) pathogenic variant, including deletion/duplication analysis; If TOR1A testing is negative, an isolated-dystonia gene panel including THAP1 (DYT6), KMT2B, and GNAL variants -> [['brain MRI', 'MRI susceptibility-weighted sequences'], [], ['dystonia gene panel']]",
+  "R7 DIAGNOSIS Juvenile/adult-onset (type III, chronic) GM1 gangliosidosis due to biallelic pathogenic **GLB1** variants, causing progressive generalized dystonia. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did these abnormal movements begin before you were 20 years old?",
+    "Have you had yellowing of the eyes or skin, dark urine, abdominal swelling, or other liver problems?",
+    "Has anyone in your family had similar movements or an unexplained liver or neurological disease?",
+    "Have you noticed difficulty speaking or swallowing?",
+    "Have you had a seizure or loss of consciousness?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Slit-lamp examination for Kayser–Fleischer rings",
+    "Serum ceruloplasmin concentration",
+    "24-hour urinary copper excretion",
+    "Serum copper concentration and liver function tests"
+   ],
+   "result": [
+    [
+     "slit-lamp examination for Kayser-Fleischer rings"
+    ],
+    [
+     "serum copper and caeruloplasmin",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "24-hour urinary copper",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "serum copper and caeruloplasmin",
+     "liver function",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did the abnormal movements start in one limb and then spread to other limbs or the trunk?",
+    "Are the movements or abnormal postures worse when you try to walk, write, or perform another voluntary action?",
+    "Do the movements improve substantially after sleep?",
+    "Can a light touch to your face or another body part temporarily reduce the abnormal posture?",
+    "Have you ever taken levodopa or a similar Parkinson’s medicine, with clear improvement in the movements?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Were you born prematurely or did you have a lack of oxygen, severe jaundice, or another serious complication around birth?",
+    "Did you have delayed motor development or difficulty walking during childhood?",
+    "Have these movements steadily worsened over time rather than remaining stable?",
+    "Have you ever taken antipsychotic medicines, metoclopramide, prochlorperazine, or other medicines that can cause abnormal movements?",
+    "Do you have involuntary tongue movements, frequent biting of your tongue, or difficulty keeping your mouth closed?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have involuntary twisting movements or abnormal postures involving your legs, trunk, or neck in addition to your arms?",
+    "Have you developed problems with balance or walking?",
+    "Have you had progressive forgetfulness, decline in school/work performance, or other cognitive changes?",
+    "Have you had depression, hallucinations, major personality changes, or other psychiatric symptoms?",
+    "Do your symptoms improve after sleep and become worse later in the day?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Brain MRI with T1-, T2-, and susceptibility-weighted sequences to exclude structural or neurodegenerative causes of generalized dystonia",
+    "Genetic testing for the TOR1A (DYT1) pathogenic variant, including deletion/duplication analysis",
+    "If TOR1A testing is negative, an isolated-dystonia gene panel including THAP1 (DYT6), KMT2B, and GNAL variants"
+   ],
+   "result": [
+    [
+     "brain MRI",
+     "MRI susceptibility-weighted sequences"
+    ],
+    [],
+    [
+     "dystonia gene panel"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Juvenile/adult-onset (type III, chronic) GM1 gangliosidosis due to biallelic pathogenic **GLB1** variants, causing progressive generalized dystonia."
+  }
+ ],
+ "dx": "Juvenile/adult-onset (type III, chronic) GM1 gangliosidosis due to biallelic pathogenic **GLB1** variants, causing progressive generalized dystonia.",
+ "dx_raw": "DIAGNOSIS: Juvenile/adult-onset (type III, chronic) GM1 gangliosidosis due to biallelic pathogenic **GLB1** variants, causing progressive generalized dystonia.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "dystonia gene panel",
+  "slit-lamp examination for Kayser-Fleischer rings"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0044,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_PMC12904113.mp4",
+ "line": "dystonia",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 46.5
+}

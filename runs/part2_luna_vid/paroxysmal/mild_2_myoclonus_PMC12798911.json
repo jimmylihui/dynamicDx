@@ -1,0 +1,172 @@
+{
+ "questions": [
+  "Are you having difficulty breathing right now?",
+  "Are you having chest pain or pressure right now?",
+  "Have you recently fainted or nearly fainted?",
+  "Are you experiencing a fast, irregular, or pounding heartbeat?",
+  "Have you had heart surgery or another chest procedure recently?",
+  "Is the dressing on your chest covering a recent surgical wound?",
+  "Is the wound painful, swollen, red, or draining fluid?",
+  "Have you had a fever or chills?",
+  "Have you been coughing up blood?",
+  "Do you have a history of heart disease?",
+  "Have you ever had a heart attack?",
+  "Do you have high blood pressure or diabetes?",
+  "Are you taking blood-thinning medication?",
+  "Have you developed new weakness or numbness on one side of your body?",
+  "Have you had trouble speaking, understanding speech, or seeing?",
+  "Have you felt confused or unusually sleepy?",
+  "Have you had a severe or new headache?",
+  "Have you had any recent injury to your chest?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Complete bedside cardiopulmonary examination, including inspection and palpation of the chest wound and sternum",
+  "12-lead electrocardiogram",
+  "Chest radiograph",
+  "Complete blood count with differential",
+  "Basic metabolic panel",
+  "Transthoracic echocardiogram"
+ ],
+ "served": [
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "glucose, calcium, magnesium, sodium"
+ ],
+ "results": [
+  "1. Complete bedside cardiopulmonary examination, including inspection and palpation of the chest wound and sternum",
+  "     not performed / not available",
+  "2. 12-lead electrocardiogram",
+  "     not performed / not available",
+  "3. Chest radiograph",
+  "     not performed / not available",
+  "4. Complete blood count with differential",
+  "     full blood count and biochemistry: normal",
+  "5. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "6. Transthoracic echocardiogram",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Congenital pectus carinatum (anterior chest-wall deformity) treated with a corrective compression brace\n\nALTERNATIVE 1: Postoperative chest-wall deformity following pectus repair\n\nALTERNATIVE 2: Acquired sternal deformity from prior trauma\n\nALTERNATIVE 3: Post-sternotomy chest-wall support without active cardiopulmonary disease",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete bedside cardiopulmonary examination, including inspection and palpation of the chest wound and sternum\n2. 12-lead electrocardiogram\n3. Chest radiograph\n4. Complete blood count with differential\n5. Basic metabolic panel\n6. Transthoracic echocardiogram\n",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Congenital pectus carinatum (anterior chest-wall deformity) treated with a corrective compression brace",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7532,
+   "completion_tokens": 737,
+   "total_tokens": 8269,
+   "cost": 0.001383625,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 7529,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001383625,
+    "upstream_inference_prompt_cost": 0.000941425,
+    "upstream_inference_completions_cost": 0.0004422
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8197,
+   "completion_tokens": 587,
+   "total_tokens": 8784,
+   "cost": 0.000510915,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7529,
+    "cache_write_tokens": 665,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000510915,
+    "upstream_inference_prompt_cost": 0.000158715,
+    "upstream_inference_completions_cost": 0.0003522
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8483,
+   "completion_tokens": 605,
+   "total_tokens": 9088,
+   "cost": 0.00048099,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8194,
+    "cache_write_tokens": 286,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00048099,
+    "upstream_inference_prompt_cost": 0.00011799,
+    "upstream_inference_completions_cost": 0.000363
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 40.5
+}

@@ -1,0 +1,118 @@
+{
+ "questions": [
+  "Do you have a history of thyroid disease?",
+  "Do you have difficulty rising from a chair or climbing stairs?",
+  "Do you have difficulty brushing your hair?",
+  "Do you experience double vision?",
+  "Is there any pain in your eyes or around them?",
+  "Have you noticed any unintentional weight loss?",
+  "Do you feel your heart racing or skipping beats?",
+  "Do you feel more sensitive to heat than usual?",
+  "Has this developed over several months?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "lumbar puncture / CSF",
+  "medication and oncology history"
+ ],
+ "results": [
+  "1. nystagmus: direction and whether it changes with gaze: PENDULAR TORSIONAL nystagmus, isolated",
+  "2. paraneoplastic and autoimmune antibody panel (serum): ANTI-MA2 antibodies detected in BOTH serum and CSF, with the typical neuronal nucleolar staining pattern",
+  "3. CT chest / abdomen / pelvis (occult tumour): bulky perihilar mass in the left upper lung with vascular and mediastinal invasion and ipsilateral lymphadenopathy",
+  "4. lumbar puncture / CSF: CSF-restricted oligoclonal bands",
+  "5. medication and oncology history: anti-PD-L1 durvalumab; symptoms began suddenly after the seventh administration"
+ ],
+ "dx_raw": "DIAGNOSIS: Paraneoplastic brainstem encephalitis caused by lung cancer and triggered by durvalumab\n\nImmune checkpoint inhibitor-induced autoimmune encephalitis\nParaneoplastic limbic encephalitis\nMyasthenia gravis",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Paraneoplastic brainstem encephalitis caused by lung cancer and triggered by durvalumab",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "lumbar puncture / CSF",
+  "medication and oncology history"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1660,
+   "total_tokens": 10358,
+   "cost": 0.0014342,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014342,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0005644
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1560,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9187,
+   "completion_tokens": 3348,
+   "total_tokens": 12535,
+   "cost": 0.00205702,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00205702,
+    "upstream_inference_prompt_cost": 0.0009187,
+    "upstream_inference_completions_cost": 0.00113832
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3390,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 180.1
+}

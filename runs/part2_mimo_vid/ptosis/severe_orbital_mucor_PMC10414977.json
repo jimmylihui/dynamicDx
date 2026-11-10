@@ -1,0 +1,174 @@
+{
+ "questions": [
+  "Is there pain in the eye?",
+  "Is there discharge from the eye?",
+  "Have you noticed any changes in your vision?",
+  "Did the eye problem start suddenly?",
+  "Have you had any recent injury to the eye?",
+  "Is the eye sensitive to light?",
+  "Have you used any eye drops or medications recently?",
+  "Do you have a history of allergies?",
+  "Do you wear contact lenses?",
+  "Have you been in contact with someone who has an eye infection?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Palpation of thyroid gland",
+  "Thyroid function tests (TSH, free T4, free T3)",
+  "Thyroid antibodies (TSI or TRAb)",
+  "Visual acuity testing",
+  "Slit lamp examination",
+  "Intraocular pressure measurement",
+  "Hertel exophthalmometry",
+  "Assessment of extraocular movements",
+  "Pupillary reflexes"
+ ],
+ "served": [
+  "thyroid function (TSH, free T4)",
+  "TSH / free T4 / TRAb",
+  "anti-thyroid antibodies",
+  "TSH / free T4 / TRAb",
+  "visual acuity and colour vision",
+  "proptosis / exophthalmometry",
+  "ocular motility examination",
+  "pupil examination (size, light reaction)"
+ ],
+ "results": [
+  "1. Palpation of thyroid gland",
+  "     not performed / not available",
+  "2. Thyroid function tests (TSH, free T4, free T3)",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH / free T4 / TRAb: normal, TRAb negative",
+  "3. Thyroid antibodies (TSI or TRAb)",
+  "     anti-thyroid antibodies: normal",
+  "     TSH / free T4 / TRAb: normal, TRAb negative",
+  "4. Visual acuity testing",
+  "     visual acuity and colour vision: normal",
+  "5. Slit lamp examination",
+  "     not performed / not available",
+  "6. Intraocular pressure measurement",
+  "     not performed / not available",
+  "7. Hertel exophthalmometry",
+  "     proptosis / exophthalmometry: no proptosis",
+  "8. Assessment of extraocular movements",
+  "     ocular motility examination: failure to adduct the right eye",
+  "9. Pupillary reflexes",
+  "     pupil examination (size, light reaction): equal and reactive"
+ ],
+ "dx_raw": "DIAGNOSIS: Myasthenia gravis with isolated extraocular muscle involvement\n\n1. Ice pack test\n2. Anti-acetylcholine receptor antibodies\n3. Anti-MuSK antibodies\n4. CT orbits and brain with contrast\n5. Repetitive nerve stimulation study",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Palpation of thyroid gland\n2. Thyroid function tests (TSH, free T4, free T3)\n3. Thyroid antibodies (TSI or TRAb)\n4. Visual acuity testing\n5. Slit lamp examination\n6. Intraocular pressure measurement\n7. Hertel exophthalmometry\n8. Assessment of extraocular movements\n9. Pupillary reflexes",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Myasthenia gravis with isolated extraocular muscle involvement",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 17343,
+   "completion_tokens": 583,
+   "total_tokens": 17926,
+   "cost": 0.000220444,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17280,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000220444,
+    "upstream_inference_prompt_cost": 5.7204e-05,
+    "upstream_inference_completions_cost": 0.00016324
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 475,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 17750,
+   "completion_tokens": 573,
+   "total_tokens": 18323,
+   "cost": 0.000274624,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17280,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000274624,
+    "upstream_inference_prompt_cost": 0.000114184,
+    "upstream_inference_completions_cost": 0.00016044
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 484,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 18148,
+   "completion_tokens": 717,
+   "total_tokens": 18865,
+   "cost": 0.0003091984,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17728,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003091984,
+    "upstream_inference_prompt_cost": 0.0001084384,
+    "upstream_inference_completions_cost": 0.00020076
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 654,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 38.9
+}

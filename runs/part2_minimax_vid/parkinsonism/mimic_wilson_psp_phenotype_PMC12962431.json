@@ -1,0 +1,153 @@
+{
+ "questions": [
+  "Is the area on the top of your head that is being pressed painful?",
+  "Did this pain start recently, within the last week?",
+  "Do you have a fever?",
+  "Did you hit your head recently?",
+  "Is the pain strictly confined to that single spot?",
+  "Is the pain described as burning or shooting?",
+  "Have you noticed any rash, redness, or blisters on your scalp?",
+  "Is the pain worse at night?",
+  "Do you have pain in your jaw when chewing?",
+  "Do you have any new changes in your vision?",
+  "Do you have a stiff neck?",
+  "Do you have a history of headaches?",
+  "Do you have a history of anxiety?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Serum thyroid stimulating hormone (TSH) level",
+  "Serum free thyroxine (free T4) level",
+  "Serum free triiodothyronine (free T3) level",
+  "Serum TSH receptor antibodies (TRAb)"
+ ],
+ "served": [
+  "TSH / free T4",
+  "TSH / free T4",
+  "anti-thyroid antibodies"
+ ],
+ "results": [
+  "1. Serum thyroid stimulating hormone (TSH) level",
+  "     TSH / free T4: normal",
+  "2. Serum free thyroxine (free T4) level",
+  "     TSH / free T4: normal",
+  "3. Serum free triiodothyronine (free T3) level",
+  "     not performed / not available",
+  "4. Serum TSH receptor antibodies (TRAb)",
+  "     anti-thyroid antibodies: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Crouzon syndrome (FGFR2 mutation causing craniosynostosis with shallow orbits and proptosis)\n1. Euthyroid Graves' ophthalmopathy\n2. Apert syndrome\n3. Pfeiffer syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Serum thyroid stimulating hormone (TSH) level\n2. Serum free thyroxine (free T4) level\n3. Serum free triiodothyronine (free T3) level\n4. Serum TSH receptor antibodies (TRAb)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Crouzon syndrome (FGFR2 mutation causing craniosynostosis with shallow orbits and proptosis)",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 3475,
+   "total_tokens": 23913,
+   "cost": 0.01027404,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01027404,
+    "upstream_inference_prompt_cost": 0.00610404,
+    "upstream_inference_completions_cost": 0.00417
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3345,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 20944,
+   "completion_tokens": 2943,
+   "total_tokens": 23887,
+   "cost": 0.00493368,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20338,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00493368,
+    "upstream_inference_prompt_cost": 0.00140208,
+    "upstream_inference_completions_cost": 0.0035316
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3237,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 21177,
+   "completion_tokens": 14451,
+   "total_tokens": 35628,
+   "cost": 0.0186903,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20850,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0186903,
+    "upstream_inference_prompt_cost": 0.0013491,
+    "upstream_inference_completions_cost": 0.0173412
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 15953,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_wilson_psp_phenotype_PMC12962431.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 241.2
+}

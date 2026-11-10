@@ -1,0 +1,323 @@
+{
+ "questions": [
+  "Do you have paralysis in your legs?",
+  "Do you have loss of bladder or bowel control?",
+  "Did these symptoms start suddenly?",
+  "Do you have any numbness in your legs or pelvic area?",
+  "Do you have pain in your legs?",
+  "Do you have swelling in your legs?",
+  "Do you have a history of heart disease?",
+  "Do you have a history of cancer?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of smoking?",
+  "Do you feel weakness in your legs?",
+  "Do you have difficulty walking?",
+  "Was your cancer in the spine or brain?",
+  "Do you have any pain in your back?",
+  "Do you have a history of chemotherapy?",
+  "Do you have a history of radiation therapy?",
+  "Do you have memory problems?",
+  "Do you have trouble with your balance?",
+  "Do you feel like your feet are stuck to the floor when you walk?",
+  "Do you have frequent urges to urinate?",
+  "Do you have any confusion?",
+  "Was your cancer lung cancer?",
+  "Was your cancer a lymphoma?",
+  "Was your cancer a carcinoma of the gastrointestinal tract?",
+  "Was your cancer a carcinoma of the prostate?",
+  "Was your cancer a carcinoma of the kidney?",
+  "Was your cancer a carcinoma of the bladder?",
+  "Do you have urinary incontinence?",
+  "Was your cancer a melanoma?",
+  "Was your cancer a thyroid cancer?",
+  "Was your cancer a sarcoma?",
+  "Was your cancer a multiple myeloma?",
+  "Was your cancer a leukemia?",
+  "Was your cancer in the head or neck?",
+  "Was your cancer in the chest?",
+  "Was your cancer in the abdomen?",
+  "Was your cancer in the pelvis?",
+  "Was your cancer in the skin?",
+  "Was your cancer in the breast?",
+  "Was your cancer in the testicles?",
+  "Was your cancer a type of neuroendocrine tumor?",
+  "Was your cancer a type of germ cell tumor?",
+  "Was your cancer in the lymph nodes?",
+  "Was your cancer in the adrenal glands?",
+  "Was your cancer in the spleen?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "yes",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "no",
+  "33": "no",
+  "34": "no",
+  "35": "no",
+  "36": "no",
+  "37": "no",
+  "38": "no",
+  "39": "no",
+  "40": "no",
+  "41": "no",
+  "42": "no",
+  "43": "no",
+  "44": "no",
+  "45": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "MRI of the brain and spinal cord",
+  "Blood test for Vitamin B12 and Methylmalonic acid",
+  "CSF analysis for oligoclonal bands and paraneoplastic antibodies"
+ ],
+ "served": [
+  "brain MRI",
+  "MRI cervical and thoracic spine",
+  "vitamin B12 with methylmalonic acid",
+  "CSF oligoclonal bands and IgG index"
+ ],
+ "results": [
+  "R1 ASK Do you have paralysis in your legs?; Do you have loss of bladder or bowel control?; Did these symptoms start suddenly?; Do you have any numbness in your legs or pelvic area? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Do you have pain in your legs?; Do you have swelling in your legs?; Do you have a history of heart disease?; Do you have a history of cancer?; Do you have a history of diabetes?; Do you have a history of smoking? -> ['no', 'no', 'no', 'yes', 'no', 'no']",
+  "R3 ASK Do you feel weakness in your legs?; Do you have difficulty walking?; Was your cancer in the spine or brain?; Do you have any pain in your back?; Do you have a history of chemotherapy?; Do you have a history of radiation therapy? -> ['no', 'yes', 'no', 'no', 'no', 'no']",
+  "R4 ASK Do you have memory problems?; Do you have trouble with your balance?; Do you feel like your feet are stuck to the floor when you walk?; Do you have frequent urges to urinate?; Do you have any confusion? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R5 ASK Was your cancer lung cancer?; Was your cancer a lymphoma?; Was your cancer a carcinoma of the gastrointestinal tract?; Was your cancer a carcinoma of the prostate?; Was your cancer a carcinoma of the kidney?; Was your cancer a carcinoma of the bladder? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R6 ASK Do you have urinary incontinence?; Was your cancer a melanoma?; Was your cancer a thyroid cancer?; Was your cancer a sarcoma?; Was your cancer a multiple myeloma?; Was your cancer a leukemia? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R7 ASK Was your cancer in the head or neck?; Was your cancer in the chest?; Was your cancer in the abdomen?; Was your cancer in the pelvis?; Was your cancer in the skin?; Was your cancer in the breast? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R8 ORDER MRI of the brain and spinal cord; Blood test for Vitamin B12 and Methylmalonic acid; CSF analysis for oligoclonal bands and paraneoplastic antibodies -> [['brain MRI', 'MRI cervical and thoracic spine'], ['vitamin B12 with methylmalonic acid'], ['CSF oligoclonal bands and IgG index']]",
+  "R9 ASK Was your cancer in the testicles?; Was your cancer a type of neuroendocrine tumor?; Was your cancer a type of germ cell tumor?; Was your cancer in the lymph nodes?; Was your cancer in the adrenal glands?; Was your cancer in the spleen? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R10 DIAGNOSIS Paraneoplastic cerebellar degeneration caused by a previous malignancy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have paralysis in your legs?",
+    "Do you have loss of bladder or bowel control?",
+    "Did these symptoms start suddenly?",
+    "Do you have any numbness in your legs or pelvic area?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your legs?",
+    "Do you have swelling in your legs?",
+    "Do you have a history of heart disease?",
+    "Do you have a history of cancer?",
+    "Do you have a history of diabetes?",
+    "Do you have a history of smoking?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you feel weakness in your legs?",
+    "Do you have difficulty walking?",
+    "Was your cancer in the spine or brain?",
+    "Do you have any pain in your back?",
+    "Do you have a history of chemotherapy?",
+    "Do you have a history of radiation therapy?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have memory problems?",
+    "Do you have trouble with your balance?",
+    "Do you feel like your feet are stuck to the floor when you walk?",
+    "Do you have frequent urges to urinate?",
+    "Do you have any confusion?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Was your cancer lung cancer?",
+    "Was your cancer a lymphoma?",
+    "Was your cancer a carcinoma of the gastrointestinal tract?",
+    "Was your cancer a carcinoma of the prostate?",
+    "Was your cancer a carcinoma of the kidney?",
+    "Was your cancer a carcinoma of the bladder?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have urinary incontinence?",
+    "Was your cancer a melanoma?",
+    "Was your cancer a thyroid cancer?",
+    "Was your cancer a sarcoma?",
+    "Was your cancer a multiple myeloma?",
+    "Was your cancer a leukemia?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Was your cancer in the head or neck?",
+    "Was your cancer in the chest?",
+    "Was your cancer in the abdomen?",
+    "Was your cancer in the pelvis?",
+    "Was your cancer in the skin?",
+    "Was your cancer in the breast?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "MRI of the brain and spinal cord",
+    "Blood test for Vitamin B12 and Methylmalonic acid",
+    "CSF analysis for oligoclonal bands and paraneoplastic antibodies"
+   ],
+   "result": [
+    [
+     "brain MRI",
+     "MRI cervical and thoracic spine"
+    ],
+    [
+     "vitamin B12 with methylmalonic acid"
+    ],
+    [
+     "CSF oligoclonal bands and IgG index"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Was your cancer in the testicles?",
+    "Was your cancer a type of neuroendocrine tumor?",
+    "Was your cancer a type of germ cell tumor?",
+    "Was your cancer in the lymph nodes?",
+    "Was your cancer in the adrenal glands?",
+    "Was your cancer in the spleen?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Paraneoplastic cerebellar degeneration caused by a previous malignancy"
+  }
+ ],
+ "dx": "Paraneoplastic cerebellar degeneration caused by a previous malignancy",
+ "dx_raw": "DIAGNOSIS: Paraneoplastic cerebellar degeneration caused by a previous malignancy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "cost_usd": 0.0173,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 1755.5
+}

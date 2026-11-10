@@ -1,0 +1,158 @@
+{
+ "questions": [
+  "Are you experiencing any weakness or clumsiness in your hands?",
+  "Do you have difficulty with fine motor tasks, such as buttoning a shirt or writing?",
+  "Have you noticed any muscle wasting (shrinking) in the muscles of your hands?",
+  "Do you experience numbness or tingling in your fingers?",
+  "If yes to numbness/tingling, is it mostly in your thumb, index, and middle fingers?",
+  "Does shaking your hands relieve the symptoms?",
+  "Do you have pain radiating from your neck down into your arm?",
+  "Is the problem affecting both hands?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Test finger abduction and adduction strength against resistance",
+  "Inspect the first dorsal interosseous and thenar eminence for atrophy",
+  "Perform Tinel's sign at the wrist",
+  "Perform Phalen's maneuver",
+  "Assess sensation in the little finger compared to the ring finger",
+  "Order nerve conduction studies and electromyography (NCS/EMG) of the upper limbs"
+ ],
+ "served": [
+  "limb strength (MRC) examination",
+  "muscle tone examination",
+  "nerve conduction studies",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. Test finger abduction and adduction strength against resistance",
+  "     limb strength (MRC) examination: normal",
+  "2. Inspect the first dorsal interosseous and thenar eminence for atrophy",
+  "     muscle tone examination: right-sided rigidity with dystonic posturing of the right fingers",
+  "3. Perform Tinel's sign at the wrist",
+  "     nerve conduction studies: normal",
+  "4. Perform Phalen's maneuver",
+  "     not performed / not available",
+  "5. Assess sensation in the little finger compared to the ring finger",
+  "     sensory examination (pinprick, vibration, proprioception): right-sided sensory inattention and astereognosis",
+  "6. Order nerve conduction studies and electromyography (NCS/EMG) of the upper limbs",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Corticobasal degeneration (right-sided limb apraxia and dystonia with cortical sensory loss)\n1. Parkinson's disease (presenting with asymmetric rigidity and dystonia)\n2. Stroke (left hemisphere parietal or frontal infarction)\n3. Creutzfeldt-Jakob disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Test finger abduction and adduction strength against resistance\n2. Inspect the first dorsal interosseous and thenar eminence for atrophy\n3. Perform Tinel's sign at the wrist\n4. Perform Phalen's maneuver\n5. Assess sensation in the little finger compared to the ring finger\n6. Order nerve conduction studies and electromyography (NCS/EMG) of the upper limbs",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Corticobasal degeneration (right-sided limb apraxia and dystonia with cortical sensory loss)",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 134,
+   "total_tokens": 4957,
+   "cost": 0.00078643,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00078643,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 6.298e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5276,
+   "completion_tokens": 87,
+   "total_tokens": 5363,
+   "cost": 0.00023197,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00023197,
+    "upstream_inference_prompt_cost": 0.00019108,
+    "upstream_inference_completions_cost": 4.089e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5636,
+   "completion_tokens": 72,
+   "total_tokens": 5708,
+   "cost": 0.000210312,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000210312,
+    "upstream_inference_prompt_cost": 0.000176472,
+    "upstream_inference_completions_cost": 3.384e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "cbd_apraxic_hand_PMC12371612.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 18.6
+}

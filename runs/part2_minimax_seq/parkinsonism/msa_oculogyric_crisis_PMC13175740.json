@@ -1,0 +1,251 @@
+{
+ "questions": [
+  "Are you experiencing double vision (diplopia)?",
+  "Have you noticed any blurring of vision?",
+  "Do you have any weakness, numbness, or tingling in your arms or legs?",
+  "Have you had any episodes of neurological symptoms in the past (such as vision loss, weakness, or balance problems)?",
+  "Do you have a history of high blood pressure, diabetes, or stroke?",
+  "Do you have a history of multiple sclerosis or any autoimmune disease?",
+  "Do you have any drooping of your eyelids (ptosis)?",
+  "Have you noticed any change in the size of your pupils, or that one pupil looks different from the other?",
+  "Do you have headaches?",
+  "Have you experienced any dizziness, vertigo, or imbalance?",
+  "Do you have any difficulty swallowing or speaking?",
+  "Have you noticed any tremor, stiffness, or slowness of movement?",
+  "Is the speech difficulty mainly slurred speech (dysarthria) rather than difficulty finding words?",
+  "Is the tremor worse on one side of your body?",
+  "Have you noticed your handwriting becoming smaller (micrographia)?",
+  "Do you have constipation or urinary problems?",
+  "Have you noticed any loss of smell?",
+  "Do you have any memory or cognitive problems?",
+  "When did the tremor start?",
+  "Has the tremor gradually worsened over time?",
+  "Do you have difficulty initiating movement (such as starting to walk or getting out of a chair)?",
+  "Do you shuffle your feet when you walk?",
+  "Have you experienced any sudden, jerky movements (dyskinesias) after starting any medication?",
+  "Are you currently taking any medications, such as antipsychotics or anti-nausea drugs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "yes",
+  "13": "yes",
+  "14": "yes",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "Bedside neurological examination (cranial nerves, motor, sensory, coordination, gait)",
+  "MRI of the brain",
+  "Blood test: thyroid function tests",
+  "Blood test: serum copper and ceruloplasmin",
+  "Blood test: complete blood count, electrolytes, kidney and liver function",
+  "MRI of the cervical spine"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "gait observation including turning and doorways",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)",
+  "TSH / free T4",
+  "serum copper and caeruloplasmin",
+  "serum ceruloplasmin",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "full blood count, renal and liver profile",
+  "MRI cervical and thoracic spine"
+ ],
+ "results": [
+  "R1 ASK Are you experiencing double vision (diplopia)?; Have you noticed any blurring of vision?; Do you have any weakness, numbness, or tingling in your arms or legs?; Have you had any episodes of neurological symptoms in the past (such as vision loss, weakness, or balance problems)?; Do you have a history of high blood pressure, diabetes, or stroke?; Do you have a history of multiple sclerosis or any autoimmune disease? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Do you have any drooping of your eyelids (ptosis)?; Have you noticed any change in the size of your pupils, or that one pupil looks different from the other?; Do you have headaches?; Have you experienced any dizziness, vertigo, or imbalance?; Do you have any difficulty swallowing or speaking?; Have you noticed any tremor, stiffness, or slowness of movement? -> ['no', 'no', 'no', 'no', 'yes', 'yes']",
+  "R3 ASK Is the speech difficulty mainly slurred speech (dysarthria) rather than difficulty finding words?; Is the tremor worse on one side of your body?; Have you noticed your handwriting becoming smaller (micrographia)?; Do you have constipation or urinary problems?; Have you noticed any loss of smell?; Do you have any memory or cognitive problems? -> ['yes', 'yes', 'no', 'yes', 'no', 'no']",
+  "R4 ASK When did the tremor start?; Has the tremor gradually worsened over time?; Do you have difficulty initiating movement (such as starting to walk or getting out of a chair)?; Do you shuffle your feet when you walk?; Have you experienced any sudden, jerky movements (dyskinesias) after starting any medication?; Are you currently taking any medications, such as antipsychotics or anti-nausea drugs? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R5 ORDER Bedside neurological examination (cranial nerves, motor, sensory, coordination, gait); MRI of the brain; Blood test: thyroid function tests; Blood test: serum copper and ceruloplasmin; Blood test: complete blood count, electrolytes, kidney and liver function; MRI of the cervical spine -> [['cranial nerve examination', 'muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'gait observation including turning and doorways'], ['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)', 'MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)', 'MRI brain - cortical atrophy pattern', 'MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)'], ['TSH / free T4'], ['serum copper and caeruloplasmin', 'serum ceruloplasmin'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'full blood count, renal and liver profile'], ['MRI cervical and thoracic spine']]",
+  "R6 DIAGNOSIS Multiple system atrophy, parkinsonian type (MSA-P), characterized by putaminal atrophy with rim sign and hypointensity on susceptibility-weighted imaging, asymmetric parkinsonism with axial rigidity, hyperreflexia, dysarthria, and autonomic dysfunction (constipation), without responsiveness to levodopa, consistent with a synucleinopathy. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you experiencing double vision (diplopia)?",
+    "Have you noticed any blurring of vision?",
+    "Do you have any weakness, numbness, or tingling in your arms or legs?",
+    "Have you had any episodes of neurological symptoms in the past (such as vision loss, weakness, or balance problems)?",
+    "Do you have a history of high blood pressure, diabetes, or stroke?",
+    "Do you have a history of multiple sclerosis or any autoimmune disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have any drooping of your eyelids (ptosis)?",
+    "Have you noticed any change in the size of your pupils, or that one pupil looks different from the other?",
+    "Do you have headaches?",
+    "Have you experienced any dizziness, vertigo, or imbalance?",
+    "Do you have any difficulty swallowing or speaking?",
+    "Have you noticed any tremor, stiffness, or slowness of movement?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "yes"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Is the speech difficulty mainly slurred speech (dysarthria) rather than difficulty finding words?",
+    "Is the tremor worse on one side of your body?",
+    "Have you noticed your handwriting becoming smaller (micrographia)?",
+    "Do you have constipation or urinary problems?",
+    "Have you noticed any loss of smell?",
+    "Do you have any memory or cognitive problems?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "When did the tremor start?",
+    "Has the tremor gradually worsened over time?",
+    "Do you have difficulty initiating movement (such as starting to walk or getting out of a chair)?",
+    "Do you shuffle your feet when you walk?",
+    "Have you experienced any sudden, jerky movements (dyskinesias) after starting any medication?",
+    "Are you currently taking any medications, such as antipsychotics or anti-nausea drugs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Bedside neurological examination (cranial nerves, motor, sensory, coordination, gait)",
+    "MRI of the brain",
+    "Blood test: thyroid function tests",
+    "Blood test: serum copper and ceruloplasmin",
+    "Blood test: complete blood count, electrolytes, kidney and liver function",
+    "MRI of the cervical spine"
+   ],
+   "result": [
+    [
+     "cranial nerve examination",
+     "muscle tone examination",
+     "limb strength (MRC) examination",
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)",
+     "gait observation including turning and doorways"
+    ],
+    [
+     "MRI brain with gadolinium",
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences",
+     "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+     "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+     "MRI brain - cortical atrophy pattern",
+     "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+    ],
+    [
+     "TSH / free T4"
+    ],
+    [
+     "serum copper and caeruloplasmin",
+     "serum ceruloplasmin"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests",
+     "full blood count, renal and liver profile"
+    ],
+    [
+     "MRI cervical and thoracic spine"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Multiple system atrophy, parkinsonian type (MSA-P), characterized by putaminal atrophy with rim sign and hypointensity on susceptibility-weighted imaging, asymmetric parkinsonism with axial rigidity, hyperreflexia, dysarthria, and autonomic dysfunction (constipation), without responsiveness to levodopa, consistent with a synucleinopathy."
+  }
+ ],
+ "dx": "Multiple system atrophy, parkinsonian type (MSA-P), characterized by putaminal atrophy with rim sign and hypointensity on susceptibility-weighted imaging, asymmetric parkinsonism with axial rigidity, hyperreflexia, dysarthria, and autonomic dysfunction (constipation), without responsiveness to levodopa, consistent with a synucleinopathy.",
+ "dx_raw": "DIAGNOSIS: Multiple system atrophy, parkinsonian type (MSA-P), characterized by putaminal atrophy with rim sign and hypointensity on susceptibility-weighted imaging, asymmetric parkinsonism with axial rigidity, hyperreflexia, dysarthria, and autonomic dysfunction (constipation), without responsiveness to levodopa, consistent with a synucleinopathy.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)"
+ ],
+ "n_decisive": 7,
+ "cost_usd": 0.0078,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 102.9
+}

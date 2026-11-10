@@ -1,0 +1,107 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have double vision?",
+  "Does the drooping get worse as the day goes on?",
+  "Have you noticed a difference in the size of your pupils?",
+  "Does your eye feel like it is pulling outwards?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "repetitive nerve stimulation",
+  "sustained upgaze fatigability test",
+  "anti-acetylcholine receptor antibodies",
+  "neostigmine / edrophonium challenge"
+ ],
+ "results": [
+  "1. repetitive nerve stimulation: decremental response in facial and spinal accessory nerves",
+  "2. sustained upgaze fatigability test: 'PRONOUNCED PTOSIS' on counting 1 to 100 - the right eye closed completely while the left droop increased",
+  "3. anti-acetylcholine receptor antibodies: 16.63 nmol/L - elevated",
+  "4. neostigmine / edrophonium challenge: ptosis improved (partially right, completely left) with improvement in neck muscle power"
+ ],
+ "dx_raw": "DIAGNOSIS: Generalized myasthenia gravis caused by anti-acetylcholine receptor antibodies\n\nOcular myasthenia gravis\nLambert-Eaton myasthenic syndrome\nBotulism",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Generalized myasthenia gravis caused by anti-acetylcholine receptor antibodies",
+ "decisive_served": [
+  "repetitive nerve stimulation",
+  "sustained upgaze fatigability test",
+  "anti-acetylcholine receptor antibodies",
+  "neostigmine / edrophonium challenge"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 907,
+   "total_tokens": 9605,
+   "cost": 0.00117818,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00117818,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00030838
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9045,
+   "completion_tokens": 985,
+   "total_tokens": 10030,
+   "cost": 0.0012394,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012394,
+    "upstream_inference_prompt_cost": 0.0009045,
+    "upstream_inference_completions_cost": 0.0003349
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 966,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_mg_ptosis_PMC8064859.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 86.0
+}

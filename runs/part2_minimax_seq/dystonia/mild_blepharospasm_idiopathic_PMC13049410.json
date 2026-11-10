@@ -1,0 +1,177 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Can you open your eyes voluntarily?",
+  "Is this facial expression something you can control?",
+  "Did this start suddenly?",
+  "Have you had any recent injury to your face or head?",
+  "Does the grimacing get worse when you are stressed or tired?",
+  "Do you have difficulty chewing or swallowing?",
+  "Have you noticed any abnormal movements in your neck or shoulders?",
+  "Is the pain mainly in your eyes or jaw?",
+  "Do you have any history of neurological disease or movement disorders?",
+  "Do you have involuntary clenching or movement of your jaw?",
+  "Have you noticed any changes in your voice or speech?",
+  "Is the pain worse when the grimacing occurs?",
+  "Do you have any history of exposure to antipsychotic medications?",
+  "Does the grimacing disappear when you sleep?",
+  "Can you open your eyes if you use your fingers to pull the eyelids apart?",
+  "Do you feel any resistance when trying to open your eyes?",
+  "Have you had any recent stressful life events?",
+  "Does the grimacing change when you are distracted?",
+  "Have you ever had similar episodes before?",
+  "Is the grimacing worse in the afternoon or evening compared to the morning?",
+  "Do you have any family history of similar facial movements?",
+  "Have you tried any treatments for this before?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes",
+  "17": "yes",
+  "18": "no",
+  "19": "no",
+  "20": "yes",
+  "21": "no",
+  "22": "no",
+  "23": "yes"
+ },
+ "n_yes_answers": 5,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Are you currently experiencing pain?; Can you open your eyes voluntarily?; Is this facial expression something you can control?; Did this start suddenly?; Have you had any recent injury to your face or head? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R2 ASK Does the grimacing get worse when you are stressed or tired?; Do you have difficulty chewing or swallowing?; Have you noticed any abnormal movements in your neck or shoulders?; Is the pain mainly in your eyes or jaw?; Do you have any history of neurological disease or movement disorders? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Do you have involuntary clenching or movement of your jaw?; Have you noticed any changes in your voice or speech?; Is the pain worse when the grimacing occurs?; Do you have any history of exposure to antipsychotic medications?; Does the grimacing disappear when you sleep? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Can you open your eyes if you use your fingers to pull the eyelids apart?; Do you feel any resistance when trying to open your eyes?; Have you had any recent stressful life events?; Does the grimacing change when you are distracted?; Have you ever had similar episodes before? -> ['yes', 'yes', 'no', 'no', 'yes']",
+  "R5 ASK Is the grimacing worse in the afternoon or evening compared to the morning?; Do you have any family history of similar facial movements?; Have you tried any treatments for this before? -> ['no', 'no', 'yes']",
+  "R6 DIAGNOSIS Meige syndrome (segmental dystonia with blepharospasm and oromandibular dystonia) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing pain?",
+    "Can you open your eyes voluntarily?",
+    "Is this facial expression something you can control?",
+    "Did this start suddenly?",
+    "Have you had any recent injury to your face or head?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Does the grimacing get worse when you are stressed or tired?",
+    "Do you have difficulty chewing or swallowing?",
+    "Have you noticed any abnormal movements in your neck or shoulders?",
+    "Is the pain mainly in your eyes or jaw?",
+    "Do you have any history of neurological disease or movement disorders?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have involuntary clenching or movement of your jaw?",
+    "Have you noticed any changes in your voice or speech?",
+    "Is the pain worse when the grimacing occurs?",
+    "Do you have any history of exposure to antipsychotic medications?",
+    "Does the grimacing disappear when you sleep?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Can you open your eyes if you use your fingers to pull the eyelids apart?",
+    "Do you feel any resistance when trying to open your eyes?",
+    "Have you had any recent stressful life events?",
+    "Does the grimacing change when you are distracted?",
+    "Have you ever had similar episodes before?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Is the grimacing worse in the afternoon or evening compared to the morning?",
+    "Do you have any family history of similar facial movements?",
+    "Have you tried any treatments for this before?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Meige syndrome (segmental dystonia with blepharospasm and oromandibular dystonia)"
+  }
+ ],
+ "dx": "Meige syndrome (segmental dystonia with blepharospasm and oromandibular dystonia)",
+ "dx_raw": "DIAGNOSIS: Meige syndrome (segmental dystonia with blepharospasm and oromandibular dystonia)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0495,
+ "n_frames": 32,
+ "duration_s": 6.6,
+ "video": "mild_blepharospasm_idiopathic_PMC13049410.mp4",
+ "line": "dystonia",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 58.4
+}

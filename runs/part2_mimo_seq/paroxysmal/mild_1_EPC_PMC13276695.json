@@ -1,0 +1,170 @@
+{
+ "questions": [
+  "Does your tremor mostly happen when you are resting your hands in your lap, or when you try to hold them up or use them for a task?",
+  "Do you notice the tremor when your hands are completely relaxed at your sides?",
+  "When you pour yourself a drink or bring a cup to your mouth, does your shaking get worse?",
+  "Did you first notice this tremor when you were young, before age 25, or did it start later in life?",
+  "Does the tremor also affect your head or voice, or is it mainly in your hands?",
+  "Do both your head and voice shake, or is it mainly your head?",
+  "Is your voice shaky all the time, or only when you are speaking?",
+  "Do both hands shake equally, or is one hand worse than the other?",
+  "Do you have a family member - parent, grandparent, or sibling - who also has shaky hands or head?",
+  "Does your voice tremor happen only when you speak, or also when you hum or sing a note?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Does your tremor mostly happen when you are resting your hands in your lap, or when you try to hold them up or use them for a task? -> ['no']",
+  "R2 ASK Do you notice the tremor when your hands are completely relaxed at your sides? -> ['no']",
+  "R3 ASK When you pour yourself a drink or bring a cup to your mouth, does your shaking get worse? -> ['no']",
+  "R4 ASK Did you first notice this tremor when you were young, before age 25, or did it start later in life? -> ['no']",
+  "R5 ASK Does the tremor also affect your head or voice, or is it mainly in your hands? -> ['yes']",
+  "R6 ASK Do both your head and voice shake, or is it mainly your head? -> ['no']",
+  "R7 ASK Is your voice shaky all the time, or only when you are speaking? -> ['no']",
+  "R8 ASK Do both hands shake equally, or is one hand worse than the other? -> ['yes']",
+  "R9 ASK Do you have a family member - parent, grandparent, or sibling - who also has shaky hands or head? -> ['no']",
+  "R10 ASK Does your voice tremor happen only when you speak, or also when you hum or sing a note? -> ['no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Dystonia affecting multiple body regions (hands, head, and larynx), likely segmental cranial-cervical dystonia with concurrent focal hand dystonia -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Does your tremor mostly happen when you are resting your hands in your lap, or when you try to hold them up or use them for a task?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you notice the tremor when your hands are completely relaxed at your sides?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "When you pour yourself a drink or bring a cup to your mouth, does your shaking get worse?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Did you first notice this tremor when you were young, before age 25, or did it start later in life?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Does the tremor also affect your head or voice, or is it mainly in your hands?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do both your head and voice shake, or is it mainly your head?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Is your voice shaky all the time, or only when you are speaking?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do both hands shake equally, or is one hand worse than the other?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you have a family member - parent, grandparent, or sibling - who also has shaky hands or head?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Does your voice tremor happen only when you speak, or also when you hum or sing a note?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Dystonia affecting multiple body regions (hands, head, and larynx), likely segmental cranial-cervical dystonia with concurrent focal hand dystonia"
+  }
+ ],
+ "dx": "Dystonia affecting multiple body regions (hands, head, and larynx), likely segmental cranial-cervical dystonia with concurrent focal hand dystonia",
+ "dx_raw": "DIAGNOSIS: Dystonia affecting multiple body regions (hands, head, and larynx), likely segmental cranial-cervical dystonia with concurrent focal hand dystonia",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0041,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 228.1
+}

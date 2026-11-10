@@ -1,0 +1,177 @@
+{
+ "questions": [
+  "Do you have urinary incontinence?",
+  "Do you have memory loss or cognitive decline?",
+  "Do you have a tremor?",
+  "Do you have a history of stroke?",
+  "Do you have a history of trauma to the head or spine?",
+  "Do you have numbness or tingling in your feet?",
+  "Do you have difficulty balancing when you close your eyes?",
+  "Do you have any weakness in your legs?",
+  "Did this start suddenly?",
+  "Has it been getting worse over years?",
+  "Do you drink alcohol regularly?",
+  "Do you have any vision problems?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain",
+  "MRI of the spine",
+  "Deep tendon reflexes",
+  "Manual muscle testing of proximal and distal muscles",
+  "Gait analysis while performing a cognitive task (e.g., counting backwards)"
+ ],
+ "served": [
+  "MRI brain",
+  "MRI cervical and thoracic spine",
+  "deep tendon reflexes and plantar responses",
+  "MRC power in all four limbs",
+  "gait with a distracting or automatic task (dancing, counting backwards)"
+ ],
+ "results": [
+  "R1 ASK Do you have urinary incontinence?; Do you have memory loss or cognitive decline? -> ['no', 'no']",
+  "R2 ASK Do you have a tremor?; Do you have a history of stroke?; Do you have a history of trauma to the head or spine? -> ['no', 'no', 'no']",
+  "R3 ASK Do you have numbness or tingling in your feet?; Do you have difficulty balancing when you close your eyes?; Do you have any weakness in your legs? -> ['no', 'no', 'no']",
+  "R4 ASK Did this start suddenly?; Has it been getting worse over years?; Do you drink alcohol regularly?; Do you have any vision problems? -> ['yes', 'no', 'no', 'no']",
+  "R5 ORDER MRI of the brain; MRI of the spine -> [['MRI brain'], ['MRI cervical and thoracic spine']]",
+  "R6 ORDER Deep tendon reflexes; Manual muscle testing of proximal and distal muscles; Gait analysis while performing a cognitive task (e.g., counting backwards) -> [['deep tendon reflexes and plantar responses'], ['MRC power in all four limbs'], ['gait with a distracting or automatic task (dancing, counting backwards)']]",
+  "R7 DIAGNOSIS Functional Gait Disorder -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have urinary incontinence?",
+    "Do you have memory loss or cognitive decline?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have a tremor?",
+    "Do you have a history of stroke?",
+    "Do you have a history of trauma to the head or spine?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have numbness or tingling in your feet?",
+    "Do you have difficulty balancing when you close your eyes?",
+    "Do you have any weakness in your legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Did this start suddenly?",
+    "Has it been getting worse over years?",
+    "Do you drink alcohol regularly?",
+    "Do you have any vision problems?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "MRI of the brain",
+    "MRI of the spine"
+   ],
+   "result": [
+    [
+     "MRI brain"
+    ],
+    [
+     "MRI cervical and thoracic spine"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Deep tendon reflexes",
+    "Manual muscle testing of proximal and distal muscles",
+    "Gait analysis while performing a cognitive task (e.g., counting backwards)"
+   ],
+   "result": [
+    [
+     "deep tendon reflexes and plantar responses"
+    ],
+    [
+     "MRC power in all four limbs"
+    ],
+    [
+     "gait with a distracting or automatic task (dancing, counting backwards)"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Functional Gait Disorder"
+  }
+ ],
+ "dx": "Functional Gait Disorder",
+ "dx_raw": "DIAGNOSIS: Functional Gait Disorder",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "deep tendon reflexes and plantar responses",
+  "gait with a distracting or automatic task (dancing, counting backwards)"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.009,
+ "n_frames": 32,
+ "duration_s": 29.7,
+ "video": "functional_gait_scissoring_PMC7455329.mp4",
+ "line": "functional",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 508.0
+}

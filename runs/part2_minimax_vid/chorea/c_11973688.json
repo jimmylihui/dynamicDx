@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Is the reason for today's visit related to your right foot?",
+  "Did you have recent surgery on your right foot?",
+  "Are you currently experiencing pain in that foot?",
+  "Have you noticed any new or worsening redness or swelling since the surgery?",
+  "Is there any pus or foul-smelling drainage from the incision?",
+  "Do you have a fever or feel chills?",
+  "Do you have a history of diabetes?",
+  "Was the surgery on your right big toe?",
+  "Is the pain worse when you try to walk?",
+  "Are you able to bear any weight on the foot?",
+  "Do you have numbness or tingling in your toes?",
+  "Is the pain keeping you awake at night?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "X-ray of the right foot",
+  "MRI of the right foot",
+  "MRI of the lumbar spine",
+  "EMG/nerve conduction study of the right lower extremity"
+ ],
+ "served": [
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. X-ray of the right foot",
+  "     not performed / not available",
+  "2. MRI of the right foot",
+  "     not performed / not available",
+  "3. MRI of the lumbar spine",
+  "     not performed / not available",
+  "4. EMG/nerve conduction study of the right lower extremity",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Parkinson's disease, due to idiopathic degeneration of dopaminergic neurons in the substantia nigra\nNormal pressure hydrocephalus\nCervical spondylotic myelopathy\nVascular parkinsonism",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. X-ray of the right foot\n2. MRI of the right foot\n3. MRI of the lumbar spine\n4. EMG/nerve conduction study of the right lower extremity",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Parkinson's disease, due to idiopathic degeneration of dopaminergic neurons in the substantia nigra",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8278,
+   "completion_tokens": 1490,
+   "total_tokens": 9768,
+   "cost": 0.00424404,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00424404,
+    "upstream_inference_prompt_cost": 0.00245604,
+    "upstream_inference_completions_cost": 0.001788
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1484,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8779,
+   "completion_tokens": 8068,
+   "total_tokens": 16847,
+   "cost": 0.01035258,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8178,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01035258,
+    "upstream_inference_prompt_cost": 0.00067098,
+    "upstream_inference_completions_cost": 0.0096816
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 8749,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8987,
+   "completion_tokens": 14839,
+   "total_tokens": 23826,
+   "cost": 0.0184173,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8690,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0184173,
+    "upstream_inference_prompt_cost": 0.0006105,
+    "upstream_inference_completions_cost": 0.0178068
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 15610,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 307.9
+}

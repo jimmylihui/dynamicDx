@@ -1,0 +1,161 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you feel like your body is moving on its own without you wanting it to?",
+  "Do you have a history of kidney or liver disease?",
+  "Do you have a history of diabetes?",
+  "Do you have a family history of tremor or other movement disorders?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Observe the patient's movements for 30 seconds to characterize them (e.g., writhing, jerking, tremor) and check if they suppress voluntarily or disappear with distraction.",
+  "Bedside examination of extraocular movements (saccades, pursuit) and fundoscopy to look for Kayser-Fleischer rings.",
+  "MRI of the brain (T2/FLAIR sequences) to look for basal ganglia or cerebellar signal abnormalities."
+ ],
+ "served": [
+  "tremor at rest",
+  "postural tremor (arms outstretched)",
+  "kinetic / intention tremor (finger-nose)",
+  "effect of alcohol on the tremor",
+  "asterixis (wrist extension)",
+  "surface EMG of forearm flexors and extensors",
+  "cranial nerve examination",
+  "fundoscopy",
+  "video-oculography / eye-movement recording",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "brain MRI"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing any pain?; Do you feel like your body is moving on its own without you wanting it to? -> ['no', 'yes']",
+  "R2 ORDER Observe the patient's movements for 30 seconds to characterize them (e.g., writhing, jerking, tremor) and check if they suppress voluntarily or disappear with distraction. -> [['tremor at rest', 'postural tremor (arms outstretched)', 'kinetic / intention tremor (finger-nose)', 'effect of alcohol on the tremor', 'asterixis (wrist extension)', 'surface EMG of forearm flexors and extensors']]",
+  "R3 ASK Do you have a history of kidney or liver disease? -> ['no']",
+  "R4 ASK Do you have a history of diabetes? -> ['no']",
+  "R5 ORDER Bedside examination of extraocular movements (saccades, pursuit) and fundoscopy to look for Kayser-Fleischer rings. -> [['cranial nerve examination', 'fundoscopy', 'video-oculography / eye-movement recording', 'slit-lamp examination for Kayser-Fleischer rings']]",
+  "R6 ASK Do you have a family history of tremor or other movement disorders? -> ['no']",
+  "R7 ORDER MRI of the brain (T2/FLAIR sequences) to look for basal ganglia or cerebellar signal abnormalities. -> [['brain MRI']]",
+  "R8 DIAGNOSIS Secondary tremor due to a thalamic tuberculoma (Mycobacterium tuberculosis infection) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing any pain?",
+    "Do you feel like your body is moving on its own without you wanting it to?"
+   ],
+   "result": [
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Observe the patient's movements for 30 seconds to characterize them (e.g., writhing, jerking, tremor) and check if they suppress voluntarily or disappear with distraction."
+   ],
+   "result": [
+    [
+     "tremor at rest",
+     "postural tremor (arms outstretched)",
+     "kinetic / intention tremor (finger-nose)",
+     "effect of alcohol on the tremor",
+     "asterixis (wrist extension)",
+     "surface EMG of forearm flexors and extensors"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of kidney or liver disease?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Bedside examination of extraocular movements (saccades, pursuit) and fundoscopy to look for Kayser-Fleischer rings."
+   ],
+   "result": [
+    [
+     "cranial nerve examination",
+     "fundoscopy",
+     "video-oculography / eye-movement recording",
+     "slit-lamp examination for Kayser-Fleischer rings"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have a family history of tremor or other movement disorders?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "MRI of the brain (T2/FLAIR sequences) to look for basal ganglia or cerebellar signal abnormalities."
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Secondary tremor due to a thalamic tuberculoma (Mycobacterium tuberculosis infection)"
+  }
+ ],
+ "dx": "Secondary tremor due to a thalamic tuberculoma (Mycobacterium tuberculosis infection)",
+ "dx_raw": "DIAGNOSIS: Secondary tremor due to a thalamic tuberculoma (Mycobacterium tuberculosis infection)\n\n<tool_call>\n<function_calls>\n<invoke name=\"agent\">\n<parameter name=\"message\">DIAGNOSIS: Secondary tremor due to a thalamic tuberculoma (Mycobacterium tuberculosis infection)</parameter>\n</invoke>\n</function_calls>",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0044,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 51.7
+}

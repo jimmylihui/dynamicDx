@@ -1,0 +1,135 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Do you have a history of diabetes?",
+  "Did these movements start suddenly?",
+  "Do you have a known history of stroke or brain injury?",
+  "Is the movement present while you are asleep?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain with diffusion-weighted imaging",
+  "Serum electrolytes, calcium, magnesium, and glucose"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c"
+ ],
+ "results": [
+  "1. MRI of the brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the lentiform nucleus",
+  "2. Serum electrolytes, calcium, magnesium, and glucose",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Hemiballismus secondary to acute ischemic stroke of the subthalamic nucleus or lentiform nucleus\nAlternative 1: Acute lacunar infarction causing hemichorea-hemiballismus\nAlternative 2: Non-ketotic hyperglycemic hemichorea (ruled out by normal glucose/HbA1c, but clinically similar presentation)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with diffusion-weighted imaging\n2. Serum electrolytes, calcium, magnesium, and glucose",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Hemiballismus secondary to acute ischemic stroke of the subthalamic nucleus or lentiform nucleus",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 188,
+   "completion_tokens": 56,
+   "total_tokens": 244,
+   "cost": 5.452e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.452e-05,
+    "upstream_inference_prompt_cost": 2.82e-05,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 475,
+   "completion_tokens": 24,
+   "total_tokens": 499,
+   "cost": 8.253e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.253e-05,
+    "upstream_inference_prompt_cost": 7.125e-05,
+    "upstream_inference_completions_cost": 1.128e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 676,
+   "completion_tokens": 81,
+   "total_tokens": 757,
+   "cost": 0.000105166,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000105166,
+    "upstream_inference_prompt_cost": 6.7096e-05,
+    "upstream_inference_completions_cost": 3.807e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.1
+}

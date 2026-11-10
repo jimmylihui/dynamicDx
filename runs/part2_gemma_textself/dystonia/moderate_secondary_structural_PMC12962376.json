@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Do you have a family history of similar movement disorders?",
+  "Have you experienced changes in your mood or personality?",
+  "Have you experienced a decline in your cognitive abilities?",
+  "Have you ever taken antipsychotic medications?",
+  "Have you been diagnosed with liver disease?",
+  "Do you have difficulty swallowing?",
+  "Did these symptoms develop gradually over several years?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain",
+  "CSF analysis",
+  "EMG and Nerve Conduction Studies",
+  "Serum autoimmune and paraneoplastic panel"
+ ],
+ "served": [
+  "brain MRI",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "nerve conduction studies",
+  "needle EMG of the affected muscles",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "autoimmune and paraneoplastic antibody panel"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     brain MRI: no basal-ganglia lesion",
+  "2. CSF analysis",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal",
+  "3. EMG and Nerve Conduction Studies",
+  "     nerve conduction studies: normal",
+  "     needle EMG of the affected muscles: prolonged bursts, overflow activation and simultaneous agonist-antagonist contraction, with NO denervation or myopathy - confirms dystonic hypertonia",
+  "4. Serum autoimmune and paraneoplastic panel",
+  "     serum paraneoplastic / neuronal autoantibody panel: normal",
+  "     autoimmune and paraneoplastic antibody panel: negative"
+ ],
+ "dx_raw": "",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. CSF analysis\n3. EMG and Nerve Conduction Studies\n4. Serum autoimmune and paraneoplastic panel",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "",
+ "decisive_served": [
+  "needle EMG of the affected muscles"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 256,
+   "completion_tokens": 2082,
+   "total_tokens": 2338,
+   "cost": 0.00073348,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00073348,
+    "upstream_inference_prompt_cost": 2.56e-05,
+    "upstream_inference_completions_cost": 0.00070788
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1996,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 596,
+   "completion_tokens": 4336,
+   "total_tokens": 4932,
+   "cost": 0.00153384,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00153384,
+    "upstream_inference_prompt_cost": 5.96e-05,
+    "upstream_inference_completions_cost": 0.00147424
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3896,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {}
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_secondary_structural_PMC12962376.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 7811.7
+}

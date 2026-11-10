@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Did this walking difficulty begin suddenly, within the last few hours or days?",
+  "Do you feel weakness on one side of your body?",
+  "Is your right leg weaker than your left?",
+  "Is your right arm weaker than your left?",
+  "Have you had any facial drooping or difficulty speaking?",
+  "Do you feel dizzy or as though the room is spinning?",
+  "Do you have trouble coordinating your steps or feel unsteady?",
+  "Do you have numbness or tingling in either leg?",
+  "Do you have back pain or pain in either leg?",
+  "Have you recently had a stroke or other brain injury?",
+  "Have you recently had surgery or an injury affecting your legs or spine?",
+  "Have you taken alcohol, sedatives, or other drugs today?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "reflexes, plantar responses and frontal release signs",
+  "trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "results": [
+  "1. reflexes, plantar responses and frontal release signs: normal power in limb and neck muscles, normal reflexes, flexor plantars",
+  "2. trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine: about 70 degrees of leftward trunk tilt on walking, with a normal stance; the tilt DISAPPEARS when recumbent",
+  "3. medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium): no dopamine-blocking drug - excludes drug-induced Pisa syndrome",
+  "4. neuronal surface antibody panel including anti-IgLON5: STRONGLY POSITIVE for anti-IgLON5 (3+ on semi-quantitative grading, 1:10 serum dilution, transfected-cell assay)",
+  "5. MRI brain - cortical atrophy pattern: MRI brain and whole spine NORMAL"
+ ],
+ "dx_raw": "DIAGNOSIS: Anti-IgLON5 disease (anti-IgLON5 autoimmune encephalitis) causing reversible axial dystonia/Pisa syndrome with antecollis\n\nAlternative: Multiple system atrophy with axial postural deformity\n\nAlternative: Idiopathic axial dystonia/Pisa syndrome\n\nAlternative: Functional neurological disorder with abnormal trunk posturing",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Anti-IgLON5 disease (anti-IgLON5 autoimmune encephalitis) causing reversible axial dystonia/Pisa syndrome with antecollis",
+ "decisive_served": [
+  "reflexes, plantar responses and frontal release signs",
+  "trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 457,
+   "total_tokens": 6133,
+   "cost": 0.00033123,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00033123,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0002742
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 276,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6353,
+   "completion_tokens": 273,
+   "total_tokens": 6626,
+   "cost": 0.000305455,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 677,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000305455,
+    "upstream_inference_prompt_cost": 0.000141655,
+    "upstream_inference_completions_cost": 0.0001638
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 196,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 14.2
+}

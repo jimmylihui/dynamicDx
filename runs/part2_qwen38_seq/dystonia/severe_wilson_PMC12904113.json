@@ -1,0 +1,194 @@
+{
+ "questions": [
+  "Do you have difficulty walking or climbing stairs?",
+  "Have you noticed any muscle twitching under your skin?",
+  "Did you have normal motor milestones as a child (e.g., did you walk at the expected age)?",
+  "Have you noticed your hands becoming weak or clumsy?",
+  "Do you have difficulty breathing when lying flat?",
+  "Does anyone in your family have similar muscle problems?",
+  "Have you noticed your legs becoming thinner than they used to be?",
+  "Do you have difficulty standing up from a chair without using your hands?",
+  "Have you noticed your hands becoming thinner or weaker?",
+  "Do you have difficulty lifting your arms above your head?",
+  "Do you have difficulty lifting your arms above your head?",
+  "Do you have difficulty lifting your arms above your head?",
+  "Do you have difficulty lifting your arms above your head?",
+  "Do you have difficulty lifting your arms above your head?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Neurological examination of the upper limbs (specifically checking for wasting of the intrinsic hand muscles, thenar eminence, and forearm)"
+ ],
+ "served": [
+  "needle EMG of the affected muscles"
+ ],
+ "results": [
+  "R1 ASK Do you have difficulty walking or climbing stairs?; Have you noticed any muscle twitching under your skin?; Did you have normal motor milestones as a child (e.g., did you walk at the expected age)? -> ['no', 'no', 'no']",
+  "R2 ASK Have you noticed your hands becoming weak or clumsy?; Do you have difficulty breathing when lying flat?; Does anyone in your family have similar muscle problems? -> ['no', 'no', 'no']",
+  "R3 ASK Have you noticed your legs becoming thinner than they used to be?; Do you have difficulty standing up from a chair without using your hands? -> ['no', 'no']",
+  "R4 ORDER Neurological examination of the upper limbs (specifically checking for wasting of the intrinsic hand muscles, thenar eminence, and forearm) -> [['needle EMG of the affected muscles']]",
+  "R5 ASK Have you noticed your hands becoming thinner or weaker? -> ['no']",
+  "R6 ASK Do you have difficulty lifting your arms above your head? -> ['no']",
+  "R7 ASK Do you have difficulty lifting your arms above your head? -> ['no']",
+  "R8 ASK Do you have difficulty lifting your arms above your head? -> ['no']",
+  "R9 ASK Do you have difficulty lifting your arms above your head? -> ['no']",
+  "R10 ASK Do you have difficulty lifting your arms above your head? -> ['no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Hirayama disease (monomelic amyotrophy) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty walking or climbing stairs?",
+    "Have you noticed any muscle twitching under your skin?",
+    "Did you have normal motor milestones as a child (e.g., did you walk at the expected age)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you noticed your hands becoming weak or clumsy?",
+    "Do you have difficulty breathing when lying flat?",
+    "Does anyone in your family have similar muscle problems?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you noticed your legs becoming thinner than they used to be?",
+    "Do you have difficulty standing up from a chair without using your hands?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Neurological examination of the upper limbs (specifically checking for wasting of the intrinsic hand muscles, thenar eminence, and forearm)"
+   ],
+   "result": [
+    [
+     "needle EMG of the affected muscles"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you noticed your hands becoming thinner or weaker?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty lifting your arms above your head?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty lifting your arms above your head?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty lifting your arms above your head?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty lifting your arms above your head?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty lifting your arms above your head?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Hirayama disease (monomelic amyotrophy)"
+  }
+ ],
+ "dx": "Hirayama disease (monomelic amyotrophy)",
+ "dx_raw": "DIAGNOSIS: Hirayama disease (monomelic amyotrophy)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0023,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_PMC12904113.mp4",
+ "line": "dystonia",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 51.9
+}

@@ -1,0 +1,101 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Do you have a history of seizures or epilepsy?",
+  "Have you had any recent falls or head injuries?",
+  "Are you currently taking any medications for your condition?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "2. video-EEG monitoring of a typical event: ictal body turning preceded by head version; although the clinical onset looked focal, the EEG showed generalized beta fast activity for 0.5 s followed by a generalized 2.5-3 Hz spike-wave discharge with maximum bifrontal amplitude"
+ ],
+ "dx_raw": "DIAGNOSIS: Genetic generalized epilepsy (specifically Childhood Absence Epilepsy)\n\nALTERNATIVES:\n1. Focal epilepsy with secondary bilateral synchrony\n2. Lennox-Gastaut syndrome",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Genetic generalized epilepsy (specifically Childhood Absence Epilepsy)",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 48,
+   "total_tokens": 4871,
+   "cost": 0.00074601,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074601,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.256e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5144,
+   "completion_tokens": 46,
+   "total_tokens": 5190,
+   "cost": 0.0001929,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001929,
+    "upstream_inference_prompt_cost": 0.00017128,
+    "upstream_inference_completions_cost": 2.162e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.8,
+ "video": "severe_1_generalized_PMC13101308.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.4
+}

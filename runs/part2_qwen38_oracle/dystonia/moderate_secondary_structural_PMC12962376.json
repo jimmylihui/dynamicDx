@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Is the pain located in your neck or shoulder?",
+  "Did this problem start after a specific injury, fall, or accident?",
+  "Do you have any weakness or numbness in your arms or legs?",
+  "Have you had a fever recently?",
+  "Does the pain get worse when you move your head?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "anti-aquaporin-4 and anti-MOG antibodies",
+  "cervical and whole spine MRI",
+  "needle EMG of the affected muscles",
+  "corticosteroid trial"
+ ],
+ "results": [
+  "1. anti-aquaporin-4 and anti-MOG antibodies: BOTH NEGATIVE - not neuromyelitis optica or MOG-antibody disease",
+  "2. cervical and whole spine MRI: LONGITUDINALLY EXTENSIVE T2 lesion confined to the cervical cord",
+  "3. needle EMG of the affected muscles: prolonged bursts, overflow activation and simultaneous agonist-antagonist contraction, with NO denervation or myopathy - confirms dystonic hypertonia",
+  "4. corticosteroid trial: high-dose intravenous methylprednisolone 1 g/day for five days followed by an oral taper"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic cervical dystonia (spasmodic torticollis)\n\n1. Seronegative Neuromyelitis Optica Spectrum Disorder (NMOSD) presenting with symptomatic paroxysmal dystonia\n2. Structural cervical myelopathy (e.g., compressive or demyelinating lesion) causing secondary segmental dystonia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Idiopathic cervical dystonia (spasmodic torticollis)",
+ "decisive_served": [
+  "anti-aquaporin-4 and anti-MOG antibodies",
+  "cervical and whole spine MRI",
+  "needle EMG of the affected muscles",
+  "corticosteroid trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 15063,
+   "completion_tokens": 71,
+   "total_tokens": 15134,
+   "cost": 0.00229282,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00229282,
+    "upstream_inference_prompt_cost": 0.00225945,
+    "upstream_inference_completions_cost": 3.337e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15459,
+   "completion_tokens": 78,
+   "total_tokens": 15537,
+   "cost": 0.000365878,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14848,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000365878,
+    "upstream_inference_prompt_cost": 0.000329218,
+    "upstream_inference_completions_cost": 3.666e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_secondary_structural_PMC12962376.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 10.7
+}

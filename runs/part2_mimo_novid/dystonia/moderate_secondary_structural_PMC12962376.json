@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Is this a medical emergency?",
+  "Are you experiencing chest pain or tightness?",
+  "Are you having difficulty breathing?",
+  "Do you have a fever?",
+  "Have you recently suffered a fall or physical injury?",
+  "Are you feeling dizzy or have you fainted recently?",
+  "Are your symptoms primarily pain-related?",
+  "Is your primary concern a new or worsening chronic condition?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Are you experiencing nausea or vomiting?",
+  "Do you have diarrhea or constipation?",
+  "Do you have numbness, tingling, or weakness?",
+  "Have you noticed a lump, swelling, or skin change?",
+  "Are your symptoms related to urination?",
+  "Are you experiencing unusual fatigue or weight change?",
+  "Have you had visual or hearing changes?",
+  "Do you have a cough, sore throat, or runny nose?"
+ ],
+ "served": [],
+ "results": [
+  "1. Are you experiencing nausea or vomiting?",
+  "     not performed / not available",
+  "2. Do you have diarrhea or constipation?",
+  "     not performed / not available",
+  "3. Do you have numbness, tingling, or weakness?",
+  "     not performed / not available",
+  "4. Have you noticed a lump, swelling, or skin change?",
+  "     not performed / not available",
+  "5. Are your symptoms related to urination?",
+  "     not performed / not available",
+  "6. Are you experiencing unusual fatigue or weight change?",
+  "     not performed / not available",
+  "7. Have you had visual or hearing changes?",
+  "     not performed / not available",
+  "8. Do you have a cough, sore throat, or runny nose?",
+  "     not performed / not available"
+ ],
+ "dx_raw": "I realize I made an error - I should have ordered physical examination and diagnostic tests rather than asking additional questions.\n\nGiven the extremely limited information available:\n- No emergency, no pain, no fever, no respiratory symptoms, no neurological symptoms, no trauma\n- Not a new or worsening chronic condition (implying possibly a stable chronic condition)\n\nDIAGNOSIS:\nRoutine follow-up of a stable chronic condition - insufficient data to specify further\n\nAlternatives:\n1. Psychogenic or functional symptom presentation\n2. Health anxiety or preventive care visit\n3. Early/mild condition without classic symptoms yet",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Are you experiencing nausea or vomiting?\n2. Do you have diarrhea or constipation?\n3. Do you have numbness, tingling, or weakness?\n4. Have you noticed a lump, swelling, or skin change?\n5. Are your symptoms related to urination?\n6. Are you experiencing unusual fatigue or weight change?\n7. Have you had visual or hearing changes?\n8. Do you have a cough, sore throat, or runny nose?",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Routine follow-up of a stable chronic condition - insufficient data to specify further",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 269,
+   "total_tokens": 654,
+   "cost": 8.5316e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.5316e-05,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 7.532e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 184,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 736,
+   "completion_tokens": 613,
+   "total_tokens": 1349,
+   "cost": 0.0002219952,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002219952,
+    "upstream_inference_prompt_cost": 5.03552e-05,
+    "upstream_inference_completions_cost": 0.00017164
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1075,
+   "completion_tokens": 702,
+   "total_tokens": 1777,
+   "cost": 0.0002504712,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 704,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002504712,
+    "upstream_inference_prompt_cost": 5.39112e-05,
+    "upstream_inference_completions_cost": 0.00019656
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 579,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_secondary_structural_PMC12962376.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 42.9
+}

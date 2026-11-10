@@ -1,0 +1,166 @@
+{
+ "questions": [
+  "Do you have a history of multiple sclerosis?",
+  "Have you experienced any recent viral illness or fever?",
+  "Do you consume alcohol regularly?",
+  "Are you currently taking any anti-seizure medications (such as phenytoin, carbamazepine, or valproate)?",
+  "Do you have a known diagnosis of Wernicke's encephalopathy or severe malnutrition?",
+  "Have you noticed any double vision?",
+  "Do you experience vertigo or dizziness when moving your head?",
+  "Is there a family history of spinocerebellar ataxia?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI of the brain with and without contrast, focusing on the posterior fossa",
+  "Serum levels of phenytoin, carbamazepine, valproate, lithium, and barbiturates",
+  "Comprehensive metabolic panel including liver function tests and renal function",
+  "Vitamin B12 and folate levels",
+  "Thyroid function tests (TSH, free T4)",
+  "Lumbar puncture for cell count, protein, glucose, oligoclonal bands, and IgG index"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "vitamin B12 with methylmalonic acid",
+  "serum folate",
+  "TSH / free T4",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index"
+ ],
+ "results": [
+  "1. MRI of the brain with and without contrast, focusing on the posterior fossa",
+  "     MRI brain with gadolinium: normal",
+  "2. Serum levels of phenytoin, carbamazepine, valproate, lithium, and barbiturates",
+  "     not performed / not available",
+  "3. Comprehensive metabolic panel including liver function tests and renal function",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "4. Vitamin B12 and folate levels",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "     serum folate: normal",
+  "5. Thyroid function tests (TSH, free T4)",
+  "     TSH / free T4: normal",
+  "6. Lumbar puncture for cell count, protein, glucose, oligoclonal bands, and IgG index",
+  "     CSF cell count and differential: inflammatory changes",
+  "     CSF protein: elevated",
+  "     CSF glucose: normal",
+  "     CSF oligoclonal bands and IgG index: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Autoimmune cerebellar ataxia (paraneoplastic or non-paraneoplastic)\nAlternative 1: Idiopathic autoimmune cerebellar ataxia\nAlternative 2: Early-stage paraneoplastic cerebellar degeneration (occult malignancy)\nAlternative 3: Seronegative multiple sclerosis",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with and without contrast, focusing on the posterior fossa\n2. Serum levels of phenytoin, carbamazepine, valproate, lithium, and barbiturates\n3. Comprehensive metabolic panel including liver function tests and renal function\n4. Vitamin B12 and folate levels\n5. Thyroid function tests (TSH, free T4)\n6. Lumbar puncture for cell count, protein, glucose, oligoclonal bands, and IgG index",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Autoimmune cerebellar ataxia (paraneoplastic or non-paraneoplastic)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 185,
+   "completion_tokens": 129,
+   "total_tokens": 314,
+   "cost": 8.838e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.838e-05,
+    "upstream_inference_prompt_cost": 2.775e-05,
+    "upstream_inference_completions_cost": 6.063e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 630,
+   "completion_tokens": 107,
+   "total_tokens": 737,
+   "cost": 0.00014479,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00014479,
+    "upstream_inference_prompt_cost": 9.45e-05,
+    "upstream_inference_completions_cost": 5.029e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1054,
+   "completion_tokens": 73,
+   "total_tokens": 1127,
+   "cost": 0.000123802,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000123802,
+    "upstream_inference_prompt_cost": 8.9492e-05,
+    "upstream_inference_completions_cost": 3.431e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.4,
+ "video": "mild_2_cerebellar_antiHomer3_PMC12833086.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 28.8
+}

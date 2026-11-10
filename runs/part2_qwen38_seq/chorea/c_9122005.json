@@ -1,0 +1,192 @@
+{
+ "questions": [
+  "Are you currently experiencing pain in your legs?",
+  "Do you have a history of diabetes?",
+  "Have you had any recent surgeries or trauma to your lower body?",
+  "Do you have difficulty moving your right leg?",
+  "Do you have difficulty initiating movement in your right leg?",
+  "Do you have difficulty keeping your right leg still when you are not moving it?",
+  "Do you have difficulty coordinating your right leg movements?",
+  "Do you have difficulty feeling your right leg?",
+  "Do you have difficulty with balance or walking?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Assess muscle tone in the lower extremities (check for spasticity vs flaccidity)",
+  "Perform deep tendon reflex testing on the legs (knee and ankle jerks)",
+  "Assess muscle strength in the right lower extremity (Manual Muscle Testing)",
+  "Perform a sensory examination of the right lower extremity (light touch and pinprick)"
+ ],
+ "served": [
+  "muscle tone examination",
+  "deep tendon reflexes and plantar responses",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing pain in your legs?; Do you have a history of diabetes?; Have you had any recent surgeries or trauma to your lower body? -> ['no', 'no', 'no']",
+  "R2 ORDER Assess muscle tone in the lower extremities (check for spasticity vs flaccidity); Perform deep tendon reflex testing on the legs (knee and ankle jerks) -> [['muscle tone examination'], ['deep tendon reflexes and plantar responses']]",
+  "R3 ASK Do you have difficulty moving your right leg? -> ['yes']",
+  "R4 ORDER Assess muscle strength in the right lower extremity (Manual Muscle Testing) -> [['limb strength (MRC) examination']]",
+  "R5 ASK Do you have difficulty initiating movement in your right leg? -> ['no']",
+  "R6 ASK Do you have difficulty keeping your right leg still when you are not moving it? -> ['no']",
+  "R7 ASK Do you have difficulty coordinating your right leg movements? -> ['no']",
+  "R8 ASK Do you have difficulty feeling your right leg? -> ['no']",
+  "R9 ASK Do you have difficulty with balance or walking? -> ['yes']",
+  "R10 ORDER Perform a sensory examination of the right lower extremity (light touch and pinprick) -> [['sensory examination (pinprick, vibration, proprioception)']]",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Functional neurological disorder (conversion disorder) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing pain in your legs?",
+    "Do you have a history of diabetes?",
+    "Have you had any recent surgeries or trauma to your lower body?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Assess muscle tone in the lower extremities (check for spasticity vs flaccidity)",
+    "Perform deep tendon reflex testing on the legs (knee and ankle jerks)"
+   ],
+   "result": [
+    [
+     "muscle tone examination"
+    ],
+    [
+     "deep tendon reflexes and plantar responses"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty moving your right leg?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Assess muscle strength in the right lower extremity (Manual Muscle Testing)"
+   ],
+   "result": [
+    [
+     "limb strength (MRC) examination"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty initiating movement in your right leg?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty keeping your right leg still when you are not moving it?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty coordinating your right leg movements?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty feeling your right leg?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty with balance or walking?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "Perform a sensory examination of the right lower extremity (light touch and pinprick)"
+   ],
+   "result": [
+    [
+     "sensory examination (pinprick, vibration, proprioception)"
+    ]
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Functional neurological disorder (conversion disorder)"
+  }
+ ],
+ "dx": "Functional neurological disorder (conversion disorder)",
+ "dx_raw": "DIAGNOSIS: Functional neurological disorder (conversion disorder)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "cost_usd": 0.0022,
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 55.3
+}

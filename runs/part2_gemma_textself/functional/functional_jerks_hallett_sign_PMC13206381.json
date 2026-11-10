@@ -1,0 +1,178 @@
+{
+ "questions": [
+  "Have you experienced weakness in your legs?",
+  "Did the weakness start in your legs and move upwards?",
+  "Have you had a recent respiratory or gastrointestinal infection?",
+  "Are you having difficulty breathing?",
+  "Are you having difficulty swallowing or speaking?",
+  "Do you have numbness or tingling in your hands or feet?",
+  "Did these symptoms develop over a few days?",
+  "Do you have a history of diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Nerve Conduction Studies and Electromyography",
+  "Sensory testing",
+  "Manual muscle testing",
+  "MRI of the brain and spinal cord",
+  "Lumbar puncture"
+ ],
+ "served": [
+  "nerve conduction studies",
+  "needle electromyography",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "sensory examination (including midline splitting, allodynia)",
+  "MRC power in all four limbs",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI cervical and thoracic spine",
+  "MRI brain",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel",
+  "lumbar puncture / CSF (cells, protein, oligoclonal bands)"
+ ],
+ "results": [
+  "1. Nerve Conduction Studies and Electromyography",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: long and variable-latency voluntary-type muscle bursts",
+  "2. Sensory testing",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     sensory examination (including midline splitting, allodynia): normal",
+  "3. Manual muscle testing",
+  "     MRC power in all four limbs: 5/5 throughout",
+  "4. MRI of the brain and spinal cord",
+  "     MRI brain with gadolinium: normal",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI cervical and thoracic spine: normal",
+  "     MRI brain: normal",
+  "5. Lumbar puncture",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal",
+  "     CSF oligoclonal bands and IgG index: normal",
+  "     CSF cytology and flow cytometry: normal",
+  "     CSF culture and viral PCR: normal",
+  "     CSF autoimmune encephalitis panel: normal",
+  "     lumbar puncture / CSF (cells, protein, oligoclonal bands): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperekplexia due to GLRA1 mutation\nStiff Person Syndrome\nStartle Epilepsy\nMyotonia Congenita",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Nerve Conduction Studies and Electromyography\n2. Sensory testing\n3. Manual muscle testing\n4. MRI of the brain and spinal cord\n5. Lumbar puncture",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperekplexia due to GLRA1 mutation",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 241,
+   "completion_tokens": 2126,
+   "total_tokens": 2367,
+   "cost": 0.00074694,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074694,
+    "upstream_inference_prompt_cost": 2.41e-05,
+    "upstream_inference_completions_cost": 0.00072284
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2062,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 613,
+   "completion_tokens": 4943,
+   "total_tokens": 5556,
+   "cost": 0.00174192,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00174192,
+    "upstream_inference_prompt_cost": 6.13e-05,
+    "upstream_inference_completions_cost": 0.00168062
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4594,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 979,
+   "completion_tokens": 3627,
+   "total_tokens": 4606,
+   "cost": 0.00133108,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00133108,
+    "upstream_inference_prompt_cost": 9.79e-05,
+    "upstream_inference_completions_cost": 0.00123318
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3447,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 354.6
+}

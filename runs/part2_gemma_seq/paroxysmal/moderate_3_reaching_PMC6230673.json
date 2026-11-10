@@ -1,0 +1,108 @@
+{
+ "questions": [],
+ "answers": {},
+ "n_yes_answers": 0,
+ "orders": [
+  "Temperature measurement",
+  "Blood pressure and heart rate measurement",
+  "Creatine kinase (CK) level",
+  "Urine analysis for myoglobinuria",
+  "Lorazepam challenge test",
+  "MRI of the brain",
+  "CSF analysis (protein, glucose, cells, and antibodies)"
+ ],
+ "served": [
+  "creatine kinase",
+  "urinalysis",
+  "brain MRI",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF autoimmune encephalitis panel"
+ ],
+ "results": [
+  "R1 ORDER Temperature measurement; Blood pressure and heart rate measurement; Creatine kinase (CK) level; Urine analysis for myoglobinuria -> [[], [], ['creatine kinase'], ['urinalysis']]",
+  "R2 ORDER Lorazepam challenge test -> [[]]",
+  "R3 ORDER MRI of the brain; CSF analysis (protein, glucose, cells, and antibodies) -> [['brain MRI'], ['CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF autoimmune encephalitis panel']]",
+  "R4 DIAGNOSIS Catatonia due to traumatic brain injury -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "order",
+   "items": [
+    "Temperature measurement",
+    "Blood pressure and heart rate measurement",
+    "Creatine kinase (CK) level",
+    "Urine analysis for myoglobinuria"
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "creatine kinase"
+    ],
+    [
+     "urinalysis"
+    ]
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Lorazepam challenge test"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "MRI of the brain",
+    "CSF analysis (protein, glucose, cells, and antibodies)"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ],
+    [
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF autoimmune encephalitis panel"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Catatonia due to traumatic brain injury"
+  }
+ ],
+ "dx": "Catatonia due to traumatic brain injury",
+ "dx_raw": "DIAGNOSIS: Catatonia due to traumatic brain injury",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0052,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 304.4
+}

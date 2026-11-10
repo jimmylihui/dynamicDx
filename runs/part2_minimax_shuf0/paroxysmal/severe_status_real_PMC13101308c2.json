@@ -1,0 +1,188 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the pain located in your chest?",
+  "Are you having difficulty breathing?",
+  "Do you have a fever?",
+  "Do you have a cough?",
+  "Have you been experiencing chills or night sweats?",
+  "Do you have a history of heart problems?",
+  "Do you have a history of lung problems?",
+  "Do you have a history of cancer?",
+  "Do you have a weakened immune system?",
+  "Are you diabetic?",
+  "Have you had a recent surgery or medical procedure?",
+  "Do you feel nauseous or have you been vomiting?",
+  "Have you been in contact with anyone who has been seriously ill recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient at rest for 30 seconds to assess breathing pattern, respiratory rate, and signs of distress.",
+  "Measure oxygen saturation by pulse oximetry.",
+  "Measure blood pressure.",
+  "Measure heart rate and rhythm by auscultation and palpation.",
+  "Measure temperature.",
+  "Inspect the face and neck for any visible abnormalities, swelling, or asymmetry.",
+  "Palpate the neck for cervical lymphadenopathy or masses.",
+  "Palpate the thyroid gland.",
+  "Auscultate the lungs for breath sounds.",
+  "Auscultate the heart for murmurs, rubs, or gallops.",
+  "Perform a focused neurological assessment of cranial nerves and motor function."
+ ],
+ "served": [
+  "cranial nerve examination",
+  "muscle tone examination",
+  "limb strength (MRC) examination"
+ ],
+ "results": [
+  "1. Observe the patient at rest for 30 seconds to assess breathing pattern, respiratory rate, and signs of distress.",
+  "     not performed / not available",
+  "2. Measure oxygen saturation by pulse oximetry.",
+  "     not performed / not available",
+  "3. Measure blood pressure.",
+  "     not performed / not available",
+  "4. Measure heart rate and rhythm by auscultation and palpation.",
+  "     not performed / not available",
+  "5. Measure temperature.",
+  "     not performed / not available",
+  "6. Inspect the face and neck for any visible abnormalities, swelling, or asymmetry.",
+  "     not performed / not available",
+  "7. Palpate the neck for cervical lymphadenopathy or masses.",
+  "     not performed / not available",
+  "8. Palpate the thyroid gland.",
+  "     not performed / not available",
+  "9. Auscultate the lungs for breath sounds.",
+  "     not performed / not available",
+  "10. Auscultate the heart for murmurs, rubs, or gallops.",
+  "     not performed / not available",
+  "11. Perform a focused neurological assessment of cranial nerves and motor function.",
+  "     cranial nerve examination: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: New-onset generalized tonic-clonic seizure, post-ictal state\n\nAlternatives:\n1. Migraine with aura or basilar migraine\n2. Vasovagal syncope\n3. Functional (non-epileptic) seizure / conversion disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient at rest for 30 seconds to assess breathing pattern, respiratory rate, and signs of distress.\n2. Measure oxygen saturation by pulse oximetry.\n3. Measure blood pressure.\n4. Measure heart rate and rhythm by auscultation and palpation.\n5. Measure temperature.\n6. Inspect the face and neck for any visible abnormalities, swelling, or asymmetry.\n7. Palpate the neck for cervical lymphadenopathy or masses.\n8. Palpate the thyroid gland.\n9. Auscultate the lungs for breath sounds.\n10. Auscultate the heart for murmurs, rubs, or gallops.\n11. Perform a focused neurological assessment of cranial nerves and motor function.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "New-onset generalized tonic-clonic seizure, post-ictal state",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 1467,
+   "total_tokens": 8529,
+   "cost": 0.00384156,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00384156,
+    "upstream_inference_prompt_cost": 0.00208116,
+    "upstream_inference_completions_cost": 0.0017604
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1325,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7561,
+   "completion_tokens": 144,
+   "total_tokens": 7705,
+   "cost": 0.00074982,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074982,
+    "upstream_inference_prompt_cost": 0.00057702,
+    "upstream_inference_completions_cost": 0.0001728
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8037,
+   "completion_tokens": 1119,
+   "total_tokens": 9156,
+   "cost": 0.0019083,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7690,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0019083,
+    "upstream_inference_prompt_cost": 0.0005655,
+    "upstream_inference_completions_cost": 0.0013428
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1065,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 36.7
+}

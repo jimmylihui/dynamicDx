@@ -1,0 +1,126 @@
+{
+ "questions": [
+  "Is the movement confined to one side of your body?",
+  "Did this start suddenly, within the last few days?",
+  "Do you have a history of diabetes?",
+  "Have you had a stroke in the past?",
+  "Are you currently taking any medications for high blood pressure?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI of the brain with diffusion-weighted imaging"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences"
+ ],
+ "results": [
+  "1. MRI of the brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Hemiballismus secondary to a lacunar infarct in the subthalamic nucleus\nHypertensive encephalopathy with focal neurological deficits\nNon-ketotic hyperglycemic hemichorea-hemiballismus",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with diffusion-weighted imaging",
+ "rationale": [
+  null
+ ],
+ "dx": "Hemiballismus secondary to a lacunar infarct in the subthalamic nucleus",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 178,
+   "completion_tokens": 64,
+   "total_tokens": 242,
+   "cost": 5.678e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.678e-05,
+    "upstream_inference_prompt_cost": 2.67e-05,
+    "upstream_inference_completions_cost": 3.008e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 481,
+   "completion_tokens": 11,
+   "total_tokens": 492,
+   "cost": 7.732e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.732e-05,
+    "upstream_inference_prompt_cost": 7.215e-05,
+    "upstream_inference_completions_cost": 5.17e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 615,
+   "completion_tokens": 54,
+   "total_tokens": 669,
+   "cost": 8.3326e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.3326e-05,
+    "upstream_inference_prompt_cost": 5.7946e-05,
+    "upstream_inference_completions_cost": 2.538e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 6.8
+}

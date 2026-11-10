@@ -1,0 +1,353 @@
+{
+ "questions": [
+  "Are you hearing voices that others cannot hear?",
+  "Have you used any drugs or alcohol in the past 24 hours?",
+  "Do you feel like people are trying to harm you?",
+  "Have you had any recent fever or illness?",
+  "Do you remember what happened before you were brought here?",
+  "Do you know your own name?",
+  "Do you know what city or country you are in?",
+  "Do you have a history of heavy alcohol drinking?",
+  "Have you ever had a seizure or been told you had epilepsy?",
+  "Have you recently had any head injury or trauma?",
+  "Have you ever been involved in a car accident or any major trauma before?",
+  "Do you have any weakness on one side of your body?",
+  "Do you have difficulty speaking or understanding speech?",
+  "Do you have any family members with similar problems?",
+  "Can you follow simple commands like \"squeeze my hand\"?",
+  "Are you able to open your eyes when I ask?",
+  "Do you have any abnormal movements like tremors or shaking?",
+  "Can you feel me touching your arms and legs equally on both sides?",
+  "Do you have a history of diabetes or high blood pressure?",
+  "Have you ever been diagnosed with a stroke or TIA before?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "yes",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Serum ammonia level",
+  "Random blood glucose",
+  "Urine drug screen",
+  "Serum ethanol level",
+  "Basic metabolic panel and liver function tests",
+  "MRI brain",
+  "Lumbar puncture",
+  "TSH and free T4",
+  "Vitamin B12 and folate levels",
+  "CT brain",
+  "CT angiography of head and neck",
+  "Echocardiogram",
+  "Carotid Doppler ultrasound",
+  "Coagulation profile (PT, PTT, INR)",
+  "MRI brain with diffusion-weighted imaging",
+  "MR angiography of head and neck",
+  "Serum anti-NMDA receptor antibodies",
+  "Serum ANA and autoimmune panel",
+  "Serum creatine kinase (CK)",
+  "Serum copper and ceruloplasmin",
+  "Urine copper 24-hour collection",
+  "Brain PET scan",
+  "Sleep-deprived EEG",
+  "Video telemetry EEG",
+  "Serum prolactin level (post-event)",
+  "MRI brain with thin-cut temporal lobes and FLAIR"
+ ],
+ "served": [
+  "serum ammonia",
+  "blood glucose and HbA1c",
+  "toxicology screen (urine and serum)",
+  "serum ethanol",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "brain MRI",
+  "lumbar puncture / CSF",
+  "thyroid function (TSH, free T4)",
+  "vitamin B12 with methylmalonic acid",
+  "serum folate",
+  "CT head",
+  "MRI diffusion-weighted sequences",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "antinuclear antibodies and anti-dsDNA",
+  "creatine kinase",
+  "serum copper and caeruloplasmin",
+  "24-hour urinary copper",
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "R1 ASK Are you hearing voices that others cannot hear?; Have you used any drugs or alcohol in the past 24 hours?; Do you feel like people are trying to harm you?; Have you had any recent fever or illness?; Do you remember what happened before you were brought here? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Do you know your own name?; Do you know what city or country you are in?; Do you have a history of heavy alcohol drinking?; Have you ever had a seizure or been told you had epilepsy?; Have you recently had any head injury or trauma? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Serum ammonia level; Random blood glucose; Urine drug screen; Serum ethanol level; Basic metabolic panel and liver function tests -> [['serum ammonia'], ['blood glucose and HbA1c'], ['toxicology screen (urine and serum)'], ['serum ethanol'], ['serum electrolytes, urea and creatinine', 'liver function tests']]",
+  "R4 ORDER MRI brain; Lumbar puncture; TSH and free T4; Vitamin B12 and folate levels -> [['brain MRI'], ['lumbar puncture / CSF'], ['thyroid function (TSH, free T4)'], ['vitamin B12 with methylmalonic acid', 'serum folate']]",
+  "R5 ASK Have you ever been involved in a car accident or any major trauma before?; Do you have any weakness on one side of your body?; Do you have difficulty speaking or understanding speech?; Do you have any family members with similar problems?; Can you follow simple commands like \"squeeze my hand\"? -> ['yes', 'yes', 'no', 'no', 'no']",
+  "R6 ORDER CT brain; CT angiography of head and neck; Echocardiogram; Carotid Doppler ultrasound; Coagulation profile (PT, PTT, INR) -> [['CT head'], [], [], [], []]",
+  "R7 ORDER MRI brain with diffusion-weighted imaging; MR angiography of head and neck; Serum anti-NMDA receptor antibodies; Serum ANA and autoimmune panel -> [['MRI diffusion-weighted sequences'], [], ['serum paraneoplastic / neuronal autoantibody panel'], ['antinuclear antibodies and anti-dsDNA', 'serum paraneoplastic / neuronal autoantibody panel']]",
+  "R8 ASK Are you able to open your eyes when I ask?; Do you have any abnormal movements like tremors or shaking?; Can you feel me touching your arms and legs equally on both sides?; Do you have a history of diabetes or high blood pressure?; Have you ever been diagnosed with a stroke or TIA before? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R9 ORDER Serum creatine kinase (CK); Serum copper and ceruloplasmin; Urine copper 24-hour collection; Brain PET scan -> [['creatine kinase'], ['serum copper and caeruloplasmin'], ['24-hour urinary copper'], []]",
+  "R10 ORDER Sleep-deprived EEG; Video telemetry EEG; Serum prolactin level (post-event); MRI brain with thin-cut temporal lobes and FLAIR -> [['interictal EEG'], ['video-EEG monitoring of a typical event'], [], ['brain MRI']]",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Post-traumatic focal epilepsy (left frontal lobe), likely with non-convulsive status epilepticus or postictal state, secondary to prior traumatic brain injury with left frontal encephalomal -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you hearing voices that others cannot hear?",
+    "Have you used any drugs or alcohol in the past 24 hours?",
+    "Do you feel like people are trying to harm you?",
+    "Have you had any recent fever or illness?",
+    "Do you remember what happened before you were brought here?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you know your own name?",
+    "Do you know what city or country you are in?",
+    "Do you have a history of heavy alcohol drinking?",
+    "Have you ever had a seizure or been told you had epilepsy?",
+    "Have you recently had any head injury or trauma?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Serum ammonia level",
+    "Random blood glucose",
+    "Urine drug screen",
+    "Serum ethanol level",
+    "Basic metabolic panel and liver function tests"
+   ],
+   "result": [
+    [
+     "serum ammonia"
+    ],
+    [
+     "blood glucose and HbA1c"
+    ],
+    [
+     "toxicology screen (urine and serum)"
+    ],
+    [
+     "serum ethanol"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "MRI brain",
+    "Lumbar puncture",
+    "TSH and free T4",
+    "Vitamin B12 and folate levels"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ],
+    [
+     "lumbar puncture / CSF"
+    ],
+    [
+     "thyroid function (TSH, free T4)"
+    ],
+    [
+     "vitamin B12 with methylmalonic acid",
+     "serum folate"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you ever been involved in a car accident or any major trauma before?",
+    "Do you have any weakness on one side of your body?",
+    "Do you have difficulty speaking or understanding speech?",
+    "Do you have any family members with similar problems?",
+    "Can you follow simple commands like \"squeeze my hand\"?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "CT brain",
+    "CT angiography of head and neck",
+    "Echocardiogram",
+    "Carotid Doppler ultrasound",
+    "Coagulation profile (PT, PTT, INR)"
+   ],
+   "result": [
+    [
+     "CT head"
+    ],
+    [],
+    [],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "MRI brain with diffusion-weighted imaging",
+    "MR angiography of head and neck",
+    "Serum anti-NMDA receptor antibodies",
+    "Serum ANA and autoimmune panel"
+   ],
+   "result": [
+    [
+     "MRI diffusion-weighted sequences"
+    ],
+    [],
+    [
+     "serum paraneoplastic / neuronal autoantibody panel"
+    ],
+    [
+     "antinuclear antibodies and anti-dsDNA",
+     "serum paraneoplastic / neuronal autoantibody panel"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Are you able to open your eyes when I ask?",
+    "Do you have any abnormal movements like tremors or shaking?",
+    "Can you feel me touching your arms and legs equally on both sides?",
+    "Do you have a history of diabetes or high blood pressure?",
+    "Have you ever been diagnosed with a stroke or TIA before?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Serum creatine kinase (CK)",
+    "Serum copper and ceruloplasmin",
+    "Urine copper 24-hour collection",
+    "Brain PET scan"
+   ],
+   "result": [
+    [
+     "creatine kinase"
+    ],
+    [
+     "serum copper and caeruloplasmin"
+    ],
+    [
+     "24-hour urinary copper"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "Sleep-deprived EEG",
+    "Video telemetry EEG",
+    "Serum prolactin level (post-event)",
+    "MRI brain with thin-cut temporal lobes and FLAIR"
+   ],
+   "result": [
+    [
+     "interictal EEG"
+    ],
+    [
+     "video-EEG monitoring of a typical event"
+    ],
+    [],
+    [
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Post-traumatic focal epilepsy (left frontal lobe), likely with non-convulsive status epilepticus or postictal state, secondary to prior traumatic brain injury with left frontal encephalomal"
+  }
+ ],
+ "dx": "Post-traumatic focal epilepsy (left frontal lobe), likely with non-convulsive status epilepticus or postictal state, secondary to prior traumatic brain injury with left frontal encephalomalacia.",
+ "dx_raw": "DIAGNOSIS: Post-traumatic focal epilepsy (left frontal lobe), likely with non-convulsive status epilepticus or postictal state, secondary to prior traumatic brain injury with left frontal encephalomalacia.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "interictal EEG"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0134,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 95.8
+}

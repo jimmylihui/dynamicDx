@@ -1,0 +1,165 @@
+{
+ "questions": [
+  "Do you have a history of diabetes?",
+  "Do you feel numbness or loss of sensation in your feet?",
+  "Have you had any recent trauma to your spine or legs?",
+  "Do you have a history of heavy alcohol use?",
+  "Do you have a family history of balance problems or unsteady walking?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's gait for foot drop, steppage, or circumduction.",
+  "Perform Romberg test (stand with feet together, eyes open then closed).",
+  "Perform tandem gait test (walk heel-to-toe).",
+  "Perform finger-to-nose test to assess for upper limb dysmetria",
+  "MRI of the brain"
+ ],
+ "served": [
+  "gait examination",
+  "Romberg test",
+  "finger-nose / heel-shin testing",
+  "brain MRI"
+ ],
+ "results": [
+  "R1 ASK Do you have a history of diabetes?; Do you feel numbness or loss of sensation in your feet?; Have you had any recent trauma to your spine or legs? -> ['no', 'no', 'no']",
+  "R2 ORDER Observe the patient's gait for foot drop, steppage, or circumduction. -> [['gait examination']]",
+  "R3 ORDER Perform Romberg test (stand with feet together, eyes open then closed). -> [['Romberg test']]",
+  "R4 ORDER Perform tandem gait test (walk heel-to-toe). -> [['gait examination']]",
+  "R5 ASK Do you have a history of heavy alcohol use? -> ['no']",
+  "R6 ORDER Perform finger-to-nose test to assess for upper limb dysmetria -> [['finger-nose / heel-shin testing']]",
+  "R7 ASK Do you have a family history of balance problems or unsteady walking? -> ['no']",
+  "R8 ORDER MRI of the brain -> [['brain MRI']]",
+  "R9 DIAGNOSIS Wernicke encephalopathy (thiamine deficiency) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?",
+    "Do you feel numbness or loss of sensation in your feet?",
+    "Have you had any recent trauma to your spine or legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Observe the patient's gait for foot drop, steppage, or circumduction."
+   ],
+   "result": [
+    [
+     "gait examination"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Perform Romberg test (stand with feet together, eyes open then closed)."
+   ],
+   "result": [
+    [
+     "Romberg test"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Perform tandem gait test (walk heel-to-toe)."
+   ],
+   "result": [
+    [
+     "gait examination"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of heavy alcohol use?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Perform finger-to-nose test to assess for upper limb dysmetria"
+   ],
+   "result": [
+    [
+     "finger-nose / heel-shin testing"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have a family history of balance problems or unsteady walking?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "MRI of the brain"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Wernicke encephalopathy (thiamine deficiency)"
+  }
+ ],
+ "dx": "Wernicke encephalopathy (thiamine deficiency)",
+ "dx_raw": "DIAGNOSIS: Wernicke encephalopathy (thiamine deficiency)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0046,
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 45.5
+}

@@ -1,0 +1,195 @@
+{
+ "questions": [
+  "Do you have a specific symptom or health concern that brought you here today?",
+  "Are you currently experiencing pain?",
+  "Is the pain in your chest?",
+  "Is the pain in your abdomen?",
+  "Is the pain in your head?",
+  "Is the pain in your joints, muscles, or back?",
+  "Is the concern related to your breathing (shortness of breath, cough, or wheezing)?",
+  "Is the concern related to your heart (palpitations, racing, or irregular heartbeat)?",
+  "Is the concern related to your digestion (nausea, vomiting, diarrhea, constipation, or heartburn)?",
+  "Is the concern related to your urinary system (painful urination, frequent urination, or blood in urine)?",
+  "Is the concern related to your nerves (weakness, numbness, tingling, or difficulty speaking)?",
+  "Is the concern related to your skin (rash, itching, or new moles)?",
+  "Is the concern related to your mood, anxiety, or sleep?",
+  "Is the concern something that has been getting worse over time?",
+  "Have you had any unexplained weight loss?",
+  "Have you had any fever, chills, or night sweats?",
+  "Have you noticed any blood in your stool, urine, or when coughing?",
+  "Have you fainted or lost consciousness?",
+  "Do you have any chronic medical conditions (such as diabetes, high blood pressure, asthma, or heart disease)?",
+  "Are you currently taking any prescription medications?",
+  "Do you have any allergies to medications?",
+  "Do you currently smoke cigarettes?",
+  "Do you drink alcohol regularly?",
+  "Does anyone in your close family have a history of heart disease, stroke, or cancer before age 60?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "yes",
+  "20": "yes",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "12-lead electrocardiogram",
+  "Serum thyroid-stimulating hormone (TSH)",
+  "Complete blood count",
+  "Basic metabolic panel (sodium, potassium, chloride, bicarbonate, glucose, BUN, creatinine)",
+  "Serum magnesium level",
+  "Transthoracic echocardiogram",
+  "24 to 48-hour continuous ambulatory ECG (Holter) monitor"
+ ],
+ "served": [
+  "thyroid function (TSH, free T4)",
+  "TSH, free T4 and free T3",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose",
+  "serum calcium, magnesium and phosphate"
+ ],
+ "results": [
+  "1. 12-lead electrocardiogram",
+  "     not performed / not available",
+  "2. Serum thyroid-stimulating hormone (TSH)",
+  "     thyroid function (TSH, free T4): suppressed TSH with elevated free T4",
+  "     TSH, free T4 and free T3: T3 8.26 nmol/L (normal 0.92-2.79) and free T4 58.13 pmol/L (normal 11.50-22.70) with suppressed TSH",
+  "3. Complete blood count",
+  "     full blood count: normal",
+  "4. Basic metabolic panel (sodium, potassium, chloride, bicarbonate, glucose, BUN, creatinine)",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     blood glucose: normal",
+  "5. Serum magnesium level",
+  "     serum calcium, magnesium and phosphate: normal",
+  "6. Transthoracic echocardiogram",
+  "     not performed / not available",
+  "7. 24 to 48-hour continuous ambulatory ECG (Holter) monitor",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Primary hyperthyroidism due to Graves' disease (autoimmune TSH-receptor antibody–mediated)\n1. Toxic multinodular goiter\n2. Painless (silent) thyroiditis\n3. Exogenous thyroid hormone excess (thyrotoxicosis factitia)",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. 12-lead electrocardiogram\n2. Serum thyroid-stimulating hormone (TSH)\n3. Complete blood count\n4. Basic metabolic panel (sodium, potassium, chloride, bicarbonate, glucose, BUN, creatinine)\n5. Serum magnesium level\n6. Transthoracic echocardiogram\n7. 24 to 48-hour continuous ambulatory ECG (Holter) monitor",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Primary hyperthyroidism due to Graves' disease (autoimmune TSH-receptor antibody–mediated)",
+ "decisive_served": [
+  "TSH, free T4 and free T3",
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 8541,
+   "total_tokens": 8855,
+   "cost": 0.0102714,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0102714,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.0102492
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 8996,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1289,
+   "completion_tokens": 1425,
+   "total_tokens": 2714,
+   "cost": 0.00203862,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00203862,
+    "upstream_inference_prompt_cost": 0.00032862,
+    "upstream_inference_completions_cost": 0.00171
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1488,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1671,
+   "completion_tokens": 275,
+   "total_tokens": 1946,
+   "cost": 0.00052746,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1266,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00052746,
+    "upstream_inference_prompt_cost": 0.00019746,
+    "upstream_inference_completions_cost": 0.00033
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 252,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "c_9815763.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 121.4
+}

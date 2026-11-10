@@ -1,0 +1,145 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your chest?",
+  "Does the pain radiate to your left arm or jaw?",
+  "Do you have a history of heart disease?",
+  "Are you short of breath at rest?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "Physical examination of the head, eyes, ears, nose, and throat",
+  "Cardiac auscultation",
+  "Pulmonary auscultation",
+  "Abdominal palpation"
+ ],
+ "served": [
+  "vital signs",
+  "cranial nerve examination",
+  "fundoscopy"
+ ],
+ "results": [
+  "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "     vital signs: normal, afebrile",
+  "2. Physical examination of the head, eyes, ears, nose, and throat",
+  "     cranial nerve examination: vertical gaze palsy progressing to complete external ophthalmoplegia",
+  "     fundoscopy: normal",
+  "3. Cardiac auscultation",
+  "     not performed / not available",
+  "4. Pulmonary auscultation",
+  "     not performed / not available",
+  "5. Abdominal palpation",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Miller Fisher syndrome (variant of Guillain-Barré syndrome)\nAlternative 1: Wernicke encephalopathy\nAlternative 2: Myasthenia gravis",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation\n2. Physical examination of the head, eyes, ears, nose, and throat\n3. Cardiac auscultation\n4. Pulmonary auscultation\n5. Abdominal palpation",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Miller Fisher syndrome (variant of Guillain-Barré syndrome)",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 58,
+   "total_tokens": 224,
+   "cost": 5.216e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.216e-05,
+    "upstream_inference_prompt_cost": 2.49e-05,
+    "upstream_inference_completions_cost": 2.726e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 457,
+   "completion_tokens": 60,
+   "total_tokens": 517,
+   "cost": 6.2446e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.2446e-05,
+    "upstream_inference_prompt_cost": 3.4246e-05,
+    "upstream_inference_completions_cost": 2.82e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 737,
+   "completion_tokens": 42,
+   "total_tokens": 779,
+   "cost": 6.1682e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.1682e-05,
+    "upstream_inference_prompt_cost": 4.1942e-05,
+    "upstream_inference_completions_cost": 1.974e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_paraneoplastic_PMC12741441.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.9
+}

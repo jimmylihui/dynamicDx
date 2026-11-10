@@ -1,0 +1,223 @@
+{
+ "questions": [
+  "Are you having severe pain right now?",
+  "Is the pain mainly in your head or face?",
+  "Is your headache getting worse?",
+  "Did you recently fall or sustain an injury to your head?",
+  "Did you lose consciousness?",
+  "Do you feel confused or unusually sleepy?",
+  "Have you vomited or felt like you might vomit?",
+  "Are you having blurred or double vision?",
+  "Do you have weakness or numbness in either arm or leg?",
+  "Are you having trouble speaking or understanding people?",
+  "Are you having severe neck pain?",
+  "Are you having trouble breathing or swallowing?",
+  "Are you taking blood-thinning medication?",
+  "Do you have chest pain?",
+  "Do you feel faint or light-headed?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Full set of vital signs, including oxygen saturation and temperature",
+  "Point-of-care capillary blood glucose",
+  "Bedside neurological examination, including mental status, cranial nerves, strength, sensation, coordination, and gait if safe",
+  "Twelve-lead electrocardiogram",
+  "Continuous cardiac telemetry monitoring",
+  "Orthostatic blood pressure and heart rate measurements",
+  "Complete blood count",
+  "Serum electrolytes, urea, creatinine, calcium, magnesium, and glucose",
+  "Serum troponin",
+  "Noncontrast CT scan of the head",
+  "CT scan of the cervical spine",
+  "Urine toxicology screen and serum ethanol level",
+  "Electroencephalogram",
+  "Transthoracic echocardiogram"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "neurological examination between events",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium",
+  "CT head",
+  "toxicology screen (urine and serum)",
+  "serum ethanol",
+  "interictal EEG"
+ ],
+ "results": [
+  "1. Full set of vital signs, including oxygen saturation and temperature",
+  "     not performed / not available",
+  "2. Point-of-care capillary blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "3. Bedside neurological examination, including mental status, cranial nerves, strength, sensation, coordination, and gait if safe",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     limb strength (MRC) examination: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     neurological examination between events: normal",
+  "4. Twelve-lead electrocardiogram",
+  "     not performed / not available",
+  "5. Continuous cardiac telemetry monitoring",
+  "     not performed / not available",
+  "6. Orthostatic blood pressure and heart rate measurements",
+  "     not performed / not available",
+  "7. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "8. Serum electrolytes, urea, creatinine, calcium, magnesium, and glucose",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "9. Serum troponin",
+  "     not performed / not available",
+  "10. Noncontrast CT scan of the head",
+  "     CT head: normal",
+  "11. CT scan of the cervical spine",
+  "     not performed / not available",
+  "12. Urine toxicology screen and serum ethanol level",
+  "     toxicology screen (urine and serum): normal",
+  "     serum ethanol: normal",
+  "13. Electroencephalogram",
+  "     interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "14. Transthoracic echocardiogram",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Genetic generalized epilepsy, most consistent with juvenile myoclonic epilepsy causing generalized seizure-related loss of consciousness\n\nALTERNATIVE 1: Psychogenic nonepileptic seizure\n\nALTERNATIVE 2: Convulsive syncope\n\nALTERNATIVE 3: Focal epilepsy with secondary bilateral synchrony",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Full set of vital signs, including oxygen saturation and temperature\n2. Point-of-care capillary blood glucose\n3. Bedside neurological examination, including mental status, cranial nerves, strength, sensation, coordination, and gait if safe\n4. Twelve-lead electrocardiogram\n5. Continuous cardiac telemetry monitoring\n6. Orthostatic blood pressure and heart rate measurements\n7. Complete blood count\n8. Serum electrolytes, urea, creatinine, calcium, magnesium, and glucose\n9. Serum troponin\n10. Noncontrast CT scan of the head\n11. CT scan of the cervical spine\n12. Urine toxicology screen and serum ethanol level\n13. Electroencephalogram\n14. Transthoracic echocardiogram",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Genetic generalized epilepsy, most consistent with juvenile myoclonic epilepsy causing generalized seizure-related loss of consciousness",
+ "decisive_served": [
+  "interictal EEG"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 680,
+   "total_tokens": 6356,
+   "cost": 0.001117425,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 5673,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001117425,
+    "upstream_inference_prompt_cost": 0.000709425,
+    "upstream_inference_completions_cost": 0.000408
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6212,
+   "completion_tokens": 379,
+   "total_tokens": 6591,
+   "cost": 0.00035143,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 536,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00035143,
+    "upstream_inference_prompt_cost": 0.00012403,
+    "upstream_inference_completions_cost": 0.0002274
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 214,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 6876,
+   "completion_tokens": 391,
+   "total_tokens": 7267,
+   "cost": 0.00037999,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6209,
+    "cache_write_tokens": 664,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00037999,
+    "upstream_inference_prompt_cost": 0.00014539,
+    "upstream_inference_completions_cost": 0.0002346
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 322,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 68.2
+}

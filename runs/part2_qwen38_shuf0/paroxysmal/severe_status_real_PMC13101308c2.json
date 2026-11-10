@@ -1,0 +1,166 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a fever or chills?",
+  "Are you having difficulty breathing?",
+  "Have you had any recent falls or trauma to your head?",
+  "Are you feeling confused or disoriented right now?",
+  "Do you have a history of seizures?",
+  "Are you currently taking any blood thinners?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Continuous video-EEG monitoring",
+  "MRI of the brain with epilepsy protocol",
+  "Serum electrolytes, glucose, calcium, and magnesium levels",
+  "Complete blood count (CBC)",
+  "Comprehensive metabolic panel (CMP)",
+  "Urine toxicology screen"
+ ],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "brain MRI",
+  "glucose, calcium, magnesium, sodium",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "toxicology screen (urine and serum)"
+ ],
+ "results": [
+  "1. Continuous video-EEG monitoring",
+  "     interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "     video-EEG monitoring of a typical event: ictal BODY TURNING, often preceded by head version, but the EEG shows classic GENERALIZED spike-wave or polyspike discharges WITHOUT consistent lateralization",
+  "2. MRI of the brain with epilepsy protocol",
+  "     brain MRI: no focal epileptogenic lesion",
+  "3. Serum electrolytes, glucose, calcium, and magnesium levels",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "4. Complete blood count (CBC)",
+  "     full blood count and biochemistry: normal",
+  "5. Comprehensive metabolic panel (CMP)",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal",
+  "6. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Genetic Generalized Epilepsy (likely Juvenile Myoclonic Epilepsy)\n\n1. Focal epilepsy with rapid secondary generalization\n2. Psychogenic non-epileptic seizures (PNES)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Continuous video-EEG monitoring\n2. MRI of the brain with epilepsy protocol\n3. Serum electrolytes, glucose, calcium, and magnesium levels\n4. Complete blood count (CBC)\n5. Comprehensive metabolic panel (CMP)\n6. Urine toxicology screen",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Genetic Generalized Epilepsy (likely Juvenile Myoclonic Epilepsy)",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 82,
+   "total_tokens": 4905,
+   "cost": 0.00076199,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00076199,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 3.854e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5168,
+   "completion_tokens": 59,
+   "total_tokens": 5227,
+   "cost": 0.00020261,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020261,
+    "upstream_inference_prompt_cost": 0.00017488,
+    "upstream_inference_completions_cost": 2.773e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5557,
+   "completion_tokens": 51,
+   "total_tokens": 5608,
+   "cost": 0.000188592,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000188592,
+    "upstream_inference_prompt_cost": 0.000164622,
+    "upstream_inference_completions_cost": 2.397e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.9
+}

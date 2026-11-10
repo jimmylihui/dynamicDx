@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Is the red patch on your shin painful?",
+  "Is there any swelling in that leg?",
+  "Do you have a fever or chills?",
+  "Is the area itchy or burning?",
+  "Did the spot appear after a specific injury, cut, or bug bite?",
+  "Do you have diabetes?",
+  "Are you having trouble with blood flow or circulation in your legs?",
+  "Have you had this kind of spot before?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Skin scraping for potassium hydroxide preparation and fungal culture",
+  "Complete blood count",
+  "Erythrocyte sedimentation rate",
+  "Punch biopsy of the lesion",
+  "Thyroid function tests"
+ ],
+ "served": [
+  "full blood count",
+  "ESR / CRP",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. Skin scraping for potassium hydroxide preparation and fungal culture",
+  "     not performed / not available",
+  "2. Complete blood count",
+  "     full blood count: normal",
+  "3. Erythrocyte sedimentation rate",
+  "     ESR / CRP: normal",
+  "4. Punch biopsy of the lesion",
+  "     not performed / not available",
+  "5. Thyroid function tests",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Tinea corporis (dermatophyte fungal infection of the skin)\n\nAlternative considerations:\n1. Nummular (discoid) eczema\n2. Granuloma annulare\n3. Plaque psoriasis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Skin scraping for potassium hydroxide preparation and fungal culture\n2. Complete blood count\n3. Erythrocyte sedimentation rate\n4. Punch biopsy of the lesion\n5. Thyroid function tests",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Tinea corporis (dermatophyte fungal infection of the skin)",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 509,
+   "completion_tokens": 855,
+   "total_tokens": 1364,
+   "cost": 0.0002843176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002843176,
+    "upstream_inference_prompt_cost": 4.49176e-05,
+    "upstream_inference_completions_cost": 0.0002394
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 760,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 880,
+   "completion_tokens": 680,
+   "total_tokens": 1560,
+   "cost": 0.0002521344,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002521344,
+    "upstream_inference_prompt_cost": 6.17344e-05,
+    "upstream_inference_completions_cost": 0.0001904
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 632,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1106,
+   "completion_tokens": 751,
+   "total_tokens": 1857,
+   "cost": 0.0002509696,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 832,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002509696,
+    "upstream_inference_prompt_cost": 4.06896e-05,
+    "upstream_inference_completions_cost": 0.00021028
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 696,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 43.2
+}

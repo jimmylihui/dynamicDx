@@ -1,0 +1,390 @@
+{
+ "questions": [
+  "How long have you had this trouble with your balance?",
+  "Do you feel more unsteady when you close your eyes?",
+  "Have you experienced any numbness or tingling in your feet?",
+  "Do you have any difficulty with fine motor tasks in your hands, like buttoning your shirt or writing?",
+  "Do you have any problems with your memory or thinking?",
+  "Have you noticed any urinary urgency, frequency, or incontinence?",
+  "Have you had any falls recently?",
+  "Do you feel stiff or slow in your movements?",
+  "Is there any family history of balance problems or neurological disease?",
+  "Do you have any tremor in your hands?",
+  "Do you drink alcohol? If so, how much and how often?",
+  "Have you ever taken medications like phenytoin or other anti-seizure drugs?",
+  "Have you noticed any slurring of your speech?",
+  "Do you have any eye wobble or double vision?",
+  "Do you have nausea or dizziness?",
+  "How old are you?",
+  "Is there any history of similar movement problems in any family members, even if subtle (like twitching, fidgeting, or personality changes)?",
+  "When exactly did these movement problems first start?",
+  "Have you noticed any changes in your personality or behavior that others have commented on?",
+  "Do you or did any family member have psychiatric problems?",
+  "Are you currently taking any medications at all?",
+  "Are you male or female?",
+  "If female - could you be pregnant?",
+  "Have you ever had blood clots (deep vein thrombosis, pulmonary embolism, stroke)?",
+  "Do you have any history of autoimmune disease?",
+  "Have you ever had any problems with walking or movements before this started?",
+  "Do you bite your tongue or lips sometimes without meaning to?",
+  "Have your family members noticed any fidgetiness or restlessness in you?",
+  "Has anyone in your extended family (aunts, uncles, cousins, grandparents) ever had a neurological condition?",
+  "Have you had any recent illness, fever, or infection before this started?",
+  "Have you noticed any changes in your thinking or behavior?",
+  "Do you have any skin rashes?",
+  "Have you ever been told you have high cholesterol or tendon xanthomas?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "no",
+  "33": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Finger-to-nose test",
+  "Heel-shin test",
+  "Rapid alternating movements test (dysdiadochokinesia)",
+  "Assessment of saccadic eye movements and smooth pursuit",
+  "Fundoscopic examination",
+  "Assessment of upper motor neuron signs (plantar responses, Hoffman's sign)",
+  "Screening chest X-ray",
+  "Blood tests: CBC, ESR, CRP, liver function tests, thyroid function tests, vitamin B12, folate, alpha-fetoprotein, anti-neuronal antibodies (anti-Yo, anti-Hu, anti-Tr)",
+  "Serum ceruloplasmin level",
+  "24-hour urine copper excretion",
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "MRI brain with specific attention to basal ganglia",
+  "Peripheral blood smear for acanthocytes",
+  "CT chest/abdomen (if chorea persists with negative workup, to look for occult malignancy in case of antibody-negative paraneoplastic chorea)",
+  "HIV antibody test",
+  "Rapid plasma reagin (RPR) / VDRL for syphilis",
+  "Antistreptolysin O (ASO) titer and anti-DNase B antibodies (to assess for recent streptococcal infection)",
+  "Serum lactate",
+  "Serum ammonia",
+  "Echocardiogram (to assess for rheumatic heart disease if Sydenham's chorea considered)"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)",
+  "smooth pursuit and saccade velocity",
+  "fundoscopy",
+  "deep tendon reflexes and plantar responses",
+  "reflexes, plantar responses and frontal release signs",
+  "full blood count, renal and liver profile",
+  "liver function tests",
+  "ESR and CRP",
+  "TSH / free T4",
+  "vitamin B12",
+  "serum folate",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "paraneoplastic / onconeural antibody panel",
+  "serum ceruloplasmin",
+  "24-hour urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "CT chest / abdomen / pelvis (tumour search)",
+  "HIV and syphilis serology",
+  "HIV, hepatitis B and hepatitis C serology",
+  "serum ammonia"
+ ],
+ "results": [
+  "R1 ASK How long have you had this trouble with your balance?; Do you feel more unsteady when you close your eyes?; Have you experienced any numbness or tingling in your feet?; Do you have any difficulty with fine motor tasks in your hands, like buttoning your shirt or writing? -> ['yes', 'no', 'no', 'no']",
+  "R2 ASK Do you have any problems with your memory or thinking?; Have you noticed any urinary urgency, frequency, or incontinence?; Have you had any falls recently?; Do you feel stiff or slow in your movements?; Is there any family history of balance problems or neurological disease?; Do you have any tremor in your hands? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Do you drink alcohol? If so, how much and how often?; Have you ever taken medications like phenytoin or other anti-seizure drugs?; Have you noticed any slurring of your speech?; Do you have any eye wobble or double vision?; Do you have nausea or dizziness? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R4 ORDER Finger-to-nose test; Heel-shin test; Rapid alternating movements test (dysdiadochokinesia); Assessment of saccadic eye movements and smooth pursuit; Fundoscopic examination; Assessment of upper motor neuron signs (plantar responses, Hoffman's sign); Screening chest X-ray; Blood tests: CBC, ESR, CRP, liver function tests, thyroid function tests, vitamin B12, folate, alpha-fetoprotein, anti-neuronal antibodies (anti-Yo, anti-Hu, anti-Tr) -> [['coordination examination (limb and truncal)', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)'], ['coordination examination (limb and truncal)', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)'], ['coordination examination (limb and truncal)', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)'], ['smooth pursuit and saccade velocity'], ['fundoscopy'], ['deep tendon reflexes and plantar responses', 'reflexes, plantar responses and frontal release signs'], [], ['full blood count, renal and liver profile', 'liver function tests', 'ESR and CRP', 'TSH / free T4', 'vitamin B12', 'serum folate', 'serum paraneoplastic / neuronal autoantibody panel', 'paraneoplastic / onconeural antibody panel']]",
+  "R5 ASK How old are you?; Is there any history of similar movement problems in any family members, even if subtle (like twitching, fidgeting, or personality changes)?; When exactly did these movement problems first start?; Have you noticed any changes in your personality or behavior that others have commented on?; Do you or did any family member have psychiatric problems? -> ['no', 'no', 'no', 'no', 'no']",
+  "R6 ORDER Serum ceruloplasmin level; 24-hour urine copper excretion; Slit-lamp examination for Kayser-Fleischer rings; MRI brain with specific attention to basal ganglia; Peripheral blood smear for acanthocytes; CT chest/abdomen (if chorea persists with negative workup, to look for occult malignancy in case of antibody-negative paraneoplastic chorea) -> [['serum ceruloplasmin'], ['24-hour urinary copper'], ['slit-lamp examination for Kayser-Fleischer rings'], ['MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)'], [], ['CT chest / abdomen / pelvis (tumour search)']]",
+  "R7 ASK Are you currently taking any medications at all?; Are you male or female?; If female - could you be pregnant?; Have you ever had blood clots (deep vein thrombosis, pulmonary embolism, stroke)?; Do you have any history of autoimmune disease? -> ['no', 'no', 'no', 'no', 'no']",
+  "R8 ORDER HIV antibody test; Rapid plasma reagin (RPR) / VDRL for syphilis; Antistreptolysin O (ASO) titer and anti-DNase B antibodies (to assess for recent streptococcal infection); Serum lactate; Serum ammonia; Echocardiogram (to assess for rheumatic heart disease if Sydenham's chorea considered) -> [['HIV and syphilis serology', 'HIV, hepatitis B and hepatitis C serology'], ['HIV and syphilis serology'], [], [], ['serum ammonia'], []]",
+  "R9 ASK Have you ever had any problems with walking or movements before this started?; Do you bite your tongue or lips sometimes without meaning to?; Have your family members noticed any fidgetiness or restlessness in you? -> ['no', 'no', 'no']",
+  "R10 ASK Has anyone in your extended family (aunts, uncles, cousins, grandparents) ever had a neurological condition?; Have you had any recent illness, fever, or infection before this started?; Have you noticed any changes in your thinking or behavior?; Do you have any skin rashes?; Have you ever been told you have high cholesterol or tendon xanthomas? -> ['no', 'no', 'no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSES: Adult-onset Huntington's disease (de novo CAG trinucleotide repeat expansion in the huntingtin gene), pending genetic confirmation -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "How long have you had this trouble with your balance?",
+    "Do you feel more unsteady when you close your eyes?",
+    "Have you experienced any numbness or tingling in your feet?",
+    "Do you have any difficulty with fine motor tasks in your hands, like buttoning your shirt or writing?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have any problems with your memory or thinking?",
+    "Have you noticed any urinary urgency, frequency, or incontinence?",
+    "Have you had any falls recently?",
+    "Do you feel stiff or slow in your movements?",
+    "Is there any family history of balance problems or neurological disease?",
+    "Do you have any tremor in your hands?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you drink alcohol? If so, how much and how often?",
+    "Have you ever taken medications like phenytoin or other anti-seizure drugs?",
+    "Have you noticed any slurring of your speech?",
+    "Do you have any eye wobble or double vision?",
+    "Do you have nausea or dizziness?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Finger-to-nose test",
+    "Heel-shin test",
+    "Rapid alternating movements test (dysdiadochokinesia)",
+    "Assessment of saccadic eye movements and smooth pursuit",
+    "Fundoscopic examination",
+    "Assessment of upper motor neuron signs (plantar responses, Hoffman's sign)",
+    "Screening chest X-ray",
+    "Blood tests: CBC, ESR, CRP, liver function tests, thyroid function tests, vitamin B12, folate, alpha-fetoprotein, anti-neuronal antibodies (anti-Yo, anti-Hu, anti-Tr)"
+   ],
+   "result": [
+    [
+     "coordination examination (limb and truncal)",
+     "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
+    ],
+    [
+     "coordination examination (limb and truncal)",
+     "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
+    ],
+    [
+     "coordination examination (limb and truncal)",
+     "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
+    ],
+    [
+     "smooth pursuit and saccade velocity"
+    ],
+    [
+     "fundoscopy"
+    ],
+    [
+     "deep tendon reflexes and plantar responses",
+     "reflexes, plantar responses and frontal release signs"
+    ],
+    [],
+    [
+     "full blood count, renal and liver profile",
+     "liver function tests",
+     "ESR and CRP",
+     "TSH / free T4",
+     "vitamin B12",
+     "serum folate",
+     "serum paraneoplastic / neuronal autoantibody panel",
+     "paraneoplastic / onconeural antibody panel"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "How old are you?",
+    "Is there any history of similar movement problems in any family members, even if subtle (like twitching, fidgeting, or personality changes)?",
+    "When exactly did these movement problems first start?",
+    "Have you noticed any changes in your personality or behavior that others have commented on?",
+    "Do you or did any family member have psychiatric problems?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Serum ceruloplasmin level",
+    "24-hour urine copper excretion",
+    "Slit-lamp examination for Kayser-Fleischer rings",
+    "MRI brain with specific attention to basal ganglia",
+    "Peripheral blood smear for acanthocytes",
+    "CT chest/abdomen (if chorea persists with negative workup, to look for occult malignancy in case of antibody-negative paraneoplastic chorea)"
+   ],
+   "result": [
+    [
+     "serum ceruloplasmin"
+    ],
+    [
+     "24-hour urinary copper"
+    ],
+    [
+     "slit-lamp examination for Kayser-Fleischer rings"
+    ],
+    [
+     "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)"
+    ],
+    [],
+    [
+     "CT chest / abdomen / pelvis (tumour search)"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking any medications at all?",
+    "Are you male or female?",
+    "If female - could you be pregnant?",
+    "Have you ever had blood clots (deep vein thrombosis, pulmonary embolism, stroke)?",
+    "Do you have any history of autoimmune disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "HIV antibody test",
+    "Rapid plasma reagin (RPR) / VDRL for syphilis",
+    "Antistreptolysin O (ASO) titer and anti-DNase B antibodies (to assess for recent streptococcal infection)",
+    "Serum lactate",
+    "Serum ammonia",
+    "Echocardiogram (to assess for rheumatic heart disease if Sydenham's chorea considered)"
+   ],
+   "result": [
+    [
+     "HIV and syphilis serology",
+     "HIV, hepatitis B and hepatitis C serology"
+    ],
+    [
+     "HIV and syphilis serology"
+    ],
+    [],
+    [],
+    [
+     "serum ammonia"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Have you ever had any problems with walking or movements before this started?",
+    "Do you bite your tongue or lips sometimes without meaning to?",
+    "Have your family members noticed any fidgetiness or restlessness in you?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Has anyone in your extended family (aunts, uncles, cousins, grandparents) ever had a neurological condition?",
+    "Have you had any recent illness, fever, or infection before this started?",
+    "Have you noticed any changes in your thinking or behavior?",
+    "Do you have any skin rashes?",
+    "Have you ever been told you have high cholesterol or tendon xanthomas?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSES: Adult-onset Huntington's disease (de novo CAG trinucleotide repeat expansion in the huntingtin gene), pending genetic confirmation"
+  }
+ ],
+ "dx": "Adult-onset Huntington's disease (de novo CAG trinucleotide repeat expansion in the huntingtin gene), pending genetic confirmation",
+ "dx_raw": "DIAGNOSES: Adult-onset Huntington's disease (de novo CAG trinucleotide repeat expansion in the huntingtin gene), pending genetic confirmation",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "reflexes, plantar responses and frontal release signs"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0036,
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 298.9
+}

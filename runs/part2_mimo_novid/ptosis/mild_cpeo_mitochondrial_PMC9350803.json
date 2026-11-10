@@ -1,0 +1,171 @@
+{
+ "questions": [
+  "Are you experiencing a medical emergency right now (such as chest pain, difficulty breathing, or uncontrolled bleeding)?",
+  "Is your main symptom pain?",
+  "Is your main symptom fever or chills?",
+  "Is your main symptom bleeding from any part of your body?",
+  "Is the issue located in your head (including face, neck, or throat)?",
+  "Is the issue located in your chest (heart or lungs)?",
+  "Is the issue located in your abdomen (stomach or intestines)?",
+  "Is the issue located in your limbs (arms or legs)?",
+  "Did this problem start suddenly in the last 24 hours?",
+  "Have you experienced a recent injury or accident?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Is the problem related to your vision or eyes?",
+  "Is the problem related to your hearing or ears?",
+  "Is the problem related to balance or dizziness?",
+  "Is the problem related to sensation (numbness or tingling)?",
+  "Is the problem related to weakness or difficulty moving any part of your face?",
+  "Is the problem related to swallowing or your throat feeling blocked?",
+  "Is the problem related to a change in your voice?",
+  "Is the problem related to a lump, swelling, or skin change you can see or feel?",
+  "Is the problem related to memory, confusion, or difficulty thinking clearly?",
+  "Is the problem related to your sense of smell or taste?",
+  "Is the problem related to headaches, even if mild?"
+ ],
+ "served": [],
+ "results": [
+  "1. Is the problem related to your vision or eyes?",
+  "     not performed / not available",
+  "2. Is the problem related to your hearing or ears?",
+  "     not performed / not available",
+  "3. Is the problem related to balance or dizziness?",
+  "     not performed / not available",
+  "4. Is the problem related to sensation (numbness or tingling)?",
+  "     not performed / not available",
+  "5. Is the problem related to weakness or difficulty moving any part of your face?",
+  "     not performed / not available",
+  "6. Is the problem related to swallowing or your throat feeling blocked?",
+  "     not performed / not available",
+  "7. Is the problem related to a change in your voice?",
+  "     not performed / not available",
+  "8. Is the problem related to a lump, swelling, or skin change you can see or feel?",
+  "     not performed / not available",
+  "9. Is the problem related to memory, confusion, or difficulty thinking clearly?",
+  "     not performed / not available",
+  "10. Is the problem related to your sense of smell or taste?",
+  "     not performed / not available",
+  "11. Is the problem related to headaches, even if mild?",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Chronic sinusitis\n\nAlternatives:\n- Tension-type headache\n- Dental pulpitis with referred pain",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Is the problem related to your vision or eyes?\n2. Is the problem related to your hearing or ears?\n3. Is the problem related to balance or dizziness?\n4. Is the problem related to sensation (numbness or tingling)?\n5. Is the problem related to weakness or difficulty moving any part of your face?\n6. Is the problem related to swallowing or your throat feeling blocked?\n7. Is the problem related to a change in your voice?\n8. Is the problem related to a lump, swelling, or skin change you can see or feel?\n9. Is the problem related to memory, confusion, or difficulty thinking clearly?\n10. Is the problem related to your sense of smell or taste?\n11. Is the problem related to headaches, even if mild?",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Chronic sinusitis",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 328,
+   "total_tokens": 713,
+   "cost": 0.000101836,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000101836,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 9.184e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 178,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 876,
+   "completion_tokens": 555,
+   "total_tokens": 1431,
+   "cost": 0.0002516976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002516976,
+    "upstream_inference_prompt_cost": 9.62976e-05,
+    "upstream_inference_completions_cost": 0.0001554
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 390,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1372,
+   "completion_tokens": 321,
+   "total_tokens": 1693,
+   "cost": 0.0001678096,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 832,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001678096,
+    "upstream_inference_prompt_cost": 7.79296e-05,
+    "upstream_inference_completions_cost": 8.988e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 292,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "mild_cpeo_mitochondrial_PMC9350803.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 41.4
+}

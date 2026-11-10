@@ -1,0 +1,123 @@
+{
+ "questions": [
+  "Do you have a known history of diabetes?",
+  "Are you experiencing pain in your neck or back right now?",
+  "Have you had any recent falls or head injuries?",
+  "Did you start any new medications (such as anti-emetics, antipsychotics, or antidepressants) in the days before this started?",
+  "Do you have a history of high blood pressure?",
+  "Have you had any strokes or seizures in the past?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Assess muscle tone in the limbs (check for rigidity or spasticity)",
+  "MRI of the brain"
+ ],
+ "served": [
+  "muscle tone examination",
+  "brain MRI"
+ ],
+ "results": [
+  "R1 ASK Do you have a known history of diabetes?; Are you experiencing pain in your neck or back right now?; Have you had any recent falls or head injuries? -> ['no', 'no', 'no']",
+  "R2 ORDER Assess muscle tone in the limbs (check for rigidity or spasticity) -> [['muscle tone examination']]",
+  "R3 ASK Did you start any new medications (such as anti-emetics, antipsychotics, or antidepressants) in the days before this started? -> ['no']",
+  "R4 ASK Do you have a history of high blood pressure?; Have you had any strokes or seizures in the past? -> ['no', 'no']",
+  "R5 ORDER MRI of the brain -> [['brain MRI']]",
+  "R6 DIAGNOSIS Idiopathic adult-onset cervical dystonia -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a known history of diabetes?",
+    "Are you experiencing pain in your neck or back right now?",
+    "Have you had any recent falls or head injuries?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Assess muscle tone in the limbs (check for rigidity or spasticity)"
+   ],
+   "result": [
+    [
+     "muscle tone examination"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did you start any new medications (such as anti-emetics, antipsychotics, or antidepressants) in the days before this started?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of high blood pressure?",
+    "Have you had any strokes or seizures in the past?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "MRI of the brain"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Idiopathic adult-onset cervical dystonia"
+  }
+ ],
+ "dx": "Idiopathic adult-onset cervical dystonia",
+ "dx_raw": "DIAGNOSIS: Idiopathic adult-onset cervical dystonia",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0038,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_secondary_structural_PMC12962376.mp4",
+ "line": "dystonia",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 31.2
+}

@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Is this a new development?",
+  "Do you have a runny or stuffy nose?",
+  "Do you have allergies?",
+  "Does the area itch?",
+  "Have you used any new skincare products or makeup recently?",
+  "Do you have a family history of this?",
+  "Have you been feeling more tired than usual?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Urinalysis",
+  "Serum creatinine",
+  "Blood pressure measurement",
+  "CBC and ESR",
+  "Examination for pitting edema in lower extremities"
+ ],
+ "served": [
+  "urinalysis",
+  "serum electrolytes, urea and creatinine",
+  "vital signs",
+  "ESR / CRP",
+  "full blood count"
+ ],
+ "results": [
+  "1. Urinalysis",
+  "     urinalysis: normal",
+  "2. Serum creatinine",
+  "     serum electrolytes, urea and creatinine: normal",
+  "3. Blood pressure measurement",
+  "     vital signs: normal, afebrile",
+  "4. CBC and ESR",
+  "     ESR / CRP: normal",
+  "     full blood count: normal",
+  "5. Examination for pitting edema in lower extremities",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Myxedema due to hypothyroidism\n1. Angioedema\n2. Nephrotic syndrome\n3. Allergic reaction",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Urinalysis\n2. TSH\n3. Serum creatinine\n4. Blood pressure measurement\n5. CBC and ESR\n6. Examination for pitting edema in lower extremities",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Myxedema due to hypothyroidism",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 1276,
+   "total_tokens": 1696,
+   "cost": 0.00047584,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00047584,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00043384
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1134,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 746,
+   "completion_tokens": 1740,
+   "total_tokens": 2486,
+   "cost": 0.0006662,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006662,
+    "upstream_inference_prompt_cost": 7.46e-05,
+    "upstream_inference_completions_cost": 0.0005916
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1558,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 963,
+   "completion_tokens": 4666,
+   "total_tokens": 5629,
+   "cost": 0.00168274,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00168274,
+    "upstream_inference_prompt_cost": 9.63e-05,
+    "upstream_inference_completions_cost": 0.00158644
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4131,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 231.6
+}

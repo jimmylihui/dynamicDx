@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your chest?",
+  "Does the pain radiate to your left arm or jaw?",
+  "Do you have a history of heart disease?",
+  "Are you short of breath at rest?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "Physical examination of the abdomen for tenderness, masses, or organomegaly",
+  "Complete blood count with differential",
+  "Comprehensive metabolic panel"
+ ],
+ "served": [
+  "vital signs",
+  "full blood count",
+  "renal function (urea, creatinine)",
+  "liver function and ammonia",
+  "electrolytes (Na, K, Ca, Mg)",
+  "glucose",
+  "TSH / free T4",
+  "vitamin B12 / folate",
+  "copper / caeruloplasmin"
+ ],
+ "results": [
+  "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "     vital signs: normal, afebrile",
+  "2. Physical examination of the abdomen for tenderness, masses, or organomegaly",
+  "     not performed / not available",
+  "3. Complete blood count with differential",
+  "     full blood count: normal",
+  "4. Comprehensive metabolic panel",
+  "     renal function (urea, creatinine): normal",
+  "     liver function and ammonia: normal",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     glucose: normal",
+  "     TSH / free T4: normal",
+  "     vitamin B12 / folate: normal",
+  "     copper / caeruloplasmin: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional somatic syndrome (medically unexplained symptoms)\nAlternative 1: Early-stage neurodegenerative disorder not yet manifesting objective signs\nAlternative 2: Psychogenic non-epileptic events or conversion disorder",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation\n2. Physical examination of the abdomen for tenderness, masses, or organomegaly\n3. Complete blood count with differential\n4. Comprehensive metabolic panel",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional somatic syndrome (medically unexplained symptoms)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 58,
+   "total_tokens": 224,
+   "cost": 5.216e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.216e-05,
+    "upstream_inference_prompt_cost": 2.49e-05,
+    "upstream_inference_completions_cost": 2.726e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 457,
+   "completion_tokens": 52,
+   "total_tokens": 509,
+   "cost": 5.8686e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.8686e-05,
+    "upstream_inference_prompt_cost": 3.4246e-05,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 760,
+   "completion_tokens": 51,
+   "total_tokens": 811,
+   "cost": 0.000103666,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000103666,
+    "upstream_inference_prompt_cost": 7.9696e-05,
+    "upstream_inference_completions_cost": 2.397e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "moderate_coeliac_PMC10548079.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.7
+}

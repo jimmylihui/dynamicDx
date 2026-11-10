@@ -1,0 +1,297 @@
+{
+ "questions": [
+  "1. Is the vision in your right eye affected, for example blurry or doubled?",
+  "Did these eye symptoms come on suddenly?",
+  "Have you noticed any drooping of your right eyelid?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Have you had a recent severe headache?",
+  "Is the protrusion of your right eye pulsatile, or does it increase when you cough, strain, or bend forward?",
+  "Can you hear a \"whooshing\" sound (bruit) near your right eye, especially at night in a quiet room?",
+  "Have you ever had a head injury or facial trauma?",
+  "Do you ever see double when you look in certain directions?",
+  "Has anyone in your family had a similar eye problem?",
+  "Have you noticed any change in the shape of your face or jaw, or any dental issues recently?",
+  "Does the amount your right eye bulges change throughout the day, or has it been constant?",
+  "Have you ever noticed it getting worse when straining, coughing, or holding your breath?",
+  "Do you have any history of sinus infections or nasal congestion?",
+  "Have you had any fevers, chills, or recent illness?",
+  "Have you noticed any lumps or swelling around your eye?",
+  "Do you have any history of cancer?",
+  "What type of cancer did you have, and when was it diagnosed?",
+  "Are you currently in remission, or are you undergoing treatment?",
+  "Have you noticed any new lumps elsewhere, weight loss, or bone pain recently?",
+  "Was it breast cancer?",
+  "Was it lung cancer?",
+  "Was it prostate cancer?",
+  "Are you currently receiving any targeted therapy, immunotherapy, or chemotherapy for your lung cancer?",
+  "Do you have chronic kidney disease?",
+  "Have you noticed your face changing shape, becoming more triangular, or your dentures not fitting well?",
+  "Have you noticed ringing in your ears?",
+  "Are your hands or feet larger than they used to be, or has your shoe size increased?",
+  "Have you noticed increased sweating, oily skin, or spacing between your teeth?",
+  "When was your lung cancer diagnosed?",
+  "Is your eye protrusion new since starting the cancer treatment?",
+  "Do you experience any pain in your right eye or its surrounding bones?",
+  "Have you noticed any double vision or difficulty moving your right eye?",
+  "Do you ever feel dizzy or have episodes of confusion?",
+  "Have you been on long-term steroids?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "yes",
+  "19": "no",
+  "20": "yes",
+  "21": "no",
+  "22": "no",
+  "23": "yes",
+  "24": "no",
+  "25": "yes",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "no",
+  "33": "no",
+  "34": "no",
+  "35": "yes",
+  "36": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "Thyroid function tests (TSH, free T4, free T3)",
+  "Orbital CT scan",
+  "Orbital MRI with contrast",
+  "Full body PET-CT scan",
+  "CT chest with contrast",
+  "Serum calcium"
+ ],
+ "served": [
+  "TSH / free T4",
+  "MRI sella and orbits",
+  "serum calcium, magnesium and phosphate"
+ ],
+ "results": [
+  "R1 ASK 1. Is the vision in your right eye affected, for example blurry or doubled?; Did these eye symptoms come on suddenly?; Have you noticed any drooping of your right eyelid?; Do you have diabetes?; Do you have high blood pressure?; Have you had a recent severe headache? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 INVALID \n\n: 1. Have you noticed the bulging of your right eye getting worse gradually over weeks or months?\n2. Do you have any pain in or around your right eye?\n3. Have you ever been told you have a thyroid p -> ",
+  "R3 INVALID \n\n:\n1. Have you noticed the bulging of your right eye getting worse gradually over weeks or months?\n2. Do you have any pain in or around your right eye?\n3. Have you ever been told you have a thyroid p -> ",
+  "R4 ORDER Thyroid function tests (TSH, free T4, free T3); Orbital CT scan; Orbital MRI with contrast -> [['TSH / free T4'], [], ['MRI sella and orbits']]",
+  "R5 ASK Is the protrusion of your right eye pulsatile, or does it increase when you cough, strain, or bend forward?; Can you hear a \"whooshing\" sound (bruit) near your right eye, especially at night in a quiet room?; Have you ever had a head injury or facial trauma?; Do you ever see double when you look in certain directions?; Has anyone in your family had a similar eye problem?; Have you noticed any change in the shape of your face or jaw, or any dental issues recently? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R6 ASK Does the amount your right eye bulges change throughout the day, or has it been constant?; Have you ever noticed it getting worse when straining, coughing, or holding your breath?; Do you have any history of sinus infections or nasal congestion?; Have you had any fevers, chills, or recent illness?; Have you noticed any lumps or swelling around your eye?; Do you have any history of cancer? -> ['no', 'no', 'no', 'no', 'no', 'yes']",
+  "R7 ASK What type of cancer did you have, and when was it diagnosed?; Are you currently in remission, or are you undergoing treatment?; Have you noticed any new lumps elsewhere, weight loss, or bone pain recently?; Was it breast cancer?; Was it lung cancer?; Was it prostate cancer? -> ['no', 'yes', 'no', 'no', 'yes', 'no']",
+  "R8 ORDER Full body PET-CT scan; CT chest with contrast; Serum calcium -> [[], [], ['serum calcium, magnesium and phosphate']]",
+  "R9 ASK Are you currently receiving any targeted therapy, immunotherapy, or chemotherapy for your lung cancer?; Do you have chronic kidney disease?; Have you noticed your face changing shape, becoming more triangular, or your dentures not fitting well?; Have you noticed ringing in your ears?; Are your hands or feet larger than they used to be, or has your shoe size increased?; Have you noticed increased sweating, oily skin, or spacing between your teeth? -> ['yes', 'no', 'no', 'no', 'no', 'no']",
+  "R10 ASK When was your lung cancer diagnosed?; Is your eye protrusion new since starting the cancer treatment?; Do you experience any pain in your right eye or its surrounding bones?; Have you noticed any double vision or difficulty moving your right eye?; Do you ever feel dizzy or have episodes of confusion?; Have you been on long-term steroids? -> ['no', 'no', 'no', 'no', 'yes', 'no']",
+  "R11 FORCED_DIAGNOSIS \n\nDIAGNOSIS: Orbital metastasis from primary lung carcinoma (non-small cell lung cancer) causing unilateral painless proptosis, likely with early cavernous sinus involvement explaining the dizziness. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "1. Is the vision in your right eye affected, for example blurry or doubled?",
+    "Did these eye symptoms come on suddenly?",
+    "Have you noticed any drooping of your right eyelid?",
+    "Do you have diabetes?",
+    "Do you have high blood pressure?",
+    "Have you had a recent severe headache?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "invalid",
+   "text": "\n\n: 1. Have you noticed the bulging of your right eye getting worse gradually over weeks or months?\n2. Do you have any pain in or around your right eye?\n3. Have you ever been told you have a thyroid p"
+  },
+  {
+   "round": 3,
+   "kind": "invalid",
+   "text": "\n\n:\n1. Have you noticed the bulging of your right eye getting worse gradually over weeks or months?\n2. Do you have any pain in or around your right eye?\n3. Have you ever been told you have a thyroid p"
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Thyroid function tests (TSH, free T4, free T3)",
+    "Orbital CT scan",
+    "Orbital MRI with contrast"
+   ],
+   "result": [
+    [
+     "TSH / free T4"
+    ],
+    [],
+    [
+     "MRI sella and orbits"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Is the protrusion of your right eye pulsatile, or does it increase when you cough, strain, or bend forward?",
+    "Can you hear a \"whooshing\" sound (bruit) near your right eye, especially at night in a quiet room?",
+    "Have you ever had a head injury or facial trauma?",
+    "Do you ever see double when you look in certain directions?",
+    "Has anyone in your family had a similar eye problem?",
+    "Have you noticed any change in the shape of your face or jaw, or any dental issues recently?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Does the amount your right eye bulges change throughout the day, or has it been constant?",
+    "Have you ever noticed it getting worse when straining, coughing, or holding your breath?",
+    "Do you have any history of sinus infections or nasal congestion?",
+    "Have you had any fevers, chills, or recent illness?",
+    "Have you noticed any lumps or swelling around your eye?",
+    "Do you have any history of cancer?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "What type of cancer did you have, and when was it diagnosed?",
+    "Are you currently in remission, or are you undergoing treatment?",
+    "Have you noticed any new lumps elsewhere, weight loss, or bone pain recently?",
+    "Was it breast cancer?",
+    "Was it lung cancer?",
+    "Was it prostate cancer?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Full body PET-CT scan",
+    "CT chest with contrast",
+    "Serum calcium"
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "serum calcium, magnesium and phosphate"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Are you currently receiving any targeted therapy, immunotherapy, or chemotherapy for your lung cancer?",
+    "Do you have chronic kidney disease?",
+    "Have you noticed your face changing shape, becoming more triangular, or your dentures not fitting well?",
+    "Have you noticed ringing in your ears?",
+    "Are your hands or feet larger than they used to be, or has your shoe size increased?",
+    "Have you noticed increased sweating, oily skin, or spacing between your teeth?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "When was your lung cancer diagnosed?",
+    "Is your eye protrusion new since starting the cancer treatment?",
+    "Do you experience any pain in your right eye or its surrounding bones?",
+    "Have you noticed any double vision or difficulty moving your right eye?",
+    "Do you ever feel dizzy or have episodes of confusion?",
+    "Have you been on long-term steroids?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "\n\nDIAGNOSIS: Orbital metastasis from primary lung carcinoma (non-small cell lung cancer) causing unilateral painless proptosis, likely with early cavernous sinus involvement explaining the dizziness."
+  }
+ ],
+ "dx": "Orbital metastasis from primary lung carcinoma (non-small cell lung cancer) causing unilateral painless proptosis, likely with early cavernous sinus involvement explaining the dizziness.",
+ "dx_raw": "\n\nDIAGNOSIS: Orbital metastasis from primary lung carcinoma (non-small cell lung cancer) causing unilateral painless proptosis, likely with early cavernous sinus involvement explaining the dizziness.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": false,
+ "invalid_replies": 2,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0127,
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 162.4
+}

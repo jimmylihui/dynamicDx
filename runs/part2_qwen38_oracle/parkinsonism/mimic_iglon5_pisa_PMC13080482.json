@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Do you feel dizzy or lightheaded when you stand up or walk?",
+  "Have you had a fever recently?",
+  "Do you have a history of diabetes?",
+  "Do you have numbness or tingling in your feet?",
+  "Do you have difficulty with balance even when standing still?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "reflexes, plantar responses and frontal release signs",
+  "trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "results": [
+  "1. reflexes, plantar responses and frontal release signs: normal power in limb and neck muscles, normal reflexes, flexor plantars",
+  "2. trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine: about 70 degrees of leftward trunk tilt on walking, with a normal stance; the tilt DISAPPEARS when recumbent",
+  "3. medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium): no dopamine-blocking drug - excludes drug-induced Pisa syndrome",
+  "4. neuronal surface antibody panel including anti-IgLON5: STRONGLY POSITIVE for anti-IgLON5 (3+ on semi-quantitative grading, 1:10 serum dilution, transfected-cell assay)",
+  "5. MRI brain - cortical atrophy pattern: MRI brain and whole spine NORMAL"
+ ],
+ "dx_raw": "DIAGNOSIS: Anti-IgLON5 disease presenting with Pisa syndrome\n\n1. Idiopathic adult-onset Pisa syndrome\n2. Seronegative autoimmune encephalitis (e.g., anti-DPPX or anti-CASPR2)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Anti-IgLON5 disease presenting with Pisa syndrome",
+ "decisive_served": [
+  "reflexes, plantar responses and frontal release signs",
+  "trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 78,
+   "total_tokens": 4901,
+   "cost": 0.00076011,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00076011,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 3.666e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5291,
+   "completion_tokens": 54,
+   "total_tokens": 5345,
+   "cost": 0.00021871,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00021871,
+    "upstream_inference_prompt_cost": 0.00019333,
+    "upstream_inference_completions_cost": 2.538e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.3
+}

@@ -1,0 +1,129 @@
+{
+ "questions": [
+  "Have you noticed drooping of either eyelid?",
+  "Do you have double vision?",
+  "Do your eyelid drooping or double-vision symptoms worsen when you are tired or after prolonged activity?",
+  "Do these symptoms improve after resting?",
+  "Do you have difficulty swallowing?",
+  "Does your speech become slurred or nasal?",
+  "Do you have weakness in your neck, arms, or legs?",
+  "Do you ever feel short of breath, especially when lying down?",
+  "Did these symptoms begin suddenly?",
+  "Have you had facial numbness or weakness on one side?",
+  "Have you had weakness or numbness in one arm or leg?",
+  "Have you had a severe or unusual headache?",
+  "Have you noticed unequal pupils or new vision loss?",
+  "Have you had similar episodes before?",
+  "Do you have diabetes, thyroid disease, or an autoimmune disease?",
+  "Are you taking any new medicines or drugs that could affect your muscles or nerves?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "repetitive nerve stimulation",
+  "sustained upgaze fatigability test",
+  "anti-acetylcholine receptor antibodies",
+  "neostigmine / edrophonium challenge"
+ ],
+ "results": [
+  "1. repetitive nerve stimulation: decremental response in facial and spinal accessory nerves",
+  "2. sustained upgaze fatigability test: 'PRONOUNCED PTOSIS' on counting 1 to 100 - the right eye closed completely while the left droop increased",
+  "3. anti-acetylcholine receptor antibodies: 16.63 nmol/L - elevated",
+  "4. neostigmine / edrophonium challenge: ptosis improved (partially right, completely left) with improvement in neck muscle power"
+ ],
+ "dx_raw": "DIAGNOSIS: AChR-antibody–positive generalized autoimmune myasthenia gravis (postsynaptic neuromuscular-junction disorder)\n\nALTERNATIVE: Lambert–Eaton myasthenic syndrome\n\nALTERNATIVE: Botulism\n\nALTERNATIVE: Ocular or bulbar myopathy causing fatigable ptosis (e.g., mitochondrial myopathy)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "AChR-antibody–positive generalized autoimmune myasthenia gravis (postsynaptic neuromuscular-junction disorder)",
+ "decisive_served": [
+  "repetitive nerve stimulation",
+  "sustained upgaze fatigability test",
+  "anti-acetylcholine receptor antibodies",
+  "neostigmine / edrophonium challenge"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 715,
+   "total_tokens": 6391,
+   "cost": 0.00048603,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00048603,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.000429
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 506,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6363,
+   "completion_tokens": 184,
+   "total_tokens": 6547,
+   "cost": 0.000253305,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 687,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000253305,
+    "upstream_inference_prompt_cost": 0.000142905,
+    "upstream_inference_completions_cost": 0.0001104
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 100,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_mg_ptosis_PMC8064859.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 21.0
+}

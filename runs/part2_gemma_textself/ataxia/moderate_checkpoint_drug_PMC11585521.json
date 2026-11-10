@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Are you experiencing shortness of breath?",
+  "Do you have chest pain?",
+  "Is the pain only in one leg?",
+  "Have you had surgery in the last month?",
+  "Have you been on a long flight or car ride recently?",
+  "Have you been immobile or on bed rest recently?",
+  "Are you taking any hormonal medications, such as birth control?",
+  "Do you have a history of cancer?",
+  "Did this pain start after a specific injury?",
+  "Do you have a fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Compression ultrasound of both lower extremities"
+ ],
+ "served": [],
+ "results": [
+  "1. Compression ultrasound of both lower extremities",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Bilateral deep vein thrombosis caused by malignancy\nMuscle metastases\nParaneoplastic myopathy\nBilateral myositis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Compression ultrasound of both lower extremities",
+ "rationale": [
+  null
+ ],
+ "dx": "Bilateral deep vein thrombosis caused by malignancy",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 258,
+   "completion_tokens": 1420,
+   "total_tokens": 1678,
+   "cost": 0.0005086,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005086,
+    "upstream_inference_prompt_cost": 2.58e-05,
+    "upstream_inference_completions_cost": 0.0004828
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1214,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 680,
+   "completion_tokens": 1235,
+   "total_tokens": 1915,
+   "cost": 0.0004879,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004879,
+    "upstream_inference_prompt_cost": 6.8e-05,
+    "upstream_inference_completions_cost": 0.0004199
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1189,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 801,
+   "completion_tokens": 2693,
+   "total_tokens": 3494,
+   "cost": 0.00099572,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00099572,
+    "upstream_inference_prompt_cost": 8.01e-05,
+    "upstream_inference_completions_cost": 0.00091562
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2558,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 152.2
+}

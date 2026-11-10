@@ -1,0 +1,249 @@
+{
+ "questions": [
+  "\"Have you noticed a tremor in your hands that happens when they are resting on your lap?\"",
+  "\"Do you feel stiffness or slowness in your movements compared to before?\"",
+  "\"Have you experienced a loss of your sense of smell recently?\"",
+  "\"Do you act out your dreams or talk in your sleep?\"",
+  "\"Did these movements start suddenly or gradually?\"",
+  "\"Do the movements get worse when you are stressed or anxious?\"",
+  "\"Did you ever have tics when you were younger, such as blinking, throat clearing, or other repetitive movements?\"",
+  "\"Can you suppress or temporarily stop these movements if you focus on it?\"",
+  "\"How old are you?\"",
+  "\"Is there any family history of movement disorders or neurological conditions?\"",
+  "\"Do you have any family members with similar symptoms?\"",
+  "\"Do you have any anxiety or depression?\"",
+  "\"Did the symptoms begin after a stressful life event?\"",
+  "\"Do you notice the movements disappear completely when you are asleep?\"",
+  "\"Can you count backward from 100 by 7s?\" (while observing if movements change with distraction)",
+  "\"Do the movements affect both sides equally or is one side worse?\"",
+  "\"Do you have any difficulty with balance or walking?\"",
+  "\"Have you noticed any changes in your handwriting?\"",
+  "\"Have you noticed any involuntary movements of your limbs that you cannot control?\"",
+  "\"Have you experienced any seizures or episodes of unresponsiveness?\"",
+  "\"Do you have any difficulty swallowing or biting your tongue?\"",
+  "\"Have you noticed any muscle cramps or rippling movements in your muscles?\"",
+  "\"Are you an adult over the age of 40?\"",
+  "\"Did these movements start before the age of 20?\"",
+  "\"Are the movements continuous or do they come and go in episodes?\""
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "yes",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "\"Can you open your mouth wide and hold it?\" (testing for oral dystonia/lingual dystonia)",
+  "\"Can you protrude your tongue and hold it out?\" (testing for tongue protrusion abnormality)",
+  "\"Have you taken any medications for nausea or psychiatric conditions in the past?\"",
+  "\"Brain MRI without contrast\"",
+  "\"Can you try to copy my movements?\" (testing for mirror movements/overflow)"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "medication and toxin exposure history",
+  "brain MRI"
+ ],
+ "results": [
+  "R1 ASK \"Have you noticed a tremor in your hands that happens when they are resting on your lap?\"; \"Do you feel stiffness or slowness in your movements compared to before?\"; \"Have you experienced a loss of your sense of smell recently?\"; \"Do you act out your dreams or talk in your sleep?\" -> ['no', 'no', 'no', 'no']",
+  "R2 ORDER \"Can you open your mouth wide and hold it?\" (testing for oral dystonia/lingual dystonia); \"Can you protrude your tongue and hold it out?\" (testing for tongue protrusion abnormality); \"Have you taken any medications for nausea or psychiatric conditions in the past?\" -> [['cranial nerve examination'], ['cranial nerve examination'], ['medication and toxin exposure history']]",
+  "R3 ASK \"Did these movements start suddenly or gradually?\"; \"Do the movements get worse when you are stressed or anxious?\"; \"Did you ever have tics when you were younger, such as blinking, throat clearing, or other repetitive movements?\"; \"Can you suppress or temporarily stop these movements if you focus on it?\" -> ['no', 'no', 'no', 'no']",
+  "R4 ASK \"How old are you?\"; \"Is there any family history of movement disorders or neurological conditions?\"; \"Do you have any family members with similar symptoms?\" -> ['no', 'no', 'no']",
+  "R5 ORDER \"Brain MRI without contrast\"; \"Can you try to copy my movements?\" (testing for mirror movements/overflow) -> [['brain MRI'], []]",
+  "R6 ASK \"Do you have any anxiety or depression?\"; \"Did the symptoms begin after a stressful life event?\"; \"Do you notice the movements disappear completely when you are asleep?\"; \"Can you count backward from 100 by 7s?\" (while observing if movements change with distraction) -> ['no', 'no', 'no', 'no']",
+  "R7 ASK \"Do the movements affect both sides equally or is one side worse?\"; \"Do you have any difficulty with balance or walking?\"; \"Have you noticed any changes in your handwriting?\" -> ['no', 'no', 'no']",
+  "R8 ASK \"Have you noticed any involuntary movements of your limbs that you cannot control?\"; \"Have you experienced any seizures or episodes of unresponsiveness?\"; \"Do you have any difficulty swallowing or biting your tongue?\"; \"Have you noticed any muscle cramps or rippling movements in your muscles?\" -> ['yes', 'no', 'no', 'no']",
+  "R9 ASK \"Are you an adult over the age of 40?\"; \"Did these movements start before the age of 20?\"; \"Are the movements continuous or do they come and go in episodes?\" -> ['no', 'no', 'no']",
+  "R10 DIAGNOSIS Early-onset primary torsion dystonia (DYT1), genetic cause -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "\"Have you noticed a tremor in your hands that happens when they are resting on your lap?\"",
+    "\"Do you feel stiffness or slowness in your movements compared to before?\"",
+    "\"Have you experienced a loss of your sense of smell recently?\"",
+    "\"Do you act out your dreams or talk in your sleep?\""
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "\"Can you open your mouth wide and hold it?\" (testing for oral dystonia/lingual dystonia)",
+    "\"Can you protrude your tongue and hold it out?\" (testing for tongue protrusion abnormality)",
+    "\"Have you taken any medications for nausea or psychiatric conditions in the past?\""
+   ],
+   "result": [
+    [
+     "cranial nerve examination"
+    ],
+    [
+     "cranial nerve examination"
+    ],
+    [
+     "medication and toxin exposure history"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "\"Did these movements start suddenly or gradually?\"",
+    "\"Do the movements get worse when you are stressed or anxious?\"",
+    "\"Did you ever have tics when you were younger, such as blinking, throat clearing, or other repetitive movements?\"",
+    "\"Can you suppress or temporarily stop these movements if you focus on it?\""
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "\"How old are you?\"",
+    "\"Is there any family history of movement disorders or neurological conditions?\"",
+    "\"Do you have any family members with similar symptoms?\""
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "\"Brain MRI without contrast\"",
+    "\"Can you try to copy my movements?\" (testing for mirror movements/overflow)"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "\"Do you have any anxiety or depression?\"",
+    "\"Did the symptoms begin after a stressful life event?\"",
+    "\"Do you notice the movements disappear completely when you are asleep?\"",
+    "\"Can you count backward from 100 by 7s?\" (while observing if movements change with distraction)"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "\"Do the movements affect both sides equally or is one side worse?\"",
+    "\"Do you have any difficulty with balance or walking?\"",
+    "\"Have you noticed any changes in your handwriting?\""
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "\"Have you noticed any involuntary movements of your limbs that you cannot control?\"",
+    "\"Have you experienced any seizures or episodes of unresponsiveness?\"",
+    "\"Do you have any difficulty swallowing or biting your tongue?\"",
+    "\"Have you noticed any muscle cramps or rippling movements in your muscles?\""
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "\"Are you an adult over the age of 40?\"",
+    "\"Did these movements start before the age of 20?\"",
+    "\"Are the movements continuous or do they come and go in episodes?\""
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Early-onset primary torsion dystonia (DYT1), genetic cause"
+  }
+ ],
+ "dx": "Early-onset primary torsion dystonia (DYT1), genetic cause",
+ "dx_raw": "ORDER:\n1. \"Serum ceruloplasmin level\"\n2. \"24-hour urine copper collection\"\n3. \"Genetic testing for DYT1 (TOR1A) mutation\"\n4. \"Formal assessment of dystonia distribution using Burke-Fahn-Marsden Dystonia Rating Scale\"\n\nDIAGNOSIS: Early-onset primary torsion dystonia (DYT1), genetic cause",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0049,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_genetic_DYT_PMC9982172.mp4",
+ "line": "dystonia",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 375.0
+}

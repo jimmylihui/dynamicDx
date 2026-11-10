@@ -1,0 +1,119 @@
+{
+ "questions": [
+  "Do you have a history of epilepsy?",
+  "Do you remember the event?",
+  "Did you lose consciousness?",
+  "Have you had similar episodes before?",
+  "Did you feel a strange sensation or smell something unusual before it started?",
+  "Do you feel any weakness or numbness in your limbs now?",
+  "Do you have a severe headache?",
+  "Did you have a fever before this?",
+  "Did you hit your head recently?",
+  "Did you take any new medications recently?",
+  "Did you use any illicit drugs or drink a lot of alcohol recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "trial of glucose correction with insulin"
+ ],
+ "results": [
+  "1. blood glucose: 2.25 g/L (normal 0.70-1.10) - non-ketotic hyperglycaemia",
+  "2. HbA1c: 7.8% with long-standing poor control",
+  "3. ketones (blood or urine): negative - a treated ketoacidosis had preceded this admission",
+  "4. trial of glucose correction with insulin: symptoms improved significantly with normalisation of blood glucose"
+ ],
+ "dx_raw": "DIAGNOSIS: Non-ketotic hyperglycemic hemichorea-hemiballismus caused by non-ketotic hyperglycaemia\n\nHyperosmolar hyperglycemic state\nIschemic stroke\nNon-convulsive status epilepticus",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Non-ketotic hyperglycemic hemichorea-hemiballismus caused by non-ketotic hyperglycaemia",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "trial of glucose correction with insulin"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8697,
+   "completion_tokens": 2853,
+   "total_tokens": 11550,
+   "cost": 0.00183972,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00183972,
+    "upstream_inference_prompt_cost": 0.0008697,
+    "upstream_inference_completions_cost": 0.00097002
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2736,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9196,
+   "completion_tokens": 2508,
+   "total_tokens": 11704,
+   "cost": 0.00177232,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00177232,
+    "upstream_inference_prompt_cost": 0.0009196,
+    "upstream_inference_completions_cost": 0.00085272
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2176,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 168.7
+}

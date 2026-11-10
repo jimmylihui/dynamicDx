@@ -1,0 +1,169 @@
+{
+ "questions": [
+  "Have you been losing weight recently without trying?",
+  "Does your heart race or pound unexpectedly?",
+  "Do you feel excessively warm or sweat more than usual?",
+  "Have you noticed a swelling or lump in the front of your neck?",
+  "Have you experienced double or blurred vision?",
+  "Do you notice a tremor in your hands?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Anti-acetylcholine receptor antibody test",
+  "Ice pack test",
+  "Anti-MuSK antibody test",
+  "Single fiber electromyography",
+  "Thyroid function tests",
+  "CT or MRI of the orbits and brain",
+  "Edrophonium test"
+ ],
+ "served": [
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "ice-pack test",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-MuSK antibodies",
+  "single-fibre EMG",
+  "thyroid function (TSH, free T4)",
+  "TSH / free T4 / TRAb",
+  "CT head",
+  "MRI orbits",
+  "MRI brain with contrast"
+ ],
+ "results": [
+  "1. Anti-acetylcholine receptor antibody test",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "2. Ice pack test",
+  "     ice-pack test: negative",
+  "3. Anti-MuSK antibody test",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "     anti-MuSK antibodies: negative",
+  "4. Single fiber electromyography",
+  "     single-fibre EMG: normal jitter",
+  "5. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH / free T4 / TRAb: normal, TRAb negative",
+  "6. CT or MRI of the orbits and brain",
+  "     CT head: normal",
+  "     MRI orbits: atrophy of the extraocular muscles, particularly the medial rectus - a long-standing, not acute, palsy",
+  "     MRI brain with contrast: no lesion, no cranial nerve enhancement",
+  "7. Edrophonium test",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Chronic Progressive External Ophthalmoplegia (CPEO) due to mitochondrial myopathy\nMyasthenia Gravis (seronegative)\nOculopharyngeal Muscular Dystrophy (OPMD)\nCongenital Ocular Motor Fibrosis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Anti-acetylcholine receptor antibody test\n2. Ice pack test\n3. Anti-MuSK antibody test\n4. Single fiber electromyography\n5. Thyroid function tests\n6. CT or MRI of the orbits and brain\n7. Edrophonium test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Chronic Progressive External Ophthalmoplegia (CPEO) due to mitochondrial myopathy",
+ "decisive_served": [
+  "MRI orbits"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 2519,
+   "total_tokens": 7574,
+   "cost": 0.0013866776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013866776,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00070532
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2445,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5376,
+   "completion_tokens": 678,
+   "total_tokens": 6054,
+   "cost": 0.0002575776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002575776,
+    "upstream_inference_prompt_cost": 6.77376e-05,
+    "upstream_inference_completions_cost": 0.00018984
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 618,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5745,
+   "completion_tokens": 12138,
+   "total_tokens": 17883,
+   "cost": 0.0034214488,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5696,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0034214488,
+    "upstream_inference_prompt_cost": 2.28088e-05,
+    "upstream_inference_completions_cost": 0.00339864
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 12077,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_iiipalsy_aneurysm_PMC12606889.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 497.5
+}

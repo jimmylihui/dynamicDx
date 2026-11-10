@@ -1,0 +1,137 @@
+{
+ "questions": [
+  "Do you have trouble controlling your bladder?",
+  "Have you noticed any memory loss or confusion?",
+  "Do you have a tremor in your hands or legs?",
+  "Do you feel like your feet are stuck to the floor when you try to walk?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside neurological examination for rigidity and bradykinesia",
+  "Brain MRI",
+  "Levodopa trial"
+ ],
+ "served": [
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "finger-tapping for bradykinesia and decrement",
+  "MRI brain"
+ ],
+ "results": [
+  "1. Bedside neurological examination for rigidity and bradykinesia",
+  "     muscle tone (spasticity, rigidity, paratonia): normal tone on passive movement despite the scissoring gait",
+  "     finger-tapping for bradykinesia and decrement: no decrement",
+  "2. Brain MRI",
+  "     MRI brain: normal, no periventricular lesions",
+  "3. Levodopa trial",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional gait disorder\nHereditary spastic paraplegia\nPrimary lateral sclerosis\nSpastic diplegia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside neurological examination for rigidity and bradykinesia\n2. Brain MRI\n3. Levodopa trial",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional gait disorder",
+ "decisive_served": [
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8762,
+   "completion_tokens": 3120,
+   "total_tokens": 11882,
+   "cost": 0.001937,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001937,
+    "upstream_inference_prompt_cost": 0.0008762,
+    "upstream_inference_completions_cost": 0.0010608
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2822,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9038,
+   "completion_tokens": 961,
+   "total_tokens": 9999,
+   "cost": 0.00123054,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00123054,
+    "upstream_inference_prompt_cost": 0.0009038,
+    "upstream_inference_completions_cost": 0.00032674
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 891,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9246,
+   "completion_tokens": 1876,
+   "total_tokens": 11122,
+   "cost": 0.00156244,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00156244,
+    "upstream_inference_prompt_cost": 0.0009246,
+    "upstream_inference_completions_cost": 0.00063784
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1840,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.7,
+ "video": "functional_gait_scissoring_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 263.0
+}

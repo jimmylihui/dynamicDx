@@ -1,0 +1,147 @@
+{
+ "questions": [
+  "Are you experiencing a life-threatening emergency?",
+  "Is the onset of your symptoms acute?",
+  "Do you have pain?",
+  "Is the primary symptom localized to one area of the body?",
+  "Is the primary symptom located above the neck?",
+  "Is the primary symptom located in the chest?",
+  "Is the primary symptom located in the abdomen?",
+  "Is the primary symptom located in the pelvis?",
+  "Is the primary symptom located in the extremities?",
+  "Is the primary symptom systemic?",
+  "Is the primary symptom neurological?",
+  "Is the primary symptom psychiatric?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Montreal Cognitive Assessment (MoCA)",
+  "MRI Brain",
+  "Serum B12"
+ ],
+ "served": [
+  "mental status / cognitive screen",
+  "brain MRI",
+  "vitamin B12 with methylmalonic acid"
+ ],
+ "results": [
+  "1. Montreal Cognitive Assessment (MoCA)",
+  "     mental status / cognitive screen: normal",
+  "2. MRI Brain",
+  "     brain MRI: no focal epileptogenic lesion",
+  "3. Serum B12",
+  "     vitamin B12 with methylmalonic acid: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic Generalized Epilepsy\n\nNarcolepsy\nVasovagal Syncope\nMultiple Sclerosis",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Montreal Cognitive Assessment (MoCA)\n2. MRI Brain\n3. Serum B12\n4. TSH",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic Generalized Epilepsy",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 155,
+   "completion_tokens": 4470,
+   "total_tokens": 4625,
+   "cost": 0.0015353,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0015353,
+    "upstream_inference_prompt_cost": 1.55e-05,
+    "upstream_inference_completions_cost": 0.0015198
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4377,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 621,
+   "completion_tokens": 7522,
+   "total_tokens": 8143,
+   "cost": 0.00261958,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 160,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00261958,
+    "upstream_inference_prompt_cost": 6.21e-05,
+    "upstream_inference_completions_cost": 0.00255748
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6760,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 798,
+   "completion_tokens": 7117,
+   "total_tokens": 7915,
+   "cost": 0.00249958,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 608,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00249958,
+    "upstream_inference_prompt_cost": 7.98e-05,
+    "upstream_inference_completions_cost": 0.00241978
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6449,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 825.5
+}

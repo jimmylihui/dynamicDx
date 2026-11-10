@@ -1,0 +1,120 @@
+{
+ "questions": [
+  "Is your main complaint today difficulty with your balance or walking?",
+  "Have you noticed any weakness on one side of your body?",
+  "Do you have any numbness or tingling in your arms or legs?",
+  "Do you have any tremor or shaking in your hands?",
+  "Do you experience dizziness or vertigo?",
+  "Did these symptoms start suddenly?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you have any difficulty with your speech or swallowing?",
+  "Do you have any vision changes, such as double vision or loss of vision?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "observation of the jerks",
+  "anti-measles antibody titres (serum)",
+  "EEG",
+  "lumbar puncture / CSF",
+  "measles vaccination and infection history"
+ ],
+ "results": [
+  "1. observation of the jerks: periodic myoclonus with a SLOW relaxation phase involving bilateral shoulder abductors and hip flexors",
+  "2. anti-measles antibody titres (serum): raised, with CSF-restricted synthesis",
+  "3. EEG: periodic slow wave complexes TIME-LOCKED to the myoclonic jerks",
+  "4. lumbar puncture / CSF: intrathecal synthesis of anti-measles IgG",
+  "5. measles vaccination and infection history: measles in infancy; SSPE typically follows 4-12 years later, but onset here was in adulthood"
+ ],
+ "dx_raw": "DIAGNOSIS: Subacute sclerosing panencephalitis (SSPE) caused by persistent, mutated measles virus infection of the brain.\nCreutzfeldt-Jakob disease (CJD)\nAutoimmune encephalitis (e.g., anti-NMDA receptor or LGI1)\nChronic viral encephalitis (e.g., HIV or rubella)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Subacute sclerosing panencephalitis (SSPE) caused by persistent, mutated measles virus infection of the brain.",
+ "decisive_served": [
+  "observation of the jerks",
+  "anti-measles antibody titres (serum)",
+  "EEG",
+  "lumbar puncture / CSF",
+  "measles vaccination and infection history"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 3190,
+   "total_tokens": 10252,
+   "cost": 0.00590892,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00590892,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.003828
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3064,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7578,
+   "completion_tokens": 1039,
+   "total_tokens": 8617,
+   "cost": 0.00182892,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00182892,
+    "upstream_inference_prompt_cost": 0.00058212,
+    "upstream_inference_completions_cost": 0.0012468
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 968,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "severe_sspe_PMC13071100.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 64.1
+}

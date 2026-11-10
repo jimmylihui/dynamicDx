@@ -1,0 +1,160 @@
+{
+ "questions": [
+  "Do you feel weak?",
+  "Are you having trouble balancing?",
+  "Did these symptoms start suddenly?",
+  "Do you have numbness or tingling in your limbs?",
+  "Do you have pain?",
+  "Do you have a fever?",
+  "Have you had a recent fall or head injury?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of hypertension?",
+  "Do you have a history of stroke?",
+  "Are you experiencing any vision changes?",
+  "Do you have difficulty speaking?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Romberg test",
+  "Finger-to-nose test",
+  "Heel-to-shin test",
+  "MRI Brain",
+  "Vitamin B12 level"
+ ],
+ "served": [
+  "Romberg test",
+  "finger-nose / heel-shin testing",
+  "finger-nose / heel-shin testing",
+  "brain MRI",
+  "vitamin B12 / folate"
+ ],
+ "results": [
+  "1. Romberg test",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "2. Finger-to-nose test",
+  "     finger-nose / heel-shin testing: dysmetria",
+  "3. Heel-to-shin test",
+  "     finger-nose / heel-shin testing: dysmetria",
+  "4. MRI Brain",
+  "     brain MRI: no structural lesion accounting for the syndrome",
+  "5. Vitamin B12 level",
+  "     vitamin B12 / folate: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Gluten ataxia caused by gluten sensitivity\n\nWilson's disease\nAutoimmune cerebellar ataxia\nSpinocerebellar ataxia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Romberg test\n2. Finger-to-nose test\n3. Heel-to-shin test\n4. MRI Brain\n5. Vitamin B12 level",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Gluten ataxia caused by gluten sensitivity",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 2333,
+   "total_tokens": 2753,
+   "cost": 0.00083522,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00083522,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00079322
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2128,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 862,
+   "completion_tokens": 938,
+   "total_tokens": 1800,
+   "cost": 0.00040512,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00040512,
+    "upstream_inference_prompt_cost": 8.62e-05,
+    "upstream_inference_completions_cost": 0.00031892
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 861,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1098,
+   "completion_tokens": 2876,
+   "total_tokens": 3974,
+   "cost": 0.00108764,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00108764,
+    "upstream_inference_prompt_cost": 0.0001098,
+    "upstream_inference_completions_cost": 0.00097784
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2824,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "severe_paraneoplastic_PMC12741441.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 4550.4
+}

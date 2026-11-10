@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Do you feel numbness or tingling in your feet?",
+  "Has anyone noticed your speech becoming slurred?",
+  "Do you feel like the room is spinning?",
+  "Do you drink alcohol regularly?",
+  "Do you have diabetes?",
+  "Do your hands shake when you reach for objects?",
+  "Have you had a recent head injury?",
+  "Do you have double vision?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Romberg test",
+  "MRI Brain and Spinal Cord",
+  "Serum Vitamin B12 level",
+  "Nerve Conduction Studies"
+ ],
+ "served": [
+  "Romberg test",
+  "brain MRI",
+  "MRI cervical and thoracic spine",
+  "vitamin B12 / folate",
+  "nerve conduction studies"
+ ],
+ "results": [
+  "1. Romberg test",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "2. MRI Brain and Spinal Cord",
+  "     brain MRI: no structural lesion accounting for the syndrome",
+  "     MRI cervical and thoracic spine: normal",
+  "3. Serum Vitamin B12 level",
+  "     vitamin B12 / folate: normal",
+  "4. Nerve Conduction Studies",
+  "     nerve conduction studies: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Gluten ataxia caused by an immune-mediated response to gluten\n\nParaneoplastic cerebellar degeneration\nSpinocerebellar ataxia\nAutoimmune cerebellar ataxia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Romberg test\n2. MRI Brain and Spinal Cord\n3. Serum Vitamin B12 level\n4. Nerve Conduction Studies",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Gluten ataxia caused by an immune-mediated response to gluten",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 229,
+   "completion_tokens": 1247,
+   "total_tokens": 1476,
+   "cost": 0.00044688,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00044688,
+    "upstream_inference_prompt_cost": 2.29e-05,
+    "upstream_inference_completions_cost": 0.00042398
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1056,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 601,
+   "completion_tokens": 1394,
+   "total_tokens": 1995,
+   "cost": 0.00053406,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00053406,
+    "upstream_inference_prompt_cost": 6.01e-05,
+    "upstream_inference_completions_cost": 0.00047396
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1380,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 812,
+   "completion_tokens": 4487,
+   "total_tokens": 5299,
+   "cost": 0.00160678,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00160678,
+    "upstream_inference_prompt_cost": 8.12e-05,
+    "upstream_inference_completions_cost": 0.00152558
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4448,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_paraneoplastic_PMC12741441.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 214.1
+}

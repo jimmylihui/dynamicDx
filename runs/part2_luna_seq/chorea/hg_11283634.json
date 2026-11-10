@@ -1,0 +1,200 @@
+{
+ "questions": [
+  "Are the movements involuntary?",
+  "Do you remain fully conscious and aware during the movements?",
+  "Are the movements repetitive and rhythmic?",
+  "Do the movements mainly involve the abdomen or diaphragm?",
+  "Do you have difficulty breathing during the episodes?",
+  "Did these movements begin after starting or increasing metoclopramide, domperidone, prochlorperazine, or another anti-nausea medication?",
+  "Did they begin after starting an antipsychotic medication?",
+  "Can you temporarily suppress the movements when asked?",
+  "Do the movements stop completely when you are asleep?",
+  "Do you have abdominal pain?",
+  "Are you confused or disoriented when you are not moving?",
+  "Have you had a recent fever or infection?",
+  "Did these movements begin suddenly, over minutes to hours?",
+  "Did they begin after a head injury or stroke?",
+  "Do you have weakness or loss of sensation on one side of your body?",
+  "Do the movements include grimacing, tongue movements, lip smacking, or chewing motions?",
+  "Have you had urinary incontinence or bitten your tongue during an episode?",
+  "Have you recently used cocaine, amphetamines, levodopa, lithium, or other recreational or neurologic drugs?",
+  "Do you have diabetes or unusually high blood glucose?",
+  "Have you had similar episodes previously?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "yes",
+  "20": "yes"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Bedside capillary blood glucose and serum beta-hydroxybutyrate",
+  "Serum electrolytes, measured serum osmolality, renal function, and HbA1c",
+  "Noncontrast CT head focused on the basal ganglia",
+  "MRI brain with diffusion-weighted and T1/T2/FLAIR sequences focused on the basal ganglia",
+  "Therapeutic trial of controlled correction of hyperglycaemia with subcutaneous insulin, targeting blood glucose 1.0–1.4 g/L, with serial neurological examinations over 24–48 hours to assess whether the involuntary movements resolve."
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "ketones (blood or urine)",
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "sodium and serum osmolality",
+  "renal function and eGFR",
+  "HbA1c",
+  "CT head (non-contrast)",
+  "MRI diffusion-weighted sequences"
+ ],
+ "results": [
+  "R1 ASK Are the movements involuntary?; Do you remain fully conscious and aware during the movements?; Are the movements repetitive and rhythmic?; Do the movements mainly involve the abdomen or diaphragm?; Do you have difficulty breathing during the episodes?; Did these movements begin after starting or increasing metoclopramide, domperidone, prochlorperazine, or another anti-nausea medication?; Did they begin after starting an antipsychotic medication?; Can you temporarily suppress the movements when asked?; Do the movements stop completely when you are asleep?; Do you have abdominal pain? -> ['yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Are you confused or disoriented when you are not moving?; Have you had a recent fever or infection?; Did these movements begin suddenly, over minutes to hours?; Did they begin after a head injury or stroke?; Do you have weakness or loss of sensation on one side of your body?; Do the movements include grimacing, tongue movements, lip smacking, or chewing motions?; Have you had urinary incontinence or bitten your tongue during an episode?; Have you recently used cocaine, amphetamines, levodopa, lithium, or other recreational or neurologic drugs?; Do you have diabetes or unusually high blood glucose?; Have you had similar episodes previously? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'yes', 'yes']",
+  "R3 ORDER Bedside capillary blood glucose and serum beta-hydroxybutyrate; Serum electrolytes, measured serum osmolality, renal function, and HbA1c; Noncontrast CT head focused on the basal ganglia; MRI brain with diffusion-weighted and T1/T2/FLAIR sequences focused on the basal ganglia -> [['blood glucose and HbA1c', 'ketones (blood or urine)', 'blood glucose'], ['serum electrolytes, urea and creatinine', 'blood glucose and HbA1c', 'sodium and serum osmolality', 'renal function and eGFR', 'HbA1c'], ['CT head (non-contrast)'], ['MRI diffusion-weighted sequences']]",
+  "R4 ORDER Therapeutic trial of controlled correction of hyperglycaemia with subcutaneous insulin, targeting blood glucose 1.0–1.4 g/L, with serial neurological examinations over 24–48 hours to assess whether the involuntary movements resolve. -> [[]]",
+  "R5 DIAGNOSIS Nonketotic hyperglycemia–associated diabetic striatopathy (hyperglycemic chorea/hemiballismus), likely precipitated by poorly controlled diabetes; normal CT/MRI does not exclude this diagnosis. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are the movements involuntary?",
+    "Do you remain fully conscious and aware during the movements?",
+    "Are the movements repetitive and rhythmic?",
+    "Do the movements mainly involve the abdomen or diaphragm?",
+    "Do you have difficulty breathing during the episodes?",
+    "Did these movements begin after starting or increasing metoclopramide, domperidone, prochlorperazine, or another anti-nausea medication?",
+    "Did they begin after starting an antipsychotic medication?",
+    "Can you temporarily suppress the movements when asked?",
+    "Do the movements stop completely when you are asleep?",
+    "Do you have abdominal pain?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Are you confused or disoriented when you are not moving?",
+    "Have you had a recent fever or infection?",
+    "Did these movements begin suddenly, over minutes to hours?",
+    "Did they begin after a head injury or stroke?",
+    "Do you have weakness or loss of sensation on one side of your body?",
+    "Do the movements include grimacing, tongue movements, lip smacking, or chewing motions?",
+    "Have you had urinary incontinence or bitten your tongue during an episode?",
+    "Have you recently used cocaine, amphetamines, levodopa, lithium, or other recreational or neurologic drugs?",
+    "Do you have diabetes or unusually high blood glucose?",
+    "Have you had similar episodes previously?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "yes"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Bedside capillary blood glucose and serum beta-hydroxybutyrate",
+    "Serum electrolytes, measured serum osmolality, renal function, and HbA1c",
+    "Noncontrast CT head focused on the basal ganglia",
+    "MRI brain with diffusion-weighted and T1/T2/FLAIR sequences focused on the basal ganglia"
+   ],
+   "result": [
+    [
+     "blood glucose and HbA1c",
+     "ketones (blood or urine)",
+     "blood glucose"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "blood glucose and HbA1c",
+     "sodium and serum osmolality",
+     "renal function and eGFR",
+     "HbA1c"
+    ],
+    [
+     "CT head (non-contrast)"
+    ],
+    [
+     "MRI diffusion-weighted sequences"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Therapeutic trial of controlled correction of hyperglycaemia with subcutaneous insulin, targeting blood glucose 1.0–1.4 g/L, with serial neurological examinations over 24–48 hours to assess whether the involuntary movements resolve."
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Nonketotic hyperglycemia–associated diabetic striatopathy (hyperglycemic chorea/hemiballismus), likely precipitated by poorly controlled diabetes; normal CT/MRI does not exclude this diagnosis."
+  }
+ ],
+ "dx": "Nonketotic hyperglycemia–associated diabetic striatopathy (hyperglycemic chorea/hemiballismus), likely precipitated by poorly controlled diabetes; normal CT/MRI does not exclude this diagnosis.",
+ "dx_raw": "DIAGNOSIS: Nonketotic hyperglycemia–associated diabetic striatopathy (hyperglycemic chorea/hemiballismus), likely precipitated by poorly controlled diabetes; normal CT/MRI does not exclude this diagnosis.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "HbA1c",
+  "blood glucose",
+  "ketones (blood or urine)"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0095,
+ "n_frames": 32,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 47.3
+}

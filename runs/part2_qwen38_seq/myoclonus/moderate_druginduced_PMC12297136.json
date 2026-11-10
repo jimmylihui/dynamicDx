@@ -1,0 +1,108 @@
+{
+ "questions": [
+  "Is your abdomen swollen?",
+  "Do you have a history of liver disease or heavy alcohol use?",
+  "Do you have a history of heart failure?",
+  "Do you have a history of abdominal surgery?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Abdominal ultrasound",
+  "Abdominal examination"
+ ],
+ "served": [],
+ "results": [
+  "R1 ASK Is your abdomen swollen?; Do you have a history of liver disease or heavy alcohol use? -> ['no', 'no']",
+  "R2 ORDER Abdominal ultrasound -> [[]]",
+  "R3 ASK Do you have a history of heart failure? -> ['yes']",
+  "R4 ORDER Abdominal examination -> [[]]",
+  "R5 ASK Do you have a history of abdominal surgery? -> ['no']",
+  "R6 DIAGNOSIS Abdominal obesity -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is your abdomen swollen?",
+    "Do you have a history of liver disease or heavy alcohol use?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Abdominal ultrasound"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of heart failure?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Abdominal examination"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of abdominal surgery?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Abdominal obesity"
+  }
+ ],
+ "dx": "Abdominal obesity",
+ "dx_raw": "DIAGNOSIS: Abdominal obesity",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "cost_usd": 0.0025,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 34.7
+}

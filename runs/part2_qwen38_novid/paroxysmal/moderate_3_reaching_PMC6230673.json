@@ -1,0 +1,128 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a fever?",
+  "Have you experienced any recent trauma or injury?",
+  "Do you have difficulty breathing?",
+  "Have you had any chest pain?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Physical examination of the site of trauma",
+  "X-ray of the injured area"
+ ],
+ "served": [],
+ "results": [
+  "1. Physical examination of the site of trauma",
+  "     not performed / not available",
+  "2. X-ray of the injured area",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Soft tissue injury secondary to trauma\nAlternative 1: Fracture secondary to trauma\nAlternative 2: Contusion secondary to trauma",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Physical examination of the site of trauma\n2. X-ray of the injured area",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Soft tissue injury secondary to trauma",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 49,
+   "total_tokens": 215,
+   "cost": 4.793e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 4.793e-05,
+    "upstream_inference_prompt_cost": 2.49e-05,
+    "upstream_inference_completions_cost": 2.303e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 439,
+   "completion_tokens": 18,
+   "total_tokens": 457,
+   "cost": 7.431e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.431e-05,
+    "upstream_inference_prompt_cost": 6.585e-05,
+    "upstream_inference_completions_cost": 8.46e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 592,
+   "completion_tokens": 33,
+   "total_tokens": 625,
+   "cost": 7.0006e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.0006e-05,
+    "upstream_inference_prompt_cost": 5.4496e-05,
+    "upstream_inference_completions_cost": 1.551e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 55.7
+}

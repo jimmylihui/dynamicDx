@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Is the difficulty you are having with walking due to a problem with your right leg?",
+  "Did the problem with your right leg begin suddenly?",
+  "Have you ever been diagnosed with a stroke?",
+  "Do you experience weakness in your right leg?",
+  "Do you experience stiffness or tightness in your right leg?",
+  "Do you have pain in your right leg?",
+  "Do you have numbness or tingling in your right leg?",
+  "Do you have any weakness or stiffness in your right arm or hand?",
+  "Do you have any trouble controlling your bladder or bowels?",
+  "Have you ever had a significant head or spinal cord injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI of the brain with diffusion-weighted imaging"
+ ],
+ "served": [
+  "MRI brain",
+  "MRI diffusion-weighted sequences"
+ ],
+ "results": [
+  "1. MRI of the brain with diffusion-weighted imaging",
+  "     MRI brain: normal, no periventricular lesions",
+  "     MRI diffusion-weighted sequences: normal"
+ ],
+ "dx_raw": "1. MRI of the cervical and thoracic spinal cord with contrast",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with diffusion-weighted imaging",
+ "rationale": [
+  null
+ ],
+ "dx": "1. MRI of the cervical and thoracic spinal cord with contrast",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8886,
+   "completion_tokens": 2285,
+   "total_tokens": 11171,
+   "cost": 0.00537012,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00537012,
+    "upstream_inference_prompt_cost": 0.00262812,
+    "upstream_inference_completions_cost": 0.002742
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2152,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9347,
+   "completion_tokens": 3712,
+   "total_tokens": 13059,
+   "cost": 0.00512946,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8871,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00512946,
+    "upstream_inference_prompt_cost": 0.00067506,
+    "upstream_inference_completions_cost": 0.0044544
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3702,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9483,
+   "completion_tokens": 2541,
+   "total_tokens": 12024,
+   "cost": 0.00365442,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9332,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00365442,
+    "upstream_inference_prompt_cost": 0.00060522,
+    "upstream_inference_completions_cost": 0.0030492
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2529,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.7,
+ "video": "functional_gait_scissoring_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 89.0
+}

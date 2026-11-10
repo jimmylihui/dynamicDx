@@ -1,0 +1,177 @@
+{
+ "questions": [
+  "Do you have any pain?",
+  "Do you have a fever?",
+  "Do you feel short of breath?",
+  "Do you feel dizzy?",
+  "Have you had any unexpected weight loss?",
+  "Do you have a cough?",
+  "Do you have any numbness or tingling?",
+  "Do you have difficulty walking?",
+  "Do you have a history of chronic illness?",
+  "Are you here for a routine check-up?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Neurological examination",
+  "Brain MRI",
+  "Serum B12 level",
+  "Thyroid function test"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "tandem gait",
+  "Romberg test, repeated with distraction",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)",
+  "MRC power in all four limbs",
+  "cognitive screen",
+  "MRI brain",
+  "vitamin B12 with methylmalonic acid",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. Neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     deep tendon reflexes and plantar responses: normal, flexor plantars",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: incongruent falling without protective reaction",
+  "     fundoscopy: normal",
+  "     tandem gait: normal",
+  "     Romberg test, repeated with distraction: negative",
+  "     muscle tone (spasticity, rigidity, paratonia): normal",
+  "     cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus): normal",
+  "     MRC power in all four limbs: 5/5 throughout - a slow controlled descent of this kind requires intact quadriceps strength",
+  "     cognitive screen: normal",
+  "2. Brain MRI",
+  "     MRI brain: normal",
+  "3. Serum B12 level",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "4. Thyroid function test",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional Gait Disorder\nProgressive Supranuclear Palsy\nNormal Pressure Hydrocephalus\nMultiple System Atrophy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Neurological examination\n2. Brain MRI\n3. Serum B12 level\n4. Thyroid function test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional Gait Disorder",
+ "decisive_served": [
+  "MRC power in all four limbs"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 422,
+   "completion_tokens": 4425,
+   "total_tokens": 4847,
+   "cost": 0.0015467,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0015467,
+    "upstream_inference_prompt_cost": 4.22e-05,
+    "upstream_inference_completions_cost": 0.0015045
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3915,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 812,
+   "completion_tokens": 673,
+   "total_tokens": 1485,
+   "cost": 0.00031002,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00031002,
+    "upstream_inference_prompt_cost": 8.12e-05,
+    "upstream_inference_completions_cost": 0.00022882
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 661,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1158,
+   "completion_tokens": 1733,
+   "total_tokens": 2891,
+   "cost": 0.00070502,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00070502,
+    "upstream_inference_prompt_cost": 0.0001158,
+    "upstream_inference_completions_cost": 0.00058922
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1734,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 283.8
+}

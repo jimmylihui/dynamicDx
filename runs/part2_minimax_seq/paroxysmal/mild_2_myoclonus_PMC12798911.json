@@ -1,0 +1,257 @@
+{
+ "questions": [
+  "Did you have surgery recently?",
+  "If yes, was it heart surgery (through the breastbone)?",
+  "Do you have chest pain right now?",
+  "Are you having shortness of breath?",
+  "Have you noticed any fever, redness, or discharge from your wound?",
+  "When was your heart surgery performed (how many days ago)?",
+  "Have you noticed any clicking, popping, or movement of your breastbone?",
+  "Do you feel your heart beating fast or irregularly?",
+  "Have you had any recent fevers or chills?",
+  "Are you able to take a deep breath comfortably?",
+  "Are you currently taking any medications (like blood thinners or antibiotics)?",
+  "Did the hospital staff or anyone explain what was done during your surgery?",
+  "Are you currently admitted to the hospital?",
+  "Have you been eating and drinking normally since the surgery?",
+  "Do you have any pain anywhere in your body?",
+  "Does the chest pain radiate to your left arm, neck, or jaw?",
+  "Is the chest pain worse when you lie flat?",
+  "Does the pain improve when you lean forward?",
+  "Have you noticed any swelling or fluid collection under the wound?",
+  "Do you have any difficulty swallowing?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Chest X-ray (PA and lateral)",
+  "Complete blood count (CBC)",
+  "Serum electrolytes and renal function tests",
+  "Chest X-ray (PA and lateral)",
+  "Wound swab for culture and sensitivity",
+  "Two-week follow-up clinical assessment",
+  "Echocardiogram (transthoracic)",
+  "Wound inspection and palpation for sternal instability",
+  "Physical examination of the chest wound (inspection, palpation for tenderness, warmth, swelling, and sternal stability)",
+  "Direct visual inspection of the surgical wound",
+  "ECG (electrocardiogram)",
+  "Echocardiogram",
+  "Blood cultures"
+ ],
+ "served": [
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine"
+ ],
+ "results": [
+  "R1 ASK Did you have surgery recently?; If yes, was it heart surgery (through the breastbone)?; Do you have chest pain right now?; Are you having shortness of breath?; Have you noticed any fever, redness, or discharge from your wound? -> ['yes', 'yes', 'no', 'no', 'no']",
+  "R2 ASK When was your heart surgery performed (how many days ago)?; Have you noticed any clicking, popping, or movement of your breastbone?; Do you feel your heart beating fast or irregularly?; Have you had any recent fevers or chills?; Are you able to take a deep breath comfortably? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Are you currently taking any medications (like blood thinners or antibiotics)?; Did the hospital staff or anyone explain what was done during your surgery?; Are you currently admitted to the hospital?; Have you been eating and drinking normally since the surgery?; Do you have any pain anywhere in your body? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Chest X-ray (PA and lateral); Complete blood count (CBC); Serum electrolytes and renal function tests -> [[], ['full blood count and biochemistry'], ['serum electrolytes, urea and creatinine']]",
+  "R5 ORDER Chest X-ray (PA and lateral); Wound swab for culture and sensitivity -> [[], []]",
+  "R6 ORDER Two-week follow-up clinical assessment -> [[]]",
+  "R7 ORDER Echocardiogram (transthoracic); Wound inspection and palpation for sternal instability -> [[], []]",
+  "R8 ORDER Physical examination of the chest wound (inspection, palpation for tenderness, warmth, swelling, and sternal stability) -> [[]]",
+  "R9 ORDER Direct visual inspection of the surgical wound; ECG (electrocardiogram); Echocardiogram; Blood cultures -> [[], [], [], []]",
+  "R10 ASK Does the chest pain radiate to your left arm, neck, or jaw?; Is the chest pain worse when you lie flat?; Does the pain improve when you lean forward?; Have you noticed any swelling or fluid collection under the wound?; Do you have any difficulty swallowing? -> ['no', 'no', 'no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Uncomplicated healing median sternotomy wound status post cardiac surgery -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did you have surgery recently?",
+    "If yes, was it heart surgery (through the breastbone)?",
+    "Do you have chest pain right now?",
+    "Are you having shortness of breath?",
+    "Have you noticed any fever, redness, or discharge from your wound?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "When was your heart surgery performed (how many days ago)?",
+    "Have you noticed any clicking, popping, or movement of your breastbone?",
+    "Do you feel your heart beating fast or irregularly?",
+    "Have you had any recent fevers or chills?",
+    "Are you able to take a deep breath comfortably?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking any medications (like blood thinners or antibiotics)?",
+    "Did the hospital staff or anyone explain what was done during your surgery?",
+    "Are you currently admitted to the hospital?",
+    "Have you been eating and drinking normally since the surgery?",
+    "Do you have any pain anywhere in your body?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Chest X-ray (PA and lateral)",
+    "Complete blood count (CBC)",
+    "Serum electrolytes and renal function tests"
+   ],
+   "result": [
+    [],
+    [
+     "full blood count and biochemistry"
+    ],
+    [
+     "serum electrolytes, urea and creatinine"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Chest X-ray (PA and lateral)",
+    "Wound swab for culture and sensitivity"
+   ],
+   "result": [
+    [],
+    []
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Two-week follow-up clinical assessment"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Echocardiogram (transthoracic)",
+    "Wound inspection and palpation for sternal instability"
+   ],
+   "result": [
+    [],
+    []
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Physical examination of the chest wound (inspection, palpation for tenderness, warmth, swelling, and sternal stability)"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Direct visual inspection of the surgical wound",
+    "ECG (electrocardiogram)",
+    "Echocardiogram",
+    "Blood cultures"
+   ],
+   "result": [
+    [],
+    [],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Does the chest pain radiate to your left arm, neck, or jaw?",
+    "Is the chest pain worse when you lie flat?",
+    "Does the pain improve when you lean forward?",
+    "Have you noticed any swelling or fluid collection under the wound?",
+    "Do you have any difficulty swallowing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Uncomplicated healing median sternotomy wound status post cardiac surgery"
+  }
+ ],
+ "dx": "Uncomplicated healing median sternotomy wound status post cardiac surgery",
+ "dx_raw": "DIAGNOSIS: Uncomplicated healing median sternotomy wound status post cardiac surgery",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0137,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 79.2
+}

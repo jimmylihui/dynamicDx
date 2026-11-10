@@ -1,0 +1,161 @@
+{
+ "questions": [
+  "Are you experiencing a new or worsening health problem?",
+  "Do you currently have severe difficulty breathing?",
+  "Do you currently have chest pressure, tightness, or pain?",
+  "Have you fainted or nearly fainted recently?",
+  "Have you developed sudden weakness, numbness, facial drooping, or difficulty speaking?",
+  "Have you had a sudden, severe, or unusual headache?",
+  "Are you bleeding heavily or unable to stop bleeding?",
+  "Do you have severe or rapidly worsening pain?",
+  "Is pain your main symptom?",
+  "Is the pain in your chest?",
+  "Is the pain in your abdomen or pelvis?",
+  "Is the pain in your head or face?",
+  "Is the pain in your back or neck?",
+  "Is the pain in an arm or leg?",
+  "Do you have a fever or chills?",
+  "Have you had vomiting or diarrhea?",
+  "Have you noticed blood in your vomit, stool, or urine?",
+  "Are you having difficulty urinating or passing stool?",
+  "Are you short of breath, wheezing, or coughing?",
+  "Have you noticed a new lump, swelling, rash, or skin change?",
+  "Have you had unexplained weight loss, marked fatigue, or night sweats?",
+  "Have you experienced confusion, a seizure, or a significant change in alertness?",
+  "Could you be pregnant?",
+  "Did this problem begin after an injury, procedure, new medication, or possible exposure?",
+  "Do you have a diagnosed medical condition or take regular medication that may be related to this problem?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "No investigation indicated."
+ ],
+ "served": [],
+ "results": [
+  "1. No investigation indicated.",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: No current symptomatic illness identified\n\nInsufficient clinical information to establish a disease diagnosis\n\nUndetected asymptomatic medical condition\n\nInaccurate or incomplete history despite the reported answers",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. No investigation indicated.",
+ "rationale": [
+  null
+ ],
+ "dx": "No current symptomatic illness identified",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 144,
+   "completion_tokens": 849,
+   "total_tokens": 993,
+   "cost": 0.0005238,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005238,
+    "upstream_inference_prompt_cost": 1.44e-05,
+    "upstream_inference_completions_cost": 0.0005094
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1068,
+   "completion_tokens": 117,
+   "total_tokens": 1185,
+   "cost": 0.000203625,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1065,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000203625,
+    "upstream_inference_prompt_cost": 0.000133425,
+    "upstream_inference_completions_cost": 7.02e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 105,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1181,
+   "completion_tokens": 156,
+   "total_tokens": 1337,
+   "cost": 0.000118675,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1065,
+    "cache_write_tokens": 113,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000118675,
+    "upstream_inference_prompt_cost": 2.5075e-05,
+    "upstream_inference_completions_cost": 9.36e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 112,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 17.0
+}

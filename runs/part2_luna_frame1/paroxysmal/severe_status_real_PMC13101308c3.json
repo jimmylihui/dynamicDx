@@ -1,0 +1,215 @@
+{
+ "questions": [
+  "Are you having trouble breathing right now?",
+  "Are you having chest pain or pressure right now?",
+  "Are you feeling faint, confused, or unusually sleepy?",
+  "Are you having severe pain right now?",
+  "Is your worst pain in your head or neck?",
+  "Did you recently fall or otherwise injure yourself?",
+  "Did you hit your head?",
+  "Did you lose consciousness at any point?",
+  "Have you vomited since the event or procedure?",
+  "Do you have new weakness, numbness, or difficulty speaking?",
+  "Do you have severe or worsening headache?",
+  "Are you bleeding anywhere now?",
+  "Have you recently had surgery or another medical procedure?",
+  "Do you have a fever or chills?",
+  "Do you take blood thinners?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside assessment of airway, breathing, circulation, mental status, and complete neurologic examination",
+  "Finger-stick capillary blood glucose",
+  "Supine and standing blood pressure and heart rate measurements",
+  "12-lead electrocardiogram",
+  "Continuous cardiac rhythm monitoring",
+  "Complete blood count",
+  "Serum electrolytes, urea nitrogen, creatinine, calcium, and magnesium",
+  "Serum pregnancy test",
+  "High-sensitivity troponin",
+  "Transthoracic echocardiogram",
+  "Electroencephalogram",
+  "Noncontrast CT scan of the head"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "blood glucose and HbA1c",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "interictal EEG",
+  "CT head"
+ ],
+ "results": [
+  "1. Bedside assessment of airway, breathing, circulation, mental status, and complete neurologic examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "2. Finger-stick capillary blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "3. Supine and standing blood pressure and heart rate measurements",
+  "     not performed / not available",
+  "4. 12-lead electrocardiogram",
+  "     not performed / not available",
+  "5. Continuous cardiac rhythm monitoring",
+  "     not performed / not available",
+  "6. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "7. Serum electrolytes, urea nitrogen, creatinine, calcium, and magnesium",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "8. Serum pregnancy test",
+  "     not performed / not available",
+  "9. High-sensitivity troponin",
+  "     not performed / not available",
+  "10. Transthoracic echocardiogram",
+  "     not performed / not available",
+  "11. Electroencephalogram",
+  "     interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "12. Noncontrast CT scan of the head",
+  "     CT head: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Genetic generalized epilepsy (idiopathic generalized epilepsy), presenting with a generalized tonic–clonic seizure and generalized spike/polyspike-wave discharges\n\nALTERNATIVE: Convulsive syncope due to an underlying cardiac arrhythmia\n\nALTERNATIVE: Psychogenic nonepileptic seizure\n\nALTERNATIVE: Acute symptomatic seizure from an unrecognized toxic or metabolic cause",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside assessment of airway, breathing, circulation, mental status, and complete neurologic examination\n2. Finger-stick capillary blood glucose\n3. Supine and standing blood pressure and heart rate measurements\n4. 12-lead electrocardiogram\n5. Continuous cardiac rhythm monitoring\n6. Complete blood count\n7. Serum electrolytes, urea nitrogen, creatinine, calcium, and magnesium\n8. Serum pregnancy test\n9. High-sensitivity troponin\n10. Transthoracic echocardiogram\n11. Electroencephalogram\n12. Noncontrast CT scan of the head\n",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Genetic generalized epilepsy (idiopathic generalized epilepsy), presenting with a generalized tonic–clonic seizure and generalized spike/polyspike-wave discharges",
+ "decisive_served": [
+  "interictal EEG"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 313,
+   "completion_tokens": 497,
+   "total_tokens": 810,
+   "cost": 0.000659,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000659,
+    "upstream_inference_prompt_cost": 6.26e-05,
+    "upstream_inference_completions_cost": 0.0005964
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 328,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 859,
+   "completion_tokens": 269,
+   "total_tokens": 1128,
+   "cost": 0.0004946,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004946,
+    "upstream_inference_prompt_cost": 0.0001718,
+    "upstream_inference_completions_cost": 0.0003228
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 135,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1429,
+   "completion_tokens": 384,
+   "total_tokens": 1813,
+   "cost": 0.0008179,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1426,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008179,
+    "upstream_inference_prompt_cost": 0.0003571,
+    "upstream_inference_completions_cost": 0.0004608
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 302,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 43.2
+}

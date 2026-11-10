@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Do the movements occur only when you are awake?",
+  "Have you had a stroke or brain injury in the past?",
+  "Is there a family history of movement disorders?",
+  "Do you have diabetes?",
+  "Do you have kidney disease?",
+  "Do you have liver disease?",
+  "Do you consume alcohol heavily?",
+  "Do you use recreational drugs?",
+  "Have you recently started or stopped any medication?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain with attention to the right basal ganglia and thalamus",
+  "Electroencephalogram (EEG)"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "brain MRI",
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. MRI of the brain with attention to the right basal ganglia and thalamus",
+  "     MRI brain with gadolinium: left frontal post-traumatic gliosis and encephalomalacia",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: left frontal hemosiderin deposition",
+  "     brain MRI: post-traumatic encephalomalacia",
+  "2. Electroencephalogram (EEG)",
+  "     interictal EEG: repetitive sharp waves predominantly in the LEFT FRONTAL area during sleep, with pseudocontinuous 3 Hz slow waves in the same region on awakening",
+  "     video-EEG monitoring of a typical event: no ictal correlate captured"
+ ],
+ "dx_raw": "DIAGNOSIS: Hemiballismus secondary to post-traumatic basal ganglia injury\nHemifacial spasm\nFocal motor seizure",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with attention to the right basal ganglia and thalamus\n2. Electroencephalogram (EEG)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Hemiballismus secondary to post-traumatic basal ganglia injury",
+ "decisive_served": [
+  "interictal EEG"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 188,
+   "completion_tokens": 106,
+   "total_tokens": 294,
+   "cost": 7.802e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.802e-05,
+    "upstream_inference_prompt_cost": 2.82e-05,
+    "upstream_inference_completions_cost": 4.982e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 595,
+   "completion_tokens": 30,
+   "total_tokens": 625,
+   "cost": 0.00010335,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010335,
+    "upstream_inference_prompt_cost": 8.925e-05,
+    "upstream_inference_completions_cost": 1.41e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 868,
+   "completion_tokens": 31,
+   "total_tokens": 899,
+   "cost": 7.6162e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.6162e-05,
+    "upstream_inference_prompt_cost": 6.1592e-05,
+    "upstream_inference_completions_cost": 1.457e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.0
+}

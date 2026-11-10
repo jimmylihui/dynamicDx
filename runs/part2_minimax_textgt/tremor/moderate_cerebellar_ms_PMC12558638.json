@@ -1,0 +1,159 @@
+{
+ "questions": [
+  "Did the symptoms come on suddenly, over a matter of hours to a few days?",
+  "Are you over the age of 50?",
+  "Do you drink more than 4 units of alcohol per day, on average?",
+  "Do any of your close blood relatives have a similar neurological condition or ataxia?",
+  "Are you currently taking phenytoin or any other anti-seizure medication?",
+  "Have you had any episodes of weakness in your arms or legs?",
+  "Have you noticed any changes in your vision, such as blurring or double vision?",
+  "Do you have any difficulty with bladder or bowel control?",
+  "Have you ever been diagnosed with cancer?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Slit-lamp examination of the eyes for Kayser-Fleischer rings",
+  "Serum ceruloplasmin",
+  "24-hour urinary copper excretion",
+  "MRI brain with thin-section imaging of the brainstem and cerebellum",
+  "Genetic testing for hereditary ataxias, including the frataxin (FXN) gene for Friedreich's ataxia and a spinocerebellar ataxia (SCA) panel"
+ ],
+ "served": [
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "brain MRI",
+  "genetic testing (targeted panel or exome)"
+ ],
+ "results": [
+  "1. Slit-lamp examination of the eyes for Kayser-Fleischer rings",
+  "     slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "2. Serum ceruloplasmin",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal",
+  "3. 24-hour urinary copper excretion",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal",
+  "4. MRI brain with thin-section imaging of the brainstem and cerebellum",
+  "     brain MRI: significant cerebellar atrophy with dilatation of the fourth ventricle",
+  "5. Genetic testing for hereditary ataxias, including the frataxin (FXN) gene for Friedreich's ataxia and a spinocerebellar ataxia (SCA) panel",
+  "     genetic testing (targeted panel or exome): novel heterozygous NONSENSE variant in POU4F1; present in the symptomatic mother, sister and grandmother and absent in a healthy uncle"
+ ],
+ "dx_raw": "DIAGNOSIS: Autosomal dominant spinocerebellar ataxia due to a pathogenic heterozygous nonsense variant in POU4F1\n\nOther hereditary spinocerebellar ataxia not detected by the targeted panel (e.g., a different SCA subtype or a recessive ataxia with apparent dominant inheritance)\nWilson's disease (extensively investigated and excluded, but a treatable mimic worth keeping in mind)\nAcquired cerebellar degeneration such as immune-mediated or paraneoplastic cerebellar atrophy (less likely given the strong familial pattern and absence of cancer)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Slit-lamp examination of the eyes for Kayser-Fleischer rings\n2. Serum ceruloplasmin\n3. 24-hour urinary copper excretion\n4. MRI brain with thin-section imaging of the brainstem and cerebellum\n5. Genetic testing for hereditary ataxias, including the frataxin (FXN) gene for Friedreich's ataxia and a spinocerebellar ataxia (SCA) panel",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Autosomal dominant spinocerebellar ataxia due to a pathogenic heterozygous nonsense variant in POU4F1",
+ "decisive_served": [
+  "brain MRI",
+  "genetic testing (targeted panel or exome)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 325,
+   "completion_tokens": 3432,
+   "total_tokens": 3757,
+   "cost": 0.00418854,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00418854,
+    "upstream_inference_prompt_cost": 7.014e-05,
+    "upstream_inference_completions_cost": 0.0041184
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3671,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 795,
+   "completion_tokens": 891,
+   "total_tokens": 1686,
+   "cost": 0.00128034,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00128034,
+    "upstream_inference_prompt_cost": 0.00021114,
+    "upstream_inference_completions_cost": 0.0010692
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 855,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1194,
+   "completion_tokens": 3483,
+   "total_tokens": 4677,
+   "cost": 0.00435684,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 754,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00435684,
+    "upstream_inference_prompt_cost": 0.00017724,
+    "upstream_inference_completions_cost": 0.0041796
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3815,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 94.6
+}

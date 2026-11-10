@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Do you have a fever?",
+  "Do you have pain?",
+  "Do you have a cough?",
+  "Do you have a rash?",
+  "Do you have trouble breathing?",
+  "Do you have a stomach ache?",
+  "Did you have an accident?",
+  "Do you feel dizzy?",
+  "Do you have a headache?",
+  "Do you have a known medical condition?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "serum lithium and drug levels",
+  "brain MRI",
+  "medication history"
+ ],
+ "results": [
+  "1. serum lithium and drug levels: serum lithium 4.07 mmol/L on admission; CSF lithium 2.45 mmol/L; later fell below 0.2 mmol/L",
+  "2. brain MRI: cerebellar atrophy at one year; serial imaging over five years shows progressive ISOLATED cerebellar atrophy with no supratentorial abnormality",
+  "3. medication history: no prior lithium use and no psychiatric indication - the exposure was accidental"
+ ],
+ "dx_raw": "DIAGNOSIS: Lithium-induced cerebellar atrophy caused by accidental lithium overdose\n\nAlternatives:\n1. Syndrome of Irreversible Lithium-Effectuated Neurotoxicity (SILENT)\n2. Autoimmune cerebellar ataxia\n3. Hereditary spinocerebellar ataxia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Lithium-induced cerebellar atrophy caused by accidental lithium overdose",
+ "decisive_served": [
+  "serum lithium and drug levels",
+  "brain MRI",
+  "medication history"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 3307,
+   "total_tokens": 12005,
+   "cost": 0.00199418,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00199418,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00112438
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3008,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9115,
+   "completion_tokens": 813,
+   "total_tokens": 9928,
+   "cost": 0.00118792,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00118792,
+    "upstream_inference_prompt_cost": 0.0009115,
+    "upstream_inference_completions_cost": 0.00027642
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 837,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_ms_demyelinating_PMC13085407.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 149.9
+}

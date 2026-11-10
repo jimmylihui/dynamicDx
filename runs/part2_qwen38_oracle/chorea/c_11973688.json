@@ -1,0 +1,110 @@
+{
+ "questions": [
+  "Do you have pain in your knees?",
+  "Is the pain worse when you climb stairs or stand up from a chair?",
+  "Have you been diagnosed with arthritis in the past?",
+  "Does your knee ever feel like it is going to give way?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "thyroid ultrasound",
+  "trial of antithyroid treatment"
+ ],
+ "results": [
+  "1. blood glucose: normal glucose and electrolytes - excludes hyperglycaemic chorea",
+  "2. TSH, free T4 and free T3: TSH SUPPRESSED at <0.01 mIU/L (reference 0.50-5.00) and free thyroxine ELEVATED at 3.85 ng/dL (reference 0.90-1.70)",
+  "3. thyrotropin receptor antibodies (TRAb): ELEVATED at 7.4 IU/L (reference <2.0) - Graves' disease",
+  "4. thyroid ultrasound: no nodules; estimated thyroid weight 13 g; 99mTc scintigraphy showed diffuse uptake consistent with Graves' disease",
+  "5. trial of antithyroid treatment: methimazole; the chorea resolved after about one month as thyroid function improved"
+ ],
+ "dx_raw": "DIAGNOSIS: Chorea associated with Graves' disease (Thyrotoxic chorea)\n\n1. Sydenham's chorea\n2. Huntington's disease\n3. Drug-induced dyskinesia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Chorea associated with Graves' disease (Thyrotoxic chorea)",
+ "decisive_served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "thyroid ultrasound",
+  "trial of antithyroid treatment"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5847,
+   "completion_tokens": 58,
+   "total_tokens": 5905,
+   "cost": 0.00090431,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00090431,
+    "upstream_inference_prompt_cost": 0.00087705,
+    "upstream_inference_completions_cost": 2.726e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6269,
+   "completion_tokens": 45,
+   "total_tokens": 6314,
+   "cost": 0.000223964,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5504,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000223964,
+    "upstream_inference_prompt_cost": 0.000202814,
+    "upstream_inference_completions_cost": 2.115e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.0
+}

@@ -1,0 +1,136 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your chest?",
+  "Does the pain radiate to your left arm or jaw?",
+  "Do you have a history of heart disease?",
+  "Are you short of breath at rest?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Complete blood count",
+  "Basic metabolic panel",
+  "Urinalysis"
+ ],
+ "served": [
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "2. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "3. Urinalysis",
+  "     urinalysis: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Asymptomatic healthy individual\nDifferential diagnosis: Anxiety disorder\nDifferential diagnosis: Somatic symptom disorder",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Complete blood count\n2. Basic metabolic panel\n3. Urinalysis",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Asymptomatic healthy individual",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 58,
+   "total_tokens": 224,
+   "cost": 5.216e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.216e-05,
+    "upstream_inference_prompt_cost": 2.49e-05,
+    "upstream_inference_completions_cost": 2.726e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 457,
+   "completion_tokens": 17,
+   "total_tokens": 474,
+   "cost": 4.2236e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 4.2236e-05,
+    "upstream_inference_prompt_cost": 3.4246e-05,
+    "upstream_inference_completions_cost": 7.99e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 624,
+   "completion_tokens": 28,
+   "total_tokens": 652,
+   "cost": 3.8152e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 3.8152e-05,
+    "upstream_inference_prompt_cost": 2.4992e-05,
+    "upstream_inference_completions_cost": 1.316e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_PMC12904113.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.9
+}

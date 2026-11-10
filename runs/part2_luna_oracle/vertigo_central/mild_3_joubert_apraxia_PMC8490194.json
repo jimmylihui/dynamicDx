@@ -1,0 +1,145 @@
+{
+ "questions": [
+  "Is the child difficult to wake or less responsive than usual?",
+  "Is the child having trouble breathing, turning blue, or repeatedly choking?",
+  "Did these abnormal eye movements and mouth movements begin suddenly?",
+  "Are the episodes happening repeatedly or continuously?",
+  "Does the child lose awareness or stop responding during an episode?",
+  "Does the child become stiff, limp, or jerk rhythmically during an episode?",
+  "Have the eyes been persistently deviated upward or to one side?",
+  "Does the child return completely to normal between episodes?",
+  "Has the child had a fever?",
+  "Has the child had vomiting, diarrhea, or poor feeding?",
+  "Has the child had unusual sleepiness, irritability, or inconsolable crying?",
+  "Has the child had a recent fall, head injury, or other trauma?",
+  "Could the child have swallowed or been exposed to medicines, pesticides, chemicals, or other toxins?",
+  "Has the child recently started, stopped, or received an incorrect dose of any medicine?",
+  "Has the child had a seizure before?",
+  "Has the child ever had similar eye or tongue movements before?",
+  "Has the child had a recent infection, rash, ear infection, or cough?",
+  "Has the child had neck stiffness, a bulging soft spot, or an unusually high-pitched cry?",
+  "Is the child feeding and urinating normally?",
+  "Has the child lost any previously acquired developmental skills?",
+  "Was the child born prematurely or with complications?",
+  "Is there a known neurological, metabolic, or genetic disorder?",
+  "Is the child taking anticonvulsants or other regular medicines?",
+  "Is anyone else in the household currently ill or exposed to a toxin?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "smooth pursuit and saccades",
+  "facial dysmorphism and general examination",
+  "genetic testing (exome)",
+  "MRI brain with DWI"
+ ],
+ "results": [
+  "1. smooth pursuit and saccades: ocular motor apraxia - failure to initiate voluntary horizontal saccades with compensatory head thrusts",
+  "2. facial dysmorphism and general examination: facial dysmorphism in all patients - broad nasal bridge and low-set ears most common",
+  "3. genetic testing (exome): pathogenic variants in ciliopathy genes on exome sequencing",
+  "4. MRI brain with DWI: MOLAR TOOTH SIGN with cerebellar vermis hypoplasia and horizontally aligned superior cerebellar peduncles"
+ ],
+ "dx_raw": "DIAGNOSIS: Joubert syndrome (Joubert syndrome–related disorder), an autosomal-recessive ciliopathy caused by pathogenic biallelic variants in a Joubert-associated ciliary gene, producing the molar tooth sign, cerebellar vermis hypoplasia, and ocular motor apraxia.\nCOACH syndrome (cerebellar vermis hypoplasia, oligophrenia, ataxia, coloboma, and hepatic fibrosis)\nOrofaciodigital syndrome type VI (Varadi–Papp syndrome)\nPoretti–Boltshauser syndrome (LAMA1-related cerebellar dysplasia)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Joubert syndrome (Joubert syndrome–related disorder), an autosomal-recessive ciliopathy caused by pathogenic biallelic variants in a Joubert-associated ciliary gene, producing the molar tooth sign, cerebellar vermis hypoplasia, and ocular motor apraxia.",
+ "decisive_served": [
+  "smooth pursuit and saccades",
+  "facial dysmorphism and general examination",
+  "genetic testing (exome)",
+  "MRI brain with DWI"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 523,
+   "total_tokens": 6199,
+   "cost": 0.00037083,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00037083,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0003138
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 161,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6714,
+   "completion_tokens": 333,
+   "total_tokens": 7047,
+   "cost": 0.00038658,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 1038,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00038658,
+    "upstream_inference_prompt_cost": 0.00018678,
+    "upstream_inference_completions_cost": 0.0001998
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 197,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_3_joubert_apraxia_PMC8490194.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 17.1
+}

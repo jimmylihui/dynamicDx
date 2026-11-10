@@ -1,0 +1,223 @@
+{
+ "questions": [
+  "Is your main problem pain?",
+  "Is the pain in your chest?",
+  "Did your symptoms begin suddenly?",
+  "Are you short of breath?",
+  "Have you had a fever?",
+  "Is the pain in your abdomen?",
+  "Have you had nausea or vomiting?",
+  "Have you had any weakness, numbness, or trouble speaking?",
+  "Have you had a severe headache?",
+  "Have you had any bleeding (coughing blood, vomiting blood, or blood in stool)?",
+  "Have you fainted or lost consciousness?",
+  "Do you have any chronic medical conditions?",
+  "Are you currently taking any medications?",
+  "Do you have any allergies?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Oxygen saturation by pulse oximetry",
+  "Respiratory rate",
+  "Heart rate",
+  "Blood pressure",
+  "Listen to lung sounds (lung auscultation)",
+  "Listen to heart sounds (cardiac auscultation)",
+  "Chest X-ray",
+  "Arterial blood gas",
+  "Complete blood count (CBC)",
+  "Basic metabolic panel",
+  "D-dimer",
+  "NT-proBNP",
+  "Peak expiratory flow",
+  "Spirometry",
+  "Echocardiogram",
+  "CT pulmonary angiogram",
+  "Lower extremity Doppler ultrasound",
+  "Sputum culture",
+  "Tuberculin skin test (PPD)"
+ ],
+ "served": [
+  "vital signs",
+  "vital signs",
+  "vital signs",
+  "vital signs",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose",
+  "MR or CT angiography"
+ ],
+ "results": [
+  "1. Oxygen saturation by pulse oximetry",
+  "     vital signs: normal, afebrile",
+  "2. Respiratory rate",
+  "     vital signs: normal, afebrile",
+  "3. Heart rate",
+  "     vital signs: normal, afebrile",
+  "4. Blood pressure",
+  "     vital signs: normal, afebrile",
+  "5. Listen to lung sounds (lung auscultation)",
+  "     not performed / not available",
+  "6. Listen to heart sounds (cardiac auscultation)",
+  "     not performed / not available",
+  "7. Chest X-ray",
+  "     not performed / not available",
+  "8. Arterial blood gas",
+  "     not performed / not available",
+  "9. Complete blood count (CBC)",
+  "     full blood count: normal",
+  "10. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     blood glucose: normal glucose and electrolytes - excludes hyperglycaemic chorea",
+  "11. D-dimer",
+  "     not performed / not available",
+  "12. NT-proBNP",
+  "     not performed / not available",
+  "13. Peak expiratory flow",
+  "     not performed / not available",
+  "14. Spirometry",
+  "     not performed / not available",
+  "15. Echocardiogram",
+  "     not performed / not available",
+  "16. CT pulmonary angiogram",
+  "     MR or CT angiography: normal",
+  "17. Lower extremity Doppler ultrasound",
+  "     not performed / not available",
+  "18. Sputum culture",
+  "     not performed / not available",
+  "19. Tuberculin skin test (PPD)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Chronic obstructive pulmonary disease (COPD), most likely due to tobacco smoking, with possible coexistent chronic bronchitis and emphysema components.\n\n1. Heart failure with reduced ejection fraction (ischemic or non-ischemic cardiomyopathy)\n2. Asthma (chronic, poorly controlled or undiagnosed)\n3. Pulmonary hypertension (idiopathic or secondary)",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Oxygen saturation by pulse oximetry\n2. Respiratory rate\n3. Heart rate\n4. Blood pressure\n5. Listen to lung sounds (lung auscultation)\n6. Listen to heart sounds (cardiac auscultation)\n7. Chest X-ray\n8. Arterial blood gas\n9. Complete blood count (CBC)\n10. Basic metabolic panel\n11. D-dimer\n12. NT-proBNP\n13. Peak expiratory flow\n14. Spirometry\n15. ECG\n16. Echocardiogram\n17. CT pulmonary angiogram\n18. Lower extremity Doppler ultrasound\n19. Sputum culture\n20. Tuberculin skin test (PPD)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Chronic obstructive pulmonary disease (COPD), most likely due to tobacco smoking, with possible coexistent chronic bronchitis and emphysema components.",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 4499,
+   "total_tokens": 4813,
+   "cost": 0.005421,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.005421,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.0053988
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4793,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 809,
+   "completion_tokens": 146,
+   "total_tokens": 955,
+   "cost": 0.00035982,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00035982,
+    "upstream_inference_prompt_cost": 0.00018462,
+    "upstream_inference_completions_cost": 0.0001752
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1355,
+   "completion_tokens": 1108,
+   "total_tokens": 2463,
+   "cost": 0.00151026,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 941,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00151026,
+    "upstream_inference_prompt_cost": 0.00018066,
+    "upstream_inference_completions_cost": 0.0013296
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1235,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 71.1
+}

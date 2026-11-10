@@ -1,0 +1,135 @@
+{
+ "questions": [
+  "Have you ever taken medications such as antipsychotics or anti-nausea drugs?",
+  "Is there any family history of movement disorders like Huntington's disease?",
+  "Do you have trouble with memory or thinking clearly?",
+  "Did these movements start suddenly?",
+  "Are the movements getting worse as time goes on?",
+  "Do these movements occur on both the left and right sides of your body?",
+  "Do the movements stop when you are asleep?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain with diffusion-weighted imaging (DWI)** — urgent, to identify an acute infarct or lesion in the right basal ganglia/subthalamic region",
+  "CT head non-contrast** — to rapidly exclude hemorrhage or large vessel territory infarct"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences",
+  "CT head (non-contrast)"
+ ],
+ "results": [
+  "1. MRI of the brain with diffusion-weighted imaging (DWI)** — urgent, to identify an acute infarct or lesion in the right basal ganglia/subthalamic region",
+  "     MRI diffusion-weighted sequences: restricted diffusion consistent with a lacunar infarct",
+  "2. CT head non-contrast** — to rapidly exclude hemorrhage or large vessel territory infarct",
+  "     CT head (non-contrast): HYPERDENSE LEFT caudate and lentiform nucleus - contralateral to the movements"
+ ],
+ "dx_raw": "**DIAGNOSIS:** Left hemiballismus secondary to acute lacunar infarct of the right basal ganglia (subthalamic nucleus region)\n\n**Alternative considerations:**\n\n1. Hemichorea–hemiballismus due to non‑ketotic hyperglycemia (basal ganglia hyperdensity on CT can be seen in this entity, and glucose should be checked)\n2. Focal motor seizures — epilepsia partialis continuata\n3. Functional neurological disorder (movement type) — though persistence during sleep strongly argues against this",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "## Analysis\n\nKey features from the history and video:\n- **Sudden onset** of unilateral (left-sided) stereotyped, rhythmic movements\n- **No medication exposure** (rules out tardive dyskinesia)\n- **No family history** (reduces likelihood of hereditary chorea)\n- **No cognitive impairment**\n- **Not progressive**\n- **Persists during sleep** — this is critical, strongly pointing toward an **organic** rather than functional/psychogenic cause\n\nThe combination of **sudden onset + unilateral movements + persistence during sleep** is classic for **hemiballismus**, most commonly due to an acute vascular lesion (stroke or vascular malformation) in the **contralateral subthalamic nucleus** or basal ganglia.\n\n---\n\n## Investigations\n\n1. **MRI of the brain with diffusion-weighted imaging (DWI)** — urgent, to identify an acute infarct or lesion in the right basal ganglia/subthalamic region\n\nThis is the single most informative investigation and will likely confirm the diagnosis. If it shows an acute infarct in the contralateral subthalamic nucleus, the diagnosis of hemiballismus secondary to stroke is established, and management can proceed accordingly.\n\nIf MRI is unavailable or urgent CT is needed first:\n2. **CT head non-contrast** — to rapidly exclude hemorrhage or large vessel territory infarct\n\nBlood tests (glucose, CBC, metabolic panel) are supportive but would not change the most likely diagnosis here.",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "** Left hemiballismus secondary to acute lacunar infarct of the right basal ganglia (subthalamic nucleus region)",
+ "decisive_served": [
+  "CT head (non-contrast)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 454,
+   "completion_tokens": 2066,
+   "total_tokens": 2520,
+   "cost": 0.0006156976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006156976,
+    "upstream_inference_prompt_cost": 3.72176e-05,
+    "upstream_inference_completions_cost": 0.00057848
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1968,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 826,
+   "completion_tokens": 862,
+   "total_tokens": 1688,
+   "cost": 0.0002955344,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002955344,
+    "upstream_inference_prompt_cost": 5.41744e-05,
+    "upstream_inference_completions_cost": 0.00024136
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 549,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1337,
+   "completion_tokens": 3564,
+   "total_tokens": 4901,
+   "cost": 0.0010797304,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010797304,
+    "upstream_inference_prompt_cost": 8.18104e-05,
+    "upstream_inference_completions_cost": 0.00099792
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3446,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hyperglycemic_hemichorea_PMC12596229.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 105.5
+}

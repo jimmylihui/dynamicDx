@@ -1,0 +1,154 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have double vision?",
+  "Do you have weakness in your arms or legs?",
+  "Do you have difficulty speaking?",
+  "Do you feel dizzy?",
+  "Do you have a headache?",
+  "Do you have numbness or tingling?",
+  "Do you have difficulty swallowing?",
+  "Have you had a stroke before?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Are you taking any blood thinners?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "TSH and Free T4",
+  "Brain MRI",
+  "Assessment of vertical gaze"
+ ],
+ "served": [
+  "TSH / free T4",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI brain with DWI",
+  "vertical gaze and convergence"
+ ],
+ "results": [
+  "1. TSH and Free T4",
+  "     TSH / free T4: normal",
+  "2. Brain MRI",
+  "     MRI brain with gadolinium: normal",
+  "     MRI diffusion-weighted sequences: no acute findings",
+  "     MRI brain with DWI: no acute findings",
+  "3. Assessment of vertical gaze",
+  "     vertical gaze and convergence: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Myasthenia gravis caused by antibodies to the acetylcholine receptor\n\n1. Myasthenia gravis caused by antibodies to muscle-specific kinase (MuSK)\n2. Chronic progressive external ophthalmoplegia\n3. Lambert-Eaton myasthenic syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. TSH and Free T4\n2. Brain MRI\n3. Assessment of vertical gaze",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Myasthenia gravis caused by antibodies to the acetylcholine receptor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 4506,
+   "total_tokens": 13204,
+   "cost": 0.00240184,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00240184,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00153204
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3771,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9126,
+   "completion_tokens": 3047,
+   "total_tokens": 12173,
+   "cost": 0.00194858,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00194858,
+    "upstream_inference_prompt_cost": 0.0009126,
+    "upstream_inference_completions_cost": 0.00103598
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2676,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9312,
+   "completion_tokens": 3725,
+   "total_tokens": 13037,
+   "cost": 0.0021977,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0021977,
+    "upstream_inference_prompt_cost": 0.0009312,
+    "upstream_inference_completions_cost": 0.0012665
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3521,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.8,
+ "video": "moderate_2_opsoclonus_PMC13135425.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 431.2
+}

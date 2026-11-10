@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Did these movements start suddenly?",
+  "Do you have a family history of similar movements?",
+  "Are you taking any medications for psychiatric conditions?",
+  "Have you had a sore throat or fever recently?",
+  "Have you noticed a recent decline in your memory or thinking?",
+  "Do the movements stop when you are asleep?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain",
+  "Comprehensive metabolic panel",
+  "Serum ceruloplasmin",
+  "Slit-lamp examination"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "blood glucose",
+  "copper / caeruloplasmin"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the bilateral striatum",
+  "     MRI susceptibility-weighted sequences: no abnormal susceptibility",
+  "2. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     blood glucose: 799 mg/dL (normal 74-106)",
+  "3. Serum ceruloplasmin",
+  "     copper / caeruloplasmin: normal",
+  "4. Slit-lamp examination",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Chorea due to non-ketotic hyperglycemia\nWilson's disease\nHuntington's disease\nHypoxic-ischemic encephalopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. EEG\n3. Comprehensive metabolic panel\n4. Serum ceruloplasmin\n5. Slit-lamp examination",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Chorea due to non-ketotic hyperglycemia",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 208,
+   "completion_tokens": 2614,
+   "total_tokens": 2822,
+   "cost": 0.00090956,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00090956,
+    "upstream_inference_prompt_cost": 2.08e-05,
+    "upstream_inference_completions_cost": 0.00088876
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2383,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 526,
+   "completion_tokens": 2915,
+   "total_tokens": 3441,
+   "cost": 0.0010437,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010437,
+    "upstream_inference_prompt_cost": 5.26e-05,
+    "upstream_inference_completions_cost": 0.0009911
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2589,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 763,
+   "completion_tokens": 1904,
+   "total_tokens": 2667,
+   "cost": 0.00072366,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00072366,
+    "upstream_inference_prompt_cost": 7.63e-05,
+    "upstream_inference_completions_cost": 0.00064736
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1860,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 240.0
+}

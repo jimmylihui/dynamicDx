@@ -1,0 +1,129 @@
+{
+ "questions": [
+  "Have you had any recent nasal or sinus surgery?",
+  "Do you have a fever or feel generally unwell?",
+  "Have you noticed any change in your vision?",
+  "Is the pain around your eyes getting worse?",
+  "Do you have severe headaches?",
+  "Do you feel nauseous or have you vomited?",
+  "Have you experienced any weakness or numbness in your limbs?",
+  "Have you had any recent infections, particularly skin or facial infections?",
+  "Do you have any chronic medical conditions like diabetes or are you immunocompromised?",
+  "Have you had any recent trauma to your face or head?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Computed tomography (CT) scan of the orbits and brain without contrast.",
+  "Magnetic resonance imaging (MRI) of the orbits and brain with contrast.",
+  "Complete blood count (CBC) with differential."
+ ],
+ "served": [
+  "CT head (non-contrast)",
+  "MRI brain with gadolinium",
+  "full blood count and biochemistry"
+ ],
+ "results": [
+  "R1 ASK Have you had any recent nasal or sinus surgery?; Do you have a fever or feel generally unwell?; Have you noticed any change in your vision?; Is the pain around your eyes getting worse? -> ['no', 'no', 'yes', 'no']",
+  "R2 ASK Do you have severe headaches?; Do you feel nauseous or have you vomited?; Have you experienced any weakness or numbness in your limbs?; Have you had any recent infections, particularly skin or facial infections?; Do you have any chronic medical conditions like diabetes or are you immunocompromised?; Have you had any recent trauma to your face or head? -> ['no', 'no', 'no', 'no', 'no', 'yes']",
+  "R3 ORDER Computed tomography (CT) scan of the orbits and brain without contrast.; Magnetic resonance imaging (MRI) of the orbits and brain with contrast.; Complete blood count (CBC) with differential. -> [['CT head (non-contrast)'], ['MRI brain with gadolinium'], ['full blood count and biochemistry']]",
+  "R4 DIAGNOSIS Right medial orbital wall (lamina papyracea) fracture with entrapment of the medial rectus muscle, secondary to recent facial trauma. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you had any recent nasal or sinus surgery?",
+    "Do you have a fever or feel generally unwell?",
+    "Have you noticed any change in your vision?",
+    "Is the pain around your eyes getting worse?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have severe headaches?",
+    "Do you feel nauseous or have you vomited?",
+    "Have you experienced any weakness or numbness in your limbs?",
+    "Have you had any recent infections, particularly skin or facial infections?",
+    "Do you have any chronic medical conditions like diabetes or are you immunocompromised?",
+    "Have you had any recent trauma to your face or head?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Computed tomography (CT) scan of the orbits and brain without contrast.",
+    "Magnetic resonance imaging (MRI) of the orbits and brain with contrast.",
+    "Complete blood count (CBC) with differential."
+   ],
+   "result": [
+    [
+     "CT head (non-contrast)"
+    ],
+    [
+     "MRI brain with gadolinium"
+    ],
+    [
+     "full blood count and biochemistry"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Right medial orbital wall (lamina papyracea) fracture with entrapment of the medial rectus muscle, secondary to recent facial trauma."
+  }
+ ],
+ "dx": "Right medial orbital wall (lamina papyracea) fracture with entrapment of the medial rectus muscle, secondary to recent facial trauma.",
+ "dx_raw": "DIAGNOSIS: Right medial orbital wall (lamina papyracea) fracture with entrapment of the medial rectus muscle, secondary to recent facial trauma.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "CT head (non-contrast)"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0041,
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 20.2
+}

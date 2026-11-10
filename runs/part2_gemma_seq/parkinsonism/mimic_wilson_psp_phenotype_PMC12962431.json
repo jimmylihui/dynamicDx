@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Does the patient have a headache?",
+  "Does the patient have nausea?",
+  "Does the patient have gait instability?",
+  "Does the patient have urinary incontinence?",
+  "Is the patient confused?",
+  "Does the patient have vertical gaze palsy?",
+  "Does the patient have orthostatic hypotension?",
+  "Does the patient have bladder dysfunction?",
+  "Does the patient have a history of falls?",
+  "Does the patient have a resting tremor?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Thyroid function tests (TSH, Free T4, Free T3)",
+  "MRI of the brain and orbits",
+  "Fundoscopy",
+  "Blood pressure measurement",
+  "Finger-to-nose test"
+ ],
+ "served": [
+  "TSH / free T4",
+  "MRI brain with gadolinium",
+  "fundoscopy",
+  "coordination examination (limb and truncal)",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
+ ],
+ "results": [
+  "R1 ASK Does the patient have a headache?; Does the patient have nausea?; Does the patient have gait instability?; Does the patient have urinary incontinence?; Is the patient confused? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R2 ORDER Thyroid function tests (TSH, Free T4, Free T3); MRI of the brain and orbits; Fundoscopy; Blood pressure measurement; Finger-to-nose test -> [['TSH / free T4'], ['MRI brain with gadolinium'], ['fundoscopy'], [], ['coordination examination (limb and truncal)', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)']]",
+  "R3 ASK Does the patient have vertical gaze palsy?; Does the patient have orthostatic hypotension?; Does the patient have bladder dysfunction?; Does the patient have a history of falls?; Does the patient have a resting tremor? -> ['yes', 'no', 'no', 'yes', 'no']",
+  "R4 DIAGNOSIS Spinocerebellar Ataxia Type 17 (SCA17) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Does the patient have a headache?",
+    "Does the patient have nausea?",
+    "Does the patient have gait instability?",
+    "Does the patient have urinary incontinence?",
+    "Is the patient confused?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Thyroid function tests (TSH, Free T4, Free T3)",
+    "MRI of the brain and orbits",
+    "Fundoscopy",
+    "Blood pressure measurement",
+    "Finger-to-nose test"
+   ],
+   "result": [
+    [
+     "TSH / free T4"
+    ],
+    [
+     "MRI brain with gadolinium"
+    ],
+    [
+     "fundoscopy"
+    ],
+    [],
+    [
+     "coordination examination (limb and truncal)",
+     "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Does the patient have vertical gaze palsy?",
+    "Does the patient have orthostatic hypotension?",
+    "Does the patient have bladder dysfunction?",
+    "Does the patient have a history of falls?",
+    "Does the patient have a resting tremor?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Spinocerebellar Ataxia Type 17 (SCA17)"
+  }
+ ],
+ "dx": "Spinocerebellar Ataxia Type 17 (SCA17)",
+ "dx_raw": "DIAGNOSIS: Spinocerebellar Ataxia Type 17 (SCA17)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
+ ],
+ "n_decisive": 7,
+ "cost_usd": 0.0063,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_wilson_psp_phenotype_PMC12962431.mp4",
+ "line": "parkinsonism",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 375.2
+}

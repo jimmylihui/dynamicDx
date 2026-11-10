@@ -1,0 +1,207 @@
+{
+ "questions": [
+  "Are you currently experiencing pain anywhere in your body?",
+  "Is pain the main reason you came to see me today?",
+  "Have you had this problem for less than a week?",
+  "Is the pain constant, rather than coming and going?",
+  "Would you rate the pain as severe (7 or more out of 10)?",
+  "Have you had a fever in the past 48 hours?",
+  "Have you noticed any new weakness in your arms or legs?",
+  "Have you had any numbness or tingling?",
+  "Have you had any difficulty breathing?",
+  "Have you had any chest pain?",
+  "Have you had any recent injury or fall?",
+  "Have you had any unintentional weight loss in the past 3 months?",
+  "Do you have any chronic medical conditions (e.g., diabetes, high blood pressure)?",
+  "Are you currently taking any medications?",
+  "Do you have any drug allergies?",
+  "Have you had any surgery in the past?",
+  "Do you smoke?",
+  "Do you drink alcohol regularly?",
+  "Does anyone in your family have a serious chronic illness?",
+  "Are you up to date on your vaccinations?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Measure blood pressure in both arms",
+  "Measure resting heart rate",
+  "Measure body temperature",
+  "Measure oxygen saturation by pulse oximetry",
+  "Perform a full physical examination",
+  "12-lead resting electrocardiogram",
+  "Complete blood count with differential",
+  "Comprehensive metabolic panel (electrolytes, renal and liver function)",
+  "Fasting lipid panel",
+  "Urinalysis with microscopy",
+  "Hemoglobin A1c",
+  "Chest X-ray (PA and lateral)"
+ ],
+ "served": [
+  "full blood count, renal and liver profile",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "full blood count, renal and liver profile",
+  "urinalysis",
+  "blood glucose and HbA1c"
+ ],
+ "results": [
+  "1. Measure blood pressure in both arms",
+  "     not performed / not available",
+  "2. Measure resting heart rate",
+  "     not performed / not available",
+  "3. Measure body temperature",
+  "     not performed / not available",
+  "4. Measure oxygen saturation by pulse oximetry",
+  "     not performed / not available",
+  "5. Perform a full physical examination",
+  "     not performed / not available",
+  "6. 12-lead resting electrocardiogram",
+  "     not performed / not available",
+  "7. Complete blood count with differential",
+  "     full blood count, renal and liver profile: haemogram, glucose, renal, liver, electrolytes and thyroid all normal",
+  "8. Comprehensive metabolic panel (electrolytes, renal and liver function)",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     full blood count, renal and liver profile: haemogram, glucose, renal, liver, electrolytes and thyroid all normal",
+  "9. Fasting lipid panel",
+  "     not performed / not available",
+  "10. Urinalysis with microscopy",
+  "     urinalysis: normal",
+  "11. Hemoglobin A1c",
+  "     blood glucose and HbA1c: normal",
+  "12. Chest X-ray (PA and lateral)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: No active disease identified — healthy adult presenting for evaluation with normal screening laboratory results\n\n1. Essential hypertension (cannot be excluded without blood pressure measurement)\n2. Occult cardiac arrhythmia or structural heart disease (cannot be excluded without ECG and cardiac examination)\n3. Latent pulmonary or skeletal pathology (cannot be excluded without chest X-ray and physical examination)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Measure blood pressure in both arms\n2. Measure resting heart rate\n3. Measure body temperature\n4. Measure oxygen saturation by pulse oximetry\n5. Perform a full physical examination\n6. 12-lead resting electrocardiogram\n7. Complete blood count with differential\n8. Comprehensive metabolic panel (electrolytes, renal and liver function)\n9. Fasting lipid panel\n10. Urinalysis with microscopy\n11. Hemoglobin A1c\n12. Chest X-ray (PA and lateral)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "No active disease identified — healthy adult presenting for evaluation with normal screening laboratory results",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 521,
+   "completion_tokens": 599,
+   "total_tokens": 1120,
+   "cost": 0.00083742,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00083742,
+    "upstream_inference_prompt_cost": 0.00011862,
+    "upstream_inference_completions_cost": 0.0007188
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 360,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1244,
+   "completion_tokens": 1287,
+   "total_tokens": 2531,
+   "cost": 0.00187992,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00187992,
+    "upstream_inference_prompt_cost": 0.00033552,
+    "upstream_inference_completions_cost": 0.0015444
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1182,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1690,
+   "completion_tokens": 815,
+   "total_tokens": 2505,
+   "cost": 0.00119004,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1229,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00119004,
+    "upstream_inference_prompt_cost": 0.00021204,
+    "upstream_inference_completions_cost": 0.000978
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 741,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 46.5
+}

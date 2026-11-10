@@ -1,0 +1,242 @@
+{
+ "questions": [
+  "Did your weakness start suddenly after a trauma?",
+  "Did your weakness start gradually?",
+  "Do you have sensory loss in your limbs?",
+  "Do you have muscle spasticity or stiffness?",
+  "Did the weakness develop over a few days or weeks?",
+  "Is the weakness symmetric?",
+  "Do you have any weakness in your face or throat muscles?",
+  "Do you have any difficulty breathing?",
+  "Did the weakness start suddenly (non-traumatically)?",
+  "Did the weakness start in one limb and then spread to others?",
+  "Do you have any muscle wasting?",
+  "Do you have any muscle fasciculations (twitching)?",
+  "Are you completely paralyzed in your legs?",
+  "Are you completely paralyzed in your arms?",
+  "Did the weakness start after a specific event, such as a fever or a viral illness?",
+  "Do you have any problems with your vision or hearing?",
+  "Do you have any cognitive or memory problems?",
+  "Do you have muscle jerks (myoclonus)?",
+  "Are these jerks triggered by touch, sound, or movement?",
+  "Do you have any tremors?",
+  "Do you have any difficulty speaking or swallowing?",
+  "Do you have any problems with balance or coordination?",
+  "Do you have difficulty with tasks like buttoning a shirt, despite having the strength to do it?",
+  "Did the weakness develop over a period of several months?",
+  "Are the fasciculations and the muscle jerks the same thing?",
+  "Have you had these symptoms since birth or early childhood?",
+  "Do you have any history of seizures?",
+  "Do you have any difficulty with your speech (dysarthria)?",
+  "Do you have any abnormal movements of your eyes?",
+  "Do you have any history of kidney or liver disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "yes",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Electromyography (EMG) and Nerve Conduction Studies (NCS) of the upper and lower limbs."
+ ],
+ "served": [
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "R1 ASK Did your weakness start suddenly after a trauma?; Did your weakness start gradually?; Do you have sensory loss in your limbs?; Do you have muscle spasticity or stiffness? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Did the weakness develop over a few days or weeks?; Is the weakness symmetric?; Do you have any weakness in your face or throat muscles?; Do you have any difficulty breathing? -> ['no', 'no', 'no', 'no']",
+  "R3 ASK Did the weakness start suddenly (non-traumatically)?; Did the weakness start in one limb and then spread to others?; Do you have any muscle wasting?; Do you have any muscle fasciculations (twitching)? -> ['no', 'no', 'no', 'yes']",
+  "R4 ORDER Electromyography (EMG) and Nerve Conduction Studies (NCS) of the upper and lower limbs. -> [['nerve conduction studies', 'needle electromyography']]",
+  "R5 ASK Are you completely paralyzed in your legs?; Are you completely paralyzed in your arms?; Did the weakness start after a specific event, such as a fever or a viral illness?; Do you have any problems with your vision or hearing?; Do you have any cognitive or memory problems? -> ['no', 'no', 'no', 'no', 'no']",
+  "R6 ASK Do you have muscle jerks (myoclonus)?; Are these jerks triggered by touch, sound, or movement?; Do you have any tremors?; Do you have any difficulty speaking or swallowing?; Do you have any problems with balance or coordination? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R7 ASK Do you have difficulty with tasks like buttoning a shirt, despite having the strength to do it?; Did the weakness develop over a period of several months?; Are the fasciculations and the muscle jerks the same thing? -> ['no', 'no', 'no']",
+  "R8 ASK Have you had these symptoms since birth or early childhood?; Do you have any history of seizures?; Do you have any difficulty with your speech (dysarthria)?; Do you have any abnormal movements of your eyes?; Do you have any history of kidney or liver disease? -> ['no', 'no', 'no', 'no', 'no']",
+  "R9 DIAGNOSIS Amyotrophic lateral sclerosis -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did your weakness start suddenly after a trauma?",
+    "Did your weakness start gradually?",
+    "Do you have sensory loss in your limbs?",
+    "Do you have muscle spasticity or stiffness?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Did the weakness develop over a few days or weeks?",
+    "Is the weakness symmetric?",
+    "Do you have any weakness in your face or throat muscles?",
+    "Do you have any difficulty breathing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did the weakness start suddenly (non-traumatically)?",
+    "Did the weakness start in one limb and then spread to others?",
+    "Do you have any muscle wasting?",
+    "Do you have any muscle fasciculations (twitching)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Electromyography (EMG) and Nerve Conduction Studies (NCS) of the upper and lower limbs."
+   ],
+   "result": [
+    [
+     "nerve conduction studies",
+     "needle electromyography"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Are you completely paralyzed in your legs?",
+    "Are you completely paralyzed in your arms?",
+    "Did the weakness start after a specific event, such as a fever or a viral illness?",
+    "Do you have any problems with your vision or hearing?",
+    "Do you have any cognitive or memory problems?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have muscle jerks (myoclonus)?",
+    "Are these jerks triggered by touch, sound, or movement?",
+    "Do you have any tremors?",
+    "Do you have any difficulty speaking or swallowing?",
+    "Do you have any problems with balance or coordination?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty with tasks like buttoning a shirt, despite having the strength to do it?",
+    "Did the weakness develop over a period of several months?",
+    "Are the fasciculations and the muscle jerks the same thing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Have you had these symptoms since birth or early childhood?",
+    "Do you have any history of seizures?",
+    "Do you have any difficulty with your speech (dysarthria)?",
+    "Do you have any abnormal movements of your eyes?",
+    "Do you have any history of kidney or liver disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Amyotrophic lateral sclerosis"
+  }
+ ],
+ "dx": "Amyotrophic lateral sclerosis",
+ "dx_raw": "DIAGNOSIS: Amyotrophic lateral sclerosis",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0169,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 1601.4
+}

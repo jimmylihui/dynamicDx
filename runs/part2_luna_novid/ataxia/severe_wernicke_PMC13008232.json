@@ -1,0 +1,169 @@
+{
+ "questions": [
+  "Are you currently experiencing severe difficulty breathing, chest pain, sudden weakness or numbness, confusion, fainting, or uncontrolled bleeding?",
+  "Is the main reason for your referral a symptom or health concern you are experiencing now?",
+  "Did this problem begin suddenly?",
+  "Is it getting worse?",
+  "Is it causing severe pain or preventing you from carrying out normal activities?",
+  "Have you had a fever?",
+  "Have you had unexplained weight loss, persistent night sweats, or unusual fatigue?",
+  "Have you recently been injured or had an operation?",
+  "Are you taking any prescription medicines, over-the-counter medicines, or supplements?",
+  "Do you have any medication or other allergies?",
+  "Do you have any diagnosed medical conditions?",
+  "Have you previously had a similar problem?",
+  "Are you pregnant or could you be pregnant?",
+  "Have you recently used alcohol or recreational drugs?",
+  "Have you had thoughts of harming yourself or someone else?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Complete physical examination, including vital signs and focused examination of the affected system."
+ ],
+ "served": [
+  "gait examination",
+  "finger-nose / heel-shin testing",
+  "Romberg test",
+  "bedside eye-movement exam",
+  "vital signs",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy"
+ ],
+ "results": [
+  "1. Complete physical examination, including vital signs and focused examination of the affected system.",
+  "     gait examination: wide-based, unsteady gait",
+  "     finger-nose / heel-shin testing: dysmetria",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "     bedside eye-movement exam: no ophthalmoplegia and no nystagmus - the classic triad is incomplete",
+  "     vital signs: normal, afebrile",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: MMSE 23/30",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Wernicke encephalopathy due to thiamine (vitamin B1) deficiency, presenting with incomplete classic triad\n\nAlcohol-related cerebellar degeneration\n\nNormal-pressure hydrocephalus\n\nStructural cerebellar lesion (tumor or infarction)",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete physical examination, including vital signs and focused examination of the affected system.",
+ "rationale": [
+  null
+ ],
+ "dx": "Wernicke encephalopathy due to thiamine (vitamin B1) deficiency, presenting with incomplete classic triad",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 144,
+   "completion_tokens": 475,
+   "total_tokens": 619,
+   "cost": 0.0002994,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002994,
+    "upstream_inference_prompt_cost": 1.44e-05,
+    "upstream_inference_completions_cost": 0.000285
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 269,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 764,
+   "completion_tokens": 215,
+   "total_tokens": 979,
+   "cost": 0.0002054,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002054,
+    "upstream_inference_prompt_cost": 7.64e-05,
+    "upstream_inference_completions_cost": 0.000129
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 192,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1061,
+   "completion_tokens": 536,
+   "total_tokens": 1597,
+   "cost": 0.00045415,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1058,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00045415,
+    "upstream_inference_prompt_cost": 0.00013255,
+    "upstream_inference_completions_cost": 0.0003216
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 473,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 39.0
+}

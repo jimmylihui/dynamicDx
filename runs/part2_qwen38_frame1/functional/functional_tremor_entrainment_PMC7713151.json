@@ -1,0 +1,154 @@
+{
+ "questions": [
+  "Are you experiencing any pain in your right hand or wrist?",
+  "Do you have a history of arthritis?",
+  "Have you had any recent injuries to this arm?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Phalen's test",
+  "Tinel's sign at the wrist",
+  "Nerve conduction studies of the right median nerve"
+ ],
+ "served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "co-activation sign on passive movement of the affected limb",
+  "'whack-a-mole' sign (restrain the affected limb and watch the others)",
+  "anticipatory jerk to a feigned tendon-hammer approach (Hallett sign)",
+  "suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment')",
+  "variability of amplitude, frequency and axis over the examination",
+  "surface EMG tremor analysis with accelerometry (frequency, coherence)",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "sensory examination (including midline splitting, allodynia)",
+  "nerve conduction studies"
+ ],
+ "results": [
+  "1. Phalen's test",
+  "     distractibility testing (complex motor task with the unaffected side): POSITIVE - the tremor decreases or stops when the left arm performs a task such as drinking from a cup",
+  "     entrainment testing (tap to an externally paced rhythm): POSITIVE - amplitude falls and the rhythm becomes irregular under repetitive voluntary movement of the other side",
+  "     co-activation sign on passive movement of the affected limb: POSITIVE - movement of the contralateral arm co-activates the hand with an increase in tremor intensity",
+  "     'whack-a-mole' sign (restrain the affected limb and watch the others): POSITIVE - passive fixation of the hand increases movement in the arm and shoulder",
+  "     anticipatory jerk to a feigned tendon-hammer approach (Hallett sign): absent",
+  "     suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment'): no change",
+  "     variability of amplitude, frequency and axis over the examination: irregular, variable frequency around 4-6 Hz, at times combined with myoclonic jerks",
+  "     surface EMG tremor analysis with accelerometry (frequency, coherence): no abnormality of the kind seen in organic tremor",
+  "2. Tinel's sign at the wrist",
+  "     sensory examination (pinprick, vibration, proprioception): burning pain with pronounced touch sensitivity; vibration and proprioception normal",
+  "     sensory examination (including midline splitting, allodynia): burning pain with pronounced sensitivity to touch, fulfilling allodynia criteria",
+  "3. Nerve conduction studies of the right median nerve",
+  "     nerve conduction studies: unremarkable; carpal tunnel syndrome excluded"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional tremor of the right hand (psychogenic movement disorder)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Phalen's test\n2. Tinel's sign at the wrist\n3. Nerve conduction studies of the right median nerve",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional tremor of the right hand (psychogenic movement disorder)",
+ "decisive_served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "co-activation sign on passive movement of the affected limb",
+  "'whack-a-mole' sign (restrain the affected limb and watch the others)",
+  "variability of amplitude, frequency and axis over the examination"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 296,
+   "completion_tokens": 39,
+   "total_tokens": 335,
+   "cost": 6.273e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.273e-05,
+    "upstream_inference_prompt_cost": 4.44e-05,
+    "upstream_inference_completions_cost": 1.833e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 539,
+   "completion_tokens": 30,
+   "total_tokens": 569,
+   "cost": 9.495e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.495e-05,
+    "upstream_inference_prompt_cost": 8.085e-05,
+    "upstream_inference_completions_cost": 1.41e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1011,
+   "completion_tokens": 20,
+   "total_tokens": 1031,
+   "cost": 0.000109594,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000109594,
+    "upstream_inference_prompt_cost": 0.000100194,
+    "upstream_inference_completions_cost": 9.4e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.0
+}

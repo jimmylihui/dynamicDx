@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have double vision?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of multiple sclerosis?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "yes",
+  "5": "yes",
+  "6": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "adduction in horizontal gaze (each eye)",
+  "MRI brain with DWI",
+  "MRI sella and orbits"
+ ],
+ "results": [
+  "1. nystagmus: direction and whether it changes with gaze: see-saw nystagmus",
+  "2. adduction in horizontal gaze (each eye): adduction paresis of the LEFT eye with dissociated abducting paresis of the right eye on rightward gaze - internuclear ophthalmoplegia",
+  "3. MRI brain with DWI: bilateral dorsomedial PONTINE and LEFT THALAMIC infarction",
+  "4. MRI sella and orbits: normal - no parasellar or suprasellar mass"
+ ],
+ "dx_raw": "DIAGNOSIS: Ischemic stroke due to cardioembolism\n\nIschemic stroke due to arterial embolism\nBasilar artery thrombosis\nTop-of-the-basilar syndrome",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Ischemic stroke due to cardioembolism",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "adduction in horizontal gaze (each eye)",
+  "MRI brain with DWI",
+  "MRI sella and orbits"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1890,
+   "total_tokens": 10588,
+   "cost": 0.0015124,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0015124,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0006426
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1657,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9060,
+   "completion_tokens": 2390,
+   "total_tokens": 11450,
+   "cost": 0.0017186,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0017186,
+    "upstream_inference_prompt_cost": 0.000906,
+    "upstream_inference_completions_cost": 0.0008126
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2252,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.2,
+ "video": "mild_1_seesaw_INO_PMC6883617.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 139.8
+}

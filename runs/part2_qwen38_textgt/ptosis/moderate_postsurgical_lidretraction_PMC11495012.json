@@ -1,0 +1,141 @@
+{
+ "questions": [
+  "Is the high eyelid on the same side as a drooping lower eyelid?",
+  "Do you have double vision?",
+  "Does your eye bulge forward compared to the other?",
+  "Have you been diagnosed with hyperthyroidism or Graves' disease?",
+  "Did this appearance start suddenly after an injury or surgery?",
+  "Do you have difficulty closing that eye completely?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Measure the margin reflex distance 1 (MRD1) and levator function in both eyes",
+  "Perform a forced duction test to assess for mechanical restriction or tethering of the upper eyelid",
+  "Obtain high-resolution CT scan of the orbits with thin cuts through the superior orbital rim"
+ ],
+ "served": [
+  "lid position and measurement (MRD1 both sides)",
+  "limb and neck power",
+  "ocular motility examination"
+ ],
+ "results": [
+  "1. Measure the margin reflex distance 1 (MRD1) and levator function in both eyes",
+  "     lid position and measurement (MRD1 both sides): MRD1 raised on the LEFT (retraction); right lid height normal - the right eye is NOT ptotic",
+  "     limb and neck power: normal",
+  "2. Perform a forced duction test to assess for mechanical restriction or tethering of the upper eyelid",
+  "     ocular motility examination: full in all directions",
+  "3. Obtain high-resolution CT scan of the orbits with thin cuts through the superior orbital rim",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-traumatic upper eyelid retraction of the left eye\nAlternative: Cicatricial lid retraction secondary to prior trauma\nAlternative: Congenital lid retraction unmasked by recent injury",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Measure the margin reflex distance 1 (MRD1) and levator function in both eyes\n2. Perform a forced duction test to assess for mechanical restriction or tethering of the upper eyelid\n3. Obtain high-resolution CT scan of the orbits with thin cuts through the superior orbital rim",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Post-traumatic upper eyelid retraction of the left eye",
+ "decisive_served": [
+  "lid position and measurement (MRD1 both sides)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 183,
+   "completion_tokens": 85,
+   "total_tokens": 268,
+   "cost": 6.74e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.74e-05,
+    "upstream_inference_prompt_cost": 2.745e-05,
+    "upstream_inference_completions_cost": 3.995e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 532,
+   "completion_tokens": 62,
+   "total_tokens": 594,
+   "cost": 0.00010894,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010894,
+    "upstream_inference_prompt_cost": 7.98e-05,
+    "upstream_inference_completions_cost": 2.914e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 822,
+   "completion_tokens": 45,
+   "total_tokens": 867,
+   "cost": 7.5842e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.5842e-05,
+    "upstream_inference_prompt_cost": 5.4692e-05,
+    "upstream_inference_completions_cost": 2.115e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 11.7
+}

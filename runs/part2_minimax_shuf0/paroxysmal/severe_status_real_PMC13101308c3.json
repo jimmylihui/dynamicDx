@@ -1,0 +1,174 @@
+{
+ "questions": [
+  "Is the bandage on your head due to a fall?",
+  "Did you lose consciousness when you fell?",
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your head?",
+  "Have you vomited since the fall?",
+  "Are you feeling dizzy right now?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you remember the event of falling?",
+  "Did you have surgery on your head?",
+  "Do you take blood thinners?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Non-contrast CT head",
+  "Basic metabolic panel",
+  "Complete blood count",
+  "Neurological examination",
+  "Surgical wound inspection",
+  "Vital signs measurement"
+ ],
+ "served": [
+  "CT head",
+  "serum electrolytes, urea and creatinine",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy"
+ ],
+ "results": [
+  "1. Non-contrast CT head",
+  "     CT head: normal",
+  "2. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "3. Complete blood count",
+  "     not performed / not available",
+  "4. Neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "5. Surgical wound inspection",
+  "     not performed / not available",
+  "6. Vital signs measurement",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Scalp laceration, status post repair, with normal CT head and neurological examination, most likely sustained during a syncopal or unwitnessed fall that the patient does not recall.\nALTERNATIVES:\n1. Postictal state following a generalized tonic-clonic seizure with secondary head trauma\n2. Migraine headache requiring inpatient management (head dressing being incidental or from a previous injury)\n3. Delirium or confusional state (less likely given normal cognitive screen, but possible given unreliable history)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Non-contrast CT head\n2. Basic metabolic panel\n3. Complete blood count\n4. Neurological examination\n5. Surgical wound inspection\n6. Vital signs measurement",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Scalp laceration, status post repair, with normal CT head and neurological examination, most likely sustained during a syncopal or unwitnessed fall that the patient does not recall.",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 1586,
+   "total_tokens": 8648,
+   "cost": 0.00398436,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00398436,
+    "upstream_inference_prompt_cost": 0.00208116,
+    "upstream_inference_completions_cost": 0.0019032
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1483,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7463,
+   "completion_tokens": 158,
+   "total_tokens": 7621,
+   "cost": 0.00073722,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00073722,
+    "upstream_inference_prompt_cost": 0.00054762,
+    "upstream_inference_completions_cost": 0.0001896
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 123,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7752,
+   "completion_tokens": 1911,
+   "total_tokens": 9663,
+   "cost": 0.00283128,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00283128,
+    "upstream_inference_prompt_cost": 0.00053808,
+    "upstream_inference_completions_cost": 0.0022932
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1805,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 58.7
+}

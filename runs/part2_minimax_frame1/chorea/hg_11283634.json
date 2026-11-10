@@ -1,0 +1,189 @@
+{
+ "questions": [
+  "Are you able to move your body voluntarily if you try?",
+  "Are you currently in pain?",
+  "Are you awake and aware of your surroundings?",
+  "Did this abnormal posture come on suddenly?",
+  "Have you had an episode like this before?",
+  "Do you have a fever or feel hot?",
+  "Do you have weakness anywhere in your body?",
+  "Have you recently had a head injury or fall?",
+  "Do you have any long-standing medical conditions (e.g., diabetes, hypertension, epilepsy)?",
+  "Do you have a history of psychiatric illness?",
+  "Have you been under unusual emotional stress recently?",
+  "Can you feel me touching your legs?",
+  "Are you able to speak?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Hoover's sign (passive elevation of one leg while testing contralateral hip extension)",
+  "Capillary blood glucose",
+  "Serum creatine kinase",
+  "Serum electrolytes, urea and creatinine",
+  "Serum TSH and free T4",
+  "Urine toxicology screen",
+  "Serum prolactin",
+  "Attempt to elicit active movement by distraction (e.g., ask patient to look in a direction while testing strength)",
+  "MRI brain with contrast",
+  "EEG (video-EEG if available)"
+ ],
+ "served": [
+  "limb strength (MRC) examination",
+  "blood glucose",
+  "creatine kinase",
+  "serum electrolytes, urea and creatinine",
+  "thyroid function (TSH, free T4)",
+  "toxicology screen (urine and serum)",
+  "morning cortisol, ACTH and pituitary hormones",
+  "effect of voluntary action and anxiety",
+  "brain MRI with contrast",
+  "EEG"
+ ],
+ "results": [
+  "1. Hoover's sign (passive elevation of one leg while testing contralateral hip extension)",
+  "     limb strength (MRC) examination: normal",
+  "2. Capillary blood glucose",
+  "     blood glucose: 2.25 g/L (normal 0.70-1.10) - non-ketotic hyperglycaemia",
+  "3. Serum creatine kinase",
+  "     creatine kinase: normal",
+  "4. Serum electrolytes, urea and creatinine",
+  "     serum electrolytes, urea and creatinine: creatinine 17 mg/L, eGFR 31 mL/min/1.73 m2",
+  "5. Serum TSH and free T4",
+  "     thyroid function (TSH, free T4): normal",
+  "6. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "7. Serum prolactin",
+  "     morning cortisol, ACTH and pituitary hormones: normal",
+  "8. Attempt to elicit active movement by distraction (e.g., ask patient to look in a direction while testing strength)",
+  "     effect of voluntary action and anxiety: no clear change",
+  "9. MRI brain with contrast",
+  "     brain MRI with contrast: normal basal ganglia, no focal lesion",
+  "10. EEG (video-EEG if available)",
+  "     EEG: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder (conversion disorder) presenting as apparent coma with paralysis, mutism and total anaesthesia, in a patient with poorly controlled type 2 diabetes and stage 3b–4 chronic kidney disease.\n\nAlternatives to consider:\n1. Catatonia (recurrent unresponsiveness and mutism, even in absence of psychiatric history)\n2. Dissociative stupor / non-epileptic attack disorder\n3. Hyperosmolar hyperglycaemic state or uraemic encephalopathy precipitating functional overlay",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Hoover's sign (passive elevation of one leg while testing contralateral hip extension)\n2. Capillary blood glucose\n3. Serum creatine kinase\n4. Serum electrolytes, urea and creatinine\n5. Serum TSH and free T4\n6. Urine toxicology screen\n7. Serum prolactin\n8. Attempt to elicit active movement by distraction (e.g., ask patient to look in a direction while testing strength)\n9. MRI brain with contrast\n10. EEG (video-EEG if available)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional neurological symptom disorder (conversion disorder) presenting as apparent coma with paralysis, mutism and total anaesthesia, in a patient with poorly controlled type 2 diabetes and stage 3b–4 chronic kidney disease.",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 1091,
+   "completion_tokens": 554,
+   "total_tokens": 1645,
+   "cost": 0.00095442,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00095442,
+    "upstream_inference_prompt_cost": 0.00028962,
+    "upstream_inference_completions_cost": 0.0006648
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 406,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1597,
+   "completion_tokens": 1195,
+   "total_tokens": 2792,
+   "cost": 0.00165486,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1076,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00165486,
+    "upstream_inference_prompt_cost": 0.00022086,
+    "upstream_inference_completions_cost": 0.001434
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1090,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 2044,
+   "completion_tokens": 2123,
+   "total_tokens": 4167,
+   "cost": 0.00278112,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1582,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00278112,
+    "upstream_inference_prompt_cost": 0.00023352,
+    "upstream_inference_completions_cost": 0.0025476
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2015,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 64.5
+}

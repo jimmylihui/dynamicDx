@@ -1,0 +1,146 @@
+{
+ "questions": [
+  "Do you have a tremor when your arms are resting in your lap?",
+  "Does the tremor worsen as you reach for an object?",
+  "Have you ever had a stroke?",
+  "Have you ever had a severe head injury?",
+  "Do you have a history of multiple sclerosis?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain",
+  "Slit-lamp examination",
+  "Serum ceruloplasmin",
+  "24-hour urinary copper"
+ ],
+ "served": [
+  "brain MRI",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin / 24 h urinary copper"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     brain MRI: no structural lesion",
+  "2. Slit-lamp examination",
+  "     slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "3. Serum ceruloplasmin",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease",
+  "4. 24-hour urinary copper",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional tremor due to functional neurological disorder\n\nDystonic tremor\nEssential tremor\nRubral tremor",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Slit-lamp examination\n3. Serum ceruloplasmin\n4. 24-hour urinary copper",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional tremor due to functional neurological disorder",
+ "decisive_served": [
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "copper / caeruloplasmin / 24 h urinary copper"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 173,
+   "completion_tokens": 5381,
+   "total_tokens": 5554,
+   "cost": 0.00184684,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00184684,
+    "upstream_inference_prompt_cost": 1.73e-05,
+    "upstream_inference_completions_cost": 0.00182954
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5017,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 469,
+   "completion_tokens": 3072,
+   "total_tokens": 3541,
+   "cost": 0.00109138,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00109138,
+    "upstream_inference_prompt_cost": 4.69e-05,
+    "upstream_inference_completions_cost": 0.00104448
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2740,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 715,
+   "completion_tokens": 4348,
+   "total_tokens": 5063,
+   "cost": 0.00154982,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00154982,
+    "upstream_inference_prompt_cost": 7.15e-05,
+    "upstream_inference_completions_cost": 0.00147832
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4176,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 1782.8
+}

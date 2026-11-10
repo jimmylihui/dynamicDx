@@ -1,0 +1,146 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Is the weakness only on one side of your body?",
+  "Can you move your left arm and leg on your own?",
+  "Do you have difficulty speaking?",
+  "Do you have any numbness or tingling on the affected side?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Did you have a severe headache before this started?",
+  "Have you had a similar experience before?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Non-contrast CT head",
+  "Blood glucose",
+  "CTA head and neck"
+ ],
+ "served": [
+  "CT head (non-contrast)",
+  "blood glucose and HbA1c",
+  "blood glucose",
+  "MR or CT angiography"
+ ],
+ "results": [
+  "1. Non-contrast CT head",
+  "     CT head (non-contrast): ischaemic stroke - 92.9% of the series were ischaemic and one was haemorrhagic",
+  "2. Blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "     blood glucose: normal - non-ketotic hyperglycaemia was an exclusion criterion for this series",
+  "3. CTA head and neck",
+  "     MR or CT angiography: middle cerebral artery in 64.3%, anterior cerebral artery in 21.4%, posterior cerebral artery in 14.3%"
+ ],
+ "dx_raw": "DIAGNOSIS: Ischaemic stroke of the middle cerebral artery due to thromboembolism.\nIschaemic stroke due to atherosclerosis\nLacunar stroke\nCardioembolic stroke",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Non-contrast CT head\n2. Blood glucose\n3. ECG\n4. CTA head and neck",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Ischaemic stroke of the middle cerebral artery due to thromboembolism.",
+ "decisive_served": [
+  "CT head (non-contrast)",
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2410,
+   "total_tokens": 11108,
+   "cost": 0.0016892,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0016892,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0008194
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2308,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9086,
+   "completion_tokens": 384,
+   "total_tokens": 9470,
+   "cost": 0.00103916,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00103916,
+    "upstream_inference_prompt_cost": 0.0009086,
+    "upstream_inference_completions_cost": 0.00013056
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 380,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9325,
+   "completion_tokens": 1696,
+   "total_tokens": 11021,
+   "cost": 0.00150914,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00150914,
+    "upstream_inference_prompt_cost": 0.0009325,
+    "upstream_inference_completions_cost": 0.00057664
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1655,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 165.9
+}

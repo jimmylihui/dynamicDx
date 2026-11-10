@@ -1,0 +1,120 @@
+{
+ "questions": [
+  "Do you feel unsteady when you walk?",
+  "Do your feet drag or feel stuck to the floor when you walk?",
+  "Do you have weakness in one leg more than the other?",
+  "Have you had any recent falls?",
+  "Do you have trouble controlling your bladder?",
+  "Do you have problems with your memory or thinking?",
+  "Do you have a tremor, especially in your hands?",
+  "Have you ever been told you had a stroke?",
+  "Do you have numbness or tingling in your legs or feet?",
+  "Do you have pain in your back or legs when you walk?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "reflexes, plantar responses and frontal release signs",
+  "trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "results": [
+  "1. reflexes, plantar responses and frontal release signs: normal power in limb and neck muscles, normal reflexes, flexor plantars",
+  "2. trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine: about 70 degrees of leftward trunk tilt on walking, with a normal stance; the tilt DISAPPEARS when recumbent",
+  "3. medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium): no dopamine-blocking drug - excludes drug-induced Pisa syndrome",
+  "4. neuronal surface antibody panel including anti-IgLON5: STRONGLY POSITIVE for anti-IgLON5 (3+ on semi-quantitative grading, 1:10 serum dilution, transfected-cell assay)",
+  "5. MRI brain - cortical atrophy pattern: MRI brain and whole spine NORMAL"
+ ],
+ "dx_raw": "DIAGNOSIS: Anti-IgLON5 disease (autoimmune neuronal surface antibody syndrome presenting as adult-onset dystonia / Pisa syndrome)\nIdiopathic adult-onset focal dystonia (Pisa syndrome)\nDrug-induced dystonia (e.g., from undisclosed dopamine antagonists)\nMultiple system atrophy (MSA)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Anti-IgLON5 disease (autoimmune neuronal surface antibody syndrome presenting as adult-onset dystonia / Pisa syndrome)",
+ "decisive_served": [
+  "reflexes, plantar responses and frontal release signs",
+  "trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2787,
+   "total_tokens": 9849,
+   "cost": 0.00542532,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00542532,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0033444
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2662,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7631,
+   "completion_tokens": 1386,
+   "total_tokens": 9017,
+   "cost": 0.00226122,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00226122,
+    "upstream_inference_prompt_cost": 0.00059802,
+    "upstream_inference_completions_cost": 0.0016632
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1326,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 49.4
+}

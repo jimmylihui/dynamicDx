@@ -1,0 +1,160 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Do you have any difficulty controlling your bladder or bowel?",
+  "Do you have any numbness in your legs?",
+  "Is the weakness in both legs?",
+  "Have you had a recent injury to your back or neck?",
+  "Do you have any pain in your legs?",
+  "Do you have any other weakness in your body?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of high blood pressure?",
+  "Have you started any new medications recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Neurological examination of the lower limbs",
+  "MRI of the brain",
+  "MRI of the spine"
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "gait and coordination",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI cervical and thoracic spine"
+ ],
+ "results": [
+  "1. Neurological examination of the lower limbs",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     gait and coordination: normal",
+  "2. MRI of the brain",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "3. MRI of the spine",
+  "     MRI cervical and thoracic spine: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional Neurological Disorder caused by psychological stress\nRestless Legs Syndrome\nAkathisia\nPeriodic Limb Movement Disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Neurological examination of the lower limbs\n2. MRI of the brain\n3. MRI of the spine",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional Neurological Disorder caused by psychological stress",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8314,
+   "completion_tokens": 3609,
+   "total_tokens": 11923,
+   "cost": 0.00205846,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00205846,
+    "upstream_inference_prompt_cost": 0.0008314,
+    "upstream_inference_completions_cost": 0.00122706
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3400,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8740,
+   "completion_tokens": 1950,
+   "total_tokens": 10690,
+   "cost": 0.001537,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001537,
+    "upstream_inference_prompt_cost": 0.000874,
+    "upstream_inference_completions_cost": 0.000663
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1872,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8984,
+   "completion_tokens": 4747,
+   "total_tokens": 13731,
+   "cost": 0.00251238,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00251238,
+    "upstream_inference_prompt_cost": 0.0008984,
+    "upstream_inference_completions_cost": 0.00161398
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4384,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 339.2
+}

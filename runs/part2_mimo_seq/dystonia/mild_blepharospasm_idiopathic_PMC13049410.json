@@ -1,0 +1,158 @@
+{
+ "questions": [
+  "Is this facial spasm around your eyes happening involuntarily, not on purpose when you move your face?",
+  "Does this spasm occur only when you close your eyes tightly, or does it also happen when your face is relaxed?",
+  "Have you had any recent injury to your face, or any infections like sinus/eye infections in the last few weeks?",
+  "Do you have any other symptoms like numbness, weakness, or pain in your face or the rest of your body along with this?",
+  "Is this spasm constant, or does it come and go throughout the day?",
+  "When you say you have other symptoms, is it numbness, weakness, or pain - and where specifically in your body?",
+  "Have you ever had an episode of facial paralysis (Bell's palsy) in the past, on either side of your face?",
+  "Which side of your face is affected by this spasm - is it both sides, or just one?",
+  "Does the spasm ever occur when your face is completely relaxed, or is it truly only when you actively close your eyes?",
+  "Are you aware of any family members with similar twitching or spasms?",
+  "Are you currently taking any medications, or have you taken any in the past - especially anti-nausea medications, psychiatric medications, or antipsychotics?",
+  "If yes to any medications, when did you start taking them relative to when these spasms began?",
+  "Did the spasms start in your eyelids first and then spread to the mouth and jaw, or did they start all at once?",
+  "Have you ever had any brain surgery, stroke, or head trauma?",
+  "Do the spasms get better when you touch your chin or forehead (a sensory trick or \"geste antagoniste\")?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "Detailed neurological examination focusing on cranial nerves and limb strength/sensation",
+  "Blood tests: CBC, ESR, CRP, ANA, anti-ganglioside antibodies (anti-GQ1b, anti-GM1)"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "full blood count and biochemistry",
+  "ESR / CRP",
+  "antinuclear antibodies and anti-dsDNA"
+ ],
+ "results": [
+  "R1 ASK Is this facial spasm around your eyes happening involuntarily, not on purpose when you move your face?; Does this spasm occur only when you close your eyes tightly, or does it also happen when your face is relaxed?; Have you had any recent injury to your face, or any infections like sinus/eye infections in the last few weeks?; Do you have any other symptoms like numbness, weakness, or pain in your face or the rest of your body along with this?; Is this spasm constant, or does it come and go throughout the day? -> ['yes', 'no', 'no', 'yes', 'no']",
+  "R2 ASK When you say you have other symptoms, is it numbness, weakness, or pain - and where specifically in your body?; Have you ever had an episode of facial paralysis (Bell's palsy) in the past, on either side of your face?; Which side of your face is affected by this spasm - is it both sides, or just one?; Does the spasm ever occur when your face is completely relaxed, or is it truly only when you actively close your eyes?; Are you aware of any family members with similar twitching or spasms? -> ['yes', 'no', 'yes', 'no', 'no']",
+  "R3 ORDER Detailed neurological examination focusing on cranial nerves and limb strength/sensation; Blood tests: CBC, ESR, CRP, ANA, anti-ganglioside antibodies (anti-GQ1b, anti-GM1) -> [['cranial nerve examination', 'limb strength (MRC) examination', 'sensory examination (pinprick, vibration, proprioception)'], ['full blood count and biochemistry', 'ESR / CRP', 'antinuclear antibodies and anti-dsDNA']]",
+  "R4 ASK Are you currently taking any medications, or have you taken any in the past - especially anti-nausea medications, psychiatric medications, or antipsychotics?; If yes to any medications, when did you start taking them relative to when these spasms began?; Did the spasms start in your eyelids first and then spread to the mouth and jaw, or did they start all at once?; Have you ever had any brain surgery, stroke, or head trauma?; Do the spasms get better when you touch your chin or forehead (a sensory trick or \"geste antagoniste\")? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R5 DIAGNOSIS Drug-induced orofacial dystonia (tardive dystonia) secondary to dopamine receptor-blocking medication, presenting with blepharospasm, perioral dystonia, and jaw spasms -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is this facial spasm around your eyes happening involuntarily, not on purpose when you move your face?",
+    "Does this spasm occur only when you close your eyes tightly, or does it also happen when your face is relaxed?",
+    "Have you had any recent injury to your face, or any infections like sinus/eye infections in the last few weeks?",
+    "Do you have any other symptoms like numbness, weakness, or pain in your face or the rest of your body along with this?",
+    "Is this spasm constant, or does it come and go throughout the day?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "When you say you have other symptoms, is it numbness, weakness, or pain - and where specifically in your body?",
+    "Have you ever had an episode of facial paralysis (Bell's palsy) in the past, on either side of your face?",
+    "Which side of your face is affected by this spasm - is it both sides, or just one?",
+    "Does the spasm ever occur when your face is completely relaxed, or is it truly only when you actively close your eyes?",
+    "Are you aware of any family members with similar twitching or spasms?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Detailed neurological examination focusing on cranial nerves and limb strength/sensation",
+    "Blood tests: CBC, ESR, CRP, ANA, anti-ganglioside antibodies (anti-GQ1b, anti-GM1)"
+   ],
+   "result": [
+    [
+     "cranial nerve examination",
+     "limb strength (MRC) examination",
+     "sensory examination (pinprick, vibration, proprioception)"
+    ],
+    [
+     "full blood count and biochemistry",
+     "ESR / CRP",
+     "antinuclear antibodies and anti-dsDNA"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking any medications, or have you taken any in the past - especially anti-nausea medications, psychiatric medications, or antipsychotics?",
+    "If yes to any medications, when did you start taking them relative to when these spasms began?",
+    "Did the spasms start in your eyelids first and then spread to the mouth and jaw, or did they start all at once?",
+    "Have you ever had any brain surgery, stroke, or head trauma?",
+    "Do the spasms get better when you touch your chin or forehead (a sensory trick or \"geste antagoniste\")?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Drug-induced orofacial dystonia (tardive dystonia) secondary to dopamine receptor-blocking medication, presenting with blepharospasm, perioral dystonia, and jaw spasms"
+  }
+ ],
+ "dx": "Drug-induced orofacial dystonia (tardive dystonia) secondary to dopamine receptor-blocking medication, presenting with blepharospasm, perioral dystonia, and jaw spasms",
+ "dx_raw": "ASK:\n1. What specific medication are you taking - can you name the drug or tell me what condition it was prescribed for?\n2. Have you ever taken medications like metoclopramide, prochlorperazine, haloperidol, or any antipsychotic drugs?\n3. Did the eye twitching start before or after you began taking these medications?\n\nORDER:\n1. Specific medication review and identification of dopamine-blocking agents\n\nDIAGNOSIS: Drug-induced orofacial dystonia (tardive dystonia) secondary to dopamine receptor-blocking medication, presenting with blepharospasm, perioral dystonia, and jaw spasms",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0032,
+ "n_frames": 32,
+ "duration_s": 6.6,
+ "video": "mild_blepharospasm_idiopathic_PMC13049410.mp4",
+ "line": "dystonia",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 138.8
+}

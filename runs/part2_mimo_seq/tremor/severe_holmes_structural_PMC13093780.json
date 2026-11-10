@@ -1,0 +1,242 @@
+{
+ "questions": [
+  "Do these hand movements occur when you are trying to relax, or only when you're moving or focused on something else?",
+  "Did these movements start on one side first, or both hands at the same time?",
+  "Have you ever had a head injury, stroke, or been diagnosed with a movement disorder before?",
+  "Do these movements get worse when you're feeling anxious or stressed?",
+  "Do you take any medications regularly, including over-the-counter drugs?",
+  "Is there anyone else in your family who has had similar involuntary movements?",
+  "Have you noticed any stiffness, slowness, or difficulty with balance?",
+  "Did anyone ever tell you these movements are \"all in your head\" or suggest they might be psychological?",
+  "How old are you?",
+  "When did you first notice these movements, and have they been getting worse over time?",
+  "Have you noticed any changes in your speech, swallowing, or writing?",
+  "Have you had your eyes examined recently, and were there any abnormalities noted (e.g., rings around the cornea)?",
+  "Can you tell me how old you are in years?",
+  "Are the movements worse in one hand than the other?",
+  "When your hands are completely relaxed in your lap, do the movements continue or stop?",
+  "Do you ever notice the movements disappearing entirely for periods, such as during sleep?",
+  "Have you ever been treated for tuberculosis (TB), and did you complete the full course of treatment?",
+  "Have you had symptoms like fever, night sweats, weight loss, or a persistent cough?",
+  "Has anyone in your household been diagnosed with tuberculosis?",
+  "Have you ever been tested for HIV?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "yes",
+  "15": "yes",
+  "16": "no",
+  "17": "yes",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 6,
+ "orders": [
+  "Focused neurological examination of the upper limbs assessing for:",
+  "Assessment of the movements during specific tasks: finger tapping, reaching, and while the limbs are completely at rest",
+  "Head and brain MRI with contrast, specifically looking for structural lesions in the posterior fossa, cerebellum, brainstem, thalamus, and basal ganglia",
+  "Serum ceruloplasmin level",
+  "24-hour urine copper excretion",
+  "Complete metabolic panel including liver function tests"
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "reflexes and plantar responses",
+  "tremor at rest",
+  "kinetic / intention tremor (finger-nose)",
+  "MRI brain with gadolinium",
+  "brain MRI",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "24-hour urinary copper",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "liver function and albumin/globulin"
+ ],
+ "results": [
+  "R1 ASK Do these hand movements occur when you are trying to relax, or only when you're moving or focused on something else?; Did these movements start on one side first, or both hands at the same time?; Have you ever had a head injury, stroke, or been diagnosed with a movement disorder before?; Do these movements get worse when you're feeling anxious or stressed? -> ['yes', 'yes', 'no', 'no']",
+  "R2 ORDER Focused neurological examination of the upper limbs assessing for:; Assessment of the movements during specific tasks: finger tapping, reaching, and while the limbs are completely at rest -> [['muscle tone examination', 'limb strength (MRC) examination', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'reflexes and plantar responses'], ['tremor at rest', 'kinetic / intention tremor (finger-nose)']]",
+  "R3 ASK Do you take any medications regularly, including over-the-counter drugs?; Is there anyone else in your family who has had similar involuntary movements?; Have you noticed any stiffness, slowness, or difficulty with balance?; Did anyone ever tell you these movements are \"all in your head\" or suggest they might be psychological? -> ['no', 'no', 'no', 'no']",
+  "R4 ASK How old are you?; When did you first notice these movements, and have they been getting worse over time?; Have you noticed any changes in your speech, swallowing, or writing?; Have you had your eyes examined recently, and were there any abnormalities noted (e.g., rings around the cornea)? -> ['no', 'yes', 'no', 'no']",
+  "R5 ASK Can you tell me how old you are in years?; Are the movements worse in one hand than the other?; When your hands are completely relaxed in your lap, do the movements continue or stop?; Do you ever notice the movements disappearing entirely for periods, such as during sleep? -> ['no', 'yes', 'yes', 'no']",
+  "R6 ORDER Head and brain MRI with contrast, specifically looking for structural lesions in the posterior fossa, cerebellum, brainstem, thalamus, and basal ganglia; Serum ceruloplasmin level; 24-hour urine copper excretion; Complete metabolic panel including liver function tests -> [['MRI brain with gadolinium', 'brain MRI'], ['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['24-hour urinary copper', 'copper / caeruloplasmin / 24 h urinary copper'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'liver function and albumin/globulin']]",
+  "R7 ASK Have you ever been treated for tuberculosis (TB), and did you complete the full course of treatment?; Have you had symptoms like fever, night sweats, weight loss, or a persistent cough?; Has anyone in your household been diagnosed with tuberculosis?; Have you ever been tested for HIV? -> ['yes', 'no', 'no', 'no']",
+  "R8 DIAGNOSIS Post-tuberculous movement disorder (thalamic tremor syndrome) secondary to left thalamic tuberculoma, presenting with mixed rest and intention tremor with ipsilateral cerebellar signs, following treatment for tuberculosis. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do these hand movements occur when you are trying to relax, or only when you're moving or focused on something else?",
+    "Did these movements start on one side first, or both hands at the same time?",
+    "Have you ever had a head injury, stroke, or been diagnosed with a movement disorder before?",
+    "Do these movements get worse when you're feeling anxious or stressed?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Focused neurological examination of the upper limbs assessing for:",
+    "Assessment of the movements during specific tasks: finger tapping, reaching, and while the limbs are completely at rest"
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "limb strength (MRC) examination",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)",
+     "reflexes and plantar responses"
+    ],
+    [
+     "tremor at rest",
+     "kinetic / intention tremor (finger-nose)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you take any medications regularly, including over-the-counter drugs?",
+    "Is there anyone else in your family who has had similar involuntary movements?",
+    "Have you noticed any stiffness, slowness, or difficulty with balance?",
+    "Did anyone ever tell you these movements are \"all in your head\" or suggest they might be psychological?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "How old are you?",
+    "When did you first notice these movements, and have they been getting worse over time?",
+    "Have you noticed any changes in your speech, swallowing, or writing?",
+    "Have you had your eyes examined recently, and were there any abnormalities noted (e.g., rings around the cornea)?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Can you tell me how old you are in years?",
+    "Are the movements worse in one hand than the other?",
+    "When your hands are completely relaxed in your lap, do the movements continue or stop?",
+    "Do you ever notice the movements disappearing entirely for periods, such as during sleep?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Head and brain MRI with contrast, specifically looking for structural lesions in the posterior fossa, cerebellum, brainstem, thalamus, and basal ganglia",
+    "Serum ceruloplasmin level",
+    "24-hour urine copper excretion",
+    "Complete metabolic panel including liver function tests"
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium",
+     "brain MRI"
+    ],
+    [
+     "serum copper and caeruloplasmin",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "24-hour urinary copper",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests",
+     "liver function and albumin/globulin"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Have you ever been treated for tuberculosis (TB), and did you complete the full course of treatment?",
+    "Have you had symptoms like fever, night sweats, weight loss, or a persistent cough?",
+    "Has anyone in your household been diagnosed with tuberculosis?",
+    "Have you ever been tested for HIV?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Post-tuberculous movement disorder (thalamic tremor syndrome) secondary to left thalamic tuberculoma, presenting with mixed rest and intention tremor with ipsilateral cerebellar signs, following treatment for tuberculosis."
+  }
+ ],
+ "dx": "Post-tuberculous movement disorder (thalamic tremor syndrome) secondary to left thalamic tuberculoma, presenting with mixed rest and intention tremor with ipsilateral cerebellar signs, following treatment for tuberculosis.",
+ "dx_raw": "DIAGNOSIS: Post-tuberculous movement disorder (thalamic tremor syndrome) secondary to left thalamic tuberculoma, presenting with mixed rest and intention tremor with ipsilateral cerebellar signs, following treatment for tuberculosis.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0039,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 230.1
+}

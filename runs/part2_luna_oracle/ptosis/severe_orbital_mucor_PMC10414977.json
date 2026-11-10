@@ -1,0 +1,145 @@
+{
+ "questions": [
+  "Has the affected eye become more prominent or more open than usual recently?",
+  "Did this change begin suddenly, within the last few days?",
+  "Have you had any decrease or blurring of vision in that eye?",
+  "Have you had double vision?",
+  "Do you have significant eye pain, especially when moving the eye?",
+  "Is the eye red or unusually sensitive to light?",
+  "Have you had a severe headache, nausea, vomiting, weakness, numbness, or trouble speaking?",
+  "Have you recently injured the eye or head?",
+  "Have you had fever or swelling around the eye?",
+  "Are you unable to completely close that eye?",
+  "Does the eye feel dry, gritty, or as though something is in it?",
+  "Have you noticed reduced movement of that eye?",
+  "Is the other eye also becoming more prominent or more open?",
+  "Have you ever had a similar episode before?",
+  "Have you been diagnosed with thyroid disease?",
+  "Have you recently had symptoms of an overactive thyroid, such as weight loss, racing heartbeat, tremor, heat intolerance, or increased sweating?",
+  "Have you noticed a neck swelling?",
+  "Do you smoke or use nicotine products?",
+  "Have you recently started any new medication or stopped a thyroid medication?",
+  "Have you had recent eye surgery, injections, or procedures around the eye?",
+  "Have you had a recent sinus infection or severe nasal congestion?",
+  "Has the appearance of the eye been progressively worsening over weeks or months?",
+  "Have you noticed difficulty seeing colors with that eye?",
+  "Does covering either eye relieve double vision?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "yes",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "glucose / HbA1c",
+  "SARS-CoV-2 test",
+  "fungal culture / KOH of nasal tissue",
+  "CT sinuses"
+ ],
+ "results": [
+  "1. glucose / HbA1c: non-fasting glucose 385 mg/dL - NEWLY DIAGNOSED diabetes",
+  "2. SARS-CoV-2 test: POSITIVE",
+  "3. fungal culture / KOH of nasal tissue: non-septate broad hyphae - Mucorales",
+  "4. CT sinuses: invasive sinus disease extending to the orbit"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute invasive rhino-orbital mucormycosis (COVID-19–associated, diabetes-related), caused by Mucorales fungi\n\nAlternative: Invasive bacterial rhinosinusitis with orbital extension  \nAlternative: Orbital cellulitis secondary to acute invasive sinusitis  \nAlternative: COVID-19–associated orbital inflammatory disease (orbital myositis)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Acute invasive rhino-orbital mucormycosis (COVID-19–associated, diabetes-related), caused by Mucorales fungi",
+ "decisive_served": [
+  "glucose / HbA1c",
+  "SARS-CoV-2 test",
+  "fungal culture / KOH of nasal tissue",
+  "CT sinuses"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20428,
+   "completion_tokens": 621,
+   "total_tokens": 21049,
+   "cost": 0.00057715,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20425,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00057715,
+    "upstream_inference_prompt_cost": 0.00020455,
+    "upstream_inference_completions_cost": 0.0003726
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 280,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 21392,
+   "completion_tokens": 148,
+   "total_tokens": 21540,
+   "cost": 0.00041385,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20425,
+    "cache_write_tokens": 964,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00041385,
+    "upstream_inference_prompt_cost": 0.00032505,
+    "upstream_inference_completions_cost": 8.88e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 64,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 20.2
+}

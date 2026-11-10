@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Are you having difficulty breathing?",
+  "Do you have chest pain?",
+  "Do you have abdominal pain?",
+  "Did you have surgery recently?",
+  "Do you have a history of heart disease?",
+  "Do you have a history of lung disease?",
+  "Are you experiencing any numbness or weakness in your limbs?",
+  "Do you have a fever?",
+  "Are you feeling dizzy?",
+  "Is the brace causing you discomfort?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "trigger or provoking activity",
+  "medication and anaesthetic exposure",
+  "interictal EEG",
+  "antiseizure medication trial"
+ ],
+ "results": [
+  "1. trigger or provoking activity: action-induced and restricted to a few body segments, suggesting cortical-reflex myoclonus",
+  "2. medication and anaesthetic exposure: propofol and thiopentone for coronary artery bypass grafting with aortic valve replacement; jerks began 6 days later (day 3 in the second case)",
+  "3. interictal EEG: occasional OCCIPITAL SHARP WAVES only (normal in the second patient) - no ictal pattern",
+  "4. antiseizure medication trial: complete resolution within 4 days on clonazepam 0.25 mg twice daily and levetiracetam 500 mg twice daily, with no relapse on follow-up"
+ ],
+ "dx_raw": "DIAGNOSIS: Cortical-reflex myoclonus following cardiac surgery\n\n1. Post-operative myoclonus due to metabolic encephalopathy\n2. Post-operative epilepsy\n3. Hypoxic-ischemic encephalopathy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Cortical-reflex myoclonus following cardiac surgery",
+ "decisive_served": [
+  "trigger or provoking activity",
+  "medication and anaesthetic exposure",
+  "interictal EEG",
+  "antiseizure medication trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8762,
+   "completion_tokens": 930,
+   "total_tokens": 9692,
+   "cost": 0.0011924,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011924,
+    "upstream_inference_prompt_cost": 0.0008762,
+    "upstream_inference_completions_cost": 0.0003162
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 798,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9248,
+   "completion_tokens": 2111,
+   "total_tokens": 11359,
+   "cost": 0.00164254,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00164254,
+    "upstream_inference_prompt_cost": 0.0009248,
+    "upstream_inference_completions_cost": 0.00071774
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1987,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 195.2
+}

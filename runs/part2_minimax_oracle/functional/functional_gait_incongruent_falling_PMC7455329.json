@@ -1,0 +1,135 @@
+{
+ "questions": [
+  "Did you lose consciousness right before you fell?",
+  "Do you currently have any weakness in your face, arm, or leg?",
+  "Do you currently have any numbness or tingling, especially on one side of your body?",
+  "Is your speech slurred or are you having trouble speaking?",
+  "Are you having any sudden trouble with your vision, like double vision or loss of vision?",
+  "Do you have a sudden, severe headache?",
+  "Did you trip, or did your legs just suddenly give way?",
+  "Did you experience any shaking or jerking of your body before you fell?",
+  "Did you lose control of your bladder or bowels during the fall?",
+  "Do you have a history of an irregular heartbeat, such as atrial fibrillation?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of stroke or mini-strokes (TIAs)?",
+  "Do you have a history of seizures or epilepsy?",
+  "Do you have a history of Parkinson's disease?",
+  "Do you feel lightheaded or dizzy when you stand up?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "Hoover sign / hip-abductor sign",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "MRC power in all four limbs",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "results": [
+  "1. Hoover sign / hip-abductor sign: POSITIVE",
+  "2. gait with a distracting or automatic task (dancing, counting backwards): the pattern changes or normalises",
+  "3. observation for excessive slowness or uneconomic posture: INCONGRUENT - repeated falls with no injury at all, and an unaided recovery each time",
+  "4. knee buckling / astasia-abasia on walking: POSITIVE - the patient sinks to the floor twice during one corridor walk, slowly and without a protective reaction",
+  "5. MRC power in all four limbs: 5/5 throughout - a slow controlled descent of this kind requires intact quadriceps strength",
+  "6. video-EEG monitoring with limb surface electrodes: no ictal discharge accompanies the falls"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder (FND) presenting with astasia-abasia and positive Hoover's sign\n1. Epileptic drop attack (atonic seizure)\n2. Vasovagal or cardiogenic syncope\n3. Transient ischaemic attack (brainstem or motor cortex)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional neurological symptom disorder (FND) presenting with astasia-abasia and positive Hoover's sign",
+ "decisive_served": [
+  "Hoover sign / hip-abductor sign",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "MRC power in all four limbs",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8886,
+   "completion_tokens": 4028,
+   "total_tokens": 12914,
+   "cost": 0.00746172,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00746172,
+    "upstream_inference_prompt_cost": 0.00262812,
+    "upstream_inference_completions_cost": 0.0048336
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3795,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9681,
+   "completion_tokens": 1707,
+   "total_tokens": 11388,
+   "cost": 0.00282366,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8871,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00282366,
+    "upstream_inference_prompt_cost": 0.00077526,
+    "upstream_inference_completions_cost": 0.0020484
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1646,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 60.7
+}

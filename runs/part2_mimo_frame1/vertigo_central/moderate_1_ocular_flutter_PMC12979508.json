@@ -1,0 +1,182 @@
+{
+ "questions": [
+  "Are you here today because of that mark near your eyebrow?",
+  "Is it painful?",
+  "Is it itchy?",
+  "Did something cause it (like a cut, scratch, or bump)?",
+  "Has it been growing or changing recently?",
+  "Has it bled or oozed anything?",
+  "Have you had any changes in your vision?",
+  "Do you have any other symptoms anywhere else on your body?",
+  "Are you here for a different problem than what's visible on your face?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "yes",
+  "9": "yes"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Pupillary light reflex examination",
+  "Fundoscopy",
+  "Visual acuity measurement",
+  "Visual field testing",
+  "Full blood count",
+  "Erythrocyte sedimentation rate",
+  "C-reactive protein",
+  "Thyroid function tests",
+  "Random glucose",
+  "MRI brain with orbits"
+ ],
+ "served": [
+  "pupil size and light reaction",
+  "fundoscopy",
+  "visual fields (perimetry)",
+  "full blood count and biochemistry",
+  "ESR / CRP",
+  "ESR / CRP",
+  "TSH / free T4",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "MRI brain with gadolinium",
+  "MRI sella and orbits"
+ ],
+ "results": [
+  "1. Pupillary light reflex examination",
+  "     pupil size and light reaction: equal and reactive",
+  "2. Fundoscopy",
+  "     fundoscopy: normal",
+  "3. Visual acuity measurement",
+  "     not performed / not available",
+  "4. Visual field testing",
+  "     visual fields (perimetry): full",
+  "5. Full blood count",
+  "     full blood count and biochemistry: normal",
+  "6. Erythrocyte sedimentation rate",
+  "     ESR / CRP: normal",
+  "7. C-reactive protein",
+  "     ESR / CRP: normal",
+  "8. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "9. Random glucose",
+  "     blood glucose and HbA1c: normal",
+  "     glucose / HbA1c: normal",
+  "10. MRI brain with orbits",
+  "     MRI brain with gadolinium: normal",
+  "     MRI sella and orbits: normal pituitary and orbits"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder (functional vision disturbance)\n\nMigraine with visual aura\nAnxiety or stress-related somatic symptoms\nBehçet disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Pupillary light reflex examination\n2. Fundoscopy\n3. Visual acuity measurement\n4. Visual field testing\n5. Full blood count\n6. Erythrocyte sedimentation rate\n7. C-reactive protein\n8. Thyroid function tests\n9. Random glucose\n10. MRI brain with orbits",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional neurological symptom disorder (functional vision disturbance)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 528,
+   "completion_tokens": 343,
+   "total_tokens": 871,
+   "cost": 0.0001436176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001436176,
+    "upstream_inference_prompt_cost": 4.75776e-05,
+    "upstream_inference_completions_cost": 9.604e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 234,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 934,
+   "completion_tokens": 528,
+   "total_tokens": 1462,
+   "cost": 0.0002522576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002522576,
+    "upstream_inference_prompt_cost": 0.0001044176,
+    "upstream_inference_completions_cost": 0.00014784
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 455,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1292,
+   "completion_tokens": 631,
+   "total_tokens": 1923,
+   "cost": 0.0003312176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003312176,
+    "upstream_inference_prompt_cost": 0.0001545376,
+    "upstream_inference_completions_cost": 0.00017668
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 594,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 15.2,
+ "video": "moderate_1_ocular_flutter_PMC12979508.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 65.6
+}

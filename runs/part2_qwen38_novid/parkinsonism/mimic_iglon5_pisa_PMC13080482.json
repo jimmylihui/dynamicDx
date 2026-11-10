@@ -1,0 +1,136 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your chest?",
+  "Does the pain radiate to your left arm or jaw?",
+  "Do you have a history of heart disease?",
+  "Are you short of breath?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Complete blood count",
+  "Basic metabolic panel",
+  "Urinalysis"
+ ],
+ "served": [
+  "full blood count, renal and liver profile",
+  "serum electrolytes, urea and creatinine",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Complete blood count",
+  "     full blood count, renal and liver profile: haemogram, glucose, renal, liver, electrolytes and thyroid all normal",
+  "2. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "3. Urinalysis",
+  "     urinalysis: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: No organic disease identified (Healthy individual)\nAnxiety disorder\nDepression",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Complete blood count\n2. Basic metabolic panel\n3. Urinalysis",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "No organic disease identified (Healthy individual)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 56,
+   "total_tokens": 222,
+   "cost": 5.122e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.122e-05,
+    "upstream_inference_prompt_cost": 2.49e-05,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 453,
+   "completion_tokens": 17,
+   "total_tokens": 470,
+   "cost": 4.1636e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 4.1636e-05,
+    "upstream_inference_prompt_cost": 3.3646e-05,
+    "upstream_inference_completions_cost": 7.99e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 637,
+   "completion_tokens": 21,
+   "total_tokens": 658,
+   "cost": 7.1116e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.1116e-05,
+    "upstream_inference_prompt_cost": 6.1246e-05,
+    "upstream_inference_completions_cost": 9.87e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 41.0
+}

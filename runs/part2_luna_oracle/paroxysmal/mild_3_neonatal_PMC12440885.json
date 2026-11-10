@@ -1,0 +1,131 @@
+{
+ "questions": [
+  "Are you having trouble breathing?",
+  "Are you awake and able to answer me clearly?",
+  "Do you have a severe or worsening headache?",
+  "Have you vomited?",
+  "Do you feel unusually sleepy or confused?",
+  "Did you lose consciousness?",
+  "Did you have a seizure or uncontrolled shaking?",
+  "Did you recently fall or hit your head?",
+  "Were you injured by someone or something?",
+  "Do you have blurred or double vision?",
+  "Do you have weakness or numbness in either arm or leg?",
+  "Do you have trouble speaking, walking, or keeping your balance?",
+  "Is blood or clear fluid coming from your nose or ears?",
+  "Do you have neck pain?",
+  "Do you have a fever?",
+  "Have you had this type of episode before?",
+  "Have you recently had surgery or another procedure on your head?",
+  "Are you taking any medicines that could make you sleepy?",
+  "Do you have any medication allergies?",
+  "Do you have a medical condition that causes seizures or fainting?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "genetic testing (exome / epilepsy panel)",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. genetic testing (exome / epilepsy panel): missense variant in exon 4 of CSNK2B (NM_001320.7 c.268A>C, p.Thr90Pro), likely pathogenic by ACMG; threonine 90 is evolutionarily conserved",
+  "2. video-EEG monitoring of a typical event: eyelid myoclonia with absences - the Jeavons phenotype"
+ ],
+ "dx_raw": "DIAGNOSIS: CSNK2B-related epilepsy (Poirier–Bienvenu neurodevelopmental syndrome) presenting with Jeavons syndrome—eyelid myoclonia with absences—caused by the likely pathogenic heterozygous CSNK2B c.268A>C (p.Thr90Pro) variant\n\nALTERNATIVE: Jeavons syndrome (epilepsy with eyelid myoclonia) without an identifiable syndromic cause\n\nALTERNATIVE: Other genetic generalized epilepsy with absence seizures and eyelid myoclonia\n\nALTERNATIVE: CSNK2B-related developmental and epileptic encephalopathy with a Jeavons-like phenotype",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "CSNK2B-related epilepsy (Poirier–Bienvenu neurodevelopmental syndrome) presenting with Jeavons syndrome—eyelid myoclonia with absences—caused by the likely pathogenic heterozygous CSNK2B c.268A>C (p.Thr90Pro) variant",
+ "decisive_served": [
+  "genetic testing (exome / epilepsy panel)",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 9388,
+   "completion_tokens": 432,
+   "total_tokens": 9820,
+   "cost": 0.00035335,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9385,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00035335,
+    "upstream_inference_prompt_cost": 9.415e-05,
+    "upstream_inference_completions_cost": 0.0002592
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 207,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 10108,
+   "completion_tokens": 413,
+   "total_tokens": 10521,
+   "cost": 0.00043195,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9385,
+    "cache_write_tokens": 720,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00043195,
+    "upstream_inference_prompt_cost": 0.00018415,
+    "upstream_inference_completions_cost": 0.0002478
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 268,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.6,
+ "video": "mild_3_neonatal_PMC12440885.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 14.0
+}

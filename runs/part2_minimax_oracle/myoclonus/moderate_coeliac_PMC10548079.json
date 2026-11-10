@@ -1,0 +1,135 @@
+{
+ "questions": [
+  "Did your symptoms begin suddenly?",
+  "Are your symptoms primarily on one side of your body?",
+  "Do you have weakness in your arms or legs?",
+  "Do you have any numbness or tingling?",
+  "Do you have any difficulty speaking or finding words?",
+  "Do you have a severe headache?",
+  "Do you have a history of atrial fibrillation?",
+  "Are you currently taking blood thinners?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Have you ever had a stroke or TIA in the past?",
+  "Do you currently smoke?",
+  "Do you have a history of cancer?",
+  "Do you have a fever or recent infection?",
+  "Do you have any dizziness or vertigo?",
+  "Do you have any changes in your vision?",
+  "Do you have any tremors or shaking?",
+  "Do you have difficulty with walking or balance?",
+  "Do you drink alcohol heavily?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "yes",
+  "19": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "coeliac serology (tissue transglutaminase IgA)",
+  "EEG-EMG polygraphy (back-averaging)",
+  "somatosensory evoked potentials",
+  "upper GI endoscopy with duodenal biopsy"
+ ],
+ "results": [
+  "1. coeliac serology (tissue transglutaminase IgA): 23 U/mL (normal up to 10) - RAISED",
+  "2. EEG-EMG polygraphy (back-averaging): electropositive polyspikes equally at Cz and C4; cortical potential 11 ms before the jerk - CORTICAL myoclonus",
+  "3. somatosensory evoked potentials: GIANT median nerve SSEP",
+  "4. upper GI endoscopy with duodenal biopsy: flattened villi - coeliac disease"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive myoclonic ataxia due to gluten-related disorder (coeliac disease)\nUnverricht-Lundborg disease\nLafora body disease\nMitochondrial disorder (e.g., MERRF)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Progressive myoclonic ataxia due to gluten-related disorder (coeliac disease)",
+ "decisive_served": [
+  "coeliac serology (tissue transglutaminase IgA)",
+  "EEG-EMG polygraphy (back-averaging)",
+  "somatosensory evoked potentials",
+  "upper GI endoscopy with duodenal biopsy"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 3945,
+   "total_tokens": 11007,
+   "cost": 0.00681492,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00681492,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.004734
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3751,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7754,
+   "completion_tokens": 2797,
+   "total_tokens": 10551,
+   "cost": 0.00399132,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00399132,
+    "upstream_inference_prompt_cost": 0.00063492,
+    "upstream_inference_completions_cost": 0.0033564
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2751,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "moderate_coeliac_PMC10548079.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 71.6
+}

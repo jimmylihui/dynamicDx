@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Are you having shortness of breath?",
+  "Are you producing phlegm with your cough?",
+  "Have you had a fever?",
+  "Have you been coughing for more than two weeks?",
+  "Are you coughing up blood?",
+  "Do you have a history of asthma?",
+  "Have you been in contact with anyone who has a severe cough?",
+  "Are you having chest pain?",
+  "Are you wheezing?",
+  "Have you taken any medication for this cough yet?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs (blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation)",
+  "Auscultation of the lungs",
+  "Auscultation of the heart",
+  "Examination of the oropharynx",
+  "Palpation of cervical lymph nodes"
+ ],
+ "served": [
+  "vital signs"
+ ],
+ "results": [
+  "1. Vital signs (blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation)",
+  "     vital signs: normal, afebrile",
+  "2. Auscultation of the lungs",
+  "     not performed / not available",
+  "3. Auscultation of the heart",
+  "     not performed / not available",
+  "4. Examination of the oropharynx",
+  "     not performed / not available",
+  "5. Palpation of cervical lymph nodes",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Factitious Disorder Imposed on Self\n\nSomatic Symptom Disorder\nConversion Disorder (Functional Neurological Symptom Disorder)\nMalingering",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Vital signs (blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation)\n2. Auscultation of the lungs\n3. Auscultation of the heart\n4. Examination of the oropharynx\n5. Palpation of cervical lymph nodes",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Factitious Disorder Imposed on Self",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 1269,
+   "total_tokens": 8331,
+   "cost": 0.00360372,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00360372,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0015228
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1169,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7457,
+   "completion_tokens": 1473,
+   "total_tokens": 8930,
+   "cost": 0.00231342,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00231342,
+    "upstream_inference_prompt_cost": 0.00054582,
+    "upstream_inference_completions_cost": 0.0017676
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1417,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7703,
+   "completion_tokens": 6752,
+   "total_tokens": 14455,
+   "cost": 0.00862722,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7442,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00862722,
+    "upstream_inference_prompt_cost": 0.00052482,
+    "upstream_inference_completions_cost": 0.0081024
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6721,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "c_9815763.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 100.4
+}

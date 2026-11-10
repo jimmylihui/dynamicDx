@@ -1,0 +1,137 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Did this start suddenly?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Have you had a recent head injury?",
+  "Do you have a severe headache?",
+  "Do you have a fever?",
+  "Do you have any weakness in your limbs?",
+  "Does the double vision get worse as the day goes on?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "yes",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "MRI Brain",
+  "Blood glucose"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "glucose / HbA1c"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     not performed / not available",
+  "2. Blood glucose",
+  "     blood glucose and HbA1c: fasting glucose 10.88 mmol/L; HbA1c 9%",
+  "     glucose / HbA1c: fasting glucose 10.88 mmol/L (ref 3.89-6.11) and HbA1c 9% (ref 4-6) - uncontrolled diabetes"
+ ],
+ "dx_raw": "DIAGNOSIS: Bilateral internuclear ophthalmoplegia due to basilar artery stroke\n\nMultiple sclerosis\nMyasthenia gravis\nWernicke encephalopathy",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Blood glucose",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Bilateral internuclear ophthalmoplegia due to basilar artery stroke",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1587,
+   "total_tokens": 10285,
+   "cost": 0.00140938,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00140938,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00053958
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1357,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9064,
+   "completion_tokens": 1304,
+   "total_tokens": 10368,
+   "cost": 0.00134976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00134976,
+    "upstream_inference_prompt_cost": 0.0009064,
+    "upstream_inference_completions_cost": 0.00044336
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1288,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9267,
+   "completion_tokens": 3411,
+   "total_tokens": 12678,
+   "cost": 0.00208644,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00208644,
+    "upstream_inference_prompt_cost": 0.0009267,
+    "upstream_inference_completions_cost": 0.00115974
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3139,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.2,
+ "video": "mild_1_seesaw_INO_PMC6883617.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 277.9
+}

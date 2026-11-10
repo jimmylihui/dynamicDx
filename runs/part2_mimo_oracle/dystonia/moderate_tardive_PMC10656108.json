@@ -1,0 +1,102 @@
+{
+ "questions": [
+  "Is your speech slurred?",
+  "Are you having trouble swallowing food or water?",
+  "Have you noticed any weakness in your arms or legs?",
+  "Have you experienced any numbness in your face?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "action specificity and task dependence",
+  "medication and toxin exposure history",
+  "dystonia rating scale (BFM / OMDRS)"
+ ],
+ "results": [
+  "1. action specificity and task dependence: dystonia appears on INITIATING SPEECH; asymptomatic at rest",
+  "2. medication and toxin exposure history: methotrexate 15 mg weekly for six years for psoriatic arthritis; the dystonia improved after switching to sulfasalazine",
+  "3. dystonia rating scale (BFM / OMDRS): Oromandibular Dystonia Rating Scale 177 at baseline, 103 three months after the drug switch, 75 after adding botulinum toxin"
+ ],
+ "dx_raw": "DIAGNOSIS: Methotrexate-induced oromandibular dystonia\n\nDrug-induced movement disorder\nTardive dyskinesia\nMeige syndrome",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Methotrexate-induced oromandibular dystonia",
+ "decisive_served": [
+  "action specificity and task dependence",
+  "medication and toxin exposure history",
+  "dystonia rating scale (BFM / OMDRS)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 15295,
+   "completion_tokens": 3962,
+   "total_tokens": 19257,
+   "cost": 0.0032243176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0032243176,
+    "upstream_inference_prompt_cost": 0.0021149576,
+    "upstream_inference_completions_cost": 0.00110936
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3915,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15614,
+   "completion_tokens": 662,
+   "total_tokens": 16276,
+   "cost": 0.0002814896,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 15232,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002814896,
+    "upstream_inference_prompt_cost": 9.61296e-05,
+    "upstream_inference_completions_cost": 0.00018536
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 624,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "moderate_tardive_PMC10656108.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 65.4
+}

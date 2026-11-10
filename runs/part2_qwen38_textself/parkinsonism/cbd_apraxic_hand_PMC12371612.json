@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Is the shaking present when your hands are resting in your lap?",
+  "Did this shaking start suddenly, like after a stroke or injury?",
+  "Do you have a family history of similar shaking?",
+  "Does alcohol consumption temporarily reduce the shaking?",
+  "Do you experience muscle stiffness or slowness of movement?",
+  "Have you had any recent head trauma?",
+  "Are you currently taking any medications for psychiatric conditions?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Serum ceruloplasmin and 24-hour urinary copper",
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "MRI of the brain"
+ ],
+ "served": [
+  "serum copper and caeruloplasmin",
+  "24-hour urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+ ],
+ "results": [
+  "1. Serum ceruloplasmin and 24-hour urinary copper",
+  "     serum copper and caeruloplasmin: normal",
+  "     24-hour urinary copper: normal",
+  "2. Slit-lamp examination for Kayser-Fleischer rings",
+  "     slit-lamp examination for Kayser-Fleischer rings: not performed",
+  "3. MRI of the brain",
+  "     MRI brain with gadolinium: markedly asymmetric left-greater-than-right superior parietal and posterior frontal atrophy without abnormal enhancement",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): normal midbrain, ratio within normal limits",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): normal",
+  "     MRI brain - cortical atrophy pattern: moderate global atrophy with MARKEDLY ASYMMETRICAL atrophy of the superior parietal lobules and posterior frontal lobes, left hemisphere worse",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Corticobasal degeneration\nAlternative: Progressive supranuclear palsy\nAlternative: Alzheimer's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Serum ceruloplasmin and 24-hour urinary copper\n2. Slit-lamp examination for Kayser-Fleischer rings\n3. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Corticobasal degeneration",
+ "decisive_served": [
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 195,
+   "completion_tokens": 94,
+   "total_tokens": 289,
+   "cost": 7.343e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.343e-05,
+    "upstream_inference_prompt_cost": 2.925e-05,
+    "upstream_inference_completions_cost": 4.418e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 566,
+   "completion_tokens": 37,
+   "total_tokens": 603,
+   "cost": 0.00010229,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010229,
+    "upstream_inference_prompt_cost": 8.49e-05,
+    "upstream_inference_completions_cost": 1.739e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 947,
+   "completion_tokens": 27,
+   "total_tokens": 974,
+   "cost": 8.6132e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.6132e-05,
+    "upstream_inference_prompt_cost": 7.3442e-05,
+    "upstream_inference_completions_cost": 1.269e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "cbd_apraxic_hand_PMC12371612.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.7
+}

@@ -1,0 +1,150 @@
+{
+ "questions": [
+  "Do you have pain in your abdomen?",
+  "Have you noticed your abdomen getting larger recently?",
+  "Do you have a history of liver disease?",
+  "Do you have a history of heart failure?",
+  "Do you have a history of kidney disease?",
+  "Have you had a bowel movement in the last 24 hours?",
+  "Are you experiencing nausea or vomiting?",
+  "Do you have a fever?",
+  "Have you noticed any yellowing of your skin or eyes?",
+  "Do you have shortness of breath?",
+  "Have you had any recent abdominal surgeries?",
+  "Have you lost weight unintentionally?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Abdominal examination",
+  "Digital rectal examination",
+  "Abdominal X-ray",
+  "CT abdomen and pelvis"
+ ],
+ "served": [],
+ "results": [
+  "1. Abdominal examination",
+  "     not performed / not available",
+  "2. Digital rectal examination",
+  "     not performed / not available",
+  "3. Abdominal X-ray",
+  "     not performed / not available",
+  "4. CT abdomen and pelvis",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Obesity\nAscites\nChronic constipation\nAbdominal mass",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Abdominal examination\n2. Digital rectal examination\n3. Abdominal X-ray\n4. CT abdomen and pelvis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Obesity",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 411,
+   "completion_tokens": 1391,
+   "total_tokens": 1802,
+   "cost": 0.00051404,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00051404,
+    "upstream_inference_prompt_cost": 4.11e-05,
+    "upstream_inference_completions_cost": 0.00047294
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1215,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 891,
+   "completion_tokens": 386,
+   "total_tokens": 1277,
+   "cost": 0.00022034,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00022034,
+    "upstream_inference_prompt_cost": 8.91e-05,
+    "upstream_inference_completions_cost": 0.00013124
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 366,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1069,
+   "completion_tokens": 4270,
+   "total_tokens": 5339,
+   "cost": 0.0015587,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0015587,
+    "upstream_inference_prompt_cost": 0.0001069,
+    "upstream_inference_completions_cost": 0.0014518
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3839,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 192.3
+}

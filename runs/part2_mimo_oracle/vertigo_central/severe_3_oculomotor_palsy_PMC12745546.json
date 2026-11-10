@@ -1,0 +1,110 @@
+{
+ "questions": [
+  "Is the drooping constant, or does it vary throughout the day?",
+  "Do you have difficulty swallowing or a weak voice?",
+  "Is your vision blurred or do you see double?",
+  "Has the drooping gotten worse recently?",
+  "Have you experienced a headache?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "adduction in horizontal gaze (each eye)",
+  "pupil size and light reaction",
+  "MRI brain with DWI",
+  "diffusion tensor tractography",
+  "CT / MR angiography (circle of Willis)"
+ ],
+ "results": [
+  "1. adduction in horizontal gaze (each eye): on left gaze the right eye fails to adduct, and the contralateral eye shows NO abducting nystagmus - unlike a classic INO",
+  "2. pupil size and light reaction: pupils EQUALLY REACTIVE - pupil-sparing",
+  "3. MRI brain with DWI: small DORSAL PARAMEDIAN MIDBRAIN INFARCT on diffusion-weighted imaging",
+  "4. diffusion tensor tractography: reduced integrity of the IPSILATERAL medial longitudinal fasciculus",
+  "5. CT / MR angiography (circle of Willis): no aneurysm"
+ ],
+ "dx_raw": "DIAGNOSIS: Right Internuclear Ophthalmoplegia due to Right Paramedian Midbrain Infarction\n\n1. Multiple Sclerosis\n2. Myasthenia Gravis\n3. Partial Oculomotor Nerve Palsy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Right Internuclear Ophthalmoplegia due to Right Paramedian Midbrain Infarction",
+ "decisive_served": [
+  "adduction in horizontal gaze (each eye)",
+  "pupil size and light reaction",
+  "MRI brain with DWI",
+  "diffusion tensor tractography",
+  "CT / MR angiography (circle of Willis)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14783,
+   "completion_tokens": 1561,
+   "total_tokens": 16344,
+   "cost": 0.0024803576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0024803576,
+    "upstream_inference_prompt_cost": 0.0020432776,
+    "upstream_inference_completions_cost": 0.00043708
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1500,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15151,
+   "completion_tokens": 5813,
+   "total_tokens": 20964,
+   "cost": 0.001729196,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001729196,
+    "upstream_inference_prompt_cost": 0.000101556,
+    "upstream_inference_completions_cost": 0.00162764
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5760,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 20.2,
+ "video": "severe_3_oculomotor_palsy_PMC12745546.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 91.6
+}

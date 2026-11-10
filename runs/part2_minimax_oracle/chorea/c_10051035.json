@@ -1,0 +1,121 @@
+{
+ "questions": [
+  "Are you currently experiencing pain in your lower back?",
+  "Does the pain shoot or radiate down your leg, past the knee toward the foot?",
+  "Did this pain begin after lifting a heavy object or making a sudden movement?",
+  "Have you had a fever in the past few days?",
+  "Do you have numbness, tingling, or \"pins-and-needles\" in your leg or foot?",
+  "Have you noticed weakness in your foot or ankle, such as foot drop or difficulty walking on your toes/heels?",
+  "Have you had any loss of bowel or bladder control, or difficulty urinating?",
+  "Do you have a severe headache?",
+  "Have you had neck stiffness or pain when trying to bend your neck forward?",
+  "Have you been vomiting?",
+  "Have you had any previous back injuries, back surgery, or chronic back problems?",
+  "Is the pain worse when coughing, sneezing, or straining?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "speed of onset",
+  "blood glucose",
+  "CT head (non-contrast)",
+  "brain MRI with contrast"
+ ],
+ "results": [
+  "1. speed of onset: chorea was the INITIAL manifestation of the stroke in 57% of the series; two patients within 24 hours, three between days 2 and 5",
+  "2. blood glucose: normal - non-ketotic hyperglycaemia was an exclusion criterion for this series",
+  "3. CT head (non-contrast): ischaemic stroke - 92.9% of the series were ischaemic and one was haemorrhagic",
+  "4. brain MRI with contrast: lesions in the LENTIFORM NUCLEUS (50%), insula (35.7%), caudate (14.3%) and thalamus (14.3%); cortical in 35.7%, deep in 35.7%, both in 28.6%"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute ischaemic stroke (infarction of the lentiform nucleus) presenting with chorea\n1. Haemorrhagic stroke\n2. Drug-induced chorea\n3. Chorea secondary to a non-vascular basal ganglia lesion (e.g., tumour or metastasis)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Acute ischaemic stroke (infarction of the lentiform nucleus) presenting with chorea",
+ "decisive_served": [
+  "speed of onset",
+  "blood glucose",
+  "CT head (non-contrast)",
+  "brain MRI with contrast"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 1438,
+   "total_tokens": 8500,
+   "cost": 0.00380652,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00380652,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0017256
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1246,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7759,
+   "completion_tokens": 3288,
+   "total_tokens": 11047,
+   "cost": 0.00458202,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00458202,
+    "upstream_inference_prompt_cost": 0.00063642,
+    "upstream_inference_completions_cost": 0.0039456
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3228,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 63.2
+}

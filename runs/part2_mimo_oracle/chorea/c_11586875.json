@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Does the shaking stop when you try to use your hands to perform a task?",
+  "Is the shaking worse in one hand than the other?",
+  "Have you noticed your body movements or walking becoming slower recently?",
+  "Do you feel stiffness or pain in your arms?",
+  "Have you noticed a loss of your sense of smell?",
+  "Do you have a family member with a similar tremor?",
+  "Have you had trouble sleeping with vivid dreams?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "brain MRI with contrast",
+  "trial of glucose correction with insulin"
+ ],
+ "results": [
+  "1. blood glucose: 799 mg/dL (normal 74-106)",
+  "2. HbA1c: 11%",
+  "3. ketones (blood or urine): NEGATIVE - non-ketotic",
+  "4. brain MRI with contrast: HYPOSIGNAL involving the corpus striatum bilaterally, extending to the medial cerebral crus on T2 and FLAIR, with mild T1 HYPERSIGNAL in the basal nuclei",
+  "5. trial of glucose correction with insulin: diazepam and insulin gave partial improvement, but the extrapyramidal symptoms persisted; she was readmitted a year later with a hyperosmolar episode"
+ ],
+ "dx_raw": "DIAGNOSIS: Non-ketotic hyperglycemia-induced chorea\n1. Huntington's disease\n2. Tardive dyskinesia\n3. Wilson's disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Non-ketotic hyperglycemia-induced chorea",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "brain MRI with contrast",
+  "trial of glucose correction with insulin"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14783,
+   "completion_tokens": 1959,
+   "total_tokens": 16742,
+   "cost": 0.0025917976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0025917976,
+    "upstream_inference_prompt_cost": 0.0020432776,
+    "upstream_inference_completions_cost": 0.00054852
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1828,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15277,
+   "completion_tokens": 3199,
+   "total_tokens": 18476,
+   "cost": 0.001014916,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001014916,
+    "upstream_inference_prompt_cost": 0.000119196,
+    "upstream_inference_completions_cost": 0.00089572
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3157,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 66.7
+}

@@ -1,0 +1,141 @@
+{
+ "questions": [
+  "Do you have a tremor?",
+  "Does the tremor occur when your hands are resting in your lap?",
+  "Does the tremor occur when you hold your arms out in front of you?",
+  "Does the tremor get worse as you bring your hands toward your face?",
+  "Do you have a family history of tremors?",
+  "Do you feel stiffness in your muscles?",
+  "Have you noticed that your movements have become slower?",
+  "Do you have any trouble with your balance?",
+  "Has your handwriting become smaller?",
+  "Are you taking any medications that might cause a tremor?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Thyroid function tests (TSH, Free T4)",
+  "Blood glucose level"
+ ],
+ "served": [
+  "TSH / free T4",
+  "blood glucose and HbA1c"
+ ],
+ "results": [
+  "1. Thyroid function tests (TSH, Free T4)",
+  "     TSH / free T4: normal",
+  "2. Blood glucose level",
+  "     blood glucose and HbA1c: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Essential tremor, idiopathic.\nEnhanced physiological tremor\nWilson's disease\nParkinson's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Thyroid function tests (TSH, Free T4)\n2. Blood glucose level",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Essential tremor, idiopathic.",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2698,
+   "total_tokens": 11396,
+   "cost": 0.00178712,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00178712,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00091732
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2236,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9148,
+   "completion_tokens": 923,
+   "total_tokens": 10071,
+   "cost": 0.00122862,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00122862,
+    "upstream_inference_prompt_cost": 0.0009148,
+    "upstream_inference_completions_cost": 0.00031382
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9305,
+   "completion_tokens": 2171,
+   "total_tokens": 11476,
+   "cost": 0.00166864,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00166864,
+    "upstream_inference_prompt_cost": 0.0009305,
+    "upstream_inference_completions_cost": 0.00073814
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2023,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.7,
+ "video": "mild_neuropathic_CMT_PMC11600610.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 283.5
+}

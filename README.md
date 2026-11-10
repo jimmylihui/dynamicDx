@@ -30,6 +30,7 @@ used solely to *match* free text to record entries, never to write a finding.
 | `eval/analysis/` | `decidability.py`: results by clinician-judged decidability (Appendix B, Tables 8 and 9), read from `data/decidability.json`, the Stage 1 judge output and the Stage 2 grades |
 | `window/` | teacher-guided temporal-window training (§3.5.1, Appendix I): the GPT-5.6-luna teacher, Qwen3.5-4B LoRA student training, two-pass out-of-fold inference for the Window, Random, sign-only and untrained arms, and the blinded sentence judge of Appendix D |
 | `scripts/fetch_videos.py` | downloads the source videos from Europe PMC, re-encodes them and cuts the 71 clips |
+| `runs/` | the Stage 2 consultations behind Table 2: eight conditions × five systems, one file per case (below) |
 
 ## Videos
 
@@ -201,6 +202,21 @@ The harness writes each run under `results/<OUTROOT>/` and the grader writes
 `results/stage2_<OUTROOT>.json`. Run names follow `eval/runs.py` (`part2_<model>_<condition>`, e.g.
 `part2_luna_vid`, `part2_luna_shuf0`-`2`, `part2_luna_lit_clean`); `eval/bootstrap_ci.py` reads those runs
 and scores every arm over all 71 cases (a missing or failed consultation counts as not accurate).
+
+**Released consultations.** `runs/` holds the Stage 2 consultations behind Table 2, so the model
+outputs can be inspected and re-graded without calling the models again: blind (`novid`), single frame
+(`frame1`), shuffled (`shuf0`), video (`vid`), multi-turn (`seq`), own words (`textself`), reference
+(`textgt`) and oracle evidence (`oracle`) for each of the five systems, 40 runs and 2,838 files. Each file
+is one consultation as the harness wrote it: the questions and the patient's answers, the orders and the
+chart entries released, the model's raw and parsed final diagnosis, and the model, reasoning setting and
+token usage. `runs/manifest.json` lists each run's model and condition, the cases with no file
+(`missing`) and the consultations that ended in an API error (`failed`); both count as not accurate. To
+grade a run, copy it into `results/` and run the grader on it:
+
+```bash
+cp -r runs/part2_luna_vid results/
+ROOT=part2_luna_vid python eval/part2_full_judge3.py 6     # -> results/stage2_part2_luna_vid.json
+```
 
 ## Licence and citation
 

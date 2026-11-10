@@ -1,0 +1,116 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your abdomen or pelvis?",
+  "Do you have a fever?",
+  "Have you experienced nausea or vomiting?",
+  "Are you able to pass gas or have a bowel movement?",
+  "Have you had any recent surgeries?",
+  "Are you currently pregnant?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "CT head (non-contrast)",
+  "trial of glucose correction with insulin"
+ ],
+ "results": [
+  "1. blood glucose: 690 mg/dL with a NORMAL anion gap",
+  "2. HbA1c: 14.7%",
+  "3. ketones (blood or urine): negative - non-ketotic",
+  "4. CT head (non-contrast): HYPERDENSITY in the LEFT basal ganglia with mild involvement of the right basal ganglia - contralateral to the chorea",
+  "5. trial of glucose correction with insulin: insulin alleviated her symptoms"
+ ],
+ "dx_raw": "DIAGNOSIS: Non-ketotic hyperglycemic hemichorea (also known as Diabetic Striatopathy or Chorea Hyperglycemia Basal Ganglia Syndrome)\n\n1. Acute ischemic stroke of the basal ganglia\n2. Wilson's disease (Hepatolenticular degeneration)\n3. Primary brain tumor (e.g., Glioma)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Non-ketotic hyperglycemic hemichorea (also known as Diabetic Striatopathy or Chorea Hyperglycemia Basal Ganglia Syndrome)",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "CT head (non-contrast)",
+  "trial of glucose correction with insulin"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14039,
+   "completion_tokens": 76,
+   "total_tokens": 14115,
+   "cost": 0.00214157,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00214157,
+    "upstream_inference_prompt_cost": 0.00210585,
+    "upstream_inference_completions_cost": 3.572e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 14425,
+   "completion_tokens": 81,
+   "total_tokens": 14506,
+   "cost": 0.000366556,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 13696,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000366556,
+    "upstream_inference_prompt_cost": 0.000328486,
+    "upstream_inference_completions_cost": 3.807e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 11.4
+}

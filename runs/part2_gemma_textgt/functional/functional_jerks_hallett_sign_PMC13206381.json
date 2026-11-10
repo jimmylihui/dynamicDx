@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Do you experience stiffness in your muscles, particularly in your trunk or legs?",
+  "Do you have muscle spasms triggered by sudden noises or surprises?",
+  "Do you experience loss of consciousness during these episodes?",
+  "Were these symptoms present from early childhood?",
+  "Do you have a fear of falling because of sudden muscle stiffness?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Somatosensory Evoked Potentials (SSEPs)",
+  "MRI Brain",
+  "Renal and liver function tests"
+ ],
+ "served": [
+  "somatosensory evoked potentials (giant SEP, C-reflex)",
+  "MRI brain",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests"
+ ],
+ "results": [
+  "1. Somatosensory Evoked Potentials (SSEPs)",
+  "     somatosensory evoked potentials (giant SEP, C-reflex): normal, no giant SEP and no C-reflex - excludes cortical reflex myoclonus",
+  "2. MRI Brain",
+  "     MRI brain: normal",
+  "3. Renal and liver function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional Neurological Disorder (Psychogenic)\nCortical reflex myoclonus\nMyoclonic epilepsy\nHyperekplexia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Somatosensory Evoked Potentials (SSEPs)\n2. EEG\n3. MRI Brain\n4. Renal and liver function tests",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional Neurological Disorder (Psychogenic)",
+ "decisive_served": [
+  "somatosensory evoked potentials (giant SEP, C-reflex)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 186,
+   "completion_tokens": 5292,
+   "total_tokens": 5478,
+   "cost": 0.00181788,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00181788,
+    "upstream_inference_prompt_cost": 1.86e-05,
+    "upstream_inference_completions_cost": 0.00179928
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5170,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 498,
+   "completion_tokens": 2418,
+   "total_tokens": 2916,
+   "cost": 0.00087192,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00087192,
+    "upstream_inference_prompt_cost": 4.98e-05,
+    "upstream_inference_completions_cost": 0.00082212
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2109,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 709,
+   "completion_tokens": 2136,
+   "total_tokens": 2845,
+   "cost": 0.00079714,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00079714,
+    "upstream_inference_prompt_cost": 7.09e-05,
+    "upstream_inference_completions_cost": 0.00072624
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2073,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 278.5
+}

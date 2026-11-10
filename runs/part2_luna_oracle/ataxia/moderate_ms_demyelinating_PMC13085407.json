@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Are you having difficulty walking or standing without assistance?",
+  "Is this walking problem new or getting worse?",
+  "Did it begin suddenly?",
+  "Do you have weakness in one leg or one side of your body?",
+  "Do you have numbness or tingling in your legs?",
+  "Do you have pain in your back, hips, knees, or legs?",
+  "Have you recently fallen or injured yourself?",
+  "Do you have trouble controlling your bladder or bowels?",
+  "Do you have fever, severe headache, dizziness, or trouble speaking?",
+  "Have you ever had a stroke, seizure, or other neurological condition?",
+  "Have you had this same problem since childhood?",
+  "Do your muscles feel unusually stiff or spastic?",
+  "Do you have involuntary shaking or movements?",
+  "Do you use a wheelchair, walker, or other walking aid regularly?",
+  "Have you recently started any new medication?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [],
+ "served": [
+  "serum lithium and drug levels",
+  "brain MRI",
+  "medication history"
+ ],
+ "results": [
+  "1. serum lithium and drug levels: serum lithium 4.07 mmol/L on admission; CSF lithium 2.45 mmol/L; later fell below 0.2 mmol/L",
+  "2. brain MRI: cerebellar atrophy at one year; serial imaging over five years shows progressive ISOLATED cerebellar atrophy with no supratentorial abnormality",
+  "3. medication history: no prior lithium use and no psychiatric indication - the exposure was accidental"
+ ],
+ "dx_raw": "DIAGNOSIS: Syndrome of irreversible lithium-effectuated neurotoxicity (SILENT), presenting as delayed progressive isolated cerebellar atrophy from accidental acute lithium poisoning.\n\nAlternative 1: Acute lithium-induced cerebellar toxicity without permanent neurodegeneration.\n\nAlternative 2: Other toxic or metabolic cerebellar degeneration.\n\nAlternative 3: Hereditary spinocerebellar ataxia.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Syndrome of irreversible lithium-effectuated neurotoxicity (SILENT), presenting as delayed progressive isolated cerebellar atrophy from accidental acute lithium poisoning.",
+ "decisive_served": [
+  "serum lithium and drug levels",
+  "brain MRI",
+  "medication history"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 17964,
+   "completion_tokens": 459,
+   "total_tokens": 18423,
+   "cost": 0.00045531,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00045531,
+    "upstream_inference_prompt_cost": 0.00017991,
+    "upstream_inference_completions_cost": 0.0002754
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 261,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 18615,
+   "completion_tokens": 265,
+   "total_tokens": 18880,
+   "cost": 0.000420285,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 651,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000420285,
+    "upstream_inference_prompt_cost": 0.000261285,
+    "upstream_inference_completions_cost": 0.000159
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 178,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_ms_demyelinating_PMC13085407.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 16.3
+}

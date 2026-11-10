@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your chest?",
+  "Does the pain radiate to your left arm or jaw?",
+  "Do you have shortness of breath?",
+  "Have you had a fever in the last 24 hours?",
+  "Are you currently taking any prescription medications?",
+  "Do you have a history of heart disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "Physical examination of the head, eyes, ears, nose, and throat",
+  "Cardiac auscultation",
+  "Pulmonary auscultation",
+  "Abdominal palpation"
+ ],
+ "served": [],
+ "results": [
+  "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "     not performed / not available",
+  "2. Physical examination of the head, eyes, ears, nose, and throat",
+  "     not performed / not available",
+  "3. Cardiac auscultation",
+  "     not performed / not available",
+  "4. Pulmonary auscultation",
+  "     not performed / not available",
+  "5. Abdominal palpation",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Asymptomatic healthy individual\nAlternative 1: Anxiety disorder\nAlternative 2: Early-stage malignancy",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation\n2. Physical examination of the head, eyes, ears, nose, and throat\n3. Cardiac auscultation\n4. Pulmonary auscultation\n5. Abdominal palpation",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Asymptomatic healthy individual",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 85,
+   "total_tokens": 251,
+   "cost": 6.485e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.485e-05,
+    "upstream_inference_prompt_cost": 2.49e-05,
+    "upstream_inference_completions_cost": 3.995e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 519,
+   "completion_tokens": 60,
+   "total_tokens": 579,
+   "cost": 3.7442e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 3.7442e-05,
+    "upstream_inference_prompt_cost": 9.242e-06,
+    "upstream_inference_completions_cost": 2.82e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 777,
+   "completion_tokens": 28,
+   "total_tokens": 805,
+   "cost": 6.1102e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.1102e-05,
+    "upstream_inference_prompt_cost": 4.7942e-05,
+    "upstream_inference_completions_cost": 1.316e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.0
+}

@@ -1,0 +1,182 @@
+{
+ "questions": [
+  "Did this problem come on suddenly, within the past few hours or days?",
+  "Is the main reason for your visit weakness rather than pain?",
+  "Have you noticed any drooping or numbness on one side of your face?",
+  "Is your right side affected, or your left side, or both?",
+  "Were you able to raise both arms equally before this began?",
+  "Have you had a fall recently?",
+  "Do you have shaking or tremor in your hands?",
+  "Have you noticed slowness in your movements or stiffness in your body?",
+  "Do you have pain in your shoulder or arm?",
+  "Do you have any neck pain?",
+  "Have you had a fever or felt generally unwell?",
+  "Do you have a history of stroke, atrial fibrillation, or heart problems?",
+  "Do you have diabetes or high blood pressure?",
+  "Have you had any trouble with your speech or understanding words?",
+  "Have you had any visual changes or loss of vision in one eye?",
+  "Do you have morning stiffness lasting more than 45 minutes?",
+  "Have you had any weight loss, headache, or jaw pain when chewing?",
+  "Is the weakness getting worse, staying the same, or improving?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "MRI of the cervical spine",
+  "X-ray of the affected shoulder",
+  "ESR and CRP",
+  "Electromyography (EMG) and nerve conduction studies of the affected arm",
+  "Serum creatine kinase",
+  "Thyroid stimulating hormone (TSH) and free T4",
+  "MRI of the affected shoulder"
+ ],
+ "served": [
+  "MRI cervical and thoracic spine",
+  "ESR and CRP",
+  "nerve conduction studies",
+  "needle electromyography",
+  "creatine kinase",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. MRI of the cervical spine",
+  "     MRI cervical and thoracic spine: normal",
+  "2. X-ray of the affected shoulder",
+  "     not performed / not available",
+  "3. ESR and CRP",
+  "     ESR and CRP: normal",
+  "4. Electromyography (EMG) and nerve conduction studies of the affected arm",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal",
+  "5. Serum creatine kinase",
+  "     creatine kinase: normal",
+  "6. Thyroid stimulating hormone (TSH) and free T4",
+  "     TSH / free T4: normal",
+  "7. MRI of the affected shoulder",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Rotator cuff tear of the affected shoulder\n\nAlternatives:\n1. Adhesive capsulitis (frozen shoulder)\n2. Cervical radiculopathy\n3. Subacromial impingement syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the cervical spine\n2. X-ray of the affected shoulder\n3. ESR and CRP\n4. Electromyography (EMG) and nerve conduction studies of the affected arm\n5. Serum creatine kinase\n6. Thyroid stimulating hormone (TSH) and free T4\n7. MRI of the affected shoulder",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Rotator cuff tear of the affected shoulder",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 521,
+   "completion_tokens": 711,
+   "total_tokens": 1232,
+   "cost": 0.00097206,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00097206,
+    "upstream_inference_prompt_cost": 0.00011886,
+    "upstream_inference_completions_cost": 0.0008532
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 459,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1260,
+   "completion_tokens": 804,
+   "total_tokens": 2064,
+   "cost": 0.00130512,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00130512,
+    "upstream_inference_prompt_cost": 0.00034032,
+    "upstream_inference_completions_cost": 0.0009648
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 736,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1552,
+   "completion_tokens": 46,
+   "total_tokens": 1598,
+   "cost": 0.000222,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1245,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000222,
+    "upstream_inference_prompt_cost": 0.0001668,
+    "upstream_inference_completions_cost": 5.52e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 22.9,
+ "video": "functional_head_tremor_vibration_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 33.9
+}

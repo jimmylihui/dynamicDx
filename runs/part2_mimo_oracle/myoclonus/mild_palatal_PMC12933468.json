@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Do you have a sore throat?",
+  "Did the pain start suddenly?",
+  "Do you have a fever?",
+  "Do you have a cough?",
+  "Did you eat anything sharp recently?",
+  "Is the pain coming from a tooth?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "observation of the jerks",
+  "effect of sleep",
+  "MRI brainstem / dentato-rubro-olivary pathway",
+  "HLA-B51 and Behcet's assessment (pathergy, ophthalmology review)"
+ ],
+ "results": [
+  "1. observation of the jerks: rhythmic palatal movements at 2-3 Hz with bilateral acoustic clicks, louder on the right",
+  "2. effect of sleep: palatal tremor PERSISTS in sleep - characteristic of palatal tremor rather than true myoclonus",
+  "3. MRI brainstem / dentato-rubro-olivary pathway: inflammatory brainstem involvement in the Guillain-Mollaret triangle",
+  "4. HLA-B51 and Behcet's assessment (pathergy, ophthalmology review): consistent with Behcet's disease"
+ ],
+ "dx_raw": "DIAGNOSIS: Symptomatic palatal tremor secondary to Neuro-Behcet's disease\nBrainstem glioma\nMultiple sclerosis\nBrainstem infarction",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Symptomatic palatal tremor secondary to Neuro-Behcet's disease",
+ "decisive_served": [
+  "observation of the jerks",
+  "effect of sleep",
+  "MRI brainstem / dentato-rubro-olivary pathway",
+  "HLA-B51 and Behcet's assessment (pathergy, ophthalmology review)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5054,
+   "completion_tokens": 3984,
+   "total_tokens": 9038,
+   "cost": 0.0017967376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0017967376,
+    "upstream_inference_prompt_cost": 0.0006812176,
+    "upstream_inference_completions_cost": 0.00111552
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3929,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5406,
+   "completion_tokens": 1333,
+   "total_tokens": 6739,
+   "cost": 0.0004451776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004451776,
+    "upstream_inference_prompt_cost": 7.19376e-05,
+    "upstream_inference_completions_cost": 0.00037324
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1294,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 9.0,
+ "video": "mild_palatal_PMC12933468.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 64.2
+}

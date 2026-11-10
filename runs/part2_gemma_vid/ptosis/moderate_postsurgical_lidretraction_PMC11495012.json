@@ -1,0 +1,129 @@
+{
+ "questions": [
+  "Does the drooping get worse as the day goes on?",
+  "Do you experience double vision?",
+  "Did this start suddenly?",
+  "Have you had any eye surgeries or injuries in the past?",
+  "Do you have weakness in other muscles, such as your arms or legs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Levator function measurement",
+  "Cogan's lid switch test"
+ ],
+ "served": [
+  "lid position and measurement (MRD1 both sides)"
+ ],
+ "results": [
+  "1. Levator function measurement",
+  "     lid position and measurement (MRD1 both sides): MRD1 raised on the LEFT (retraction); right lid height normal - the right eye is NOT ptotic",
+  "2. Cogan's lid switch test",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Iatrogenic lid retraction due to previous eye surgery\n\n1. Thyroid Eye Disease due to Graves' disease\n2. Sympathetic overactivity\n3. Myasthenia gravis",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Levator function measurement\n2. Cogan's lid switch test",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Iatrogenic lid retraction due to previous eye surgery",
+ "decisive_served": [
+  "lid position and measurement (MRD1 both sides)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 974,
+   "total_tokens": 9672,
+   "cost": 0.00120096,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00120096,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00033116
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 865,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8992,
+   "completion_tokens": 749,
+   "total_tokens": 9741,
+   "cost": 0.00115386,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00115386,
+    "upstream_inference_prompt_cost": 0.0008992,
+    "upstream_inference_completions_cost": 0.00025466
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 752,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9164,
+   "completion_tokens": 4539,
+   "total_tokens": 13703,
+   "cost": 0.00245966,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00245966,
+    "upstream_inference_prompt_cost": 0.0009164,
+    "upstream_inference_completions_cost": 0.00154326
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4319,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 286.2
+}

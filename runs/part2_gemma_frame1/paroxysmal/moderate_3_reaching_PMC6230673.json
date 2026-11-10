@@ -1,0 +1,164 @@
+{
+ "questions": [
+  "Do you know where you are?",
+  "Do you know who I am?",
+  "Are you seeing or hearing things that others cannot?",
+  "Do you feel an urge to hurt yourself or others?",
+  "Did you take any drugs or alcohol recently?",
+  "Did you hit your head recently?",
+  "Do you have a history of psychiatric illness?",
+  "Are you in pain?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs",
+  "Finger-stick glucose",
+  "Arterial blood gas",
+  "Comprehensive metabolic panel",
+  "Complete blood count",
+  "Urine toxicology screen",
+  "Non-contrast CT head"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "full blood count and biochemistry",
+  "toxicology screen (urine and serum)",
+  "CT head"
+ ],
+ "results": [
+  "1. Vital signs",
+  "     not performed / not available",
+  "2. Finger-stick glucose",
+  "     blood glucose and HbA1c: normal",
+  "3. Arterial blood gas",
+  "     not performed / not available",
+  "4. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "5. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "6. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "7. Non-contrast CT head",
+  "     CT head: left frontal post-traumatic gliosis and encephalomalacia"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-traumatic epilepsy due to previous head injury\n\n1. Post-traumatic encephalopathy\n2. Frontal lobe syndrome\n3. Delirium",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Vital signs\n2. Finger-stick glucose\n3. Arterial blood gas\n4. Comprehensive metabolic panel\n5. Complete blood count\n6. Urine toxicology screen\n7. Non-contrast CT head",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Post-traumatic epilepsy due to previous head injury",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 422,
+   "completion_tokens": 1358,
+   "total_tokens": 1780,
+   "cost": 0.00050392,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00050392,
+    "upstream_inference_prompt_cost": 4.22e-05,
+    "upstream_inference_completions_cost": 0.00046172
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1181,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 778,
+   "completion_tokens": 468,
+   "total_tokens": 1246,
+   "cost": 0.00023692,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00023692,
+    "upstream_inference_prompt_cost": 7.78e-05,
+    "upstream_inference_completions_cost": 0.00015912
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 449,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1054,
+   "completion_tokens": 3041,
+   "total_tokens": 4095,
+   "cost": 0.00113934,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00113934,
+    "upstream_inference_prompt_cost": 0.0001054,
+    "upstream_inference_completions_cost": 0.00103394
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2959,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 186.1
+}

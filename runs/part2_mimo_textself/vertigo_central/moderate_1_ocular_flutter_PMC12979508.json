@@ -1,0 +1,158 @@
+{
+ "questions": [
+  "Is your age less than 18 years?",
+  "Do you wear glasses or contact lenses?",
+  "Have you ever been told you have farsightedness?",
+  "Do you experience double vision when your eye turns inward?",
+  "Does the eye turn happen more often when you are doing close work, like reading?",
+  "Is there any pain associated with the eye turning?",
+  "Have you had any recent illness, such as a cold or infection, before this problem started?",
+  "Do you have any other symptoms like drooping eyelids or difficulty swallowing?",
+  "Has the frequency of eye turning increased in the past month?",
+  "Are you taking any medications that might affect your eyes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Cover-uncover test with alternate cover test and prism bar measurement",
+  "Full motility examination with forced duction testing",
+  "Ice pack test",
+  "Acetylcholine receptor antibody blood test",
+  "Magnetic resonance imaging of the brain with attention to the cavernous sinus and brainstem",
+  "Magnetic resonance imaging of the orbits"
+ ],
+ "served": [
+  "skew deviation / alternating cover test",
+  "forced duction test",
+  "anti-acetylcholine receptor antibodies",
+  "MRI brain with gadolinium",
+  "MRI sella and orbits"
+ ],
+ "results": [
+  "1. Cover-uncover test with alternate cover test and prism bar measurement",
+  "     skew deviation / alternating cover test: no vertical misalignment",
+  "2. Full motility examination with forced duction testing",
+  "     forced duction test: not performed",
+  "3. Ice pack test",
+  "     not performed / not available",
+  "4. Acetylcholine receptor antibody blood test",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "5. Magnetic resonance imaging of the brain with attention to the cavernous sinus and brainstem",
+  "     MRI brain with gadolinium: normal",
+  "6. Magnetic resonance imaging of the orbits",
+  "     MRI sella and orbits: normal pituitary and orbits"
+ ],
+ "dx_raw": "DIAGNOSIS: Ocular myasthenia gravis, likely anti-AChR seronegative\n\nAlternatives:\n- Anti-MuSK antibody-positive myasthenia gravis\n- Partial left abducens nerve palsy\n- Spasm of the near reflex",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Cover-uncover test with alternate cover test and prism bar measurement\n2. Full motility examination with forced duction testing\n3. Ice pack test\n4. Acetylcholine receptor antibody blood test\n5. Magnetic resonance imaging of the brain with attention to the cavernous sinus and brainstem\n6. Magnetic resonance imaging of the orbits",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Ocular myasthenia gravis, likely anti-AChR seronegative",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 499,
+   "completion_tokens": 2227,
+   "total_tokens": 2726,
+   "cost": 0.0006670776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006670776,
+    "upstream_inference_prompt_cost": 4.35176e-05,
+    "upstream_inference_completions_cost": 0.00062356
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2078,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 988,
+   "completion_tokens": 667,
+   "total_tokens": 1655,
+   "cost": 0.0002636144,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002636144,
+    "upstream_inference_prompt_cost": 7.68544e-05,
+    "upstream_inference_completions_cost": 0.00018676
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 593,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1290,
+   "completion_tokens": 1057,
+   "total_tokens": 2347,
+   "cost": 0.000344848,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 960,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000344848,
+    "upstream_inference_prompt_cost": 4.8888e-05,
+    "upstream_inference_completions_cost": 0.00029596
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 995,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.2,
+ "video": "moderate_1_ocular_flutter_PMC12979508.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 71.2
+}

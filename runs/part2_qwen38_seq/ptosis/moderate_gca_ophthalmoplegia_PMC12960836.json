@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Do you have difficulty lifting the front part of your foot (foot drop)?",
+  "Have you noticed any weakness in your hands or arms?",
+  "Do you have double vision or drooping eyelids?",
+  "Do you have difficulty swallowing or speaking clearly?",
+  "Is there a family history of similar walking difficulties or muscle problems?",
+  "Do your symptoms fluctuate, being worse later in the day or after activity?",
+  "Have you noticed any improvement with rest?",
+  "Do you have difficulty climbing stairs or rising from a chair?",
+  "Do you have difficulty with balance or coordination?",
+  "Have you noticed any numbness or tingling in your hands or feet?",
+  "Do you have a history of cataracts requiring surgery at a young age?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Serum creatine kinase",
+  "Genetic testing for DMPK gene expansion"
+ ],
+ "served": [
+  "creatine kinase"
+ ],
+ "results": [
+  "R1 ASK Do you have difficulty lifting the front part of your foot (foot drop)?; Have you noticed any weakness in your hands or arms?; Do you have double vision or drooping eyelids?; Do you have difficulty swallowing or speaking clearly?; Is there a family history of similar walking difficulties or muscle problems? -> ['yes', 'no', 'yes', 'no', 'yes']",
+  "R2 ASK Do your symptoms fluctuate, being worse later in the day or after activity?; Have you noticed any improvement with rest?; Do you have difficulty climbing stairs or rising from a chair? -> ['no', 'no', 'no']",
+  "R3 ASK Do you have difficulty with balance or coordination?; Have you noticed any numbness or tingling in your hands or feet?; Do you have a history of cataracts requiring surgery at a young age? -> ['yes', 'no', 'no']",
+  "R4 ORDER Serum creatine kinase -> [['creatine kinase']]",
+  "R5 ORDER Genetic testing for DMPK gene expansion -> [[]]",
+  "R6 DIAGNOSIS Myotonic dystrophy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty lifting the front part of your foot (foot drop)?",
+    "Have you noticed any weakness in your hands or arms?",
+    "Do you have double vision or drooping eyelids?",
+    "Do you have difficulty swallowing or speaking clearly?",
+    "Is there a family history of similar walking difficulties or muscle problems?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "yes",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do your symptoms fluctuate, being worse later in the day or after activity?",
+    "Have you noticed any improvement with rest?",
+    "Do you have difficulty climbing stairs or rising from a chair?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty with balance or coordination?",
+    "Have you noticed any numbness or tingling in your hands or feet?",
+    "Do you have a history of cataracts requiring surgery at a young age?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Serum creatine kinase"
+   ],
+   "result": [
+    [
+     "creatine kinase"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Genetic testing for DMPK gene expansion"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Myotonic dystrophy"
+  }
+ ],
+ "dx": "Myotonic dystrophy",
+ "dx_raw": "DIAGNOSIS: Myotonic dystrophy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0016,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_gca_ophthalmoplegia_PMC12960836.mp4",
+ "line": "ptosis",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 30.1
+}

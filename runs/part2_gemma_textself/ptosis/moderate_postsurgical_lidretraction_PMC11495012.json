@@ -1,0 +1,112 @@
+{
+ "questions": [
+  "Is there any pain associated with these symptoms?",
+  "Does the drooping of your eyelids get worse as the day progresses?",
+  "Do you feel more sensitive to cold than usual?",
+  "Have you experienced any unexplained weight gain?",
+  "Have you had a fever?",
+  "Do you have any weakness in your arms or legs?",
+  "Have you noticed any new rashes on your skin?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI of the orbits and brain with contrast",
+  "Thyroid function tests"
+ ],
+ "served": [
+  "MRI orbits",
+  "MRI brain with contrast",
+  "thyroid function (TSH, free T4)"
+ ],
+ "results": [
+  "1. MRI of the orbits and brain with contrast",
+  "     MRI orbits: no extraocular muscle enlargement, no mass",
+  "     MRI brain with contrast: no dorsal midbrain lesion - excludes Collier sign",
+  "2. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal"
+ ],
+ "dx_raw": "",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI of the orbits and brain with contrast\n2. Thyroid function tests",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 218,
+   "completion_tokens": 5060,
+   "total_tokens": 5278,
+   "cost": 0.0017422,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0017422,
+    "upstream_inference_prompt_cost": 2.18e-05,
+    "upstream_inference_completions_cost": 0.0017204
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4847,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 568,
+   "completion_tokens": 2012,
+   "total_tokens": 2580,
+   "cost": 0.00074088,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074088,
+    "upstream_inference_prompt_cost": 5.68e-05,
+    "upstream_inference_completions_cost": 0.00068408
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1957,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {}
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 10956.7
+}

@@ -1,0 +1,111 @@
+{
+ "questions": [
+  "Are you experiencing any pain in your chest right now?",
+  "Do you have a history of high blood pressure?",
+  "Have you been diagnosed with diabetes?",
+  "Do you currently smoke cigarettes?",
+  "Have you experienced any shortness of breath recently?",
+  "Is there a family history of heart disease or stroke?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "repetitive nerve stimulation",
+  "sustained upgaze fatigability test",
+  "anti-acetylcholine receptor antibodies",
+  "neostigmine / edrophonium challenge"
+ ],
+ "results": [
+  "1. repetitive nerve stimulation: decremental response in facial and spinal accessory nerves",
+  "2. sustained upgaze fatigability test: 'PRONOUNCED PTOSIS' on counting 1 to 100 - the right eye closed completely while the left droop increased",
+  "3. anti-acetylcholine receptor antibodies: 16.63 nmol/L - elevated",
+  "4. neostigmine / edrophonium challenge: ptosis improved (partially right, completely left) with improvement in neck muscle power"
+ ],
+ "dx_raw": "DIAGNOSIS: Myasthenia Gravis (autoimmune)\n\n1. Lambert-Eaton Myasthenic Syndrome\n2. Oculopharyngeal Muscular Dystrophy\n3. Mitochondrial Myopathy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Myasthenia Gravis (autoimmune)",
+ "decisive_served": [
+  "repetitive nerve stimulation",
+  "sustained upgaze fatigability test",
+  "anti-acetylcholine receptor antibodies",
+  "neostigmine / edrophonium challenge"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 73,
+   "total_tokens": 4896,
+   "cost": 0.00075776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075776,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 3.431e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5207,
+   "completion_tokens": 50,
+   "total_tokens": 5257,
+   "cost": 0.00020423,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020423,
+    "upstream_inference_prompt_cost": 0.00018073,
+    "upstream_inference_completions_cost": 2.35e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_mg_ptosis_PMC8064859.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 10.8
+}

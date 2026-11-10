@@ -1,0 +1,137 @@
+{
+ "questions": [
+  "Are the shaking and leg movements happening against your will?",
+  "Can you stop the movements if you deliberately try?",
+  "Do the movements lessen or stop when your attention is distracted?",
+  "Do these movements occur while you are asleep?",
+  "Do you remain fully aware and able to respond during every episode?",
+  "Did these symptoms begin suddenly?",
+  "Did they start after an injury, illness, emotional shock, or major stress?",
+  "Have you ever had similar episodes before?",
+  "Were you able to walk normally before these symptoms began?",
+  "Is one side of your body weaker than the other?",
+  "Do you have numbness or loss of sensation in your legs?",
+  "Do you have severe back or neck pain?",
+  "Have you lost control of your urine or stool during an episode?",
+  "Have you bitten your tongue or injured yourself during an episode?",
+  "Do you feel confused or unusually sleepy after an episode?",
+  "Have you had fever, headache, or recent infection?",
+  "Have you recently started, stopped, or changed any medicines?",
+  "Have you used alcohol or recreational drugs recently?",
+  "Do you have a history of seizures, stroke, diabetes, or neurological disease?",
+  "Do you feel that anxiety or distress makes the movements worse?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "anti-aquaporin-4 and anti-MOG antibodies",
+  "cervical and whole spine MRI",
+  "needle EMG of the affected muscles",
+  "corticosteroid trial"
+ ],
+ "results": [
+  "1. anti-aquaporin-4 and anti-MOG antibodies: BOTH NEGATIVE - not neuromyelitis optica or MOG-antibody disease",
+  "2. cervical and whole spine MRI: LONGITUDINALLY EXTENSIVE T2 lesion confined to the cervical cord",
+  "3. needle EMG of the affected muscles: prolonged bursts, overflow activation and simultaneous agonist-antagonist contraction, with NO denervation or myopathy - confirms dystonic hypertonia",
+  "4. corticosteroid trial: high-dose intravenous methylprednisolone 1 g/day for five days followed by an oral taper"
+ ],
+ "dx_raw": "DIAGNOSIS: Seronegative autoimmune longitudinally extensive transverse myelitis confined to the cervical spinal cord, causing secondary spinal dystonia with dystonic hypertonia.\n\nALTERNATIVE 1: Stiff-person spectrum disorder with spinal-predominant dystonia.\n\nALTERNATIVE 2: Functional neurological movement disorder.\n\nALTERNATIVE 3: Structural cervical myelopathy causing secondary dystonia.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Seronegative autoimmune longitudinally extensive transverse myelitis confined to the cervical spinal cord, causing secondary spinal dystonia with dystonic hypertonia.",
+ "decisive_served": [
+  "anti-aquaporin-4 and anti-MOG antibodies",
+  "cervical and whole spine MRI",
+  "needle EMG of the affected muscles",
+  "corticosteroid trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 18604,
+   "completion_tokens": 543,
+   "total_tokens": 19147,
+   "cost": 0.00051211,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 18601,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00051211,
+    "upstream_inference_prompt_cost": 0.00018631,
+    "upstream_inference_completions_cost": 0.0003258
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 272,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 19453,
+   "completion_tokens": 345,
+   "total_tokens": 19798,
+   "cost": 0.000499435,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 18601,
+    "cache_write_tokens": 849,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000499435,
+    "upstream_inference_prompt_cost": 0.000292435,
+    "upstream_inference_completions_cost": 0.000207
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 257,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_secondary_structural_PMC12962376.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 18.0
+}

@@ -1,0 +1,325 @@
+{
+ "questions": [
+  "Is the shaking more prominent when you are resting?",
+  "Do you feel stiff in your muscles?",
+  "Have you noticed that you move more slowly than before?",
+  "Do you have a history of dementia?",
+  "Are you taking any antipsychotic medications?",
+  "Do you have a history of liver disease?",
+  "Do you have a history of kidney disease?",
+  "Do you have a family history of similar movements?",
+  "Have you had a recent sore throat or skin infection?",
+  "Have you noticed any changes in your mood or personality?",
+  "Do you have any joint pain or rashes?",
+  "Have you had any recent head injury or stroke?",
+  "Do you have diabetes?",
+  "Did these movements start suddenly?",
+  "Have you ever taken medications for Parkinson's disease, such as levodopa?",
+  "Have you noticed any changes in your balance or coordination?",
+  "Do you have any difficulty speaking or swallowing?",
+  "Have you experienced any involuntary movements of your face or tongue?",
+  "Have you had any recent weight loss or other systemic symptoms?",
+  "Have you ever taken metoclopramide?",
+  "Have you ever taken prochlorperazine?",
+  "Have you ever taken haloperidol?",
+  "Have you ever taken risperidone?",
+  "Have you ever taken olanzapine?",
+  "Have you ever taken quetiapine?",
+  "Have you ever taken chlorpromazine?",
+  "Have you ever taken fluphenazine?",
+  "Have you ever taken perphenazine?",
+  "Have you ever taken droperidol?",
+  "Have you taken any medications for mood or sleep?",
+  "Have you taken any medications for nausea or vomiting?",
+  "Do you have any relatives who had mental health problems or movements like this?",
+  "Have you noticed any changes in your personality or mood?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "yes",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "no",
+  "33": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Brain MRI",
+  "ANA and anti-dsDNA",
+  "Thyroid function tests (TSH, T4)",
+  "Serum ceruloplasmin",
+  "Blood glucose level",
+  "Liver and kidney function tests",
+  "CT chest, abdomen, and pelvis",
+  "CSF analysis (cell count, protein, glucose, and autoantibodies)",
+  "HIV test",
+  "Syphilis serology (RPR and FTA-ABS)",
+  "Blood smear for acanthocytes"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "antinuclear antibodies and anti-dsDNA",
+  "thyroid function (TSH, free T4)",
+  "copper / caeruloplasmin",
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "renal function and eGFR",
+  "CT chest, abdomen and pelvis",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF autoimmune encephalitis panel",
+  "HIV and syphilis serology",
+  "peripheral blood film for acanthocytes"
+ ],
+ "results": [
+  "R1 ASK Is the shaking more prominent when you are resting?; Do you feel stiff in your muscles?; Have you noticed that you move more slowly than before?; Do you have a history of dementia?; Are you taking any antipsychotic medications?; Do you have a history of liver disease?; Do you have a history of kidney disease? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Do you have a family history of similar movements?; Have you had a recent sore throat or skin infection?; Have you noticed any changes in your mood or personality?; Do you have any joint pain or rashes?; Have you had any recent head injury or stroke?; Do you have diabetes? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Brain MRI; ANA and anti-dsDNA; Thyroid function tests (TSH, T4); Serum ceruloplasmin; Blood glucose level; Liver and kidney function tests -> [['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences'], ['antinuclear antibodies and anti-dsDNA'], ['thyroid function (TSH, free T4)'], ['copper / caeruloplasmin'], ['blood glucose'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'renal function and eGFR']]",
+  "R4 ASK Did these movements start suddenly?; Have you ever taken medications for Parkinson's disease, such as levodopa?; Have you noticed any changes in your balance or coordination?; Do you have any difficulty speaking or swallowing?; Have you experienced any involuntary movements of your face or tongue?; Have you had any recent weight loss or other systemic symptoms? -> ['no', 'no', 'no', 'no', 'yes', 'no']",
+  "R5 ORDER CT chest, abdomen, and pelvis; CSF analysis (cell count, protein, glucose, and autoantibodies) -> [['CT chest, abdomen and pelvis'], ['CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF autoimmune encephalitis panel']]",
+  "R6 ASK Have you ever taken metoclopramide?; Have you ever taken prochlorperazine?; Have you ever taken haloperidol?; Have you ever taken risperidone?; Have you ever taken olanzapine?; Have you ever taken quetiapine?; Have you ever taken chlorpromazine?; Have you ever taken fluphenazine?; Have you ever taken perphenazine?; Have you ever taken droperidol? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R7 ASK Have you taken any medications for mood or sleep?; Have you taken any medications for nausea or vomiting?; Do you have any relatives who had mental health problems or movements like this?; Have you noticed any changes in your personality or mood? -> ['no', 'no', 'no', 'no']",
+  "R8 ORDER HIV test; Syphilis serology (RPR and FTA-ABS); Blood smear for acanthocytes -> [['HIV and syphilis serology'], ['HIV and syphilis serology'], ['peripheral blood film for acanthocytes']]",
+  "R9 DIAGNOSIS Huntington's disease caused by CAG repeat expansion in the HTT gene -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is the shaking more prominent when you are resting?",
+    "Do you feel stiff in your muscles?",
+    "Have you noticed that you move more slowly than before?",
+    "Do you have a history of dementia?",
+    "Are you taking any antipsychotic medications?",
+    "Do you have a history of liver disease?",
+    "Do you have a history of kidney disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have a family history of similar movements?",
+    "Have you had a recent sore throat or skin infection?",
+    "Have you noticed any changes in your mood or personality?",
+    "Do you have any joint pain or rashes?",
+    "Have you had any recent head injury or stroke?",
+    "Do you have diabetes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Brain MRI",
+    "ANA and anti-dsDNA",
+    "Thyroid function tests (TSH, T4)",
+    "Serum ceruloplasmin",
+    "Blood glucose level",
+    "Liver and kidney function tests"
+   ],
+   "result": [
+    [
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences"
+    ],
+    [
+     "antinuclear antibodies and anti-dsDNA"
+    ],
+    [
+     "thyroid function (TSH, free T4)"
+    ],
+    [
+     "copper / caeruloplasmin"
+    ],
+    [
+     "blood glucose"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests",
+     "renal function and eGFR"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Did these movements start suddenly?",
+    "Have you ever taken medications for Parkinson's disease, such as levodopa?",
+    "Have you noticed any changes in your balance or coordination?",
+    "Do you have any difficulty speaking or swallowing?",
+    "Have you experienced any involuntary movements of your face or tongue?",
+    "Have you had any recent weight loss or other systemic symptoms?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "CT chest, abdomen, and pelvis",
+    "CSF analysis (cell count, protein, glucose, and autoantibodies)"
+   ],
+   "result": [
+    [
+     "CT chest, abdomen and pelvis"
+    ],
+    [
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF autoimmune encephalitis panel"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Have you ever taken metoclopramide?",
+    "Have you ever taken prochlorperazine?",
+    "Have you ever taken haloperidol?",
+    "Have you ever taken risperidone?",
+    "Have you ever taken olanzapine?",
+    "Have you ever taken quetiapine?",
+    "Have you ever taken chlorpromazine?",
+    "Have you ever taken fluphenazine?",
+    "Have you ever taken perphenazine?",
+    "Have you ever taken droperidol?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Have you taken any medications for mood or sleep?",
+    "Have you taken any medications for nausea or vomiting?",
+    "Do you have any relatives who had mental health problems or movements like this?",
+    "Have you noticed any changes in your personality or mood?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "HIV test",
+    "Syphilis serology (RPR and FTA-ABS)",
+    "Blood smear for acanthocytes"
+   ],
+   "result": [
+    [
+     "HIV and syphilis serology"
+    ],
+    [
+     "HIV and syphilis serology"
+    ],
+    [
+     "peripheral blood film for acanthocytes"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Huntington's disease caused by CAG repeat expansion in the HTT gene"
+  }
+ ],
+ "dx": "Huntington's disease caused by CAG repeat expansion in the HTT gene",
+ "dx_raw": "DIAGNOSIS: Huntington's disease caused by CAG repeat expansion in the HTT gene",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 6,
+ "cost_usd": 0.0138,
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 771.8
+}

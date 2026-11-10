@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Have you noticed your eyelashes growing significantly longer over the past few months?",
+  "Are you currently using any prescription eye drops, specifically for high eye pressure or glaucoma?",
+  "Do you use any over-the-counter or prescription eyelash growth serums?",
+  "Have you ever been diagnosed with an autoimmune condition or HIV?",
+  "Does anyone in your immediate family have abnormally long eyelashes from a young age?",
+  "Are you experiencing any vision changes, such as blurring or sensitivity to light?",
+  "Do you feel tired more often than usual?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Complete blood count with differential",
+  "Thyroid function tests (TSH and free T4)",
+  "HIV screening test",
+  "Iron studies including ferritin",
+  "Serum zinc level"
+ ],
+ "served": [
+  "full blood count",
+  "thyroid function (TSH, free T4)",
+  "TSH / free T4 / TRAb",
+  "HIV and syphilis serology"
+ ],
+ "results": [
+  "1. Complete blood count with differential",
+  "     full blood count: normal",
+  "2. Thyroid function tests (TSH and free T4)",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH / free T4 / TRAb: normal, TRAb negative - excludes thyroid eye disease",
+  "3. HIV screening test",
+  "     HIV and syphilis serology: normal",
+  "4. Iron studies including ferritin",
+  "     not performed / not available",
+  "5. Serum zinc level",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic trichomegaly\n\n1. Trichomegaly secondary to zinc deficiency\n2. Trichomegaly secondary to iron deficiency\n3. Trichomegaly associated with occult chronic disease (e.g., early malignancy)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Complete blood count with differential\n2. Thyroid function tests (TSH and free T4)\n3. HIV screening test\n4. Iron studies including ferritin\n5. Serum zinc level",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic trichomegaly",
+ "decisive_served": [
+  "TSH / free T4 / TRAb"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 528,
+   "completion_tokens": 1259,
+   "total_tokens": 1787,
+   "cost": 0.0004000976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004000976,
+    "upstream_inference_prompt_cost": 4.75776e-05,
+    "upstream_inference_completions_cost": 0.00035252
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1140,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 944,
+   "completion_tokens": 484,
+   "total_tokens": 1428,
+   "cost": 0.0002413376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002413376,
+    "upstream_inference_prompt_cost": 0.0001058176,
+    "upstream_inference_completions_cost": 0.00013552
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 441,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1189,
+   "completion_tokens": 1314,
+   "total_tokens": 2503,
+   "cost": 0.0005080376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005080376,
+    "upstream_inference_prompt_cost": 0.0001401176,
+    "upstream_inference_completions_cost": 0.00036792
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1253,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 127.9
+}

@@ -1,0 +1,313 @@
+{
+ "questions": [
+  "Have you had these eye movements since childhood, or did they start recently?",
+  "Do you experience dizziness, vertigo, or a spinning sensation?",
+  "Do you have any hearing loss or ringing in your ears (tinnitus)?",
+  "Have you had any recent head trauma or ear infections?",
+  "Do you have any neurological symptoms like weakness, numbness, or difficulty speaking?",
+  "Do you have any involuntary shaking or jerking movements of your body or limbs?",
+  "Have you noticed any recent changes in your memory, behavior, or level of consciousness?",
+  "Do you have a history of cancer or any recent weight loss?",
+  "Do you consume alcohol regularly or heavily?",
+  "Have you had any recent infections, fevers, or vaccinations?",
+  "Which of these neurological symptoms do you have - weakness, numbness, or difficulty speaking?",
+  "Do you have any difficulty swallowing or changes in your voice?",
+  "Have you noticed any changes in your sense of smell or taste?",
+  "Do you have any skin rashes or joint pains?",
+  "Are you currently taking any medications, including herbal supplements or recreational drugs?",
+  "Do you take lithium, phenytoin, carbamazepine, or valproate?",
+  "Do you use any recreational drugs like cocaine, MDMA, or ketamine?",
+  "Do you take tricyclic antidepressants or any psychiatric medications?",
+  "Have you recently started any new medication or changed the dose of an existing one?",
+  "Do you have any history of seizures or mood disorders?",
+  "Do you have weakness in your arms or legs?",
+  "Do you have numbness or tingling in any part of your body?",
+  "Do you have difficulty with your speech - slurring or finding words?",
+  "Have you had any problems with your balance or coordination?",
+  "Do you have any gastrointestinal symptoms like diarrhea, abdominal pain, or weight loss?",
+  "Can you voluntarily stop or suppress these eye movements?",
+  "Do the eye movements worsen when you are stressed, anxious, or tired?",
+  "Do the eye movements disappear when you are distracted or focused on a task?",
+  "Have you experienced any recent significant emotional stress or psychological trauma?",
+  "Do you have any history of migraine headaches?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "yes",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "yes",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "MRI brain with diffusion-weighted imaging (to evaluate for stroke, demyelination, or other central lesions)",
+  "Serum anti-neuronal antibodies (anti-Hu, anti-Ri, anti-Yo, anti-Ma, anti-CV2/CRMP5)",
+  "CT chest, abdomen, and pelvis with contrast (to screen for occult malignancy)",
+  "Lumbar puncture with CSF analysis (cell count, protein, glucose, oligoclonal bands, and autoimmune encephalitis antibody panel including anti-GAD, anti-GlyR, anti-mGluR1, anti-DPPX, anti-NMDAR)",
+  "Electroencephalogram (EEG) to assess for subclinical myoclonus or encephalopathy",
+  "Serum anti-GAD antibodies",
+  "Serum anti-voltage-gated calcium channel (VGCC) antibodies",
+  "Serum copper and ceruloplasmin levels",
+  "Thyroid function tests (TSH, free T4)"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "CT chest, abdomen and pelvis",
+  "lumbar puncture / CSF",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF autoimmune encephalitis panel",
+  "serum copper and caeruloplasmin",
+  "thyroid function (TSH, free T4)",
+  "TSH / free T4 / TRAb"
+ ],
+ "results": [
+  "R1 ASK Have you had these eye movements since childhood, or did they start recently?; Do you experience dizziness, vertigo, or a spinning sensation?; Do you have any hearing loss or ringing in your ears (tinnitus)?; Have you had any recent head trauma or ear infections?; Do you have any neurological symptoms like weakness, numbness, or difficulty speaking? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R2 ORDER MRI brain with diffusion-weighted imaging (to evaluate for stroke, demyelination, or other central lesions) -> [['MRI diffusion-weighted sequences']]",
+  "R3 ASK Do you have any involuntary shaking or jerking movements of your body or limbs?; Have you noticed any recent changes in your memory, behavior, or level of consciousness?; Do you have a history of cancer or any recent weight loss?; Do you consume alcohol regularly or heavily?; Have you had any recent infections, fevers, or vaccinations? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Serum anti-neuronal antibodies (anti-Hu, anti-Ri, anti-Yo, anti-Ma, anti-CV2/CRMP5); CT chest, abdomen, and pelvis with contrast (to screen for occult malignancy) -> [['serum paraneoplastic / neuronal autoantibody panel'], ['CT chest, abdomen and pelvis']]",
+  "R5 ORDER Lumbar puncture with CSF analysis (cell count, protein, glucose, oligoclonal bands, and autoimmune encephalitis antibody panel including anti-GAD, anti-GlyR, anti-mGluR1, anti-DPPX, anti-NMDAR) -> [['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF autoimmune encephalitis panel']]",
+  "R6 ASK Which of these neurological symptoms do you have - weakness, numbness, or difficulty speaking?; Do you have any difficulty swallowing or changes in your voice?; Have you noticed any changes in your sense of smell or taste?; Do you have any skin rashes or joint pains?; Are you currently taking any medications, including herbal supplements or recreational drugs? -> ['yes', 'no', 'no', 'no', 'yes']",
+  "R7 ASK Do you take lithium, phenytoin, carbamazepine, or valproate?; Do you use any recreational drugs like cocaine, MDMA, or ketamine?; Do you take tricyclic antidepressants or any psychiatric medications?; Have you recently started any new medication or changed the dose of an existing one?; Do you have any history of seizures or mood disorders? -> ['no', 'no', 'no', 'no', 'no']",
+  "R8 ASK Do you have weakness in your arms or legs?; Do you have numbness or tingling in any part of your body?; Do you have difficulty with your speech - slurring or finding words?; Have you had any problems with your balance or coordination?; Do you have any gastrointestinal symptoms like diarrhea, abdominal pain, or weight loss? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R9 ORDER Electroencephalogram (EEG) to assess for subclinical myoclonus or encephalopathy; Serum anti-GAD antibodies; Serum anti-voltage-gated calcium channel (VGCC) antibodies; Serum copper and ceruloplasmin levels; Thyroid function tests (TSH, free T4) -> [[], ['serum paraneoplastic / neuronal autoantibody panel'], ['serum paraneoplastic / neuronal autoantibody panel'], ['serum copper and caeruloplasmin'], ['thyroid function (TSH, free T4)', 'TSH / free T4 / TRAb']]",
+  "R10 ASK Can you voluntarily stop or suppress these eye movements?; Do the eye movements worsen when you are stressed, anxious, or tired?; Do the eye movements disappear when you are distracted or focused on a task?; Have you experienced any recent significant emotional stress or psychological trauma?; Do you have any history of migraine headaches? -> ['no', 'no', 'no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Idiopathic opsoclonus-myoclonus syndrome (dancing eyes-dancing feet syndrome) - a presumed autoimmune/inflammatory opsoclonus of unknown cause, with negative paraneoplastic antibodies, nega -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you had these eye movements since childhood, or did they start recently?",
+    "Do you experience dizziness, vertigo, or a spinning sensation?",
+    "Do you have any hearing loss or ringing in your ears (tinnitus)?",
+    "Have you had any recent head trauma or ear infections?",
+    "Do you have any neurological symptoms like weakness, numbness, or difficulty speaking?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "MRI brain with diffusion-weighted imaging (to evaluate for stroke, demyelination, or other central lesions)"
+   ],
+   "result": [
+    [
+     "MRI diffusion-weighted sequences"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have any involuntary shaking or jerking movements of your body or limbs?",
+    "Have you noticed any recent changes in your memory, behavior, or level of consciousness?",
+    "Do you have a history of cancer or any recent weight loss?",
+    "Do you consume alcohol regularly or heavily?",
+    "Have you had any recent infections, fevers, or vaccinations?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Serum anti-neuronal antibodies (anti-Hu, anti-Ri, anti-Yo, anti-Ma, anti-CV2/CRMP5)",
+    "CT chest, abdomen, and pelvis with contrast (to screen for occult malignancy)"
+   ],
+   "result": [
+    [
+     "serum paraneoplastic / neuronal autoantibody panel"
+    ],
+    [
+     "CT chest, abdomen and pelvis"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Lumbar puncture with CSF analysis (cell count, protein, glucose, oligoclonal bands, and autoimmune encephalitis antibody panel including anti-GAD, anti-GlyR, anti-mGluR1, anti-DPPX, anti-NMDAR)"
+   ],
+   "result": [
+    [
+     "lumbar puncture / CSF",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF autoimmune encephalitis panel"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Which of these neurological symptoms do you have - weakness, numbness, or difficulty speaking?",
+    "Do you have any difficulty swallowing or changes in your voice?",
+    "Have you noticed any changes in your sense of smell or taste?",
+    "Do you have any skin rashes or joint pains?",
+    "Are you currently taking any medications, including herbal supplements or recreational drugs?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you take lithium, phenytoin, carbamazepine, or valproate?",
+    "Do you use any recreational drugs like cocaine, MDMA, or ketamine?",
+    "Do you take tricyclic antidepressants or any psychiatric medications?",
+    "Have you recently started any new medication or changed the dose of an existing one?",
+    "Do you have any history of seizures or mood disorders?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have weakness in your arms or legs?",
+    "Do you have numbness or tingling in any part of your body?",
+    "Do you have difficulty with your speech - slurring or finding words?",
+    "Have you had any problems with your balance or coordination?",
+    "Do you have any gastrointestinal symptoms like diarrhea, abdominal pain, or weight loss?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Electroencephalogram (EEG) to assess for subclinical myoclonus or encephalopathy",
+    "Serum anti-GAD antibodies",
+    "Serum anti-voltage-gated calcium channel (VGCC) antibodies",
+    "Serum copper and ceruloplasmin levels",
+    "Thyroid function tests (TSH, free T4)"
+   ],
+   "result": [
+    [],
+    [
+     "serum paraneoplastic / neuronal autoantibody panel"
+    ],
+    [
+     "serum paraneoplastic / neuronal autoantibody panel"
+    ],
+    [
+     "serum copper and caeruloplasmin"
+    ],
+    [
+     "thyroid function (TSH, free T4)",
+     "TSH / free T4 / TRAb"
+    ]
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Can you voluntarily stop or suppress these eye movements?",
+    "Do the eye movements worsen when you are stressed, anxious, or tired?",
+    "Do the eye movements disappear when you are distracted or focused on a task?",
+    "Have you experienced any recent significant emotional stress or psychological trauma?",
+    "Do you have any history of migraine headaches?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Idiopathic opsoclonus-myoclonus syndrome (dancing eyes-dancing feet syndrome) - a presumed autoimmune/inflammatory opsoclonus of unknown cause, with negative paraneoplastic antibodies, nega"
+  }
+ ],
+ "dx": "Idiopathic opsoclonus-myoclonus syndrome (dancing eyes-dancing feet syndrome) - a presumed autoimmune/inflammatory opsoclonus of unknown cause, with negative paraneoplastic antibodies, negative malignancy screen, normal MRI brain, and normal CSF studies.",
+ "dx_raw": "DIAGNOSIS: Idiopathic opsoclonus-myoclonus syndrome (dancing eyes-dancing feet syndrome) - a presumed autoimmune/inflammatory opsoclonus of unknown cause, with negative paraneoplastic antibodies, negative malignancy screen, normal MRI brain, and normal CSF studies.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0414,
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "mild_cpeo_mitochondrial_PMC9350803.mp4",
+ "line": "ptosis",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 73.0
+}

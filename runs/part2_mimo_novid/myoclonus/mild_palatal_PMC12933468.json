@@ -1,0 +1,169 @@
+{
+ "questions": [
+  "Do you have any chest pain or difficulty breathing right now?",
+  "Have you experienced any sudden, severe symptoms in the past 24 hours?",
+  "Have you had a fever or chills recently?",
+  "Are you experiencing any pain or discomfort anywhere in your body?",
+  "Have you noticed any unexplained weight loss or gain in the past month?",
+  "Have you had any recent cough, sore throat, or nasal congestion?",
+  "Have you experienced any nausea, vomiting, or diarrhea?",
+  "Have you had any dizziness, fainting, or loss of consciousness?",
+  "Have you noticed any changes in your vision or hearing?",
+  "Have you experienced any numbness, tingning, or weakness in your arms or legs?",
+  "Have you had any urinary symptoms, like pain or frequent urination?",
+  "Have you been in contact with anyone who has been sick recently?",
+  "Do you have any significant past medical history or chronic conditions?",
+  "Are you currently taking any medications or supplements?",
+  "Do you have any known allergies?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "yes",
+  "15": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "Complete blood count with differential",
+  "Comprehensive metabolic panel",
+  "Serum magnesium level",
+  "Brain MRI without contrast",
+  "Nerve conduction study with electromyography"
+ ],
+ "served": [
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "electrolytes (Na, K, Ca, Mg)",
+  "brain MRI",
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. Complete blood count with differential",
+  "     full blood count: normal",
+  "2. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "3. Serum magnesium level",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "4. Brain MRI without contrast",
+  "     brain MRI: no relevant structural lesion",
+  "5. Nerve conduction study with electromyography",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Fibromyalgia\n\nFunctional neurological symptom disorder\nMedication side effects\nSomatic symptom disorder",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete blood count with differential\n2. Comprehensive metabolic panel\n3. Serum magnesium level\n4. Brain MRI without contrast\n5. Nerve conduction study with electromyography",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Fibromyalgia",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 421,
+   "total_tokens": 806,
+   "cost": 0.000127876,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000127876,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 0.00011788
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 193,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1057,
+   "completion_tokens": 171,
+   "total_tokens": 1228,
+   "cost": 0.0001431752,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001431752,
+    "upstream_inference_prompt_cost": 9.52952e-05,
+    "upstream_inference_completions_cost": 4.788e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 130,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1305,
+   "completion_tokens": 766,
+   "total_tokens": 2071,
+   "cost": 0.0002566872,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1024,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002566872,
+    "upstream_inference_prompt_cost": 4.22072e-05,
+    "upstream_inference_completions_cost": 0.00021448
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 738,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 9.0,
+ "video": "mild_palatal_PMC12933468.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 39.7
+}

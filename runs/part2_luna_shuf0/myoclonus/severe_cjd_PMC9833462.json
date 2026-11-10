@@ -1,0 +1,230 @@
+{
+ "questions": [
+  "Are you having difficulty breathing right now?",
+  "Are you choking or unable to swallow?",
+  "Are you experiencing severe pain right now?",
+  "Did these symptoms begin suddenly?",
+  "Are you feeling confused or unlike yourself?",
+  "Are you able to understand my questions?",
+  "Are you having a seizure right now?",
+  "Have you lost consciousness at any point today?",
+  "Do you have new weakness or numbness on one side of your body?",
+  "Do you have trouble speaking or seeing?",
+  "Do you have a severe headache?",
+  "Have you recently fallen or hit your head?",
+  "Have you had a recent operation or procedure?",
+  "Do you have a tracheostomy or breathing tube?",
+  "Have you taken any new medication, sedative, or pain medicine today?",
+  "Have you used alcohol or recreational drugs recently?",
+  "Do you have epilepsy or a history of similar episodes?",
+  "Do you have a fever or feel unusually hot?",
+  "Are you experiencing chest pain?",
+  "Do you feel that you are getting worse?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside assessment of vital signs, oxygen saturation, and capillary blood glucose",
+  "Focused neurological examination, including level of consciousness, pupils, eye movements, and motor responses",
+  "Arterial blood gas with co-oximetry",
+  "Complete blood count",
+  "Serum electrolytes, glucose, calcium, magnesium, renal function, and liver function tests",
+  "Noncontrast CT scan of the head",
+  "Continuous video-electroencephalography",
+  "MRI of the brain with diffusion-weighted imaging",
+  "Urinalysis and urine culture",
+  "Blood cultures",
+  "Medication and toxicology screen"
+ ],
+ "served": [
+  "vital signs",
+  "glucose",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "limb strength (MRC) examination",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "glucose",
+  "renal function (urea, creatinine)",
+  "liver function and ammonia",
+  "electrolytes (Na, K, Ca, Mg)",
+  "CT head",
+  "EEG",
+  "brain MRI",
+  "MRI diffusion-weighted sequences",
+  "urinalysis",
+  "medication review",
+  "toxicology screen (urine and serum)",
+  "toxicology screen"
+ ],
+ "results": [
+  "1. Bedside assessment of vital signs, oxygen saturation, and capillary blood glucose",
+  "     vital signs: normal, afebrile",
+  "     glucose: normal",
+  "2. Focused neurological examination, including level of consciousness, pupils, eye movements, and motor responses",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: minimally conscious; impaired cognition",
+  "     limb strength (MRC) examination: not reliably testable because of impaired consciousness and myoclonus",
+  "3. Arterial blood gas with co-oximetry",
+  "     not performed / not available",
+  "4. Complete blood count",
+  "     full blood count: normal",
+  "5. Serum electrolytes, glucose, calcium, magnesium, renal function, and liver function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     glucose: normal",
+  "     renal function (urea, creatinine): normal",
+  "     liver function and ammonia: normal",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "6. Noncontrast CT scan of the head",
+  "     CT head: hypoxic-ischaemic brain injury",
+  "7. Continuous video-electroencephalography",
+  "     EEG: diffuse encephalopathic changes without periodic sharp wave complexes",
+  "8. MRI of the brain with diffusion-weighted imaging",
+  "     brain MRI: hypoxic-ischaemic injury",
+  "     MRI diffusion-weighted sequences: restricted diffusion consistent with hypoxic-ischaemic injury",
+  "9. Urinalysis and urine culture",
+  "     urinalysis: normal",
+  "10. Blood cultures",
+  "     not performed / not available",
+  "11. Medication and toxicology screen",
+  "     medication review: no culprit drug identified",
+  "     toxicology screen (urine and serum): normal",
+  "     toxicology screen: negative"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute hypoxic-ischaemic encephalopathy with post-anoxic myoclonus, caused by a perioperative cardiopulmonary arrest\n\nALTERNATIVE: Nonconvulsive status epilepticus\n\nALTERNATIVE: Toxic-metabolic encephalopathy\n\nALTERNATIVE: Acute structural brain injury unrelated to hypoxia, such as ischemic stroke or intracranial hemorrhage",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside assessment of vital signs, oxygen saturation, and capillary blood glucose\n2. Focused neurological examination, including level of consciousness, pupils, eye movements, and motor responses\n3. Arterial blood gas with co-oximetry\n4. Complete blood count\n5. Serum electrolytes, glucose, calcium, magnesium, renal function, and liver function tests\n6. Noncontrast CT scan of the head\n7. Continuous video-electroencephalography\n8. MRI of the brain with diffusion-weighted imaging\n9. Urinalysis and urine culture\n10. Blood cultures\n11. Medication and toxicology screen\n",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Acute hypoxic-ischaemic encephalopathy with post-anoxic myoclonus, caused by a perioperative cardiopulmonary arrest",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 445,
+   "total_tokens": 6121,
+   "cost": 0.00195285,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 5673,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00195285,
+    "upstream_inference_prompt_cost": 0.00141885,
+    "upstream_inference_completions_cost": 0.000534
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 216,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6367,
+   "completion_tokens": 655,
+   "total_tokens": 7022,
+   "cost": 0.00107281,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 691,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00107281,
+    "upstream_inference_prompt_cost": 0.00028681,
+    "upstream_inference_completions_cost": 0.000786
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 6966,
+   "completion_tokens": 357,
+   "total_tokens": 7323,
+   "cost": 0.00070603,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6364,
+    "cache_write_tokens": 599,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00070603,
+    "upstream_inference_prompt_cost": 0.00027763,
+    "upstream_inference_completions_cost": 0.0004284
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 270,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 54.6
+}

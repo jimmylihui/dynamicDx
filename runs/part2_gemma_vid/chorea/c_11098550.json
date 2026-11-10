@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Do you have a history of epilepsy?",
+  "Is this the first time this has happened?",
+  "Do you remember what happened?",
+  "Did you feel a warning sensation before it started?",
+  "Are you taking any new medications?",
+  "Do you have diabetes?",
+  "Do you have a fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Blood glucose",
+  "Serum electrolytes",
+  "Renal and liver function tests",
+  "CT head",
+  "MRI brain"
+ ],
+ "served": [
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "CT head (non-contrast)",
+  "brain MRI with contrast"
+ ],
+ "results": [
+  "1. Blood glucose",
+  "     blood glucose: random glucose 88 mg/dL, HbA1c 5.6% - normal",
+  "2. Serum electrolytes",
+  "     serum electrolytes, urea and creatinine: euvolaemic hyponatraemia with low serum osmolality; urea and creatinine normal",
+  "3. Renal and liver function tests",
+  "     serum electrolytes, urea and creatinine: euvolaemic hyponatraemia with low serum osmolality; urea and creatinine normal",
+  "     liver function tests: normal",
+  "4. CT head",
+  "     CT head (non-contrast): no haemorrhage, no hyperdensity, no infarct",
+  "5. MRI brain",
+  "     brain MRI with contrast: EMPTY SELLA sign"
+ ],
+ "dx_raw": "DIAGNOSIS: Secondary adrenal insufficiency due to hypopituitarism\n\n1. SIADH\n2. Hypothyroidism\n3. Primary adrenal insufficiency",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Blood glucose\n2. Serum electrolytes\n3. Renal and liver function tests\n4. CT head\n5. MRI brain\n6. EEG",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Secondary adrenal insufficiency due to hypopituitarism",
+ "decisive_served": [
+  "brain MRI with contrast"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8314,
+   "completion_tokens": 1019,
+   "total_tokens": 9333,
+   "cost": 0.00117786,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00117786,
+    "upstream_inference_prompt_cost": 0.0008314,
+    "upstream_inference_completions_cost": 0.00034646
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 926,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8632,
+   "completion_tokens": 763,
+   "total_tokens": 9395,
+   "cost": 0.00112262,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00112262,
+    "upstream_inference_prompt_cost": 0.0008632,
+    "upstream_inference_completions_cost": 0.00025942
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 749,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8908,
+   "completion_tokens": 1526,
+   "total_tokens": 10434,
+   "cost": 0.00140964,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00140964,
+    "upstream_inference_prompt_cost": 0.0008908,
+    "upstream_inference_completions_cost": 0.00051884
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1486,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.2,
+ "video": "c_11098550.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 358.8
+}

@@ -1,0 +1,164 @@
+{
+ "questions": [
+  "Are you having trouble breathing?",
+  "Do you feel like you are choking?",
+  "Are you in pain?",
+  "Do you have a headache?",
+  "Did you have a recent head injury?",
+  "Did you have a recent stroke?",
+  "Do you have a history of seizures?",
+  "Do you feel dizzy?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Neurological examination",
+  "Brain MRI",
+  "Blood tests (CBC, electrolytes, glucose)"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "brain MRI",
+  "full blood count",
+  "electrolytes (Na, K, Ca, Mg)",
+  "glucose"
+ ],
+ "results": [
+  "1. Neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: minimally conscious; impaired cognition",
+  "     muscle tone examination: increased tone; Ashworth grade 1+ upper limbs and grade 2 lower limbs after treatment",
+  "     limb strength (MRC) examination: not reliably testable because of impaired consciousness and myoclonus",
+  "     deep tendon reflexes and plantar responses: brisk deep tendon reflexes; extensor plantar responses",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): not testable",
+  "     posture and pull test: abnormal posture; pull test not testable",
+  "     fundoscopy: normal",
+  "2. Brain MRI",
+  "     brain MRI: hypoxic-ischaemic injury",
+  "3. Blood tests (CBC, electrolytes, glucose)",
+  "     full blood count: normal",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     glucose: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Hypoxic-ischaemic encephalopathy due to global cerebral hypoxia\n\n1. Post-cardiac arrest syndrome\n2. Anoxic brain injury\n3. Severe hypoxic-ischaemic encephalopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Neurological examination\n2. Brain MRI\n3. Blood tests (CBC, electrolytes, glucose)",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Hypoxic-ischaemic encephalopathy due to global cerebral hypoxia",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1462,
+   "total_tokens": 10160,
+   "cost": 0.00136688,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00136688,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00049708
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1362,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9030,
+   "completion_tokens": 1453,
+   "total_tokens": 10483,
+   "cost": 0.00139702,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00139702,
+    "upstream_inference_prompt_cost": 0.000903,
+    "upstream_inference_completions_cost": 0.00049402
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1456,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9349,
+   "completion_tokens": 1069,
+   "total_tokens": 10418,
+   "cost": 0.00129836,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00129836,
+    "upstream_inference_prompt_cost": 0.0009349,
+    "upstream_inference_completions_cost": 0.00036346
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1004,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 187.7
+}

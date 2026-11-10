@@ -1,0 +1,147 @@
+{
+ "questions": [
+  "Is your main concern a new problem that started suddenly within the last few days?",
+  "Do you have a fever?",
+  "Are you experiencing severe pain right now?",
+  "Are you having trouble breathing?",
+  "Have you had any fainting, confusion, or major weakness on one side of your body?",
+  "Is your problem mainly related to chest pain?",
+  "Is your problem mainly related to belly pain?",
+  "Is your problem mainly a headache?",
+  "Is your problem mainly a cough?",
+  "Have you had significant weight loss or night sweats recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Is your problem involving your joints or muscles?",
+  "Is your problem involving your skin (rash, itching, or changes)?",
+  "Is your problem mainly tiredness or fatigue?",
+  "Is your problem related to urination (frequency, pain, or blood)?",
+  "Is your problem related to numbness or tingling?"
+ ],
+ "served": [],
+ "results": [
+  "1. Is your problem involving your joints or muscles?",
+  "     not performed / not available",
+  "2. Is your problem involving your skin (rash, itching, or changes)?",
+  "     not performed / not available",
+  "3. Is your problem mainly tiredness or fatigue?",
+  "     not performed / not available",
+  "4. Is your problem related to urination (frequency, pain, or blood)?",
+  "     not performed / not available",
+  "5. Is your problem related to numbness or tingling?",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Somatization disorder or adjustment disorder with physical symptoms (no acute organic pathology identified from history).\n\nAlternative diagnoses:\n1. Major depressive disorder with somatic symptoms\n2. Early or prodromal viral syndrome\n3. Generalized anxiety disorder with somatic manifestations",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "11. Is your problem involving your joints or muscles?  \n12. Is your problem involving your skin (rash, itching, or changes)?  \n13. Is your problem mainly tiredness or fatigue?  \n14. Is your problem related to urination (frequency, pain, or blood)?  \n15. Is your problem related to numbness or tingling?",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Somatization disorder or adjustment disorder with physical symptoms (no acute organic pathology identified from history).",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 306,
+   "total_tokens": 691,
+   "cost": 9.5676e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.5676e-05,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 8.568e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 174,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 831,
+   "completion_tokens": 323,
+   "total_tokens": 1154,
+   "cost": 0.0001804376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001804376,
+    "upstream_inference_prompt_cost": 8.99976e-05,
+    "upstream_inference_completions_cost": 9.044e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 242,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1108,
+   "completion_tokens": 229,
+   "total_tokens": 1337,
+   "cost": 0.0001138704,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001138704,
+    "upstream_inference_prompt_cost": 4.97504e-05,
+    "upstream_inference_completions_cost": 6.412e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 168,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.7,
+ "video": "mild_neuropathic_CMT_PMC11600610.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 31.5
+}

@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Do you have a family history of similar movements?",
+  "Did the movements begin before the age of 18?",
+  "Do you experience an urge or sensation that precedes the movements?",
+  "Can you temporarily suppress the movements with effort?",
+  "Do you also make involuntary sounds or vocalizations?",
+  "Are the movements worse when you are stressed or tired?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "Serum ceruloplasmin level",
+  "24-hour urinary copper excretion",
+  "MRI of the brain"
+ ],
+ "served": [
+  "fundoscopy",
+  "serum copper and caeruloplasmin",
+  "24-hour urinary copper",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain with DWI"
+ ],
+ "results": [
+  "1. Slit-lamp examination for Kayser-Fleischer rings",
+  "     fundoscopy: normal",
+  "2. Serum ceruloplasmin level",
+  "     serum copper and caeruloplasmin: normal",
+  "3. 24-hour urinary copper excretion",
+  "     24-hour urinary copper: normal",
+  "4. MRI of the brain",
+  "     MRI brain with gadolinium: left rostral pontine and caudal mesencephalic infarcts without enhancement",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the left rostral pons and caudal mesencephalon extending along the paramedian line to the midline",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain with DWI: LEFT rostral pontine infarct and a caudal mesencephalic infarct extending along the paramedian line to the midline"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute paramedian pontine and midbrain infarction causing ocular myoclonus (palatal tremor variant) due to small vessel disease\nAlternative 1: Ocular flutter secondary to paraneoplastic brainstem encephalitis\nAlternative 2: Opsoclonus-myoclonus syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Slit-lamp examination for Kayser-Fleischer rings\n2. Serum ceruloplasmin level\n3. 24-hour urinary copper excretion\n4. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Acute paramedian pontine and midbrain infarction causing ocular myoclonus (palatal tremor variant) due to small vessel disease",
+ "decisive_served": [
+  "MRI brain with DWI"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 186,
+   "completion_tokens": 82,
+   "total_tokens": 268,
+   "cost": 6.644e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.644e-05,
+    "upstream_inference_prompt_cost": 2.79e-05,
+    "upstream_inference_completions_cost": 3.854e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 529,
+   "completion_tokens": 42,
+   "total_tokens": 571,
+   "cost": 9.909e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.909e-05,
+    "upstream_inference_prompt_cost": 7.935e-05,
+    "upstream_inference_completions_cost": 1.974e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 853,
+   "completion_tokens": 71,
+   "total_tokens": 924,
+   "cost": 9.2712e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.2712e-05,
+    "upstream_inference_prompt_cost": 5.9342e-05,
+    "upstream_inference_completions_cost": 3.337e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.8
+}

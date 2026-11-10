@@ -1,0 +1,318 @@
+{
+ "questions": [
+  "Have you noticed your eyelid drooping?",
+  "Does it get worse later in the day?",
+  "Do you have double vision?",
+  "Do you have any weakness in your arms or legs?",
+  "Have you had a bad headache recently?",
+  "Have you noticed any difference in sweating on one side of your face?",
+  "Has there been any pain around your eye or forehead?",
+  "Have you had any recent surgery or trauma to your chest or neck?",
+  "Did this start suddenly or gradually?",
+  "Have you noticed any change in pupil size?",
+  "Do you have pain when you chew food (jaw claudication)?",
+  "Is your scalp tender to touch?",
+  "Have you had any changes in your vision, like blurriness?",
+  "Do you feel fatigued or have unexplained weight loss?",
+  "Have you had any fever?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Are you a smoker?",
+  "Has anyone in your family had strokes or heart disease?",
+  "Have you had any recent infections or felt unwell before this started?",
+  "What kind of infection did you have? (cold, flu, sinus infection?)",
+  "Did the eyelid droop start during or after the infection?",
+  "Does the droopiness ever get better during the day or worse when you're tired?",
+  "Can you close your right eye tightly?",
+  "Have you had any numbness or tingling on your face?",
+  "Has the pain gotten better or worse since it started?",
+  "Can you see the red color of my glove equally well in both eyes?",
+  "Do you have any drooling or difficulty with facial expressions?",
+  "Has the pain gotten better or worse since it started? (clarify - better or worse?)",
+  "Which eye has worse vision - the right eye?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "yes",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "yes",
+  "27": "no",
+  "28": "no",
+  "29": "yes",
+  "30": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "Examine both pupils carefully - measure and compare sizes in light and dark",
+  "Check for reversal of pupillary dilation (tonic pupil response)",
+  "Examine extraocular movements in all directions",
+  "Test facial sensation in V1, V2, V3 distributions",
+  "Check for facial anhidrosis by observing sweat response on forehead after gentle warming",
+  "Ice pack test (place ice on closed right eyelid for 2 minutes, check for improvement in ptosis)",
+  "Anti-AChR antibodies (acetylcholine receptor)",
+  "MRI brain with contrast (looking for brainstem lesion or demyelination)",
+  "Test color vision (Ishihara plates) in both eyes",
+  "Examine optic discs for swelling",
+  "Check visual acuity (Snellen chart) in both eyes formally",
+  "Trial of oral prednisone 1mg/kg/day for 5-7 days (diagnostic and therapeutic trial for Tolosa-Hunt syndrome)"
+ ],
+ "served": [
+  "pupil examination (size, light reaction)",
+  "ocular motility examination",
+  "cranial nerve examination",
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "MRI brain with contrast",
+  "visual acuity and colour vision",
+  "fundoscopy"
+ ],
+ "results": [
+  "R1 ASK Have you noticed your eyelid drooping?; Does it get worse later in the day?; Do you have double vision?; Do you have any weakness in your arms or legs?; Have you had a bad headache recently? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R2 ASK Have you noticed any difference in sweating on one side of your face?; Has there been any pain around your eye or forehead?; Have you had any recent surgery or trauma to your chest or neck?; Did this start suddenly or gradually?; Have you noticed any change in pupil size? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R3 ASK Do you have pain when you chew food (jaw claudication)?; Is your scalp tender to touch?; Have you had any changes in your vision, like blurriness?; Do you feel fatigued or have unexplained weight loss?; Have you had any fever? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Examine both pupils carefully - measure and compare sizes in light and dark; Check for reversal of pupillary dilation (tonic pupil response); Examine extraocular movements in all directions; Test facial sensation in V1, V2, V3 distributions; Check for facial anhidrosis by observing sweat response on forehead after gentle warming -> [['pupil examination (size, light reaction)'], ['pupil examination (size, light reaction)'], ['ocular motility examination'], ['cranial nerve examination'], ['cranial nerve examination']]",
+  "R5 ASK Do you have diabetes?; Do you have high blood pressure?; Are you a smoker?; Has anyone in your family had strokes or heart disease?; Have you had any recent infections or felt unwell before this started? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R6 ASK What kind of infection did you have? (cold, flu, sinus infection?); Did the eyelid droop start during or after the infection?; Does the droopiness ever get better during the day or worse when you're tired?; Can you close your right eye tightly?; Have you had any numbness or tingling on your face? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 ORDER Ice pack test (place ice on closed right eyelid for 2 minutes, check for improvement in ptosis); Anti-AChR antibodies (acetylcholine receptor); MRI brain with contrast (looking for brainstem lesion or demyelination) -> [['ice-pack test'], ['anti-acetylcholine receptor antibodies'], ['MRI brain with contrast']]",
+  "R8 ASK Has the pain gotten better or worse since it started?; Can you see the red color of my glove equally well in both eyes?; Do you have any drooling or difficulty with facial expressions? -> ['yes', 'no', 'no']",
+  "R9 ASK Has the pain gotten better or worse since it started? (clarify - better or worse?); Which eye has worse vision - the right eye? -> ['yes', 'no']",
+  "R10 ORDER Test color vision (Ishihara plates) in both eyes; Examine optic discs for swelling; Check visual acuity (Snellen chart) in both eyes formally; Trial of oral prednisone 1mg/kg/day for 5-7 days (diagnostic and therapeutic trial for Tolosa-Hunt syndrome) -> [['visual acuity and colour vision'], ['fundoscopy'], ['visual acuity and colour vision'], []]",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Tolosa-Hunt syndrome -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you noticed your eyelid drooping?",
+    "Does it get worse later in the day?",
+    "Do you have double vision?",
+    "Do you have any weakness in your arms or legs?",
+    "Have you had a bad headache recently?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any difference in sweating on one side of your face?",
+    "Has there been any pain around your eye or forehead?",
+    "Have you had any recent surgery or trauma to your chest or neck?",
+    "Did this start suddenly or gradually?",
+    "Have you noticed any change in pupil size?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have pain when you chew food (jaw claudication)?",
+    "Is your scalp tender to touch?",
+    "Have you had any changes in your vision, like blurriness?",
+    "Do you feel fatigued or have unexplained weight loss?",
+    "Have you had any fever?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Examine both pupils carefully - measure and compare sizes in light and dark",
+    "Check for reversal of pupillary dilation (tonic pupil response)",
+    "Examine extraocular movements in all directions",
+    "Test facial sensation in V1, V2, V3 distributions",
+    "Check for facial anhidrosis by observing sweat response on forehead after gentle warming"
+   ],
+   "result": [
+    [
+     "pupil examination (size, light reaction)"
+    ],
+    [
+     "pupil examination (size, light reaction)"
+    ],
+    [
+     "ocular motility examination"
+    ],
+    [
+     "cranial nerve examination"
+    ],
+    [
+     "cranial nerve examination"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have diabetes?",
+    "Do you have high blood pressure?",
+    "Are you a smoker?",
+    "Has anyone in your family had strokes or heart disease?",
+    "Have you had any recent infections or felt unwell before this started?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "What kind of infection did you have? (cold, flu, sinus infection?)",
+    "Did the eyelid droop start during or after the infection?",
+    "Does the droopiness ever get better during the day or worse when you're tired?",
+    "Can you close your right eye tightly?",
+    "Have you had any numbness or tingling on your face?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Ice pack test (place ice on closed right eyelid for 2 minutes, check for improvement in ptosis)",
+    "Anti-AChR antibodies (acetylcholine receptor)",
+    "MRI brain with contrast (looking for brainstem lesion or demyelination)"
+   ],
+   "result": [
+    [
+     "ice-pack test"
+    ],
+    [
+     "anti-acetylcholine receptor antibodies"
+    ],
+    [
+     "MRI brain with contrast"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Has the pain gotten better or worse since it started?",
+    "Can you see the red color of my glove equally well in both eyes?",
+    "Do you have any drooling or difficulty with facial expressions?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Has the pain gotten better or worse since it started? (clarify - better or worse?)",
+    "Which eye has worse vision - the right eye?"
+   ],
+   "result": [
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "Test color vision (Ishihara plates) in both eyes",
+    "Examine optic discs for swelling",
+    "Check visual acuity (Snellen chart) in both eyes formally",
+    "Trial of oral prednisone 1mg/kg/day for 5-7 days (diagnostic and therapeutic trial for Tolosa-Hunt syndrome)"
+   ],
+   "result": [
+    [
+     "visual acuity and colour vision"
+    ],
+    [
+     "fundoscopy"
+    ],
+    [
+     "visual acuity and colour vision"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Tolosa-Hunt syndrome"
+  }
+ ],
+ "dx": "Tolosa-Hunt syndrome",
+ "dx_raw": "DIAGNOSIS: Tolosa-Hunt syndrome",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0058,
+ "n_frames": 32,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 293.0
+}

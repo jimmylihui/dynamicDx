@@ -1,0 +1,115 @@
+{
+ "questions": [
+  "Is the swelling in your abdomen the primary reason you are in the hospital today?",
+  "Has this abdominal swelling developed and worsened gradually over the past several weeks or months?",
+  "Do you have a history of heavy alcohol use?",
+  "Have you ever been diagnosed with liver disease or cirrhosis?",
+  "Do you have a history of heart failure or other heart problems?",
+  "Are you currently experiencing shortness of breath?",
+  "Do you need to sleep propped up on multiple pillows to avoid feeling short of breath?",
+  "Have you experienced any unintentional weight loss recently?",
+  "Do you have any pain in your abdomen?",
+  "Have you noticed any yellowing of your skin or eyes?",
+  "Do you have a history of cancer?",
+  "Have you had any recent fevers, chills, or night sweats?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "medication review",
+  "serotonin syndrome criteria (Hunter)"
+ ],
+ "results": [
+  "1. medication review: long-term risperidone with concomitant sertraline; myoclonus resolved completely within 24 h of withdrawing RISPERIDONE alone",
+  "2. serotonin syndrome criteria (Hunter): NOT met - no clonus, hyperreflexia, fever or autonomic instability"
+ ],
+ "dx_raw": "DIAGNOSIS: Risperidone-induced myoclonus (extrapyramidal adverse drug reaction, with the prominent abdominal distension representing risperidone-associated weight gain / metabolic syndrome)\n1. Sertraline-induced myoclonus\n2. Mild or atypical serotonin syndrome (despite negative Hunter criteria)\n3. Antipsychotic-related movement disorder of unclear mechanism",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Risperidone-induced myoclonus (extrapyramidal adverse drug reaction, with the prominent abdominal distension representing risperidone-associated weight gain / metabolic syndrome)",
+ "decisive_served": [
+  "medication review",
+  "serotonin syndrome criteria (Hunter)"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 13142,
+   "completion_tokens": 1482,
+   "total_tokens": 14624,
+   "cost": 0.00568332,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00568332,
+    "upstream_inference_prompt_cost": 0.00390492,
+    "upstream_inference_completions_cost": 0.0017784
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1315,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 13691,
+   "completion_tokens": 3529,
+   "total_tokens": 17220,
+   "cost": 0.00519162,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 13127,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00519162,
+    "upstream_inference_prompt_cost": 0.00095682,
+    "upstream_inference_completions_cost": 0.0042348
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3455,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 56.5
+}

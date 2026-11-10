@@ -1,0 +1,136 @@
+{
+ "questions": [
+  "Are you experiencing pain in your knees?",
+  "Is the pain worse when you walk or climb stairs?",
+  "Do you have a history of arthritis?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient rising from a seated position without using their hands",
+  "Assess lower extremity muscle strength, specifically hip flexion and knee extension",
+  "Perform a straight leg raise test to assess for hamstring tightness or radiculopathy",
+  "Check deep tendon reflexes in the lower limbs"
+ ],
+ "served": [
+  "posture and pull test",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses"
+ ],
+ "results": [
+  "1. Observe the patient rising from a seated position without using their hands",
+  "     posture and pull test: normal",
+  "2. Assess lower extremity muscle strength, specifically hip flexion and knee extension",
+  "     limb strength (MRC) examination: normal",
+  "3. Perform a straight leg raise test to assess for hamstring tightness or radiculopathy",
+  "     not performed / not available",
+  "4. Check deep tendon reflexes in the lower limbs",
+  "     deep tendon reflexes and plantar responses: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Normal aging with age-related skin changes (senile purpura/atrophy) and no active musculoskeletal pathology\n1. Osteoarthritis of the knee (early stage, asymptomatic)\n2. Peripheral neuropathy (subclinical)\n3. Chronic venous insufficiency",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient rising from a seated position without using their hands\n2. Assess lower extremity muscle strength, specifically hip flexion and knee extension\n3. Perform a straight leg raise test to assess for hamstring tightness or radiculopathy\n4. Check deep tendon reflexes in the lower limbs",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Normal aging with age-related skin changes (senile purpura/atrophy) and no active musculoskeletal pathology",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 328,
+   "completion_tokens": 36,
+   "total_tokens": 364,
+   "cost": 6.612e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.612e-05,
+    "upstream_inference_prompt_cost": 4.92e-05,
+    "upstream_inference_completions_cost": 1.692e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 565,
+   "completion_tokens": 64,
+   "total_tokens": 629,
+   "cost": 0.00011483,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011483,
+    "upstream_inference_prompt_cost": 8.475e-05,
+    "upstream_inference_completions_cost": 3.008e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 832,
+   "completion_tokens": 65,
+   "total_tokens": 897,
+   "cost": 0.000103894,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000103894,
+    "upstream_inference_prompt_cost": 7.3344e-05,
+    "upstream_inference_completions_cost": 3.055e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.2
+}

@@ -1,0 +1,188 @@
+{
+ "questions": [
+  "Did the abnormal movements begin suddenly?",
+  "Do you have high blood pressure?",
+  "Have you previously had a stroke?",
+  "Do you have diabetes?",
+  "Do you have an irregular heartbeat (atrial fibrillation)?",
+  "Do you smoke?",
+  "Is there a family history of movement disorders (e.g., Huntington's disease)?",
+  "Are you currently taking any medications?",
+  "Do you have any memory or thinking difficulties?",
+  "Have you noticed changes in your mood or behavior?",
+  "Do you have any weakness on the same side as the movements?",
+  "Do you have any difficulty speaking or swallowing?",
+  "Have you had a recent infection?",
+  "Do you have any liver problems?",
+  "Are you under the age of 40?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Non-contrast CT head",
+  "MRI brain with diffusion-weighted imaging",
+  "HbA1c",
+  "Serum glucose",
+  "Carotid duplex ultrasound",
+  "Echocardiogram with agitated saline contrast study",
+  "Fasting lipid panel",
+  "Urine toxicology screen (cocaine, amphetamines)",
+  "Erythrocyte sedimentation rate and C-reactive protein"
+ ],
+ "served": [
+  "CT head (non-contrast)",
+  "MRI diffusion-weighted sequences",
+  "blood glucose and HbA1c",
+  "HbA1c",
+  "blood glucose and HbA1c",
+  "blood glucose",
+  "toxicology screen (urine and serum)",
+  "inflammatory markers (ESR, CRP)"
+ ],
+ "results": [
+  "1. Non-contrast CT head",
+  "     CT head (non-contrast): ischaemic stroke - 92.9% of the series were ischaemic and one was haemorrhagic",
+  "2. MRI brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the lentiform nucleus",
+  "3. HbA1c",
+  "     blood glucose and HbA1c: normal",
+  "     HbA1c: normal",
+  "4. Serum glucose",
+  "     blood glucose and HbA1c: normal",
+  "     blood glucose: normal - non-ketotic hyperglycaemia was an exclusion criterion for this series",
+  "5. Carotid duplex ultrasound",
+  "     not performed / not available",
+  "6. Echocardiogram with agitated saline contrast study",
+  "     not performed / not available",
+  "7. Fasting lipid panel",
+  "     not performed / not available",
+  "8. Urine toxicology screen (cocaine, amphetamines)",
+  "     toxicology screen (urine and serum): normal",
+  "9. Erythrocyte sedimentation rate and C-reactive protein",
+  "     inflammatory markers (ESR, CRP): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute lacunar ischaemic infarct of the contralateral lentiform nucleus (basal ganglia) causing hemichorea, due to chronic hypertensive small vessel disease (lipohyalinosis of a lenticulostriate perforator)\n\n1. Cardioembolic striatocapsular infarct (occult atrial fibrillation or PFO-related embolism not yet excluded)\n2. Hyperglycaemia-related hemichorea (non-ketotic hyperglycaemia, despite normal HbA1c at presentation)\n3. Haemorrhagic stroke or cavernous malformation of the basal ganglia (small bleed missed on CT)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Non-contrast CT head\n2. MRI brain with diffusion-weighted imaging\n3. HbA1c\n4. Serum glucose\n5. ECG\n6. Carotid duplex ultrasound\n7. Echocardiogram with agitated saline contrast study\n8. Fasting lipid panel\n9. Urine toxicology screen (cocaine, amphetamines)\n10. Erythrocyte sedimentation rate and C-reactive protein",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Acute lacunar ischaemic infarct of the contralateral lentiform nucleus (basal ganglia) causing hemichorea, due to chronic hypertensive small vessel disease (lipohyalinosis of a lenticulostriate perforator)",
+ "decisive_served": [
+  "CT head (non-contrast)",
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 328,
+   "completion_tokens": 1099,
+   "total_tokens": 1427,
+   "cost": 0.00138984,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00138984,
+    "upstream_inference_prompt_cost": 7.104e-05,
+    "upstream_inference_completions_cost": 0.0013188
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1064,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 864,
+   "completion_tokens": 1828,
+   "total_tokens": 2692,
+   "cost": 0.00242544,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00242544,
+    "upstream_inference_prompt_cost": 0.00023184,
+    "upstream_inference_completions_cost": 0.0021936
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1894,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1256,
+   "completion_tokens": 876,
+   "total_tokens": 2132,
+   "cost": 0.00124704,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 754,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00124704,
+    "upstream_inference_prompt_cost": 0.00019584,
+    "upstream_inference_completions_cost": 0.0010512
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 817,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 51.2
+}

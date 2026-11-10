@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Are you in pain?",
+  "Have you been unable to pass gas or stool?",
+  "Are you experiencing nausea or vomiting?",
+  "Do you have a fever?",
+  "Have you noticed swelling in your legs?",
+  "Do you have a history of liver disease?",
+  "Do you have a history of heart failure?",
+  "Do you have a history of cancer?",
+  "Was your abdominal surgery recent?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Abdominal examination (percussion and palpation)",
+  "Abdominal CT scan",
+  "Complete blood count and comprehensive metabolic panel"
+ ],
+ "served": [
+  "CT chest, abdomen and pelvis",
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "renal function (urea, creatinine)",
+  "electrolytes (Na, K, Ca, Mg)",
+  "glucose"
+ ],
+ "results": [
+  "1. Abdominal examination (percussion and palpation)",
+  "     not performed / not available",
+  "2. Abdominal CT scan",
+  "     CT chest, abdomen and pelvis: normal",
+  "     CT chest / abdomen / pelvis (occult tumour): no malignancy",
+  "3. Complete blood count and comprehensive metabolic panel",
+  "     full blood count: white cells mildly raised at 11.8 x10^9/L",
+  "     serum electrolytes, urea and creatinine: urea nitrogen 24 mg/dL and creatinine 1.62 mg/dL, stable",
+  "     liver function tests: normal",
+  "     renal function (urea, creatinine): blood urea nitrogen 24 mg/dL, creatinine 1.62 mg/dL - stable",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     glucose: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Abdominal obesity\n\n1. Incisional hernia\n2. Diastasis recti\n3. Ascites",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Abdominal examination (percussion and palpation)\n2. Abdominal CT scan\n3. Complete blood count and comprehensive metabolic panel",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Abdominal obesity",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8410,
+   "completion_tokens": 1106,
+   "total_tokens": 9516,
+   "cost": 0.00121704,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00121704,
+    "upstream_inference_prompt_cost": 0.000841,
+    "upstream_inference_completions_cost": 0.00037604
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 968,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8782,
+   "completion_tokens": 678,
+   "total_tokens": 9460,
+   "cost": 0.00110872,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00110872,
+    "upstream_inference_prompt_cost": 0.0008782,
+    "upstream_inference_completions_cost": 0.00023052
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 655,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9080,
+   "completion_tokens": 4265,
+   "total_tokens": 13345,
+   "cost": 0.0023581,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0023581,
+    "upstream_inference_prompt_cost": 0.000908,
+    "upstream_inference_completions_cost": 0.0014501
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3862,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 207.7
+}

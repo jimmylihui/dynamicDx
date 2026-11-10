@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Have you noticed your speech becoming slurred?",
+  "Are you experiencing double vision?",
+  "Do you feel numbness or tingling in your feet?",
+  "Do you have a severe headache?",
+  "Have you been drinking alcohol recently?",
+  "Have you started any new medications recently?",
+  "Do you feel weakness in your limbs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI Brain",
+  "Finger-to-nose test",
+  "Heel-to-shin test"
+ ],
+ "served": [
+  "brain MRI",
+  "finger-nose / heel-shin testing",
+  "finger-nose / heel-shin testing"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     brain MRI: cerebellar atrophy on sagittal T1 and axial FLAIR",
+  "2. Finger-to-nose test",
+  "     finger-nose / heel-shin testing: dysmetria",
+  "3. Heel-to-shin test",
+  "     finger-nose / heel-shin testing: dysmetria"
+ ],
+ "dx_raw": "DIAGNOSIS: Spinocerebellar Ataxia, genetic mutation\nMultiple System Atrophy, cerebellar type\nFriedreich's Ataxia\nParaneoplastic cerebellar degeneration",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Finger-to-nose test\n3. Heel-to-shin test",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Spinocerebellar Ataxia, genetic mutation",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 255,
+   "completion_tokens": 1233,
+   "total_tokens": 1488,
+   "cost": 0.00044472,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00044472,
+    "upstream_inference_prompt_cost": 2.55e-05,
+    "upstream_inference_completions_cost": 0.00041922
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1111,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 601,
+   "completion_tokens": 519,
+   "total_tokens": 1120,
+   "cost": 0.00023656,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00023656,
+    "upstream_inference_prompt_cost": 6.01e-05,
+    "upstream_inference_completions_cost": 0.00017646
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 514,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 786,
+   "completion_tokens": 3600,
+   "total_tokens": 4386,
+   "cost": 0.0013026,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013026,
+    "upstream_inference_prompt_cost": 7.86e-05,
+    "upstream_inference_completions_cost": 0.001224
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3373,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_sca_genetic_PMC12678565.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 160.8
+}

@@ -1,0 +1,181 @@
+{
+ "questions": [
+  "Are you experiencing any problems with your vision?",
+  "Have you noticed your eyes moving or drifting involuntarily?",
+  "Do you have any double vision?",
+  "Have you had any recent headaches?",
+  "Do you feel dizzy or unsteady on your feet?",
+  "Have you had any recent infections or illnesses?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Have you ever had a stroke or transient ischemic attack (TIA)?",
+  "Do you have any weakness or numbness in your limbs?",
+  "Have you had any recent injuries, especially to the head?",
+  "Are you taking any medications currently?",
+  "Do you have a history of multiple sclerosis?",
+  "Have you experienced any nausea or vomiting?",
+  "Do you have any family history of neurological disorders?",
+  "Have you had any recent fever or chills?",
+  "Do you feel fatigued or have low energy?",
+  "Have you noticed any changes in your hearing?",
+  "Do you have any trouble with balance or coordination?",
+  "Have you had any recent changes in your vision, such as blurriness?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Ice pack test",
+  "Acetylcholine receptor antibody blood test",
+  "Edrophonium (Tensilon) test",
+  "MRI of the brain",
+  "CT scan of the chest",
+  "Repetitive nerve stimulation study"
+ ],
+ "served": [
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "MRI diffusion-weighted sequences",
+  "CT chest (thymus)",
+  "repetitive nerve stimulation"
+ ],
+ "results": [
+  "1. Ice pack test",
+  "     ice-pack test: POSITIVE",
+  "2. Acetylcholine receptor antibody blood test",
+  "     anti-acetylcholine receptor antibodies: 10.32 nmol/L (normal <0.50) - strongly POSITIVE",
+  "3. Edrophonium (Tensilon) test",
+  "     not performed / not available",
+  "4. MRI of the brain",
+  "     MRI diffusion-weighted sequences: normal",
+  "5. CT scan of the chest",
+  "     CT chest (thymus): no thymic abnormality",
+  "6. Repetitive nerve stimulation study",
+  "     repetitive nerve stimulation: decremental response"
+ ],
+ "dx_raw": "DIAGNOSIS: Myasthenia gravis (anti-AChR antibody positive, ocular and generalized)\n\nThymic hyperplasia (thymectomy may still be indicated for disease management)\n\nNeuromyotonia (if further workup shows continuous muscle fiber activity)\n\nLambert-Eaton myasthenic syndrome (if further EMG evaluation reveals presynaptic abnormalities)",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Ice pack test\n2. Acetylcholine receptor antibody blood test\n3. Edrophonium (Tensilon) test\n4. MRI of the brain\n5. CT scan of the chest\n6. Repetitive nerve stimulation study",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Myasthenia gravis (anti-AChR antibody positive, ocular and generalized)",
+ "decisive_served": [
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "repetitive nerve stimulation"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 878,
+   "total_tokens": 5933,
+   "cost": 0.0002686376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002686376,
+    "upstream_inference_prompt_cost": 2.27976e-05,
+    "upstream_inference_completions_cost": 0.00024584
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 622,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5808,
+   "completion_tokens": 2202,
+   "total_tokens": 8010,
+   "cost": 0.0007447776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007447776,
+    "upstream_inference_prompt_cost": 0.0001282176,
+    "upstream_inference_completions_cost": 0.00061656
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2147,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 6087,
+   "completion_tokens": 594,
+   "total_tokens": 6681,
+   "cost": 0.000228228,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5760,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000228228,
+    "upstream_inference_prompt_cost": 6.1908e-05,
+    "upstream_inference_completions_cost": 0.00016632
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 509,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "mild_cpeo_mitochondrial_PMC9350803.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 125.8
+}

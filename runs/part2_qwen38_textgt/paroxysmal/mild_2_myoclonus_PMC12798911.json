@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Are the jerks painful?",
+  "Do the jerks occur when you are awake?",
+  "Do the jerks occur during sleep?",
+  "Are the jerks triggered by sudden noise or touch?",
+  "Are the jerks triggered by voluntary movement?",
+  "Have you had a recent head injury?",
+  "Have you recently started any new medications?",
+  "Do you have a history of epilepsy?",
+  "Do you have a family history of similar movements?",
+  "Is there any associated loss of consciousness?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Review the medication list and timing of symptom onset relative to drug initiation"
+ ],
+ "served": [
+  "medication and anaesthetic exposure"
+ ],
+ "results": [
+  "1. Review the medication list and timing of symptom onset relative to drug initiation",
+  "     medication and anaesthetic exposure: propofol and thiopentone for coronary artery bypass grafting with aortic valve replacement; jerks began 6 days later (day 3 in the second case)"
+ ],
+ "dx_raw": "DIAGNOSIS: Propofol-induced myoclonus\nPost-anoxic action myoclonus (Lance-Adams syndrome)\nDrug-induced myoclonus secondary to other perioperative medications",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Review the medication list and timing of symptom onset relative to drug initiation",
+ "rationale": [
+  null
+ ],
+ "dx": "Propofol-induced myoclonus",
+ "decisive_served": [
+  "medication and anaesthetic exposure"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 180,
+   "completion_tokens": 116,
+   "total_tokens": 296,
+   "cost": 8.152e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.152e-05,
+    "upstream_inference_prompt_cost": 2.7e-05,
+    "upstream_inference_completions_cost": 5.452e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 607,
+   "completion_tokens": 15,
+   "total_tokens": 622,
+   "cost": 9.81e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.81e-05,
+    "upstream_inference_prompt_cost": 9.105e-05,
+    "upstream_inference_completions_cost": 7.05e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 784,
+   "completion_tokens": 44,
+   "total_tokens": 828,
+   "cost": 6.9672e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.9672e-05,
+    "upstream_inference_prompt_cost": 4.8992e-05,
+    "upstream_inference_completions_cost": 2.068e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 11.3
+}

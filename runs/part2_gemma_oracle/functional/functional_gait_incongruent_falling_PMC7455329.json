@@ -1,0 +1,123 @@
+{
+ "questions": [
+  "Did you lose consciousness?",
+  "Did you feel dizzy or lightheaded before the fall?",
+  "Did you have any chest pain or palpitations?",
+  "Did you have any focal weakness or numbness?",
+  "Did you have any warning signs like a strange smell or flashing lights?",
+  "Did you experience any tongue biting or loss of bladder control?",
+  "Do you have a history of heart disease?",
+  "Do you have a history of epilepsy?",
+  "Are you taking any blood pressure medications?",
+  "Did you trip on an object?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "Hoover sign / hip-abductor sign",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "MRC power in all four limbs",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "results": [
+  "1. Hoover sign / hip-abductor sign: POSITIVE",
+  "2. gait with a distracting or automatic task (dancing, counting backwards): the pattern changes or normalises",
+  "3. observation for excessive slowness or uneconomic posture: INCONGRUENT - repeated falls with no injury at all, and an unaided recovery each time",
+  "4. knee buckling / astasia-abasia on walking: POSITIVE - the patient sinks to the floor twice during one corridor walk, slowly and without a protective reaction",
+  "5. MRC power in all four limbs: 5/5 throughout - a slow controlled descent of this kind requires intact quadriceps strength",
+  "6. video-EEG monitoring with limb surface electrodes: no ictal discharge accompanies the falls"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional Neurological Disorder (Functional Gait Disorder)\nAlternative 1: Conversion Disorder\nAlternative 2: Drop attacks\nAlternative 3: Psychogenic Non-Epileptic Seizures (PNES)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional Neurological Disorder (Functional Gait Disorder)",
+ "decisive_served": [
+  "Hoover sign / hip-abductor sign",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "MRC power in all four limbs",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8762,
+   "completion_tokens": 2477,
+   "total_tokens": 11239,
+   "cost": 0.00171838,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00171838,
+    "upstream_inference_prompt_cost": 0.0008762,
+    "upstream_inference_completions_cost": 0.00084218
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2195,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9299,
+   "completion_tokens": 1891,
+   "total_tokens": 11190,
+   "cost": 0.00157284,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00157284,
+    "upstream_inference_prompt_cost": 0.0009299,
+    "upstream_inference_completions_cost": 0.00064294
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1885,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 131.4
+}

@@ -1,0 +1,194 @@
+{
+ "questions": [
+  "Do you have an uncomfortable urge to move your legs?",
+  "Does moving your legs temporarily relieve the uncomfortable sensation?",
+  "Do these uncomfortable sensations get worse when you are resting or sitting still?",
+  "Are these leg sensations worse in the evening or at night than during the day?",
+  "Are you aware that your legs are significantly swollen?",
+  "Do you have a history of kidney disease or kidney failure?",
+  "Do you have a history of heart failure?",
+  "Have you ever been diagnosed with low iron levels or anemia?",
+  "Do you have a history of diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Thorough inspection of both feet and lower legs for ulceration, gangrene, skin breakdown, or deformity",
+  "Palpation of dorsalis pedis and posterior tibial pulses bilaterally",
+  "Ankle-brachial index (ABI) measurement",
+  "10 g Semmes-Weinstein monofilament testing of the feet",
+  "128 Hz tuning fork vibration sense testing",
+  "Capillary refill time in the toes",
+  "Skin temperature comparison between the two feet",
+  "HbA1c",
+  "Random venous blood glucose",
+  "X-ray of both feet",
+  "CBC with differential",
+  "Basic metabolic panel",
+  "Wound swab for culture and sensitivity (only if a wound is identified)"
+ ],
+ "served": [
+  "skin examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "skin examination",
+  "HbA1c",
+  "blood glucose",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose",
+  "renal function and eGFR"
+ ],
+ "results": [
+  "1. Thorough inspection of both feet and lower legs for ulceration, gangrene, skin breakdown, or deformity",
+  "     skin examination: no rash",
+  "2. Palpation of dorsalis pedis and posterior tibial pulses bilaterally",
+  "     not performed / not available",
+  "3. Ankle-brachial index (ABI) measurement",
+  "     not performed / not available",
+  "4. 10 g Semmes-Weinstein monofilament testing of the feet",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "5. 128 Hz tuning fork vibration sense testing",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "6. Capillary refill time in the toes",
+  "     not performed / not available",
+  "7. Skin temperature comparison between the two feet",
+  "     skin examination: no rash",
+  "8. HbA1c",
+  "     HbA1c: 14.7%",
+  "9. Random venous blood glucose",
+  "     blood glucose: 690 mg/dL with a NORMAL anion gap",
+  "10. X-ray of both feet",
+  "     not performed / not available",
+  "11. CBC with differential",
+  "     full blood count: normal",
+  "12. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     blood glucose: 690 mg/dL with a NORMAL anion gap",
+  "     renal function and eGFR: normal",
+  "13. Wound swab for culture and sensitivity (only if a wound is identified)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperosmolar Hyperglycemic State (HHS) due to poorly controlled type 2 diabetes mellitus\n1. Diabetic ketoacidosis (less likely given the explicitly normal anion gap)\n2. Uncontrolled type 2 diabetes without HHS (less likely given the 690 mg/dL glucose and inpatient setting)\n3. Occult infection precipitating HHS (e.g., urinary tract infection or pneumonia)",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Thorough inspection of both feet and lower legs for ulceration, gangrene, skin breakdown, or deformity\n2. Palpation of dorsalis pedis and posterior tibial pulses bilaterally\n3. Ankle-brachial index (ABI) measurement\n4. 10 g Semmes-Weinstein monofilament testing of the feet\n5. 128 Hz tuning fork vibration sense testing\n6. Capillary refill time in the toes\n7. Skin temperature comparison between the two feet\n8. HbA1c\n9. Random venous blood glucose\n10. X-ray of both feet\n11. CBC with differential\n12. CRP\n13. ESR\n14. Basic metabolic panel\n15. Wound swab for culture and sensitivity (only if a wound is identified)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperosmolar Hyperglycemic State (HHS) due to poorly controlled type 2 diabetes mellitus",
+ "decisive_served": [
+  "HbA1c",
+  "blood glucose",
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 19222,
+   "completion_tokens": 2424,
+   "total_tokens": 21646,
+   "cost": 0.00864804,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00864804,
+    "upstream_inference_prompt_cost": 0.00573924,
+    "upstream_inference_completions_cost": 0.0029088
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2451,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 19652,
+   "completion_tokens": 1283,
+   "total_tokens": 20935,
+   "cost": 0.00283056,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 19186,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00283056,
+    "upstream_inference_prompt_cost": 0.00129096,
+    "upstream_inference_completions_cost": 0.0015396
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1223,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 20205,
+   "completion_tokens": 506,
+   "total_tokens": 20711,
+   "cost": 0.0019719,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 19570,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0019719,
+    "upstream_inference_prompt_cost": 0.0013647,
+    "upstream_inference_completions_cost": 0.0006072
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 460,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 66.3
+}

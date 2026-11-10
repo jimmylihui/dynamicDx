@@ -1,0 +1,141 @@
+{
+ "questions": [
+  "Has the split or double appearance of the uvula been present since childhood?",
+  "Have you ever had difficulty swallowing, nasal regurgitation of food or liquids, or unusually nasal speech?",
+  "Do you have recurrent sore throats or episodes of uvular swelling?",
+  "Have you had any recent surgery, endoscopy, dental procedure, or placement of a breathing tube?",
+  "Have you recently injured, bitten, or burned the back of your mouth or throat?",
+  "Have you noticed bleeding, pain, or a change in the uvula since it first appeared split?",
+  "Do you hear or feel a rhythmic clicking in either ear?",
+  "Have you had double vision, difficulty coordinating movements, weakness, numbness, or trouble walking?",
+  "Have you had a stroke, head injury, brain infection, or other neurological illness?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Perform a bedside oropharyngeal examination with a tongue depressor, including inspection and gentle palpation of the soft palate and uvula, assessment of uvular elevation during “ah,” and assessment for a midline palatal defect or mass.",
+  "MRI of the brain with and without gadolinium, including thin-section images of the brainstem and cerebellum, to evaluate for lesions causing symptomatic palatal tremor."
+ ],
+ "served": [
+  "cranial nerve examination",
+  "MRI brain with gadolinium",
+  "brain MRI",
+  "MRI brainstem / dentato-rubro-olivary pathway"
+ ],
+ "results": [
+  "R1 ASK Has the split or double appearance of the uvula been present since childhood?; Have you ever had difficulty swallowing, nasal regurgitation of food or liquids, or unusually nasal speech?; Do you have recurrent sore throats or episodes of uvular swelling? -> ['no', 'no', 'no']",
+  "R2 ASK Have you had any recent surgery, endoscopy, dental procedure, or placement of a breathing tube?; Have you recently injured, bitten, or burned the back of your mouth or throat?; Have you noticed bleeding, pain, or a change in the uvula since it first appeared split? -> ['no', 'no', 'no']",
+  "R3 ORDER Perform a bedside oropharyngeal examination with a tongue depressor, including inspection and gentle palpation of the soft palate and uvula, assessment of uvular elevation during “ah,” and assessment for a midline palatal defect or mass. -> [['cranial nerve examination']]",
+  "R4 ASK Do you hear or feel a rhythmic clicking in either ear?; Have you had double vision, difficulty coordinating movements, weakness, numbness, or trouble walking?; Have you had a stroke, head injury, brain infection, or other neurological illness? -> ['yes', 'no', 'no']",
+  "R5 ORDER MRI of the brain with and without gadolinium, including thin-section images of the brainstem and cerebellum, to evaluate for lesions causing symptomatic palatal tremor. -> [['MRI brain with gadolinium', 'brain MRI', 'MRI brainstem / dentato-rubro-olivary pathway']]",
+  "R6 DIAGNOSIS Symptomatic palatal tremor (bilateral palatal myoclonus with objective ear clicking) caused by inflammatory involvement of the Guillain–Mollaret triangle/brainstem dentato–rubro–olivary pathway. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Has the split or double appearance of the uvula been present since childhood?",
+    "Have you ever had difficulty swallowing, nasal regurgitation of food or liquids, or unusually nasal speech?",
+    "Do you have recurrent sore throats or episodes of uvular swelling?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you had any recent surgery, endoscopy, dental procedure, or placement of a breathing tube?",
+    "Have you recently injured, bitten, or burned the back of your mouth or throat?",
+    "Have you noticed bleeding, pain, or a change in the uvula since it first appeared split?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Perform a bedside oropharyngeal examination with a tongue depressor, including inspection and gentle palpation of the soft palate and uvula, assessment of uvular elevation during “ah,” and assessment for a midline palatal defect or mass."
+   ],
+   "result": [
+    [
+     "cranial nerve examination"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you hear or feel a rhythmic clicking in either ear?",
+    "Have you had double vision, difficulty coordinating movements, weakness, numbness, or trouble walking?",
+    "Have you had a stroke, head injury, brain infection, or other neurological illness?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "MRI of the brain with and without gadolinium, including thin-section images of the brainstem and cerebellum, to evaluate for lesions causing symptomatic palatal tremor."
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium",
+     "brain MRI",
+     "MRI brainstem / dentato-rubro-olivary pathway"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Symptomatic palatal tremor (bilateral palatal myoclonus with objective ear clicking) caused by inflammatory involvement of the Guillain–Mollaret triangle/brainstem dentato–rubro–olivary pathway."
+  }
+ ],
+ "dx": "Symptomatic palatal tremor (bilateral palatal myoclonus with objective ear clicking) caused by inflammatory involvement of the Guillain–Mollaret triangle/brainstem dentato–rubro–olivary pathway.",
+ "dx_raw": "DIAGNOSIS: Symptomatic palatal tremor (bilateral palatal myoclonus with objective ear clicking) caused by inflammatory involvement of the Guillain–Mollaret triangle/brainstem dentato–rubro–olivary pathway.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "MRI brainstem / dentato-rubro-olivary pathway"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0041,
+ "n_frames": 32,
+ "duration_s": 9.0,
+ "video": "mild_palatal_PMC12933468.mp4",
+ "line": "myoclonus",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 50.9
+}

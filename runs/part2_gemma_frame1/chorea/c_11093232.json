@@ -1,0 +1,130 @@
+{
+ "questions": [
+  "Do you have morning stiffness that lasts for more than 30 minutes?",
+  "Is the joint pain symmetrical on both sides of your body?",
+  "Do you have pain in your wrists?",
+  "Do you feel fatigued?",
+  "Do you have a history of psoriasis?",
+  "Do you have a skin rash?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "X-ray of hands",
+  "anti-CCP"
+ ],
+ "served": [],
+ "results": [
+  "1. X-ray of hands",
+  "     not performed / not available",
+  "2. anti-CCP",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Systemic sclerosis (autoimmune)\nDermatomyositis\nSystemic lupus erythematosus\nRheumatoid arthritis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. X-ray of hands\n2. ANA\n3. RF\n4. anti-CCP\n5. ESR\n6. CRP",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Systemic sclerosis (autoimmune)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 1556,
+   "total_tokens": 1976,
+   "cost": 0.00057104,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00057104,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00052904
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1440,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 736,
+   "completion_tokens": 1036,
+   "total_tokens": 1772,
+   "cost": 0.00042584,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00042584,
+    "upstream_inference_prompt_cost": 7.36e-05,
+    "upstream_inference_completions_cost": 0.00035224
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 891,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 890,
+   "completion_tokens": 1843,
+   "total_tokens": 2733,
+   "cost": 0.00071562,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00071562,
+    "upstream_inference_prompt_cost": 8.9e-05,
+    "upstream_inference_completions_cost": 0.00062662
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1799,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "c_11093232.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 214.5
+}

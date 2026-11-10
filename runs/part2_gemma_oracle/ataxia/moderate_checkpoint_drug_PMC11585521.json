@@ -1,0 +1,107 @@
+{
+ "questions": [
+  "Do you have a history of spinal cord injury?",
+  "Do you have a history of stroke?",
+  "Do you have a history of multiple sclerosis?",
+  "Do you have difficulty controlling your bladder or bowels?",
+  "Do you feel stiffness in your legs?",
+  "Do you have numbness in your legs?",
+  "Did these symptoms start suddenly?",
+  "Are you in pain?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "lumbar puncture / CSF",
+  "medication and oncology history"
+ ],
+ "results": [
+  "1. lumbar puncture / CSF: normal protein and cellularity but CSF-restricted oligoclonal bands present - inflammatory",
+  "2. medication and oncology history: anti-PD-L1 for HPV-related anal squamous cell carcinoma; ankle arthritis at 2 months and grade 3 hyponatraemia at 7 months, both irAEs"
+ ],
+ "dx_raw": "DIAGNOSIS: Immune checkpoint inhibitor-induced transverse myelitis caused by anti-PD-L1 therapy\n\nParaneoplastic myelopathy\nImmune checkpoint inhibitor-induced Guillain-Barré syndrome\nNeuromyelitis optica spectrum disorder (NMOSD) triggered by anti-PD-L1 therapy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Immune checkpoint inhibitor-induced transverse myelitis caused by anti-PD-L1 therapy",
+ "decisive_served": [
+  "lumbar puncture / CSF",
+  "medication and oncology history"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2325,
+   "total_tokens": 11023,
+   "cost": 0.0016603,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0016603,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0007905
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2210,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9075,
+   "completion_tokens": 2401,
+   "total_tokens": 11476,
+   "cost": 0.00172384,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00172384,
+    "upstream_inference_prompt_cost": 0.0009075,
+    "upstream_inference_completions_cost": 0.00081634
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2393,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 189.2
+}

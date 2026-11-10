@@ -1,0 +1,192 @@
+{
+ "questions": [
+  "Do you have any numbness or tingling in your hands?",
+  "Is the weakness in your hand worse on one side than the other?",
+  "Have you noticed any muscle wasting in your hands?",
+  "Is the weakness in your right hand?",
+  "Do you have any difficulty with fine motor tasks like buttoning a shirt or writing?",
+  "Have you had any neck pain or recent trauma to your neck or shoulder?",
+  "Do you have any difficulty with balance or walking?",
+  "Have you noticed any changes in your vision, such as double vision or loss of sight in one eye?",
+  "Do you have any weakness or numbness in your legs?",
+  "Do you have any difficulty with speech or understanding others?",
+  "Have you noticed any weakness in your face, particularly around the mouth or eyes?",
+  "Do you have a history of high blood pressure, diabetes, or smoking?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "yes",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Perform a detailed sensory examination of the right hand, specifically testing light touch and pinprick in the median nerve distribution (thumb, index, middle, radial half of ring finger) versus the ulnar nerve distribution (little finger, medial half of ring finger).",
+  "Perform a sensory examination of the left hand to determine if astereognosis is bilateral or unilateral.",
+  "Perform a detailed neurological examination of the cranial nerves, specifically looking for subtle facial droop or tongue deviation.",
+  "MRI of the brain"
+ ],
+ "served": [
+  "sensory examination (pinprick, vibration, proprioception)",
+  "cortical sensory testing (astereognosis, sensory inattention)",
+  "cranial nerve examination",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences"
+ ],
+ "results": [
+  "R1 ASK Do you have any numbness or tingling in your hands?; Is the weakness in your hand worse on one side than the other?; Have you noticed any muscle wasting in your hands? -> ['no', 'yes', 'no']",
+  "R2 ASK Is the weakness in your right hand?; Do you have any difficulty with fine motor tasks like buttoning a shirt or writing?; Have you had any neck pain or recent trauma to your neck or shoulder? -> ['yes', 'yes', 'no']",
+  "R3 ORDER Perform a detailed sensory examination of the right hand, specifically testing light touch and pinprick in the median nerve distribution (thumb, index, middle, radial half of ring finger) versus the ulnar nerve distribution (little finger, medial half of ring finger). -> [['sensory examination (pinprick, vibration, proprioception)']]",
+  "R4 ASK Do you have any difficulty with balance or walking?; Have you noticed any changes in your vision, such as double vision or loss of sight in one eye?; Do you have any weakness or numbness in your legs? -> ['no', 'no', 'no']",
+  "R5 ORDER Perform a sensory examination of the left hand to determine if astereognosis is bilateral or unilateral. -> [['cortical sensory testing (astereognosis, sensory inattention)']]",
+  "R6 ASK Do you have any difficulty with speech or understanding others?; Have you noticed any weakness in your face, particularly around the mouth or eyes?; Do you have a history of high blood pressure, diabetes, or smoking? -> ['yes', 'no', 'no']",
+  "R7 ORDER Perform a detailed neurological examination of the cranial nerves, specifically looking for subtle facial droop or tongue deviation. -> [['cranial nerve examination']]",
+  "R8 ORDER MRI of the brain -> [['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences']]",
+  "R9 DIAGNOSIS Corticobasal Degeneration -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have any numbness or tingling in your hands?",
+    "Is the weakness in your hand worse on one side than the other?",
+    "Have you noticed any muscle wasting in your hands?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Is the weakness in your right hand?",
+    "Do you have any difficulty with fine motor tasks like buttoning a shirt or writing?",
+    "Have you had any neck pain or recent trauma to your neck or shoulder?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Perform a detailed sensory examination of the right hand, specifically testing light touch and pinprick in the median nerve distribution (thumb, index, middle, radial half of ring finger) versus the ulnar nerve distribution (little finger, medial half of ring finger)."
+   ],
+   "result": [
+    [
+     "sensory examination (pinprick, vibration, proprioception)"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have any difficulty with balance or walking?",
+    "Have you noticed any changes in your vision, such as double vision or loss of sight in one eye?",
+    "Do you have any weakness or numbness in your legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Perform a sensory examination of the left hand to determine if astereognosis is bilateral or unilateral."
+   ],
+   "result": [
+    [
+     "cortical sensory testing (astereognosis, sensory inattention)"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have any difficulty with speech or understanding others?",
+    "Have you noticed any weakness in your face, particularly around the mouth or eyes?",
+    "Do you have a history of high blood pressure, diabetes, or smoking?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Perform a detailed neurological examination of the cranial nerves, specifically looking for subtle facial droop or tongue deviation."
+   ],
+   "result": [
+    [
+     "cranial nerve examination"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "MRI of the brain"
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium",
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Corticobasal Degeneration"
+  }
+ ],
+ "dx": "Corticobasal Degeneration",
+ "dx_raw": "DIAGNOSIS: Corticobasal Degeneration",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "cortical sensory testing (astereognosis, sensory inattention)"
+ ],
+ "n_decisive": 7,
+ "cost_usd": 0.0022,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "cbd_apraxic_hand_PMC12371612.mp4",
+ "line": "parkinsonism",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 46.6
+}

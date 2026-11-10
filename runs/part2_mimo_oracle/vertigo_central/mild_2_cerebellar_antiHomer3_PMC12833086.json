@@ -1,0 +1,108 @@
+{
+ "questions": [
+  "Did the difficulty moving your eyes start suddenly?",
+  "Have you ever had vision loss in just one eye that lasted for several weeks?",
+  "Have you ever experienced numbness or tingling in your body that went away on its own?",
+  "Is your speech currently slurred?",
+  "Does the double vision get worse when you are tired?",
+  "Have you fallen or hit your head recently?",
+  "Is there any family history of multiple sclerosis?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CSF metagenomic sequencing",
+  "immunotherapy trial"
+ ],
+ "results": [
+  "1. paraneoplastic and autoimmune antibody panel (serum): anti-Homer3 antibodies POSITIVE",
+  "2. CSF metagenomic sequencing: eight sequences of HUMAN HERPESVIRUS 7",
+  "3. immunotherapy trial: dizziness and gait improved with immunotherapy; relapse prompted rituximab, with partial improvement"
+ ],
+ "dx_raw": "DIAGNOSIS: Anti-Homer3 antibody-positive paraneoplastic brainstem encephalitis associated with ovarian teratoma, causing bilateral internuclear ophthalmoplegia\n\nChronic relapsing inflammatory demyelinating polyradiculoneuropathy (CIDP)\n\nMultiple sclerosis with brainstem plaques",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Anti-Homer3 antibody-positive paraneoplastic brainstem encephalitis associated with ovarian teratoma, causing bilateral internuclear ophthalmoplegia",
+ "decisive_served": [
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CSF metagenomic sequencing",
+  "immunotherapy trial"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 2482,
+   "total_tokens": 7537,
+   "cost": 0.0013763176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013763176,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00069496
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2382,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5449,
+   "completion_tokens": 646,
+   "total_tokens": 6095,
+   "cost": 0.0002588376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002588376,
+    "upstream_inference_prompt_cost": 7.79576e-05,
+    "upstream_inference_completions_cost": 0.00018088
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 576,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.4,
+ "video": "mild_2_cerebellar_antiHomer3_PMC12833086.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 44.5
+}

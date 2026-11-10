@@ -1,0 +1,171 @@
+{
+ "questions": [
+  "Have you had chest pain?",
+  "Have you had shortness of breath?",
+  "Have you had a severe headache?",
+  "Have you had severe abdominal pain?",
+  "Have you noticed any new weakness or numbness on one side of your body?",
+  "Have you had a fever?",
+  "Have you had any bleeding from anywhere?",
+  "Have you lost weight unintentionally?",
+  "Do you have a cough?",
+  "Are you over 50 years old?",
+  "Are you male?",
+  "Do you have any chronic medical conditions?",
+  "Do you take any regular medications?",
+  "Do you have any allergies?",
+  "Do you smoke?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Full blood count",
+  "Serum ferritin",
+  "Thyroid function tests",
+  "HbA1c",
+  "Basic metabolic panel",
+  "Urinalysis"
+ ],
+ "served": [
+  "full blood count, renal and liver profile",
+  "TSH / free T4",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "serum electrolytes, urea and creatinine",
+  "full blood count, renal and liver profile",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Full blood count",
+  "     full blood count, renal and liver profile: normal",
+  "2. Serum ferritin",
+  "     not performed / not available",
+  "3. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "4. HbA1c",
+  "     blood glucose and HbA1c: normal",
+  "     glucose / HbA1c: normal",
+  "5. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     full blood count, renal and liver profile: normal",
+  "6. Urinalysis",
+  "     urinalysis: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: No medical disease identified - likely non-pathological state or subclinical concern insufficient to establish diagnosis; no organic pathology supported by current data.\n\nALTERNATIVE CONSIDERATIONS:\n1. Iron deficiency without anemia (ferritin not tested)\n2. Subclinical thyroid dysfunction (TSH/T4 normal but could be early)\n3. Somatic symptom disorder or health anxiety prompting the referral",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Full blood count\n2. Serum ferritin\n3. Thyroid function tests\n4. HbA1c\n5. Basic metabolic panel\n6. Urinalysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "No medical disease identified - likely non-pathological state or subclinical concern insufficient to establish diagnosis; no organic pathology supported by current data.",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 5659,
+   "total_tokens": 5973,
+   "cost": 0.006813,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.006813,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.0067908
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6089,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 804,
+   "completion_tokens": 687,
+   "total_tokens": 1491,
+   "cost": 0.00100752,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00100752,
+    "upstream_inference_prompt_cost": 0.00018312,
+    "upstream_inference_completions_cost": 0.0008244
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 731,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1052,
+   "completion_tokens": 82,
+   "total_tokens": 1134,
+   "cost": 0.00023304,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 754,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00023304,
+    "upstream_inference_prompt_cost": 0.00013464,
+    "upstream_inference_completions_cost": 9.84e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 82.2
+}

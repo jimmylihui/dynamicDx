@@ -1,0 +1,195 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is your pain located in your chest?",
+  "Are you having difficulty breathing right now?",
+  "Did your symptoms begin suddenly?",
+  "Have you had a recent fall or injury?",
+  "Can you move both of your arms and legs normally?",
+  "Do you have any weakness on one side of your body?",
+  "Are you experiencing any numbness or tingling?",
+  "Have you had any surgery in the past month?",
+  "Do you have a fever or feel hot?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Fingerstick blood glucose",
+  "Non-contrast CT head",
+  "Basic metabolic panel (Na, K, Ca, Mg, glucose, creatinine, BUN)",
+  "Complete blood count",
+  "Urine toxicology screen",
+  "Arterial blood gas",
+  "Serum ammonia level",
+  "CT angiography of head and neck",
+  "Lumbar puncture with CSF analysis",
+  "MRI brain with and without contrast"
+ ],
+ "served": [
+  "blood glucose",
+  "CT head (non-contrast)",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose",
+  "full blood count",
+  "toxicology screen (urine and serum)",
+  "serum ammonia",
+  "MR or CT angiography",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "brain MRI with contrast"
+ ],
+ "results": [
+  "1. Fingerstick blood glucose",
+  "     blood glucose: NORMAL - no diabetes and no hyperglycaemia",
+  "2. Non-contrast CT head",
+  "     CT head (non-contrast): no haemorrhage, no hyperdensity, no infarct",
+  "3. Basic metabolic panel (Na, K, Ca, Mg, glucose, creatinine, BUN)",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose: NORMAL - no diabetes and no hyperglycaemia",
+  "4. Complete blood count",
+  "     full blood count: normal",
+  "5. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "6. Arterial blood gas",
+  "     not performed / not available",
+  "7. Serum ammonia level",
+  "     serum ammonia: normal",
+  "8. CT angiography of head and neck",
+  "     MR or CT angiography: normal",
+  "9. Lumbar puncture with CSF analysis",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal",
+  "10. MRI brain with and without contrast",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     brain MRI with contrast: no lesion and no abnormal signal in the basal ganglia"
+ ],
+ "dx_raw": "DIAGNOSIS: Catatonia, likely secondary to an underlying psychiatric disorder (e.g., major depressive disorder, bipolar disorder, or schizophrenia), given normal medical and neurological workup.\n1. Non-convulsive status epilepticus\n2. Conversion disorder (functional neurological symptom disorder)\n3. Seronegative autoimmune encephalitis",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Fingerstick blood glucose\n2. Non-contrast CT head\n3. Basic metabolic panel (Na, K, Ca, Mg, glucose, creatinine, BUN)\n4. Complete blood count\n5. Urine toxicology screen\n6. Arterial blood gas\n7. Serum ammonia level\n8. CT angiography of head and neck\n9. Lumbar puncture with CSF analysis\n10. MRI brain with and without contrast",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Catatonia, likely secondary to an underlying psychiatric disorder (e.g., major depressive disorder, bipolar disorder, or schizophrenia), given normal medical and neurological workup.",
+ "decisive_served": [
+  "blood glucose",
+  "blood glucose",
+  "brain MRI with contrast"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 857,
+   "total_tokens": 7919,
+   "cost": 0.00311964,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00311964,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.0010284
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 838,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7473,
+   "completion_tokens": 401,
+   "total_tokens": 7874,
+   "cost": 0.00103686,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00103686,
+    "upstream_inference_prompt_cost": 0.00055566,
+    "upstream_inference_completions_cost": 0.0004812
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 361,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7914,
+   "completion_tokens": 3309,
+   "total_tokens": 11223,
+   "cost": 0.0045666,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7410,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0045666,
+    "upstream_inference_prompt_cost": 0.0005958,
+    "upstream_inference_completions_cost": 0.0039708
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3817,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 84.8
+}

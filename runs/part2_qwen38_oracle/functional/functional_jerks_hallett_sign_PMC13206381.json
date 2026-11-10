@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Do you have a history of diabetes?",
+  "Have you experienced recent weight loss?",
+  "Do you have numbness or tingling in your feet?",
+  "Do you have difficulty walking?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "anticipatory jerk to a feigned tendon-hammer approach (Hallett sign)",
+  "back-averaged EEG for a Bereitschaftspotential before the movements",
+  "somatosensory evoked potentials (giant SEP, C-reflex)",
+  "jerk latency and burst-duration measurement"
+ ],
+ "results": [
+  "1. anticipatory jerk to a feigned tendon-hammer approach (Hallett sign): POSITIVE - the jerk occurs when the hammer is stopped just short of the tendon, provoked by the visual stimulus alone",
+  "2. back-averaged EEG for a Bereitschaftspotential before the movements: Bereitschaftspotential present before the jerks",
+  "3. somatosensory evoked potentials (giant SEP, C-reflex): normal, no giant SEP and no C-reflex - excludes cortical reflex myoclonus",
+  "4. jerk latency and burst-duration measurement: long and VARIABLE latency with a long duration of muscle contraction - the pattern of voluntary movement, not of cortical myoclonus"
+ ],
+ "dx_raw": "DIAGNOSIS: Psychogenic myoclonus (Functional movement disorder)\nAlternatives:\n1. Cortical reflex myoclonus\n2. Startle epilepsy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Psychogenic myoclonus (Functional movement disorder)",
+ "decisive_served": [
+  "anticipatory jerk to a feigned tendon-hammer approach (Hallett sign)",
+  "back-averaged EEG for a Bereitschaftspotential before the movements",
+  "somatosensory evoked potentials (giant SEP, C-reflex)",
+  "jerk latency and burst-duration measurement"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5335,
+   "completion_tokens": 55,
+   "total_tokens": 5390,
+   "cost": 0.0008261,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008261,
+    "upstream_inference_prompt_cost": 0.00080025,
+    "upstream_inference_completions_cost": 2.585e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5711,
+   "completion_tokens": 38,
+   "total_tokens": 5749,
+   "cost": 0.000205582,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000205582,
+    "upstream_inference_prompt_cost": 0.000187722,
+    "upstream_inference_completions_cost": 1.786e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 17.7
+}

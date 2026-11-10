@@ -1,0 +1,276 @@
+{
+ "questions": [
+  "Did you sustain any recent head or spinal injury before experiencing this difficulty walking?",
+  "Have you noticed numbness, tingling, or weakness in your legs or upper limbs?",
+  "Do you experience balance issues even when you are standing still without moving?",
+  "Did you have any recent viral or bacterial infection (such as influenza, respiratory infection) before these symptoms began?",
+  "Is there a family history of neurological disorders (like multiple sclerosis, Parkinson's disease, or hereditary neuropathy)?",
+  "Have you noticed that your walking difficulty varies or fluctuates - sometimes better, sometimes worse?",
+  "Have you experienced any significant psychological stress, anxiety, or emotional difficulties recently?",
+  "Has anyone else noticed that your gait pattern seems inconsistent with your strength?",
+  "Do you have any pain in your hips, knees, back, or legs when you walk?",
+  "Are you taking any medications regularly?",
+  "How long have you had this difficulty walking?",
+  "Can you describe exactly what feels wrong when you try to walk - is it pain, weakness, stiffness, or something else?",
+  "When exactly did you first notice this walking difficulty - was it sudden or gradual?",
+  "What specifically does it feel like - do your legs feel unstable, uncoordinated, weak, or like they might give way?",
+  "What is the exact reason you started using crutches - did a doctor prescribe them?",
+  "Did a doctor tell you that you needed crutches?",
+  "How long ago did you start using the crutches?",
+  "Were the crutches given to you by someone else at this hospital?",
+  "Has anyone examined you yet and told you what is wrong?",
+  "Have you noticed any problems with your memory or thinking recently?",
+  "Have you had any changes in your bladder control - like needing to urinate more frequently or accidentally leaking?",
+  "Have you had any problems with your vision - blurry vision, double vision, or difficulty seeing things clearly?",
+  "Do you drink alcohol? If yes, approximately how much and how often?",
+  "Has this walking difficulty been getting worse gradually over months or years?",
+  "Do you notice you are more unsteady when walking in the dark or with your eyes closed?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "yes",
+  "25": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Bedside examination: Test lower limb muscle strength (hip flexion, knee extension, ankle dorsiflexion, ankle plantarflexion) - Manual Muscle Testing",
+  "Bedside examination: Assess deep tendon reflexes in both lower limbs (knee jerks, ankle jerks)",
+  "Bedside examination: Test vibration sense and proprioception at the great toes and ankles",
+  "Bedside examination: Perform Romberg's test (standing with feet together, eyes open then closed)",
+  "Bedside examination: Hoover's sign - ask patient to lie supine, test hip extension on one side while feeling for involuntary contralateral hip flexion",
+  "Bedside examination: Observe gait without crutches - ask patient to put crutches aside and walk down the corridor",
+  "Bedside examination: Test arm_ROM testing - check for inconsistency between tested strength on formal examination versus functional tasks (e.g., grip strength when \"distracted\")"
+ ],
+ "served": [
+  "MRC power in all four limbs",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "Romberg test, repeated with distraction",
+  "Hoover sign / hip-abductor sign",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "distractibility testing (complex motor task with the unaffected side)"
+ ],
+ "results": [
+  "R1 ASK Did you sustain any recent head or spinal injury before experiencing this difficulty walking?; Have you noticed numbness, tingling, or weakness in your legs or upper limbs?; Do you experience balance issues even when you are standing still without moving?; Did you have any recent viral or bacterial infection (such as influenza, respiratory infection) before these symptoms began?; Is there a family history of neurological disorders (like multiple sclerosis, Parkinson's disease, or hereditary neuropathy)? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ORDER Bedside examination: Test lower limb muscle strength (hip flexion, knee extension, ankle dorsiflexion, ankle plantarflexion) - Manual Muscle Testing; Bedside examination: Assess deep tendon reflexes in both lower limbs (knee jerks, ankle jerks); Bedside examination: Test vibration sense and proprioception at the great toes and ankles; Bedside examination: Perform Romberg's test (standing with feet together, eyes open then closed) -> [['MRC power in all four limbs'], ['deep tendon reflexes and plantar responses'], ['sensory examination (pinprick, vibration, proprioception)'], ['Romberg test, repeated with distraction']]",
+  "R3 ASK Have you noticed that your walking difficulty varies or fluctuates - sometimes better, sometimes worse?; Have you experienced any significant psychological stress, anxiety, or emotional difficulties recently?; Has anyone else noticed that your gait pattern seems inconsistent with your strength? -> ['no', 'no', 'no']",
+  "R4 ASK Do you have any pain in your hips, knees, back, or legs when you walk?; Are you taking any medications regularly?; How long have you had this difficulty walking?; Can you describe exactly what feels wrong when you try to walk - is it pain, weakness, stiffness, or something else? -> ['no', 'no', 'no', 'yes']",
+  "R5 ASK When exactly did you first notice this walking difficulty - was it sudden or gradual?; What specifically does it feel like - do your legs feel unstable, uncoordinated, weak, or like they might give way?; What is the exact reason you started using crutches - did a doctor prescribe them? -> ['no', 'no', 'no']",
+  "R6 ASK Did a doctor tell you that you needed crutches?; How long ago did you start using the crutches? -> ['no', 'no']",
+  "R7 ASK Were the crutches given to you by someone else at this hospital?; Has anyone examined you yet and told you what is wrong? -> ['no', 'no']",
+  "R8 ORDER Bedside examination: Hoover's sign - ask patient to lie supine, test hip extension on one side while feeling for involuntary contralateral hip flexion; Bedside examination: Observe gait without crutches - ask patient to put crutches aside and walk down the corridor; Bedside examination: Test arm_ROM testing - check for inconsistency between tested strength on formal examination versus functional tasks (e.g., grip strength when \"distracted\") -> [['Hoover sign / hip-abductor sign'], ['observation for excessive slowness or uneconomic posture', 'knee buckling / astasia-abasia on walking'], ['distractibility testing (complex motor task with the unaffected side)']]",
+  "R9 ASK Have you noticed any problems with your memory or thinking recently?; Have you had any changes in your bladder control - like needing to urinate more frequently or accidentally leaking?; Have you had any problems with your vision - blurry vision, double vision, or difficulty seeing things clearly? -> ['no', 'no', 'no']",
+  "R10 ASK Do you drink alcohol? If yes, approximately how much and how often?; Has this walking difficulty been getting worse gradually over months or years?; Do you notice you are more unsteady when walking in the dark or with your eyes closed? -> ['no', 'yes', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Normal pressure hydrocephalus (NPH) - idiopathic, presenting with progressive gait disturbance (the cardinal feature), though urinary incontinence and cognitive decline may develop later in -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did you sustain any recent head or spinal injury before experiencing this difficulty walking?",
+    "Have you noticed numbness, tingling, or weakness in your legs or upper limbs?",
+    "Do you experience balance issues even when you are standing still without moving?",
+    "Did you have any recent viral or bacterial infection (such as influenza, respiratory infection) before these symptoms began?",
+    "Is there a family history of neurological disorders (like multiple sclerosis, Parkinson's disease, or hereditary neuropathy)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Bedside examination: Test lower limb muscle strength (hip flexion, knee extension, ankle dorsiflexion, ankle plantarflexion) - Manual Muscle Testing",
+    "Bedside examination: Assess deep tendon reflexes in both lower limbs (knee jerks, ankle jerks)",
+    "Bedside examination: Test vibration sense and proprioception at the great toes and ankles",
+    "Bedside examination: Perform Romberg's test (standing with feet together, eyes open then closed)"
+   ],
+   "result": [
+    [
+     "MRC power in all four limbs"
+    ],
+    [
+     "deep tendon reflexes and plantar responses"
+    ],
+    [
+     "sensory examination (pinprick, vibration, proprioception)"
+    ],
+    [
+     "Romberg test, repeated with distraction"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you noticed that your walking difficulty varies or fluctuates - sometimes better, sometimes worse?",
+    "Have you experienced any significant psychological stress, anxiety, or emotional difficulties recently?",
+    "Has anyone else noticed that your gait pattern seems inconsistent with your strength?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have any pain in your hips, knees, back, or legs when you walk?",
+    "Are you taking any medications regularly?",
+    "How long have you had this difficulty walking?",
+    "Can you describe exactly what feels wrong when you try to walk - is it pain, weakness, stiffness, or something else?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "When exactly did you first notice this walking difficulty - was it sudden or gradual?",
+    "What specifically does it feel like - do your legs feel unstable, uncoordinated, weak, or like they might give way?",
+    "What is the exact reason you started using crutches - did a doctor prescribe them?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Did a doctor tell you that you needed crutches?",
+    "How long ago did you start using the crutches?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Were the crutches given to you by someone else at this hospital?",
+    "Has anyone examined you yet and told you what is wrong?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Bedside examination: Hoover's sign - ask patient to lie supine, test hip extension on one side while feeling for involuntary contralateral hip flexion",
+    "Bedside examination: Observe gait without crutches - ask patient to put crutches aside and walk down the corridor",
+    "Bedside examination: Test arm_ROM testing - check for inconsistency between tested strength on formal examination versus functional tasks (e.g., grip strength when \"distracted\")"
+   ],
+   "result": [
+    [
+     "Hoover sign / hip-abductor sign"
+    ],
+    [
+     "observation for excessive slowness or uneconomic posture",
+     "knee buckling / astasia-abasia on walking"
+    ],
+    [
+     "distractibility testing (complex motor task with the unaffected side)"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any problems with your memory or thinking recently?",
+    "Have you had any changes in your bladder control - like needing to urinate more frequently or accidentally leaking?",
+    "Have you had any problems with your vision - blurry vision, double vision, or difficulty seeing things clearly?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you drink alcohol? If yes, approximately how much and how often?",
+    "Has this walking difficulty been getting worse gradually over months or years?",
+    "Do you notice you are more unsteady when walking in the dark or with your eyes closed?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Normal pressure hydrocephalus (NPH) - idiopathic, presenting with progressive gait disturbance (the cardinal feature), though urinary incontinence and cognitive decline may develop later in"
+  }
+ ],
+ "dx": "Normal pressure hydrocephalus (NPH) - idiopathic, presenting with progressive gait disturbance (the cardinal feature), though urinary incontinence and cognitive decline may develop later in the disease course",
+ "dx_raw": "DIAGNOSIS: Normal pressure hydrocephalus (NPH) - idiopathic, presenting with progressive gait disturbance (the cardinal feature), though urinary incontinence and cognitive decline may develop later in the disease course",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "cost_usd": 0.0034,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 334.5
+}

@@ -1,0 +1,202 @@
+{
+ "questions": [
+  "Is your main concern related to your eyes?",
+  "Is only one eye affected?",
+  "Did the problem start suddenly?",
+  "Is your vision blurry in the affected eye?",
+  "Do you have pain in or around the eye?",
+  "Is the eye red?",
+  "Have you had any recent injury or trauma to the eye?",
+  "Do you have double vision?",
+  "Is the eye sensitive to light?",
+  "Have you noticed any drooping of the eyelid?",
+  "Do you wear contact lenses?",
+  "Do you have any discharge from the eye?",
+  "Have you had a recent headache?",
+  "Have you had similar symptoms before?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Have you had any recent illness or infection?",
+  "Do you smoke?",
+  "Do you take any blood-thinning medications?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "yes",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Ice pack test on eyelids",
+  "Anti-acetylcholine receptor antibody test",
+  "Anti-MuSK antibody test",
+  "Thyroid function tests and TSH receptor antibodies (TSI/TRAb)",
+  "MRI brain and orbits with contrast",
+  "CT orbits without contrast",
+  "Single-fibre electromyography of the orbicularis oculi",
+  "Repetitive nerve stimulation study",
+  "Serum creatine kinase",
+  "Inflammatory markers (ESR, CRP)"
+ ],
+ "served": [
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "anti-MuSK antibodies",
+  "TSH / free T4 / TRAb",
+  "MRI orbits",
+  "MRI brain with contrast",
+  "single-fibre EMG",
+  "repetitive nerve stimulation",
+  "creatine kinase",
+  "ESR / CRP"
+ ],
+ "results": [
+  "1. Ice pack test on eyelids",
+  "     ice-pack test: negative",
+  "2. Anti-acetylcholine receptor antibody test",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "3. Anti-MuSK antibody test",
+  "     anti-MuSK antibodies: negative",
+  "4. Thyroid function tests and TSH receptor antibodies (TSI/TRAb)",
+  "     TSH / free T4 / TRAb: normal, TRAb negative",
+  "5. MRI brain and orbits with contrast",
+  "     MRI orbits: normal extraocular muscles, no mass",
+  "     MRI brain with contrast: bilateral contrast enhancement and THICKENING of cranial nerves III through XII",
+  "6. CT orbits without contrast",
+  "     not performed / not available",
+  "7. Single-fibre electromyography of the orbicularis oculi",
+  "     single-fibre EMG: normal jitter",
+  "8. Repetitive nerve stimulation study",
+  "     repetitive nerve stimulation: normal",
+  "9. Serum creatine kinase",
+  "     creatine kinase: normal",
+  "10. Inflammatory markers (ESR, CRP)",
+  "     ESR / CRP: normal - against giant cell arteritis"
+ ],
+ "dx_raw": "DIAGNOSIS: Chronic inflammatory demyelinating polyneuropathy (CIDP), an autoimmune demyelinating disorder of the peripheral nervous system, presenting with bilateral cranial nerve hypertrophy and enhancement.\nAlternatives:\n1. Neurosarcoidosis\n2. IgG4-related hypertrophic neuropathy\n3. Cranial polyneuropathy from leptomeningeal lymphomatous infiltration",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Ice pack test on eyelids\n2. Anti-acetylcholine receptor antibody test\n3. Anti-MuSK antibody test\n4. Thyroid function tests and TSH receptor antibodies (TSI/TRAb)\n5. MRI brain and orbits with contrast\n6. CT orbits without contrast\n7. Single-fibre electromyography of the orbicularis oculi\n8. Repetitive nerve stimulation study\n9. Serum creatine kinase\n10. Inflammatory markers (ESR, CRP)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Chronic inflammatory demyelinating polyneuropathy (CIDP), an autoimmune demyelinating disorder of the peripheral nervous system, presenting with bilateral cranial nerve hypertrophy and enhancement.",
+ "decisive_served": [
+  "MRI brain with contrast"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 521,
+   "completion_tokens": 846,
+   "total_tokens": 1367,
+   "cost": 0.00113406,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00113406,
+    "upstream_inference_prompt_cost": 0.00011886,
+    "upstream_inference_completions_cost": 0.0010152
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 665,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1123,
+   "completion_tokens": 971,
+   "total_tokens": 2094,
+   "cost": 0.00146466,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00146466,
+    "upstream_inference_prompt_cost": 0.00029946,
+    "upstream_inference_completions_cost": 0.0011652
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 871,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1534,
+   "completion_tokens": 1562,
+   "total_tokens": 3096,
+   "cost": 0.00206868,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1108,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00206868,
+    "upstream_inference_prompt_cost": 0.00019428,
+    "upstream_inference_completions_cost": 0.0018744
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1489,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_gca_ophthalmoplegia_PMC12960836.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 49.3
+}

@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Have you experienced unintentional weight loss?",
+  "Do you smoke?",
+  "Do you drink alcohol?",
+  "Do you have pain in your throat?",
+  "Do you have difficulty swallowing?",
+  "Do you have pain in your ear on the side of the lesion?",
+  "Have you noticed any lumps in your neck?",
+  "Have you had a fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Biopsy of the lesion",
+  "Palpation of the lesion",
+  "Palpation of the neck for lymphadenopathy"
+ ],
+ "served": [],
+ "results": [
+  "1. Biopsy of the lesion",
+  "     not performed / not available",
+  "2. Palpation of the lesion",
+  "     not performed / not available",
+  "3. Palpation of the neck for lymphadenopathy",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Oral squamous cell carcinoma\nVerrucous carcinoma\nMucoepidermoid carcinoma\nOral candidiasis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Biopsy of the lesion\n2. Palpation of the lesion\n3. Palpation of the neck for lymphadenopathy",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Oral squamous cell carcinoma",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8697,
+   "completion_tokens": 1411,
+   "total_tokens": 10108,
+   "cost": 0.00134944,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00134944,
+    "upstream_inference_prompt_cost": 0.0008697,
+    "upstream_inference_completions_cost": 0.00047974
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1287,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9041,
+   "completion_tokens": 410,
+   "total_tokens": 9451,
+   "cost": 0.0010435,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010435,
+    "upstream_inference_prompt_cost": 0.0009041,
+    "upstream_inference_completions_cost": 0.0001394
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 368,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9218,
+   "completion_tokens": 983,
+   "total_tokens": 10201,
+   "cost": 0.00125602,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00125602,
+    "upstream_inference_prompt_cost": 0.0009218,
+    "upstream_inference_completions_cost": 0.00033422
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 954,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 9.0,
+ "video": "mild_palatal_PMC12933468.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 137.3
+}

@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Are you experiencing chest discomfort or pain?",
+  "Do you have shortness of breath?",
+  "Do you feel dizzy or lightheaded currently?",
+  "Have you had irregular heartbeats (palpitations) recently?",
+  "Do you have a known history of heart conditions?",
+  "Do you feel numbness or tingling in your arms or legs?",
+  "Are these monitoring electrodes to assess symptoms you're having right now?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "genetic testing (exome / epilepsy panel)",
+  "brain MRI",
+  "interictal EEG",
+  "video-polygraphy (EEG with EMG)",
+  "CSF 14-3-3 / RT-QuIC (prion)"
+ ],
+ "results": [
+  "1. genetic testing (exome / epilepsy panel): PRNP mutation - familial CJD, which accounts for about 10-15% of cases and is most often E200K",
+  "2. brain MRI: restricted diffusion with matching T2/FLAIR hyperintensity in the right caudate, anterior lentiform nucleus, cingulate gyrus and insula, and less prominently the right frontal, parietal and temporal cortex",
+  "3. interictal EEG: generalized periodic discharges recurring every 1-2 seconds as the illness progressed",
+  "4. video-polygraphy (EEG with EMG): lateralized periodic discharges over the RIGHT fronto-central-temporal region, TIME-LOCKED with brief EMG bursts under 100 ms in the LEFT wrist flexors and extensors - electrophysiological proof of epilepsia partialis continua",
+  "5. CSF 14-3-3 / RT-QuIC (prion): positive"
+ ],
+ "dx_raw": "DIAGNOSIS: Sporadic Creutzfeldt-Jakob disease (sCJD) presenting with epilepsia partialis continua\n\nFamilial Creutzfeldt-Jakob disease with PRNP E200K mutation\n\nVariant Creutzfeldt-Jakob disease\n\nHeidenhain variant of Creutzfeldt-Jakob disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Sporadic Creutzfeldt-Jakob disease (sCJD) presenting with epilepsia partialis continua",
+ "decisive_served": [
+  "genetic testing (exome / epilepsy panel)",
+  "brain MRI",
+  "interictal EEG",
+  "video-polygraphy (EEG with EMG)",
+  "CSF 14-3-3 / RT-QuIC (prion)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 12223,
+   "completion_tokens": 301,
+   "total_tokens": 12524,
+   "cost": 0.0017691576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0017691576,
+    "upstream_inference_prompt_cost": 0.0016848776,
+    "upstream_inference_completions_cost": 8.428e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 199,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 12753,
+   "completion_tokens": 581,
+   "total_tokens": 13334,
+   "cost": 0.000279748,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 12160,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000279748,
+    "upstream_inference_prompt_cost": 0.000117068,
+    "upstream_inference_completions_cost": 0.00016268
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 502,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 21.5
+}

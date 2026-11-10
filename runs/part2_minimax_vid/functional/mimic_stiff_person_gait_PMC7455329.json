@@ -1,0 +1,180 @@
+{
+ "questions": [
+  "Is the device on your chest a heart monitor?",
+  "Are you here because of leg or hip pain?",
+  "Is the pain in your right leg or hip?",
+  "Is the pain in your left leg or hip?",
+  "Did you fall recently?",
+  "Did you lose consciousness or faint before you fell?",
+  "Do you have a broken bone?",
+  "Do you have a history of heart problems?",
+  "Do you have chest pain?",
+  "Do you have shortness of breath?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Do you have a history of cancer?",
+  "Do you have a history of osteoporosis?",
+  "Is your leg swollen?",
+  "Do you have a fever?",
+  "Do you have back pain?",
+  "Do you have numbness in your leg?",
+  "Is the pain worse when you walk?",
+  "Have you had recent surgery on your leg or hip?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Examine both feet for ulcers, callus, deformity, infection, and temperature differences",
+  "Palpate dorsalis pedis and posterior tibial pulses bilaterally",
+  "10-gram monofilament test for protective sensation",
+  "Ankle-brachial index (ABI) measurement",
+  "Weight-bearing X-ray of both feet",
+  "HbA1c",
+  "Lying and standing blood pressure measurement"
+ ],
+ "served": [
+  "sensory examination (pinprick, vibration, proprioception)",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c"
+ ],
+ "results": [
+  "1. Examine both feet for ulcers, callus, deformity, infection, and temperature differences",
+  "     not performed / not available",
+  "2. Palpate dorsalis pedis and posterior tibial pulses bilaterally",
+  "     not performed / not available",
+  "3. 10-gram monofilament test for protective sensation",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "4. Ankle-brachial index (ABI) measurement",
+  "     not performed / not available",
+  "5. Weight-bearing X-ray of both feet",
+  "     not performed / not available",
+  "6. HbA1c",
+  "     blood glucose and HbA1c: normal",
+  "     glucose / HbA1c: may show type 1 diabetes, which is commonly comorbid",
+  "7. Lying and standing blood pressure measurement",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Cerebellar ataxia, likely idiopathic late-onset cerebellar ataxia\n\n1. Normal pressure hydrocephalus\n2. Multiple system atrophy (cerebellar type)\n3. Diabetic peripheral neuropathy with motor involvement (despite reported normal sensation, this warrants consideration given the broad-based gait and diabetes)",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Examine both feet for ulcers, callus, deformity, infection, and temperature differences\n2. Palpate dorsalis pedis and posterior tibial pulses bilaterally\n3. 10-gram monofilament test for protective sensation\n4. Ankle-brachial index (ABI) measurement\n5. Weight-bearing X-ray of both feet\n6. ECG\n7. HbA1c\n8. Lying and standing blood pressure measurement",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Cerebellar ataxia, likely idiopathic late-onset cerebellar ataxia",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8886,
+   "completion_tokens": 4152,
+   "total_tokens": 13038,
+   "cost": 0.00762084,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00762084,
+    "upstream_inference_prompt_cost": 0.00263844,
+    "upstream_inference_completions_cost": 0.0049824
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4083,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9523,
+   "completion_tokens": 5546,
+   "total_tokens": 15069,
+   "cost": 0.00739578,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8818,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00739578,
+    "upstream_inference_prompt_cost": 0.00074058,
+    "upstream_inference_completions_cost": 0.0066552
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5755,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9880,
+   "completion_tokens": 8975,
+   "total_tokens": 18855,
+   "cost": 0.01146408,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9458,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01146408,
+    "upstream_inference_prompt_cost": 0.00069408,
+    "upstream_inference_completions_cost": 0.01077
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 10014,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 221.2
+}

@@ -1,0 +1,160 @@
+{
+ "questions": [
+  "Did you hit your head?",
+  "Did you fall?",
+  "Did you lose consciousness?",
+  "Do you have a headache?",
+  "Do you feel dizzy?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you have any numbness or tingling?",
+  "Is your vision blurry?",
+  "Do you take blood-thinning medication?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Are you feeling nauseous?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Blood glucose",
+  "Troponin",
+  "Electrolytes",
+  "CT head"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "glucose, calcium, magnesium, sodium",
+  "CT head"
+ ],
+ "results": [
+  "1. Blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "2. Troponin",
+  "     not performed / not available",
+  "3. Electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "4. CT head",
+  "     CT head: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Cardiac syncope due to arrhythmia\nVasovagal syncope\nSeizure\nObstructive sleep apnea",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. ECG\n2. Blood glucose\n3. Troponin\n4. Electrolytes\n5. CT head",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Cardiac syncope due to arrhythmia",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 1097,
+   "total_tokens": 1517,
+   "cost": 0.00041498,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00041498,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00037298
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 917,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 846,
+   "completion_tokens": 905,
+   "total_tokens": 1751,
+   "cost": 0.0003923,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003923,
+    "upstream_inference_prompt_cost": 8.46e-05,
+    "upstream_inference_completions_cost": 0.0003077
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 802,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1054,
+   "completion_tokens": 4872,
+   "total_tokens": 5926,
+   "cost": 0.00176188,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00176188,
+    "upstream_inference_prompt_cost": 0.0001054,
+    "upstream_inference_completions_cost": 0.00165648
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4325,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 215.9
+}

@@ -1,0 +1,159 @@
+{
+ "questions": [
+  "Are you having any difficulty breathing?",
+  "Is there any pain in your chest?",
+  "Have you had any recent falls or injuries?",
+  "Are you bleeding anywhere?",
+  "Do you have a severe headache that is new or different?",
+  "Have you been dizzy or fainted recently?",
+  "Do you have pain in your abdomen?",
+  "Have you had a fever above 100.4°F or 38°C?",
+  "Are you experiencing any weakness or numbness in your arms or legs?",
+  "Have you had any changes in your vision or speech?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Complete physical examination including vital signs, heart and lung auscultation, abdominal palpation, and neurological screening.",
+  "Complete blood count.",
+  "Basic metabolic panel (electrolytes, kidney function, glucose).",
+  "Thyroid stimulating hormone level.",
+  "Electrocardiogram.",
+  "Age-appropriate cancer screening (e.g., mammogram, colonoscopy, Pap smear, PSA) based on demographics.",
+  "Patient Health Questionnaire-9 (PHQ-9) for depression screening.",
+  "Generalized Anxiety Disorder-7 (GAD-7) scale for anxiety screening."
+ ],
+ "served": [],
+ "results": [
+  "1. Complete physical examination including vital signs, heart and lung auscultation, abdominal palpation, and neurological screening.",
+  "     not performed / not available",
+  "2. Complete blood count.",
+  "     not performed / not available",
+  "3. Basic metabolic panel (electrolytes, kidney function, glucose).",
+  "     not performed / not available",
+  "4. Thyroid stimulating hormone level.",
+  "     not performed / not available",
+  "5. Electrocardiogram.",
+  "     not performed / not available",
+  "6. Age-appropriate cancer screening (e.g., mammogram, colonoscopy, Pap smear, PSA) based on demographics.",
+  "     not performed / not available",
+  "7. Patient Health Questionnaire-9 (PHQ-9) for depression screening.",
+  "     not performed / not available",
+  "8. Generalized Anxiety Disorder-7 (GAD-7) scale for anxiety screening.",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Referred patient with no acute red-flag symptoms identified; likely a chronic or non-emergent condition not captured by yes/no screening (e.g., fatigue, generalized malaise, or a preventive care referral).\n\nAlternative diagnoses to consider:\n1. Major depressive disorder\n2. Generalized anxiety disorder\n3. Chronic fatigue syndrome",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete physical examination including vital signs, heart and lung auscultation, abdominal palpation, and neurological screening.\n2. Complete blood count.\n3. Basic metabolic panel (electrolytes, kidney function, glucose).\n4. Thyroid stimulating hormone level.\n5. Electrocardiogram.\n6. Age-appropriate cancer screening (e.g., mammogram, colonoscopy, Pap smear, PSA) based on demographics.\n7. Patient Health Questionnaire-9 (PHQ-9) for depression screening.\n8. Generalized Anxiety Disorder-7 (GAD-7) scale for anxiety screening.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Referred patient with no acute red-flag symptoms identified; likely a chronic or non-emergent condition not captured by yes/no screening (e.g., fatigue, generalized malaise, or a preventive care referral).",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 2371,
+   "total_tokens": 2756,
+   "cost": 0.000673876,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000673876,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 0.00066388
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2245,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 828,
+   "completion_tokens": 336,
+   "total_tokens": 1164,
+   "cost": 0.000166096,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000166096,
+    "upstream_inference_prompt_cost": 7.2016e-05,
+    "upstream_inference_completions_cost": 9.408e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 208,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1229,
+   "completion_tokens": 562,
+   "total_tokens": 1791,
+   "cost": 0.0002240504,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002240504,
+    "upstream_inference_prompt_cost": 6.66904e-05,
+    "upstream_inference_completions_cost": 0.00015736
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 488,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 79.5
+}

@@ -1,0 +1,123 @@
+{
+ "questions": [
+  "Are you currently in the hospital because of a problem with your leg?",
+  "Is the problem in your right leg?",
+  "Did you have surgery on your right leg recently?",
+  "Are you currently experiencing pain in the leg?",
+  "Is your right leg noticeably swollen?",
+  "Do you have a fever or feel generally unwell?",
+  "Do you have any numbness or tingling in the right leg?",
+  "Are you able to wiggle your right toes?",
+  "Do you have any chest pain or shortness of breath?",
+  "Have you ever had a blood clot in your leg or lung?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "freezing-of-gait provocation (doorway, turning, dual task)",
+  "limb rigidity and axial (neck) rigidity",
+  "levodopa trial (dose and response)",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "DAT-SPECT / FP-CIT PET"
+ ],
+ "results": [
+  "1. freezing-of-gait provocation (doorway, turning, dual task): start hesitation and freezing, worst on turning and on passing through a doorway; MDS-UPDRS III 35, Hoehn and Yahr 2.5",
+  "2. limb rigidity and axial (neck) rigidity: SYMMETRIC rigidity of neck and limbs with mild symmetric bradykinesia and NO tremor",
+  "3. levodopa trial (dose and response): levodopa/carbidopa titrated to 1000 mg/day over three weeks with NO appreciable improvement; subsequently withdrawn",
+  "4. neuronal surface antibody panel including anti-IgLON5: the named panel is negative, but the patient's SERUM bound rat brain tissue in the putamen, substantia nigra, hippocampus, cerebellum and pontine reticular formation on immunohistochemistry - an unidentified antibody",
+  "5. MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): BILATERAL PUTAMEN AND CAUDATE hyperintensity on T2 and FLAIR with patchy restricted diffusion suggesting NECROSIS, and T1 hyperintensity in the ventral putamen; the lesions progressed over serial scans",
+  "6. DAT-SPECT / FP-CIT PET: NORMAL - the lesion is postsynaptic and striatal, not a presynaptic dopaminergic degeneration"
+ ],
+ "dx_raw": "DIAGNOSIS: Autoimmune striatal encephalitis with bilateral striatal necrosis caused by an unidentified, tissue-positive / panel-negative neuronal surface antibody\n\nALTERNATIVES:\n1. Mitochondrial striatopathy (Leigh/MELAS phenotype) – bilateral striatal necrosis can also be mitochondrial\n2. Wilson disease – striatal necrosis and early-onset parkinsonism are classic, though usually with hepatic/KF-ring features\n3. Creutzfeldt-Jakob disease – basal ganglia T2/FLAIR hyperintensity, though the antibody finding and normal DAT-SPECT argue strongly against it",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Autoimmune striatal encephalitis with bilateral striatal necrosis caused by an unidentified, tissue-positive / panel-negative neuronal surface antibody",
+ "decisive_served": [
+  "freezing-of-gait provocation (doorway, turning, dual task)",
+  "limb rigidity and axial (neck) rigidity",
+  "levodopa trial (dose and response)",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "DAT-SPECT / FP-CIT PET"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 3560,
+   "total_tokens": 10622,
+   "cost": 0.00635292,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00635292,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.004272
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3437,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7731,
+   "completion_tokens": 2776,
+   "total_tokens": 10507,
+   "cost": 0.00395922,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00395922,
+    "upstream_inference_prompt_cost": 0.00062802,
+    "upstream_inference_completions_cost": 0.0033312
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2656,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.2,
+ "video": "hornet_sting_parkinsonism_PMC11021691.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 76.4
+}

@@ -1,0 +1,154 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does the double vision get worse when you look to the left?",
+  "Did this start suddenly?",
+  "Do you have a drooping eyelid?",
+  "Have you had a recent head injury?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Do you have a headache?",
+  "Do you have any weakness in your limbs?",
+  "Do you have any difficulty speaking?",
+  "Do you have any numbness or tingling?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Ice pack test",
+  "Repetitive nerve stimulation",
+  "Acetylcholine receptor antibody test",
+  "CT chest"
+ ],
+ "served": [
+  "ice-pack test",
+  "repetitive nerve stimulation",
+  "anti-acetylcholine receptor antibodies",
+  "CT chest (thymus)"
+ ],
+ "results": [
+  "1. Ice pack test",
+  "     ice-pack test: POSITIVE",
+  "2. Repetitive nerve stimulation",
+  "     repetitive nerve stimulation: decremental response",
+  "3. Acetylcholine receptor antibody test",
+  "     anti-acetylcholine receptor antibodies: 10.32 nmol/L (normal <0.50) - strongly POSITIVE",
+  "4. CT chest",
+  "     CT chest (thymus): no thymic abnormality"
+ ],
+ "dx_raw": "DIAGNOSIS: Myasthenia Gravis\nLambert-Eaton Myasthenic Syndrome\nMiller Fisher Syndrome\nBotulism",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Ice pack test\n2. Repetitive nerve stimulation\n3. Acetylcholine receptor antibody test\n4. CT chest",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Myasthenia Gravis",
+ "decisive_served": [
+  "ice-pack test",
+  "repetitive nerve stimulation",
+  "anti-acetylcholine receptor antibodies"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 5163,
+   "total_tokens": 13861,
+   "cost": 0.00262522,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00262522,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00175542
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4099,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9120,
+   "completion_tokens": 934,
+   "total_tokens": 10054,
+   "cost": 0.00122956,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00122956,
+    "upstream_inference_prompt_cost": 0.000912,
+    "upstream_inference_completions_cost": 0.00031756
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 870,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9334,
+   "completion_tokens": 478,
+   "total_tokens": 9812,
+   "cost": 0.00109592,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00109592,
+    "upstream_inference_prompt_cost": 0.0009334,
+    "upstream_inference_completions_cost": 0.00016252
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 482,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "mild_cpeo_mitochondrial_PMC9350803.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 216.7
+}

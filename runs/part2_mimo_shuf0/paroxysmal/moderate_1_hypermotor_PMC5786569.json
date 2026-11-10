@@ -1,0 +1,162 @@
+{
+ "questions": [
+  "Has anyone ever told you that you stop breathing during sleep?",
+  "Do you snore loudly?",
+  "Do you use a breathing machine at night?",
+  "Do you often wake up gasping for air?",
+  "Do you feel excessively tired during the day?",
+  "Do you have trouble sleeping through the night?",
+  "Do you have high blood pressure?",
+  "Do you have any heart problems?",
+  "Do you have difficulty falling asleep?",
+  "Do you experience morning headaches?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Overnight polysomnography with continuous video recording and extended EEG montage",
+  "Multiple sleep latency test (to be performed the following morning)",
+  "Thyroid function tests",
+  "Serum electrolytes",
+  "Liver function tests",
+  "Brain MRI (to rule out structural causes if indicated by PSG findings)"
+ ],
+ "served": [
+  "video-oculography / eye-movement recording",
+  "video-polygraphy (EEG with EMG)",
+  "thyroid function (TSH, free T4)",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Overnight polysomnography with continuous video recording and extended EEG montage",
+  "     video-oculography / eye-movement recording: normal",
+  "     video-polygraphy (EEG with EMG): not performed",
+  "2. Multiple sleep latency test (to be performed the following morning)",
+  "     not performed / not available",
+  "3. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal",
+  "4. Serum electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "5. Liver function tests",
+  "     liver function tests: normal",
+  "6. Brain MRI (to rule out structural causes if indicated by PSG findings)",
+  "     brain MRI: no epileptogenic lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Parasomnia - REM sleep behavior disorder\n\nThe video demonstrates complex, purposeful motor behaviors during sleep (sitting up, handling objects, apparent grooming/manipulation activities) without evidence of obstructive sleep apnea or structural brain lesions. This is consistent with a parasomnia.\n\nHowever, because REM-related muscle atonia was not documented (EMG was not performed during the polysomnography), I cannot confirm RBD with certainty.\n\nAlternatives to consider:\n\n1. Frontal lobe nocturnal epilepsy - normal MRI does not exclude this; would require EEG documentation of epileptiform discharges during the events\n2. NREM parasomnia (complex sleep-related behaviors/sleepwalking) - typically occurs earlier in the sleep cycle\n3. Sleep-related eating disorder - if the behaviors involve purposeful eating during sleep",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "Based on the video showing complex motor behaviors during sleep (sitting up, manipulating objects, apparent purposeful movements while seemingly unconscious), this presentation is highly suspicious for a parasomnia, possibly REM sleep behavior disorder or an NREM parasomnia.\n\n1. Overnight polysomnography with continuous video recording and extended EEG montage\n2. Multiple sleep latency test (to be performed the following morning)\n3. Thyroid function tests\n4. Serum electrolytes\n5. Liver function tests\n6. Brain MRI (to rule out structural causes if indicated by PSG findings)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Parasomnia - REM sleep behavior disorder",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7103,
+   "completion_tokens": 1000,
+   "total_tokens": 8103,
+   "cost": 0.0012480776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012480776,
+    "upstream_inference_prompt_cost": 0.0009680776,
+    "upstream_inference_completions_cost": 0.00028
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 895,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7506,
+   "completion_tokens": 560,
+   "total_tokens": 8066,
+   "cost": 0.000241752,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7040,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000241752,
+    "upstream_inference_prompt_cost": 8.4952e-05,
+    "upstream_inference_completions_cost": 0.0001568
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 445,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7859,
+   "completion_tokens": 710,
+   "total_tokens": 8569,
+   "cost": 0.0002717064,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7488,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002717064,
+    "upstream_inference_prompt_cost": 7.29064e-05,
+    "upstream_inference_completions_cost": 0.0001988
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 539,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 57.8
+}

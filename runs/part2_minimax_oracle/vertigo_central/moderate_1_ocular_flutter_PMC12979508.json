@@ -1,0 +1,120 @@
+{
+ "questions": [
+  "Is your current problem related to your eyes?",
+  "Do you have any pain in or around your eyes?",
+  "Is your vision blurred?",
+  "Do you see double?",
+  "Are your eyes red?",
+  "Do you have a headache?",
+  "Do you have any medical conditions, such as diabetes or thyroid disease?",
+  "Have you noticed any drooping of your eyelids?",
+  "Do you have any weakness in your arms or legs?",
+  "Have you had any recent infections or illnesses?",
+  "Do you have any discharge from your eyes?",
+  "Are you sensitive to light?",
+  "Have you had any recent trauma to your head or eyes?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "smooth pursuit and saccades",
+  "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)",
+  "CT chest / abdomen / pelvis (occult tumour)"
+ ],
+ "results": [
+  "1. smooth pursuit and saccades: rapid conjugate HORIZONTAL saccadic oscillations WITHOUT intersaccadic intervals - ocular flutter",
+  "2. anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2): ISOLATED anti-GT1a IgG POSITIVE; anti-GQ1b, anti-GM1 and anti-GM2 all NEGATIVE",
+  "3. CT chest / abdomen / pelvis (occult tumour): no malignancy - argues against a paraneoplastic cause"
+ ],
+ "dx_raw": "Blue eyes framed by dark eyeliner exhibit a rapid, continuous horizontal fluttering motion. The pupils dart back and forth swiftly against fair, textured skin, periodically closing.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Blue eyes framed by dark eyeliner exhibit a rapid, continuous horizontal fluttering motion. The pupils dart back and forth swiftly against fair, textured skin, periodically closing.",
+ "decisive_served": [
+  "smooth pursuit and saccades",
+  "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)",
+  "CT chest / abdomen / pelvis (occult tumour)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 4990,
+   "total_tokens": 12052,
+   "cost": 0.00806892,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00806892,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.005988
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4852,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7604,
+   "completion_tokens": 1257,
+   "total_tokens": 8861,
+   "cost": 0.00209832,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00209832,
+    "upstream_inference_prompt_cost": 0.00058992,
+    "upstream_inference_completions_cost": 0.0015084
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1225,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.2,
+ "video": "moderate_1_ocular_flutter_PMC12979508.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 74.2
+}

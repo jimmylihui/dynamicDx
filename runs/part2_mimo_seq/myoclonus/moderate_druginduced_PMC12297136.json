@@ -1,0 +1,145 @@
+{
+ "questions": [
+  "When you pull your skin like that, does it snap back into place immediately, or does it stay loose and slowly retract?",
+  "Have you ever had joints that dislocate easily or been told you are \"double-jointed\"?",
+  "Do you bruise very easily or have scars that look wide and paper-thin?",
+  "Have you ever been told you have a heart murmur or have you ever had a leaky valve?",
+  "Do you ever get dizzy when you stand up quickly, or feel like you might faint?",
+  "Have you ever had a hernia, like a bulge in your groin or belly?",
+  "When did you first notice your skin was like this - has it always been stretchy, or did it change and become loose over time?",
+  "Have you ever taken the antibiotic minocycline or any medication for rheumatoid arthritis like penicillamine?",
+  "Do you have any shortness of breath, or have you ever been told you have lung problems like emphysema?",
+  "Has your skin always been like this since you were young, or did it start to get loose as you got older?",
+  "Do you have similar loose skin on your neck, face, or underarms?",
+  "Have you experienced any rapid weight loss recently?",
+  "Do you have any history of a rash, pimple, or bug bite on your belly before the skin became loose?",
+  "Do you have any family members with similar skin findings?",
+  "Have you ever had any autoimmune conditions like lupus or thyroid problems?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK When you pull your skin like that, does it snap back into place immediately, or does it stay loose and slowly retract?; Have you ever had joints that dislocate easily or been told you are \"double-jointed\"?; Do you bruise very easily or have scars that look wide and paper-thin? -> ['no', 'no', 'no']",
+  "R2 ASK Have you ever been told you have a heart murmur or have you ever had a leaky valve?; Do you ever get dizzy when you stand up quickly, or feel like you might faint?; Have you ever had a hernia, like a bulge in your groin or belly? -> ['no', 'no', 'no']",
+  "R3 ASK When did you first notice your skin was like this - has it always been stretchy, or did it change and become loose over time?; Have you ever taken the antibiotic minocycline or any medication for rheumatoid arthritis like penicillamine?; Do you have any shortness of breath, or have you ever been told you have lung problems like emphysema? -> ['no', 'no', 'no']",
+  "R4 ASK Has your skin always been like this since you were young, or did it start to get loose as you got older?; Do you have similar loose skin on your neck, face, or underarms?; Have you experienced any rapid weight loss recently? -> ['no', 'no', 'no']",
+  "R5 ASK Do you have any history of a rash, pimple, or bug bite on your belly before the skin became loose?; Do you have any family members with similar skin findings?; Have you ever had any autoimmune conditions like lupus or thyroid problems? -> ['no', 'no', 'no']",
+  "R6 DIAGNOSIS Acquired cutis laxa, localized to abdomen, likely idiopathic, characterized by loss of dermal elastic fibers -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "When you pull your skin like that, does it snap back into place immediately, or does it stay loose and slowly retract?",
+    "Have you ever had joints that dislocate easily or been told you are \"double-jointed\"?",
+    "Do you bruise very easily or have scars that look wide and paper-thin?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you ever been told you have a heart murmur or have you ever had a leaky valve?",
+    "Do you ever get dizzy when you stand up quickly, or feel like you might faint?",
+    "Have you ever had a hernia, like a bulge in your groin or belly?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "When did you first notice your skin was like this - has it always been stretchy, or did it change and become loose over time?",
+    "Have you ever taken the antibiotic minocycline or any medication for rheumatoid arthritis like penicillamine?",
+    "Do you have any shortness of breath, or have you ever been told you have lung problems like emphysema?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Has your skin always been like this since you were young, or did it start to get loose as you got older?",
+    "Do you have similar loose skin on your neck, face, or underarms?",
+    "Have you experienced any rapid weight loss recently?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have any history of a rash, pimple, or bug bite on your belly before the skin became loose?",
+    "Do you have any family members with similar skin findings?",
+    "Have you ever had any autoimmune conditions like lupus or thyroid problems?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Acquired cutis laxa, localized to abdomen, likely idiopathic, characterized by loss of dermal elastic fibers"
+  }
+ ],
+ "dx": "Acquired cutis laxa, localized to abdomen, likely idiopathic, characterized by loss of dermal elastic fibers",
+ "dx_raw": "ORDER:\n1. Skin punch biopsy with elastin stain (Verhoeff-Van Gieson) of the affected abdominal skin to assess elastic fiber architecture\n2. Pulmonary function tests to screen for associated emphysema\n\nDIAGNOSIS: Acquired cutis laxa, localized to abdomen, likely idiopathic, characterized by loss of dermal elastic fibers",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "cost_usd": 0.0029,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 489.3
+}

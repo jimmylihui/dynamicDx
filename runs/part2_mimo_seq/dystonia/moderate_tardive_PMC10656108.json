@@ -1,0 +1,182 @@
+{
+ "questions": [
+  "Have you noticed any drooping of your eyelids or double vision recently?",
+  "Do you have any weakness or numbness on one side of your face?",
+  "Do you have any pain or tiredness in your jaw when chewing?",
+  "Have you noticed any weakness in your arms or legs?",
+  "Has anyone commented that your face looks uneven or that your smile has changed?",
+  "What symptoms brought you in to see the doctor today?",
+  "Can you describe what the main problem is - is it related to movement, pain, or something else?",
+  "Is the problem related to involuntary movements or shaking?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "yes",
+  "8": "yes"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Perform a bedside examination of the cranial nerves, specifically testing facial sensation, hearing with a tuning fork, and eye movements.",
+  "Perform a neurological examination of the upper limbs, specifically testing tone, power, reflexes, and checking for tremor."
+ ],
+ "served": [
+  "cranial nerve examination",
+  "eye movements and reflexes",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses"
+ ],
+ "results": [
+  "R1 ASK Have you noticed any drooping of your eyelids or double vision recently? -> ['no']",
+  "R2 ASK Do you have any weakness or numbness on one side of your face? -> ['no']",
+  "R3 ASK Do you have any pain or tiredness in your jaw when chewing? -> ['no']",
+  "R4 ASK Have you noticed any weakness in your arms or legs? -> ['no']",
+  "R5 ASK Has anyone commented that your face looks uneven or that your smile has changed? -> ['no']",
+  "R6 ORDER Perform a bedside examination of the cranial nerves, specifically testing facial sensation, hearing with a tuning fork, and eye movements. -> [['cranial nerve examination', 'eye movements and reflexes']]",
+  "R7 ORDER Perform a neurological examination of the upper limbs, specifically testing tone, power, reflexes, and checking for tremor. -> [['muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses']]",
+  "R8 ASK What symptoms brought you in to see the doctor today? -> ['yes']",
+  "R9 ASK Can you describe what the main problem is - is it related to movement, pain, or something else? -> ['yes']",
+  "R10 ASK Is the problem related to involuntary movements or shaking? -> ['yes']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Essential tremor -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any drooping of your eyelids or double vision recently?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have any weakness or numbness on one side of your face?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have any pain or tiredness in your jaw when chewing?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any weakness in your arms or legs?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Has anyone commented that your face looks uneven or that your smile has changed?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Perform a bedside examination of the cranial nerves, specifically testing facial sensation, hearing with a tuning fork, and eye movements."
+   ],
+   "result": [
+    [
+     "cranial nerve examination",
+     "eye movements and reflexes"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Perform a neurological examination of the upper limbs, specifically testing tone, power, reflexes, and checking for tremor."
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "limb strength (MRC) examination",
+     "deep tendon reflexes and plantar responses"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "What symptoms brought you in to see the doctor today?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Can you describe what the main problem is - is it related to movement, pain, or something else?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Is the problem related to involuntary movements or shaking?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Essential tremor"
+  }
+ ],
+ "dx": "Essential tremor",
+ "dx_raw": "DIAGNOSIS: Essential tremor",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0042,
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "moderate_tardive_PMC10656108.mp4",
+ "line": "dystonia",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 395.6
+}

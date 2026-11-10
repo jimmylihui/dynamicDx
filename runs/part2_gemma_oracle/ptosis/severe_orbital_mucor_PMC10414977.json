@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have a severe headache?",
+  "Do you have double vision?",
+  "Do you have weakness in your arm or leg?",
+  "Do you have difficulty speaking?",
+  "Does the drooping get worse as the day goes on?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "glucose / HbA1c",
+  "SARS-CoV-2 test",
+  "fungal culture / KOH of nasal tissue",
+  "CT sinuses"
+ ],
+ "results": [
+  "1. glucose / HbA1c: non-fasting glucose 385 mg/dL - NEWLY DIAGNOSED diabetes",
+  "2. SARS-CoV-2 test: POSITIVE",
+  "3. fungal culture / KOH of nasal tissue: non-septate broad hyphae - Mucorales",
+  "4. CT sinuses: invasive sinus disease extending to the orbit"
+ ],
+ "dx_raw": "DIAGNOSIS: Rhino-orbital-cerebral mucormycosis caused by Mucorales\n\nInvasive aspergillosis\nOrbital cellulitis\nRhino-orbital-cerebral candidiasis",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Rhino-orbital-cerebral mucormycosis caused by Mucorales",
+ "decisive_served": [
+  "glucose / HbA1c",
+  "SARS-CoV-2 test",
+  "fungal culture / KOH of nasal tissue",
+  "CT sinuses"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2407,
+   "total_tokens": 11105,
+   "cost": 0.00168818,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00168818,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00081838
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2247,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9025,
+   "completion_tokens": 758,
+   "total_tokens": 9783,
+   "cost": 0.00116022,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00116022,
+    "upstream_inference_prompt_cost": 0.0009025,
+    "upstream_inference_completions_cost": 0.00025772
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 693,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 100.4
+}

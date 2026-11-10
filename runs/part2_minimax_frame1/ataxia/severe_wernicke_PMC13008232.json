@@ -1,0 +1,198 @@
+{
+ "questions": [
+  "Is the reason for your visit today related to pain?",
+  "Have you been feeling unwell for more than a week?",
+  "Do you have any chronic medical conditions?",
+  "Are you currently taking any medications?",
+  "Have you had any recent weight loss?",
+  "Do you have any difficulty breathing?",
+  "Have you had a fever recently?",
+  "Do you have any history of heart problems?",
+  "Have you experienced any dizziness or fainting?",
+  "Do you have any history of cancer?",
+  "Do you smoke?",
+  "Have you had any recent falls?",
+  "Is there any family history of serious illness?",
+  "Do you have any allergies to medications?",
+  "Have you had any recent infections?",
+  "Do you have any abdominal pain?",
+  "Have you noticed any changes in your appetite?",
+  "Do you have any numbness or tingling?",
+  "Have you had any recent travel?",
+  "Are you experiencing any anxiety or depression?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "yes",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Thyroid stimulating hormone (TSH)",
+  "Hemoglobin A1c",
+  "Erythrocyte sedimentation rate",
+  "C-reactive protein",
+  "Urinalysis",
+  "Chest X-ray"
+ ],
+ "served": [
+  "full blood count",
+  "renal and liver function",
+  "electrolytes (Na, K, Ca, Mg)",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "TSH / free T4",
+  "glucose / HbA1c",
+  "blood glucose and HbA1c",
+  "ESR / CRP",
+  "ESR / CRP",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Complete blood count",
+  "     full blood count: normal",
+  "2. Comprehensive metabolic panel",
+  "     renal and liver function: end-stage renal disease on maintenance haemodialysis",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     serum electrolytes, urea and creatinine: abnormal; end-stage renal failure with elevated urea and creatinine",
+  "     liver function tests: normal",
+  "3. Thyroid stimulating hormone (TSH)",
+  "     TSH / free T4: normal",
+  "4. Hemoglobin A1c",
+  "     glucose / HbA1c: HbA1c 5.9% (reference 4.0-6.0) - normal",
+  "     blood glucose and HbA1c: normal; HbA1c 5.9%",
+  "5. Erythrocyte sedimentation rate",
+  "     ESR / CRP: normal",
+  "6. C-reactive protein",
+  "     ESR / CRP: normal",
+  "7. Urinalysis",
+  "     urinalysis: normal",
+  "8. Chest X-ray",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Protein-energy wasting (PEW) secondary to end-stage renal disease on maintenance hemodialysis\nAlternatives:\n1. Inadequate dialysis dose (underdialysis)\n2. Depression\n3. Occult gastrointestinal malignancy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Complete blood count\n2. Comprehensive metabolic panel\n3. Thyroid stimulating hormone (TSH)\n4. Hemoglobin A1c\n5. Erythrocyte sedimentation rate\n6. C-reactive protein\n7. Urinalysis\n8. Chest X-ray",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Protein-energy wasting (PEW) secondary to end-stage renal disease on maintenance hemodialysis",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 939,
+   "completion_tokens": 473,
+   "total_tokens": 1412,
+   "cost": 0.00081186,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00081186,
+    "upstream_inference_prompt_cost": 0.00024426,
+    "upstream_inference_completions_cost": 0.0005676
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 274,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1582,
+   "completion_tokens": 1340,
+   "total_tokens": 2922,
+   "cost": 0.00204492,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00204492,
+    "upstream_inference_prompt_cost": 0.00043692,
+    "upstream_inference_completions_cost": 0.001608
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1287,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1934,
+   "completion_tokens": 334,
+   "total_tokens": 2268,
+   "cost": 0.00094332,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00094332,
+    "upstream_inference_prompt_cost": 0.00054252,
+    "upstream_inference_completions_cost": 0.0004008
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 286,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 45.6
+}

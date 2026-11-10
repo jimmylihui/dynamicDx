@@ -1,0 +1,113 @@
+{
+ "questions": [
+  "Has this lesion been present for more than two weeks?",
+  "Do you smoke?",
+  "Do you drink alcohol?",
+  "Have you noticed any lumps or swelling in your neck?",
+  "Is the area painful?",
+  "Does the lesion bleed?",
+  "Do you have any other white patches or sores in your mouth?",
+  "Have you had a fever recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "observation of the jerks",
+  "effect of sleep",
+  "MRI brainstem / dentato-rubro-olivary pathway",
+  "HLA-B51 and Behcet's assessment (pathergy, ophthalmology review)"
+ ],
+ "results": [
+  "1. observation of the jerks: rhythmic palatal movements at 2-3 Hz with bilateral acoustic clicks, louder on the right",
+  "2. effect of sleep: palatal tremor PERSISTS in sleep - characteristic of palatal tremor rather than true myoclonus",
+  "3. MRI brainstem / dentato-rubro-olivary pathway: inflammatory brainstem involvement in the Guillain-Mollaret triangle",
+  "4. HLA-B51 and Behcet's assessment (pathergy, ophthalmology review): consistent with Behcet's disease"
+ ],
+ "dx_raw": "DIAGNOSIS: Neuro-Behcet's disease causing palatal tremor\n\nMultiple Sclerosis\nBrainstem stroke\nNeuromyelitis optica spectrum disorder",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Neuro-Behcet's disease causing palatal tremor",
+ "decisive_served": [
+  "observation of the jerks",
+  "effect of sleep",
+  "MRI brainstem / dentato-rubro-olivary pathway",
+  "HLA-B51 and Behcet's assessment (pathergy, ophthalmology review)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8697,
+   "completion_tokens": 1182,
+   "total_tokens": 9879,
+   "cost": 0.00127158,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00127158,
+    "upstream_inference_prompt_cost": 0.0008697,
+    "upstream_inference_completions_cost": 0.00040188
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1019,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9116,
+   "completion_tokens": 1541,
+   "total_tokens": 10657,
+   "cost": 0.00143554,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00143554,
+    "upstream_inference_prompt_cost": 0.0009116,
+    "upstream_inference_completions_cost": 0.00052394
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1377,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 9.0,
+ "video": "mild_palatal_PMC12933468.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 95.3
+}

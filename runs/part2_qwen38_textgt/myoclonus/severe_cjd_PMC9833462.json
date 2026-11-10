@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Do you have a history of epilepsy or seizures?",
+  "Did the jerks start suddenly, within the last few hours?",
+  "Were you recently started on a new medication or had a dose increased?",
+  "Have you been using illicit drugs recently?",
+  "Do you have a known kidney disease?",
+  "Do you have a known liver disease?",
+  "Are you currently experiencing fever or signs of infection?",
+  "Do you have diabetes?",
+  "Have you recently stopped drinking alcohol heavily?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside examination for asterixis (flapping tremor)",
+  "Serum electrolytes, calcium, magnesium, and phosphate",
+  "Arterial blood gas analysis",
+  "Electroencephalogram (EEG)"
+ ],
+ "served": [
+  "observation of the jerks",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "electrolytes (Na, K, Ca, Mg)",
+  "venous blood gas",
+  "EEG"
+ ],
+ "results": [
+  "1. Bedside examination for asterixis (flapping tremor)",
+  "     observation of the jerks: brief shock-like jerks",
+  "2. Serum electrolytes, calcium, magnesium, and phosphate",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "3. Arterial blood gas analysis",
+  "     venous blood gas: normal",
+  "4. Electroencephalogram (EEG)",
+  "     EEG: diffuse encephalopathic changes without periodic sharp wave complexes"
+ ],
+ "dx_raw": "DIAGNOSIS: Creutzfeldt-Jakob disease (sporadic)\nAlternative 1: Autoimmune encephalitis\nAlternative 2: Paraneoplastic encephalomyelitis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination for asterixis (flapping tremor)\n2. Serum electrolytes, calcium, magnesium, and phosphate\n3. Arterial blood gas analysis\n4. Electroencephalogram (EEG)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Creutzfeldt-Jakob disease (sporadic)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 182,
+   "completion_tokens": 121,
+   "total_tokens": 303,
+   "cost": 8.417e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.417e-05,
+    "upstream_inference_prompt_cost": 2.73e-05,
+    "upstream_inference_completions_cost": 5.687e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 619,
+   "completion_tokens": 49,
+   "total_tokens": 668,
+   "cost": 0.00011588,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011588,
+    "upstream_inference_prompt_cost": 9.285e-05,
+    "upstream_inference_completions_cost": 2.303e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 893,
+   "completion_tokens": 44,
+   "total_tokens": 937,
+   "cost": 8.6022e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.6022e-05,
+    "upstream_inference_prompt_cost": 6.5342e-05,
+    "upstream_inference_completions_cost": 2.068e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.5
+}

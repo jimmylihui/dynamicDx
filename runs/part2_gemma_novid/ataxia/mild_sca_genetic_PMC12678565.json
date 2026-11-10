@@ -1,0 +1,177 @@
+{
+ "questions": [
+  "Do you have any pain?",
+  "Are you experiencing shortness of breath?",
+  "Do you have a fever?",
+  "Have you experienced any loss of consciousness?",
+  "Are you experiencing any weakness or numbness?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Physical examination",
+  "Blood pressure measurement",
+  "Full blood count",
+  "Comprehensive metabolic panel",
+  "Lipid panel",
+  "Urinalysis"
+ ],
+ "served": [
+  "gait examination",
+  "finger-nose / heel-shin testing",
+  "Romberg test",
+  "bedside eye-movement exam",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "vital signs",
+  "full blood count",
+  "renal and liver function",
+  "electrolytes (Na, K, Ca, Mg)",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Physical examination",
+  "     gait examination: wide-based, unsteady gait",
+  "     finger-nose / heel-shin testing: dysmetria",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "     bedside eye-movement exam: normal",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): limb and truncal ataxia",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "2. Blood pressure measurement",
+  "     vital signs: normal, afebrile",
+  "3. Full blood count",
+  "     full blood count: normal",
+  "4. Comprehensive metabolic panel",
+  "     renal and liver function: normal",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "5. Lipid panel",
+  "     not performed / not available",
+  "6. Urinalysis",
+  "     urinalysis: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Cerebellar Ataxia due to a Cerebellar Tumor\nAlternatives:\n1. Spinocerebellar Ataxia\n2. Gluten Ataxia\n3. Paraneoplastic Cerebellar Degeneration",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Physical examination\n2. Blood pressure measurement\n3. Full blood count\n4. Comprehensive metabolic panel\n5. Lipid panel\n6. TSH\n7. Urinalysis\n8. ECG",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Cerebellar Ataxia due to a Cerebellar Tumor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 155,
+   "completion_tokens": 3890,
+   "total_tokens": 4045,
+   "cost": 0.0013381,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013381,
+    "upstream_inference_prompt_cost": 1.55e-05,
+    "upstream_inference_completions_cost": 0.0013226
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3779,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 421,
+   "completion_tokens": 2449,
+   "total_tokens": 2870,
+   "cost": 0.00087476,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00087476,
+    "upstream_inference_prompt_cost": 4.21e-05,
+    "upstream_inference_completions_cost": 0.00083266
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2310,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 811,
+   "completion_tokens": 5826,
+   "total_tokens": 6637,
+   "cost": 0.00206194,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00206194,
+    "upstream_inference_prompt_cost": 8.11e-05,
+    "upstream_inference_completions_cost": 0.00198084
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5285,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_sca_genetic_PMC12678565.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 385.9
+}

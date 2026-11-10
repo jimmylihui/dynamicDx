@@ -1,0 +1,146 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does the double vision disappear when you cover one eye?",
+  "Is your right eyelid drooping more than your left?",
+  "Do you have a history of thyroid disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Measure the palpebral fissure width in primary gaze",
+  "Assess for lid lag on downgaze and lid retraction on upgaze",
+  "Perform the forced duction test",
+  "Order serum TSH, free T4, and thyroid-stimulating immunoglobulins (TSI)",
+  "Obtain MRI of the orbits with fat suppression"
+ ],
+ "served": [
+  "lid position and measurement (MRD1 both sides)",
+  "ocular motility examination",
+  "TSH / free T4 / TRAb",
+  "MRI orbits"
+ ],
+ "results": [
+  "1. Measure the palpebral fissure width in primary gaze",
+  "     lid position and measurement (MRD1 both sides): MRD1 raised on the LEFT (retraction); right lid height normal - the right eye is NOT ptotic",
+  "2. Assess for lid lag on downgaze and lid retraction on upgaze",
+  "     ocular motility examination: full in all directions",
+  "3. Perform the forced duction test",
+  "     not performed / not available",
+  "4. Order serum TSH, free T4, and thyroid-stimulating immunoglobulins (TSI)",
+  "     TSH / free T4 / TRAb: normal, TRAb negative - excludes thyroid eye disease",
+  "5. Obtain MRI of the orbits with fat suppression",
+  "     MRI orbits: no extraocular muscle enlargement, no mass"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic unilateral upper eyelid retraction of the left eye\n1. Previous undiagnosed thyroid eye disease (euthyroid Graves' ophthalmopathy)\n2. Mechanical lid retraction secondary to prior trauma or surgery",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Measure the palpebral fissure width in primary gaze\n2. Assess for lid lag on downgaze and lid retraction on upgaze\n3. Perform the forced duction test\n4. Order serum TSH, free T4, and thyroid-stimulating immunoglobulins (TSI)\n5. Obtain MRI of the orbits with fat suppression",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic unilateral upper eyelid retraction of the left eye",
+ "decisive_served": [
+  "lid position and measurement (MRD1 both sides)",
+  "TSH / free T4 / TRAb"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 50,
+   "total_tokens": 4873,
+   "cost": 0.00074695,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074695,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.35e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5092,
+   "completion_tokens": 78,
+   "total_tokens": 5170,
+   "cost": 0.00020014,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020014,
+    "upstream_inference_prompt_cost": 0.00016348,
+    "upstream_inference_completions_cost": 3.666e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5439,
+   "completion_tokens": 54,
+   "total_tokens": 5493,
+   "cost": 0.000206606,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4736,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000206606,
+    "upstream_inference_prompt_cost": 0.000181226,
+    "upstream_inference_completions_cost": 2.538e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 47.4
+}

@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Is your main problem pain in one or both knees?",
+  "Is the pain worse in your right knee than your left?",
+  "Did the knee pain begin suddenly?",
+  "Did it start after a fall, twist, or other injury?",
+  "Is the knee swollen?",
+  "Is the knee red or unusually warm?",
+  "Do you have a fever or feel generally unwell?",
+  "Are you unable to put weight on the affected leg?",
+  "Does the knee lock or get stuck during movement?",
+  "Does the knee give way or feel unstable?",
+  "Is the pain worse when walking, standing, or climbing stairs?",
+  "Do you have significant stiffness after resting or upon waking?",
+  "Does the stiffness last longer than 30 minutes each morning?",
+  "Do you have pain or swelling in other joints?",
+  "Do you have numbness, tingling, or weakness in the leg or foot?",
+  "Do you have pain in your hip or lower back that travels down the leg?",
+  "Have you had similar knee problems before?",
+  "Have you ever been diagnosed with arthritis?",
+  "Have you had knee surgery or an injection in either knee?",
+  "Have you recently had prolonged immobility, surgery, or a long trip?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "thyroid ultrasound",
+  "trial of antithyroid treatment"
+ ],
+ "results": [
+  "1. blood glucose: normal glucose and electrolytes - excludes hyperglycaemic chorea",
+  "2. TSH, free T4 and free T3: TSH SUPPRESSED at <0.01 mIU/L (reference 0.50-5.00) and free thyroxine ELEVATED at 3.85 ng/dL (reference 0.90-1.70)",
+  "3. thyrotropin receptor antibodies (TRAb): ELEVATED at 7.4 IU/L (reference <2.0) - Graves' disease",
+  "4. thyroid ultrasound: no nodules; estimated thyroid weight 13 g; 99mTc scintigraphy showed diffuse uptake consistent with Graves' disease",
+  "5. trial of antithyroid treatment: methimazole; the chorea resolved after about one month as thyroid function improved"
+ ],
+ "dx_raw": "DIAGNOSIS: Thyrotoxic chorea caused by Graves’ disease (autoimmune hyperthyroidism)\n\nALTERNATIVE 1: Huntington disease\n\nALTERNATIVE 2: Drug-induced chorea\n\nALTERNATIVE 3: Sydenham chorea",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Thyrotoxic chorea caused by Graves’ disease (autoimmune hyperthyroidism)",
+ "decisive_served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "thyroid ultrasound",
+  "trial of antithyroid treatment"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7532,
+   "completion_tokens": 474,
+   "total_tokens": 8006,
+   "cost": 0.00035999,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7529,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00035999,
+    "upstream_inference_prompt_cost": 7.559e-05,
+    "upstream_inference_completions_cost": 0.0002844
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 208,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 8423,
+   "completion_tokens": 190,
+   "total_tokens": 8613,
+   "cost": 0.000300965,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7529,
+    "cache_write_tokens": 891,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000300965,
+    "upstream_inference_prompt_cost": 0.000186965,
+    "upstream_inference_completions_cost": 0.000114
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 130,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 18.1
+}

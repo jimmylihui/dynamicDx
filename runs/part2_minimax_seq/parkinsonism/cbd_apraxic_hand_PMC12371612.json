@@ -1,0 +1,239 @@
+{
+ "questions": [
+  "Are you experiencing a tremor or shaking in your hands?",
+  "Is the tremor worse when your hands are at rest?",
+  "Do you have any stiffness or slowness of movement?",
+  "Have you noticed any changes in your handwriting?",
+  "Do you have any trouble with balance or walking?",
+  "Does the tremor get worse when you try to perform an action like drinking from a cup?",
+  "Is the tremor worse when you are anxious or stressed?",
+  "Have you noticed the tremor improving after you drink alcohol?",
+  "Does anyone in your family have a similar tremor?",
+  "Are you currently taking any medications?",
+  "Is the tremor present only in one hand or both hands?",
+  "Does the tremor involve your head or voice?",
+  "Does the tremor worsen when you try to hold a specific posture, like holding your arms out in front of you?",
+  "Do you have any history of thyroid problems?",
+  "Do you drink a lot of caffeine?",
+  "Is the tremor a fine, rapid shaking?",
+  "Is the tremor a coarse, slower shaking?",
+  "Does the tremor improve or worsen completely?",
+  "Is the tremor constant or intermittent?",
+  "Do you have any weakness in that hand?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Full neurological examination focusing on cerebellar signs",
+  "Serum thyroid function tests (TSH, T3, T4)",
+  "Liver function tests",
+  "Serum electrolytes including calcium and magnesium",
+  "MRI brain"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "gait observation including turning and doorways",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)",
+  "TSH / free T4",
+  "liver function tests",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+ ],
+ "results": [
+  "R1 INVALID \n\n:\n1. Are you experiencing a tremor or shaking in your hands?\n2. Is the tremor worse when your hands are at rest?\n3. Do you have any stiffness or slowness of movement?\n4. Have you noticed any changes -> ",
+  "R2 ASK Are you experiencing a tremor or shaking in your hands?; Is the tremor worse when your hands are at rest?; Do you have any stiffness or slowness of movement?; Have you noticed any changes in your handwriting?; Do you have any trouble with balance or walking? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R3 ASK Does the tremor get worse when you try to perform an action like drinking from a cup?; Is the tremor worse when you are anxious or stressed?; Have you noticed the tremor improving after you drink alcohol?; Does anyone in your family have a similar tremor?; Are you currently taking any medications? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Is the tremor present only in one hand or both hands?; Does the tremor involve your head or voice?; Does the tremor worsen when you try to hold a specific posture, like holding your arms out in front of you?; Do you have any history of thyroid problems?; Do you drink a lot of caffeine? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R5 ASK Is the tremor a fine, rapid shaking?; Is the tremor a coarse, slower shaking?; Does the tremor improve or worsen completely?; Is the tremor constant or intermittent?; Do you have any weakness in that hand? -> ['no', 'no', 'no', 'no', 'no']",
+  "R6 ORDER Full neurological examination focusing on cerebellar signs; Serum thyroid function tests (TSH, T3, T4); Liver function tests; Serum electrolytes including calcium and magnesium; MRI brain -> [['cranial nerve examination', 'mental status / cognitive screen', 'muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'posture and pull test', 'fundoscopy', 'gait observation including turning and doorways', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)'], ['TSH / free T4'], ['liver function tests'], ['serum electrolytes, urea and creatinine', 'serum calcium, magnesium and phosphate'], ['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)', 'MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)', 'MRI brain - cortical atrophy pattern', 'MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)']]",
+  "R7 DIAGNOSIS Corticobasal syndrome (CBS) - likely due to underlying corticobasal degeneration (CBD) or Alzheimer's disease pathology, presenting with asymmetric parkinsonism, apraxia, cortical sensory loss, myoclonus, and markedly asymmetric superior parietal and posterior frontal atrophy on MRI. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "invalid",
+   "text": "\n\n:\n1. Are you experiencing a tremor or shaking in your hands?\n2. Is the tremor worse when your hands are at rest?\n3. Do you have any stiffness or slowness of movement?\n4. Have you noticed any changes"
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Are you experiencing a tremor or shaking in your hands?",
+    "Is the tremor worse when your hands are at rest?",
+    "Do you have any stiffness or slowness of movement?",
+    "Have you noticed any changes in your handwriting?",
+    "Do you have any trouble with balance or walking?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Does the tremor get worse when you try to perform an action like drinking from a cup?",
+    "Is the tremor worse when you are anxious or stressed?",
+    "Have you noticed the tremor improving after you drink alcohol?",
+    "Does anyone in your family have a similar tremor?",
+    "Are you currently taking any medications?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Is the tremor present only in one hand or both hands?",
+    "Does the tremor involve your head or voice?",
+    "Does the tremor worsen when you try to hold a specific posture, like holding your arms out in front of you?",
+    "Do you have any history of thyroid problems?",
+    "Do you drink a lot of caffeine?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Is the tremor a fine, rapid shaking?",
+    "Is the tremor a coarse, slower shaking?",
+    "Does the tremor improve or worsen completely?",
+    "Is the tremor constant or intermittent?",
+    "Do you have any weakness in that hand?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Full neurological examination focusing on cerebellar signs",
+    "Serum thyroid function tests (TSH, T3, T4)",
+    "Liver function tests",
+    "Serum electrolytes including calcium and magnesium",
+    "MRI brain"
+   ],
+   "result": [
+    [
+     "cranial nerve examination",
+     "mental status / cognitive screen",
+     "muscle tone examination",
+     "limb strength (MRC) examination",
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)",
+     "posture and pull test",
+     "fundoscopy",
+     "gait observation including turning and doorways",
+     "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
+    ],
+    [
+     "TSH / free T4"
+    ],
+    [
+     "liver function tests"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "serum calcium, magnesium and phosphate"
+    ],
+    [
+     "MRI brain with gadolinium",
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences",
+     "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+     "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+     "MRI brain - cortical atrophy pattern",
+     "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Corticobasal syndrome (CBS) - likely due to underlying corticobasal degeneration (CBD) or Alzheimer's disease pathology, presenting with asymmetric parkinsonism, apraxia, cortical sensory loss, myoclonus, and markedly asymmetric superior parietal and posterior frontal atrophy on MRI."
+  }
+ ],
+ "dx": "Corticobasal syndrome (CBS) - likely due to underlying corticobasal degeneration (CBD) or Alzheimer's disease pathology, presenting with asymmetric parkinsonism, apraxia, cortical sensory loss, myoclonus, and markedly asymmetric superior parietal and posterior frontal atrophy on MRI.",
+ "dx_raw": "DIAGNOSIS: Corticobasal syndrome (CBS) - likely due to underlying corticobasal degeneration (CBD) or Alzheimer's disease pathology, presenting with asymmetric parkinsonism, apraxia, cortical sensory loss, myoclonus, and markedly asymmetric superior parietal and posterior frontal atrophy on MRI.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 1,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 7,
+ "cost_usd": 0.006,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "cbd_apraxic_hand_PMC12371612.mp4",
+ "line": "parkinsonism",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 69.9
+}

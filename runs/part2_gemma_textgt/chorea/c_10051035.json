@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Did the movements start suddenly?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Do you feel weakness on the same side as the movements?",
+  "Do you have difficulty speaking?",
+  "Have you had a fever recently?",
+  "Are you taking any psychiatric medications?",
+  "Have you had a recent head injury?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "yes",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "MRI Brain",
+  "Blood glucose"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "blood glucose"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the lentiform nucleus",
+  "     MRI susceptibility-weighted sequences: normal",
+  "2. Blood glucose",
+  "     blood glucose: normal - non-ketotic hyperglycaemia was an exclusion criterion for this series"
+ ],
+ "dx_raw": "DIAGNOSIS: Ischemic stroke of the basal ganglia causing hemichorea-hemiballismus\n1. Autoimmune encephalitis\n2. Cerebral venous thrombosis\n3. Non-ketotic hyperglycemic hemichorea",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Blood glucose",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Ischemic stroke of the basal ganglia causing hemichorea-hemiballismus",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 169,
+   "completion_tokens": 1173,
+   "total_tokens": 1342,
+   "cost": 0.00041572,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00041572,
+    "upstream_inference_prompt_cost": 1.69e-05,
+    "upstream_inference_completions_cost": 0.00039882
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 995,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 511,
+   "completion_tokens": 1185,
+   "total_tokens": 1696,
+   "cost": 0.000454,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000454,
+    "upstream_inference_prompt_cost": 5.11e-05,
+    "upstream_inference_completions_cost": 0.0004029
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1186,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 672,
+   "completion_tokens": 2415,
+   "total_tokens": 3087,
+   "cost": 0.0008883,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008883,
+    "upstream_inference_prompt_cost": 6.72e-05,
+    "upstream_inference_completions_cost": 0.0008211
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2330,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 145.8
+}

@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Are you experiencing chest pain?",
+  "Do you feel your heart racing or skipping beats?",
+  "Have you fainted or lost consciousness?",
+  "Are you short of breath?",
+  "Do you feel dizzy?",
+  "Do you have a known heart condition?",
+  "Are you taking any medications for your heart?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Review of the portable cardiac monitor recording",
+  "12-lead ECG"
+ ],
+ "served": [],
+ "results": [
+  "1. Review of the portable cardiac monitor recording",
+  "     not performed / not available",
+  "2. 12-lead ECG",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperthyroidism due to Graves' disease\n1. Anxiety disorder\n2. Essential tremor\n3. Pheochromocytoma",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Review of the portable cardiac monitor recording\n2. 12-lead ECG",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Hyperthyroidism due to Graves' disease",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8890,
+   "completion_tokens": 902,
+   "total_tokens": 9792,
+   "cost": 0.00119568,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00119568,
+    "upstream_inference_prompt_cost": 0.000889,
+    "upstream_inference_completions_cost": 0.00030668
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 849,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9210,
+   "completion_tokens": 605,
+   "total_tokens": 9815,
+   "cost": 0.0011267,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011267,
+    "upstream_inference_prompt_cost": 0.000921,
+    "upstream_inference_completions_cost": 0.0002057
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 612,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9358,
+   "completion_tokens": 5515,
+   "total_tokens": 14873,
+   "cost": 0.0028109,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0028109,
+    "upstream_inference_prompt_cost": 0.0009358,
+    "upstream_inference_completions_cost": 0.0018751
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4951,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "moderate_postinfectious_millerfisher_PMC13224678.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 254.8
+}

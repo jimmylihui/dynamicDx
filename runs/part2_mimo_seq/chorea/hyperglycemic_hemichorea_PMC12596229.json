@@ -1,0 +1,157 @@
+{
+ "questions": [
+  "Do you experience involuntary, repetitive movements in your right lower leg/foot that you are unable to stop?",
+  "Did these movements start suddenly, or gradually over time?",
+  "Is the movement present continuously, or does it come and go?",
+  "To clarify - did the movements begin suddenly all at once, or did they develop gradually over weeks to months?",
+  "Have you taken any anti-nausea medications (like metoclopramide, prochlorperazine, or domperidone) in the past few months?",
+  "Have you ever taken any antipsychotic medications, even for a short period?",
+  "Did you experience any sudden severe headache, weakness, numbness, or difficulty speaking when this movement first appeared, even briefly?",
+  "Is the movement primarily at the ankle and foot, or does it involve the whole leg including the thigh?",
+  "Does the movement look more like a flinging or throwing motion of the entire leg, rather than a twisting or curling?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes"
+ },
+ "n_yes_answers": 4,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Do you experience involuntary, repetitive movements in your right lower leg/foot that you are unable to stop? -> ['yes']",
+  "R2 ASK Did these movements start suddenly, or gradually over time? -> ['yes']",
+  "R3 ASK Is the movement present continuously, or does it come and go? -> ['no']",
+  "R4 ASK To clarify - did the movements begin suddenly all at once, or did they develop gradually over weeks to months? -> ['yes']",
+  "R5 ASK Have you taken any anti-nausea medications (like metoclopramide, prochlorperazine, or domperidone) in the past few months? -> ['no']",
+  "R6 ASK Have you ever taken any antipsychotic medications, even for a short period? -> ['no']",
+  "R7 ASK Did you experience any sudden severe headache, weakness, numbness, or difficulty speaking when this movement first appeared, even briefly? -> ['no']",
+  "R8 ASK Is the movement primarily at the ankle and foot, or does it involve the whole leg including the thigh? -> ['no']",
+  "R9 ASK Does the movement look more like a flinging or throwing motion of the entire leg, rather than a twisting or curling? -> ['yes']",
+  "R10 DIAGNOSIS Hemiballismus secondary to acute lacunar infarct of the left subthalamic nucleus -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you experience involuntary, repetitive movements in your right lower leg/foot that you are unable to stop?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Did these movements start suddenly, or gradually over time?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Is the movement present continuously, or does it come and go?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "To clarify - did the movements begin suddenly all at once, or did they develop gradually over weeks to months?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you taken any anti-nausea medications (like metoclopramide, prochlorperazine, or domperidone) in the past few months?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Have you ever taken any antipsychotic medications, even for a short period?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Did you experience any sudden severe headache, weakness, numbness, or difficulty speaking when this movement first appeared, even briefly?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Is the movement primarily at the ankle and foot, or does it involve the whole leg including the thigh?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Does the movement look more like a flinging or throwing motion of the entire leg, rather than a twisting or curling?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Hemiballismus secondary to acute lacunar infarct of the left subthalamic nucleus"
+  }
+ ],
+ "dx": "Hemiballismus secondary to acute lacunar infarct of the left subthalamic nucleus",
+ "dx_raw": "DIAGNOSIS: Hemiballismus secondary to acute lacunar infarct of the left subthalamic nucleus\n\nThis presentation is classic: sudden-onset, continuous, large-amplitude flinging/throwing movements of the right leg. The flinging quality (rather than twisting or curling), unilateral involvement, and sudden onset are hallmarks of hemiballismus. The most common cause is a small vessel ischemic stroke (lacunar infarct) affecting the contralateral subthalamic nucleus, which fits this patient's presentation. Brain MRI with DWI would confirm an acute infarct in the left subthalamic region.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.003,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hyperglycemic_hemichorea_PMC12596229.mp4",
+ "line": "chorea",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 951.2
+}

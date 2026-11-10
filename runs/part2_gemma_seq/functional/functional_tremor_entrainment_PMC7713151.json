@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Has the patient experienced a rapid decline in cognitive function over the last few months?",
+  "Has the patient developed ataxia or balance problems?",
+  "Has the patient experienced visual disturbances?",
+  "Is there a family history of similar neurological symptoms?",
+  "Does the patient have a resting tremor?",
+  "Does the patient exhibit bradykinesia (slowness of movement)?",
+  "Does the patient have a shuffling gait or postural instability?",
+  "Is the patient taking any medications that block dopamine, such as antipsychotics or metoclopramide?",
+  "Does the patient have a \"masked\" facial expression (reduced facial expression)?",
+  "Did the symptoms start suddenly, as in a stroke?",
+  "Does the patient have any other focal neurological deficits, such as weakness or sensory loss on one side of the body?",
+  "Does the patient have difficulty finding words or understanding speech (aphasia)?",
+  "Does the patient have difficulty recognizing common objects by touch (astereognosis) or by sight (agnosia)?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Serum creatinine and urea",
+  "Liver function tests (ALT, AST, Bilirubin, Albumin)",
+  "Arterial blood gas (to check for hypoxia/hypercapnia)"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "full blood count, renal and liver profile",
+  "liver function tests"
+ ],
+ "results": [
+  "R1 ASK Has the patient experienced a rapid decline in cognitive function over the last few months?; Has the patient developed ataxia or balance problems?; Has the patient experienced visual disturbances?; Is there a family history of similar neurological symptoms? -> ['no', 'no', 'no', 'no']",
+  "R2 ORDER Serum creatinine and urea; Liver function tests (ALT, AST, Bilirubin, Albumin); Arterial blood gas (to check for hypoxia/hypercapnia) -> [['serum electrolytes, urea and creatinine', 'full blood count, renal and liver profile'], ['liver function tests', 'full blood count, renal and liver profile'], []]",
+  "R3 ASK Does the patient have a resting tremor?; Does the patient exhibit bradykinesia (slowness of movement)?; Does the patient have a shuffling gait or postural instability?; Is the patient taking any medications that block dopamine, such as antipsychotics or metoclopramide?; Does the patient have a \"masked\" facial expression (reduced facial expression)? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Did the symptoms start suddenly, as in a stroke?; Does the patient have any other focal neurological deficits, such as weakness or sensory loss on one side of the body?; Does the patient have difficulty finding words or understanding speech (aphasia)?; Does the patient have difficulty recognizing common objects by touch (astereognosis) or by sight (agnosia)? -> ['yes', 'no', 'no', 'no']",
+  "R5 DIAGNOSIS Ideomotor apraxia due to a stroke in the left parietal lobe -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Has the patient experienced a rapid decline in cognitive function over the last few months?",
+    "Has the patient developed ataxia or balance problems?",
+    "Has the patient experienced visual disturbances?",
+    "Is there a family history of similar neurological symptoms?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Serum creatinine and urea",
+    "Liver function tests (ALT, AST, Bilirubin, Albumin)",
+    "Arterial blood gas (to check for hypoxia/hypercapnia)"
+   ],
+   "result": [
+    [
+     "serum electrolytes, urea and creatinine",
+     "full blood count, renal and liver profile"
+    ],
+    [
+     "liver function tests",
+     "full blood count, renal and liver profile"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Does the patient have a resting tremor?",
+    "Does the patient exhibit bradykinesia (slowness of movement)?",
+    "Does the patient have a shuffling gait or postural instability?",
+    "Is the patient taking any medications that block dopamine, such as antipsychotics or metoclopramide?",
+    "Does the patient have a \"masked\" facial expression (reduced facial expression)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Did the symptoms start suddenly, as in a stroke?",
+    "Does the patient have any other focal neurological deficits, such as weakness or sensory loss on one side of the body?",
+    "Does the patient have difficulty finding words or understanding speech (aphasia)?",
+    "Does the patient have difficulty recognizing common objects by touch (astereognosis) or by sight (agnosia)?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Ideomotor apraxia due to a stroke in the left parietal lobe"
+  }
+ ],
+ "dx": "Ideomotor apraxia due to a stroke in the left parietal lobe",
+ "dx_raw": "DIAGNOSIS: Ideomotor apraxia due to a stroke in the left parietal lobe",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "cost_usd": 0.0068,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 369.7
+}

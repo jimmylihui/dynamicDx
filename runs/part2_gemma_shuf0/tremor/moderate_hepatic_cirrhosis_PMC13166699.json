@@ -1,0 +1,201 @@
+{
+ "questions": [
+  "Are your hand movements involuntary?",
+  "Do you have numbness or tingling in your hands?",
+  "Do you have weakness in your hands?",
+  "Did these symptoms start suddenly?",
+  "Do you have a history of stroke?",
+  "Do you have a history of diabetes?",
+  "Do you have a fever?",
+  "Do you have a headache?",
+  "Do you have difficulty speaking?",
+  "Do you have difficulty swallowing?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Neurological examination",
+  "Brain MRI",
+  "Thyroid function tests",
+  "Liver function tests",
+  "Serum ceruloplasmin"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "tremor at rest",
+  "postural tremor (arms outstretched)",
+  "kinetic / intention tremor (finger-nose)",
+  "tremor frequency estimate",
+  "asterixis (wrist extension)",
+  "limb power and wasting",
+  "reflexes and plantar responses",
+  "sensory examination (vibration, pinprick)",
+  "foot deformity (pes cavus)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "gait examination",
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "brain MRI",
+  "TSH / free T4",
+  "liver function tests",
+  "liver function and albumin/globulin",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper"
+ ],
+ "results": [
+  "1. Neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: mild cognitive impairment",
+  "     muscle tone examination: increased tone with rigidity",
+  "     limb strength (MRC) examination: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): mild limb and truncal ataxia",
+  "     posture and pull test: impaired postural stability with abnormal pull test",
+  "     fundoscopy: normal",
+  "     tremor at rest: absent",
+  "     postural tremor (arms outstretched): present",
+  "     kinetic / intention tremor (finger-nose): absent",
+  "     tremor frequency estimate: not measured",
+  "     asterixis (wrist extension): absent",
+  "     limb power and wasting: normal bulk and power",
+  "     reflexes and plantar responses: normal",
+  "     sensory examination (vibration, pinprick): normal",
+  "     foot deformity (pes cavus): none",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): absent",
+  "     gait examination: normal",
+  "     cognitive screen (MMSE / MoCA / FAB): normal",
+  "2. Brain MRI",
+  "     brain MRI: bilateral T1 HYPERINTENSITY in the basal ganglia - manganese deposition",
+  "3. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "4. Liver function tests",
+  "     liver function tests: mildly raised transaminases with reduced albumin",
+  "     liver function and albumin/globulin: albumin 35.1 g/L (ref 35-52), globulin 30.8 g/L RAISED (ref 15-30), A/G ratio 1.14 LOW (ref 1.2-2.4)",
+  "5. Serum ceruloplasmin",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Acquired hepatocerebral degeneration due to chronic liver disease\n\nWilson's disease\nManganism (occupational exposure)\nParkinson's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Neurological examination\n2. Brain MRI\n3. Thyroid function tests\n4. Liver function tests\n5. ANA\n6. Serum ceruloplasmin",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Acquired hepatocerebral degeneration due to chronic liver disease",
+ "decisive_served": [
+  "brain MRI",
+  "liver function and albumin/globulin"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2836,
+   "total_tokens": 11534,
+   "cost": 0.00183404,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00183404,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00096424
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2775,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9086,
+   "completion_tokens": 721,
+   "total_tokens": 9807,
+   "cost": 0.00115374,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00115374,
+    "upstream_inference_prompt_cost": 0.0009086,
+    "upstream_inference_completions_cost": 0.00024514
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 667,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9617,
+   "completion_tokens": 1626,
+   "total_tokens": 11243,
+   "cost": 0.00151454,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00151454,
+    "upstream_inference_prompt_cost": 0.0009617,
+    "upstream_inference_completions_cost": 0.00055284
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1602,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.4,
+ "video": "moderate_hepatic_cirrhosis_PMC13166699.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 229.9
+}

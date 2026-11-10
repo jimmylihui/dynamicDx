@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Have you noticed a tremor or shaking in your right hand?",
+  "Do you feel stiffness in your right arm?",
+  "Have you noticed that your movements are slower than before?",
+  "Do you have trouble with your sense of smell?",
+  "Do you act out your dreams while sleeping?",
+  "Do you have trouble with your balance when standing or walking?",
+  "Has your handwriting become noticeably smaller?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "co-activation sign on passive movement of the affected limb",
+  "'whack-a-mole' sign (restrain the affected limb and watch the others)",
+  "variability of amplitude, frequency and axis over the examination",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "results": [
+  "1. distractibility testing (complex motor task with the unaffected side): POSITIVE - the tremor decreases or stops when the left arm performs a task such as drinking from a cup",
+  "2. entrainment testing (tap to an externally paced rhythm): POSITIVE - amplitude falls and the rhythm becomes irregular under repetitive voluntary movement of the other side",
+  "3. co-activation sign on passive movement of the affected limb: POSITIVE - movement of the contralateral arm co-activates the hand with an increase in tremor intensity",
+  "4. 'whack-a-mole' sign (restrain the affected limb and watch the others): POSITIVE - passive fixation of the hand increases movement in the arm and shoulder",
+  "5. variability of amplitude, frequency and axis over the examination: irregular, variable frequency around 4-6 Hz, at times combined with myoclonic jerks",
+  "6. video-EEG monitoring with limb surface electrodes: 24 h recording with right-arm surface electrodes: irregular tremor, relatively high frequency with irregularities, no epileptiform correlate"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional (psychogenic) tremor of the right upper limb, as part of a functional neurological symptom disorder (conversion disorder).\n\nAlternatives:\n1. Dystonic tremor (tremor associated with subtle underlying dystonia)\n2. Essential tremor (typically bilateral, but a unilateral or markedly asymmetric presentation can occur)\n3. Cortical myoclonus (despite the negative EEG, some forms may not show clear surface correlate and can mimic tremor)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional (psychogenic) tremor of the right upper limb, as part of a functional neurological symptom disorder (conversion disorder).",
+ "decisive_served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "co-activation sign on passive movement of the affected limb",
+  "'whack-a-mole' sign (restrain the affected limb and watch the others)",
+  "variability of amplitude, frequency and axis over the examination",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 3113,
+   "total_tokens": 10175,
+   "cost": 0.00581652,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00581652,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0037356
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3029,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7572,
+   "completion_tokens": 1041,
+   "total_tokens": 8613,
+   "cost": 0.00182952,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00182952,
+    "upstream_inference_prompt_cost": 0.00058032,
+    "upstream_inference_completions_cost": 0.0012492
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 948,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 55.7
+}

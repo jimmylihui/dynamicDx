@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Are you currently experiencing pain in your right leg?",
+  "Did you sustain an injury to this leg recently?",
+  "Do you have a history of diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's gait and posture while walking with the crutch",
+  "Perform a detailed neurological examination of the lower limbs including reflexes, tone, power, and sensation",
+  "Obtain an MRI of the lumbar spine"
+ ],
+ "served": [
+  "gait observation including turning and doorways",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "MRI whole spine"
+ ],
+ "results": [
+  "1. Observe the patient's gait and posture while walking with the crutch",
+  "     gait observation including turning and doorways: not recorded",
+  "2. Perform a detailed neurological examination of the lower limbs including reflexes, tone, power, and sensation",
+  "     muscle tone examination: symmetric neck and limb rigidity",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: brisk reflexes; normal plantar responses",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "3. Obtain an MRI of the lumbar spine",
+  "     MRI whole spine: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic Parkinson's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient's gait and posture while walking with the crutch\n2. Perform a detailed neurological examination of the lower limbs including reflexes, tone, power, and sensation\n3. Obtain an MRI of the lumbar spine",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic Parkinson's disease",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 37,
+   "total_tokens": 4860,
+   "cost": 0.00074084,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074084,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 1.739e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5062,
+   "completion_tokens": 51,
+   "total_tokens": 5113,
+   "cost": 0.00018295,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00018295,
+    "upstream_inference_prompt_cost": 0.00015898,
+    "upstream_inference_completions_cost": 2.397e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5342,
+   "completion_tokens": 12,
+   "total_tokens": 5354,
+   "cost": 0.000172316,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4736,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000172316,
+    "upstream_inference_prompt_cost": 0.000166676,
+    "upstream_inference_completions_cost": 5.64e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.2,
+ "video": "hornet_sting_parkinsonism_PMC11021691.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 35.0
+}

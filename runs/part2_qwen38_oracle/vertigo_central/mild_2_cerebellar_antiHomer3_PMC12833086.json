@@ -1,0 +1,116 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does the double vision disappear when you cover one eye?",
+  "Did this problem start suddenly?",
+  "Do you have a severe headache right now?",
+  "Is your eyelid drooping on either side?",
+  "Do you have pain when moving your eyes?",
+  "Have you had any recent head or neck trauma?",
+  "Do you have numbness or weakness in your arms or legs?",
+  "Do you have difficulty speaking or swallowing?",
+  "Do you have a history of diabetes or high blood pressure?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CSF metagenomic sequencing",
+  "immunotherapy trial"
+ ],
+ "results": [
+  "1. paraneoplastic and autoimmune antibody panel (serum): anti-Homer3 antibodies POSITIVE",
+  "2. CSF metagenomic sequencing: eight sequences of HUMAN HERPESVIRUS 7",
+  "3. immunotherapy trial: dizziness and gait improved with immunotherapy; relapse prompted rituximab, with partial improvement"
+ ],
+ "dx_raw": "DIAGNOSIS: Anti-Homer3 antibody-positive autoimmune cerebellar ataxia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Anti-Homer3 antibody-positive autoimmune cerebellar ataxia",
+ "decisive_served": [
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CSF metagenomic sequencing",
+  "immunotherapy trial"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 125,
+   "total_tokens": 4948,
+   "cost": 0.0007822,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007822,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 5.875e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5290,
+   "completion_tokens": 20,
+   "total_tokens": 5310,
+   "cost": 0.00020258,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020258,
+    "upstream_inference_prompt_cost": 0.00019318,
+    "upstream_inference_completions_cost": 9.4e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.4,
+ "video": "mild_2_cerebellar_antiHomer3_PMC12833086.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.6
+}

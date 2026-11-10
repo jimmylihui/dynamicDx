@@ -1,0 +1,180 @@
+{
+ "questions": [
+  "Are you currently having convulsions right now?",
+  "Have the convulsions stopped?",
+  "Are you feeling normal now?",
+  "Have you ever had a seizure before?",
+  "Did you lose consciousness during the convulsive activity?",
+  "Do you have a fever?",
+  "Have you had a recent head injury?",
+  "Are you on any seizure medication?",
+  "Have you taken any new medications or drugs recently?",
+  "Do you have any known brain conditions?",
+  "Is there a family history of seizures?",
+  "Have you had any recent headaches?",
+  "Do you have diabetes?",
+  "Have you been drinking alcohol recently?",
+  "Have you had any recent infections?",
+  "Have you had any unusual sensations before the convulsions?",
+  "Have you had any previous brain surgery?",
+  "Is there any chance you're pregnant?",
+  "Have you had any loss of bowel or bladder control?",
+  "Have you had any changes in vision or speech?",
+  "Have you had any recent travel?",
+  "Do you have any allergies?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "yes",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Electroencephalogram (EEG)",
+  "Magnetic resonance imaging (MRI) of the brain",
+  "Complete blood count (CBC)",
+  "Comprehensive metabolic panel (electrolytes, glucose, calcium, magnesium, renal function)",
+  "Urine toxicology screen"
+ ],
+ "served": [
+  "interictal EEG",
+  "brain MRI",
+  "serum electrolytes, urea and creatinine",
+  "glucose, calcium, magnesium, sodium"
+ ],
+ "results": [
+  "1. Electroencephalogram (EEG)",
+  "     interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "2. Magnetic resonance imaging (MRI) of the brain",
+  "     brain MRI: no focal epileptogenic lesion",
+  "3. Complete blood count (CBC)",
+  "     not performed / not available",
+  "4. Comprehensive metabolic panel (electrolytes, glucose, calcium, magnesium, renal function)",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "5. Urine toxicology screen",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic generalized epilepsy, likely due to genetic predisposition\n\nAlternative 1: Symptomatic generalized epilepsy (with no structural lesion on MRI)\nAlternative 2: Epilepsy with myoclonic absences\nAlternative 3: Nonepileptic events (though EEG abnormalities argue against this)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Electroencephalogram (EEG)\n2. Magnetic resonance imaging (MRI) of the brain\n3. Complete blood count (CBC)\n4. Comprehensive metabolic panel (electrolytes, glucose, calcium, magnesium, renal function)\n5. Urine toxicology screen",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic generalized epilepsy, likely due to genetic predisposition",
+ "decisive_served": [
+  "interictal EEG"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 175,
+   "completion_tokens": 2701,
+   "total_tokens": 2876,
+   "cost": 0.00078078,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00078078,
+    "upstream_inference_prompt_cost": 2.45e-05,
+    "upstream_inference_completions_cost": 0.00075628
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2466,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 898,
+   "completion_tokens": 465,
+   "total_tokens": 1363,
+   "cost": 0.00025592,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00025592,
+    "upstream_inference_prompt_cost": 0.00012572,
+    "upstream_inference_completions_cost": 0.0001302
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 405,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1200,
+   "completion_tokens": 566,
+   "total_tokens": 1766,
+   "cost": 0.0002123296,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 832,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002123296,
+    "upstream_inference_prompt_cost": 5.38496e-05,
+    "upstream_inference_completions_cost": 0.00015848
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 497,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 74.5
+}

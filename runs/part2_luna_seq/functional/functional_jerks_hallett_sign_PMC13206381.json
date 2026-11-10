@@ -1,0 +1,159 @@
+{
+ "questions": [
+  "Do you have weakness in either arm or leg?",
+  "Do you have numbness or altered sensation on one side of your body?",
+  "Have you had episodes of shaking or jerking that you cannot control?",
+  "Do these episodes occur only when you are awake?",
+  "Have you ever lost consciousness during one of these episodes?",
+  "Do your symptoms improve when your attention is distracted?",
+  "Do your shaking episodes tend to start or worsen during emotional stress or interpersonal conflict?",
+  "Did the episodes begin after a frightening, traumatic, or highly stressful life event?",
+  "Do you feel distressed or anxious immediately before an episode?",
+  "Do the jerks continue unchanged during objectively confirmed sleep?",
+  "Can you voluntarily suppress a jerk for a short time?",
+  "Do you experience a premonitory urge or rising inner tension before a jerk that is relieved afterward?",
+  "Did the jerks begin after starting or increasing a medication, including an antidepressant, antipsychotic, stimulant, anti-nausea drug, or antiseizure drug?",
+  "Do the jerks occur in multiple body regions rather than remaining confined to one limb?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "yes"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Prolonged video-EEG monitoring with capture of a typical shaking episode.",
+  "Bedside assessment of the shaking for variability, distractibility, and entrainment during contralateral rhythmic finger tapping."
+ ],
+ "served": [
+  "video-EEG monitoring with limb surface electrodes",
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "variability of amplitude, frequency and axis over the examination"
+ ],
+ "results": [
+  "R1 ASK Do you have weakness in either arm or leg?; Do you have numbness or altered sensation on one side of your body?; Have you had episodes of shaking or jerking that you cannot control?; Do these episodes occur only when you are awake?; Have you ever lost consciousness during one of these episodes?; Do your symptoms improve when your attention is distracted? -> ['no', 'no', 'yes', 'no', 'no', 'yes']",
+  "R2 ORDER Prolonged video-EEG monitoring with capture of a typical shaking episode. -> [['video-EEG monitoring with limb surface electrodes']]",
+  "R3 ASK Do your shaking episodes tend to start or worsen during emotional stress or interpersonal conflict?; Did the episodes begin after a frightening, traumatic, or highly stressful life event?; Do you feel distressed or anxious immediately before an episode? -> ['no', 'no', 'no']",
+  "R4 ORDER Bedside assessment of the shaking for variability, distractibility, and entrainment during contralateral rhythmic finger tapping. -> [['distractibility testing (complex motor task with the unaffected side)', 'entrainment testing (tap to an externally paced rhythm)', 'variability of amplitude, frequency and axis over the examination']]",
+  "R5 ASK Do the jerks continue unchanged during objectively confirmed sleep?; Can you voluntarily suppress a jerk for a short time?; Do you experience a premonitory urge or rising inner tension before a jerk that is relieved afterward?; Did the jerks begin after starting or increasing a medication, including an antidepressant, antipsychotic, stimulant, anti-nausea drug, or antiseizure drug?; Do the jerks occur in multiple body regions rather than remaining confined to one limb? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R6 DIAGNOSIS Functional (psychogenic) myoclonus—a functional movement disorder with variable, nonepileptic jerks, not caused by epilepsy, medication, or an identified structural neurologic lesion. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have weakness in either arm or leg?",
+    "Do you have numbness or altered sensation on one side of your body?",
+    "Have you had episodes of shaking or jerking that you cannot control?",
+    "Do these episodes occur only when you are awake?",
+    "Have you ever lost consciousness during one of these episodes?",
+    "Do your symptoms improve when your attention is distracted?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Prolonged video-EEG monitoring with capture of a typical shaking episode."
+   ],
+   "result": [
+    [
+     "video-EEG monitoring with limb surface electrodes"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do your shaking episodes tend to start or worsen during emotional stress or interpersonal conflict?",
+    "Did the episodes begin after a frightening, traumatic, or highly stressful life event?",
+    "Do you feel distressed or anxious immediately before an episode?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Bedside assessment of the shaking for variability, distractibility, and entrainment during contralateral rhythmic finger tapping."
+   ],
+   "result": [
+    [
+     "distractibility testing (complex motor task with the unaffected side)",
+     "entrainment testing (tap to an externally paced rhythm)",
+     "variability of amplitude, frequency and axis over the examination"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do the jerks continue unchanged during objectively confirmed sleep?",
+    "Can you voluntarily suppress a jerk for a short time?",
+    "Do you experience a premonitory urge or rising inner tension before a jerk that is relieved afterward?",
+    "Did the jerks begin after starting or increasing a medication, including an antidepressant, antipsychotic, stimulant, anti-nausea drug, or antiseizure drug?",
+    "Do the jerks occur in multiple body regions rather than remaining confined to one limb?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Functional (psychogenic) myoclonus—a functional movement disorder with variable, nonepileptic jerks, not caused by epilepsy, medication, or an identified structural neurologic lesion."
+  }
+ ],
+ "dx": "Functional (psychogenic) myoclonus—a functional movement disorder with variable, nonepileptic jerks, not caused by epilepsy, medication, or an identified structural neurologic lesion.",
+ "dx_raw": "DIAGNOSIS: Functional (psychogenic) myoclonus—a functional movement disorder with variable, nonepileptic jerks, not caused by epilepsy, medication, or an identified structural neurologic lesion.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0046,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 41.4
+}

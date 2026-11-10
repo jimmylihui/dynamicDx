@@ -1,0 +1,315 @@
+{
+ "questions": [
+  "Have these movements been present for more than a year?",
+  "Does any other family member have similar movements?",
+  "Has she experienced memory loss or personality changes?",
+  "Is she taking antipsychotic medications?",
+  "Does she have a history of liver disease?",
+  "Have you had a fever or sore throat recently?",
+  "Have you noticed any unintentional weight loss?",
+  "Do you have any joint pain or rashes?",
+  "Have you noticed any changes in your heart rate or feeling unusually hot?",
+  "Are you currently pregnant?",
+  "Have you taken any other medications, supplements, or traditional medicines recently?",
+  "Have you had any recent infections, such as a skin infection or a cough?",
+  "Do you have any history of seizures?",
+  "Have you ever had rheumatic fever in the past?",
+  "Have you ever been told you have a heart valve problem?",
+  "Have you noticed any muscle weakness or numbness?",
+  "Have you had any recent changes in your diet or any new supplements?",
+  "Do you have any difficulty swallowing or speaking?",
+  "Have you noticed any changes in your mood, such as depression or irritability?",
+  "Do you have any history of breast or lung problems?",
+  "Can you walk on your own?",
+  "Why are you using a wheelchair?",
+  "Have you had any recent head injuries?",
+  "Have you had any recent changes in your vision?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Complete Blood Count (CBC)",
+  "Erythrocyte Sedimentation Rate (ESR) and C-Reactive Protein (CRP)",
+  "Thyroid Stimulating Hormone (TSH) and Free T4",
+  "Antinuclear Antibody (ANA)",
+  "Antistreptolysin O (ASO) titer",
+  "Blood Glucose level",
+  "MRI Brain",
+  "Antistreptolysin O (ASO) titer",
+  "Anti-DNase B",
+  "Ceruloplasmin level",
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "Lumbar puncture for CSF analysis (cell count, protein, glucose, and antibodies)",
+  "Echocardiogram",
+  "CT Chest, Abdomen, and Pelvis",
+  "Genetic testing for Huntington's disease (CAG repeat expansion)"
+ ],
+ "served": [
+  "full blood count and biochemistry",
+  "ESR / CRP",
+  "TSH / free T4",
+  "antinuclear antibodies and anti-dsDNA",
+  "blood glucose and HbA1c",
+  "brain MRI",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "lumbar puncture / CSF",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF autoimmune encephalitis panel",
+  "CT chest, abdomen and pelvis"
+ ],
+ "results": [
+  "R1 ASK Have these movements been present for more than a year?; Does any other family member have similar movements?; Has she experienced memory loss or personality changes?; Is she taking antipsychotic medications?; Does she have a history of liver disease? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Have you had a fever or sore throat recently?; Have you noticed any unintentional weight loss?; Do you have any joint pain or rashes?; Have you noticed any changes in your heart rate or feeling unusually hot?; Are you currently pregnant? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Complete Blood Count (CBC); Erythrocyte Sedimentation Rate (ESR) and C-Reactive Protein (CRP); Thyroid Stimulating Hormone (TSH) and Free T4; Antinuclear Antibody (ANA); Antistreptolysin O (ASO) titer; Blood Glucose level; MRI Brain -> [['full blood count and biochemistry'], ['ESR / CRP'], ['TSH / free T4'], ['antinuclear antibodies and anti-dsDNA'], [], ['blood glucose and HbA1c'], ['brain MRI']]",
+  "R4 ASK Have you taken any other medications, supplements, or traditional medicines recently?; Have you had any recent infections, such as a skin infection or a cough?; Do you have any history of seizures? -> ['no', 'no', 'no']",
+  "R5 ORDER Antistreptolysin O (ASO) titer; Anti-DNase B; Ceruloplasmin level; Slit-lamp examination for Kayser-Fleischer rings; Lumbar puncture for CSF analysis (cell count, protein, glucose, and antibodies) -> [[], [], ['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['slit-lamp examination for Kayser-Fleischer rings'], ['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF autoimmune encephalitis panel']]",
+  "R6 ASK Have you ever had rheumatic fever in the past?; Have you ever been told you have a heart valve problem?; Have you noticed any muscle weakness or numbness?; Have you had any recent changes in your diet or any new supplements? -> ['no', 'no', 'no', 'no']",
+  "R7 ORDER Echocardiogram -> [[]]",
+  "R8 ASK Do you have any difficulty swallowing or speaking?; Have you noticed any changes in your mood, such as depression or irritability?; Do you have any history of breast or lung problems? -> ['no', 'no', 'no']",
+  "R9 ASK Can you walk on your own?; Why are you using a wheelchair?; Have you had any recent head injuries?; Have you had any recent changes in your vision? -> ['no', 'no', 'no', 'no']",
+  "R10 ORDER CT Chest, Abdomen, and Pelvis; Genetic testing for Huntington's disease (CAG repeat expansion) -> [['CT chest, abdomen and pelvis'], []]",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Sydenham's chorea caused by Group A Streptococcus infection -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have these movements been present for more than a year?",
+    "Does any other family member have similar movements?",
+    "Has she experienced memory loss or personality changes?",
+    "Is she taking antipsychotic medications?",
+    "Does she have a history of liver disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you had a fever or sore throat recently?",
+    "Have you noticed any unintentional weight loss?",
+    "Do you have any joint pain or rashes?",
+    "Have you noticed any changes in your heart rate or feeling unusually hot?",
+    "Are you currently pregnant?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Complete Blood Count (CBC)",
+    "Erythrocyte Sedimentation Rate (ESR) and C-Reactive Protein (CRP)",
+    "Thyroid Stimulating Hormone (TSH) and Free T4",
+    "Antinuclear Antibody (ANA)",
+    "Antistreptolysin O (ASO) titer",
+    "Blood Glucose level",
+    "MRI Brain"
+   ],
+   "result": [
+    [
+     "full blood count and biochemistry"
+    ],
+    [
+     "ESR / CRP"
+    ],
+    [
+     "TSH / free T4"
+    ],
+    [
+     "antinuclear antibodies and anti-dsDNA"
+    ],
+    [],
+    [
+     "blood glucose and HbA1c"
+    ],
+    [
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you taken any other medications, supplements, or traditional medicines recently?",
+    "Have you had any recent infections, such as a skin infection or a cough?",
+    "Do you have any history of seizures?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Antistreptolysin O (ASO) titer",
+    "Anti-DNase B",
+    "Ceruloplasmin level",
+    "Slit-lamp examination for Kayser-Fleischer rings",
+    "Lumbar puncture for CSF analysis (cell count, protein, glucose, and antibodies)"
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "serum copper and caeruloplasmin",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "slit-lamp examination for Kayser-Fleischer rings"
+    ],
+    [
+     "lumbar puncture / CSF",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF autoimmune encephalitis panel"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Have you ever had rheumatic fever in the past?",
+    "Have you ever been told you have a heart valve problem?",
+    "Have you noticed any muscle weakness or numbness?",
+    "Have you had any recent changes in your diet or any new supplements?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Echocardiogram"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have any difficulty swallowing or speaking?",
+    "Have you noticed any changes in your mood, such as depression or irritability?",
+    "Do you have any history of breast or lung problems?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Can you walk on your own?",
+    "Why are you using a wheelchair?",
+    "Have you had any recent head injuries?",
+    "Have you had any recent changes in your vision?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "CT Chest, Abdomen, and Pelvis",
+    "Genetic testing for Huntington's disease (CAG repeat expansion)"
+   ],
+   "result": [
+    [
+     "CT chest, abdomen and pelvis"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Sydenham's chorea caused by Group A Streptococcus infection"
+  }
+ ],
+ "dx": "Sydenham's chorea caused by Group A Streptococcus infection",
+ "dx_raw": "DIAGNOSIS: Sydenham's chorea caused by Group A Streptococcus infection",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0167,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_secondary_structural_PMC12962376.mp4",
+ "line": "dystonia",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 1251.2
+}

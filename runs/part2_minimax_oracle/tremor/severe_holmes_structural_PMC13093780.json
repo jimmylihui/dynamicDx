@@ -1,0 +1,110 @@
+{
+ "questions": [
+  "Is the primary reason for your visit itching in your hands?",
+  "Have you noticed any visible rash, redness, or blisters on your hands?",
+  "Have you recently started using any new soaps, detergents, or hand creams?",
+  "Do you have a history of eczema, asthma, or allergies?",
+  "Is the itching worse at night?",
+  "Are you experiencing any tingling, burning, or numbness in your hands?",
+  "Have you been under increased stress recently?",
+  "Are you currently taking any new medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "tremor frequency estimate",
+  "brain MRI",
+  "tuberculosis treatment history"
+ ],
+ "results": [
+  "1. tremor frequency estimate: slow, under about 4.5 Hz, with a wing-beating quality",
+  "2. brain MRI: thalamic lesion (tuberculoma) that DECREASED in size after anti-tuberculous treatment, with no gliosis",
+  "3. tuberculosis treatment history: CNS tuberculoma treated with anti-tuberculous therapy; the tremor began after treatment was completed"
+ ],
+ "dx_raw": "DIAGNOSIS: Holmes (rubral) tremor secondary to a thalamic tuberculoma\n\n1. Post-tuberculous parkinsonism (tuberculous basal ganglia involvement)\n2. Secondary midbrain/rubral tremor from another structural lesion\n3. Symptomatic dystonic tremor of the thalamic region",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Holmes (rubral) tremor secondary to a thalamic tuberculoma",
+ "decisive_served": [
+  "tremor frequency estimate",
+  "brain MRI",
+  "tuberculosis treatment history"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 2204,
+   "total_tokens": 22642,
+   "cost": 0.00873852,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00873852,
+    "upstream_inference_prompt_cost": 0.00609372,
+    "upstream_inference_completions_cost": 0.0026448
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2096,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 20873,
+   "completion_tokens": 701,
+   "total_tokens": 21574,
+   "cost": 0.00220158,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20423,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00220158,
+    "upstream_inference_prompt_cost": 0.00136038,
+    "upstream_inference_completions_cost": 0.0008412
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 637,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 42.4
+}

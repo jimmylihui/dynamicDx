@@ -1,0 +1,163 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain in your legs or feet?",
+  "Do you feel unsteady or like you might lose your balance while walking?",
+  "Have you had a stroke or brain injury in the past?",
+  "Do you have a history of multiple sclerosis?",
+  "Do you have Parkinson's disease?",
+  "Do you have diabetes?",
+  "Do you have arthritis in your hips, knees, or ankles?",
+  "Have you had surgery on your spine or legs recently?",
+  "Do you experience numbness or tingling in your legs?",
+  "Is this difficulty walking new or has it been getting worse over time?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Romberg test",
+  "Tandem gait assessment",
+  "Lower extremity proprioception testing (joint position sense)",
+  "Vitamin B12 level with methylmalonic acid and homocysteine",
+  "Serum copper level",
+  "MRI of the thoracic and lumbar spine"
+ ],
+ "served": [
+  "Romberg test",
+  "gait examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "vitamin B12 with methylmalonic acid",
+  "copper / caeruloplasmin",
+  "24-hour urinary copper",
+  "MRI cervical and thoracic spine"
+ ],
+ "results": [
+  "1. Romberg test",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "2. Tandem gait assessment",
+  "     gait examination: wide-based, unsteady gait",
+  "3. Lower extremity proprioception testing (joint position sense)",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "4. Vitamin B12 level with methylmalonic acid and homocysteine",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "5. Serum copper level",
+  "     copper / caeruloplasmin: normal - excludes Wilson disease",
+  "     24-hour urinary copper: normal",
+  "6. MRI of the thoracic and lumbar spine",
+  "     MRI cervical and thoracic spine: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Cerebellar ataxia (likely idiopathic late-onset cerebellar ataxia or spinocerebellar ataxia)\nCerebellar degeneration secondary to paraneoplastic syndrome\nNormal pressure hydrocephalus",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Romberg test\n2. Tandem gait assessment\n3. Lower extremity proprioception testing (joint position sense)\n4. Vitamin B12 level with methylmalonic acid and homocysteine\n5. Serum copper level\n6. MRI of the thoracic and lumbar spine",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Cerebellar ataxia (likely idiopathic late-onset cerebellar ataxia or spinocerebellar ataxia)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 600,
+   "completion_tokens": 141,
+   "total_tokens": 741,
+   "cost": 0.00015627,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00015627,
+    "upstream_inference_prompt_cost": 9e-05,
+    "upstream_inference_completions_cost": 6.627e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1075,
+   "completion_tokens": 64,
+   "total_tokens": 1139,
+   "cost": 0.000139874,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000139874,
+    "upstream_inference_prompt_cost": 0.000109794,
+    "upstream_inference_completions_cost": 3.008e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1397,
+   "completion_tokens": 56,
+   "total_tokens": 1453,
+   "cost": 0.000115806,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 896,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000115806,
+    "upstream_inference_prompt_cost": 8.9486e-05,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "mild_sca_genetic_PMC12678565.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 10.5
+}

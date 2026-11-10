@@ -1,0 +1,126 @@
+{
+ "questions": [
+  "Are you currently experiencing a headache?",
+  "Do you have any history of head trauma or recent injury to the head?",
+  "Is there any pain, tenderness, or swelling on your scalp where I am touching?",
+  "Have you noticed any lumps, bumps, or changes in the texture of your hair or scalp recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Palpate the scalp for nodules, cysts, or areas of induration",
+  "Inspect the scalp under good lighting and magnification for signs of dermatitis, psoriasis, tinea capitis, or folliculitis"
+ ],
+ "served": [],
+ "results": [
+  "1. Palpate the scalp for nodules, cysts, or areas of induration",
+  "     not performed / not available",
+  "2. Inspect the scalp under good lighting and magnification for signs of dermatitis, psoriasis, tinea capitis, or folliculitis",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Normal scalp examination (no pathology identified)\nAlternative 1: Tinea capitis\nAlternative 2: Seborrheic dermatitis\nAlternative 3: Folliculitis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Palpate the scalp for nodules, cysts, or areas of induration\n2. Inspect the scalp under good lighting and magnification for signs of dermatitis, psoriasis, tinea capitis, or folliculitis",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Normal scalp examination (no pathology identified)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 73,
+   "total_tokens": 4896,
+   "cost": 0.00075776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075776,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 3.431e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5138,
+   "completion_tokens": 51,
+   "total_tokens": 5189,
+   "cost": 0.00019435,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00019435,
+    "upstream_inference_prompt_cost": 0.00017038,
+    "upstream_inference_completions_cost": 2.397e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5355,
+   "completion_tokens": 45,
+   "total_tokens": 5400,
+   "cost": 0.000155472,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000155472,
+    "upstream_inference_prompt_cost": 0.000134322,
+    "upstream_inference_completions_cost": 2.115e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 29.9
+}

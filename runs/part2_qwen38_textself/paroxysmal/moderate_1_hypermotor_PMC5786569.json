@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Did the episode begin with a sudden, severe headache?",
+  "Was there loss of consciousness during the event?",
+  "Did you experience any weakness or numbness on one side of your body afterward?",
+  "Do you have a history of high blood pressure?",
+  "Are you currently taking any anticoagulant medications (blood thinners)?",
+  "Did you experience nausea or vomiting during the episode?",
+  "Have you had similar episodes in the past?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Electroencephalogram (EEG)",
+  "MRI of the brain with epilepsy protocol"
+ ],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Electroencephalogram (EEG)",
+  "     interictal EEG: no epileptiform discharges",
+  "     video-EEG monitoring of a typical event: the diagnosis was made on SEMIOLOGY from clinically documented video-EEG; there was NO interpretable ictal EEG correlate because of movement artefact",
+  "2. MRI of the brain with epilepsy protocol",
+  "     brain MRI: no epileptogenic lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Paroxysmal kinesigenic dyskinesia (PKD)\nAlternatives:\n1. Psychogenic non-epileptic seizures (PNES)\n2. Focal aware seizure with motor manifestation (frontal lobe epilepsy)\n3. Paroxysmal exercise-induced dyskinesia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Electroencephalogram (EEG)\n2. MRI of the brain with epilepsy protocol",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Paroxysmal kinesigenic dyskinesia (PKD)",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 191,
+   "completion_tokens": 99,
+   "total_tokens": 290,
+   "cost": 7.518e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.518e-05,
+    "upstream_inference_prompt_cost": 2.865e-05,
+    "upstream_inference_completions_cost": 4.653e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 572,
+   "completion_tokens": 21,
+   "total_tokens": 593,
+   "cost": 9.567e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.567e-05,
+    "upstream_inference_prompt_cost": 8.58e-05,
+    "upstream_inference_completions_cost": 9.87e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 783,
+   "completion_tokens": 68,
+   "total_tokens": 851,
+   "cost": 8.0802e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.0802e-05,
+    "upstream_inference_prompt_cost": 4.8842e-05,
+    "upstream_inference_completions_cost": 3.196e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.1
+}

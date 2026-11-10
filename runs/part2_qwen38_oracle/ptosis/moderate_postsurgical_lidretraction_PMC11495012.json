@@ -1,0 +1,106 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does the double vision disappear when you cover one eye?",
+  "Is your right eyelid drooping more than your left?",
+  "Are you experiencing any pain in or around your eyes?",
+  "Have you noticed a change in your ability to move your eyes outward?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "lid position and measurement (MRD1 both sides)",
+  "TSH / free T4 / TRAb",
+  "surgical history"
+ ],
+ "results": [
+  "1. lid position and measurement (MRD1 both sides): MRD1 raised on the LEFT (retraction); right lid height normal - the right eye is NOT ptotic",
+  "2. TSH / free T4 / TRAb: normal, TRAb negative - excludes thyroid eye disease",
+  "3. surgical history: closed-approach structural rhinoplasty; retraction noted on postoperative day 6"
+ ],
+ "dx_raw": "DIAGNOSIS: Iatrogenic left upper eyelid retraction secondary to closed-approach structural rhinoplasty",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Iatrogenic left upper eyelid retraction secondary to closed-approach structural rhinoplasty",
+ "decisive_served": [
+  "lid position and measurement (MRD1 both sides)",
+  "TSH / free T4 / TRAb",
+  "surgical history"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 69,
+   "total_tokens": 4892,
+   "cost": 0.00075588,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075588,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 3.243e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5170,
+   "completion_tokens": 28,
+   "total_tokens": 5198,
+   "cost": 0.00018834,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00018834,
+    "upstream_inference_prompt_cost": 0.00017518,
+    "upstream_inference_completions_cost": 1.316e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.3
+}

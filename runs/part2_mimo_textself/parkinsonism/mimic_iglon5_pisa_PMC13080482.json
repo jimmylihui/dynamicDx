@@ -1,0 +1,164 @@
+{
+ "questions": [
+  "Is this a new problem that has developed recently?"
+ ],
+ "answers": {
+  "1": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI brain (with contrast, focusing on posterior fossa)",
+  "Full blood count",
+  "Serum glucose (fasting or random)",
+  "Vitamin B12 level",
+  "Serum folate",
+  "Thyroid function tests",
+  "Liver function tests",
+  "Serum alcohol level",
+  "Serum magnesium",
+  "Coagulation screen"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "full blood count, renal and liver profile",
+  "blood glucose and HbA1c",
+  "vitamin B12 with methylmalonic acid",
+  "vitamin B12",
+  "serum folate",
+  "TSH / free T4",
+  "liver function tests",
+  "full blood count, renal and liver profile",
+  "serum ethanol",
+  "serum calcium, magnesium and phosphate"
+ ],
+ "results": [
+  "1. MRI brain (with contrast, focusing on posterior fossa)",
+  "     MRI brain with gadolinium: normal",
+  "2. Full blood count",
+  "     full blood count, renal and liver profile: haemogram, glucose, renal, liver, electrolytes and thyroid all normal",
+  "3. Serum glucose (fasting or random)",
+  "     blood glucose and HbA1c: normal",
+  "4. Vitamin B12 level",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "     vitamin B12: normal",
+  "5. Serum folate",
+  "     serum folate: normal",
+  "6. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "7. Liver function tests",
+  "     liver function tests: normal",
+  "     full blood count, renal and liver profile: haemogram, glucose, renal, liver, electrolytes and thyroid all normal",
+  "8. Serum alcohol level",
+  "     serum ethanol: normal",
+  "9. Serum magnesium",
+  "     serum calcium, magnesium and phosphate: normal",
+  "10. Coagulation screen",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute viral cerebellitis\n\nAlternatives:\n1. Acute cerebellar infarction\n2. Wernicke encephopathy\n3. Paraneoplastic cerebellar degeneration",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI brain (with contrast, focusing on posterior fossa)\n2. Full blood count\n3. Serum glucose (fasting or random)\n4. Vitamin B12 level\n5. Serum folate\n6. Thyroid function tests\n7. Liver function tests\n8. Serum alcohol level\n9. Serum magnesium\n10. Coagulation screen",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Acute viral cerebellitis",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 477,
+   "completion_tokens": 162,
+   "total_tokens": 639,
+   "cost": 8.57976e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.57976e-05,
+    "upstream_inference_prompt_cost": 4.04376e-05,
+    "upstream_inference_completions_cost": 4.536e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 147,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 653,
+   "completion_tokens": 563,
+   "total_tokens": 1216,
+   "cost": 0.0001875944,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001875944,
+    "upstream_inference_prompt_cost": 2.99544e-05,
+    "upstream_inference_completions_cost": 0.00015764
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 485,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1043,
+   "completion_tokens": 2068,
+   "total_tokens": 3111,
+   "cost": 0.000637252,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 640,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000637252,
+    "upstream_inference_prompt_cost": 5.8212e-05,
+    "upstream_inference_completions_cost": 0.00057904
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2017,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 73.0
+}

@@ -1,0 +1,145 @@
+{
+ "questions": [
+  "Did you lose consciousness during the episode?",
+  "Did you experience any warning signs, such as an unusual smell, taste, or feeling, before the movements started?",
+  "Were your eyes open and moving during the thrashing?",
+  "Did you bite your tongue or cheek?",
+  "Was there loss of bladder or bowel control?",
+  "Did you feel confused or sleepy immediately after the episode ended?",
+  "Have you ever had a seizure before this event?",
+  "Are you currently taking any medications for epilepsy or seizures?",
+  "Do you have a history of head injury or stroke?",
+  "Did anyone witness the episode and confirm it lasted less than five minutes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Continuous video-EEG monitoring",
+  "MRI of the brain with epilepsy protocol"
+ ],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Continuous video-EEG monitoring",
+  "     interictal EEG: no epileptiform discharges",
+  "     video-EEG monitoring of a typical event: the diagnosis was made on SEMIOLOGY from clinically documented video-EEG; there was NO interpretable ictal EEG correlate because of movement artefact",
+  "2. MRI of the brain with epilepsy protocol",
+  "     brain MRI: no epileptogenic lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Psychogenic non-epileptic seizures (PNES)\nFunctional neurological disorder\nFrontal lobe epilepsy\nParoxysmal kinesigenic dyskinesia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Continuous video-EEG monitoring\n2. MRI of the brain with epilepsy protocol",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Psychogenic non-epileptic seizures (PNES)",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 185,
+   "completion_tokens": 147,
+   "total_tokens": 332,
+   "cost": 9.684e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.684e-05,
+    "upstream_inference_prompt_cost": 2.775e-05,
+    "upstream_inference_completions_cost": 6.909e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 674,
+   "completion_tokens": 18,
+   "total_tokens": 692,
+   "cost": 0.00010956,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010956,
+    "upstream_inference_prompt_cost": 0.0001011,
+    "upstream_inference_completions_cost": 8.46e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 879,
+   "completion_tokens": 39,
+   "total_tokens": 918,
+   "cost": 8.1572e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.1572e-05,
+    "upstream_inference_prompt_cost": 6.3242e-05,
+    "upstream_inference_completions_cost": 1.833e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 11.2
+}

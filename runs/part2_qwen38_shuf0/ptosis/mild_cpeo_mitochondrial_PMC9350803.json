@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Do you have a known history of epilepsy or seizures?",
+  "Have you been exposed to any toxic chemicals, gases, or substances recently?",
+  "Do you have a history of head trauma or brain injury?",
+  "Do you have a known diagnosis of schizophrenia or another psychiatric disorder?",
+  "Is it possible that you have taken an overdose of medication or drugs recently?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside examination of extraocular movements in all directions of gaze",
+  "Complete blood count with differential and peripheral smear",
+  "Comprehensive metabolic panel including serum calcium, magnesium, and glucose",
+  "Urine toxicology screen",
+  "Serum levels of prescribed medications (e.g., antipsychotics, antiemetics)"
+ ],
+ "served": [
+  "ocular motility examination",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "toxicology screen (urine and serum)",
+  "toxicology screen (urine and serum)"
+ ],
+ "results": [
+  "1. Bedside examination of extraocular movements in all directions of gaze",
+  "     ocular motility examination: full in all directions",
+  "2. Complete blood count with differential and peripheral smear",
+  "     full blood count: normal",
+  "3. Comprehensive metabolic panel including serum calcium, magnesium, and glucose",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal",
+  "4. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "5. Serum levels of prescribed medications (e.g., antipsychotics, antiemetics)",
+  "     toxicology screen (urine and serum): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute dystonic reaction (oculogyric crisis) secondary to medication side effect\n\n1. Tardive dyskinesia\n2. Functional neurological disorder (psychogenic oculogyric crisis)\n3. Serotonin syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination of extraocular movements in all directions of gaze\n2. Complete blood count with differential and peripheral smear\n3. Comprehensive metabolic panel including serum calcium, magnesium, and glucose\n4. Urine toxicology screen\n5. Serum levels of prescribed medications (e.g., antipsychotics, antiemetics)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Acute dystonic reaction (oculogyric crisis) secondary to medication side effect",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 91,
+   "total_tokens": 4914,
+   "cost": 0.00076622,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00076622,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 4.277e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5182,
+   "completion_tokens": 69,
+   "total_tokens": 5251,
+   "cost": 0.00020941,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020941,
+    "upstream_inference_prompt_cost": 0.00017698,
+    "upstream_inference_completions_cost": 3.243e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5499,
+   "completion_tokens": 53,
+   "total_tokens": 5552,
+   "cost": 0.000180832,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000180832,
+    "upstream_inference_prompt_cost": 0.000155922,
+    "upstream_inference_completions_cost": 2.491e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "mild_cpeo_mitochondrial_PMC9350803.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 21.6
+}

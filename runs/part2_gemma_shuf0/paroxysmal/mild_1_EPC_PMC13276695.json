@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Do you have muscle weakness?",
+  "Is the weakness progressive?",
+  "Is the weakness symmetrical?",
+  "Do you have numbness or tingling in your limbs?",
+  "Do you have difficulty swallowing?",
+  "Do you have difficulty breathing?",
+  "Have you noticed muscle twitching?",
+  "Do you have a history of spinal cord injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Electromyography (EMG) and Nerve Conduction Studies (NCS)",
+  "Serum Creatine Kinase (CK) level",
+  "Serum electrolytes (Magnesium, Calcium, Potassium)"
+ ],
+ "served": [
+  "nerve conduction studies",
+  "needle electromyography",
+  "creatine kinase",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "glucose, calcium, magnesium, sodium"
+ ],
+ "results": [
+  "1. Electromyography (EMG) and Nerve Conduction Studies (NCS)",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: brief time-locked EMG bursts under 100 ms in the left wrist flexors and extensors",
+  "2. Serum Creatine Kinase (CK) level",
+  "     creatine kinase: normal",
+  "3. Serum electrolytes (Magnesium, Calcium, Potassium)",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     glucose, calcium, magnesium, sodium: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperekplexia caused by a mutation in the GLRA1 gene\n\n1. Cortical myoclonus\n2. Myoclonic epilepsy\n3. Benign fasciculation syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Electromyography (EMG) and Nerve Conduction Studies (NCS)\n2. Serum Creatine Kinase (CK) level\n3. Serum electrolytes (Magnesium, Calcium, Potassium)",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperekplexia caused by a mutation in the GLRA1 gene",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8570,
+   "completion_tokens": 1338,
+   "total_tokens": 9908,
+   "cost": 0.00131192,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00131192,
+    "upstream_inference_prompt_cost": 0.000857,
+    "upstream_inference_completions_cost": 0.00045492
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1280,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8906,
+   "completion_tokens": 839,
+   "total_tokens": 9745,
+   "cost": 0.00117586,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00117586,
+    "upstream_inference_prompt_cost": 0.0008906,
+    "upstream_inference_completions_cost": 0.00028526
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 809,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9166,
+   "completion_tokens": 3433,
+   "total_tokens": 12599,
+   "cost": 0.00208382,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00208382,
+    "upstream_inference_prompt_cost": 0.0009166,
+    "upstream_inference_completions_cost": 0.00116722
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3041,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 1453.2
+}

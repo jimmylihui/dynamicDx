@@ -1,0 +1,160 @@
+{
+ "questions": [
+  "Are you experiencing chest pain?",
+  "Are you short of breath?",
+  "Do you have a fever?",
+  "Do you have abdominal pain?",
+  "Have you had any recent surgery?",
+  "Are you experiencing any weakness or numbness?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of heart disease?",
+  "Do you have a cough?",
+  "Are you feeling nauseous or vomiting?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "yes",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Electrocardiogram (ECG)",
+  "Troponin levels",
+  "Blood glucose",
+  "Serum creatinine and electrolytes",
+  "Full blood count",
+  "Chest X-ray"
+ ],
+ "served": [
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "full blood count"
+ ],
+ "results": [
+  "1. Electrocardiogram (ECG)",
+  "     not performed / not available",
+  "2. Troponin levels",
+  "     not performed / not available",
+  "3. Blood glucose",
+  "     blood glucose: 799 mg/dL (normal 74-106)",
+  "4. Serum creatinine and electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "5. Full blood count",
+  "     full blood count: normal",
+  "6. Chest X-ray",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperosmolar Hyperglycemic State due to diabetes mellitus\nDiabetic Ketoacidosis\nSevere hyperglycemia\nHyperglycemic crisis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Electrocardiogram (ECG)\n2. Troponin levels\n3. Blood glucose\n4. Serum creatinine and electrolytes\n5. Full blood count\n6. Chest X-ray",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperosmolar Hyperglycemic State due to diabetes mellitus",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 1048,
+   "total_tokens": 1468,
+   "cost": 0.00039832,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00039832,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00035632
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 880,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 808,
+   "completion_tokens": 1006,
+   "total_tokens": 1814,
+   "cost": 0.00042284,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00042284,
+    "upstream_inference_prompt_cost": 8.08e-05,
+    "upstream_inference_completions_cost": 0.00034204
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 986,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1047,
+   "completion_tokens": 2038,
+   "total_tokens": 3085,
+   "cost": 0.00079762,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00079762,
+    "upstream_inference_prompt_cost": 0.0001047,
+    "upstream_inference_completions_cost": 0.00069292
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1976,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 137.8
+}

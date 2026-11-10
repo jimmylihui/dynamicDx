@@ -1,0 +1,201 @@
+{
+ "questions": [
+  "Do you have a history of Parkinson's disease?",
+  "Are you currently taking any medications for movement disorders?",
+  "Do you have a history of multiple sclerosis?",
+  "Do you consume alcohol regularly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform a detailed neurological examination including assessment of muscle tone (rigidity), presence of resting tremor, and postural reflexes",
+  "Perform a detailed neurological examination including assessment of extraocular movements (specifically looking for saccadic pursuit or nystagmus) and finger-to-nose testing",
+  "MRI of the brain with attention to the cerebellum and brainstem",
+  "Serum Vitamin E level",
+  "Serum paraneoplastic antibody panel (including anti-Yo, anti-Hu, anti-Ri, and anti-Tr)",
+  "Genetic testing for spinocerebellar ataxias (SCA panel)"
+ ],
+ "served": [
+  "muscle tone examination",
+  "posture and pull test",
+  "deep tendon reflexes and plantar responses",
+  "gait examination",
+  "finger-nose / heel-shin testing",
+  "bedside eye-movement exam",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "fundoscopy",
+  "brain MRI",
+  "vitamin E",
+  "paraneoplastic antibody panel (serum)",
+  "genetic ataxia panel"
+ ],
+ "results": [
+  "R1 ASK Do you have a history of Parkinson's disease?; Are you currently taking any medications for movement disorders? -> ['no', 'no']",
+  "R2 ORDER Perform a detailed neurological examination including assessment of muscle tone (rigidity), presence of resting tremor, and postural reflexes -> [['muscle tone examination', 'posture and pull test', 'deep tendon reflexes and plantar responses']]",
+  "R3 ASK Do you have a history of multiple sclerosis? -> ['no']",
+  "R4 ORDER Perform a detailed neurological examination including assessment of extraocular movements (specifically looking for saccadic pursuit or nystagmus) and finger-to-nose testing -> [['gait examination', 'finger-nose / heel-shin testing', 'bedside eye-movement exam', 'cranial nerve examination', 'mental status / cognitive screen', 'muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'posture and pull test', 'fundoscopy']]",
+  "R5 ORDER MRI of the brain with attention to the cerebellum and brainstem -> [['brain MRI']]",
+  "R6 ASK Do you consume alcohol regularly? -> ['no']",
+  "R7 ORDER Serum Vitamin E level -> [['vitamin E']]",
+  "R8 ORDER Serum paraneoplastic antibody panel (including anti-Yo, anti-Hu, anti-Ri, and anti-Tr) -> [['paraneoplastic antibody panel (serum)']]",
+  "R9 ORDER Genetic testing for spinocerebellar ataxias (SCA panel) -> [['genetic ataxia panel']]",
+  "R10 DIAGNOSIS Spinocerebellar ataxia type 8 (SCA8) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of Parkinson's disease?",
+    "Are you currently taking any medications for movement disorders?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Perform a detailed neurological examination including assessment of muscle tone (rigidity), presence of resting tremor, and postural reflexes"
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "posture and pull test",
+     "deep tendon reflexes and plantar responses"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of multiple sclerosis?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Perform a detailed neurological examination including assessment of extraocular movements (specifically looking for saccadic pursuit or nystagmus) and finger-to-nose testing"
+   ],
+   "result": [
+    [
+     "gait examination",
+     "finger-nose / heel-shin testing",
+     "bedside eye-movement exam",
+     "cranial nerve examination",
+     "mental status / cognitive screen",
+     "muscle tone examination",
+     "limb strength (MRC) examination",
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)",
+     "posture and pull test",
+     "fundoscopy"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "MRI of the brain with attention to the cerebellum and brainstem"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you consume alcohol regularly?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Serum Vitamin E level"
+   ],
+   "result": [
+    [
+     "vitamin E"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Serum paraneoplastic antibody panel (including anti-Yo, anti-Hu, anti-Ri, and anti-Tr)"
+   ],
+   "result": [
+    [
+     "paraneoplastic antibody panel (serum)"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Genetic testing for spinocerebellar ataxias (SCA panel)"
+   ],
+   "result": [
+    [
+     "genetic ataxia panel"
+    ]
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Spinocerebellar ataxia type 8 (SCA8)"
+  }
+ ],
+ "dx": "Spinocerebellar ataxia type 8 (SCA8)",
+ "dx_raw": "DIAGNOSIS: Spinocerebellar ataxia type 8 (SCA8)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "brain MRI",
+  "genetic ataxia panel"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0049,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_sca_genetic_PMC12678565.mp4",
+ "line": "ataxia",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 59.5
+}

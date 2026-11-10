@@ -1,0 +1,150 @@
+{
+ "questions": [
+  "Is difficulty standing or walking your main problem?",
+  "Did this problem begin suddenly, within minutes or hours?",
+  "Did it begin after a fall or other injury?",
+  "Is one side of your body weaker than the other?",
+  "Do you have new numbness or tingling in an arm or leg?",
+  "Do you have facial drooping, slurred speech, or trouble understanding speech?",
+  "Do you have new double vision or loss of vision?",
+  "Do you have a sudden severe headache?",
+  "Do you feel dizzy or as though the room is spinning?",
+  "Have you fainted or lost consciousness?",
+  "Have you had a seizure?",
+  "Do you have severe back, hip, or leg pain?",
+  "Have you lost control of your bladder or bowels?",
+  "Do you have numbness around your groin or buttocks?",
+  "Do you have a fever or feel acutely unwell?",
+  "Were you able to walk independently before this problem began?",
+  "Have you previously had a stroke or transient ischemic attack?",
+  "Do you have Parkinson’s disease, multiple sclerosis, or another neurologic condition?",
+  "Has this difficulty fluctuated substantially during the day?",
+  "Does your ability to stand or walk improve when you are distracted?",
+  "Have you recently started or increased any sedative, pain, or psychiatric medication?",
+  "Do you have chest pain or shortness of breath?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "vertical saccades and gaze range (up and down)",
+  "doll's head (oculocephalic) manoeuvre",
+  "applause sign (three-clap test)",
+  "limb rigidity and axial (neck) rigidity",
+  "serum ceruloplasmin",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)"
+ ],
+ "results": [
+  "1. vertical saccades and gaze range (up and down): both upgaze and downgaze RESTRICTED, vertical worse than horizontal; horizontal gaze preserved",
+  "2. doll's head (oculocephalic) manoeuvre: the gaze restriction is OVERCOME - this is supranuclear, not a nerve or muscle palsy",
+  "3. applause sign (three-clap test): POSITIVE",
+  "4. limb rigidity and axial (neck) rigidity: SEVERE in the neck, mild in the upper limbs - axial predominance",
+  "5. serum ceruloplasmin: normal - excludes Wilson disease",
+  "6. neuronal surface antibody panel including anti-IgLON5: negative - excludes anti-IgLON5 disease",
+  "7. MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): mild hummingbird sign with cerebral atrophy"
+ ],
+ "dx_raw": "DIAGNOSIS: Sporadic progressive supranuclear palsy (PSP; Steele–Richardson–Olszewski syndrome), a primary 4-repeat tauopathy\n\nALTERNATIVE: Corticobasal degeneration (corticobasal syndrome)\n\nALTERNATIVE: Multiple system atrophy, parkinsonian type\n\nALTERNATIVE: Frontotemporal lobar degeneration with parkinsonism (4-repeat tauopathy)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Sporadic progressive supranuclear palsy (PSP; Steele–Richardson–Olszewski syndrome), a primary 4-repeat tauopathy",
+ "decisive_served": [
+  "vertical saccades and gaze range (up and down)",
+  "doll's head (oculocephalic) manoeuvre",
+  "applause sign (three-clap test)",
+  "limb rigidity and axial (neck) rigidity",
+  "serum ceruloplasmin",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 820,
+   "total_tokens": 6496,
+   "cost": 0.00054903,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00054903,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.000492
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6657,
+   "completion_tokens": 276,
+   "total_tokens": 6933,
+   "cost": 0.000345255,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 981,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000345255,
+    "upstream_inference_prompt_cost": 0.000179655,
+    "upstream_inference_completions_cost": 0.0001656
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 184,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "psp_richardson_PMC11082598.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 19.0
+}

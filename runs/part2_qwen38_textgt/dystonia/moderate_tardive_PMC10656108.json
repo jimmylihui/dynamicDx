@@ -1,0 +1,128 @@
+{
+ "questions": [
+  "Are you currently experiencing difficulty breathing?",
+  "Did these symptoms begin after a recent injury or puncture wound?",
+  "Have you received a tetanus vaccination in the last 5 years?",
+  "Do you have a history of epilepsy or seizure disorders?",
+  "Are you currently taking any medications, including antipsychotics or antiemetics?",
+  "Do you have a known history of hypocalcemia or parathyroid disease?",
+  "Is your consciousness fully preserved during these episodes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Review of current medication list and recent dosage changes"
+ ],
+ "served": [],
+ "results": [
+  "1. Review of current medication list and recent dosage changes",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute dystonic reaction secondary to dopamine receptor blocking agent (antipsychotic or antiemetic)\nAlternative 1: Tetanus\nAlternative 2: Hypocalcemic tetany",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Review of current medication list and recent dosage changes",
+ "rationale": [
+  null
+ ],
+ "dx": "Acute dystonic reaction secondary to dopamine receptor blocking agent (antipsychotic or antiemetic)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 179,
+   "completion_tokens": 108,
+   "total_tokens": 287,
+   "cost": 7.761e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.761e-05,
+    "upstream_inference_prompt_cost": 2.685e-05,
+    "upstream_inference_completions_cost": 5.076e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 578,
+   "completion_tokens": 11,
+   "total_tokens": 589,
+   "cost": 9.187e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.187e-05,
+    "upstream_inference_prompt_cost": 8.67e-05,
+    "upstream_inference_completions_cost": 5.17e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 710,
+   "completion_tokens": 45,
+   "total_tokens": 755,
+   "cost": 5.9042e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.9042e-05,
+    "upstream_inference_prompt_cost": 3.7892e-05,
+    "upstream_inference_completions_cost": 2.115e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "moderate_tardive_PMC10656108.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 16.0
+}

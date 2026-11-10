@@ -1,0 +1,342 @@
+{
+ "questions": [
+  "Have you experienced unintentional weight loss recently?",
+  "Do you have palpitations or a racing heart?",
+  "Do you feel excessively hot compared to others?",
+  "Have you noticed a tremor in your hands?",
+  "Have you noticed any bulging of your eyes or changes in your appearance?",
+  "Do you have any pain in your neck or thyroid area?",
+  "Have you noticed any changes in your bowel habits?",
+  "Do you smoke?",
+  "Have you had any recent fevers or night sweats?",
+  "Have you noticed any lumps or bumps anywhere on your body?",
+  "Have you had any recent infections?",
+  "Have you had any changes in your appetite?",
+  "Do you have any chronic medical conditions?",
+  "Have you noticed any blood in your stool or urine?",
+  "Have you experienced any shortness of breath?",
+  "Do you have any history of cancer in your family?",
+  "Have you had any chronic diarrhea?",
+  "Do you have a history of any autoimmune diseases?",
+  "Have you had any skin changes or rashes?",
+  "Do you have any joint pain or muscle weakness?",
+  "Have you ever had tuberculosis or been exposed to it?",
+  "Do you take any medications regularly?",
+  "Have you had any recent travel history?",
+  "Do you have any history of depression or anxiety?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Serum TSH, Free T4, and Free T3 levels",
+  "TSH receptor antibodies (TRAb)",
+  "Thyroid ultrasound with color Doppler",
+  "Fasting plasma glucose",
+  "HbA1c",
+  "Complete blood count (CBC)",
+  "Liver function tests (LFTs)",
+  "Renal function tests (RFTs)",
+  "Serum lipase",
+  "HIV serology",
+  "Tuberculosis screening (IGRA or Mantoux)",
+  "Urinalysis",
+  "Chest X-ray",
+  "CT chest, abdomen, and pelvis with contrast",
+  "Upper GI endoscopy and colonoscopy",
+  "Serum lipase",
+  "Tuberculosis screening (IGRA)",
+  "Serum cortisol",
+  "Adrenocorticotropic hormone (ACTH) level",
+  "24-hour urinary free cortisol",
+  "Serum calcium",
+  "Parathyroid hormone (PTH) level",
+  "Serum protein electrophoresis",
+  "PHQ-9 depression severity questionnaire",
+  "Serum cortisol (morning)",
+  "Serum lipase",
+  "Tuberculosis screening (IGRA)",
+  "Serum protein electrophoresis with immunofixation"
+ ],
+ "served": [
+  "TSH / free T4",
+  "anti-thyroid antibodies",
+  "blood glucose and HbA1c",
+  "full blood count, renal and liver profile",
+  "liver function tests",
+  "serum electrolytes, urea and creatinine",
+  "HIV and syphilis serology",
+  "HIV, hepatitis B and hepatitis C serology",
+  "urinalysis",
+  "CT chest / abdomen / pelvis (tumour search)",
+  "serum calcium, magnesium and phosphate"
+ ],
+ "results": [
+  "R1 ASK Have you experienced unintentional weight loss recently?; Do you have palpitations or a racing heart?; Do you feel excessively hot compared to others?; Have you noticed a tremor in your hands? -> ['yes', 'no', 'no', 'no']",
+  "R2 INVALID \n\n:\n1. Serum TSH\n2. Free T4 and Free T3\n3. TSH receptor antibodies (TRAb) -> ",
+  "R3 INVALID \n\n1. Serum TSH, Free T4, Free T3\n2. TSH receptor antibodies (TRAb)\n3. Thyroid ultrasound with Doppler -> ",
+  "R4 ORDER Serum TSH, Free T4, and Free T3 levels; TSH receptor antibodies (TRAb); Thyroid ultrasound with color Doppler -> [['TSH / free T4'], ['anti-thyroid antibodies'], []]",
+  "R5 ASK Have you noticed any bulging of your eyes or changes in your appearance?; Do you have any pain in your neck or thyroid area?; Have you noticed any changes in your bowel habits?; Do you smoke? -> ['no', 'no', 'no', 'no']",
+  "R6 ORDER Fasting plasma glucose; HbA1c; Complete blood count (CBC); Liver function tests (LFTs); Renal function tests (RFTs); Serum lipase; HIV serology; Tuberculosis screening (IGRA or Mantoux); Urinalysis; Chest X-ray -> [['blood glucose and HbA1c'], ['blood glucose and HbA1c'], ['full blood count, renal and liver profile'], ['liver function tests', 'full blood count, renal and liver profile'], ['serum electrolytes, urea and creatinine', 'full blood count, renal and liver profile'], [], ['HIV and syphilis serology', 'HIV, hepatitis B and hepatitis C serology'], [], ['urinalysis'], []]",
+  "R7 ASK Have you had any recent fevers or night sweats?; Have you noticed any lumps or bumps anywhere on your body?; Have you had any recent infections?; Have you had any changes in your appetite?; Do you have any chronic medical conditions?; Have you noticed any blood in your stool or urine?; Have you experienced any shortness of breath?; Do you have any history of cancer in your family? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R8 ORDER CT chest, abdomen, and pelvis with contrast; Upper GI endoscopy and colonoscopy; Serum lipase; Tuberculosis screening (IGRA); Serum cortisol; Adrenocorticotropic hormone (ACTH) level; 24-hour urinary free cortisol; Serum calcium; Parathyroid hormone (PTH) level; Serum protein electrophoresis -> [['CT chest / abdomen / pelvis (tumour search)'], [], [], [], [], [], [], ['serum calcium, magnesium and phosphate'], [], []]",
+  "R9 ASK Have you had any chronic diarrhea?; Do you have a history of any autoimmune diseases?; Have you had any skin changes or rashes?; Do you have any joint pain or muscle weakness?; Have you ever had tuberculosis or been exposed to it?; Do you take any medications regularly?; Have you had any recent travel history?; Do you have any history of depression or anxiety? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'yes']",
+  "R10 ORDER PHQ-9 depression severity questionnaire; Serum cortisol (morning); Serum lipase; Tuberculosis screening (IGRA); Serum protein electrophoresis with immunofixation -> [[], [], [], [], []]",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Unintentional weight loss - cause undetermined after workup; most likely occult malignancy (suspected) given negative initial systemic evaluation, though final diagnosis cannot be confirmed -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you experienced unintentional weight loss recently?",
+    "Do you have palpitations or a racing heart?",
+    "Do you feel excessively hot compared to others?",
+    "Have you noticed a tremor in your hands?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "invalid",
+   "text": "\n\n:\n1. Serum TSH\n2. Free T4 and Free T3\n3. TSH receptor antibodies (TRAb)"
+  },
+  {
+   "round": 3,
+   "kind": "invalid",
+   "text": "\n\n1. Serum TSH, Free T4, Free T3\n2. TSH receptor antibodies (TRAb)\n3. Thyroid ultrasound with Doppler"
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Serum TSH, Free T4, and Free T3 levels",
+    "TSH receptor antibodies (TRAb)",
+    "Thyroid ultrasound with color Doppler"
+   ],
+   "result": [
+    [
+     "TSH / free T4"
+    ],
+    [
+     "anti-thyroid antibodies"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any bulging of your eyes or changes in your appearance?",
+    "Do you have any pain in your neck or thyroid area?",
+    "Have you noticed any changes in your bowel habits?",
+    "Do you smoke?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Fasting plasma glucose",
+    "HbA1c",
+    "Complete blood count (CBC)",
+    "Liver function tests (LFTs)",
+    "Renal function tests (RFTs)",
+    "Serum lipase",
+    "HIV serology",
+    "Tuberculosis screening (IGRA or Mantoux)",
+    "Urinalysis",
+    "Chest X-ray"
+   ],
+   "result": [
+    [
+     "blood glucose and HbA1c"
+    ],
+    [
+     "blood glucose and HbA1c"
+    ],
+    [
+     "full blood count, renal and liver profile"
+    ],
+    [
+     "liver function tests",
+     "full blood count, renal and liver profile"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "full blood count, renal and liver profile"
+    ],
+    [],
+    [
+     "HIV and syphilis serology",
+     "HIV, hepatitis B and hepatitis C serology"
+    ],
+    [],
+    [
+     "urinalysis"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Have you had any recent fevers or night sweats?",
+    "Have you noticed any lumps or bumps anywhere on your body?",
+    "Have you had any recent infections?",
+    "Have you had any changes in your appetite?",
+    "Do you have any chronic medical conditions?",
+    "Have you noticed any blood in your stool or urine?",
+    "Have you experienced any shortness of breath?",
+    "Do you have any history of cancer in your family?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "CT chest, abdomen, and pelvis with contrast",
+    "Upper GI endoscopy and colonoscopy",
+    "Serum lipase",
+    "Tuberculosis screening (IGRA)",
+    "Serum cortisol",
+    "Adrenocorticotropic hormone (ACTH) level",
+    "24-hour urinary free cortisol",
+    "Serum calcium",
+    "Parathyroid hormone (PTH) level",
+    "Serum protein electrophoresis"
+   ],
+   "result": [
+    [
+     "CT chest / abdomen / pelvis (tumour search)"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+     "serum calcium, magnesium and phosphate"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Have you had any chronic diarrhea?",
+    "Do you have a history of any autoimmune diseases?",
+    "Have you had any skin changes or rashes?",
+    "Do you have any joint pain or muscle weakness?",
+    "Have you ever had tuberculosis or been exposed to it?",
+    "Do you take any medications regularly?",
+    "Have you had any recent travel history?",
+    "Do you have any history of depression or anxiety?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "PHQ-9 depression severity questionnaire",
+    "Serum cortisol (morning)",
+    "Serum lipase",
+    "Tuberculosis screening (IGRA)",
+    "Serum protein electrophoresis with immunofixation"
+   ],
+   "result": [
+    [],
+    [],
+    [],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Unintentional weight loss - cause undetermined after workup; most likely occult malignancy (suspected) given negative initial systemic evaluation, though final diagnosis cannot be confirmed"
+  }
+ ],
+ "dx": "Unintentional weight loss - cause undetermined after workup; most likely occult malignancy (suspected) given negative initial systemic evaluation, though final diagnosis cannot be confirmed with available evidence.",
+ "dx_raw": "DIAGNOSIS: Unintentional weight loss - cause undetermined after workup; most likely occult malignancy (suspected) given negative initial systemic evaluation, though final diagnosis cannot be confirmed with available evidence.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": false,
+ "invalid_replies": 2,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "cost_usd": 0.0214,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_wilson_psp_phenotype_PMC12962431.mp4",
+ "line": "parkinsonism",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 117.2
+}

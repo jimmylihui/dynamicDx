@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Are you experiencing pain right now?",
+  "Is the pain located in your head?",
+  "Did this problem start suddenly?",
+  "Have you had a fever recently?",
+  "Do you have a history of high blood pressure?",
+  "Do you have diabetes?",
+  "Do you smoke?",
+  "Do you drink alcohol?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's spontaneous speech, articulation, and prosody during a brief conversation.",
+  "Perform a bedside neurological examination focusing on cranial nerves (specifically VII, IX, X, XII) to assess for facial weakness, dysarthria, or tongue deviation.",
+  "Assess muscle strength in the upper and lower extremities, specifically looking for asymmetry or focal weakness.",
+  "Check deep tendon reflexes and look for pathological reflexes (e.g., Babinski sign).",
+  "Order an MRI of the brain with diffusion-weighted imaging (DWI)."
+ ],
+ "served": [
+  "speech assessment",
+  "cranial nerve examination",
+  "speech assessment",
+  "eye movements and reflexes",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "MRI diffusion-weighted sequences"
+ ],
+ "results": [
+  "1. Observe the patient's spontaneous speech, articulation, and prosody during a brief conversation.",
+  "     speech assessment: normal",
+  "2. Perform a bedside neurological examination focusing on cranial nerves (specifically VII, IX, X, XII) to assess for facial weakness, dysarthria, or tongue deviation.",
+  "     cranial nerve examination: normal",
+  "     speech assessment: normal",
+  "     eye movements and reflexes: normal",
+  "3. Assess muscle strength in the upper and lower extremities, specifically looking for asymmetry or focal weakness.",
+  "     limb strength (MRC) examination: normal",
+  "4. Check deep tendon reflexes and look for pathological reflexes (e.g., Babinski sign).",
+  "     deep tendon reflexes and plantar responses: normal",
+  "5. Order an MRI of the brain with diffusion-weighted imaging (DWI).",
+  "     MRI diffusion-weighted sequences: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological disorder (psychogenic movement disorder)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient's spontaneous speech, articulation, and prosody during a brief conversation.\n2. Perform a bedside neurological examination focusing on cranial nerves (specifically VII, IX, X, XII) to assess for facial weakness, dysarthria, or tongue deviation.\n3. Assess muscle strength in the upper and lower extremities, specifically looking for asymmetry or focal weakness.\n4. Check deep tendon reflexes and look for pathological reflexes (e.g., Babinski sign).\n5. Order an MRI of the brain with diffusion-weighted imaging (DWI).",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional neurological disorder (psychogenic movement disorder)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 15063,
+   "completion_tokens": 76,
+   "total_tokens": 15139,
+   "cost": 0.00229517,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00229517,
+    "upstream_inference_prompt_cost": 0.00225945,
+    "upstream_inference_completions_cost": 3.572e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 15400,
+   "completion_tokens": 123,
+   "total_tokens": 15523,
+   "cost": 0.00039533,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00039533,
+    "upstream_inference_prompt_cost": 0.00033752,
+    "upstream_inference_completions_cost": 5.781e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 15808,
+   "completion_tokens": 16,
+   "total_tokens": 15824,
+   "cost": 0.000337632,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 15232,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000337632,
+    "upstream_inference_prompt_cost": 0.000330112,
+    "upstream_inference_completions_cost": 7.52e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "moderate_tardive_PMC10656108.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 28.5
+}

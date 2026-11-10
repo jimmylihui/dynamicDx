@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Does the tremor disappear completely when your right arm is fully at rest and unsupported?",
+  "Do you have a known diagnosis of Parkinson's disease?",
+  "Have you recently started or changed any medications, including antidepressants, antipsychotics, or stimulants?",
+  "Do you consume significant amounts of alcohol or caffeine daily?",
+  "Is there a family history of essential tremor or other movement disorders?",
+  "Do you experience weakness, numbness, or coordination problems in your right arm unrelated to the shaking?",
+  "Does the tremor worsen significantly with anxiety or stress?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Perform the Hoover sign test on the right leg while observing the right arm tremor",
+  "Assess for distractibility by having the patient perform a complex mental arithmetic task or serial 7s while maintaining the tremor posture",
+  "Evaluate for entrainment by asking the patient to tap a rhythmic pattern with the unaffected left hand and observing if the right arm tremor frequency shifts to match the tapping rhythm",
+  "Check for variability in amplitude and frequency during sustained postural holding compared to rest"
+ ],
+ "served": [
+  "Hoover sign / hip-abductor sign",
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "variability of amplitude, frequency and axis over the examination"
+ ],
+ "results": [
+  "1. Perform the Hoover sign test on the right leg while observing the right arm tremor",
+  "     Hoover sign / hip-abductor sign: negative",
+  "2. Assess for distractibility by having the patient perform a complex mental arithmetic task or serial 7s while maintaining the tremor posture",
+  "     distractibility testing (complex motor task with the unaffected side): POSITIVE - the tremor decreases or stops when the left arm performs a task such as drinking from a cup",
+  "3. Evaluate for entrainment by asking the patient to tap a rhythmic pattern with the unaffected left hand and observing if the right arm tremor frequency shifts to match the tapping rhythm",
+  "     entrainment testing (tap to an externally paced rhythm): POSITIVE - amplitude falls and the rhythm becomes irregular under repetitive voluntary movement of the other side",
+  "4. Check for variability in amplitude and frequency during sustained postural holding compared to rest",
+  "     variability of amplitude, frequency and axis over the examination: irregular, variable frequency around 4-6 Hz, at times combined with myoclonic jerks"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional tremor (psychogenic tremor)\nAlternative 1: Essential tremor with prominent distractibility features\nAlternative 2: Drug-induced or metabolic tremor not captured by history",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Perform the Hoover sign test on the right leg while observing the right arm tremor\n2. Assess for distractibility by having the patient perform a complex mental arithmetic task or serial 7s while maintaining the tremor posture\n3. Evaluate for entrainment by asking the patient to tap a rhythmic pattern with the unaffected left hand and observing if the right arm tremor frequency shifts to match the tapping rhythm\n4. Check for variability in amplitude and frequency during sustained postural holding compared to rest",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional tremor (psychogenic tremor)",
+ "decisive_served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "variability of amplitude, frequency and axis over the examination"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 199,
+   "completion_tokens": 127,
+   "total_tokens": 326,
+   "cost": 8.954e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.954e-05,
+    "upstream_inference_prompt_cost": 2.985e-05,
+    "upstream_inference_completions_cost": 5.969e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 636,
+   "completion_tokens": 101,
+   "total_tokens": 737,
+   "cost": 0.00014287,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00014287,
+    "upstream_inference_prompt_cost": 9.54e-05,
+    "upstream_inference_completions_cost": 4.747e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1053,
+   "completion_tokens": 43,
+   "total_tokens": 1096,
+   "cost": 0.000109552,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000109552,
+    "upstream_inference_prompt_cost": 8.9342e-05,
+    "upstream_inference_completions_cost": 2.021e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 10.6
+}

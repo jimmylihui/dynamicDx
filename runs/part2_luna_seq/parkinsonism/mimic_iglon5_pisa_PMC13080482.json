@@ -1,0 +1,294 @@
+{
+ "questions": [
+  "Did this walking problem begin suddenly?",
+  "Do you have weakness or numbness in either leg?",
+  "Do you have pain in your legs or lower back when walking?",
+  "Do you feel dizzy or as though you might faint while walking?",
+  "Have you had a recent head injury or stroke?",
+  "Do you have a tremor when your hands are at rest?",
+  "Do you feel that your feet are stuck to the floor when you try to walk?",
+  "Is this difficulty walking worse when you think someone is watching you?",
+  "Have you been taking an antipsychotic medication such as risperidone, olanzapine, quetiapine, haloperidol, or chlorpromazine?",
+  "Have you been taking metoclopramide, prochlorperazine, or another dopamine-blocking antiemetic?",
+  "Did the trunk-leaning begin after starting or increasing one of these medications?",
+  "Do you have a history of Parkinson’s disease or another neurodegenerative disorder?",
+  "Is the abnormal leaning accompanied by painful muscle spasms?",
+  "Can you temporarily straighten your trunk when asked, even though it returns during walking?",
+  "Does touching your body or holding an object in your left hand temporarily reduce the leaning?",
+  "Did the leaning develop gradually over weeks or months?",
+  "Do you have abnormal involuntary movements or sustained postures affecting your face, jaw, tongue, eyes, or limbs?",
+  "Does the leaning improve after drinking alcohol?",
+  "Have you ever had similar abnormal posturing or dystonia before?",
+  "Are the abnormal movements sustained twisting or abnormal postures rather than rhythmic shaking?",
+  "Do these movements worsen with walking or other voluntary actions?",
+  "Did the abnormal movements begin in childhood or adolescence?",
+  "Do you have difficulty opening your eyes because of involuntary eyelid squeezing?",
+  "Do you have involuntary jaw or tongue movements?",
+  "Has anyone in your family had dystonia or similar involuntary movements?",
+  "Have you ever had liver disease, jaundice, or unexplained psychiatric symptoms?",
+  "Have you ever previously taken a dopamine-blocking drug, even briefly, including haloperidol, risperidone, olanzapine, prochlorperazine, metoclopramide, or levomepromazine?",
+  "Have you ever taken antidepressants, anticonvulsants, or other psychiatric medicines before the abnormal movements began?",
+  "Did the jaw and tongue movements begin before the trunk leaning?",
+  "Do the abnormal movements persist during sleep?",
+  "Do you have difficulty swallowing or speaking because of the jaw or tongue movements?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "yes",
+  "18": "no",
+  "19": "no",
+  "20": "yes",
+  "21": "yes",
+  "22": "no",
+  "23": "no",
+  "24": "yes",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "yes"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "Observe the patient walking while distracted (for example, counting backward) and then walking while pretending to kick a ball.",
+  "Perform the straight-leg-raise and Hoover sign tests for functional leg weakness.",
+  "Test tandem gait, heel walking, and toe walking.",
+  "Perform a Romberg test and a pull test for postural instability.",
+  "MRI of the brain with and without contrast.",
+  "MRI of the cervical and thoracic spine with and without contrast.",
+  "Serum ceruloplasmin, serum copper, 24-hour urinary copper, liver function tests, and slit-lamp examination for Kayser–Fleischer rings.",
+  "Neurologic examination specifically documenting blepharospasm, oromandibular dystonia, cervical dystonia, and task-specific axial dystonia."
+ ],
+ "served": [
+  "gait observation including turning and doorways",
+  "limb strength (MRC) examination",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "posture and pull test",
+  "pull test / retropulsion",
+  "MRI brain with gadolinium",
+  "MRI cervical and thoracic spine",
+  "liver function tests",
+  "serum copper and caeruloplasmin",
+  "24-hour urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "serum ceruloplasmin",
+  "eyelid function (apraxia of lid opening, blepharospasm, lid retraction)",
+  "trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine"
+ ],
+ "results": [
+  "R1 ASK Did this walking problem begin suddenly?; Do you have weakness or numbness in either leg?; Do you have pain in your legs or lower back when walking?; Do you feel dizzy or as though you might faint while walking?; Have you had a recent head injury or stroke?; Do you have a tremor when your hands are at rest?; Do you feel that your feet are stuck to the floor when you try to walk?; Is this difficulty walking worse when you think someone is watching you? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ORDER Observe the patient walking while distracted (for example, counting backward) and then walking while pretending to kick a ball.; Perform the straight-leg-raise and Hoover sign tests for functional leg weakness.; Test tandem gait, heel walking, and toe walking.; Perform a Romberg test and a pull test for postural instability. -> [['gait observation including turning and doorways'], ['limb strength (MRC) examination'], ['gait observation including turning and doorways', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)'], ['sensory examination (pinprick, vibration, proprioception)', 'posture and pull test', 'pull test / retropulsion']]",
+  "R3 ASK Have you been taking an antipsychotic medication such as risperidone, olanzapine, quetiapine, haloperidol, or chlorpromazine?; Have you been taking metoclopramide, prochlorperazine, or another dopamine-blocking antiemetic?; Did the trunk-leaning begin after starting or increasing one of these medications?; Do you have a history of Parkinson’s disease or another neurodegenerative disorder?; Is the abnormal leaning accompanied by painful muscle spasms? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Can you temporarily straighten your trunk when asked, even though it returns during walking?; Does touching your body or holding an object in your left hand temporarily reduce the leaning?; Did the leaning develop gradually over weeks or months?; Do you have abnormal involuntary movements or sustained postures affecting your face, jaw, tongue, eyes, or limbs?; Does the leaning improve after drinking alcohol?; Have you ever had similar abnormal posturing or dystonia before? -> ['no', 'no', 'no', 'yes', 'no', 'no']",
+  "R5 ASK Are the abnormal movements sustained twisting or abnormal postures rather than rhythmic shaking?; Do these movements worsen with walking or other voluntary actions?; Did the abnormal movements begin in childhood or adolescence?; Do you have difficulty opening your eyes because of involuntary eyelid squeezing?; Do you have involuntary jaw or tongue movements?; Has anyone in your family had dystonia or similar involuntary movements?; Have you ever had liver disease, jaundice, or unexplained psychiatric symptoms? -> ['yes', 'yes', 'no', 'no', 'yes', 'no', 'no']",
+  "R6 ORDER MRI of the brain with and without contrast.; MRI of the cervical and thoracic spine with and without contrast.; Serum ceruloplasmin, serum copper, 24-hour urinary copper, liver function tests, and slit-lamp examination for Kayser–Fleischer rings.; Neurologic examination specifically documenting blepharospasm, oromandibular dystonia, cervical dystonia, and task-specific axial dystonia. -> [['MRI brain with gadolinium'], ['MRI cervical and thoracic spine'], ['liver function tests', 'serum copper and caeruloplasmin', '24-hour urinary copper', 'slit-lamp examination for Kayser-Fleischer rings', 'serum ceruloplasmin'], ['eyelid function (apraxia of lid opening, blepharospasm, lid retraction)', 'trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine']]",
+  "R7 ASK Have you ever previously taken a dopamine-blocking drug, even briefly, including haloperidol, risperidone, olanzapine, prochlorperazine, metoclopramide, or levomepromazine?; Have you ever taken antidepressants, anticonvulsants, or other psychiatric medicines before the abnormal movements began?; Did the jaw and tongue movements begin before the trunk leaning?; Do the abnormal movements persist during sleep?; Do you have difficulty swallowing or speaking because of the jaw or tongue movements? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R8 DIAGNOSIS Adult-onset idiopathic segmental dystonia involving the oromandibular and axial muscles, producing task-specific Pisa syndrome with antecollis; no evidence of secondary drug-induced, structural, metabolic, or Wilson disease. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did this walking problem begin suddenly?",
+    "Do you have weakness or numbness in either leg?",
+    "Do you have pain in your legs or lower back when walking?",
+    "Do you feel dizzy or as though you might faint while walking?",
+    "Have you had a recent head injury or stroke?",
+    "Do you have a tremor when your hands are at rest?",
+    "Do you feel that your feet are stuck to the floor when you try to walk?",
+    "Is this difficulty walking worse when you think someone is watching you?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Observe the patient walking while distracted (for example, counting backward) and then walking while pretending to kick a ball.",
+    "Perform the straight-leg-raise and Hoover sign tests for functional leg weakness.",
+    "Test tandem gait, heel walking, and toe walking.",
+    "Perform a Romberg test and a pull test for postural instability."
+   ],
+   "result": [
+    [
+     "gait observation including turning and doorways"
+    ],
+    [
+     "limb strength (MRC) examination"
+    ],
+    [
+     "gait observation including turning and doorways",
+     "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
+    ],
+    [
+     "sensory examination (pinprick, vibration, proprioception)",
+     "posture and pull test",
+     "pull test / retropulsion"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you been taking an antipsychotic medication such as risperidone, olanzapine, quetiapine, haloperidol, or chlorpromazine?",
+    "Have you been taking metoclopramide, prochlorperazine, or another dopamine-blocking antiemetic?",
+    "Did the trunk-leaning begin after starting or increasing one of these medications?",
+    "Do you have a history of Parkinson’s disease or another neurodegenerative disorder?",
+    "Is the abnormal leaning accompanied by painful muscle spasms?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Can you temporarily straighten your trunk when asked, even though it returns during walking?",
+    "Does touching your body or holding an object in your left hand temporarily reduce the leaning?",
+    "Did the leaning develop gradually over weeks or months?",
+    "Do you have abnormal involuntary movements or sustained postures affecting your face, jaw, tongue, eyes, or limbs?",
+    "Does the leaning improve after drinking alcohol?",
+    "Have you ever had similar abnormal posturing or dystonia before?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Are the abnormal movements sustained twisting or abnormal postures rather than rhythmic shaking?",
+    "Do these movements worsen with walking or other voluntary actions?",
+    "Did the abnormal movements begin in childhood or adolescence?",
+    "Do you have difficulty opening your eyes because of involuntary eyelid squeezing?",
+    "Do you have involuntary jaw or tongue movements?",
+    "Has anyone in your family had dystonia or similar involuntary movements?",
+    "Have you ever had liver disease, jaundice, or unexplained psychiatric symptoms?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "MRI of the brain with and without contrast.",
+    "MRI of the cervical and thoracic spine with and without contrast.",
+    "Serum ceruloplasmin, serum copper, 24-hour urinary copper, liver function tests, and slit-lamp examination for Kayser–Fleischer rings.",
+    "Neurologic examination specifically documenting blepharospasm, oromandibular dystonia, cervical dystonia, and task-specific axial dystonia."
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium"
+    ],
+    [
+     "MRI cervical and thoracic spine"
+    ],
+    [
+     "liver function tests",
+     "serum copper and caeruloplasmin",
+     "24-hour urinary copper",
+     "slit-lamp examination for Kayser-Fleischer rings",
+     "serum ceruloplasmin"
+    ],
+    [
+     "eyelid function (apraxia of lid opening, blepharospasm, lid retraction)",
+     "trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Have you ever previously taken a dopamine-blocking drug, even briefly, including haloperidol, risperidone, olanzapine, prochlorperazine, metoclopramide, or levomepromazine?",
+    "Have you ever taken antidepressants, anticonvulsants, or other psychiatric medicines before the abnormal movements began?",
+    "Did the jaw and tongue movements begin before the trunk leaning?",
+    "Do the abnormal movements persist during sleep?",
+    "Do you have difficulty swallowing or speaking because of the jaw or tongue movements?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Adult-onset idiopathic segmental dystonia involving the oromandibular and axial muscles, producing task-specific Pisa syndrome with antecollis; no evidence of secondary drug-induced, structural, metabolic, or Wilson disease."
+  }
+ ],
+ "dx": "Adult-onset idiopathic segmental dystonia involving the oromandibular and axial muscles, producing task-specific Pisa syndrome with antecollis; no evidence of secondary drug-induced, structural, metabolic, or Wilson disease.",
+ "dx_raw": "DIAGNOSIS: Adult-onset idiopathic segmental dystonia involving the oromandibular and axial muscles, producing task-specific Pisa syndrome with antecollis; no evidence of secondary drug-induced, structural, metabolic, or Wilson disease.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "trunk posture: lateral flexion (Pisa) and antecollis, standing versus supine"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0061,
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 77.3
+}

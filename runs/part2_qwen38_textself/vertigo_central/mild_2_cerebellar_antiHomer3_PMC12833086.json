@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Do you have a history of multiple sclerosis?",
+  "Have you ever had a stroke?",
+  "Do you currently take any anti-seizure medications?",
+  "Do you consume alcohol daily?",
+  "Do you have a known inner ear disorder such as Meniere's disease?",
+  "Are you experiencing double vision?",
+  "Do you have a family history of nystagmus?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform the head impulse test (HIT) to assess for vestibulo-ocular reflex gain",
+  "Conduct a detailed neurological examination including assessment of smooth pursuit, saccades, and convergence",
+  "Order an MRI of the brain with attention to the posterior fossa and brainstem"
+ ],
+ "served": [
+  "head impulse test",
+  "smooth pursuit and saccades",
+  "vertical gaze and convergence",
+  "MRI brain with gadolinium"
+ ],
+ "results": [
+  "1. Perform the head impulse test (HIT) to assess for vestibulo-ocular reflex gain",
+  "     head impulse test: normal - no corrective saccade",
+  "2. Conduct a detailed neurological examination including assessment of smooth pursuit, saccades, and convergence",
+  "     smooth pursuit and saccades: normal",
+  "     vertical gaze and convergence: normal",
+  "3. Order an MRI of the brain with attention to the posterior fossa and brainstem",
+  "     MRI brain with gadolinium: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Congenital nystagmus (idiopathic)\nAlternative 1: Idiopathic acquired nystagmus\nAlternative 2: Early-stage neurodegenerative disorder not yet visible on MRI",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Perform the head impulse test (HIT) to assess for vestibulo-ocular reflex gain\n2. Conduct a detailed neurological examination including assessment of smooth pursuit, saccades, and convergence\n3. Order an MRI of the brain with attention to the posterior fossa and brainstem",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Congenital nystagmus (idiopathic)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 195,
+   "completion_tokens": 86,
+   "total_tokens": 281,
+   "cost": 6.967e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.967e-05,
+    "upstream_inference_prompt_cost": 2.925e-05,
+    "upstream_inference_completions_cost": 4.042e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 550,
+   "completion_tokens": 59,
+   "total_tokens": 609,
+   "cost": 0.00011023,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011023,
+    "upstream_inference_prompt_cost": 8.25e-05,
+    "upstream_inference_completions_cost": 2.773e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 812,
+   "completion_tokens": 46,
+   "total_tokens": 858,
+   "cost": 7.4812e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.4812e-05,
+    "upstream_inference_prompt_cost": 5.3192e-05,
+    "upstream_inference_completions_cost": 2.162e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.4,
+ "video": "mild_2_cerebellar_antiHomer3_PMC12833086.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.7
+}

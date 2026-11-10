@@ -1,0 +1,112 @@
+{
+ "questions": [
+  "Are you experiencing involuntary, dance-like movements in your limbs?",
+  "Do these movements worsen when you are stressed or excited?",
+  "Do the movements disappear completely while you are asleep?",
+  "Is there a family history of similar movement disorders?",
+  "Have you been diagnosed with Huntington's disease?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "skin examination",
+  "autoimmune encephalopathy / paraneoplastic antibody panel",
+  "brain MRI with contrast",
+  "PET-CT or CT body (occult malignancy)",
+  "trial of immunotherapy"
+ ],
+ "results": [
+  "1. skin examination: a painless, non-pruritic confluent erythematous rash on the left arm one day before the chorea began; it improved with doxycycline and clindamycin but the chorea did not",
+  "2. autoimmune encephalopathy / paraneoplastic antibody panel: NEGATIVE in serum and CSF - seronegative",
+  "3. brain MRI with contrast: 1.5T with gadolinium - frontal-predominant atrophy but NO focal lesion, with normal basal ganglia structure and volume",
+  "4. PET-CT or CT body (occult malignancy): skull base to thighs - no malignancy and no infection",
+  "5. trial of immunotherapy: empirical IVIg produced DRAMATIC improvement of the hemichorea - the diagnosis rests on the treatment response"
+ ],
+ "dx_raw": "DIAGNOSIS: Seronegative autoimmune hemichorea (likely post-infectious, secondary to a tick-borne illness)\n\n1. Paraneoplastic chorea (seronegative)\n2. Neuroacanthocytosis (e.g., Chorea-Acanthocytosis)\n3. Cerebral vasculitis",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Seronegative autoimmune hemichorea (likely post-infectious, secondary to a tick-borne illness)",
+ "decisive_served": [
+  "skin examination",
+  "autoimmune encephalopathy / paraneoplastic antibody panel",
+  "brain MRI with contrast",
+  "PET-CT or CT body (occult malignancy)",
+  "trial of immunotherapy"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14551,
+   "completion_tokens": 68,
+   "total_tokens": 14619,
+   "cost": 0.00221461,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00221461,
+    "upstream_inference_prompt_cost": 0.00218265,
+    "upstream_inference_completions_cost": 3.196e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 14984,
+   "completion_tokens": 76,
+   "total_tokens": 15060,
+   "cost": 0.000379448,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14208,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000379448,
+    "upstream_inference_prompt_cost": 0.000343728,
+    "upstream_inference_completions_cost": 3.572e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11093232.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 20.0
+}

@@ -1,0 +1,183 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Are you seeing double?",
+  "Do you feel dizzy or like the room is spinning?",
+  "Do you feel weak on one side of your body?",
+  "Is your face numb?",
+  "Is your speech slurred?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Clinical examination of extraocular movements including pursuit, saccades, convergence, and assessment for nystagmus",
+  "Bedside INO test (assessing adduction deficit with contralateral abduction nystagmus)",
+  "Assessment of accommodation and pupil reactivity",
+  "Finger-to-nose testing for dysmetria",
+  "Romberg test and tandem gait assessment",
+  "MRI brain with attention to posterior fossa and brainstem",
+  "CBC with differential, ESR, CMP",
+  "Consider lumbar puncture for oligoclonal bands if MRI suggestive of demyelination"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "nystagmus: direction and whether it changes with gaze",
+  "smooth pursuit and saccades",
+  "vertical gaze and convergence",
+  "adduction in horizontal gaze (each eye)",
+  "abducting nystagmus of the fellow eye",
+  "pupil size and light reaction",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "gait and tandem walking",
+  "MRI brain with gadolinium",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "ESR / CRP",
+  "lumbar puncture / CSF",
+  "CSF oligoclonal bands and IgG index"
+ ],
+ "results": [
+  "1. Clinical examination of extraocular movements including pursuit, saccades, convergence, and assessment for nystagmus",
+  "     cranial nerve examination: opsoclonus; otherwise normal",
+  "     nystagmus: direction and whether it changes with gaze: no nystagmus",
+  "     smooth pursuit and saccades: opsoclonus - chaotic multidirectional saccades without intersaccadic intervals",
+  "     vertical gaze and convergence: normal",
+  "2. Bedside INO test (assessing adduction deficit with contralateral abduction nystagmus)",
+  "     adduction in horizontal gaze (each eye): full",
+  "     abducting nystagmus of the fellow eye: absent",
+  "3. Assessment of accommodation and pupil reactivity",
+  "     pupil size and light reaction: equal and reactive",
+  "4. Finger-to-nose testing for dysmetria",
+  "     coordination examination (limb and truncal): residual ataxia",
+  "5. Romberg test and tandem gait assessment",
+  "     posture and pull test: mild truncal instability",
+  "     gait and tandem walking: normal",
+  "6. MRI brain with attention to posterior fossa and brainstem",
+  "     MRI brain with gadolinium: normal",
+  "7. CBC with differential, ESR, CMP",
+  "     full blood count and biochemistry: normal",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     ESR / CRP: normal",
+  "8. Consider lumbar puncture for oligoclonal bands if MRI suggestive of demyelination",
+  "     lumbar puncture / CSF: unremarkable",
+  "     CSF oligoclonal bands and IgG index: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Opsoclonus-myoclonus syndrome, likely paraneoplastic etiology\n\n1. Anti-Ri (ANNA-2) antibodies\n2. Anti-Hu (ANNA-1) antibodies\n3. CT chest/abdomen/pelvis with contrast for malignancy screening\n4. Mammography with ultrasound\n5. Complete paraneoplastic antibody panel including CV2/CRMP5, amphiphysin, and Yo antibodies",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Clinical examination of extraocular movements including pursuit, saccades, convergence, and assessment for nystagmus\n2. Bedside INO test (assessing adduction deficit with contralateral abduction nystagmus)\n3. Assessment of accommodation and pupil reactivity\n4. Finger-to-nose testing for dysmetria\n5. Romberg test and tandem gait assessment\n6. MRI brain with attention to posterior fossa and brainstem\n7. CBC with differential, ESR, CMP\n8. TSH\n9. Consider lumbar puncture for oligoclonal bands if MRI suggestive of demyelination",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Opsoclonus-myoclonus syndrome, likely paraneoplastic etiology",
+ "decisive_served": [
+  "smooth pursuit and saccades"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 2589,
+   "total_tokens": 7644,
+   "cost": 0.0014062776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014062776,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00072492
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2532,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5342,
+   "completion_tokens": 854,
+   "total_tokens": 6196,
+   "cost": 0.0003020976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003020976,
+    "upstream_inference_prompt_cost": 6.29776e-05,
+    "upstream_inference_completions_cost": 0.00023912
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 719,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5916,
+   "completion_tokens": 487,
+   "total_tokens": 6403,
+   "cost": 0.0002357936,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5312,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002357936,
+    "upstream_inference_prompt_cost": 9.94336e-05,
+    "upstream_inference_completions_cost": 0.00013636
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 384,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.8,
+ "video": "moderate_2_opsoclonus_PMC13135425.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 135.0
+}

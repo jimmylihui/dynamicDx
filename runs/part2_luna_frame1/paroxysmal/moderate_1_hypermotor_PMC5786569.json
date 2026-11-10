@@ -1,0 +1,191 @@
+{
+ "questions": [
+  "Are you currently awake and able to respond normally?",
+  "Are you having difficulty breathing right now?",
+  "Did you suddenly lose consciousness or become unresponsive?",
+  "Did your body jerk, stiffen, or shake involuntarily?",
+  "Did you bite your tongue or lose bladder control during the episode?",
+  "Were you confused, unusually sleepy, or weak after the episode?",
+  "Is this the first time this has happened?",
+  "Did the episode last longer than five minutes?",
+  "Do you currently have a severe headache, weakness on one side, trouble speaking, or vision loss?",
+  "Have you had a recent head injury?",
+  "Do you have a history of seizures, stroke, or other neurologic disease?",
+  "Do you have a fever or a recent infection?",
+  "Have you used alcohol, recreational drugs, or any new medication recently?",
+  "Have you missed any prescribed antiseizure medications?",
+  "Could you be pregnant?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Video-EEG monitoring with attempted capture of a typical shaking episode",
+  "Complete neurological examination, including mental status, cranial nerves, strength, sensation, reflexes, coordination, and gait",
+  "Point-of-care blood glucose",
+  "Serum electrolytes, calcium, magnesium, renal function, and complete blood count",
+  "12-lead electrocardiogram"
+ ],
+ "served": [
+  "video-EEG monitoring of a typical event",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "neurological examination between events",
+  "blood glucose and HbA1c",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "full blood count and biochemistry",
+  "glucose, calcium, magnesium, sodium"
+ ],
+ "results": [
+  "1. Video-EEG monitoring with attempted capture of a typical shaking episode",
+  "     video-EEG monitoring of a typical event: the diagnosis was made on SEMIOLOGY from clinically documented video-EEG; there was NO interpretable ictal EEG correlate because of movement artefact",
+  "2. Complete neurological examination, including mental status, cranial nerves, strength, sensation, reflexes, coordination, and gait",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "     neurological examination between events: normal",
+  "3. Point-of-care blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "4. Serum electrolytes, calcium, magnesium, renal function, and complete blood count",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     full blood count and biochemistry: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "5. 12-lead electrocardiogram",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Psychogenic nonepileptic seizures (functional/dissociative seizures), a functional neurological symptom disorder rather than epileptic seizures\n\nALTERNATIVE 1: Focal motor epileptic seizure obscured by movement artefact\n\nALTERNATIVE 2: Paroxysmal dyskinesia or other functional movement episode\n\nALTERNATIVE 3: Convulsive syncope",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Video-EEG monitoring with attempted capture of a typical shaking episode\n2. Complete neurological examination, including mental status, cranial nerves, strength, sensation, reflexes, coordination, and gait\n3. Point-of-care blood glucose\n4. Serum electrolytes, calcium, magnesium, renal function, and complete blood count\n5. 12-lead electrocardiogram",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Psychogenic nonepileptic seizures (functional/dissociative seizures), a functional neurological symptom disorder rather than epileptic seizures",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 409,
+   "completion_tokens": 721,
+   "total_tokens": 1130,
+   "cost": 0.000947,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000947,
+    "upstream_inference_prompt_cost": 8.18e-05,
+    "upstream_inference_completions_cost": 0.0008652
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1027,
+   "completion_tokens": 205,
+   "total_tokens": 1232,
+   "cost": 0.0005026,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1024,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005026,
+    "upstream_inference_prompt_cost": 0.0002566,
+    "upstream_inference_completions_cost": 0.000246
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 121,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1477,
+   "completion_tokens": 212,
+   "total_tokens": 1689,
+   "cost": 0.00038798,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1024,
+    "cache_write_tokens": 450,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00038798,
+    "upstream_inference_prompt_cost": 0.00013358,
+    "upstream_inference_completions_cost": 0.0002544
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 127,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 41.5
+}

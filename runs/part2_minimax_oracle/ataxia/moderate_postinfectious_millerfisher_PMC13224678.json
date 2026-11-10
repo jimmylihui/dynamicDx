@@ -1,0 +1,123 @@
+{
+ "questions": [
+  "Is the device on your chest a heart rhythm monitor?",
+  "Is the main reason for your visit related to your heart?",
+  "Have you had any chest pain recently?",
+  "Do you get short of breath when you exert yourself?",
+  "Have you felt your heart racing or skipping beats?",
+  "Have you fainted or felt lightheaded recently?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of high cholesterol?",
+  "Have you ever had a heart attack?",
+  "Do you have a history of stroke?",
+  "Do you smoke?",
+  "Do you have a family history of sudden cardiac death?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "nerve conduction studies / EMG",
+  "EEG",
+  "somatosensory evoked potentials",
+  "SARS-CoV-2 testing"
+ ],
+ "results": [
+  "1. nerve conduction studies / EMG: rhythmic bursts in both hands, synchronised with the visible jerks",
+  "2. EEG: no abnormality, and no EEG-EMG correlation on video-EEG - the myoclonus is subcortical",
+  "3. somatosensory evoked potentials: NO giant SSEP - argues against a cortical origin",
+  "4. SARS-CoV-2 testing: recent COVID-19 infection"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-COVID-19 myoclonus (subcortical, brainstem reticular-type myoclonus secondary to recent SARS-CoV-2 infection)\n\n1. Autoimmune encephalitis (e.g., anti-GAD, post-infectious autoimmune encephalitis unrelated to COVID)\n2. Hashimoto's encephalopathy (steroid-responsive encephalopathy with myoclonus)\n3. Drug- or metabolic/toxin-induced myoclonus (unrelated to recent infection)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Post-COVID-19 myoclonus (subcortical, brainstem reticular-type myoclonus secondary to recent SARS-CoV-2 infection)",
+ "decisive_served": [
+  "nerve conduction studies / EMG",
+  "EEG",
+  "somatosensory evoked potentials",
+  "SARS-CoV-2 testing"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 13750,
+   "completion_tokens": 3747,
+   "total_tokens": 17497,
+   "cost": 0.00858372,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00858372,
+    "upstream_inference_prompt_cost": 0.00408732,
+    "upstream_inference_completions_cost": 0.0044964
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3601,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 14288,
+   "completion_tokens": 518,
+   "total_tokens": 14806,
+   "cost": 0.0016116,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 13735,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0016116,
+    "upstream_inference_prompt_cost": 0.00099,
+    "upstream_inference_completions_cost": 0.0006216
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 417,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "moderate_postinfectious_millerfisher_PMC13224678.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 47.4
+}

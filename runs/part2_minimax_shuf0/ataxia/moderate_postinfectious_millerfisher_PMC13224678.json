@@ -1,0 +1,195 @@
+{
+ "questions": [
+  "Is the primary purpose of this device to evaluate palpitations or an irregular heartbeat?",
+  "Have you had any episodes of fainting or near-fainting?",
+  "Have you experienced any chest pain or discomfort recently?",
+  "Do you experience shortness of breath with mild exertion?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of high cholesterol?",
+  "Do you have a family history of sudden cardiac death or heart attack at a young age?",
+  "Do you have a known history of atrial fibrillation?",
+  "Have you ever had a heart attack or stroke?",
+  "Do you experience dizziness or lightheadedness?",
+  "Do you wake up at night feeling short of breath?",
+  "Have you noticed any recent swelling in your legs or ankles?",
+  "Do you smoke?",
+  "Are you currently taking any blood thinners?",
+  "Are you currently taking medication for high blood pressure or heart rhythm?",
+  "Do you have episodes of rapid heart rate that begin and end abruptly?",
+  "Have you experienced any unusual fatigue lately?",
+  "Do you have a history of thyroid problems?",
+  "Do you snore heavily or have been diagnosed with sleep apnea?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "I would like to listen to your heart and lungs with a stethoscope to check for any murmurs, irregular rhythms, or signs of fluid.",
+  "I would like to examine your legs for swelling and check the pulses in your feet.",
+  "I would like to perform an electrocardiogram (ECG) right now to look at the electrical activity of your heart.",
+  "I would like to order a complete blood count (CBC) to check for anemia or infection.",
+  "I would like to order a basic metabolic panel (BMP) to check your kidney function and electrolytes.",
+  "I would like to check your blood glucose level.",
+  "I would like to check your thyroid-stimulating hormone (TSH) level.",
+  "I would like to order a chest X-ray to evaluate the size of your heart and check your lungs.",
+  "Since you are wearing a device that records your heart rhythm over time, I would like to review the report from this monitor once the recording period is complete."
+ ],
+ "served": [
+  "full blood count",
+  "electrolytes (Na, K, Ca, Mg)",
+  "serum electrolytes, urea and creatinine",
+  "glucose / HbA1c",
+  "blood glucose and HbA1c",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. I would like to listen to your heart and lungs with a stethoscope to check for any murmurs, irregular rhythms, or signs of fluid.",
+  "     not performed / not available",
+  "2. I would like to examine your legs for swelling and check the pulses in your feet.",
+  "     not performed / not available",
+  "3. I would like to perform an electrocardiogram (ECG) right now to look at the electrical activity of your heart.",
+  "     not performed / not available",
+  "4. I would like to order a complete blood count (CBC) to check for anemia or infection.",
+  "     full blood count: normal",
+  "5. I would like to order a basic metabolic panel (BMP) to check your kidney function and electrolytes.",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     serum electrolytes, urea and creatinine: normal",
+  "6. I would like to check your blood glucose level.",
+  "     glucose / HbA1c: normal",
+  "     blood glucose and HbA1c: normal",
+  "7. I would like to check your thyroid-stimulating hormone (TSH) level.",
+  "     TSH / free T4: normal",
+  "8. I would like to order a chest X-ray to evaluate the size of your heart and check your lungs.",
+  "     not performed / not available",
+  "9. Since you are wearing a device that records your heart rhythm over time, I would like to review the report from this monitor once the recording period is complete.",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic Parkinson's disease\n1. Drug-induced parkinsonism\n2. Vascular parkinsonism\n3. Normal pressure hydrocephalus",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. I would like to listen to your heart and lungs with a stethoscope to check for any murmurs, irregular rhythms, or signs of fluid.\n2. I would like to examine your legs for swelling and check the pulses in your feet.\n3. I would like to perform an electrocardiogram (ECG) right now to look at the electrical activity of your heart.\n4. I would like to order a complete blood count (CBC) to check for anemia or infection.\n5. I would like to order a basic metabolic panel (BMP) to check your kidney function and electrolytes.\n6. I would like to check your blood glucose level.\n7. I would like to check your thyroid-stimulating hormone (TSH) level.\n8. I would like to order a chest X-ray to evaluate the size of your heart and check your lungs.\n9. Since you are wearing a device that records your heart rhythm over time, I would like to review the report from this monitor once the recording period is complete.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic Parkinson's disease",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 13750,
+   "completion_tokens": 1594,
+   "total_tokens": 15344,
+   "cost": 0.00600036,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00600036,
+    "upstream_inference_prompt_cost": 0.00408756,
+    "upstream_inference_completions_cost": 0.0019128
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1338,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 14507,
+   "completion_tokens": 207,
+   "total_tokens": 14714,
+   "cost": 0.0013041,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 13735,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013041,
+    "upstream_inference_prompt_cost": 0.0010557,
+    "upstream_inference_completions_cost": 0.0002484
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 15109,
+   "completion_tokens": 3196,
+   "total_tokens": 18305,
+   "cost": 0.00484014,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14699,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00484014,
+    "upstream_inference_prompt_cost": 0.00100494,
+    "upstream_inference_completions_cost": 0.0038352
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3165,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "moderate_postinfectious_millerfisher_PMC13224678.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 65.8
+}

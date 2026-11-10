@@ -1,0 +1,126 @@
+{
+ "questions": [
+  "Is the patient currently taking any medications?",
+  "Does the patient have a history of stroke or brain injury?",
+  "Are the movements present during sleep?",
+  "Does the patient have a family history of movement disorders?",
+  "Has the patient experienced recent weight loss?",
+  "Does the patient report any cognitive decline or memory problems?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain"
+ ],
+ "served": [],
+ "results": [
+  "1. MRI of the brain",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Hemiballismus secondary to prior stroke\nHuntington's disease\nWilson's disease",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain",
+ "rationale": [
+  null
+ ],
+ "dx": "Hemiballismus secondary to prior stroke",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 179,
+   "completion_tokens": 74,
+   "total_tokens": 253,
+   "cost": 6.163e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.163e-05,
+    "upstream_inference_prompt_cost": 2.685e-05,
+    "upstream_inference_completions_cost": 3.478e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 506,
+   "completion_tokens": 6,
+   "total_tokens": 512,
+   "cost": 7.872e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.872e-05,
+    "upstream_inference_prompt_cost": 7.59e-05,
+    "upstream_inference_completions_cost": 2.82e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 628,
+   "completion_tokens": 24,
+   "total_tokens": 652,
+   "cost": 7.1176e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.1176e-05,
+    "upstream_inference_prompt_cost": 5.9896e-05,
+    "upstream_inference_completions_cost": 1.128e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 11.7
+}

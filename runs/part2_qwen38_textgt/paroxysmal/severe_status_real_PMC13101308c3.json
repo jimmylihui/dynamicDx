@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Did the turning of the trunk occur before the convulsions began?",
+  "Were you conscious during the episode?",
+  "Did you lose bladder or bowel control?",
+  "Was there a history of head trauma prior to this event?",
+  "Do you have a known history of epilepsy?",
+  "Have you recently started or stopped any medications?",
+  "Did you experience an aura (such as a strange smell, taste, or visual change) before the episode?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Continuous video-EEG monitoring",
+  "MRI of the brain with epilepsy protocol",
+  "Serum prolactin level drawn within 20 minutes of an event"
+ ],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Continuous video-EEG monitoring",
+  "     interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "     video-EEG monitoring of a typical event: ictal BODY TURNING, often preceded by head version, but the EEG shows classic GENERALIZED spike-wave or polyspike discharges WITHOUT consistent lateralization",
+  "2. MRI of the brain with epilepsy protocol",
+  "     brain MRI: no focal epileptogenic lesion",
+  "3. Serum prolactin level drawn within 20 minutes of an event",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Genetic generalized epilepsy (likely Juvenile Myoclonic Epilepsy) presenting with versive seizures\nAlternative 1: Frontal lobe epilepsy with rapid secondary generalization\nAlternative 2: Psychogenic non-epileptic seizures",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Continuous video-EEG monitoring\n2. MRI of the brain with epilepsy protocol\n3. Serum prolactin level drawn within 20 minutes of an event",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Genetic generalized epilepsy (likely Juvenile Myoclonic Epilepsy) presenting with versive seizures",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 179,
+   "completion_tokens": 101,
+   "total_tokens": 280,
+   "cost": 7.432e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.432e-05,
+    "upstream_inference_prompt_cost": 2.685e-05,
+    "upstream_inference_completions_cost": 4.747e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 564,
+   "completion_tokens": 35,
+   "total_tokens": 599,
+   "cost": 0.00010105,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010105,
+    "upstream_inference_prompt_cost": 8.46e-05,
+    "upstream_inference_completions_cost": 1.645e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 839,
+   "completion_tokens": 54,
+   "total_tokens": 893,
+   "cost": 8.2622e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.2622e-05,
+    "upstream_inference_prompt_cost": 5.7242e-05,
+    "upstream_inference_completions_cost": 2.538e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.7
+}

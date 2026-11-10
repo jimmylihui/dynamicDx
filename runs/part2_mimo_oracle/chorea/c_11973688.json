@@ -1,0 +1,110 @@
+{
+ "questions": [
+  "Do you feel an uncomfortable, restless sensation in your lower legs that makes you want to move them?",
+  "Does this feeling mostly happen when you are sitting or resting, like you are right now?",
+  "Does moving your legs (like you are doing) help relieve that uncomfortable feeling, even temporarily?",
+  "Does this feeling in your legs get worse at night, when you're trying to sleep?",
+  "Do you ever feel the same sensation in your arms, not just your legs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "thyroid ultrasound",
+  "trial of antithyroid treatment"
+ ],
+ "results": [
+  "1. blood glucose: normal glucose and electrolytes - excludes hyperglycaemic chorea",
+  "2. TSH, free T4 and free T3: TSH SUPPRESSED at <0.01 mIU/L (reference 0.50-5.00) and free thyroxine ELEVATED at 3.85 ng/dL (reference 0.90-1.70)",
+  "3. thyrotropin receptor antibodies (TRAb): ELEVATED at 7.4 IU/L (reference <2.0) - Graves' disease",
+  "4. thyroid ultrasound: no nodules; estimated thyroid weight 13 g; 99mTc scintigraphy showed diffuse uptake consistent with Graves' disease",
+  "5. trial of antithyroid treatment: methimazole; the chorea resolved after about one month as thyroid function improved"
+ ],
+ "dx_raw": "DIAGNOSIS: Thyrotoxic chorea secondary to Graves' disease\n\nDifferential considerations:\n1. Huntington's disease\n2. Drug-induced dyskinesia/chorea\n3. Wilson's disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Thyrotoxic chorea secondary to Graves' disease",
+ "decisive_served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "thyroid ultrasound",
+  "trial of antithyroid treatment"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6079,
+   "completion_tokens": 230,
+   "total_tokens": 6309,
+   "cost": 0.0008891176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008891176,
+    "upstream_inference_prompt_cost": 0.0008247176,
+    "upstream_inference_completions_cost": 6.44e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 126,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6589,
+   "completion_tokens": 322,
+   "total_tokens": 6911,
+   "cost": 0.0001872248,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6016,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001872248,
+    "upstream_inference_prompt_cost": 9.70648e-05,
+    "upstream_inference_completions_cost": 9.016e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 275,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 19.3
+}

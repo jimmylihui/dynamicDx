@@ -1,0 +1,262 @@
+{
+ "questions": [
+  "Do you find that your eyelids droop more towards the end of the day or after you have been reading or looking at screens?",
+  "Do you experience double vision that comes and goes?",
+  "Do you have any difficulty chewing food, swallowing, or holding your head up when you are tired?",
+  "Does your vision or eyelid position improve after you take a nap?",
+  "Have you had this droopy eyelid since you were a baby, or did it develop later in life?",
+  "Is it only one eye that is affected, or are both eyes involved?",
+  "Have you ever been told you have a thyroid problem or been tested for thyroid issues?",
+  "Do you have any eye pain, grittiness, or pressure behind your eyes?",
+  "Has anyone ever commented that your eyes look \"staring\" or that you look surprised?",
+  "Have you ever noticed that your eyelids look different from other family members, such as your parents or siblings?",
+  "When you look at the video frames, does what you see match how your eyes normally look?",
+  "Do you have any eyelid twitching or involuntary movements of your eyelids?",
+  "Did you notice anything different about your eyelids in photos or videos of yourself before this one?",
+  "Do you have any difficulty with your peripheral vision or is your vision completely normal?",
+  "Are you concerned about the appearance of your eyes, or is there a functional problem you are experiencing?",
+  "Have you had your vision tested recently, and if so, were there any issues with your eyesight in either eye?",
+  "When you try to open your eyes wide, can you lift your eyelids much higher than what we see in these frames?",
+  "Looking at childhood photos of yourself, did your eyelids appear to sit lower than other children's?",
+  "Did your parents or teachers ever mention that you held your head in a particular way to see?",
+  "Is the droopiness the same on both sides, or do you notice one side is slightly worse?",
+  "Have you ever had any surgeries or procedures on your eyes or eyelids?",
+  "Do you take any medications regularly, including over-the-counter supplements?",
+  "Have you ever been evaluated by an eye specialist (ophthalmologist) before for your eyelids?",
+  "Do you have to tilt your head backward to see properly when walking or reading?",
+  "Have your parents or relatives ever mentioned that you had \"sleepy looking eyes\" as a child?",
+  "Have you noticed any asymmetry between your eyes or do they look the same to you?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "yes",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Measurement of levator muscle function (margin reflex distance and levator excursion)",
+  "Assessment of frontalis muscle use (checking if forehead wrinkles are present when trying to look up)",
+  "Phenylephrine drop test - apply phenylephrine eye drops and observe if ptosis improves",
+  "Pupil examination - check if pupils are equal and reactive to light",
+  "Assessment of corneal reflex"
+ ],
+ "served": [
+  "ptosis / lid position",
+  "pupil size and light reaction",
+  "cranial nerve examination"
+ ],
+ "results": [
+  "R1 ASK Do you find that your eyelids droop more towards the end of the day or after you have been reading or looking at screens?; Do you experience double vision that comes and goes?; Do you have any difficulty chewing food, swallowing, or holding your head up when you are tired?; Does your vision or eyelid position improve after you take a nap? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Have you had this droopy eyelid since you were a baby, or did it develop later in life?; Is it only one eye that is affected, or are both eyes involved? -> ['no', 'no']",
+  "R3 ASK Have you ever been told you have a thyroid problem or been tested for thyroid issues?; Do you have any eye pain, grittiness, or pressure behind your eyes?; Has anyone ever commented that your eyes look \"staring\" or that you look surprised? -> ['no', 'no', 'no']",
+  "R4 ORDER Measurement of levator muscle function (margin reflex distance and levator excursion); Assessment of frontalis muscle use (checking if forehead wrinkles are present when trying to look up); Phenylephrine drop test - apply phenylephrine eye drops and observe if ptosis improves; Pupil examination - check if pupils are equal and reactive to light; Assessment of corneal reflex -> [['ptosis / lid position'], ['ptosis / lid position'], [], ['pupil size and light reaction'], ['cranial nerve examination']]",
+  "R5 ASK Have you ever noticed that your eyelids look different from other family members, such as your parents or siblings?; When you look at the video frames, does what you see match how your eyes normally look?; Do you have any eyelid twitching or involuntary movements of your eyelids? -> ['no', 'no', 'no']",
+  "R6 ASK Did you notice anything different about your eyelids in photos or videos of yourself before this one?; Do you have any difficulty with your peripheral vision or is your vision completely normal?; Are you concerned about the appearance of your eyes, or is there a functional problem you are experiencing? -> ['no', 'no', 'yes']",
+  "R7 ASK Have you had your vision tested recently, and if so, were there any issues with your eyesight in either eye?; When you try to open your eyes wide, can you lift your eyelids much higher than what we see in these frames? -> ['no', 'no']",
+  "R8 ASK Looking at childhood photos of yourself, did your eyelids appear to sit lower than other children's?; Did your parents or teachers ever mention that you held your head in a particular way to see?; Is the droopiness the same on both sides, or do you notice one side is slightly worse? -> ['no', 'no', 'no']",
+  "R9 ASK Have you ever had any surgeries or procedures on your eyes or eyelids?; Do you take any medications regularly, including over-the-counter supplements?; Have you ever been evaluated by an eye specialist (ophthalmologist) before for your eyelids? -> ['no', 'no', 'no']",
+  "R10 ASK Do you have to tilt your head backward to see properly when walking or reading?; Have your parents or relatives ever mentioned that you had \"sleepy looking eyes\" as a child?; Have you noticed any asymmetry between your eyes or do they look the same to you? -> ['no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Congenital bilateral ptosis due to levator muscle dystrophy (myogenic congenital ptosis) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you find that your eyelids droop more towards the end of the day or after you have been reading or looking at screens?",
+    "Do you experience double vision that comes and goes?",
+    "Do you have any difficulty chewing food, swallowing, or holding your head up when you are tired?",
+    "Does your vision or eyelid position improve after you take a nap?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you had this droopy eyelid since you were a baby, or did it develop later in life?",
+    "Is it only one eye that is affected, or are both eyes involved?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you ever been told you have a thyroid problem or been tested for thyroid issues?",
+    "Do you have any eye pain, grittiness, or pressure behind your eyes?",
+    "Has anyone ever commented that your eyes look \"staring\" or that you look surprised?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Measurement of levator muscle function (margin reflex distance and levator excursion)",
+    "Assessment of frontalis muscle use (checking if forehead wrinkles are present when trying to look up)",
+    "Phenylephrine drop test - apply phenylephrine eye drops and observe if ptosis improves",
+    "Pupil examination - check if pupils are equal and reactive to light",
+    "Assessment of corneal reflex"
+   ],
+   "result": [
+    [
+     "ptosis / lid position"
+    ],
+    [
+     "ptosis / lid position"
+    ],
+    [],
+    [
+     "pupil size and light reaction"
+    ],
+    [
+     "cranial nerve examination"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you ever noticed that your eyelids look different from other family members, such as your parents or siblings?",
+    "When you look at the video frames, does what you see match how your eyes normally look?",
+    "Do you have any eyelid twitching or involuntary movements of your eyelids?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Did you notice anything different about your eyelids in photos or videos of yourself before this one?",
+    "Do you have any difficulty with your peripheral vision or is your vision completely normal?",
+    "Are you concerned about the appearance of your eyes, or is there a functional problem you are experiencing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Have you had your vision tested recently, and if so, were there any issues with your eyesight in either eye?",
+    "When you try to open your eyes wide, can you lift your eyelids much higher than what we see in these frames?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Looking at childhood photos of yourself, did your eyelids appear to sit lower than other children's?",
+    "Did your parents or teachers ever mention that you held your head in a particular way to see?",
+    "Is the droopiness the same on both sides, or do you notice one side is slightly worse?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Have you ever had any surgeries or procedures on your eyes or eyelids?",
+    "Do you take any medications regularly, including over-the-counter supplements?",
+    "Have you ever been evaluated by an eye specialist (ophthalmologist) before for your eyelids?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you have to tilt your head backward to see properly when walking or reading?",
+    "Have your parents or relatives ever mentioned that you had \"sleepy looking eyes\" as a child?",
+    "Have you noticed any asymmetry between your eyes or do they look the same to you?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Congenital bilateral ptosis due to levator muscle dystrophy (myogenic congenital ptosis)"
+  }
+ ],
+ "dx": "Congenital bilateral ptosis due to levator muscle dystrophy (myogenic congenital ptosis)",
+ "dx_raw": "DIAGNOSIS: Congenital bilateral ptosis due to levator muscle dystrophy (myogenic congenital ptosis)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0038,
+ "n_frames": 32,
+ "duration_s": 15.2,
+ "video": "moderate_1_ocular_flutter_PMC12979508.mp4",
+ "line": "vertigo_central",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 404.6
+}

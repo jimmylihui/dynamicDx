@@ -1,0 +1,175 @@
+{
+ "questions": [
+  "Did your symptoms begin suddenly?",
+  "Do you experience double vision?",
+  "Do you have weakness in your arms or legs?",
+  "Do your symptoms get worse with physical activity?",
+  "Do you have any drooping of your eyelids?",
+  "Have you had any recent falls?",
+  "Do you have stiffness in your neck or back?",
+  "Do you have trouble swallowing?",
+  "Do you have any pain in your head or face?",
+  "Do you drink alcohol heavily?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI brain with thin-section views through the midbrain",
+  "DaTscan (dopamine transporter SPECT)",
+  "Lumbar puncture for cerebrospinal fluid tau and beta-amyloid measurement",
+  "Serum B12, folate, and TSH levels",
+  "Rapid plasma reagin test",
+  "Montreal Cognitive Assessment (MoCA)",
+  "Tilt-table autonomic function testing",
+  "Overnight polysomnography"
+ ],
+ "served": [
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "DAT-SPECT / FP-CIT PET",
+  "lumbar puncture / CSF (cells, protein, Abeta42/40, total tau, p-tau)",
+  "serum folate",
+  "TSH / free T4",
+  "vitamin B12",
+  "HIV and syphilis serology",
+  "cognitive screen (MoCA / MMSE / frontal assessment battery)",
+  "autonomic function testing (tilt table, sympathetic skin response)",
+  "polysomnography"
+ ],
+ "results": [
+  "1. MRI brain with thin-section views through the midbrain",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): no hummingbird sign",
+  "2. DaTscan (dopamine transporter SPECT)",
+  "     DAT-SPECT / FP-CIT PET: not performed",
+  "3. Lumbar puncture for cerebrospinal fluid tau and beta-amyloid measurement",
+  "     lumbar puncture / CSF (cells, protein, Abeta42/40, total tau, p-tau): not performed",
+  "4. Serum B12, folate, and TSH levels",
+  "     serum folate: normal",
+  "     TSH / free T4: normal",
+  "     vitamin B12: normal",
+  "5. Rapid plasma reagin test",
+  "     HIV and syphilis serology: normal",
+  "6. Montreal Cognitive Assessment (MoCA)",
+  "     cognitive screen (MoCA / MMSE / frontal assessment battery): normal",
+  "7. Tilt-table autonomic function testing",
+  "     autonomic function testing (tilt table, sympathetic skin response): not performed",
+  "8. Overnight polysomnography",
+  "     polysomnography: not performed"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive supranuclear palsy, a neurodegenerative 4R-tauopathy\nCorticobasal degeneration\nMultiple system atrophy\nNormal pressure hydrocephalus",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI brain with thin-section views through the midbrain\n2. DaTscan (dopamine transporter SPECT)\n3. Lumbar puncture for cerebrospinal fluid tau and beta-amyloid measurement\n4. Serum B12, folate, and TSH levels\n5. Rapid plasma reagin test\n6. Montreal Cognitive Assessment (MoCA)\n7. Tilt-table autonomic function testing\n8. Overnight polysomnography",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Progressive supranuclear palsy, a neurodegenerative 4R-tauopathy",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 5885,
+   "total_tokens": 12947,
+   "cost": 0.00914292,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00914292,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.007062
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5784,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7459,
+   "completion_tokens": 2120,
+   "total_tokens": 9579,
+   "cost": 0.00309042,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00309042,
+    "upstream_inference_prompt_cost": 0.00054642,
+    "upstream_inference_completions_cost": 0.002544
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2034,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7861,
+   "completion_tokens": 6418,
+   "total_tokens": 14279,
+   "cost": 0.00827334,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7444,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00827334,
+    "upstream_inference_prompt_cost": 0.00057174,
+    "upstream_inference_completions_cost": 0.0077016
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6384,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 144.7
+}

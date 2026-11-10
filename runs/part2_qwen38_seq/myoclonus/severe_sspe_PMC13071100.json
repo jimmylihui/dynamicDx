@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Do you have a history of diabetes?",
+  "Have you had an amputation on your right hand in the past?",
+  "Did you lose your right hand due to a traumatic injury?",
+  "Do you have a history of vascular disease or blood clots?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform a detailed neurological examination of the right upper extremity, specifically testing for active range of motion at the shoulder, elbow, and wrist joints, and assessing sensation in the median, ulnar, radial, and axillary nerve distributions",
+  "Perform a detailed neurological examination of the right upper extremity, specifically testing for active range of motion at the shoulder, elbow, and wrist joints, and assessing sensation in the median, ulnar, radial, and axillary nerve distributions"
+ ],
+ "served": [
+  "joint range of motion",
+  "sensory examination (pinprick, vibration, proprioception)"
+ ],
+ "results": [
+  "R1 ASK Do you have a history of diabetes?; Have you had an amputation on your right hand in the past? -> ['no', 'no']",
+  "R2 ORDER Perform a detailed neurological examination of the right upper extremity, specifically testing for active range of motion at the shoulder, elbow, and wrist joints, and assessing sensation in the median, ulnar, radial, and axillary nerve distributions -> [['joint range of motion', 'sensory examination (pinprick, vibration, proprioception)']]",
+  "R3 ORDER Perform a detailed neurological examination of the right upper extremity, specifically testing for active range of motion at the shoulder, elbow, and wrist joints, and assessing sensation in the median, ulnar, radial, and axillary nerve distributions -> [['joint range of motion', 'sensory examination (pinprick, vibration, proprioception)']]",
+  "R4 ASK Did you lose your right hand due to a traumatic injury? -> ['no']",
+  "R5 ASK Do you have a history of vascular disease or blood clots? -> ['no']",
+  "R6 DIAGNOSIS Right transradial amputation -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?",
+    "Have you had an amputation on your right hand in the past?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Perform a detailed neurological examination of the right upper extremity, specifically testing for active range of motion at the shoulder, elbow, and wrist joints, and assessing sensation in the median, ulnar, radial, and axillary nerve distributions"
+   ],
+   "result": [
+    [
+     "joint range of motion",
+     "sensory examination (pinprick, vibration, proprioception)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Perform a detailed neurological examination of the right upper extremity, specifically testing for active range of motion at the shoulder, elbow, and wrist joints, and assessing sensation in the median, ulnar, radial, and axillary nerve distributions"
+   ],
+   "result": [
+    [
+     "joint range of motion",
+     "sensory examination (pinprick, vibration, proprioception)"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Did you lose your right hand due to a traumatic injury?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of vascular disease or blood clots?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Right transradial amputation"
+  }
+ ],
+ "dx": "Right transradial amputation",
+ "dx_raw": "DIAGNOSIS: Right transradial amputation",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0015,
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "severe_sspe_PMC13071100.mp4",
+ "line": "myoclonus",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 30.3
+}

@@ -1,0 +1,183 @@
+{
+ "questions": [
+  "Are you here today because of a problem with your walking?",
+  "Did this walking problem start suddenly, over a matter of minutes or hours?",
+  "Has the walking problem been gradually worsening over the course of weeks or months?",
+  "Do you have any difficulty controlling your bladder, such as a sudden urge to urinate or leaking urine?",
+  "Have you noticed any new problems with your memory or ability to think clearly?",
+  "Do you develop pain, heaviness, or numbness in your legs or buttocks when you walk that goes away when you sit down or lean forward?",
+  "Do you experience numbness, tingling, or burning pain in your feet or lower legs?",
+  "Do you have a tremor or shaking in your hands, especially when they are at rest?",
+  "Have you or your family noticed that your overall movements have become slower than before?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of high blood pressure, heart disease, or prior stroke?",
+  "Do you feel dizzy, lightheaded, or like the room is spinning when you walk?",
+  "Have you had any recent falls?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI brain with and without gadolinium contrast",
+  "Tandem gait testing",
+  "Romberg test",
+  "Finger-to-nose and heel-to-shin coordination testing",
+  "Examination of deep tendon reflexes, tone, and plantar responses",
+  "Serum B12 level",
+  "Serum copper and ceruloplasmin levels",
+  "Serum thyroid function tests"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)",
+  "coordination examination (limb and truncal)",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)",
+  "muscle tone examination",
+  "deep tendon reflexes and plantar responses",
+  "reflexes, plantar responses and frontal release signs",
+  "vitamin B12",
+  "serum copper and caeruloplasmin",
+  "serum ceruloplasmin",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. MRI brain with and without gadolinium contrast",
+  "     MRI brain with gadolinium: normal",
+  "2. Tandem gait testing",
+  "     cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait): normal",
+  "3. Romberg test",
+  "     not performed / not available",
+  "4. Finger-to-nose and heel-to-shin coordination testing",
+  "     coordination examination (limb and truncal): chorea and orofacial dyskinesia; limb coordination normal",
+  "     cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait): normal",
+  "5. Examination of deep tendon reflexes, tone, and plantar responses",
+  "     muscle tone examination: normal limb and neck tone with leftward truncal dystonic flexion and antecollis",
+  "     deep tendon reflexes and plantar responses: normal reflexes and flexor plantar responses",
+  "     reflexes, plantar responses and frontal release signs: normal power in limb and neck muscles, normal reflexes, flexor plantars",
+  "6. Serum B12 level",
+  "     vitamin B12: normal",
+  "7. Serum copper and ceruloplasmin levels",
+  "     serum copper and caeruloplasmin: normal",
+  "     serum ceruloplasmin: normal",
+  "8. Serum thyroid function tests",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Huntington's disease, caused by a CAG trinucleotide repeat expansion in the HTT gene\nChorea-acanthocytosis\nWilson's disease\nSpinocerebellar ataxia type 17 (SCA17)",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI brain with and without gadolinium contrast\n2. Tandem gait testing\n3. Romberg test\n4. Finger-to-nose and heel-to-shin coordination testing\n5. Examination of deep tendon reflexes, tone, and plantar responses\n6. Serum B12 level\n7. Serum copper and ceruloplasmin levels\n8. Serum thyroid function tests",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Huntington's disease, caused by a CAG trinucleotide repeat expansion in the HTT gene",
+ "decisive_served": [
+  "reflexes, plantar responses and frontal release signs"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 3002,
+   "total_tokens": 10064,
+   "cost": 0.00569364,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00569364,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.0036024
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3192,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7740,
+   "completion_tokens": 6758,
+   "total_tokens": 14498,
+   "cost": 0.00874536,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00874536,
+    "upstream_inference_prompt_cost": 0.00063576,
+    "upstream_inference_completions_cost": 0.0081096
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7369,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8174,
+   "completion_tokens": 5817,
+   "total_tokens": 13991,
+   "cost": 0.00759276,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7666,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00759276,
+    "upstream_inference_prompt_cost": 0.00061236,
+    "upstream_inference_completions_cost": 0.0069804
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6230,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 220.3
+}

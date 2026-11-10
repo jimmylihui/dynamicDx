@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Do you remember what happened during this episode after you were fully awake?",
+  "Were you asleep immediately before the episode began?",
+  "Have you previously gotten out of bed or behaved unusually while still asleep?",
+  "Has anyone observed you sleepwalking, talking, or eating during sleep?",
+  "Did you seem confused or difficult to awaken during the episode?",
+  "Did you have rhythmic jerking, stiffening, or repeated movements of your arms or legs?",
+  "Did your eyes remain open, deviate to one side, or stare blankly?",
+  "Did you bite your tongue or lose bladder or bowel control?",
+  "Were you confused, unusually sleepy, or had a severe headache after the episode?",
+  "Have you ever had a seizure or been diagnosed with epilepsy?",
+  "Do you snore loudly, stop breathing, or gasp during sleep?",
+  "Have you recently had major sleep deprivation, psychological stress, fever, alcohol use, or a change in medication?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Overnight attended video polysomnography with expanded EEG, electro-oculography, chin and limb electromyography, respiratory monitoring, and synchronized video recording."
+ ],
+ "served": [
+  "video-oculography / eye-movement recording",
+  "video-polygraphy (EEG with EMG)"
+ ],
+ "results": [
+  "1. Overnight attended video polysomnography with expanded EEG, electro-oculography, chin and limb electromyography, respiratory monitoring, and synchronized video recording.",
+  "     video-oculography / eye-movement recording: normal",
+  "     video-polygraphy (EEG with EMG): not performed"
+ ],
+ "dx_raw": "DIAGNOSIS: NREM sleepwalking (somnambulism), an idiopathic disorder of incomplete arousal from deep non-REM sleep\n\nALTERNATIVE 1: Confusional arousals, another disorder of incomplete NREM awakening\n\nALTERNATIVE 2: REM sleep behavior disorder\n\nALTERNATIVE 3: Sleep-related hypermotor epilepsy",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Overnight attended video polysomnography with expanded EEG, electro-oculography, chin and limb electromyography, respiratory monitoring, and synchronized video recording.",
+ "rationale": [
+  null
+ ],
+ "dx": "NREM sleepwalking (somnambulism), an idiopathic disorder of incomplete arousal from deep non-REM sleep",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8748,
+   "completion_tokens": 1070,
+   "total_tokens": 9818,
+   "cost": 0.001735425,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 8745,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001735425,
+    "upstream_inference_prompt_cost": 0.001093425,
+    "upstream_inference_completions_cost": 0.000642
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 865,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9351,
+   "completion_tokens": 263,
+   "total_tokens": 9614,
+   "cost": 0.000320925,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8745,
+    "cache_write_tokens": 603,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000320925,
+    "upstream_inference_prompt_cost": 0.000163125,
+    "upstream_inference_completions_cost": 0.0001578
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 224,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9540,
+   "completion_tokens": 595,
+   "total_tokens": 10135,
+   "cost": 0.000474405,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9348,
+    "cache_write_tokens": 189,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000474405,
+    "upstream_inference_prompt_cost": 0.000117405,
+    "upstream_inference_completions_cost": 0.000357
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 31.1
+}

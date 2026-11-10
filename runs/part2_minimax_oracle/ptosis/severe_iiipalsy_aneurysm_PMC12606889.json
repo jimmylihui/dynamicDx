@@ -1,0 +1,115 @@
+{
+ "questions": [
+  "Do you have a severe headache?",
+  "Did the eyelid drooping and vision changes come on suddenly?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Are you over 50 years old?",
+  "Do you have double vision?",
+  "Have you noticed any weakness in your arms or legs?",
+  "Do you smoke?",
+  "Have you had a recent head injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "pupil examination (size, light reaction)",
+  "MRI orbits",
+  "CT / MR angiography (circle of Willis)",
+  "ocular surgical history"
+ ],
+ "results": [
+  "1. pupil examination (size, light reaction): mild anisocoria; the RIGHT pupil is unreactive to dim light, with involuntary pupillary spasms that are irregular in both frequency and duration and unrelated to eye position",
+  "2. MRI orbits: atrophy of the extraocular muscles, particularly the medial rectus - a long-standing, not acute, palsy",
+  "3. CT / MR angiography (circle of Willis): NO aneurysm",
+  "4. ocular surgical history: previous strabismus surgery and levator muscle surgery"
+ ],
+ "dx_raw": "DIAGNOSIS: Congenital right third nerve palsy with pupillary involvement (chronic, complete, with pupillary athetosis)\n\nDifferentials to consider:\n1. Old traumatic third nerve palsy (patient may not recall childhood injury)\n2. Chronic compressive lesion (cavernous sinus/superior orbital fissure) not detected on CTA but present in the past and now resolved\n3. Congenital cranial dysinnervation disorder (e.g., atypical Duane's with third nerve involvement)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Congenital right third nerve palsy with pupillary involvement (chronic, complete, with pupillary athetosis)",
+ "decisive_served": [
+  "pupil examination (size, light reaction)",
+  "MRI orbits",
+  "CT / MR angiography (circle of Willis)",
+  "ocular surgical history"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 3651,
+   "total_tokens": 10713,
+   "cost": 0.00646212,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00646212,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0043812
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3565,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7478,
+   "completion_tokens": 3889,
+   "total_tokens": 11367,
+   "cost": 0.00521892,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00521892,
+    "upstream_inference_prompt_cost": 0.00055212,
+    "upstream_inference_completions_cost": 0.0046668
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3790,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_iiipalsy_aneurysm_PMC12606889.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 80.5
+}

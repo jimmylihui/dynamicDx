@@ -1,0 +1,187 @@
+{
+ "questions": [
+  "Are you awake and aware of what is happening during the jerks?",
+  "Do the jerks get worse when you are startled by a sudden noise or touch?",
+  "Has your memory or thinking gotten worse over the past several weeks?",
+  "Have you been diagnosed with kidney failure or do you need dialysis?",
+  "Did this begin shortly after a period when your heart stopped or you stopped breathing?",
+  "Did the jerks begin suddenly within the past few days?",
+  "Do you drink alcohol every day, or have you recently cut down or stopped drinking?",
+  "Have you started any new medications in the past few weeks?",
+  "Have you ever been diagnosed with epilepsy or had seizures before?",
+  "Have you had a fever or felt acutely ill in the past week?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Electroencephalogram (EEG) with EMG back-averaging of the jerks",
+  "MRI brain",
+  "Serum creatine kinase",
+  "Urea and electrolytes, calcium, magnesium",
+  "Liver function tests including ammonia",
+  "Capillary blood glucose",
+  "Anti-GAD and voltage-gated potassium channel antibodies",
+  "Somatosensory evoked potentials (for giant cortical responses)"
+ ],
+ "served": [
+  "EEG",
+  "EEG-EMG polygraphy (back-averaging)",
+  "brain MRI",
+  "creatine kinase",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "renal function (urea, creatinine)",
+  "electrolytes (Na, K, Ca, Mg)",
+  "liver function tests",
+  "liver function and ammonia",
+  "serum ammonia",
+  "glucose",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "autoimmune and paraneoplastic antibody panel",
+  "somatosensory evoked potentials"
+ ],
+ "results": [
+  "1. Electroencephalogram (EEG) with EMG back-averaging of the jerks",
+  "     EEG: diffuse encephalopathic changes without periodic sharp wave complexes",
+  "     EEG-EMG polygraphy (back-averaging): no cortical correlate preceding the jerks",
+  "2. MRI brain",
+  "     brain MRI: hypoxic-ischaemic injury",
+  "3. Serum creatine kinase",
+  "     creatine kinase: normal",
+  "4. Urea and electrolytes, calcium, magnesium",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     renal function (urea, creatinine): normal",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "5. Liver function tests including ammonia",
+  "     liver function tests: normal",
+  "     liver function and ammonia: normal",
+  "     serum ammonia: normal",
+  "6. Capillary blood glucose",
+  "     glucose: normal",
+  "7. Anti-GAD and voltage-gated potassium channel antibodies",
+  "     serum paraneoplastic / neuronal autoantibody panel: normal",
+  "     autoimmune and paraneoplastic antibody panel: negative",
+  "8. Somatosensory evoked potentials (for giant cortical responses)",
+  "     somatosensory evoked potentials: normal, no giant SSEP"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-hypoxic (post-anoxic) myoclonus of subcortical reticular-reflex type, due to global cerebral hypoxic-ischaemic injury following cardiorespiratory arrest.\n\nAlternatives to consider:\n1. Lance–Adams syndrome (cortical post-hypoxic myoclonus) — less likely given absent cortical correlate on EEG-EMG back-averaging and normal SSEPs.\n2. Myoclonic status epilepticus in the setting of hypoxic-ischaemic encephalopathy — unlikely as there are no periodic epileptiform discharges and the jerks are chronic rather than acute.\n3. Hypoxic-ischaemic encephalopathy with incidental (non-specific) myoclonus — a non-specific but defensible alternative if the jerks are not felt to constitute a discrete myoclonus syndrome.",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Electroencephalogram (EEG) with EMG back-averaging of the jerks\n2. MRI brain\n3. Serum creatine kinase\n4. Urea and electrolytes, calcium, magnesium\n5. Liver function tests including ammonia\n6. Capillary blood glucose\n7. Anti-GAD and voltage-gated potassium channel antibodies\n8. Somatosensory evoked potentials (for giant cortical responses)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Post-hypoxic (post-anoxic) myoclonus of subcortical reticular-reflex type, due to global cerebral hypoxic-ischaemic injury following cardiorespiratory arrest.",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 328,
+   "completion_tokens": 2658,
+   "total_tokens": 2986,
+   "cost": 0.0032388,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 205,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0032388,
+    "upstream_inference_prompt_cost": 4.92e-05,
+    "upstream_inference_completions_cost": 0.0031896
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2498,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 837,
+   "completion_tokens": 465,
+   "total_tokens": 1302,
+   "cost": 0.00073038,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 328,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00073038,
+    "upstream_inference_prompt_cost": 0.00017238,
+    "upstream_inference_completions_cost": 0.000558
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 381,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1253,
+   "completion_tokens": 1221,
+   "total_tokens": 2474,
+   "cost": 0.00164022,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 837,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00164022,
+    "upstream_inference_prompt_cost": 0.00017502,
+    "upstream_inference_completions_cost": 0.0014652
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1043,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 59.2
+}

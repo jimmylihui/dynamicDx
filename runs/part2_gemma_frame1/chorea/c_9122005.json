@@ -1,0 +1,165 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have weakness on one side of your body?",
+  "Did you hit your head recently?",
+  "Do you have a severe headache?",
+  "Are you taking blood-thinning medication?",
+  "Do you have a history of high blood pressure?",
+  "Do you have diabetes?",
+  "Is your vision affected?",
+  "Are you experiencing any numbness?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Blood glucose",
+  "Serum electrolytes, urea, and creatinine",
+  "Full blood count",
+  "Urinalysis and culture",
+  "CT head (non-contrast)",
+  "Chest X-ray",
+  "Liver function tests"
+ ],
+ "served": [
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "full blood count",
+  "urinalysis",
+  "CT head (non-contrast)",
+  "liver function tests"
+ ],
+ "results": [
+  "1. Blood glucose",
+  "     blood glucose: NORMAL - no diabetes and no hyperglycaemia",
+  "2. Serum electrolytes, urea, and creatinine",
+  "     serum electrolytes, urea and creatinine: normal",
+  "3. Full blood count",
+  "     full blood count: normal",
+  "4. Urinalysis and culture",
+  "     urinalysis: normal",
+  "5. CT head (non-contrast)",
+  "     CT head (non-contrast): no haemorrhage, no hyperdensity, no infarct",
+  "6. Chest X-ray",
+  "     not performed / not available",
+  "7. Liver function tests",
+  "     liver function tests: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional Neurological Disorder due to psychological stress\n\n1. Catatonia\n2. Lacunar stroke\n3. Brain tumor",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Blood glucose\n2. Serum electrolytes, urea, and creatinine\n3. Full blood count\n4. Urinalysis and culture\n5. CT head (non-contrast)\n6. Chest X-ray\n7. Liver function tests",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional Neurological Disorder due to psychological stress",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 1236,
+   "total_tokens": 1656,
+   "cost": 0.00046224,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00046224,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00042024
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1097,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 786,
+   "completion_tokens": 725,
+   "total_tokens": 1511,
+   "cost": 0.0003251,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003251,
+    "upstream_inference_prompt_cost": 7.86e-05,
+    "upstream_inference_completions_cost": 0.0002465
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 674,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1058,
+   "completion_tokens": 5500,
+   "total_tokens": 6558,
+   "cost": 0.0019758,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0019758,
+    "upstream_inference_prompt_cost": 0.0001058,
+    "upstream_inference_completions_cost": 0.00187
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5376,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 5968.8
+}

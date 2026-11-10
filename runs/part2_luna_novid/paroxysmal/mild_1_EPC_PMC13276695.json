@@ -1,0 +1,171 @@
+{
+ "questions": [
+  "Are you currently having severe difficulty breathing?",
+  "Are you currently having chest pressure or chest pain?",
+  "Have you fainted or become difficult to wake?",
+  "Have you suddenly developed weakness or numbness on one side of your body?",
+  "Have you suddenly developed trouble speaking, understanding speech, seeing, or walking?",
+  "Are you currently having uncontrolled bleeding?",
+  "Are you currently having severe or rapidly worsening pain?",
+  "Are you currently having severe abdominal pain?",
+  "Are you currently having a seizure?",
+  "Have you had a serious allergic reaction with swelling of your face or throat?",
+  "Do you have a high fever with confusion, a stiff neck, or a rapidly spreading rash?",
+  "Are you feeling that you might harm yourself or someone else?",
+  "Could you be pregnant?",
+  "Have you recently had a significant injury?",
+  "Have you recently started a new medication or changed a medication dose?",
+  "Have you recently used alcohol or recreational drugs?",
+  "Do you have a known medical condition requiring ongoing treatment?",
+  "Do you have a known immune-system problem?",
+  "Have you had unexplained weight loss?",
+  "Have you had symptoms for more than one week?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Comprehensive bedside physical examination, including vital signs."
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "neurological examination between events"
+ ],
+ "results": [
+  "1. Comprehensive bedside physical examination, including vital signs.",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: MMSE 26/30",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "     neurological examination between events: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Insufficient information to establish a specific disease diagnosis\n\nTransient epileptic amnesia\n\nTransient global amnesia\n\nAcute subjective cognitive impairment without demonstrable neurological deficit",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Comprehensive bedside physical examination, including vital signs.",
+ "rationale": [
+  null
+ ],
+ "dx": "Insufficient information to establish a specific disease diagnosis",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 144,
+   "completion_tokens": 675,
+   "total_tokens": 819,
+   "cost": 0.0004194,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004194,
+    "upstream_inference_prompt_cost": 1.44e-05,
+    "upstream_inference_completions_cost": 0.000405
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 420,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 887,
+   "completion_tokens": 270,
+   "total_tokens": 1157,
+   "cost": 0.0002507,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002507,
+    "upstream_inference_prompt_cost": 8.87e-05,
+    "upstream_inference_completions_cost": 0.000162
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 253,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1103,
+   "completion_tokens": 384,
+   "total_tokens": 1487,
+   "cost": 0.0003682,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1100,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003682,
+    "upstream_inference_prompt_cost": 0.0001378,
+    "upstream_inference_completions_cost": 0.0002304
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 342,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 31.0
+}

@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Can you move your left eye toward your nose when focusing on an object close to your face?",
+  "Is your left eyelid drooping?",
+  "Have you ever been diagnosed with multiple sclerosis?",
+  "Have you ever had a stroke?",
+  "Have you experienced any numbness or weakness in your limbs?",
+  "Are you over 50 years old?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Anti-AChR antibodies",
+  "Single fiber EMG",
+  "MRI of the brain and orbits",
+  "Ice pack test"
+ ],
+ "served": [
+  "anti-acetylcholine receptor antibodies",
+  "single-fibre electromyography",
+  "MRI brain with gadolinium",
+  "MRI sella and orbits"
+ ],
+ "results": [
+  "1. Anti-AChR antibodies",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "2. Single fiber EMG",
+  "     single-fibre electromyography: normal",
+  "3. MRI of the brain and orbits",
+  "     MRI brain with gadolinium: bilateral dorsomedial pontine and left thalamic infarction",
+  "     MRI sella and orbits: normal - no parasellar or suprasellar mass",
+  "4. Ice pack test",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Top-of-the-basilar syndrome caused by basilar artery occlusion\n\n1. Basilar artery thrombosis\n2. Basilar artery embolism\n3. Left internuclear ophthalmoplegia due to pontine infarction",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Anti-AChR antibodies\n2. Single fiber EMG\n3. MRI of the brain and orbits\n4. Ice pack test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Top-of-the-basilar syndrome caused by basilar artery occlusion",
+ "decisive_served": [
+  "MRI sella and orbits"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 203,
+   "completion_tokens": 5608,
+   "total_tokens": 5811,
+   "cost": 0.00192702,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00192702,
+    "upstream_inference_prompt_cost": 2.03e-05,
+    "upstream_inference_completions_cost": 0.00190672
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5088,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 531,
+   "completion_tokens": 4212,
+   "total_tokens": 4743,
+   "cost": 0.00148518,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00148518,
+    "upstream_inference_prompt_cost": 5.31e-05,
+    "upstream_inference_completions_cost": 0.00143208
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3851,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 751,
+   "completion_tokens": 6201,
+   "total_tokens": 6952,
+   "cost": 0.00218344,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00218344,
+    "upstream_inference_prompt_cost": 7.51e-05,
+    "upstream_inference_completions_cost": 0.00210834
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5727,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.2,
+ "video": "mild_1_seesaw_INO_PMC6883617.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 510.9
+}

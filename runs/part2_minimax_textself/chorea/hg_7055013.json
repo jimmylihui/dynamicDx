@@ -1,0 +1,187 @@
+{
+ "questions": [
+  "Were you awake and aware during the leg movements?",
+  "Do you have a history of seizures or epilepsy?",
+  "Did you experience any warning signs, unusual smells, or strange feelings before the movements started?",
+  "Were you able to stop the movements if you tried?",
+  "Have you had a recent fever, infection, or felt generally unwell in the past few weeks?",
+  "Do you have a history of brain tumor, stroke, or head injury?",
+  "Do you have a history of cancer?",
+  "Are you currently taking any medications?",
+  "Did you feel confused, drowsy, or tired after the movements stopped?",
+  "Were you asleep when the episode began?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Electroencephalogram (EEG)",
+  "Brain MRI with contrast",
+  "Serum glucose",
+  "Serum sodium, potassium, calcium, magnesium",
+  "Complete blood count",
+  "Comprehensive metabolic panel including liver function tests",
+  "Serum creatinine and blood urea nitrogen",
+  "Urine toxicology screen",
+  "Anti-epileptic drug level (if any previously prescribed)",
+  "Lumbar puncture (if MRI shows no clear cause)"
+ ],
+ "served": [
+  "EEG",
+  "brain MRI with contrast",
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "toxicology screen (urine and serum)",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. Electroencephalogram (EEG)",
+  "     EEG: normal",
+  "2. Brain MRI with contrast",
+  "     brain MRI with contrast: normal basal ganglia, no focal lesion",
+  "3. Serum glucose",
+  "     blood glucose: 690 mg/dL with a NORMAL anion gap",
+  "4. Serum sodium, potassium, calcium, magnesium",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "5. Complete blood count",
+  "     full blood count: normal",
+  "6. Comprehensive metabolic panel including liver function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     blood glucose: 690 mg/dL with a NORMAL anion gap",
+  "7. Serum creatinine and blood urea nitrogen",
+  "     serum electrolytes, urea and creatinine: normal",
+  "8. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "9. Anti-epileptic drug level (if any previously prescribed)",
+  "     not performed / not available",
+  "10. Lumbar puncture (if MRI shows no clear cause)",
+  "     lumbar puncture / CSF: normal cells, protein and glucose; no oligoclonal bands"
+ ],
+ "dx_raw": "DIAGNOSIS: Focal motor status epilepticus (epilepsia partialis continua) secondary to non-ketotic hyperglycemia\n\n1. Focal seizure activity related to known intracranial malignancy (paraneoplastic or tumor-associated)\n2. Metabolic/toxic seizure from another unmeasured derangement (e.g., hyperosmolar state)\n3. Recurrence/progression of pre-existing structural epilepsy unrelated to current glucose",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Electroencephalogram (EEG)\n2. Brain MRI with contrast\n3. Serum glucose\n4. Serum sodium, potassium, calcium, magnesium\n5. Complete blood count\n6. Comprehensive metabolic panel including liver function tests\n7. Serum creatinine and blood urea nitrogen\n8. Urine toxicology screen\n9. Anti-epileptic drug level (if any previously prescribed)\n10. Lumbar puncture (if MRI shows no clear cause)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Focal motor status epilepticus (epilepsia partialis continua) secondary to non-ketotic hyperglycemia",
+ "decisive_served": [
+  "blood glucose",
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 520,
+   "completion_tokens": 3275,
+   "total_tokens": 3795,
+   "cost": 0.00405864,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00405864,
+    "upstream_inference_prompt_cost": 0.00012864,
+    "upstream_inference_completions_cost": 0.00393
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3752,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 997,
+   "completion_tokens": 92,
+   "total_tokens": 1089,
+   "cost": 0.00028998,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 498,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00028998,
+    "upstream_inference_prompt_cost": 0.00017958,
+    "upstream_inference_completions_cost": 0.0001104
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1415,
+   "completion_tokens": 397,
+   "total_tokens": 1812,
+   "cost": 0.0006429,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1075,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006429,
+    "upstream_inference_prompt_cost": 0.0001665,
+    "upstream_inference_completions_cost": 0.0004764
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 373,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 55.9
+}

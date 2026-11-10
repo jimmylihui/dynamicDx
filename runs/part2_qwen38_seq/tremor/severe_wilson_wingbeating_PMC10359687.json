@@ -1,0 +1,182 @@
+{
+ "questions": [
+  "Do you have a known history of epilepsy or seizures?",
+  "Are you currently taking any medications for your condition?",
+  "Have you noticed if the shaking in your hands gets worse when you try to use them, like eating or writing?",
+  "Are you currently taking valproic acid (or sodium valproate)?",
+  "Do you have a history of liver disease?",
+  "Are you currently taking lithium?",
+  "Are you currently taking cinnarizine or flunarizine?",
+  "Are you currently taking amiodarone?",
+  "Are you currently taking zonisamide?",
+  "Are you currently taking lamotrigine?",
+  "Are you currently taking carbamazepine?",
+  "Are you currently taking phenytoin?",
+  "Are you currently taking gabapentin?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Do you have a known history of epilepsy or seizures?; Are you currently taking any medications for your condition?; Have you noticed if the shaking in your hands gets worse when you try to use them, like eating or writing? -> ['no', 'yes', 'no']",
+  "R2 ASK Are you currently taking valproic acid (or sodium valproate)?; Do you have a history of liver disease? -> ['no', 'no']",
+  "R3 ASK Are you currently taking lithium? -> ['no']",
+  "R4 ASK Are you currently taking cinnarizine or flunarizine? -> ['no']",
+  "R5 ASK Are you currently taking amiodarone? -> ['no']",
+  "R6 ASK Are you currently taking zonisamide? -> ['no']",
+  "R7 ASK Are you currently taking lamotrigine? -> ['no']",
+  "R8 ASK Are you currently taking carbamazepine? -> ['no']",
+  "R9 ASK Are you currently taking phenytoin? -> ['no']",
+  "R10 ASK Are you currently taking gabapentin? -> ['no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Zonisamide-induced asterixis -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a known history of epilepsy or seizures?",
+    "Are you currently taking any medications for your condition?",
+    "Have you noticed if the shaking in your hands gets worse when you try to use them, like eating or writing?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking valproic acid (or sodium valproate)?",
+    "Do you have a history of liver disease?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking lithium?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking cinnarizine or flunarizine?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking amiodarone?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking zonisamide?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking lamotrigine?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking carbamazepine?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking phenytoin?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking gabapentin?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Zonisamide-induced asterixis"
+  }
+ ],
+ "dx": "Zonisamide-induced asterixis",
+ "dx_raw": "DIAGNOSIS: Zonisamide-induced asterixis",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.002,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 61.9
+}

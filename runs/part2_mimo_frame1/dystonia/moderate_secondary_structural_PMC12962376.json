@@ -1,0 +1,160 @@
+{
+ "questions": [
+  "Are you in severe pain right now?",
+  "Did you suffer a recent injury or fall?",
+  "Is the pain located in your back?",
+  "Does the pain radiate down your legs?",
+  "Can you move your legs and feet freely?",
+  "Have you experienced this specific pain before?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Comprehensive neurological examination including assessment of motor strength, sensory examination, deep tendon reflexes, and pathological reflexes (Babinski sign).",
+  "MRI of the entire spine without contrast.",
+  "Nerve conduction studies and electromyography of the lower limbs.",
+  "Blood tests including complete blood count, erythrocyte sedimentation rate, C-reactive protein, serum electrolytes, and vitamin B12 level."
+ ],
+ "served": [
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "MRI cervical and thoracic spine",
+  "cervical and whole spine MRI",
+  "nerve conduction studies",
+  "needle EMG of the affected muscles",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "vitamin B12 with methylmalonic acid",
+  "ESR / CRP"
+ ],
+ "results": [
+  "1. Comprehensive neurological examination including assessment of motor strength, sensory examination, deep tendon reflexes, and pathological reflexes (Babinski sign).",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "2. MRI of the entire spine without contrast.",
+  "     MRI cervical and thoracic spine: longitudinally extensive T2 hyperintense lesion confined to the cervical spinal cord",
+  "     cervical and whole spine MRI: LONGITUDINALLY EXTENSIVE T2 lesion confined to the cervical cord",
+  "3. Nerve conduction studies and electromyography of the lower limbs.",
+  "     nerve conduction studies: normal",
+  "     needle EMG of the affected muscles: prolonged bursts, overflow activation and simultaneous agonist-antagonist contraction, with NO denervation or myopathy - confirms dystonic hypertonia",
+  "4. Blood tests including complete blood count, erythrocyte sedimentation rate, C-reactive protein, serum electrolytes, and vitamin B12 level.",
+  "     full blood count and biochemistry: normal",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "     ESR / CRP: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Dystonia secondary to longitudinally extensive cervical myelitis, likely neuromyelitis optica spectrum disorder (NMOSD)\n\nThe longitudinally extensive T2 hyperintense lesion confined to the cervical spinal cord explains the dystonic posturing through disruption of extrapyramidal tracts, while preserved strength, reflexes, and sensation suggest early or selective involvement. The classic imaging pattern in a young woman strongly favors AQP4-IgG seropositive NMOSD.\n\n**Alternatives:**\n\n1. Anti-MOG antibody-associated myelitis (MOGAD) causing secondary cervical dystonia\n2. Neurosarcoidosis with isolated cervical myelopathy presenting as dystonia\n3. Idiopathic cervical dystonia with an incidental demyelinating cervical cord lesion\n\n**Recommended next steps:** AQP4-IgG and MOG-IgG serology, lumbar puncture with CSF analysis and oligoclonal bands, and gadolinium-enhanced cervical spine MRI to assess for active inflammation.",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Comprehensive neurological examination including assessment of motor strength, sensory examination, deep tendon reflexes, and pathological reflexes (Babinski sign).\n2. MRI of the entire spine without contrast.\n3. Nerve conduction studies and electromyography of the lower limbs.\n4. Blood tests including complete blood count, erythrocyte sedimentation rate, C-reactive protein, serum electrolytes, and vitamin B12 level.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Dystonia secondary to longitudinally extensive cervical myelitis, likely neuromyelitis optica spectrum disorder (NMOSD)",
+ "decisive_served": [
+  "cervical and whole spine MRI",
+  "needle EMG of the affected muscles"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 848,
+   "completion_tokens": 4297,
+   "total_tokens": 5145,
+   "cost": 0.0012955376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012955376,
+    "upstream_inference_prompt_cost": 9.23776e-05,
+    "upstream_inference_completions_cost": 0.00120316
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4232,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1151,
+   "completion_tokens": 438,
+   "total_tokens": 1589,
+   "cost": 0.0002574376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002574376,
+    "upstream_inference_prompt_cost": 0.0001347976,
+    "upstream_inference_completions_cost": 0.00012264
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 348,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1599,
+   "completion_tokens": 724,
+   "total_tokens": 2323,
+   "cost": 0.0002773064,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1088,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002773064,
+    "upstream_inference_prompt_cost": 7.45864e-05,
+    "upstream_inference_completions_cost": 0.00020272
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 504,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_secondary_structural_PMC12962376.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 194.3
+}

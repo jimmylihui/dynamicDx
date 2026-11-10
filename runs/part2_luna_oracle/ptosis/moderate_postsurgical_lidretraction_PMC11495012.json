@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Did the bruising around your eyes begin after an injury to your head, face, or nose?",
+  "Have you had any facial, nasal, eyelid, or cosmetic procedure recently?",
+  "Did you lose consciousness, feel confused, or have a memory gap after any recent injury?",
+  "Have you had a severe or worsening headache since this began?",
+  "Have you vomited since this began?",
+  "Do you have blurred or double vision?",
+  "Do you have pain when moving either eye?",
+  "Is either eye difficult to open because of swelling?",
+  "Have you noticed blood or clear fluid coming from your nose or ears?",
+  "Do you have fever, increasing redness, warmth, or tenderness around either eye?",
+  "Did the discoloration appear suddenly without any known injury or procedure?",
+  "Do you bruise or bleed unusually easily elsewhere?",
+  "Are you taking blood thinners, aspirin, or medications that affect clotting?",
+  "Do you have a known bleeding or platelet disorder?",
+  "Have you had similar bruising around your eyes before?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "lid position and measurement (MRD1 both sides)",
+  "TSH / free T4 / TRAb",
+  "surgical history"
+ ],
+ "results": [
+  "1. lid position and measurement (MRD1 both sides): MRD1 raised on the LEFT (retraction); right lid height normal - the right eye is NOT ptotic",
+  "2. TSH / free T4 / TRAb: normal, TRAb negative - excludes thyroid eye disease",
+  "3. surgical history: closed-approach structural rhinoplasty; retraction noted on postoperative day 6"
+ ],
+ "dx_raw": "DIAGNOSIS: Acquired unilateral left upper-eyelid retraction secondary to recent closed-approach structural rhinoplasty (postoperative periorbital soft-tissue/levator-aponeurosis traction), with associated postoperative periorbital ecchymosis.\n\nALTERNATIVES:  \n1. Direct postoperative levator muscle or levator-aponeurosis injury causing persistent left upper-lid retraction.  \n2. Orbital hemorrhage or edema related to the rhinoplasty.  \n3. Idiopathic or neurogenic unilateral upper-eyelid retraction.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Acquired unilateral left upper-eyelid retraction secondary to recent closed-approach structural rhinoplasty (postoperative periorbital soft-tissue/levator-aponeurosis traction), with associated postoperative periorbital ecchymosis.",
+ "decisive_served": [
+  "lid position and measurement (MRD1 both sides)",
+  "TSH / free T4 / TRAb",
+  "surgical history"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 496,
+   "total_tokens": 6172,
+   "cost": 0.00035463,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00035463,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0002976
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 269,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6371,
+   "completion_tokens": 389,
+   "total_tokens": 6760,
+   "cost": 0.000377305,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 695,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000377305,
+    "upstream_inference_prompt_cost": 0.000143905,
+    "upstream_inference_completions_cost": 0.0002334
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 267,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 16.2
+}

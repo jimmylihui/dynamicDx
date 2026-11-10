@@ -1,0 +1,107 @@
+{
+ "questions": [
+  "Did the muscle weakness in your legs begin in early childhood?",
+  "Has the weakness progressively worsened over the years?",
+  "Have you been diagnosed with any heart problems, such as a weakened heart muscle?",
+  "Do you experience shortness of breath or difficulty breathing?",
+  "Are you currently unable to walk?",
+  "Do your knees feel stiff or locked in a bent position?",
+  "Do you have difficulty controlling your bladder or bowels?",
+  "Is there a family history of similar muscle disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "lumbar puncture / CSF",
+  "medication and oncology history"
+ ],
+ "results": [
+  "1. lumbar puncture / CSF: normal protein and cellularity but CSF-restricted oligoclonal bands present - inflammatory",
+  "2. medication and oncology history: anti-PD-L1 for HPV-related anal squamous cell carcinoma; ankle arthritis at 2 months and grade 3 hyponatraemia at 7 months, both irAEs"
+ ],
+ "dx_raw": "DIAGNOSIS: Multiple Sclerosis (presenting as acute transverse myelitis) precipitated by anti-PD-L1 immune checkpoint inhibitor therapy.\nAcute transverse myelitis (idiopathic or related to systemic autoimmune disease)\nNeuromyelitis optica spectrum disorder (NMOSD)\nMOG antibody-associated disease (MOGAD)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Multiple Sclerosis (presenting as acute transverse myelitis) precipitated by anti-PD-L1 immune checkpoint inhibitor therapy.",
+ "decisive_served": [
+  "lumbar puncture / CSF",
+  "medication and oncology history"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2864,
+   "total_tokens": 9926,
+   "cost": 0.00551772,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00551772,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0034368
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2762,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7470,
+   "completion_tokens": 4337,
+   "total_tokens": 11807,
+   "cost": 0.00575412,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00575412,
+    "upstream_inference_prompt_cost": 0.00054972,
+    "upstream_inference_completions_cost": 0.0052044
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4271,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 82.0
+}

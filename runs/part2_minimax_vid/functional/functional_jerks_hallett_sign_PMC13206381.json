@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Are you having trouble with your hearing?",
+  "Do you have ringing in your ears?",
+  "Is your hearing worse in one ear?",
+  "Do you have any dizziness or spinning sensation?",
+  "Do you have any weakness in your legs or arms?",
+  "Do you have any numbness or tingling?",
+  "Do you have any changes in your vision?",
+  "Do you have any difficulty with balance or walking?",
+  "Do you have any headaches?",
+  "Have you had any recent infections or illnesses?",
+  "Do you have any ear pain?",
+  "Have you had any recent head injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI of the brain with and without contrast"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI brain"
+ ],
+ "results": [
+  "1. MRI of the brain with and without contrast",
+  "     MRI brain with gadolinium: normal",
+  "     MRI brain: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder (conversion disorder)\n\nAlternatives:\n1. Somatic symptom disorder\n2. Multiple sclerosis (MRI-negative)\n3. Small fiber neuropathy",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI of the brain with and without contrast",
+ "rationale": [
+  null
+ ],
+ "dx": "Functional neurological symptom disorder (conversion disorder)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7670,
+   "completion_tokens": 3377,
+   "total_tokens": 11047,
+   "cost": 0.00632604,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00632604,
+    "upstream_inference_prompt_cost": 0.00227364,
+    "upstream_inference_completions_cost": 0.0040524
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3712,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8125,
+   "completion_tokens": 5624,
+   "total_tokens": 13749,
+   "cost": 0.00737718,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7538,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00737718,
+    "upstream_inference_prompt_cost": 0.00062838,
+    "upstream_inference_completions_cost": 0.0067488
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6851,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8257,
+   "completion_tokens": 2335,
+   "total_tokens": 10592,
+   "cost": 0.0033471,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8050,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0033471,
+    "upstream_inference_prompt_cost": 0.0005451,
+    "upstream_inference_completions_cost": 0.002802
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2881,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 147.7
+}

@@ -1,0 +1,201 @@
+{
+ "questions": [
+  "Have you noticed a recent loss of weight despite having a normal or increased appetite?",
+  "Have you had palpitations, tremor, heat intolerance, or excessive sweating?",
+  "Have you experienced double vision or pain when moving your eyes?",
+  "Have your eyes appeared progressively more prominent over weeks or months?",
+  "Do you have a history of thyroid disease?",
+  "Can you intentionally make your eyes bulge forward or reproduce this appearance?",
+  "Do your eyes return to their normal position when you relax your eyelids or stop straining?",
+  "Has this happened repeatedly in the past?",
+  "Have you ever had an injury or surgery involving your eyes or eye sockets?",
+  "Is there severe eye pain, reduced vision, or inability to close either eye during an episode?",
+  "Did the abnormal eye appearance begin suddenly, within minutes or hours?",
+  "Do your eyes involuntarily move rapidly or deviate upward, sideways, or in different directions?",
+  "Have you recently taken metoclopramide, prochlorperazine, antipsychotic medication, or another dopamine-blocking drug?",
+  "Have you had headache, confusion, weakness, difficulty speaking, or loss of coordination?",
+  "Do you have a fever or a recent infection?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Urgent ophthalmic examination with visual acuity, pupillary responses, intraocular pressure, corneal exposure assessment, and evaluation of ocular motility.",
+  "Noncontrast CT scan of the orbits and brain.",
+  "Urgent MRI of the brain and brainstem with diffusion-weighted imaging, FLAIR, T2, and gadolinium contrast, including thin sections through the midbrain and pons.",
+  "MR angiography of the intracranial and posterior circulation."
+ ],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "smooth pursuit and saccades",
+  "adduction in horizontal gaze (each eye)",
+  "abducting nystagmus of the fellow eye",
+  "vertical gaze and convergence",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "subjective visual vertical",
+  "head impulse test",
+  "pupil size and light reaction",
+  "ptosis / lid position",
+  "CT head (non-contrast)",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI brain with DWI",
+  "CT / MR angiography (posterior circulation)",
+  "CT / MR angiography (circle of Willis)"
+ ],
+ "results": [
+  "R1 ASK Have you noticed a recent loss of weight despite having a normal or increased appetite?; Have you had palpitations, tremor, heat intolerance, or excessive sweating?; Have you experienced double vision or pain when moving your eyes?; Have your eyes appeared progressively more prominent over weeks or months?; Do you have a history of thyroid disease? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Can you intentionally make your eyes bulge forward or reproduce this appearance?; Do your eyes return to their normal position when you relax your eyelids or stop straining?; Has this happened repeatedly in the past?; Have you ever had an injury or surgery involving your eyes or eye sockets?; Is there severe eye pain, reduced vision, or inability to close either eye during an episode? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Did the abnormal eye appearance begin suddenly, within minutes or hours?; Do your eyes involuntarily move rapidly or deviate upward, sideways, or in different directions?; Have you recently taken metoclopramide, prochlorperazine, antipsychotic medication, or another dopamine-blocking drug?; Have you had headache, confusion, weakness, difficulty speaking, or loss of coordination?; Do you have a fever or a recent infection? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Urgent ophthalmic examination with visual acuity, pupillary responses, intraocular pressure, corneal exposure assessment, and evaluation of ocular motility.; Noncontrast CT scan of the orbits and brain. -> [['nystagmus: direction and whether it changes with gaze', 'smooth pursuit and saccades', 'adduction in horizontal gaze (each eye)', 'abducting nystagmus of the fellow eye', 'vertical gaze and convergence', 'skew deviation / alternating cover test', 'ocular torsion and head tilt', 'subjective visual vertical', 'head impulse test', 'pupil size and light reaction', 'ptosis / lid position'], ['CT head (non-contrast)']]",
+  "R5 ORDER Urgent MRI of the brain and brainstem with diffusion-weighted imaging, FLAIR, T2, and gadolinium contrast, including thin sections through the midbrain and pons.; MR angiography of the intracranial and posterior circulation. -> [['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI brain with DWI'], ['CT / MR angiography (posterior circulation)', 'CT / MR angiography (circle of Willis)']]",
+  "R6 DIAGNOSIS Acute bilateral paramedian pontine and left thalamic ischemic infarction from vertebrobasilar perforator ischemia (basilar/PCA small-vessel occlusive stroke), causing a pontine one-and-a-half syndrome with see-saw nystagmus. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you noticed a recent loss of weight despite having a normal or increased appetite?",
+    "Have you had palpitations, tremor, heat intolerance, or excessive sweating?",
+    "Have you experienced double vision or pain when moving your eyes?",
+    "Have your eyes appeared progressively more prominent over weeks or months?",
+    "Do you have a history of thyroid disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Can you intentionally make your eyes bulge forward or reproduce this appearance?",
+    "Do your eyes return to their normal position when you relax your eyelids or stop straining?",
+    "Has this happened repeatedly in the past?",
+    "Have you ever had an injury or surgery involving your eyes or eye sockets?",
+    "Is there severe eye pain, reduced vision, or inability to close either eye during an episode?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did the abnormal eye appearance begin suddenly, within minutes or hours?",
+    "Do your eyes involuntarily move rapidly or deviate upward, sideways, or in different directions?",
+    "Have you recently taken metoclopramide, prochlorperazine, antipsychotic medication, or another dopamine-blocking drug?",
+    "Have you had headache, confusion, weakness, difficulty speaking, or loss of coordination?",
+    "Do you have a fever or a recent infection?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Urgent ophthalmic examination with visual acuity, pupillary responses, intraocular pressure, corneal exposure assessment, and evaluation of ocular motility.",
+    "Noncontrast CT scan of the orbits and brain."
+   ],
+   "result": [
+    [
+     "nystagmus: direction and whether it changes with gaze",
+     "smooth pursuit and saccades",
+     "adduction in horizontal gaze (each eye)",
+     "abducting nystagmus of the fellow eye",
+     "vertical gaze and convergence",
+     "skew deviation / alternating cover test",
+     "ocular torsion and head tilt",
+     "subjective visual vertical",
+     "head impulse test",
+     "pupil size and light reaction",
+     "ptosis / lid position"
+    ],
+    [
+     "CT head (non-contrast)"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Urgent MRI of the brain and brainstem with diffusion-weighted imaging, FLAIR, T2, and gadolinium contrast, including thin sections through the midbrain and pons.",
+    "MR angiography of the intracranial and posterior circulation."
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium",
+     "MRI diffusion-weighted sequences",
+     "MRI brain with DWI"
+    ],
+    [
+     "CT / MR angiography (posterior circulation)",
+     "CT / MR angiography (circle of Willis)"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Acute bilateral paramedian pontine and left thalamic ischemic infarction from vertebrobasilar perforator ischemia (basilar/PCA small-vessel occlusive stroke), causing a pontine one-and-a-half syndrome with see-saw nystagmus."
+  }
+ ],
+ "dx": "Acute bilateral paramedian pontine and left thalamic ischemic infarction from vertebrobasilar perforator ischemia (basilar/PCA small-vessel occlusive stroke), causing a pontine one-and-a-half syndrome with see-saw nystagmus.",
+ "dx_raw": "DIAGNOSIS: Acute bilateral paramedian pontine and left thalamic ischemic infarction from vertebrobasilar perforator ischemia (basilar/PCA small-vessel occlusive stroke), causing a pontine one-and-a-half syndrome with see-saw nystagmus.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "MRI brain with DWI",
+  "adduction in horizontal gaze (each eye)",
+  "nystagmus: direction and whether it changes with gaze"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0044,
+ "n_frames": 32,
+ "duration_s": 21.2,
+ "video": "mild_1_seesaw_INO_PMC6883617.mp4",
+ "line": "vertigo_central",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 43.5
+}

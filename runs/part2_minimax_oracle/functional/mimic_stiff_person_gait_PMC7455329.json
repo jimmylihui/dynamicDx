@@ -1,0 +1,126 @@
+{
+ "questions": [
+  "Is your primary problem pain in your chest?",
+  "Do you have fractured ribs?",
+  "Did your symptoms begin after a recent traumatic injury?",
+  "Are you using the crutches because of an injury to your leg or hip?",
+  "Are you using the crutches because walking makes your chest pain worse?",
+  "Does the compressive strap around your chest help to relieve your pain?",
+  "Do you experience pain when taking a deep breath?",
+  "Do you feel short of breath with minimal exertion?",
+  "Have you had any recent thoracic or abdominal surgery?",
+  "Have you been coughing?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "walking backward",
+  "running",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "trial of benzodiazepine (diazepam)",
+  "anti-GAD65 antibodies",
+  "needle EMG (continuous motor unit activity at rest)"
+ ],
+ "results": [
+  "1. walking backward: the slow, guarded, wide-based pattern PERSISTS",
+  "2. running: cannot run; the pattern does not normalise",
+  "3. gait with a distracting or automatic task (dancing, counting backwards): no change - the gait is not distractible",
+  "4. muscle tone (spasticity, rigidity, paratonia): genuine axial and lower-limb rigidity on passive movement",
+  "5. trial of benzodiazepine (diazepam): clear improvement in stiffness and in the gait",
+  "6. anti-GAD65 antibodies: MARKEDLY ELEVATED (high-titre, typically >2000 U/mL) - diagnostic in this clinical context",
+  "7. needle EMG (continuous motor unit activity at rest): CONTINUOUS motor unit activity at rest in agonist and antagonist simultaneously, abolished by diazepam"
+ ],
+ "dx_raw": "DIAGNOSIS: Stiff Person Syndrome — autoimmune, associated with high-titre anti-GAD65 antibodies (reduced central GABAergic inhibition producing axial and lower-limb rigidity with continuous motor unit activity that is benzodiazepine-responsive).\n\nAlternatives:\n1. Progressive encephalomyelitis with rigidity and myoclonus (PERM) — a related GAD65-spectrum disorder\n2. Autoimmune stiff-limb syndrome — focal lower-limb variant of SPS\n3. Paraneoplastic stiff person spectrum disorder (e.g., anti-amphiphysin) — though the markedly elevated anti-GAD65 makes this less likely",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Stiff Person Syndrome — autoimmune, associated with high-titre anti-GAD65 antibodies (reduced central GABAergic inhibition producing axial and lower-limb rigidity with continuous motor unit activity that is benzodiazepine-responsive).",
+ "decisive_served": [
+  "walking backward",
+  "running",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "trial of benzodiazepine (diazepam)",
+  "anti-GAD65 antibodies",
+  "needle EMG (continuous motor unit activity at rest)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8886,
+   "completion_tokens": 2522,
+   "total_tokens": 11408,
+   "cost": 0.00565452,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00565452,
+    "upstream_inference_prompt_cost": 0.00262812,
+    "upstream_inference_completions_cost": 0.0030264
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2399,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9448,
+   "completion_tokens": 995,
+   "total_tokens": 10443,
+   "cost": 0.00189936,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8871,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00189936,
+    "upstream_inference_prompt_cost": 0.00070536,
+    "upstream_inference_completions_cost": 0.001194
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 872,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 45.7
+}

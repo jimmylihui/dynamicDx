@@ -1,0 +1,126 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does the double vision disappear if you cover one eye?",
+  "Is your left eyelid drooping?",
+  "Are your pupils different sizes?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of high blood pressure?",
+  "Have you had any recent head trauma?",
+  "Do you have pain in or around the eye?",
+  "Do you have a severe headache?",
+  "Do you have difficulty swallowing or speaking?",
+  "Do you have weakness in your arms or legs?",
+  "Do you have numbness on one side of your face?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "adduction in horizontal gaze (each eye)",
+  "pupil size and light reaction",
+  "MRI brain with DWI",
+  "diffusion tensor tractography",
+  "CT / MR angiography (circle of Willis)"
+ ],
+ "results": [
+  "1. adduction in horizontal gaze (each eye): on left gaze the right eye fails to adduct, and the contralateral eye shows NO abducting nystagmus - unlike a classic INO",
+  "2. pupil size and light reaction: pupils EQUALLY REACTIVE - pupil-sparing",
+  "3. MRI brain with DWI: small DORSAL PARAMEDIAN MIDBRAIN INFARCT on diffusion-weighted imaging",
+  "4. diffusion tensor tractography: reduced integrity of the IPSILATERAL medial longitudinal fasciculus",
+  "5. CT / MR angiography (circle of Willis): no aneurysm"
+ ],
+ "dx_raw": "DIAGNOSIS: One-and-a-half syndrome caused by a dorsal paramedian midbrain infarct\n\n1. Internuclear ophthalmoplegia (INO)\n2. Ocular myasthenia gravis\n3. Miller Fisher syndrome",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "One-and-a-half syndrome caused by a dorsal paramedian midbrain infarct",
+ "decisive_served": [
+  "adduction in horizontal gaze (each eye)",
+  "pupil size and light reaction",
+  "MRI brain with DWI",
+  "diffusion tensor tractography",
+  "CT / MR angiography (circle of Willis)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14551,
+   "completion_tokens": 143,
+   "total_tokens": 14694,
+   "cost": 0.00224986,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00224986,
+    "upstream_inference_prompt_cost": 0.00218265,
+    "upstream_inference_completions_cost": 6.721e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15117,
+   "completion_tokens": 52,
+   "total_tokens": 15169,
+   "cost": 0.000388118,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14208,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000388118,
+    "upstream_inference_prompt_cost": 0.000363678,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 20.2,
+ "video": "severe_3_oculomotor_palsy_PMC12745546.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 11.2
+}

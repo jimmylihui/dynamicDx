@@ -1,0 +1,174 @@
+{
+ "questions": [
+  "Are you experiencing any severe or life-threatening symptoms right now, such as chest pain, difficulty breathing, or sudden severe headache?",
+  "Are you currently feeling unwell or in pain?",
+  "Is the main issue a new or unusual feeling, or is it a known condition that has gotten worse?",
+  "Does the problem involve pain or discomfort?",
+  "If yes, is the pain constant or does it come and go?",
+  "If the pain is localized to one area, is it in your head, neck, chest, abdomen, back, or limbs?",
+  "Have you had a fever or chills?",
+  "Have you had a cough, shortness of breath, or wheezing?",
+  "Have you experienced nausea, vomiting, diarrhea, or constipation?",
+  "Have you noticed any skin rashes, lumps, or changes in your skin?",
+  "Have you had any dizziness, fainting, numbness, or weakness in your arms or legs?",
+  "Have you recently experienced a significant change in your vision or hearing?",
+  "Are you having any problems with urination, such as pain, frequency, or blood?",
+  "Have you lost weight without trying, or had a significant change in appetite?",
+  "Are you taking any prescription medications?",
+  "Do you have any known chronic medical conditions?",
+  "Do you use tobacco, alcohol, or any recreational drugs?",
+  "Is there a family history of significant illnesses such as heart disease, cancer, or diabetes?",
+  "Did any specific injury or event precipitate your symptoms?",
+  "Is there anything else you feel is important for me to know?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "yes",
+  "20": "yes"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "CT head without contrast",
+  "Cervical spine CT",
+  "Complete blood count",
+  "Basic metabolic panel",
+  "Coagulation studies",
+  "CT angiography of head and neck"
+ ],
+ "served": [
+  "CT head",
+  "serum electrolytes, urea and creatinine"
+ ],
+ "results": [
+  "1. CT head without contrast",
+  "     CT head: left frontal post-traumatic gliosis and encephalomalacia",
+  "2. Cervical spine CT",
+  "     not performed / not available",
+  "3. Complete blood count",
+  "     not performed / not available",
+  "4. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "5. Coagulation studies",
+  "     not performed / not available",
+  "6. CT angiography of head and neck",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Traumatic carotid or vertebral artery dissection with acute ischemic stroke\n\nPost-traumatic seizure\nNew acute traumatic brain injury superimposed on chronic gliosis\nTransient ischemic attack",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. CT head without contrast\n2. Cervical spine CT\n3. Complete blood count\n4. Basic metabolic panel\n5. Coagulation studies\n6. CT angiography of head and neck",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Traumatic carotid or vertebral artery dissection with acute ischemic stroke",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 550,
+   "total_tokens": 935,
+   "cost": 0.000163996,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000163996,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 0.000154
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 200,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1326,
+   "completion_tokens": 589,
+   "total_tokens": 1915,
+   "cost": 0.0003242176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003242176,
+    "upstream_inference_prompt_cost": 0.0001592976,
+    "upstream_inference_completions_cost": 0.00016492
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 543,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1567,
+   "completion_tokens": 560,
+   "total_tokens": 2127,
+   "cost": 0.000200564,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1280,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000200564,
+    "upstream_inference_prompt_cost": 4.3764e-05,
+    "upstream_inference_completions_cost": 0.0001568
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 46.7
+}

@@ -1,0 +1,112 @@
+{
+ "questions": [
+  "Is the shaking present when your hand is at rest?",
+  "Have you noticed that your movements have become slower?",
+  "Do you feel any stiffness in your muscles?",
+  "Have you had any problems with your balance or falls?",
+  "Have you noticed your handwriting becoming smaller?",
+  "Do you have a family history of Parkinson's disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "skin examination",
+  "autoimmune encephalopathy / paraneoplastic antibody panel",
+  "brain MRI with contrast",
+  "PET-CT or CT body (occult malignancy)",
+  "trial of immunotherapy"
+ ],
+ "results": [
+  "1. skin examination: a painless, non-pruritic confluent erythematous rash on the left arm one day before the chorea began; it improved with doxycycline and clindamycin but the chorea did not",
+  "2. autoimmune encephalopathy / paraneoplastic antibody panel: NEGATIVE in serum and CSF - seronegative",
+  "3. brain MRI with contrast: 1.5T with gadolinium - frontal-predominant atrophy but NO focal lesion, with normal basal ganglia structure and volume",
+  "4. PET-CT or CT body (occult malignancy): skull base to thighs - no malignancy and no infection",
+  "5. trial of immunotherapy: empirical IVIg produced DRAMATIC improvement of the hemichorea - the diagnosis rests on the treatment response"
+ ],
+ "dx_raw": "DIAGNOSIS: Autoimmune Hemichorea-Hemiballismus\n\nParaneoplastic hemichorea-hemiballismus\nNon-ketotic hyperglycemic hemichorea-hemiballismus\nPost-infectious chorea (e.g., Sydenham's chorea)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Autoimmune Hemichorea-Hemiballismus",
+ "decisive_served": [
+  "skin examination",
+  "autoimmune encephalopathy / paraneoplastic antibody panel",
+  "brain MRI with contrast",
+  "PET-CT or CT body (occult malignancy)",
+  "trial of immunotherapy"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1562,
+   "total_tokens": 10260,
+   "cost": 0.00140088,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00140088,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00053108
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1459,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9133,
+   "completion_tokens": 2935,
+   "total_tokens": 12068,
+   "cost": 0.0019112,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0019112,
+    "upstream_inference_prompt_cost": 0.0009133,
+    "upstream_inference_completions_cost": 0.0009979
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2787,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11093232.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 134.4
+}

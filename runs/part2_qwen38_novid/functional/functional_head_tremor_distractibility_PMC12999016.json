@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a fever?",
+  "Are you having difficulty breathing?",
+  "Have you experienced any recent trauma or injury?",
+  "Do you have chest pain?",
+  "Are you vomiting?",
+  "Do you have diarrhea?",
+  "Have you lost consciousness recently?",
+  "Do you have a headache?",
+  "Are you pregnant?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "Physical examination of the abdomen for tenderness, masses, or organomegaly",
+  "Neurological examination assessing cranial nerves, motor strength, sensation, and reflexes",
+  "Complete blood count with differential"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "MRC power in all four limbs",
+  "full blood count, renal and liver profile"
+ ],
+ "results": [
+  "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "     not performed / not available",
+  "2. Physical examination of the abdomen for tenderness, masses, or organomegaly",
+  "     not performed / not available",
+  "3. Neurological examination assessing cranial nerves, motor strength, sensation, and reflexes",
+  "     cranial nerve examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     MRC power in all four limbs: 5/5 throughout",
+  "4. Complete blood count with differential",
+  "     full blood count, renal and liver profile: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Asymptomatic healthy individual (no active disease identified)\n1. Early-stage malignancy not yet causing systemic symptoms or detectable by basic screening\n2. Psychogenic or functional somatic syndrome presenting without objective physical findings",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation\n2. Physical examination of the abdomen for tenderness, masses, or organomegaly\n3. Neurological examination assessing cranial nerves, motor strength, sensation, and reflexes\n4. Complete blood count with differential",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Asymptomatic healthy individual (no active disease identified)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 89,
+   "total_tokens": 255,
+   "cost": 6.673e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.673e-05,
+    "upstream_inference_prompt_cost": 2.49e-05,
+    "upstream_inference_completions_cost": 4.183e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 539,
+   "completion_tokens": 65,
+   "total_tokens": 604,
+   "cost": 4.2792e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 4.2792e-05,
+    "upstream_inference_prompt_cost": 1.2242e-05,
+    "upstream_inference_completions_cost": 3.055e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 848,
+   "completion_tokens": 51,
+   "total_tokens": 899,
+   "cost": 8.2562e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.2562e-05,
+    "upstream_inference_prompt_cost": 5.8592e-05,
+    "upstream_inference_completions_cost": 2.397e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 26.2,
+ "video": "functional_head_tremor_distractibility_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 12.9
+}

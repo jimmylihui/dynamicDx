@@ -1,0 +1,121 @@
+{
+ "questions": [
+  "Have you noticed a new or unusual growth, swelling, or hanging tissue at the back of your throat?",
+  "Has it been causing pain or irritation?",
+  "Have you had difficulty swallowing?",
+  "Have you had any difficulty breathing or a sensation that your throat is closing?",
+  "Have you had fever, chills, or feeling generally unwell?",
+  "Have you recently had a sore throat, cold, or other infection?",
+  "Have you noticed bleeding, pus, or foul-smelling drainage from the area?",
+  "Has your voice recently become muffled or noticeably different?",
+  "Have you been snoring more than usual or having pauses in breathing during sleep?",
+  "Did you recently injure, burn, or undergo a procedure involving your mouth or throat?",
+  "Have you ever noticed this appearance before?",
+  "Has the appearance changed or enlarged recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "observation of the jerks",
+  "effect of sleep",
+  "MRI brainstem / dentato-rubro-olivary pathway",
+  "HLA-B51 and Behcet's assessment (pathergy, ophthalmology review)"
+ ],
+ "results": [
+  "1. observation of the jerks: rhythmic palatal movements at 2-3 Hz with bilateral acoustic clicks, louder on the right",
+  "2. effect of sleep: palatal tremor PERSISTS in sleep - characteristic of palatal tremor rather than true myoclonus",
+  "3. MRI brainstem / dentato-rubro-olivary pathway: inflammatory brainstem involvement in the Guillain-Mollaret triangle",
+  "4. HLA-B51 and Behcet's assessment (pathergy, ophthalmology review): consistent with Behcet's disease"
+ ],
+ "dx_raw": "DIAGNOSIS: Symptomatic palatal tremor due to Behçet disease–associated inflammatory involvement of the Guillain–Mollaret triangle (dentato–rubro–olivary pathway)\n\nAlternative: Essential palatal tremor  \nAlternative: Palatal myoclonus  \nAlternative: Brainstem inflammatory lesion unrelated to Behçet disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Symptomatic palatal tremor due to Behçet disease–associated inflammatory involvement of the Guillain–Mollaret triangle (dentato–rubro–olivary pathway)",
+ "decisive_served": [
+  "observation of the jerks",
+  "effect of sleep",
+  "MRI brainstem / dentato-rubro-olivary pathway",
+  "HLA-B51 and Behcet's assessment (pathergy, ophthalmology review)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 297,
+   "total_tokens": 5973,
+   "cost": 0.00023523,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00023523,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0001782
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 113,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6301,
+   "completion_tokens": 184,
+   "total_tokens": 6485,
+   "cost": 0.000245555,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 625,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000245555,
+    "upstream_inference_prompt_cost": 0.000135155,
+    "upstream_inference_completions_cost": 0.0001104
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 107,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 9.0,
+ "video": "mild_palatal_PMC12933468.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 15.0
+}

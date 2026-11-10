@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your chest?",
+  "Does the pain radiate to your left arm or jaw?",
+  "Do you have shortness of breath?",
+  "Are you sweating profusely?",
+  "Do you feel nauseous or have vomited?",
+  "Have you had a fever in the last 24 hours?",
+  "Do you have a cough?",
+  "Is there blood in your urine?",
+  "Is there blood in your stool?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "Physical examination of the abdomen for tenderness, masses, or organomegaly",
+  "Complete blood count with differential",
+  "Comprehensive metabolic panel"
+ ],
+ "served": [
+  "vital signs",
+  "full blood count"
+ ],
+ "results": [
+  "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "     vital signs: normal, afebrile",
+  "2. Physical examination of the abdomen for tenderness, masses, or organomegaly",
+  "     not performed / not available",
+  "3. Complete blood count with differential",
+  "     full blood count: normal",
+  "4. Comprehensive metabolic panel",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Asymptomatic healthy individual (No active disease identified)\n1. Anxiety disorder\n2. Early-stage malignancy not yet causing symptoms or lab abnormalities\n3. Functional somatic syndrome",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation\n2. Physical examination of the abdomen for tenderness, masses, or organomegaly\n3. Complete blood count with differential\n4. Comprehensive metabolic panel",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Asymptomatic healthy individual (No active disease identified)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 115,
+   "total_tokens": 281,
+   "cost": 7.895e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.895e-05,
+    "upstream_inference_prompt_cost": 2.49e-05,
+    "upstream_inference_completions_cost": 5.405e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 591,
+   "completion_tokens": 52,
+   "total_tokens": 643,
+   "cost": 4.4482e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 4.4482e-05,
+    "upstream_inference_prompt_cost": 2.0042e-05,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 830,
+   "completion_tokens": 44,
+   "total_tokens": 874,
+   "cost": 7.6572e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.6572e-05,
+    "upstream_inference_prompt_cost": 5.5892e-05,
+    "upstream_inference_completions_cost": 2.068e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "severe_sspe_PMC13071100.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 32.3
+}

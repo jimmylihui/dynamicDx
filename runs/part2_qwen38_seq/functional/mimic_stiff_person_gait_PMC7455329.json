@@ -1,0 +1,137 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain in your legs or feet?",
+  "Do you have a history of diabetes?",
+  "Do you feel numbness or tingling in your feet?",
+  "Do you have a history of stroke?",
+  "Do you have a history of Parkinson's disease?",
+  "Is your right leg weaker than your left?",
+  "Do you have a history of back problems or spinal surgery?",
+  "Have you had any recent falls or injuries to your legs?",
+  "Do you have a history of chronic alcohol use?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside neurological examination of lower limbs (motor strength, tone, reflexes, and sensation)"
+ ],
+ "served": [
+  "MRC power in all four limbs",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing any pain in your legs or feet?; Do you have a history of diabetes?; Do you feel numbness or tingling in your feet? -> ['no', 'yes', 'no']",
+  "R2 ASK Do you have a history of stroke?; Do you have a history of Parkinson's disease?; Is your right leg weaker than your left? -> ['no', 'no', 'no']",
+  "R3 ASK Do you have a history of back problems or spinal surgery?; Have you had any recent falls or injuries to your legs? -> ['no', 'no']",
+  "R4 ORDER Bedside neurological examination of lower limbs (motor strength, tone, reflexes, and sensation) -> [['MRC power in all four limbs', 'muscle tone (spasticity, rigidity, paratonia)', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)']]",
+  "R5 ASK Do you have a history of chronic alcohol use? -> ['no']",
+  "R6 DIAGNOSIS Parkinson's disease -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing any pain in your legs or feet?",
+    "Do you have a history of diabetes?",
+    "Do you feel numbness or tingling in your feet?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of stroke?",
+    "Do you have a history of Parkinson's disease?",
+    "Is your right leg weaker than your left?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of back problems or spinal surgery?",
+    "Have you had any recent falls or injuries to your legs?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Bedside neurological examination of lower limbs (motor strength, tone, reflexes, and sensation)"
+   ],
+   "result": [
+    [
+     "MRC power in all four limbs",
+     "muscle tone (spasticity, rigidity, paratonia)",
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of chronic alcohol use?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Parkinson's disease"
+  }
+ ],
+ "dx": "Parkinson's disease",
+ "dx_raw": "DIAGNOSIS: Parkinson's disease",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 7,
+ "cost_usd": 0.0019,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 29.9
+}

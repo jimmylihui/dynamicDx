@@ -1,0 +1,121 @@
+{
+ "questions": [
+  "Wernicke's Encephalopathy**: Thiamine deficiency often due to alcoholism. Classic triad: confusion, ataxia, and ophthalmoplegia/nystagmus.",
+  "Drug Toxicity**: Medications like lithium, phenytoin, or carbamazepine can cause reversible nystagmus.",
+  "Cerebellar Stroke or Tumor**: Would present with sudden onset and ataxia.",
+  "Vestibular Neuritis/Labyrinthitis**: Usually unilateral, accompanied by vertigo, but nystagmus is a key sign.",
+  "Paraneoplastic Syndrome**: Opsoclonus-myoclonus syndrome.",
+  "Have you felt confused or had memory problems recently?",
+  "Do you consume alcohol regularly?",
+  "Are you taking any medications such as lithium, phenytoin, or carbamazepine?",
+  "Did the eye movements start suddenly?",
+  "Have you noticed any unsteadiness when walking?",
+  "Have you noticed any weakness in your arms or legs?",
+  "Do you feel dizzy or is the room spinning?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "yes",
+  "11": "no",
+  "12": "yes"
+ },
+ "n_yes_answers": 4,
+ "orders": [],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "adduction in horizontal gaze (each eye)",
+  "MRI brain with DWI",
+  "MRI sella and orbits"
+ ],
+ "results": [
+  "1. nystagmus: direction and whether it changes with gaze: see-saw nystagmus",
+  "2. adduction in horizontal gaze (each eye): adduction paresis of the LEFT eye with dissociated abducting paresis of the right eye on rightward gaze - internuclear ophthalmoplegia",
+  "3. MRI brain with DWI: bilateral dorsomedial PONTINE and LEFT THALAMIC infarction",
+  "4. MRI sella and orbits: normal - no parasellar or suprasellar mass"
+ ],
+ "dx_raw": "DIAGNOSIS: Bilateral dorsomedial pontine and left thalamic infarction secondary to basilar artery paramedian perforator occlusion\n\nThe bilateral pontine infarcts explain the left INO (left MLF involvement) and likely contribute to the see-saw nystagmus through disruption of bilateral vestibulo-ocular pathways. The left thalamic infarct may also contribute to the see-saw component via midbrain-thalamic connectivity. The sudden onset, ataxia, and vertigo with this specific vascular distribution on MRI confirm the diagnosis.\n\n---\n\n**Alternative diagnoses still considered:**\n\n1. **Top-of-the-basilar syndrome** (rostral basilar artery embolic occlusion) — given the combined pontine and thalamic infarcts, an embolic source occluding the distal basilar artery apex could produce this pattern\n\n2. **Raymond-Cestan syndrome** (upper paramedian thalamic infarct) — the left thalamic infarct location could fit this entity, though the bilateral pontine component extends beyond the classic syndrome\n\n3. **Pontine warning syndrome / hemodynamic pontine infarction** — basilar artery stenosis causing bilateral perforator territory ischemia, particularly given the symmetric dorsomedial pontine pattern",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Bilateral dorsomedial pontine and left thalamic infarction secondary to basilar artery paramedian perforator occlusion",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "adduction in horizontal gaze (each eye)",
+  "MRI brain with DWI",
+  "MRI sella and orbits"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 3234,
+   "total_tokens": 8289,
+   "cost": 0.0015868776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0015868776,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00090552
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2837,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5952,
+   "completion_tokens": 1147,
+   "total_tokens": 7099,
+   "cost": 0.0004695376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004695376,
+    "upstream_inference_prompt_cost": 0.0001483776,
+    "upstream_inference_completions_cost": 0.00032116
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 873,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.2,
+ "video": "mild_1_seesaw_INO_PMC6883617.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 54.8
+}

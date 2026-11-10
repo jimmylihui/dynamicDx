@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Do you have trouble remembering things?",
+  "Do you have trouble controlling your bladder?",
+  "Do you have tremors in your hands?",
+  "Do you have numbness in your feet?",
+  "Did this start suddenly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain",
+  "Large volume lumbar puncture"
+ ],
+ "served": [
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel",
+  "lumbar puncture / CSF (cells, protein, Abeta42/40, total tau, p-tau)"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): normal midbrain, ratio within normal limits",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): normal",
+  "     MRI brain - cortical atrophy pattern: MRI brain and whole spine NORMAL",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal",
+  "2. Large volume lumbar puncture",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal",
+  "     CSF oligoclonal bands and IgG index: normal",
+  "     CSF cytology and flow cytometry: normal",
+  "     CSF culture and viral PCR: normal",
+  "     CSF autoimmune encephalitis panel: normal",
+  "     lumbar puncture / CSF (cells, protein, Abeta42/40, total tau, p-tau): not performed"
+ ],
+ "dx_raw": "DIAGNOSIS: Stiff Person Syndrome (autoimmune)\n1. Functional gait disorder\n2. Hereditary spastic paraparesis\n3. Atypical parkinsonism",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Large volume lumbar puncture",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Stiff Person Syndrome (autoimmune)",
+ "decisive_served": [
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1758,
+   "total_tokens": 10456,
+   "cost": 0.00146752,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00146752,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00059772
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1611,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8966,
+   "completion_tokens": 991,
+   "total_tokens": 9957,
+   "cost": 0.00123354,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00123354,
+    "upstream_inference_prompt_cost": 0.0008966,
+    "upstream_inference_completions_cost": 0.00033694
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 964,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9272,
+   "completion_tokens": 1946,
+   "total_tokens": 11218,
+   "cost": 0.00158884,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00158884,
+    "upstream_inference_prompt_cost": 0.0009272,
+    "upstream_inference_completions_cost": 0.00066164
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1844,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 195.2
+}

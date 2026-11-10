@@ -1,0 +1,206 @@
+{
+ "questions": [
+  "Are you currently having trouble breathing?",
+  "Are you having chest pain or pressure?",
+  "Did your symptoms begin suddenly?",
+  "Are you having difficulty swallowing food or liquids?",
+  "Do you feel that food gets stuck in your throat or chest?",
+  "Have you been choking or coughing while swallowing?",
+  "Have you noticed a change in your voice?",
+  "Do you have neck pain or stiffness?",
+  "Have you noticed a lump or swelling in your neck?",
+  "Have you had a fever?",
+  "Have you unintentionally lost weight?",
+  "Are you experiencing weakness or numbness on one side of your body?",
+  "Are you having trouble speaking or understanding speech?",
+  "Have you had new problems with balance or walking?",
+  "Have you noticed shaking or tremor in your hands?",
+  "Have you recently started any new medication?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "yes",
+  "16": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Focused neurologic examination including assessment of tremor at rest and with posture/action, handwriting and spiral drawing, finger-to-nose testing, tone, bradykinesia, gait, and postural stability",
+  "Complete blood count",
+  "Comprehensive metabolic panel, including calcium and liver and kidney function",
+  "Thyroid-stimulating hormone and free thyroxine",
+  "Serum vitamin B12 level",
+  "Serum ceruloplasmin and 24-hour urinary copper",
+  "Brain MRI without contrast"
+ ],
+ "served": [
+  "muscle tone examination",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "tremor at rest",
+  "postural tremor (arms outstretched)",
+  "kinetic / intention tremor (finger-nose)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "gait examination",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "liver function and albumin/globulin",
+  "TSH / free T4",
+  "vitamin B12 with methylmalonic acid",
+  "vitamin B12 / folate",
+  "serum copper and caeruloplasmin",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Focused neurologic examination including assessment of tremor at rest and with posture/action, handwriting and spiral drawing, finger-to-nose testing, tone, bradykinesia, gait, and postural stability",
+  "     muscle tone examination: parkinsonian rigidity",
+  "     coordination examination (limb and truncal): unilateral wing-beating tremor",
+  "     posture and pull test: parkinsonian postural instability",
+  "     tremor at rest: absent",
+  "     postural tremor (arms outstretched): present",
+  "     kinetic / intention tremor (finger-nose): absent",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): absent",
+  "     gait examination: normal",
+  "2. Complete blood count",
+  "     full blood count: normal",
+  "3. Comprehensive metabolic panel, including calcium and liver and kidney function",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     liver function and albumin/globulin: normal",
+  "4. Thyroid-stimulating hormone and free thyroxine",
+  "     TSH / free T4: normal",
+  "5. Serum vitamin B12 level",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "     vitamin B12 / folate: normal",
+  "6. Serum ceruloplasmin and 24-hour urinary copper",
+  "     serum copper and caeruloplasmin: normal",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease",
+  "7. Brain MRI without contrast",
+  "     brain MRI: no structural lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic Parkinson disease (early asymmetric akinetic-rigid parkinsonism with predominantly postural tremor)\n\nALTERNATIVE: Essential tremor with associated parkinsonian features\n\nALTERNATIVE: Drug-induced parkinsonism or tremor\n\nALTERNATIVE: Atypical parkinsonian syndrome, such as multiple system atrophy or progressive supranuclear palsy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Focused neurologic examination including assessment of tremor at rest and with posture/action, handwriting and spiral drawing, finger-to-nose testing, tone, bradykinesia, gait, and postural stability\n2. Complete blood count\n3. Comprehensive metabolic panel, including calcium and liver and kidney function\n4. Thyroid-stimulating hormone and free thyroxine\n5. Serum vitamin B12 level\n6. Serum ceruloplasmin and 24-hour urinary copper\n7. Brain MRI without contrast",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic Parkinson disease (early asymmetric akinetic-rigid parkinsonism with predominantly postural tremor)",
+ "decisive_served": [
+  "copper / caeruloplasmin / 24 h urinary copper"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 313,
+   "completion_tokens": 493,
+   "total_tokens": 806,
+   "cost": 0.0006542,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006542,
+    "upstream_inference_prompt_cost": 6.26e-05,
+    "upstream_inference_completions_cost": 0.0005916
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 310,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 892,
+   "completion_tokens": 227,
+   "total_tokens": 1119,
+   "cost": 0.0004508,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004508,
+    "upstream_inference_prompt_cost": 0.0001784,
+    "upstream_inference_completions_cost": 0.0002724
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 114,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1431,
+   "completion_tokens": 600,
+   "total_tokens": 2031,
+   "cost": 0.0010776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1428,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010776,
+    "upstream_inference_prompt_cost": 0.0003576,
+    "upstream_inference_completions_cost": 0.00072
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 52.6
+}

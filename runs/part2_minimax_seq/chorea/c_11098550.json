@@ -1,0 +1,179 @@
+{
+ "questions": [
+  "Have you drunk a large amount of water in the past 24 hours?",
+  "Have you used any recreational drugs, particularly MDMA/ecstasy, in the past 24 hours?",
+  "Are you taking any regular medications (antidepressants, antipsychotics, anticonvulsants)?",
+  "Do you have any history of psychiatric illness?",
+  "Do you have a history of lung disease, cancer, or recent head injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Capillary blood glucose",
+  "Serum electrolytes (Na, K, Ca, Mg)",
+  "Serum ethanol level",
+  "Serum toxicology screen (benzodiazepines, opioids, stimulants)",
+  "Complete blood count with differential",
+  "Urine osmolality",
+  "Urine sodium",
+  "Serum cortisol",
+  "Thyroid function tests (TSH, free T4)",
+  "Non-contrast CT head",
+  "Chest X-ray",
+  "Serum IGF-1",
+  "Cosyntropin (Synacthen) stimulation test",
+  "Pituitary MRI with contrast",
+  "Serum copeptin/AVP measurement with paired serum/urine osmolality and sodium"
+ ],
+ "served": [
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "serum ethanol",
+  "toxicology screen (urine and serum)",
+  "full blood count",
+  "morning cortisol, ACTH and pituitary hormones",
+  "thyroid function (TSH, free T4)",
+  "CT head (non-contrast)",
+  "brain MRI with contrast",
+  "sodium and serum osmolality"
+ ],
+ "results": [
+  "R1 ORDER Capillary blood glucose; Serum electrolytes (Na, K, Ca, Mg); Serum ethanol level; Serum toxicology screen (benzodiazepines, opioids, stimulants); Complete blood count with differential -> [['blood glucose'], ['serum electrolytes, urea and creatinine', 'serum calcium, magnesium and phosphate'], ['serum ethanol'], ['toxicology screen (urine and serum)'], ['full blood count']]",
+  "R2 ASK Have you drunk a large amount of water in the past 24 hours?; Have you used any recreational drugs, particularly MDMA/ecstasy, in the past 24 hours?; Are you taking any regular medications (antidepressants, antipsychotics, anticonvulsants)?; Do you have any history of psychiatric illness?; Do you have a history of lung disease, cancer, or recent head injury? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Urine osmolality; Urine sodium; Serum cortisol; Thyroid function tests (TSH, free T4); Non-contrast CT head; Chest X-ray -> [[], [], ['morning cortisol, ACTH and pituitary hormones'], ['thyroid function (TSH, free T4)'], ['CT head (non-contrast)'], []]",
+  "R4 ORDER Serum IGF-1; Cosyntropin (Synacthen) stimulation test; Pituitary MRI with contrast; Serum copeptin/AVP measurement with paired serum/urine osmolality and sodium -> [[], [], ['brain MRI with contrast'], ['sodium and serum osmolality']]",
+  "R5 DIAGNOSIS Primary empty sella syndrome with anterior pituitary hormone deficiencies (secondary adrenal insufficiency, hypogonadism) presenting as hyponatraemic seizures. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "order",
+   "items": [
+    "Capillary blood glucose",
+    "Serum electrolytes (Na, K, Ca, Mg)",
+    "Serum ethanol level",
+    "Serum toxicology screen (benzodiazepines, opioids, stimulants)",
+    "Complete blood count with differential"
+   ],
+   "result": [
+    [
+     "blood glucose"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "serum calcium, magnesium and phosphate"
+    ],
+    [
+     "serum ethanol"
+    ],
+    [
+     "toxicology screen (urine and serum)"
+    ],
+    [
+     "full blood count"
+    ]
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you drunk a large amount of water in the past 24 hours?",
+    "Have you used any recreational drugs, particularly MDMA/ecstasy, in the past 24 hours?",
+    "Are you taking any regular medications (antidepressants, antipsychotics, anticonvulsants)?",
+    "Do you have any history of psychiatric illness?",
+    "Do you have a history of lung disease, cancer, or recent head injury?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Urine osmolality",
+    "Urine sodium",
+    "Serum cortisol",
+    "Thyroid function tests (TSH, free T4)",
+    "Non-contrast CT head",
+    "Chest X-ray"
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "morning cortisol, ACTH and pituitary hormones"
+    ],
+    [
+     "thyroid function (TSH, free T4)"
+    ],
+    [
+     "CT head (non-contrast)"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Serum IGF-1",
+    "Cosyntropin (Synacthen) stimulation test",
+    "Pituitary MRI with contrast",
+    "Serum copeptin/AVP measurement with paired serum/urine osmolality and sodium"
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "brain MRI with contrast"
+    ],
+    [
+     "sodium and serum osmolality"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Primary empty sella syndrome with anterior pituitary hormone deficiencies (secondary adrenal insufficiency, hypogonadism) presenting as hyponatraemic seizures."
+  }
+ ],
+ "dx": "Primary empty sella syndrome with anterior pituitary hormone deficiencies (secondary adrenal insufficiency, hypogonadism) presenting as hyponatraemic seizures.",
+ "dx_raw": "\n\nDIAGNOSIS: Primary empty sella syndrome with anterior pituitary hormone deficiencies (secondary adrenal insufficiency, hypogonadism) presenting as hyponatraemic seizures.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "brain MRI with contrast",
+  "morning cortisol, ACTH and pituitary hormones",
+  "sodium and serum osmolality"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0137,
+ "n_frames": 32,
+ "duration_s": 16.2,
+ "video": "c_11098550.mp4",
+ "line": "chorea",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 62.3
+}

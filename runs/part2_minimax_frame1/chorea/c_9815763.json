@@ -1,0 +1,206 @@
+{
+ "questions": [
+  "Are you currently in pain?",
+  "Is your pain in your abdomen?",
+  "Is your pain in your back?",
+  "Did the pain come on suddenly?",
+  "Have you been vomiting?",
+  "Do you have a fever?",
+  "Have you had a recent injury or fall?",
+  "Does bending forward relieve the pain?",
+  "Is the pain worse when you move?",
+  "Have you had any surgery on your abdomen before?",
+  "Do you have any medical conditions such as diabetes or heart disease?",
+  "Are you taking any medications regularly?",
+  "Have you noticed any blood in your stool or vomit?",
+  "Have you had any change in bowel habits recently?",
+  "Is there any chance you could be pregnant?",
+  "Have you eaten anything unusual in the past 24 hours?",
+  "Do you have any shortness of breath?",
+  "Have you had any chest pain?",
+  "Have you fainted or felt like you might faint?",
+  "On a scale question - is the pain severe (would you rate it 7 or more out of 10)?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Measure blood pressure",
+  "Measure heart rate",
+  "Measure oxygen saturation",
+  "Measure temperature",
+  "Fingerstick blood glucose",
+  "12-lead ECG",
+  "Urine dipstick",
+  "Serum creatinine",
+  "Serum electrolytes",
+  "Hemoglobin A1c"
+ ],
+ "served": [
+  "vital signs",
+  "vital signs",
+  "vital signs",
+  "vital signs",
+  "blood glucose and HbA1c",
+  "blood glucose",
+  "urinalysis",
+  "serum electrolytes, urea and creatinine",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose and HbA1c",
+  "HbA1c"
+ ],
+ "results": [
+  "1. Measure blood pressure",
+  "     vital signs: normal, afebrile",
+  "2. Measure heart rate",
+  "     vital signs: normal, afebrile",
+  "3. Measure oxygen saturation",
+  "     vital signs: normal, afebrile",
+  "4. Measure temperature",
+  "     vital signs: normal, afebrile",
+  "5. Fingerstick blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "     blood glucose: normal",
+  "6. 12-lead ECG",
+  "     not performed / not available",
+  "7. Urine dipstick",
+  "     urinalysis: normal",
+  "8. Serum creatinine",
+  "     serum electrolytes, urea and creatinine: normal",
+  "9. Serum electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "10. Hemoglobin A1c",
+  "     blood glucose and HbA1c: normal",
+  "     HbA1c: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: No acute medical condition identified; clinically well patient on stable regular medication for a known chronic condition (nature of underlying condition not yet established).\n\n1. Functional (psychogenic) movement/postural disorder\n2. Drug-related adverse effect (e.g., extrapyramidal side effect from her regular medication)\n3. Underlying cardiac arrhythmia (could not be excluded because ECG was not available)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Measure blood pressure\n2. Measure heart rate\n3. Measure oxygen saturation\n4. Measure temperature\n5. Fingerstick blood glucose\n6. 12-lead ECG\n7. Urine dipstick\n8. Serum creatinine\n9. Serum electrolytes\n10. Hemoglobin A1c",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "No acute medical condition identified; clinically well patient on stable regular medication for a known chronic condition (nature of underlying condition not yet established).",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 521,
+   "completion_tokens": 371,
+   "total_tokens": 892,
+   "cost": 0.00056382,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00056382,
+    "upstream_inference_prompt_cost": 0.00011862,
+    "upstream_inference_completions_cost": 0.0004452
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 148,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1212,
+   "completion_tokens": 233,
+   "total_tokens": 1445,
+   "cost": 0.00060552,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00060552,
+    "upstream_inference_prompt_cost": 0.00032592,
+    "upstream_inference_completions_cost": 0.0002796
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 172,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1540,
+   "completion_tokens": 1342,
+   "total_tokens": 2882,
+   "cost": 0.00203472,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00203472,
+    "upstream_inference_prompt_cost": 0.00042432,
+    "upstream_inference_completions_cost": 0.0016104
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1260,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 17.8,
+ "video": "c_9815763.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 54.9
+}

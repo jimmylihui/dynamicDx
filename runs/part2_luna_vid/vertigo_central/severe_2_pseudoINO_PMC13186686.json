@@ -1,0 +1,167 @@
+{
+ "questions": [
+  "Are you experiencing double vision?",
+  "Did the double vision begin suddenly?",
+  "Did it begin after your recent nasal or facial surgery?",
+  "Did it begin after an injury to your face or head?",
+  "Is the double vision worse when looking to the side?",
+  "Is it worse when looking down?",
+  "Has either eye become difficult to move?",
+  "Have you noticed decreased vision in either eye?",
+  "Have you noticed a new drooping eyelid?",
+  "Have you had eye pain, especially with eye movement?",
+  "Have you had worsening swelling or bruising around either eye?",
+  "Have you had severe headache, vomiting, weakness, numbness, trouble speaking, or loss of balance?",
+  "Have you had fever or increasing redness around the eye?",
+  "Has either pupil appeared larger than the other?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "yes",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Visual acuity, pupillary responses, color vision, and intraocular pressure in both eyes",
+  "Ocular motility examination with alternate-cover testing and measurement of ocular misalignment in primary and diagnostic gaze positions",
+  "Slit-lamp and dilated fundus examination",
+  "Thin-slice noncontrast CT of the orbits and facial bones with multiplanar reconstructions",
+  "Forced-duction testing of the affected eye under local anesthesia if CT does not clearly distinguish mechanical restriction from cranial-nerve palsy",
+  "Hess-Lancaster or equivalent binocular motility testing"
+ ],
+ "served": [
+  "pupil size and light reaction",
+  "skew deviation / alternating cover test",
+  "fundoscopy",
+  "forced duction test",
+  "video-oculography / eye-movement recording"
+ ],
+ "results": [
+  "1. Visual acuity, pupillary responses, color vision, and intraocular pressure in both eyes",
+  "     pupil size and light reaction: equal and reactive",
+  "2. Ocular motility examination with alternate-cover testing and measurement of ocular misalignment in primary and diagnostic gaze positions",
+  "     skew deviation / alternating cover test: no vertical misalignment",
+  "3. Slit-lamp and dilated fundus examination",
+  "     fundoscopy: normal",
+  "4. Thin-slice noncontrast CT of the orbits and facial bones with multiplanar reconstructions",
+  "     not performed / not available",
+  "5. Forced-duction testing of the affected eye under local anesthesia if CT does not clearly distinguish mechanical restriction from cranial-nerve palsy",
+  "     forced duction test: restriction consistent with a mechanical cause",
+  "6. Hess-Lancaster or equivalent binocular motility testing",
+  "     video-oculography / eye-movement recording: reduced right adduction with left abducting nystagmus; resolved over two weeks"
+ ],
+ "dx_raw": "DIAGNOSIS: Traumatic right medial rectus restriction from transient entrapment or edema associated with a medial orbital-wall (“blowout”) fracture\n\nAlternative: Traumatic orbital hematoma or soft-tissue swelling causing restrictive diplopia\n\nAlternative: Traumatic right oculomotor-nerve palsy with partial medial-rectus weakness\n\nAlternative: Traumatic orbital fracture with extraocular-muscle contusion without entrapment",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Visual acuity, pupillary responses, color vision, and intraocular pressure in both eyes\n2. Ocular motility examination with alternate-cover testing and measurement of ocular misalignment in primary and diagnostic gaze positions\n3. Slit-lamp and dilated fundus examination\n4. Thin-slice noncontrast CT of the orbits and facial bones with multiplanar reconstructions\n5. Forced-duction testing of the affected eye under local anesthesia if CT does not clearly distinguish mechanical restriction from cranial-nerve palsy\n6. Hess-Lancaster or equivalent binocular motility testing",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Traumatic right medial rectus restriction from transient entrapment or edema associated with a medial orbital-wall (“blowout”) fracture",
+ "decisive_served": [
+  "forced duction test"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4460,
+   "completion_tokens": 695,
+   "total_tokens": 5155,
+   "cost": 0.000974425,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 4457,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000974425,
+    "upstream_inference_prompt_cost": 0.000557425,
+    "upstream_inference_completions_cost": 0.000417
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5021,
+   "completion_tokens": 351,
+   "total_tokens": 5372,
+   "cost": 0.000325595,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4457,
+    "cache_write_tokens": 561,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000325595,
+    "upstream_inference_prompt_cost": 0.000114995,
+    "upstream_inference_completions_cost": 0.0002106
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 224,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5438,
+   "completion_tokens": 410,
+   "total_tokens": 5848,
+   "cost": 0.000348605,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5018,
+    "cache_write_tokens": 417,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000348605,
+    "upstream_inference_prompt_cost": 0.000102605,
+    "upstream_inference_completions_cost": 0.000246
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 316,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 38.5
+}

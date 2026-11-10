@@ -1,0 +1,187 @@
+{
+ "questions": [
+  "Are you fully aware of what your legs are doing during these movements?",
+  "Can you voluntarily stop the leg movements when asked?",
+  "Do the movements stop when you are distracted or engaged in another task?",
+  "Do you feel an uncomfortable urge in your legs before moving them?",
+  "Do the movements improve temporarily after you move your legs?",
+  "Have these movements begun suddenly within the last few days or weeks?",
+  "Have you had a recent emotional stressor or traumatic event?",
+  "Do you have weakness or numbness in either leg?",
+  "Have you lost consciousness or been confused afterward during any episode?",
+  "Are you taking an antipsychotic, anti-nausea medication, antidepressant, or other medication that affects dopamine?",
+  "Did the involuntary leg movements stop or substantially improve after the blood glucose was corrected with insulin and fluids?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Perform a bedside neurologic examination including mental status, strength, sensation, tone, deep-tendon reflexes, plantar responses, and assessment for ankle clonus.",
+  "Obtain a prolonged video-EEG during a typical episode.",
+  "Obtain serum glucose, electrolytes, calcium, magnesium, renal function, liver function, and thyroid-stimulating hormone.",
+  "Obtain urgent noncontrast MRI of the brain with T1-, T2-, FLAIR-, diffusion-weighted, and susceptibility-weighted sequences, specifically evaluating the basal ganglia.",
+  "Measure serum beta-hydroxybutyrate, serum osmolality, and venous blood gas.",
+  "Initiate supervised intravenous isotonic saline and insulin therapy for severe hyperglycemia, with potassium monitoring."
+ ],
+ "served": [
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "EEG",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "blood glucose",
+  "thyroid function (TSH, free T4)",
+  "TSH, free T4 and free T3",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "ketones (blood or urine)",
+  "sodium and serum osmolality",
+  "venous blood gas"
+ ],
+ "results": [
+  "R1 ASK Are you fully aware of what your legs are doing during these movements?; Can you voluntarily stop the leg movements when asked?; Do the movements stop when you are distracted or engaged in another task?; Do you feel an uncomfortable urge in your legs before moving them?; Do the movements improve temporarily after you move your legs?; Have these movements begun suddenly within the last few days or weeks?; Have you had a recent emotional stressor or traumatic event?; Do you have weakness or numbness in either leg?; Have you lost consciousness or been confused afterward during any episode?; Are you taking an antipsychotic, anti-nausea medication, antidepressant, or other medication that affects dopamine? -> ['no', 'no', 'no', 'no', 'no', 'yes', 'no', 'no', 'no', 'no']",
+  "R2 ORDER Perform a bedside neurologic examination including mental status, strength, sensation, tone, deep-tendon reflexes, plantar responses, and assessment for ankle clonus.; Obtain a prolonged video-EEG during a typical episode.; Obtain serum glucose, electrolytes, calcium, magnesium, renal function, liver function, and thyroid-stimulating hormone. -> [['mental status / cognitive screen', 'muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)'], ['EEG'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'serum calcium, magnesium and phosphate', 'blood glucose and HbA1c', 'blood glucose', 'thyroid function (TSH, free T4)', 'TSH, free T4 and free T3']]",
+  "R3 ORDER Obtain urgent noncontrast MRI of the brain with T1-, T2-, FLAIR-, diffusion-weighted, and susceptibility-weighted sequences, specifically evaluating the basal ganglia.; Measure serum beta-hydroxybutyrate, serum osmolality, and venous blood gas.; Initiate supervised intravenous isotonic saline and insulin therapy for severe hyperglycemia, with potassium monitoring. -> [['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences'], ['ketones (blood or urine)', 'sodium and serum osmolality', 'venous blood gas'], ['serum electrolytes, urea and creatinine', 'blood glucose']]",
+  "R4 ASK Did the involuntary leg movements stop or substantially improve after the blood glucose was corrected with insulin and fluids? -> ['yes']",
+  "R5 DIAGNOSIS Hyperglycemia-induced dyskinesia (diabetic striatopathy), specifically nonketotic hyperglycemia–associated chorea/ballism, despite an initially normal MRI. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you fully aware of what your legs are doing during these movements?",
+    "Can you voluntarily stop the leg movements when asked?",
+    "Do the movements stop when you are distracted or engaged in another task?",
+    "Do you feel an uncomfortable urge in your legs before moving them?",
+    "Do the movements improve temporarily after you move your legs?",
+    "Have these movements begun suddenly within the last few days or weeks?",
+    "Have you had a recent emotional stressor or traumatic event?",
+    "Do you have weakness or numbness in either leg?",
+    "Have you lost consciousness or been confused afterward during any episode?",
+    "Are you taking an antipsychotic, anti-nausea medication, antidepressant, or other medication that affects dopamine?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Perform a bedside neurologic examination including mental status, strength, sensation, tone, deep-tendon reflexes, plantar responses, and assessment for ankle clonus.",
+    "Obtain a prolonged video-EEG during a typical episode.",
+    "Obtain serum glucose, electrolytes, calcium, magnesium, renal function, liver function, and thyroid-stimulating hormone."
+   ],
+   "result": [
+    [
+     "mental status / cognitive screen",
+     "muscle tone examination",
+     "limb strength (MRC) examination",
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)"
+    ],
+    [
+     "EEG"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests",
+     "serum calcium, magnesium and phosphate",
+     "blood glucose and HbA1c",
+     "blood glucose",
+     "thyroid function (TSH, free T4)",
+     "TSH, free T4 and free T3"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Obtain urgent noncontrast MRI of the brain with T1-, T2-, FLAIR-, diffusion-weighted, and susceptibility-weighted sequences, specifically evaluating the basal ganglia.",
+    "Measure serum beta-hydroxybutyrate, serum osmolality, and venous blood gas.",
+    "Initiate supervised intravenous isotonic saline and insulin therapy for severe hyperglycemia, with potassium monitoring."
+   ],
+   "result": [
+    [
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences"
+    ],
+    [
+     "ketones (blood or urine)",
+     "sodium and serum osmolality",
+     "venous blood gas"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "blood glucose"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Did the involuntary leg movements stop or substantially improve after the blood glucose was corrected with insulin and fluids?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Hyperglycemia-induced dyskinesia (diabetic striatopathy), specifically nonketotic hyperglycemia–associated chorea/ballism, despite an initially normal MRI."
+  }
+ ],
+ "dx": "Hyperglycemia-induced dyskinesia (diabetic striatopathy), specifically nonketotic hyperglycemia–associated chorea/ballism, despite an initially normal MRI.",
+ "dx_raw": "DIAGNOSIS: Hyperglycemia-induced dyskinesia (diabetic striatopathy), specifically nonketotic hyperglycemia–associated chorea/ballism, despite an initially normal MRI.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "blood glucose",
+  "ketones (blood or urine)"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0072,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 44.2
+}

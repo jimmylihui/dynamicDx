@@ -1,0 +1,174 @@
+{
+ "questions": [
+  "Have you noticed any double vision?",
+  "Is the double vision worse when looking to one side?",
+  "Is the double vision worse looking up or down?",
+  "When the double vision occurs, does it go away if you close either eye?",
+  "Does the double vision come and go, or is it constant?",
+  "Is the double vision worse towards the end of the day or when you are tired?",
+  "When does the double vision tend to occur - when reading, looking at screens, or at distance?",
+  "Do you have any pain around your eye or behind your eye?",
+  "Have you ever been told you have \"lazy eye\" or strabismus as a child?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "1. Cover test (cover-uncover test) to assess strabismus"
+ ],
+ "served": [
+  "cover test / ocular alignment"
+ ],
+ "results": [
+  "R1 ASK Have you noticed any double vision? -> ['yes']",
+  "R2 ASK Is the double vision worse when looking to one side? -> ['no']",
+  "R3 ASK Is the double vision worse looking up or down? -> ['no']",
+  "R4 ORDER 1. Cover test (cover-uncover test) to assess strabismus -> [['cover test / ocular alignment']]",
+  "R5 ASK When the double vision occurs, does it go away if you close either eye? -> ['yes']",
+  "R6 ASK Does the double vision come and go, or is it constant? -> ['yes']",
+  "R7 ASK Is the double vision worse towards the end of the day or when you are tired? -> ['no']",
+  "R8 ASK When does the double vision tend to occur - when reading, looking at screens, or at distance? -> ['no']",
+  "R9 ASK Do you have any pain around your eye or behind your eye? -> ['no']",
+  "R10 ASK Have you ever been told you have \"lazy eye\" or strabismus as a child? -> ['no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOS: Decompensating intermittent exophoria - a decompensating latent deviation of the eyes that intermittently manifests, causing binocular diplopia -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any double vision?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Is the double vision worse when looking to one side?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Is the double vision worse looking up or down?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "1. Cover test (cover-uncover test) to assess strabismus"
+   ],
+   "result": [
+    [
+     "cover test / ocular alignment"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "When the double vision occurs, does it go away if you close either eye?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Does the double vision come and go, or is it constant?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Is the double vision worse towards the end of the day or when you are tired?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "When does the double vision tend to occur - when reading, looking at screens, or at distance?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you have any pain around your eye or behind your eye?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Have you ever been told you have \"lazy eye\" or strabismus as a child?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOS: Decompensating intermittent exophoria - a decompensating latent deviation of the eyes that intermittently manifests, causing binocular diplopia"
+  }
+ ],
+ "dx": "Decompensating intermittent exophoria - a decompensating latent deviation of the eyes that intermittently manifests, causing binocular diplopia",
+ "dx_raw": "DIAGNOS: Decompensating intermittent exophoria - a decompensating latent deviation of the eyes that intermittently manifests, causing binocular diplopia",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.004,
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "mild_cpeo_mitochondrial_PMC9350803.mp4",
+ "line": "ptosis",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 574.7
+}

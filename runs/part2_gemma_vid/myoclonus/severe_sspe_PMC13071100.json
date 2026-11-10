@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Is the pain in your right wrist?",
+  "Is the pain in your right shoulder?",
+  "Did this start after a fall?",
+  "Do you have numbness or tingling in your right hand?",
+  "Is there weakness in your right hand?",
+  "Does moving your shoulder cause pain?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Physical examination of the right upper extremity",
+  "X-ray of the right wrist"
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "joint range of motion"
+ ],
+ "results": [
+  "1. Physical examination of the right upper extremity",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     joint range of motion: normal / non-contributory",
+  "2. X-ray of the right wrist",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: No pathology\n\n1. Healthy individual\n2. Resolved wrist injury\n3. Use of wrist support for prophylaxis",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Physical examination of the right upper extremity\n2. X-ray of the right wrist",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "No pathology",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2245,
+   "total_tokens": 10943,
+   "cost": 0.0016331,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0016331,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0007633
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2104,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9002,
+   "completion_tokens": 3906,
+   "total_tokens": 12908,
+   "cost": 0.00222824,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00222824,
+    "upstream_inference_prompt_cost": 0.0009002,
+    "upstream_inference_completions_cost": 0.00132804
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3533,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9215,
+   "completion_tokens": 2985,
+   "total_tokens": 12200,
+   "cost": 0.0019364,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0019364,
+    "upstream_inference_prompt_cost": 0.0009215,
+    "upstream_inference_completions_cost": 0.0010149
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2753,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "severe_sspe_PMC13071100.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 2500.1
+}

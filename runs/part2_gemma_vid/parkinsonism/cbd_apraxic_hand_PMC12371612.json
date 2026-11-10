@@ -1,0 +1,160 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Do you have difficulty finding the right words when speaking?",
+  "Do you have any weakness on one side of your body?",
+  "Have you noticed a gradual decline in your memory?",
+  "Do you have any numbness or tingling?",
+  "Have you had a recent head injury?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Do you have any vision changes?",
+  "Do you have difficulty with balance?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI Brain and Spinal Cord with contrast",
+  "Lumbar puncture for CSF analysis and oligoclonal bands",
+  "Serum B12 and folate levels",
+  "ANA and ESR"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI whole spine",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "vitamin B12 with methylmalonic acid",
+  "serum folate",
+  "ESR and CRP",
+  "antinuclear antibodies and anti-dsDNA"
+ ],
+ "results": [
+  "1. MRI Brain and Spinal Cord with contrast",
+  "     MRI brain with gadolinium: markedly asymmetric left-greater-than-right superior parietal and posterior frontal atrophy without abnormal enhancement",
+  "     MRI whole spine: normal",
+  "2. Lumbar puncture for CSF analysis and oligoclonal bands",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal",
+  "     CSF oligoclonal bands and IgG index: normal",
+  "3. Serum B12 and folate levels",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "     serum folate: normal",
+  "4. ANA and ESR",
+  "     ESR and CRP: normal",
+  "     antinuclear antibodies and anti-dsDNA: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Corticobasal degeneration\n\nAlternatives:\n1. Cortical variant of Alzheimer's disease\n2. Frontotemporal dementia\n3. Progressive supranuclear palsy",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain and Spinal Cord with contrast\n2. Lumbar puncture for CSF analysis and oligoclonal bands\n3. Serum B12 and folate levels\n4. ANA and ESR",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Corticobasal degeneration",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 5581,
+   "total_tokens": 14279,
+   "cost": 0.00276734,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00276734,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00189754
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5171,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9106,
+   "completion_tokens": 866,
+   "total_tokens": 9972,
+   "cost": 0.00120504,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00120504,
+    "upstream_inference_prompt_cost": 0.0009106,
+    "upstream_inference_completions_cost": 0.00029444
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 842,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9385,
+   "completion_tokens": 1269,
+   "total_tokens": 10654,
+   "cost": 0.00136996,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00136996,
+    "upstream_inference_prompt_cost": 0.0009385,
+    "upstream_inference_completions_cost": 0.00043146
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1322,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "cbd_apraxic_hand_PMC12371612.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 253.1
+}

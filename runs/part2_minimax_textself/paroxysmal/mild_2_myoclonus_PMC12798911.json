@@ -1,0 +1,165 @@
+{
+ "questions": [
+  "Are you having difficulty breathing right now?",
+  "Did you have surgery recently?",
+  "Did you suffer an injury or accident recently?",
+  "Do you have abdominal pain?",
+  "Have you had nausea or vomiting?",
+  "Have you had a fever or felt hot and sweaty?",
+  "Do you have a history of abdominal aortic aneurysm or other vascular problems?",
+  "Have you been feeling dizzy or lightheaded?",
+  "Have you lost weight unintentionally in recent months?",
+  "Do you have a history of cancer?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Review the operative note from your recent surgery",
+  "Current vital signs (blood pressure, heart rate, respiratory rate, temperature, oxygen saturation)",
+  "Inspection and palpation of the surgical wound beneath the binder",
+  "Complete blood count",
+  "Basic metabolic panel",
+  "C-reactive protein",
+  "Serum lactate",
+  "CT scan of the abdomen and pelvis with intravenous contrast"
+ ],
+ "served": [
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "ESR and CRP",
+  "CT chest, abdomen and pelvis"
+ ],
+ "results": [
+  "1. Review the operative note from your recent surgery",
+  "     not performed / not available",
+  "2. Current vital signs (blood pressure, heart rate, respiratory rate, temperature, oxygen saturation)",
+  "     not performed / not available",
+  "3. Inspection and palpation of the surgical wound beneath the binder",
+  "     not performed / not available",
+  "4. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "5. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "6. C-reactive protein",
+  "     ESR and CRP: normal",
+  "7. Serum lactate",
+  "     not performed / not available",
+  "8. CT scan of the abdomen and pelvis with intravenous contrast",
+  "     CT chest, abdomen and pelvis: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Uncomplicated post-operative recovery following recent abdominal surgery, with the binder in place to provide abdominal wall support and reduce wound tension.\n\nAlternatives to consider:\n1. Recent ventral hernia repair (binder used to prevent recurrence)\n2. Recent major upper abdominal surgery such as gastrectomy or pancreatic resection\n3. Recent liver or renal transplantation (binder used to support the incision)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Review the operative note from your recent surgery\n2. Current vital signs (blood pressure, heart rate, respiratory rate, temperature, oxygen saturation)\n3. Inspection and palpation of the surgical wound beneath the binder\n4. Complete blood count\n5. Basic metabolic panel\n6. C-reactive protein\n7. Serum lactate\n8. CT scan of the abdomen and pelvis with intravenous contrast",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Uncomplicated post-operative recovery following recent abdominal surgery, with the binder in place to provide abdominal wall support and reduce wound tension.",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 461,
+   "completion_tokens": 2681,
+   "total_tokens": 3142,
+   "cost": 0.00332814,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00332814,
+    "upstream_inference_prompt_cost": 0.00011094,
+    "upstream_inference_completions_cost": 0.0032172
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2940,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 870,
+   "completion_tokens": 1417,
+   "total_tokens": 2287,
+   "cost": 0.0018726,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 370,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0018726,
+    "upstream_inference_prompt_cost": 0.0001722,
+    "upstream_inference_completions_cost": 0.0017004
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1518,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1190,
+   "completion_tokens": 1053,
+   "total_tokens": 2243,
+   "cost": 0.00143964,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 754,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00143964,
+    "upstream_inference_prompt_cost": 0.00017604,
+    "upstream_inference_completions_cost": 0.0012636
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1202,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 69.2
+}

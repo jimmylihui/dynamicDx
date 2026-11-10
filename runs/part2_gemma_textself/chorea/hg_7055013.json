@@ -1,0 +1,136 @@
+{
+ "questions": [
+  "Do the movements stop if you are distracted?",
+  "Are you taking any antipsychotic medications?",
+  "Do any of your close relatives have a history of similar involuntary movements?",
+  "Have you had a sore throat in the last few months?",
+  "Do you have a diagnosis of liver disease?",
+  "Have you ever had a stroke?",
+  "Do you feel any numbness in your legs?",
+  "Do the movements stop when you are asleep?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI Brain",
+  "Blood glucose level"
+ ],
+ "served": [
+  "blood glucose"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     not performed / not available",
+  "2. Blood glucose level",
+  "     blood glucose: 690 mg/dL with a NORMAL anion gap"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperglycemic chorea due to non-ketotic hyperglycemia\n\nStroke-related chorea\nHuntington's disease\nWilson's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Blood glucose level",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Hyperglycemic chorea due to non-ketotic hyperglycemia",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 237,
+   "completion_tokens": 5613,
+   "total_tokens": 5850,
+   "cost": 0.00193212,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00193212,
+    "upstream_inference_prompt_cost": 2.37e-05,
+    "upstream_inference_completions_cost": 0.00190842
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5225,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 617,
+   "completion_tokens": 1046,
+   "total_tokens": 1663,
+   "cost": 0.00041734,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00041734,
+    "upstream_inference_prompt_cost": 6.17e-05,
+    "upstream_inference_completions_cost": 0.00035564
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1009,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 759,
+   "completion_tokens": 1498,
+   "total_tokens": 2257,
+   "cost": 0.00058522,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00058522,
+    "upstream_inference_prompt_cost": 7.59e-05,
+    "upstream_inference_completions_cost": 0.00050932
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1405,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 271.1
+}

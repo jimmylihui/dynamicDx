@@ -1,0 +1,171 @@
+{
+ "questions": [
+  "Do you have a known thyroid condition?",
+  "Do you experience double vision?",
+  "Do you have any difficulty swallowing?",
+  "Do you have any muscle weakness in your limbs?",
+  "Do you have any rashes on your knuckles?",
+  "Do you have a rash on your chest or upper back?",
+  "Have you noticed any changes in your skin, such as a reddish-purple color, around your eyes?",
+  "Do you have any shortness of breath?",
+  "Do you have Raynaud's phenomenon (fingers turning white or blue in the cold)?",
+  "Do you have joint pain or swelling?",
+  "Do you have a dry mouth or dry eyes?",
+  "Do you have a cough?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Serum creatine kinase (CK)",
+  "Anti-Jo-1 antibody",
+  "Anti-Mi-2 antibody",
+  "High-resolution CT (HRCT) of the chest",
+  "ANA (Antinuclear antibody) screen",
+  "Anti-MDA5 antibody",
+  "Anti-TIF1-gamma antibody",
+  "Anti-NXP2 antibody",
+  "Pulmonary function tests (PFTs)",
+  "Skin biopsy of the eyelid"
+ ],
+ "served": [
+  "creatine kinase",
+  "antinuclear antibodies and anti-dsDNA"
+ ],
+ "results": [
+  "R1 ASK Do you have a known thyroid condition?; Do you experience double vision?; Do you have any difficulty swallowing?; Do you have any muscle weakness in your limbs? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Do you have any rashes on your knuckles?; Do you have a rash on your chest or upper back?; Have you noticed any changes in your skin, such as a reddish-purple color, around your eyes?; Do you have any shortness of breath? -> ['no', 'no', 'no', 'yes']",
+  "R3 ORDER Serum creatine kinase (CK); Anti-Jo-1 antibody; Anti-Mi-2 antibody; High-resolution CT (HRCT) of the chest; ANA (Antinuclear antibody) screen -> [['creatine kinase'], [], [], [], ['antinuclear antibodies and anti-dsDNA']]",
+  "R4 ASK Do you have Raynaud's phenomenon (fingers turning white or blue in the cold)?; Do you have joint pain or swelling?; Do you have a dry mouth or dry eyes?; Do you have a cough? -> ['no', 'no', 'no', 'yes']",
+  "R5 ORDER Anti-MDA5 antibody; Anti-TIF1-gamma antibody; Anti-NXP2 antibody; Pulmonary function tests (PFTs); Skin biopsy of the eyelid -> [[], [], [], [], []]",
+  "R6 DIAGNOSIS Amyopathic dermatomyositis -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a known thyroid condition?",
+    "Do you experience double vision?",
+    "Do you have any difficulty swallowing?",
+    "Do you have any muscle weakness in your limbs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have any rashes on your knuckles?",
+    "Do you have a rash on your chest or upper back?",
+    "Have you noticed any changes in your skin, such as a reddish-purple color, around your eyes?",
+    "Do you have any shortness of breath?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Serum creatine kinase (CK)",
+    "Anti-Jo-1 antibody",
+    "Anti-Mi-2 antibody",
+    "High-resolution CT (HRCT) of the chest",
+    "ANA (Antinuclear antibody) screen"
+   ],
+   "result": [
+    [
+     "creatine kinase"
+    ],
+    [],
+    [],
+    [],
+    [
+     "antinuclear antibodies and anti-dsDNA"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have Raynaud's phenomenon (fingers turning white or blue in the cold)?",
+    "Do you have joint pain or swelling?",
+    "Do you have a dry mouth or dry eyes?",
+    "Do you have a cough?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Anti-MDA5 antibody",
+    "Anti-TIF1-gamma antibody",
+    "Anti-NXP2 antibody",
+    "Pulmonary function tests (PFTs)",
+    "Skin biopsy of the eyelid"
+   ],
+   "result": [
+    [],
+    [],
+    [],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Amyopathic dermatomyositis"
+  }
+ ],
+ "dx": "Amyopathic dermatomyositis",
+ "dx_raw": "DIAGNOSIS: Amyopathic dermatomyositis",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0081,
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 449.0
+}

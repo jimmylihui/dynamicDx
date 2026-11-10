@@ -1,0 +1,113 @@
+{
+ "questions": [
+  "Is the weakness progressing?",
+  "Have you noticed any muscle twitching?",
+  "Have you noticed any muscle wasting?",
+  "Do you have difficulty swallowing?",
+  "Do you have difficulty speaking?",
+  "Do you have any numbness or tingling?",
+  "Do you feel short of breath?",
+  "Did the weakness start in one limb first?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "nerve conduction studies",
+  "whole exome sequencing",
+  "MRI brain with contrast",
+  "MRI spine"
+ ],
+ "results": [
+  "1. nerve conduction studies: demyelinating sensorimotor neuropathy",
+  "2. whole exome sequencing: heterozygous likely pathogenic FBLN5 c.1117C>T (p.Arg373Cys) - CMT1H",
+  "3. MRI brain with contrast: bilateral contrast enhancement and THICKENING of cranial nerves III through XII",
+  "4. MRI spine: symmetrical thickening of the lumbosacral nerve roots"
+ ],
+ "dx_raw": "DIAGNOSIS: Charcot-Marie-Tooth disease type 1H caused by a mutation in the FBLN5 gene\n\nChronic inflammatory demyelinating polyradiculoneuropathy (CIDP)\nCharcot-Marie-Tooth disease type 1A (CMT1A)\nHereditary neuropathy with liability to pressure palsies (HNPP)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Charcot-Marie-Tooth disease type 1H caused by a mutation in the FBLN5 gene",
+ "decisive_served": [
+  "nerve conduction studies",
+  "whole exome sequencing",
+  "MRI brain with contrast",
+  "MRI spine"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1281,
+   "total_tokens": 9979,
+   "cost": 0.00130534,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00130534,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00043554
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1171,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9081,
+   "completion_tokens": 1807,
+   "total_tokens": 10888,
+   "cost": 0.00152248,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00152248,
+    "upstream_inference_prompt_cost": 0.0009081,
+    "upstream_inference_completions_cost": 0.00061438
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1645,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_gca_ophthalmoplegia_PMC12960836.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 113.7
+}

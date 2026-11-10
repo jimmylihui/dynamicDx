@@ -1,0 +1,119 @@
+{
+ "questions": [
+  "Did you lose consciousness?",
+  "Did you feel dizzy or lightheaded before falling?",
+  "Did your legs feel weak?",
+  "Did you have chest pain or palpitations?",
+  "Did you have a headache?",
+  "Did you feel nauseous or sweaty?",
+  "Did you have numbness or tingling?",
+  "Is this the first time this has happened?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "Hoover sign / hip-abductor sign",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "MRC power in all four limbs",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "results": [
+  "1. Hoover sign / hip-abductor sign: POSITIVE",
+  "2. gait with a distracting or automatic task (dancing, counting backwards): the pattern changes or normalises",
+  "3. observation for excessive slowness or uneconomic posture: INCONGRUENT - repeated falls with no injury at all, and an unaided recovery each time",
+  "4. knee buckling / astasia-abasia on walking: POSITIVE - the patient sinks to the floor twice during one corridor walk, slowly and without a protective reaction",
+  "5. MRC power in all four limbs: 5/5 throughout - a slow controlled descent of this kind requires intact quadriceps strength",
+  "6. video-EEG monitoring with limb surface electrodes: no ictal discharge accompanies the falls"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological disorder (functional gait disorder / functional falls)\n\nDissociative gait disorder with functional leg weakness\n\nAlternative considerations:\n- Functional neurological disorder with comorbid psychogenic non-epileptic attacks\n- Malingering / symptom exaggeration for secondary gain\n- Neurological instability secondary to diffuse cerebral small vessel disease (less likely given normal examination and characteristic Hoover sign)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional neurological disorder (functional gait disorder / functional falls)",
+ "decisive_served": [
+  "Hoover sign / hip-abductor sign",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "MRC power in all four limbs",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6591,
+   "completion_tokens": 3811,
+   "total_tokens": 10402,
+   "cost": 0.0019634776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0019634776,
+    "upstream_inference_prompt_cost": 0.0008963976,
+    "upstream_inference_completions_cost": 0.00106708
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3728,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7047,
+   "completion_tokens": 497,
+   "total_tokens": 7544,
+   "cost": 0.0002300984,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002300984,
+    "upstream_inference_prompt_cost": 9.09384e-05,
+    "upstream_inference_completions_cost": 0.00013916
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 410,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 58.1
+}

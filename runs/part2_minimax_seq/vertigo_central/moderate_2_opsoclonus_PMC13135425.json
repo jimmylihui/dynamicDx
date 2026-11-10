@@ -1,0 +1,258 @@
+{
+ "questions": [
+  "Are you experiencing dizziness or vertigo?",
+  "Do you have double vision?",
+  "Have you noticed any involuntary movement of your eyes?",
+  "Is the involuntary eye movement constant or does it come and go?",
+  "Have you noticed any weakness in your face or limbs?",
+  "Have you had any changes in your hearing or ringing in your ears?",
+  "Are you currently taking any medications?",
+  "Did the eye movement start suddenly?",
+  "Have you had any recent headaches?",
+  "Do you have a history of stroke, high blood pressure, or diabetes?",
+  "Have you noticed any decrease in your vision?",
+  "Do you have a family history of eye movement disorders?",
+  "Did this begin in childhood?",
+  "Have you had any recent viral illness or infection?",
+  "Do you have any tumors or cancer history?",
+  "Are you experiencing any tremors or unsteadiness?",
+  "Have you had any paraneoplastic symptoms like difficulty with coordination?",
+  "Are you experiencing any anxiety, stress, or panic?",
+  "Do you have trouble sleeping?",
+  "Have you had any palpitations or sweating episodes?",
+  "Do you drink caffeine regularly?",
+  "Have you ever used recreational drugs or stimulants?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Direct ophthalmoscopy to examine optic discs and retina",
+  "Bedside cranial nerve examination focusing on CN III, IV, VI",
+  "MRI brain with contrast to look for structural lesions in the brainstem or cerebellum",
+  "Lumbar puncture to assess for inflammatory or paraneoplastic causes"
+ ],
+ "served": [
+  "fundoscopy",
+  "cranial nerve examination",
+  "MRI brain with gadolinium",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF autoimmune encephalitis panel",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "R1 ASK Are you experiencing dizziness or vertigo?; Do you have double vision?; Have you noticed any involuntary movement of your eyes? -> ['no', 'no', 'yes']",
+  "R2 ASK Is the involuntary eye movement constant or does it come and go?; Have you noticed any weakness in your face or limbs?; Have you had any changes in your hearing or ringing in your ears?; Are you currently taking any medications? -> ['no', 'no', 'no', 'no']",
+  "R3 ASK Did the eye movement start suddenly?; Have you had any recent headaches?; Do you have a history of stroke, high blood pressure, or diabetes? -> ['no', 'no', 'no']",
+  "R4 ASK Have you noticed any decrease in your vision?; Do you have a family history of eye movement disorders?; Did this begin in childhood? -> ['no', 'no', 'no']",
+  "R5 ORDER Direct ophthalmoscopy to examine optic discs and retina; Bedside cranial nerve examination focusing on CN III, IV, VI -> [['fundoscopy'], ['cranial nerve examination']]",
+  "R6 ASK Have you had any recent viral illness or infection?; Do you have any tumors or cancer history?; Are you experiencing any tremors or unsteadiness?; Have you had any paraneoplastic symptoms like difficulty with coordination? -> ['no', 'no', 'yes', 'no']",
+  "R7 ORDER MRI brain with contrast to look for structural lesions in the brainstem or cerebellum -> [['MRI brain with gadolinium']]",
+  "R8 ORDER Lumbar puncture to assess for inflammatory or paraneoplastic causes -> [['CSF opening pressure', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF cytology and flow cytometry', 'CSF autoimmune encephalitis panel', 'lumbar puncture / CSF']]",
+  "R9 ASK Are you experiencing any anxiety, stress, or panic?; Do you have trouble sleeping?; Have you had any palpitations or sweating episodes? -> ['no', 'no', 'no']",
+  "R10 ASK Do you drink caffeine regularly?; Have you ever used recreational drugs or stimulants? -> ['no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Opsoclonus-myoclonus syndrome, idiopathic adult-onset form (dancing eyes-dancing feet syndrome without identified paraneoplastic, infectious, or structural cause) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you experiencing dizziness or vertigo?",
+    "Do you have double vision?",
+    "Have you noticed any involuntary movement of your eyes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Is the involuntary eye movement constant or does it come and go?",
+    "Have you noticed any weakness in your face or limbs?",
+    "Have you had any changes in your hearing or ringing in your ears?",
+    "Are you currently taking any medications?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did the eye movement start suddenly?",
+    "Have you had any recent headaches?",
+    "Do you have a history of stroke, high blood pressure, or diabetes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any decrease in your vision?",
+    "Do you have a family history of eye movement disorders?",
+    "Did this begin in childhood?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Direct ophthalmoscopy to examine optic discs and retina",
+    "Bedside cranial nerve examination focusing on CN III, IV, VI"
+   ],
+   "result": [
+    [
+     "fundoscopy"
+    ],
+    [
+     "cranial nerve examination"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Have you had any recent viral illness or infection?",
+    "Do you have any tumors or cancer history?",
+    "Are you experiencing any tremors or unsteadiness?",
+    "Have you had any paraneoplastic symptoms like difficulty with coordination?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "MRI brain with contrast to look for structural lesions in the brainstem or cerebellum"
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Lumbar puncture to assess for inflammatory or paraneoplastic causes"
+   ],
+   "result": [
+    [
+     "CSF opening pressure",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF cytology and flow cytometry",
+     "CSF autoimmune encephalitis panel",
+     "lumbar puncture / CSF"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Are you experiencing any anxiety, stress, or panic?",
+    "Do you have trouble sleeping?",
+    "Have you had any palpitations or sweating episodes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you drink caffeine regularly?",
+    "Have you ever used recreational drugs or stimulants?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Opsoclonus-myoclonus syndrome, idiopathic adult-onset form (dancing eyes-dancing feet syndrome without identified paraneoplastic, infectious, or structural cause)"
+  }
+ ],
+ "dx": "Opsoclonus-myoclonus syndrome, idiopathic adult-onset form (dancing eyes-dancing feet syndrome without identified paraneoplastic, infectious, or structural cause)",
+ "dx_raw": "DIAGNOSIS: Opsoclonus-myoclonus syndrome, idiopathic adult-onset form (dancing eyes-dancing feet syndrome without identified paraneoplastic, infectious, or structural cause)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0138,
+ "n_frames": 32,
+ "duration_s": 14.8,
+ "video": "moderate_2_opsoclonus_PMC13135425.mp4",
+ "line": "vertigo_central",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 83.6
+}

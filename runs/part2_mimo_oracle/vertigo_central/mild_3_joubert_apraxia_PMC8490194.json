@@ -1,0 +1,111 @@
+{
+ "questions": [
+  "Have you noticed the white spot in this eye since birth?",
+  "Does your other child have any eye problems?",
+  "Is there any family history of childhood cancer?",
+  "Did anything hit or injure this eye?",
+  "Has the eye ever been red or swollen?",
+  "Is the baby feeding normally?",
+  "Does the baby seem to see you when you move?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "smooth pursuit and saccades",
+  "facial dysmorphism and general examination",
+  "genetic testing (exome)",
+  "MRI brain with DWI"
+ ],
+ "results": [
+  "1. smooth pursuit and saccades: ocular motor apraxia - failure to initiate voluntary horizontal saccades with compensatory head thrusts",
+  "2. facial dysmorphism and general examination: facial dysmorphism in all patients - broad nasal bridge and low-set ears most common",
+  "3. genetic testing (exome): pathogenic variants in ciliopathy genes on exome sequencing",
+  "4. MRI brain with DWI: MOLAR TOOTH SIGN with cerebellar vermis hypoplasia and horizontally aligned superior cerebellar peduncles"
+ ],
+ "dx_raw": "Based on the clinical presentation (ocular motor apraxia, feeding difficulties, visual impairment) and the definitive investigation findings—specifically the **molar tooth sign** on MRI (pathognomonic) and the presence of pathogenic variants in **ciliopathy genes**—the diagnosis is clear.\n\nDIAGNOSIS: Joubert syndrome (an autosomal recessive ciliopathy caused by mutations in genes encoding primary cilia components).\n\nAlternatives:\n1. Dandy-Walker malformation\n2. Pontine Tegmental Cap Dysplasia\n3. Isolated cerebellar hypoplasia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Joubert syndrome (an autosomal recessive ciliopathy caused by mutations in genes encoding primary cilia components).",
+ "decisive_served": [
+  "smooth pursuit and saccades",
+  "facial dysmorphism and general examination",
+  "genetic testing (exome)",
+  "MRI brain with DWI"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 898,
+   "total_tokens": 5953,
+   "cost": 0.0009327976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009327976,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00025144
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 816,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5461,
+   "completion_tokens": 2112,
+   "total_tokens": 7573,
+   "cost": 0.0006709976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006709976,
+    "upstream_inference_prompt_cost": 7.96376e-05,
+    "upstream_inference_completions_cost": 0.00059136
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1979,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_3_joubert_apraxia_PMC8490194.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 46.6
+}

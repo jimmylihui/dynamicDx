@@ -1,0 +1,118 @@
+{
+ "questions": [
+  "Are the facial movements shown involuntary and recurring episodes rather than deliberate expressions?",
+  "Were you fully conscious and able to remember what happened throughout the episode?",
+  "Did the episode begin suddenly, without your being able to control or stop it?",
+  "Have these episodes been happening repeatedly for more than a day?",
+  "Do the movements affect both sides of your face equally?",
+  "Do they ever spread to your neck, tongue, jaw, arms, or legs?",
+  "Do you have any weakness, numbness, facial drooping, difficulty speaking, or trouble seeing?",
+  "Have you had difficulty breathing, swallowing, or opening your mouth?",
+  "Have you had a fever, severe headache, neck stiffness, or a recent wound?",
+  "Did the movements start after taking or changing a medication, including an antipsychotic, nausea medication, antidepressant, or stimulant?",
+  "Have you recently received Botox, facial injections, dental treatment, or another procedure involving your face?",
+  "Can you temporarily suppress the movements or stop them by relaxing, touching your face, or changing your activity?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "distribution of the dystonia (focal, segmental, generalized)",
+  "dystonia rating scale (BFM / OMDRS)",
+  "botulinum toxin trial"
+ ],
+ "results": [
+  "1. distribution of the dystonia (focal, segmental, generalized): SEGMENTAL - eyelids plus perioral and jaw muscles, not isolated blepharospasm",
+  "2. dystonia rating scale (BFM / OMDRS): gingival exposure on maximal involuntary smile >4 mm (severe), reduced to 1 mm after treatment",
+  "3. botulinum toxin trial: marked improvement in facial spasms within one week; nocturnal headaches resolved and facial asymmetry corrected"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic segmental cranial dystonia (Meige syndrome: blepharospasm with oromandibular/perioral dystonia)\n\nALTERNATIVE: Tardive cranial dyskinesia\n\nALTERNATIVE: Hemifacial spasm\n\nALTERNATIVE: Focal motor seizures with impaired awareness",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Idiopathic segmental cranial dystonia (Meige syndrome: blepharospasm with oromandibular/perioral dystonia)",
+ "decisive_served": [
+  "distribution of the dystonia (focal, segmental, generalized)",
+  "dystonia rating scale (BFM / OMDRS)",
+  "botulinum toxin trial"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 17964,
+   "completion_tokens": 650,
+   "total_tokens": 18614,
+   "cost": 0.00056991,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00056991,
+    "upstream_inference_prompt_cost": 0.00017991,
+    "upstream_inference_completions_cost": 0.00039
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 418,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 18675,
+   "completion_tokens": 281,
+   "total_tokens": 18956,
+   "cost": 0.000437385,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 711,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000437385,
+    "upstream_inference_prompt_cost": 0.000268785,
+    "upstream_inference_completions_cost": 0.0001686
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 205,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.6,
+ "video": "mild_blepharospasm_idiopathic_PMC13049410.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 16.8
+}

@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Did these symptoms start suddenly?",
+  "Do you have any weakness or numbness in your limbs?",
+  "Do you have a history of multiple sclerosis?",
+  "Do you have a history of high blood pressure or diabetes?",
+  "Do you have double vision?",
+  "Do you have any difficulty with balance or coordination?",
+  "Do you have any difficulty speaking or swallowing?",
+  "Have you noticed any changes in your mood or cognitive function?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "yes",
+  "8": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Deep tendon reflex examination",
+  "Electromyography (EMG) and Nerve Conduction Study (NCS)",
+  "Lumbar puncture (CSF analysis)",
+  "Anti-GQ1b antibody test"
+ ],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "nerve conduction studies",
+  "needle electromyography",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel",
+  "lumbar puncture / CSF (cells, protein, Abeta42/40, total tau, p-tau)"
+ ],
+ "results": [
+  "R1 ASK Did these symptoms start suddenly?; Do you have any weakness or numbness in your limbs?; Do you have a history of multiple sclerosis?; Do you have a history of high blood pressure or diabetes? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Do you have double vision?; Do you have any difficulty with balance or coordination?; Do you have any difficulty speaking or swallowing?; Have you noticed any changes in your mood or cognitive function? -> ['no', 'yes', 'yes', 'no']",
+  "R3 ORDER Deep tendon reflex examination; Electromyography (EMG) and Nerve Conduction Study (NCS); Lumbar puncture (CSF analysis); Anti-GQ1b antibody test -> [['deep tendon reflexes and plantar responses'], ['nerve conduction studies', 'needle electromyography'], ['CSF opening pressure', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF cytology and flow cytometry', 'CSF culture and viral PCR', 'CSF autoimmune encephalitis panel', 'lumbar puncture / CSF (cells, protein, Abeta42/40, total tau, p-tau)'], []]",
+  "R4 DIAGNOSIS Progressive Supranuclear Palsy caused by a tauopathy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did these symptoms start suddenly?",
+    "Do you have any weakness or numbness in your limbs?",
+    "Do you have a history of multiple sclerosis?",
+    "Do you have a history of high blood pressure or diabetes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have double vision?",
+    "Do you have any difficulty with balance or coordination?",
+    "Do you have any difficulty speaking or swallowing?",
+    "Have you noticed any changes in your mood or cognitive function?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Deep tendon reflex examination",
+    "Electromyography (EMG) and Nerve Conduction Study (NCS)",
+    "Lumbar puncture (CSF analysis)",
+    "Anti-GQ1b antibody test"
+   ],
+   "result": [
+    [
+     "deep tendon reflexes and plantar responses"
+    ],
+    [
+     "nerve conduction studies",
+     "needle electromyography"
+    ],
+    [
+     "CSF opening pressure",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF cytology and flow cytometry",
+     "CSF culture and viral PCR",
+     "CSF autoimmune encephalitis panel",
+     "lumbar puncture / CSF (cells, protein, Abeta42/40, total tau, p-tau)"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Progressive Supranuclear Palsy caused by a tauopathy"
+  }
+ ],
+ "dx": "Progressive Supranuclear Palsy caused by a tauopathy",
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy caused by a tauopathy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "cost_usd": 0.0052,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 278.9
+}

@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Is the oscillation present when you look straight ahead?",
+  "Does the oscillation change direction or intensity when you look to one side?",
+  "Do you have a history of nystagmus since childhood?",
+  "Have you recently started any new medications, particularly anti-seizure drugs like phenytoin or carbamazepine?",
+  "Do you experience double vision?",
+  "Do you have a history of multiple sclerosis?",
+  "Do you have a history of stroke or brain injury?",
+  "Do you consume alcohol heavily or use sedatives regularly?",
+  "Do you have difficulty walking or maintaining balance?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Perform the doll's eye maneuver (oculocephalic reflex) to assess for suppression of nystagmus",
+  "Order an MRI of the brain with attention to the posterior fossa and brainstem"
+ ],
+ "served": [
+  "video-oculography / eye-movement recording",
+  "MRI brain with gadolinium"
+ ],
+ "results": [
+  "1. Perform the doll's eye maneuver (oculocephalic reflex) to assess for suppression of nystagmus",
+  "     video-oculography / eye-movement recording: right adduction failure on left gaze without contralateral abducting nystagmus; mild vertical gaze and convergence limitation",
+  "2. Order an MRI of the brain with attention to the posterior fossa and brainstem",
+  "     MRI brain with gadolinium: small dorsal paramedian midbrain infarct"
+ ],
+ "dx_raw": "DIAGNOSIS: Parinaud syndrome (dorsal midbrain syndrome) secondary to a small dorsal paramedian midbrain infarct\n1. Internuclear ophthalmoplegia due to a separate or concurrent lesion in the medial longitudinal fasciculus\n2. Myasthenia gravis presenting with ocular motor weakness mimicking supranuclear palsy\n3. Wernicke encephalopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Perform the doll's eye maneuver (oculocephalic reflex) to assess for suppression of nystagmus\n2. Order an MRI of the brain with attention to the posterior fossa and brainstem",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Parinaud syndrome (dorsal midbrain syndrome) secondary to a small dorsal paramedian midbrain infarct",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 185,
+   "completion_tokens": 135,
+   "total_tokens": 320,
+   "cost": 9.12e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.12e-05,
+    "upstream_inference_prompt_cost": 2.775e-05,
+    "upstream_inference_completions_cost": 6.345e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 646,
+   "completion_tokens": 43,
+   "total_tokens": 689,
+   "cost": 0.00011711,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011711,
+    "upstream_inference_prompt_cost": 9.69e-05,
+    "upstream_inference_completions_cost": 2.021e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 891,
+   "completion_tokens": 85,
+   "total_tokens": 976,
+   "cost": 0.000104992,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000104992,
+    "upstream_inference_prompt_cost": 6.5042e-05,
+    "upstream_inference_completions_cost": 3.995e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 20.2,
+ "video": "severe_3_oculomotor_palsy_PMC12745546.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.0
+}

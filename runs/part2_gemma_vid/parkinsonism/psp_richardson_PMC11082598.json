@@ -1,0 +1,143 @@
+{
+ "questions": [
+  "Did these symptoms start suddenly?",
+  "Do you have a tremor in your hands?",
+  "Do you feel stiffness in your muscles?",
+  "Have you had a stroke?",
+  "Do you have a history of Parkinson's disease?",
+  "Do you have trouble controlling your bladder?",
+  "Do you have memory loss?",
+  "Do you have difficulty swallowing?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Assessment of vertical gaze (upward and downward)",
+  "Brain MRI (T1 and T2 weighted images)"
+ ],
+ "served": [
+  "vertical saccades and gaze range (up and down)",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+ ],
+ "results": [
+  "1. Assessment of vertical gaze (upward and downward)",
+  "     vertical saccades and gaze range (up and down): both upgaze and downgaze RESTRICTED, vertical worse than horizontal; horizontal gaze preserved",
+  "2. Brain MRI (T1 and T2 weighted images)",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): mild hummingbird sign with cerebral atrophy",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): normal",
+  "     MRI brain - cortical atrophy pattern: no focal atrophy",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy (PSP) caused by 4R tauopathy\nMultiple System Atrophy (MSA)\nCorticobasal Degeneration (CBD)\nParkinson's disease",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Assessment of vertical gaze (upward and downward)\n2. Brain MRI (T1 and T2 weighted images)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Progressive Supranuclear Palsy (PSP) caused by 4R tauopathy",
+ "decisive_served": [
+  "vertical saccades and gaze range (up and down)",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2069,
+   "total_tokens": 10767,
+   "cost": 0.00157326,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00157326,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00070346
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1913,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9044,
+   "completion_tokens": 870,
+   "total_tokens": 9914,
+   "cost": 0.0012002,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012002,
+    "upstream_inference_prompt_cost": 0.0009044,
+    "upstream_inference_completions_cost": 0.0002958
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 882,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9313,
+   "completion_tokens": 1212,
+   "total_tokens": 10525,
+   "cost": 0.00134338,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00134338,
+    "upstream_inference_prompt_cost": 0.0009313,
+    "upstream_inference_completions_cost": 0.00041208
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1144,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "psp_richardson_PMC11082598.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 192.5
+}

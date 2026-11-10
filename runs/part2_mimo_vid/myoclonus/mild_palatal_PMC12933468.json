@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Are you currently experiencing pain or discomfort in your mouth?",
+  "Is the pain located specifically in the back teeth on the left side?",
+  "Does chewing food cause pain in that area?",
+  "Have you noticed any swelling in your cheek or gums recently?",
+  "Do your teeth feel sensitive to hot or cold liquids?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Comprehensive oral examination with dental mirror and probe",
+  "Periapical dental radiographs of affected teeth",
+  "Panoramic dental X-ray",
+  "Periodontal probing measurements",
+  "Visual documentation with intraoral photography"
+ ],
+ "served": [],
+ "results": [
+  "1. Comprehensive oral examination with dental mirror and probe",
+  "     not performed / not available",
+  "2. Periapical dental radiographs of affected teeth",
+  "     not performed / not available",
+  "3. Panoramic dental X-ray",
+  "     not performed / not available",
+  "4. Periodontal probing measurements",
+  "     not performed / not available",
+  "5. Visual documentation with intraoral photography",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOS: Extensive dental caries affecting multiple posterior teeth, particularly the left mandibular and maxillary molars, likely with pulpal necrosis given absence of pain\n\nAlternative 1: Advanced dental caries with secondary periodontal involvement\n\nAlternative 2: Dental caries with periapical pathology (chronic apical periodontitis)\n\nAlternative 3: Multiple non-restorable teeth with combined endodontic-periodontal lesions",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Comprehensive oral examination with dental mirror and probe\n2. Periapical dental radiographs of affected teeth\n3. Panoramic dental X-ray\n4. Periodontal probing measurements\n5. Visual documentation with intraoral photography",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Extensive dental caries affecting multiple posterior teeth, particularly the left mandibular and maxillary molars, likely with pulpal necrosis given absence of pain",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5054,
+   "completion_tokens": 1787,
+   "total_tokens": 6841,
+   "cost": 0.0005230176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005230176,
+    "upstream_inference_prompt_cost": 2.26576e-05,
+    "upstream_inference_completions_cost": 0.00050036
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1717,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5360,
+   "completion_tokens": 307,
+   "total_tokens": 5667,
+   "cost": 0.0001514576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001514576,
+    "upstream_inference_prompt_cost": 6.54976e-05,
+    "upstream_inference_completions_cost": 8.596e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 256,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5587,
+   "completion_tokens": 560,
+   "total_tokens": 6147,
+   "cost": 0.0002101736,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5312,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002101736,
+    "upstream_inference_prompt_cost": 5.33736e-05,
+    "upstream_inference_completions_cost": 0.0001568
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 465,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 9.0,
+ "video": "mild_palatal_PMC12933468.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 45.9,
+ "dx_old": "DIAGNOS: Extensive dental caries affecting multiple posterior teeth, particularly the left mandibular and maxillary molars, likely with pulpal necrosis given absence of pain"
+}

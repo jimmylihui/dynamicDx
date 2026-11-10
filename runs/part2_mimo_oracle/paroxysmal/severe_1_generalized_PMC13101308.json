@@ -1,0 +1,105 @@
+{
+ "questions": [
+  "Are you experiencing severe pain in your head right now?",
+  "Have you had nausea or vomiting since your injury?",
+  "Are you able to see clearly without blurred or double vision?",
+  "Do you feel numbness or tingling in your arms or legs?",
+  "Are you having trouble speaking clearly or finding words?",
+  "Do you feel dizzy or unsteady when you move?",
+  "Have you noticed any ringing or changes in your hearing since the injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "2. video-EEG monitoring of a typical event: ictal body turning preceded by head version; although the clinical onset looked focal, the EEG showed generalized beta fast activity for 0.5 s followed by a generalized 2.5-3 Hz spike-wave discharge with maximum bifrontal amplitude"
+ ],
+ "dx_raw": "DIAGNOSIS: Frontal lobe epilepsy with secondary bilateral synchrony\n\nFrontal lobe epilepsy (non-localizing further without MRI data)\nIdiopathic generalized epilepsy with atypical features\nEpilepsia partialis continua",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Frontal lobe epilepsy with secondary bilateral synchrony",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 563,
+   "total_tokens": 5618,
+   "cost": 0.0008389976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008389976,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00015764
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 457,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5492,
+   "completion_tokens": 615,
+   "total_tokens": 6107,
+   "cost": 0.0002561776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002561776,
+    "upstream_inference_prompt_cost": 8.39776e-05,
+    "upstream_inference_completions_cost": 0.0001722
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 564,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.8,
+ "video": "severe_1_generalized_PMC13101308.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 27.9
+}

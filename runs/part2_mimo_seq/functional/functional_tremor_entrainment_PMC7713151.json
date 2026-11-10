@@ -1,0 +1,216 @@
+{
+ "questions": [
+  "Have you noticed any recent changes in your personality or behavior?",
+  "Have you experienced any weakness in your right arm or leg?",
+  "Have you had any trouble speaking or finding words?",
+  "Have you had any seizures?",
+  "When did you first notice this tremor in your hand?",
+  "Have you been having any headaches?",
+  "Do you feel unsteady or off-balance when walking?",
+  "Do you feel nauseous or vomit, especially in the morning?",
+  "Did this hand movement start within the last few weeks or months?",
+  "Do you have high blood pressure?",
+  "Have you had any recent head injury?",
+  "Do you take any medications like an antipsychotic or a stomach medicine like metoclopramide?",
+  "Does anyone else in your family have a similar hand movement or tremor?",
+  "Are you able to stop or control these hand movements if you try really hard?",
+  "Does the movement happen when your hand is resting or when you are using it?",
+  "Do the movements ever affect other parts of your body besides your hand?",
+  "Do you notice that you have become slower in your movements recently?",
+  "Do you feel stiffness or tightness in your arm or leg?",
+  "Have you noticed your handwriting has become smaller?",
+  "Do you have trouble getting up from a chair or turning in bed?",
+  "Did these hand movements start in childhood?",
+  "Do you have any developmental or learning difficulties?",
+  "Are these movements worse when you are stressed or anxious?",
+  "Do the movements stop or improve when someone asks you to perform a task with that hand, like tapping your finger?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "yes",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "yes",
+  "24": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Distractibility test - ask patient to perform a complex mental task (serial subtraction of 7 from 100) while observing movements",
+  "Entrapment test - observe if movements change when the affected hand is passively held in a fixed position"
+ ],
+ "served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "co-activation sign on passive movement of the affected limb"
+ ],
+ "results": [
+  "R1 ASK Have you noticed any recent changes in your personality or behavior?; Have you experienced any weakness in your right arm or leg?; Have you had any trouble speaking or finding words?; Have you had any seizures? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK When did you first notice this tremor in your hand?; Have you been having any headaches?; Do you feel unsteady or off-balance when walking?; Do you feel nauseous or vomit, especially in the morning? -> ['no', 'no', 'no', 'no']",
+  "R3 ASK Did this hand movement start within the last few weeks or months?; Do you have high blood pressure?; Have you had any recent head injury?; Do you take any medications like an antipsychotic or a stomach medicine like metoclopramide? -> ['no', 'no', 'no', 'no']",
+  "R4 ASK Does anyone else in your family have a similar hand movement or tremor?; Are you able to stop or control these hand movements if you try really hard?; Does the movement happen when your hand is resting or when you are using it?; Do the movements ever affect other parts of your body besides your hand? -> ['no', 'no', 'yes', 'yes']",
+  "R5 ASK Do you notice that you have become slower in your movements recently?; Do you feel stiffness or tightness in your arm or leg?; Have you noticed your handwriting has become smaller?; Do you have trouble getting up from a chair or turning in bed? -> ['no', 'no', 'no', 'no']",
+  "R6 ASK Did these hand movements start in childhood?; Do you have any developmental or learning difficulties?; Are these movements worse when you are stressed or anxious?; Do the movements stop or improve when someone asks you to perform a task with that hand, like tapping your finger? -> ['no', 'no', 'yes', 'no']",
+  "R7 ORDER Distractibility test - ask patient to perform a complex mental task (serial subtraction of 7 from 100) while observing movements; Entrapment test - observe if movements change when the affected hand is passively held in a fixed position -> [['distractibility testing (complex motor task with the unaffected side)'], ['co-activation sign on passive movement of the affected limb']]",
+  "R8 DIAGNOSIS Functional (psychogenic) tremor/movement disorder -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any recent changes in your personality or behavior?",
+    "Have you experienced any weakness in your right arm or leg?",
+    "Have you had any trouble speaking or finding words?",
+    "Have you had any seizures?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "When did you first notice this tremor in your hand?",
+    "Have you been having any headaches?",
+    "Do you feel unsteady or off-balance when walking?",
+    "Do you feel nauseous or vomit, especially in the morning?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did this hand movement start within the last few weeks or months?",
+    "Do you have high blood pressure?",
+    "Have you had any recent head injury?",
+    "Do you take any medications like an antipsychotic or a stomach medicine like metoclopramide?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Does anyone else in your family have a similar hand movement or tremor?",
+    "Are you able to stop or control these hand movements if you try really hard?",
+    "Does the movement happen when your hand is resting or when you are using it?",
+    "Do the movements ever affect other parts of your body besides your hand?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you notice that you have become slower in your movements recently?",
+    "Do you feel stiffness or tightness in your arm or leg?",
+    "Have you noticed your handwriting has become smaller?",
+    "Do you have trouble getting up from a chair or turning in bed?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Did these hand movements start in childhood?",
+    "Do you have any developmental or learning difficulties?",
+    "Are these movements worse when you are stressed or anxious?",
+    "Do the movements stop or improve when someone asks you to perform a task with that hand, like tapping your finger?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Distractibility test - ask patient to perform a complex mental task (serial subtraction of 7 from 100) while observing movements",
+    "Entrapment test - observe if movements change when the affected hand is passively held in a fixed position"
+   ],
+   "result": [
+    [
+     "distractibility testing (complex motor task with the unaffected side)"
+    ],
+    [
+     "co-activation sign on passive movement of the affected limb"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Functional (psychogenic) tremor/movement disorder"
+  }
+ ],
+ "dx": "Functional (psychogenic) tremor/movement disorder",
+ "dx_raw": "DIAGNOSIS: Functional (psychogenic) tremor/movement disorder",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "co-activation sign on passive movement of the affected limb",
+  "distractibility testing (complex motor task with the unaffected side)"
+ ],
+ "n_decisive": 6,
+ "cost_usd": 0.0032,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 337.0
+}

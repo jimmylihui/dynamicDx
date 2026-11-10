@@ -1,0 +1,301 @@
+{
+ "questions": [
+  "Is the pain in your right knee?",
+  "Is the pain chronic?",
+  "Is there swelling in the joint?",
+  "Is there morning stiffness?",
+  "Is the pain worse after activity?",
+  "Is the pain in your left knee?",
+  "Did the pain start suddenly after an injury?",
+  "Do you have a fever?",
+  "Is there any redness or warmth over the knee?",
+  "Do you have a history of gout?",
+  "Do you have pain in your hips?",
+  "Do you have pain in your calves?",
+  "Do you have pain in your thighs?",
+  "Do you have numbness or tingling in your legs?",
+  "Do you have weakness in your legs?",
+  "Is it itching?",
+  "Is there a rash?",
+  "Is there a lump?",
+  "Do you feel something moving under the skin?",
+  "Is it a feeling of tightness?",
+  "Do you have a feeling of discomfort in your left knee?",
+  "Does your left knee make a popping or clicking sound?",
+  "Do you feel like your left knee is unstable or giving way?",
+  "Is there a burning sensation in that area?",
+  "Do you have any problems with your balance?",
+  "Do you feel a sensation in your right knee that makes you rub it?",
+  "Is it a feeling of stiffness in your right knee?",
+  "Is it a feeling of coldness in your right knee?",
+  "Is it a feeling of warmth in your right knee?",
+  "Is it a feeling of pressure in your right knee?",
+  "Are you aware that you are rubbing your knee?",
+  "Do you find yourself doing the same movements over and over?",
+  "Do you have trouble controlling these movements?",
+  "Do you have a diagnosis of dementia?",
+  "Do you have a diagnosis of Parkinson's disease?",
+  "Are you taking any antipsychotic medications?",
+  "Have you ever had a stroke?",
+  "Do you have difficulty performing simple tasks with your hands, like buttoning a shirt?",
+  "Do you feel like your hand has a mind of its own?",
+  "Do you have stiffness in your right arm?",
+  "Have you or your family noticed any changes in your personality?",
+  "Do you find yourself acting more impulsively?",
+  "Do you have a loss of empathy or social inhibitions?",
+  "Do you have any repetitive behaviors other than the knee rubbing?",
+  "Do you have any difficulty with language or finding words?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "no",
+  "33": "yes",
+  "34": "no",
+  "35": "no",
+  "36": "no",
+  "37": "no",
+  "38": "no",
+  "39": "no",
+  "40": "no",
+  "41": "no",
+  "42": "no",
+  "43": "no",
+  "44": "no",
+  "45": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Is the pain in your right knee?; Is the pain chronic?; Is there swelling in the joint?; Is there morning stiffness?; Is the pain worse after activity? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Is the pain in your left knee?; Did the pain start suddenly after an injury?; Do you have a fever?; Is there any redness or warmth over the knee?; Do you have a history of gout? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Do you have pain in your hips?; Do you have pain in your calves?; Do you have pain in your thighs?; Do you have numbness or tingling in your legs?; Do you have weakness in your legs? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Is it itching?; Is there a rash?; Is there a lump?; Do you feel something moving under the skin?; Is it a feeling of tightness? -> ['no', 'no', 'no', 'no', 'no']",
+  "R5 ASK Do you have a feeling of discomfort in your left knee?; Does your left knee make a popping or clicking sound?; Do you feel like your left knee is unstable or giving way?; Is there a burning sensation in that area?; Do you have any problems with your balance? -> ['no', 'no', 'no', 'no', 'no']",
+  "R6 ASK Do you feel a sensation in your right knee that makes you rub it?; Is it a feeling of stiffness in your right knee?; Is it a feeling of coldness in your right knee?; Is it a feeling of warmth in your right knee?; Is it a feeling of pressure in your right knee? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 ASK Are you aware that you are rubbing your knee?; Do you find yourself doing the same movements over and over?; Do you have trouble controlling these movements?; Do you have a diagnosis of dementia?; Do you have a diagnosis of Parkinson's disease? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R8 ASK Are you taking any antipsychotic medications?; Have you ever had a stroke?; Do you have difficulty performing simple tasks with your hands, like buttoning a shirt?; Do you feel like your hand has a mind of its own?; Do you have stiffness in your right arm? -> ['no', 'no', 'no', 'no', 'no']",
+  "R9 ASK Have you or your family noticed any changes in your personality?; Do you find yourself acting more impulsively?; Do you have a loss of empathy or social inhibitions?; Do you have any repetitive behaviors other than the knee rubbing?; Do you have any difficulty with language or finding words? -> ['no', 'no', 'no', 'no', 'no']",
+  "R10 DIAGNOSIS Motor stereotypy due to Frontotemporal Dementia -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is the pain in your right knee?",
+    "Is the pain chronic?",
+    "Is there swelling in the joint?",
+    "Is there morning stiffness?",
+    "Is the pain worse after activity?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Is the pain in your left knee?",
+    "Did the pain start suddenly after an injury?",
+    "Do you have a fever?",
+    "Is there any redness or warmth over the knee?",
+    "Do you have a history of gout?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your hips?",
+    "Do you have pain in your calves?",
+    "Do you have pain in your thighs?",
+    "Do you have numbness or tingling in your legs?",
+    "Do you have weakness in your legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Is it itching?",
+    "Is there a rash?",
+    "Is there a lump?",
+    "Do you feel something moving under the skin?",
+    "Is it a feeling of tightness?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a feeling of discomfort in your left knee?",
+    "Does your left knee make a popping or clicking sound?",
+    "Do you feel like your left knee is unstable or giving way?",
+    "Is there a burning sensation in that area?",
+    "Do you have any problems with your balance?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you feel a sensation in your right knee that makes you rub it?",
+    "Is it a feeling of stiffness in your right knee?",
+    "Is it a feeling of coldness in your right knee?",
+    "Is it a feeling of warmth in your right knee?",
+    "Is it a feeling of pressure in your right knee?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Are you aware that you are rubbing your knee?",
+    "Do you find yourself doing the same movements over and over?",
+    "Do you have trouble controlling these movements?",
+    "Do you have a diagnosis of dementia?",
+    "Do you have a diagnosis of Parkinson's disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Are you taking any antipsychotic medications?",
+    "Have you ever had a stroke?",
+    "Do you have difficulty performing simple tasks with your hands, like buttoning a shirt?",
+    "Do you feel like your hand has a mind of its own?",
+    "Do you have stiffness in your right arm?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Have you or your family noticed any changes in your personality?",
+    "Do you find yourself acting more impulsively?",
+    "Do you have a loss of empathy or social inhibitions?",
+    "Do you have any repetitive behaviors other than the knee rubbing?",
+    "Do you have any difficulty with language or finding words?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Motor stereotypy due to Frontotemporal Dementia"
+  }
+ ],
+ "dx": "Motor stereotypy due to Frontotemporal Dementia",
+ "dx_raw": "DIAGNOSIS: Motor stereotypy due to Frontotemporal Dementia",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0143,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 929.2
+}

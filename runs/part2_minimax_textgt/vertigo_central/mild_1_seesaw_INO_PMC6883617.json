@@ -1,0 +1,185 @@
+{
+ "questions": [
+  "Did the double vision or eye misalignment come on suddenly?",
+  "Do you feel dizzy, or as if the room is spinning around you?",
+  "Do you have any weakness or numbness on one side of your body or face?",
+  "Do you have any trouble speaking clearly or swallowing?",
+  "Are you having headaches?",
+  "Have you noticed any unsteadiness or clumsiness when walking?",
+  "Do you have any hearing loss or ringing in your ears?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Are you over 50 years old?",
+  "Have you ever been diagnosed with multiple sclerosis?",
+  "Do you have a history of cancer?",
+  "Is the double vision there all the time?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "yes",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "HINTS bedside examination (head impulse, nystagmus, test of skew)",
+  "MRI brain with diffusion-weighted imaging",
+  "MR angiography of the intracranial and extracranial vessels",
+  "Fasting blood glucose and HbA1c",
+  "Fasting lipid profile",
+  "12-lead ECG",
+  "Transthoracic echocardiogram",
+  "Carotid duplex ultrasound"
+ ],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "skew deviation / alternating cover test",
+  "head impulse test",
+  "MRI diffusion-weighted sequences",
+  "MRI brain with DWI",
+  "CT / MR angiography (posterior circulation)",
+  "CT / MR angiography (circle of Willis)",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "lipids and vascular risk assessment"
+ ],
+ "results": [
+  "1. HINTS bedside examination (head impulse, nystagmus, test of skew)",
+  "     nystagmus: direction and whether it changes with gaze: see-saw nystagmus",
+  "     skew deviation / alternating cover test: no vertical misalignment",
+  "     head impulse test: normal - no corrective saccade",
+  "2. MRI brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the bilateral dorsomedial pons and left thalamus",
+  "     MRI brain with DWI: bilateral dorsomedial PONTINE and LEFT THALAMIC infarction",
+  "3. MR angiography of the intracranial and extracranial vessels",
+  "     CT / MR angiography (posterior circulation): slender left anterior cerebral artery and stenosis of the ipsilateral posterior cerebral artery",
+  "     CT / MR angiography (circle of Willis): normal / non-contributory",
+  "4. Fasting blood glucose and HbA1c",
+  "     blood glucose and HbA1c: fasting glucose 10.88 mmol/L; HbA1c 9%",
+  "     glucose / HbA1c: fasting glucose 10.88 mmol/L (ref 3.89-6.11) and HbA1c 9% (ref 4-6) - uncontrolled diabetes",
+  "5. Fasting lipid profile",
+  "     lipids and vascular risk assessment: normal",
+  "6. 12-lead ECG",
+  "     not performed / not available",
+  "7. Transthoracic echocardiogram",
+  "     not performed / not available",
+  "8. Carotid duplex ultrasound",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Bilateral paramedian pontine and left thalamic infarction due to vertebrobasilar atherothrombosis (basilar artery thrombosis with occlusion of multiple paramedian perforators)\n\nArtery of Percheron occlusion with midbrain (not pontine) involvement\nBasilar artery atherosclerotic stenosis with perforator occlusion (without complete thrombosis)\nVertebral artery dissection causing posterior circulation embolic infarction",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. HINTS bedside examination (head impulse, nystagmus, test of skew)\n2. MRI brain with diffusion-weighted imaging\n3. MR angiography of the intracranial and extracranial vessels\n4. Fasting blood glucose and HbA1c\n5. Fasting lipid profile\n6. 12-lead ECG\n7. Transthoracic echocardiogram\n8. Carotid duplex ultrasound",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Bilateral paramedian pontine and left thalamic infarction due to vertebrobasilar atherothrombosis (basilar artery thrombosis with occlusion of multiple paramedian perforators)",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "MRI brain with DWI"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 332,
+   "completion_tokens": 6180,
+   "total_tokens": 6512,
+   "cost": 0.00748824,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00748824,
+    "upstream_inference_prompt_cost": 7.224e-05,
+    "upstream_inference_completions_cost": 0.007416
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6728,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 852,
+   "completion_tokens": 157,
+   "total_tokens": 1009,
+   "cost": 0.00038592,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00038592,
+    "upstream_inference_prompt_cost": 0.00019752,
+    "upstream_inference_completions_cost": 0.0001884
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 72,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1337,
+   "completion_tokens": 1414,
+   "total_tokens": 2751,
+   "cost": 0.00207054,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00207054,
+    "upstream_inference_prompt_cost": 0.00037374,
+    "upstream_inference_completions_cost": 0.0016968
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1525,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.2,
+ "video": "mild_1_seesaw_INO_PMC6883617.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 94.7
+}

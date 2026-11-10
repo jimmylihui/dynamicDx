@@ -1,0 +1,145 @@
+{
+ "questions": [
+  "Is the jerking movement present in other parts of your body?",
+  "Do you have a family history of similar movement disorders?",
+  "Have you recently started any new medications, particularly antipsychotics or antiemetics?",
+  "Do you experience difficulty with balance or walking?",
+  "Have you noticed any changes in your memory or thinking abilities?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain with attention to basal ganglia and cortical atrophy",
+  "Serum ceruloplasmin, 24-hour urine copper, and slit-lamp examination for Kayser-Fleischer rings",
+  "Peripheral blood smear for acanthocytes"
+ ],
+ "served": [
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "serum copper and caeruloplasmin",
+  "24-hour urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings"
+ ],
+ "results": [
+  "1. MRI of the brain with attention to basal ganglia and cortical atrophy",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): normal midbrain, ratio within normal limits",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): normal",
+  "     MRI brain - cortical atrophy pattern: moderate global atrophy with MARKEDLY ASYMMETRICAL atrophy of the superior parietal lobules and posterior frontal lobes, left hemisphere worse",
+  "2. Serum ceruloplasmin, 24-hour urine copper, and slit-lamp examination for Kayser-Fleischer rings",
+  "     serum copper and caeruloplasmin: normal",
+  "     24-hour urinary copper: normal",
+  "     slit-lamp examination for Kayser-Fleischer rings: not performed",
+  "3. Peripheral blood smear for acanthocytes",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Corticobasal degeneration (sporadic tauopathy)\nProgressive supranuclear palsy\nAlzheimer's disease",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with attention to basal ganglia and cortical atrophy\n2. Serum ceruloplasmin, 24-hour urine copper, and slit-lamp examination for Kayser-Fleischer rings\n3. Peripheral blood smear for acanthocytes",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Corticobasal degeneration (sporadic tauopathy)",
+ "decisive_served": [
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 200,
+   "completion_tokens": 77,
+   "total_tokens": 277,
+   "cost": 6.619e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.619e-05,
+    "upstream_inference_prompt_cost": 3e-05,
+    "upstream_inference_completions_cost": 3.619e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 529,
+   "completion_tokens": 55,
+   "total_tokens": 584,
+   "cost": 0.0001052,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001052,
+    "upstream_inference_prompt_cost": 7.935e-05,
+    "upstream_inference_completions_cost": 2.585e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 882,
+   "completion_tokens": 31,
+   "total_tokens": 913,
+   "cost": 7.8262e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.8262e-05,
+    "upstream_inference_prompt_cost": 6.3692e-05,
+    "upstream_inference_completions_cost": 1.457e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "cbd_apraxic_hand_PMC12371612.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 41.1
+}

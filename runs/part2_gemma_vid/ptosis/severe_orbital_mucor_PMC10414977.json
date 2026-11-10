@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have weakness in your arm or leg?",
+  "Do you have difficulty speaking?",
+  "Do you have a headache?",
+  "Do you have double vision?",
+  "Do you have difficulty swallowing?",
+  "Do you have any pain behind your ear?",
+  "Have you had a rash on your face or ear recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain and Internal Auditory Canal",
+  "Electromyography and nerve conduction studies of the facial nerve"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain with contrast",
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. MRI Brain and Internal Auditory Canal",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the involved sinonasal and orbital tissues",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain with contrast: no lesion, no cranial nerve enhancement",
+  "2. Electromyography and nerve conduction studies of the facial nerve",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Rhinocerebral mucormycosis caused by Mucorales fungi\n\n1. Sinonasal lymphoma\n2. Granulomatosis with polyangiitis\n3. Invasive aspergillosis",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain and Internal Auditory Canal\n2. Electromyography and nerve conduction studies of the facial nerve",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Rhinocerebral mucormycosis caused by Mucorales fungi",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 3514,
+   "total_tokens": 12212,
+   "cost": 0.00206456,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00206456,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00119476
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3168,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9044,
+   "completion_tokens": 1611,
+   "total_tokens": 10655,
+   "cost": 0.00145214,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00145214,
+    "upstream_inference_prompt_cost": 0.0009044,
+    "upstream_inference_completions_cost": 0.00054774
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1635,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9246,
+   "completion_tokens": 4281,
+   "total_tokens": 13527,
+   "cost": 0.00238014,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00238014,
+    "upstream_inference_prompt_cost": 0.0009246,
+    "upstream_inference_completions_cost": 0.00145554
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4165,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 364.3
+}

@@ -1,0 +1,130 @@
+{
+ "questions": [
+  "Are you experiencing involuntary movements of your right arm or hand?",
+  "Do these episodes occur while you remain fully conscious and able to respond?",
+  "Can you voluntarily stop the movement when you try?",
+  "Does the movement occur only when someone touches, moves, or stimulates your arm?",
+  "Does it occur when you stand, walk, or change position?",
+  "Do you experience sudden weakness or inability to move that arm?",
+  "Do you have numbness or loss of sensation in that arm?",
+  "Do the episodes begin suddenly and end within a few minutes?",
+  "Have you ever lost awareness, stared blankly, or been unable to respond during an episode?",
+  "Have you had tongue biting, urinary incontinence, or prolonged confusion afterward?",
+  "Have you recently developed severe headache, facial drooping, speech difficulty, or weakness on one side?",
+  "Did these symptoms begin after an injury, surgery, stroke, or infection?",
+  "Have you had similar episodes before?",
+  "Do you have epilepsy, Parkinson’s disease, or another neurologic disorder?",
+  "Are you taking any medications or substances that were started or changed recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "genetic testing (exome / epilepsy panel)",
+  "brain MRI",
+  "interictal EEG",
+  "video-polygraphy (EEG with EMG)",
+  "CSF 14-3-3 / RT-QuIC (prion)"
+ ],
+ "results": [
+  "1. genetic testing (exome / epilepsy panel): PRNP mutation - familial CJD, which accounts for about 10-15% of cases and is most often E200K",
+  "2. brain MRI: restricted diffusion with matching T2/FLAIR hyperintensity in the right caudate, anterior lentiform nucleus, cingulate gyrus and insula, and less prominently the right frontal, parietal and temporal cortex",
+  "3. interictal EEG: generalized periodic discharges recurring every 1-2 seconds as the illness progressed",
+  "4. video-polygraphy (EEG with EMG): lateralized periodic discharges over the RIGHT fronto-central-temporal region, TIME-LOCKED with brief EMG bursts under 100 ms in the LEFT wrist flexors and extensors - electrophysiological proof of epilepsia partialis continua",
+  "5. CSF 14-3-3 / RT-QuIC (prion): positive"
+ ],
+ "dx_raw": "DIAGNOSIS: Familial Creutzfeldt–Jakob disease (prion disease caused by a pathogenic PRNP mutation, most consistent with E200K), presenting with epilepsia partialis continua\n\nALTERNATIVE: Sporadic Creutzfeldt–Jakob disease with epilepsia partialis continua\n\nALTERNATIVE: Autoimmune encephalitis with focal status epilepticus\n\nALTERNATIVE: Focal status epilepticus secondary to an acute structural cortical–basal ganglia lesion",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Familial Creutzfeldt–Jakob disease (prion disease caused by a pathogenic PRNP mutation, most consistent with E200K), presenting with epilepsia partialis continua",
+ "decisive_served": [
+  "genetic testing (exome / epilepsy panel)",
+  "brain MRI",
+  "interictal EEG",
+  "video-polygraphy (EEG with EMG)",
+  "CSF 14-3-3 / RT-QuIC (prion)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14892,
+   "completion_tokens": 1076,
+   "total_tokens": 15968,
+   "cost": 0.00079479,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14889,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00079479,
+    "upstream_inference_prompt_cost": 0.00014919,
+    "upstream_inference_completions_cost": 0.0006456
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15736,
+   "completion_tokens": 224,
+   "total_tokens": 15960,
+   "cost": 0.002101325,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 15733,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.002101325,
+    "upstream_inference_prompt_cost": 0.001966925,
+    "upstream_inference_completions_cost": 0.0001344
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 115,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 23.8
+}

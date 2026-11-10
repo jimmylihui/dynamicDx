@@ -1,0 +1,107 @@
+{
+ "questions": [
+  "Did this eye problem start suddenly, after a specific event like a car crash or a fall?",
+  "Have you been diagnosed with diabetes?",
+  "Do you have double vision when looking straight ahead?",
+  "Is the movement of your right eye (the one on the left side of the screen) restricted in any direction?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "adduction in horizontal gaze (each eye)",
+  "MRI sella and orbits",
+  "CT head (non-contrast)",
+  "forced duction test"
+ ],
+ "results": [
+  "1. adduction in horizontal gaze (each eye): limited adduction of the RIGHT eye that fails to cross the midline, with abducting nystagmus of the left eye on left gaze - mimics an INO",
+  "2. MRI sella and orbits: subtle MEDIAL ORBITAL WALL FRACTURE with medial rectus involvement; no brainstem pathology",
+  "3. CT head (non-contrast): multiple skull fractures and epidural haemorrhage; NO evidence of brainstem injury",
+  "4. forced duction test: restriction consistent with a mechanical cause"
+ ],
+ "dx_raw": "DIAGNOSIS: Pseudo-internuclear ophthalmoplegia secondary to medial rectus muscle entrapment from a medial orbital wall fracture\n\n1. True Internuclear Ophthalmoplegia (INO) due to traumatic brainstem injury\n2. Direct traumatic myopathy or rupture of the medial rectus muscle\n3. Orbital compartment syndrome",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Pseudo-internuclear ophthalmoplegia secondary to medial rectus muscle entrapment from a medial orbital wall fracture",
+ "decisive_served": [
+  "adduction in horizontal gaze (each eye)",
+  "MRI sella and orbits",
+  "CT head (non-contrast)",
+  "forced duction test"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 3287,
+   "completion_tokens": 71,
+   "total_tokens": 3358,
+   "cost": 0.00052642,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00052642,
+    "upstream_inference_prompt_cost": 0.00049305,
+    "upstream_inference_completions_cost": 3.337e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 3666,
+   "completion_tokens": 72,
+   "total_tokens": 3738,
+   "cost": 0.000189244,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 2944,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000189244,
+    "upstream_inference_prompt_cost": 0.000155404,
+    "upstream_inference_completions_cost": 3.384e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.8
+}

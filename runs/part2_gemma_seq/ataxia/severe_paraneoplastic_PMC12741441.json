@@ -1,0 +1,275 @@
+{
+ "questions": [
+  "Do you have a resting tremor?",
+  "Do you feel stiffness in your limbs?",
+  "Have you noticed that your movements have become slower?",
+  "Do you have urinary incontinence?",
+  "Do you have memory loss or confusion?",
+  "Have you had any frequent falls?",
+  "Do you have difficulty speaking or swallowing?",
+  "Have you noticed changes in your personality or mood?",
+  "Do you have any history of heart problems or vision loss?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Rigidity assessment (passive movement of joints)",
+  "Pull test for postural stability",
+  "Vertical gaze movement assessment",
+  "Blood pressure measurement (lying and standing)",
+  "Levodopa trial",
+  "MRI of the brain (focusing on the midbrain and brainstem)",
+  "CSF analysis (protein, glucose, cells, and oligoclonal bands)",
+  "Serum antibodies for autoimmune encephalitides (e.g., anti-NMDA, anti-LGI1)",
+  "Deep tendon reflex examination",
+  "Assessment for ptosis",
+  "Assessment for ataxia (finger-to-nose, heel-to-shin)",
+  "Tensilon test (or Edrophonium test) for Myasthenia Gravis",
+  "Serum and CSF lactic acid levels",
+  "Muscle biopsy (with Gömöri trichrome stain for ragged red fibers)",
+  "Genetic testing for mitochondrial DNA mutations (e.g., for Kearns-Sayre syndrome or CPEO)",
+  "Fundoscopic examination (to check for pigmentary retinopathy)",
+  "Anti-GQ1b antibodies",
+  "Audiometry (hearing test)",
+  "Serum lactic acid",
+  "Thyroid function tests",
+  "Serum ceruloplasmin",
+  "24-hour urinary copper",
+  "Slit-lamp examination for Kayser-Fleischer rings"
+ ],
+ "served": [
+  "muscle tone examination",
+  "posture and pull test",
+  "bedside eye-movement exam",
+  "vital signs",
+  "brain MRI",
+  "lumbar puncture / CSF",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "deep tendon reflexes and plantar responses",
+  "cranial nerve examination",
+  "finger-nose / heel-shin testing",
+  "coordination examination (limb and truncal)",
+  "fundoscopy",
+  "anti-GQ1b / anti-ganglioside antibodies",
+  "TSH / free T4",
+  "copper / caeruloplasmin",
+  "24-hour urinary copper"
+ ],
+ "results": [
+  "R1 ASK Do you have a resting tremor?; Do you feel stiffness in your limbs?; Have you noticed that your movements have become slower?; Do you have urinary incontinence?; Do you have memory loss or confusion? -> ['no', 'yes', 'yes', 'no', 'no']",
+  "R2 ORDER Rigidity assessment (passive movement of joints); Pull test for postural stability; Vertical gaze movement assessment; Blood pressure measurement (lying and standing); Levodopa trial -> [['muscle tone examination'], ['posture and pull test'], ['bedside eye-movement exam'], ['vital signs'], []]",
+  "R3 ASK Have you had any frequent falls?; Do you have difficulty speaking or swallowing?; Have you noticed changes in your personality or mood?; Do you have any history of heart problems or vision loss? -> ['no', 'no', 'no', 'no']",
+  "R4 ORDER MRI of the brain (focusing on the midbrain and brainstem); CSF analysis (protein, glucose, cells, and oligoclonal bands); Serum antibodies for autoimmune encephalitides (e.g., anti-NMDA, anti-LGI1) -> [['brain MRI'], ['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index'], []]",
+  "R5 ORDER Deep tendon reflex examination; Assessment for ptosis; Assessment for ataxia (finger-to-nose, heel-to-shin); Tensilon test (or Edrophonium test) for Myasthenia Gravis -> [['deep tendon reflexes and plantar responses'], ['cranial nerve examination'], ['finger-nose / heel-shin testing', 'coordination examination (limb and truncal)'], []]",
+  "R6 ORDER Serum and CSF lactic acid levels; Muscle biopsy (with Gömöri trichrome stain for ragged red fibers); Genetic testing for mitochondrial DNA mutations (e.g., for Kearns-Sayre syndrome or CPEO); Fundoscopic examination (to check for pigmentary retinopathy) -> [['lumbar puncture / CSF'], [], [], ['fundoscopy']]",
+  "R7 ORDER Anti-GQ1b antibodies; Audiometry (hearing test); Serum lactic acid; Thyroid function tests -> [['anti-GQ1b / anti-ganglioside antibodies'], [], [], ['TSH / free T4']]",
+  "R8 ORDER Serum ceruloplasmin; 24-hour urinary copper; Slit-lamp examination for Kayser-Fleischer rings -> [['copper / caeruloplasmin'], ['24-hour urinary copper'], []]",
+  "R9 DIAGNOSIS Mitochondrial encephalomyopathy due to mitochondrial DNA mutation -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a resting tremor?",
+    "Do you feel stiffness in your limbs?",
+    "Have you noticed that your movements have become slower?",
+    "Do you have urinary incontinence?",
+    "Do you have memory loss or confusion?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Rigidity assessment (passive movement of joints)",
+    "Pull test for postural stability",
+    "Vertical gaze movement assessment",
+    "Blood pressure measurement (lying and standing)",
+    "Levodopa trial"
+   ],
+   "result": [
+    [
+     "muscle tone examination"
+    ],
+    [
+     "posture and pull test"
+    ],
+    [
+     "bedside eye-movement exam"
+    ],
+    [
+     "vital signs"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you had any frequent falls?",
+    "Do you have difficulty speaking or swallowing?",
+    "Have you noticed changes in your personality or mood?",
+    "Do you have any history of heart problems or vision loss?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "MRI of the brain (focusing on the midbrain and brainstem)",
+    "CSF analysis (protein, glucose, cells, and oligoclonal bands)",
+    "Serum antibodies for autoimmune encephalitides (e.g., anti-NMDA, anti-LGI1)"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ],
+    [
+     "lumbar puncture / CSF",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Deep tendon reflex examination",
+    "Assessment for ptosis",
+    "Assessment for ataxia (finger-to-nose, heel-to-shin)",
+    "Tensilon test (or Edrophonium test) for Myasthenia Gravis"
+   ],
+   "result": [
+    [
+     "deep tendon reflexes and plantar responses"
+    ],
+    [
+     "cranial nerve examination"
+    ],
+    [
+     "finger-nose / heel-shin testing",
+     "coordination examination (limb and truncal)"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Serum and CSF lactic acid levels",
+    "Muscle biopsy (with Gömöri trichrome stain for ragged red fibers)",
+    "Genetic testing for mitochondrial DNA mutations (e.g., for Kearns-Sayre syndrome or CPEO)",
+    "Fundoscopic examination (to check for pigmentary retinopathy)"
+   ],
+   "result": [
+    [
+     "lumbar puncture / CSF"
+    ],
+    [],
+    [],
+    [
+     "fundoscopy"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Anti-GQ1b antibodies",
+    "Audiometry (hearing test)",
+    "Serum lactic acid",
+    "Thyroid function tests"
+   ],
+   "result": [
+    [
+     "anti-GQ1b / anti-ganglioside antibodies"
+    ],
+    [],
+    [],
+    [
+     "TSH / free T4"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Serum ceruloplasmin",
+    "24-hour urinary copper",
+    "Slit-lamp examination for Kayser-Fleischer rings"
+   ],
+   "result": [
+    [
+     "copper / caeruloplasmin"
+    ],
+    [
+     "24-hour urinary copper"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Mitochondrial encephalomyopathy due to mitochondrial DNA mutation"
+  }
+ ],
+ "dx": "Mitochondrial encephalomyopathy due to mitochondrial DNA mutation",
+ "dx_raw": "DIAGNOSIS: Mitochondrial encephalomyopathy due to mitochondrial DNA mutation",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "bedside eye-movement exam"
+ ],
+ "n_decisive": 2,
+ "cost_usd": 0.0136,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_paraneoplastic_PMC12741441.mp4",
+ "line": "ataxia",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 1998.4
+}

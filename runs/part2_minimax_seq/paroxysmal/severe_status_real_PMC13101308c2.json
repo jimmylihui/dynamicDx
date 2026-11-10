@@ -1,0 +1,278 @@
+{
+ "questions": [
+  "Are you experiencing any pain right now?",
+  "Are you having trouble breathing?",
+  "Have you had any recent changes in your medications?",
+  "Do you feel an urge to move constantly?",
+  "Have you had any recent fever or infection?",
+  "Do you know where you are right now?",
+  "Are you feeling confused or disoriented?",
+  "Have you used any recreational drugs or alcohol recently?",
+  "Do you have a history of psychiatric illness?",
+  "What brought you to the hospital today?",
+  "Did you come to the hospital because of a fall?",
+  "Did you come to the hospital because of a seizure?",
+  "Did you come to the hospital because of a head injury?",
+  "Did you come to the hospital because of weakness?",
+  "Did you come to the hospital because of dizziness?",
+  "Is this your first seizure?",
+  "Have you had seizures before?",
+  "Do you have a history of epilepsy?",
+  "Did you lose consciousness during the seizure?",
+  "Did anyone witness the seizure?",
+  "Have you had a head CT scan before?",
+  "Have you had any recent head trauma?",
+  "Do you have a history of stroke?",
+  "Have you been experiencing any memory problems?",
+  "Do you have any family history of seizures?",
+  "Do the seizures happen during sleep?",
+  "Do the seizures happen upon waking?",
+  "Have you noticed any triggers for the seizures?",
+  "Do you have a history of febrile seizures as a child?",
+  "Have you had any recent sleep deprivation?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "yes",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "yes",
+  "30": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Basic metabolic panel",
+  "Calcium level",
+  "Glucose level",
+  "MRI of the brain",
+  "Prolactin level",
+  "Lumbar puncture",
+  "Video EEG monitoring",
+  "PET scan of the brain"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "brain MRI",
+  "lumbar puncture / CSF",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "R1 ASK Are you experiencing any pain right now?; Are you having trouble breathing?; Have you had any recent changes in your medications?; Do you feel an urge to move constantly?; Have you had any recent fever or infection? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Do you know where you are right now?; Are you feeling confused or disoriented?; Have you used any recreational drugs or alcohol recently?; Do you have a history of psychiatric illness?; What brought you to the hospital today? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R3 ASK Did you come to the hospital because of a fall?; Did you come to the hospital because of a seizure?; Did you come to the hospital because of a head injury?; Did you come to the hospital because of weakness?; Did you come to the hospital because of dizziness? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R4 ASK Is this your first seizure?; Have you had seizures before?; Do you have a history of epilepsy?; Did you lose consciousness during the seizure?; Did anyone witness the seizure? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R5 ORDER Basic metabolic panel; Calcium level; Glucose level; MRI of the brain -> [['serum electrolytes, urea and creatinine'], ['serum calcium, magnesium and phosphate'], ['blood glucose and HbA1c'], ['brain MRI']]",
+  "R6 ASK Have you had a head CT scan before?; Have you had any recent head trauma?; Do you have a history of stroke?; Have you been experiencing any memory problems?; Do you have any family history of seizures? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 ORDER Prolactin level; Lumbar puncture; Video EEG monitoring; PET scan of the brain -> [[], ['lumbar puncture / CSF'], ['video-EEG monitoring of a typical event'], []]",
+  "R8 ASK Do the seizures happen during sleep?; Do the seizures happen upon waking?; Have you noticed any triggers for the seizures?; Do you have a history of febrile seizures as a child?; Have you had any recent sleep deprivation? -> ['no', 'no', 'no', 'yes', 'no']",
+  "R9 DIAGNOSIS Genetic Generalized Epilepsy (Jeavons syndrome / Eyelid Myoclonia with Absences), with prior history of febrile seizures as the likely antecedent. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you experiencing any pain right now?",
+    "Are you having trouble breathing?",
+    "Have you had any recent changes in your medications?",
+    "Do you feel an urge to move constantly?",
+    "Have you had any recent fever or infection?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you know where you are right now?",
+    "Are you feeling confused or disoriented?",
+    "Have you used any recreational drugs or alcohol recently?",
+    "Do you have a history of psychiatric illness?",
+    "What brought you to the hospital today?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did you come to the hospital because of a fall?",
+    "Did you come to the hospital because of a seizure?",
+    "Did you come to the hospital because of a head injury?",
+    "Did you come to the hospital because of weakness?",
+    "Did you come to the hospital because of dizziness?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Is this your first seizure?",
+    "Have you had seizures before?",
+    "Do you have a history of epilepsy?",
+    "Did you lose consciousness during the seizure?",
+    "Did anyone witness the seizure?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Basic metabolic panel",
+    "Calcium level",
+    "Glucose level",
+    "MRI of the brain"
+   ],
+   "result": [
+    [
+     "serum electrolytes, urea and creatinine"
+    ],
+    [
+     "serum calcium, magnesium and phosphate"
+    ],
+    [
+     "blood glucose and HbA1c"
+    ],
+    [
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Have you had a head CT scan before?",
+    "Have you had any recent head trauma?",
+    "Do you have a history of stroke?",
+    "Have you been experiencing any memory problems?",
+    "Do you have any family history of seizures?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Prolactin level",
+    "Lumbar puncture",
+    "Video EEG monitoring",
+    "PET scan of the brain"
+   ],
+   "result": [
+    [],
+    [
+     "lumbar puncture / CSF"
+    ],
+    [
+     "video-EEG monitoring of a typical event"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do the seizures happen during sleep?",
+    "Do the seizures happen upon waking?",
+    "Have you noticed any triggers for the seizures?",
+    "Do you have a history of febrile seizures as a child?",
+    "Have you had any recent sleep deprivation?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Genetic Generalized Epilepsy (Jeavons syndrome / Eyelid Myoclonia with Absences), with prior history of febrile seizures as the likely antecedent."
+  }
+ ],
+ "dx": "Genetic Generalized Epilepsy (Jeavons syndrome / Eyelid Myoclonia with Absences), with prior history of febrile seizures as the likely antecedent.",
+ "dx_raw": "DIAGNOSIS: Genetic Generalized Epilepsy (Jeavons syndrome / Eyelid Myoclonia with Absences), with prior history of febrile seizures as the likely antecedent.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0099,
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 86.9
+}

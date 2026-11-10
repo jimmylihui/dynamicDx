@@ -1,0 +1,177 @@
+{
+ "questions": [
+  "Do you have any pain?",
+  "Do you have a fever?",
+  "Are you experiencing shortness of breath?",
+  "Have you experienced any sudden weakness or numbness?",
+  "Do you have a cough?",
+  "Are you experiencing nausea or vomiting?",
+  "Have you noticed any changes in your bowel habits?",
+  "Do you have any urinary symptoms?",
+  "Have you had any unexplained weight loss?",
+  "Do you have a rash?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Blood pressure measurement",
+  "Heart rate and respiratory rate",
+  "Weight and height",
+  "Auscultation of heart and lungs",
+  "Abdominal palpation",
+  "Full blood count",
+  "Basic metabolic panel",
+  "HbA1c",
+  "Lipid panel",
+  "Urinalysis",
+  "Thyroid function tests"
+ ],
+ "served": [
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose and HbA1c",
+  "urinalysis",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. Blood pressure measurement",
+  "     not performed / not available",
+  "2. Heart rate and respiratory rate",
+  "     not performed / not available",
+  "3. Weight and height",
+  "     not performed / not available",
+  "4. Auscultation of heart and lungs",
+  "     not performed / not available",
+  "5. Abdominal palpation",
+  "     not performed / not available",
+  "6. Full blood count",
+  "     full blood count: normal",
+  "7. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "8. HbA1c",
+  "     blood glucose and HbA1c: normal",
+  "9. Lipid panel",
+  "     not performed / not available",
+  "10. Urinalysis",
+  "     urinalysis: normal",
+  "11. Thyroid function tests",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: No disease\nAlternative 1: Asymptomatic hypertension\nAlternative 2: Asymptomatic hyperlipidemia\nAlternative 3: Asymptomatic cardiac arrhythmia",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Blood pressure measurement\n2. Heart rate and respiratory rate\n3. Weight and height\n4. Auscultation of heart and lungs\n5. Abdominal palpation\n6. Full blood count\n7. Basic metabolic panel\n8. HbA1c\n9. Lipid panel\n10. Urinalysis\n11. Thyroid function tests\n12. ECG",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "No disease",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 155,
+   "completion_tokens": 6114,
+   "total_tokens": 6269,
+   "cost": 0.00209426,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00209426,
+    "upstream_inference_prompt_cost": 1.55e-05,
+    "upstream_inference_completions_cost": 0.00207876
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5615,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 547,
+   "completion_tokens": 3263,
+   "total_tokens": 3810,
+   "cost": 0.00116412,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 160,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00116412,
+    "upstream_inference_prompt_cost": 5.47e-05,
+    "upstream_inference_completions_cost": 0.00110942
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3004,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 886,
+   "completion_tokens": 3577,
+   "total_tokens": 4463,
+   "cost": 0.00130478,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00130478,
+    "upstream_inference_prompt_cost": 8.86e-05,
+    "upstream_inference_completions_cost": 0.00121618
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3295,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.7,
+ "video": "mild_neuropathic_CMT_PMC11600610.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 2699.7
+}

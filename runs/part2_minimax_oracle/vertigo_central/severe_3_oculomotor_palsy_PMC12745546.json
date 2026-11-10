@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Is the primary reason for your visit related to your eyes?",
+  "Are you experiencing pain in your eye(s)?",
+  "Have you noticed any redness in your eye(s)?",
+  "Do you have any discharge from your eye(s)?",
+  "Do you feel like there is a foreign body or something stuck in your eye?",
+  "Do you wear contact lenses?",
+  "Have you had any recent trauma or injury to your eye?",
+  "Is your vision blurred?",
+  "Are you seeing double?",
+  "Are you seeing flashes of light or a sudden increase in floaters?",
+  "Are you sensitive to bright light?",
+  "Is the problem only in one eye?",
+  "Do you have a headache?",
+  "Do you have nausea or vomiting?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of glaucoma?",
+  "Are you taking any blood-thinning medications?",
+  "Have you had a recent cold or sinus infection?",
+  "Do you have any other medical conditions?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "adduction in horizontal gaze (each eye)",
+  "pupil size and light reaction",
+  "MRI brain with DWI",
+  "diffusion tensor tractography",
+  "CT / MR angiography (circle of Willis)"
+ ],
+ "results": [
+  "1. adduction in horizontal gaze (each eye): on left gaze the right eye fails to adduct, and the contralateral eye shows NO abducting nystagmus - unlike a classic INO",
+  "2. pupil size and light reaction: pupils EQUALLY REACTIVE - pupil-sparing",
+  "3. MRI brain with DWI: small DORSAL PARAMEDIAN MIDBRAIN INFARCT on diffusion-weighted imaging",
+  "4. diffusion tensor tractography: reduced integrity of the IPSILATERAL medial longitudinal fasciculus",
+  "5. CT / MR angiography (circle of Willis): no aneurysm"
+ ],
+ "dx_raw": "DIAGNOSIS: WEBINO (Wall-Eyed Bilateral Internuclear Ophthalmoplegia) syndrome from an acute dorsal paramedian midbrain infarction (paramedian basilar perforator territory ischaemic stroke)\nALTERNATIVE 1: Bilateral internuclear ophthalmoplegia from a demyelinating lesion (e.g., multiple sclerosis) of the dorsal midbrain\nALTERNATIVE 2: One-and-a-half syndrome from a rostral pontine / ponto-mesencephalic lesion extending into the MLF\nALTERNATIVE 3: Wernicke encephalopathy (thiamine deficiency) involving the periaqueductal grey and MLF",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "WEBINO (Wall-Eyed Bilateral Internuclear Ophthalmoplegia) syndrome from an acute dorsal paramedian midbrain infarction (paramedian basilar perforator territory ischaemic stroke)",
+ "decisive_served": [
+  "adduction in horizontal gaze (each eye)",
+  "pupil size and light reaction",
+  "MRI brain with DWI",
+  "diffusion tensor tractography",
+  "CT / MR angiography (circle of Willis)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 2490,
+   "total_tokens": 22928,
+   "cost": 0.00908172,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00908172,
+    "upstream_inference_prompt_cost": 0.00609372,
+    "upstream_inference_completions_cost": 0.002988
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2270,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 21196,
+   "completion_tokens": 2665,
+   "total_tokens": 23861,
+   "cost": 0.00447336,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 21181,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00447336,
+    "upstream_inference_prompt_cost": 0.00127536,
+    "upstream_inference_completions_cost": 0.003198
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2532,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 20.2,
+ "video": "severe_3_oculomotor_palsy_PMC12745546.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 473.6
+}

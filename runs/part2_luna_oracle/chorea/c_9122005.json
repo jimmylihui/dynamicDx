@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Are the movements involuntary?",
+  "Are you fully aware of your surroundings throughout the movements?",
+  "Can you answer questions normally while they are happening?",
+  "Can you voluntarily stop or suppress the movements?",
+  "Did the movements begin suddenly?",
+  "Are they rhythmic and repetitive?",
+  "Do the movements occur continuously or in distinct episodes?",
+  "Does each episode last less than five minutes?",
+  "Have you ever lost consciousness during an episode?",
+  "Do you feel confused, unusually sleepy, or weak after an episode?",
+  "Have you bitten your tongue during an episode?",
+  "Have you lost bladder or bowel control during an episode?",
+  "Are the movements limited to one side of your body?",
+  "Do they involve both legs?",
+  "Do they also involve an arm, the face, or the tongue?",
+  "Do you have pain or cramping in the moving limb?",
+  "Do you have new weakness or numbness in either side of your body?",
+  "Did you recently have a stroke, head injury, or brain operation?",
+  "Do you have a history of seizures?",
+  "Have you had similar movements before?",
+  "Do you have a fever or recent infection?",
+  "Have you recently started, stopped, or changed any medications?",
+  "Have you recently taken an antipsychotic, anti-nausea medication, antidepressant, or stimulant?",
+  "Have you recently stopped using alcohol, sedatives, or recreational drugs?",
+  "Do the movements worsen when you are anxious or when someone watches you?",
+  "Do the movements occur during sleep?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "yes",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "yes",
+  "26": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [],
+ "served": [
+  "medication and vaccination history",
+  "blood glucose",
+  "brain MRI with contrast",
+  "FDG-PET brain",
+  "lumbar puncture / CSF",
+  "trial of immunotherapy"
+ ],
+ "results": [
+  "1. medication and vaccination history: second dose of the Pfizer-BioNTech COVID-19 vaccine 21 days after the first; symptoms began acutely afterwards",
+  "2. blood glucose: NORMAL - no diabetes and no hyperglycaemia",
+  "3. brain MRI with contrast: no lesion and no abnormal signal in the basal ganglia",
+  "4. FDG-PET brain: INCREASED right putamen fixation compared with the left; NORMALISED after corticosteroids, mirroring the clinical course",
+  "5. lumbar puncture / CSF: intrathecal immunoglobulin synthesis with oligoclonal bands; otherwise normal",
+  "6. trial of immunotherapy: five days of intravenous corticosteroids with significant improvement; he could sit in a chair and start physiotherapy ten days later"
+ ],
+ "dx_raw": "DIAGNOSIS: Steroid-responsive autoimmune basal-ganglia encephalitis causing right-sided hemichorea/hemiballismus, temporally triggered by the second Pfizer-BioNTech COVID-19 vaccine\n\nAlternatives:  \n1. Functional neurological movement disorder (functional hemichorea/hemiballismus)  \n2. Seronegative autoimmune encephalitis unrelated to vaccination  \n3. Sydenham chorea or another post-infectious autoimmune chorea",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Steroid-responsive autoimmune basal-ganglia encephalitis causing right-sided hemichorea/hemiballismus, temporally triggered by the second Pfizer-BioNTech COVID-19 vaccine",
+ "decisive_served": [
+  "medication and vaccination history",
+  "blood glucose",
+  "brain MRI with contrast",
+  "FDG-PET brain",
+  "lumbar puncture / CSF",
+  "trial of immunotherapy"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 834,
+   "total_tokens": 6510,
+   "cost": 0.00055743,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00055743,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0005004
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 501,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6714,
+   "completion_tokens": 271,
+   "total_tokens": 6985,
+   "cost": 0.00034938,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 1038,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00034938,
+    "upstream_inference_prompt_cost": 0.00018678,
+    "upstream_inference_completions_cost": 0.0001626
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 170,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 18.0
+}

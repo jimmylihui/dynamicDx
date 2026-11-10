@@ -1,0 +1,159 @@
+{
+ "questions": [
+  "Is the main problem you are having related to your eyes?",
+  "Is your vision blurred?",
+  "Do you have double vision?",
+  "Do you have pain in your eyes?",
+  "Do you have redness in your eyes?",
+  "Do your eyes feel dry or itchy?",
+  "Do you have a discharge from your eyes?",
+  "Do you have drooping eyelids?",
+  "Do you have difficulty moving your eyes?",
+  "Do you have headaches?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Snellen visual acuity test",
+  "Pinhole visual acuity test",
+  "Direct fundoscopy",
+  "Pupillary light reflex examination",
+  "Confrontational visual field testing",
+  "Intraocular pressure measurement",
+  "Amsler grid testing"
+ ],
+ "served": [
+  "fundoscopy",
+  "pupil size and light reaction",
+  "visual fields (perimetry)"
+ ],
+ "results": [
+  "1. Snellen visual acuity test",
+  "     not performed / not available",
+  "2. Pinhole visual acuity test",
+  "     not performed / not available",
+  "3. Direct fundoscopy",
+  "     fundoscopy: normal",
+  "4. Pupillary light reflex examination",
+  "     pupil size and light reaction: equal and reactive",
+  "5. Confrontational visual field testing",
+  "     visual fields (perimetry): full",
+  "6. Intraocular pressure measurement",
+  "     not performed / not available",
+  "7. Amsler grid testing",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Uncorrected refractive error (likely myopia)\n\n1. Early/incipient cataract\n2. Dry eye syndrome\n3. Migraine with aura (without headache)",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Snellen visual acuity test\n2. Pinhole visual acuity test\n3. Direct fundoscopy\n4. Pupillary light reflex examination\n5. Confrontational visual field testing\n6. Intraocular pressure measurement\n7. Amsler grid testing",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Uncorrected refractive error (likely myopia)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 9882,
+   "total_tokens": 16944,
+   "cost": 0.01394964,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01394964,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.0118584
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9749,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7449,
+   "completion_tokens": 413,
+   "total_tokens": 7862,
+   "cost": 0.00104406,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00104406,
+    "upstream_inference_prompt_cost": 0.00054846,
+    "upstream_inference_completions_cost": 0.0004956
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 425,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7703,
+   "completion_tokens": 344,
+   "total_tokens": 8047,
+   "cost": 0.0009453,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7410,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009453,
+    "upstream_inference_prompt_cost": 0.0005325,
+    "upstream_inference_completions_cost": 0.0004128
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 343,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.2,
+ "video": "moderate_1_ocular_flutter_PMC12979508.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 142.7
+}

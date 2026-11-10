@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Is the lesion on your right lower eyelid something you first noticed more than a year ago?",
+  "Has it grown or changed in appearance since you first noticed it?",
+  "Does it bleed easily with minor trauma or spontaneously?",
+  "Is the lesion painful or tender to touch?",
+  "Do you have fair skin that burns easily in the sun?",
+  "Have you had significant cumulative sun exposure over your lifetime?",
+  "Have you had any previous skin cancers removed?",
+  "Are you currently taking any immunosuppressive medications?",
+  "Have you noticed any change in vision in your right eye?",
+  "Do you have any similar skin lesions on other parts of your body?",
+  "Have you unintentionally lost weight recently?",
+  "Have you ever had radiation therapy to your face?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "lumbar puncture / CSF",
+  "medication and oncology history"
+ ],
+ "results": [
+  "1. nystagmus: direction and whether it changes with gaze: PENDULAR TORSIONAL nystagmus, isolated",
+  "2. paraneoplastic and autoimmune antibody panel (serum): ANTI-MA2 antibodies detected in BOTH serum and CSF, with the typical neuronal nucleolar staining pattern",
+  "3. CT chest / abdomen / pelvis (occult tumour): bulky perihilar mass in the left upper lung with vascular and mediastinal invasion and ipsilateral lymphadenopathy",
+  "4. lumbar puncture / CSF: CSF-restricted oligoclonal bands",
+  "5. medication and oncology history: anti-PD-L1 durvalumab; symptoms began suddenly after the seventh administration"
+ ],
+ "dx_raw": "DIAGNOSIS: Anti-Ma2 (Ta) paraneoplastic encephalitis due to non-small cell lung cancer of the left upper lobe, likely unmasked/exacerbated by anti-PD-L1 (durvalumab) checkpoint inhibition\n1. Durvalumab-induced (checkpoint inhibitor) immune-related encephalitis with coincidental anti-Ma2 antibodies and a coincidental lung mass\n2. Paraneoplastic brainstem encephalitis from an occult testicular germ cell tumor (less likely given age, sex implied, and a bulky lung primary)\n3. Brainstem/cerebellar metastasis from the lung primary causing symptomatic nystagmus, with the antibody panel representing a non-specific reactive phenomenon",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Anti-Ma2 (Ta) paraneoplastic encephalitis due to non-small cell lung cancer of the left upper lobe, likely unmasked/exacerbated by anti-PD-L1 (durvalumab) checkpoint inhibition",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "lumbar puncture / CSF",
+  "medication and oncology history"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 1077,
+   "total_tokens": 8139,
+   "cost": 0.00337332,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00337332,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0012924
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 920,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7672,
+   "completion_tokens": 4406,
+   "total_tokens": 12078,
+   "cost": 0.00589752,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00589752,
+    "upstream_inference_prompt_cost": 0.00061032,
+    "upstream_inference_completions_cost": 0.0052872
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4268,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 67.4
+}

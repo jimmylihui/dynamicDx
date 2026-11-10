@@ -1,0 +1,136 @@
+{
+ "questions": [
+  "Do you currently have numbness or altered sensation anywhere in your body?",
+  "Did these symptoms begin suddenly?",
+  "Are the symptoms mainly on one side of your body?",
+  "Do you have any weakness in an arm or leg?",
+  "Have you had any facial drooping, trouble speaking, or trouble understanding speech?",
+  "Have you had any new difficulty walking, balancing, or coordinating your movements?",
+  "Do you have a severe or unusual headache?",
+  "Do you have neck or back pain?",
+  "Do the sensations travel from your neck or back into an arm or leg?",
+  "Have the symptoms been getting progressively worse?",
+  "Do the symptoms come and go?",
+  "Do you have burning pain, pins and needles, or electric-shock sensations?",
+  "Do you have diabetes?",
+  "Have you recently started any new medication or had a change in medication?",
+  "Have you recently consumed unusually large amounts of alcohol or been exposed to a toxin?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "alien limb / limb levitation with the eyes closed",
+  "cortical sensory testing (astereognosis, sensory inattention)",
+  "ideomotor apraxia (imitation of meaningless gestures)",
+  "myoclonus or stimulus-sensitive jerks in the affected limb",
+  "dystonic posturing of the hand or foot",
+  "MRI brain - cortical atrophy pattern",
+  "FDG-PET brain"
+ ],
+ "results": [
+  "1. alien limb / limb levitation with the eyes closed: POSITIVE - aimless movements of the right side with the eyes closed, posterior-variant alien limb",
+  "2. cortical sensory testing (astereognosis, sensory inattention): sensory inattention and astereognosis on the right",
+  "3. ideomotor apraxia (imitation of meaningless gestures): apraxia to meaningless gestures",
+  "4. myoclonus or stimulus-sensitive jerks in the affected limb: myoclonic jerks in the right hand at rest",
+  "5. dystonic posturing of the hand or foot: dystonic posturing of the right fingers",
+  "6. MRI brain - cortical atrophy pattern: moderate global atrophy with MARKEDLY ASYMMETRICAL atrophy of the superior parietal lobules and posterior frontal lobes, left hemisphere worse",
+  "7. FDG-PET brain: hypometabolism in the same asymmetric distribution"
+ ],
+ "dx_raw": "DIAGNOSIS: Corticobasal syndrome due to corticobasal degeneration, a sporadic 4-repeat tauopathy\n\nALTERNATIVE: Corticobasal syndrome caused by atypical Alzheimer disease (corticobasal/posterior cortical variant)\n\nALTERNATIVE: Corticobasal syndrome caused by Lewy body disease\n\nALTERNATIVE: Corticobasal syndrome caused by frontotemporal lobar degeneration (including a GRN-associated tau-negative pathology)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Corticobasal syndrome due to corticobasal degeneration, a sporadic 4-repeat tauopathy",
+ "decisive_served": [
+  "alien limb / limb levitation with the eyes closed",
+  "cortical sensory testing (astereognosis, sensory inattention)",
+  "ideomotor apraxia (imitation of meaningless gestures)",
+  "myoclonus or stimulus-sensitive jerks in the affected limb",
+  "dystonic posturing of the hand or foot",
+  "MRI brain - cortical atrophy pattern",
+  "FDG-PET brain"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 483,
+   "total_tokens": 6159,
+   "cost": 0.00034683,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00034683,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0002898
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 276,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6442,
+   "completion_tokens": 295,
+   "total_tokens": 6737,
+   "cost": 0.00032978,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 766,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00032978,
+    "upstream_inference_prompt_cost": 0.00015278,
+    "upstream_inference_completions_cost": 0.000177
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 194,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "cbd_apraxic_hand_PMC12371612.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 15.5
+}

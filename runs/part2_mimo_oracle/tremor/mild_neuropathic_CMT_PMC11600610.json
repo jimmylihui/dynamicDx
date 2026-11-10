@@ -1,0 +1,113 @@
+{
+ "questions": [
+  "Did these symptoms start suddenly?",
+  "Is your speech slurred or difficult to understand?",
+  "Do you feel weakness on one side of your body?",
+  "Have you found it difficult to perform routine tasks with your hands?",
+  "Do you have any numbness or tingling?",
+  "Have you experienced a recent tremor or shaking?",
+  "Do you feel stiff or rigid?",
+  "Have you fallen recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "limb power and wasting",
+  "foot deformity (pes cavus)",
+  "genetic testing (targeted panel or exome)",
+  "nerve conduction studies / EMG"
+ ],
+ "results": [
+  "1. limb power and wasting: distal weakness - 4+/5 in the upper limbs, 3/5 in the lower limbs bilaterally",
+  "2. foot deformity (pes cavus): pes cavus present",
+  "3. genetic testing (targeted panel or exome): heterozygous deletion in MPZ and MFN2; ambiguous copy number decrease in PMP22 exons 2-3 - CMT2A",
+  "4. nerve conduction studies / EMG: moderate to severe motor polyneuropathy, axonal more than demyelinating"
+ ],
+ "dx_raw": "DIAGNOSIS: Charcot-Marie-Tooth disease type 2A (CMT2A), caused by a mutation in the *MFN2* gene.\n\nCharcot-Marie-Tooth disease type 1A (CMT1A)\nHereditary Neuropathy with Liability to Pressure Palsies (HNPP)\nCharcot-Marie-Tooth disease type 1B (CMT1B)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Charcot-Marie-Tooth disease type 2A (CMT2A), caused by a mutation in the *MFN2* gene.",
+ "decisive_served": [
+  "limb power and wasting",
+  "foot deformity (pes cavus)",
+  "genetic testing (targeted panel or exome)",
+  "nerve conduction studies / EMG"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14783,
+   "completion_tokens": 2331,
+   "total_tokens": 17114,
+   "cost": 0.0026959576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0026959576,
+    "upstream_inference_prompt_cost": 0.0020432776,
+    "upstream_inference_completions_cost": 0.00065268
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2240,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15219,
+   "completion_tokens": 2004,
+   "total_tokens": 17223,
+   "cost": 0.000672196,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000672196,
+    "upstream_inference_prompt_cost": 0.000111076,
+    "upstream_inference_completions_cost": 0.00056112
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1915,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.7,
+ "video": "mild_neuropathic_CMT_PMC11600610.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 51.5
+}

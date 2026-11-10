@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain in your eye?",
+  "Is your vision in this eye blurry or worse than usual?",
+  "Did these symptoms start suddenly, within the last few days?",
+  "Have you had a fever recently?",
+  "Do you have swelling on the other side of your face as well?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Slit-lamp examination of the anterior segment",
+  "Fundoscopy",
+  "Intraocular pressure measurement (tonometry)",
+  "Fluorescein staining of the cornea"
+ ],
+ "served": [
+  "ocular motility examination",
+  "pupil examination (size, light reaction)",
+  "cover test / ocular alignment",
+  "visual acuity and colour vision",
+  "proptosis / exophthalmometry",
+  "pain and periorbital inspection",
+  "fundoscopy"
+ ],
+ "results": [
+  "1. Slit-lamp examination of the anterior segment",
+  "     ocular motility examination: failure to adduct the right eye",
+  "     pupil examination (size, light reaction): equal and reactive",
+  "     cover test / ocular alignment: orthophoric",
+  "     visual acuity and colour vision: normal",
+  "     proptosis / exophthalmometry: no proptosis",
+  "     pain and periorbital inspection: severe constant pain; the eye had been treated with steroid drops at two outside clinics",
+  "2. Fundoscopy",
+  "     fundoscopy: right optic disc edema",
+  "3. Intraocular pressure measurement (tonometry)",
+  "     not performed / not available",
+  "4. Fluorescein staining of the cornea",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Orbital apex syndrome secondary to invasive fungal sinusitis (e.g., mucormycosis or aspergillosis)\n1. Tolosa-Hunt syndrome\n2. Idiopathic orbital inflammatory disease (orbital pseudotumor)\n3. Carotid-cavernous fistula",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Slit-lamp examination of the anterior segment\n2. Fundoscopy\n3. Intraocular pressure measurement (tonometry)\n4. Fluorescein staining of the cornea",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Orbital apex syndrome secondary to invasive fungal sinusitis (e.g., mucormycosis or aspergillosis)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 680,
+   "completion_tokens": 70,
+   "total_tokens": 750,
+   "cost": 0.0001349,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001349,
+    "upstream_inference_prompt_cost": 0.000102,
+    "upstream_inference_completions_cost": 3.29e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 993,
+   "completion_tokens": 42,
+   "total_tokens": 1035,
+   "cost": 0.000117234,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000117234,
+    "upstream_inference_prompt_cost": 9.7494e-05,
+    "upstream_inference_completions_cost": 1.974e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1293,
+   "completion_tokens": 66,
+   "total_tokens": 1359,
+   "cost": 0.00013921,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 640,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00013921,
+    "upstream_inference_prompt_cost": 0.00010819,
+    "upstream_inference_completions_cost": 3.102e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.3
+}

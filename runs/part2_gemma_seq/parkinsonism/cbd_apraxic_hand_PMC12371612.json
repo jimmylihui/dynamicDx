@@ -1,0 +1,107 @@
+{
+ "questions": [
+  "Is the clumsiness or stiffness worse on one side of your body than the other?",
+  "Do you feel like one of your limbs sometimes moves without your intention or has a mind of its own?",
+  "Did these symptoms develop gradually over several months or years?",
+  "Have you noticed any difficulty with your balance or frequent falls?",
+  "Have you noticed any changes in your personality, mood, or difficulty planning and organizing tasks?",
+  "Do you have difficulty performing simple, familiar tasks, such as buttoning a shirt or using a key, even though you know how to do them?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "yes",
+  "6": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Brain MRI."
+ ],
+ "served": [
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+ ],
+ "results": [
+  "R1 ASK Is the clumsiness or stiffness worse on one side of your body than the other?; Do you feel like one of your limbs sometimes moves without your intention or has a mind of its own?; Did these symptoms develop gradually over several months or years?; Have you noticed any difficulty with your balance or frequent falls? -> ['yes', 'yes', 'yes', 'no']",
+  "R2 ASK Have you noticed any changes in your personality, mood, or difficulty planning and organizing tasks?; Do you have difficulty performing simple, familiar tasks, such as buttoning a shirt or using a key, even though you know how to do them? -> ['yes', 'no']",
+  "R3 ORDER Brain MRI. -> [['MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)', 'MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)', 'MRI brain - cortical atrophy pattern', 'MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)']]",
+  "R4 DIAGNOSIS Corticobasal Degeneration -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is the clumsiness or stiffness worse on one side of your body than the other?",
+    "Do you feel like one of your limbs sometimes moves without your intention or has a mind of its own?",
+    "Did these symptoms develop gradually over several months or years?",
+    "Have you noticed any difficulty with your balance or frequent falls?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any changes in your personality, mood, or difficulty planning and organizing tasks?",
+    "Do you have difficulty performing simple, familiar tasks, such as buttoning a shirt or using a key, even though you know how to do them?"
+   ],
+   "result": [
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Brain MRI."
+   ],
+   "result": [
+    [
+     "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+     "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+     "MRI brain - cortical atrophy pattern",
+     "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Corticobasal Degeneration"
+  }
+ ],
+ "dx": "Corticobasal Degeneration",
+ "dx_raw": "DIAGNOSIS: Corticobasal Degeneration",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 7,
+ "cost_usd": 0.0061,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "cbd_apraxic_hand_PMC12371612.mp4",
+ "line": "parkinsonism",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 388.6
+}

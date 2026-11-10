@@ -1,0 +1,167 @@
+{
+ "questions": [
+  "Have you ever been diagnosed with a thyroid condition, such as Graves' disease or hyperthyroidism?",
+  "Have you experienced symptoms of an overactive thyroid, such as unexplained weight loss, heat intolerance, tremor, or palpitations?",
+  "Have you noticed any bulging or protrusion of your eyes?",
+  "Do you currently have double vision, or have you had it in the past?",
+  "Is there a family history of thyroid disease?",
+  "Do you currently smoke, or have you smoked in the past?",
+  "Do your eyes feel gritty, dry, or excessively watery?",
+  "Do you have any muscle weakness, particularly in your arms or legs, that worsens with activity and improves with rest?",
+  "Have you been diagnosed with any other autoimmune conditions, such as rheumatoid arthritis, lupus, or type 1 diabetes?",
+  "Have you noticed any changes in your vision, such as blurring or color perception changes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Thyroid function tests including TSH, free T4, and free T3.",
+  "Thyroid stimulating immunoglobulins (TSI) or TSH receptor antibodies (TRAb).",
+  "MRI of the orbits with focus on extraocular muscles.",
+  "Slit lamp examination of the anterior segment.",
+  "Measurement of intraocular pressure in primary gaze and upgaze.",
+  "Forced duction test.",
+  "Visual field testing.",
+  "Neurological examination of cranial nerves."
+ ],
+ "served": [
+  "TSH / free T4",
+  "anti-thyroid antibodies",
+  "MRI sella and orbits",
+  "forced duction test",
+  "visual fields (perimetry)",
+  "cranial nerve examination"
+ ],
+ "results": [
+  "1. Thyroid function tests including TSH, free T4, and free T3.",
+  "     TSH / free T4: normal",
+  "2. Thyroid stimulating immunoglobulins (TSI) or TSH receptor antibodies (TRAb).",
+  "     anti-thyroid antibodies: normal",
+  "3. MRI of the orbits with focus on extraocular muscles.",
+  "     MRI sella and orbits: normal pituitary and orbits",
+  "4. Slit lamp examination of the anterior segment.",
+  "     not performed / not available",
+  "5. Measurement of intraocular pressure in primary gaze and upgaze.",
+  "     not performed / not available",
+  "6. Forced duction test.",
+  "     forced duction test: not performed",
+  "7. Visual field testing.",
+  "     visual fields (perimetry): full",
+  "8. Neurological examination of cranial nerves.",
+  "     cranial nerve examination: partial right oculomotor palsy with right adduction failure, mild vertical gaze limitation, mildly impaired convergence, and partial ptosis; pupils equally reactive"
+ ],
+ "dx_raw": "DIAGNOSIS: Thyroid eye disease (Graves' ophthalmopathy), likely euthyroid or seronegative, with restrictive right extraocular myopathy mimicking a third nerve palsy.\n\n1. Coincidental right ischemic (microvascular) third nerve palsy with seronegative/euthyroid thyroid eye disease.\n2. Myasthenia gravis with fatigable ophthalmoplegia and compensatory lid retraction.\n3. Aberrant regeneration of a previous right third nerve palsy.",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Thyroid function tests including TSH, free T4, and free T3.\n2. Thyroid stimulating immunoglobulins (TSI) or TSH receptor antibodies (TRAb).\n3. MRI of the orbits with focus on extraocular muscles.\n4. Slit lamp examination of the anterior segment.\n5. Measurement of intraocular pressure in primary gaze and upgaze.\n6. Forced duction test.\n7. Visual field testing.\n8. Neurological examination of cranial nerves.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Thyroid eye disease (Graves' ophthalmopathy), likely euthyroid or seronegative, with restrictive right extraocular myopathy mimicking a third nerve palsy.",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 496,
+   "completion_tokens": 1229,
+   "total_tokens": 1725,
+   "cost": 0.00159624,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00159624,
+    "upstream_inference_prompt_cost": 0.00012144,
+    "upstream_inference_completions_cost": 0.0014748
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1167,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1071,
+   "completion_tokens": 184,
+   "total_tokens": 1255,
+   "cost": 0.00051474,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00051474,
+    "upstream_inference_prompt_cost": 0.00029394,
+    "upstream_inference_completions_cost": 0.0002208
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 87,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1455,
+   "completion_tokens": 8582,
+   "total_tokens": 10037,
+   "cost": 0.0104925,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1010,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0104925,
+    "upstream_inference_prompt_cost": 0.0001941,
+    "upstream_inference_completions_cost": 0.0102984
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9808,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 20.2,
+ "video": "severe_3_oculomotor_palsy_PMC12745546.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 134.3
+}

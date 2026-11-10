@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a known history of blood clots (DVT or PE)?",
+  "Have you had recent surgery, trauma, or prolonged immobilization?",
+  "Are you experiencing any difficulty breathing or shortness of breath?",
+  "Do you have a history of seizures or epilepsy?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Check vital signs (heart rate, blood pressure, respiratory rate, oxygen saturation)",
+  "Perform a focused neurological examination (cranial nerves, motor strength, sensation, coordination)"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing any pain?; Do you have a known history of blood clots (DVT or PE)?; Have you had recent surgery, trauma, or prolonged immobilization? -> ['no', 'no', 'no']",
+  "R2 ORDER Check vital signs (heart rate, blood pressure, respiratory rate, oxygen saturation); Perform a focused neurological examination (cranial nerves, motor strength, sensation, coordination) -> [[], ['cranial nerve examination', 'muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)']]",
+  "R3 ASK Are you experiencing any difficulty breathing or shortness of breath? -> ['no']",
+  "R4 ASK Do you have a history of seizures or epilepsy? -> ['yes']",
+  "R5 DIAGNOSIS Epilepsy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing any pain?",
+    "Do you have a known history of blood clots (DVT or PE)?",
+    "Have you had recent surgery, trauma, or prolonged immobilization?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Check vital signs (heart rate, blood pressure, respiratory rate, oxygen saturation)",
+    "Perform a focused neurological examination (cranial nerves, motor strength, sensation, coordination)"
+   ],
+   "result": [
+    [],
+    [
+     "cranial nerve examination",
+     "muscle tone examination",
+     "limb strength (MRC) examination",
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Are you experiencing any difficulty breathing or shortness of breath?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of seizures or epilepsy?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Epilepsy"
+  }
+ ],
+ "dx": "Epilepsy",
+ "dx_raw": "DIAGNOSIS: Epilepsy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0013,
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 23.6
+}

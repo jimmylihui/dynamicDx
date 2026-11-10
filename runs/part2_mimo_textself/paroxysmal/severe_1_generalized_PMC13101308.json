@@ -1,0 +1,158 @@
+{
+ "questions": [
+  "Are you experiencing any confusion or memory problems?",
+  "Have you had a seizure?",
+  "Did your leg injury happen before or after you began having neurological symptoms?",
+  "Have you had a recent headache?",
+  "Did you lose consciousness at any point?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "CT head without contrast",
+  "Serum glucose",
+  "Basic metabolic panel",
+  "Complete blood count",
+  "Urine drug screen",
+  "Blood cultures",
+  "Serum calcium and magnesium",
+  "Lumbar puncture"
+ ],
+ "served": [
+  "CT head",
+  "blood glucose and HbA1c",
+  "serum electrolytes, urea and creatinine",
+  "full blood count and biochemistry",
+  "toxicology screen (urine and serum)",
+  "serum calcium, magnesium and phosphate",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. CT head without contrast",
+  "     CT head: normal",
+  "2. Serum glucose",
+  "     blood glucose and HbA1c: normal",
+  "3. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "4. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "5. Urine drug screen",
+  "     toxicology screen (urine and serum): normal",
+  "6. Blood cultures",
+  "     not performed / not available",
+  "7. Serum calcium and magnesium",
+  "     serum calcium, magnesium and phosphate: normal",
+  "8. Lumbar puncture",
+  "     lumbar puncture / CSF: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: New-onset temporal lobe epilepsy with secondary generalization, with traumatic left ankle fracture sustained during seizure\n\nAutoimmune/limbic encephalitis\nPost-traumatic epilepsy (prior undocumented head injury)\nOccult structural lesion (low-grade glioma or focal cortical dysplasia not visible on CT)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. CT head without contrast\n2. Serum glucose\n3. Basic metabolic panel\n4. Complete blood count\n5. Urine drug screen\n6. Blood cultures\n7. Serum calcium and magnesium\n8. Lumbar puncture",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "New-onset temporal lobe epilepsy with secondary generalization, with traumatic left ankle fracture sustained during seizure",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 463,
+   "completion_tokens": 215,
+   "total_tokens": 678,
+   "cost": 9.86776e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.86776e-05,
+    "upstream_inference_prompt_cost": 3.84776e-05,
+    "upstream_inference_completions_cost": 6.02e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 153,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 748,
+   "completion_tokens": 578,
+   "total_tokens": 1326,
+   "cost": 0.0002050944,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002050944,
+    "upstream_inference_prompt_cost": 4.32544e-05,
+    "upstream_inference_completions_cost": 0.00016184
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 526,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1023,
+   "completion_tokens": 745,
+   "total_tokens": 1768,
+   "cost": 0.0002552312,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 704,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002552312,
+    "upstream_inference_prompt_cost": 4.66312e-05,
+    "upstream_inference_completions_cost": 0.0002086
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 675,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.8,
+ "video": "severe_1_generalized_PMC13101308.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 48.5
+}

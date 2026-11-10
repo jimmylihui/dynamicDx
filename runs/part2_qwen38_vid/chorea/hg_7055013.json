@@ -1,0 +1,157 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your legs?",
+  "Do you have a fever?",
+  "Have you recently had surgery?",
+  "Are you having trouble breathing?",
+  "Do you feel dizzy or lightheaded?",
+  "Have you experienced nausea or vomiting?",
+  "Are you allergic to any medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Orthostatic vital signs (blood pressure and heart rate measured supine, then at 1 and 3 minutes standing)",
+  "Point-of-care capillary blood glucose",
+  "Complete blood count with differential",
+  "Basic metabolic panel (including electrolytes, BUN, creatinine, and calcium)",
+  "Electrocardiogram"
+ ],
+ "served": [
+  "vital signs",
+  "blood glucose",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "renal function and eGFR"
+ ],
+ "results": [
+  "1. Orthostatic vital signs (blood pressure and heart rate measured supine, then at 1 and 3 minutes standing)",
+  "     vital signs: normal, afebrile",
+  "2. Point-of-care capillary blood glucose",
+  "     blood glucose: 690 mg/dL with a NORMAL anion gap",
+  "3. Complete blood count with differential",
+  "     full blood count: normal",
+  "4. Basic metabolic panel (including electrolytes, BUN, creatinine, and calcium)",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     renal function and eGFR: normal",
+  "5. Electrocardiogram",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperosmolar hyperglycemic state (HHS) secondary to type 2 diabetes mellitus\n\n1. Severe uncontrolled hyperglycemia without frank ketoacidosis\n2. Diabetic hyperosmolar coma",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Orthostatic vital signs (blood pressure and heart rate measured supine, then at 1 and 3 minutes standing)\n2. Point-of-care capillary blood glucose\n3. Complete blood count with differential\n4. Basic metabolic panel (including electrolytes, BUN, creatinine, and calcium)\n5. Electrocardiogram",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperosmolar hyperglycemic state (HHS) secondary to type 2 diabetes mellitus",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14039,
+   "completion_tokens": 81,
+   "total_tokens": 14120,
+   "cost": 0.00214392,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00214392,
+    "upstream_inference_prompt_cost": 0.00210585,
+    "upstream_inference_completions_cost": 3.807e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 14386,
+   "completion_tokens": 73,
+   "total_tokens": 14459,
+   "cost": 0.000356946,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 13696,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000356946,
+    "upstream_inference_prompt_cost": 0.000322636,
+    "upstream_inference_completions_cost": 3.431e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 14709,
+   "completion_tokens": 54,
+   "total_tokens": 14763,
+   "cost": 0.000327858,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14208,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000327858,
+    "upstream_inference_prompt_cost": 0.000302478,
+    "upstream_inference_completions_cost": 2.538e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.8
+}

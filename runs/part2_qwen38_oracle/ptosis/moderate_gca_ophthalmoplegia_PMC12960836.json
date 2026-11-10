@@ -1,0 +1,107 @@
+{
+ "questions": [
+  "Do you have a known history of diabetes?",
+  "Have you noticed any numbness or tingling in your feet recently?",
+  "Do you experience pain when walking on your heels?",
+  "Is the weakness in your legs symmetrical (affecting both sides equally)?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "nerve conduction studies",
+  "whole exome sequencing",
+  "MRI brain with contrast",
+  "MRI spine"
+ ],
+ "results": [
+  "1. nerve conduction studies: demyelinating sensorimotor neuropathy",
+  "2. whole exome sequencing: heterozygous likely pathogenic FBLN5 c.1117C>T (p.Arg373Cys) - CMT1H",
+  "3. MRI brain with contrast: bilateral contrast enhancement and THICKENING of cranial nerves III through XII",
+  "4. MRI spine: symmetrical thickening of the lumbosacral nerve roots"
+ ],
+ "dx_raw": "DIAGNOSIS: Charcot-Marie-Tooth disease type 1H (CMT1H) caused by a heterozygous pathogenic variant in the FBLN5 gene\n\nALTERNATIVES:\n1. Chronic inflammatory demyelinating polyneuropathy (CIDP) with hypertrophic nerve roots and cranial nerve involvement\n2. Neurolymphomatosis or perineural spread of malignancy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Charcot-Marie-Tooth disease type 1H (CMT1H) caused by a heterozygous pathogenic variant in the FBLN5 gene",
+ "decisive_served": [
+  "nerve conduction studies",
+  "whole exome sequencing",
+  "MRI brain with contrast",
+  "MRI spine"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 61,
+   "total_tokens": 4884,
+   "cost": 0.00075212,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075212,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.867e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5164,
+   "completion_tokens": 89,
+   "total_tokens": 5253,
+   "cost": 0.00021611,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00021611,
+    "upstream_inference_prompt_cost": 0.00017428,
+    "upstream_inference_completions_cost": 4.183e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_gca_ophthalmoplegia_PMC12960836.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 10.3
+}

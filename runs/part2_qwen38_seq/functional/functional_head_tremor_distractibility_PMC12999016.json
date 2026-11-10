@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Do you have a history of Parkinson's disease?",
+  "Do you feel like your body gets \"stuck\" or frozen when you try to start walking?",
+  "Does the feeling of being stuck happen more often when you are turning around?",
+  "Do you have difficulty getting out of a chair or bed?",
+  "Do you have difficulty walking on uneven surfaces or going down stairs?",
+  "Do you have difficulty with balance or walking that is significantly worse when your eyes are closed?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform a comprehensive neurological examination, specifically assessing for vertical supranuclear gaze palsy (difficulty looking down), postural instability via the pull test, and frontal release signs.",
+  "Perform a detailed gait and balance assessment, specifically looking for a wide-based stance, magnetic gait (feet sticking to floor), or retropulsion."
+ ],
+ "served": [
+  "cranial nerve examination",
+  "posture and pull test",
+  "mental status / cognitive screen",
+  "tandem gait",
+  "walking backward",
+  "running",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "Romberg test, repeated with distraction",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking"
+ ],
+ "results": [
+  "R1 ASK Do you have a history of Parkinson's disease?; Do you feel like your body gets \"stuck\" or frozen when you try to start walking?; Does the feeling of being stuck happen more often when you are turning around? -> ['no', 'no', 'no']",
+  "R2 ORDER Perform a comprehensive neurological examination, specifically assessing for vertical supranuclear gaze palsy (difficulty looking down), postural instability via the pull test, and frontal release signs. -> [['cranial nerve examination', 'posture and pull test', 'mental status / cognitive screen']]",
+  "R3 ASK Do you have difficulty getting out of a chair or bed? -> ['no']",
+  "R4 ASK Do you have difficulty walking on uneven surfaces or going down stairs? -> ['no']",
+  "R5 ORDER Perform a detailed gait and balance assessment, specifically looking for a wide-based stance, magnetic gait (feet sticking to floor), or retropulsion. -> [['posture and pull test', 'tandem gait', 'walking backward', 'running', 'gait with a distracting or automatic task (dancing, counting backwards)', 'Romberg test, repeated with distraction', 'observation for excessive slowness or uneconomic posture', 'knee buckling / astasia-abasia on walking']]",
+  "R6 ASK Do you have difficulty with balance or walking that is significantly worse when your eyes are closed? -> ['no']",
+  "R7 DIAGNOSIS Functional neurological disorder (psychogenic gait disorder) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of Parkinson's disease?",
+    "Do you feel like your body gets \"stuck\" or frozen when you try to start walking?",
+    "Does the feeling of being stuck happen more often when you are turning around?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Perform a comprehensive neurological examination, specifically assessing for vertical supranuclear gaze palsy (difficulty looking down), postural instability via the pull test, and frontal release signs."
+   ],
+   "result": [
+    [
+     "cranial nerve examination",
+     "posture and pull test",
+     "mental status / cognitive screen"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty getting out of a chair or bed?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty walking on uneven surfaces or going down stairs?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Perform a detailed gait and balance assessment, specifically looking for a wide-based stance, magnetic gait (feet sticking to floor), or retropulsion."
+   ],
+   "result": [
+    [
+     "posture and pull test",
+     "tandem gait",
+     "walking backward",
+     "running",
+     "gait with a distracting or automatic task (dancing, counting backwards)",
+     "Romberg test, repeated with distraction",
+     "observation for excessive slowness or uneconomic posture",
+     "knee buckling / astasia-abasia on walking"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty with balance or walking that is significantly worse when your eyes are closed?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Functional neurological disorder (psychogenic gait disorder)"
+  }
+ ],
+ "dx": "Functional neurological disorder (psychogenic gait disorder)",
+ "dx_raw": "DIAGNOSIS: Functional neurological disorder (psychogenic gait disorder)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0016,
+ "n_frames": 32,
+ "duration_s": 26.2,
+ "video": "functional_head_tremor_distractibility_PMC12999016.mp4",
+ "line": "functional",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 34.4
+}

@@ -1,0 +1,167 @@
+{
+ "questions": [
+  "Do you have a tremor in your right hand?",
+  "Does the tremor stop when you move your hand to perform a task?",
+  "Have you noticed that your movements have become slower?",
+  "Do you feel stiffness in your muscles?",
+  "Have you had any falls recently?",
+  "Have you noticed that your handwriting has become smaller?",
+  "Have you noticed a decrease in your sense of smell?",
+  "Do you act out your dreams during sleep?",
+  "Are you taking any medications for nausea or psychiatric conditions?",
+  "Do you have a family history of Parkinson's disease?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Thyroid function tests",
+  "Finger-to-nose test",
+  "Gait assessment",
+  "DaTscan"
+ ],
+ "served": [
+  "TSH / free T4",
+  "coordination examination (limb and truncal)",
+  "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)",
+  "posture and pull test",
+  "tandem gait",
+  "walking backward",
+  "running",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "Romberg test, repeated with distraction",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "DaTSCAN (dopamine transporter SPECT)"
+ ],
+ "results": [
+  "1. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "2. Finger-to-nose test",
+  "     coordination examination (limb and truncal): normal",
+  "     cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus): normal",
+  "3. Gait assessment",
+  "     posture and pull test: normal",
+  "     tandem gait: normal",
+  "     walking backward: same pattern as walking forward",
+  "     running: not attempted",
+  "     gait with a distracting or automatic task (dancing, counting backwards): unchanged",
+  "     Romberg test, repeated with distraction: negative",
+  "     observation for excessive slowness or uneconomic posture: no bradykinesia, no parkinsonian features",
+  "     knee buckling / astasia-abasia on walking: not present",
+  "4. DaTscan",
+  "     DaTSCAN (dopamine transporter SPECT): normal tracer uptake"
+ ],
+ "dx_raw": "DIAGNOSIS: Essential tremor, idiopathic\n1. Enhanced physiological tremor\n2. Dystonic tremor\n3. Cerebellar tremor",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Thyroid function tests\n2. Finger-to-nose test\n3. Gait assessment\n4. DaTscan",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Essential tremor, idiopathic",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1767,
+   "total_tokens": 10465,
+   "cost": 0.00147058,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00147058,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00060078
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1583,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9150,
+   "completion_tokens": 2533,
+   "total_tokens": 11683,
+   "cost": 0.00177622,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00177622,
+    "upstream_inference_prompt_cost": 0.000915,
+    "upstream_inference_completions_cost": 0.00086122
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2267,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9458,
+   "completion_tokens": 2026,
+   "total_tokens": 11484,
+   "cost": 0.00163464,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00163464,
+    "upstream_inference_prompt_cost": 0.0009458,
+    "upstream_inference_completions_cost": 0.00068884
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1961,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 253.4
+}

@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Are you experiencing any pain?",
+  "Are you having difficulty breathing?",
+  "Do you have a fever?",
+  "Is the pain in your chest?",
+  "Is the pain in your abdomen?",
+  "Is the pain in your joints?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of hypertension?",
+  "Do you have a history of heart disease?",
+  "Are you taking any medications?",
+  "Are you here for a routine check-up?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Physical examination for pitting edema",
+  "Urinalysis",
+  "Serum creatinine and BUN",
+  "Serum albumin",
+  "Chest X-ray"
+ ],
+ "served": [
+  "urinalysis",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests"
+ ],
+ "results": [
+  "1. Physical examination for pitting edema",
+  "     not performed / not available",
+  "2. Urinalysis",
+  "     urinalysis: glycosuria without ketonuria",
+  "3. Serum creatinine and BUN",
+  "     serum electrolytes, urea and creatinine: normal",
+  "4. Serum albumin",
+  "     liver function tests: normal",
+  "5. Chest X-ray",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Diabetes Mellitus Type 2\nRenal Glycosuria\nFanconi Syndrome\nCushing's Syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Physical examination for pitting edema\n2. Urinalysis\n3. Serum creatinine and BUN\n4. Serum albumin\n5. TSH\n6. BNP\n7. Chest X-ray",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Diabetes Mellitus Type 2",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 412,
+   "completion_tokens": 2939,
+   "total_tokens": 3351,
+   "cost": 0.00104046,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00104046,
+    "upstream_inference_prompt_cost": 4.12e-05,
+    "upstream_inference_completions_cost": 0.00099926
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2660,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 832,
+   "completion_tokens": 551,
+   "total_tokens": 1383,
+   "cost": 0.00027054,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00027054,
+    "upstream_inference_prompt_cost": 8.32e-05,
+    "upstream_inference_completions_cost": 0.00018734
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 505,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1047,
+   "completion_tokens": 4460,
+   "total_tokens": 5507,
+   "cost": 0.0016211,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0016211,
+    "upstream_inference_prompt_cost": 0.0001047,
+    "upstream_inference_completions_cost": 0.0015164
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4044,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "hyperglycemic_hemichorea_PMC12596229.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 269.2
+}

@@ -1,0 +1,116 @@
+{
+ "questions": [
+  "Are you experiencing any pain?",
+  "Do you have a fever or feel hot and cold?",
+  "Have you had a recent fall or injury to your neck?",
+  "Is the pain worse when you turn your head?",
+  "Does the pain travel down your arm?",
+  "Do you have numbness or tingling in your hands?",
+  "Do you have difficulty swallowing?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment')",
+  "variability of amplitude, frequency and axis over the examination",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "results": [
+  "1. distractibility testing (complex motor task with the unaffected side): POSITIVE - marked decrease in tremor amplitude with distraction",
+  "2. entrainment testing (tap to an externally paced rhythm): POSITIVE - the head tremor takes up the paced frequency",
+  "3. suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment'): POSITIVE - vibration triggers and modulates the head and limb tremor",
+  "4. variability of amplitude, frequency and axis over the examination: CHANGE IN TREMOR DIRECTIONALITY - specificity 0.91 for functional head tremor in the source cohort",
+  "5. muscle tone (spasticity, rigidity, paratonia): normal; no cervical dystonic posturing and no sensory trick"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional (psychogenic) head tremor",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional (psychogenic) head tremor",
+ "decisive_served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment')",
+  "variability of amplitude, frequency and axis over the examination",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 86,
+   "total_tokens": 4909,
+   "cost": 0.00076387,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00076387,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 4.042e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5281,
+   "completion_tokens": 15,
+   "total_tokens": 5296,
+   "cost": 0.00019888,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00019888,
+    "upstream_inference_prompt_cost": 0.00019183,
+    "upstream_inference_completions_cost": 7.05e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.9,
+ "video": "functional_head_tremor_vibration_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 10.4
+}

@@ -1,0 +1,107 @@
+{
+ "questions": [
+  "Are you experiencing pain in your lower back?",
+  "Does the pain travel down into your buttocks or legs?",
+  "Is the pain worse when you bend forward?",
+  "Do you have any numbness or tingling in your legs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "trial of antithyroid treatment"
+ ],
+ "results": [
+  "1. blood glucose: normal",
+  "2. TSH, free T4 and free T3: T3 8.26 nmol/L (normal 0.92-2.79) and free T4 58.13 pmol/L (normal 11.50-22.70) with suppressed TSH",
+  "3. thyrotropin receptor antibodies (TRAb): positive - Graves' disease diagnosed in April 2021 and treated with methimazole 10 mg daily",
+  "4. trial of antithyroid treatment: radioiodine (131-I); the chorea resolved"
+ ],
+ "dx_raw": "DIAGNOSIS: Chorea associated with Graves' disease (thyrotoxicosis)\nThyrotoxic myopathy\nDrug-induced movement disorder",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Chorea associated with Graves' disease (thyrotoxicosis)",
+ "decisive_served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "trial of antithyroid treatment"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 55,
+   "total_tokens": 4878,
+   "cost": 0.0007493,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007493,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.585e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5190,
+   "completion_tokens": 33,
+   "total_tokens": 5223,
+   "cost": 0.00019369,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00019369,
+    "upstream_inference_prompt_cost": 0.00017818,
+    "upstream_inference_completions_cost": 1.551e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "c_9815763.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 23.1
+}

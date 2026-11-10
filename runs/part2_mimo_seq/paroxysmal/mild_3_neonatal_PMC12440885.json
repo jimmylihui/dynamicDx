@@ -1,0 +1,166 @@
+{
+ "questions": [
+  "Did you suffer a head injury (such as a fall, blow to the head) prior to your hospital visit?",
+  "Are you experiencing headache or dizziness at this moment?",
+  "Did you have a seizure or convulsion (shaking/stiffening of the body) before coming to the hospital?",
+  "Did you have any episodes of losing consciousness or staring blankly?",
+  "Have your parents noticed any unusual movements or behaviors recently?",
+  "Did you have surgery recently (was the bandage placed after an operation)?",
+  "Have you had any fever or vomiting?",
+  "Is your neck stiff or painful?",
+  "Did you have a cold, flu, or any infection in the weeks before you came to the hospital?",
+  "Have you noticed any problems with your vision?",
+  "Have you had any trouble walking, balance problems, or coordination difficulties?",
+  "Has anyone in your family had similar neurological problems?",
+  "Who brought you to the hospital - was it your mother, father, or someone else?",
+  "Did someone see you have a shaking episode or spell where your body went stiff?",
+  "Has anything unusual happened to you recently that scared your family?",
+  "Do you know why you are in the hospital?",
+  "Have you been sleeping a lot more than usual recently?",
+  "Do you feel confused or \"foggy\" in your head?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Did you suffer a head injury (such as a fall, blow to the head) prior to your hospital visit?; Are you experiencing headache or dizziness at this moment? -> ['no', 'no']",
+  "R2 ASK Did you have a seizure or convulsion (shaking/stiffening of the body) before coming to the hospital?; Did you have any episodes of losing consciousness or staring blankly?; Have your parents noticed any unusual movements or behaviors recently? -> ['no', 'no', 'no']",
+  "R3 ASK Did you have surgery recently (was the bandage placed after an operation)?; Have you had any fever or vomiting?; Is your neck stiff or painful? -> ['no', 'no', 'no']",
+  "R4 ASK Did you have a cold, flu, or any infection in the weeks before you came to the hospital?; Have you noticed any problems with your vision?; Have you had any trouble walking, balance problems, or coordination difficulties?; Has anyone in your family had similar neurological problems? -> ['no', 'no', 'no', 'no']",
+  "R5 ASK Who brought you to the hospital - was it your mother, father, or someone else?; Did someone see you have a shaking episode or spell where your body went stiff?; Has anything unusual happened to you recently that scared your family?; Do you know why you are in the hospital? -> ['no', 'no', 'no', 'no']",
+  "R6 ASK Have you been sleeping a lot more than usual recently?; Do you feel confused or \"foggy\" in your head? -> ['no', 'no']",
+  "R7 DIAGNOSIS Postictal state following unobserved or unwitnessed seizure (likely focal to bilateral tonic-clonic seizure) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did you suffer a head injury (such as a fall, blow to the head) prior to your hospital visit?",
+    "Are you experiencing headache or dizziness at this moment?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Did you have a seizure or convulsion (shaking/stiffening of the body) before coming to the hospital?",
+    "Did you have any episodes of losing consciousness or staring blankly?",
+    "Have your parents noticed any unusual movements or behaviors recently?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did you have surgery recently (was the bandage placed after an operation)?",
+    "Have you had any fever or vomiting?",
+    "Is your neck stiff or painful?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Did you have a cold, flu, or any infection in the weeks before you came to the hospital?",
+    "Have you noticed any problems with your vision?",
+    "Have you had any trouble walking, balance problems, or coordination difficulties?",
+    "Has anyone in your family had similar neurological problems?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Who brought you to the hospital - was it your mother, father, or someone else?",
+    "Did someone see you have a shaking episode or spell where your body went stiff?",
+    "Has anything unusual happened to you recently that scared your family?",
+    "Do you know why you are in the hospital?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Have you been sleeping a lot more than usual recently?",
+    "Do you feel confused or \"foggy\" in your head?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Postictal state following unobserved or unwitnessed seizure (likely focal to bilateral tonic-clonic seizure)"
+  }
+ ],
+ "dx": "Postictal state following unobserved or unwitnessed seizure (likely focal to bilateral tonic-clonic seizure)",
+ "dx_raw": "ASK:\n(to caregiver, if present):\n1. Did your child have a seizure - shaking, stiffening, or staring spells - before coming to the hospital?\n2. Has your child been confused or sleepy since the episode?\n\nORDER:\n1. Detailed neurological examination (assessing level of consciousness, orientation, eye movements, motor function, and tone)\n2. Continuous video-EEG monitoring for seizure activity\n\nDIAGNOSIS: Postictal state following unobserved or unwitnessed seizure (likely focal to bilateral tonic-clonic seizure)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "cost_usd": 0.0024,
+ "n_frames": 32,
+ "duration_s": 15.6,
+ "video": "mild_3_neonatal_PMC12440885.mp4",
+ "line": "paroxysmal",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 117.8
+}

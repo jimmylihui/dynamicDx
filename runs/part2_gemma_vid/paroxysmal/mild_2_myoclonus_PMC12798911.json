@@ -1,0 +1,145 @@
+{
+ "questions": [
+  "Did you have surgery recently?",
+  "Are you having trouble breathing?",
+  "Do you have chest pain?",
+  "Do you have pain in your abdomen?",
+  "Do you have a fever?",
+  "Do you have pain or swelling in your legs?",
+  "Are you unable to pass gas or stool?",
+  "Do you feel dizzy?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Vital signs",
+  "Physical examination of the abdominal wound",
+  "Complete blood count",
+  "Serum electrolytes",
+  "Chest X-ray"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine"
+ ],
+ "results": [
+  "1. Vital signs",
+  "     not performed / not available",
+  "2. Physical examination of the abdominal wound",
+  "     not performed / not available",
+  "3. Complete blood count",
+  "     not performed / not available",
+  "4. Serum electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "5. Chest X-ray",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Abdominal wall dehiscence due to recent abdominal surgery\nOpen abdomen due to recent abdominal surgery\nIncisional hernia due to recent abdominal surgery\nPost-operative recovery after abdominal surgery",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Vital signs\n2. Physical examination of the abdominal wound\n3. Complete blood count\n4. Serum electrolytes\n5. Chest X-ray",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Abdominal wall dehiscence due to recent abdominal surgery",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8762,
+   "completion_tokens": 1449,
+   "total_tokens": 10211,
+   "cost": 0.00136886,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00136886,
+    "upstream_inference_prompt_cost": 0.0008762,
+    "upstream_inference_completions_cost": 0.00049266
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1288,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9100,
+   "completion_tokens": 1254,
+   "total_tokens": 10354,
+   "cost": 0.00133636,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00133636,
+    "upstream_inference_prompt_cost": 0.00091,
+    "upstream_inference_completions_cost": 0.00042636
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1258,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9299,
+   "completion_tokens": 3184,
+   "total_tokens": 12483,
+   "cost": 0.00201246,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00201246,
+    "upstream_inference_prompt_cost": 0.0009299,
+    "upstream_inference_completions_cost": 0.00108256
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3202,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 263.2
+}

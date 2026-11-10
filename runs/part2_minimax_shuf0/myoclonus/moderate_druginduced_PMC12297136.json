@@ -1,0 +1,160 @@
+{
+ "questions": [
+  "Is the area you are pinching itchy?",
+  "Is it painful?",
+  "Is there a rash there?",
+  "Is the skin red in that area?",
+  "Is there a lump or swelling under the skin?",
+  "Is the skin warm to the touch?",
+  "Did you have recent surgery or a procedure on your abdomen?",
+  "Do you have a fever?",
+  "Is the skin broken or open?",
+  "Is it worse at night?",
+  "Have you used any new soaps, detergents, or lotions recently?",
+  "Is it spreading to other areas?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Skin biopsy of the affected area with Verhoeff-van Gieson elastic tissue stain",
+  "Beighton hypermobility score assessment",
+  "Transthoracic echocardiogram with measurement of aortic root diameter",
+  "Genetic testing for connective tissue disorders (COL3A1, COL5A1, COL5A2, ELN)",
+  "CT angiography of the chest and abdomen",
+  "Serum alpha-1 antitrypsin level"
+ ],
+ "served": [
+  "joint range of motion"
+ ],
+ "results": [
+  "1. Skin biopsy of the affected area with Verhoeff-van Gieson elastic tissue stain",
+  "     not performed / not available",
+  "2. Beighton hypermobility score assessment",
+  "     joint range of motion: normal / non-contributory",
+  "3. Transthoracic echocardiogram with measurement of aortic root diameter",
+  "     not performed / not available",
+  "4. Genetic testing for connective tissue disorders (COL3A1, COL5A1, COL5A2, ELN)",
+  "     not performed / not available",
+  "5. CT angiography of the chest and abdomen",
+  "     not performed / not available",
+  "6. Serum alpha-1 antitrypsin level",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Acquired cutis laxa, likely secondary to an underlying systemic disorder (such as alpha-1 antitrypsin deficiency, plasma cell dyscrasia, or hematologic malignancy)\n\nAlternatives:\n1. Anetoderma\n2. Senile skin laxity with recent significant weight loss\n3. Generalized connective tissue disorder (e.g., Ehlers-Danlos syndrome, classical or vascular type)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Skin biopsy of the affected area with Verhoeff-van Gieson elastic tissue stain\n2. Beighton hypermobility score assessment\n3. Transthoracic echocardiogram with measurement of aortic root diameter\n4. Genetic testing for connective tissue disorders (COL3A1, COL5A1, COL5A2, ELN)\n5. CT angiography of the chest and abdomen\n6. Serum alpha-1 antitrypsin level",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Acquired cutis laxa, likely secondary to an underlying systemic disorder (such as alpha-1 antitrypsin deficiency, plasma cell dyscrasia, or hematologic malignancy)",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 13142,
+   "completion_tokens": 2651,
+   "total_tokens": 15793,
+   "cost": 0.00708636,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00708636,
+    "upstream_inference_prompt_cost": 0.00390516,
+    "upstream_inference_completions_cost": 0.0031812
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2531,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 13587,
+   "completion_tokens": 1630,
+   "total_tokens": 15217,
+   "cost": 0.00288162,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 13127,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00288162,
+    "upstream_inference_prompt_cost": 0.00092562,
+    "upstream_inference_completions_cost": 0.001956
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1537,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 13917,
+   "completion_tokens": 727,
+   "total_tokens": 14644,
+   "cost": 0.00179022,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 13572,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00179022,
+    "upstream_inference_prompt_cost": 0.00091782,
+    "upstream_inference_completions_cost": 0.0008724
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 641,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 61.3
+}

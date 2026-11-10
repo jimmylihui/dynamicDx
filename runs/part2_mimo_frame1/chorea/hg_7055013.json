@@ -1,0 +1,190 @@
+{
+ "questions": [
+  "Are you having trouble breathing right now?",
+  "Is severe pain the main reason you are here?",
+  "Did you suffer a fall or injury recently?",
+  "Do you feel dizzy or lightheaded?",
+  "Do you have a fever?",
+  "Have you noticed any unusual bleeding or bruising on your body?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Neurological examination",
+  "Vital signs including oxygen saturation",
+  "12-lead electrocardiogram",
+  "Complete blood count",
+  "Basic metabolic panel",
+  "Glucometer check",
+  "CT head without contrast",
+  "Urinalysis"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "speech assessment",
+  "gait and coordination",
+  "vital signs",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "renal function and eGFR",
+  "blood glucose",
+  "blood glucose",
+  "CT head (non-contrast)",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "     speech assessment: normal",
+  "     gait and coordination: normal",
+  "2. Vital signs including oxygen saturation",
+  "     vital signs: normal, afebrile",
+  "3. 12-lead electrocardiogram",
+  "     not performed / not available",
+  "4. Complete blood count",
+  "     full blood count: normal",
+  "5. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     renal function and eGFR: normal",
+  "     blood glucose: 690 mg/dL with a NORMAL anion gap",
+  "6. Glucometer check",
+  "     blood glucose: 690 mg/dL with a NORMAL anion gap",
+  "7. CT head without contrast",
+  "     CT head (non-contrast): HYPERDENSITY in the LEFT basal ganglia with mild involvement of the right basal ganglia - contralateral to the chorea",
+  "8. Urinalysis",
+  "     urinalysis: negative ketones"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperglycemia-induced hemichorea-hemiballismus (contralateral to basal ganglia hyperdensity) due to hyperosmolar hyperglycemic state\n\nAlternative 1: Basal ganglia intracerebral hemorrhage secondary to hyperglycemia\nAlternative 2: Ischemic stroke in the basal ganglia presenting with hemichorea\nAlternative 3: Spontaneous basal ganglia calcification with coincidental hyperglycemia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Neurological examination\n2. Vital signs including oxygen saturation\n3. 12-lead electrocardiogram\n4. Complete blood count\n5. Basic metabolic panel\n6. Glucometer check\n7. CT head without contrast\n8. Urinalysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperglycemia-induced hemichorea-hemiballismus (contralateral to basal ganglia hyperdensity) due to hyperosmolar hyperglycemic state",
+ "decisive_served": [
+  "blood glucose",
+  "blood glucose",
+  "CT head (non-contrast)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 816,
+   "completion_tokens": 3051,
+   "total_tokens": 3867,
+   "cost": 0.0009421776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009421776,
+    "upstream_inference_prompt_cost": 8.78976e-05,
+    "upstream_inference_completions_cost": 0.00085428
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2981,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1129,
+   "completion_tokens": 466,
+   "total_tokens": 1595,
+   "cost": 0.0002621976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002621976,
+    "upstream_inference_prompt_cost": 0.0001317176,
+    "upstream_inference_completions_cost": 0.00013048
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 406,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1573,
+   "completion_tokens": 603,
+   "total_tokens": 2176,
+   "cost": 0.0003627176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003627176,
+    "upstream_inference_prompt_cost": 0.0001938776,
+    "upstream_inference_completions_cost": 0.00016884
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 499,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 187.2
+}

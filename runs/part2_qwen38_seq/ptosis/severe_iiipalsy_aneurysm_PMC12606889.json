@@ -1,0 +1,169 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Is your right eyelid drooping?",
+  "Do you have a history of diabetes or hypertension?",
+  "Have you had any recent headaches or pain around the right eye?",
+  "Do you have a history of syphilis?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside examination of pupil size and reactivity to light in a dark room (assess for anisocoria)",
+  "Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target)",
+  "Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target)",
+  "Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target)",
+  "Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target)",
+  "Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target)"
+ ],
+ "served": [
+  "pupil examination (size, light reaction)",
+  "ocular motility examination"
+ ],
+ "results": [
+  "R1 ASK Do you have double vision?; Is your right eyelid drooping?; Do you have a history of diabetes or hypertension?; Have you had any recent headaches or pain around the right eye? -> ['no', 'no', 'no', 'no']",
+  "R2 ORDER Bedside examination of pupil size and reactivity to light in a dark room (assess for anisocoria) -> [['pupil examination (size, light reaction)']]",
+  "R3 ASK Do you have a history of syphilis? -> ['no']",
+  "R4 ORDER Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target) -> [['pupil examination (size, light reaction)']]",
+  "R5 ORDER Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target) -> [['pupil examination (size, light reaction)']]",
+  "R6 ORDER Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target) -> [['pupil examination (size, light reaction)']]",
+  "R7 ORDER Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target) -> [['pupil examination (size, light reaction)']]",
+  "R8 ORDER Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target) -> [['pupil examination (size, light reaction)', 'ocular motility examination']]",
+  "R9 DIAGNOSIS Right oculomotor nerve palsy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have double vision?",
+    "Is your right eyelid drooping?",
+    "Do you have a history of diabetes or hypertension?",
+    "Have you had any recent headaches or pain around the right eye?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Bedside examination of pupil size and reactivity to light in a dark room (assess for anisocoria)"
+   ],
+   "result": [
+    [
+     "pupil examination (size, light reaction)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of syphilis?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target)"
+   ],
+   "result": [
+    [
+     "pupil examination (size, light reaction)"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target)"
+   ],
+   "result": [
+    [
+     "pupil examination (size, light reaction)"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target)"
+   ],
+   "result": [
+    [
+     "pupil examination (size, light reaction)"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target)"
+   ],
+   "result": [
+    [
+     "pupil examination (size, light reaction)"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Bedside examination of the right pupil in a dark room with sustained accommodation (ask patient to focus on a near target)"
+   ],
+   "result": [
+    [
+     "pupil examination (size, light reaction)",
+     "ocular motility examination"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Right oculomotor nerve palsy"
+  }
+ ],
+ "dx": "Right oculomotor nerve palsy",
+ "dx_raw": "DIAGNOSIS: Right oculomotor nerve palsy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "pupil examination (size, light reaction)"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.002,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_iiipalsy_aneurysm_PMC12606889.mp4",
+ "line": "ptosis",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 41.9
+}

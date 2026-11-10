@@ -1,0 +1,175 @@
+{
+ "questions": [
+  "Did these symptoms start suddenly?",
+  "Do you have weakness on one side of your body?",
+  "Do you have difficulty speaking?",
+  "Do you have any facial drooping?",
+  "Do you have any vision changes?",
+  "Do you have any numbness or tingling?",
+  "Do you have trouble with your balance?",
+  "Do you have a headache?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI Brain with and without contrast",
+  "Comprehensive neurological examination",
+  "Serum Vitamin B12 and Folate levels",
+  "Thyroid stimulating hormone (TSH) level"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "brain MRI",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "cognitive screen (MMSE / ACE-R)",
+  "vitamin B12 with methylmalonic acid",
+  "serum folate",
+  "vitamin B12 / folate",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. MRI Brain with and without contrast",
+  "     MRI brain with gadolinium: mild parietal-predominant cerebral atrophy",
+  "     brain MRI: only mild parietal-predominant cerebral atrophy",
+  "2. Comprehensive neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: frontoparietal pattern of cognitive deficits",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "     cognitive screen (MMSE / ACE-R): frontoparietal pattern of deficits on formal neuropsychological testing",
+  "3. Serum Vitamin B12 and Folate levels",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "     serum folate: normal",
+  "     vitamin B12 / folate: normal",
+  "4. Thyroid stimulating hormone (TSH) level",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Corticobasal Degeneration (a tauopathy)\nAlzheimer's disease\nFrontotemporal dementia\nDementia with Lewy bodies",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI Brain with and without contrast\n2. Comprehensive neurological examination\n3. Serum Vitamin B12 and Folate levels\n4. Thyroid stimulating hormone (TSH) level",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Corticobasal Degeneration (a tauopathy)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 2383,
+   "total_tokens": 2803,
+   "cost": 0.00085222,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00085222,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00081022
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2238,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 822,
+   "completion_tokens": 498,
+   "total_tokens": 1320,
+   "cost": 0.00025152,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00025152,
+    "upstream_inference_prompt_cost": 8.22e-05,
+    "upstream_inference_completions_cost": 0.00016932
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 491,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1183,
+   "completion_tokens": 5465,
+   "total_tokens": 6648,
+   "cost": 0.0019764,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0019764,
+    "upstream_inference_prompt_cost": 0.0001183,
+    "upstream_inference_completions_cost": 0.0018581
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5210,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 22.0,
+ "video": "severe_sspe_PMC13071100.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 310.7
+}

@@ -1,0 +1,311 @@
+{
+ "questions": [
+  "Is the tremor present when your hands are completely relaxed in your lap?",
+  "Is there a family history of similar tremors?",
+  "Does drinking alcohol temporarily reduce the tremor?",
+  "Do you have trouble sleeping or notice your leg moving restlessly at night?",
+  "At what age did you first notice this tremor?",
+  "Has the tremor been getting gradually worse over time?",
+  "Are you taking any medications, including over-the-counter drugs or supplements?",
+  "Do you consume a lot of caffeine, such as coffee or energy drinks?",
+  "Does the tremor also affect your head or voice?",
+  "Is the tremor worse in one hand than the other?",
+  "Does the tremor occur during other tasks like eating, drinking, or writing?",
+  "Does anyone else in your extended family have a similar tremor (parents, grandparents, aunts, uncles)?",
+  "Does the tremor get worse when you feel anxious or stressed?",
+  "Do you notice any stiffness in your arms or legs?",
+  "Has anyone commented that you've been moving slower than usual?",
+  "Do you notice any tremor in your legs when sitting?",
+  "Has anyone noticed any abnormal posturing of your neck or wrist?",
+  "Do you notice the tremor more when you're trying to hold something still versus when you're actively moving?",
+  "Do you feel anxious or have you noticed any mood changes recently?",
+  "Can you write a sentence for me to examine?",
+  "Does the tremor stop completely when you rest your hands in your lap?",
+  "Does the tremor get worse with fatigue or at the end of the day?",
+  "Have you tried beta-blockers like propranolol, or has anyone prescribed them for you?",
+  "Do you notice any cramping or pain in your forearm when the tremor is active?",
+  "Have you tried holding a glass of water with your arm outstretched to see if it trembles?",
+  "When you pour from a pitcher or use a screwdriver, does the tremor get worse?",
+  "Has your handwriting become messier or more shaky over the years?",
+  "Has any doctor ever suggested this might be essential tremor?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "yes",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "yes",
+  "26": "no",
+  "27": "no",
+  "28": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Neurological examination for cerebellar signs (finger-to-nose, heel-to-shin, dysdiadochokinesia)",
+  "Assessment for rebound phenomenon",
+  "Examination of handwriting sample",
+  "Blood tests: TSH, free T4, ceruloplasmin, serum copper, liver function tests",
+  "Spiral drawing test (to assess tremor pattern and amplitude)",
+  "Assessment of tremor frequency using smartphone accelerometry or clinical observation",
+  "Evaluation for wing-beating tremor (arms abducted and flexed)",
+  "DaT-SPECT (dopamine transporter scan) to evaluate for early parkinsonism",
+  "Detailed neurological examination of hand tremor characteristics: tremor frequency estimate by clinical observation or tuning fork comparison",
+  "Entrainment test: tapping rhythmically with the non-trembling hand to see if tremor frequency changes",
+  "Distractibility test: performing a mental task (serial 7s) or Contralateral limb movement while observing tremor",
+  "Assessment of tremor variability: prolonged observation (2-3 minutes) noting consistency of amplitude and frequency"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "liver function tests",
+  "serum copper and caeruloplasmin",
+  "TSH / free T4",
+  "kinetic / intention tremor (finger-nose)",
+  "tremor frequency estimate",
+  "postural tremor (arms outstretched)",
+  "DAT-SPECT"
+ ],
+ "results": [
+  "R1 ASK Is the tremor present when your hands are completely relaxed in your lap?; Is there a family history of similar tremors?; Does drinking alcohol temporarily reduce the tremor?; Do you have trouble sleeping or notice your leg moving restlessly at night? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK At what age did you first notice this tremor?; Has the tremor been getting gradually worse over time?; Are you taking any medications, including over-the-counter drugs or supplements?; Do you consume a lot of caffeine, such as coffee or energy drinks? -> ['no', 'yes', 'no', 'no']",
+  "R3 ORDER Neurological examination for cerebellar signs (finger-to-nose, heel-to-shin, dysdiadochokinesia); Assessment for rebound phenomenon; Examination of handwriting sample; Blood tests: TSH, free T4, ceruloplasmin, serum copper, liver function tests -> [['coordination examination (limb and truncal)', 'cerebellar signs (dysmetria, dysdiadochokinesia)'], ['coordination examination (limb and truncal)', 'cerebellar signs (dysmetria, dysdiadochokinesia)'], [], ['liver function tests', 'serum copper and caeruloplasmin', 'TSH / free T4']]",
+  "R4 ASK Does the tremor also affect your head or voice?; Is the tremor worse in one hand than the other?; Does the tremor occur during other tasks like eating, drinking, or writing?; Does anyone else in your extended family have a similar tremor (parents, grandparents, aunts, uncles)? -> ['no', 'yes', 'no', 'no']",
+  "R5 ASK Does the tremor get worse when you feel anxious or stressed?; Do you notice any stiffness in your arms or legs?; Has anyone commented that you've been moving slower than usual?; Do you notice any tremor in your legs when sitting? -> ['no', 'no', 'no', 'no']",
+  "R6 ORDER Spiral drawing test (to assess tremor pattern and amplitude); Assessment of tremor frequency using smartphone accelerometry or clinical observation; Evaluation for wing-beating tremor (arms abducted and flexed); DaT-SPECT (dopamine transporter scan) to evaluate for early parkinsonism -> [['kinetic / intention tremor (finger-nose)'], ['tremor frequency estimate'], ['postural tremor (arms outstretched)'], ['DAT-SPECT']]",
+  "R7 ASK Has anyone noticed any abnormal posturing of your neck or wrist?; Do you notice the tremor more when you're trying to hold something still versus when you're actively moving?; Do you feel anxious or have you noticed any mood changes recently?; Can you write a sentence for me to examine? -> ['no', 'yes', 'no', 'no']",
+  "R8 ASK Does the tremor stop completely when you rest your hands in your lap?; Does the tremor get worse with fatigue or at the end of the day?; Have you tried beta-blockers like propranolol, or has anyone prescribed them for you?; Do you notice any cramping or pain in your forearm when the tremor is active? -> ['no', 'no', 'no', 'no']",
+  "R9 ASK Have you tried holding a glass of water with your arm outstretched to see if it trembles?; When you pour from a pitcher or use a screwdriver, does the tremor get worse?; Has your handwriting become messier or more shaky over the years?; Has any doctor ever suggested this might be essential tremor? -> ['yes', 'no', 'no', 'no']",
+  "R10 ORDER Detailed neurological examination of hand tremor characteristics: tremor frequency estimate by clinical observation or tuning fork comparison; Entrainment test: tapping rhythmically with the non-trembling hand to see if tremor frequency changes; Distractibility test: performing a mental task (serial 7s) or Contralateral limb movement while observing tremor; Assessment of tremor variability: prolonged observation (2-3 minutes) noting consistency of amplitude and frequency -> [['tremor frequency estimate'], [], [], []]",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Essential tremor, idiopathic (likely monogenic/atypical presentation given lack of family history and inconsistent alcohol response) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is the tremor present when your hands are completely relaxed in your lap?",
+    "Is there a family history of similar tremors?",
+    "Does drinking alcohol temporarily reduce the tremor?",
+    "Do you have trouble sleeping or notice your leg moving restlessly at night?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "At what age did you first notice this tremor?",
+    "Has the tremor been getting gradually worse over time?",
+    "Are you taking any medications, including over-the-counter drugs or supplements?",
+    "Do you consume a lot of caffeine, such as coffee or energy drinks?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Neurological examination for cerebellar signs (finger-to-nose, heel-to-shin, dysdiadochokinesia)",
+    "Assessment for rebound phenomenon",
+    "Examination of handwriting sample",
+    "Blood tests: TSH, free T4, ceruloplasmin, serum copper, liver function tests"
+   ],
+   "result": [
+    [
+     "coordination examination (limb and truncal)",
+     "cerebellar signs (dysmetria, dysdiadochokinesia)"
+    ],
+    [
+     "coordination examination (limb and truncal)",
+     "cerebellar signs (dysmetria, dysdiadochokinesia)"
+    ],
+    [],
+    [
+     "liver function tests",
+     "serum copper and caeruloplasmin",
+     "TSH / free T4"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Does the tremor also affect your head or voice?",
+    "Is the tremor worse in one hand than the other?",
+    "Does the tremor occur during other tasks like eating, drinking, or writing?",
+    "Does anyone else in your extended family have a similar tremor (parents, grandparents, aunts, uncles)?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Does the tremor get worse when you feel anxious or stressed?",
+    "Do you notice any stiffness in your arms or legs?",
+    "Has anyone commented that you've been moving slower than usual?",
+    "Do you notice any tremor in your legs when sitting?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Spiral drawing test (to assess tremor pattern and amplitude)",
+    "Assessment of tremor frequency using smartphone accelerometry or clinical observation",
+    "Evaluation for wing-beating tremor (arms abducted and flexed)",
+    "DaT-SPECT (dopamine transporter scan) to evaluate for early parkinsonism"
+   ],
+   "result": [
+    [
+     "kinetic / intention tremor (finger-nose)"
+    ],
+    [
+     "tremor frequency estimate"
+    ],
+    [
+     "postural tremor (arms outstretched)"
+    ],
+    [
+     "DAT-SPECT"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Has anyone noticed any abnormal posturing of your neck or wrist?",
+    "Do you notice the tremor more when you're trying to hold something still versus when you're actively moving?",
+    "Do you feel anxious or have you noticed any mood changes recently?",
+    "Can you write a sentence for me to examine?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Does the tremor stop completely when you rest your hands in your lap?",
+    "Does the tremor get worse with fatigue or at the end of the day?",
+    "Have you tried beta-blockers like propranolol, or has anyone prescribed them for you?",
+    "Do you notice any cramping or pain in your forearm when the tremor is active?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Have you tried holding a glass of water with your arm outstretched to see if it trembles?",
+    "When you pour from a pitcher or use a screwdriver, does the tremor get worse?",
+    "Has your handwriting become messier or more shaky over the years?",
+    "Has any doctor ever suggested this might be essential tremor?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "Detailed neurological examination of hand tremor characteristics: tremor frequency estimate by clinical observation or tuning fork comparison",
+    "Entrainment test: tapping rhythmically with the non-trembling hand to see if tremor frequency changes",
+    "Distractibility test: performing a mental task (serial 7s) or Contralateral limb movement while observing tremor",
+    "Assessment of tremor variability: prolonged observation (2-3 minutes) noting consistency of amplitude and frequency"
+   ],
+   "result": [
+    [
+     "tremor frequency estimate"
+    ],
+    [],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Essential tremor, idiopathic (likely monogenic/atypical presentation given lack of family history and inconsistent alcohol response)"
+  }
+ ],
+ "dx": "Essential tremor, idiopathic (likely monogenic/atypical presentation given lack of family history and inconsistent alcohol response)",
+ "dx_raw": "DIAGNOSIS: Essential tremor, idiopathic (likely monogenic/atypical presentation given lack of family history and inconsistent alcohol response)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "TSH / free T4"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0035,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_thyrotoxic_PMC11639689.mp4",
+ "line": "tremor",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 316.4
+}

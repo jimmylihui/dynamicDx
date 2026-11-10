@@ -1,0 +1,157 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Are you seeing double?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you have any numbness or tingling?",
+  "Is your speech slurred or difficult?",
+  "Have you had a recent head injury?",
+  "Has this been present since childhood?",
+  "Do you have a history of high blood pressure?",
+  "Do you have diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Comprehensive ophthalmologic examination",
+  "Thyroid function tests",
+  "MRI of the orbits and brain",
+  "TSH receptor antibody test"
+ ],
+ "served": [
+  "fundoscopy",
+  "visual fields (perimetry)",
+  "pupil size and light reaction",
+  "ptosis / lid position",
+  "TSH / free T4",
+  "MRI brain with gadolinium",
+  "MRI sella and orbits",
+  "anti-thyroid antibodies"
+ ],
+ "results": [
+  "1. Comprehensive ophthalmologic examination",
+  "     fundoscopy: normal",
+  "     visual fields (perimetry): full",
+  "     pupil size and light reaction: equal and reactive",
+  "     ptosis / lid position: none",
+  "2. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "3. MRI of the orbits and brain",
+  "     MRI brain with gadolinium: normal",
+  "     MRI sella and orbits: normal pituitary and orbits",
+  "4. TSH receptor antibody test",
+  "     anti-thyroid antibodies: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional strabismus due to conversion disorder\n1. Convergence spasm\n2. Accommodative esotropia\n3. Myasthenia gravis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Comprehensive ophthalmologic examination\n2. Thyroid function tests\n3. MRI of the orbits and brain\n4. TSH receptor antibody test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional strabismus due to conversion disorder",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 919,
+   "total_tokens": 1339,
+   "cost": 0.00035446,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00035446,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00031246
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 771,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 790,
+   "completion_tokens": 2787,
+   "total_tokens": 3577,
+   "cost": 0.00102658,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00102658,
+    "upstream_inference_prompt_cost": 7.9e-05,
+    "upstream_inference_completions_cost": 0.00094758
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2882,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1021,
+   "completion_tokens": 3758,
+   "total_tokens": 4779,
+   "cost": 0.00137982,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00137982,
+    "upstream_inference_prompt_cost": 0.0001021,
+    "upstream_inference_completions_cost": 0.00127772
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3742,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 25.4,
+ "video": "mild_2_cerebellar_antiHomer3_PMC12833086.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 207.8
+}

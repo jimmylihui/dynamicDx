@@ -1,0 +1,218 @@
+{
+ "questions": [
+  "Do you have pain in your lower back?",
+  "Do you feel numbness or tingling on the top of your right foot or the side of your shin?",
+  "Did the weakness start suddenly or gradually?",
+  "When did you first notice your right foot not working properly?",
+  "Do you work in a job that requires you to kneel for long periods?",
+  "Have you lost any weight recently without trying?",
+  "Do you have any difficulty swallowing or any twitching in your muscles?",
+  "Have you noticed any problems with your memory or thinking recently?",
+  "Do you have any trouble controlling your bladder or have you had any accidents?",
+  "Do you feel like your feet are stuck to the floor when you try to walk (magnetic gait)?",
+  "Has anyone in your family had Parkinson's disease?",
+  "Do you have any problems moving your eyes up and down when looking at something?",
+  "Do you feel dizzy or lightheaded when you stand up from sitting or lying down?",
+  "Do you have problems with erectile function?",
+  "Do you have nightmares or act out your dreams during sleep?",
+  "Have you noticed any tremor in your hands, especially at rest?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Manual muscle testing of right hip flexion (L2)",
+  "Manual muscle testing of right knee extension (L3)",
+  "Manual muscle testing of right ankle dorsiflexion (L4-L5)",
+  "Manual muscle testing of right great toe extension (L5)",
+  "Manual muscle testing of right ankle plantarflexion (S1-S2)",
+  "Test tone in the right lower limb",
+  "Test right knee and ankle reflexes",
+  "Test for extensor plantar response (Babinski sign) on the right",
+  "Brain MRI to assess for ventriculomegaly disproportionate to cortical atrophy, periventricular transependymal signal, and Evan's index measurement",
+  "Lumbar puncture with opening pressure measurement and large volume tap (removal of 30-50 mL CSF) to assess for gait improvement (diagnostic and therapeutic tap for suspected NPH)"
+ ],
+ "served": [
+  "limb strength (MRC) examination",
+  "muscle tone examination",
+  "deep tendon reflexes and plantar responses",
+  "reflexes, plantar responses and frontal release signs",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)",
+  "CSF opening pressure"
+ ],
+ "results": [
+  "R1 ASK Do you have pain in your lower back?; Do you feel numbness or tingling on the top of your right foot or the side of your shin?; Did the weakness start suddenly or gradually? -> ['no', 'no', 'no']",
+  "R2 ASK When did you first notice your right foot not working properly?; Do you work in a job that requires you to kneel for long periods?; Have you lost any weight recently without trying?; Do you have any difficulty swallowing or any twitching in your muscles? -> ['no', 'no', 'no', 'no']",
+  "R3 ORDER Manual muscle testing of right hip flexion (L2); Manual muscle testing of right knee extension (L3); Manual muscle testing of right ankle dorsiflexion (L4-L5); Manual muscle testing of right great toe extension (L5); Manual muscle testing of right ankle plantarflexion (S1-S2); Test tone in the right lower limb; Test right knee and ankle reflexes; Test for extensor plantar response (Babinski sign) on the right -> [['limb strength (MRC) examination'], ['limb strength (MRC) examination'], ['limb strength (MRC) examination'], ['limb strength (MRC) examination'], ['limb strength (MRC) examination'], ['muscle tone examination'], ['deep tendon reflexes and plantar responses', 'reflexes, plantar responses and frontal release signs'], ['deep tendon reflexes and plantar responses', 'reflexes, plantar responses and frontal release signs']]",
+  "R4 ASK Have you noticed any problems with your memory or thinking recently?; Do you have any trouble controlling your bladder or have you had any accidents?; Do you feel like your feet are stuck to the floor when you try to walk (magnetic gait)?; Has anyone in your family had Parkinson's disease? -> ['no', 'no', 'yes', 'no']",
+  "R5 ORDER Brain MRI to assess for ventriculomegaly disproportionate to cortical atrophy, periventricular transependymal signal, and Evan's index measurement; Lumbar puncture with opening pressure measurement and large volume tap (removal of 30-50 mL CSF) to assess for gait improvement (diagnostic and therapeutic tap for suspected NPH) -> [['MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)'], ['CSF opening pressure']]",
+  "R6 ASK Do you have any problems moving your eyes up and down when looking at something?; Do you feel dizzy or lightheaded when you stand up from sitting or lying down?; Do you have problems with erectile function?; Do you have nightmares or act out your dreams during sleep?; Have you noticed any tremor in your hands, especially at rest? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 DIAGNOSIS Normal pressure hydrocephalus - the triad of magnetic gait with feet feeling stuck to the floor, symmetric limb rigidity, and brisk reflexes is the classic presentation, though initial imaging was reported as normal and may require formal volumetric reassessment -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your lower back?",
+    "Do you feel numbness or tingling on the top of your right foot or the side of your shin?",
+    "Did the weakness start suddenly or gradually?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "When did you first notice your right foot not working properly?",
+    "Do you work in a job that requires you to kneel for long periods?",
+    "Have you lost any weight recently without trying?",
+    "Do you have any difficulty swallowing or any twitching in your muscles?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Manual muscle testing of right hip flexion (L2)",
+    "Manual muscle testing of right knee extension (L3)",
+    "Manual muscle testing of right ankle dorsiflexion (L4-L5)",
+    "Manual muscle testing of right great toe extension (L5)",
+    "Manual muscle testing of right ankle plantarflexion (S1-S2)",
+    "Test tone in the right lower limb",
+    "Test right knee and ankle reflexes",
+    "Test for extensor plantar response (Babinski sign) on the right"
+   ],
+   "result": [
+    [
+     "limb strength (MRC) examination"
+    ],
+    [
+     "limb strength (MRC) examination"
+    ],
+    [
+     "limb strength (MRC) examination"
+    ],
+    [
+     "limb strength (MRC) examination"
+    ],
+    [
+     "limb strength (MRC) examination"
+    ],
+    [
+     "muscle tone examination"
+    ],
+    [
+     "deep tendon reflexes and plantar responses",
+     "reflexes, plantar responses and frontal release signs"
+    ],
+    [
+     "deep tendon reflexes and plantar responses",
+     "reflexes, plantar responses and frontal release signs"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any problems with your memory or thinking recently?",
+    "Do you have any trouble controlling your bladder or have you had any accidents?",
+    "Do you feel like your feet are stuck to the floor when you try to walk (magnetic gait)?",
+    "Has anyone in your family had Parkinson's disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Brain MRI to assess for ventriculomegaly disproportionate to cortical atrophy, periventricular transependymal signal, and Evan's index measurement",
+    "Lumbar puncture with opening pressure measurement and large volume tap (removal of 30-50 mL CSF) to assess for gait improvement (diagnostic and therapeutic tap for suspected NPH)"
+   ],
+   "result": [
+    [
+     "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+    ],
+    [
+     "CSF opening pressure"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have any problems moving your eyes up and down when looking at something?",
+    "Do you feel dizzy or lightheaded when you stand up from sitting or lying down?",
+    "Do you have problems with erectile function?",
+    "Do you have nightmares or act out your dreams during sleep?",
+    "Have you noticed any tremor in your hands, especially at rest?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Normal pressure hydrocephalus - the triad of magnetic gait with feet feeling stuck to the floor, symmetric limb rigidity, and brisk reflexes is the classic presentation, though initial imaging was reported as normal and may require formal volumetric reassessment"
+  }
+ ],
+ "dx": "Normal pressure hydrocephalus - the triad of magnetic gait with feet feeling stuck to the floor, symmetric limb rigidity, and brisk reflexes is the classic presentation, though initial imaging was reported as normal and may require formal volumetric reassessment",
+ "dx_raw": "ASK:\n1. When you walk, do your steps become shorter and slower as you continue?\n2. Do you have any stiffness in your arms or hands that you've noticed?\n3. Do you find it harder to start walking than to keep walking once started?\n\nORDER:\n1. Repeat brain MRI with formal volumetric measurement of ventricles and calculation of Evans index to specifically evaluate for disproportionate ventriculomegaly\n2. Gait assessment with detailed evaluation of stride length, step height, and turning (counting number of steps to turn 360 degrees)\n\nDIAGNOSIS: Normal pressure hydrocephalus - the triad of magnetic gait with feet feeling stuck to the floor, symmetric limb rigidity, and brisk reflexes is the classic presentation, though initial imaging was reported as normal and may require formal volumetric reassessment",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "cost_usd": 0.0035,
+ "n_frames": 32,
+ "duration_s": 23.2,
+ "video": "hornet_sting_parkinsonism_PMC11021691.mp4",
+ "line": "parkinsonism",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 238.6
+}

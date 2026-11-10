@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Do you feel weakness in either leg?",
+  "Do you have numbness or tingling in either leg?",
+  "Do you have pain in your legs or back when walking?",
+  "Do you feel dizzy or unsteady, as though the room is moving?",
+  "Have you had falls or near-falls recently?",
+  "Does your walking difficulty vary markedly from one occasion to another?",
+  "Do your knees suddenly give way while walking?",
+  "Did this walking problem begin suddenly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Bedside neurological examination including strength, reflexes, sensation, coordination, and gait assessment with tandem walking, heel walking, toe walking, and walking while distracted.",
+  "Hoover sign and hip abductor sign testing for functional lower-limb weakness.",
+  "Romberg test."
+ ],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "tandem gait",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "MRC power in all four limbs",
+  "Hoover sign / hip-abductor sign",
+  "Romberg test, repeated with distraction"
+ ],
+ "results": [
+  "R1 ASK Do you feel weakness in either leg?; Do you have numbness or tingling in either leg?; Do you have pain in your legs or back when walking?; Do you feel dizzy or unsteady, as though the room is moving?; Have you had falls or near-falls recently?; Does your walking difficulty vary markedly from one occasion to another?; Do your knees suddenly give way while walking?; Did this walking problem begin suddenly? -> ['no', 'no', 'no', 'no', 'no', 'yes', 'no', 'yes']",
+  "R2 ORDER Bedside neurological examination including strength, reflexes, sensation, coordination, and gait assessment with tandem walking, heel walking, toe walking, and walking while distracted.; Hoover sign and hip abductor sign testing for functional lower-limb weakness.; Romberg test. -> [['deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'tandem gait', 'gait with a distracting or automatic task (dancing, counting backwards)', 'MRC power in all four limbs'], ['Hoover sign / hip-abductor sign'], ['Romberg test, repeated with distraction']]",
+  "R3 DIAGNOSIS Functional neurological symptom disorder presenting as a functional (psychogenic) gait disorder, with sudden-onset, variable and distractible walking impairment; no evidence of an underlying structural neurological disease. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you feel weakness in either leg?",
+    "Do you have numbness or tingling in either leg?",
+    "Do you have pain in your legs or back when walking?",
+    "Do you feel dizzy or unsteady, as though the room is moving?",
+    "Have you had falls or near-falls recently?",
+    "Does your walking difficulty vary markedly from one occasion to another?",
+    "Do your knees suddenly give way while walking?",
+    "Did this walking problem begin suddenly?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Bedside neurological examination including strength, reflexes, sensation, coordination, and gait assessment with tandem walking, heel walking, toe walking, and walking while distracted.",
+    "Hoover sign and hip abductor sign testing for functional lower-limb weakness.",
+    "Romberg test."
+   ],
+   "result": [
+    [
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)",
+     "tandem gait",
+     "gait with a distracting or automatic task (dancing, counting backwards)",
+     "MRC power in all four limbs"
+    ],
+    [
+     "Hoover sign / hip-abductor sign"
+    ],
+    [
+     "Romberg test, repeated with distraction"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "diagnosis",
+   "text": "Functional neurological symptom disorder presenting as a functional (psychogenic) gait disorder, with sudden-onset, variable and distractible walking impairment; no evidence of an underlying structural neurological disease."
+  }
+ ],
+ "dx": "Functional neurological symptom disorder presenting as a functional (psychogenic) gait disorder, with sudden-onset, variable and distractible walking impairment; no evidence of an underlying structural neurological disease.",
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder presenting as a functional (psychogenic) gait disorder, with sudden-onset, variable and distractible walking impairment; no evidence of an underlying structural neurological disease.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 2,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "deep tendon reflexes and plantar responses",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "tandem gait"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.003,
+ "n_frames": 32,
+ "duration_s": 29.7,
+ "video": "functional_gait_scissoring_PMC7455329.mp4",
+ "line": "functional",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 18.8
+}

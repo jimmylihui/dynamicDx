@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Do you have pain in your leg?",
+  "Is your leg swollen?",
+  "Do you have shortness of breath?",
+  "Do you have chest pain?",
+  "Is the pain in your calf?",
+  "Is your leg red or warm?",
+  "Have you had any recent surgery?",
+  "Have you been immobile for a long period recently?",
+  "Do you have a history of blood clots?",
+  "Do you have a history of cancer?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the whole spine",
+  "Neurological examination of the lower limbs (power, sensation, and reflexes)"
+ ],
+ "served": [
+  "MRI cervical and thoracic spine",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)"
+ ],
+ "results": [
+  "1. MRI of the whole spine",
+  "     MRI cervical and thoracic spine: normal",
+  "2. Neurological examination of the lower limbs (power, sensation, and reflexes)",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional Neurological Disorder caused by psychological stress (cancer)\nCatatonia\nFactitious disorder\nParaneoplastic syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI of the whole spine\n2. Neurological examination of the lower limbs (power, sensation, and reflexes)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Functional Neurological Disorder caused by psychological stress (cancer)",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1501,
+   "total_tokens": 10199,
+   "cost": 0.00138014,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00138014,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00051034
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1314,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9094,
+   "completion_tokens": 1306,
+   "total_tokens": 10400,
+   "cost": 0.00135344,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00135344,
+    "upstream_inference_prompt_cost": 0.0009094,
+    "upstream_inference_completions_cost": 0.00044404
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1312,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9287,
+   "completion_tokens": 5259,
+   "total_tokens": 14546,
+   "cost": 0.00271676,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00271676,
+    "upstream_inference_prompt_cost": 0.0009287,
+    "upstream_inference_completions_cost": 0.00178806
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4858,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 2448.2
+}

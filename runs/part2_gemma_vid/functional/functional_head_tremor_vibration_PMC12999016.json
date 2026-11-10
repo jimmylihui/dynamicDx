@@ -1,0 +1,136 @@
+{
+ "questions": [
+  "Do you have trouble hearing?",
+  "Is the hearing loss in only one ear?",
+  "Did the hearing loss happen suddenly?",
+  "Do you have ringing in your ears?",
+  "Do you feel dizzy?",
+  "Do you have any pain in your ears?",
+  "Have you had a recent cold or flu?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Levodopa trial",
+  "MRI Brain",
+  "DaTscan"
+ ],
+ "served": [
+  "MRI brain",
+  "DaTSCAN (dopamine transporter SPECT)"
+ ],
+ "results": [
+  "1. Levodopa trial",
+  "     not performed / not available",
+  "2. MRI Brain",
+  "     MRI brain: normal for age",
+  "3. DaTscan",
+  "     DaTSCAN (dopamine transporter SPECT): normal tracer uptake"
+ ],
+ "dx_raw": "DIAGNOSIS: Drug-induced parkinsonism\nVascular parkinsonism\nNormal pressure hydrocephalus\nPsychogenic parkinsonism",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Levodopa trial\n2. MRI Brain\n3. DaTscan",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Drug-induced parkinsonism",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2334,
+   "total_tokens": 11032,
+   "cost": 0.00166336,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00166336,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00079356
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2146,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9020,
+   "completion_tokens": 1663,
+   "total_tokens": 10683,
+   "cost": 0.00146742,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00146742,
+    "upstream_inference_prompt_cost": 0.000902,
+    "upstream_inference_completions_cost": 0.00056542
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1628,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9182,
+   "completion_tokens": 1401,
+   "total_tokens": 10583,
+   "cost": 0.00139454,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00139454,
+    "upstream_inference_prompt_cost": 0.0009182,
+    "upstream_inference_completions_cost": 0.00047634
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1378,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.9,
+ "video": "functional_head_tremor_vibration_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 449.3
+}

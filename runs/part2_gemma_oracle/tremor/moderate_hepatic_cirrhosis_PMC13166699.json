@@ -1,0 +1,116 @@
+{
+ "questions": [
+  "Are these movements involuntary?",
+  "Did they start recently?",
+  "Do you have a family history of similar movements?",
+  "Are you taking any medications for a psychiatric condition?",
+  "Have you had a sore throat in the last few months?",
+  "Have you noticed any changes in your mood or personality?",
+  "Do you have any difficulty speaking?",
+  "Do you have any difficulty swallowing?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "medication, supplement and herbal history",
+  "liver function and albumin/globulin",
+  "whole-blood manganese",
+  "brain MRI",
+  "abdominal ultrasound / liver imaging"
+ ],
+ "results": [
+  "1. medication, supplement and herbal history: long-term hepatotoxic traditional Chinese medicine, notably Psoralea corylifolia, plus manganese-containing supplements",
+  "2. liver function and albumin/globulin: albumin 35.1 g/L (ref 35-52), globulin 30.8 g/L RAISED (ref 15-30), A/G ratio 1.14 LOW (ref 1.2-2.4)",
+  "3. whole-blood manganese: ELEVATED; fell after the supplements were stopped but remained above normal",
+  "4. brain MRI: bilateral T1 HYPERINTENSITY in the basal ganglia - manganese deposition",
+  "5. abdominal ultrasound / liver imaging: cirrhosis"
+ ],
+ "dx_raw": "DIAGNOSIS: Acquired hepatocerebral degeneration due to manganese toxicity\n\nWilson's disease\nManganism (exogenous manganese toxicity)\nHuntington's disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Acquired hepatocerebral degeneration due to manganese toxicity",
+ "decisive_served": [
+  "medication, supplement and herbal history",
+  "liver function and albumin/globulin",
+  "whole-blood manganese",
+  "brain MRI",
+  "abdominal ultrasound / liver imaging"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1189,
+   "total_tokens": 9887,
+   "cost": 0.00127406,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00127406,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00040426
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1121,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9167,
+   "completion_tokens": 749,
+   "total_tokens": 9916,
+   "cost": 0.00117136,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00117136,
+    "upstream_inference_prompt_cost": 0.0009167,
+    "upstream_inference_completions_cost": 0.00025466
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 799,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.4,
+ "video": "moderate_hepatic_cirrhosis_PMC13166699.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 66.8
+}

@@ -1,0 +1,169 @@
+{
+ "questions": [
+  "Is your main problem chest pain or discomfort?",
+  "Are you having difficulty breathing?",
+  "Are you experiencing a fever?",
+  "Do you have a severe headache?",
+  "Do you have abdominal pain?",
+  "Are you nauseous or vomiting?",
+  "Do you have diarrhea?",
+  "Are you dizzy or lightheaded?",
+  "Have you had a recent injury?",
+  "Do you have any known major medical conditions?",
+  "Are you taking any medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Is the condition you have a heart problem?",
+  "Is it a lung disease?",
+  "Is it a type of cancer?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Do you have kidney disease?",
+  "Do you have an autoimmune or inflammatory condition?",
+  "Do you have a neurological condition?",
+  "Is your condition stable, or has it recently changed or worsened?",
+  "Are you here today for a routine follow-up of that condition?"
+ ],
+ "served": [],
+ "results": [
+  "1. Is the condition you have a heart problem?",
+  "     not performed / not available",
+  "2. Is it a lung disease?",
+  "     not performed / not available",
+  "3. Is it a type of cancer?",
+  "     not performed / not available",
+  "4. Do you have diabetes?",
+  "     not performed / not available",
+  "5. Do you have high blood pressure?",
+  "     not performed / not available",
+  "6. Do you have kidney disease?",
+  "     not performed / not available",
+  "7. Do you have an autoimmune or inflammatory condition?",
+  "     not performed / not available",
+  "8. Do you have a neurological condition?",
+  "     not performed / not available",
+  "9. Is your condition stable, or has it recently changed or worsened?",
+  "     not performed / not available",
+  "10. Are you here today for a routine follow-up of that condition?",
+  "     not performed / not available"
+ ],
+ "dx_raw": "1. Is this a new problem that started recently, or a long-standing condition you already know about?\n2. Are you experiencing any pain?\n3. Are you having trouble breathing?\n4. Is there any bleeding?\n5. Do you feel weak, tired, or generally unwell?\n6. Is the problem with your skin (rash, lump, wound)?\n7. Is the problem with your stomach or digestion (vomiting, diarrhea, constipation)?\n8. Is the problem with urination?\n9. Is the problem with your joints or muscles?\n10. Is the problem with your vision or hearing?\n11. Is the problem with your mood, memory, or thinking?",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Is the condition you have a heart problem?\n2. Is it a lung disease?\n3. Is it a type of cancer?\n4. Do you have diabetes?\n5. Do you have high blood pressure?\n6. Do you have kidney disease?\n7. Do you have an autoimmune or inflammatory condition?\n8. Do you have a neurological condition?\n9. Is your condition stable, or has it recently changed or worsened?\n10. Are you here today for a routine follow-up of that condition?",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "1. Is this a new problem that started recently, or a long-standing condition you already know about?",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 658,
+   "total_tokens": 1043,
+   "cost": 0.000194236,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000194236,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 0.00018424
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 554,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 789,
+   "completion_tokens": 224,
+   "total_tokens": 1013,
+   "cost": 0.0001204952,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001204952,
+    "upstream_inference_prompt_cost": 5.77752e-05,
+    "upstream_inference_completions_cost": 6.272e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 117,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1162,
+   "completion_tokens": 636,
+   "total_tokens": 1798,
+   "cost": 0.0002353904,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002353904,
+    "upstream_inference_prompt_cost": 5.73104e-05,
+    "upstream_inference_completions_cost": 0.00017808
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 492,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 52.8
+}

@@ -1,0 +1,200 @@
+{
+ "questions": [
+  "Did your symptoms begin very suddenly?",
+  "Have you used any drugs or alcohol in the last 24 hours?",
+  "Are you currently experiencing any pain?",
+  "Do you hear voices that others cannot hear?",
+  "Do you believe people are trying to hurt you?",
+  "Do you feel much more energetic than usual?",
+  "Do you have a history of seizures?",
+  "Do you have a history of diabetes?",
+  "Did you recently hit your head?",
+  "Are you having thoughts of harming yourself or others?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Fingerstick capillary blood glucose",
+  "Non-contrast CT head",
+  "Comprehensive metabolic panel",
+  "Complete blood count with differential",
+  "Urine toxicology screen",
+  "Serum ethanol level",
+  "Serum creatine kinase",
+  "Urgent electroencephalogram",
+  "Serum ammonia level",
+  "Lumbar puncture with CSF analysis"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium",
+  "CT head",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "full blood count and biochemistry",
+  "glucose, calcium, magnesium, sodium",
+  "full blood count and biochemistry",
+  "toxicology screen (urine and serum)",
+  "serum ethanol",
+  "creatine kinase",
+  "interictal EEG",
+  "serum ammonia",
+  "lumbar puncture / CSF",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose"
+ ],
+ "results": [
+  "1. Fingerstick capillary blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "2. Non-contrast CT head",
+  "     CT head: left frontal post-traumatic gliosis and encephalomalacia",
+  "3. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal",
+  "     full blood count and biochemistry: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "4. Complete blood count with differential",
+  "     full blood count and biochemistry: normal",
+  "5. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "6. Serum ethanol level",
+  "     serum ethanol: normal",
+  "7. Serum creatine kinase",
+  "     creatine kinase: normal",
+  "8. Urgent electroencephalogram",
+  "     interictal EEG: repetitive sharp waves predominantly in the LEFT FRONTAL area during sleep, with pseudocontinuous 3 Hz slow waves in the same region on awakening",
+  "9. Serum ammonia level",
+  "     serum ammonia: normal",
+  "10. Lumbar puncture with CSF analysis",
+  "     lumbar puncture / CSF: normal",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Focal epilepsy of the left frontal lobe (focal seizures with impaired awareness) due to post-traumatic encephalomalacia and gliosis.\n\nFrontal lobe epilepsy secondary to focal cortical dysplasia or low-grade tumor.\nNon-convulsive status epilepticus arising from the left frontal region.\nPostictal state following an unwitnessed focal to bilateral tonic-clonic seizure.",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Fingerstick capillary blood glucose\n2. Non-contrast CT head\n3. Comprehensive metabolic panel\n4. Complete blood count with differential\n5. Urine toxicology screen\n6. Serum ethanol level\n7. Serum creatine kinase\n8. Urgent electroencephalogram\n9. Serum ammonia level\n10. Lumbar puncture with CSF analysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Focal epilepsy of the left frontal lobe (focal seizures with impaired awareness) due to post-traumatic encephalomalacia and gliosis.",
+ "decisive_served": [
+  "interictal EEG"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8886,
+   "completion_tokens": 2145,
+   "total_tokens": 11031,
+   "cost": 0.00521244,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00521244,
+    "upstream_inference_prompt_cost": 0.00263844,
+    "upstream_inference_completions_cost": 0.002574
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2304,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9299,
+   "completion_tokens": 1992,
+   "total_tokens": 11291,
+   "cost": 0.00306378,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8818,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00306378,
+    "upstream_inference_prompt_cost": 0.00067338,
+    "upstream_inference_completions_cost": 0.0023904
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2099,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9742,
+   "completion_tokens": 868,
+   "total_tokens": 10610,
+   "cost": 0.00175572,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9202,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00175572,
+    "upstream_inference_prompt_cost": 0.00071412,
+    "upstream_inference_completions_cost": 0.0010416
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 990,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 96.7
+}

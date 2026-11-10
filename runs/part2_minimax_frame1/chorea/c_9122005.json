@@ -1,0 +1,178 @@
+{
+ "questions": [
+  "Is the main reason for your visit related to a problem with your legs?",
+  "Is the problem affecting only one leg?",
+  "Have you noticed any swelling in the affected leg?",
+  "Is there any redness or warmth over the area?",
+  "Do you have any open wounds or ulcers on your legs?",
+  "Have you had a fever in the past few days?",
+  "Have you recently been confined to bed or had reduced mobility?",
+  "Have you had recent surgery in the past month?",
+  "Do you have a history of cancer?",
+  "Do you have a history of blood clots?",
+  "Do you have diabetes?",
+  "Do you have a history of varicose veins or leg swelling?",
+  "Do you have pain in the leg when walking that improves with rest?",
+  "Do you have numbness or tingling in your feet?",
+  "Have you noticed any skin discoloration (brownish or darkening) on your ankles?",
+  "Do you have heart failure?",
+  "Do you have kidney disease?",
+  "Are you currently taking any blood-thinning medication?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside examination of the skin lesions to assess distribution, palpability (palpable vs non-palpable purpura), and blanching on diascopy",
+  "Complete blood count with differential and platelet count",
+  "Prothrombin time and international normalized ratio",
+  "Activated partial thromboplastin time",
+  "Peripheral blood smear reviewed by hematologist",
+  "Skin punch biopsy of a fresh representative lesion for histopathology and direct immunofluorescence",
+  "Serum albumin and nutritional markers (to assess for hypoalbuminemia or vitamin C deficiency)"
+ ],
+ "served": [
+  "skin examination",
+  "full blood count",
+  "peripheral blood film for acanthocytes"
+ ],
+ "results": [
+  "1. Bedside examination of the skin lesions to assess distribution, palpability (palpable vs non-palpable purpura), and blanching on diascopy",
+  "     skin examination: no rash",
+  "2. Complete blood count with differential and platelet count",
+  "     full blood count: normal",
+  "3. Prothrombin time and international normalized ratio",
+  "     not performed / not available",
+  "4. Activated partial thromboplastin time",
+  "     not performed / not available",
+  "5. Peripheral blood smear reviewed by hematologist",
+  "     peripheral blood film for acanthocytes: no acanthocytes",
+  "6. Skin punch biopsy of a fresh representative lesion for histopathology and direct immunofluorescence",
+  "     not performed / not available",
+  "7. Serum albumin and nutritional markers (to assess for hypoalbuminemia or vitamin C deficiency)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Cachexia with bilateral lower-limb muscle wasting, most likely due to occult malignancy\nAlternatives:\n1. Protein-energy malnutrition (primary nutritional deficiency)\n2. Chronic malabsorption syndrome (e.g., coeliac disease, pancreatic insufficiency)\n3. Advanced sarcopenia of aging with frailty",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination of the skin lesions to assess distribution, palpability (palpable vs non-palpable purpura), and blanching on diascopy\n3. Complete blood count with differential and platelet count\n4. Prothrombin time and international normalized ratio\n5. Activated partial thromboplastin time\n6. Peripheral blood smear reviewed by hematologist\n7. Skin punch biopsy of a fresh representative lesion for histopathology and direct immunofluorescence\n8. Serum albumin and nutritional markers (to assess for hypoalbuminemia or vitamin C deficiency)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Cachexia with bilateral lower-limb muscle wasting, most likely due to occult malignancy",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 521,
+   "completion_tokens": 556,
+   "total_tokens": 1077,
+   "cost": 0.00078582,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00078582,
+    "upstream_inference_prompt_cost": 0.00011862,
+    "upstream_inference_completions_cost": 0.0006672
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 334,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1200,
+   "completion_tokens": 2216,
+   "total_tokens": 3416,
+   "cost": 0.00298176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00298176,
+    "upstream_inference_prompt_cost": 0.00032256,
+    "upstream_inference_completions_cost": 0.0026592
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2100,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1583,
+   "completion_tokens": 1061,
+   "total_tokens": 2644,
+   "cost": 0.0014637,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1185,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014637,
+    "upstream_inference_prompt_cost": 0.0001905,
+    "upstream_inference_completions_cost": 0.0012732
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 999,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 51.4
+}

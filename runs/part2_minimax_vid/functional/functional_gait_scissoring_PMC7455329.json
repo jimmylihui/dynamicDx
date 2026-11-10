@@ -1,0 +1,143 @@
+{
+ "questions": [
+  "Are you in pain right now?",
+  "Is the pain in your chest?",
+  "Are you short of breath?",
+  "Have you had a fever?",
+  "Is the pain in your abdomen?",
+  "Did you fall recently?",
+  "Do you feel dizzy?",
+  "Do you have a headache?",
+  "Have you been vomiting?",
+  "Do you have a cough?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI brain",
+  "Romberg test",
+  "Pull test for postural instability"
+ ],
+ "served": [
+  "MRI brain",
+  "Romberg test, repeated with distraction",
+  "posture and pull test"
+ ],
+ "results": [
+  "1. MRI brain",
+  "     MRI brain: normal, no periventricular lesions",
+  "2. Romberg test",
+  "     Romberg test, repeated with distraction: negative",
+  "3. Pull test for postural instability",
+  "     posture and pull test: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder presenting as a functional gait disorder\n\nAlternatives to consider:\n1. Mild cerebellar ataxia (may not always produce Romberg or pull-test abnormalities early on)\n2. Vestibular gait impairment\n3. Early/subtle parkinsonian gait disorder",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI brain\n2. Romberg test\n3. Pull test for postural instability",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional neurological symptom disorder presenting as a functional gait disorder",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8886,
+   "completion_tokens": 2410,
+   "total_tokens": 11296,
+   "cost": 0.00553044,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00553044,
+    "upstream_inference_prompt_cost": 0.00263844,
+    "upstream_inference_completions_cost": 0.002892
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2435,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9241,
+   "completion_tokens": 3198,
+   "total_tokens": 12439,
+   "cost": 0.00449358,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8818,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00449358,
+    "upstream_inference_prompt_cost": 0.00065598,
+    "upstream_inference_completions_cost": 0.0038376
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3542,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9404,
+   "completion_tokens": 1186,
+   "total_tokens": 10590,
+   "cost": 0.00203592,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9202,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00203592,
+    "upstream_inference_prompt_cost": 0.00061272,
+    "upstream_inference_completions_cost": 0.0014232
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1353,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.7,
+ "video": "functional_gait_scissoring_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 101.8
+}

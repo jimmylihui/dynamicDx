@@ -1,0 +1,118 @@
+{
+ "questions": [
+  "Do you feel unsteady when you walk?",
+  "Do you have trouble speaking clearly?",
+  "Do you have tremors in your hands?",
+  "Do you have numbness or tingling in your feet?",
+  "Have you had a stroke?",
+  "Do you have a history of head injury?",
+  "Do you drink alcohol regularly?",
+  "Do you have muscle weakness in your legs?",
+  "Do you have a history of Parkinson's disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "tandem gait",
+  "walking backward",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "results": [
+  "1. deep tendon reflexes and plantar responses: normal reflexes, FLEXOR plantar responses, no clonus",
+  "2. tandem gait: better than free walking",
+  "3. walking backward: the scissoring DISAPPEARS on walking backward; in spasticity it persists",
+  "4. gait with a distracting or automatic task (dancing, counting backwards): the pattern changes or normalises",
+  "5. muscle tone (spasticity, rigidity, paratonia): normal tone on passive movement despite the scissoring gait"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional gait disorder (psychogenic)\nSpastic paraparesis\nHereditary spastic paraplegia\nCerebral palsy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional gait disorder (psychogenic)",
+ "decisive_served": [
+  "deep tendon reflexes and plantar responses",
+  "tandem gait",
+  "walking backward",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8762,
+   "completion_tokens": 2583,
+   "total_tokens": 11345,
+   "cost": 0.00175442,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00175442,
+    "upstream_inference_prompt_cost": 0.0008762,
+    "upstream_inference_completions_cost": 0.00087822
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2308,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9203,
+   "completion_tokens": 857,
+   "total_tokens": 10060,
+   "cost": 0.00121168,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00121168,
+    "upstream_inference_prompt_cost": 0.0009203,
+    "upstream_inference_completions_cost": 0.00029138
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 833,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.7,
+ "video": "functional_gait_scissoring_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 114.1
+}

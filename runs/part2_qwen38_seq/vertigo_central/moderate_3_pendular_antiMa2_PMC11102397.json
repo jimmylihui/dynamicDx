@@ -1,0 +1,216 @@
+{
+ "questions": [
+  "Have you been diagnosed with a thyroid condition, such as Graves' disease?",
+  "Do your eyes feel gritty, dry, or painful?",
+  "Are you currently experiencing double vision?",
+  "Do you have a history of shingles (herpes zoster) affecting your face or eye?",
+  "Have you had any recent trauma to the head or face?",
+  "Do you have diabetes?",
+  "Do you have a history of skin cancer or any previous surgery on your eyelids?",
+  "Do you have a history of poor vision in one eye since childhood?",
+  "Do you have a history of multiple sclerosis?",
+  "Do you have a history of stroke or brain injury?",
+  "Do you have a history of poor vision in one eye since childhood?",
+  "Do you have a history of poor vision in one eye since childhood?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Orbital imaging (CT or MRI) to evaluate for mass effect, inflammation, or structural abnormalities",
+  "Bedside examination of extraocular movements (checking for restriction or paralysis)"
+ ],
+ "served": [
+  "MRI sella and orbits",
+  "adduction in horizontal gaze (each eye)",
+  "abducting nystagmus of the fellow eye",
+  "vertical gaze and convergence",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "subjective visual vertical",
+  "head impulse test",
+  "pupil size and light reaction",
+  "ptosis / lid position",
+  "nystagmus: direction and whether it changes with gaze",
+  "smooth pursuit and saccades",
+  "forced duction test"
+ ],
+ "results": [
+  "R1 ASK Have you been diagnosed with a thyroid condition, such as Graves' disease?; Do your eyes feel gritty, dry, or painful?; Are you currently experiencing double vision? -> ['no', 'no', 'no']",
+  "R2 ORDER Orbital imaging (CT or MRI) to evaluate for mass effect, inflammation, or structural abnormalities -> [['MRI sella and orbits']]",
+  "R3 ASK Do you have a history of shingles (herpes zoster) affecting your face or eye?; Have you had any recent trauma to the head or face?; Do you have diabetes? -> ['no', 'no', 'no']",
+  "R4 ASK Do you have a history of skin cancer or any previous surgery on your eyelids? -> ['no']",
+  "R5 ORDER Bedside examination of extraocular movements (checking for restriction or paralysis) -> [['adduction in horizontal gaze (each eye)', 'abducting nystagmus of the fellow eye', 'vertical gaze and convergence', 'skew deviation / alternating cover test', 'ocular torsion and head tilt', 'subjective visual vertical', 'head impulse test', 'pupil size and light reaction', 'ptosis / lid position', 'nystagmus: direction and whether it changes with gaze', 'smooth pursuit and saccades', 'forced duction test']]",
+  "R6 ASK Do you have a history of poor vision in one eye since childhood? -> ['no']",
+  "R7 ASK Do you have a history of multiple sclerosis? -> ['no']",
+  "R8 ASK Do you have a history of stroke or brain injury? -> ['no']",
+  "R9 ASK Do you have a history of poor vision in one eye since childhood? -> ['no']",
+  "R10 ASK Do you have a history of poor vision in one eye since childhood? -> ['no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Orbital lymphedema secondary to chronic venous congestion -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you been diagnosed with a thyroid condition, such as Graves' disease?",
+    "Do your eyes feel gritty, dry, or painful?",
+    "Are you currently experiencing double vision?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Orbital imaging (CT or MRI) to evaluate for mass effect, inflammation, or structural abnormalities"
+   ],
+   "result": [
+    [
+     "MRI sella and orbits"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of shingles (herpes zoster) affecting your face or eye?",
+    "Have you had any recent trauma to the head or face?",
+    "Do you have diabetes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of skin cancer or any previous surgery on your eyelids?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Bedside examination of extraocular movements (checking for restriction or paralysis)"
+   ],
+   "result": [
+    [
+     "adduction in horizontal gaze (each eye)",
+     "abducting nystagmus of the fellow eye",
+     "vertical gaze and convergence",
+     "skew deviation / alternating cover test",
+     "ocular torsion and head tilt",
+     "subjective visual vertical",
+     "head impulse test",
+     "pupil size and light reaction",
+     "ptosis / lid position",
+     "nystagmus: direction and whether it changes with gaze",
+     "smooth pursuit and saccades",
+     "forced duction test"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of poor vision in one eye since childhood?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of multiple sclerosis?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of stroke or brain injury?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of poor vision in one eye since childhood?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of poor vision in one eye since childhood?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Orbital lymphedema secondary to chronic venous congestion"
+  }
+ ],
+ "dx": "Orbital lymphedema secondary to chronic venous congestion",
+ "dx_raw": "DIAGNOSIS: Orbital lymphedema secondary to chronic venous congestion",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0023,
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 60.1
+}

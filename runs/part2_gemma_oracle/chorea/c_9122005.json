@@ -1,0 +1,123 @@
+{
+ "questions": [
+  "Is this a new symptom?",
+  "Is the movement on both sides of your body?",
+  "Do you feel weak on one side of your body?",
+  "Do you have a history of Parkinson's disease?",
+  "Do you have a history of stroke?",
+  "Are you taking any medications for psychiatric conditions?",
+  "Do you have a history of heavy alcohol use?",
+  "Does the movement stop when you try to move the limb intentionally?",
+  "Do you feel confused or disoriented?",
+  "Have you had a fever recently?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "medication and vaccination history",
+  "blood glucose",
+  "brain MRI with contrast",
+  "FDG-PET brain",
+  "lumbar puncture / CSF",
+  "trial of immunotherapy"
+ ],
+ "results": [
+  "1. medication and vaccination history: second dose of the Pfizer-BioNTech COVID-19 vaccine 21 days after the first; symptoms began acutely afterwards",
+  "2. blood glucose: NORMAL - no diabetes and no hyperglycaemia",
+  "3. brain MRI with contrast: no lesion and no abnormal signal in the basal ganglia",
+  "4. FDG-PET brain: INCREASED right putamen fixation compared with the left; NORMALISED after corticosteroids, mirroring the clinical course",
+  "5. lumbar puncture / CSF: intrathecal immunoglobulin synthesis with oligoclonal bands; otherwise normal",
+  "6. trial of immunotherapy: five days of intravenous corticosteroids with significant improvement; he could sit in a chair and start physiotherapy ten days later"
+ ],
+ "dx_raw": "DIAGNOSIS: Autoimmune basal ganglia encephalitis caused by COVID-19 vaccination\n\nNon-ketotic hyperglycemic hemichorea\nIschemic stroke\nParaneoplastic chorea",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Autoimmune basal ganglia encephalitis caused by COVID-19 vaccination",
+ "decisive_served": [
+  "medication and vaccination history",
+  "blood glucose",
+  "brain MRI with contrast",
+  "FDG-PET brain",
+  "lumbar puncture / CSF",
+  "trial of immunotherapy"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2076,
+   "total_tokens": 10774,
+   "cost": 0.00157564,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00157564,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00070584
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1911,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9231,
+   "completion_tokens": 3351,
+   "total_tokens": 12582,
+   "cost": 0.00206244,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00206244,
+    "upstream_inference_prompt_cost": 0.0009231,
+    "upstream_inference_completions_cost": 0.00113934
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3337,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 169.7
+}

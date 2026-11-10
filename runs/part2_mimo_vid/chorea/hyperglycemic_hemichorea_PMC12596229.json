@@ -1,0 +1,181 @@
+{
+ "questions": [
+  "Can you stop the movement of your leg if you want to?",
+  "Do you have an uncomfortable feeling in your legs that is relieved by moving them?",
+  "Are you feeling anxious or nervous right now?",
+  "Is this the first time this has happened?",
+  "Does this movement occur only in your left leg?",
+  "Are you currently in pain?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Detailed neurological examination (tone, reflexes, coordination, other movement abnormalities)",
+  "Complete medication review (prescription and over-the-counter drugs)",
+  "Thyroid function tests",
+  "Serum electrolytes, calcium, and magnesium",
+  "Fasting glucose and HbA1c",
+  "Video-EEG monitoring during the movements",
+  "Movement disorder specialist consultation"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "medication and vaccination history",
+  "thyroid function (TSH, free T4)",
+  "TSH, free T4 and free T3",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "blood glucose",
+  "HbA1c",
+  "EEG"
+ ],
+ "results": [
+  "1. Detailed neurological examination (tone, reflexes, coordination, other movement abnormalities)",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: reduced tone in the left limbs",
+  "     limb strength (MRC) examination: 5/5 throughout",
+  "     deep tendon reflexes and plantar responses: normal reflexes and flexor plantar responses",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): left-sided choreiform and ballistic movements; otherwise normal",
+  "     posture and pull test: left-sided choreiform and ballistic movements; stable on pull test",
+  "     fundoscopy: normal",
+  "2. Complete medication review (prescription and over-the-counter drugs)",
+  "     medication and vaccination history: nothing relevant",
+  "3. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH, free T4 and free T3: normal",
+  "4. Serum electrolytes, calcium, and magnesium",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "5. Fasting glucose and HbA1c",
+  "     blood glucose and HbA1c: glucose 30.63 mmol/L (551.3 mg/dL); markedly elevated HbA1c",
+  "     blood glucose: 30.63 mmol/L (551.3 mg/dL) with glycosuria and NO ketonuria",
+  "     HbA1c: very high on admission; 5.73% at first follow-up once glucose was controlled",
+  "6. Video-EEG monitoring during the movements",
+  "     EEG: normal",
+  "7. Movement disorder specialist consultation",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperglycemia-induced hemichorea-hemiballismus (non-ketotic hyperglycemia)\n\nDifferential:\nNew-onset Type 1 diabetes presenting with hyperglycemic hyperosmolar state\nAutoimmune (anti-NMDA receptor) encephalitis\nStructural lesion (stroke or vascular malformation) affecting the contralateral basal ganglia",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Detailed neurological examination (tone, reflexes, coordination, other movement abnormalities)\n2. Complete medication review (prescription and over-the-counter drugs)\n3. Thyroid function tests\n4. Serum electrolytes, calcium, and magnesium\n5. Fasting glucose and HbA1c\n6. Video-EEG monitoring during the movements\n7. Movement disorder specialist consultation",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperglycemia-induced hemichorea-hemiballismus (non-ketotic hyperglycemia)",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8639,
+   "completion_tokens": 1912,
+   "total_tokens": 10551,
+   "cost": 0.0005681928,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8576,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005681928,
+    "upstream_inference_prompt_cost": 3.28328e-05,
+    "upstream_inference_completions_cost": 0.00053536
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1834,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8966,
+   "completion_tokens": 512,
+   "total_tokens": 9478,
+   "cost": 0.0002219728,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8576,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002219728,
+    "upstream_inference_prompt_cost": 7.86128e-05,
+    "upstream_inference_completions_cost": 0.00014336
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 431,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9513,
+   "completion_tokens": 1068,
+   "total_tokens": 10581,
+   "cost": 0.000401548,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8960,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000401548,
+    "upstream_inference_prompt_cost": 0.000102508,
+    "upstream_inference_completions_cost": 0.00029904
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 981,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hyperglycemic_hemichorea_PMC12596229.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 53.4
+}

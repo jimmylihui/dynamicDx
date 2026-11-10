@@ -1,0 +1,141 @@
+{
+ "questions": [
+  "Did these walking or hand movements begin suddenly?",
+  "Do you have weakness or numbness on one side of your body?",
+  "Has one side of your face drooped?",
+  "Have you had trouble speaking or understanding speech?",
+  "Have you had a sudden change in your vision?",
+  "Have you had a severe or unusual headache?",
+  "Have you felt dizzy or lost your balance?",
+  "Have you fainted or lost consciousness?",
+  "Have you had a seizure or uncontrolled shaking?",
+  "Have you fallen recently?",
+  "Have you had trouble controlling your arms or legs?",
+  "Have you noticed tremors or involuntary movements when you are resting?",
+  "Do these movements improve when you are distracted?",
+  "Do you have pain in your back, neck, hips, or legs?",
+  "Do you have difficulty starting or stopping your walking?",
+  "Have you had fever or a recent infection?",
+  "Have you recently started, stopped, or changed any medications?",
+  "Have you taken any alcohol, recreational drugs, or sedating medication recently?",
+  "Do you have diabetes?",
+  "Do you have a history of stroke or other neurologic disease?",
+  "Do you have chest pain or shortness of breath?",
+  "Have you had new difficulty swallowing or breathing?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [],
+ "served": [
+  "nerve conduction studies / EMG",
+  "EEG",
+  "somatosensory evoked potentials",
+  "SARS-CoV-2 testing"
+ ],
+ "results": [
+  "1. nerve conduction studies / EMG: rhythmic bursts in both hands, synchronised with the visible jerks",
+  "2. EEG: no abnormality, and no EEG-EMG correlation on video-EEG - the myoclonus is subcortical",
+  "3. somatosensory evoked potentials: NO giant SSEP - argues against a cortical origin",
+  "4. SARS-CoV-2 testing: recent COVID-19 infection"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-infectious subcortical myoclonus associated with recent SARS-CoV-2 (COVID-19) infection\n\nAlternative 1: Functional (psychogenic) myoclonus\n\nAlternative 2: Epileptic cortical myoclonus\n\nAlternative 3: Toxic-metabolic or medication-induced myoclonus",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Post-infectious subcortical myoclonus associated with recent SARS-CoV-2 (COVID-19) infection",
+ "decisive_served": [
+  "nerve conduction studies / EMG",
+  "EEG",
+  "somatosensory evoked potentials",
+  "SARS-CoV-2 testing"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 11820,
+   "completion_tokens": 527,
+   "total_tokens": 12347,
+   "cost": 0.00043467,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 11817,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00043467,
+    "upstream_inference_prompt_cost": 0.00011847,
+    "upstream_inference_completions_cost": 0.0003162
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 254,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 12651,
+   "completion_tokens": 311,
+   "total_tokens": 12962,
+   "cost": 0.000408945,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 11817,
+    "cache_write_tokens": 831,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000408945,
+    "upstream_inference_prompt_cost": 0.000222345,
+    "upstream_inference_completions_cost": 0.0001866
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 232,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "moderate_postinfectious_millerfisher_PMC13224678.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 23.9
+}

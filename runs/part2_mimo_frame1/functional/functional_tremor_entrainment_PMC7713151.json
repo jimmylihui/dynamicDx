@@ -1,0 +1,160 @@
+{
+ "questions": [
+  "Do you notice shaking or trembling in your hands?",
+  "Does the shaking happen more when your hands are resting or when you are using them?",
+  "Has the shaking been getting progressively worse over time?",
+  "Do you feel any stiffness in your arms or legs?",
+  "Have you noticed your movements becoming slower?",
+  "Does anyone in your family have a similar shaking condition?",
+  "Have you started any new medications recently?",
+  "Do you have trouble with your balance or walking?",
+  "Do you have any tremor in your head or voice?",
+  "Do your symptoms improve after you take a dose of medication if you are on any?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Detailed tremor characterization (observe at rest, during posture holding, and during action)",
+  "Thyroid function tests",
+  "Serum glucose",
+  "Serum calcium",
+  "Ethanol challenge test (observe tremor response to a small dose of alcohol)",
+  "Spiral drawing test"
+ ],
+ "served": [
+  "TSH / free T4",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "serum calcium, magnesium and phosphate"
+ ],
+ "results": [
+  "1. Detailed tremor characterization (observe at rest, during posture holding, and during action)",
+  "     not performed / not available",
+  "2. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "3. Serum glucose",
+  "     blood glucose and HbA1c: normal",
+  "     glucose / HbA1c: normal",
+  "4. Serum calcium",
+  "     serum calcium, magnesium and phosphate: normal",
+  "5. Ethanol challenge test (observe tremor response to a small dose of alcohol)",
+  "     not performed / not available",
+  "6. Spiral drawing test",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Essential tremor\n\n1. Enhanced physiological tremor\n2. Early Parkinson's disease\n3. Dystonic tremor",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "Based on the history (bilateral hand tremor, non-progressive, no parkinsonian features), I would order:\n\n1. Detailed tremor characterization (observe at rest, during posture holding, and during action)\n2. Thyroid function tests\n3. Serum glucose\n4. Serum calcium\n5. Ethanol challenge test (observe tremor response to a small dose of alcohol)\n6. Spiral drawing test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Essential tremor",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 528,
+   "completion_tokens": 595,
+   "total_tokens": 1123,
+   "cost": 0.0002141776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002141776,
+    "upstream_inference_prompt_cost": 4.75776e-05,
+    "upstream_inference_completions_cost": 0.0001666
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 458,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 995,
+   "completion_tokens": 526,
+   "total_tokens": 1521,
+   "cost": 0.0002602376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002602376,
+    "upstream_inference_prompt_cost": 0.0001129576,
+    "upstream_inference_completions_cost": 0.00014728
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 440,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1298,
+   "completion_tokens": 322,
+   "total_tokens": 1620,
+   "cost": 0.0002455376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002455376,
+    "upstream_inference_prompt_cost": 0.0001553776,
+    "upstream_inference_completions_cost": 9.016e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 289,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 93.2
+}

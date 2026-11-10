@@ -1,0 +1,146 @@
+{
+ "questions": [
+  "\"Do the movements stop or decrease when you try to use the hand?\"",
+  "\"Do you have any slowness or stiffness in the right arm?\"",
+  "\"Is there a tremor in the head or voice?\"",
+  "\"Do the movements improve with alcohol consumption?\"",
+  "\"Is there a family history of similar movements?\"",
+  "\"Did the movements start suddenly or gradually?\"",
+  "\"Have you taken any new medications recently?\"",
+  "\"Do the movements stop completely during sleep?\""
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Brain MRI with contrast",
+  "Serum ceruloplasmin and copper studies",
+  "Brain FDG-PET scan",
+  "EMG with surface electrodes of affected limb muscles"
+ ],
+ "served": [
+  "brain MRI with contrast",
+  "copper / caeruloplasmin",
+  "FDG-PET brain"
+ ],
+ "results": [
+  "1. Brain MRI with contrast",
+  "     brain MRI with contrast: lesions in the LENTIFORM NUCLEUS (50%), insula (35.7%), caudate (14.3%) and thalamus (14.3%); cortical in 35.7%, deep in 35.7%, both in 28.6%",
+  "2. Serum ceruloplasmin and copper studies",
+  "     copper / caeruloplasmin: normal",
+  "3. Brain FDG-PET scan",
+  "     FDG-PET brain: symmetric striatal metabolism",
+  "4. EMG with surface electrodes of affected limb muscles",
+  "     not performed / not available"
+ ],
+ "dx_raw": "**DIAGNOSIS: Hemidystonia secondary to basal ganglia lesion (likely vascular)**\n\n1. Hemichorea from subthalamic or striatal infarct\n2. Hemiballismus from basal ganglia lesion\n3. Functional movement disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. **Brain MRI with contrast**\n2. **Serum ceruloplasmin and copper studies**\n3. **Brain FDG-PET scan**\n4. **EMG with surface electrodes of affected limb muscles**",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hemidystonia secondary to basal ganglia lesion (likely vascular)**",
+ "decisive_served": [
+  "brain MRI with contrast"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 479,
+   "completion_tokens": 3805,
+   "total_tokens": 4284,
+   "cost": 0.0011061176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011061176,
+    "upstream_inference_prompt_cost": 4.07176e-05,
+    "upstream_inference_completions_cost": 0.0010654
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3698,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 874,
+   "completion_tokens": 733,
+   "total_tokens": 1607,
+   "cost": 0.0002661344,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002661344,
+    "upstream_inference_prompt_cost": 6.08944e-05,
+    "upstream_inference_completions_cost": 0.00020524
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 685,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1157,
+   "completion_tokens": 5965,
+   "total_tokens": 7122,
+   "cost": 0.0017180296,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 832,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0017180296,
+    "upstream_inference_prompt_cost": 4.78296e-05,
+    "upstream_inference_completions_cost": 0.0016702
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5907,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 165.5
+}

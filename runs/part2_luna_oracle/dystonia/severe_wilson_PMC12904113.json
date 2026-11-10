@@ -1,0 +1,137 @@
+{
+ "questions": [
+  "Did these abnormal movements or postures begin during childhood?",
+  "Have they progressively worsened over time?",
+  "Do your muscles involuntarily stiffen, twist, or pull your arms, neck, or trunk into abnormal positions?",
+  "Do you have difficulty walking or maintaining your balance?",
+  "Have you developed weakness in your arms or legs?",
+  "Do you have difficulty speaking or being understood?",
+  "Do you have difficulty swallowing food or liquids?",
+  "Do you ever choke or cough while eating or drinking?",
+  "Have you had seizures or episodes of loss of consciousness?",
+  "Have you noticed changes in your memory, concentration, mood, or behavior?",
+  "Have you had yellowing of your eyes or skin, dark urine, or unusually pale stools?",
+  "Have you had abdominal swelling or persistent abdominal pain?",
+  "Has anyone in your family had similar movements, unexplained liver disease, or early neurologic disability?",
+  "Did you have complications before or around the time of your birth?",
+  "Did you have delayed development or difficulty walking as a young child?",
+  "Have you had a serious head injury, brain infection, or severe illness before these symptoms began?",
+  "Have you taken antipsychotic, anti-nausea, or other medicines before these symptoms started?",
+  "Have you used recreational drugs, heavy metals, or other toxic substances?",
+  "Do these movements improve when you are asleep?",
+  "Do you have numbness, loss of sensation, or problems controlling your bladder or bowels?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "dystonia gene panel",
+  "lysosomal enzyme assay (beta-galactosidase, hexosaminidase)"
+ ],
+ "results": [
+  "1. slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "2. copper / caeruloplasmin / 24 h urinary copper: NORMAL - excludes Wilson disease",
+  "3. dystonia gene panel: biallelic GLB1 variants",
+  "4. lysosomal enzyme assay (beta-galactosidase, hexosaminidase): REDUCED beta-galactosidase, with 5-10% residual activity - type-III GM1 gangliosidosis"
+ ],
+ "dx_raw": "DIAGNOSIS: Type III (juvenile/adult-onset, chronic) GM1 gangliosidosis caused by biallelic pathogenic GLB1 variants resulting in lysosomal β-galactosidase deficiency.\n\nAlternative: Hereditary isolated dystonia due to another dystonia-associated gene\n\nAlternative: Neurodegeneration with brain iron accumulation (NBIA)\n\nAlternative: Wilson disease (effectively excluded by normal copper studies and absent Kayser–Fleischer rings)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Type III (juvenile/adult-onset, chronic) GM1 gangliosidosis caused by biallelic pathogenic GLB1 variants resulting in lysosomal β-galactosidase deficiency.",
+ "decisive_served": [
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "dystonia gene panel",
+  "lysosomal enzyme assay (beta-galactosidase, hexosaminidase)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 584,
+   "total_tokens": 6260,
+   "cost": 0.00040743,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00040743,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0003504
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 263,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6606,
+   "completion_tokens": 289,
+   "total_tokens": 6895,
+   "cost": 0.00034668,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 930,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00034668,
+    "upstream_inference_prompt_cost": 0.00017328,
+    "upstream_inference_completions_cost": 0.0001734
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 186,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_PMC12904113.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 14.8
+}

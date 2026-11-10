@@ -1,0 +1,174 @@
+{
+ "questions": [
+  "Did the reason for your head bandages involve a traumatic injury or accident?",
+  "Was a burn the cause of your head dressings?",
+  "Did you have recent surgery on your head or face?",
+  "Is this related to a skin cancer (such as on your scalp)?",
+  "Are you currently experiencing pain?",
+  "Can you see clearly out of both eyes?",
+  "Can you hear normally in both ears?",
+  "Do you have any numbness or weakness in your face or body?",
+  "Do you have any significant past medical history (e.g., diabetes, bleeding disorder, cancer)?",
+  "Are you feeling nauseous, dizzy, or have you vomited?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Skin biopsy (H&E) from edge of an affected area on the scalp or forehead",
+  "Direct immunofluorescence biopsy of perilesional skin",
+  "Full blood count with differential and eosinophil count",
+  "Comprehensive metabolic panel including liver function tests",
+  "Erythrocyte sedimentation rate and C-reactive protein",
+  "Slit-lamp examination of both eyes",
+  "Pure-tone audiometry",
+  "Serum IgE level",
+  "Peripheral blood smear",
+  "Review of medication list and recent drug exposures (chart review)"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "ESR and CRP",
+  "medication and anaesthetic exposure"
+ ],
+ "results": [
+  "1. Skin biopsy (H&E) from edge of an affected area on the scalp or forehead",
+  "     not performed / not available",
+  "2. Direct immunofluorescence biopsy of perilesional skin",
+  "     not performed / not available",
+  "3. Full blood count with differential and eosinophil count",
+  "     not performed / not available",
+  "4. Comprehensive metabolic panel including liver function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "5. Erythrocyte sedimentation rate and C-reactive protein",
+  "     ESR and CRP: normal",
+  "6. Slit-lamp examination of both eyes",
+  "     not performed / not available",
+  "7. Pure-tone audiometry",
+  "     not performed / not available",
+  "8. Serum IgE level",
+  "     not performed / not available",
+  "9. Peripheral blood smear",
+  "     not performed / not available",
+  "10. Review of medication list and recent drug exposures (chart review)",
+  "     medication and anaesthetic exposure: nothing relevant"
+ ],
+ "dx_raw": "DIAGNOSIS: Severe atopic dermatitis (eczema) of the head, complicated by secondary bacterial superinfection and atopic keratoconjunctivitis, severe enough to warrant inpatient admission and intensive occlusive/wet-wrap topical therapy\n1. Pemphigus foliaceus\n2. Erythrodermic psoriasis with facial/scalp predominance and secondary eye involvement\n3. Pemphigus vulgaris with ocular involvement",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Skin biopsy (H&E) from edge of an affected area on the scalp or forehead\n2. Direct immunofluorescence biopsy of perilesional skin\n3. Full blood count with differential and eosinophil count\n4. Comprehensive metabolic panel including liver function tests\n5. Erythrocyte sedimentation rate and C-reactive protein\n6. Slit-lamp examination of both eyes\n7. Pure-tone audiometry\n8. Serum IgE level\n9. Peripheral blood smear\n10. Review of medication list and recent drug exposures (chart review)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Severe atopic dermatitis (eczema) of the head, complicated by secondary bacterial superinfection and atopic keratoconjunctivitis, severe enough to warrant inpatient admission and intensive occlusive/wet-wrap topical therapy",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 498,
+   "completion_tokens": 881,
+   "total_tokens": 1379,
+   "cost": 0.00117924,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00117924,
+    "upstream_inference_prompt_cost": 0.00012204,
+    "upstream_inference_completions_cost": 0.0010572
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 804,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 969,
+   "completion_tokens": 899,
+   "total_tokens": 1868,
+   "cost": 0.0012807,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 370,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012807,
+    "upstream_inference_prompt_cost": 0.0002019,
+    "upstream_inference_completions_cost": 0.0010788
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 921,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1367,
+   "completion_tokens": 6640,
+   "total_tokens": 8007,
+   "cost": 0.00816642,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 882,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00816642,
+    "upstream_inference_prompt_cost": 0.00019842,
+    "upstream_inference_completions_cost": 0.007968
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7477,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 119.5
+}

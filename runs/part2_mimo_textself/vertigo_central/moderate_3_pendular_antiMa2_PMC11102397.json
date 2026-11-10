@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Did the eye problem start suddenly, within hours or days?",
+  "Is the pupil of your right eye larger than the pupil of your left eye?",
+  "Do you have pain, either behind the right eye or in your head?",
+  "Have you noticed any weakness or numbness on the left side of your body?",
+  "Do you have diabetes?",
+  "Have you ever had high blood pressure?",
+  "Has this eye problem happened to you before?",
+  "Is the eyelid drooping also present on your left side, even slightly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Thin-section MRI of the brain, orbits, and cavernous sinus with gadolinium contrast",
+  "MR angiography of the intracranial vessels",
+  "Serum acetylcholine receptor antibody level",
+  "Ice pack test of the right eyelid",
+  "CT of the chest with contrast"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI sella and orbits",
+  "CT / MR angiography (posterior circulation)",
+  "CT / MR angiography (circle of Willis)",
+  "anti-acetylcholine receptor antibodies"
+ ],
+ "results": [
+  "1. Thin-section MRI of the brain, orbits, and cavernous sinus with gadolinium contrast",
+  "     MRI brain with gadolinium: normal",
+  "     MRI sella and orbits: normal pituitary and orbits",
+  "2. MR angiography of the intracranial vessels",
+  "     CT / MR angiography (posterior circulation): normal",
+  "     CT / MR angiography (circle of Willis): normal / non-contributory",
+  "3. Serum acetylcholine receptor antibody level",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "4. Ice pack test of the right eyelid",
+  "     not performed / not available",
+  "5. CT of the chest with contrast",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Incomplete pupil-sparing right third cranial nerve palsy, likely microvascular ischemic etiology\n\nMuSK-antibody positive myasthenia gravis\n\nChronic progressive external ophthalmoplegia (mitochondrial myopathy)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Thin-section MRI of the brain, orbits, and cavernous sinus with gadolinium contrast\n2. MR angiography of the intracranial vessels\n3. Serum acetylcholine receptor antibody level\n4. Ice pack test of the right eyelid\n5. CT of the chest with contrast",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Incomplete pupil-sparing right third cranial nerve palsy, likely microvascular ischemic etiology",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 481,
+   "completion_tokens": 1027,
+   "total_tokens": 1508,
+   "cost": 0.0003285576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003285576,
+    "upstream_inference_prompt_cost": 4.09976e-05,
+    "upstream_inference_completions_cost": 0.00028756
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 911,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 894,
+   "completion_tokens": 975,
+   "total_tokens": 1869,
+   "cost": 0.0003366944,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003366944,
+    "upstream_inference_prompt_cost": 6.36944e-05,
+    "upstream_inference_completions_cost": 0.000273
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 908,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1197,
+   "completion_tokens": 1117,
+   "total_tokens": 2314,
+   "cost": 0.0003661896,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 832,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003661896,
+    "upstream_inference_prompt_cost": 5.34296e-05,
+    "upstream_inference_completions_cost": 0.00031276
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1058,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 81.7
+}

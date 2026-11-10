@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Are you having difficulty breathing right now?",
+  "Are you having chest pain right now?",
+  "Is the chest pain severe?",
+  "Did the chest pain start suddenly?",
+  "Does the pain spread to your arm, shoulder, back, neck, or jaw?",
+  "Are you feeling faint or about to pass out?",
+  "Have you actually fainted recently?",
+  "Are you having a fast, irregular, or pounding heartbeat?",
+  "Have you recently undergone surgery?",
+  "Was the surgery on your heart or chest?",
+  "Was the surgery performed within the past month?",
+  "Is the dressing on your chest covering a surgical wound?",
+  "Has the wound become increasingly painful, red, swollen, or warm?",
+  "Has there been bleeding or fluid draining from the wound?",
+  "Have you had a fever or chills?",
+  "Have you had a cough?",
+  "Are you coughing up blood?",
+  "Do you have a history of heart disease?",
+  "Have you ever had a heart attack?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Do you smoke or use tobacco?",
+  "Are you taking blood-thinning medication?",
+  "Have you recently had a fall, blow, or other injury to your chest?",
+  "Are you experiencing unusual weakness, numbness, or difficulty speaking?",
+  "Have you had any new swelling or pain in either leg?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "yes",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "trigger or provoking activity",
+  "medication and anaesthetic exposure",
+  "interictal EEG",
+  "antiseizure medication trial"
+ ],
+ "results": [
+  "1. trigger or provoking activity: action-induced and restricted to a few body segments, suggesting cortical-reflex myoclonus",
+  "2. medication and anaesthetic exposure: propofol and thiopentone for coronary artery bypass grafting with aortic valve replacement; jerks began 6 days later (day 3 in the second case)",
+  "3. interictal EEG: occasional OCCIPITAL SHARP WAVES only (normal in the second patient) - no ictal pattern",
+  "4. antiseizure medication trial: complete resolution within 4 days on clonazepam 0.25 mg twice daily and levetiracetam 500 mg twice daily, with no relapse on follow-up"
+ ],
+ "dx_raw": "DIAGNOSIS: Delayed-onset postoperative cortical-reflex myoclonus induced by anesthetic exposure (propofol/thiopentone) after CABG with aortic valve replacement\n\nALTERNATIVE: Postoperative epileptic myoclonus\n\nALTERNATIVE: Hypoxic–ischemic myoclonus after cardiac surgery\n\nALTERNATIVE: Metabolic or medication-induced myoclonus",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Delayed-onset postoperative cortical-reflex myoclonus induced by anesthetic exposure (propofol/thiopentone) after CABG with aortic valve replacement",
+ "decisive_served": [
+  "trigger or provoking activity",
+  "medication and anaesthetic exposure",
+  "interictal EEG",
+  "antiseizure medication trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7532,
+   "completion_tokens": 814,
+   "total_tokens": 8346,
+   "cost": 0.00056399,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7529,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00056399,
+    "upstream_inference_prompt_cost": 7.559e-05,
+    "upstream_inference_completions_cost": 0.0004884
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 8484,
+   "completion_tokens": 267,
+   "total_tokens": 8751,
+   "cost": 0.00035479,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7529,
+    "cache_write_tokens": 952,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00035479,
+    "upstream_inference_prompt_cost": 0.00019459,
+    "upstream_inference_completions_cost": 0.0001602
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 177,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 19.8
+}

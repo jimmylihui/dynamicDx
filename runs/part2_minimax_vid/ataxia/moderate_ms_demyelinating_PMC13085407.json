@@ -1,0 +1,169 @@
+{
+ "questions": [
+  "Are you having trouble walking?",
+  "Do you have weakness in your legs?",
+  "Do you have pain in your legs when you walk?",
+  "Do you have numbness or tingling in your legs?",
+  "Do you have pain in your lower back?",
+  "Do you have a history of Parkinson's disease?",
+  "Do you have a history of stroke?",
+  "Did your walking problems start suddenly?",
+  "Do you feel dizzy when you stand up?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Have you had any recent falls?",
+  "Do you have chest pain when you exert yourself?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI brain with diffusion-weighted imaging",
+  "12-lead ECG",
+  "Transthoracic echocardiogram",
+  "Fasting lipid profile",
+  "HbA1c",
+  "Serum vitamin B12 level"
+ ],
+ "served": [
+  "brain MRI",
+  "MRI diffusion-weighted sequences",
+  "glucose / HbA1c",
+  "blood glucose and HbA1c",
+  "vitamin B12 / folate",
+  "vitamin B12 with methylmalonic acid"
+ ],
+ "results": [
+  "1. MRI brain with diffusion-weighted imaging",
+  "     brain MRI: cerebellar atrophy at one year; serial imaging over five years shows progressive ISOLATED cerebellar atrophy with no supratentorial abnormality",
+  "     MRI diffusion-weighted sequences: normal",
+  "2. 12-lead ECG",
+  "     not performed / not available",
+  "3. Transthoracic echocardiogram",
+  "     not performed / not available",
+  "4. Fasting lipid profile",
+  "     not performed / not available",
+  "5. HbA1c",
+  "     glucose / HbA1c: normal",
+  "     blood glucose and HbA1c: normal",
+  "6. Serum vitamin B12 level",
+  "     vitamin B12 / folate: normal",
+  "     vitamin B12 with methylmalonic acid: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Hereditary spinocerebellar ataxia (autosomal dominant, SCA subtype) presenting as progressive isolated cerebellar degeneration\n\nAlternatives:\n1. Friedreich's ataxia (despite typical additional spinal cord and systemic features)\n2. Ataxia-telangiectasia (though typically with telangiectasias and immunodeficiency)\n3. Idiopathic late-onset cerebellar ataxia",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI brain with diffusion-weighted imaging\n2. 12-lead ECG\n3. Transthoracic echocardiogram\n4. Fasting lipid profile\n5. HbA1c\n6. Serum vitamin B12 level",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hereditary spinocerebellar ataxia (autosomal dominant, SCA subtype) presenting as progressive isolated cerebellar degeneration",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 5939,
+   "total_tokens": 26377,
+   "cost": 0.01323084,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01323084,
+    "upstream_inference_prompt_cost": 0.00610404,
+    "upstream_inference_completions_cost": 0.0071268
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6210,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 20912,
+   "completion_tokens": 1529,
+   "total_tokens": 22441,
+   "cost": 0.00322728,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20338,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00322728,
+    "upstream_inference_prompt_cost": 0.00139248,
+    "upstream_inference_completions_cost": 0.0018348
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1639,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 21198,
+   "completion_tokens": 869,
+   "total_tokens": 22067,
+   "cost": 0.0023982,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20850,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0023982,
+    "upstream_inference_prompt_cost": 0.0013554,
+    "upstream_inference_completions_cost": 0.0010428
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 927,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_ms_demyelinating_PMC13085407.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 113.6
+}

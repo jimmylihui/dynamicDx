@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Did this issue start suddenly?",
+  "Have you had a fever recently?",
+  "Is the affected area swollen or red?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside neurological examination of the lower extremities including motor strength, sensory testing, and deep tendon reflexes",
+  "Complete blood count with differential",
+  "Comprehensive metabolic panel",
+  "Erythrocyte sedimentation rate and C-reactive protein",
+  "Magnetic resonance imaging of the lumbar spine"
+ ],
+ "served": [
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose",
+  "inflammatory markers (ESR, CRP)"
+ ],
+ "results": [
+  "1. Bedside neurological examination of the lower extremities including motor strength, sensory testing, and deep tendon reflexes",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "2. Complete blood count with differential",
+  "     full blood count: normal",
+  "3. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose: NORMAL - no diabetes and no hyperglycaemia",
+  "4. Erythrocyte sedimentation rate and C-reactive protein",
+  "     inflammatory markers (ESR, CRP): normal",
+  "5. Magnetic resonance imaging of the lumbar spine",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological disorder (conversion disorder) presenting with apparent lower limb weakness\nAlternative diagnoses: Malingering\nFactitious disorder imposed on self",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside neurological examination of the lower extremities including motor strength, sensory testing, and deep tendon reflexes\n2. Complete blood count with differential\n3. Comprehensive metabolic panel\n4. Erythrocyte sedimentation rate and C-reactive protein\n5. Magnetic resonance imaging of the lumbar spine",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional neurological disorder (conversion disorder) presenting with apparent lower limb weakness",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 296,
+   "completion_tokens": 40,
+   "total_tokens": 336,
+   "cost": 6.32e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.32e-05,
+    "upstream_inference_prompt_cost": 4.44e-05,
+    "upstream_inference_completions_cost": 1.88e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 545,
+   "completion_tokens": 65,
+   "total_tokens": 610,
+   "cost": 0.0001123,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001123,
+    "upstream_inference_prompt_cost": 8.175e-05,
+    "upstream_inference_completions_cost": 3.055e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 885,
+   "completion_tokens": 34,
+   "total_tokens": 919,
+   "cost": 9.7274e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.7274e-05,
+    "upstream_inference_prompt_cost": 8.1294e-05,
+    "upstream_inference_completions_cost": 1.598e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.5
+}

@@ -1,0 +1,134 @@
+{
+ "questions": [
+  "Did your difficulty walking begin suddenly, within the last few days?",
+  "Are you using the crutches because of pain in your legs or hips?",
+  "Do you have weakness in either leg?",
+  "Is one leg significantly weaker than the other?",
+  "Do you have numbness or tingling in either leg?",
+  "Have you recently fallen or injured your back, hips, or legs?",
+  "Have you had surgery on your hips, legs, or spine recently?",
+  "Have you been told not to put weight on either leg?",
+  "Has your walking difficulty been progressively worsening?",
+  "Do you have back pain that radiates into either leg?",
+  "Do you have difficulty controlling your urine or bowel movements?",
+  "Have you had dizziness, loss of balance, or fainting when walking?",
+  "Have you had a stroke or other neurologic illness in the past?",
+  "Were you able to walk independently before this problem began?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "walking backward",
+  "running",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "trial of benzodiazepine (diazepam)",
+  "anti-GAD65 antibodies",
+  "needle EMG (continuous motor unit activity at rest)"
+ ],
+ "results": [
+  "1. walking backward: the slow, guarded, wide-based pattern PERSISTS",
+  "2. running: cannot run; the pattern does not normalise",
+  "3. gait with a distracting or automatic task (dancing, counting backwards): no change - the gait is not distractible",
+  "4. muscle tone (spasticity, rigidity, paratonia): genuine axial and lower-limb rigidity on passive movement",
+  "5. trial of benzodiazepine (diazepam): clear improvement in stiffness and in the gait",
+  "6. anti-GAD65 antibodies: MARKEDLY ELEVATED (high-titre, typically >2000 U/mL) - diagnostic in this clinical context",
+  "7. needle EMG (continuous motor unit activity at rest): CONTINUOUS motor unit activity at rest in agonist and antagonist simultaneously, abolished by diazepam"
+ ],
+ "dx_raw": "DIAGNOSIS: Classic anti-GAD65–positive autoimmune stiff-person syndrome (stiff-person disease)\n\nALTERNATIVE: Progressive encephalomyelitis with rigidity and myoclonus (PERM)\n\nALTERNATIVE: Stiff-limb syndrome, an SPS-spectrum disorder\n\nALTERNATIVE: Functional neurological disorder with gait disturbance",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Classic anti-GAD65–positive autoimmune stiff-person syndrome (stiff-person disease)",
+ "decisive_served": [
+  "walking backward",
+  "running",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "trial of benzodiazepine (diazepam)",
+  "anti-GAD65 antibodies",
+  "needle EMG (continuous motor unit activity at rest)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7532,
+   "completion_tokens": 547,
+   "total_tokens": 8079,
+   "cost": 0.00040379,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7529,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00040379,
+    "upstream_inference_prompt_cost": 7.559e-05,
+    "upstream_inference_completions_cost": 0.0003282
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 345,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 8263,
+   "completion_tokens": 155,
+   "total_tokens": 8418,
+   "cost": 0.000259965,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7529,
+    "cache_write_tokens": 731,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000259965,
+    "upstream_inference_prompt_cost": 0.000166965,
+    "upstream_inference_completions_cost": 9.3e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 81,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 17.0
+}

@@ -1,0 +1,310 @@
+{
+ "questions": [
+  "Did your symptoms begin suddenly?",
+  "Did you have a severe headache immediately before they began?",
+  "Have you recently suffered a fall or other head injury?",
+  "Do you currently have weakness or numbness on one side of your body?",
+  "Have you had a seizure or loss of consciousness?",
+  "Have you had seizures before this episode?",
+  "Did anyone witness rhythmic jerking of your arms or legs?",
+  "Did you bite your tongue or lose bladder control during the episode?",
+  "Were you confused or unusually sleepy for more than 10 minutes afterward?",
+  "Have you recently stopped drinking alcohol or taking a sedative medication?",
+  "Do you have diabetes or take insulin or other glucose-lowering medication?",
+  "Have you had a fever or symptoms of an infection recently?",
+  "Did you completely lose awareness during the episode?",
+  "Did you recover your normal awareness within a few minutes?",
+  "Did you feel lightheaded, nauseated, or sweaty immediately beforehand?",
+  "Did the episode occur while you were standing or shortly after standing?",
+  "Did you have chest pain or palpitations immediately beforehand?",
+  "Did you faint during physical exertion?",
+  "Do you have a history of heart disease or abnormal heart rhythm?",
+  "Have you ever had brief episodes of staring or unresponsiveness lasting seconds, with immediate recovery?",
+  "Have you ever had sudden, brief jerks of your arms or shoulders, especially shortly after waking?",
+  "Have you ever had a generalized convulsion with stiffening and rhythmic jerking?",
+  "Did your first similar episode occur during adolescence?",
+  "Are these episodes more likely when you are sleep-deprived?",
+  "Do flashing lights or rapidly changing visual patterns trigger similar episodes?",
+  "Does anyone in your biological family have epilepsy or unexplained seizures?",
+  "During the episode, were your eyes tightly closed?",
+  "Did the episode last longer than five minutes?",
+  "Could you respond to people or follow commands during any part of the episode?",
+  "Did the episode stop when someone reassured you or distracted you?",
+  "Have you ever been diagnosed with anxiety, depression, post-traumatic stress disorder, or another psychological condition?",
+  "Have you recently experienced major emotional stress or trauma?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "yes",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Point-of-care capillary blood glucose",
+  "12-lead electrocardiogram",
+  "Noncontrast CT scan of the head",
+  "Routine electroencephalogram (EEG) with simultaneous video monitoring",
+  "Brain MRI with epilepsy protocol, including T1-, T2-, FLAIR-, and diffusion-weighted sequences",
+  "Serum sodium, calcium, magnesium, renal function, and liver function tests",
+  "Serum antiseizure medication and recreational drug toxicology screen before treatment",
+  "Prolonged inpatient video-EEG monitoring, including wakefulness, sleep, and hyperventilation, to capture a typical episode",
+  "Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, cultures, and autoimmune/paraneoplastic encephalitis panel"
+ ],
+ "served": [
+  "CT head",
+  "interictal EEG",
+  "MRI diffusion-weighted sequences",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "liver and renal function",
+  "toxicology screen (urine and serum)",
+  "toxicology and drug levels",
+  "video-EEG monitoring of a typical event",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel"
+ ],
+ "results": [
+  "R1 ASK Did your symptoms begin suddenly?; Did you have a severe headache immediately before they began?; Have you recently suffered a fall or other head injury?; Do you currently have weakness or numbness on one side of your body?; Have you had a seizure or loss of consciousness? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R2 ASK Have you had seizures before this episode?; Did anyone witness rhythmic jerking of your arms or legs?; Did you bite your tongue or lose bladder control during the episode?; Were you confused or unusually sleepy for more than 10 minutes afterward?; Have you recently stopped drinking alcohol or taking a sedative medication?; Do you have diabetes or take insulin or other glucose-lowering medication?; Have you had a fever or symptoms of an infection recently? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Did you completely lose awareness during the episode?; Did you recover your normal awareness within a few minutes?; Did you feel lightheaded, nauseated, or sweaty immediately beforehand?; Did the episode occur while you were standing or shortly after standing?; Did you have chest pain or palpitations immediately beforehand?; Did you faint during physical exertion?; Do you have a history of heart disease or abnormal heart rhythm? -> ['yes', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Point-of-care capillary blood glucose; 12-lead electrocardiogram; Noncontrast CT scan of the head; Routine electroencephalogram (EEG) with simultaneous video monitoring -> [[], [], ['CT head'], ['interictal EEG']]",
+  "R5 ASK Have you ever had brief episodes of staring or unresponsiveness lasting seconds, with immediate recovery?; Have you ever had sudden, brief jerks of your arms or shoulders, especially shortly after waking?; Have you ever had a generalized convulsion with stiffening and rhythmic jerking?; Did your first similar episode occur during adolescence?; Are these episodes more likely when you are sleep-deprived?; Do flashing lights or rapidly changing visual patterns trigger similar episodes?; Does anyone in your biological family have epilepsy or unexplained seizures? -> ['no', 'no', 'no', 'no', 'no', 'no', 'yes']",
+  "R6 ASK During the episode, were your eyes tightly closed?; Did the episode last longer than five minutes?; Could you respond to people or follow commands during any part of the episode?; Did the episode stop when someone reassured you or distracted you?; Have you ever been diagnosed with anxiety, depression, post-traumatic stress disorder, or another psychological condition?; Have you recently experienced major emotional stress or trauma? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R7 ORDER Brain MRI with epilepsy protocol, including T1-, T2-, FLAIR-, and diffusion-weighted sequences; Serum sodium, calcium, magnesium, renal function, and liver function tests; Serum antiseizure medication and recreational drug toxicology screen before treatment -> [['MRI diffusion-weighted sequences'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'serum calcium, magnesium and phosphate', 'liver and renal function'], ['toxicology screen (urine and serum)', 'toxicology and drug levels']]",
+  "R8 ORDER Prolonged inpatient video-EEG monitoring, including wakefulness, sleep, and hyperventilation, to capture a typical episode; Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, cultures, and autoimmune/paraneoplastic encephalitis panel -> [['interictal EEG', 'video-EEG monitoring of a typical event'], ['CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF culture and viral PCR', 'CSF autoimmune encephalitis panel']]",
+  "R9 DIAGNOSIS Genetic generalized epilepsy, specifically generalized epilepsy with generalized tonic–clonic seizures alone, producing asymmetric ictal body/head turning without a focal cerebral onset. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did your symptoms begin suddenly?",
+    "Did you have a severe headache immediately before they began?",
+    "Have you recently suffered a fall or other head injury?",
+    "Do you currently have weakness or numbness on one side of your body?",
+    "Have you had a seizure or loss of consciousness?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you had seizures before this episode?",
+    "Did anyone witness rhythmic jerking of your arms or legs?",
+    "Did you bite your tongue or lose bladder control during the episode?",
+    "Were you confused or unusually sleepy for more than 10 minutes afterward?",
+    "Have you recently stopped drinking alcohol or taking a sedative medication?",
+    "Do you have diabetes or take insulin or other glucose-lowering medication?",
+    "Have you had a fever or symptoms of an infection recently?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did you completely lose awareness during the episode?",
+    "Did you recover your normal awareness within a few minutes?",
+    "Did you feel lightheaded, nauseated, or sweaty immediately beforehand?",
+    "Did the episode occur while you were standing or shortly after standing?",
+    "Did you have chest pain or palpitations immediately beforehand?",
+    "Did you faint during physical exertion?",
+    "Do you have a history of heart disease or abnormal heart rhythm?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Point-of-care capillary blood glucose",
+    "12-lead electrocardiogram",
+    "Noncontrast CT scan of the head",
+    "Routine electroencephalogram (EEG) with simultaneous video monitoring"
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "CT head"
+    ],
+    [
+     "interictal EEG"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you ever had brief episodes of staring or unresponsiveness lasting seconds, with immediate recovery?",
+    "Have you ever had sudden, brief jerks of your arms or shoulders, especially shortly after waking?",
+    "Have you ever had a generalized convulsion with stiffening and rhythmic jerking?",
+    "Did your first similar episode occur during adolescence?",
+    "Are these episodes more likely when you are sleep-deprived?",
+    "Do flashing lights or rapidly changing visual patterns trigger similar episodes?",
+    "Does anyone in your biological family have epilepsy or unexplained seizures?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "During the episode, were your eyes tightly closed?",
+    "Did the episode last longer than five minutes?",
+    "Could you respond to people or follow commands during any part of the episode?",
+    "Did the episode stop when someone reassured you or distracted you?",
+    "Have you ever been diagnosed with anxiety, depression, post-traumatic stress disorder, or another psychological condition?",
+    "Have you recently experienced major emotional stress or trauma?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Brain MRI with epilepsy protocol, including T1-, T2-, FLAIR-, and diffusion-weighted sequences",
+    "Serum sodium, calcium, magnesium, renal function, and liver function tests",
+    "Serum antiseizure medication and recreational drug toxicology screen before treatment"
+   ],
+   "result": [
+    [
+     "MRI diffusion-weighted sequences"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests",
+     "serum calcium, magnesium and phosphate",
+     "liver and renal function"
+    ],
+    [
+     "toxicology screen (urine and serum)",
+     "toxicology and drug levels"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Prolonged inpatient video-EEG monitoring, including wakefulness, sleep, and hyperventilation, to capture a typical episode",
+    "Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, cultures, and autoimmune/paraneoplastic encephalitis panel"
+   ],
+   "result": [
+    [
+     "interictal EEG",
+     "video-EEG monitoring of a typical event"
+    ],
+    [
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF culture and viral PCR",
+     "CSF autoimmune encephalitis panel"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Genetic generalized epilepsy, specifically generalized epilepsy with generalized tonic–clonic seizures alone, producing asymmetric ictal body/head turning without a focal cerebral onset."
+  }
+ ],
+ "dx": "Genetic generalized epilepsy, specifically generalized epilepsy with generalized tonic–clonic seizures alone, producing asymmetric ictal body/head turning without a focal cerebral onset.",
+ "dx_raw": "DIAGNOSIS: Genetic generalized epilepsy, specifically generalized epilepsy with generalized tonic–clonic seizures alone, producing asymmetric ictal body/head turning without a focal cerebral onset.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.006,
+ "n_frames": 32,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 86.8
+}

@@ -1,0 +1,145 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Do you have pain in your right leg?",
+  "Do you feel weakness in your right leg?",
+  "Do you have numbness or tingling in your right leg?",
+  "Have you had a recent injury to your leg or back?",
+  "Have you had this since childhood?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Neurological examination of the lower limbs",
+  "Nerve conduction studies and electromyography of the right lower limb",
+  "MRI of the lumbar spine"
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "nerve conduction studies",
+  "needle EMG of the affected muscles",
+  "cervical and whole spine MRI"
+ ],
+ "results": [
+  "1. Neurological examination of the lower limbs",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "2. Nerve conduction studies and electromyography of the right lower limb",
+  "     nerve conduction studies: normal",
+  "     needle EMG of the affected muscles: not performed",
+  "3. MRI of the lumbar spine",
+  "     cervical and whole spine MRI: normal cord"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional gait disorder due to Functional Neurological Disorder\n\n1. L5 radiculopathy\n2. Common peroneal nerve palsy\n3. Peripheral neuropathy",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Neurological examination of the lower limbs\n2. Nerve conduction studies and electromyography of the right lower limb\n3. MRI of the lumbar spine",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional gait disorder due to Functional Neurological Disorder",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2103,
+   "total_tokens": 10801,
+   "cost": 0.00158482,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00158482,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00071502
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1919,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9010,
+   "completion_tokens": 1191,
+   "total_tokens": 10201,
+   "cost": 0.00130594,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00130594,
+    "upstream_inference_prompt_cost": 0.000901,
+    "upstream_inference_completions_cost": 0.00040494
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1133,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9259,
+   "completion_tokens": 2326,
+   "total_tokens": 11585,
+   "cost": 0.00171674,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00171674,
+    "upstream_inference_prompt_cost": 0.0009259,
+    "upstream_inference_completions_cost": 0.00079084
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2348,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_dopa_responsive_PMC9357509.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 189.1
+}

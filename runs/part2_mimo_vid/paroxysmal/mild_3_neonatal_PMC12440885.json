@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Did you hit your head?",
+  "Did you fall down?",
+  "Did you pass out?",
+  "Did you shake?",
+  "Did you throw up?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Formal interpretation of the continuous video EEG recording",
+  "Brain MRI with and without contrast",
+  "Complete blood count",
+  "Basic metabolic panel",
+  "Serum lactate",
+  "Serum ammonia",
+  "Urine organic acids"
+ ],
+ "served": [
+  "video-EEG monitoring of a typical event",
+  "MRI brain with gadolinium",
+  "brain MRI",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "serum ammonia",
+  "metabolic screen (tandem mass spectrometry, urine organic acids)"
+ ],
+ "results": [
+  "1. Formal interpretation of the continuous video EEG recording",
+  "     video-EEG monitoring of a typical event: eyelid myoclonia with absences - the Jeavons phenotype",
+  "2. Brain MRI with and without contrast",
+  "     MRI brain with gadolinium: punctate FLAIR hyperintensities in the local white matter of both frontal lobes, without enhancement",
+  "     brain MRI: punctate FLAIR hyperintensities in the local white matter of both frontal lobes",
+  "3. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "4. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "5. Serum lactate",
+  "     not performed / not available",
+  "6. Serum ammonia",
+  "     serum ammonia: normal",
+  "7. Urine organic acids",
+  "     metabolic screen (tandem mass spectrometry, urine organic acids): no abnormality"
+ ],
+ "dx_raw": "DIAGNOSIS: Jeavons syndrome (eyelid myoclonia with absences) - idiopathic generalized epilepsy\n\n1. Early-onset juvenile myoclonic epilepsy with prominent eyelid myoclonia\n2. Photosensitive childhood absence epilepsy with eyelid phenomena\n3. Progressive myoclonic epilepsy (mitochondrial or other) - less likely given normal metabolic screen",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Formal interpretation of the continuous video EEG recording\n2. Brain MRI with and without contrast\n3. Complete blood count\n4. Basic metabolic panel\n5. Serum lactate\n6. Serum ammonia\n7. Urine organic acids",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Jeavons syndrome (eyelid myoclonia with absences) - idiopathic generalized epilepsy",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8127,
+   "completion_tokens": 3281,
+   "total_tokens": 11408,
+   "cost": 0.0009500792,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8064,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009500792,
+    "upstream_inference_prompt_cost": 3.13992e-05,
+    "upstream_inference_completions_cost": 0.00091868
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3243,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8369,
+   "completion_tokens": 503,
+   "total_tokens": 8872,
+   "cost": 0.0002061192,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8064,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002061192,
+    "upstream_inference_prompt_cost": 6.52792e-05,
+    "upstream_inference_completions_cost": 0.00014084
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 451,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8699,
+   "completion_tokens": 558,
+   "total_tokens": 9257,
+   "cost": 0.000232596,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000232596,
+    "upstream_inference_prompt_cost": 7.6356e-05,
+    "upstream_inference_completions_cost": 0.00015624
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 473,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.6,
+ "video": "mild_3_neonatal_PMC12440885.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 81.4
+}

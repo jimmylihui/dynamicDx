@@ -1,0 +1,168 @@
+{
+ "questions": [
+  "Are these movements involuntary?",
+  "Do you have a family history of similar movements?",
+  "Have you noticed any changes in your mood or personality?",
+  "Do you have difficulty with your balance?",
+  "Have you taken antipsychotic medications?",
+  "Do you have any tremors in your hands?",
+  "Have you noticed any stiffness or rigidity in your muscles?",
+  "Have you experienced any cognitive decline or memory loss?",
+  "Have you had any recent head injuries or strokes?",
+  "Do you have any history of liver or kidney disease?",
+  "Have you had a recent sore throat or fever?",
+  "Do you have a history of diabetes?",
+  "Have you been diagnosed with any thyroid problems?",
+  "Have you noticed any new skin rashes or joint pain?",
+  "Have you had any recent changes in your weight or appetite?",
+  "Have you experienced any difficulty speaking or swallowing?",
+  "Are the movements primarily on one side of your body?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "yes"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Blood glucose level",
+  "MRI brain (T1 and T2 weighted)"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "blood glucose"
+ ],
+ "results": [
+  "R1 ASK Are these movements involuntary?; Do you have a family history of similar movements?; Have you noticed any changes in your mood or personality?; Do you have difficulty with your balance?; Have you taken antipsychotic medications? -> ['yes', 'no', 'no', 'yes', 'no']",
+  "R2 ASK Do you have any tremors in your hands?; Have you noticed any stiffness or rigidity in your muscles?; Have you experienced any cognitive decline or memory loss?; Have you had any recent head injuries or strokes?; Do you have any history of liver or kidney disease?; Have you had a recent sore throat or fever? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Do you have a history of diabetes?; Have you been diagnosed with any thyroid problems?; Have you noticed any new skin rashes or joint pain?; Have you had any recent changes in your weight or appetite?; Have you experienced any difficulty speaking or swallowing? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Blood glucose level; MRI brain (T1 and T2 weighted) -> [['blood glucose and HbA1c', 'blood glucose'], []]",
+  "R5 ASK Are the movements primarily on one side of your body? -> ['yes']",
+  "R6 DIAGNOSIS Hemichorea-hemiballismus due to non-ketotic hyperglycemia -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are these movements involuntary?",
+    "Do you have a family history of similar movements?",
+    "Have you noticed any changes in your mood or personality?",
+    "Do you have difficulty with your balance?",
+    "Have you taken antipsychotic medications?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have any tremors in your hands?",
+    "Have you noticed any stiffness or rigidity in your muscles?",
+    "Have you experienced any cognitive decline or memory loss?",
+    "Have you had any recent head injuries or strokes?",
+    "Do you have any history of liver or kidney disease?",
+    "Have you had a recent sore throat or fever?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?",
+    "Have you been diagnosed with any thyroid problems?",
+    "Have you noticed any new skin rashes or joint pain?",
+    "Have you had any recent changes in your weight or appetite?",
+    "Have you experienced any difficulty speaking or swallowing?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Blood glucose level",
+    "MRI brain (T1 and T2 weighted)"
+   ],
+   "result": [
+    [
+     "blood glucose and HbA1c",
+     "blood glucose"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Are the movements primarily on one side of your body?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Hemichorea-hemiballismus due to non-ketotic hyperglycemia"
+  }
+ ],
+ "dx": "Hemichorea-hemiballismus due to non-ketotic hyperglycemia",
+ "dx_raw": "DIAGNOSIS: Hemichorea-hemiballismus due to non-ketotic hyperglycemia",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0077,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 595.2
+}

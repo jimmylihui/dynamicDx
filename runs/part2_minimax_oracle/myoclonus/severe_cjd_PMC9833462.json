@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Are you having difficulty breathing right now?",
+  "Are you in pain?",
+  "Is the pain in your head?",
+  "Is the pain in your chest?",
+  "Is the pain in your throat or neck?",
+  "Do you feel the need to cough?",
+  "Is your tracheostomy tube feeling blocked?",
+  "Are you feeling anxious or panicky?",
+  "Did you recently have surgery on your head?",
+  "Are you feeling nauseous?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "brain MRI",
+  "CSF 14-3-3 / RT-QuIC (prion)",
+  "history of the precipitating event",
+  "intrathecal baclofen trial"
+ ],
+ "results": [
+  "1. brain MRI: hypoxic-ischaemic injury",
+  "2. CSF 14-3-3 / RT-QuIC (prion): negative - excludes Creutzfeldt-Jakob disease",
+  "3. history of the precipitating event: cardiac arrest with resuscitation; myoclonus and contractures developed afterwards",
+  "4. intrathecal baclofen trial: 50 mcg bolus on day 1, 75 mcg on day 2; Unified Myoclonus Rating Scale improved progressively with dose; sleep and positioning improved"
+ ],
+ "dx_raw": "DIAGNOSIS: Hypoxic-ischemic encephalopathy secondary to cardiac arrest\n1. Autoimmune or paraneoplastic encephalitis\n2. Creutzfeldt-Jakob disease (despite negative biomarkers, given rapidly progressive myoclonus)\n3. Other structural brain injuries (e.g., severe traumatic brain injury or extensive stroke)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Hypoxic-ischemic encephalopathy secondary to cardiac arrest",
+ "decisive_served": [
+  "brain MRI",
+  "CSF 14-3-3 / RT-QuIC (prion)",
+  "history of the precipitating event",
+  "intrathecal baclofen trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 1626,
+   "total_tokens": 8688,
+   "cost": 0.00403212,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00403212,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0019512
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1531,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7508,
+   "completion_tokens": 2164,
+   "total_tokens": 9672,
+   "cost": 0.00315792,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00315792,
+    "upstream_inference_prompt_cost": 0.00056112,
+    "upstream_inference_completions_cost": 0.0025968
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2094,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 51.1
+}

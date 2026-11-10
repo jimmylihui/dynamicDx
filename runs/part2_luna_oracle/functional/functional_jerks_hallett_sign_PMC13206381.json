@@ -1,0 +1,137 @@
+{
+ "questions": [
+  "Are you having involuntary movements, shaking, or jerking episodes?",
+  "Do these episodes involve loss of awareness or inability to respond?",
+  "Do you completely lose consciousness during any episode?",
+  "Do the episodes begin suddenly and end suddenly?",
+  "Do you remember what happens during the episodes?",
+  "Can you stop or suppress the movements when you try?",
+  "Do the movements lessen when you are distracted?",
+  "Are the movements worse when someone is watching you?",
+  "Do the episodes occur only in certain situations or when you feel stressed?",
+  "Have you ever bitten your tongue or lost bladder control during an episode?",
+  "Have you ever injured yourself during one of these episodes?",
+  "Do you experience weakness or inability to move one side of your body?",
+  "Do you have numbness or tingling on one side?",
+  "Do you have trouble speaking, seeing, walking, or keeping your balance?",
+  "Do you have severe or new headaches?",
+  "Have you had a recent head injury, infection, or fever?",
+  "Have you ever had epilepsy, seizures, fainting, or similar episodes before?",
+  "Are you taking any medications or substances that could affect your movements?",
+  "Have you recently started, stopped, or changed any medication?",
+  "Have you previously been diagnosed with anxiety, depression, trauma-related illness, or another psychiatric condition?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "anticipatory jerk to a feigned tendon-hammer approach (Hallett sign)",
+  "back-averaged EEG for a Bereitschaftspotential before the movements",
+  "somatosensory evoked potentials (giant SEP, C-reflex)",
+  "jerk latency and burst-duration measurement"
+ ],
+ "results": [
+  "1. anticipatory jerk to a feigned tendon-hammer approach (Hallett sign): POSITIVE - the jerk occurs when the hammer is stopped just short of the tendon, provoked by the visual stimulus alone",
+  "2. back-averaged EEG for a Bereitschaftspotential before the movements: Bereitschaftspotential present before the jerks",
+  "3. somatosensory evoked potentials (giant SEP, C-reflex): normal, no giant SEP and no C-reflex - excludes cortical reflex myoclonus",
+  "4. jerk latency and burst-duration measurement: long and VARIABLE latency with a long duration of muscle contraction - the pattern of voluntary movement, not of cortical myoclonus"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder presenting as functional (psychogenic) myoclonus, caused by abnormal involuntary activation of voluntary motor pathways rather than structural or epileptic disease.\n\nAlternative: Tic disorder\n\nAlternative: Startle syndrome/hyperekplexia\n\nAlternative: Epileptic or cortical myoclonus (unlikely given normal evoked potentials and voluntary-pattern jerk characteristics)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional neurological symptom disorder presenting as functional (psychogenic) myoclonus, caused by abnormal involuntary activation of voluntary motor pathways rather than structural or epileptic disease.",
+ "decisive_served": [
+  "anticipatory jerk to a feigned tendon-hammer approach (Hallett sign)",
+  "back-averaged EEG for a Bereitschaftspotential before the movements",
+  "somatosensory evoked potentials (giant SEP, C-reflex)",
+  "jerk latency and burst-duration measurement"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6316,
+   "completion_tokens": 1137,
+   "total_tokens": 7453,
+   "cost": 0.00074563,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6313,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074563,
+    "upstream_inference_prompt_cost": 6.343e-05,
+    "upstream_inference_completions_cost": 0.0006822
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 847,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7223,
+   "completion_tokens": 332,
+   "total_tokens": 7555,
+   "cost": 0.001102,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 7220,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001102,
+    "upstream_inference_prompt_cost": 0.0009028,
+    "upstream_inference_completions_cost": 0.0001992
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 247,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 23.5
+}

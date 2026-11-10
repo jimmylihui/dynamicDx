@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Do you have a history of alcohol use disorder?",
+  "Have you experienced recent head trauma?",
+  "Do you have a known diagnosis of multiple sclerosis?",
+  "Is the eye movement present when your eyes are closed?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI of the brain with and without contrast",
+  "Serum electrolytes, glucose, calcium, magnesium, and renal function tests",
+  "Urine toxicology screen"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "toxicology screen (urine and serum)"
+ ],
+ "results": [
+  "1. MRI of the brain with and without contrast",
+  "     MRI brain with gadolinium: normal",
+  "2. Serum electrolytes, glucose, calcium, magnesium, and renal function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal",
+  "3. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional (psychogenic) ocular flutter\n1. Paraneoplastic opsoclonus-myoclonus syndrome\n2. Post-infectious cerebellar encephalitis",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with and without contrast\n2. Serum electrolytes, glucose, calcium, magnesium, and renal function tests\n3. Urine toxicology screen",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional (psychogenic) ocular flutter",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 178,
+   "completion_tokens": 59,
+   "total_tokens": 237,
+   "cost": 5.443e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.443e-05,
+    "upstream_inference_prompt_cost": 2.67e-05,
+    "upstream_inference_completions_cost": 2.773e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 471,
+   "completion_tokens": 35,
+   "total_tokens": 506,
+   "cost": 8.71e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.71e-05,
+    "upstream_inference_prompt_cost": 7.065e-05,
+    "upstream_inference_completions_cost": 1.645e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 701,
+   "completion_tokens": 44,
+   "total_tokens": 745,
+   "cost": 9.1526e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.1526e-05,
+    "upstream_inference_prompt_cost": 7.0846e-05,
+    "upstream_inference_completions_cost": 2.068e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.8,
+ "video": "moderate_2_opsoclonus_PMC13135425.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 20.6
+}

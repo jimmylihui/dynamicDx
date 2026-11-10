@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Do you have a known thyroid condition?",
+  "Do you experience double vision?",
+  "Do you feel pressure or pain behind your eyes?",
+  "Have you noticed a change in your weight recently?",
+  "Do you have heart palpitations or feel anxious?",
+  "Do you smoke?",
+  "Do you have a fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Creatine kinase (CK) level",
+  "ANA and myositis-specific antibodies",
+  "Proximal muscle strength testing",
+  "Skin biopsy of the eyelid",
+  "Muscle biopsy"
+ ],
+ "served": [
+  "creatine kinase",
+  "antinuclear antibodies and anti-dsDNA",
+  "limb strength (MRC) examination"
+ ],
+ "results": [
+  "1. Creatine kinase (CK) level",
+  "     creatine kinase: normal",
+  "2. ANA and myositis-specific antibodies",
+  "     antinuclear antibodies and anti-dsDNA: normal",
+  "3. Proximal muscle strength testing",
+  "     limb strength (MRC) examination: normal",
+  "4. Skin biopsy of the eyelid",
+  "     not performed / not available",
+  "5. Muscle biopsy",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Dermatomyositis sine myositis\nSystemic Lupus Erythematosus\nAmyloidosis\nScleroderma",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Creatine kinase (CK) level\n2. ANA and myositis-specific antibodies\n3. Proximal muscle strength testing\n4. Skin biopsy of the eyelid\n5. Muscle biopsy",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Dermatomyositis sine myositis",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 954,
+   "total_tokens": 9652,
+   "cost": 0.00119416,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00119416,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00032436
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 866,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9020,
+   "completion_tokens": 853,
+   "total_tokens": 9873,
+   "cost": 0.00119202,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00119202,
+    "upstream_inference_prompt_cost": 0.000902,
+    "upstream_inference_completions_cost": 0.00029002
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 819,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9243,
+   "completion_tokens": 1722,
+   "total_tokens": 10965,
+   "cost": 0.00150978,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00150978,
+    "upstream_inference_prompt_cost": 0.0009243,
+    "upstream_inference_completions_cost": 0.00058548
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1646,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 174.1
+}

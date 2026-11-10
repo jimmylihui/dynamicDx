@@ -1,0 +1,176 @@
+{
+ "questions": [
+  "Is the nystagmus and eye movement problem a new symptom for you, or has it happened before?",
+  "Did the problem start suddenly, or did it develop gradually over days, weeks, or longer?",
+  "Have you had any dizziness, a spinning sensation, or severe unsteadiness that came on at the same time?",
+  "Have you experienced a recent severe headache, unlike any you've had before?",
+  "Have you had any recent head injury or trauma?",
+  "Have you noticed a new problem with your balance or walking?",
+  "Are you currently taking any new medications, including over-the-counter drugs?",
+  "Have you had a recent fever, infection, or illness?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI brain with gadolinium contrast",
+  "Detailed neurological examination including fundoscopy",
+  "Blood tests: thyroid function, vitamin E, copper and caeruloplasmin, glucose, HbA1c, FBC, U&E, LFTs",
+  "Paraneoplastic antibody panel"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "blood glucose and HbA1c",
+  "serum vitamin E",
+  "serum copper and caeruloplasmin",
+  "TSH / free T4",
+  "full blood count and biochemistry",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "paraneoplastic and autoimmune antibody panel (serum)"
+ ],
+ "results": [
+  "1. MRI brain with gadolinium contrast",
+  "     not performed / not available",
+  "2. Detailed neurological examination including fundoscopy",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): limb and truncal ataxia",
+  "     posture and pull test: impaired postural stability and positive pull test",
+  "     fundoscopy: normal",
+  "3. Blood tests: thyroid function, vitamin E, copper and caeruloplasmin, glucose, HbA1c, FBC, U&E, LFTs",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     blood glucose and HbA1c: normal",
+  "     serum vitamin E: normal",
+  "     serum copper and caeruloplasmin: normal",
+  "     TSH / free T4: normal",
+  "     full blood count and biochemistry: normal",
+  "4. Paraneoplastic antibody panel",
+  "     serum paraneoplastic / neuronal autoantibody panel: anti-Homer3 antibodies positive",
+  "     paraneoplastic and autoimmune antibody panel (serum): anti-Homer3 antibodies POSITIVE"
+ ],
+ "dx_raw": "DIAGNOSIS: Anti-Homer3 antibody-positive paraneoplastic cerebellar degeneration\n\n1. Multiple system atrophy (cerebellar type)\n2. Viral/post-infectious cerebellitis\n3. Idiopathic late-onset cerebellar ataxia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI brain with gadolinium contrast\n2. Detailed neurological examination including fundoscopy\n3. Blood tests: thyroid function, vitamin E, copper and caeruloplasmin, glucose, HbA1c, FBC, U&E, LFTs\n4. Paraneoplastic antibody panel",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Anti-Homer3 antibody-positive paraneoplastic cerebellar degeneration",
+ "decisive_served": [
+  "paraneoplastic and autoimmune antibody panel (serum)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 404,
+   "completion_tokens": 406,
+   "total_tokens": 810,
+   "cost": 0.0001438976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001438976,
+    "upstream_inference_prompt_cost": 3.02176e-05,
+    "upstream_inference_completions_cost": 0.00011368
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 259,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 879,
+   "completion_tokens": 2987,
+   "total_tokens": 3866,
+   "cost": 0.0009330776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009330776,
+    "upstream_inference_prompt_cost": 9.67176e-05,
+    "upstream_inference_completions_cost": 0.00083636
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2918,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1330,
+   "completion_tokens": 1496,
+   "total_tokens": 2826,
+   "cost": 0.0004909296,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 832,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004909296,
+    "upstream_inference_prompt_cost": 7.20496e-05,
+    "upstream_inference_completions_cost": 0.00041888
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1432,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.4,
+ "video": "mild_2_cerebellar_antiHomer3_PMC12833086.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 2066.6
+}

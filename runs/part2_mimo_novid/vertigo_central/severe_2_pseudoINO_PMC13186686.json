@@ -1,0 +1,194 @@
+{
+ "questions": [
+  "Do you have pain anywhere?",
+  "Is the pain in your chest?",
+  "Is the pain in your abdomen?",
+  "Is the pain in your head?",
+  "Is the pain in your joints or muscles?",
+  "Have you had a fever?",
+  "Have you been injured recently?",
+  "Are you experiencing shortness of breath?",
+  "Have you felt dizzy or fainted?",
+  "Have you had nausea or vomiting?",
+  "Have you had a change in your bowel movements?",
+  "Have you had a change in your urination?",
+  "Have you coughed up any blood?",
+  "Have you noticed any new lumps or bumps?",
+  "Have you had a significant unintentional weight loss?",
+  "Is there a possibility you could be pregnant?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of heart disease?",
+  "Do you have a personal history of cancer?",
+  "Are you taking any prescription medications?",
+  "Do you have any allergies to medications?",
+  "Do you smoke tobacco?",
+  "Do you drink alcohol regularly?",
+  "Do you use any recreational drugs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Non-contrast CT head",
+  "Complete blood count",
+  "Basic metabolic panel",
+  "Electrocardiogram",
+  "Troponin level",
+  "Prothrombin time and INR",
+  "CT abdomen and pelvis with contrast"
+ ],
+ "served": [
+  "CT head (non-contrast)",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "CT chest, abdomen and pelvis",
+  "CT chest / abdomen / pelvis (occult tumour)"
+ ],
+ "results": [
+  "1. Non-contrast CT head",
+  "     CT head (non-contrast): multiple skull fractures and epidural haemorrhage; NO evidence of brainstem injury",
+  "2. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "3. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "4. Electrocardiogram",
+  "     not performed / not available",
+  "5. Troponin level",
+  "     not performed / not available",
+  "6. Prothrombin time and INR",
+  "     not performed / not available",
+  "7. CT abdomen and pelvis with contrast",
+  "     CT chest, abdomen and pelvis: normal",
+  "     CT chest / abdomen / pelvis (occult tumour): no malignancy"
+ ],
+ "dx_raw": "DIAGNOSIS: Traumatic epidural hematoma with skull fractures from recent head trauma\n\n1. Depressed skull fracture\n2. Subdural hematoma\n3. Post-concussive syndrome",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Non-contrast CT head\n2. Complete blood count\n3. Basic metabolic panel\n4. Electrocardiogram\n5. Troponin level\n6. Prothrombin time and INR\n7. CT abdomen and pelvis with contrast",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Traumatic epidural hematoma with skull fractures from recent head trauma",
+ "decisive_served": [
+  "CT head (non-contrast)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 488,
+   "total_tokens": 873,
+   "cost": 0.000146636,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000146636,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 0.00013664
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 222,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1183,
+   "completion_tokens": 426,
+   "total_tokens": 1609,
+   "cost": 0.0002585576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002585576,
+    "upstream_inference_prompt_cost": 0.0001392776,
+    "upstream_inference_completions_cost": 0.00011928
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 369,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1486,
+   "completion_tokens": 505,
+   "total_tokens": 1991,
+   "cost": 0.0001913856,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1152,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001913856,
+    "upstream_inference_prompt_cost": 4.99856e-05,
+    "upstream_inference_completions_cost": 0.0001414
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 459,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 81.7
+}

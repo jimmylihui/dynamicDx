@@ -1,0 +1,131 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a fever or chills?",
+  "Are you having difficulty breathing?",
+  "Have you had any recent surgery or procedure?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Check the patient's vital signs (blood pressure, heart rate, respiratory rate, oxygen saturation).",
+  "Perform a focused neurological examination of the upper extremities, specifically testing for grip strength and sensation in the ulnar nerve distribution."
+ ],
+ "served": [
+  "vital signs",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)"
+ ],
+ "results": [
+  "1. Check the patient's vital signs (blood pressure, heart rate, respiratory rate, oxygen saturation).",
+  "     vital signs: normal, afebrile",
+  "2. Perform a focused neurological examination of the upper extremities, specifically testing for grip strength and sensation in the ulnar nerve distribution.",
+  "     limb strength (MRC) examination: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-operative status following orthopedic surgery (e.g., joint replacement or fracture repair)\nAlternative 1: Acute coronary syndrome\nAlternative 2: Pulmonary embolism",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Check the patient's vital signs (blood pressure, heart rate, respiratory rate, oxygen saturation).\n2. Perform a focused neurological examination of the upper extremities, specifically testing for grip strength and sensation in the ulnar nerve distribution.",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Post-operative status following orthopedic surgery (e.g., joint replacement or fracture repair)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 600,
+   "completion_tokens": 43,
+   "total_tokens": 643,
+   "cost": 0.00011021,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011021,
+    "upstream_inference_prompt_cost": 9e-05,
+    "upstream_inference_completions_cost": 2.021e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 855,
+   "completion_tokens": 50,
+   "total_tokens": 905,
+   "cost": 0.000100294,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000100294,
+    "upstream_inference_prompt_cost": 7.6794e-05,
+    "upstream_inference_completions_cost": 2.35e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1093,
+   "completion_tokens": 44,
+   "total_tokens": 1137,
+   "cost": 9.887e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 640,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.887e-05,
+    "upstream_inference_prompt_cost": 7.819e-05,
+    "upstream_inference_completions_cost": 2.068e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.1
+}

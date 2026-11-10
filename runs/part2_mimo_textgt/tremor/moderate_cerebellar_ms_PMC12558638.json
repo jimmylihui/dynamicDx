@@ -1,0 +1,164 @@
+{
+ "questions": [
+  "Is your age between 20 and 40?",
+  "Did this come on suddenly?",
+  "Have you had any numbness or tingling?",
+  "Have you had any vision problems?",
+  "Do you have a family member with similar problems?",
+  "Do you take any regular medication?",
+  "Do you drink alcohol regularly?",
+  "Have you noticed any weakness in your limbs?",
+  "Have you had any difficulty with balance when walking?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "yes"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "MRI brain with and without contrast",
+  "Genetic testing for spinocerebellar ataxia (SCA) gene panel",
+  "Serum vitamin B12 level",
+  "Thyroid function tests",
+  "Complete blood count",
+  "Nerve conduction studies"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "brain MRI",
+  "genetic testing (targeted panel or exome)",
+  "vitamin B12 with methylmalonic acid",
+  "vitamin B12 / folate",
+  "TSH / free T4",
+  "full blood count",
+  "nerve conduction studies"
+ ],
+ "results": [
+  "1. MRI brain with and without contrast",
+  "     MRI brain with gadolinium: significant cerebellar atrophy with fourth-ventricle dilatation; no abnormal enhancement",
+  "     brain MRI: significant cerebellar atrophy with dilatation of the fourth ventricle",
+  "2. Genetic testing for spinocerebellar ataxia (SCA) gene panel",
+  "     genetic testing (targeted panel or exome): novel heterozygous NONSENSE variant in POU4F1; present in the symptomatic mother, sister and grandmother and absent in a healthy uncle",
+  "3. Serum vitamin B12 level",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "     vitamin B12 / folate: normal",
+  "4. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "5. Complete blood count",
+  "     full blood count: normal",
+  "6. Nerve conduction studies",
+  "     nerve conduction studies: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Autosomal dominant cerebellar ataxia caused by a heterozygous POU4F1 nonsense variant\n\nAlternatives:\nSpinocerebellar ataxia (SCA) due to another unidentified gene\nAutosomal dominant cerebellar ataxia with additional motor neuron involvement (POU4F1-related neuromyopathy with cerebellar ataxia)\nFriedreich's ataxia with atypical presentation",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI brain with and without contrast\n2. Genetic testing for spinocerebellar ataxia (SCA) gene panel\n3. Serum vitamin B12 level\n4. Thyroid function tests\n5. Complete blood count\n6. Nerve conduction studies",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Autosomal dominant cerebellar ataxia caused by a heterozygous POU4F1 nonsense variant",
+ "decisive_served": [
+  "brain MRI",
+  "genetic testing (targeted panel or exome)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 399,
+   "completion_tokens": 724,
+   "total_tokens": 1123,
+   "cost": 0.0002322376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002322376,
+    "upstream_inference_prompt_cost": 2.95176e-05,
+    "upstream_inference_completions_cost": 0.00020272
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 626,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 558,
+   "completion_tokens": 1391,
+   "total_tokens": 1949,
+   "cost": 0.0004676,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004676,
+    "upstream_inference_prompt_cost": 7.812e-05,
+    "upstream_inference_completions_cost": 0.00038948
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1331,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 912,
+   "completion_tokens": 639,
+   "total_tokens": 1551,
+   "cost": 0.0002363536,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002363536,
+    "upstream_inference_prompt_cost": 5.74336e-05,
+    "upstream_inference_completions_cost": 0.00017892
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 542,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 707.5
+}

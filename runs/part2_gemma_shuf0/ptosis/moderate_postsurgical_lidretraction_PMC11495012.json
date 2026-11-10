@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does the double vision go away if you cover one eye?",
+  "Do you have any pain in your eyes?",
+  "Do you have any drooping of your eyelids?",
+  "Have you had any recent head trauma?",
+  "Do you have any easy bruising?",
+  "Do you have a history of thyroid disease?",
+  "Do you have any shortness of breath?",
+  "Do you have any swelling in your legs?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of hypertension?",
+  "Do you have a history of multiple sclerosis?",
+  "Do you have any weakness in your limbs?",
+  "Do you have any difficulty speaking or swallowing?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Muscle biopsy",
+  "Genetic testing for mitochondrial DNA deletions",
+  "MRI of the orbits and brain"
+ ],
+ "served": [
+  "mitochondrial genetics (mtDNA deletion)",
+  "MRI orbits",
+  "MRI brain with contrast"
+ ],
+ "results": [
+  "1. Muscle biopsy",
+  "     not performed / not available",
+  "2. Genetic testing for mitochondrial DNA deletions",
+  "     mitochondrial genetics (mtDNA deletion): no deletion",
+  "3. MRI of the orbits and brain",
+  "     MRI orbits: no extraocular muscle enlargement, no mass",
+  "     MRI brain with contrast: no dorsal midbrain lesion - excludes Collier sign"
+ ],
+ "dx_raw": "DIAGNOSIS: Chronic Progressive External Ophthalmoplegia (CPEO) due to mitochondrial dysfunction\n\n1. Myasthenia Gravis\n2. Oculopharyngeal muscular dystrophy\n3. Mitochondrial myopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Muscle biopsy\n2. Genetic testing for mitochondrial DNA deletions\n3. MRI of the orbits and brain",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Chronic Progressive External Ophthalmoplegia (CPEO) due to mitochondrial dysfunction",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 6319,
+   "total_tokens": 15017,
+   "cost": 0.00301826,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00301826,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00214846
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5798,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9234,
+   "completion_tokens": 4182,
+   "total_tokens": 13416,
+   "cost": 0.00234528,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00234528,
+    "upstream_inference_prompt_cost": 0.0009234,
+    "upstream_inference_completions_cost": 0.00142188
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3857,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9425,
+   "completion_tokens": 3392,
+   "total_tokens": 12817,
+   "cost": 0.00209578,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00209578,
+    "upstream_inference_prompt_cost": 0.0009425,
+    "upstream_inference_completions_cost": 0.00115328
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3175,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 526.5
+}

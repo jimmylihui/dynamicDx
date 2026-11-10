@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Are you having any difficulty breathing?",
+  "Did this happen suddenly?",
+  "Is it itchy?",
+  "Is it painful?",
+  "Do you have a fever?",
+  "Do you have muscle weakness?",
+  "Have you started any new medications recently?",
+  "Do you have a history of kidney disease?",
+  "Do you have a history of heart failure?",
+  "Do you have a history of thyroid problems?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Chest X-ray",
+  "Urinalysis",
+  "Serum creatinine",
+  "TSH and free T4",
+  "Blood pressure measurement"
+ ],
+ "served": [
+  "urinalysis",
+  "serum electrolytes, urea and creatinine",
+  "TSH / free T4",
+  "lipids and vascular risk assessment"
+ ],
+ "results": [
+  "1. Chest X-ray",
+  "     not performed / not available",
+  "2. Urinalysis",
+  "     urinalysis: normal",
+  "3. Serum creatinine",
+  "     serum electrolytes, urea and creatinine: normal",
+  "4. TSH and free T4",
+  "     TSH / free T4: normal",
+  "5. Blood pressure measurement",
+  "     lipids and vascular risk assessment: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Drug-induced heart failure\n\nDrug-induced Cushing's syndrome\nDrug-induced fluid retention\nDrug-induced angioedema",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Chest X-ray\n2. Urinalysis\n3. Serum creatinine\n4. TSH and free T4\n5. Blood pressure measurement",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Drug-induced heart failure",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 1452,
+   "total_tokens": 1872,
+   "cost": 0.00053568,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00053568,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00049368
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1247,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 802,
+   "completion_tokens": 1170,
+   "total_tokens": 1972,
+   "cost": 0.000478,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000478,
+    "upstream_inference_prompt_cost": 8.02e-05,
+    "upstream_inference_completions_cost": 0.0003978
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1089,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1009,
+   "completion_tokens": 4213,
+   "total_tokens": 5222,
+   "cost": 0.00153332,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00153332,
+    "upstream_inference_prompt_cost": 0.0001009,
+    "upstream_inference_completions_cost": 0.00143242
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3942,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 225.0
+}

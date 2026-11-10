@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Do you have a family history of similar movements?",
+  "Have you ever had seizures?",
+  "Are you taking any antipsychotic medications?",
+  "Have you noticed any changes in your mood or personality?",
+  "Do you have any difficulty with balance or walking?",
+  "Do you have any known thyroid problems?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain",
+  "Serum ceruloplasmin and copper",
+  "Blood tests (Comprehensive metabolic panel, TSH)",
+  "DaTscan"
+ ],
+ "served": [
+  "brain MRI",
+  "serum copper and caeruloplasmin",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "DAT-SPECT"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     brain MRI: no structural lesion",
+  "2. Serum ceruloplasmin and copper",
+  "     serum copper and caeruloplasmin: normal",
+  "3. Blood tests (Comprehensive metabolic panel, TSH)",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "4. DaTscan",
+  "     DAT-SPECT: specific binding ratios 3.94 right and 3.82 left striatum"
+ ],
+ "dx_raw": "DIAGNOSIS: Myoclonic epilepsy, idiopathic\n\nAlternatives:\n1. Zonisamide-induced chorea\n2. Huntington's disease\n3. Autoimmune chorea",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Serum ceruloplasmin and copper\n3. Blood tests (Comprehensive metabolic panel, TSH)\n4. DaTscan",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Myoclonic epilepsy, idiopathic",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8346,
+   "completion_tokens": 2124,
+   "total_tokens": 10470,
+   "cost": 0.00155676,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00155676,
+    "upstream_inference_prompt_cost": 0.0008346,
+    "upstream_inference_completions_cost": 0.00072216
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2025,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8658,
+   "completion_tokens": 4525,
+   "total_tokens": 13183,
+   "cost": 0.0024043,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0024043,
+    "upstream_inference_prompt_cost": 0.0008658,
+    "upstream_inference_completions_cost": 0.0015385
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4226,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8884,
+   "completion_tokens": 7704,
+   "total_tokens": 16588,
+   "cost": 0.00350776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00350776,
+    "upstream_inference_prompt_cost": 0.0008884,
+    "upstream_inference_completions_cost": 0.00261936
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6951,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 507.5
+}

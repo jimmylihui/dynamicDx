@@ -1,0 +1,126 @@
+{
+ "questions": [
+  "Is the tremor in your hands worse when they are resting in your lap?",
+  "Does the tremor improve or disappear when you intentionally move your hands to do a task?",
+  "Has this tremor gradually worsened over the past several months or years?",
+  "Is the tremor noticeably worse on one side of your body compared to the other?",
+  "Do your arms or legs feel stiff or rigid?",
+  "Do you have difficulty getting out of a chair or turning over in bed?",
+  "Do you shuffle your feet or have trouble with your balance when you walk?",
+  "Has your handwriting become noticeably smaller and more cramped?",
+  "Have you experienced a significant loss of your sense of smell?",
+  "Do you physically act out your dreams, such as punching, kicking, or shouting, while sleeping?",
+  "Do you have a family history of Parkinson's disease or a similar tremor?",
+  "Are you currently taking any prescription medications?",
+  "Does the tremor significantly improve after drinking a small amount of alcohol?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "thyroid ultrasound",
+  "trial of antithyroid treatment"
+ ],
+ "results": [
+  "1. blood glucose: normal glucose and electrolytes - excludes hyperglycaemic chorea",
+  "2. TSH, free T4 and free T3: TSH SUPPRESSED at <0.01 mIU/L (reference 0.50-5.00) and free thyroxine ELEVATED at 3.85 ng/dL (reference 0.90-1.70)",
+  "3. thyrotropin receptor antibodies (TRAb): ELEVATED at 7.4 IU/L (reference <2.0) - Graves' disease",
+  "4. thyroid ultrasound: no nodules; estimated thyroid weight 13 g; 99mTc scintigraphy showed diffuse uptake consistent with Graves' disease",
+  "5. trial of antithyroid treatment: methimazole; the chorea resolved after about one month as thyroid function improved"
+ ],
+ "dx_raw": "DIAGNOSIS: Chorea secondary to Graves' disease (autoimmune hyperthyroidism)\n\n1. Drug-induced chorea (given the patient is on prescription medications)\n2. Structural basal ganglia lesion (e.g., ischaemic or inflammatory)\n3. Other autoimmune chorea (e.g., SLE or antiphospholipid syndrome)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Chorea secondary to Graves' disease (autoimmune hyperthyroidism)",
+ "decisive_served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "thyroid ultrasound",
+  "trial of antithyroid treatment"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8278,
+   "completion_tokens": 1893,
+   "total_tokens": 10171,
+   "cost": 0.00471732,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00471732,
+    "upstream_inference_prompt_cost": 0.00244572,
+    "upstream_inference_completions_cost": 0.0022716
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1689,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9017,
+   "completion_tokens": 422,
+   "total_tokens": 9439,
+   "cost": 0.00122838,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8263,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00122838,
+    "upstream_inference_prompt_cost": 0.00072198,
+    "upstream_inference_completions_cost": 0.0005064
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 353,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 26.4
+}

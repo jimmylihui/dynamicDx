@@ -1,0 +1,175 @@
+{
+ "questions": [
+  "Are you having any difficulty breathing?",
+  "Are you experiencing any chest pain?",
+  "Do you have a fever?",
+  "Are you bleeding or have you had any unusual bleeding?",
+  "Are you having any abdominal pain?",
+  "Have you had any recent loss of consciousness or dizziness?",
+  "Are you experiencing any weakness or paralysis?",
+  "Do you have a severe headache?",
+  "Have you had any recent injury?",
+  "Do you have any known medical conditions?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Is your known medical condition related to your heart?",
+  "Is your known medical condition related to your lungs?",
+  "Is your known medical condition related to your blood?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Is your condition an autoimmune disease?",
+  "Have you ever been diagnosed with cancer?",
+  "Is your condition related to your kidneys?",
+  "Is your condition related to your liver?",
+  "Is your condition related to your brain or nervous system?",
+  "Is your condition related to your thyroid?",
+  "Is your condition related to your bones or joints?"
+ ],
+ "served": [],
+ "results": [
+  "1. Is your known medical condition related to your heart?",
+  "     not performed / not available",
+  "2. Is your known medical condition related to your lungs?",
+  "     not performed / not available",
+  "3. Is your known medical condition related to your blood?",
+  "     not performed / not available",
+  "4. Do you have diabetes?",
+  "     not performed / not available",
+  "5. Do you have high blood pressure?",
+  "     not performed / not available",
+  "6. Is your condition an autoimmune disease?",
+  "     not performed / not available",
+  "7. Have you ever been diagnosed with cancer?",
+  "     not performed / not available",
+  "8. Is your condition related to your kidneys?",
+  "     not performed / not available",
+  "9. Is your condition related to your liver?",
+  "     not performed / not available",
+  "10. Is your condition related to your brain or nervous system?",
+  "     not performed / not available",
+  "11. Is your condition related to your thyroid?",
+  "     not performed / not available",
+  "12. Is your condition related to your bones or joints?",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS:\nUndifferentiated — chronic medical condition requiring further history and examination to narrow the differential",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "11. Is your known medical condition related to your heart?\n12. Is your known medical condition related to your lungs?\n13. Is your known medical condition related to your blood?\n14. Do you have diabetes?\n15. Do you have high blood pressure?\n16. Is your condition an autoimmune disease?\n17. Have you ever been diagnosed with cancer?\n18. Is your condition related to your kidneys?\n19. Is your condition related to your liver?\n20. Is your condition related to your brain or nervous system?\n21. Is your condition related to your thyroid?\n22. Is your condition related to your bones or joints?",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Undifferentiated — chronic medical condition requiring further history and examination to narrow the differential",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 3200,
+   "total_tokens": 3585,
+   "cost": 0.000905996,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000905996,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 0.000896
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3096,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 784,
+   "completion_tokens": 756,
+   "total_tokens": 1540,
+   "cost": 0.000277536,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000277536,
+    "upstream_inference_prompt_cost": 6.5856e-05,
+    "upstream_inference_completions_cost": 0.00021168
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 615,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1230,
+   "completion_tokens": 61,
+   "total_tokens": 1291,
+   "cost": 8.39104e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.39104e-05,
+    "upstream_inference_prompt_cost": 6.68304e-05,
+    "upstream_inference_completions_cost": 1.708e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 36,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_iiipalsy_aneurysm_PMC12606889.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 77.9
+}

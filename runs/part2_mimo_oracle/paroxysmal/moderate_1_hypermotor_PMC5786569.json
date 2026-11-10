@@ -1,0 +1,110 @@
+{
+ "questions": [
+  "Do you remember the actions shown in the video?",
+  "Were you experiencing a dream when this happened?",
+  "Do you have a history of seizures?",
+  "Do you take any prescription medications?",
+  "Have you been diagnosed with Parkinson’s disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "duration of the events",
+  "time of day / relation to sleep",
+  "head injury history",
+  "advanced diffusion imaging / tractography",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. duration of the events: about 15 seconds",
+  "2. time of day / relation to sleep: predominantly out of sleep at night",
+  "3. head injury history: mild repetitive non-penetrating traumatic brain injury, none requiring hospitalisation",
+  "4. advanced diffusion imaging / tractography: multishell diffusion MRI showed disrupted white matter tracts",
+  "5. video-EEG monitoring of a typical event: the diagnosis was made on SEMIOLOGY from clinically documented video-EEG; there was NO interpretable ictal EEG correlate because of movement artefact"
+ ],
+ "dx_raw": "DIAGNOSIS: Sleep-related Hypermotor Epilepsy secondary to Traumatic Brain Injury\n\n1. NREM Parasomnia (Sleepwalking/Confusional Arousal)\n2. Post-traumatic Confusional Arousal\n3. Nocturnal Focal Epilepsy (Supplementary Motor Area)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Sleep-related Hypermotor Epilepsy secondary to Traumatic Brain Injury",
+ "decisive_served": [
+  "duration of the events",
+  "time of day / relation to sleep",
+  "head injury history",
+  "advanced diffusion imaging / tractography",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7103,
+   "completion_tokens": 6636,
+   "total_tokens": 13739,
+   "cost": 0.0028261576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0028261576,
+    "upstream_inference_prompt_cost": 0.0009680776,
+    "upstream_inference_completions_cost": 0.00185808
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6579,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7449,
+   "completion_tokens": 3018,
+   "total_tokens": 10467,
+   "cost": 0.000922012,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7040,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000922012,
+    "upstream_inference_prompt_cost": 7.6972e-05,
+    "upstream_inference_completions_cost": 0.00084504
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2946,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 116.1
+}

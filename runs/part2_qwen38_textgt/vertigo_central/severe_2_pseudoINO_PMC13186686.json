@@ -1,0 +1,133 @@
+{
+ "questions": [
+  "Is the dressing covering a surgical incision on your nose?",
+  "Did you have surgery to remove a tumor from the area between your eyes recently?",
+  "Do you have difficulty seeing out of the side of your vision in both eyes?",
+  "Have you been diagnosed with multiple sclerosis?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI of the brain and orbits with gadolinium contrast",
+  "Lumbar puncture for oligoclonal bands and IgG index"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI sella and orbits",
+  "CSF oligoclonal bands and IgG index"
+ ],
+ "results": [
+  "1. MRI of the brain and orbits with gadolinium contrast",
+  "     MRI brain with gadolinium: normal brainstem; subtle medial orbital wall fracture with medial rectus involvement",
+  "     MRI sella and orbits: subtle MEDIAL ORBITAL WALL FRACTURE with medial rectus involvement; no brainstem pathology",
+  "2. Lumbar puncture for oligoclonal bands and IgG index",
+  "     CSF oligoclonal bands and IgG index: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Pseudo-internuclear ophthalmoplegia secondary to medial rectus entrapment from a medial orbital wall fracture\nAlternative: True internuclear ophthalmoplegia due to demyelinating disease (despite normal MRI/CSF)\nAlternative: Myasthenia gravis",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain and orbits with gadolinium contrast\n2. Lumbar puncture for oligoclonal bands and IgG index",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Pseudo-internuclear ophthalmoplegia secondary to medial rectus entrapment from a medial orbital wall fracture",
+ "decisive_served": [
+  "MRI sella and orbits"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 193,
+   "completion_tokens": 63,
+   "total_tokens": 256,
+   "cost": 5.856e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.856e-05,
+    "upstream_inference_prompt_cost": 2.895e-05,
+    "upstream_inference_completions_cost": 2.961e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 490,
+   "completion_tokens": 30,
+   "total_tokens": 520,
+   "cost": 8.76e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.76e-05,
+    "upstream_inference_prompt_cost": 7.35e-05,
+    "upstream_inference_completions_cost": 1.41e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 718,
+   "completion_tokens": 63,
+   "total_tokens": 781,
+   "cost": 0.000103006,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000103006,
+    "upstream_inference_prompt_cost": 7.3396e-05,
+    "upstream_inference_completions_cost": 2.961e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.4
+}

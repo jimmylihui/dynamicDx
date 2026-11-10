@@ -1,0 +1,254 @@
+{
+ "questions": [
+  "Are you experiencing pain in your legs?",
+  "Do you have any history of diabetes?",
+  "Do you have a history of smoking?",
+  "Have you noticed any non-healing wounds or ulcers on your legs or feet?",
+  "Are you currently able to walk without pain?",
+  "Have you noticed any swelling in your legs or ankles?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of kidney disease?",
+  "Do you have a history of heart failure or heart problems?",
+  "Have you ever been told you have protein in your urine?",
+  "Have you noticed any changes in the color or appearance of the skin on your lower legs?",
+  "Do you have any itching or dryness on your legs?",
+  "Have you ever had cellulitis or a skin infection on your legs?",
+  "Are you on any medications for diabetes or blood pressure currently?",
+  "Have you noticed any hair loss on your lower legs?",
+  "Have you been experiencing increased thirst recently?",
+  "Have you noticed increased urination, especially at night?",
+  "Have you experienced any unintentional weight loss recently?",
+  "Have you had any episodes of nausea, vomiting, or abdominal pain?",
+  "Are you currently taking insulin or any diabetes medication?",
+  "Do you have a family history of diabetes?",
+  "Have you ever had pancreatitis or pancreatic disease?",
+  "Have you ever been told you have type 1 or type 2 diabetes?",
+  "Are you taking any steroids or other medications that could raise blood sugar?",
+  "Have you had any recent infections or illnesses?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "yes",
+  "24": "no",
+  "25": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Ankle-brachial index (ABI) test",
+  "Blood glucose level",
+  "Hemoglobin A1c",
+  "Basic metabolic panel (including creatinine)",
+  "Lipid panel",
+  "Serum and urine osmolality",
+  "Urinalysis for ketones",
+  "Serum insulin level",
+  "Serum C-peptide level"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "blood glucose",
+  "HbA1c",
+  "serum electrolytes, urea and creatinine",
+  "sodium and serum osmolality",
+  "ketones (blood or urine)"
+ ],
+ "results": [
+  "R1 ASK Are you experiencing pain in your legs?; Do you have any history of diabetes?; Do you have a history of smoking?; Have you noticed any non-healing wounds or ulcers on your legs or feet?; Are you currently able to walk without pain? -> ['no', 'yes', 'no', 'no', 'yes']",
+  "R2 ASK Have you noticed any swelling in your legs or ankles?; Do you have a history of high blood pressure?; Do you have a history of kidney disease?; Do you have a history of heart failure or heart problems?; Have you ever been told you have protein in your urine? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R3 ASK Have you noticed any changes in the color or appearance of the skin on your lower legs?; Do you have any itching or dryness on your legs?; Have you ever had cellulitis or a skin infection on your legs?; Are you on any medications for diabetes or blood pressure currently?; Have you noticed any hair loss on your lower legs? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Ankle-brachial index (ABI) test; Blood glucose level; Hemoglobin A1c; Basic metabolic panel (including creatinine); Lipid panel -> [[], ['blood glucose and HbA1c', 'blood glucose'], ['blood glucose and HbA1c', 'HbA1c'], ['serum electrolytes, urea and creatinine'], []]",
+  "R5 ASK Have you been experiencing increased thirst recently?; Have you noticed increased urination, especially at night?; Have you experienced any unintentional weight loss recently?; Have you had any episodes of nausea, vomiting, or abdominal pain?; Are you currently taking insulin or any diabetes medication? -> ['no', 'no', 'no', 'no', 'no']",
+  "R6 ORDER Serum and urine osmolality; Urinalysis for ketones; Serum insulin level; Serum C-peptide level -> [['sodium and serum osmolality'], ['ketones (blood or urine)'], [], []]",
+  "R7 ASK Do you have a family history of diabetes?; Have you ever had pancreatitis or pancreatic disease?; Have you ever been told you have type 1 or type 2 diabetes?; Are you taking any steroids or other medications that could raise blood sugar?; Have you had any recent infections or illnesses? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R8 DIAGNOSIS Severe uncontrolled type 2 diabetes mellitus due to medication non-adherence (the patient is not taking any prescribed antihyperglycemic or antihypertensive therapy despite a known diagnosis), evidenced by random glucose 690 mg/dL and HbA1c 14.7% in a non-ketotic, normal anion gap patient. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you experiencing pain in your legs?",
+    "Do you have any history of diabetes?",
+    "Do you have a history of smoking?",
+    "Have you noticed any non-healing wounds or ulcers on your legs or feet?",
+    "Are you currently able to walk without pain?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any swelling in your legs or ankles?",
+    "Do you have a history of high blood pressure?",
+    "Do you have a history of kidney disease?",
+    "Do you have a history of heart failure or heart problems?",
+    "Have you ever been told you have protein in your urine?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any changes in the color or appearance of the skin on your lower legs?",
+    "Do you have any itching or dryness on your legs?",
+    "Have you ever had cellulitis or a skin infection on your legs?",
+    "Are you on any medications for diabetes or blood pressure currently?",
+    "Have you noticed any hair loss on your lower legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Ankle-brachial index (ABI) test",
+    "Blood glucose level",
+    "Hemoglobin A1c",
+    "Basic metabolic panel (including creatinine)",
+    "Lipid panel"
+   ],
+   "result": [
+    [],
+    [
+     "blood glucose and HbA1c",
+     "blood glucose"
+    ],
+    [
+     "blood glucose and HbA1c",
+     "HbA1c"
+    ],
+    [
+     "serum electrolytes, urea and creatinine"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you been experiencing increased thirst recently?",
+    "Have you noticed increased urination, especially at night?",
+    "Have you experienced any unintentional weight loss recently?",
+    "Have you had any episodes of nausea, vomiting, or abdominal pain?",
+    "Are you currently taking insulin or any diabetes medication?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Serum and urine osmolality",
+    "Urinalysis for ketones",
+    "Serum insulin level",
+    "Serum C-peptide level"
+   ],
+   "result": [
+    [
+     "sodium and serum osmolality"
+    ],
+    [
+     "ketones (blood or urine)"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have a family history of diabetes?",
+    "Have you ever had pancreatitis or pancreatic disease?",
+    "Have you ever been told you have type 1 or type 2 diabetes?",
+    "Are you taking any steroids or other medications that could raise blood sugar?",
+    "Have you had any recent infections or illnesses?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Severe uncontrolled type 2 diabetes mellitus due to medication non-adherence (the patient is not taking any prescribed antihyperglycemic or antihypertensive therapy despite a known diagnosis), evidenced by random glucose 690 mg/dL and HbA1c 14.7% in a non-ketotic, normal anion gap patient."
+  }
+ ],
+ "dx": "Severe uncontrolled type 2 diabetes mellitus due to medication non-adherence (the patient is not taking any prescribed antihyperglycemic or antihypertensive therapy despite a known diagnosis), evidenced by random glucose 690 mg/dL and HbA1c 14.7% in a non-ketotic, normal anion gap patient.",
+ "dx_raw": "DIAGNOSIS: Severe uncontrolled type 2 diabetes mellitus due to medication non-adherence (the patient is not taking any prescribed antihyperglycemic or antihypertensive therapy despite a known diagnosis), evidenced by random glucose 690 mg/dL and HbA1c 14.7% in a non-ketotic, normal anion gap patient.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "HbA1c",
+  "blood glucose",
+  "ketones (blood or urine)"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0319,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 91.5
+}

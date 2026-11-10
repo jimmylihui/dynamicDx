@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Do these episodes occur primarily in the first third of the night?",
+  "Do you recall dreaming of the activities you are performing during the episodes?",
+  "Are the movements during the episodes always the same or very similar?",
+  "Do you have a history of epilepsy?",
+  "Do these episodes occur in clusters (multiple times in one night)?",
+  "Do the episodes typically last less than 2 minutes?",
+  "Do you feel confused or tired immediately after waking up from an episode?",
+  "Do these episodes occur primarily in the last third of the night?",
+  "Have you ever experienced similar movements or episodes while awake?",
+  "Do you have any other symptoms during the day, such as excessive sleepiness or sudden muscle weakness?",
+  "Do you take any medications that affect sleep or mood?",
+  "Do you ever experience tongue biting or urinary incontinence during these episodes?",
+  "Do you ever experience a \"metallic taste\" or a \"strange smell\" just before an episode?",
+  "Do you ever experience a feeling of \"rising\" or an \"aura\" before these episodes?",
+  "Do these episodes ever occur during the day while you are napping?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Polysomnography (PSG)"
+ ],
+ "served": [],
+ "results": [
+  "R1 ASK Do these episodes occur primarily in the first third of the night?; Do you recall dreaming of the activities you are performing during the episodes?; Are the movements during the episodes always the same or very similar?; Do you have a history of epilepsy? -> ['no', 'no', 'yes', 'no']",
+  "R2 ASK Do these episodes occur in clusters (multiple times in one night)?; Do the episodes typically last less than 2 minutes?; Do you feel confused or tired immediately after waking up from an episode? -> ['no', 'yes', 'no']",
+  "R3 ORDER Polysomnography (PSG) -> [[]]",
+  "R4 ASK Do these episodes occur primarily in the last third of the night?; Have you ever experienced similar movements or episodes while awake?; Do you have any other symptoms during the day, such as excessive sleepiness or sudden muscle weakness?; Do you take any medications that affect sleep or mood? -> ['no', 'no', 'no', 'no']",
+  "R5 ASK Do you ever experience tongue biting or urinary incontinence during these episodes?; Do you ever experience a \"metallic taste\" or a \"strange smell\" just before an episode?; Do you ever experience a feeling of \"rising\" or an \"aura\" before these episodes?; Do these episodes ever occur during the day while you are napping? -> ['no', 'no', 'no', 'no']",
+  "R6 DIAGNOSIS Sleep-related Hypermotor Epilepsy (SHE) caused by focal frontal lobe seizures -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do these episodes occur primarily in the first third of the night?",
+    "Do you recall dreaming of the activities you are performing during the episodes?",
+    "Are the movements during the episodes always the same or very similar?",
+    "Do you have a history of epilepsy?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do these episodes occur in clusters (multiple times in one night)?",
+    "Do the episodes typically last less than 2 minutes?",
+    "Do you feel confused or tired immediately after waking up from an episode?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Polysomnography (PSG)"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do these episodes occur primarily in the last third of the night?",
+    "Have you ever experienced similar movements or episodes while awake?",
+    "Do you have any other symptoms during the day, such as excessive sleepiness or sudden muscle weakness?",
+    "Do you take any medications that affect sleep or mood?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you ever experience tongue biting or urinary incontinence during these episodes?",
+    "Do you ever experience a \"metallic taste\" or a \"strange smell\" just before an episode?",
+    "Do you ever experience a feeling of \"rising\" or an \"aura\" before these episodes?",
+    "Do these episodes ever occur during the day while you are napping?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Sleep-related Hypermotor Epilepsy (SHE) caused by focal frontal lobe seizures"
+  }
+ ],
+ "dx": "Sleep-related Hypermotor Epilepsy (SHE) caused by focal frontal lobe seizures",
+ "dx_raw": "DIAGNOSIS: Sleep-related Hypermotor Epilepsy (SHE) caused by focal frontal lobe seizures",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.008,
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 386.6
+}

@@ -1,0 +1,115 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the pain located in your abdomen?",
+  "Did this condition start suddenly?",
+  "Have you had a fever recently?",
+  "Do you have a history of diabetes?",
+  "Do you have high blood pressure?",
+  "Have you experienced any vomiting?",
+  "Have you noticed any blood in your stool?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "trigger or provoking activity",
+  "medication and anaesthetic exposure",
+  "interictal EEG",
+  "antiseizure medication trial"
+ ],
+ "results": [
+  "1. trigger or provoking activity: action-induced and restricted to a few body segments, suggesting cortical-reflex myoclonus",
+  "2. medication and anaesthetic exposure: propofol and thiopentone for coronary artery bypass grafting with aortic valve replacement; jerks began 6 days later (day 3 in the second case)",
+  "3. interictal EEG: occasional OCCIPITAL SHARP WAVES only (normal in the second patient) - no ictal pattern",
+  "4. antiseizure medication trial: complete resolution within 4 days on clonazepam 0.25 mg twice daily and levetiracetam 500 mg twice daily, with no relapse on follow-up"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-hypoxic myoclonus (Lance-Adams syndrome) following cardiac surgery",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Post-hypoxic myoclonus (Lance-Adams syndrome) following cardiac surgery",
+ "decisive_served": [
+  "trigger or provoking activity",
+  "medication and anaesthetic exposure",
+  "interictal EEG",
+  "antiseizure medication trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6359,
+   "completion_tokens": 81,
+   "total_tokens": 6440,
+   "cost": 0.00099192,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00099192,
+    "upstream_inference_prompt_cost": 0.00095385,
+    "upstream_inference_completions_cost": 3.807e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6809,
+   "completion_tokens": 26,
+   "total_tokens": 6835,
+   "cost": 0.000227426,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6016,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000227426,
+    "upstream_inference_prompt_cost": 0.000215206,
+    "upstream_inference_completions_cost": 1.222e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.1
+}

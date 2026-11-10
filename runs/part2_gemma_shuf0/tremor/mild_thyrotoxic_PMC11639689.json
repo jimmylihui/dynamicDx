@@ -1,0 +1,147 @@
+{
+ "questions": [
+  "Do you have a tremor?",
+  "Does the tremor occur when you are resting?",
+  "Does the tremor worsen as you reach for a target?",
+  "Do you have difficulty with balance or walking?",
+  "Do you have slurred speech?",
+  "Do you have a family history of tremor?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Thyroid function tests",
+  "Serum ceruloplasmin",
+  "Slit-lamp examination",
+  "MRI brain"
+ ],
+ "served": [
+  "TSH / free T4",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Thyroid function tests",
+  "     TSH / free T4: normal - not thyrotoxic",
+  "2. Serum ceruloplasmin",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal",
+  "3. Slit-lamp examination",
+  "     slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "4. MRI brain",
+  "     brain MRI: no brain lesion on unenhanced MRI with diffusion imaging"
+ ],
+ "dx_raw": "DIAGNOSIS: Essential tremor, idiopathic\n\n1. Enhanced physiological tremor\n2. Wilson's disease\n3. Dystonic tremor",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Thyroid function tests\n2. Serum ceruloplasmin\n3. Slit-lamp examination\n4. MRI brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Essential tremor, idiopathic",
+ "decisive_served": [
+  "TSH / free T4"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2137,
+   "total_tokens": 10835,
+   "cost": 0.00159638,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00159638,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00072658
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1988,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9006,
+   "completion_tokens": 1383,
+   "total_tokens": 10389,
+   "cost": 0.00137082,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00137082,
+    "upstream_inference_prompt_cost": 0.0009006,
+    "upstream_inference_completions_cost": 0.00047022
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1260,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9231,
+   "completion_tokens": 1980,
+   "total_tokens": 11211,
+   "cost": 0.0015963,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0015963,
+    "upstream_inference_prompt_cost": 0.0009231,
+    "upstream_inference_completions_cost": 0.0006732
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1876,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_thyrotoxic_PMC11639689.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 227.0
+}

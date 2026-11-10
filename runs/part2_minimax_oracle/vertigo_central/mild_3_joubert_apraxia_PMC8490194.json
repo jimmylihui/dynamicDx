@@ -1,0 +1,111 @@
+{
+ "questions": [
+  "Has the abnormal eye movement been present since birth?",
+  "Do the eyes move back and forth by themselves without control?",
+  "Is there a family history of similar eye problems or childhood blindness?",
+  "Did the mother have any illness, infection, or take medications during pregnancy?",
+  "Was the baby born at full term without complications?",
+  "Does the baby seem to see and track objects normally?",
+  "Has the baby ever had a seizure or any neurological symptoms?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "smooth pursuit and saccades",
+  "facial dysmorphism and general examination",
+  "genetic testing (exome)",
+  "MRI brain with DWI"
+ ],
+ "results": [
+  "1. smooth pursuit and saccades: ocular motor apraxia - failure to initiate voluntary horizontal saccades with compensatory head thrusts",
+  "2. facial dysmorphism and general examination: facial dysmorphism in all patients - broad nasal bridge and low-set ears most common",
+  "3. genetic testing (exome): pathogenic variants in ciliopathy genes on exome sequencing",
+  "4. MRI brain with DWI: MOLAR TOOTH SIGN with cerebellar vermis hypoplasia and horizontally aligned superior cerebellar peduncles"
+ ],
+ "dx_raw": "DIAGNOSIS: Joubert syndrome – an autosomal recessive ciliopathy caused by pathogenic variants in ciliopathy genes (e.g., AHI1, CEP290, TMEM67), characterized by the pathognomonic molar tooth sign (cerebellar vermis hypoplasia with horizontally oriented, thickened superior cerebellar peduncles), ocular motor apraxia with compensatory head thrusts, and facial dysmorphism (broad nasal bridge, low-set ears).\n1. Senior-Løken syndrome (Joubert-related ciliopathy with nephronophthisis)\n2. COACH syndrome (Joubert with hepatic fibrosis and coloboma)\n3. Bardet-Biedl syndrome (ciliopathy with retinal dystrophy, polydactyly, obesity, renal anomalies)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Joubert syndrome – an autosomal recessive ciliopathy caused by pathogenic variants in ciliopathy genes (e.g., AHI1, CEP290, TMEM67), characterized by the pathognomonic molar tooth sign (cerebellar vermis hypoplasia with horizontally oriented, thickened superior cerebellar peduncles), ocular motor apraxia with compensatory head thrusts, and facial dysmorphism (broad nasal bridge, low-set ears).",
+ "decisive_served": [
+  "smooth pursuit and saccades",
+  "facial dysmorphism and general examination",
+  "genetic testing (exome)",
+  "MRI brain with DWI"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 1858,
+   "total_tokens": 8920,
+   "cost": 0.00431052,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00431052,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0022296
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1761,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7490,
+   "completion_tokens": 423,
+   "total_tokens": 7913,
+   "cost": 0.00106332,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00106332,
+    "upstream_inference_prompt_cost": 0.00055572,
+    "upstream_inference_completions_cost": 0.0005076
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 262,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_3_joubert_apraxia_PMC8490194.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 34.2
+}

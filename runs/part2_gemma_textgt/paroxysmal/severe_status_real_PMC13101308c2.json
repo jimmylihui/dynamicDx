@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Did you lose consciousness?",
+  "Have you had similar episodes before?",
+  "Were you confused or disoriented after the episode?",
+  "Did you experience a warning sensation or \"aura\" before the episode?",
+  "Did you bite your tongue or lose control of your bladder or bowels?",
+  "Do you have a known history of epilepsy?",
+  "Did you have a fever during the episode?",
+  "Have you had a recent head injury?",
+  "Were you using any drugs or alcohol before the episode?",
+  "Is there a family history of seizures?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Lumbar puncture",
+  "MRI brain",
+  "Blood cultures",
+  "Full blood count and CRP"
+ ],
+ "served": [
+  "lumbar puncture / CSF",
+  "brain MRI",
+  "full blood count and biochemistry",
+  "ESR and CRP"
+ ],
+ "results": [
+  "1. Lumbar puncture",
+  "     lumbar puncture / CSF: normal",
+  "2. MRI brain",
+  "     brain MRI: no focal epileptogenic lesion",
+  "3. Blood cultures",
+  "     not performed / not available",
+  "4. Full blood count and CRP",
+  "     full blood count and biochemistry: normal",
+  "     ESR and CRP: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Febrile convulsions caused by fever\nPsychogenic non-epileptic seizures\nConvulsive syncope\nEpilepsy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Lumbar puncture\n2. MRI brain\n3. EEG\n4. Blood cultures\n5. Full blood count and CRP",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Febrile convulsions caused by fever",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 164,
+   "completion_tokens": 2516,
+   "total_tokens": 2680,
+   "cost": 0.00087184,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00087184,
+    "upstream_inference_prompt_cost": 1.64e-05,
+    "upstream_inference_completions_cost": 0.00085544
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2389,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 602,
+   "completion_tokens": 2649,
+   "total_tokens": 3251,
+   "cost": 0.00096086,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00096086,
+    "upstream_inference_prompt_cost": 6.02e-05,
+    "upstream_inference_completions_cost": 0.00090066
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2458,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 793,
+   "completion_tokens": 4454,
+   "total_tokens": 5247,
+   "cost": 0.00159366,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00159366,
+    "upstream_inference_prompt_cost": 7.93e-05,
+    "upstream_inference_completions_cost": 0.00151436
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4051,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 593.3
+}

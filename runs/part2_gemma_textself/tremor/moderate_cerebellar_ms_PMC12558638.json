@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Does the drooping get worse as the day progresses?",
+  "Did these symptoms start suddenly over the last few days?",
+  "Do you experience double vision?",
+  "Do you have difficulty swallowing?",
+  "Do you have difficulty speaking?",
+  "Do you have weakness in your arms or legs?",
+  "Do you have shortness of breath?",
+  "Has this been present since childhood?",
+  "Do you have a known thyroid condition?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "yes",
+  "9": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Repetitive Nerve Stimulation",
+  "Creatine Kinase",
+  "Genetic testing for mitochondrial and congenital myopathies",
+  "Muscle biopsy"
+ ],
+ "served": [
+  "repetitive nerve stimulation",
+  "creatine kinase",
+  "genetic testing (targeted panel or exome)"
+ ],
+ "results": [
+  "1. Repetitive Nerve Stimulation",
+  "     repetitive nerve stimulation: normal",
+  "2. Creatine Kinase",
+  "     creatine kinase: normal",
+  "3. Genetic testing for mitochondrial and congenital myopathies",
+  "     genetic testing (targeted panel or exome): novel heterozygous NONSENSE variant in POU4F1; present in the symptomatic mother, sister and grandmother and absent in a healthy uncle",
+  "4. Muscle biopsy",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Autosomal dominant congenital ptosis caused by a POU4F1 mutation\n\nMitochondrial myopathy (CPEO)\nCongenital myasthenic syndrome\nMyasthenia gravis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Repetitive Nerve Stimulation\n2. Creatine Kinase\n3. Genetic testing for mitochondrial and congenital myopathies\n4. Muscle biopsy",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Autosomal dominant congenital ptosis caused by a POU4F1 mutation",
+ "decisive_served": [
+  "genetic testing (targeted panel or exome)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 245,
+   "completion_tokens": 3056,
+   "total_tokens": 3301,
+   "cost": 0.00106354,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00106354,
+    "upstream_inference_prompt_cost": 2.45e-05,
+    "upstream_inference_completions_cost": 0.00103904
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2833,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 623,
+   "completion_tokens": 2179,
+   "total_tokens": 2802,
+   "cost": 0.00080316,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00080316,
+    "upstream_inference_prompt_cost": 6.23e-05,
+    "upstream_inference_completions_cost": 0.00074086
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2102,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 842,
+   "completion_tokens": 2834,
+   "total_tokens": 3676,
+   "cost": 0.00104776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00104776,
+    "upstream_inference_prompt_cost": 8.42e-05,
+    "upstream_inference_completions_cost": 0.00096356
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2594,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 224.0
+}

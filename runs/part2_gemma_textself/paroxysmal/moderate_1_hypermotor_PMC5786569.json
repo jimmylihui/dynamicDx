@@ -1,0 +1,133 @@
+{
+ "questions": [
+  "Do you remember dreaming about the movements you are making?",
+  "Do these episodes typically occur within the first few hours of sleep?",
+  "Do you have a history of seizures or epilepsy during the day?",
+  "Do these episodes often occur in clusters of several events per night?",
+  "Do you experience tongue biting or urinary incontinence during these episodes?",
+  "Do you feel a sense of intense fear or panic during these episodes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Polysomnography with extended EEG monitoring",
+  "Brain MRI"
+ ],
+ "served": [
+  "video-oculography / eye-movement recording",
+  "video-polygraphy (EEG with EMG)",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Polysomnography with extended EEG monitoring",
+  "     video-oculography / eye-movement recording: normal",
+  "     video-polygraphy (EEG with EMG): not performed",
+  "2. Brain MRI",
+  "     brain MRI: no epileptogenic lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Sleep-related Hypermotor Epilepsy, idiopathic\nREM Sleep Behavior Disorder\nConfusional Arousals\nNight Terrors",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Polysomnography with extended EEG monitoring\n2. Brain MRI",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Sleep-related Hypermotor Epilepsy, idiopathic",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 238,
+   "completion_tokens": 3265,
+   "total_tokens": 3503,
+   "cost": 0.0011339,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011339,
+    "upstream_inference_prompt_cost": 2.38e-05,
+    "upstream_inference_completions_cost": 0.0011101
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3225,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 596,
+   "completion_tokens": 901,
+   "total_tokens": 1497,
+   "cost": 0.00036594,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00036594,
+    "upstream_inference_prompt_cost": 5.96e-05,
+    "upstream_inference_completions_cost": 0.00030634
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 904,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 761,
+   "completion_tokens": 1946,
+   "total_tokens": 2707,
+   "cost": 0.00073774,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00073774,
+    "upstream_inference_prompt_cost": 7.61e-05,
+    "upstream_inference_completions_cost": 0.00066164
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1943,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 175.7
+}

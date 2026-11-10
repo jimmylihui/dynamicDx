@@ -1,0 +1,181 @@
+{
+ "questions": [
+  "Did these abnormal movements begin after a traumatic brain injury?",
+  "Is the patient fully conscious and able to understand spoken commands?",
+  "Does she have recurrent, involuntary muscle spasms triggered by touch or noise?",
+  "Did she recently have a wound, surgery, or injection before these spasms began?",
+  "Has she had a fever?",
+  "Did the hypoxic brain injury follow a cardiac arrest or period of profound respiratory failure?",
+  "Did the abnormal movements begin after the patient regained consciousness from that hypoxic event?",
+  "Are the movements brief, shock-like jerks of the limbs or trunk (myoclonus), rather than sustained twisting postures?",
+  "Are the movements worsened by voluntary action or attempts to move?",
+  "Has the patient remained comatose since the hypoxic event?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Continuous video-EEG monitoring to assess for nonconvulsive status epilepticus.",
+  "Noncontrast CT head followed by brain MRI with and without contrast.",
+  "Bedside capillary blood glucose and serum electrolytes, calcium, magnesium, renal and hepatic function, and toxicology screen.",
+  "Lumbar puncture for CSF cell count, protein, glucose, cultures, HSV/VZV PCR, and autoimmune encephalitis antibodies including anti-NMDA receptor antibody.",
+  "Surface EMG of the affected muscles synchronized with EEG, including EEG–EMG back-averaging, to determine whether the jerks are cortical, subcortical, or spinal myoclonus.",
+  "Review the medication and anesthetic history, including recent withdrawal of sedatives, opioids, or anticonvulsants, and measure serum levels of any anticonvulsant medications."
+ ],
+ "served": [
+  "EEG",
+  "CT head",
+  "MRI brain with gadolinium",
+  "brain MRI",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "toxicology screen (urine and serum)",
+  "renal function (urea, creatinine)",
+  "electrolytes (Na, K, Ca, Mg)",
+  "glucose",
+  "toxicology screen",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel",
+  "EEG-EMG polygraphy (back-averaging)",
+  "medication review"
+ ],
+ "results": [
+  "R1 ASK Did these abnormal movements begin after a traumatic brain injury?; Is the patient fully conscious and able to understand spoken commands?; Does she have recurrent, involuntary muscle spasms triggered by touch or noise?; Did she recently have a wound, surgery, or injection before these spasms began?; Has she had a fever? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ORDER Continuous video-EEG monitoring to assess for nonconvulsive status epilepticus.; Noncontrast CT head followed by brain MRI with and without contrast.; Bedside capillary blood glucose and serum electrolytes, calcium, magnesium, renal and hepatic function, and toxicology screen.; Lumbar puncture for CSF cell count, protein, glucose, cultures, HSV/VZV PCR, and autoimmune encephalitis antibodies including anti-NMDA receptor antibody. -> [['EEG'], ['CT head', 'MRI brain with gadolinium', 'brain MRI'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'toxicology screen (urine and serum)', 'renal function (urea, creatinine)', 'electrolytes (Na, K, Ca, Mg)', 'glucose', 'toxicology screen'], ['CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF culture and viral PCR', 'CSF autoimmune encephalitis panel']]",
+  "R3 ASK Did the hypoxic brain injury follow a cardiac arrest or period of profound respiratory failure?; Did the abnormal movements begin after the patient regained consciousness from that hypoxic event?; Are the movements brief, shock-like jerks of the limbs or trunk (myoclonus), rather than sustained twisting postures?; Are the movements worsened by voluntary action or attempts to move?; Has the patient remained comatose since the hypoxic event? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R4 ORDER Surface EMG of the affected muscles synchronized with EEG, including EEG–EMG back-averaging, to determine whether the jerks are cortical, subcortical, or spinal myoclonus.; Review the medication and anesthetic history, including recent withdrawal of sedatives, opioids, or anticonvulsants, and measure serum levels of any anticonvulsant medications. -> [['EEG', 'EEG-EMG polygraphy (back-averaging)'], ['medication review']]",
+  "R5 DIAGNOSIS Non-epileptic subcortical post-hypoxic myoclonus due to hypoxic–ischemic brain injury (post-hypoxic myoclonus, without evidence of cortical seizure activity). -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did these abnormal movements begin after a traumatic brain injury?",
+    "Is the patient fully conscious and able to understand spoken commands?",
+    "Does she have recurrent, involuntary muscle spasms triggered by touch or noise?",
+    "Did she recently have a wound, surgery, or injection before these spasms began?",
+    "Has she had a fever?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Continuous video-EEG monitoring to assess for nonconvulsive status epilepticus.",
+    "Noncontrast CT head followed by brain MRI with and without contrast.",
+    "Bedside capillary blood glucose and serum electrolytes, calcium, magnesium, renal and hepatic function, and toxicology screen.",
+    "Lumbar puncture for CSF cell count, protein, glucose, cultures, HSV/VZV PCR, and autoimmune encephalitis antibodies including anti-NMDA receptor antibody."
+   ],
+   "result": [
+    [
+     "EEG"
+    ],
+    [
+     "CT head",
+     "MRI brain with gadolinium",
+     "brain MRI"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests",
+     "toxicology screen (urine and serum)",
+     "renal function (urea, creatinine)",
+     "electrolytes (Na, K, Ca, Mg)",
+     "glucose",
+     "toxicology screen"
+    ],
+    [
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF culture and viral PCR",
+     "CSF autoimmune encephalitis panel"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did the hypoxic brain injury follow a cardiac arrest or period of profound respiratory failure?",
+    "Did the abnormal movements begin after the patient regained consciousness from that hypoxic event?",
+    "Are the movements brief, shock-like jerks of the limbs or trunk (myoclonus), rather than sustained twisting postures?",
+    "Are the movements worsened by voluntary action or attempts to move?",
+    "Has the patient remained comatose since the hypoxic event?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Surface EMG of the affected muscles synchronized with EEG, including EEG–EMG back-averaging, to determine whether the jerks are cortical, subcortical, or spinal myoclonus.",
+    "Review the medication and anesthetic history, including recent withdrawal of sedatives, opioids, or anticonvulsants, and measure serum levels of any anticonvulsant medications."
+   ],
+   "result": [
+    [
+     "EEG",
+     "EEG-EMG polygraphy (back-averaging)"
+    ],
+    [
+     "medication review"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Non-epileptic subcortical post-hypoxic myoclonus due to hypoxic–ischemic brain injury (post-hypoxic myoclonus, without evidence of cortical seizure activity)."
+  }
+ ],
+ "dx": "Non-epileptic subcortical post-hypoxic myoclonus due to hypoxic–ischemic brain injury (post-hypoxic myoclonus, without evidence of cortical seizure activity).",
+ "dx_raw": "DIAGNOSIS: Non-epileptic subcortical post-hypoxic myoclonus due to hypoxic–ischemic brain injury (post-hypoxic myoclonus, without evidence of cortical seizure activity).",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0041,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 56.7
+}

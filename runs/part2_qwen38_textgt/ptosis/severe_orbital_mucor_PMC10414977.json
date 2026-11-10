@@ -1,0 +1,176 @@
+{
+ "questions": [
+  "Is the swelling painful?",
+  "Do you have a fever?",
+  "Did this start suddenly, within the last 24 hours?",
+  "Do you have double vision?",
+  "Have you had recent trauma to the eye or face?",
+  "Do you have a history of thyroid disease?",
+  "Is your vision blurred in that eye?",
+  "Do you have pain when moving the eye?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Complete ophthalmic examination including visual acuity, color vision, pupillary reactions (looking for relative afferent pupillary defect), and fundoscopy",
+  "Measurement of intraocular pressure in both eyes",
+  "Assessment of extraocular movements in all directions of gaze with specific attention to pain on movement and restriction",
+  "Examination of the eyelids for signs of inflammation, erythema, warmth, or abscess formation",
+  "Palpation of the orbital rim and sinuses for tenderness",
+  "Blood tests: Full blood count, C-reactive protein, Erythrocyte sedimentation rate, Thyroid function tests (TSH, Free T4), and Autoimmune screen (ANA, ANCA)",
+  "Urgent CT scan of the orbits and paranasal sinuses with contrast"
+ ],
+ "served": [
+  "fundoscopy",
+  "pupil examination (size, light reaction)",
+  "visual acuity and colour vision",
+  "ocular motility examination",
+  "pain and periorbital inspection",
+  "thyroid function (TSH, free T4)",
+  "antinuclear antibodies and anti-dsDNA",
+  "anti-thyroid antibodies",
+  "ESR / CRP",
+  "full blood count",
+  "TSH / free T4 / TRAb",
+  "CT sinuses"
+ ],
+ "results": [
+  "1. Complete ophthalmic examination including visual acuity, color vision, pupillary reactions (looking for relative afferent pupillary defect), and fundoscopy",
+  "     fundoscopy: right optic disc edema",
+  "     pupil examination (size, light reaction): equal and reactive",
+  "     visual acuity and colour vision: normal",
+  "2. Measurement of intraocular pressure in both eyes",
+  "     not performed / not available",
+  "3. Assessment of extraocular movements in all directions of gaze with specific attention to pain on movement and restriction",
+  "     ocular motility examination: failure to adduct the right eye",
+  "4. Examination of the eyelids for signs of inflammation, erythema, warmth, or abscess formation",
+  "     pain and periorbital inspection: severe constant pain; the eye had been treated with steroid drops at two outside clinics",
+  "5. Palpation of the orbital rim and sinuses for tenderness",
+  "     not performed / not available",
+  "6. Blood tests: Full blood count, C-reactive protein, Erythrocyte sedimentation rate, Thyroid function tests (TSH, Free T4), and Autoimmune screen (ANA, ANCA)",
+  "     thyroid function (TSH, free T4): normal",
+  "     antinuclear antibodies and anti-dsDNA: normal",
+  "     anti-thyroid antibodies: normal",
+  "     ESR / CRP: normal",
+  "     full blood count: leukocytosis, white cells 21.4 x10^9/L",
+  "     TSH / free T4 / TRAb: normal, TRAb negative",
+  "7. Urgent CT scan of the orbits and paranasal sinuses with contrast",
+  "     CT sinuses: invasive sinus disease extending to the orbit"
+ ],
+ "dx_raw": "DIAGNOSIS: Orbital cellulitis secondary to invasive fungal sinusitis (likely mucormycosis or aspergillosis)\n1. Bacterial orbital cellulitis with intracranial extension causing cavernous sinus thrombosis\n2. Idiopathic orbital inflammatory syndrome (orbital pseudotumor)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Complete ophthalmic examination including visual acuity, color vision, pupillary reactions (looking for relative afferent pupillary defect), and fundoscopy\n2. Measurement of intraocular pressure in both eyes\n3. Assessment of extraocular movements in all directions of gaze with specific attention to pain on movement and restriction\n4. Examination of the eyelids for signs of inflammation, erythema, warmth, or abscess formation\n5. Palpation of the orbital rim and sinuses for tenderness\n6. Blood tests: Full blood count, C-reactive protein, Erythrocyte sedimentation rate, Thyroid function tests (TSH, Free T4), and Autoimmune screen (ANA, ANCA)\n7. Urgent CT scan of the orbits and paranasal sinuses with contrast",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Orbital cellulitis secondary to invasive fungal sinusitis (likely mucormycosis or aspergillosis)",
+ "decisive_served": [
+  "CT sinuses"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 180,
+   "completion_tokens": 90,
+   "total_tokens": 270,
+   "cost": 6.93e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.93e-05,
+    "upstream_inference_prompt_cost": 2.7e-05,
+    "upstream_inference_completions_cost": 4.23e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 547,
+   "completion_tokens": 167,
+   "total_tokens": 714,
+   "cost": 0.00016054,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00016054,
+    "upstream_inference_prompt_cost": 8.205e-05,
+    "upstream_inference_completions_cost": 7.849e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1170,
+   "completion_tokens": 65,
+   "total_tokens": 1235,
+   "cost": 0.000137442,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000137442,
+    "upstream_inference_prompt_cost": 0.000106892,
+    "upstream_inference_completions_cost": 3.055e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 25.4
+}

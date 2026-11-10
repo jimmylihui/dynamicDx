@@ -1,0 +1,158 @@
+{
+ "questions": [
+  "Are you having trouble sleeping?",
+  "Are you experiencing any unusual movements during sleep?",
+  "Do you feel restless or agitated when trying to sleep?",
+  "Are you having trouble staying asleep?",
+  "Do you feel exhausted during the day?",
+  "Have you noticed any jerking or twitching movements while asleep?",
+  "Do you recall having vivid or disturbing dreams?",
+  "Are you having trouble falling asleep initially?",
+  "Do you wake up frequently during the night?",
+  "Have you been feeling unusually tired or sleepy lately?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Polysomnography with continuous video monitoring",
+  "Nocturnal EEG with extended montages",
+  "Complete blood count with differential",
+  "Thyroid function tests (TSH, free T4)",
+  "Comprehensive metabolic panel",
+  "Sleep diary for two weeks"
+ ],
+ "served": [
+  "interictal EEG",
+  "full blood count and biochemistry",
+  "thyroid function (TSH, free T4)",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests"
+ ],
+ "results": [
+  "1. Polysomnography with continuous video monitoring",
+  "     not performed / not available",
+  "2. Nocturnal EEG with extended montages",
+  "     interictal EEG: no epileptiform discharges",
+  "3. Complete blood count with differential",
+  "     full blood count and biochemistry: normal",
+  "4. Thyroid function tests (TSH, free T4)",
+  "     thyroid function (TSH, free T4): normal",
+  "5. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "6. Sleep diary for two weeks",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: NREM parasomnia\n\nSleep-related eating disorder\n\nNocturnal frontal lobe epilepsy (despite normal interictal EEG)\n\nREM sleep behavior disorder",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "Based on the video and your responses showing unusual complex movements during sleep without other sleep complaints, I would order:\n\n1. Polysomnography with continuous video monitoring\n2. Nocturnal EEG with extended montages\n3. Complete blood count with differential\n4. Thyroid function tests (TSH, free T4)\n5. Comprehensive metabolic panel\n6. Sleep diary for two weeks",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "NREM parasomnia",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7103,
+   "completion_tokens": 316,
+   "total_tokens": 7419,
+   "cost": 0.000117012,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7040,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000117012,
+    "upstream_inference_prompt_cost": 2.8532e-05,
+    "upstream_inference_completions_cost": 8.848e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 201,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7524,
+   "completion_tokens": 531,
+   "total_tokens": 8055,
+   "cost": 0.000236152,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7040,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000236152,
+    "upstream_inference_prompt_cost": 8.7472e-05,
+    "upstream_inference_completions_cost": 0.00014868
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 448,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7828,
+   "completion_tokens": 960,
+   "total_tokens": 8788,
+   "cost": 0.0003373664,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7488,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003373664,
+    "upstream_inference_prompt_cost": 6.85664e-05,
+    "upstream_inference_completions_cost": 0.0002688
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 921,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 92.0
+}

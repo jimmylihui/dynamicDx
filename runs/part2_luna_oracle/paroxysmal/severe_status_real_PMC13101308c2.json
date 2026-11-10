@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Did you suddenly lose consciousness or become unable to respond?",
+  "Did you have shaking, stiffening, or jerking movements?",
+  "Have you had a seizure before?",
+  "Did you fall or hit your head before these symptoms began?",
+  "Do you currently have a severe or worsening headache?",
+  "Do you have new weakness or numbness on one side of your body?",
+  "Are you having trouble speaking, seeing, or understanding people?",
+  "Are you having difficulty breathing?",
+  "Do you have chest pain?",
+  "Are you currently in severe pain anywhere?",
+  "Did the symptoms begin suddenly?",
+  "Have you recently started, stopped, or missed any medications?",
+  "Have you used alcohol or recreational drugs recently?",
+  "Do you have diabetes or a history of low blood sugar?",
+  "Have you had a fever or recent infection?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "antiseizure medication trial"
+ ],
+ "results": [
+  "1. interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "2. video-EEG monitoring of a typical event: ictal BODY TURNING, often preceded by head version, but the EEG shows classic GENERALIZED spike-wave or polyspike discharges WITHOUT consistent lateralization",
+  "3. antiseizure medication trial: responded to appropriate broad-spectrum antiseizure medication - NOT refractory"
+ ],
+ "dx_raw": "DIAGNOSIS: Genetic generalized epilepsy (idiopathic generalized epilepsy) with generalized tonic–clonic seizures and asymmetric tonic body turning, caused by a presumed genetic generalized epileptic network rather than a focal structural lesion.\n\nALTERNATIVE: Focal epilepsy with rapid secondary bilateral synchrony, likely frontal-lobe onset.\n\nALTERNATIVE: Combined generalized and focal epilepsy.\n\nALTERNATIVE: Psychogenic nonepileptic seizures superimposed on epilepsy.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Genetic generalized epilepsy (idiopathic generalized epilepsy) with generalized tonic–clonic seizures and asymmetric tonic body turning, caused by a presumed genetic generalized epileptic network rather than a focal structural lesion.",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "antiseizure medication trial"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 700,
+   "total_tokens": 6376,
+   "cost": 0.00047703,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00047703,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.00042
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6310,
+   "completion_tokens": 330,
+   "total_tokens": 6640,
+   "cost": 0.00033428,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 634,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00033428,
+    "upstream_inference_prompt_cost": 0.00013628,
+    "upstream_inference_completions_cost": 0.000198
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 235,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 15.1
+}

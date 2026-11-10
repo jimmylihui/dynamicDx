@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Is the tremor worse on one side of your body than the other?",
+  "Do you have a tremor when your hands are completely at rest in your lap?",
+  "Does the tremor get worse when you are using your hands, such as when writing or holding a cup?",
+  "Has anyone in your family had a similar tremor?",
+  "Does drinking a small amount of alcohol make the tremor better?",
+  "Have you noticed that your movements are slower than they used to be?",
+  "Do you have stiffness in your arms or legs?",
+  "Have you had any falls in the past six months?",
+  "Have you lost your sense of smell?",
+  "Do you act out your dreams while sleeping, such as punching, kicking, or shouting?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "levodopa trial",
+  "speech assessment",
+  "dystonia gene panel"
+ ],
+ "results": [
+  "1. levodopa trial: no response - not dopa-responsive dystonia",
+  "2. speech assessment: spasmodic speech",
+  "3. dystonia gene panel: pathogenic THAP1 variant c.505C>T (p.Arg169*), heterozygous - DYT6"
+ ],
+ "dx_raw": "DIAGNOSIS: DYT6 (DYT-THAP1) isolated dystonia caused by a heterozygous pathogenic THAP1 variant\n1. DYT1 dystonia (TOR1A gene mutation)\n2. DYT25 dystonia (GNAL gene mutation)\n3. Idiopathic adult-onset focal or segmental dystonia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "DYT6 (DYT-THAP1) isolated dystonia caused by a heterozygous pathogenic THAP1 variant",
+ "decisive_served": [
+  "levodopa trial",
+  "speech assessment",
+  "dystonia gene panel"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 5604,
+   "total_tokens": 12666,
+   "cost": 0.00880572,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00880572,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0067248
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5450,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7572,
+   "completion_tokens": 1428,
+   "total_tokens": 9000,
+   "cost": 0.00229392,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00229392,
+    "upstream_inference_prompt_cost": 0.00058032,
+    "upstream_inference_completions_cost": 0.0017136
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1360,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_genetic_DYT_PMC9982172.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 78.2
+}

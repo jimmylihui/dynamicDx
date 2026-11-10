@@ -1,0 +1,203 @@
+{
+ "questions": [
+  "Is difficulty with walking the main reason you are seeing me today?",
+  "Did this walking problem come on gradually over weeks to months?",
+  "Have you noticed any weakness or numbness on one side of your body?",
+  "Do you have a tremor in your hands at rest?",
+  "Have you had new problems controlling your bladder or wetting yourself?",
+  "Has your memory or thinking gotten worse recently?",
+  "Do you feel dizzy or like the room is spinning?",
+  "Do you have pain in your back or legs that worsens with walking?",
+  "Have you fallen in the past few months?",
+  "Do you shuffle your feet or feel like your feet are stuck to the floor when you try to walk?",
+  "Do you have a history of stroke or mini-stroke?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Have you had a recent head injury or infection?",
+  "Are you currently taking any medications that affect your nervous system?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "MRI brain with and without gadolinium contrast",
+  "CT head without contrast (if MRI not immediately available)",
+  "Comprehensive metabolic panel",
+  "CBC with differential",
+  "Serum vitamin B12 level",
+  "Random blood glucose",
+  "Urinalysis",
+  "Lumbar puncture with opening pressure measurement"
+ ],
+ "served": [
+  "brain MRI",
+  "MRI brain with gadolinium",
+  "CT head",
+  "renal and liver function",
+  "electrolytes (Na, K, Ca, Mg)",
+  "glucose / HbA1c",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "full blood count",
+  "vitamin B12 / folate",
+  "vitamin B12 with methylmalonic acid",
+  "glucose / HbA1c",
+  "blood glucose and HbA1c",
+  "urinalysis",
+  "lumbar puncture / CSF",
+  "CSF opening pressure"
+ ],
+ "results": [
+  "1. MRI brain with and without gadolinium contrast",
+  "     brain MRI: bilateral symmetric hyperintensity in the mammillary bodies, thalami and periaqueductal midbrain, with the LENTIFORM FORK SIGN; reversed after treatment",
+  "     MRI brain with gadolinium: abnormal; bilateral symmetric mammillary body, thalamic and periaqueductal midbrain hyperintensities with lentiform fork sign",
+  "2. CT head without contrast (if MRI not immediately available)",
+  "     CT head: normal",
+  "3. Comprehensive metabolic panel",
+  "     renal and liver function: end-stage renal disease on maintenance haemodialysis",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     glucose / HbA1c: HbA1c 5.9% (reference 4.0-6.0) - normal",
+  "     serum electrolytes, urea and creatinine: abnormal; end-stage renal failure with elevated urea and creatinine",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal; HbA1c 5.9%",
+  "4. CBC with differential",
+  "     full blood count: normal",
+  "5. Serum vitamin B12 level",
+  "     vitamin B12 / folate: normal",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "6. Random blood glucose",
+  "     glucose / HbA1c: HbA1c 5.9% (reference 4.0-6.0) - normal",
+  "     blood glucose and HbA1c: normal; HbA1c 5.9%",
+  "7. Urinalysis",
+  "     urinalysis: normal",
+  "8. Lumbar puncture with opening pressure measurement",
+  "     lumbar puncture / CSF: normal cells, protein and glucose; no oligoclonal bands",
+  "     CSF opening pressure: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Wernicke's encephalopathy due to thiamine (vitamin B1) deficiency precipitated by maintenance hemodialysis\nUremic encephalopathy (could account for the lentiform fork sign and altered mental status, but does not typically affect the mammillary bodies and periaqueductal gray)\nOsmotic demyelination syndrome (extrapontine myelinolysis from rapid osmotic shifts during dialysis can affect the basal ganglia and thalami, but the mammillary body involvement is atypical)\nDeep cerebral venous sinus thrombosis (can cause bilateral symmetric thalamic edema, but the specific periaqueductal and mammillary body involvement makes this less likely)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI brain with and without gadolinium contrast\n2. CT head without contrast (if MRI not immediately available)\n3. Comprehensive metabolic panel\n4. CBC with differential\n5. TSH\n6. Serum vitamin B12 level\n7. Random blood glucose\n8. Urinalysis\n9. ECG\n10. Lumbar puncture with opening pressure measurement\n11. EEG",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Wernicke's encephalopathy due to thiamine (vitamin B1) deficiency precipitated by maintenance hemodialysis",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 807,
+   "total_tokens": 21245,
+   "cost": 0.00706212,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00706212,
+    "upstream_inference_prompt_cost": 0.00609372,
+    "upstream_inference_completions_cost": 0.0009684
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 605,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 21062,
+   "completion_tokens": 1670,
+   "total_tokens": 22732,
+   "cost": 0.00342108,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20423,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00342108,
+    "upstream_inference_prompt_cost": 0.00141708,
+    "upstream_inference_completions_cost": 0.002004
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1592,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 21610,
+   "completion_tokens": 3355,
+   "total_tokens": 24965,
+   "cost": 0.00545772,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 21047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00545772,
+    "upstream_inference_prompt_cost": 0.00143172,
+    "upstream_inference_completions_cost": 0.004026
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3221,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 86.9
+}

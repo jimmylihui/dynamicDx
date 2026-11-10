@@ -1,0 +1,263 @@
+{
+ "questions": [
+  "Did your symptoms begin after a significant head injury?",
+  "Have you had one or more seizures?",
+  "Do you currently have weakness or loss of movement in any limb?",
+  "Did you recently undergo brain surgery?",
+  "Have you had a fever or suspected infection during this illness?",
+  "During the episodes, do you remain aware of what is happening?",
+  "Can you remember the episodes afterward?",
+  "Do the episodes involve rhythmic jerking of both arms and legs?",
+  "Have you ever bitten your tongue during an episode?",
+  "Do you lose bladder control during an episode?",
+  "Have you had two or more similar unprovoked episodes separated by at least 24 hours?",
+  "Do you experience a warning sensation, unusual smell, fear, or déjà vu immediately before an episode?",
+  "Do the episodes occur only during sleep?",
+  "Is there a family history of epilepsy?",
+  "Have you recently stopped or missed an antiseizure medication?",
+  "Do the convulsive episodes usually last longer than five minutes?",
+  "Do you keep your eyes tightly closed during an episode?",
+  "Are the limb movements irregular or out of sync rather than rhythmic?",
+  "Do you return to your usual mental state immediately after an episode?",
+  "Can someone interrupt an episode by speaking to you or gently restraining a limb?",
+  "Did your seizures first begin during adolescence or early adulthood?",
+  "Do you have brief, shock-like jerks of your arms, especially shortly after waking?",
+  "Have you ever had brief episodes of staring or unresponsiveness lasting several seconds?",
+  "Do seizures or arm jerks occur more often after sleep deprivation, alcohol use, or flashing lights?",
+  "Have you ever had similar seizures despite taking an antiseizure medication correctly?",
+  "Did the seizures begin before puberty?",
+  "Have you had any developmental or intellectual difficulties since childhood?",
+  "Have you had seizure types other than generalized convulsions, such as sudden falls, prolonged staring, or brief muscle jerks?",
+  "Do you have a close relative with generalized convulsive seizures?",
+  "Have flashing lights ever triggered a seizure?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "yes",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Electroencephalogram (EEG), including hyperventilation and photic stimulation.",
+  "Brain MRI with an epilepsy protocol.",
+  "Serum glucose, sodium, calcium, magnesium, renal function, and liver function tests.",
+  "Urine toxicology screen and blood ethanol level."
+ ],
+ "served": [
+  "interictal EEG",
+  "brain MRI",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium",
+  "liver and renal function",
+  "toxicology screen (urine and serum)",
+  "serum ethanol"
+ ],
+ "results": [
+  "R1 ASK Did your symptoms begin after a significant head injury?; Have you had one or more seizures?; Do you currently have weakness or loss of movement in any limb?; Did you recently undergo brain surgery?; Have you had a fever or suspected infection during this illness? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R2 ASK During the episodes, do you remain aware of what is happening?; Can you remember the episodes afterward?; Do the episodes involve rhythmic jerking of both arms and legs?; Have you ever bitten your tongue during an episode?; Do you lose bladder control during an episode? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R3 ASK Have you had two or more similar unprovoked episodes separated by at least 24 hours?; Do you experience a warning sensation, unusual smell, fear, or déjà vu immediately before an episode?; Do the episodes occur only during sleep?; Is there a family history of epilepsy?; Have you recently stopped or missed an antiseizure medication? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Do the convulsive episodes usually last longer than five minutes?; Do you keep your eyes tightly closed during an episode?; Are the limb movements irregular or out of sync rather than rhythmic?; Do you return to your usual mental state immediately after an episode?; Can someone interrupt an episode by speaking to you or gently restraining a limb? -> ['no', 'no', 'no', 'no', 'no']",
+  "R5 ORDER Electroencephalogram (EEG), including hyperventilation and photic stimulation.; Brain MRI with an epilepsy protocol.; Serum glucose, sodium, calcium, magnesium, renal function, and liver function tests.; Urine toxicology screen and blood ethanol level. -> [['interictal EEG'], ['brain MRI'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'serum calcium, magnesium and phosphate', 'blood glucose and HbA1c', 'glucose, calcium, magnesium, sodium', 'liver and renal function'], ['toxicology screen (urine and serum)', 'serum ethanol']]",
+  "R6 ASK Did your seizures first begin during adolescence or early adulthood?; Do you have brief, shock-like jerks of your arms, especially shortly after waking?; Have you ever had brief episodes of staring or unresponsiveness lasting several seconds?; Do seizures or arm jerks occur more often after sleep deprivation, alcohol use, or flashing lights?; Have you ever had similar seizures despite taking an antiseizure medication correctly? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 ASK Did the seizures begin before puberty?; Have you had any developmental or intellectual difficulties since childhood?; Have you had seizure types other than generalized convulsions, such as sudden falls, prolonged staring, or brief muscle jerks?; Do you have a close relative with generalized convulsive seizures?; Have flashing lights ever triggered a seizure? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R8 DIAGNOSIS Genetic generalized epilepsy, specifically epilepsy with generalized tonic–clonic seizures alone (idiopathic generalized epilepsy), with no structural, metabolic, toxic, or acquired cause identified. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did your symptoms begin after a significant head injury?",
+    "Have you had one or more seizures?",
+    "Do you currently have weakness or loss of movement in any limb?",
+    "Did you recently undergo brain surgery?",
+    "Have you had a fever or suspected infection during this illness?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "During the episodes, do you remain aware of what is happening?",
+    "Can you remember the episodes afterward?",
+    "Do the episodes involve rhythmic jerking of both arms and legs?",
+    "Have you ever bitten your tongue during an episode?",
+    "Do you lose bladder control during an episode?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you had two or more similar unprovoked episodes separated by at least 24 hours?",
+    "Do you experience a warning sensation, unusual smell, fear, or déjà vu immediately before an episode?",
+    "Do the episodes occur only during sleep?",
+    "Is there a family history of epilepsy?",
+    "Have you recently stopped or missed an antiseizure medication?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do the convulsive episodes usually last longer than five minutes?",
+    "Do you keep your eyes tightly closed during an episode?",
+    "Are the limb movements irregular or out of sync rather than rhythmic?",
+    "Do you return to your usual mental state immediately after an episode?",
+    "Can someone interrupt an episode by speaking to you or gently restraining a limb?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Electroencephalogram (EEG), including hyperventilation and photic stimulation.",
+    "Brain MRI with an epilepsy protocol.",
+    "Serum glucose, sodium, calcium, magnesium, renal function, and liver function tests.",
+    "Urine toxicology screen and blood ethanol level."
+   ],
+   "result": [
+    [
+     "interictal EEG"
+    ],
+    [
+     "brain MRI"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests",
+     "serum calcium, magnesium and phosphate",
+     "blood glucose and HbA1c",
+     "glucose, calcium, magnesium, sodium",
+     "liver and renal function"
+    ],
+    [
+     "toxicology screen (urine and serum)",
+     "serum ethanol"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Did your seizures first begin during adolescence or early adulthood?",
+    "Do you have brief, shock-like jerks of your arms, especially shortly after waking?",
+    "Have you ever had brief episodes of staring or unresponsiveness lasting several seconds?",
+    "Do seizures or arm jerks occur more often after sleep deprivation, alcohol use, or flashing lights?",
+    "Have you ever had similar seizures despite taking an antiseizure medication correctly?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Did the seizures begin before puberty?",
+    "Have you had any developmental or intellectual difficulties since childhood?",
+    "Have you had seizure types other than generalized convulsions, such as sudden falls, prolonged staring, or brief muscle jerks?",
+    "Do you have a close relative with generalized convulsive seizures?",
+    "Have flashing lights ever triggered a seizure?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Genetic generalized epilepsy, specifically epilepsy with generalized tonic–clonic seizures alone (idiopathic generalized epilepsy), with no structural, metabolic, toxic, or acquired cause identified."
+  }
+ ],
+ "dx": "Genetic generalized epilepsy, specifically epilepsy with generalized tonic–clonic seizures alone (idiopathic generalized epilepsy), with no structural, metabolic, toxic, or acquired cause identified.",
+ "dx_raw": "DIAGNOSIS: Genetic generalized epilepsy, specifically epilepsy with generalized tonic–clonic seizures alone (idiopathic generalized epilepsy), with no structural, metabolic, toxic, or acquired cause identified.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "interictal EEG"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.006,
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 70.4
+}

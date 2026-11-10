@@ -1,0 +1,110 @@
+{
+ "questions": [
+  "Is your right arm the one that is injured?",
+  "Did you have surgery on this arm recently?",
+  "Do you currently have pain in your shoulder or arm?",
+  "Are you unable to lift your right arm above your head?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "observation of the jerks",
+  "anti-measles antibody titres (serum)",
+  "EEG",
+  "lumbar puncture / CSF",
+  "measles vaccination and infection history"
+ ],
+ "results": [
+  "1. observation of the jerks: periodic myoclonus with a SLOW relaxation phase involving bilateral shoulder abductors and hip flexors",
+  "2. anti-measles antibody titres (serum): raised, with CSF-restricted synthesis",
+  "3. EEG: periodic slow wave complexes TIME-LOCKED to the myoclonic jerks",
+  "4. lumbar puncture / CSF: intrathecal synthesis of anti-measles IgG",
+  "5. measles vaccination and infection history: measles in infancy; SSPE typically follows 4-12 years later, but onset here was in adulthood"
+ ],
+ "dx_raw": "DIAGNOSIS: Subacute sclerosing panencephalitis (SSPE)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Subacute sclerosing panencephalitis (SSPE)",
+ "decisive_served": [
+  "observation of the jerks",
+  "anti-measles antibody titres (serum)",
+  "EEG",
+  "lumbar puncture / CSF",
+  "measles vaccination and infection history"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 54,
+   "total_tokens": 4877,
+   "cost": 0.00074883,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074883,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.538e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5176,
+   "completion_tokens": 21,
+   "total_tokens": 5197,
+   "cost": 0.00018595,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00018595,
+    "upstream_inference_prompt_cost": 0.00017608,
+    "upstream_inference_completions_cost": 9.87e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "severe_sspe_PMC13071100.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 16.8
+}

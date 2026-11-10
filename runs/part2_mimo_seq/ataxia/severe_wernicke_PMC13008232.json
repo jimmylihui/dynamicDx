@@ -1,0 +1,179 @@
+{
+ "questions": [
+  "Have you had numbness, tingling, or a \"pins and needles\" sensation in your feet or lower legs over the past few months?",
+  "Have you experienced recent balance problems that led to falls or near-falls?",
+  "Do you notice any unsteadiness when you walk that gets worse in the dark or with your eyes closed?",
+  "Have you experienced urinary urgency, frequent urination, or accidental leakage of urine?",
+  "Have you noticed these urinary symptoms developing around the same time as your gait changes?",
+  "Have you been treated for high blood pressure over the years?",
+  "Have you noticed your eyes having difficulty moving up and down, or have others commented that you don't seem to look up or down properly?",
+  "Have you experienced any episodes of sudden loss of balance where you fall backward?",
+  "Do you tend to fall backward when you lose your balance, rather than forward or to the side?",
+  "Have you ever had a stroke or transient ischemic attack (TIA)?",
+  "Have you noticed any changes in your thinking, memory, or ability to plan and organize things over the past year or two?",
+  "Do you or your family notice your facial expression becoming more blank or less animated?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Detailed neurological examination of upper limbs: assess for resting tremor, rigidity (with reinforcement), and bradykinesia (finger tapping, hand opening/closing, pronation-supination)",
+  "Assessment of frontal lobe cognitive function (Trail Making Test B or similar executive function assessment)",
+  "Examination for primitive reflexes (grasp reflex, palmomental reflex, glabellar tap)",
+  "Examination for primitive reflexes (grasp reflex, glabellar tap, palmomental reflex)",
+  "Digit span test (forward and backward) to further assess attention and executive function"
+ ],
+ "served": [
+  "muscle tone examination",
+  "mental status / cognitive screen",
+  "deep tendon reflexes and plantar responses"
+ ],
+ "results": [
+  "R1 ASK Have you had numbness, tingling, or a \"pins and needles\" sensation in your feet or lower legs over the past few months?; Have you experienced recent balance problems that led to falls or near-falls?; Do you notice any unsteadiness when you walk that gets worse in the dark or with your eyes closed? -> ['no', 'no', 'no']",
+  "R2 ORDER Detailed neurological examination of upper limbs: assess for resting tremor, rigidity (with reinforcement), and bradykinesia (finger tapping, hand opening/closing, pronation-supination) -> [['muscle tone examination']]",
+  "R3 ORDER Assessment of frontal lobe cognitive function (Trail Making Test B or similar executive function assessment); Examination for primitive reflexes (grasp reflex, palmomental reflex, glabellar tap) -> [['mental status / cognitive screen'], []]",
+  "R4 ASK Have you experienced urinary urgency, frequent urination, or accidental leakage of urine?; Have you noticed these urinary symptoms developing around the same time as your gait changes?; Have you been treated for high blood pressure over the years? -> ['no', 'no', 'no']",
+  "R5 ASK Have you noticed your eyes having difficulty moving up and down, or have others commented that you don't seem to look up or down properly?; Have you experienced any episodes of sudden loss of balance where you fall backward?; Do you tend to fall backward when you lose your balance, rather than forward or to the side? -> ['no', 'no', 'no']",
+  "R6 ASK Have you ever had a stroke or transient ischemic attack (TIA)?; Have you noticed any changes in your thinking, memory, or ability to plan and organize things over the past year or two?; Do you or your family notice your facial expression becoming more blank or less animated? -> ['no', 'no', 'no']",
+  "R7 ORDER Examination for primitive reflexes (grasp reflex, glabellar tap, palmomental reflex); Digit span test (forward and backward) to further assess attention and executive function -> [['deep tendon reflexes and plantar responses'], ['mental status / cognitive screen']]",
+  "R8 DIAGNOSIS Gait disorder associated with mild cognitive impairment, etiology requiring further investigation - likely early neurodegenerative process (recommend brain MRI and formal neuropsychological testing to differentiate between vascular cognitive impairment and early Parkinson's disease dementia/dementia with Lewy bodies) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you had numbness, tingling, or a \"pins and needles\" sensation in your feet or lower legs over the past few months?",
+    "Have you experienced recent balance problems that led to falls or near-falls?",
+    "Do you notice any unsteadiness when you walk that gets worse in the dark or with your eyes closed?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Detailed neurological examination of upper limbs: assess for resting tremor, rigidity (with reinforcement), and bradykinesia (finger tapping, hand opening/closing, pronation-supination)"
+   ],
+   "result": [
+    [
+     "muscle tone examination"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Assessment of frontal lobe cognitive function (Trail Making Test B or similar executive function assessment)",
+    "Examination for primitive reflexes (grasp reflex, palmomental reflex, glabellar tap)"
+   ],
+   "result": [
+    [
+     "mental status / cognitive screen"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you experienced urinary urgency, frequent urination, or accidental leakage of urine?",
+    "Have you noticed these urinary symptoms developing around the same time as your gait changes?",
+    "Have you been treated for high blood pressure over the years?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you noticed your eyes having difficulty moving up and down, or have others commented that you don't seem to look up or down properly?",
+    "Have you experienced any episodes of sudden loss of balance where you fall backward?",
+    "Do you tend to fall backward when you lose your balance, rather than forward or to the side?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Have you ever had a stroke or transient ischemic attack (TIA)?",
+    "Have you noticed any changes in your thinking, memory, or ability to plan and organize things over the past year or two?",
+    "Do you or your family notice your facial expression becoming more blank or less animated?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Examination for primitive reflexes (grasp reflex, glabellar tap, palmomental reflex)",
+    "Digit span test (forward and backward) to further assess attention and executive function"
+   ],
+   "result": [
+    [
+     "deep tendon reflexes and plantar responses"
+    ],
+    [
+     "mental status / cognitive screen"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Gait disorder associated with mild cognitive impairment, etiology requiring further investigation - likely early neurodegenerative process (recommend brain MRI and formal neuropsychological testing to differentiate between vascular cognitive impairment and early Parkinson's disease dementia/dementia with Lewy bodies)"
+  }
+ ],
+ "dx": "Gait disorder associated with mild cognitive impairment, etiology requiring further investigation - likely early neurodegenerative process (recommend brain MRI and formal neuropsychological testing to differentiate between vascular cognitive impairment and early Parkinson's disease dementia/dementia with Lewy bodies)",
+ "dx_raw": "ASK:\n1. Have you experienced any changes in your mood, such as feeling more flat, apathetic, or less motivated than usual?\n2. Do you sometimes have difficulty initiating movements or starting to walk, as if your feet are \"glued to the floor\"?\n3. Has anyone noticed any stiffness, shakiness, or slowness in your movements?\n\nORDER:\n1. Gait assessment with timed walking test and assessment of stride length, arm swing symmetry, and start hesitation\n2. Frontal assessment battery (FAB) to specifically evaluate executive dysfunction beyond MMSE\n\nDIAGNOSIS: Gait disorder associated with mild cognitive impairment, etiology requiring further investigation - likely early neurodegenerative process (recommend brain MRI and formal neuropsychological testing to differentiate between vascular cognitive impairment and early Parkinson's disease dementia/dementia with Lewy bodies)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0039,
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 112.5
+}

@@ -1,0 +1,178 @@
+{
+ "questions": [
+  "Do you have a known diagnosis of Parkinson's disease?",
+  "Are you currently taking levodopa or another medication for Parkinson's disease?",
+  "Does the shaking in your right hand happen mostly when it is resting on your lap and not moving?",
+  "Does the shaking in your right hand happen when you are trying to do something, like reaching for a cup or writing?",
+  "Do you have a history of thyroid problems?",
+  "Do you have a history of multiple sclerosis?",
+  "Do you have a history of stroke?",
+  "Do you have a history of essential tremor in your family?",
+  "Do you have a history of Wilson's disease?",
+  "Do you have a history of cerebellar disease?",
+  "Do you have a history of drug-induced tremor?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Observe the patient's right hand tremor at rest, during posture holding (arms extended), and during action (finger-to-nose test)"
+ ],
+ "served": [],
+ "results": [
+  "R1 ASK Do you have a known diagnosis of Parkinson's disease?; Are you currently taking levodopa or another medication for Parkinson's disease?; Does the shaking in your right hand happen mostly when it is resting on your lap and not moving? -> ['no', 'no', 'no']",
+  "R2 ORDER Observe the patient's right hand tremor at rest, during posture holding (arms extended), and during action (finger-to-nose test) -> [[]]",
+  "R3 ASK Does the shaking in your right hand happen when you are trying to do something, like reaching for a cup or writing? -> ['yes']",
+  "R4 ASK Do you have a history of thyroid problems? -> ['no']",
+  "R5 ASK Do you have a history of multiple sclerosis? -> ['no']",
+  "R6 ASK Do you have a history of stroke? -> ['no']",
+  "R7 ASK Do you have a history of essential tremor in your family? -> ['no']",
+  "R8 ASK Do you have a history of Wilson's disease? -> ['no']",
+  "R9 ASK Do you have a history of cerebellar disease? -> ['no']",
+  "R10 ASK Do you have a history of drug-induced tremor? -> ['no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Essential tremor -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a known diagnosis of Parkinson's disease?",
+    "Are you currently taking levodopa or another medication for Parkinson's disease?",
+    "Does the shaking in your right hand happen mostly when it is resting on your lap and not moving?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Observe the patient's right hand tremor at rest, during posture holding (arms extended), and during action (finger-to-nose test)"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Does the shaking in your right hand happen when you are trying to do something, like reaching for a cup or writing?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of thyroid problems?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of multiple sclerosis?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of stroke?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of essential tremor in your family?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of Wilson's disease?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of cerebellar disease?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of drug-induced tremor?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Essential tremor"
+  }
+ ],
+ "dx": "Essential tremor",
+ "dx_raw": "DIAGNOSIS: Essential tremor",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "cost_usd": 0.0022,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 59.2
+}

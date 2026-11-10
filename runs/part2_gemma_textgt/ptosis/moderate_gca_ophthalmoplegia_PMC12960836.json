@@ -1,0 +1,137 @@
+{
+ "questions": [
+  "Is the weakness the same on both sides of your body?",
+  "Did these symptoms develop quickly, over a few days?",
+  "Did the weakness start in your legs and move upwards?",
+  "Have you had a recent respiratory or gastrointestinal infection?",
+  "Do you feel unsteady or clumsy when walking?",
+  "Do you have numbness or tingling in your hands or feet?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Blood lead level",
+  "Nerve conduction studies and electromyography"
+ ],
+ "served": [
+  "heavy metal screen",
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. Blood lead level",
+  "     heavy metal screen: normal",
+  "2. Nerve conduction studies and electromyography",
+  "     nerve conduction studies: demyelinating sensorimotor neuropathy",
+  "     needle electromyography: chronic neurogenic changes"
+ ],
+ "dx_raw": "DIAGNOSIS: Multifocal Acquired Demyelinating Sensory and Motor neuropathy (MADSUM), immune-mediated\nChronic Inflammatory Demyelinating Polyradiculoneuropathy (CIDP)\nParaneoplastic neuropathy\nSarcoidosis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Blood lead level\n2. Nerve conduction studies and electromyography",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Multifocal Acquired Demyelinating Sensory and Motor neuropathy (MADSUM), immune-mediated",
+ "decisive_served": [
+  "nerve conduction studies"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 169,
+   "completion_tokens": 5516,
+   "total_tokens": 5685,
+   "cost": 0.00189234,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00189234,
+    "upstream_inference_prompt_cost": 1.69e-05,
+    "upstream_inference_completions_cost": 0.00187544
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4941,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 507,
+   "completion_tokens": 5395,
+   "total_tokens": 5902,
+   "cost": 0.001885,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 96,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001885,
+    "upstream_inference_prompt_cost": 5.07e-05,
+    "upstream_inference_completions_cost": 0.0018343
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5019,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 668,
+   "completion_tokens": 2843,
+   "total_tokens": 3511,
+   "cost": 0.00103342,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 576,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00103342,
+    "upstream_inference_prompt_cost": 6.68e-05,
+    "upstream_inference_completions_cost": 0.00096662
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2626,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_gca_ophthalmoplegia_PMC12960836.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 230.2
+}

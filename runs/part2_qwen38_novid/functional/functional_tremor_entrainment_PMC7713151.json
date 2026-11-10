@@ -1,0 +1,164 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a fever?",
+  "Are you short of breath?",
+  "Have you experienced chest pain or pressure?",
+  "Have you had nausea or vomiting?",
+  "Have you had diarrhea?",
+  "Have you had constipation?",
+  "Have you noticed blood in your urine?",
+  "Have you noticed blood in your stool?",
+  "Have you had unexplained weight loss?",
+  "Have you had night sweats?",
+  "Have you had a cough for more than two weeks?",
+  "Have you had headaches recently?",
+  "Have you had dizziness or lightheadedness?",
+  "Have you had blurred vision?",
+  "Have you had hearing loss?",
+  "Have you had numbness or tingling in your extremities?",
+  "Have you had weakness in your limbs?",
+  "Have you had difficulty speaking?",
+  "Have you had difficulty swallowing?",
+  "Have you had skin rashes?",
+  "Have you had joint pain?",
+  "Have you had muscle pain?",
+  "Have you had fatigue that does not improve with rest?",
+  "Have you had changes in your mood or mental state?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Ask the patient to point with one finger to the exact location of the pain"
+ ],
+ "served": [],
+ "results": [
+  "1. Ask the patient to point with one finger to the exact location of the pain",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute musculoskeletal strain\nAlternative 1: Contusion\nAlternative 2: Referred pain from visceral pathology",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Ask the patient to point with one finger to the exact location of the pain",
+ "rationale": [
+  null
+ ],
+ "dx": "Acute musculoskeletal strain",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 281,
+   "total_tokens": 447,
+   "cost": 0.00015697,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00015697,
+    "upstream_inference_prompt_cost": 2.49e-05,
+    "upstream_inference_completions_cost": 0.00013207
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 983,
+   "completion_tokens": 17,
+   "total_tokens": 1000,
+   "cost": 0.00015544,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00015544,
+    "upstream_inference_prompt_cost": 0.00014745,
+    "upstream_inference_completions_cost": 7.99e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1127,
+   "completion_tokens": 30,
+   "total_tokens": 1157,
+   "cost": 8.0238e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.0238e-05,
+    "upstream_inference_prompt_cost": 6.6138e-05,
+    "upstream_inference_completions_cost": 1.41e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.5
+}

@@ -1,0 +1,327 @@
+{
+ "questions": [
+  "Do you see double when you look to the left or right?",
+  "Have you had numbness, tingling, or weakness in your limbs in the past?",
+  "Is there any history of vision problems in one eye, specifically cloudiness or loss of vision that later recovered?",
+  "When you look to the right, do you notice any shaking or bouncing of your vision?",
+  "Do you have any sensitivity to light or blurred vision that comes and goes?",
+  "Have you ever been told you have nystagmus?",
+  "Have you had any balance problems, unsteadiness, or difficulty walking recently?",
+  "Have you experienced any numbness or tingling anywhere on your body, even briefly?",
+  "Do you ever have episodes of spinning or dizziness?",
+  "Any recent infection or illness before you noticed any eye problems?",
+  "Do you notice the eye movements feel different or strained when looking to the sides?",
+  "Have you ever had any episodes of numbness, tingling, or weakness that lasted for more than 24 hours and then got better?",
+  "Do you have any family history of multiple sclerosis or other autoimmune conditions?",
+  "Has anyone in your family had similar eye problems?",
+  "Have you noticed any hearing changes or ringing in one or both ears?",
+  "Do the balance problems feel worse when you move your head quickly?",
+  "Do you have any headache or neck stiffness?",
+  "Do you have any fever or recent febrile illness?",
+  "Have you had any joint pains, skin rashes, or mouth ulcers recently?",
+  "Have you been in any wooded areas where tick exposure might have occurred?",
+  "Have you traveled outside of the country in the past year?",
+  "Have you had any visual blurring or changes in color vision in either eye?",
+  "Do you notice any difficulty with speech or swallowing?",
+  "Have you had any changes in your thinking or memory recently?",
+  "Do you have any close family members or friends with similar neurological symptoms?",
+  "Have you ever had a positive TB test or been exposed to tuberculosis?",
+  "Have you had any unexplained weight loss recently?",
+  "Have you had any persistent cough or shortness of breath?",
+  "Have you noticed any lumps or swelling anywhere, particularly in your neck, armpits, or groin?",
+  "Have you had any unusual sweating, especially night sweats?",
+  "Have you had any chest pain or discomfort?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Formal assessment of extraocular movements in all six cardinal directions of gaze, documenting any limitation of adduction or abduction",
+  "Cover-uncover test to assess for strabismus or phoria at primary gaze",
+  "Test for convergence by having patient follow a target brought toward the nose",
+  "MRI brain and orbits with gadolinium contrast to look for demyelinating lesions in the brainstem (particularly the medial longitudinal fasciculus) and periventricular white matter",
+  "Comprehensive metabolic panel and complete blood count",
+  "CSF analysis with oligoclonal bands if MRI suggests demyelination",
+  "Anti-GAD65 antibodies (glutamic acid decarboxylase) - serum and CSF",
+  "VGKC-complex/LGI1/CASPR2 antibodies - serum",
+  "Anti-neuronal antibody panel (including anti-Hu, anti-Yo, anti-Ri, amphiphysin)",
+  "Formal oculomotor assessment with video-oculography to characterize any subtle nystagmus or pursuit asymmetry not detected on bedside exam"
+ ],
+ "served": [
+  "smooth pursuit and saccades",
+  "adduction in horizontal gaze (each eye)",
+  "skew deviation / alternating cover test",
+  "vertical gaze and convergence",
+  "MRI brain with gadolinium",
+  "full blood count and biochemistry",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CSF autoimmune encephalitis panel",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "video-oculography / eye-movement recording"
+ ],
+ "results": [
+  "R1 ASK Do you see double when you look to the left or right?; Have you had numbness, tingling, or weakness in your limbs in the past?; Is there any history of vision problems in one eye, specifically cloudiness or loss of vision that later recovered? -> ['no', 'no', 'no']",
+  "R2 ORDER Formal assessment of extraocular movements in all six cardinal directions of gaze, documenting any limitation of adduction or abduction; Cover-uncover test to assess for strabismus or phoria at primary gaze; Test for convergence by having patient follow a target brought toward the nose -> [['smooth pursuit and saccades', 'adduction in horizontal gaze (each eye)'], ['skew deviation / alternating cover test'], ['vertical gaze and convergence']]",
+  "R3 ASK When you look to the right, do you notice any shaking or bouncing of your vision?; Do you have any sensitivity to light or blurred vision that comes and goes?; Have you ever been told you have nystagmus? -> ['no', 'no', 'no']",
+  "R4 ASK Have you had any balance problems, unsteadiness, or difficulty walking recently?; Have you experienced any numbness or tingling anywhere on your body, even briefly?; Do you ever have episodes of spinning or dizziness?; Any recent infection or illness before you noticed any eye problems?; Do you notice the eye movements feel different or strained when looking to the sides? -> ['yes', 'no', 'yes', 'no', 'no']",
+  "R5 ASK Have you ever had any episodes of numbness, tingling, or weakness that lasted for more than 24 hours and then got better?; Do you have any family history of multiple sclerosis or other autoimmune conditions?; Has anyone in your family had similar eye problems?; Have you noticed any hearing changes or ringing in one or both ears?; Do the balance problems feel worse when you move your head quickly? -> ['no', 'no', 'no', 'no', 'no']",
+  "R6 ORDER MRI brain and orbits with gadolinium contrast to look for demyelinating lesions in the brainstem (particularly the medial longitudinal fasciculus) and periventricular white matter; Comprehensive metabolic panel and complete blood count; CSF analysis with oligoclonal bands if MRI suggests demyelination -> [['MRI brain with gadolinium'], ['full blood count and biochemistry'], ['CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index']]",
+  "R7 ASK Do you have any headache or neck stiffness?; Do you have any fever or recent febrile illness?; Have you had any joint pains, skin rashes, or mouth ulcers recently?; Have you been in any wooded areas where tick exposure might have occurred?; Have you traveled outside of the country in the past year? -> ['no', 'no', 'no', 'no', 'no']",
+  "R8 ASK Have you had any visual blurring or changes in color vision in either eye?; Do you notice any difficulty with speech or swallowing?; Have you had any changes in your thinking or memory recently?; Do you have any close family members or friends with similar neurological symptoms?; Have you ever had a positive TB test or been exposed to tuberculosis? -> ['no', 'no', 'no', 'no', 'no']",
+  "R9 ORDER Anti-GAD65 antibodies (glutamic acid decarboxylase) - serum and CSF; VGKC-complex/LGI1/CASPR2 antibodies - serum; Anti-neuronal antibody panel (including anti-Hu, anti-Yo, anti-Ri, amphiphysin); Formal oculomotor assessment with video-oculography to characterize any subtle nystagmus or pursuit asymmetry not detected on bedside exam -> [['paraneoplastic and autoimmune antibody panel (serum)', 'CSF autoimmune encephalitis panel'], ['paraneoplastic and autoimmune antibody panel (serum)'], ['serum paraneoplastic / neuronal autoantibody panel'], ['video-oculography / eye-movement recording']]",
+  "R10 ASK Have you had any unexplained weight loss recently?; Have you had any persistent cough or shortness of breath?; Have you noticed any lumps or swelling anywhere, particularly in your neck, armpits, or groin?; Have you had any unusual sweating, especially night sweats?; Have you had any chest pain or discomfort? -> ['no', 'no', 'no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Paraneoplastic cerebellar degeneration associated with anti-Homer3 antibodies, likely secondary to an occult ovarian teratoma -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you see double when you look to the left or right?",
+    "Have you had numbness, tingling, or weakness in your limbs in the past?",
+    "Is there any history of vision problems in one eye, specifically cloudiness or loss of vision that later recovered?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Formal assessment of extraocular movements in all six cardinal directions of gaze, documenting any limitation of adduction or abduction",
+    "Cover-uncover test to assess for strabismus or phoria at primary gaze",
+    "Test for convergence by having patient follow a target brought toward the nose"
+   ],
+   "result": [
+    [
+     "smooth pursuit and saccades",
+     "adduction in horizontal gaze (each eye)"
+    ],
+    [
+     "skew deviation / alternating cover test"
+    ],
+    [
+     "vertical gaze and convergence"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "When you look to the right, do you notice any shaking or bouncing of your vision?",
+    "Do you have any sensitivity to light or blurred vision that comes and goes?",
+    "Have you ever been told you have nystagmus?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you had any balance problems, unsteadiness, or difficulty walking recently?",
+    "Have you experienced any numbness or tingling anywhere on your body, even briefly?",
+    "Do you ever have episodes of spinning or dizziness?",
+    "Any recent infection or illness before you noticed any eye problems?",
+    "Do you notice the eye movements feel different or strained when looking to the sides?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you ever had any episodes of numbness, tingling, or weakness that lasted for more than 24 hours and then got better?",
+    "Do you have any family history of multiple sclerosis or other autoimmune conditions?",
+    "Has anyone in your family had similar eye problems?",
+    "Have you noticed any hearing changes or ringing in one or both ears?",
+    "Do the balance problems feel worse when you move your head quickly?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "MRI brain and orbits with gadolinium contrast to look for demyelinating lesions in the brainstem (particularly the medial longitudinal fasciculus) and periventricular white matter",
+    "Comprehensive metabolic panel and complete blood count",
+    "CSF analysis with oligoclonal bands if MRI suggests demyelination"
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium"
+    ],
+    [
+     "full blood count and biochemistry"
+    ],
+    [
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have any headache or neck stiffness?",
+    "Do you have any fever or recent febrile illness?",
+    "Have you had any joint pains, skin rashes, or mouth ulcers recently?",
+    "Have you been in any wooded areas where tick exposure might have occurred?",
+    "Have you traveled outside of the country in the past year?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Have you had any visual blurring or changes in color vision in either eye?",
+    "Do you notice any difficulty with speech or swallowing?",
+    "Have you had any changes in your thinking or memory recently?",
+    "Do you have any close family members or friends with similar neurological symptoms?",
+    "Have you ever had a positive TB test or been exposed to tuberculosis?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Anti-GAD65 antibodies (glutamic acid decarboxylase) - serum and CSF",
+    "VGKC-complex/LGI1/CASPR2 antibodies - serum",
+    "Anti-neuronal antibody panel (including anti-Hu, anti-Yo, anti-Ri, amphiphysin)",
+    "Formal oculomotor assessment with video-oculography to characterize any subtle nystagmus or pursuit asymmetry not detected on bedside exam"
+   ],
+   "result": [
+    [
+     "paraneoplastic and autoimmune antibody panel (serum)",
+     "CSF autoimmune encephalitis panel"
+    ],
+    [
+     "paraneoplastic and autoimmune antibody panel (serum)"
+    ],
+    [
+     "serum paraneoplastic / neuronal autoantibody panel"
+    ],
+    [
+     "video-oculography / eye-movement recording"
+    ]
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Have you had any unexplained weight loss recently?",
+    "Have you had any persistent cough or shortness of breath?",
+    "Have you noticed any lumps or swelling anywhere, particularly in your neck, armpits, or groin?",
+    "Have you had any unusual sweating, especially night sweats?",
+    "Have you had any chest pain or discomfort?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Paraneoplastic cerebellar degeneration associated with anti-Homer3 antibodies, likely secondary to an occult ovarian teratoma"
+  }
+ ],
+ "dx": "Paraneoplastic cerebellar degeneration associated with anti-Homer3 antibodies, likely secondary to an occult ovarian teratoma",
+ "dx_raw": "DIAGNOSIS: Paraneoplastic cerebellar degeneration associated with anti-Homer3 antibodies, likely secondary to an occult ovarian teratoma",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "paraneoplastic and autoimmune antibody panel (serum)"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0042,
+ "n_frames": 32,
+ "duration_s": 25.4,
+ "video": "mild_2_cerebellar_antiHomer3_PMC12833086.mp4",
+ "line": "vertigo_central",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 256.5
+}

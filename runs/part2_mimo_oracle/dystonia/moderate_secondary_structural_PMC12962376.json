@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Is the pain located in your arm?",
+  "Have you had a recent injury or procedure on that arm?",
+  "Are you experiencing nausea or dizziness?",
+  "Do you have a fever?",
+  "Is the pain getting worse over time?",
+  "Are you experiencing any weakness in your legs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "anti-aquaporin-4 and anti-MOG antibodies",
+  "cervical and whole spine MRI",
+  "needle EMG of the affected muscles",
+  "corticosteroid trial"
+ ],
+ "results": [
+  "1. anti-aquaporin-4 and anti-MOG antibodies: BOTH NEGATIVE - not neuromyelitis optica or MOG-antibody disease",
+  "2. cervical and whole spine MRI: LONGITUDINALLY EXTENSIVE T2 lesion confined to the cervical cord",
+  "3. needle EMG of the affected muscles: prolonged bursts, overflow activation and simultaneous agonist-antagonist contraction, with NO denervation or myopathy - confirms dystonic hypertonia",
+  "4. corticosteroid trial: high-dose intravenous methylprednisolone 1 g/day for five days followed by an oral taper"
+ ],
+ "dx_raw": "Looking at this case systematically:\n\n**Key clinical observations:**\n- Middle-aged woman in wheelchair with marked dystonic posturing\n- Progressive involuntary flexion/posturing of trunk and upper limb\n- Cervical predominance of motor symptoms\n- The EMG confirms dystonic hypertonia (not spasticity)\n\n**Key investigation findings:**\n- Longitudinally extensive T2 lesion in cervical cord on MRI\n- NMO and MOG antibodies negative\n- EMG showing dystonia, not denervation\n- Corticosteroid trial was performed\n\n---\n\nDIAGNOSDOSIS: Seronegative neuromyelitis optica spectrum disorder (NMOSD) presenting with cervical longitudinally extensive transverse myelitis and secondary cervical dystonia\n\nAlternative diagnoses to consider:\n1. Idiopathic cervical dystonia with coincidental incidental cervical cord signal change\n2. Paroxysmal tonic dystonia secondary to cervical cord lesion (from other etiology such as neurosarcoidosis or CNS vasculitis)\n3. MOG-antibody disease (seronegative/low-titer) - as false negatives occur and clinical/MRI phenotype fits",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Seronegative neuromyelitis optica spectrum disorder (NMOSD) presenting with cervical longitudinally extensive transverse myelitis and secondary cervical dystonia",
+ "decisive_served": [
+  "anti-aquaporin-4 and anti-MOG antibodies",
+  "cervical and whole spine MRI",
+  "needle EMG of the affected muscles",
+  "corticosteroid trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 15295,
+   "completion_tokens": 951,
+   "total_tokens": 16246,
+   "cost": 0.0023812376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0023812376,
+    "upstream_inference_prompt_cost": 0.0021149576,
+    "upstream_inference_completions_cost": 0.00026628
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 885,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15680,
+   "completion_tokens": 633,
+   "total_tokens": 16313,
+   "cost": 0.0002826096,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 15232,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002826096,
+    "upstream_inference_prompt_cost": 0.0001053696,
+    "upstream_inference_completions_cost": 0.00017724
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 390,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_secondary_structural_PMC12962376.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 32.2
+}

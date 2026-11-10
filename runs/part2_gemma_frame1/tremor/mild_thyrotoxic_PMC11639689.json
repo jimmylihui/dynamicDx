@@ -1,0 +1,162 @@
+{
+ "questions": [
+  "Do you have a tremor in your hands?",
+  "Does the tremor occur when your hands are resting?",
+  "Does the tremor occur when you are performing a task?",
+  "Have you noticed your handwriting becoming smaller?",
+  "Do you have any stiffness in your muscles?",
+  "Do you have numbness or tingling in your hands?",
+  "Do you have weakness in your hands?",
+  "Do you have pain in your joints?",
+  "Do you have a history of thyroid disease?",
+  "Do you have a history of diabetes?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Postural tremor assessment",
+  "Finger-to-nose test",
+  "Slit-lamp examination",
+  "Serum ceruloplasmin and copper levels",
+  "TSH level"
+ ],
+ "served": [
+  "postural tremor (arms outstretched)",
+  "coordination examination (limb and truncal)",
+  "kinetic / intention tremor (finger-nose)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "serum copper and caeruloplasmin",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. Postural tremor assessment",
+  "     postural tremor (arms outstretched): present",
+  "2. Finger-to-nose test",
+  "     coordination examination (limb and truncal): normal",
+  "     kinetic / intention tremor (finger-nose): absent",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): absent",
+  "3. Slit-lamp examination",
+  "     slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "4. Serum ceruloplasmin and copper levels",
+  "     serum copper and caeruloplasmin: normal",
+  "5. TSH level",
+  "     TSH / free T4: normal - not thyrotoxic"
+ ],
+ "dx_raw": "DIAGNOSIS: Essential tremor (idiopathic)\nEnhanced physiological tremor\nWilson's disease\nDystonic tremor",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Postural tremor assessment\n2. Finger-to-nose test\n3. Slit-lamp examination\n4. Serum ceruloplasmin and copper levels\n5. TSH level",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Essential tremor (idiopathic)",
+ "decisive_served": [
+  "TSH / free T4"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 2965,
+   "total_tokens": 3385,
+   "cost": 0.0010501,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010501,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.0010081
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2763,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 848,
+   "completion_tokens": 757,
+   "total_tokens": 1605,
+   "cost": 0.00034218,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00034218,
+    "upstream_inference_prompt_cost": 8.48e-05,
+    "upstream_inference_completions_cost": 0.00025738
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 681,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1122,
+   "completion_tokens": 2129,
+   "total_tokens": 3251,
+   "cost": 0.00083606,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00083606,
+    "upstream_inference_prompt_cost": 0.0001122,
+    "upstream_inference_completions_cost": 0.00072386
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2095,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "mild_thyrotoxic_PMC11639689.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 193.3
+}

@@ -1,0 +1,126 @@
+{
+ "questions": [
+  "Is there a family history of tremor?",
+  "Does the tremor improve after consuming alcohol?",
+  "Did the tremor start more than 5 years ago?",
+  "Does the tremor occur when your hands are resting in your lap, or only when you hold them up?",
+  "Has any other medication been tried for this tremor in the past?",
+  "Do you notice any stiffness or slowness in your movements?",
+  "Is the tremor present when you are trying to do precise tasks like writing or eating?",
+  "Have you noticed any difficulty with balance or walking, such as shuffling or freezing?",
+  "Has the tremor started on one side of the body and stayed more prominent on that side?",
+  "Have you tried levodopa or any dopamine-related medications previously?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "yes",
+  "5": "yes",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Levodopa challenge test (administer 200mg levodopa/carbidopa and assess tremor and rigidity before and after)"
+ ],
+ "served": [
+  "muscle tone examination",
+  "tremor at rest"
+ ],
+ "results": [
+  "R1 ASK Is there a family history of tremor?; Does the tremor improve after consuming alcohol?; Did the tremor start more than 5 years ago? -> ['no', 'no', 'yes']",
+  "R2 ASK Does the tremor occur when your hands are resting in your lap, or only when you hold them up?; Has any other medication been tried for this tremor in the past?; Do you notice any stiffness or slowness in your movements?; Is the tremor present when you are trying to do precise tasks like writing or eating? -> ['yes', 'yes', 'yes', 'no']",
+  "R3 ASK Have you noticed any difficulty with balance or walking, such as shuffling or freezing?; Has the tremor started on one side of the body and stayed more prominent on that side?; Have you tried levodopa or any dopamine-related medications previously? -> ['no', 'no', 'no']",
+  "R4 ORDER Levodopa challenge test (administer 200mg levodopa/carbidopa and assess tremor and rigidity before and after) -> [['muscle tone examination', 'tremor at rest']]",
+  "R5 DIAGNOSIS Parkinson's disease (idiopathic), supported by the triad of resting tremor, rigidity, bradykinesia, and a positive response to levodopa challenge. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is there a family history of tremor?",
+    "Does the tremor improve after consuming alcohol?",
+    "Did the tremor start more than 5 years ago?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Does the tremor occur when your hands are resting in your lap, or only when you hold them up?",
+    "Has any other medication been tried for this tremor in the past?",
+    "Do you notice any stiffness or slowness in your movements?",
+    "Is the tremor present when you are trying to do precise tasks like writing or eating?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any difficulty with balance or walking, such as shuffling or freezing?",
+    "Has the tremor started on one side of the body and stayed more prominent on that side?",
+    "Have you tried levodopa or any dopamine-related medications previously?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Levodopa challenge test (administer 200mg levodopa/carbidopa and assess tremor and rigidity before and after)"
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "tremor at rest"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Parkinson's disease (idiopathic), supported by the triad of resting tremor, rigidity, bradykinesia, and a positive response to levodopa challenge."
+  }
+ ],
+ "dx": "Parkinson's disease (idiopathic), supported by the triad of resting tremor, rigidity, bradykinesia, and a positive response to levodopa challenge.",
+ "dx_raw": "DIAGNOSIS: Parkinson's disease (idiopathic), supported by the triad of resting tremor, rigidity, bradykinesia, and a positive response to levodopa challenge.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0018,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 95.7
+}

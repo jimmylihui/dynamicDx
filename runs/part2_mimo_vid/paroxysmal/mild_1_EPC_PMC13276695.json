@@ -1,0 +1,153 @@
+{
+ "questions": [
+  "What is the main reason for your visit today?",
+  "Are you experiencing any pain or discomfort in your chest or arms?",
+  "Have you felt any dizziness, fainting spells, or unusual fatigue recently?",
+  "Have you had any recent injuries or trauma to your upper body?",
+  "Do you have a history of heart disease, arrhythmia, or any known heart condition?",
+  "Do you have a history of neurological disorders, such as muscle weakness or numbness?",
+  "Are you currently taking any medications, especially for your heart or nervous system?",
+  "Have you undergone similar tests or studies for heart or muscle function before?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Twelve-lead electrocardiogram",
+  "Echocardiogram",
+  "Serum troponin level",
+  "Complete blood count",
+  "Basic metabolic panel including electrolytes",
+  "Thyroid function tests"
+ ],
+ "served": [
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "glucose, calcium, magnesium, sodium",
+  "thyroid function (TSH, free T4)"
+ ],
+ "results": [
+  "1. Twelve-lead electrocardiogram",
+  "     not performed / not available",
+  "2. Echocardiogram",
+  "     not performed / not available",
+  "3. Serum troponin level",
+  "     not performed / not available",
+  "4. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "5. Basic metabolic panel including electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "6. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal"
+ ],
+ "dx_raw": "Looking at this case systematically:\n\n**Key observations:**\n- Young male, asymptomatic (no pain, syncope, fatigue, trauma)\n- No cardiac or neurological history\n- Normal blood work (CBC, electrolytes, thyroid function)\n- Extensive electrode placement on chest and arms with monitoring equipment\n- This appears to be a cardiac monitoring/electrophysiology setup\n\n**Clinical reasoning:**\nThe extensive electrode placement covering both precordium and extremities, combined with the monitoring apparatus, suggests cardiac electrophysiology evaluation. In an asymptomatic young patient with normal labs and no structural heart disease history, this pattern is most consistent with evaluation of an incidentally discovered rhythm abnormality.\n\n---\n\nDIAGNOSIS: Benign cardiac arrhythmia (incidentally discovered, requiring electrophysiological characterization)\n\n---\n\nAlternative diagnoses still considered:\n1. Inherited primary electrical disease (e.g., Brugada syndrome, long QT syndrome) - screening in young patient, possibly with family history\n2. Autonomic dysfunction/dysautonomia - if subtle symptoms were not captured in yes/no answers\n3. Exercise-induced arrhythmia - pre-stress test evaluation for occupational or screening purposes",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Twelve-lead electrocardiogram\n2. Echocardiogram\n3. Serum troponin level\n4. Complete blood count\n5. Basic metabolic panel including electrolytes\n6. Thyroid function tests",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Benign cardiac arrhythmia (incidentally discovered, requiring electrophysiological characterization)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 12223,
+   "completion_tokens": 563,
+   "total_tokens": 12786,
+   "cost": 0.000200508,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 12160,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000200508,
+    "upstream_inference_prompt_cost": 4.2868e-05,
+    "upstream_inference_completions_cost": 0.00015764
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 427,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 12676,
+   "completion_tokens": 431,
+   "total_tokens": 13107,
+   "cost": 0.000226968,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 12160,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000226968,
+    "upstream_inference_prompt_cost": 0.000106288,
+    "upstream_inference_completions_cost": 0.00012068
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 381,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 12934,
+   "completion_tokens": 1127,
+   "total_tokens": 14061,
+   "cost": 0.0003877216,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 12672,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003877216,
+    "upstream_inference_prompt_cost": 7.21616e-05,
+    "upstream_inference_completions_cost": 0.00031556
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 882,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 45.1
+}

@@ -1,0 +1,120 @@
+{
+ "questions": [
+  "Have you noticed a tremor or shaking in your hands?",
+  "Does the shaking occur primarily when your hands are at rest?",
+  "Does the shaking worsen when you try to use your hands, such as writing?",
+  "Do you feel stiffness or rigidity in your limbs?",
+  "Have you noticed that your movements are slower than normal?",
+  "Do you have difficulty with your balance or walking?",
+  "Has your handwriting become noticeably smaller?",
+  "Is there a family history of tremor or Parkinson's disease?",
+  "Are you currently taking any medications?",
+  "Do you consume alcohol regularly?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "limb power and wasting",
+  "TSH / free T4",
+  "cervical spine MRI (including flexion views)",
+  "nerve conduction studies / EMG",
+  "surface EMG of forearm flexors and extensors"
+ ],
+ "results": [
+  "1. limb power and wasting: mild distal finger muscle wasting",
+  "2. TSH / free T4: normal - not thyrotoxic",
+  "3. cervical spine MRI (including flexion views): ON NECK FLEXION, prominent flow voids in a widened posterior epidural space from C6 to T3 - diagnostic of Hirayama disease",
+  "4. nerve conduction studies / EMG: normal conduction velocity with NEUROGENIC changes in the C7-C8 myotome",
+  "5. surface EMG of forearm flexors and extensors: synchronous discharges at about 8 Hz in both forearm flexors and extensors"
+ ],
+ "dx_raw": "DIAGNOSIS: Hirayama disease (juvenile monomelic amyotrophy) caused by dynamic compression of the cervical cord from forward displacement of a tight posterior dural sac on neck flexion.\n\nAlternatives:\n1. Amyotrophic lateral sclerosis (Mills' hemiplegic variant or flail arm syndrome) – no UMN signs reported and MRI is specific\n2. Cervical spondylotic myelopathy – would not show the flexion-induced posterior epidural flow voids\n3. Multifocal motor neuropathy – normal nerve conduction studies and absence of conduction block make this unlikely",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Hirayama disease (juvenile monomelic amyotrophy) caused by dynamic compression of the cervical cord from forward displacement of a tight posterior dural sac on neck flexion.",
+ "decisive_served": [
+  "limb power and wasting",
+  "TSH / free T4",
+  "cervical spine MRI (including flexion views)",
+  "nerve conduction studies / EMG",
+  "surface EMG of forearm flexors and extensors"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2617,
+   "total_tokens": 9679,
+   "cost": 0.00522132,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00522132,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0031404
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2496,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7573,
+   "completion_tokens": 2644,
+   "total_tokens": 10217,
+   "cost": 0.00375342,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00375342,
+    "upstream_inference_prompt_cost": 0.00058062,
+    "upstream_inference_completions_cost": 0.0031728
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2530,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_thyrotoxic_PMC11639689.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 71.1
+}

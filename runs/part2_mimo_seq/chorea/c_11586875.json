@@ -1,0 +1,212 @@
+{
+ "questions": [
+  "Are you experiencing involuntary, repetitive movements of your hands?",
+  "Have you had any recent viral infection or illness before these movements began?",
+  "Do you have a personal or family history of movement disorders or autoimmune diseases?",
+  "Do these movements occur only when you rest, or also when you attempt to move your hands?",
+  "What condition are you currently hospitalized for?",
+  "Do you have any liver or kidney disease?",
+  "Are you taking any new medications recently, including antibiotics or pain medications?",
+  "Have you noticed any confusion, drowsiness, or changes in your thinking recently?",
+  "Do you consume alcohol regularly?",
+  "Have you been experiencing increased thirst, frequent urination, or unexplained weight loss recently?",
+  "Do you know if you have been diagnosed with diabetes?",
+  "Have you been feeling nauseous or vomited recently?",
+  "Have you noticed any stiffness, slowness of movement, or tremor before these movements started?",
+  "Is there any family history of Huntington's disease or other neurological conditions?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Bedside neurological examination focusing on assessment for asterixis (sustained arm extension posture for 10-15 seconds).",
+  "Comprehensive metabolic panel (CMP) including liver function tests, kidney function, glucose, and electrolytes",
+  "Serum ammonia level",
+  "Arterial blood gas (ABG)",
+  "Medication reconciliation - review all current medications including over-the-counter and supplements",
+  "Serum beta-hydroxybutyrate (ketone) level",
+  "Serum osmolality (calculated)",
+  "Venous blood gas (pH and bicarbonate)"
+ ],
+ "served": [
+  "posture and pull test",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "blood glucose and HbA1c",
+  "serum ammonia",
+  "medication and vaccination history",
+  "ketones (blood or urine)",
+  "sodium and serum osmolality",
+  "venous blood gas"
+ ],
+ "results": [
+  "R1 ASK Are you experiencing involuntary, repetitive movements of your hands?; Have you had any recent viral infection or illness before these movements began?; Do you have a personal or family history of movement disorders or autoimmune diseases?; Do these movements occur only when you rest, or also when you attempt to move your hands? -> ['no', 'no', 'no', 'no']",
+  "R2 ORDER Bedside neurological examination focusing on assessment for asterixis (sustained arm extension posture for 10-15 seconds). -> [['posture and pull test']]",
+  "R3 ASK What condition are you currently hospitalized for?; Do you have any liver or kidney disease?; Are you taking any new medications recently, including antibiotics or pain medications?; Have you noticed any confusion, drowsiness, or changes in your thinking recently?; Do you consume alcohol regularly? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Comprehensive metabolic panel (CMP) including liver function tests, kidney function, glucose, and electrolytes; Serum ammonia level; Arterial blood gas (ABG); Medication reconciliation - review all current medications including over-the-counter and supplements -> [['serum electrolytes, urea and creatinine', 'liver function tests', 'blood glucose and HbA1c'], ['serum ammonia'], [], ['medication and vaccination history']]",
+  "R5 ASK Have you been experiencing increased thirst, frequent urination, or unexplained weight loss recently?; Do you know if you have been diagnosed with diabetes?; Have you been feeling nauseous or vomited recently? -> ['yes', 'yes', 'no']",
+  "R6 ORDER Serum beta-hydroxybutyrate (ketone) level; Serum osmolality (calculated); Venous blood gas (pH and bicarbonate) -> [['ketones (blood or urine)'], ['sodium and serum osmolality'], ['venous blood gas']]",
+  "R7 ASK Have you noticed any stiffness, slowness of movement, or tremor before these movements started?; Is there any family history of Huntington's disease or other neurological conditions? -> ['no', 'no']",
+  "R8 DIAGNOSIS Hemichorea-hemiballismus secondary to severe non-ketotic hyperglycemia (hyperosmolar hyperglycemic state) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you experiencing involuntary, repetitive movements of your hands?",
+    "Have you had any recent viral infection or illness before these movements began?",
+    "Do you have a personal or family history of movement disorders or autoimmune diseases?",
+    "Do these movements occur only when you rest, or also when you attempt to move your hands?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Bedside neurological examination focusing on assessment for asterixis (sustained arm extension posture for 10-15 seconds)."
+   ],
+   "result": [
+    [
+     "posture and pull test"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "What condition are you currently hospitalized for?",
+    "Do you have any liver or kidney disease?",
+    "Are you taking any new medications recently, including antibiotics or pain medications?",
+    "Have you noticed any confusion, drowsiness, or changes in your thinking recently?",
+    "Do you consume alcohol regularly?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Comprehensive metabolic panel (CMP) including liver function tests, kidney function, glucose, and electrolytes",
+    "Serum ammonia level",
+    "Arterial blood gas (ABG)",
+    "Medication reconciliation - review all current medications including over-the-counter and supplements"
+   ],
+   "result": [
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests",
+     "blood glucose and HbA1c"
+    ],
+    [
+     "serum ammonia"
+    ],
+    [],
+    [
+     "medication and vaccination history"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you been experiencing increased thirst, frequent urination, or unexplained weight loss recently?",
+    "Do you know if you have been diagnosed with diabetes?",
+    "Have you been feeling nauseous or vomited recently?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Serum beta-hydroxybutyrate (ketone) level",
+    "Serum osmolality (calculated)",
+    "Venous blood gas (pH and bicarbonate)"
+   ],
+   "result": [
+    [
+     "ketones (blood or urine)"
+    ],
+    [
+     "sodium and serum osmolality"
+    ],
+    [
+     "venous blood gas"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any stiffness, slowness of movement, or tremor before these movements started?",
+    "Is there any family history of Huntington's disease or other neurological conditions?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Hemichorea-hemiballismus secondary to severe non-ketotic hyperglycemia (hyperosmolar hyperglycemic state)"
+  }
+ ],
+ "dx": "Hemichorea-hemiballismus secondary to severe non-ketotic hyperglycemia (hyperosmolar hyperglycemic state)",
+ "dx_raw": "ORDER:\n1. Non-contrast CT head\n2. MRI brain without contrast (if CT head is normal or non-diagnostic)\n\nDIAGNOSIS: Hemichorea-hemiballismus secondary to severe non-ketotic hyperglycemia (hyperosmolar hyperglycemic state)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "ketones (blood or urine)"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0036,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 287.8
+}

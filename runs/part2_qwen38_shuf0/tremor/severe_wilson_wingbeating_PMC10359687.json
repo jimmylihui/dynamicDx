@@ -1,0 +1,147 @@
+{
+ "questions": [
+  "Do you have a known diagnosis of epilepsy?",
+  "Are you currently taking Zonisamide?",
+  "Did your symptoms improve after restarting the medication?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside neurological examination assessing for resting tremor, rigidity, bradykinesia, and postural instability",
+  "Serum ceruloplasmin level",
+  "Slit-lamp examination of the eyes",
+  "MRI of the brain"
+ ],
+ "served": [
+  "tremor at rest",
+  "muscle tone examination",
+  "posture and pull test",
+  "gait examination",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Bedside neurological examination assessing for resting tremor, rigidity, bradykinesia, and postural instability",
+  "     tremor at rest: absent",
+  "     muscle tone examination: parkinsonian rigidity",
+  "     posture and pull test: parkinsonian postural instability",
+  "     gait examination: normal",
+  "2. Serum ceruloplasmin level",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease",
+  "3. Slit-lamp examination of the eyes",
+  "     slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "4. MRI of the brain",
+  "     brain MRI: no structural lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Drug-induced parkinsonism (secondary to Zonisamide)\n1. Idiopathic Parkinson's disease\n2. Atypical parkinsonian syndrome (e.g., Progressive Supranuclear Palsy or Multiple System Atrophy)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside neurological examination assessing for resting tremor, rigidity, bradykinesia, and postural instability\n2. Serum ceruloplasmin level\n3. Slit-lamp examination of the eyes\n4. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Drug-induced parkinsonism (secondary to Zonisamide)",
+ "decisive_served": [
+  "copper / caeruloplasmin / 24 h urinary copper"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4311,
+   "completion_tokens": 35,
+   "total_tokens": 4346,
+   "cost": 0.0006631,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006631,
+    "upstream_inference_prompt_cost": 0.00064665,
+    "upstream_inference_completions_cost": 1.645e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 4546,
+   "completion_tokens": 54,
+   "total_tokens": 4600,
+   "cost": 0.000175568,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 3968,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000175568,
+    "upstream_inference_prompt_cost": 0.000150188,
+    "upstream_inference_completions_cost": 2.538e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 4852,
+   "completion_tokens": 52,
+   "total_tokens": 4904,
+   "cost": 0.000186224,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4224,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000186224,
+    "upstream_inference_prompt_cost": 0.000161784,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.6
+}

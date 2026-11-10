@@ -1,0 +1,192 @@
+{
+ "questions": [
+  "Do you feel unsteady when you walk?",
+  "Do you have numbness or tingling in your feet?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of stroke?",
+  "Do you have a history of Parkinson's disease?",
+  "Do you have a tremor?",
+  "Do you have weakness in your legs?",
+  "Do you have difficulty starting to walk?",
+  "Do you have any dizziness?",
+  "Do you have any joint pain?",
+  "Do you have a history of alcohol abuse?",
+  "Do you have a history of head injury?",
+  "Do you have any vision problems?",
+  "Do you have any stiffness in your muscles?",
+  "Do you have any problems with your speech?",
+  "Do you have any memory loss?",
+  "Do you have any problems with your bladder?",
+  "Do you have any problems with your bowel?",
+  "Do you have any history of heart disease?",
+  "Do you have any history of hypertension?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "yes",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "yes"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "MRI Brain",
+  "MMSE",
+  "Full neurological examination"
+ ],
+ "served": [
+  "brain MRI",
+  "MMSE",
+  "gait examination",
+  "finger-nose / heel-shin testing",
+  "Romberg test",
+  "bedside eye-movement exam",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     brain MRI: bilateral symmetric hyperintensity in the mammillary bodies, thalami and periaqueductal midbrain, with the LENTIFORM FORK SIGN; reversed after treatment",
+  "2. MMSE",
+  "     MMSE: 23, cutoff 21 for his education - mild cognitive impairment",
+  "3. Full neurological examination",
+  "     gait examination: wide-based, unsteady gait",
+  "     finger-nose / heel-shin testing: dysmetria",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "     bedside eye-movement exam: no ophthalmoplegia and no nystagmus - the classic triad is incomplete",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: MMSE 23/30",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Wernicke encephalopathy due to thiamine deficiency\nKorsakoff syndrome\nBilateral thalamic infarct\nMetabolic encephalopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. MMSE\n3. Full neurological examination",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Wernicke encephalopathy due to thiamine deficiency",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 4747,
+   "total_tokens": 13445,
+   "cost": 0.00248378,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00248378,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00161398
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3720,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9396,
+   "completion_tokens": 734,
+   "total_tokens": 10130,
+   "cost": 0.00118916,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00118916,
+    "upstream_inference_prompt_cost": 0.0009396,
+    "upstream_inference_completions_cost": 0.00024956
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 734,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9745,
+   "completion_tokens": 691,
+   "total_tokens": 10436,
+   "cost": 0.00120944,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00120944,
+    "upstream_inference_prompt_cost": 0.0009745,
+    "upstream_inference_completions_cost": 0.00023494
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 669,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 282.7
+}

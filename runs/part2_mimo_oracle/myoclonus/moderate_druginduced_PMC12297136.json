@@ -1,0 +1,105 @@
+{
+ "questions": [
+  "Is your stomach hurting right now?",
+  "Are you feeling nauseous?",
+  "Have you vomited recently?",
+  "Is your stomach feeling bloated or tight?",
+  "Have you had a fever?",
+  "Have you been unable to pass gas recently?",
+  "Does the pain radiate to your back?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "medication review",
+  "serotonin syndrome criteria (Hunter)"
+ ],
+ "results": [
+  "1. medication review: long-term risperidone with concomitant sertraline; myoclonus resolved completely within 24 h of withdrawing RISPERIDONE alone",
+  "2. serotonin syndrome criteria (Hunter): NOT met - no clonus, hyperreflexia, fever or autonomic instability"
+ ],
+ "dx_raw": "DIAGNOSIS: Drug-induced myoclonus secondary to risperidone\n\nSerotonin syndrome from risperidone-sertraline interaction\n\nRisperidone-induced extrapyramidal symptoms\n\nSerotonin-related myoclonus without full syndrome criteria",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Drug-induced myoclonus secondary to risperidone",
+ "decisive_served": [
+  "medication review",
+  "serotonin syndrome criteria (Hunter)"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 9663,
+   "completion_tokens": 2415,
+   "total_tokens": 12078,
+   "cost": 0.0020026776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0020026776,
+    "upstream_inference_prompt_cost": 0.0013264776,
+    "upstream_inference_completions_cost": 0.0006762
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2346,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9994,
+   "completion_tokens": 523,
+   "total_tokens": 10517,
+   "cost": 0.00022848,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9600,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00022848,
+    "upstream_inference_prompt_cost": 8.204e-05,
+    "upstream_inference_completions_cost": 0.00014644
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 465,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 42.3
+}

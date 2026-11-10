@@ -1,0 +1,228 @@
+{
+ "questions": [
+  "Is the main reason you came in today because of pain somewhere?",
+  "Have you had a fever in the past few days?",
+  "Have you been vomiting?",
+  "Do you have a cough?",
+  "Are you having any difficulty breathing?",
+  "Is the pain in your abdomen?",
+  "Have you had diarrhea?",
+  "Do you have a headache?",
+  "Do you have any chest pain?",
+  "Have you noticed any weakness on one side of your body?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of high blood pressure?",
+  "Do you drink alcohol regularly?",
+  "Do you smoke?",
+  "Have you been in contact with anyone who has been ill recently?",
+  "Have you had any recent surgery?",
+  "Is the pain worse after eating?",
+  "Have you noticed blood in your stool?",
+  "Have you noticed blood in your urine?",
+  "Have you lost weight unintentionally recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Blood pressure measurement",
+  "Heart rate measurement",
+  "Respiratory rate measurement",
+  "Oxygen saturation measurement",
+  "Temperature measurement",
+  "Mini-mental state examination",
+  "Beck Depression Inventory screening",
+  "Urinalysis",
+  "Serum creatinine",
+  "Serum electrolytes",
+  "Fasting blood glucose",
+  "Lipid panel",
+  "Hemoglobin A1c",
+  "Electrocardiogram",
+  "Fundoscopic examination"
+ ],
+ "served": [
+  "vital signs",
+  "vital signs",
+  "vital signs",
+  "vital signs",
+  "vital signs",
+  "mental status / cognitive screen",
+  "cognitive and behavioural assessment (MMSE / FAB)",
+  "urinalysis",
+  "serum electrolytes, urea and creatinine",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose",
+  "HbA1c",
+  "fundoscopy"
+ ],
+ "results": [
+  "1. Blood pressure measurement",
+  "     vital signs: blood pressure 140/80 mmHg, pulse 78, oxygen saturation 98% on air",
+  "2. Heart rate measurement",
+  "     vital signs: blood pressure 140/80 mmHg, pulse 78, oxygen saturation 98% on air",
+  "3. Respiratory rate measurement",
+  "     vital signs: blood pressure 140/80 mmHg, pulse 78, oxygen saturation 98% on air",
+  "4. Oxygen saturation measurement",
+  "     vital signs: blood pressure 140/80 mmHg, pulse 78, oxygen saturation 98% on air",
+  "5. Temperature measurement",
+  "     vital signs: blood pressure 140/80 mmHg, pulse 78, oxygen saturation 98% on air",
+  "6. Mini-mental state examination",
+  "     mental status / cognitive screen: normal",
+  "     cognitive and behavioural assessment (MMSE / FAB): normal",
+  "7. Beck Depression Inventory screening",
+  "     not performed / not available",
+  "8. Urinalysis",
+  "     urinalysis: glycosuria without ketonuria",
+  "9. Serum creatinine",
+  "     serum electrolytes, urea and creatinine: normal",
+  "10. Serum electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "11. Fasting blood glucose",
+  "     blood glucose: 30.63 mmol/L (551.3 mg/dL) with glycosuria and NO ketonuria",
+  "12. Lipid panel",
+  "     not performed / not available",
+  "13. Hemoglobin A1c",
+  "     HbA1c: very high on admission; 5.73% at first follow-up once glucose was controlled",
+  "14. Electrocardiogram",
+  "     not performed / not available",
+  "15. Fundoscopic examination",
+  "     fundoscopy: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: New-onset type 2 diabetes mellitus presenting with severe hyperglycemia without ketoacidosis, likely precipitated by an acute stressor (occult infection or physiologic stress) in a patient with underlying essential hypertension.\n\n1. Transient stress hyperglycemia from an occult infection (e.g., urinary tract, skin/soft tissue) not yet identified\n2. Hyperosmolar hyperglycemic state (HHS), early/impending without frank altered mentation\n3. Secondary diabetes from an undisclosed medication (e.g., corticosteroids) or other endocrinopathy (e.g., Cushing's, acromegaly)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Blood pressure measurement\n2. Heart rate measurement\n3. Respiratory rate measurement\n4. Oxygen saturation measurement\n5. Temperature measurement\n6. Mini-mental state examination\n7. Beck Depression Inventory screening\n8. Urinalysis\n9. Serum creatinine\n10. Serum electrolytes\n11. Fasting blood glucose\n12. Lipid panel\n13. Hemoglobin A1c\n14. Electrocardiogram\n15. Fundoscopic examination",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "New-onset type 2 diabetes mellitus presenting with severe hyperglycemia without ketoacidosis, likely precipitated by an acute stressor (occult infection or physiologic stress) in a patient with underlying essential hypertension.",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 673,
+   "completion_tokens": 746,
+   "total_tokens": 1419,
+   "cost": 0.00105942,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00105942,
+    "upstream_inference_prompt_cost": 0.00016422,
+    "upstream_inference_completions_cost": 0.0008952
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 549,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1312,
+   "completion_tokens": 488,
+   "total_tokens": 1800,
+   "cost": 0.00094152,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00094152,
+    "upstream_inference_prompt_cost": 0.00035592,
+    "upstream_inference_completions_cost": 0.0005856
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 397,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1848,
+   "completion_tokens": 586,
+   "total_tokens": 2434,
+   "cost": 0.00094632,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1297,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00094632,
+    "upstream_inference_prompt_cost": 0.00024312,
+    "upstream_inference_completions_cost": 0.0007032
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 465,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "hyperglycemic_hemichorea_PMC12596229.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 35.3
+}

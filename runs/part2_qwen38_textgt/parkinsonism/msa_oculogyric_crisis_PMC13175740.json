@@ -1,0 +1,153 @@
+{
+ "questions": [
+  "Did this episode begin suddenly?",
+  "Have you recently started taking any new medications, particularly antipsychotics or antiemetics?",
+  "Do you have a history of epilepsy or seizures?",
+  "Are you currently experiencing pain in your eyes or head?",
+  "Have you had a recent fever or signs of infection?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Detailed neurological examination including assessment of voluntary eye movements, doll's head maneuver (oculocephalic reflex), and convergence testing",
+  "Serum ceruloplasmin and 24-hour urine copper levels",
+  "MRI of the brain with attention to the basal ganglia and midbrain"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "video-oculography / eye-movement recording",
+  "vertical saccades and gaze range (up and down)",
+  "doll's head (oculocephalic) manoeuvre",
+  "smooth pursuit and saccade velocity",
+  "serum copper and caeruloplasmin",
+  "24-hour urinary copper",
+  "serum ceruloplasmin",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)"
+ ],
+ "results": [
+  "1. Detailed neurological examination including assessment of voluntary eye movements, doll's head maneuver (oculocephalic reflex), and convergence testing",
+  "     cranial nerve examination: normal",
+  "     video-oculography / eye-movement recording: normal baseline vertical saccades and gaze; dose-related conjugate upward eye deviation with blepharospasm beginning about 30 minutes after levodopa and resolving by 3 hours",
+  "     vertical saccades and gaze range (up and down): NO baseline oculomotor abnormality before levodopa - the upward deviation is drug-induced, not a supranuclear palsy",
+  "     doll's head (oculocephalic) manoeuvre: not performed",
+  "     smooth pursuit and saccade velocity: normal",
+  "2. Serum ceruloplasmin and 24-hour urine copper levels",
+  "     serum copper and caeruloplasmin: normal",
+  "     24-hour urinary copper: normal",
+  "     serum ceruloplasmin: normal",
+  "3. MRI of the brain with attention to the basal ganglia and midbrain",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): no hummingbird sign",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): putaminal atrophy with the rim sign and putaminal hypointensity on susceptibility-weighted imaging"
+ ],
+ "dx_raw": "DIAGNOSIS: Levodopa-induced oculogyric crisis in a patient with Multiple System Atrophy (MSA-P)\nAlternative 1: Idiopathic adult-onset dystonia presenting as oculogyric crisis\nAlternative 2: Wilson's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Detailed neurological examination including assessment of voluntary eye movements, doll's head maneuver (oculocephalic reflex), and convergence testing\n2. Serum ceruloplasmin and 24-hour urine copper levels\n3. MRI of the brain with attention to the basal ganglia and midbrain",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Levodopa-induced oculogyric crisis in a patient with Multiple System Atrophy (MSA-P)",
+ "decisive_served": [
+  "vertical saccades and gaze range (up and down)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 185,
+   "completion_tokens": 71,
+   "total_tokens": 256,
+   "cost": 6.112e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.112e-05,
+    "upstream_inference_prompt_cost": 2.775e-05,
+    "upstream_inference_completions_cost": 3.337e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 502,
+   "completion_tokens": 60,
+   "total_tokens": 562,
+   "cost": 0.0001035,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001035,
+    "upstream_inference_prompt_cost": 7.53e-05,
+    "upstream_inference_completions_cost": 2.82e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 951,
+   "completion_tokens": 53,
+   "total_tokens": 1004,
+   "cost": 0.000133256,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000133256,
+    "upstream_inference_prompt_cost": 0.000108346,
+    "upstream_inference_completions_cost": 2.491e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 13.3
+}

@@ -1,0 +1,187 @@
+{
+ "questions": [
+  "Are you experiencing chest pain?",
+  "Are you having shortness of breath?",
+  "Do you have any weakness or numbness on one side of your body?",
+  "Have you had a fever?",
+  "Did you fall recently?",
+  "Are you experiencing abdominal pain?",
+  "Do you have a severe headache?",
+  "Are you feeling confused or disoriented?",
+  "Are you experiencing any dizziness?",
+  "Do you have a history of heart disease?",
+  "Do you have a history of lung disease?",
+  "Do you have a history of diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs",
+  "Full physical examination",
+  "Urinalysis"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "tremor at rest",
+  "postural tremor (arms outstretched)",
+  "kinetic / intention tremor (finger-nose)",
+  "tremor frequency estimate",
+  "asterixis (wrist extension)",
+  "limb power and wasting",
+  "reflexes and plantar responses",
+  "sensory examination (vibration, pinprick)",
+  "foot deformity (pes cavus)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "gait examination",
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Vital signs",
+  "     not performed / not available",
+  "2. Full physical examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: mild cognitive impairment",
+  "     muscle tone examination: increased tone with rigidity",
+  "     limb strength (MRC) examination: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): mild limb and truncal ataxia",
+  "     posture and pull test: impaired postural stability with abnormal pull test",
+  "     fundoscopy: normal",
+  "     tremor at rest: absent",
+  "     postural tremor (arms outstretched): present",
+  "     kinetic / intention tremor (finger-nose): absent",
+  "     tremor frequency estimate: not measured",
+  "     asterixis (wrist extension): absent",
+  "     limb power and wasting: normal bulk and power",
+  "     reflexes and plantar responses: normal",
+  "     sensory examination (vibration, pinprick): normal",
+  "     foot deformity (pes cavus): none",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): absent",
+  "     gait examination: normal",
+  "     cognitive screen (MMSE / MoCA / FAB): normal",
+  "3. Urinalysis",
+  "     urinalysis: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy caused by tauopathy\n\n1. Multiple System Atrophy\n2. Corticobasal Degeneration\n3. Parkinson's Disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Vital signs\n2. Full physical examination\n3. CBC\n4. CMP\n5. ECG\n6. Urinalysis",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Progressive Supranuclear Palsy caused by tauopathy",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 1608,
+   "total_tokens": 2028,
+   "cost": 0.00058872,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00058872,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00054672
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1458,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 874,
+   "completion_tokens": 1006,
+   "total_tokens": 1880,
+   "cost": 0.00042944,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00042944,
+    "upstream_inference_prompt_cost": 8.74e-05,
+    "upstream_inference_completions_cost": 0.00034204
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 974,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1257,
+   "completion_tokens": 5243,
+   "total_tokens": 6500,
+   "cost": 0.00190832,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00190832,
+    "upstream_inference_prompt_cost": 0.0001257,
+    "upstream_inference_completions_cost": 0.00178262
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5170,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 11.4,
+ "video": "moderate_hepatic_cirrhosis_PMC13166699.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 357.3
+}

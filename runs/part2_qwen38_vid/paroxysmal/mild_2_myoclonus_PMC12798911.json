@@ -1,0 +1,169 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the pain located in your abdomen?",
+  "Did this condition start suddenly?",
+  "Have you had surgery on your stomach or abdomen before?",
+  "Do you have a fever?",
+  "Are you able to pass gas (flatulence)?",
+  "Have you had a bowel movement recently?",
+  "Have you vomited?",
+  "Does the pain get worse when you move or cough?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Abdominal examination for distension, tenderness, and bowel sounds",
+  "Digital rectal examination",
+  "Erect abdominal X-ray",
+  "Supine abdominal X-ray",
+  "Complete blood count with differential",
+  "Serum electrolytes (sodium, potassium, chloride, bicarbonate)",
+  "Renal function tests (urea, creatinine)",
+  "C-reactive protein"
+ ],
+ "served": [
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "glucose, calcium, magnesium, sodium",
+  "serum electrolytes, urea and creatinine",
+  "liver and renal function",
+  "ESR and CRP"
+ ],
+ "results": [
+  "1. Abdominal examination for distension, tenderness, and bowel sounds",
+  "     not performed / not available",
+  "2. Digital rectal examination",
+  "     not performed / not available",
+  "3. Erect abdominal X-ray",
+  "     not performed / not available",
+  "4. Supine abdominal X-ray",
+  "     not performed / not available",
+  "5. Complete blood count with differential",
+  "     full blood count and biochemistry: normal",
+  "6. Serum electrolytes (sodium, potassium, chloride, bicarbonate)",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "7. Renal function tests (urea, creatinine)",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver and renal function: normal",
+  "8. C-reactive protein",
+  "     ESR and CRP: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-operative ileus\nParalytic ileus secondary to electrolyte imbalance\nMechanical small bowel obstruction",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Abdominal examination for distension, tenderness, and bowel sounds\n2. Digital rectal examination\n3. Erect abdominal X-ray\n4. Supine abdominal X-ray\n5. Complete blood count with differential\n6. Serum electrolytes (sodium, potassium, chloride, bicarbonate)\n7. Renal function tests (urea, creatinine)\n8. C-reactive protein",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Post-operative ileus",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6359,
+   "completion_tokens": 98,
+   "total_tokens": 6457,
+   "cost": 0.00099991,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00099991,
+    "upstream_inference_prompt_cost": 0.00095385,
+    "upstream_inference_completions_cost": 4.606e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6744,
+   "completion_tokens": 85,
+   "total_tokens": 6829,
+   "cost": 0.000245406,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6016,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000245406,
+    "upstream_inference_prompt_cost": 0.000205456,
+    "upstream_inference_completions_cost": 3.995e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7107,
+   "completion_tokens": 28,
+   "total_tokens": 7135,
+   "cost": 0.000204458,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000204458,
+    "upstream_inference_prompt_cost": 0.000191298,
+    "upstream_inference_completions_cost": 1.316e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 20.7
+}

@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Is your pain located in the shoulder?",
+  "Did this injury happen recently?",
+  "Do you have a cast or splint on your arm?",
+  "Are you unable to lift your arm above your head?",
+  "Does moving your arm cause sharp pain?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's gait and stance from behind to assess for pelvic drop or Trendelenburg sign",
+  "Perform a single-leg squat test (pistol squat) to evaluate hip abductor strength and control",
+  "Assess active range of motion of the right hip, specifically internal rotation and abduction",
+  "Palpate the lateral aspect of the right hip over the greater trochanter for tenderness"
+ ],
+ "served": [
+  "joint range of motion"
+ ],
+ "results": [
+  "1. Observe the patient's gait and stance from behind to assess for pelvic drop or Trendelenburg sign",
+  "     not performed / not available",
+  "2. Perform a single-leg squat test (pistol squat) to evaluate hip abductor strength and control",
+  "     not performed / not available",
+  "3. Assess active range of motion of the right hip, specifically internal rotation and abduction",
+  "     joint range of motion: normal / non-contributory",
+  "4. Palpate the lateral aspect of the right hip over the greater trochanter for tenderness",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Right gluteus medius tendinopathy\nRight gluteus minimus tendinopathy\nGreater trochanteric pain syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient's gait and stance from behind to assess for pelvic drop or Trendelenburg sign\n2. Perform a single-leg squat test (pistol squat) to evaluate hip abductor strength and control\n3. Assess active range of motion of the right hip, specifically internal rotation and abduction\n4. Palpate the lateral aspect of the right hip over the greater trochanter for tenderness",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Right gluteus medius tendinopathy",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 60,
+   "total_tokens": 4883,
+   "cost": 0.00075165,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075165,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.82e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5116,
+   "completion_tokens": 86,
+   "total_tokens": 5202,
+   "cost": 0.0002075,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002075,
+    "upstream_inference_prompt_cost": 0.00016708,
+    "upstream_inference_completions_cost": 4.042e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5422,
+   "completion_tokens": 34,
+   "total_tokens": 5456,
+   "cost": 0.000160352,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000160352,
+    "upstream_inference_prompt_cost": 0.000144372,
+    "upstream_inference_completions_cost": 1.598e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "severe_sspe_PMC13071100.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 13.1
+}

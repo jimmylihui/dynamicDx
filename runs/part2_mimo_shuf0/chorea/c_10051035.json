@@ -1,0 +1,154 @@
+{
+ "questions": [
+  "Do you notice any shaking or trembling of your hands or body?",
+  "Has this been getting worse over the past year?",
+  "Do you feel stiff or have difficulty starting movements?",
+  "Have others noticed your movements are slower than before?",
+  "Do you have trouble walking or balancing?",
+  "Did someone bring you here today?",
+  "Are you able to speak clearly without effort?",
+  "Do your symptoms improve with any specific movements or actions?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Neurological examination for rigidity and bradykinesia",
+  "Thyroid function tests",
+  "DaT-SPECT scan",
+  "Brain MRI"
+ ],
+ "served": [
+  "muscle tone examination",
+  "posture and pull test",
+  "gait and coordination",
+  "thyroid function (TSH, free T4)",
+  "TSH, free T4 and free T3",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences"
+ ],
+ "results": [
+  "1. Neurological examination for rigidity and bradykinesia",
+  "     muscle tone examination: normal",
+  "     posture and pull test: normal",
+  "     gait and coordination: normal",
+  "2. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH, free T4 and free T3: normal",
+  "3. DaT-SPECT scan",
+  "     not performed / not available",
+  "4. Brain MRI",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the lentiform nucleus",
+  "     MRI susceptibility-weighted sequences: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Asterixis secondary to hepatic encephalopathy\n\nAlternatives:\nUremic encephalopathy\nDrug-induced encephalopathy\nStructural brain lesion (e.g., thalamic infarct)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Neurological examination for rigidity and bradykinesia\n2. Thyroid function tests\n3. DaT-SPECT scan\n4. Brain MRI",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Asterixis secondary to hepatic encephalopathy",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 526,
+   "total_tokens": 5581,
+   "cost": 0.0008286376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008286376,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00014728
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 430,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5430,
+   "completion_tokens": 4809,
+   "total_tokens": 10239,
+   "cost": 0.0014218176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014218176,
+    "upstream_inference_prompt_cost": 7.52976e-05,
+    "upstream_inference_completions_cost": 0.00134652
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4773,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5675,
+   "completion_tokens": 2606,
+   "total_tokens": 8281,
+   "cost": 0.0007865928,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5376,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007865928,
+    "upstream_inference_prompt_cost": 5.69128e-05,
+    "upstream_inference_completions_cost": 0.00072968
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2553,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 215.9
+}

@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Is your pain located in your right lower abdomen?",
+  "Is the pain constant and severe?",
+  "Have you vomited or felt nauseous?",
+  "Do you have a fever?",
+  "Are you female?",
+  "Could you be pregnant?",
+  "Does the pain radiate to your back or groin?",
+  "Have you had a kidney stone in the past?",
+  "Do you have a history of inflammatory bowel disease?",
+  "Have you noticed any recent changes in your bowel movements?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "trial of antithyroid treatment"
+ ],
+ "results": [
+  "1. blood glucose: normal",
+  "2. TSH, free T4 and free T3: T3 8.26 nmol/L (normal 0.92-2.79) and free T4 58.13 pmol/L (normal 11.50-22.70) with suppressed TSH",
+  "3. thyrotropin receptor antibodies (TRAb): positive - Graves' disease diagnosed in April 2021 and treated with methimazole 10 mg daily",
+  "4. trial of antithyroid treatment: radioiodine (131-I); the chorea resolved"
+ ],
+ "dx_raw": "DIAGNOSIS: Chorea secondary to Graves' disease (thyrotoxicosis)\nHuntington's disease\nWilson's disease\nSydenham chorea",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Chorea secondary to Graves' disease (thyrotoxicosis)",
+ "decisive_served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "trial of antithyroid treatment"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2732,
+   "total_tokens": 9794,
+   "cost": 0.00535932,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00535932,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0032784
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2630,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7533,
+   "completion_tokens": 1930,
+   "total_tokens": 9463,
+   "cost": 0.00288462,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00288462,
+    "upstream_inference_prompt_cost": 0.00056862,
+    "upstream_inference_completions_cost": 0.002316
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1897,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "c_9815763.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 51.3
+}

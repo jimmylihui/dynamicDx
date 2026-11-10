@@ -1,0 +1,290 @@
+{
+ "questions": [
+  "Are you experiencing any loss of sensation in your body right now?",
+  "Did you have a fall or head trauma before coming to the hospital?",
+  "Have you been taking any medications regularly before this admission?",
+  "Do you have a history of high blood pressure?",
+  "Are these movements happening on their own, or are you making them voluntarily?",
+  "What medications are you taking?",
+  "Do you know why you were admitted to the hospital?",
+  "Do you have any history of diabetes?",
+  "Do the movements stop when you are sleeping?",
+  "Are you aware of what is happening to your body during these movements?",
+  "Did the movements start after you began taking the medication?",
+  "Are you taking any psychiatric medications?",
+  "Is the medication for your stomach or digestion?",
+  "Have you had any recent infections or sore throat?",
+  "Do you have any family members with similar movements?",
+  "Have you noticed any yellowing of your skin or eyes?",
+  "Do you know the name of the medication you take?",
+  "Do you take any medication for seizures or epilepsy?",
+  "Did the movements start suddenly or gradually?",
+  "Have you had any fever or confusion before these movements started?",
+  "Was the medication prescribed to help with nausea or vomiting?",
+  "Do you know if the medication was purchased over the counter or prescribed by a doctor?",
+  "Can someone else tell me what the medication is for?",
+  "Have you ever been told you have a movement disorder before?",
+  "Have you been admitted because of a psychiatric condition?",
+  "Do other people notice these movements or just you?",
+  "Can you try to stop the movements completely right now?",
+  "Do the movements involve your face or just your arms and legs?",
+  "Have you had these movements for weeks, months, or years?",
+  "Did anyone bring you to the hospital because they noticed something wrong?",
+  "Were you admitted to the hospital for something else first, then developed these movements?",
+  "Have you tried taking any medication that made the movements stop?",
+  "Are you taking any medication for vomiting or stomach problems, like metoclopramide?",
+  "Are you taking any medication for mental health, like haloperidol or chlorpromazine?",
+  "Is there anyone here who can look at the medication bottles or packaging?",
+  "Have you been having these movements since you started the medication you are currently taking?",
+  "Do you feel confused or disoriented right now?",
+  "Do you know where you are and what day it is?",
+  "Have you been hearing voices or seeing things that others don't?",
+  "Is anyone else in the hospital bed able to communicate and help identify your medication?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "yes",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "yes",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "no",
+  "33": "no",
+  "34": "no",
+  "35": "no",
+  "36": "no",
+  "37": "no",
+  "38": "no",
+  "39": "no",
+  "40": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Are you experiencing any loss of sensation in your body right now?; Did you have a fall or head trauma before coming to the hospital?; Have you been taking any medications regularly before this admission?; Do you have a history of high blood pressure? -> ['no', 'no', 'yes', 'no']",
+  "R2 ASK Are these movements happening on their own, or are you making them voluntarily?; What medications are you taking?; Do you know why you were admitted to the hospital?; Do you have any history of diabetes? -> ['yes', 'yes', 'no', 'no']",
+  "R3 ASK Do the movements stop when you are sleeping?; Are you aware of what is happening to your body during these movements?; Did the movements start after you began taking the medication?; Are you taking any psychiatric medications? -> ['no', 'no', 'no', 'no']",
+  "R4 ASK Is the medication for your stomach or digestion?; Have you had any recent infections or sore throat?; Do you have any family members with similar movements?; Have you noticed any yellowing of your skin or eyes? -> ['no', 'no', 'no', 'no']",
+  "R5 ASK Do you know the name of the medication you take?; Do you take any medication for seizures or epilepsy?; Did the movements start suddenly or gradually?; Have you had any fever or confusion before these movements started? -> ['no', 'no', 'no', 'no']",
+  "R6 ASK Was the medication prescribed to help with nausea or vomiting?; Do you know if the medication was purchased over the counter or prescribed by a doctor?; Can someone else tell me what the medication is for?; Have you ever been told you have a movement disorder before? -> ['no', 'no', 'no', 'no']",
+  "R7 ASK Have you been admitted because of a psychiatric condition?; Do other people notice these movements or just you?; Can you try to stop the movements completely right now?; Do the movements involve your face or just your arms and legs? -> ['no', 'no', 'no', 'yes']",
+  "R8 ASK Have you had these movements for weeks, months, or years?; Did anyone bring you to the hospital because they noticed something wrong?; Were you admitted to the hospital for something else first, then developed these movements?; Have you tried taking any medication that made the movements stop? -> ['no', 'no', 'no', 'no']",
+  "R9 ASK Are you taking any medication for vomiting or stomach problems, like metoclopramide?; Are you taking any medication for mental health, like haloperidol or chlorpromazine?; Is there anyone here who can look at the medication bottles or packaging?; Have you been having these movements since you started the medication you are currently taking? -> ['no', 'no', 'no', 'no']",
+  "R10 ASK Do you feel confused or disoriented right now?; Do you know where you are and what day it is?; Have you been hearing voices or seeing things that others don't?; Is anyone else in the hospital bed able to communicate and help identify your medication? -> ['no', 'no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Tardive dyskinesia secondary to chronic antipsychotic/dopamine receptor blocking agent use -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you experiencing any loss of sensation in your body right now?",
+    "Did you have a fall or head trauma before coming to the hospital?",
+    "Have you been taking any medications regularly before this admission?",
+    "Do you have a history of high blood pressure?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Are these movements happening on their own, or are you making them voluntarily?",
+    "What medications are you taking?",
+    "Do you know why you were admitted to the hospital?",
+    "Do you have any history of diabetes?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do the movements stop when you are sleeping?",
+    "Are you aware of what is happening to your body during these movements?",
+    "Did the movements start after you began taking the medication?",
+    "Are you taking any psychiatric medications?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Is the medication for your stomach or digestion?",
+    "Have you had any recent infections or sore throat?",
+    "Do you have any family members with similar movements?",
+    "Have you noticed any yellowing of your skin or eyes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you know the name of the medication you take?",
+    "Do you take any medication for seizures or epilepsy?",
+    "Did the movements start suddenly or gradually?",
+    "Have you had any fever or confusion before these movements started?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Was the medication prescribed to help with nausea or vomiting?",
+    "Do you know if the medication was purchased over the counter or prescribed by a doctor?",
+    "Can someone else tell me what the medication is for?",
+    "Have you ever been told you have a movement disorder before?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Have you been admitted because of a psychiatric condition?",
+    "Do other people notice these movements or just you?",
+    "Can you try to stop the movements completely right now?",
+    "Do the movements involve your face or just your arms and legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Have you had these movements for weeks, months, or years?",
+    "Did anyone bring you to the hospital because they noticed something wrong?",
+    "Were you admitted to the hospital for something else first, then developed these movements?",
+    "Have you tried taking any medication that made the movements stop?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Are you taking any medication for vomiting or stomach problems, like metoclopramide?",
+    "Are you taking any medication for mental health, like haloperidol or chlorpromazine?",
+    "Is there anyone here who can look at the medication bottles or packaging?",
+    "Have you been having these movements since you started the medication you are currently taking?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you feel confused or disoriented right now?",
+    "Do you know where you are and what day it is?",
+    "Have you been hearing voices or seeing things that others don't?",
+    "Is anyone else in the hospital bed able to communicate and help identify your medication?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Tardive dyskinesia secondary to chronic antipsychotic/dopamine receptor blocking agent use"
+  }
+ ],
+ "dx": "Tardive dyskinesia secondary to chronic antipsychotic/dopamine receptor blocking agent use",
+ "dx_raw": "DIAGNOSIS: Tardive dyskinesia secondary to chronic antipsychotic/dopamine receptor blocking agent use",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0065,
+ "n_frames": 32,
+ "duration_s": 16.2,
+ "video": "c_11098550.mp4",
+ "line": "chorea",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 549.6
+}

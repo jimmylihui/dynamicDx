@@ -1,0 +1,224 @@
+{
+ "questions": [
+  "Did you lose consciousness during the fall?",
+  "Was the fall triggered by a strong emotion, such as laughter or surprise?",
+  "Do you experience episodes of vertigo?",
+  "Do you have hearing loss or tinnitus in one ear?",
+  "Do you have a history of epilepsy?",
+  "Do you have a history of Parkinson's disease?",
+  "Do you experience sudden muscle weakness in other situations?",
+  "Do you have a history of heart disease, such as heart failure or valve problems?",
+  "Do you experience chest pain or palpitations?",
+  "Do you have a history of diabetes?",
+  "Do you have any numbness or tingling in your legs?",
+  "Do you have a history of high blood pressure?",
+  "Are you taking any medications for blood pressure or heart conditions?",
+  "Did you feel any dizziness or lightheadedness just before the fall?",
+  "Do you have any history of neck or back injuries?",
+  "Do you experience excessive daytime sleepiness?",
+  "Do you experience sudden muscle weakness or a \"collapse\" when you laugh, get angry, or feel surprised?",
+  "Do you experience sleep paralysis (the feeling of being unable to move when waking up or falling asleep)?",
+  "Do you experience vivid, dream-like hallucinations while falling asleep or waking up?",
+  "Do you have a history of sleep apnea?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Electroencephalogram (EEG)",
+  "Electrocardiogram (ECG)",
+  "Tilt-table test",
+  "Brain MRI",
+  "Holter monitor (24-hour ECG)",
+  "Multiple Sleep Latency Test (MSLT)",
+  "Comprehensive neurological examination (including reflexes and muscle tone)"
+ ],
+ "served": [
+  "back-averaged EEG for a Bereitschaftspotential before the movements",
+  "video-EEG monitoring with limb surface electrodes",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "MRC power in all four limbs"
+ ],
+ "results": [
+  "R1 ASK Did you lose consciousness during the fall?; Was the fall triggered by a strong emotion, such as laughter or surprise?; Do you experience episodes of vertigo?; Do you have hearing loss or tinnitus in one ear?; Do you have a history of epilepsy?; Do you have a history of Parkinson's disease?; Do you experience sudden muscle weakness in other situations? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Do you have a history of heart disease, such as heart failure or valve problems?; Do you experience chest pain or palpitations?; Do you have a history of diabetes?; Do you have any numbness or tingling in your legs?; Do you have a history of high blood pressure?; Are you taking any medications for blood pressure or heart conditions?; Did you feel any dizziness or lightheadedness just before the fall?; Do you have any history of neck or back injuries? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Do you experience excessive daytime sleepiness?; Do you experience sudden muscle weakness or a \"collapse\" when you laugh, get angry, or feel surprised?; Do you experience sleep paralysis (the feeling of being unable to move when waking up or falling asleep)?; Do you experience vivid, dream-like hallucinations while falling asleep or waking up?; Do you have a history of sleep apnea? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Electroencephalogram (EEG); Electrocardiogram (ECG); Tilt-table test; Brain MRI -> [['back-averaged EEG for a Bereitschaftspotential before the movements', 'video-EEG monitoring with limb surface electrodes'], [], [], ['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'MRI brain']]",
+  "R5 ORDER Holter monitor (24-hour ECG); Multiple Sleep Latency Test (MSLT); Comprehensive neurological examination (including reflexes and muscle tone) -> [[], [], ['cranial nerve examination', 'mental status / cognitive screen', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'posture and pull test', 'fundoscopy', 'muscle tone (spasticity, rigidity, paratonia)', 'MRC power in all four limbs']]",
+  "R6 DIAGNOSIS Functional Neurological Disorder (Functional drop attacks) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did you lose consciousness during the fall?",
+    "Was the fall triggered by a strong emotion, such as laughter or surprise?",
+    "Do you experience episodes of vertigo?",
+    "Do you have hearing loss or tinnitus in one ear?",
+    "Do you have a history of epilepsy?",
+    "Do you have a history of Parkinson's disease?",
+    "Do you experience sudden muscle weakness in other situations?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of heart disease, such as heart failure or valve problems?",
+    "Do you experience chest pain or palpitations?",
+    "Do you have a history of diabetes?",
+    "Do you have any numbness or tingling in your legs?",
+    "Do you have a history of high blood pressure?",
+    "Are you taking any medications for blood pressure or heart conditions?",
+    "Did you feel any dizziness or lightheadedness just before the fall?",
+    "Do you have any history of neck or back injuries?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you experience excessive daytime sleepiness?",
+    "Do you experience sudden muscle weakness or a \"collapse\" when you laugh, get angry, or feel surprised?",
+    "Do you experience sleep paralysis (the feeling of being unable to move when waking up or falling asleep)?",
+    "Do you experience vivid, dream-like hallucinations while falling asleep or waking up?",
+    "Do you have a history of sleep apnea?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Electroencephalogram (EEG)",
+    "Electrocardiogram (ECG)",
+    "Tilt-table test",
+    "Brain MRI"
+   ],
+   "result": [
+    [
+     "back-averaged EEG for a Bereitschaftspotential before the movements",
+     "video-EEG monitoring with limb surface electrodes"
+    ],
+    [],
+    [],
+    [
+     "MRI brain with gadolinium",
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences",
+     "MRI brain"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Holter monitor (24-hour ECG)",
+    "Multiple Sleep Latency Test (MSLT)",
+    "Comprehensive neurological examination (including reflexes and muscle tone)"
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "cranial nerve examination",
+     "mental status / cognitive screen",
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)",
+     "posture and pull test",
+     "fundoscopy",
+     "muscle tone (spasticity, rigidity, paratonia)",
+     "MRC power in all four limbs"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Functional Neurological Disorder (Functional drop attacks)"
+  }
+ ],
+ "dx": "Functional Neurological Disorder (Functional drop attacks)",
+ "dx_raw": "DIAGNOSIS: Functional Neurological Disorder (Functional drop attacks)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "MRC power in all four limbs",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "n_decisive": 6,
+ "cost_usd": 0.009,
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 706.1
+}

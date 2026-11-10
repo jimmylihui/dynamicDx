@@ -1,0 +1,307 @@
+{
+ "questions": [
+  "Was this a motor vehicle accident?",
+  "Did you lose consciousness?",
+  "Do you have a headache?",
+  "Do you have any numbness or tingling in your limbs?",
+  "Did you fall?",
+  "Did you have a seizure?",
+  "Did you have chest pain or palpitations before you lost consciousness?",
+  "Do you have a history of epilepsy?",
+  "Do you have a history of heart disease?",
+  "Were you a pedestrian hit by a car?",
+  "Did you fall from a height (e.g., a ladder or balcony)?",
+  "Did you have a seizure before the injuries occurred?",
+  "Did you have a seizure after the injuries occurred?",
+  "Did you experience any tongue biting?",
+  "Did you lose control of your bladder or bowels?",
+  "Did you have a post-ictal state (confusion after waking up)?",
+  "Were you assaulted?",
+  "Did you get into a fight?",
+  "Do you remember what happened immediately before you lost consciousness?",
+  "Did you experience any flashing lights or strange smells before the event?",
+  "Were you using any drugs or alcohol before the event?",
+  "Did you have a seizure that caused you to hit your head and leg?",
+  "Do you have a broken leg?",
+  "Do you have a head injury?",
+  "Did you feel dizzy before you lost consciousness?",
+  "Did you experience muscle jerking or stiffening?",
+  "Do you know why you have a bandage on your head?",
+  "Do you know why you have a splint on your leg?",
+  "Did you collapse suddenly?",
+  "Did you feel your heart racing or skipping beats before you lost consciousness?",
+  "Did you have a \"blackout\"?",
+  "Was the \"seizure\" actually a loss of consciousness with some shaking?",
+  "Did you feel any trigger before the blackout, such as seeing blood, feeling intense pain, or standing up quickly?",
+  "Do you have a family history of sudden unexpected death or fainting?",
+  "Are you taking any medications or supplements?",
+  "Did you feel any chest pain or shortness of breath before the event?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "yes",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "yes",
+  "32": "yes",
+  "33": "no",
+  "34": "no",
+  "35": "no",
+  "36": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "CT head",
+  "X-ray of the left leg",
+  "X-ray of the right leg",
+  "Blood glucose",
+  "Toxicology screen",
+  "X-ray of the right leg",
+  "X-ray of the left leg"
+ ],
+ "served": [
+  "CT head",
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium",
+  "toxicology screen (urine and serum)",
+  "toxicology and drug levels"
+ ],
+ "results": [
+  "R1 ASK Was this a motor vehicle accident?; Did you lose consciousness?; Do you have a headache?; Do you have any numbness or tingling in your limbs? -> ['no', 'yes', 'no', 'no']",
+  "R2 ASK Did you fall?; Did you have a seizure?; Did you have chest pain or palpitations before you lost consciousness?; Do you have a history of epilepsy?; Do you have a history of heart disease? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R3 ASK Were you a pedestrian hit by a car?; Did you fall from a height (e.g., a ladder or balcony)?; Did you have a seizure before the injuries occurred?; Did you have a seizure after the injuries occurred?; Did you experience any tongue biting?; Did you lose control of your bladder or bowels?; Did you have a post-ictal state (confusion after waking up)? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Were you assaulted?; Did you get into a fight?; Do you remember what happened immediately before you lost consciousness?; Did you experience any flashing lights or strange smells before the event?; Were you using any drugs or alcohol before the event? -> ['no', 'no', 'no', 'no', 'no']",
+  "R5 ORDER CT head; X-ray of the left leg; X-ray of the right leg; Blood glucose; Toxicology screen -> [['CT head'], [], [], ['blood glucose and HbA1c', 'glucose, calcium, magnesium, sodium'], ['toxicology screen (urine and serum)', 'toxicology and drug levels']]",
+  "R6 ASK Did you have a seizure that caused you to hit your head and leg?; Do you have a broken leg?; Do you have a head injury?; Did you feel dizzy before you lost consciousness?; Did you experience muscle jerking or stiffening? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R7 ASK Do you know why you have a bandage on your head?; Do you know why you have a splint on your leg?; Did you collapse suddenly?; Did you feel your heart racing or skipping beats before you lost consciousness?; Did you have a \"blackout\"?; Was the \"seizure\" actually a loss of consciousness with some shaking? -> ['no', 'no', 'no', 'no', 'yes', 'yes']",
+  "R8 ASK Did you feel any trigger before the blackout, such as seeing blood, feeling intense pain, or standing up quickly?; Do you have a family history of sudden unexpected death or fainting?; Are you taking any medications or supplements?; Did you feel any chest pain or shortness of breath before the event? -> ['no', 'no', 'no', 'no']",
+  "R9 ORDER X-ray of the right leg; X-ray of the left leg -> [[], []]",
+  "R10 INVALID ORDER:\n1. ECG -> ",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Convulsive syncope due to transient cerebral hypoperfusion -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Was this a motor vehicle accident?",
+    "Did you lose consciousness?",
+    "Do you have a headache?",
+    "Do you have any numbness or tingling in your limbs?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Did you fall?",
+    "Did you have a seizure?",
+    "Did you have chest pain or palpitations before you lost consciousness?",
+    "Do you have a history of epilepsy?",
+    "Do you have a history of heart disease?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Were you a pedestrian hit by a car?",
+    "Did you fall from a height (e.g., a ladder or balcony)?",
+    "Did you have a seizure before the injuries occurred?",
+    "Did you have a seizure after the injuries occurred?",
+    "Did you experience any tongue biting?",
+    "Did you lose control of your bladder or bowels?",
+    "Did you have a post-ictal state (confusion after waking up)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Were you assaulted?",
+    "Did you get into a fight?",
+    "Do you remember what happened immediately before you lost consciousness?",
+    "Did you experience any flashing lights or strange smells before the event?",
+    "Were you using any drugs or alcohol before the event?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "CT head",
+    "X-ray of the left leg",
+    "X-ray of the right leg",
+    "Blood glucose",
+    "Toxicology screen"
+   ],
+   "result": [
+    [
+     "CT head"
+    ],
+    [],
+    [],
+    [
+     "blood glucose and HbA1c",
+     "glucose, calcium, magnesium, sodium"
+    ],
+    [
+     "toxicology screen (urine and serum)",
+     "toxicology and drug levels"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Did you have a seizure that caused you to hit your head and leg?",
+    "Do you have a broken leg?",
+    "Do you have a head injury?",
+    "Did you feel dizzy before you lost consciousness?",
+    "Did you experience muscle jerking or stiffening?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you know why you have a bandage on your head?",
+    "Do you know why you have a splint on your leg?",
+    "Did you collapse suddenly?",
+    "Did you feel your heart racing or skipping beats before you lost consciousness?",
+    "Did you have a \"blackout\"?",
+    "Was the \"seizure\" actually a loss of consciousness with some shaking?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "yes"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Did you feel any trigger before the blackout, such as seeing blood, feeling intense pain, or standing up quickly?",
+    "Do you have a family history of sudden unexpected death or fainting?",
+    "Are you taking any medications or supplements?",
+    "Did you feel any chest pain or shortness of breath before the event?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "X-ray of the right leg",
+    "X-ray of the left leg"
+   ],
+   "result": [
+    [],
+    []
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "invalid",
+   "text": "ORDER:\n1. ECG"
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Convulsive syncope due to transient cerebral hypoperfusion"
+  }
+ ],
+ "dx": "Convulsive syncope due to transient cerebral hypoperfusion",
+ "dx_raw": "DIAGNOSIS: Convulsive syncope due to transient cerebral hypoperfusion",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": false,
+ "invalid_replies": 1,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0169,
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 993.7
+}

@@ -1,0 +1,179 @@
+{
+ "questions": [
+  "Are you experiencing any pain?",
+  "Do you have a fever?",
+  "Are you having any trouble breathing?",
+  "Have you experienced any recent unexplained weight loss?",
+  "Are you feeling unusually tired or fatigued?",
+  "Have you noticed any new lumps or swelling?",
+  "Are you experiencing any nausea or vomiting?",
+  "Have you had any recent injuries?",
+  "Are you experiencing any dizziness or fainting spells?",
+  "Have you noticed any changes in your vision or hearing?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Is the pain in your head?",
+  "Is the pain in your chest?",
+  "Is the pain in your stomach or belly area?",
+  "Is the pain in your back?",
+  "Is the pain in your joints?",
+  "Is the pain in your arms or legs?",
+  "Is the pain constant rather than coming and going?",
+  "Is the pain getting worse over time?",
+  "Is the pain severe enough to interfere with your daily activities?",
+  "Did the pain start suddenly?",
+  "Have you had this type of pain before?",
+  "Does movement make the pain worse?",
+  "Does the pain radiate or spread to other areas?"
+ ],
+ "served": [],
+ "results": [
+  "1. Is the pain in your head?",
+  "     not performed / not available",
+  "2. Is the pain in your chest?",
+  "     not performed / not available",
+  "3. Is the pain in your stomach or belly area?",
+  "     not performed / not available",
+  "4. Is the pain in your back?",
+  "     not performed / not available",
+  "5. Is the pain in your joints?",
+  "     not performed / not available",
+  "6. Is the pain in your arms or legs?",
+  "     not performed / not available",
+  "7. Is the pain constant rather than coming and going?",
+  "     not performed / not available",
+  "8. Is the pain getting worse over time?",
+  "     not performed / not available",
+  "9. Is the pain severe enough to interfere with your daily activities?",
+  "     not performed / not available",
+  "10. Did the pain start suddenly?",
+  "     not performed / not available",
+  "11. Have you had this type of pain before?",
+  "     not performed / not available",
+  "12. Does movement make the pain worse?",
+  "     not performed / not available",
+  "13. Does the pain radiate or spread to other areas?",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Non-specific musculoskeletal pain\n\nAlternatives:\n- Tension-type headache\n- Functional pain syndrome\n- Early inflammatory arthritis\n\n**Note:** The inability to localize or characterize the pain through follow-up questions significantly limits diagnostic precision. The absence of red flags (no fever, weight loss, fatigue, neurological symptoms, or GI symptoms) suggests a benign etiology. I would need additional history—pain location, duration, quality, aggravating/relieving factors—to narrow this further before physical examination.",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "Before I can order appropriate investigations, I need to know more about the pain. Let me continue with yes/no questions to localize and characterize it.\n\n1. Is the pain in your head?\n2. Is the pain in your chest?\n3. Is the pain in your stomach or belly area?\n4. Is the pain in your back?\n5. Is the pain in your joints?\n6. Is the pain in your arms or legs?\n7. Is the pain constant rather than coming and going?\n8. Is the pain getting worse over time?\n9. Is the pain severe enough to interfere with your daily activities?\n10. Did the pain start suddenly?\n11. Have you had this type of pain before?\n12. Does movement make the pain worse?\n13. Does the pain radiate or spread to other areas?",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Non-specific musculoskeletal pain",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 294,
+   "total_tokens": 679,
+   "cost": 9.2316e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.2316e-05,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 8.232e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 184,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 796,
+   "completion_tokens": 667,
+   "total_tokens": 1463,
+   "cost": 0.000254296,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000254296,
+    "upstream_inference_prompt_cost": 6.7536e-05,
+    "upstream_inference_completions_cost": 0.00018676
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 495,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1291,
+   "completion_tokens": 645,
+   "total_tokens": 1936,
+   "cost": 0.0002559704,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002559704,
+    "upstream_inference_prompt_cost": 7.53704e-05,
+    "upstream_inference_completions_cost": 0.0001806
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 536,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.6,
+ "video": "mild_blepharospasm_idiopathic_PMC13049410.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 38.5
+}

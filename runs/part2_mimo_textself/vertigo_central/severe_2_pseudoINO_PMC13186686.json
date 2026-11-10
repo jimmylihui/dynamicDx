@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "When did the eye movement first start - at birth or later?",
+  "Is your vision blurry or reduced?",
+  "Does anyone in your family have similar eye movements?",
+  "Do you have any numbness, tingning, or weakness in your arms or legs?",
+  "Do your eyes shake more when you try to focus on something, or is it constant?",
+  "Are you experiencing any double vision?",
+  "Do you have any unsteady balance or coordination problems?",
+  "Is there any head bobbing or tilting with the eye movements?",
+  "Have you had any recent illness or new neurological symptoms?",
+  "Did your eye movement ever improve or worsen over time?",
+  "Do you have headaches?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "yes",
+  "11": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "MRI of the brain and orbits with gadolinium contrast",
+  "Visual evoked potentials",
+  "Comprehensive eye examination including visual acuity measurement, eye movement assessment, and fundoscopy"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI sella and orbits",
+  "fundoscopy",
+  "video-oculography / eye-movement recording"
+ ],
+ "results": [
+  "1. MRI of the brain and orbits with gadolinium contrast",
+  "     MRI brain with gadolinium: normal brainstem; subtle medial orbital wall fracture with medial rectus involvement",
+  "     MRI sella and orbits: subtle MEDIAL ORBITAL WALL FRACTURE with medial rectus involvement; no brainstem pathology",
+  "2. Visual evoked potentials",
+  "     not performed / not available",
+  "3. Comprehensive eye examination including visual acuity measurement, eye movement assessment, and fundoscopy",
+  "     fundoscopy: normal",
+  "     video-oculography / eye-movement recording: reduced right adduction with left abducting nystagmus; resolved over two weeks"
+ ],
+ "dx_raw": "DIAGNOSIS: Traumatic medial rectus paresis/entrapment secondary to medial orbital wall blowout fracture (pseudo-internuclear ophthalmoplegia)\n\nInternuclear ophthalmoplegia from a small medial longitudinal fasciculus lesion\n\nCongenital pendular nystagmus with superimposed acute traumatic medial rectus paresis\n\nOcular myasthenia gravis presenting with adduction deficit and dissociated nystagmus",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI of the brain and orbits with gadolinium contrast\n2. Visual evoked potentials\n3. Comprehensive eye examination including visual acuity measurement, eye movement assessment, and fundoscopy",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Traumatic medial rectus paresis/entrapment secondary to medial orbital wall blowout fracture (pseudo-internuclear ophthalmoplegia)",
+ "decisive_served": [
+  "MRI sella and orbits"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 448,
+   "completion_tokens": 823,
+   "total_tokens": 1271,
+   "cost": 0.0002668176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002668176,
+    "upstream_inference_prompt_cost": 3.63776e-05,
+    "upstream_inference_completions_cost": 0.00023044
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 670,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 950,
+   "completion_tokens": 697,
+   "total_tokens": 1647,
+   "cost": 0.0003018176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003018176,
+    "upstream_inference_prompt_cost": 0.0001066576,
+    "upstream_inference_completions_cost": 0.00019516
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 654,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1222,
+   "completion_tokens": 2088,
+   "total_tokens": 3310,
+   "cost": 0.0006327888,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 896,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006327888,
+    "upstream_inference_prompt_cost": 4.81488e-05,
+    "upstream_inference_completions_cost": 0.00058464
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1991,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 74.3
+}

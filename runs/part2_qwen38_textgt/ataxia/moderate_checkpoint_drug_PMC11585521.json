@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Did the symptoms begin suddenly?",
+  "Do you have a history of heavy alcohol use?",
+  "Have you had recent head trauma?",
+  "Do you have a known family history of neurological disease?",
+  "Are you currently taking any new medications, including anticonvulsants or sedatives?",
+  "Do you have numbness or tingling in your feet?",
+  "Do you have double vision or difficulty moving your eyes?",
+  "Do you have weakness in your arms or legs?",
+  "Do you have a history of cancer?",
+  "Do you have fever or signs of infection?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain with contrast",
+  "CT scan of the chest, abdomen, and pelvis",
+  "Serum paraneoplastic antibody panel"
+ ],
+ "served": [
+  "brain MRI",
+  "MRI brain with gadolinium",
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "paraneoplastic antibody panel (serum)"
+ ],
+ "results": [
+  "1. MRI of the brain with contrast",
+  "     brain MRI: no structural lesion; cerebellar atrophy develops later",
+  "     MRI brain with gadolinium: normal",
+  "2. CT scan of the chest, abdomen, and pelvis",
+  "     CT chest / abdomen / pelvis (occult tumour): known anal squamous cell carcinoma; no new lesion",
+  "3. Serum paraneoplastic antibody panel",
+  "     paraneoplastic antibody panel (serum): negative in this patient (neuronal antibodies are found in only about half of such cases)"
+ ],
+ "dx_raw": "DIAGNOSIS: Paraneoplastic cerebellar degeneration associated with anal squamous cell carcinoma\nALTERNATIVE 1: Seronegative paraneoplastic cerebellar degeneration\nALTERNATIVE 2: Idiopathic late-onset cerebellar ataxia",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with contrast\n2. CT scan of the chest, abdomen, and pelvis\n3. Serum paraneoplastic antibody panel",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Paraneoplastic cerebellar degeneration associated with anal squamous cell carcinoma",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 183,
+   "completion_tokens": 132,
+   "total_tokens": 315,
+   "cost": 8.949e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.949e-05,
+    "upstream_inference_prompt_cost": 2.745e-05,
+    "upstream_inference_completions_cost": 6.204e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 642,
+   "completion_tokens": 32,
+   "total_tokens": 674,
+   "cost": 0.00011134,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011134,
+    "upstream_inference_prompt_cost": 9.63e-05,
+    "upstream_inference_completions_cost": 1.504e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 890,
+   "completion_tokens": 60,
+   "total_tokens": 950,
+   "cost": 9.3092e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.3092e-05,
+    "upstream_inference_prompt_cost": 6.4892e-05,
+    "upstream_inference_completions_cost": 2.82e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.0
+}

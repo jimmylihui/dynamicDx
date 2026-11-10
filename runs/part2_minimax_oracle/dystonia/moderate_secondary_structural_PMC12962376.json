@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Is the weakness you are experiencing only on one side of your body?",
+  "Did this weakness begin suddenly?",
+  "Are you having difficulty speaking or finding the right words?",
+  "Does one side of your face feel weak or droop?",
+  "Do you have a severe headache?",
+  "Have you noticed any changes in your vision, such as double vision or vision loss?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you have any heart problems, such as an irregular heartbeat?",
+  "Have you had a stroke or transient ischemic attack in the past?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "anti-aquaporin-4 and anti-MOG antibodies",
+  "cervical and whole spine MRI",
+  "needle EMG of the affected muscles",
+  "corticosteroid trial"
+ ],
+ "results": [
+  "1. anti-aquaporin-4 and anti-MOG antibodies: BOTH NEGATIVE - not neuromyelitis optica or MOG-antibody disease",
+  "2. cervical and whole spine MRI: LONGITUDINALLY EXTENSIVE T2 lesion confined to the cervical cord",
+  "3. needle EMG of the affected muscles: prolonged bursts, overflow activation and simultaneous agonist-antagonist contraction, with NO denervation or myopathy - confirms dystonic hypertonia",
+  "4. corticosteroid trial: high-dose intravenous methylprednisolone 1 g/day for five days followed by an oral taper"
+ ],
+ "dx_raw": "DIAGNOSIS: Stiff Person Syndrome (autoimmune, associated with longitudinally extensive cervical myelitis)\n1. Symptomatic dystonia secondary to idiopathic longitudinally extensive transverse myelitis\n2. Progressive Encephalomyelitis with Rigidity and Myoclonus (PERM)\n3. Spinal cord neoplasm (e.g., ependymoma) with secondary symptomatic dystonia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Stiff Person Syndrome (autoimmune, associated with longitudinally extensive cervical myelitis)",
+ "decisive_served": [
+  "anti-aquaporin-4 and anti-MOG antibodies",
+  "cervical and whole spine MRI",
+  "needle EMG of the affected muscles",
+  "corticosteroid trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 21046,
+   "completion_tokens": 1946,
+   "total_tokens": 22992,
+   "cost": 0.00861132,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00861132,
+    "upstream_inference_prompt_cost": 0.00627612,
+    "upstream_inference_completions_cost": 0.0023352
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1815,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 21578,
+   "completion_tokens": 6149,
+   "total_tokens": 27727,
+   "cost": 0.00880476,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 21031,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00880476,
+    "upstream_inference_prompt_cost": 0.00142596,
+    "upstream_inference_completions_cost": 0.0073788
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6075,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_secondary_structural_PMC12962376.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 108.3
+}

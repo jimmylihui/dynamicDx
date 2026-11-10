@@ -1,0 +1,195 @@
+{
+ "questions": [
+  "Did these repetitive movements begin suddenly?",
+  "Are the movements occurring on only one side of your body?",
+  "Are you fully awake and aware during the movements?",
+  "Can you voluntarily stop the movements when asked?",
+  "Do the movements continue while you are asleep?",
+  "Have you had weakness or loss of coordination on that side?",
+  "Have you noticed facial drooping, difficulty speaking, or difficulty understanding speech?",
+  "Have you had numbness or loss of sensation on that side?",
+  "Have you experienced a severe or unusual headache with these symptoms?",
+  "Have you had a seizure or loss of consciousness?",
+  "Have you recently had a stroke, head injury, or injury to your neck or spine?",
+  "Do you have pain in your neck, back, or affected limbs?",
+  "Have you had fever or a recent infection?",
+  "Have you started or stopped any medication recently?",
+  "Have you ever had similar movements before?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Bedside capillary blood glucose measurement",
+  "Urgent non-contrast CT scan of the brain",
+  "CT angiography of the head and neck",
+  "MRI of the brain with diffusion-weighted imaging",
+  "Urgent electroencephalography",
+  "Complete blood count, serum electrolytes, calcium, magnesium, renal function, and liver function tests",
+  "Coagulation profile, including PT/INR and aPTT",
+  "Electrocardiogram and continuous cardiac monitoring",
+  "Transthoracic echocardiography",
+  "Bilateral carotid Doppler ultrasonography"
+ ],
+ "served": [
+  "blood glucose",
+  "CT head (non-contrast)",
+  "MR or CT angiography",
+  "MRI diffusion-weighted sequences",
+  "EEG",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "renal function and eGFR",
+  "full blood count"
+ ],
+ "results": [
+  "1. Bedside capillary blood glucose measurement",
+  "     blood glucose: normal - non-ketotic hyperglycaemia was an exclusion criterion for this series",
+  "2. Urgent non-contrast CT scan of the brain",
+  "     CT head (non-contrast): ischaemic stroke - 92.9% of the series were ischaemic and one was haemorrhagic",
+  "3. CT angiography of the head and neck",
+  "     MR or CT angiography: middle cerebral artery in 64.3%, anterior cerebral artery in 21.4%, posterior cerebral artery in 14.3%",
+  "4. MRI of the brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the lentiform nucleus",
+  "5. Urgent electroencephalography",
+  "     EEG: normal",
+  "6. Complete blood count, serum electrolytes, calcium, magnesium, renal function, and liver function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     renal function and eGFR: normal",
+  "     full blood count: normal",
+  "7. Coagulation profile, including PT/INR and aPTT",
+  "     not performed / not available",
+  "8. Electrocardiogram and continuous cardiac monitoring",
+  "     not performed / not available",
+  "9. Transthoracic echocardiography",
+  "     not performed / not available",
+  "10. Bilateral carotid Doppler ultrasonography",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute ischemic infarction of the contralateral lentiform nucleus, most likely in the middle cerebral artery territory, causing post-stroke hemichorea–hemiballismus\n\nALTERNATIVE 1: Focal motor seizure with impaired awareness\n\nALTERNATIVE 2: Hemichorea–hemiballismus due to non-ketotic hyperglycaemia\n\nALTERNATIVE 3: Functional movement disorder",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Bedside capillary blood glucose measurement\n2. Urgent non-contrast CT scan of the brain\n3. CT angiography of the head and neck\n4. MRI of the brain with diffusion-weighted imaging\n5. Urgent electroencephalography\n6. Complete blood count, serum electrolytes, calcium, magnesium, renal function, and liver function tests\n7. Coagulation profile, including PT/INR and aPTT\n8. Electrocardiogram and continuous cardiac monitoring\n9. Transthoracic echocardiography\n10. Bilateral carotid Doppler ultrasonography",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Acute ischemic infarction of the contralateral lentiform nucleus, most likely in the middle cerebral artery territory, causing post-stroke hemichorea–hemiballismus",
+ "decisive_served": [
+  "blood glucose",
+  "CT head (non-contrast)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 574,
+   "total_tokens": 6250,
+   "cost": 0.001053825,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 5673,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001053825,
+    "upstream_inference_prompt_cost": 0.000709425,
+    "upstream_inference_completions_cost": 0.0003444
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 371,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6290,
+   "completion_tokens": 284,
+   "total_tokens": 6574,
+   "cost": 0.00030418,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 614,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00030418,
+    "upstream_inference_prompt_cost": 0.00013378,
+    "upstream_inference_completions_cost": 0.0001704
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 151,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 6823,
+   "completion_tokens": 294,
+   "total_tokens": 7117,
+   "cost": 0.000306195,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6287,
+    "cache_write_tokens": 533,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000306195,
+    "upstream_inference_prompt_cost": 0.000129795,
+    "upstream_inference_completions_cost": 0.0001764
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 199,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 32.1
+}

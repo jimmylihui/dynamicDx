@@ -1,0 +1,163 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Have you noticed your eyelids drooping, particularly later in the day or when you are tired?",
+  "Do you have difficulty swallowing or chewing?",
+  "Do you have weakness in your arms or legs that gets worse with activity?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of thyroid disease?",
+  "Do you have a history of cancer?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Fundoscopy",
+  "MRI of the brain"
+ ],
+ "served": [
+  "fundoscopy",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+ ],
+ "results": [
+  "R1 ASK Do you have double vision?; Have you noticed your eyelids drooping, particularly later in the day or when you are tired?; Do you have difficulty swallowing or chewing?; Do you have weakness in your arms or legs that gets worse with activity? -> ['no', 'no', 'no', 'no']",
+  "R2 ORDER Fundoscopy -> [['fundoscopy']]",
+  "R3 ASK Do you have a history of diabetes? -> ['no']",
+  "R4 ASK Do you have a history of high blood pressure? -> ['no']",
+  "R5 ASK Do you have a history of thyroid disease? -> ['no']",
+  "R6 ASK Do you have a history of cancer? -> ['no']",
+  "R7 ORDER MRI of the brain -> [['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)', 'MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)', 'MRI brain - cortical atrophy pattern', 'MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)']]",
+  "R8 DIAGNOSIS Multiple system atrophy (parkinsonian type) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have double vision?",
+    "Have you noticed your eyelids drooping, particularly later in the day or when you are tired?",
+    "Do you have difficulty swallowing or chewing?",
+    "Do you have weakness in your arms or legs that gets worse with activity?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Fundoscopy"
+   ],
+   "result": [
+    [
+     "fundoscopy"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of high blood pressure?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of thyroid disease?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of cancer?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "MRI of the brain"
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium",
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences",
+     "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+     "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+     "MRI brain - cortical atrophy pattern",
+     "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Multiple system atrophy (parkinsonian type)"
+  }
+ ],
+ "dx": "Multiple system atrophy (parkinsonian type)",
+ "dx_raw": "DIAGNOSIS: Multiple system atrophy (parkinsonian type)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)"
+ ],
+ "n_decisive": 7,
+ "cost_usd": 0.0017,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 36.4
+}

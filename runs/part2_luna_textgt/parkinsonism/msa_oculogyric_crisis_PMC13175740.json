@@ -1,0 +1,193 @@
+{
+ "questions": [
+  "During these episodes, do you remain fully aware and able to understand what is happening?",
+  "Can you voluntarily bring your eyes down during an episode?",
+  "Do the episodes come and go in attacks rather than being continuously present?",
+  "Did these episodes begin after starting or increasing a medication?",
+  "Are you taking an antipsychotic, anti-nausea medication such as metoclopramide or prochlorperazine, or another dopamine-blocking drug?",
+  "Do the episodes occur within hours of taking any medication?",
+  "Have you had similar episodes before?",
+  "Do the episodes last several minutes or longer?",
+  "Do you experience neck twisting, jaw spasm, tongue protrusion, or other abnormal muscle contractions during them?",
+  "Do you have loss of consciousness or memory during an episode?",
+  "Do you have rhythmic jerking of your arms or legs during an episode?",
+  "Have you bitten your tongue or lost bladder control during an episode?",
+  "Are you confused or unusually sleepy after an episode?",
+  "Do the episodes occur with fever?",
+  "Do you have severe muscle stiffness, sweating, rapid heartbeat, or unusually high temperature?",
+  "Have you recently had a head injury, brain infection, or new neurological illness?",
+  "Have you recently developed severe anxiety, hallucinations, confusion, or major changes in behavior?",
+  "Do bright lights, stress, movement, or voluntarily looking upward trigger the episodes?",
+  "Can you suppress or interrupt the episodes by concentrating, touching your face, or changing position?",
+  "Do you have a history of epilepsy, Parkinson disease, or other movement disorder?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Prolonged video-electroencephalographic monitoring with simultaneous eyelid and extraocular muscle channels, aiming to capture an episode",
+  "Brain MRI with epilepsy protocol",
+  "Routine EEG with hyperventilation, photic stimulation, and eye-opening/eye-closure testing",
+  "Complete medication, supplement, and recreational-drug reconciliation, including exact timing of each dose relative to episodes",
+  "Serum glucose, electrolytes, calcium, magnesium, renal function, and liver function tests",
+  "Urine toxicology screen"
+ ],
+ "served": [
+  "video-oculography / eye-movement recording",
+  "EEG",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "EEG",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "drug and toxin screen"
+ ],
+ "results": [
+  "1. Prolonged video-electroencephalographic monitoring with simultaneous eyelid and extraocular muscle channels, aiming to capture an episode",
+  "     video-oculography / eye-movement recording: normal baseline vertical saccades and gaze; dose-related conjugate upward eye deviation with blepharospasm beginning about 30 minutes after levodopa and resolving by 3 hours",
+  "     EEG: not performed",
+  "2. Brain MRI with epilepsy protocol",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: putaminal hypointensity",
+  "3. Routine EEG with hyperventilation, photic stimulation, and eye-opening/eye-closure testing",
+  "     EEG: not performed",
+  "4. Complete medication, supplement, and recreational-drug reconciliation, including exact timing of each dose relative to episodes",
+  "     medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium): trazodone, paroxetine, hydrocortisone and verapamil - no dopamine blocker",
+  "5. Serum glucose, electrolytes, calcium, magnesium, renal function, and liver function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal",
+  "6. Urine toxicology screen",
+  "     drug and toxin screen: negative"
+ ],
+ "dx_raw": "DIAGNOSIS: Levodopa-induced oculogyric crisis with blepharospasm (acute dystonic reaction)\n\nALTERNATIVE: Levodopa-induced dyskinesia associated with an underlying parkinsonian disorder\n\nALTERNATIVE: Neurodegeneration with brain iron accumulation, particularly neuroferritinopathy, causing secondary dystonia\n\nALTERNATIVE: Focal epileptic seizures with tonic upward eye deviation",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Prolonged video-electroencephalographic monitoring with simultaneous eyelid and extraocular muscle channels, aiming to capture an episode\n2. Brain MRI with epilepsy protocol\n3. Routine EEG with hyperventilation, photic stimulation, and eye-opening/eye-closure testing\n4. Complete medication, supplement, and recreational-drug reconciliation, including exact timing of each dose relative to episodes\n5. Serum glucose, electrolytes, calcium, magnesium, renal function, and liver function tests\n6. Urine toxicology screen\n",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Levodopa-induced oculogyric crisis with blepharospasm (acute dystonic reaction)",
+ "decisive_served": [
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 163,
+   "completion_tokens": 726,
+   "total_tokens": 889,
+   "cost": 0.0009038,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009038,
+    "upstream_inference_prompt_cost": 3.26e-05,
+    "upstream_inference_completions_cost": 0.0008712
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 386,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1076,
+   "completion_tokens": 371,
+   "total_tokens": 1447,
+   "cost": 0.00071405,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1073,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00071405,
+    "upstream_inference_prompt_cost": 0.00026885,
+    "upstream_inference_completions_cost": 0.0004452
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 256,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1566,
+   "completion_tokens": 942,
+   "total_tokens": 2508,
+   "cost": 0.00127496,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1073,
+    "cache_write_tokens": 490,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00127496,
+    "upstream_inference_prompt_cost": 0.00014456,
+    "upstream_inference_completions_cost": 0.0011304
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 851,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 36.9
+}

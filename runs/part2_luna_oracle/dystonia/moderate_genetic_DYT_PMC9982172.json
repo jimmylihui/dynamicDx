@@ -1,0 +1,134 @@
+{
+ "questions": [
+  "Are you currently experiencing weakness in any arm or leg?",
+  "Have you noticed numbness or altered sensation on one side of your body?",
+  "Have you had episodes of sudden difficulty speaking, understanding speech, or seeing?",
+  "Have you had problems with walking, balance, or coordination?",
+  "Have you experienced dizziness or a spinning sensation?",
+  "Have you had fainting episodes or periods of lost awareness?",
+  "Have you had seizures or involuntary shaking movements?",
+  "Have you noticed a tremor when your hands are at rest or when using them?",
+  "Have you had new or worsening headaches?",
+  "Have you experienced double vision, drooping eyelids, difficulty swallowing, or slurred speech?",
+  "Have you had loss of bladder or bowel control?",
+  "Have these symptoms ever started suddenly and then resolved completely?",
+  "Do your symptoms vary substantially from one occasion to another?",
+  "Do your symptoms improve when you are distracted or worsen when you focus on them?",
+  "Have you previously been diagnosed with a neurological condition?",
+  "Have you ever had a stroke, transient ischemic attack, head injury, or serious infection affecting the nervous system?",
+  "Do you have diabetes, high blood pressure, or high cholesterol?",
+  "Are you taking any medications or recreational drugs that could affect your nervous system?",
+  "Have you recently experienced major psychological stress, trauma, anxiety, or depression?",
+  "Do you have a family history of neurological disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "levodopa trial",
+  "speech assessment",
+  "dystonia gene panel"
+ ],
+ "results": [
+  "1. levodopa trial: no response - not dopa-responsive dystonia",
+  "2. speech assessment: spasmodic speech",
+  "3. dystonia gene panel: pathogenic THAP1 variant c.505C>T (p.Arg169*), heterozygous - DYT6"
+ ],
+ "dx_raw": "DIAGNOSIS: THAP1-associated primary generalized dystonia (DYT6), caused by a heterozygous pathogenic THAP1 c.505C>T (p.Arg169*) variant, with cranial/laryngeal involvement causing spasmodic dysarthria.\n\nAlternative: TOR1A-associated dystonia (DYT1)\n\nAlternative: Functional neurological disorder with dystonia\n\nAlternative: Dopa-responsive dystonia (GCH1-associated)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "THAP1-associated primary generalized dystonia (DYT6), caused by a heterozygous pathogenic THAP1 c.505C>T (p.Arg169*) variant, with cranial/laryngeal involvement causing spasmodic dysarthria.",
+ "decisive_served": [
+  "levodopa trial",
+  "speech assessment",
+  "dystonia gene panel"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 701,
+   "total_tokens": 6377,
+   "cost": 0.00047763,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00047763,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0004206
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 393,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6535,
+   "completion_tokens": 232,
+   "total_tokens": 6767,
+   "cost": 0.000303605,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 859,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000303605,
+    "upstream_inference_prompt_cost": 0.000164405,
+    "upstream_inference_completions_cost": 0.0001392
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 134,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_genetic_DYT_PMC9982172.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 16.7
+}

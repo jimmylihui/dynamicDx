@@ -1,0 +1,198 @@
+{
+ "questions": [
+  "Did you remain conscious throughout the episode?",
+  "Was the event witnessed by someone else?",
+  "Did you experience any warning signs or sensations before the event began?",
+  "Have you ever had a previous episode like this one?",
+  "Do you have a personal history of epilepsy or seizures?",
+  "Did you bite your tongue during the episode?",
+  "Did you lose bladder or bowel control?",
+  "Did you feel confused or drowsy afterward?",
+  "Are you currently taking any prescription medications?",
+  "Do you have any history of psychiatric illness or mental health diagnoses?",
+  "Have you had any recent head injury?",
+  "Have you had a fever or recent illness?",
+  "Have you consumed any recreational drugs or alcohol recently?",
+  "Do you have a family history of seizures or epilepsy?",
+  "How long did the episode last?",
+  "Do you remember anything about the episode yourself?",
+  "Have you been experiencing any recent stress or emotional difficulties?",
+  "Are you pregnant or could you be pregnant?",
+  "Is this the only time this has happened, or have there been other similar episodes?",
+  "Have you experienced any other unusual movements or episodes recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "yes",
+  "20": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Magnetic resonance imaging of the brain",
+  "Electroencephalography",
+  "Serum glucose",
+  "Serum electrolytes including calcium and magnesium",
+  "Renal function tests",
+  "Liver function tests",
+  "Complete blood count"
+ ],
+ "served": [
+  "brain MRI",
+  "interictal EEG",
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "glucose, calcium, magnesium, sodium",
+  "serum electrolytes, urea and creatinine",
+  "liver and renal function",
+  "liver function tests",
+  "liver and renal function",
+  "full blood count and biochemistry"
+ ],
+ "results": [
+  "1. Magnetic resonance imaging of the brain",
+  "     brain MRI: no focal epileptogenic lesion",
+  "2. Electroencephalography",
+  "     interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "3. Serum glucose",
+  "     blood glucose and HbA1c: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "4. Serum electrolytes including calcium and magnesium",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "5. Renal function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver and renal function: normal",
+  "6. Liver function tests",
+  "     liver function tests: normal",
+  "     liver and renal function: normal",
+  "7. Complete blood count",
+  "     full blood count and biochemistry: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Frontal lobe epilepsy\n\nPrimary generalized epilepsy with polyspike-wave discharges\n\nDissociative (non-epileptic) seizures",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Magnetic resonance imaging of the brain\n2. Electroencephalography\n3. Serum glucose\n4. Serum electrolytes including calcium and magnesium\n5. Renal function tests\n6. Liver function tests\n7. Complete blood count",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Frontal lobe epilepsy",
+ "decisive_served": [
+  "interictal EEG"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 395,
+   "completion_tokens": 985,
+   "total_tokens": 1380,
+   "cost": 0.0003047576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003047576,
+    "upstream_inference_prompt_cost": 2.89576e-05,
+    "upstream_inference_completions_cost": 0.0002758
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 731,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1146,
+   "completion_tokens": 552,
+   "total_tokens": 1698,
+   "cost": 0.0002798768,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002798768,
+    "upstream_inference_prompt_cost": 0.0001253168,
+    "upstream_inference_completions_cost": 0.00015456
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 500,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1497,
+   "completion_tokens": 873,
+   "total_tokens": 2370,
+   "cost": 0.0004188968,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004188968,
+    "upstream_inference_prompt_cost": 0.0001744568,
+    "upstream_inference_completions_cost": 0.00024444
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 837,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 43.0
+}

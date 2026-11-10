@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Did you lose consciousness?",
+  "Were you able to hear or understand what was happening around you while on the ground?",
+  "Did you feel lightheaded, dizzy, or like the room was spinning before you fell?",
+  "Did you experience chest pain, palpitations, or shortness of breath immediately before falling?",
+  "Did you have any jerking movements of your arms or legs while on the ground?",
+  "Did you bite your tongue or lose control of your bladder during the episode?",
+  "Did you feel confused, sleepy, or disoriented for more than a few minutes after standing up?",
+  "Do you have a history of diabetes?",
+  "Have you recently started or changed any medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Orthostatic vital signs (blood pressure and heart rate lying, sitting, and standing)",
+  "12-lead electrocardiogram",
+  "Continuous ambulatory cardiac monitoring (Holter or event monitor)"
+ ],
+ "served": [],
+ "results": [
+  "1. Orthostatic vital signs (blood pressure and heart rate lying, sitting, and standing)",
+  "     not performed / not available",
+  "2. 12-lead electrocardiogram",
+  "     not performed / not available",
+  "3. Continuous ambulatory cardiac monitoring (Holter or event monitor)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Psychogenic pseudosyncope (functional collapse)\n1. Cataplexy secondary to narcolepsy\n2. Drop attacks of unknown etiology",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Orthostatic vital signs (blood pressure and heart rate lying, sitting, and standing)\n2. 12-lead electrocardiogram\n3. Continuous ambulatory cardiac monitoring (Holter or event monitor)",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Psychogenic pseudosyncope (functional collapse)",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 198,
+   "completion_tokens": 155,
+   "total_tokens": 353,
+   "cost": 0.00010255,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010255,
+    "upstream_inference_prompt_cost": 2.97e-05,
+    "upstream_inference_completions_cost": 7.285e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 699,
+   "completion_tokens": 47,
+   "total_tokens": 746,
+   "cost": 0.00012694,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00012694,
+    "upstream_inference_prompt_cost": 0.00010485,
+    "upstream_inference_completions_cost": 2.209e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 917,
+   "completion_tokens": 37,
+   "total_tokens": 954,
+   "cost": 8.6332e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.6332e-05,
+    "upstream_inference_prompt_cost": 6.8942e-05,
+    "upstream_inference_completions_cost": 1.739e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.2
+}

@@ -1,0 +1,190 @@
+{
+ "questions": [
+  "Is the device you are wearing around your neck related to the reason you came to see me today?",
+  "Do you have any trouble breathing?",
+  "Have you had chest pain in the last week?",
+  "Do you have a cough?",
+  "Are you coughing up blood?",
+  "Have you had a fever in the past few days?",
+  "Is the device around your neck an oxygen device?",
+  "Were you recently discharged from the hospital?",
+  "Do you have any abdominal pain?",
+  "Have you had any nausea or vomiting?",
+  "Do you have any history of heart disease?",
+  "Do you have any history of lung disease?",
+  "Do you have a history of cancer?",
+  "Have you had any recent surgery?",
+  "Do you have any pain at the site where the tube enters your body?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Interrogate the ambulatory cardiac monitor around your neck and review its recorded rhythm data",
+  "Measure vital signs (blood pressure, heart rate, respiratory rate, oxygen saturation, temperature)",
+  "12-lead ECG",
+  "Cardiac auscultation",
+  "Pulmonary auscultation",
+  "Palpate the abdomen",
+  "Examine the skin where the device's lead attaches",
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Troponin level",
+  "NT-proBNP"
+ ],
+ "served": [
+  "vital signs",
+  "full blood count",
+  "renal and liver function",
+  "electrolytes (Na, K, Ca, Mg)"
+ ],
+ "results": [
+  "1. Interrogate the ambulatory cardiac monitor around your neck and review its recorded rhythm data",
+  "     not performed / not available",
+  "2. Measure vital signs (blood pressure, heart rate, respiratory rate, oxygen saturation, temperature)",
+  "     vital signs: normal, afebrile",
+  "3. 12-lead ECG",
+  "     not performed / not available",
+  "4. Cardiac auscultation",
+  "     not performed / not available",
+  "5. Pulmonary auscultation",
+  "     not performed / not available",
+  "6. Palpate the abdomen",
+  "     not performed / not available",
+  "7. Examine the skin where the device's lead attaches",
+  "     not performed / not available",
+  "8. Complete blood count",
+  "     full blood count: normal",
+  "9. Comprehensive metabolic panel",
+  "     renal and liver function: normal",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "10. Troponin level",
+  "     not performed / not available",
+  "11. NT-proBNP",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Asymptomatic patient undergoing ambulatory cardiac monitoring (most likely for evaluation of paroxysmal atrial fibrillation or palpitations, cause not yet determined)\n\nAlternative 1: Palpitations secondary to paroxysmal supraventricular tachycardia\nAlternative 2: Cryptogenic stroke workup with monitor for occult atrial fibrillation\nAlternative 3: Syncope workup for intermittent arrhythmia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Interrogate the ambulatory cardiac monitor around your neck and review its recorded rhythm data\n2. Measure vital signs (blood pressure, heart rate, respiratory rate, oxygen saturation, temperature)\n3. 12-lead ECG\n4. Cardiac auscultation\n5. Pulmonary auscultation\n6. Palpate the abdomen\n7. Examine the skin where the device's lead attaches\n8. Complete blood count\n9. Comprehensive metabolic panel\n10. Troponin level\n11. NT-proBNP",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Asymptomatic patient undergoing ambulatory cardiac monitoring (most likely for evaluation of paroxysmal atrial fibrillation or palpitations, cause not yet determined)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 730,
+   "completion_tokens": 510,
+   "total_tokens": 1240,
+   "cost": 0.00079332,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00079332,
+    "upstream_inference_prompt_cost": 0.00018132,
+    "upstream_inference_completions_cost": 0.000612
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 339,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1292,
+   "completion_tokens": 1223,
+   "total_tokens": 2515,
+   "cost": 0.00181752,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00181752,
+    "upstream_inference_prompt_cost": 0.00034992,
+    "upstream_inference_completions_cost": 0.0014676
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1119,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1690,
+   "completion_tokens": 590,
+   "total_tokens": 2280,
+   "cost": 0.00090852,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1277,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00090852,
+    "upstream_inference_prompt_cost": 0.00020052,
+    "upstream_inference_completions_cost": 0.000708
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 513,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 22.4,
+ "video": "moderate_postinfectious_millerfisher_PMC13224678.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 38.5
+}

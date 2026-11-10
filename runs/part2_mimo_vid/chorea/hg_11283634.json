@@ -1,0 +1,172 @@
+{
+ "questions": [
+  "Are you conscious?",
+  "Are you in pain?",
+  "Is your arm rigid?",
+  "Did this happen suddenly?",
+  "Are you having trouble speaking?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Point-of-care blood glucose",
+  "Comprehensive metabolic panel",
+  "Continuous video EEG monitoring",
+  "Non-contrast CT head",
+  "Urine toxicology screen",
+  "Complete blood count with differential",
+  "Thyroid function tests",
+  "Lumbar puncture with opening pressure and analysis"
+ ],
+ "served": [
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "EEG",
+  "CT head (non-contrast)",
+  "toxicology screen (urine and serum)",
+  "full blood count",
+  "thyroid function (TSH, free T4)",
+  "TSH, free T4 and free T3",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. Point-of-care blood glucose",
+  "     blood glucose: 2.25 g/L (normal 0.70-1.10) - non-ketotic hyperglycaemia",
+  "2. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: creatinine 17 mg/L, eGFR 31 mL/min/1.73 m2",
+  "     liver function tests: normal",
+  "3. Continuous video EEG monitoring",
+  "     EEG: normal",
+  "4. Non-contrast CT head",
+  "     CT head (non-contrast): no haemorrhage, no hyperdensity, no infarct",
+  "5. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "6. Complete blood count with differential",
+  "     full blood count: normal",
+  "7. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH, free T4 and free T3: normal",
+  "8. Lumbar puncture with opening pressure and analysis",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal",
+  "     lumbar puncture / CSF: normal cells, protein and glucose; no oligoclonal bands"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperosmolar hyperglycemic state\n\nHypoglycemic encephalopathy (iatrogenic or factitious)\nUremic encephalopathy\nNon-convulsive status epilepticus with post-ictal state",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Point-of-care blood glucose\n2. Comprehensive metabolic panel\n3. Continuous video EEG monitoring\n4. Non-contrast CT head\n5. Urine toxicology screen\n6. Complete blood count with differential\n7. Thyroid function tests\n8. Lumbar puncture with opening pressure and analysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperosmolar hyperglycemic state",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 18878,
+   "completion_tokens": 3180,
+   "total_tokens": 22058,
+   "cost": 0.0009517648,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 18816,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009517648,
+    "upstream_inference_prompt_cost": 6.13648e-05,
+    "upstream_inference_completions_cost": 0.0008904
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3142,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 19120,
+   "completion_tokens": 438,
+   "total_tokens": 19558,
+   "cost": 0.0002178848,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 18816,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002178848,
+    "upstream_inference_prompt_cost": 9.52448e-05,
+    "upstream_inference_completions_cost": 0.00012264
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 372,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 19547,
+   "completion_tokens": 704,
+   "total_tokens": 20251,
+   "cost": 0.0003170216,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 19072,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003170216,
+    "upstream_inference_prompt_cost": 0.0001199016,
+    "upstream_inference_completions_cost": 0.00019712
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 645,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 82.7
+}

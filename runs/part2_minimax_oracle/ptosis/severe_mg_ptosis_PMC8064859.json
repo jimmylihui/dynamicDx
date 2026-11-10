@@ -1,0 +1,127 @@
+{
+ "questions": [
+  "Are you experiencing chest pain or pressure right now?",
+  "Are you experiencing shortness of breath?",
+  "Do you have any sudden weakness or numbness on one side of your body?",
+  "Do you have a severe headache?",
+  "Do you have abdominal pain?",
+  "Have you had a fever?",
+  "Do you have a cough?",
+  "Have you lost weight without trying?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Do you have heart disease?",
+  "Do you smoke?",
+  "Do you drink alcohol?",
+  "Do you have any difficulty urinating?",
+  "Do you feel sad or depressed most of the time?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "repetitive nerve stimulation",
+  "sustained upgaze fatigability test",
+  "anti-acetylcholine receptor antibodies",
+  "neostigmine / edrophonium challenge"
+ ],
+ "results": [
+  "1. repetitive nerve stimulation: decremental response in facial and spinal accessory nerves",
+  "2. sustained upgaze fatigability test: 'PRONOUNCED PTOSIS' on counting 1 to 100 - the right eye closed completely while the left droop increased",
+  "3. anti-acetylcholine receptor antibodies: 16.63 nmol/L - elevated",
+  "4. neostigmine / edrophonium challenge: ptosis improved (partially right, completely left) with improvement in neck muscle power"
+ ],
+ "dx_raw": "Based on the clinical history, the physical exam findings (fatigable ptosis on sustained upgaze), and the specific investigation results provided, here is the assessment:\n\nDIAGNOSIS: Myasthenia Gravis (AChR antibody-positive), an autoimmune disorder caused by antibodies targeting the postsynaptic nicotinic acetylcholine receptors at the neuromuscular junction.\n\nAlternatives:\n1. Lambert-Eaton Myasthenic Syndrome\n2. Botulism\n3. Ocular Myasthenia Gravis (localized presentation, though neck weakness suggests generalization)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Myasthenia Gravis (AChR antibody-positive), an autoimmune disorder caused by antibodies targeting the postsynaptic nicotinic acetylcholine receptors at the neuromuscular junction.",
+ "decisive_served": [
+  "repetitive nerve stimulation",
+  "sustained upgaze fatigability test",
+  "anti-acetylcholine receptor antibodies",
+  "neostigmine / edrophonium challenge"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 4022,
+   "total_tokens": 11084,
+   "cost": 0.00690732,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00690732,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0048264
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3882,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7619,
+   "completion_tokens": 2293,
+   "total_tokens": 9912,
+   "cost": 0.00334602,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00334602,
+    "upstream_inference_prompt_cost": 0.00059442,
+    "upstream_inference_completions_cost": 0.0027516
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2179,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_mg_ptosis_PMC8064859.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 69.3
+}

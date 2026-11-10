@@ -1,0 +1,135 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does your weakness improve after resting?",
+  "Do you have difficulty swallowing?",
+  "Do you have difficulty breathing?",
+  "Is the drooping present in both eyes?",
+  "Do you have a history of cancer?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Ice pack test",
+  "Serum acetylcholine receptor antibodies"
+ ],
+ "served": [
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies"
+ ],
+ "results": [
+  "1. Ice pack test",
+  "     ice-pack test: partial improvement",
+  "2. Serum acetylcholine receptor antibodies",
+  "     anti-acetylcholine receptor antibodies: 16.63 nmol/L - elevated"
+ ],
+ "dx_raw": "DIAGNOSIS: Myasthenia gravis (autoimmune)\nLambert-Eaton myasthenic syndrome\nOculopharyngeal muscular dystrophy",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Ice pack test\n2. Serum acetylcholine receptor antibodies",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Myasthenia gravis (autoimmune)",
+ "decisive_served": [
+  "anti-acetylcholine receptor antibodies"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 183,
+   "completion_tokens": 59,
+   "total_tokens": 242,
+   "cost": 5.518e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.518e-05,
+    "upstream_inference_prompt_cost": 2.745e-05,
+    "upstream_inference_completions_cost": 2.773e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 480,
+   "completion_tokens": 15,
+   "total_tokens": 495,
+   "cost": 7.905e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.905e-05,
+    "upstream_inference_prompt_cost": 7.2e-05,
+    "upstream_inference_completions_cost": 7.05e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 642,
+   "completion_tokens": 37,
+   "total_tokens": 679,
+   "cost": 7.9386e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.9386e-05,
+    "upstream_inference_prompt_cost": 6.1996e-05,
+    "upstream_inference_completions_cost": 1.739e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_mg_ptosis_PMC8064859.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 17.8
+}

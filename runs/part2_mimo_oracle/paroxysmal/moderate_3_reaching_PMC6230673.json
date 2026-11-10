@@ -1,0 +1,113 @@
+{
+ "questions": [
+  "Do you have sensation in your legs?",
+  "Can you move your toes?",
+  "Can you move the fingers on your left hand?",
+  "Do you remember how you were injured?",
+  "Are you in a lot of pain right now?",
+  "Did you lose consciousness during the injury?",
+  "Are you having difficulty breathing?",
+  "Have you been able to pass urine today?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "witnessed description of the event",
+  "head injury history",
+  "neurological examination between events",
+  "interictal EEG"
+ ],
+ "results": [
+  "1. witnessed description of the event: the right arm reaches and grasps and takes a DYSTONIC posture during the movement, despite a manual muscle testing score of 1 - the movement is ictal, not voluntary",
+  "2. head injury history: traumatic brain injury after being thrown from a horse",
+  "3. neurological examination between events: right-sided hemiplegia, manual muscle testing grade 1",
+  "4. interictal EEG: repetitive sharp waves predominantly in the LEFT FRONTAL area during sleep, with pseudocontinuous 3 Hz slow waves in the same region on awakening"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-traumatic focal epilepsy with ictal dystonia (left frontal epileptogenic focus causing paralytic dystonia of the right hemiplegic limb)\n\nAlternative 1: Post-traumatic paroxysmal dystonia\nAlternative 2: Post-traumatic frontal lobe epilepsy with versive/tonic seizures\nAlternative 3: Non-epileptic psychogenic movement disorder superimposed on hemiplegia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Post-traumatic focal epilepsy with ictal dystonia (left frontal epileptogenic focus causing paralytic dystonia of the right hemiplegic limb)",
+ "decisive_served": [
+  "witnessed description of the event",
+  "head injury history",
+  "neurological examination between events",
+  "interictal EEG"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6591,
+   "completion_tokens": 1464,
+   "total_tokens": 8055,
+   "cost": 0.0013063176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013063176,
+    "upstream_inference_prompt_cost": 0.0008963976,
+    "upstream_inference_completions_cost": 0.00040992
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1380,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7010,
+   "completion_tokens": 805,
+   "total_tokens": 7815,
+   "cost": 0.0003111584,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003111584,
+    "upstream_inference_prompt_cost": 8.57584e-05,
+    "upstream_inference_completions_cost": 0.0002254
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 709,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 41.8
+}

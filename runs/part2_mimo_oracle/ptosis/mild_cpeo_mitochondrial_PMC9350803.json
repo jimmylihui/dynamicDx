@@ -1,0 +1,112 @@
+{
+ "questions": [
+  "Has this abnormal eye movement been present for less than one week?",
+  "Have you experienced double vision along with this eye issue?",
+  "Do you get dizzy or have headaches when this happens?",
+  "Have you had a recent head injury or high fever?",
+  "Have you ever been diagnosed with an eye or neurological condition before?",
+  "Is this eye misalignment visible even when you look straight ahead?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "repetitive nerve stimulation",
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "MRI orbits",
+  "trial of pyridostigmine and prednisolone"
+ ],
+ "results": [
+  "1. repetitive nerve stimulation: decremental response",
+  "2. ice-pack test: POSITIVE",
+  "3. anti-acetylcholine receptor antibodies: 10.32 nmol/L (normal <0.50) - strongly POSITIVE",
+  "4. MRI orbits: SEVERE THINNING of all extraocular muscles; exotropia of the right eye",
+  "5. trial of pyridostigmine and prednisolone: ptosis and limb weakness improved; the ophthalmoparesis did NOT"
+ ],
+ "dx_raw": "DIAGNOSIS: Chronic Myasthenia Gravis caused by anti-AChR autoantibodies\n\n1. Thyroid Eye Disease (Graves' Ophthalmopathy)\n2. Chronic Progressive External Ophthalmoplegia (CPEO)\n3. Idiopathic Orbital Inflammation",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Chronic Myasthenia Gravis caused by anti-AChR autoantibodies",
+ "decisive_served": [
+  "repetitive nerve stimulation",
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "MRI orbits",
+  "trial of pyridostigmine and prednisolone"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 709,
+   "total_tokens": 5764,
+   "cost": 0.0008798776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008798776,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00019852
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 622,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5459,
+   "completion_tokens": 4110,
+   "total_tokens": 9569,
+   "cost": 0.0012301576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012301576,
+    "upstream_inference_prompt_cost": 7.93576e-05,
+    "upstream_inference_completions_cost": 0.0011508
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4045,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "mild_cpeo_mitochondrial_PMC9350803.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 63.5
+}

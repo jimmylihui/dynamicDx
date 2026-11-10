@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Is the tremor present when your hands are at rest?",
+  "Does alcohol improve the tremor?",
+  "Does the tremor worsen as you reach for a target?",
+  "Is the tremor symmetric?",
+  "Do you have any stiffness in your muscles?",
+  "Have you noticed your movements becoming slower?",
+  "Do you have any balance problems?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "limb power and wasting",
+  "TSH / free T4",
+  "cervical spine MRI (including flexion views)",
+  "nerve conduction studies / EMG",
+  "surface EMG of forearm flexors and extensors"
+ ],
+ "results": [
+  "1. limb power and wasting: mild distal finger muscle wasting",
+  "2. TSH / free T4: normal - not thyrotoxic",
+  "3. cervical spine MRI (including flexion views): ON NECK FLEXION, prominent flow voids in a widened posterior epidural space from C6 to T3 - diagnostic of Hirayama disease",
+  "4. nerve conduction studies / EMG: normal conduction velocity with NEUROGENIC changes in the C7-C8 myotome",
+  "5. surface EMG of forearm flexors and extensors: synchronous discharges at about 8 Hz in both forearm flexors and extensors"
+ ],
+ "dx_raw": "DIAGNOSIS: Hirayama disease caused by forward displacement of the posterior dural sac during neck flexion\n\nCervical spondylotic myelopathy\nMultifocal motor neuropathy\nAmyotrophic lateral sclerosis",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Hirayama disease caused by forward displacement of the posterior dural sac during neck flexion",
+ "decisive_served": [
+  "limb power and wasting",
+  "TSH / free T4",
+  "cervical spine MRI (including flexion views)",
+  "nerve conduction studies / EMG",
+  "surface EMG of forearm flexors and extensors"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 4978,
+   "total_tokens": 13676,
+   "cost": 0.00256232,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00256232,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00169252
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4656,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9106,
+   "completion_tokens": 911,
+   "total_tokens": 10017,
+   "cost": 0.00122034,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00122034,
+    "upstream_inference_prompt_cost": 0.0009106,
+    "upstream_inference_completions_cost": 0.00030974
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 924,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_thyrotoxic_PMC11639689.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 171.2
+}

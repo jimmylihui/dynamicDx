@@ -1,0 +1,180 @@
+{
+ "questions": [
+  "Is the main reason you came to the hospital today related to your arms or hands?",
+  "Did this problem start suddenly?",
+  "Are you experiencing weakness in your arms or legs?",
+  "Do you have any difficulty with balance or coordination?",
+  "Are you experiencing any tremor or shaking?",
+  "Have you had any changes in your vision?",
+  "Do you have any difficulty speaking or understanding speech?",
+  "Do you have any numbness or tingling?",
+  "Do you have any pain in your arms or shoulders?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Have you had a stroke or TIA before?",
+  "Do you have any history of heart problems or atrial fibrillation?",
+  "Do you have a family history of similar neurological problems?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Watch the patient's hands at rest in their lap for a resting tremor.",
+  "Ask the patient to perform a finger-to-nose test with each hand.",
+  "Test for cogwheel rigidity by passively flexing and extending the patient's wrist.",
+  "Observe the patient's gait as they walk across the room.",
+  "Check for a glabellar tap sign.",
+  "Check postural blood pressure (lying and standing) to assess for autonomic dysfunction.",
+  "Perform a short test of handwriting or spiral drawing to look for micrographia.",
+  "Check for a 'pill-rolling' character of the tremor in the hands."
+ ],
+ "served": [
+  "tremor at rest",
+  "coordination examination (limb and truncal)",
+  "kinetic / intention tremor (finger-nose)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "muscle tone examination",
+  "gait examination",
+  "tremor at rest"
+ ],
+ "results": [
+  "1. Watch the patient's hands at rest in their lap for a resting tremor.",
+  "     tremor at rest: absent",
+  "2. Ask the patient to perform a finger-to-nose test with each hand.",
+  "     coordination examination (limb and truncal): mild limb and truncal ataxia",
+  "     kinetic / intention tremor (finger-nose): absent",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): absent",
+  "3. Test for cogwheel rigidity by passively flexing and extending the patient's wrist.",
+  "     muscle tone examination: increased tone with rigidity",
+  "4. Observe the patient's gait as they walk across the room.",
+  "     gait examination: normal",
+  "5. Check for a glabellar tap sign.",
+  "     not performed / not available",
+  "6. Check postural blood pressure (lying and standing) to assess for autonomic dysfunction.",
+  "     not performed / not available",
+  "7. Perform a short test of handwriting or spiral drawing to look for micrographia.",
+  "     not performed / not available",
+  "8. Check for a 'pill-rolling' character of the tremor in the hands.",
+  "     tremor at rest: absent"
+ ],
+ "dx_raw": "DIAGNOSIS: Parkinson's disease (idiopathic)\n\nAlternatives:\n1. Essential tremor (with associated age-related rigidity)\n2. Drug-induced parkinsonism\n3. Multiple system atrophy (MSA-P)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Watch the patient's hands at rest in their lap for a resting tremor.\n2. Ask the patient to perform a finger-to-nose test with each hand.\n3. Test for cogwheel rigidity by passively flexing and extending the patient's wrist.\n4. Observe the patient's gait as they walk across the room.\n5. Check for a glabellar tap sign.\n6. Check postural blood pressure (lying and standing) to assess for autonomic dysfunction.\n7. Perform a short test of handwriting or spiral drawing to look for micrographia.\n8. Check for a 'pill-rolling' character of the tremor in the hands.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Parkinson's disease (idiopathic)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 939,
+   "completion_tokens": 5550,
+   "total_tokens": 6489,
+   "cost": 0.00690426,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00690426,
+    "upstream_inference_prompt_cost": 0.00024426,
+    "upstream_inference_completions_cost": 0.00666
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5388,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1478,
+   "completion_tokens": 128,
+   "total_tokens": 1606,
+   "cost": 0.00055932,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00055932,
+    "upstream_inference_prompt_cost": 0.00040572,
+    "upstream_inference_completions_cost": 0.0001536
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1927,
+   "completion_tokens": 1707,
+   "total_tokens": 3634,
+   "cost": 0.00224466,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1591,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00224466,
+    "upstream_inference_prompt_cost": 0.00019626,
+    "upstream_inference_completions_cost": 0.0020484
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1665,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 11.4,
+ "video": "moderate_hepatic_cirrhosis_PMC13166699.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 79.0
+}

@@ -1,0 +1,185 @@
+{
+ "questions": [
+  "Are you currently having severe difficulty breathing?",
+  "Are you currently having chest pain, pressure, or tightness?",
+  "Have you fainted, become unusually confused, or been difficult to wake?",
+  "Have you suddenly developed weakness, numbness, facial drooping, or trouble speaking?",
+  "Are you having severe or rapidly worsening pain anywhere?",
+  "Are you bleeding heavily or vomiting blood?",
+  "Have you had a serious injury or accident recently?",
+  "Do you have thoughts of harming yourself or someone else?",
+  "Do you have a fever?",
+  "Do you have pain?",
+  "Do you have shortness of breath, wheezing, or a persistent cough?",
+  "Do you have abdominal pain, vomiting, or diarrhea?",
+  "Do you have a severe headache or new vision changes?",
+  "Do you have a rash, swelling, or itching?",
+  "Do you have urinary problems or blood in your urine?",
+  "Do you have weakness, dizziness, numbness, or difficulty walking?",
+  "Have you noticed a new lump, unexplained weight loss, or unusual bleeding?",
+  "Did your main problem begin suddenly?",
+  "Has your main problem been getting worse?",
+  "Have you had this problem before?",
+  "Could you be pregnant?",
+  "Do you have any diagnosed medical conditions?",
+  "Do you take prescription medicines regularly?",
+  "Have you recently started, stopped, or changed any medication?",
+  "Are you allergic to any medication?",
+  "Have you recently had an infection, surgery, hospitalization, or significant exposure to illness?",
+  "Do you use tobacco, alcohol, or recreational drugs?",
+  "Does anyone in your immediate family have a serious or inherited medical condition?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "yes",
+  "20": "yes",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Complete physical examination, including vital signs and focused examination of the patient’s presenting complaint"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy"
+ ],
+ "results": [
+  "1. Complete physical examination, including vital signs and focused examination of the patient’s presenting complaint",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: No specific diagnosis can be established from the available history and normal neurological examination\n\nRecurrent migraine without current headache\n\nFunctional neurological symptom disorder\n\nSubjective cognitive impairment despite normal screening examination",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete physical examination, including vital signs and focused examination of the patient’s presenting complaint",
+ "rationale": [
+  null
+ ],
+ "dx": "No specific diagnosis can be established from the available history and normal neurological examination",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 144,
+   "completion_tokens": 874,
+   "total_tokens": 1018,
+   "cost": 0.0005388,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005388,
+    "upstream_inference_prompt_cost": 1.44e-05,
+    "upstream_inference_completions_cost": 0.0005244
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1133,
+   "completion_tokens": 280,
+   "total_tokens": 1413,
+   "cost": 0.00030955,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1130,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00030955,
+    "upstream_inference_prompt_cost": 0.00014155,
+    "upstream_inference_completions_cost": 0.000168
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 256,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1351,
+   "completion_tokens": 357,
+   "total_tokens": 1708,
+   "cost": 0.00025305,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1130,
+    "cache_write_tokens": 218,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00025305,
+    "upstream_inference_prompt_cost": 3.885e-05,
+    "upstream_inference_completions_cost": 0.0002142
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 311,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_2_shadowbox_PMC9062418.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 27.6
+}

@@ -1,0 +1,91 @@
+{
+ "questions": [
+  "Do you have difficulty opening your mouth?",
+  "Have you noticed any swelling in your face or jaw?",
+  "Do you experience pain when chewing?",
+  "Have you ever had a stroke or paralysis on the left side of your face?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Palpate the right masseter muscle"
+ ],
+ "served": [
+  "cranial nerve examination"
+ ],
+ "results": [
+  "R1 ASK Do you have difficulty opening your mouth?; Have you noticed any swelling in your face or jaw?; Do you experience pain when chewing? -> ['no', 'no', 'yes']",
+  "R2 ORDER Palpate the right masseter muscle -> [['cranial nerve examination']]",
+  "R3 ASK Have you ever had a stroke or paralysis on the left side of your face? -> ['yes']",
+  "R4 DIAGNOSIS Post-paralytic facial synkinesis (sequelae of left-sided facial nerve palsy) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty opening your mouth?",
+    "Have you noticed any swelling in your face or jaw?",
+    "Do you experience pain when chewing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Palpate the right masseter muscle"
+   ],
+   "result": [
+    [
+     "cranial nerve examination"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you ever had a stroke or paralysis on the left side of your face?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Post-paralytic facial synkinesis (sequelae of left-sided facial nerve palsy)"
+  }
+ ],
+ "dx": "Post-paralytic facial synkinesis (sequelae of left-sided facial nerve palsy)",
+ "dx_raw": "DIAGNOSIS: Post-paralytic facial synkinesis (sequelae of left-sided facial nerve palsy)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0031,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "fp_recurrent_synkinesis_PMC12572359.mp4",
+ "line": "facialpalsy",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 26.9
+}

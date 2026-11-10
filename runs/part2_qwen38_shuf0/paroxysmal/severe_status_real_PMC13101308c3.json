@@ -1,0 +1,158 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a headache?",
+  "Did you lose consciousness at the time of your injury?",
+  "Have you vomited since the injury occurred?",
+  "Is your neck or back painful to move?",
+  "Do you feel numbness or tingling in your arms or legs?",
+  "Are you able to move all your fingers and toes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Assess motor strength in all four extremities (upper and lower)",
+  "Perform a sensory examination of the upper and lower extremities",
+  "Check deep tendon reflexes in the arms and legs",
+  "Obtain an MRI of the cervical spine",
+  "Obtain an MRI of the brain"
+ ],
+ "served": [
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "deep tendon reflexes and plantar responses",
+  "MRI cervical and thoracic spine",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "brain MRI",
+  "advanced diffusion imaging / tractography"
+ ],
+ "results": [
+  "1. Assess motor strength in all four extremities (upper and lower)",
+  "     limb strength (MRC) examination: normal",
+  "2. Perform a sensory examination of the upper and lower extremities",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "3. Check deep tendon reflexes in the arms and legs",
+  "     deep tendon reflexes and plantar responses: normal",
+  "4. Obtain an MRI of the cervical spine",
+  "     MRI cervical and thoracic spine: normal",
+  "5. Obtain an MRI of the brain",
+  "     MRI brain with gadolinium: normal",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     brain MRI: no focal epileptogenic lesion",
+  "     advanced diffusion imaging / tractography: not performed"
+ ],
+ "dx_raw": "DIAGNOSIS: Conversion disorder (Functional Neurological Symptom Disorder) presenting as functional paralysis\n1. Malingering\n2. Factitious disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Assess motor strength in all four extremities (upper and lower)\n2. Perform a sensory examination of the upper and lower extremities\n3. Check deep tendon reflexes in the arms and legs\n4. Obtain an MRI of the cervical spine\n5. Obtain an MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Conversion disorder (Functional Neurological Symptom Disorder) presenting as functional paralysis",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 88,
+   "total_tokens": 4911,
+   "cost": 0.00076481,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00076481,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 4.136e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5180,
+   "completion_tokens": 62,
+   "total_tokens": 5242,
+   "cost": 0.00020582,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020582,
+    "upstream_inference_prompt_cost": 0.00017668,
+    "upstream_inference_completions_cost": 2.914e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5503,
+   "completion_tokens": 33,
+   "total_tokens": 5536,
+   "cost": 0.000172032,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000172032,
+    "upstream_inference_prompt_cost": 0.000156522,
+    "upstream_inference_completions_cost": 1.551e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 25.1
+}

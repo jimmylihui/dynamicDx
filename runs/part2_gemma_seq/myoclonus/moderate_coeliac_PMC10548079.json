@@ -1,0 +1,131 @@
+{
+ "questions": [
+  "Is the tremor present at rest?",
+  "Is there bradykinesia?",
+  "Is there rigidity?",
+  "Is there postural instability?",
+  "Is the tremor more prominent when the arms are abducted (wing-beating)?",
+  "Is there a history of liver disease?",
+  "Is there a history of chronic alcohol use?",
+  "Is there a family history of ataxia or tremor?",
+  "Is there dysmetria on finger-to-nose testing?",
+  "Is there nystagmus?",
+  "Is there orthostatic hypotension?",
+  "Is there urinary incontinence?",
+  "Is there a history of cognitive decline?",
+  "Is there a history of thyroid disease?",
+  "Is there a history of any medication use that could cause a tremor?",
+  "Is the tremor present during movement (kinetic tremor)?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Is the tremor present at rest?; Is there bradykinesia?; Is there rigidity?; Is there postural instability? -> ['no', 'no', 'no', 'yes']",
+  "R2 ASK Is the tremor more prominent when the arms are abducted (wing-beating)?; Is there a history of liver disease?; Is there a history of chronic alcohol use?; Is there a family history of ataxia or tremor?; Is there dysmetria on finger-to-nose testing?; Is there nystagmus? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Is there orthostatic hypotension?; Is there urinary incontinence?; Is there a history of cognitive decline?; Is there a history of thyroid disease?; Is there a history of any medication use that could cause a tremor?; Is the tremor present during movement (kinetic tremor)? -> ['no', 'no', 'no', 'no', 'no', 'yes']",
+  "R4 DIAGNOSIS Fragile X-associated tremor/ataxia syndrome (FXTAS) caused by FMR1 premutation -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is the tremor present at rest?",
+    "Is there bradykinesia?",
+    "Is there rigidity?",
+    "Is there postural instability?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Is the tremor more prominent when the arms are abducted (wing-beating)?",
+    "Is there a history of liver disease?",
+    "Is there a history of chronic alcohol use?",
+    "Is there a family history of ataxia or tremor?",
+    "Is there dysmetria on finger-to-nose testing?",
+    "Is there nystagmus?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Is there orthostatic hypotension?",
+    "Is there urinary incontinence?",
+    "Is there a history of cognitive decline?",
+    "Is there a history of thyroid disease?",
+    "Is there a history of any medication use that could cause a tremor?",
+    "Is the tremor present during movement (kinetic tremor)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Fragile X-associated tremor/ataxia syndrome (FXTAS) caused by FMR1 premutation"
+  }
+ ],
+ "dx": "Fragile X-associated tremor/ataxia syndrome (FXTAS) caused by FMR1 premutation",
+ "dx_raw": "DIAGNOSIS: Fragile X-associated tremor/ataxia syndrome (FXTAS) caused by FMR1 premutation",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0068,
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "moderate_coeliac_PMC10548079.mp4",
+ "line": "myoclonus",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 693.6
+}

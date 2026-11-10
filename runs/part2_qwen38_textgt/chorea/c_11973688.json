@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Is the movement a tremor?",
+  "Does the movement stop when you are asleep?",
+  "Can you voluntarily suppress the movement for a short period?",
+  "Did the movement start suddenly?",
+  "Do you have a family history of similar movements?",
+  "Are you currently taking any medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Review current medication list and dosages",
+  "Serum copper, ceruloplasmin, and 24-hour urinary copper",
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "MRI of the brain"
+ ],
+ "served": [
+  "medication and vaccination history",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin",
+  "brain MRI with contrast"
+ ],
+ "results": [
+  "1. Review current medication list and dosages",
+  "     medication and vaccination history: nothing relevant",
+  "2. Serum copper, ceruloplasmin, and 24-hour urinary copper",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin: normal",
+  "3. Slit-lamp examination for Kayser-Fleischer rings",
+  "     not performed / not available",
+  "4. MRI of the brain",
+  "     brain MRI with contrast: normal basal ganglia, no focal lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional movement disorder (psychogenic)\nAlternatives:\n1. Focal dystonia\n2. Tardive dyskinesia",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Review current medication list and dosages\n2. Serum copper, ceruloplasmin, and 24-hour urinary copper\n3. Slit-lamp examination for Kayser-Fleischer rings\n4. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional movement disorder (psychogenic)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 184,
+   "completion_tokens": 67,
+   "total_tokens": 251,
+   "cost": 5.909e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.909e-05,
+    "upstream_inference_prompt_cost": 2.76e-05,
+    "upstream_inference_completions_cost": 3.149e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 497,
+   "completion_tokens": 50,
+   "total_tokens": 547,
+   "cost": 9.805e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.805e-05,
+    "upstream_inference_prompt_cost": 7.455e-05,
+    "upstream_inference_completions_cost": 2.35e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 752,
+   "completion_tokens": 33,
+   "total_tokens": 785,
+   "cost": 9.4006e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.4006e-05,
+    "upstream_inference_prompt_cost": 7.8496e-05,
+    "upstream_inference_completions_cost": 1.551e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 6.7
+}

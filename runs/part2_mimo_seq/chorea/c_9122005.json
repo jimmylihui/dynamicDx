@@ -1,0 +1,293 @@
+{
+ "questions": [
+  "\"Did you feel your leg drop or jerk involuntarily?\"",
+  "\"Do you feel confused, sleepy, or 'foggy' in your thinking right now?\"",
+  "\"Do you have a history of liver disease, cirrhosis, or heavy alcohol use?\"",
+  "\"Did this start suddenly, like flipping a switch?\"",
+  "\"Have you ever had similar episodes before?\"",
+  "\"Are you under significant emotional stress or has anything traumatic happened recently?\"",
+  "\"How old are you?\"",
+  "\"Have you started any new medications in the past few weeks or months?\"",
+  "\"Have you had any recent infections, like a cold, flu, or anything requiring antibiotics?\"",
+  "\"Do you know where you are right now?\"",
+  "\"Can you tell me your name?\"",
+  "\"Can you tell me what year it is?\"",
+  "\"Do you notice the movements more when you try to move the leg yourself, or are they happening on their own?\"",
+  "\"Have you had any numbness, tingling, or weakness anywhere else in your body before?\"",
+  "\"Do you have any headaches?\"",
+  "\"Have you noticed any blurry vision or double vision at any point?\"",
+  "\"Do you have any rashes, mouth sores, or joint pain?\""
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Glasgow Catatonia Rating Scale assessment (checking for mutism, posturing, grimacing, withdrawal, stereotypies, mannerisms,依托体位)",
+  "Full neurological examination (tone, reflexes, clonus, plantars, cranial nerves)",
+  "Brain MRI (without contrast, focusing on temporal lobes, basal ganglia)",
+  "Lumbar puncture with CSF analysis including cell count, protein, glucose, oligoclonal bands, autoimmune encephalitis panel (anti-NMDA receptor antibodies)",
+  "EEG (electroencephalogram)",
+  "Pelvic ultrasound (to screen for ovarian teratoma)",
+  "Anti-thyroid peroxidase (TPO) and anti-thyroglobulin antibodies (screen for Hashimoto's encephalopathy)",
+  "Serum ACE level and chest X-ray (screen for neurosarcoidosis)",
+  "Pelvic MRI (to screen for ovarian teratoma - important in autoimmune encephalitis with movement disorder)",
+  "Expanded paraneoplastic antibody panel (including amphiphysin, CV2/CRMP5, Ma2, Ri, Hu, Yo)",
+  "RPR and FTA-ABS (neurosyphilis screening)",
+  "CBC with differential, ESR, CRP",
+  "ANA and ANCA (systemic autoimmune screen)",
+  "Chest CT with contrast",
+  "Pelvic MRI with contrast"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "muscle tone examination",
+  "deep tendon reflexes and plantar responses",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF autoimmune encephalitis panel",
+  "EEG",
+  "anti-thyroid antibodies",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "autoimmune encephalopathy / paraneoplastic antibody panel",
+  "HIV and syphilis serology",
+  "full blood count",
+  "inflammatory markers (ESR, CRP)",
+  "antinuclear antibody and rheumatological screen",
+  "CT chest, abdomen and pelvis"
+ ],
+ "results": [
+  "R1 ASK \"Did you feel your leg drop or jerk involuntarily?\"; \"Do you feel confused, sleepy, or 'foggy' in your thinking right now?\"; \"Do you have a history of liver disease, cirrhosis, or heavy alcohol use?\" -> ['yes', 'no', 'no']",
+  "R2 ORDER Glasgow Catatonia Rating Scale assessment (checking for mutism, posturing, grimacing, withdrawal, stereotypies, mannerisms,依托体位); Full neurological examination (tone, reflexes, clonus, plantars, cranial nerves) -> [[], ['cranial nerve examination', 'muscle tone examination', 'deep tendon reflexes and plantar responses']]",
+  "R3 ASK \"Did this start suddenly, like flipping a switch?\"; \"Have you ever had similar episodes before?\"; \"Are you under significant emotional stress or has anything traumatic happened recently?\" -> ['no', 'no', 'no']",
+  "R4 ASK \"How old are you?\"; \"Have you started any new medications in the past few weeks or months?\"; \"Have you had any recent infections, like a cold, flu, or anything requiring antibiotics?\" -> ['no', 'no', 'no']",
+  "R5 ASK \"Do you know where you are right now?\"; \"Can you tell me your name?\" -> ['no', 'no']",
+  "R6 ORDER Brain MRI (without contrast, focusing on temporal lobes, basal ganglia); Lumbar puncture with CSF analysis including cell count, protein, glucose, oligoclonal bands, autoimmune encephalitis panel (anti-NMDA receptor antibodies); EEG (electroencephalogram); Pelvic ultrasound (to screen for ovarian teratoma) -> [['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences'], ['CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF autoimmune encephalitis panel'], ['EEG'], []]",
+  "R7 ASK \"Can you tell me what year it is?\"; \"Do you notice the movements more when you try to move the leg yourself, or are they happening on their own?\"; \"Have you had any numbness, tingling, or weakness anywhere else in your body before?\" -> ['no', 'yes', 'no']",
+  "R8 ORDER Anti-thyroid peroxidase (TPO) and anti-thyroglobulin antibodies (screen for Hashimoto's encephalopathy); Serum ACE level and chest X-ray (screen for neurosarcoidosis); Pelvic MRI (to screen for ovarian teratoma - important in autoimmune encephalitis with movement disorder); Expanded paraneoplastic antibody panel (including amphiphysin, CV2/CRMP5, Ma2, Ri, Hu, Yo) -> [['anti-thyroid antibodies'], [], [], ['serum paraneoplastic / neuronal autoantibody panel', 'autoimmune encephalopathy / paraneoplastic antibody panel']]",
+  "R9 ASK \"Do you have any headaches?\"; \"Have you noticed any blurry vision or double vision at any point?\"; \"Do you have any rashes, mouth sores, or joint pain?\" -> ['no', 'no', 'no']",
+  "R10 ORDER RPR and FTA-ABS (neurosyphilis screening); CBC with differential, ESR, CRP; ANA and ANCA (systemic autoimmune screen); Chest CT with contrast; Pelvic MRI with contrast -> [['HIV and syphilis serology'], ['full blood count', 'inflammatory markers (ESR, CRP)'], ['antinuclear antibody and rheumatological screen'], ['CT chest, abdomen and pelvis'], []]",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Seronegative autoimmune encephalitis with intrathecal immunoglobulin synthesis -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "\"Did you feel your leg drop or jerk involuntarily?\"",
+    "\"Do you feel confused, sleepy, or 'foggy' in your thinking right now?\"",
+    "\"Do you have a history of liver disease, cirrhosis, or heavy alcohol use?\""
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Glasgow Catatonia Rating Scale assessment (checking for mutism, posturing, grimacing, withdrawal, stereotypies, mannerisms,依托体位)",
+    "Full neurological examination (tone, reflexes, clonus, plantars, cranial nerves)"
+   ],
+   "result": [
+    [],
+    [
+     "cranial nerve examination",
+     "muscle tone examination",
+     "deep tendon reflexes and plantar responses"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "\"Did this start suddenly, like flipping a switch?\"",
+    "\"Have you ever had similar episodes before?\"",
+    "\"Are you under significant emotional stress or has anything traumatic happened recently?\""
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "\"How old are you?\"",
+    "\"Have you started any new medications in the past few weeks or months?\"",
+    "\"Have you had any recent infections, like a cold, flu, or anything requiring antibiotics?\""
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "\"Do you know where you are right now?\"",
+    "\"Can you tell me your name?\""
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Brain MRI (without contrast, focusing on temporal lobes, basal ganglia)",
+    "Lumbar puncture with CSF analysis including cell count, protein, glucose, oligoclonal bands, autoimmune encephalitis panel (anti-NMDA receptor antibodies)",
+    "EEG (electroencephalogram)",
+    "Pelvic ultrasound (to screen for ovarian teratoma)"
+   ],
+   "result": [
+    [
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences"
+    ],
+    [
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF autoimmune encephalitis panel"
+    ],
+    [
+     "EEG"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "\"Can you tell me what year it is?\"",
+    "\"Do you notice the movements more when you try to move the leg yourself, or are they happening on their own?\"",
+    "\"Have you had any numbness, tingling, or weakness anywhere else in your body before?\""
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Anti-thyroid peroxidase (TPO) and anti-thyroglobulin antibodies (screen for Hashimoto's encephalopathy)",
+    "Serum ACE level and chest X-ray (screen for neurosarcoidosis)",
+    "Pelvic MRI (to screen for ovarian teratoma - important in autoimmune encephalitis with movement disorder)",
+    "Expanded paraneoplastic antibody panel (including amphiphysin, CV2/CRMP5, Ma2, Ri, Hu, Yo)"
+   ],
+   "result": [
+    [
+     "anti-thyroid antibodies"
+    ],
+    [],
+    [],
+    [
+     "serum paraneoplastic / neuronal autoantibody panel",
+     "autoimmune encephalopathy / paraneoplastic antibody panel"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "\"Do you have any headaches?\"",
+    "\"Have you noticed any blurry vision or double vision at any point?\"",
+    "\"Do you have any rashes, mouth sores, or joint pain?\""
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "RPR and FTA-ABS (neurosyphilis screening)",
+    "CBC with differential, ESR, CRP",
+    "ANA and ANCA (systemic autoimmune screen)",
+    "Chest CT with contrast",
+    "Pelvic MRI with contrast"
+   ],
+   "result": [
+    [
+     "HIV and syphilis serology"
+    ],
+    [
+     "full blood count",
+     "inflammatory markers (ESR, CRP)"
+    ],
+    [
+     "antinuclear antibody and rheumatological screen"
+    ],
+    [
+     "CT chest, abdomen and pelvis"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Seronegative autoimmune encephalitis with intrathecal immunoglobulin synthesis"
+  }
+ ],
+ "dx": "Seronegative autoimmune encephalitis with intrathecal immunoglobulin synthesis",
+ "dx_raw": "DIAGNOSIS: Seronegative autoimmune encephalitis with intrathecal immunoglobulin synthesis",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "cost_usd": 0.0037,
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 292.6
+}

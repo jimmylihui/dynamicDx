@@ -1,0 +1,200 @@
+{
+ "questions": [
+  "Do you have a history of liver disease?",
+  "Do you have a history of kidney disease?",
+  "Do you have a history of lung disease, such as COPD?",
+  "Do you have diabetes?",
+  "Do you have a history of thyroid disease?",
+  "Do you drink alcohol?",
+  "Have you noticed any confusion or memory problems recently?",
+  "Do you have any swelling in your legs?",
+  "Have you noticed any yellowing of your skin or eyes?",
+  "Do you take any sedative medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Magnetic resonance imaging of the brain",
+  "Serum ceruloplasmin level",
+  "Thyroid stimulating hormone level",
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Serum copper level",
+  "24-hour urine copper collection",
+  "Nerve conduction study",
+  "Electromyography",
+  "Dopamine transporter (DaT) scan"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)",
+  "serum ceruloplasmin",
+  "serum copper and caeruloplasmin",
+  "TSH / free T4",
+  "full blood count, renal and liver profile",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "serum copper and caeruloplasmin",
+  "24-hour urinary copper",
+  "nerve conduction studies",
+  "needle electromyography",
+  "DAT-SPECT / FP-CIT PET"
+ ],
+ "results": [
+  "1. Magnetic resonance imaging of the brain",
+  "     MRI brain with gadolinium: markedly asymmetric left-greater-than-right superior parietal and posterior frontal atrophy without abnormal enhancement",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): normal midbrain, ratio within normal limits",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): normal",
+  "     MRI brain - cortical atrophy pattern: moderate global atrophy with MARKEDLY ASYMMETRICAL atrophy of the superior parietal lobules and posterior frontal lobes, left hemisphere worse",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal",
+  "2. Serum ceruloplasmin level",
+  "     serum ceruloplasmin: normal",
+  "     serum copper and caeruloplasmin: normal",
+  "3. Thyroid stimulating hormone level",
+  "     TSH / free T4: normal",
+  "4. Complete blood count",
+  "     full blood count, renal and liver profile: normal",
+  "5. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal",
+  "6. Serum copper level",
+  "     serum copper and caeruloplasmin: normal",
+  "7. 24-hour urine copper collection",
+  "     24-hour urinary copper: normal",
+  "8. Nerve conduction study",
+  "     nerve conduction studies: normal",
+  "9. Electromyography",
+  "     needle electromyography: normal",
+  "10. Dopamine transporter (DaT) scan",
+  "     DAT-SPECT / FP-CIT PET: not performed"
+ ],
+ "dx_raw": "DIAGNOSIS: Corticobasal Degeneration\n1. Asymmetric Alzheimer's Disease\n2. Posterior Cortical Atrophy\n3. Atypical Frontotemporal Dementia with corticobasal features",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Magnetic resonance imaging of the brain\n2. Serum ceruloplasmin level\n3. Thyroid stimulating hormone level\n4. Complete blood count\n5. Comprehensive metabolic panel\n6. Serum copper level\n7. 24-hour urine copper collection\n8. Nerve conduction study\n9. Electromyography\n10. Dopamine transporter (DaT) scan",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Corticobasal Degeneration",
+ "decisive_served": [
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 9150,
+   "total_tokens": 16212,
+   "cost": 0.01307124,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01307124,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.01098
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9835,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7473,
+   "completion_tokens": 590,
+   "total_tokens": 8063,
+   "cost": 0.00126366,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00126366,
+    "upstream_inference_prompt_cost": 0.00055566,
+    "upstream_inference_completions_cost": 0.000708
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 612,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7997,
+   "completion_tokens": 2763,
+   "total_tokens": 10760,
+   "cost": 0.0039363,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7410,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0039363,
+    "upstream_inference_prompt_cost": 0.0006207,
+    "upstream_inference_completions_cost": 0.0033156
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3079,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "cbd_apraxic_hand_PMC12371612.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 180.0
+}

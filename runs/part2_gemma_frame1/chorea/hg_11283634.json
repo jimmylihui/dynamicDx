@@ -1,0 +1,159 @@
+{
+ "questions": [
+  "Are you having difficulty breathing?",
+  "Are you experiencing chest pain?",
+  "Did you lose consciousness?",
+  "Do you have weakness or numbness on one side of your body?",
+  "Do you have a severe headache?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of seizures?",
+  "Did you take any medications or substances recently?",
+  "Did you hit your head?",
+  "Do you have a fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Blood glucose level",
+  "Blood ketones",
+  "Venous blood gas",
+  "Serum electrolytes",
+  "Serum creatinine"
+ ],
+ "served": [
+  "blood glucose",
+  "ketones (blood or urine)",
+  "venous blood gas",
+  "serum electrolytes, urea and creatinine",
+  "serum electrolytes, urea and creatinine"
+ ],
+ "results": [
+  "1. Blood glucose level",
+  "     blood glucose: 2.25 g/L (normal 0.70-1.10) - non-ketotic hyperglycaemia",
+  "2. Blood ketones",
+  "     ketones (blood or urine): negative - a treated ketoacidosis had preceded this admission",
+  "3. Venous blood gas",
+  "     venous blood gas: normal",
+  "4. Serum electrolytes",
+  "     serum electrolytes, urea and creatinine: creatinine 17 mg/L, eGFR 31 mL/min/1.73 m2",
+  "5. Serum creatinine",
+  "     serum electrolytes, urea and creatinine: creatinine 17 mg/L, eGFR 31 mL/min/1.73 m2"
+ ],
+ "dx_raw": "DIAGNOSIS: Cerebral edema due to treatment of diabetic ketoacidosis\n\nAlternatives:\n1. Hyperosmolar Hyperglycemic State (HHS)\n2. Uremic encephalopathy\n3. Ischemic stroke",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Blood glucose level\n2. Blood ketones\n3. Venous blood gas\n4. Serum electrolytes\n5. Serum creatinine",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Cerebral edema due to treatment of diabetic ketoacidosis",
+ "decisive_served": [
+  "blood glucose",
+  "ketones (blood or urine)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 419,
+   "completion_tokens": 978,
+   "total_tokens": 1397,
+   "cost": 0.00037442,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00037442,
+    "upstream_inference_prompt_cost": 4.19e-05,
+    "upstream_inference_completions_cost": 0.00033252
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 876,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 815,
+   "completion_tokens": 811,
+   "total_tokens": 1626,
+   "cost": 0.00035724,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00035724,
+    "upstream_inference_prompt_cost": 8.15e-05,
+    "upstream_inference_completions_cost": 0.00027574
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 805,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1095,
+   "completion_tokens": 7003,
+   "total_tokens": 8098,
+   "cost": 0.00249052,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00249052,
+    "upstream_inference_prompt_cost": 0.0001095,
+    "upstream_inference_completions_cost": 0.00238102
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6107,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 413.3
+}

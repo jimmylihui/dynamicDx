@@ -1,0 +1,141 @@
+{
+ "questions": [
+  "Do you have memory loss?",
+  "Do you have urinary incontinence?",
+  "Do you have numbness or tingling in your feet?",
+  "Do you feel more unsteady when you close your eyes?",
+  "Did this start suddenly?",
+  "Do you drink alcohol regularly?",
+  "Do you have any difficulty speaking or slurring your words?",
+  "Do you have any double vision?",
+  "Have you noticed any tremors in your hands?",
+  "Have you had any unexplained weight loss?",
+  "Do you have a family history of similar walking or speaking difficulties?",
+  "Have you had any recent infections or a history of cancer?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI of the brain",
+  "Genetic testing for spinocerebellar ataxias (SCAs)"
+ ],
+ "served": [
+  "brain MRI",
+  "genetic ataxia panel"
+ ],
+ "results": [
+  "R1 ASK Do you have memory loss?; Do you have urinary incontinence?; Do you have numbness or tingling in your feet?; Do you feel more unsteady when you close your eyes? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Did this start suddenly?; Do you drink alcohol regularly?; Do you have any difficulty speaking or slurring your words?; Do you have any double vision? -> ['no', 'no', 'yes', 'no']",
+  "R3 ASK Have you noticed any tremors in your hands?; Have you had any unexplained weight loss?; Do you have a family history of similar walking or speaking difficulties?; Have you had any recent infections or a history of cancer? -> ['no', 'no', 'yes', 'no']",
+  "R4 ORDER MRI of the brain; Genetic testing for spinocerebellar ataxias (SCAs) -> [['brain MRI'], ['genetic ataxia panel']]",
+  "R5 DIAGNOSIS Spinocerebellar Ataxia type 8 (SCA8) caused by CAG repeat expansion in the ATXN8OS gene -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have memory loss?",
+    "Do you have urinary incontinence?",
+    "Do you have numbness or tingling in your feet?",
+    "Do you feel more unsteady when you close your eyes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Did this start suddenly?",
+    "Do you drink alcohol regularly?",
+    "Do you have any difficulty speaking or slurring your words?",
+    "Do you have any double vision?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any tremors in your hands?",
+    "Have you had any unexplained weight loss?",
+    "Do you have a family history of similar walking or speaking difficulties?",
+    "Have you had any recent infections or a history of cancer?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "MRI of the brain",
+    "Genetic testing for spinocerebellar ataxias (SCAs)"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ],
+    [
+     "genetic ataxia panel"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Spinocerebellar Ataxia type 8 (SCA8) caused by CAG repeat expansion in the ATXN8OS gene"
+  }
+ ],
+ "dx": "Spinocerebellar Ataxia type 8 (SCA8) caused by CAG repeat expansion in the ATXN8OS gene",
+ "dx_raw": "DIAGNOSIS: Spinocerebellar Ataxia type 8 (SCA8) caused by CAG repeat expansion in the ATXN8OS gene",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "brain MRI",
+  "genetic ataxia panel"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0056,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_sca_genetic_PMC12678565.mp4",
+ "line": "ataxia",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 112.8
+}

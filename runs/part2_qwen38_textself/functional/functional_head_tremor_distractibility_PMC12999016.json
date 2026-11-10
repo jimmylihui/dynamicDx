@@ -1,0 +1,134 @@
+{
+ "questions": [
+  "Do you have a history of Parkinson's disease?",
+  "Have you ever taken antipsychotic medications or metoclopramide?",
+  "Do you experience constipation?",
+  "Do you have a reduced sense of smell?",
+  "Do you act out your dreams while sleeping?",
+  "Is the tremor present in both hands?",
+  "Do you have significant memory loss or confusion?",
+  "Do you experience frequent falls early in the course of symptoms?",
+  "Do you have difficulty looking up or down with your eyes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "DaTscan (dopamine transporter SPECT imaging)"
+ ],
+ "served": [
+  "DaTSCAN (dopamine transporter SPECT)"
+ ],
+ "results": [
+  "1. DaTscan (dopamine transporter SPECT imaging)",
+  "     DaTSCAN (dopamine transporter SPECT): normal tracer uptake"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional (psychogenic) parkinsonism\nEssential tremor with gait apraxia\nDrug-induced parkinsonism from undisclosed agents",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. DaTscan (dopamine transporter SPECT imaging)",
+ "rationale": [
+  null
+ ],
+ "dx": "Functional (psychogenic) parkinsonism",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 209,
+   "completion_tokens": 118,
+   "total_tokens": 327,
+   "cost": 8.681e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.681e-05,
+    "upstream_inference_prompt_cost": 3.135e-05,
+    "upstream_inference_completions_cost": 5.546e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 636,
+   "completion_tokens": 14,
+   "total_tokens": 650,
+   "cost": 0.00010198,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010198,
+    "upstream_inference_prompt_cost": 9.54e-05,
+    "upstream_inference_completions_cost": 6.58e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 783,
+   "completion_tokens": 34,
+   "total_tokens": 817,
+   "cost": 6.4822e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.4822e-05,
+    "upstream_inference_prompt_cost": 4.8842e-05,
+    "upstream_inference_completions_cost": 1.598e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 26.2,
+ "video": "functional_head_tremor_distractibility_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.3
+}

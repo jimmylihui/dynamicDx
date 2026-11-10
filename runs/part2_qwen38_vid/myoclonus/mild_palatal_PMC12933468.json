@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Do you have a sore throat?",
+  "Do you have a fever?",
+  "Have you been diagnosed with sleep apnea or do you snore loudly?",
+  "Do you experience difficulty swallowing?",
+  "Do you smoke?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Visual inspection of the oropharynx with a tongue depressor and penlight",
+  "Palpation of the anterior and posterior cervical lymph nodes",
+  "Rapid antigen detection test for Group A Streptococcus",
+  "Complete blood count with differential",
+  "Flexible fiberoptic laryngoscopy"
+ ],
+ "served": [
+  "full blood count"
+ ],
+ "results": [
+  "1. Visual inspection of the oropharynx with a tongue depressor and penlight",
+  "     not performed / not available",
+  "2. Palpation of the anterior and posterior cervical lymph nodes",
+  "     not performed / not available",
+  "3. Rapid antigen detection test for Group A Streptococcus",
+  "     not performed / not available",
+  "4. Complete blood count with differential",
+  "     full blood count: normal",
+  "5. Flexible fiberoptic laryngoscopy",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Asymptomatic tonsillar hypertrophy\n1. Chronic benign tonsillitis\n2. Oropharyngeal squamous cell carcinoma\n3. Lymphoma",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Visual inspection of the oropharynx with a tongue depressor and penlight\n2. Palpation of the anterior and posterior cervical lymph nodes\n3. Rapid antigen detection test for Group A Streptococcus\n4. Complete blood count with differential\n5. Flexible fiberoptic laryngoscopy",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Asymptomatic tonsillar hypertrophy",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4822,
+   "completion_tokens": 53,
+   "total_tokens": 4875,
+   "cost": 0.00074821,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074821,
+    "upstream_inference_prompt_cost": 0.0007233,
+    "upstream_inference_completions_cost": 2.491e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5101,
+   "completion_tokens": 67,
+   "total_tokens": 5168,
+   "cost": 0.00019632,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00019632,
+    "upstream_inference_prompt_cost": 0.00016483,
+    "upstream_inference_completions_cost": 3.149e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5371,
+   "completion_tokens": 41,
+   "total_tokens": 5412,
+   "cost": 0.000173144,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4864,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000173144,
+    "upstream_inference_prompt_cost": 0.000153874,
+    "upstream_inference_completions_cost": 1.927e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 9.0,
+ "video": "mild_palatal_PMC12933468.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 25.4
+}

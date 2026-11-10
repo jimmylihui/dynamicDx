@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Did you hit your head?",
+  "Have you had recent brain surgery?",
+  "Are you having a headache right now?",
+  "Is this the worst headache of your life?",
+  "Have you had a seizure?",
+  "Are you pregnant?",
+  "Do you have a fever?",
+  "Do you have a stiff neck?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you have any blurred or double vision?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain with and without contrast",
+  "Routine electroencephalogram (EEG)",
+  "Basic metabolic panel and complete blood count"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "brain MRI",
+  "interictal EEG",
+  "serum electrolytes, urea and creatinine",
+  "full blood count and biochemistry"
+ ],
+ "results": [
+  "1. MRI of the brain with and without contrast",
+  "     MRI brain with gadolinium: normal",
+  "     brain MRI: no focal epileptogenic lesion",
+  "2. Routine electroencephalogram (EEG)",
+  "     interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "3. Basic metabolic panel and complete blood count",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     full blood count and biochemistry: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Juvenile myoclonic epilepsy (an idiopathic generalized epilepsy syndrome)\n\nAlternatives:\n1. Idiopathic generalized epilepsy with generalized tonic-clonic seizures only (if no myoclonic jerks)\n2. Focal epilepsy with rapid secondary bilateral synchrony (less likely given normal MRI, though lateral shifting noted)\n3. Generalized epilepsy with frontal predominance (e.g., frontal lobe epilepsy with secondary generalization, though MRI normal)",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI of the brain with and without contrast\n2. Routine electroencephalogram (EEG)\n3. Basic metabolic panel and complete blood count",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Juvenile myoclonic epilepsy (an idiopathic generalized epilepsy syndrome)",
+ "decisive_served": [
+  "interictal EEG"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 6518,
+   "total_tokens": 13580,
+   "cost": 0.00991284,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00991284,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.0078216
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6821,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7443,
+   "completion_tokens": 2568,
+   "total_tokens": 10011,
+   "cost": 0.00362826,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00362826,
+    "upstream_inference_prompt_cost": 0.00054666,
+    "upstream_inference_completions_cost": 0.0030816
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2850,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7676,
+   "completion_tokens": 998,
+   "total_tokens": 8674,
+   "cost": 0.001722,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7410,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001722,
+    "upstream_inference_prompt_cost": 0.0005244,
+    "upstream_inference_completions_cost": 0.0011976
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1065,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 149.3
+}

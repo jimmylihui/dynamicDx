@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Did you wake up from sleep to come here?",
+  "Do you have a history of seizures or epilepsy?",
+  "Have you been drinking alcohol recently?",
+  "Are you currently taking any prescription medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Review the full 23-second video of the episode",
+  "Fingerstick blood glucose level",
+  "Electrocardiogram (ECG)",
+  "Basic metabolic panel including serum calcium and magnesium",
+  "Complete blood count (CBC)"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "glucose, calcium, magnesium, sodium",
+  "liver and renal function",
+  "full blood count and biochemistry"
+ ],
+ "results": [
+  "1. Review the full 23-second video of the episode",
+  "     not performed / not available",
+  "2. Fingerstick blood glucose level",
+  "     blood glucose and HbA1c: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "3. Electrocardiogram (ECG)",
+  "     not performed / not available",
+  "4. Basic metabolic panel including serum calcium and magnesium",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "     liver and renal function: normal",
+  "5. Complete blood count (CBC)",
+  "     full blood count and biochemistry: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Nocturnal frontal lobe epilepsy (Sleep-related hypermotor epilepsy)\n\n1. Psychogenic non-epileptic seizure (PNES)\n2. REM sleep behavior disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Review the full 23-second video of the episode\n2. Fingerstick blood glucose level\n3. Electrocardiogram (ECG)\n4. Basic metabolic panel including serum calcium and magnesium\n5. Complete blood count (CBC)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Nocturnal frontal lobe epilepsy (Sleep-related hypermotor epilepsy)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6871,
+   "completion_tokens": 56,
+   "total_tokens": 6927,
+   "cost": 0.00105697,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00105697,
+    "upstream_inference_prompt_cost": 0.00103065,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7156,
+   "completion_tokens": 53,
+   "total_tokens": 7209,
+   "cost": 0.000223558,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000223558,
+    "upstream_inference_prompt_cost": 0.000198648,
+    "upstream_inference_completions_cost": 2.491e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7452,
+   "completion_tokens": 43,
+   "total_tokens": 7495,
+   "cost": 0.00019465,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7040,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00019465,
+    "upstream_inference_prompt_cost": 0.00017444,
+    "upstream_inference_completions_cost": 2.021e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 87.4
+}

@@ -1,0 +1,176 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have weakness on the left side of your body?",
+  "Do you have numbness on the left side of your body?",
+  "Do you have trouble speaking?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of heart disease?",
+  "Do you have a severe headache?",
+  "Do you have double vision?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain",
+  "Lumbar puncture",
+  "Blood tests (TSH, Glucose)"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel",
+  "lumbar puncture / CSF (cells, protein, Abeta42/40, total tau, p-tau)",
+  "blood glucose and HbA1c",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     MRI brain with gadolinium: putaminal atrophy with the rim sign and putaminal hypointensity on susceptibility-weighted imaging",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: putaminal hypointensity",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): no hummingbird sign",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): putaminal atrophy with the rim sign and putaminal hypointensity on susceptibility-weighted imaging",
+  "     MRI brain - cortical atrophy pattern: no focal atrophy",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal",
+  "2. Lumbar puncture",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal",
+  "     CSF oligoclonal bands and IgG index: normal",
+  "     CSF cytology and flow cytometry: normal",
+  "     CSF culture and viral PCR: normal",
+  "     CSF autoimmune encephalitis panel: normal",
+  "     lumbar puncture / CSF (cells, protein, Abeta42/40, total tau, p-tau): not performed",
+  "3. Blood tests (TSH, Glucose)",
+  "     blood glucose and HbA1c: normal",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Multiple System Atrophy, Parkinsonian type (MSA-P) caused by alpha-synucleinopathy\n\nProgressive Supranuclear Palsy (PSP)\nCorticobasal Degeneration (CBD)\nParkinson's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Lumbar puncture\n3. Blood tests (TSH, Glucose)",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Multiple System Atrophy, Parkinsonian type (MSA-P) caused by alpha-synucleinopathy",
+ "decisive_served": [
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 3139,
+   "total_tokens": 11837,
+   "cost": 0.00193706,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00193706,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00106726
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2765,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9084,
+   "completion_tokens": 1213,
+   "total_tokens": 10297,
+   "cost": 0.00132082,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00132082,
+    "upstream_inference_prompt_cost": 0.0009084,
+    "upstream_inference_completions_cost": 0.00041242
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1114,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9493,
+   "completion_tokens": 3051,
+   "total_tokens": 12544,
+   "cost": 0.00198664,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00198664,
+    "upstream_inference_prompt_cost": 0.0009493,
+    "upstream_inference_completions_cost": 0.00103734
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2790,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 363.5
+}

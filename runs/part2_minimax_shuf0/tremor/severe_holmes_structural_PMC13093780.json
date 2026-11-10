@@ -1,0 +1,191 @@
+{
+ "questions": [
+  "Is the main reason for your visit today a tremor or shaking in your hands?",
+  "Is the tremor present even when your hands are completely at rest?",
+  "Does the tremor get worse when you try to use your hands, such as writing or holding a cup?",
+  "Do you have a family history of tremor or Parkinson's disease?",
+  "Does drinking alcohol temporarily improve the tremor?",
+  "Do you have a history of thyroid problems?",
+  "Have you recently started any new medications?",
+  "Are you also experiencing abdominal pain?",
+  "Do you have a fever?",
+  "Do you have any difficulty with your balance?",
+  "Do you feel stiffness or slowness in your movements?",
+  "Do you feel anxious or stressed?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Assess gait, including stride length, arm swing, and turning.",
+  "Perform the pull test to assess postural stability.",
+  "Assess for cogwheel rigidity in the upper extremities during passive movement.",
+  "Assess bradykinesia by having the patient perform rapid alternating movements and finger tapping.",
+  "Assess for postural tremor by having the patient hold their arms outstretched.",
+  "Assess facial expression for hypomimia and speech for hypophonia.",
+  "Test for the glabellar tap reflex (Myerson's sign).",
+  "Have the patient write a sentence to check for micrographia.",
+  "Order a DaTscan (dopamine transporter imaging) to evaluate the nigrostriatal pathway.",
+  "Order thyroid function tests.",
+  "Order a ceruloplasmin level."
+ ],
+ "served": [
+  "gait examination",
+  "posture and pull test",
+  "muscle tone examination",
+  "coordination examination (limb and truncal)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "postural tremor (arms outstretched)",
+  "DAT-SPECT",
+  "TSH / free T4",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper"
+ ],
+ "results": [
+  "1. Assess gait, including stride length, arm swing, and turning.",
+  "     gait examination: normal",
+  "2. Perform the pull test to assess postural stability.",
+  "     posture and pull test: normal",
+  "3. Assess for cogwheel rigidity in the upper extremities during passive movement.",
+  "     muscle tone examination: normal",
+  "4. Assess bradykinesia by having the patient perform rapid alternating movements and finger tapping.",
+  "     coordination examination (limb and truncal): left upper-limb dysmetria and dysdiadochokinesia; truncal coordination normal",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): dysmetria and dysdiadochokinesia in the left upper limb",
+  "5. Assess for postural tremor by having the patient hold their arms outstretched.",
+  "     postural tremor (arms outstretched): present",
+  "6. Assess facial expression for hypomimia and speech for hypophonia.",
+  "     not performed / not available",
+  "7. Test for the glabellar tap reflex (Myerson's sign).",
+  "     not performed / not available",
+  "8. Have the patient write a sentence to check for micrographia.",
+  "     not performed / not available",
+  "9. Order a DaTscan (dopamine transporter imaging) to evaluate the nigrostriatal pathway.",
+  "     DAT-SPECT: normal striatal uptake",
+  "10. Order thyroid function tests.",
+  "     TSH / free T4: normal",
+  "11. Order a ceruloplasmin level.",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Holmes tremor (rubral tremor) due to a midbrain lesion (likely demyelination or small vessel stroke)\n\nAlternatives:\n1. Multiple system atrophy (cerebellar variant)\n2. Essential tremor plus with cerebellar features\n3. Spinocerebellar ataxia (despite absent family history)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Assess gait, including stride length, arm swing, and turning.\n2. Perform the pull test to assess postural stability.\n3. Assess for cogwheel rigidity in the upper extremities during passive movement.\n4. Assess bradykinesia by having the patient perform rapid alternating movements and finger tapping.\n5. Assess for postural tremor by having the patient hold their arms outstretched.\n6. Assess facial expression for hypomimia and speech for hypophonia.\n7. Test for the glabellar tap reflex (Myerson's sign).\n8. Have the patient write a sentence to check for micrographia.\n9. Order a DaTscan (dopamine transporter imaging) to evaluate the nigrostriatal pathway.\n10. Order thyroid function tests.\n11. Order a ceruloplasmin level.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Holmes tremor (rubral tremor) due to a midbrain lesion (likely demyelination or small vessel stroke)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 3972,
+   "total_tokens": 24410,
+   "cost": 0.01086012,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01086012,
+    "upstream_inference_prompt_cost": 0.00609372,
+    "upstream_inference_completions_cost": 0.0047664
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3821,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 20945,
+   "completion_tokens": 4686,
+   "total_tokens": 25631,
+   "cost": 0.00700518,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20423,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00700518,
+    "upstream_inference_prompt_cost": 0.00138198,
+    "upstream_inference_completions_cost": 0.0056232
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4523,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 21526,
+   "completion_tokens": 6240,
+   "total_tokens": 27766,
+   "cost": 0.0089226,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20930,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0089226,
+    "upstream_inference_prompt_cost": 0.0014346,
+    "upstream_inference_completions_cost": 0.007488
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6173,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 143.4
+}

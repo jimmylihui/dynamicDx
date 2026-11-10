@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a history of seizures or epilepsy?",
+  "Have you been diagnosed with a spinal cord injury?",
+  "Is this procedure being performed to help you regain movement in your legs?",
+  "Are you currently taking any medications for muscle spasms?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside examination of the patient's lower extremity motor function and reflexes",
+  "Electromyography (EMG) and Nerve Conduction Velocity (NCV) studies",
+  "Magnetic Resonance Imaging (MRI) of the lumbar spine"
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "nerve conduction studies",
+  "needle electromyography",
+  "MRI cervical and thoracic spine"
+ ],
+ "results": [
+  "1. Bedside examination of the patient's lower extremity motor function and reflexes",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "2. Electromyography (EMG) and Nerve Conduction Velocity (NCV) studies",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: brief time-locked EMG bursts under 100 ms in the left wrist flexors and extensors",
+  "3. Magnetic Resonance Imaging (MRI) of the lumbar spine",
+  "     MRI cervical and thoracic spine: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional (psychogenic) tremor\n1. Essential tremor\n2. Drug-induced tremor",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination of the patient's lower extremity motor function and reflexes\n2. Electromyography (EMG) and Nerve Conduction Velocity (NCV) studies\n3. Magnetic Resonance Imaging (MRI) of the lumbar spine",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional (psychogenic) tremor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 11991,
+   "completion_tokens": 67,
+   "total_tokens": 12058,
+   "cost": 0.00183014,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00183014,
+    "upstream_inference_prompt_cost": 0.00179865,
+    "upstream_inference_completions_cost": 3.149e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 12298,
+   "completion_tokens": 56,
+   "total_tokens": 12354,
+   "cost": 0.000310188,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 11648,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000310188,
+    "upstream_inference_prompt_cost": 0.000283868,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 12588,
+   "completion_tokens": 27,
+   "total_tokens": 12615,
+   "cost": 0.00027145,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 12160,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00027145,
+    "upstream_inference_prompt_cost": 0.00025876,
+    "upstream_inference_completions_cost": 1.269e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 21.0
+}

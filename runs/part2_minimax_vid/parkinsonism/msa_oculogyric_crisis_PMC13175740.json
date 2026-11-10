@@ -1,0 +1,160 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Did the symptoms start suddenly?",
+  "Do you have a severe headache?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you have any slurred speech?",
+  "Do you have any numbness on one side of your face or body?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of high blood pressure?",
+  "Have you had any recent head trauma?",
+  "Are you experiencing nausea or vomiting?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Ice pack test",
+  "Serum acetylcholine receptor antibody level",
+  "Anti-MuSK antibody level",
+  "Serum lactate level",
+  "12-lead ECG",
+  "MRI of the brain and orbits with contrast",
+  "Thyroid function tests (TSH and free T4)"
+ ],
+ "served": [
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "MRI brain with gadolinium",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. Ice pack test",
+  "     not performed / not available",
+  "2. Serum acetylcholine receptor antibody level",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "3. Anti-MuSK antibody level",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "4. Serum lactate level",
+  "     not performed / not available",
+  "5. 12-lead ECG",
+  "     not performed / not available",
+  "6. MRI of the brain and orbits with contrast",
+  "     MRI brain with gadolinium: putaminal atrophy with the rim sign and putaminal hypointensity on susceptibility-weighted imaging",
+  "7. Thyroid function tests (TSH and free T4)",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "**DIAGNOSIS:** Mitochondrial myopathy (chronic progressive external ophthalmoplegia with cerebral involvement) presenting with putaminal atrophy and mineral deposition\n\n**Alternatives:**\n1. Wilson's disease (putaminal rim sign is classically described here, and copper deposition is a treatable mimic)\n2. Oculopharyngeal muscular dystrophy\n3. Seronegative myasthenia gravis",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Ice pack test\n2. Serum acetylcholine receptor antibody level\n3. Anti-MuSK antibody level\n4. Serum lactate level\n5. 12-lead ECG\n6. MRI of the brain and orbits with contrast\n7. Thyroid function tests (TSH and free T4)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "** Mitochondrial myopathy (chronic progressive external ophthalmoplegia with cerebral involvement) presenting with putaminal atrophy and mineral deposition",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 4398,
+   "total_tokens": 11460,
+   "cost": 0.00736884,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00736884,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.0052776
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4219,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7467,
+   "completion_tokens": 2829,
+   "total_tokens": 10296,
+   "cost": 0.00394866,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00394866,
+    "upstream_inference_prompt_cost": 0.00055386,
+    "upstream_inference_completions_cost": 0.0033948
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3105,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7770,
+   "completion_tokens": 3625,
+   "total_tokens": 11395,
+   "cost": 0.0049026,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7410,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0049026,
+    "upstream_inference_prompt_cost": 0.0005526,
+    "upstream_inference_completions_cost": 0.00435
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4102,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 144.8
+}

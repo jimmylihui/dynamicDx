@@ -1,0 +1,112 @@
+{
+ "questions": [
+  "Is the dressing on your face from a recent operation to fix a broken jaw?",
+  "Did you suffer a fall that caused this injury?",
+  "Is your jaw currently wired shut?",
+  "Are you experiencing severe pain right now?",
+  "Are you feeling nauseous?",
+  "Are you having any difficulty breathing?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of sleep apnea?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "awareness and recall during the event",
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. awareness and recall during the event: awareness recovers between seizures - this is not status epilepticus",
+  "2. interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "3. video-EEG monitoring of a typical event: ictal BODY TURNING, often preceded by head version, but the EEG shows classic GENERALIZED spike-wave or polyspike discharges WITHOUT consistent lateralization"
+ ],
+ "dx_raw": "DIAGNOSIS: Frontal lobe epilepsy with secondary bilateral synchrony (focal epilepsy of frontal lobe origin)\nIdiopathic generalized epilepsy (e.g., Juvenile Myoclonic Epilepsy)\nFocal epilepsy of extra-frontal origin\nPsychogenic non-epileptic seizures with interictal epileptiform discharges",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Frontal lobe epilepsy with secondary bilateral synchrony (focal epilepsy of frontal lobe origin)",
+ "decisive_served": [
+  "awareness and recall during the event",
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 4311,
+   "total_tokens": 11373,
+   "cost": 0.00725412,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00725412,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0051732
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4212,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7507,
+   "completion_tokens": 7101,
+   "total_tokens": 14608,
+   "cost": 0.00908202,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00908202,
+    "upstream_inference_prompt_cost": 0.00056082,
+    "upstream_inference_completions_cost": 0.0085212
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7038,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 113.4
+}

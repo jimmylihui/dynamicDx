@@ -1,0 +1,165 @@
+{
+ "questions": [
+  "Did you have a seizure?",
+  "Did your whole body shake?",
+  "Were you confused after it stopped?",
+  "Did you have a headache before it started?",
+  "Did you see flashing lights before it started?",
+  "Did you bite your tongue?",
+  "Did you wet yourself?",
+  "Have you had seizures before?",
+  "Did you feel lightheaded before it started?",
+  "Do you feel sick to your stomach?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI brain with thin-cut epilepsy protocol",
+  "Serum prolactin level",
+  "Serum glucose",
+  "Serum electrolytes including sodium, calcium, and magnesium",
+  "Complete blood count",
+  "Continuous video EEG monitoring for 24 hours"
+ ],
+ "served": [
+  "brain MRI",
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "glucose, calcium, magnesium, sodium",
+  "full blood count and biochemistry",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. MRI brain with thin-cut epilepsy protocol",
+  "     brain MRI: punctate FLAIR hyperintensities in the local white matter of both frontal lobes",
+  "2. Serum prolactin level",
+  "     not performed / not available",
+  "3. Serum glucose",
+  "     blood glucose and HbA1c: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "4. Serum electrolytes including sodium, calcium, and magnesium",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "5. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "6. Continuous video EEG monitoring for 24 hours",
+  "     video-EEG monitoring of a typical event: eyelid myoclonia with absences - the Jeavons phenotype"
+ ],
+ "dx_raw": "DIAGNOSIS: Jeavons syndrome (Eyelid Myoclonia with Absence, EMA) - a genetic generalized epilepsy\n1. Childhood absence epilepsy (CAE) - typical CAE without the eyelid myoclonia component\n2. Other genetic generalized epilepsy with photosensitivity\n3. Eyelid myoclonia as a feature of a different generalized epilepsy syndrome (e.g., GEFS+)",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI brain with thin-cut epilepsy protocol\n2. Serum prolactin level\n3. Serum glucose\n4. Serum electrolytes including sodium, calcium, and magnesium\n5. ECG\n6. Complete blood count\n7. Continuous video EEG monitoring for 24 hours",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Jeavons syndrome (Eyelid Myoclonia with Absence, EMA) - a genetic generalized epilepsy",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 10710,
+   "completion_tokens": 2040,
+   "total_tokens": 12750,
+   "cost": 0.00563364,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00563364,
+    "upstream_inference_prompt_cost": 0.00318564,
+    "upstream_inference_completions_cost": 0.002448
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2108,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 11087,
+   "completion_tokens": 563,
+   "total_tokens": 11650,
+   "cost": 0.0014553,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 10610,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014553,
+    "upstream_inference_prompt_cost": 0.0007797,
+    "upstream_inference_completions_cost": 0.0006756
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 562,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 11401,
+   "completion_tokens": 577,
+   "total_tokens": 11978,
+   "cost": 0.00147414,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 10994,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00147414,
+    "upstream_inference_prompt_cost": 0.00078174,
+    "upstream_inference_completions_cost": 0.0006924
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 586,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.6,
+ "video": "mild_3_neonatal_PMC12440885.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 52.9
+}

@@ -1,0 +1,190 @@
+{
+ "questions": [
+  "Are you in severe pain right now?",
+  "Do you feel an inner restlessness that forces you to move constantly?",
+  "Are you feeling confused or disoriented about your surroundings?",
+  "Have you started taking any new medications in the past week?",
+  "Do you have a history of mental health conditions like schizophrenia or bipolar disorder?",
+  "Do you consume alcohol on a daily basis?",
+  "Do you use recreational or illicit drugs?",
+  "Are you experiencing any visual or auditory hallucinations?",
+  "Do you have a fever or feel unusually hot?",
+  "Do your muscles feel stiff or locked?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI of the brain with and without contrast",
+  "Urine toxicology screen",
+  "Serum ceruloplasmin level",
+  "Comprehensive metabolic panel",
+  "Creatine kinase level",
+  "Thyroid stimulating hormone (TSH) assay",
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "Antistreptolysin O (ASO) titer",
+  "Lumbar puncture with cerebrospinal fluid analysis",
+  "Continuous electroencephalogram (EEG) monitoring",
+  "Blood alcohol level",
+  "Therapeutic trial of intravenous benztropine"
+ ],
+ "served": [
+  "brain MRI with contrast",
+  "toxicology screen (urine and serum)",
+  "copper / caeruloplasmin",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "blood glucose",
+  "creatine kinase",
+  "lumbar puncture / CSF",
+  "EEG",
+  "serum ethanol"
+ ],
+ "results": [
+  "1. MRI of the brain with and without contrast",
+  "     brain MRI with contrast: EMPTY SELLA sign",
+  "2. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "3. Serum ceruloplasmin level",
+  "     copper / caeruloplasmin: normal",
+  "4. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: euvolaemic hyponatraemia with low serum osmolality; urea and creatinine normal",
+  "     liver function tests: normal",
+  "     blood glucose: random glucose 88 mg/dL, HbA1c 5.6% - normal",
+  "5. Creatine kinase level",
+  "     creatine kinase: normal",
+  "6. Thyroid stimulating hormone (TSH) assay",
+  "     not performed / not available",
+  "7. Slit-lamp examination for Kayser-Fleischer rings",
+  "     not performed / not available",
+  "8. Antistreptolysin O (ASO) titer",
+  "     not performed / not available",
+  "9. Lumbar puncture with cerebrospinal fluid analysis",
+  "     lumbar puncture / CSF: protein 32 mg/dL, glucose 66 mg/dL against a blood sugar of 100, two lymphocytes - normal",
+  "10. Continuous electroencephalogram (EEG) monitoring",
+  "     EEG: normal",
+  "11. Blood alcohol level",
+  "     serum ethanol: normal",
+  "12. Therapeutic trial of intravenous benztropine",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Autoimmune encephalitis (likely anti-NMDA receptor antibody positive) with basal ganglia and hypothalamic involvement, manifesting as severe chorea/ballismus and syndrome of inappropriate antidiuretic hormone secretion (SIADH).\n1. Acute Sydenham chorea (rheumatic fever) — pending ASO/DNase B titres\n2. Functional (conversion) neurological disorder with incidental SIADH\n3. Huntington disease (Westphal variant or adult-onset) — pending genetic testing",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI of the brain with and without contrast\n2. Urine toxicology screen\n3. Serum ceruloplasmin level\n4. Comprehensive metabolic panel\n5. Creatine kinase level\n6. Thyroid stimulating hormone (TSH) assay\n7. Slit-lamp examination for Kayser-Fleischer rings\n8. Antistreptolysin O (ASO) titer\n9. Lumbar puncture with cerebrospinal fluid analysis\n10. Continuous electroencephalogram (EEG) monitoring\n11. Blood alcohol level\n12. Therapeutic trial of intravenous benztropine",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Autoimmune encephalitis (likely anti-NMDA receptor antibody positive) with basal ganglia and hypothalamic involvement, manifesting as severe chorea/ballismus and syndrome of inappropriate antidiuretic hormone secretion (SIADH).",
+ "decisive_served": [
+  "brain MRI with contrast"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 19222,
+   "completion_tokens": 4227,
+   "total_tokens": 23449,
+   "cost": 0.01081164,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01081164,
+    "upstream_inference_prompt_cost": 0.00573924,
+    "upstream_inference_completions_cost": 0.0050724
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4217,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 19663,
+   "completion_tokens": 2879,
+   "total_tokens": 22542,
+   "cost": 0.00474906,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 19186,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00474906,
+    "upstream_inference_prompt_cost": 0.00129426,
+    "upstream_inference_completions_cost": 0.0034548
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2857,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 20171,
+   "completion_tokens": 3554,
+   "total_tokens": 23725,
+   "cost": 0.0056193,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 19570,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0056193,
+    "upstream_inference_prompt_cost": 0.0013545,
+    "upstream_inference_completions_cost": 0.0042648
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3858,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.2,
+ "video": "c_11098550.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 152.7
+}

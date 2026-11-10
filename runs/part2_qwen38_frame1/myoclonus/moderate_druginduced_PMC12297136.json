@@ -1,0 +1,131 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Did you fall or suffer a physical injury recently?",
+  "Do you have difficulty breathing right now?",
+  "Have you experienced chest pain or tightness?",
+  "Do you feel dizzy, lightheaded, or like you might faint?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Check capillary blood glucose level",
+  "Measure blood pressure and heart rate"
+ ],
+ "served": [
+  "glucose",
+  "vital signs"
+ ],
+ "results": [
+  "1. Check capillary blood glucose level",
+  "     glucose: normal",
+  "2. Measure blood pressure and heart rate",
+  "     vital signs: normal, afebrile"
+ ],
+ "dx_raw": "DIAGNOSIS: Obesity\nDifferential diagnosis: Ascites\nDifferential diagnosis: Abdominal distension secondary to constipation",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Check capillary blood glucose level\n2. Measure blood pressure and heart rate",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Obesity",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 440,
+   "completion_tokens": 65,
+   "total_tokens": 505,
+   "cost": 9.655e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.655e-05,
+    "upstream_inference_prompt_cost": 6.6e-05,
+    "upstream_inference_completions_cost": 3.055e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 743,
+   "completion_tokens": 18,
+   "total_tokens": 761,
+   "cost": 0.00011991,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011991,
+    "upstream_inference_prompt_cost": 0.00011145,
+    "upstream_inference_completions_cost": 8.46e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 896,
+   "completion_tokens": 29,
+   "total_tokens": 925,
+   "cost": 9.6574e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.6574e-05,
+    "upstream_inference_prompt_cost": 8.2944e-05,
+    "upstream_inference_completions_cost": 1.363e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.0
+}

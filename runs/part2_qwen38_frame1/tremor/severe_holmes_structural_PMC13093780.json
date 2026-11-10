@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Are you experiencing pain?",
+  "Is the pain located in your chest?",
+  "Do you have a fever?",
+  "Do you have a cough?",
+  "Have you recently traveled to another country?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's hands and wrists for joint swelling, deformity, or erythema",
+  "Check range of motion in the hands and wrists",
+  "Palpate the metacarpophalangeal and proximal interphalangeal joints for tenderness and synovitis"
+ ],
+ "served": [],
+ "results": [
+  "1. Observe the patient's hands and wrists for joint swelling, deformity, or erythema",
+  "     not performed / not available",
+  "2. Check range of motion in the hands and wrists",
+  "     not performed / not available",
+  "3. Palpate the metacarpophalangeal and proximal interphalangeal joints for tenderness and synovitis",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Anxiety disorder\nDifferential diagnosis: Obsessive-compulsive disorder\nDifferential diagnosis: Somatic symptom disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient's hands and wrists for joint swelling, deformity, or erythema\n2. Check range of motion in the hands and wrists\n3. Palpate the metacarpophalangeal and proximal interphalangeal joints for tenderness and synovitis",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Anxiety disorder",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 600,
+   "completion_tokens": 48,
+   "total_tokens": 648,
+   "cost": 0.00011256,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011256,
+    "upstream_inference_prompt_cost": 9e-05,
+    "upstream_inference_completions_cost": 2.256e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 869,
+   "completion_tokens": 64,
+   "total_tokens": 933,
+   "cost": 0.000108974,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000108974,
+    "upstream_inference_prompt_cost": 7.8894e-05,
+    "upstream_inference_completions_cost": 3.008e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1119,
+   "completion_tokens": 29,
+   "total_tokens": 1148,
+   "cost": 9.572e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 640,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.572e-05,
+    "upstream_inference_prompt_cost": 8.209e-05,
+    "upstream_inference_completions_cost": 1.363e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 18.3
+}

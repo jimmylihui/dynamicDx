@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Are you fully aware of your surroundings right now?",
+  "Do you lose consciousness or awareness during these movements?",
+  "Have you had episodes like this before?",
+  "Did you injure your head in the past few days?",
+  "Have you been drinking a lot of alcohol recently or have you stopped drinking?",
+  "Have you started any new prescription or over-the-counter medications?",
+  "Did you hurt your wrists on purpose?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Continuous video electroencephalography monitoring",
+  "Formal neurological examination focusing on movement pattern, distractibility, and entrainment",
+  "Basic metabolic panel",
+  "Urine drug screen",
+  "Brain MRI with and without contrast"
+ ],
+ "served": [
+  "video-EEG monitoring of a typical event",
+  "neurological examination between events",
+  "serum electrolytes, urea and creatinine",
+  "toxicology screen (urine and serum)",
+  "MRI brain with gadolinium",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Continuous video electroencephalography monitoring",
+  "     video-EEG monitoring of a typical event: moderate-amplitude rhythmic THETA waves intermittently during the versive seizures",
+  "2. Formal neurological examination focusing on movement pattern, distractibility, and entrainment",
+  "     neurological examination between events: normal",
+  "3. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "4. Urine drug screen",
+  "     toxicology screen (urine and serum): normal",
+  "5. Brain MRI with and without contrast",
+  "     MRI brain with gadolinium: normal",
+  "     brain MRI: no epileptogenic lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Frontal lobe epilepsy with focal motor status epilepticus\n\nPsychogenic non-epileptic seizures with comorbid self-inflicted injury (wrist lacerations)\nNon-convulsive focal status epilepticus (alternative localization)\nAutoimmune encephalitis with seizure manifestation",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Continuous video electroencephalography monitoring\n2. Formal neurological examination focusing on movement pattern, distractibility, and entrainment\n3. Basic metabolic panel\n4. Urine drug screen\n5. Brain MRI with and without contrast",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Frontal lobe epilepsy with focal motor status epilepticus",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 468,
+   "completion_tokens": 2581,
+   "total_tokens": 3049,
+   "cost": 0.0007618576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007618576,
+    "upstream_inference_prompt_cost": 3.91776e-05,
+    "upstream_inference_completions_cost": 0.00072268
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2489,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 828,
+   "completion_tokens": 1014,
+   "total_tokens": 1842,
+   "cost": 0.0003383744,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003383744,
+    "upstream_inference_prompt_cost": 5.44544e-05,
+    "upstream_inference_completions_cost": 0.00028392
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 962,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1102,
+   "completion_tokens": 769,
+   "total_tokens": 1871,
+   "cost": 0.0002642304,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002642304,
+    "upstream_inference_prompt_cost": 4.89104e-05,
+    "upstream_inference_completions_cost": 0.00021532
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 702,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_2_shadowbox_PMC9062418.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 77.6
+}

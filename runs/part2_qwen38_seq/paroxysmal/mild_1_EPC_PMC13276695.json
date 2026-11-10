@@ -1,0 +1,216 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a history of diabetes?",
+  "Have you been diagnosed with kidney disease or are you on dialysis?",
+  "Do you feel weak in your arms and legs?",
+  "Do you have a history of alcohol use?",
+  "Have you had any recent viral infections or vaccinations?",
+  "Do you have difficulty breathing?",
+  "Do you have difficulty swallowing or speaking?",
+  "Do you have a history of thyroid disease?",
+  "Have you been taking any medications recently, specifically steroids or statins?",
+  "Do you have difficulty climbing stairs or getting out of a chair?",
+  "Do you have a history of cancer?",
+  "Have you experienced significant weight loss recently?",
+  "Do you have a history of Guillain-Barré syndrome?",
+  "Do you have a history of spinal cord injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside examination for muscle tone (flaccidity vs spasticity).",
+  "Bedside examination for deep tendon reflexes (biceps, triceps, patellar, Achilles).",
+  "Bedside examination for sensory level on the trunk (pinprick).",
+  "Bedside examination for muscle strength (MRC scale) in upper and lower limbs."
+ ],
+ "served": [
+  "muscle tone examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "limb strength (MRC) examination"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing any pain?; Do you have a history of diabetes?; Have you been diagnosed with kidney disease or are you on dialysis?; Do you feel weak in your arms and legs? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Do you have a history of alcohol use?; Have you had any recent viral infections or vaccinations?; Do you have difficulty breathing?; Do you have difficulty swallowing or speaking? -> ['no', 'no', 'no', 'no']",
+  "R3 ASK Do you have a history of thyroid disease?; Have you been taking any medications recently, specifically steroids or statins?; Do you have difficulty climbing stairs or getting out of a chair? -> ['no', 'no', 'no']",
+  "R4 ASK Do you have a history of cancer?; Have you experienced significant weight loss recently? -> ['no', 'no']",
+  "R5 ORDER Bedside examination for muscle tone (flaccidity vs spasticity). -> [['muscle tone examination']]",
+  "R6 ASK Do you have a history of Guillain-Barré syndrome? -> ['no']",
+  "R7 ORDER Bedside examination for deep tendon reflexes (biceps, triceps, patellar, Achilles). -> [['deep tendon reflexes and plantar responses']]",
+  "R8 ORDER Bedside examination for sensory level on the trunk (pinprick). -> [['sensory examination (pinprick, vibration, proprioception)']]",
+  "R9 ASK Do you have a history of spinal cord injury? -> ['no']",
+  "R10 ORDER Bedside examination for muscle strength (MRC scale) in upper and lower limbs. -> [['limb strength (MRC) examination']]",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Critical illness myopathy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing any pain?",
+    "Do you have a history of diabetes?",
+    "Have you been diagnosed with kidney disease or are you on dialysis?",
+    "Do you feel weak in your arms and legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of alcohol use?",
+    "Have you had any recent viral infections or vaccinations?",
+    "Do you have difficulty breathing?",
+    "Do you have difficulty swallowing or speaking?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of thyroid disease?",
+    "Have you been taking any medications recently, specifically steroids or statins?",
+    "Do you have difficulty climbing stairs or getting out of a chair?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of cancer?",
+    "Have you experienced significant weight loss recently?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Bedside examination for muscle tone (flaccidity vs spasticity)."
+   ],
+   "result": [
+    [
+     "muscle tone examination"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of Guillain-Barré syndrome?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Bedside examination for deep tendon reflexes (biceps, triceps, patellar, Achilles)."
+   ],
+   "result": [
+    [
+     "deep tendon reflexes and plantar responses"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Bedside examination for sensory level on the trunk (pinprick)."
+   ],
+   "result": [
+    [
+     "sensory examination (pinprick, vibration, proprioception)"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of spinal cord injury?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "Bedside examination for muscle strength (MRC scale) in upper and lower limbs."
+   ],
+   "result": [
+    [
+     "limb strength (MRC) examination"
+    ]
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Critical illness myopathy"
+  }
+ ],
+ "dx": "Critical illness myopathy",
+ "dx_raw": "DIAGNOSIS: Critical illness myopathy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0046,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 60.0
+}

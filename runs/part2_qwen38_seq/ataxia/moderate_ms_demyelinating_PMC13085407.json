@@ -1,0 +1,127 @@
+{
+ "questions": [
+  "Do you have a history of heavy alcohol consumption?",
+  "Have you noticed your legs becoming thinner or weaker recently?",
+  "Do you experience numbness, tingling, or pain in your feet or legs?",
+  "Do you have difficulty with fine motor tasks, such as buttoning a shirt or writing?",
+  "Have you experienced any changes in your speech, such as slurring?",
+  "Do you have a family history of similar walking or speech problems?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Observe the patient's gait and perform a Romberg test (standing with feet together, eyes open then closed).",
+  "MRI of the brain"
+ ],
+ "served": [
+  "gait examination",
+  "Romberg test",
+  "brain MRI"
+ ],
+ "results": [
+  "R1 ASK Do you have a history of heavy alcohol consumption?; Have you noticed your legs becoming thinner or weaker recently?; Do you experience numbness, tingling, or pain in your feet or legs? -> ['no', 'no', 'no']",
+  "R2 ORDER Observe the patient's gait and perform a Romberg test (standing with feet together, eyes open then closed). -> [['gait examination', 'Romberg test']]",
+  "R3 ASK Do you have difficulty with fine motor tasks, such as buttoning a shirt or writing?; Have you experienced any changes in your speech, such as slurring? -> ['no', 'yes']",
+  "R4 ASK Do you have a family history of similar walking or speech problems? -> ['no']",
+  "R5 ORDER MRI of the brain -> [['brain MRI']]",
+  "R6 DIAGNOSIS Sporadic Adult-Onset Ataxia -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of heavy alcohol consumption?",
+    "Have you noticed your legs becoming thinner or weaker recently?",
+    "Do you experience numbness, tingling, or pain in your feet or legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Observe the patient's gait and perform a Romberg test (standing with feet together, eyes open then closed)."
+   ],
+   "result": [
+    [
+     "gait examination",
+     "Romberg test"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty with fine motor tasks, such as buttoning a shirt or writing?",
+    "Have you experienced any changes in your speech, such as slurring?"
+   ],
+   "result": [
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a family history of similar walking or speech problems?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "MRI of the brain"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Sporadic Adult-Onset Ataxia"
+  }
+ ],
+ "dx": "Sporadic Adult-Onset Ataxia",
+ "dx_raw": "DIAGNOSIS: Sporadic Adult-Onset Ataxia",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0037,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_ms_demyelinating_PMC13085407.mp4",
+ "line": "ataxia",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 31.5
+}

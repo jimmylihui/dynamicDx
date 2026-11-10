@@ -1,0 +1,146 @@
+{
+ "questions": [
+  "Did you have surgery recently?",
+  "Are you having trouble breathing?",
+  "Are you in pain?",
+  "Was the surgery on your heart?",
+  "Was the surgery on your lungs?",
+  "Do you have a fever?",
+  "Is there any discharge from your surgical site?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Vital signs",
+  "Chest X-ray",
+  "Echocardiogram",
+  "Full blood count and electrolytes"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "full blood count and biochemistry",
+  "glucose, calcium, magnesium, sodium"
+ ],
+ "results": [
+  "1. Vital signs",
+  "     not performed / not available",
+  "2. Chest X-ray",
+  "     not performed / not available",
+  "3. Echocardiogram",
+  "     not performed / not available",
+  "4. Full blood count and electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     full blood count and biochemistry: normal",
+  "     glucose, calcium, magnesium, sodium: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Coronary artery disease caused by atherosclerosis\n\nAortic valve stenosis\nMitral valve disease\nSternal wound infection",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Vital signs\n2. ECG\n3. Chest X-ray\n4. Echocardiogram\n5. Full blood count and electrolytes",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Coronary artery disease caused by atherosclerosis",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 422,
+   "completion_tokens": 851,
+   "total_tokens": 1273,
+   "cost": 0.00033154,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00033154,
+    "upstream_inference_prompt_cost": 4.22e-05,
+    "upstream_inference_completions_cost": 0.00028934
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 715,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 730,
+   "completion_tokens": 438,
+   "total_tokens": 1168,
+   "cost": 0.00022192,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00022192,
+    "upstream_inference_prompt_cost": 7.3e-05,
+    "upstream_inference_completions_cost": 0.00014892
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 415,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 934,
+   "completion_tokens": 3663,
+   "total_tokens": 4597,
+   "cost": 0.00133882,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00133882,
+    "upstream_inference_prompt_cost": 9.34e-05,
+    "upstream_inference_completions_cost": 0.00124542
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3326,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 306.2
+}

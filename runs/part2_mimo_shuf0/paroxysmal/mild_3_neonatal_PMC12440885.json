@@ -1,0 +1,159 @@
+{
+ "questions": [
+  "Is this child currently experiencing a seizure?",
+  "Does this child have a pre-existing diagnosis of a seizure or epilepsy disorder?",
+  "Was a head injury the reason this child requires medical care, leading to the head bandaging?",
+  "Is the child currently in significant pain?",
+  "Was loss of consciousness the initial symptom that brought this child to the hospital?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Continue prolonged video-EEG monitoring (already in progress) to capture any clinical events",
+  "Brain MRI with and without contrast",
+  "Complete blood count with differential",
+  "Basic metabolic panel including electrolytes",
+  "Serum glucose",
+  "Prolactin level (to be drawn within 20 minutes of any captured event)",
+  "Thyroid function tests"
+ ],
+ "served": [
+  "video-EEG monitoring of a typical event",
+  "MRI brain with gadolinium",
+  "brain MRI",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose and HbA1c",
+  "thyroid function (TSH, free T4)"
+ ],
+ "results": [
+  "1. Continue prolonged video-EEG monitoring (already in progress) to capture any clinical events",
+  "     video-EEG monitoring of a typical event: eyelid myoclonia with absences - the Jeavons phenotype",
+  "2. Brain MRI with and without contrast",
+  "     MRI brain with gadolinium: punctate FLAIR hyperintensities in the local white matter of both frontal lobes, without enhancement",
+  "     brain MRI: punctate FLAIR hyperintensities in the local white matter of both frontal lobes",
+  "3. Complete blood count with differential",
+  "     full blood count and biochemistry: normal",
+  "4. Basic metabolic panel including electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "5. Serum glucose",
+  "     blood glucose and HbA1c: normal",
+  "6. Prolactin level (to be drawn within 20 minutes of any captured event)",
+  "     not performed / not available",
+  "7. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Jeavons syndrome (eyelid myoclonia with absences)\n\nFrontal lobe epilepsy with bilateral structural lesions (secondary epilepsy syndrome)\n\nPhotosensitive epilepsy / idiopathic generalized epilepsy with prominent eyelid myoclonia\n\nJuvenile myoclonic epilepsy with eyelid-predominant seizure semiology",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "Based on the video evidence of extensive EEG electrode placement and the clinical history provided, here are my ordered investigations:\n\n1. Continue prolonged video-EEG monitoring (already in progress) to capture any clinical events\n2. Brain MRI with and without contrast\n3. Complete blood count with differential\n4. Basic metabolic panel including electrolytes\n5. Serum glucose\n6. Prolactin level (to be drawn within 20 minutes of any captured event)\n7. Thyroid function tests",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Jeavons syndrome (eyelid myoclonia with absences)",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8127,
+   "completion_tokens": 792,
+   "total_tokens": 8919,
+   "cost": 0.0013331976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013331976,
+    "upstream_inference_prompt_cost": 0.0011114376,
+    "upstream_inference_completions_cost": 0.00022176
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 715,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8449,
+   "completion_tokens": 628,
+   "total_tokens": 9077,
+   "cost": 0.0002523192,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8064,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002523192,
+    "upstream_inference_prompt_cost": 7.64792e-05,
+    "upstream_inference_completions_cost": 0.00017584
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 526,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8858,
+   "completion_tokens": 458,
+   "total_tokens": 9316,
+   "cost": 0.0002092944,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002092944,
+    "upstream_inference_prompt_cost": 8.10544e-05,
+    "upstream_inference_completions_cost": 0.00012824
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 386,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.6,
+ "video": "mild_3_neonatal_PMC12440885.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 82.1
+}

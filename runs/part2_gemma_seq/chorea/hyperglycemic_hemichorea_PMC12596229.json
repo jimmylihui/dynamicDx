@@ -1,0 +1,247 @@
+{
+ "questions": [
+  "Do you have stiffness in your muscles?",
+  "Do you feel that your movements have become slower?",
+  "Does the shaking in your leg stop when you move it on purpose?",
+  "Have you noticed your handwriting becoming smaller?",
+  "Do you have a history of taking medications for psychiatric conditions?",
+  "Do you have tremors in your hands?",
+  "Do you have a history of thyroid problems?",
+  "Do you drink alcohol regularly?",
+  "Have you had any head injuries or strokes in the past?",
+  "Do you experience any weakness or numbness in your legs?",
+  "Does the shaking only happen when you are sitting or standing?",
+  "Does the shaking happen when you are lying flat on your back?",
+  "Does the shaking happen in both legs?",
+  "Does the shaking start or get worse when you are anxious or stressed?",
+  "Have you noticed any other involuntary movements in other parts of your body?",
+  "Where else in your body have you noticed involuntary movements?",
+  "Do these other movements look like slow, flowing movements or sudden jerks?",
+  "Do you have any difficulty with your balance or walking?",
+  "Do you have any history of liver disease?",
+  "Do you take any other medications, including over-the-counter drugs or supplements?",
+  "Do you have involuntary movements in your face?",
+  "Do you have involuntary movements in your arms?",
+  "Do you have involuntary movements in your trunk?",
+  "Does the tremor in your leg stop if you focus on a different task?",
+  "Does the tremor in your leg change in speed or amplitude when you move your other leg?",
+  "Are the involuntary movements in your arms also tremors?",
+  "Do the movements in your arms happen when you are resting?",
+  "Do you have any abnormal postures, such as twisting or cramping, in your muscles?",
+  "Have you noticed any changes in your voice or swallowing?",
+  "Do you have any history of kidney or liver failure?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "yes",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "yes",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Test for ankle clonus by sudden dorsiflexion of the ankle.",
+  "Test for the Babinski sign.",
+  "Test deep tendon reflexes in the lower limbs.",
+  "Perform a manual muscle strength test in the arms and legs."
+ ],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "limb strength (MRC) examination"
+ ],
+ "results": [
+  "R1 ASK Do you have stiffness in your muscles?; Do you feel that your movements have become slower?; Does the shaking in your leg stop when you move it on purpose?; Have you noticed your handwriting becoming smaller?; Do you have a history of taking medications for psychiatric conditions? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Do you have tremors in your hands?; Do you have a history of thyroid problems?; Do you drink alcohol regularly?; Have you had any head injuries or strokes in the past?; Do you experience any weakness or numbness in your legs? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Does the shaking only happen when you are sitting or standing?; Does the shaking happen when you are lying flat on your back?; Does the shaking happen in both legs?; Does the shaking start or get worse when you are anxious or stressed?; Have you noticed any other involuntary movements in other parts of your body? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R4 ASK Where else in your body have you noticed involuntary movements?; Do these other movements look like slow, flowing movements or sudden jerks?; Do you have any difficulty with your balance or walking?; Do you have any history of liver disease?; Do you take any other medications, including over-the-counter drugs or supplements? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R5 ASK Do you have involuntary movements in your face?; Do you have involuntary movements in your arms?; Do you have involuntary movements in your trunk?; Does the tremor in your leg stop if you focus on a different task?; Does the tremor in your leg change in speed or amplitude when you move your other leg? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R6 ASK Are the involuntary movements in your arms also tremors?; Do the movements in your arms happen when you are resting?; Do you have any abnormal postures, such as twisting or cramping, in your muscles?; Have you noticed any changes in your voice or swallowing?; Do you have any history of kidney or liver failure? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 ORDER Test for ankle clonus by sudden dorsiflexion of the ankle.; Test for the Babinski sign.; Test deep tendon reflexes in the lower limbs.; Perform a manual muscle strength test in the arms and legs. -> [['deep tendon reflexes and plantar responses'], ['deep tendon reflexes and plantar responses'], ['deep tendon reflexes and plantar responses'], ['limb strength (MRC) examination']]",
+  "R8 DIAGNOSIS Functional tremor -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have stiffness in your muscles?",
+    "Do you feel that your movements have become slower?",
+    "Does the shaking in your leg stop when you move it on purpose?",
+    "Have you noticed your handwriting becoming smaller?",
+    "Do you have a history of taking medications for psychiatric conditions?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have tremors in your hands?",
+    "Do you have a history of thyroid problems?",
+    "Do you drink alcohol regularly?",
+    "Have you had any head injuries or strokes in the past?",
+    "Do you experience any weakness or numbness in your legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Does the shaking only happen when you are sitting or standing?",
+    "Does the shaking happen when you are lying flat on your back?",
+    "Does the shaking happen in both legs?",
+    "Does the shaking start or get worse when you are anxious or stressed?",
+    "Have you noticed any other involuntary movements in other parts of your body?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Where else in your body have you noticed involuntary movements?",
+    "Do these other movements look like slow, flowing movements or sudden jerks?",
+    "Do you have any difficulty with your balance or walking?",
+    "Do you have any history of liver disease?",
+    "Do you take any other medications, including over-the-counter drugs or supplements?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have involuntary movements in your face?",
+    "Do you have involuntary movements in your arms?",
+    "Do you have involuntary movements in your trunk?",
+    "Does the tremor in your leg stop if you focus on a different task?",
+    "Does the tremor in your leg change in speed or amplitude when you move your other leg?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Are the involuntary movements in your arms also tremors?",
+    "Do the movements in your arms happen when you are resting?",
+    "Do you have any abnormal postures, such as twisting or cramping, in your muscles?",
+    "Have you noticed any changes in your voice or swallowing?",
+    "Do you have any history of kidney or liver failure?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Test for ankle clonus by sudden dorsiflexion of the ankle.",
+    "Test for the Babinski sign.",
+    "Test deep tendon reflexes in the lower limbs.",
+    "Perform a manual muscle strength test in the arms and legs."
+   ],
+   "result": [
+    [
+     "deep tendon reflexes and plantar responses"
+    ],
+    [
+     "deep tendon reflexes and plantar responses"
+    ],
+    [
+     "deep tendon reflexes and plantar responses"
+    ],
+    [
+     "limb strength (MRC) examination"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Functional tremor"
+  }
+ ],
+ "dx": "Functional tremor",
+ "dx_raw": "DIAGNOSIS: Functional tremor",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0134,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hyperglycemic_hemichorea_PMC12596229.mp4",
+ "line": "chorea",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 974.9
+}

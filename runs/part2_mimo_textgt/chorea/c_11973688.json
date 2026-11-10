@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Can you temporarily stop the movements by focusing your attention on them?",
+  "Do the movements ever happen during sleep?",
+  "Do you have any weakness or numbness in the affected leg?",
+  "Have you recently experienced significant emotional stress?",
+  "Do you have any other unexplained symptoms?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Neurological examination looking for entrainment, distractibility, and Hoover's sign",
+  "MRI of the brain",
+  "Electromyography of the affected lower limb during the movements"
+ ],
+ "served": [
+  "limb strength (MRC) examination",
+  "effect of voluntary action and anxiety",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "brain MRI with contrast",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. Neurological examination looking for entrainment, distractibility, and Hoover's sign",
+  "     limb strength (MRC) examination: normal",
+  "     effect of voluntary action and anxiety: the movements were evident when the patient became DISTRACTED",
+  "2. MRI of the brain",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     brain MRI with contrast: normal basal ganglia, no focal lesion",
+  "3. Electromyography of the affected lower limb during the movements",
+  "     needle electromyography: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological disorder (functional movement disorder) of the right lower limb\n\nDifferential:\n1. Early hemifocal dystonia\n2. Focal task-specific tremor\n3. Subtle hemichorea from non-structural metabolic or autoimmune cause",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Neurological examination looking for entrainment, distractibility, and Hoover's sign\n2. MRI of the brain\n3. Electromyography of the affected lower limb during the movements",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional neurological disorder (functional movement disorder) of the right lower limb",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 403,
+   "completion_tokens": 2385,
+   "total_tokens": 2788,
+   "cost": 0.0006978776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006978776,
+    "upstream_inference_prompt_cost": 3.00776e-05,
+    "upstream_inference_completions_cost": 0.0006678
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2321,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 697,
+   "completion_tokens": 580,
+   "total_tokens": 1277,
+   "cost": 0.0002072952,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002072952,
+    "upstream_inference_prompt_cost": 4.48952e-05,
+    "upstream_inference_completions_cost": 0.0001624
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 538,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 943,
+   "completion_tokens": 512,
+   "total_tokens": 1455,
+   "cost": 0.000187572,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 640,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000187572,
+    "upstream_inference_prompt_cost": 4.4212e-05,
+    "upstream_inference_completions_cost": 0.00014336
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 453,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 524.0
+}

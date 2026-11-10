@@ -1,0 +1,146 @@
+{
+ "questions": [
+  "Is the ptosis on the same side as the impaired adduction?",
+  "Do you have double vision when looking to the opposite side?",
+  "Have you had a headache recently?",
+  "Do you have pain around or behind the eye?",
+  "Have you experienced any recent trauma to the head or face?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of hypertension?",
+  "Are your symptoms constant, or do they fluctuate throughout the day?",
+  "Do you have weakness in other muscles, such as difficulty climbing stairs or lifting arms?",
+  "Do you have drooping of the eyelid on the other side as well?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside examination of vertical eye movements (upgaze and downgaze) on the affected side",
+  "Bedside examination of convergence effort",
+  "Magnetic resonance imaging (MRI) of the brain with attention to the midbrain"
+ ],
+ "served": [
+  "vertical gaze and convergence",
+  "vertical gaze and convergence",
+  "MRI brain with gadolinium"
+ ],
+ "results": [
+  "1. Bedside examination of vertical eye movements (upgaze and downgaze) on the affected side",
+  "     vertical gaze and convergence: mild vertical limitation and mildly impaired convergence",
+  "2. Bedside examination of convergence effort",
+  "     vertical gaze and convergence: mild vertical limitation and mildly impaired convergence",
+  "3. Magnetic resonance imaging (MRI) of the brain with attention to the midbrain",
+  "     MRI brain with gadolinium: small dorsal paramedian midbrain infarct"
+ ],
+ "dx_raw": "DIAGNOSIS: One-and-a-half syndrome due to dorsal paramedian midbrain infarction\nAlternative 1: Internuclear ophthalmoplegia with partial third nerve palsy (pseudo-one-and-a-half)\nAlternative 2: Parinaud's syndrome",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination of vertical eye movements (upgaze and downgaze) on the affected side\n2. Bedside examination of convergence effort\n3. Magnetic resonance imaging (MRI) of the brain with attention to the midbrain",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "One-and-a-half syndrome due to dorsal paramedian midbrain infarction",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 180,
+   "completion_tokens": 148,
+   "total_tokens": 328,
+   "cost": 9.656e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.656e-05,
+    "upstream_inference_prompt_cost": 2.7e-05,
+    "upstream_inference_completions_cost": 6.956e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 671,
+   "completion_tokens": 49,
+   "total_tokens": 720,
+   "cost": 0.00012368,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00012368,
+    "upstream_inference_prompt_cost": 0.00010065,
+    "upstream_inference_completions_cost": 2.303e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 918,
+   "completion_tokens": 55,
+   "total_tokens": 973,
+   "cost": 9.4942e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.4942e-05,
+    "upstream_inference_prompt_cost": 6.9092e-05,
+    "upstream_inference_completions_cost": 2.585e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 20.2,
+ "video": "severe_3_oculomotor_palsy_PMC12745546.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 48.2
+}

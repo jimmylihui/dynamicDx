@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Are you currently in pain?",
+  "Is the pain located in your head or face?",
+  "Is the pain on only one side?",
+  "Does bright light make the pain or your eyes worse?",
+  "Can you voluntarily open your eyes all the way?",
+  "Are the facial movements involuntary?",
+  "Have you had similar episodes in the past?",
+  "Do you have a history of severe headaches, like migraines or cluster headaches?",
+  "Do you have a history of movement disorders, such as facial tics or dystonia?",
+  "Are you currently feeling nauseous?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "distribution of the dystonia (focal, segmental, generalized)",
+  "dystonia rating scale (BFM / OMDRS)",
+  "botulinum toxin trial"
+ ],
+ "results": [
+  "1. distribution of the dystonia (focal, segmental, generalized): SEGMENTAL - eyelids plus perioral and jaw muscles, not isolated blepharospasm",
+  "2. dystonia rating scale (BFM / OMDRS): gingival exposure on maximal involuntary smile >4 mm (severe), reduced to 1 mm after treatment",
+  "3. botulinum toxin trial: marked improvement in facial spasms within one week; nocturnal headaches resolved and facial asymmetry corrected"
+ ],
+ "dx_raw": "DIAGNOSIS: Meige syndrome (idiopathic segmental cranial dystonia)\n\n1. Tardive oromandibular dystonia with blepharospasm (often drug-induced, clinically identical presentation)\n2. Secondary segmental cranial dystonia (e.g., due to a structural brainstem or basal ganglia lesion)\n3. Hemifacial spasm (though typically strictly unilateral, it can occasionally present with bilateral or lower facial involvement)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Meige syndrome (idiopathic segmental cranial dystonia)",
+ "decisive_served": [
+  "distribution of the dystonia (focal, segmental, generalized)",
+  "dystonia rating scale (BFM / OMDRS)",
+  "botulinum toxin trial"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 4254,
+   "total_tokens": 24692,
+   "cost": 0.01119852,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01119852,
+    "upstream_inference_prompt_cost": 0.00609372,
+    "upstream_inference_completions_cost": 0.0051048
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4134,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 20922,
+   "completion_tokens": 2149,
+   "total_tokens": 23071,
+   "cost": 0.00395388,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20423,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00395388,
+    "upstream_inference_prompt_cost": 0.00137508,
+    "upstream_inference_completions_cost": 0.0025788
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2061,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.6,
+ "video": "mild_blepharospasm_idiopathic_PMC13049410.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 81.0
+}

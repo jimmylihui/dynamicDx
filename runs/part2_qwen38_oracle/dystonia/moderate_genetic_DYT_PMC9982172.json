@@ -1,0 +1,104 @@
+{
+ "questions": [
+  "Do you have difficulty opening your mouth?",
+  "Does moving your arms or neck make the pain worse?",
+  "Did this problem start after a fall or accident?",
+  "Are you currently taking any medications for muscle spasms?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "levodopa trial",
+  "speech assessment",
+  "dystonia gene panel"
+ ],
+ "results": [
+  "1. levodopa trial: no response - not dopa-responsive dystonia",
+  "2. speech assessment: spasmodic speech",
+  "3. dystonia gene panel: pathogenic THAP1 variant c.505C>T (p.Arg169*), heterozygous - DYT6"
+ ],
+ "dx_raw": "DIAGNOSIS: DYT6 dystonia (THAP1-related dystonia)\nDYT1 dystonia (TOR1A-related dystonia)\nCervical dystonia (idiopathic)\nOromandibular dystonia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "DYT6 dystonia (THAP1-related dystonia)",
+ "decisive_served": [
+  "levodopa trial",
+  "speech assessment",
+  "dystonia gene panel"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 52,
+   "total_tokens": 4875,
+   "cost": 0.00074789,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074789,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5110,
+   "completion_tokens": 52,
+   "total_tokens": 5162,
+   "cost": 0.00019062,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00019062,
+    "upstream_inference_prompt_cost": 0.00016618,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_genetic_DYT_PMC9982172.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 13.7
+}

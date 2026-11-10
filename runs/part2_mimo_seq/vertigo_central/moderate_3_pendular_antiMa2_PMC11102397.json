@@ -1,0 +1,170 @@
+{
+ "questions": [
+  "\"Do you feel unsteady or off-balance when you walk?\"",
+  "\"Have you been falling more frequently recently?\"",
+  "\"Do you have difficulty looking up or down, or have others noticed your eyes not moving properly?\"",
+  "\"Do your feet feel glued to the floor when you start to walk?\"",
+  "\"Do you tend to stumble or veer more to one side when walking?\"",
+  "\"Have you ever experienced numbness, tingling, or weakness that came and went?\"",
+  "\"Do you notice any drooping of your eyelids or double vision that gets worse as the day goes on?\"",
+  "\"Do you have difficulty swallowing food or liquids, especially dry foods like bread or meat?\"",
+  "\"Have you noticed feeling cold more often, constipation, or unexplained weight gain?\""
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "\"MRI brain with emphasis on midbrain and pons, looking for midbrain atrophy (hummingbird sign)\""
+ ],
+ "served": [],
+ "results": [
+  "R1 ASK \"Do you feel unsteady or off-balance when you walk?\" -> ['yes']",
+  "R2 ASK \"Have you been falling more frequently recently?\" -> ['no']",
+  "R3 ORDER \"MRI brain with emphasis on midbrain and pons, looking for midbrain atrophy (hummingbird sign)\" -> [[]]",
+  "R4 ASK \"Do you have difficulty looking up or down, or have others noticed your eyes not moving properly?\" -> ['no']",
+  "R5 ASK \"Do your feet feel glued to the floor when you start to walk?\" -> ['no']",
+  "R6 ASK \"Do you tend to stumble or veer more to one side when walking?\" -> ['no']",
+  "R7 ASK \"Have you ever experienced numbness, tingling, or weakness that came and went?\" -> ['no']",
+  "R8 ASK \"Do you notice any drooping of your eyelids or double vision that gets worse as the day goes on?\" -> ['no']",
+  "R9 ASK \"Do you have difficulty swallowing food or liquids, especially dry foods like bread or meat?\" -> ['no']",
+  "R10 ASK \"Have you noticed feeling cold more often, constipation, or unexplained weight gain?\" -> ['no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Progressive Supranuclear Palsy (PSP), Richardson syndrome subtype, due to tau protein neurodegeneration -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "\"Do you feel unsteady or off-balance when you walk?\""
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "\"Have you been falling more frequently recently?\""
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "\"MRI brain with emphasis on midbrain and pons, looking for midbrain atrophy (hummingbird sign)\""
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "\"Do you have difficulty looking up or down, or have others noticed your eyes not moving properly?\""
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "\"Do your feet feel glued to the floor when you start to walk?\""
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "\"Do you tend to stumble or veer more to one side when walking?\""
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "\"Have you ever experienced numbness, tingling, or weakness that came and went?\""
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "\"Do you notice any drooping of your eyelids or double vision that gets worse as the day goes on?\""
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "\"Do you have difficulty swallowing food or liquids, especially dry foods like bread or meat?\""
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "\"Have you noticed feeling cold more often, constipation, or unexplained weight gain?\""
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Progressive Supranuclear Palsy (PSP), Richardson syndrome subtype, due to tau protein neurodegeneration"
+  }
+ ],
+ "dx": "Progressive Supranuclear Palsy (PSP), Richardson syndrome subtype, due to tau protein neurodegeneration",
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy (PSP), Richardson syndrome subtype, due to tau protein neurodegeneration",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0047,
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 293.9
+}

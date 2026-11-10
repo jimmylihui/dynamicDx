@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Do you have a tremor in your hand or chin when at rest?",
+  "Are you currently taking, or have you recently taken, an antipsychotic or anti-nausea medication (such as haloperidol, risperidone, or metoclopramide)?",
+  "Do you have urinary incontinence or difficulty controlling your bladder?",
+  "Has your memory or thinking gotten worse recently?",
+  "Did your walking problems come on gradually over months or years?",
+  "Did your walking problems start suddenly or worsen in a stepwise fashion?",
+  "Have you had a stroke or transient ischemic attack in the past?",
+  "Do you act out your dreams at night (punching, kicking, or shouting while asleep)?",
+  "Have you noticed a loss of your sense of smell?",
+  "Have you fallen, or do you feel unsteady when turning?",
+  "Has one side of your body always been more affected than the other?",
+  "Have you been diagnosed with Parkinson's disease previously, and if so, does levodopa/carbidopa improve your symptoms?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI brain with detailed attention to small vessel disease, basal ganglia lacunar infarcts, midbrain morphology, and ventricular size",
+  "Formal levodopa challenge (carbidopa/levodopa up to 25/100 mg, with clinical assessment of gait and bradykinesia before and after dosing)"
+ ],
+ "served": [
+  "MRI brain"
+ ],
+ "results": [
+  "1. MRI brain with detailed attention to small vessel disease, basal ganglia lacunar infarcts, midbrain morphology, and ventricular size",
+  "     MRI brain: normal, no periventricular lesions",
+  "2. Formal levodopa challenge (carbidopa/levodopa up to 25/100 mg, with clinical assessment of gait and bradykinesia before and after dosing)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Vascular parkinsonism (lower-body parkinsonism from strategic small-vessel cerebrovascular disease, despite normal-appearing MRI)\n\nAlternatives:\n1. Idiopathic Parkinson's disease, postural-instability/gait-difficulty (PIGD) variant\n2. Normal pressure hydrocephalus\n3. Progressive supranuclear palsy (PSP-parkinsonism variant)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI brain with detailed attention to small vessel disease, basal ganglia lacunar infarcts, midbrain morphology, and ventricular size\n2. Formal levodopa challenge (carbidopa/levodopa up to 25/100 mg, with clinical assessment of gait and bradykinesia before and after dosing)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Vascular parkinsonism (lower-body parkinsonism from strategic small-vessel cerebrovascular disease, despite normal-appearing MRI)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 526,
+   "completion_tokens": 824,
+   "total_tokens": 1350,
+   "cost": 0.00111924,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00111924,
+    "upstream_inference_prompt_cost": 0.00013044,
+    "upstream_inference_completions_cost": 0.0009888
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 676,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1159,
+   "completion_tokens": 1586,
+   "total_tokens": 2745,
+   "cost": 0.00213138,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 498,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00213138,
+    "upstream_inference_prompt_cost": 0.00022818,
+    "upstream_inference_completions_cost": 0.0019032
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1789,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1405,
+   "completion_tokens": 1453,
+   "total_tokens": 2858,
+   "cost": 0.00189198,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1138,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00189198,
+    "upstream_inference_prompt_cost": 0.00014838,
+    "upstream_inference_completions_cost": 0.0017436
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1589,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.7,
+ "video": "functional_gait_scissoring_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 58.6
+}

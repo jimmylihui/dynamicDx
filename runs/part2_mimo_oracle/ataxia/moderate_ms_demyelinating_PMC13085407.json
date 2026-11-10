@@ -1,0 +1,106 @@
+{
+ "questions": [
+  "Can you suppress these movements for a short time if you try very hard?",
+  "Do you feel an urge or tension before the movement happens?",
+  "Did these movements start when you were a child?",
+  "Do you also make any involuntary sounds or noises?",
+  "Do these movements stop completely when you are asleep?",
+  "Do you feel any pain during these movements?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "serum lithium and drug levels",
+  "brain MRI",
+  "medication history"
+ ],
+ "results": [
+  "1. serum lithium and drug levels: serum lithium 4.07 mmol/L on admission; CSF lithium 2.45 mmol/L; later fell below 0.2 mmol/L",
+  "2. brain MRI: cerebellar atrophy at one year; serial imaging over five years shows progressive ISOLATED cerebellar atrophy with no supratentorial abnormality",
+  "3. medication history: no prior lithium use and no psychiatric indication - the exposure was accidental"
+ ],
+ "dx_raw": "DIAGNOSIS: Lithium Toxicity\n1. Wilson's Disease\n2. Spinocerebellar Ataxia\n3. Autoimmune Encephalitis",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Lithium Toxicity",
+ "decisive_served": [
+  "serum lithium and drug levels",
+  "brain MRI",
+  "medication history"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14783,
+   "completion_tokens": 2657,
+   "total_tokens": 17440,
+   "cost": 0.0027872376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0027872376,
+    "upstream_inference_prompt_cost": 0.0020432776,
+    "upstream_inference_completions_cost": 0.00074396
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2576,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15168,
+   "completion_tokens": 4784,
+   "total_tokens": 19952,
+   "cost": 0.001443456,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001443456,
+    "upstream_inference_prompt_cost": 0.000103936,
+    "upstream_inference_completions_cost": 0.00133952
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4745,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_ms_demyelinating_PMC13085407.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 86.3
+}

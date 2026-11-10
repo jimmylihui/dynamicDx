@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Is there pain in your abdominal or waist area?",
+  "Do you feel an itch in that region?",
+  "Have you noticed any rash or skin change there?",
+  "Does adjusting your shirt relieve the discomfort?",
+  "Is the discomfort worse when sitting than when standing?",
+  "Has this discomfort lasted more than a day?",
+  "Do you have a fever with this?",
+  "Have you taken medication for this discomfort?",
+  "Is the discomfort localized to one spot or spread out?",
+  "Does eating or drinking make the discomfort better or worse?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "trial of antithyroid treatment"
+ ],
+ "results": [
+  "1. blood glucose: normal",
+  "2. TSH, free T4 and free T3: T3 8.26 nmol/L (normal 0.92-2.79) and free T4 58.13 pmol/L (normal 11.50-22.70) with suppressed TSH",
+  "3. thyrotropin receptor antibodies (TRAb): positive - Graves' disease diagnosed in April 2021 and treated with methimazole 10 mg daily",
+  "4. trial of antithyroid treatment: radioiodine (131-I); the chorea resolved"
+ ],
+ "dx_raw": "DIAGNOSIS: Chorea secondary to Graves' disease\n\n1. Sydenham's chorea\n2. Drug-induced dyskinesia\n3. Wilson's disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Chorea secondary to Graves' disease",
+ "decisive_served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "trial of antithyroid treatment"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 549,
+   "total_tokens": 5604,
+   "cost": 0.0008350776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008350776,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00015372
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 422,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5579,
+   "completion_tokens": 4655,
+   "total_tokens": 10234,
+   "cost": 0.0013995576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013995576,
+    "upstream_inference_prompt_cost": 9.61576e-05,
+    "upstream_inference_completions_cost": 0.0013034
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4615,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "c_9815763.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 63.8
+}

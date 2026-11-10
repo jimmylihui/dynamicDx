@@ -1,0 +1,161 @@
+{
+ "questions": [
+  "Are you under 40 years old?",
+  "Did your symptoms start suddenly within the last few days?",
+  "Do you currently take or have you recently taken antipsychotic medication?",
+  "Do you have a fever right now?",
+  "Do you have a resting tremor?",
+  "Have you experienced severe psychiatric symptoms like hallucinations?",
+  "Has a doctor ever told you that you have liver disease?",
+  "Do your symptoms get worse as the day progresses?",
+  "Do you have a family history of a similar neurological condition?",
+  "Are you experiencing difficulty swallowing?",
+  "Have you noticed any problems with your eye movements?",
+  "Have you experienced a rapid decline in your memory?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "yes",
+  "12": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Brain MRI focused on the midbird",
+  "Formal vertical gaze assessment (vertical saccades and pursuit)",
+  "Levodopa trial",
+  "Serum anti-GAD antibodies",
+  "Serum TSH"
+ ],
+ "served": [
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "vertical saccades and gaze range (up and down)",
+  "smooth pursuit and saccade velocity",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. Brain MRI focused on the midbird",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): mild hummingbird sign with cerebral atrophy",
+  "2. Formal vertical gaze assessment (vertical saccades and pursuit)",
+  "     vertical saccades and gaze range (up and down): both upgaze and downgaze RESTRICTED, vertical worse than horizontal; horizontal gaze preserved",
+  "     smooth pursuit and saccade velocity: normal",
+  "3. Levodopa trial",
+  "     not performed / not available",
+  "4. Serum anti-GAD antibodies",
+  "     not performed / not available",
+  "5. Serum TSH",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive supranuclear palsy (Richardson phenotype)\n\nPSP, 4-repeat tauopathy\n\n1. Multiple system atrophy\n2. Corticobasal degeneration\n3. Niemann-Pick disease type C",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Brain MRI focused on the midbird\n2. Formal vertical gaze assessment (vertical saccades and pursuit)\n3. Levodopa trial\n4. Serum anti-GAD antibodies\n5. Serum TSH",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Progressive supranuclear palsy (Richardson phenotype)",
+ "decisive_served": [
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "vertical saccades and gaze range (up and down)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 196,
+   "completion_tokens": 3785,
+   "total_tokens": 3981,
+   "cost": 0.00108724,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00108724,
+    "upstream_inference_prompt_cost": 2.744e-05,
+    "upstream_inference_completions_cost": 0.0010598
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3635,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 922,
+   "completion_tokens": 935,
+   "total_tokens": 1857,
+   "cost": 0.0003645376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003645376,
+    "upstream_inference_prompt_cost": 0.0001027376,
+    "upstream_inference_completions_cost": 0.0002618
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 888,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1203,
+   "completion_tokens": 715,
+   "total_tokens": 1918,
+   "cost": 0.0002456888,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 896,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002456888,
+    "upstream_inference_prompt_cost": 4.54888e-05,
+    "upstream_inference_completions_cost": 0.0002002
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 660,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "psp_richardson_PMC11082598.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 98.3
+}

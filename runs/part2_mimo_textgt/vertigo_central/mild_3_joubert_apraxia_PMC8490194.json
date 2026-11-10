@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Did this problem start suddenly?",
+  "Is it progressive?",
+  "Do you have unsteady walking?",
+  "Are you a child?",
+  "Is there a family history of similar conditions?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI brain",
+  "Genetic testing for spinocerebellar ataxias (SCA panel)",
+  "Serum vitamin E level",
+  "Alpha-fetoprotein level",
+  "Nerve conduction studies and electromyography"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "serum vitamin E",
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. MRI brain",
+  "     MRI brain with gadolinium: cerebellar vermis hypoplasia with molar tooth sign; no abnormal enhancement",
+  "2. Genetic testing for spinocerebellar ataxias (SCA panel)",
+  "     not performed / not available",
+  "3. Serum vitamin E level",
+  "     serum vitamin E: normal",
+  "4. Alpha-fetoprotein level",
+  "     not performed / not available",
+  "5. Nerve conduction studies and electromyography",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Joubert syndrome — autosomal recessive congenital ciliopathy with cerebellar vermis hypoplasia and brainstem malformation\n\nAlternative considerations:\n1. Joubert syndrome related disorder (e.g., COACH syndrome, Dekaban-Arima syndrome)\n2. Other autosomal recessive cerebellar ataxia with oculomotor apraxia\n3. Congenital ocular motor apraxia (Cogan type) with incidental vermis hypoplasia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "The clinical presentation suggests a cerebellar/brainstem disorder causing horizontal gaze palsy with head thrusts (saccadic initiation failure) and gait ataxia. The most important investigation is brain imaging to evaluate the cerebellum and brainstem.\n\n1. MRI brain\n2. Genetic testing for spinocerebellar ataxias (SCA panel)\n3. Serum vitamin E level\n4. Alpha-fetoprotein level\n5. Nerve conduction studies and electromyography",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Joubert syndrome — autosomal recessive congenital ciliopathy with cerebellar vermis hypoplasia and brainstem malformation",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 180,
+   "completion_tokens": 7467,
+   "total_tokens": 7647,
+   "cost": 0.00211596,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00211596,
+    "upstream_inference_prompt_cost": 2.52e-05,
+    "upstream_inference_completions_cost": 0.00209076
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7424,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 434,
+   "completion_tokens": 913,
+   "total_tokens": 1347,
+   "cost": 0.0002988384,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002988384,
+    "upstream_inference_prompt_cost": 4.31984e-05,
+    "upstream_inference_completions_cost": 0.00025564
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 809,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 969,
+   "completion_tokens": 706,
+   "total_tokens": 1675,
+   "cost": 0.0003069976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003069976,
+    "upstream_inference_prompt_cost": 0.0001093176,
+    "upstream_inference_completions_cost": 0.00019768
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 595,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_3_joubert_apraxia_PMC8490194.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 850.9
+}

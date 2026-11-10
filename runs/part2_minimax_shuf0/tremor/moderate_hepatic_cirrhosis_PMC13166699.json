@@ -1,0 +1,164 @@
+{
+ "questions": [
+  "Are you currently experiencing chest pain?",
+  "Does the pain radiate to your left arm or jaw?",
+  "Is the pain sharp and worse with deep breathing?",
+  "Does the pain radiate to your back?",
+  "Is the pain a tearing or ripping sensation?",
+  "Are you currently experiencing shortness of breath?",
+  "Do you have a history of heart failure?",
+  "Do you have a history of blood clots?",
+  "Do you have swelling in your legs?",
+  "Have you had a recent fever or cough?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Liver function tests",
+  "Basic metabolic panel",
+  "Arterial blood gas",
+  "Prothrombin time and INR",
+  "Serum ammonia level",
+  "Non-contrast CT scan of the head"
+ ],
+ "served": [
+  "liver function tests",
+  "liver function and albumin/globulin",
+  "serum electrolytes, urea and creatinine",
+  "prothrombin time",
+  "ammonia",
+  "CT head"
+ ],
+ "results": [
+  "1. Liver function tests",
+  "     liver function tests: mildly raised transaminases with reduced albumin",
+  "     liver function and albumin/globulin: albumin 35.1 g/L (ref 35-52), globulin 30.8 g/L RAISED (ref 15-30), A/G ratio 1.14 LOW (ref 1.2-2.4)",
+  "2. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "3. Arterial blood gas",
+  "     not performed / not available",
+  "4. Prothrombin time and INR",
+  "     prothrombin time: prolonged at 14.4 seconds",
+  "5. Serum ammonia level",
+  "     ammonia: raised, and it fell with treatment alongside clinical improvement",
+  "6. Non-contrast CT scan of the head",
+  "     CT head: basal ganglia hyperdensity"
+ ],
+ "dx_raw": "DIAGNOSIS: Hepatic encephalopathy due to cirrhosis (likely alcohol-related) with manganese deposition in the basal ganglia\n\nAlternatives to consider:\n1. Wilson's disease (can cause basal ganglia changes and hepatic dysfunction, but typically in younger patients)\n2. Non-alcoholic steatohepatitis (NASH) cirrhosis\n3. Autoimmune hepatitis with cirrhosis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Liver function tests\n2. Basic metabolic panel\n3. Arterial blood gas\n4. Prothrombin time and INR\n5. Serum ammonia level\n6. Non-contrast CT scan of the head",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hepatic encephalopathy due to cirrhosis (likely alcohol-related) with manganese deposition in the basal ganglia",
+ "decisive_served": [
+  "liver function and albumin/globulin"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 5275,
+   "total_tokens": 25713,
+   "cost": 0.01242372,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01242372,
+    "upstream_inference_prompt_cost": 0.00609372,
+    "upstream_inference_completions_cost": 0.00633
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5167,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 20849,
+   "completion_tokens": 2856,
+   "total_tokens": 23705,
+   "cost": 0.00478038,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20423,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00478038,
+    "upstream_inference_prompt_cost": 0.00135318,
+    "upstream_inference_completions_cost": 0.0034272
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2812,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 21161,
+   "completion_tokens": 538,
+   "total_tokens": 21699,
+   "cost": 0.00199374,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20834,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00199374,
+    "upstream_inference_prompt_cost": 0.00134814,
+    "upstream_inference_completions_cost": 0.0006456
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 464,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.4,
+ "video": "moderate_hepatic_cirrhosis_PMC13166699.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 85.7
+}

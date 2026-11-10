@@ -1,0 +1,190 @@
+{
+ "questions": [
+  "Have you had these movements since birth or early childhood?",
+  "Is there a family history of similar movement disorders or early neurological disease?",
+  "Are you currently taking any medications, particularly antipsychotics or anti-nausea drugs?",
+  "Have you noticed changes in your memory, thinking, or personality?",
+  "Were you treated for severe jaundice as a newborn?",
+  "Do you have any history of liver problems or jaundice?",
+  "Did the movements begin suddenly, over a matter of hours or days?",
+  "Do the movements completely disappear when you are asleep?",
+  "Do you have any difficulty with speech or swallowing?",
+  "Have you had a recent infection such as a sore throat or rheumatic fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI of the brain with thin cuts through the basal ganglia",
+  "Anti-streptolysin O (ASO) titre and anti-DNase B antibodies",
+  "Serum ceruloplasmin",
+  "24-hour urinary copper excretion",
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "Throat swab for group A streptococcus",
+  "ANA and anti-double-stranded DNA antibodies",
+  "Anti-cardiolipin antibodies and lupus anticoagulant",
+  "Full blood count, ESR, CRP, electrolytes, liver function tests, calcium, magnesium, glucose, TSH",
+  "Anti-basal ganglia antibodies"
+ ],
+ "served": [
+  "brain MRI with contrast",
+  "copper / caeruloplasmin",
+  "24-hour urinary copper",
+  "antinuclear antibodies and anti-dsDNA",
+  "antiphospholipid antibodies",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "full blood count",
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "inflammatory markers (ESR, CRP)"
+ ],
+ "results": [
+  "1. MRI of the brain with thin cuts through the basal ganglia",
+  "     brain MRI with contrast: HYPOSIGNAL involving the corpus striatum bilaterally, extending to the medial cerebral crus on T2 and FLAIR, with mild T1 HYPERSIGNAL in the basal nuclei",
+  "2. Anti-streptolysin O (ASO) titre and anti-DNase B antibodies",
+  "     not performed / not available",
+  "3. Serum ceruloplasmin",
+  "     copper / caeruloplasmin: normal",
+  "4. 24-hour urinary copper excretion",
+  "     24-hour urinary copper: normal",
+  "5. Slit-lamp examination for Kayser-Fleischer rings",
+  "     not performed / not available",
+  "6. Throat swab for group A streptococcus",
+  "     not performed / not available",
+  "7. ANA and anti-double-stranded DNA antibodies",
+  "     antinuclear antibodies and anti-dsDNA: normal",
+  "8. Anti-cardiolipin antibodies and lupus anticoagulant",
+  "     antiphospholipid antibodies: negative",
+  "9. Full blood count, ESR, CRP, electrolytes, liver function tests, calcium, magnesium, glucose, TSH",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     full blood count: normal",
+  "     blood glucose: 799 mg/dL (normal 74-106)",
+  "     TSH, free T4 and free T3: normal",
+  "     inflammatory markers (ESR, CRP): elevated, with leukocyturia",
+  "10. Anti-basal ganglia antibodies",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Diabetic striatopathy (non-ketotic hyperglycemia-induced chorea/ballism / chorea–hyperglycaemia–basal ganglia syndrome) due to severe uncontrolled diabetes mellitus, likely precipitated by urinary tract infection.\n\n1. Sydenham chorea (post-streptococcal) – recent pharyngitis reported; ASO titres and throat swab could not be performed, and bilateral striatal MRI signal change would be atypical.\n2. Japanese encephalitis or other viral encephalitis with bilateral basal ganglia involvement – less consistent with the T1-hyperintense, T2-hypointense pattern and absence of encephalopathy.\n3. Subacute haemorrhage or cavernous malformation in the striatum – would usually be unilateral and show expected blood-product signal; worth revisiting imaging if presentation evolves.",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI of the brain with thin cuts through the basal ganglia\n2. Anti-streptolysin O (ASO) titre and anti-DNase B antibodies\n3. Serum ceruloplasmin\n4. 24-hour urinary copper excretion\n5. Slit-lamp examination for Kayser-Fleischer rings\n6. ECG\n7. Throat swab for group A streptococcus\n8. ANA and anti-double-stranded DNA antibodies\n9. Anti-cardiolipin antibodies and lupus anticoagulant\n10. Full blood count, ESR, CRP, electrolytes, liver function tests, calcium, magnesium, glucose, TSH\n11. Anti-basal ganglia antibodies",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Diabetic striatopathy (non-ketotic hyperglycemia-induced chorea/ballism / chorea–hyperglycaemia–basal ganglia syndrome) due to severe uncontrolled diabetes mellitus, likely precipitated by urinary tract infection.",
+ "decisive_served": [
+  "brain MRI with contrast",
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 325,
+   "completion_tokens": 2832,
+   "total_tokens": 3157,
+   "cost": 0.00346854,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00346854,
+    "upstream_inference_prompt_cost": 7.014e-05,
+    "upstream_inference_completions_cost": 0.0033984
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3093,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 812,
+   "completion_tokens": 921,
+   "total_tokens": 1733,
+   "cost": 0.00129072,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00129072,
+    "upstream_inference_prompt_cost": 0.00018552,
+    "upstream_inference_completions_cost": 0.0011052
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 800,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1375,
+   "completion_tokens": 1320,
+   "total_tokens": 2695,
+   "cost": 0.00196914,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00196914,
+    "upstream_inference_prompt_cost": 0.00038514,
+    "upstream_inference_completions_cost": 0.001584
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1310,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 89.7
+}

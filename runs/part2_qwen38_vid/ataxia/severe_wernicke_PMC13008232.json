@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Do you have a history of stroke, multiple sclerosis, or Parkinson's disease?",
+  "Have you had an injury or surgery to your right leg in the past?",
+  "Does your right leg feel weak when you try to lift it?",
+  "Is your right foot numb or tingly?",
+  "Did this difficulty with walking start suddenly (e.g., overnight or after an event)?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's gait from behind to assess for pelvic drop or Trendelenburg sign",
+  "Manual muscle testing of right hip abduction (gluteus medius) and knee extension (quadriceps)",
+  "Palpation of the right lateral thigh and hip for tenderness over the greater trochanter and tensor fasciae latae",
+  "Magnetic resonance imaging (MRI) of the lumbar spine"
+ ],
+ "served": [
+  "gait examination",
+  "limb strength (MRC) examination",
+  "MRI cervical and thoracic spine"
+ ],
+ "results": [
+  "1. Observe the patient's gait from behind to assess for pelvic drop or Trendelenburg sign",
+  "     gait examination: wide-based, unsteady gait",
+  "2. Manual muscle testing of right hip abduction (gluteus medius) and knee extension (quadriceps)",
+  "     limb strength (MRC) examination: normal",
+  "3. Palpation of the right lateral thigh and hip for tenderness over the greater trochanter and tensor fasciae latae",
+  "     not performed / not available",
+  "4. Magnetic resonance imaging (MRI) of the lumbar spine",
+  "     MRI cervical and thoracic spine: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Cerebellar ataxia (likely degenerative or idiopathic)\nALTERNATIVE: Normal pressure hydrocephalus\nALTERNATIVE: Sensory ataxia due to peripheral neuropathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient's gait from behind to assess for pelvic drop or Trendelenburg sign\n2. Manual muscle testing of right hip abduction (gluteus medius) and knee extension (quadriceps)\n3. Palpation of the right lateral thigh and hip for tenderness over the greater trochanter and tensor fasciae latae\n4. Magnetic resonance imaging (MRI) of the lumbar spine",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Cerebellar ataxia (likely degenerative or idiopathic)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14551,
+   "completion_tokens": 85,
+   "total_tokens": 14636,
+   "cost": 0.0022226,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0022226,
+    "upstream_inference_prompt_cost": 0.00218265,
+    "upstream_inference_completions_cost": 3.995e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 14894,
+   "completion_tokens": 89,
+   "total_tokens": 14983,
+   "cost": 0.000372058,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14208,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000372058,
+    "upstream_inference_prompt_cost": 0.000330228,
+    "upstream_inference_completions_cost": 4.183e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 15214,
+   "completion_tokens": 47,
+   "total_tokens": 15261,
+   "cost": 0.00033171,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00033171,
+    "upstream_inference_prompt_cost": 0.00030962,
+    "upstream_inference_completions_cost": 2.209e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 36.9
+}

@@ -1,0 +1,127 @@
+{
+ "questions": [
+  "Do you have weakness in your legs that makes it difficult to lift the front of either foot while walking?",
+  "Did this weakness begin suddenly or worsen noticeably over days to weeks?",
+  "Does the weakness become worse with activity and improve after rest?",
+  "Have you had drooping of either eyelid?",
+  "Have you experienced double vision?",
+  "Do you have difficulty speaking, chewing, or swallowing, especially later in the day?",
+  "Have you had shortness of breath when lying down or during routine activity?",
+  "Do you have numbness or tingling in your legs or feet?",
+  "Do you have back pain that radiates into either leg?",
+  "Have you had difficulty controlling your bladder or bowels?",
+  "Have you experienced episodes of vision loss, eye pain, or blurred vision?",
+  "Have you had similar neurological symptoms in the past that later improved?",
+  "Do you have weakness or clumsiness in your arms or hands?",
+  "Have you recently had an infection, diarrhea, or a vaccination before these symptoms began?",
+  "Do you have diabetes, thyroid disease, or any autoimmune disease?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "nerve conduction studies",
+  "whole exome sequencing",
+  "MRI brain with contrast",
+  "MRI spine"
+ ],
+ "results": [
+  "1. nerve conduction studies: demyelinating sensorimotor neuropathy",
+  "2. whole exome sequencing: heterozygous likely pathogenic FBLN5 c.1117C>T (p.Arg373Cys) - CMT1H",
+  "3. MRI brain with contrast: bilateral contrast enhancement and THICKENING of cranial nerves III through XII",
+  "4. MRI spine: symmetrical thickening of the lumbosacral nerve roots"
+ ],
+ "dx_raw": "DIAGNOSIS: FBLN5-related Charcot–Marie–Tooth disease type 1H (CMT1H), caused by the heterozygous pathogenic FBLN5 c.1117C>T (p.Arg373Cys) variant, with hypertrophic demyelinating cranial and lumbosacral polyradiculoneuropathy.\n\nCIDP or another immune-mediated hypertrophic polyradiculoneuropathy\n\nCMT1A due to PMP22 duplication\n\nCMTX1 due to GJB1 mutation",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "FBLN5-related Charcot–Marie–Tooth disease type 1H (CMT1H), caused by the heterozygous pathogenic FBLN5 c.1117C>T (p.Arg373Cys) variant, with hypertrophic demyelinating cranial and lumbosacral polyradiculoneuropathy.",
+ "decisive_served": [
+  "nerve conduction studies",
+  "whole exome sequencing",
+  "MRI brain with contrast",
+  "MRI spine"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 662,
+   "total_tokens": 6338,
+   "cost": 0.00045423,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00045423,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0003972
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 409,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6419,
+   "completion_tokens": 358,
+   "total_tokens": 6777,
+   "cost": 0.000364705,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 743,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000364705,
+    "upstream_inference_prompt_cost": 0.000149905,
+    "upstream_inference_completions_cost": 0.0002148
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 239,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_gca_ophthalmoplegia_PMC12960836.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 17.8
+}

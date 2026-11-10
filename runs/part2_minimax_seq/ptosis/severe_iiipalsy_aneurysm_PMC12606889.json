@@ -1,0 +1,259 @@
+{
+ "questions": [
+  "Has the right eyelid drooping and double vision come on suddenly, over hours to days?",
+  "Are you diabetic, or do you have high blood pressure?",
+  "Did the onset of these symptoms include severe pain around the eye or head?",
+  "Have you noticed any other neurological symptoms, such as weakness, numbness, or difficulty speaking?",
+  "Has the right pupil always been smaller than the left, or have you only recently noticed?",
+  "Do you sweat normally on both sides of your face, or is the right side of your face drier?",
+  "Have you ever had any surgery or trauma to your neck, chest, or upper spine on the right side?",
+  "Do you ever get flushing or redness that is more pronounced on the left side of your face than the right?",
+  "Are you a smoker, or have you ever smoked?",
+  "Do you suffer from migraines or cluster headaches?",
+  "Have you recently had an ear infection, ear pain, or any change in your hearing?",
+  "Have you noticed any hoarseness or change in your voice, or difficulty swallowing?",
+  "Has the drooping of your right eyelid and the double vision gradually worsened over weeks, months, or years?",
+  "Do you have any numbness, tingling, or loss of sensation on the right side of your face or forehead?",
+  "Have you noticed any swelling, bulging, or change in the appearance of your right eye?",
+  "Does the double vision become significantly worse toward the end of the day or when you are tired?",
+  "Have you noticed any change in your vision or blurriness specifically in the right eye recently?",
+  "Is the bulging of the right eye something that has been developing over a long time, or did it happen quickly?",
+  "Have you ever been diagnosed with any thyroid problems, such as an overactive or underactive thyroid?",
+  "Have you ever had any cancer, or been told you have a tumor anywhere in your body?",
+  "Have you had any recent viral illness, vaccination, or febrile illness before these symptoms started?",
+  "Have you ever had any neurological condition such as multiple sclerosis, myasthenia gravis, or Guillain-Barré syndrome?",
+  "Is the right pupil smaller than the left pupil in dim lighting?",
+  "Is the right pupil larger than the left pupil in dim lighting?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "yes",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Examine the patient for relative afferent pupillary defect (RAPD) in both eyes",
+  "Measure visual acuity in both eyes",
+  "Examine the optic disc appearance in both eyes",
+  "Assess ocular motility in all cardinal positions of gaze",
+  "Perform a cocaine 4% eyedrops test to differentiate preganglionic from postganglionic Horner's syndrome",
+  "Perform a hydroxyamphetamine 1% eyedrops test to differentiate preganglionic from postganglionic Horner's syndrome",
+  "MRI brain with contrast and thin slices through the brainstem",
+  "MR angiography of the head and neck to assess for aneurysm or dissection"
+ ],
+ "served": [
+  "pupil examination (size, light reaction)",
+  "visual acuity and colour vision",
+  "fundoscopy",
+  "ocular motility examination",
+  "MRI brain with contrast",
+  "CT / MR angiography (circle of Willis)"
+ ],
+ "results": [
+  "R1 ASK Has the right eyelid drooping and double vision come on suddenly, over hours to days?; Are you diabetic, or do you have high blood pressure?; Did the onset of these symptoms include severe pain around the eye or head?; Have you noticed any other neurological symptoms, such as weakness, numbness, or difficulty speaking? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Has the right pupil always been smaller than the left, or have you only recently noticed?; Do you sweat normally on both sides of your face, or is the right side of your face drier?; Have you ever had any surgery or trauma to your neck, chest, or upper spine on the right side?; Do you ever get flushing or redness that is more pronounced on the left side of your face than the right? -> ['no', 'no', 'no', 'no']",
+  "R3 ASK Are you a smoker, or have you ever smoked?; Do you suffer from migraines or cluster headaches?; Have you recently had an ear infection, ear pain, or any change in your hearing?; Have you noticed any hoarseness or change in your voice, or difficulty swallowing? -> ['no', 'no', 'no', 'no']",
+  "R4 ASK Has the drooping of your right eyelid and the double vision gradually worsened over weeks, months, or years?; Do you have any numbness, tingling, or loss of sensation on the right side of your face or forehead?; Have you noticed any swelling, bulging, or change in the appearance of your right eye?; Does the double vision become significantly worse toward the end of the day or when you are tired? -> ['no', 'no', 'yes', 'no']",
+  "R5 ASK Have you noticed any change in your vision or blurriness specifically in the right eye recently?; Is the bulging of the right eye something that has been developing over a long time, or did it happen quickly?; Have you ever been diagnosed with any thyroid problems, such as an overactive or underactive thyroid?; Have you ever had any cancer, or been told you have a tumor anywhere in your body? -> ['no', 'no', 'no', 'no']",
+  "R6 ORDER Examine the patient for relative afferent pupillary defect (RAPD) in both eyes; Measure visual acuity in both eyes; Examine the optic disc appearance in both eyes; Assess ocular motility in all cardinal positions of gaze -> [['pupil examination (size, light reaction)'], ['visual acuity and colour vision'], ['fundoscopy'], ['ocular motility examination']]",
+  "R7 ASK Have you had any recent viral illness, vaccination, or febrile illness before these symptoms started?; Have you ever had any neurological condition such as multiple sclerosis, myasthenia gravis, or Guillain-Barré syndrome?; Is the right pupil smaller than the left pupil in dim lighting?; Is the right pupil larger than the left pupil in dim lighting? -> ['no', 'no', 'no', 'no']",
+  "R8 ORDER Perform a cocaine 4% eyedrops test to differentiate preganglionic from postganglionic Horner's syndrome; Perform a hydroxyamphetamine 1% eyedrops test to differentiate preganglionic from postganglionic Horner's syndrome; MRI brain with contrast and thin slices through the brainstem; MR angiography of the head and neck to assess for aneurysm or dissection -> [['pupil examination (size, light reaction)'], ['pupil examination (size, light reaction)'], ['MRI brain with contrast'], ['CT / MR angiography (circle of Willis)']]",
+  "R9 DIAGNOSIS Right third nerve palsy with pupillary involvement (mid-dilated, unreactive pupil with light-near dissociation) — cause remains undetermined on the available imaging, but the findings are most consistent with a pupil-involving compressive/infiltrative lesion of the right oculomotor nerve not seen on standard MRI/MRA, with ophthalmoplegic migraine and ischaemic mononeuropathy being less likely given the pupil findings. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Has the right eyelid drooping and double vision come on suddenly, over hours to days?",
+    "Are you diabetic, or do you have high blood pressure?",
+    "Did the onset of these symptoms include severe pain around the eye or head?",
+    "Have you noticed any other neurological symptoms, such as weakness, numbness, or difficulty speaking?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Has the right pupil always been smaller than the left, or have you only recently noticed?",
+    "Do you sweat normally on both sides of your face, or is the right side of your face drier?",
+    "Have you ever had any surgery or trauma to your neck, chest, or upper spine on the right side?",
+    "Do you ever get flushing or redness that is more pronounced on the left side of your face than the right?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Are you a smoker, or have you ever smoked?",
+    "Do you suffer from migraines or cluster headaches?",
+    "Have you recently had an ear infection, ear pain, or any change in your hearing?",
+    "Have you noticed any hoarseness or change in your voice, or difficulty swallowing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Has the drooping of your right eyelid and the double vision gradually worsened over weeks, months, or years?",
+    "Do you have any numbness, tingling, or loss of sensation on the right side of your face or forehead?",
+    "Have you noticed any swelling, bulging, or change in the appearance of your right eye?",
+    "Does the double vision become significantly worse toward the end of the day or when you are tired?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any change in your vision or blurriness specifically in the right eye recently?",
+    "Is the bulging of the right eye something that has been developing over a long time, or did it happen quickly?",
+    "Have you ever been diagnosed with any thyroid problems, such as an overactive or underactive thyroid?",
+    "Have you ever had any cancer, or been told you have a tumor anywhere in your body?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Examine the patient for relative afferent pupillary defect (RAPD) in both eyes",
+    "Measure visual acuity in both eyes",
+    "Examine the optic disc appearance in both eyes",
+    "Assess ocular motility in all cardinal positions of gaze"
+   ],
+   "result": [
+    [
+     "pupil examination (size, light reaction)"
+    ],
+    [
+     "visual acuity and colour vision"
+    ],
+    [
+     "fundoscopy"
+    ],
+    [
+     "ocular motility examination"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Have you had any recent viral illness, vaccination, or febrile illness before these symptoms started?",
+    "Have you ever had any neurological condition such as multiple sclerosis, myasthenia gravis, or Guillain-Barré syndrome?",
+    "Is the right pupil smaller than the left pupil in dim lighting?",
+    "Is the right pupil larger than the left pupil in dim lighting?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Perform a cocaine 4% eyedrops test to differentiate preganglionic from postganglionic Horner's syndrome",
+    "Perform a hydroxyamphetamine 1% eyedrops test to differentiate preganglionic from postganglionic Horner's syndrome",
+    "MRI brain with contrast and thin slices through the brainstem",
+    "MR angiography of the head and neck to assess for aneurysm or dissection"
+   ],
+   "result": [
+    [
+     "pupil examination (size, light reaction)"
+    ],
+    [
+     "pupil examination (size, light reaction)"
+    ],
+    [
+     "MRI brain with contrast"
+    ],
+    [
+     "CT / MR angiography (circle of Willis)"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Right third nerve palsy with pupillary involvement (mid-dilated, unreactive pupil with light-near dissociation) — cause remains undetermined on the available imaging, but the findings are most consistent with a pupil-involving compressive/infiltrative lesion of the right oculomotor nerve not seen on standard MRI/MRA, with ophthalmoplegic migraine and ischaemic mononeuropathy being less likely given the pupil findings."
+  }
+ ],
+ "dx": "Right third nerve palsy with pupillary involvement (mid-dilated, unreactive pupil with light-near dissociation) — cause remains undetermined on the available imaging, but the findings are most consistent with a pupil-involving compressive/infiltrative lesion of the right oculomotor nerve not seen on standard MRI/MRA, with ophthalmoplegic migraine and ischaemic mononeuropathy being less likely given the pupil findings.",
+ "dx_raw": "DIAGNOSIS: Right third nerve palsy with pupillary involvement (mid-dilated, unreactive pupil with light-near dissociation) — cause remains undetermined on the available imaging, but the findings are most consistent with a pupil-involving compressive/infiltrative lesion of the right oculomotor nerve not seen on standard MRI/MRA, with ophthalmoplegic migraine and ischaemic mononeuropathy being less likely given the pupil findings.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "CT / MR angiography (circle of Willis)",
+  "pupil examination (size, light reaction)"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0123,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_iiipalsy_aneurysm_PMC12606889.mp4",
+ "line": "ptosis",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 115.3
+}

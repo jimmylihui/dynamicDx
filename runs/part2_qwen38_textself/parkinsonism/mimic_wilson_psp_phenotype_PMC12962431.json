@@ -1,0 +1,153 @@
+{
+ "questions": [
+  "Did this episode begin suddenly?",
+  "Are you currently taking any medications for nausea, vomiting, or psychiatric conditions?",
+  "Have you recently started a new medication or changed the dose of an existing one?",
+  "Do you have a history of seizures?",
+  "Are you experiencing pain in your neck or back?",
+  "Do you have a fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside examination for oculogyric crisis precipitants (e.g., eye movement testing, checking for dystonic posturing elsewhere)",
+  "Serum calcium, magnesium, and phosphate levels",
+  "Urine toxicology screen",
+  "MRI of the brain with attention to basal ganglia"
+ ],
+ "served": [
+  "video-oculography / eye-movement recording",
+  "dystonic posturing of the hand or foot",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "serum calcium, magnesium and phosphate",
+  "drug and toxin screen",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)"
+ ],
+ "results": [
+  "1. Bedside examination for oculogyric crisis precipitants (e.g., eye movement testing, checking for dystonic posturing elsewhere)",
+  "     video-oculography / eye-movement recording: vertical downgaze palsy with broken smooth pursuit and slow hypometric vertical saccades",
+  "     dystonic posturing of the hand or foot: absent",
+  "     medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium): no causative drug",
+  "2. Serum calcium, magnesium, and phosphate levels",
+  "     serum calcium, magnesium and phosphate: normal",
+  "3. Urine toxicology screen",
+  "     drug and toxin screen: negative",
+  "4. MRI of the brain with attention to basal ganglia",
+  "     MRI brain with gadolinium: predominant midbrain atrophy with midbrain-to-pons ratio 0.20 and mild cerebral and cerebellar atrophy; no abnormal enhancement",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: bilateral basal ganglia copper deposition",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy (PSP)\nWilson's Disease\nCorticobasal Degeneration",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination for oculogyric crisis precipitants (e.g., eye movement testing, checking for dystonic posturing elsewhere)\n2. Serum calcium, magnesium, and phosphate levels\n3. Urine toxicology screen\n4. MRI of the brain with attention to basal ganglia",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Progressive Supranuclear Palsy (PSP)",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 187,
+   "completion_tokens": 78,
+   "total_tokens": 265,
+   "cost": 6.471e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.471e-05,
+    "upstream_inference_prompt_cost": 2.805e-05,
+    "upstream_inference_completions_cost": 3.666e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 522,
+   "completion_tokens": 60,
+   "total_tokens": 582,
+   "cost": 0.0001065,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001065,
+    "upstream_inference_prompt_cost": 7.83e-05,
+    "upstream_inference_completions_cost": 2.82e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 923,
+   "completion_tokens": 27,
+   "total_tokens": 950,
+   "cost": 8.2532e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.2532e-05,
+    "upstream_inference_prompt_cost": 6.9842e-05,
+    "upstream_inference_completions_cost": 1.269e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_wilson_psp_phenotype_PMC12962431.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.2
+}

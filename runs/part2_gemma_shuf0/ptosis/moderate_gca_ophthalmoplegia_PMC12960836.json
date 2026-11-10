@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Did the weakness start suddenly over the last few days or weeks?",
+  "Is the weakness affecting both sides of your body?",
+  "Are you having any difficulty breathing?",
+  "Have you had a recent infection in the last few weeks?",
+  "Do you have numbness or tingling in your hands or feet?",
+  "Do you have any weakness in your arms?",
+  "Do you have any double vision?",
+  "Do you have any difficulty swallowing?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Brain MRI",
+  "EMG and Nerve Conduction Studies",
+  "Spinal MRI"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "nerve conduction studies",
+  "needle electromyography",
+  "MRI cervical and thoracic spine",
+  "MRI spine"
+ ],
+ "results": [
+  "1. Brain MRI",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "2. EMG and Nerve Conduction Studies",
+  "     nerve conduction studies: demyelinating sensorimotor neuropathy",
+  "     needle electromyography: chronic neurogenic changes",
+  "3. Spinal MRI",
+  "     MRI cervical and thoracic spine: normal",
+  "     MRI spine: symmetrical thickening of the lumbosacral nerve roots"
+ ],
+ "dx_raw": "DIAGNOSIS: Chronic Inflammatory Demyelinating Polyradiculoneuropathy (CIDP), autoimmune\nPOEMS syndrome\nMultifocal Motor Neuropathy\nParaneoplastic neuropathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Brain MRI\n2. EMG and Nerve Conduction Studies\n3. Spinal MRI",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Chronic Inflammatory Demyelinating Polyradiculoneuropathy (CIDP), autoimmune",
+ "decisive_served": [
+  "nerve conduction studies",
+  "MRI spine"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2064,
+   "total_tokens": 10762,
+   "cost": 0.00157156,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00157156,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00070176
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2032,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9078,
+   "completion_tokens": 2804,
+   "total_tokens": 11882,
+   "cost": 0.00186116,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00186116,
+    "upstream_inference_prompt_cost": 0.0009078,
+    "upstream_inference_completions_cost": 0.00095336
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2620,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9281,
+   "completion_tokens": 3003,
+   "total_tokens": 12284,
+   "cost": 0.00194912,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00194912,
+    "upstream_inference_prompt_cost": 0.0009281,
+    "upstream_inference_completions_cost": 0.00102102
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2962,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_gca_ophthalmoplegia_PMC12960836.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 321.0
+}

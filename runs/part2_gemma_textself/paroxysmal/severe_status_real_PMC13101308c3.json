@@ -1,0 +1,166 @@
+{
+ "questions": [
+  "Did you have an accident?",
+  "Did you have surgery?",
+  "Was the surgery planned?",
+  "Did you lose consciousness?",
+  "Did you fall?",
+  "Were you in a motor vehicle accident?",
+  "Was the surgery to remove a tumor?",
+  "Was the surgery to treat an infection?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Remove bandage and examine the head and jaw",
+  "Full physical examination",
+  "Complete blood count",
+  "C-reactive protein",
+  "CT scan of the head and neck"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "full blood count and biochemistry",
+  "ESR and CRP",
+  "CT head"
+ ],
+ "results": [
+  "1. Remove bandage and examine the head and jaw",
+  "     cranial nerve examination: normal",
+  "2. Full physical examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "3. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "4. C-reactive protein",
+  "     ESR and CRP: normal",
+  "5. CT scan of the head and neck",
+  "     CT head: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Obstructive Sleep Apnea caused by obesity\n\nObesity Hypoventilation Syndrome\nFactitious disorder\nDental procedure (not considered surgery by the patient)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Remove bandage and examine the head and jaw\n2. Full physical examination\n3. Complete blood count\n4. C-reactive protein\n5. CT scan of the head and neck",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Obstructive Sleep Apnea caused by obesity",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 233,
+   "completion_tokens": 3837,
+   "total_tokens": 4070,
+   "cost": 0.00132788,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00132788,
+    "upstream_inference_prompt_cost": 2.33e-05,
+    "upstream_inference_completions_cost": 0.00130458
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3538,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 557,
+   "completion_tokens": 844,
+   "total_tokens": 1401,
+   "cost": 0.00034266,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00034266,
+    "upstream_inference_prompt_cost": 5.57e-05,
+    "upstream_inference_completions_cost": 0.00028696
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 763,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 852,
+   "completion_tokens": 6588,
+   "total_tokens": 7440,
+   "cost": 0.00232512,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00232512,
+    "upstream_inference_prompt_cost": 8.52e-05,
+    "upstream_inference_completions_cost": 0.00223992
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5970,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 360.8
+}

@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Do the movements stop when you fall asleep?",
+  "Can you voluntarily suppress the movements for a short period?",
+  "Do you have a history of stroke or brain injury?",
+  "Is there a family history of similar movement disorders?",
+  "Do you have a known diagnosis of Parkinson's disease?",
+  "Have you recently started or changed any psychiatric medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI of the brain with attention to the basal ganglia and thalamus",
+  "Serum ceruloplasmin, 24-hour urine copper, and slit-lamp examination for Kayser-Fleischer rings",
+  "Peripheral blood smear for acanthocytes"
+ ],
+ "served": [
+  "brain MRI with contrast",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin",
+  "peripheral blood film for acanthocytes"
+ ],
+ "results": [
+  "1. MRI of the brain with attention to the basal ganglia and thalamus",
+  "     brain MRI with contrast: a coexisting LACUNAR INFARCT in addition to the striatal signal change",
+  "2. Serum ceruloplasmin, 24-hour urine copper, and slit-lamp examination for Kayser-Fleischer rings",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin: normal",
+  "3. Peripheral blood smear for acanthocytes",
+  "     peripheral blood film for acanthocytes: no acanthocytes"
+ ],
+ "dx_raw": "DIAGNOSIS: Hemichorea-hemiballismus secondary to a lacunar infarct in the contralateral basal ganglia (subthalamic nucleus or striatum)\nAlternatives:\n1. Non-ketotic hyperglycemic hemichorea (despite normal MRI signal description, metabolic causes remain top differential for acute onset chorea with basal ganglia changes)\n2. Paraneoplastic chorea (e.g., anti-CV2/CRMP5 or anti-Hu associated)\n3. Idiopathic adult-onset hemichorea",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with attention to the basal ganglia and thalamus\n2. Serum ceruloplasmin, 24-hour urine copper, and slit-lamp examination for Kayser-Fleischer rings\n3. Peripheral blood smear for acanthocytes",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Hemichorea-hemiballismus secondary to a lacunar infarct in the contralateral basal ganglia (subthalamic nucleus or striatum)",
+ "decisive_served": [
+  "brain MRI with contrast"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 187,
+   "completion_tokens": 89,
+   "total_tokens": 276,
+   "cost": 6.988e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.988e-05,
+    "upstream_inference_prompt_cost": 2.805e-05,
+    "upstream_inference_completions_cost": 4.183e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 548,
+   "completion_tokens": 56,
+   "total_tokens": 604,
+   "cost": 0.00010852,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010852,
+    "upstream_inference_prompt_cost": 8.22e-05,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 823,
+   "completion_tokens": 119,
+   "total_tokens": 942,
+   "cost": 0.000110772,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000110772,
+    "upstream_inference_prompt_cost": 5.4842e-05,
+    "upstream_inference_completions_cost": 5.593e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hyperglycemic_hemichorea_PMC12596229.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.6
+}

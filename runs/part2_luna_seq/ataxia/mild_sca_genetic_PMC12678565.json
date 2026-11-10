@@ -1,0 +1,220 @@
+{
+ "questions": [
+  "Did this walking problem begin suddenly?",
+  "Do you have numbness or tingling in either leg?",
+  "Do you have pain in your back or legs?",
+  "Have you experienced episodes of weakness or inability to walk that later completely resolve?",
+  "Does your walking improve when you are distracted or not being observed?",
+  "Have you ever been diagnosed with a neurological disease such as multiple sclerosis, stroke, or Parkinson’s disease?",
+  "Has your balance and coordination gradually worsened over months or years?",
+  "Do you regularly drink large amounts of alcohol or have you done so in the past?",
+  "Have you taken phenytoin, valproate, lithium, metronidazole, or other medicines known to affect the cerebellum for a prolonged period?",
+  "Does anyone in your biological family have progressive balance problems, tremor, or an ataxia diagnosis?",
+  "Have you had unexplained weight loss, night sweats, or a newly diagnosed cancer?",
+  "Do you have difficulty swallowing or slurred speech?",
+  "Do you have an underactive thyroid, diabetes, or a known vitamin E or vitamin B12 deficiency?",
+  "Have you had chronic diarrhea, malabsorption, or a known sensitivity to gluten?",
+  "Have you developed involuntary eye movements or double vision?",
+  "Have you had seizures or cognitive decline?",
+  "Did your balance problems begin after the age of 40?",
+  "Is the affected biological relative a parent?",
+  "Has any biological relative been diagnosed specifically with spinocerebellar ataxia type 6 or a CACNA1A mutation?",
+  "Do you have weakness, muscle wasting, numbness, urinary symptoms, or involuntary movements in addition to the coordination problem?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Bedside functional gait examination including forward walking, backward walking, tandem walking, heel walking, toe walking, and walking while performing a cognitive dual task.",
+  "Bedside assessment for a Hoover sign and inconsistency of hip-power during distraction.",
+  "Romberg test and lower-limb coordination examination.",
+  "MRI of the brain with and without gadolinium contrast, including thin-section posterior-fossa sequences.",
+  "Genetic testing for inherited cerebellar ataxia, including RFC1 biallelic repeat expansion analysis, FXN GAA-repeat expansion testing, and a spinocerebellar ataxia repeat-expansion panel (SCA1, SCA2, SCA3, SCA6, SCA7, SCA17 and DRPLA).",
+  "If repeat-expansion testing is negative, a comprehensive ataxia next-generation sequencing panel including autosomal-recessive and mitochondrial ataxia genes."
+ ],
+ "served": [
+  "gait examination",
+  "limb strength (MRC) examination",
+  "Romberg test",
+  "finger-nose / heel-shin testing",
+  "coordination examination (limb and truncal)",
+  "brain MRI",
+  "MRI brain with gadolinium",
+  "genetic ataxia panel"
+ ],
+ "results": [
+  "R1 ASK Did this walking problem begin suddenly?; Do you have numbness or tingling in either leg?; Do you have pain in your back or legs?; Have you experienced episodes of weakness or inability to walk that later completely resolve?; Does your walking improve when you are distracted or not being observed?; Have you ever been diagnosed with a neurological disease such as multiple sclerosis, stroke, or Parkinson’s disease? -> ['no', 'no', 'no', 'no', 'yes', 'no']",
+  "R2 ORDER Bedside functional gait examination including forward walking, backward walking, tandem walking, heel walking, toe walking, and walking while performing a cognitive dual task.; Bedside assessment for a Hoover sign and inconsistency of hip-power during distraction.; Romberg test and lower-limb coordination examination. -> [['gait examination'], ['limb strength (MRC) examination'], ['Romberg test', 'finger-nose / heel-shin testing', 'coordination examination (limb and truncal)']]",
+  "R3 ORDER MRI of the brain with and without gadolinium contrast, including thin-section posterior-fossa sequences. -> [['brain MRI', 'MRI brain with gadolinium']]",
+  "R4 ASK Has your balance and coordination gradually worsened over months or years?; Do you regularly drink large amounts of alcohol or have you done so in the past?; Have you taken phenytoin, valproate, lithium, metronidazole, or other medicines known to affect the cerebellum for a prolonged period?; Does anyone in your biological family have progressive balance problems, tremor, or an ataxia diagnosis?; Have you had unexplained weight loss, night sweats, or a newly diagnosed cancer?; Do you have difficulty swallowing or slurred speech?; Do you have an underactive thyroid, diabetes, or a known vitamin E or vitamin B12 deficiency?; Have you had chronic diarrhea, malabsorption, or a known sensitivity to gluten?; Have you developed involuntary eye movements or double vision?; Have you had seizures or cognitive decline? -> ['yes', 'no', 'no', 'yes', 'no', 'yes', 'no', 'no', 'no', 'no']",
+  "R5 ASK Did your balance problems begin after the age of 40?; Is the affected biological relative a parent?; Has any biological relative been diagnosed specifically with spinocerebellar ataxia type 6 or a CACNA1A mutation?; Do you have weakness, muscle wasting, numbness, urinary symptoms, or involuntary movements in addition to the coordination problem? -> ['no', 'no', 'no', 'no']",
+  "R6 ORDER Genetic testing for inherited cerebellar ataxia, including RFC1 biallelic repeat expansion analysis, FXN GAA-repeat expansion testing, and a spinocerebellar ataxia repeat-expansion panel (SCA1, SCA2, SCA3, SCA6, SCA7, SCA17 and DRPLA).; If repeat-expansion testing is negative, a comprehensive ataxia next-generation sequencing panel including autosomal-recessive and mitochondrial ataxia genes. -> [['genetic ataxia panel'], ['genetic ataxia panel']]",
+  "R7 DIAGNOSIS Spinocerebellar ataxia type 8 (SCA8), caused by a pathogenic heterozygous ATXN8OS CTG-repeat expansion (112 repeats), producing autosomal-dominant progressive cerebellar degeneration. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did this walking problem begin suddenly?",
+    "Do you have numbness or tingling in either leg?",
+    "Do you have pain in your back or legs?",
+    "Have you experienced episodes of weakness or inability to walk that later completely resolve?",
+    "Does your walking improve when you are distracted or not being observed?",
+    "Have you ever been diagnosed with a neurological disease such as multiple sclerosis, stroke, or Parkinson’s disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Bedside functional gait examination including forward walking, backward walking, tandem walking, heel walking, toe walking, and walking while performing a cognitive dual task.",
+    "Bedside assessment for a Hoover sign and inconsistency of hip-power during distraction.",
+    "Romberg test and lower-limb coordination examination."
+   ],
+   "result": [
+    [
+     "gait examination"
+    ],
+    [
+     "limb strength (MRC) examination"
+    ],
+    [
+     "Romberg test",
+     "finger-nose / heel-shin testing",
+     "coordination examination (limb and truncal)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "MRI of the brain with and without gadolinium contrast, including thin-section posterior-fossa sequences."
+   ],
+   "result": [
+    [
+     "brain MRI",
+     "MRI brain with gadolinium"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Has your balance and coordination gradually worsened over months or years?",
+    "Do you regularly drink large amounts of alcohol or have you done so in the past?",
+    "Have you taken phenytoin, valproate, lithium, metronidazole, or other medicines known to affect the cerebellum for a prolonged period?",
+    "Does anyone in your biological family have progressive balance problems, tremor, or an ataxia diagnosis?",
+    "Have you had unexplained weight loss, night sweats, or a newly diagnosed cancer?",
+    "Do you have difficulty swallowing or slurred speech?",
+    "Do you have an underactive thyroid, diabetes, or a known vitamin E or vitamin B12 deficiency?",
+    "Have you had chronic diarrhea, malabsorption, or a known sensitivity to gluten?",
+    "Have you developed involuntary eye movements or double vision?",
+    "Have you had seizures or cognitive decline?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "yes",
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Did your balance problems begin after the age of 40?",
+    "Is the affected biological relative a parent?",
+    "Has any biological relative been diagnosed specifically with spinocerebellar ataxia type 6 or a CACNA1A mutation?",
+    "Do you have weakness, muscle wasting, numbness, urinary symptoms, or involuntary movements in addition to the coordination problem?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Genetic testing for inherited cerebellar ataxia, including RFC1 biallelic repeat expansion analysis, FXN GAA-repeat expansion testing, and a spinocerebellar ataxia repeat-expansion panel (SCA1, SCA2, SCA3, SCA6, SCA7, SCA17 and DRPLA).",
+    "If repeat-expansion testing is negative, a comprehensive ataxia next-generation sequencing panel including autosomal-recessive and mitochondrial ataxia genes."
+   ],
+   "result": [
+    [
+     "genetic ataxia panel"
+    ],
+    [
+     "genetic ataxia panel"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Spinocerebellar ataxia type 8 (SCA8), caused by a pathogenic heterozygous ATXN8OS CTG-repeat expansion (112 repeats), producing autosomal-dominant progressive cerebellar degeneration."
+  }
+ ],
+ "dx": "Spinocerebellar ataxia type 8 (SCA8), caused by a pathogenic heterozygous ATXN8OS CTG-repeat expansion (112 repeats), producing autosomal-dominant progressive cerebellar degeneration.",
+ "dx_raw": "DIAGNOSIS: Spinocerebellar ataxia type 8 (SCA8), caused by a pathogenic heterozygous ATXN8OS CTG-repeat expansion (112 repeats), producing autosomal-dominant progressive cerebellar degeneration.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "brain MRI",
+  "genetic ataxia panel"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.009,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_sca_genetic_PMC12678565.mp4",
+ "line": "ataxia",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 53.2
+}

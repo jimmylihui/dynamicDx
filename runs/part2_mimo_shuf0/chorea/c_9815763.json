@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Is the pain or discomfort located in your chest?",
+  "Does it feel like a heavy pressure or squeezing?",
+  "Does the pain radiate to your left arm, neck, or jaw?",
+  "Are you having difficulty breathing right now?",
+  "Do you feel dizzy, lightheaded, or sweaty?",
+  "Did the symptoms start suddenly?",
+  "Does the pain worsen when you take a deep breath?",
+  "Do you have a fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Measurement of vital signs including temperature",
+  "Thyroid function tests",
+  "Urine pregnancy test",
+  "Random blood glucose",
+  "Complete blood count"
+ ],
+ "served": [
+  "vital signs",
+  "thyroid function (TSH, free T4)",
+  "TSH, free T4 and free T3",
+  "blood glucose",
+  "full blood count"
+ ],
+ "results": [
+  "1. Measurement of vital signs including temperature",
+  "     vital signs: normal, afebrile",
+  "2. Thyroid function tests",
+  "     thyroid function (TSH, free T4): suppressed TSH with elevated free T4",
+  "     TSH, free T4 and free T3: T3 8.26 nmol/L (normal 0.92-2.79) and free T4 58.13 pmol/L (normal 11.50-22.70) with suppressed TSH",
+  "3. Urine pregnancy test",
+  "     not performed / not available",
+  "4. Random blood glucose",
+  "     blood glucose: normal",
+  "5. Complete blood count",
+  "     full blood count: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Graves' disease (autoimmune hyperthyroidism)\n\nAlternative diagnoses to consider:\n1. Toxic multinodular goiter\n2. Subacute or silent thyroiditis with thyrotoxicosis\n3. Exogenous thyroid hormone ingestion (factitious thyrotoxicosis)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Measurement of vital signs including temperature\n2. Thyroid function tests\n3. Urine pregnancy test\n4. Random blood glucose\n5. Complete blood count",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Graves' disease (autoimmune hyperthyroidism)",
+ "decisive_served": [
+  "TSH, free T4 and free T3",
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 1508,
+   "total_tokens": 6563,
+   "cost": 0.0011035976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011035976,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00042224
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1410,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5434,
+   "completion_tokens": 1963,
+   "total_tokens": 7397,
+   "cost": 0.0006254976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006254976,
+    "upstream_inference_prompt_cost": 7.58576e-05,
+    "upstream_inference_completions_cost": 0.00054964
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1927,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5717,
+   "completion_tokens": 385,
+   "total_tokens": 6102,
+   "cost": 0.0001705928,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5376,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001705928,
+    "upstream_inference_prompt_cost": 6.27928e-05,
+    "upstream_inference_completions_cost": 0.0001078
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 321,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "c_9815763.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 137.0
+}

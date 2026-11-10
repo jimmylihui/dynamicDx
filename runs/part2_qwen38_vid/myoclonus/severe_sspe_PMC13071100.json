@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Is your right arm currently in a cast or splint?",
+  "Did you sustain an injury to your right arm recently?",
+  "Are you experiencing pain in your right shoulder when lifting your arm above your head?",
+  "Do you have difficulty raising your right arm straight out to the side?",
+  "Does your right arm feel weak when you try to lift objects?",
+  "Have you had any previous surgeries on your right shoulder or arm?",
+  "Do you experience numbness or tingling in your right hand or fingers?",
+  "Is the range of motion in your left arm normal and pain-free?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform a detailed neurological examination of the left upper extremity, specifically testing for muscle strength in shoulder abduction (deltoid), elbow flexion (biceps), and wrist extension (extensor carpi radialis).",
+  "Assess deep tendon reflexes in the left arm, focusing on the biceps (C5-C6) and brachioradialis (C6) reflexes.",
+  "Evaluate sensation in the left upper extremity using light touch and pinprick to map any dermatomal deficits.",
+  "Perform Spurling's test to assess for cervical radiculopathy.",
+  "Order an MRI of the cervical spine."
+ ],
+ "served": [
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "MRI cervical and thoracic spine"
+ ],
+ "results": [
+  "1. Perform a detailed neurological examination of the left upper extremity, specifically testing for muscle strength in shoulder abduction (deltoid), elbow flexion (biceps), and wrist extension (extensor carpi radialis).",
+  "     limb strength (MRC) examination: normal",
+  "2. Assess deep tendon reflexes in the left arm, focusing on the biceps (C5-C6) and brachioradialis (C6) reflexes.",
+  "     deep tendon reflexes and plantar responses: normal",
+  "3. Evaluate sensation in the left upper extremity using light touch and pinprick to map any dermatomal deficits.",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "4. Perform Spurling's test to assess for cervical radiculopathy.",
+  "     not performed / not available",
+  "5. Order an MRI of the cervical spine.",
+  "     MRI cervical and thoracic spine: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Right shoulder adhesive capsulitis (frozen shoulder)\nAlternative diagnoses:\n1. Right rotator cuff tendinopathy or impingement syndrome\n2. Right glenohumeral osteoarthritis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Perform a detailed neurological examination of the left upper extremity, specifically testing for muscle strength in shoulder abduction (deltoid), elbow flexion (biceps), and wrist extension (extensor carpi radialis).\n2. Assess deep tendon reflexes in the left arm, focusing on the biceps (C5-C6) and brachioradialis (C6) reflexes.\n3. Evaluate sensation in the left upper extremity using light touch and pinprick to map any dermatomal deficits.\n4. Perform Spurling's test to assess for cervical radiculopathy.\n5. Order an MRI of the cervical spine.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Right shoulder adhesive capsulitis (frozen shoulder)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 132,
+   "total_tokens": 4955,
+   "cost": 0.00078549,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00078549,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 6.204e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5272,
+   "completion_tokens": 136,
+   "total_tokens": 5408,
+   "cost": 0.0002544,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002544,
+    "upstream_inference_prompt_cost": 0.00019048,
+    "upstream_inference_completions_cost": 6.392e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5700,
+   "completion_tokens": 49,
+   "total_tokens": 5749,
+   "cost": 0.000209102,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000209102,
+    "upstream_inference_prompt_cost": 0.000186072,
+    "upstream_inference_completions_cost": 2.303e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "severe_sspe_PMC13071100.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 20.3
+}

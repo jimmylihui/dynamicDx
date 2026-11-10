@@ -1,0 +1,160 @@
+{
+ "questions": [
+  "Do you have a known diagnosis of Parkinson's disease?",
+  "Are you currently taking any medications for this condition?",
+  "Do you have a family history of hand tremors?",
+  "Does alcohol consumption temporarily reduce the tremor?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Finger-to-nose test (bilateral)",
+  "Rapid alternating movements (finger tapping, pronation/supination)",
+  "Spiral drawing test",
+  "Resting tremor examination",
+  "Postural tremor examination"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "kinetic / intention tremor (finger-nose)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "tremor at rest",
+  "postural tremor (arms outstretched)"
+ ],
+ "results": [
+  "R1 ASK Do you have a known diagnosis of Parkinson's disease?; Are you currently taking any medications for this condition? -> ['no', 'no']",
+  "R2 ORDER Finger-to-nose test (bilateral) -> [['coordination examination (limb and truncal)', 'kinetic / intention tremor (finger-nose)']]",
+  "R3 ORDER Rapid alternating movements (finger tapping, pronation/supination) -> [['coordination examination (limb and truncal)', 'cerebellar signs (dysmetria, dysdiadochokinesia)']]",
+  "R4 ORDER Spiral drawing test -> [[]]",
+  "R5 ASK Do you have a family history of hand tremors? -> ['no']",
+  "R6 ORDER Resting tremor examination -> [['tremor at rest']]",
+  "R7 ORDER Postural tremor examination -> [['postural tremor (arms outstretched)']]",
+  "R8 ASK Does alcohol consumption temporarily reduce the tremor? -> ['no']",
+  "R9 DIAGNOSIS Essential tremor -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a known diagnosis of Parkinson's disease?",
+    "Are you currently taking any medications for this condition?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Finger-to-nose test (bilateral)"
+   ],
+   "result": [
+    [
+     "coordination examination (limb and truncal)",
+     "kinetic / intention tremor (finger-nose)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Rapid alternating movements (finger tapping, pronation/supination)"
+   ],
+   "result": [
+    [
+     "coordination examination (limb and truncal)",
+     "cerebellar signs (dysmetria, dysdiadochokinesia)"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Spiral drawing test"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a family history of hand tremors?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Resting tremor examination"
+   ],
+   "result": [
+    [
+     "tremor at rest"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Postural tremor examination"
+   ],
+   "result": [
+    [
+     "postural tremor (arms outstretched)"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Does alcohol consumption temporarily reduce the tremor?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Essential tremor"
+  }
+ ],
+ "dx": "Essential tremor",
+ "dx_raw": "DIAGNOSIS: Essential tremor",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0018,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_thyrotoxic_PMC11639689.mp4",
+ "line": "tremor",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 38.7
+}

@@ -1,0 +1,158 @@
+{
+ "questions": [
+  "Do you hear voices?",
+  "Did you take any drugs or alcohol?",
+  "Have you been feeling unusually energetic or happy lately?",
+  "Did you try to hurt yourself?",
+  "Do you see things that aren't there?",
+  "Do you know where you are?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Lorazepam challenge test (2mg IV)",
+  "Comprehensive metabolic panel",
+  "Complete blood count",
+  "Urine drug screen",
+  "Thyroid function tests",
+  "Electroencephalogram",
+  "Brain MRI"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "full blood count and biochemistry",
+  "toxicology screen (urine and serum)",
+  "thyroid function (TSH, free T4)",
+  "interictal EEG",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Lorazepam challenge test (2mg IV)",
+  "     not performed / not available",
+  "2. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "3. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "4. Urine drug screen",
+  "     toxicology screen (urine and serum): normal",
+  "5. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal",
+  "6. Electroencephalogram",
+  "     interictal EEG: repetitive sharp waves predominantly in the LEFT FRONTAL area during sleep, with pseudocontinuous 3 Hz slow waves in the same region on awakening",
+  "7. Brain MRI",
+  "     brain MRI: post-traumatic encephalomalacia"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-traumatic frontal lobe epilepsy\n\nAlternatives:\n1. Non-convulsive status epilepticus (frontal)\n2. Post-ictal confusional state\n3. Interictal psychosis secondary to focal epilepsy",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Lorazepam challenge test (2mg IV)\n2. Comprehensive metabolic panel\n3. Complete blood count\n4. Urine drug screen\n5. Thyroid function tests\n6. Electroencephalogram\n7. Brain MRI",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Post-traumatic frontal lobe epilepsy",
+ "decisive_served": [
+  "interictal EEG"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6591,
+   "completion_tokens": 3125,
+   "total_tokens": 9716,
+   "cost": 0.0009020984,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009020984,
+    "upstream_inference_prompt_cost": 2.70984e-05,
+    "upstream_inference_completions_cost": 0.000875
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3063,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6884,
+   "completion_tokens": 555,
+   "total_tokens": 7439,
+   "cost": 0.0002235184,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002235184,
+    "upstream_inference_prompt_cost": 6.81184e-05,
+    "upstream_inference_completions_cost": 0.0001554
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 502,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7189,
+   "completion_tokens": 626,
+   "total_tokens": 7815,
+   "cost": 0.0002421944,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6848,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002421944,
+    "upstream_inference_prompt_cost": 6.69144e-05,
+    "upstream_inference_completions_cost": 0.00017528
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 571,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 78.7
+}

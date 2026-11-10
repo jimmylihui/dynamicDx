@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Did the episode begin immediately after a sudden loud noise or unexpected touch?",
+  "Did you lose consciousness during the episode?",
+  "Did you bite your tongue, specifically the side of it?",
+  "Were your eyes closed during the episode?",
+  "Did the movements stop when someone physically restrained your arms?",
+  "Do you have a history of epilepsy diagnosed by EEG?",
+  "Did you experience any aura (strange smell, taste, or feeling) before the episode started?",
+  "Was there urinary incontinence during the episode?",
+  "Did you feel confused or sleepy for more than 10 minutes after the episode ended?",
+  "Have you been under significant emotional stress recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Video-EEG monitoring during a provoked or spontaneous event",
+  "MRI of the brain with epilepsy protocol",
+  "Serum prolactin level drawn within 10 minutes of episode onset"
+ ],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "video-polygraphy (EEG with EMG)",
+  "provocation testing (the suspected trigger)",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Video-EEG monitoring during a provoked or spontaneous event",
+  "     interictal EEG: intermittent sharp waves from the LEFT FRONTAL to anterior temporal regions",
+  "     video-EEG monitoring of a typical event: moderate-amplitude rhythmic THETA waves intermittently during the versive seizures",
+  "     video-polygraphy (EEG with EMG): not performed",
+  "     provocation testing (the suspected trigger): supervised shadowboxing of 3 minutes per trial reproduced the seizures, with induction latencies of about 11 seconds and durations around 18 seconds",
+  "2. MRI of the brain with epilepsy protocol",
+  "     brain MRI: no epileptogenic lesion",
+  "3. Serum prolactin level drawn within 10 minutes of episode onset",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Reflex epilepsy (specifically action-induced seizures) triggered by complex motor tasks, originating from the left frontal lobe\n1. Psychogenic non-epileptic seizures (PNES) with a functional overlay\n2. Focal aware seizures secondary to an undetected cortical dysplasia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Video-EEG monitoring during a provoked or spontaneous event\n2. MRI of the brain with epilepsy protocol\n3. Serum prolactin level drawn within 10 minutes of episode onset",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Reflex epilepsy (specifically action-induced seizures) triggered by complex motor tasks, originating from the left frontal lobe",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "provocation testing (the suspected trigger)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 181,
+   "completion_tokens": 151,
+   "total_tokens": 332,
+   "cost": 9.812e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.812e-05,
+    "upstream_inference_prompt_cost": 2.715e-05,
+    "upstream_inference_completions_cost": 7.097e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 678,
+   "completion_tokens": 40,
+   "total_tokens": 718,
+   "cost": 0.0001205,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001205,
+    "upstream_inference_prompt_cost": 0.0001017,
+    "upstream_inference_completions_cost": 1.88e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 979,
+   "completion_tokens": 64,
+   "total_tokens": 1043,
+   "cost": 0.000108322,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000108322,
+    "upstream_inference_prompt_cost": 7.8242e-05,
+    "upstream_inference_completions_cost": 3.008e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_2_shadowbox_PMC9062418.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 38.4
+}

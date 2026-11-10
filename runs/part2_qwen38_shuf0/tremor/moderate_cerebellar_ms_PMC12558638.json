@@ -1,0 +1,134 @@
+{
+ "questions": [
+  "Are you currently experiencing a headache?",
+  "Do you have a fever or feel hot and cold?",
+  "Have you had any recent head trauma or injury?",
+  "Is the pain localized to your forehead or around your eyes?",
+  "Does touching your forehead cause significant pain?",
+  "Do you have a history of high blood pressure?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Palpation of the frontal bone and supraorbital ridges",
+  "Inspection of the forehead skin for erythema, swelling, or lesions",
+  "Percussion of the frontal sinuses"
+ ],
+ "served": [],
+ "results": [
+  "1. Palpation of the frontal bone and supraorbital ridges",
+  "     not performed / not available",
+  "2. Inspection of the forehead skin for erythema, swelling, or lesions",
+  "     not performed / not available",
+  "3. Percussion of the frontal sinuses",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Frontal bossing (likely secondary to Paget's disease of bone)\nPaget's disease of bone\nFrontal fibrosing alopecia\nChronic frontal sinusitis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Palpation of the frontal bone and supraorbital ridges\n2. Inspection of the forehead skin for erythema, swelling, or lesions\n3. Percussion of the frontal sinuses",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Frontal bossing (likely secondary to Paget's disease of bone)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 76,
+   "total_tokens": 4899,
+   "cost": 0.00075917,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075917,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 3.572e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5152,
+   "completion_tokens": 43,
+   "total_tokens": 5195,
+   "cost": 0.00019269,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00019269,
+    "upstream_inference_prompt_cost": 0.00017248,
+    "upstream_inference_completions_cost": 2.021e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5360,
+   "completion_tokens": 43,
+   "total_tokens": 5403,
+   "cost": 0.000155282,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000155282,
+    "upstream_inference_prompt_cost": 0.000135072,
+    "upstream_inference_completions_cost": 2.021e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 13.7
+}

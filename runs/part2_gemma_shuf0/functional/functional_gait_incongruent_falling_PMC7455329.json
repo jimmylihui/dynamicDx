@@ -1,0 +1,146 @@
+{
+ "questions": [
+  "Did you lose consciousness?",
+  "Do you feel dizzy or lightheaded before you fall?",
+  "Do you have numbness or tingling in your feet?",
+  "Do you have tremors in your hands or legs?",
+  "Do you have difficulty starting to walk?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of Parkinson's disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Pull test",
+  "Brain MRI",
+  "Examination for vertical supranuclear gaze palsy"
+ ],
+ "served": [
+  "posture and pull test",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain",
+  "video-oculography / eye-movement recording"
+ ],
+ "results": [
+  "1. Pull test",
+  "     posture and pull test: incongruent falling without protective reaction",
+  "2. Brain MRI",
+  "     MRI brain with gadolinium: normal",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain: normal",
+  "3. Examination for vertical supranuclear gaze palsy",
+  "     video-oculography / eye-movement recording: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy (tauopathy)\nMultiple System Atrophy\nParkinson's disease\nCorticobasal degeneration",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Pull test\n2. Brain MRI\n3. Examination for vertical supranuclear gaze palsy",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Progressive Supranuclear Palsy (tauopathy)",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8762,
+   "completion_tokens": 1965,
+   "total_tokens": 10727,
+   "cost": 0.0015443,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0015443,
+    "upstream_inference_prompt_cost": 0.0008762,
+    "upstream_inference_completions_cost": 0.0006681
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1822,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9104,
+   "completion_tokens": 818,
+   "total_tokens": 9922,
+   "cost": 0.00118852,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00118852,
+    "upstream_inference_prompt_cost": 0.0009104,
+    "upstream_inference_completions_cost": 0.00027812
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 845,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9303,
+   "completion_tokens": 2701,
+   "total_tokens": 12004,
+   "cost": 0.00184864,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00184864,
+    "upstream_inference_prompt_cost": 0.0009303,
+    "upstream_inference_completions_cost": 0.00091834
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2574,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 291.5
+}

@@ -1,0 +1,141 @@
+{
+ "questions": [
+  "Do you have numbness in your feet?",
+  "Do you feel more unstable when you close your eyes?",
+  "Do you have a family history of similar walking difficulties?",
+  "Do you have high-arched feet?",
+  "Do you have a known heart condition?",
+  "Do you have a history of diabetes?",
+  "Do you drink alcohol regularly?",
+  "Do you experience sudden, sharp, stabbing pains in your legs?",
+  "Do you have vision loss?",
+  "Do you have bladder control problems?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI Brain",
+  "Large volume lumbar puncture (Tap test)"
+ ],
+ "served": [
+  "MRI brain",
+  "CSF opening pressure"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     MRI brain: normal",
+  "2. Large volume lumbar puncture (Tap test)",
+  "     CSF opening pressure: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Stiff Person Syndrome caused by anti-GAD antibodies\nCervical Spondylotic Myelopathy\nHereditary Spastic Paraplegia\nParaneoplastic Stiff Person Syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Large volume lumbar puncture (Tap test)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Stiff Person Syndrome caused by anti-GAD antibodies",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 180,
+   "completion_tokens": 4754,
+   "total_tokens": 4934,
+   "cost": 0.00163436,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00163436,
+    "upstream_inference_prompt_cost": 1.8e-05,
+    "upstream_inference_completions_cost": 0.00161636
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4133,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 602,
+   "completion_tokens": 1007,
+   "total_tokens": 1609,
+   "cost": 0.00040258,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00040258,
+    "upstream_inference_prompt_cost": 6.02e-05,
+    "upstream_inference_completions_cost": 0.00034238
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 963,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 743,
+   "completion_tokens": 4258,
+   "total_tokens": 5001,
+   "cost": 0.00152202,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00152202,
+    "upstream_inference_prompt_cost": 7.43e-05,
+    "upstream_inference_completions_cost": 0.00144772
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3975,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 350.4
+}

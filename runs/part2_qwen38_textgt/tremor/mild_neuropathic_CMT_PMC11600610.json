@@ -1,0 +1,133 @@
+{
+ "questions": [
+  "Is the tremor present when your arms are completely relaxed at your sides?",
+  "Does the tremor stop or significantly decrease when you touch your index finger to your nose?",
+  "Do you have a family history of essential tremor?",
+  "Have you recently started any new medications, including antidepressants or asthma inhalers?",
+  "Do you consume more than two alcoholic beverages per day?",
+  "Do you experience muscle stiffness or slowness of movement in your daily life?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Assess for the presence of a resting tremor by having the patient rest their hands in their lap",
+  "Perform the alcohol ingestion test (observe tremor amplitude before and 30 minutes after consuming a standard alcoholic drink)"
+ ],
+ "served": [
+  "tremor at rest",
+  "effect of alcohol on the tremor"
+ ],
+ "results": [
+  "1. Assess for the presence of a resting tremor by having the patient rest their hands in their lap",
+  "     tremor at rest: absent",
+  "2. Perform the alcohol ingestion test (observe tremor amplitude before and 30 minutes after consuming a standard alcoholic drink)",
+  "     effect of alcohol on the tremor: no effect"
+ ],
+ "dx_raw": "DIAGNOSIS: Enhanced physiologic tremor\nDifferential diagnosis: Essential tremor\nDifferential diagnosis: Drug-induced tremor",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Assess for the presence of a resting tremor by having the patient rest their hands in their lap\n2. Perform the alcohol ingestion test (observe tremor amplitude before and 30 minutes after consuming a standard alcoholic drink)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Enhanced physiologic tremor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 180,
+   "completion_tokens": 104,
+   "total_tokens": 284,
+   "cost": 7.588e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.588e-05,
+    "upstream_inference_prompt_cost": 2.7e-05,
+    "upstream_inference_completions_cost": 4.888e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 567,
+   "completion_tokens": 47,
+   "total_tokens": 614,
+   "cost": 0.00010714,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010714,
+    "upstream_inference_prompt_cost": 8.505e-05,
+    "upstream_inference_completions_cost": 2.209e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 784,
+   "completion_tokens": 28,
+   "total_tokens": 812,
+   "cost": 6.2152e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.2152e-05,
+    "upstream_inference_prompt_cost": 4.8992e-05,
+    "upstream_inference_completions_cost": 1.316e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.7,
+ "video": "mild_neuropathic_CMT_PMC11600610.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.4
+}

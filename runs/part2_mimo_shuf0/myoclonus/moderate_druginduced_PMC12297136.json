@@ -1,0 +1,165 @@
+{
+ "questions": [
+  "Do you feel pain in your abdominal area?",
+  "Can you feel the rhythmic movement in your belly happening on its own, without you controlling it?",
+  "Did this abdominal movement start suddenly?",
+  "Have you had this same abdominal movement or pain before?",
+  "Is the discomfort worse when you cough, strain, or bear down?",
+  "Have you felt nauseous or thrown up in the past couple of days?",
+  "Have you been unable to pass gas or have a bowel movement recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Basic metabolic panel",
+  "Complete blood count",
+  "Thyroid function tests",
+  "Creatine kinase",
+  "Magnesium and calcium levels",
+  "Neurological examination of the abdominal wall and surrounding muscles",
+  "Review of current medications for potential fasciculation-inducing agents"
+ ],
+ "served": [
+  "serum electrolytes, urea and creatinine",
+  "glucose",
+  "full blood count",
+  "TSH / free T4",
+  "creatine kinase",
+  "serum calcium, magnesium and phosphate",
+  "electrolytes (Na, K, Ca, Mg)",
+  "medication review"
+ ],
+ "results": [
+  "1. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: urea nitrogen 24 mg/dL and creatinine 1.62 mg/dL, stable",
+  "     glucose: normal",
+  "2. Complete blood count",
+  "     full blood count: white cells mildly raised at 11.8 x10^9/L",
+  "3. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "4. Creatine kinase",
+  "     creatine kinase: normal",
+  "5. Magnesium and calcium levels",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "6. Neurological examination of the abdominal wall and surrounding muscles",
+  "     not performed / not available",
+  "7. Review of current medications for potential fasciculation-inducing agents",
+  "     medication review: long-term risperidone with concomitant sertraline; myoclonus resolved completely within 24 h of withdrawing RISPERIDONE alone"
+ ],
+ "dx_raw": "DIAGNOSIS: Risperidone-induced abdominal myoclonus\n\n1. Focal abdominal dystonia\n2. Abdominal epilepsy\n3. Diaphragmatic flutter",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Basic metabolic panel\n2. Complete blood count\n3. Thyroid function tests\n4. Creatine kinase\n5. Magnesium and calcium levels\n6. Neurological examination of the abdominal wall and surrounding muscles\n7. Review of current medications for potential fasciculation-inducing agents",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Risperidone-induced abdominal myoclonus",
+ "decisive_served": [
+  "medication review"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 9663,
+   "completion_tokens": 509,
+   "total_tokens": 10172,
+   "cost": 0.0014689976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014689976,
+    "upstream_inference_prompt_cost": 0.0013264776,
+    "upstream_inference_completions_cost": 0.00014252
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 396,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 10060,
+   "completion_tokens": 466,
+   "total_tokens": 10526,
+   "cost": 0.00022176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9600,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00022176,
+    "upstream_inference_prompt_cost": 9.128e-05,
+    "upstream_inference_completions_cost": 0.00013048
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 404,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 10424,
+   "completion_tokens": 1719,
+   "total_tokens": 12143,
+   "cost": 0.0005620944,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 10048,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005620944,
+    "upstream_inference_prompt_cost": 8.07744e-05,
+    "upstream_inference_completions_cost": 0.00048132
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1679,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 51.0
+}

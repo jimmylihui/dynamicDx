@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Are the repetitive movements involuntary?",
+  "Are they present mainly on the left side of the body?",
+  "Did the movements begin suddenly?",
+  "Do you have weakness of the affected arm or leg?",
+  "Have you recently had a stroke or injury to the brain or spinal cord?",
+  "Did you remain fully conscious and able to respond during the movements?",
+  "Do the movements affect both legs and both arms?",
+  "Did the weakness start at the same time as the involuntary movements?",
+  "Have you had loss of bladder or bowel control?",
+  "Have you recently started or stopped any medication or recreational drug?",
+  "Are the involuntary movements confined to the same side as the weakness?",
+  "Are the movements irregular, jerky, and flinging rather than rhythmic or tremulous?",
+  "Did the movements begin within 24 hours of the ischemic stroke symptoms?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "yes",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Immediate bedside capillary blood glucose measurement",
+  "Urgent non-contrast CT scan of the brain",
+  "Urgent electroencephalogram (EEG) during the abnormal movements"
+ ],
+ "served": [
+  "blood glucose",
+  "CT head (non-contrast)",
+  "EEG"
+ ],
+ "results": [
+  "R1 ASK Are the repetitive movements involuntary?; Are they present mainly on the left side of the body?; Did the movements begin suddenly?; Do you have weakness of the affected arm or leg?; Have you recently had a stroke or injury to the brain or spinal cord? -> ['yes', 'no', 'yes', 'yes', 'no']",
+  "R2 ASK Did you remain fully conscious and able to respond during the movements?; Do the movements affect both legs and both arms?; Did the weakness start at the same time as the involuntary movements?; Have you had loss of bladder or bowel control?; Have you recently started or stopped any medication or recreational drug? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Immediate bedside capillary blood glucose measurement; Urgent non-contrast CT scan of the brain; Urgent electroencephalogram (EEG) during the abnormal movements -> [['blood glucose'], ['CT head (non-contrast)'], ['EEG']]",
+  "R4 ASK Are the involuntary movements confined to the same side as the weakness?; Are the movements irregular, jerky, and flinging rather than rhythmic or tremulous?; Did the movements begin within 24 hours of the ischemic stroke symptoms? -> ['yes', 'no', 'no']",
+  "R5 DIAGNOSIS Post-stroke hemidystonia (delayed unilateral dystonic movements due to an ischemic stroke involving the contralateral basal ganglia/thalamocortical motor circuitry), rather than epileptic seizures. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are the repetitive movements involuntary?",
+    "Are they present mainly on the left side of the body?",
+    "Did the movements begin suddenly?",
+    "Do you have weakness of the affected arm or leg?",
+    "Have you recently had a stroke or injury to the brain or spinal cord?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "yes",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Did you remain fully conscious and able to respond during the movements?",
+    "Do the movements affect both legs and both arms?",
+    "Did the weakness start at the same time as the involuntary movements?",
+    "Have you had loss of bladder or bowel control?",
+    "Have you recently started or stopped any medication or recreational drug?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Immediate bedside capillary blood glucose measurement",
+    "Urgent non-contrast CT scan of the brain",
+    "Urgent electroencephalogram (EEG) during the abnormal movements"
+   ],
+   "result": [
+    [
+     "blood glucose"
+    ],
+    [
+     "CT head (non-contrast)"
+    ],
+    [
+     "EEG"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Are the involuntary movements confined to the same side as the weakness?",
+    "Are the movements irregular, jerky, and flinging rather than rhythmic or tremulous?",
+    "Did the movements begin within 24 hours of the ischemic stroke symptoms?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Post-stroke hemidystonia (delayed unilateral dystonic movements due to an ischemic stroke involving the contralateral basal ganglia/thalamocortical motor circuitry), rather than epileptic seizures."
+  }
+ ],
+ "dx": "Post-stroke hemidystonia (delayed unilateral dystonic movements due to an ischemic stroke involving the contralateral basal ganglia/thalamocortical motor circuitry), rather than epileptic seizures.",
+ "dx_raw": "DIAGNOSIS: Post-stroke hemidystonia (delayed unilateral dystonic movements due to an ischemic stroke involving the contralateral basal ganglia/thalamocortical motor circuitry), rather than epileptic seizures.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "CT head (non-contrast)",
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0041,
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 35.4
+}

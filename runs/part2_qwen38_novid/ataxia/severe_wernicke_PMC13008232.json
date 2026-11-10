@@ -1,0 +1,154 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your chest?",
+  "Does the pain radiate to your left arm or jaw?",
+  "Do you have a fever?",
+  "Are you short of breath?",
+  "Do you have a cough?",
+  "Is there blood in your stool?",
+  "Have you had recent trauma or an accident?",
+  "Are you pregnant?",
+  "Do you have a history of heart disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Complete blood count with differential",
+  "Comprehensive metabolic panel",
+  "Urinalysis",
+  "Electrocardiogram"
+ ],
+ "served": [
+  "full blood count",
+  "renal and liver function",
+  "electrolytes (Na, K, Ca, Mg)",
+  "glucose / HbA1c",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Complete blood count with differential",
+  "     full blood count: normal",
+  "2. Comprehensive metabolic panel",
+  "     renal and liver function: end-stage renal disease on maintenance haemodialysis",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     glucose / HbA1c: HbA1c 5.9% (reference 4.0-6.0) - normal",
+  "3. Urinalysis",
+  "     urinalysis: normal",
+  "4. Electrocardiogram",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: End-stage renal disease on maintenance haemodialysis\nAlternative 1: Chronic kidney disease secondary to diabetic nephropathy (ruled out by normal HbA1c)\nAlternative 2: Hypertensive nephrosclerosis",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Complete blood count with differential\n2. Comprehensive metabolic panel\n3. Urinalysis\n4. Electrocardiogram",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "End-stage renal disease on maintenance haemodialysis",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 104,
+   "total_tokens": 270,
+   "cost": 7.378e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.378e-05,
+    "upstream_inference_prompt_cost": 2.49e-05,
+    "upstream_inference_completions_cost": 4.888e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 569,
+   "completion_tokens": 26,
+   "total_tokens": 595,
+   "cost": 9.757e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.757e-05,
+    "upstream_inference_prompt_cost": 8.535e-05,
+    "upstream_inference_completions_cost": 1.222e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 809,
+   "completion_tokens": 53,
+   "total_tokens": 862,
+   "cost": 7.7652e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.7652e-05,
+    "upstream_inference_prompt_cost": 5.2742e-05,
+    "upstream_inference_completions_cost": 2.491e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.1
+}

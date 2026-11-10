@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Do you have a history of diabetes?",
+  "Do you feel numbness or tingling in your feet?",
+  "Have you had any foot ulcers or sores recently?",
+  "Do you have a history of alcohol use?",
+  "Do you have a history of high blood pressure?",
+  "Have you ever had a stroke or mini-stroke?",
+  "Do you have a history of thyroid disease?",
+  "Do you have a history of vitamin B12 deficiency?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Perform a focused neurological examination of the lower limbs, specifically testing ankle jerk reflexes and plantar responses",
+  "Perform a bedside examination of the feet, specifically looking for Charcot deformity (rocker-bottom foot)"
+ ],
+ "served": [
+  "deep tendon reflexes and plantar responses"
+ ],
+ "results": [
+  "R1 ASK Do you have a history of diabetes?; Do you feel numbness or tingling in your feet?; Have you had any foot ulcers or sores recently? -> ['yes', 'no', 'no']",
+  "R2 ORDER Perform a focused neurological examination of the lower limbs, specifically testing ankle jerk reflexes and plantar responses -> [['deep tendon reflexes and plantar responses']]",
+  "R3 ASK Do you have a history of alcohol use? -> ['no']",
+  "R4 ASK Do you have a history of high blood pressure? -> ['yes']",
+  "R5 ASK Have you ever had a stroke or mini-stroke? -> ['no']",
+  "R6 ASK Do you have a history of thyroid disease? -> ['no']",
+  "R7 ASK Do you have a history of vitamin B12 deficiency? -> ['no']",
+  "R8 ORDER Perform a bedside examination of the feet, specifically looking for Charcot deformity (rocker-bottom foot) -> [[]]",
+  "R9 DIAGNOSIS Diabetic neuropathy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?",
+    "Do you feel numbness or tingling in your feet?",
+    "Have you had any foot ulcers or sores recently?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Perform a focused neurological examination of the lower limbs, specifically testing ankle jerk reflexes and plantar responses"
+   ],
+   "result": [
+    [
+     "deep tendon reflexes and plantar responses"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of alcohol use?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of high blood pressure?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you ever had a stroke or mini-stroke?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of thyroid disease?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of vitamin B12 deficiency?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Perform a bedside examination of the feet, specifically looking for Charcot deformity (rocker-bottom foot)"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Diabetic neuropathy"
+  }
+ ],
+ "dx": "Diabetic neuropathy",
+ "dx_raw": "DIAGNOSIS: Diabetic neuropathy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0029,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hyperglycemic_hemichorea_PMC12596229.mp4",
+ "line": "chorea",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 45.1
+}

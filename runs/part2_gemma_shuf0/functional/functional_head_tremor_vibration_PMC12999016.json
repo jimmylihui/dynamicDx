@@ -1,0 +1,136 @@
+{
+ "questions": [
+  "Do you have a tremor in your hands when they are at rest?",
+  "Have you noticed that your movements have become slower?",
+  "Do you feel stiffness in your muscles?",
+  "Do you have trouble with your balance?",
+  "Has your handwriting become smaller?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Brain MRI (DWI and FLAIR sequences)",
+  "CSF RT-QuIC assay",
+  "CSF 14-3-3 protein assay"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences",
+  "MRI brain"
+ ],
+ "results": [
+  "1. Brain MRI (DWI and FLAIR sequences)",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI brain: normal for age",
+  "2. CSF RT-QuIC assay",
+  "     not performed / not available",
+  "3. CSF 14-3-3 protein assay",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Creutzfeldt-Jakob Disease caused by prions\n\n1. Autoimmune encephalitis\n2. Lewy body dementia\n3. Metabolic encephalopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Brain MRI (DWI and FLAIR sequences)\n2. EEG\n3. CSF RT-QuIC assay\n4. CSF 14-3-3 protein assay",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Creutzfeldt-Jakob Disease caused by prions",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1563,
+   "total_tokens": 10261,
+   "cost": 0.00140122,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00140122,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00053142
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1544,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8986,
+   "completion_tokens": 1894,
+   "total_tokens": 10880,
+   "cost": 0.00154256,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00154256,
+    "upstream_inference_prompt_cost": 0.0008986,
+    "upstream_inference_completions_cost": 0.00064396
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1606,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9187,
+   "completion_tokens": 2576,
+   "total_tokens": 11763,
+   "cost": 0.00179454,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00179454,
+    "upstream_inference_prompt_cost": 0.0009187,
+    "upstream_inference_completions_cost": 0.00087584
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2311,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.9,
+ "video": "functional_head_tremor_vibration_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 255.2
+}

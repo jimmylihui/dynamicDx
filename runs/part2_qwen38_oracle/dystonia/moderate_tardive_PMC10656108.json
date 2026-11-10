@@ -1,0 +1,110 @@
+{
+ "questions": [
+  "Are you experiencing pain right now?",
+  "Is the pain located in your head or face?",
+  "Do you have a history of cancer?",
+  "Have you recently lost weight without trying?",
+  "Do you smoke cigarettes?",
+  "Do you feel shortness of breath?",
+  "Do you have a fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "action specificity and task dependence",
+  "medication and toxin exposure history",
+  "dystonia rating scale (BFM / OMDRS)"
+ ],
+ "results": [
+  "1. action specificity and task dependence: dystonia appears on INITIATING SPEECH; asymptomatic at rest",
+  "2. medication and toxin exposure history: methotrexate 15 mg weekly for six years for psoriatic arthritis; the dystonia improved after switching to sulfasalazine",
+  "3. dystonia rating scale (BFM / OMDRS): Oromandibular Dystonia Rating Scale 177 at baseline, 103 three months after the drug switch, 75 after adding botulinum toxin"
+ ],
+ "dx_raw": "DIAGNOSIS: Methotrexate-induced oromandibular dystonia\n\n1. Primary Oromandibular Dystonia (coincidental onset)\n2. Tardive Dyskinesia/Dystonia (from undisclosed prior medication exposure)\n3. Neurodegenerative disorder with dystonic features (e.g., Wilson's disease, though less likely given age and specific drug response)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Methotrexate-induced oromandibular dystonia",
+ "decisive_served": [
+  "action specificity and task dependence",
+  "medication and toxin exposure history",
+  "dystonia rating scale (BFM / OMDRS)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 15063,
+   "completion_tokens": 73,
+   "total_tokens": 15136,
+   "cost": 0.00229376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00229376,
+    "upstream_inference_prompt_cost": 0.00225945,
+    "upstream_inference_completions_cost": 3.431e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15453,
+   "completion_tokens": 87,
+   "total_tokens": 15540,
+   "cost": 0.000369208,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14848,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000369208,
+    "upstream_inference_prompt_cost": 0.000328318,
+    "upstream_inference_completions_cost": 4.089e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "moderate_tardive_PMC10656108.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 10.8
+}

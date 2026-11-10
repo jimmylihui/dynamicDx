@@ -1,0 +1,154 @@
+{
+ "questions": [
+  "Do your symptoms get worse as the day progresses?",
+  "Have you noticed any weakness in your arms or legs?",
+  "Have you had any difficulty swallowing or speaking?",
+  "Did you have a viral illness or stomach bug in the last few weeks?",
+  "Do you feel unsteady on your feet or have trouble coordinating your movements?",
+  "Do you have any pain in your eyes or head?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "yes",
+  "6": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Deep tendon reflex examination",
+  "Anti-GQ1b antibody test",
+  "Nerve conduction studies",
+  "MRI Brain"
+ ],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "nerve conduction studies",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+ ],
+ "results": [
+  "1. Deep tendon reflex examination",
+  "     deep tendon reflexes and plantar responses: hyperreflexia with flexor plantar responses",
+  "2. Anti-GQ1b antibody test",
+  "     not performed / not available",
+  "3. Nerve conduction studies",
+  "     nerve conduction studies: normal",
+  "4. MRI Brain",
+  "     MRI brain with gadolinium: putaminal atrophy with the rim sign and putaminal hypointensity on susceptibility-weighted imaging",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: putaminal hypointensity",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): no hummingbird sign",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): putaminal atrophy with the rim sign and putaminal hypointensity on susceptibility-weighted imaging",
+  "     MRI brain - cortical atrophy pattern: no focal atrophy",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Multiple System Atrophy caused by alpha-synucleinopathy\n\nProgressive Supranuclear Palsy\nCorticobasal Degeneration\nParkinson's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Deep tendon reflex examination\n2. Anti-GQ1b antibody test\n3. Nerve conduction studies\n4. MRI Brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Multiple System Atrophy caused by alpha-synucleinopathy",
+ "decisive_served": [
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 267,
+   "completion_tokens": 3811,
+   "total_tokens": 4078,
+   "cost": 0.00132244,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00132244,
+    "upstream_inference_prompt_cost": 2.67e-05,
+    "upstream_inference_completions_cost": 0.00129574
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3666,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 613,
+   "completion_tokens": 2105,
+   "total_tokens": 2718,
+   "cost": 0.000777,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000777,
+    "upstream_inference_prompt_cost": 6.13e-05,
+    "upstream_inference_completions_cost": 0.0007157
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1961,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 951,
+   "completion_tokens": 4817,
+   "total_tokens": 5768,
+   "cost": 0.00173288,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00173288,
+    "upstream_inference_prompt_cost": 9.51e-05,
+    "upstream_inference_completions_cost": 0.00163778
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4510,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 1561.8
+}

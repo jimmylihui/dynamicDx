@@ -1,0 +1,130 @@
+{
+ "questions": [
+  "Are the movements of your right arm involuntary?",
+  "Did these movements begin suddenly?",
+  "Do you remain fully conscious and aware while they occur?",
+  "Are the movements confined mainly to your right arm?",
+  "Do you have weakness or numbness on the right side of your body?",
+  "Do you have difficulty speaking, seeing, walking, or keeping your balance?",
+  "Did the movements start after a head injury or stroke-like episode?",
+  "Can you temporarily stop the movements when you concentrate on doing so?",
+  "Do the movements worsen when you are anxious or being observed?",
+  "Do the movements disappear when you are asleep?",
+  "Have you had similar episodes before?",
+  "Are you taking any medications that affect the brain, including antipsychotics, anti-nausea drugs, antidepressants, or stimulants?",
+  "Have you recently stopped taking alcohol, sedatives, or another regular medication?",
+  "Do you use recreational drugs or large amounts of caffeine?",
+  "Do you have a history of seizures or other neurological disease?",
+  "Have you recently had a fever, infection, or severe illness?",
+  "Is there pain in the moving arm or shoulder?",
+  "Have you noticed involuntary movements elsewhere in your body?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "tremor frequency estimate",
+  "brain MRI",
+  "tuberculosis treatment history"
+ ],
+ "results": [
+  "1. tremor frequency estimate: slow, under about 4.5 Hz, with a wing-beating quality",
+  "2. brain MRI: thalamic lesion (tuberculoma) that DECREASED in size after anti-tuberculous treatment, with no gliosis",
+  "3. tuberculosis treatment history: CNS tuberculoma treated with anti-tuberculous therapy; the tremor began after treatment was completed"
+ ],
+ "dx_raw": "DIAGNOSIS: Holmes (rubral) tremor caused by a post-treatment thalamic tuberculoma lesion\n\nAlternative 1: Cerebellar outflow tremor secondary to thalamic involvement\n\nAlternative 2: Dystonic tremor\n\nAlternative 3: Functional neurological tremor",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Holmes (rubral) tremor caused by a post-treatment thalamic tuberculoma lesion",
+ "decisive_served": [
+  "tremor frequency estimate",
+  "brain MRI",
+  "tuberculosis treatment history"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 17964,
+   "completion_tokens": 459,
+   "total_tokens": 18423,
+   "cost": 0.00045531,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00045531,
+    "upstream_inference_prompt_cost": 0.00017991,
+    "upstream_inference_completions_cost": 0.0002754
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 195,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 18752,
+   "completion_tokens": 218,
+   "total_tokens": 18970,
+   "cost": 0.00040921,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 788,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00040921,
+    "upstream_inference_prompt_cost": 0.00027841,
+    "upstream_inference_completions_cost": 0.0001308
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 151,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 16.5
+}

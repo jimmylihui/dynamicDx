@@ -1,0 +1,129 @@
+{
+ "questions": [
+  "Are these movements involuntary and difficult for you to stop?",
+  "Are you fully conscious and aware during the movements?",
+  "Did the movements begin suddenly within the last few hours or days?",
+  "Have you had any loss of consciousness, blank spells, or confusion during them?",
+  "Are the movements rhythmic or repetitive jerking rather than irregular twisting or writhing?",
+  "Do the movements affect both sides of your body?",
+  "Do you have new weakness, numbness, facial drooping, difficulty speaking, or trouble seeing?",
+  "Have you recently started, stopped, or changed the dose of any medication?",
+  "Have you taken any antipsychotic, antidepressant, anti-nausea, or Parkinson’s medication recently?",
+  "Have you used alcohol or recreational drugs recently, or suddenly stopped using alcohol?",
+  "Do you have a fever, severe headache, neck stiffness, or sensitivity to light?",
+  "Have you recently had a head injury, infection, or significant illness?",
+  "Have you ever had similar movements before?",
+  "Do the movements lessen or stop when you are asleep?",
+  "Are you experiencing severe anxiety, an inability to stay still, or an inner feeling of restlessness?",
+  "Are you pregnant or could you be pregnant?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "trial of glucose correction with insulin"
+ ],
+ "results": [
+  "1. blood glucose: 2.25 g/L (normal 0.70-1.10) - non-ketotic hyperglycaemia",
+  "2. HbA1c: 7.8% with long-standing poor control",
+  "3. ketones (blood or urine): negative - a treated ketoacidosis had preceded this admission",
+  "4. trial of glucose correction with insulin: symptoms improved significantly with normalisation of blood glucose"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperglycemia-induced chorea (diabetic striatopathy), bilateral, due to poorly controlled diabetes with non-ketotic hyperglycemia\n\nAlternative: Focal or generalized seizure disorder\n\nAlternative: Post-infectious autoimmune chorea\n\nAlternative: Drug-induced dyskinesia or chorea",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Hyperglycemia-induced chorea (diabetic striatopathy), bilateral, due to poorly controlled diabetes with non-ketotic hyperglycemia",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "trial of glucose correction with insulin"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 22284,
+   "completion_tokens": 498,
+   "total_tokens": 22782,
+   "cost": 0.00052191,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 22281,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00052191,
+    "upstream_inference_prompt_cost": 0.00022311,
+    "upstream_inference_completions_cost": 0.0002988
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 230,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 23074,
+   "completion_tokens": 248,
+   "total_tokens": 23322,
+   "cost": 0.00047066,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 22281,
+    "cache_write_tokens": 790,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00047066,
+    "upstream_inference_prompt_cost": 0.00032186,
+    "upstream_inference_completions_cost": 0.0001488
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 178,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 16.4
+}

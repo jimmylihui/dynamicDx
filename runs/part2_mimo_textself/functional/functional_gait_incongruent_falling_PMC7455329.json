@@ -1,0 +1,176 @@
+{
+ "questions": [
+  "Did you lose consciousness when you fell?",
+  "Did you experience any sudden weakness or numbness on one side of your body?",
+  "Did you have any chest pain or palpitations before the fall?",
+  "Did you feel dizzy or lightheadedness before the fall?",
+  "Did you have any trouble with your vision, such as double vision or loss of vision?",
+  "Did you have any trouble speaking or understanding speech during or after the fall?",
+  "Are you able to move your arms and legs normally right now?",
+  "Do you have a history of heart disease, stroke, or diabetes?",
+  "Have you eaten anything in the past few hours?",
+  "Are you in any pain right now?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Orthostatic blood pressure measurements",
+  "Focused neurological examination (muscle tone, strength distribution, reflexes)",
+  "CT head without contrast",
+  "Blood glucose level",
+  "Basic metabolic panel",
+  "Complete blood count",
+  "Electrocardiogram",
+  "Pelvis X-ray"
+ ],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "MRC power in all four limbs",
+  "CT head",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "serum electrolytes, urea and creatinine",
+  "full blood count, renal and liver profile",
+  "full blood count, renal and liver profile"
+ ],
+ "results": [
+  "1. Orthostatic blood pressure measurements",
+  "     not performed / not available",
+  "2. Focused neurological examination (muscle tone, strength distribution, reflexes)",
+  "     deep tendon reflexes and plantar responses: normal, flexor plantars",
+  "     muscle tone (spasticity, rigidity, paratonia): normal",
+  "     MRC power in all four limbs: 5/5 throughout - a slow controlled descent of this kind requires intact quadriceps strength",
+  "3. CT head without contrast",
+  "     CT head: normal",
+  "4. Blood glucose level",
+  "     blood glucose and HbA1c: normal",
+  "     glucose / HbA1c: normal",
+  "5. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     full blood count, renal and liver profile: normal",
+  "6. Complete blood count",
+  "     full blood count, renal and liver profile: normal",
+  "7. Electrocardiogram",
+  "     not performed / not available",
+  "8. Pelvis X-ray",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder\n\n1. Normal pressure hydrocephalus\n2. Parkinson's disease\n3. Spinal stenosis with neurogenic claudication",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Orthostatic blood pressure measurements\n2. Focused neurological examination (muscle tone, strength distribution, reflexes)\n3. CT head without contrast\n4. Blood glucose level\n5. Basic metabolic panel\n6. Complete blood count\n7. Electrocardiogram\n8. Pelvis X-ray",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional neurological symptom disorder",
+ "decisive_served": [
+  "MRC power in all four limbs"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 460,
+   "completion_tokens": 2900,
+   "total_tokens": 3360,
+   "cost": 0.0008500576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008500576,
+    "upstream_inference_prompt_cost": 3.80576e-05,
+    "upstream_inference_completions_cost": 0.000812
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2747,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 957,
+   "completion_tokens": 1520,
+   "total_tokens": 2477,
+   "cost": 0.0004981144,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004981144,
+    "upstream_inference_prompt_cost": 7.25144e-05,
+    "upstream_inference_completions_cost": 0.0004256
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1453,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1330,
+   "completion_tokens": 20967,
+   "total_tokens": 22297,
+   "cost": 0.0059340288,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 896,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0059340288,
+    "upstream_inference_prompt_cost": 6.32688e-05,
+    "upstream_inference_completions_cost": 0.00587076
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 20926,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 361.0
+}

@@ -1,0 +1,163 @@
+{
+ "questions": [
+  "Are you experiencing any life-threatening symptoms such as severe chest pain, difficulty breathing, uncontrolled bleeding, or sudden loss of consciousness?",
+  "Do you have a fever?",
+  "Are you experiencing any pain?",
+  "If yes to 3, is the pain located in your chest, abdomen, head, or joints/muscles?",
+  "Have you noticed any unexplained weight loss in the past few months?",
+  "Have you had any recent injuries?",
+  "Do you have a cough?",
+  "Are you experiencing shortness of breath?",
+  "Have you had any vomiting or diarrhea recently?",
+  "Are you feeling unusually fatigued or weak?",
+  "Have you had any dizziness or problems with balance?",
+  "Have you noticed any changes in your vision or hearing?",
+  "Do you have a personal history of conditions such as heart disease, diabetes, high blood pressure, or asthma?",
+  "Are you taking any prescription medications, over-the-counter drugs, or supplements regularly?",
+  "Are you a current smoker or have you smoked in the past?",
+  "Is there anything else, not mentioned in these questions, that you feel is important for me to know?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Is the other important thing you want to mention a symptom you are currently experiencing?",
+  "Is it related to your dizziness or balance problem?",
+  "Is it related to your nervous system (for example, numbness, weakness, or headaches)?",
+  "Is it related to your ears or hearing?",
+  "Is it a family history of a medical condition?",
+  "Is it something you found on your body (for example, a lump, rash, or growth)?"
+ ],
+ "served": [],
+ "results": [
+  "1. Is the other important thing you want to mention a symptom you are currently experiencing?",
+  "     not performed / not available",
+  "2. Is it related to your dizziness or balance problem?",
+  "     not performed / not available",
+  "3. Is it related to your nervous system (for example, numbness, weakness, or headaches)?",
+  "     not performed / not available",
+  "4. Is it related to your ears or hearing?",
+  "     not performed / not available",
+  "5. Is it a family history of a medical condition?",
+  "     not performed / not available",
+  "6. Is it something you found on your body (for example, a lump, rash, or growth)?",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Benign paroxysmal positional vertigo (BPPV)\n\nAlternative diagnoses:\n1. Vestibular neuritis\n2. Orthostatic hypotension\n3. Cervicogenic dizziness",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "17. Is the other important thing you want to mention a symptom you are currently experiencing?\n18. Is it related to your dizziness or balance problem?\n19. Is it related to your nervous system (for example, numbness, weakness, or headaches)?\n20. Is it related to your ears or hearing?\n21. Is it a family history of a medical condition?\n22. Is it something you found on your body (for example, a lump, rash, or growth)?",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Benign paroxysmal positional vertigo (BPPV)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 444,
+   "total_tokens": 829,
+   "cost": 0.0001518776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001518776,
+    "upstream_inference_prompt_cost": 2.75576e-05,
+    "upstream_inference_completions_cost": 0.00012432
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 192,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1110,
+   "completion_tokens": 754,
+   "total_tokens": 1864,
+   "cost": 0.000322616,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000322616,
+    "upstream_inference_prompt_cost": 0.000111496,
+    "upstream_inference_completions_cost": 0.00021112
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 648,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1447,
+   "completion_tokens": 578,
+   "total_tokens": 2025,
+   "cost": 0.0002151464,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1088,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002151464,
+    "upstream_inference_prompt_cost": 5.33064e-05,
+    "upstream_inference_completions_cost": 0.00016184
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 527,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_3_joubert_apraxia_PMC8490194.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 64.7
+}

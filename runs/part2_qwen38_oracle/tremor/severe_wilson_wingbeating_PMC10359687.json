@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Do you have a known diagnosis of epilepsy?",
+  "Were you previously taking the medication zonisamide for this condition?",
+  "Did you stop taking your zonisamide recently before these symptoms started?",
+  "Are you currently experiencing involuntary jerking movements in your arms or hands?",
+  "Have you had any recent episodes of loss of consciousness or convulsions (seizures)?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "genetic testing (targeted panel or exome)",
+  "skin biopsy"
+ ],
+ "results": [
+  "1. cognitive screen (MMSE / MoCA / FAB): MMSE 23/30 and Frontal Assessment Battery 9/18 - frontal/executive dysfunction",
+  "2. copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease",
+  "3. genetic testing (targeted panel or exome): NOTCH2NLC GGC repeat expansion - genetically confirmed NIID",
+  "4. skin biopsy: eosinophilic, p62- and ubiquitin-POSITIVE intranuclear inclusions in adipocytes, sweat gland cells and fibroblasts - diagnostic of NIID"
+ ],
+ "dx_raw": "DIAGNOSIS: Neuronal intranuclear inclusion disease (NIID) caused by a GGC repeat expansion in the NOTCH2NLC gene",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Neuronal intranuclear inclusion disease (NIID) caused by a GGC repeat expansion in the NOTCH2NLC gene",
+ "decisive_served": [
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "genetic testing (targeted panel or exome)",
+  "skin biopsy"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4311,
+   "completion_tokens": 84,
+   "total_tokens": 4395,
+   "cost": 0.00068613,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00068613,
+    "upstream_inference_prompt_cost": 0.00064665,
+    "upstream_inference_completions_cost": 3.948e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 4733,
+   "completion_tokens": 33,
+   "total_tokens": 4766,
+   "cost": 0.000193748,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 3968,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000193748,
+    "upstream_inference_prompt_cost": 0.000178238,
+    "upstream_inference_completions_cost": 1.551e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 12.1
+}

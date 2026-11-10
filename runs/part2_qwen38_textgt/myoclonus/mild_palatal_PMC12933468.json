@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Is the movement involuntary?",
+  "Does it occur while you are awake?",
+  "Do you have a history of head trauma or stroke?",
+  "Do you experience tinnitus (ringing in the ears)?",
+  "Is the clicking sound audible to others?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "yes",
+  "5": "yes"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "MRI of the brain with attention to the posterior fossa and dentate nucleus",
+  "CT angiography of the head and neck"
+ ],
+ "served": [
+  "MRI brainstem / dentato-rubro-olivary pathway"
+ ],
+ "results": [
+  "1. MRI of the brain with attention to the posterior fossa and dentate nucleus",
+  "     MRI brainstem / dentato-rubro-olivary pathway: inflammatory brainstem involvement in the Guillain-Mollaret triangle",
+  "2. CT angiography of the head and neck",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Symptomatic palatal tremor secondary to inflammatory lesion of the Guillain-Mollaret triangle\nAlternative 1: Idiopathic essential palatal tremor\nAlternative 2: Palatal myoclonus due to structural brainstem lesion (e.g., demyelination)",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with attention to the posterior fossa and dentate nucleus\n2. CT angiography of the head and neck",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Symptomatic palatal tremor secondary to inflammatory lesion of the Guillain-Mollaret triangle",
+ "decisive_served": [
+  "MRI brainstem / dentato-rubro-olivary pathway"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 182,
+   "completion_tokens": 58,
+   "total_tokens": 240,
+   "cost": 5.456e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.456e-05,
+    "upstream_inference_prompt_cost": 2.73e-05,
+    "upstream_inference_completions_cost": 2.726e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 473,
+   "completion_tokens": 28,
+   "total_tokens": 501,
+   "cost": 8.411e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.411e-05,
+    "upstream_inference_prompt_cost": 7.095e-05,
+    "upstream_inference_completions_cost": 1.316e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 666,
+   "completion_tokens": 62,
+   "total_tokens": 728,
+   "cost": 9.4736e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.4736e-05,
+    "upstream_inference_prompt_cost": 6.5596e-05,
+    "upstream_inference_completions_cost": 2.914e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 9.0,
+ "video": "mild_palatal_PMC12933468.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.0
+}

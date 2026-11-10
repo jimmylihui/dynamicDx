@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Are the movements in your raised hand involuntary?",
+  "Can you voluntarily stop the movements when you try?",
+  "Do the movements occur when your hand is completely at rest?",
+  "Do they disappear when you are asleep?",
+  "Did these movements begin suddenly?",
+  "Are the movements confined mainly to one hand or one side of your body?",
+  "Do you feel an urge or inner sensation that is relieved by making the movement?",
+  "Are the movements worse when you are anxious, concentrating, or being watched?",
+  "Can touching or changing the position of your hand temporarily reduce the movements?",
+  "Do you have stiffness, slowness, or a resting tremor elsewhere?",
+  "Have you noticed weakness, numbness, loss of coordination, or clumsiness on that side?",
+  "Have you had any recent stroke, head injury, infection, or other brain illness?",
+  "Do you take levodopa, antipsychotic medication, nausea medication, or other dopamine-blocking medication?",
+  "Have you ever been diagnosed with Parkinson’s disease or another movement disorder?",
+  "Do you have involuntary movements of your mouth, tongue, face, legs, or the other hand?",
+  "Are the movements painful or causing you to injure yourself?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "yes",
+  "16": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "skin examination",
+  "autoimmune encephalopathy / paraneoplastic antibody panel",
+  "brain MRI with contrast",
+  "PET-CT or CT body (occult malignancy)",
+  "trial of immunotherapy"
+ ],
+ "results": [
+  "1. skin examination: a painless, non-pruritic confluent erythematous rash on the left arm one day before the chorea began; it improved with doxycycline and clindamycin but the chorea did not",
+  "2. autoimmune encephalopathy / paraneoplastic antibody panel: NEGATIVE in serum and CSF - seronegative",
+  "3. brain MRI with contrast: 1.5T with gadolinium - frontal-predominant atrophy but NO focal lesion, with normal basal ganglia structure and volume",
+  "4. PET-CT or CT body (occult malignancy): skull base to thighs - no malignancy and no infection",
+  "5. trial of immunotherapy: empirical IVIg produced DRAMATIC improvement of the hemichorea - the diagnosis rests on the treatment response"
+ ],
+ "dx_raw": "DIAGNOSIS: Seronegative post-infectious autoimmune hemichorea, most likely triggered by the preceding left-arm bacterial skin infection/cellulitis\n\nSydenham chorea\n\nSeronegative paraneoplastic autoimmune chorea\n\nHuntington disease or another neurodegenerative chorea",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Seronegative post-infectious autoimmune hemichorea, most likely triggered by the preceding left-arm bacterial skin infection/cellulitis",
+ "decisive_served": [
+  "skin examination",
+  "autoimmune encephalopathy / paraneoplastic antibody panel",
+  "brain MRI with contrast",
+  "PET-CT or CT body (occult malignancy)",
+  "trial of immunotherapy"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 17964,
+   "completion_tokens": 783,
+   "total_tokens": 18747,
+   "cost": 0.00064971,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00064971,
+    "upstream_inference_prompt_cost": 0.00017991,
+    "upstream_inference_completions_cost": 0.0004698
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 18828,
+   "completion_tokens": 390,
+   "total_tokens": 19218,
+   "cost": 0.00052191,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 864,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00052191,
+    "upstream_inference_prompt_cost": 0.00028791,
+    "upstream_inference_completions_cost": 0.000234
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 324,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11093232.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 21.9
+}

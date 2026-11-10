@@ -1,0 +1,315 @@
+{
+ "questions": [
+  "Did you sustain a recent head trauma (such as a fall or blow to the head)?",
+  "Are you currently experiencing blurred vision or sensitivity to light?",
+  "Have you had any seizures in the past or since your injury?",
+  "Did you have brain surgery recently?",
+  "Do you have a history of brain tumors or epilepsy?",
+  "Were your seizures the reason you needed the surgery on your head?",
+  "Can you tell me what procedure was performed on your head?",
+  "Do you know why you were admitted to the hospital?",
+  "Have you been having headaches?",
+  "Did you lose consciousness at any point?",
+  "Do you have any weakness or numbness on one side of your body?",
+  "Did you fall and injure your head during your seizure, which is why you have the bandage?",
+  "Have you had seizures since you were a child, or did they start recently?",
+  "Is there a family history of epilepsy or seizures?",
+  "Have you ever had absence seizures (brief episodes of staring or \"spacing out\")?",
+  "Do you take any medications regularly?",
+  "Was the bandage placed on your head before or after your current hospital stay?",
+  "Did you have any type of procedure where electrodes were placed on or in your head?",
+  "Is this your first time having a seizure, or have you had previous episodes?",
+  "Can you describe what happened during your seizure? Did you stiffen up and shake, or did something else happen?",
+  "Did you bite your tongue, lose control of your bladder, or feel confused afterward?",
+  "Were you doing anything specific right before the seizure (like lack of sleep, stress, flashing lights)?",
+  "Did the paramedics give you any medication (like lorazepam or midazolam) to stop the seizure?",
+  "What is the bandage on your head for? Did you fall and hit your head during the seizure?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "yes",
+  "20": "yes",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "CT scan of the head without contrast",
+  "Check pupillary light reflexes",
+  "Check for signs of meningeal irritation (neck stiffness)",
+  "EEG (electroencephalogram)",
+  "Basic metabolic panel (electrolytes, glucose, calcium, magnesium)",
+  "Complete blood count",
+  "MRI of the brain with contrast",
+  "Lumbar puncture (cerebrospinal fluid analysis)",
+  "Serum prolactin level (drawn within 20 minutes of seizure)",
+  "Serum lactate level",
+  "Lorazepam 4mg IV (therapeutic trial to see if seizure activity stops/is postictal)",
+  "Contact family or caregiver for collateral history about what happened before hospitalization and what the head bandage is for"
+ ],
+ "served": [
+  "CT head",
+  "cranial nerve examination",
+  "neurological examination between events",
+  "interictal EEG",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium",
+  "full blood count and biochemistry",
+  "MRI brain with gadolinium",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "lumbar puncture / CSF",
+  "witnessed description of the event",
+  "head injury history"
+ ],
+ "results": [
+  "R1 ASK Did you sustain a recent head trauma (such as a fall or blow to the head)?; Are you currently experiencing blurred vision or sensitivity to light?; Have you had any seizures in the past or since your injury? -> ['no', 'no', 'yes']",
+  "R2 ASK Did you have brain surgery recently?; Do you have a history of brain tumors or epilepsy?; Were your seizures the reason you needed the surgery on your head? -> ['no', 'no', 'no']",
+  "R3 ASK Can you tell me what procedure was performed on your head?; Do you know why you were admitted to the hospital?; Have you been having headaches?; Did you lose consciousness at any point?; Do you have any weakness or numbness on one side of your body? -> ['no', 'no', 'no', 'yes', 'no']",
+  "R4 ORDER CT scan of the head without contrast; Check pupillary light reflexes; Check for signs of meningeal irritation (neck stiffness) -> [['CT head'], ['cranial nerve examination'], ['neurological examination between events']]",
+  "R5 ORDER EEG (electroencephalogram); Basic metabolic panel (electrolytes, glucose, calcium, magnesium); Complete blood count -> [['interictal EEG'], ['serum electrolytes, urea and creatinine', 'serum calcium, magnesium and phosphate', 'blood glucose and HbA1c', 'glucose, calcium, magnesium, sodium'], ['full blood count and biochemistry']]",
+  "R6 ASK Did you fall and injure your head during your seizure, which is why you have the bandage?; Have you had seizures since you were a child, or did they start recently?; Is there a family history of epilepsy or seizures?; Have you ever had absence seizures (brief episodes of staring or \"spacing out\")?; Do you take any medications regularly? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 ASK Was the bandage placed on your head before or after your current hospital stay?; Did you have any type of procedure where electrodes were placed on or in your head?; Is this your first time having a seizure, or have you had previous episodes? -> ['no', 'no', 'yes']",
+  "R8 ORDER MRI of the brain with contrast; Lumbar puncture (cerebrospinal fluid analysis); Serum prolactin level (drawn within 20 minutes of seizure); Serum lactate level -> [['MRI brain with gadolinium'], ['CSF opening pressure', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF cytology and flow cytometry', 'CSF culture and viral PCR', 'lumbar puncture / CSF'], [], []]",
+  "R9 ASK Can you describe what happened during your seizure? Did you stiffen up and shake, or did something else happen?; Did you bite your tongue, lose control of your bladder, or feel confused afterward?; Were you doing anything specific right before the seizure (like lack of sleep, stress, flashing lights)?; Did the paramedics give you any medication (like lorazepam or midazolam) to stop the seizure?; What is the bandage on your head for? Did you fall and hit your head during the seizure? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R10 ORDER Lorazepam 4mg IV (therapeutic trial to see if seizure activity stops/is postictal); Contact family or caregiver for collateral history about what happened before hospitalization and what the head bandage is for -> [[], ['witnessed description of the event', 'head injury history']]",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Idiopathic generalized epilepsy (likely juvenile myoclonic epilepsy) - characterized by generalized polyspike-wave discharges on EEG, normal brain imaging, normal neurological exam between  -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did you sustain a recent head trauma (such as a fall or blow to the head)?",
+    "Are you currently experiencing blurred vision or sensitivity to light?",
+    "Have you had any seizures in the past or since your injury?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Did you have brain surgery recently?",
+    "Do you have a history of brain tumors or epilepsy?",
+    "Were your seizures the reason you needed the surgery on your head?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Can you tell me what procedure was performed on your head?",
+    "Do you know why you were admitted to the hospital?",
+    "Have you been having headaches?",
+    "Did you lose consciousness at any point?",
+    "Do you have any weakness or numbness on one side of your body?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "CT scan of the head without contrast",
+    "Check pupillary light reflexes",
+    "Check for signs of meningeal irritation (neck stiffness)"
+   ],
+   "result": [
+    [
+     "CT head"
+    ],
+    [
+     "cranial nerve examination"
+    ],
+    [
+     "neurological examination between events"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "EEG (electroencephalogram)",
+    "Basic metabolic panel (electrolytes, glucose, calcium, magnesium)",
+    "Complete blood count"
+   ],
+   "result": [
+    [
+     "interictal EEG"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "serum calcium, magnesium and phosphate",
+     "blood glucose and HbA1c",
+     "glucose, calcium, magnesium, sodium"
+    ],
+    [
+     "full blood count and biochemistry"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Did you fall and injure your head during your seizure, which is why you have the bandage?",
+    "Have you had seizures since you were a child, or did they start recently?",
+    "Is there a family history of epilepsy or seizures?",
+    "Have you ever had absence seizures (brief episodes of staring or \"spacing out\")?",
+    "Do you take any medications regularly?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Was the bandage placed on your head before or after your current hospital stay?",
+    "Did you have any type of procedure where electrodes were placed on or in your head?",
+    "Is this your first time having a seizure, or have you had previous episodes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "MRI of the brain with contrast",
+    "Lumbar puncture (cerebrospinal fluid analysis)",
+    "Serum prolactin level (drawn within 20 minutes of seizure)",
+    "Serum lactate level"
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium"
+    ],
+    [
+     "CSF opening pressure",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF cytology and flow cytometry",
+     "CSF culture and viral PCR",
+     "lumbar puncture / CSF"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Can you describe what happened during your seizure? Did you stiffen up and shake, or did something else happen?",
+    "Did you bite your tongue, lose control of your bladder, or feel confused afterward?",
+    "Were you doing anything specific right before the seizure (like lack of sleep, stress, flashing lights)?",
+    "Did the paramedics give you any medication (like lorazepam or midazolam) to stop the seizure?",
+    "What is the bandage on your head for? Did you fall and hit your head during the seizure?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "Lorazepam 4mg IV (therapeutic trial to see if seizure activity stops/is postictal)",
+    "Contact family or caregiver for collateral history about what happened before hospitalization and what the head bandage is for"
+   ],
+   "result": [
+    [],
+    [
+     "witnessed description of the event",
+     "head injury history"
+    ]
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Idiopathic generalized epilepsy (likely juvenile myoclonic epilepsy) - characterized by generalized polyspike-wave discharges on EEG, normal brain imaging, normal neurological exam between "
+  }
+ ],
+ "dx": "Idiopathic generalized epilepsy (likely juvenile myoclonic epilepsy) - characterized by generalized polyspike-wave discharges on EEG, normal brain imaging, normal neurological exam between events, and no structural or metabolic cause identified",
+ "dx_raw": "DIAGNOSIS: Idiopathic generalized epilepsy (likely juvenile myoclonic epilepsy) - characterized by generalized polyspike-wave discharges on EEG, normal brain imaging, normal neurological exam between events, and no structural or metabolic cause identified",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "interictal EEG"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0025,
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 876.4
+}

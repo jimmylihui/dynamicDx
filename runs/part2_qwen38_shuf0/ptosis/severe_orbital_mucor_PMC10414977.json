@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain in your eye?",
+  "Is your vision in this eye blurry or decreased?",
+  "Do you see double when looking with both eyes open?",
+  "Have you had any recent trauma to the face or eye?",
+  "Does moving your eye cause pain?",
+  "Did this problem start suddenly today?",
+  "Do you have a history of thyroid disease?",
+  "Do you have diabetes?",
+  "Have you noticed your eyelid drooping on this side?",
+  "Do you have a severe headache right now?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Bedside examination of pupil size and reactivity to light in both ambient light and darkness",
+  "Instillation of apraclonidine 0.5% eye drops into both eyes",
+  "Instillation of dilute pilocarpine (0.125%) eye drops into the affected eye",
+  "Blood test for acetylcholine receptor antibodies",
+  "MRI of the brain and orbits with contrast"
+ ],
+ "served": [
+  "pupil examination (size, light reaction)"
+ ],
+ "results": [
+  "1. Bedside examination of pupil size and reactivity to light in both ambient light and darkness",
+  "     pupil examination (size, light reaction): equal and reactive",
+  "2. Instillation of apraclonidine 0.5% eye drops into both eyes",
+  "     not performed / not available",
+  "3. Instillation of dilute pilocarpine (0.125%) eye drops into the affected eye",
+  "     not performed / not available",
+  "4. Blood test for acetylcholine receptor antibodies",
+  "     not performed / not available",
+  "5. MRI of the brain and orbits with contrast",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Mechanical ptosis secondary to dermatochalasis (involutional eyelid laxity)\n\n1. Myasthenia gravis\n2. Chronic progressive external ophthalmoplegia (CPEO)\n3. Blepharoptosis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination of pupil size and reactivity to light in both ambient light and darkness\n2. Instillation of apraclonidine 0.5% eye drops into both eyes\n3. Instillation of dilute pilocarpine (0.125%) eye drops into the affected eye\n4. Blood test for acetylcholine receptor antibodies\n5. MRI of the brain and orbits with contrast",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Mechanical ptosis secondary to dermatochalasis (involutional eyelid laxity)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 17111,
+   "completion_tokens": 123,
+   "total_tokens": 17234,
+   "cost": 0.00262446,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00262446,
+    "upstream_inference_prompt_cost": 0.00256665,
+    "upstream_inference_completions_cost": 5.781e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 17550,
+   "completion_tokens": 88,
+   "total_tokens": 17638,
+   "cost": 0.000426948,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 16768,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000426948,
+    "upstream_inference_prompt_cost": 0.000385588,
+    "upstream_inference_completions_cost": 4.136e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 17868,
+   "completion_tokens": 57,
+   "total_tokens": 17925,
+   "cost": 0.00039147,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17280,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00039147,
+    "upstream_inference_prompt_cost": 0.00036468,
+    "upstream_inference_completions_cost": 2.679e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 23.5
+}

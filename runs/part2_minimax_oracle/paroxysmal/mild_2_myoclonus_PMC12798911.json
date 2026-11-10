@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Did you have recent surgery on your chest?",
+  "Was it open-heart surgery?",
+  "Are you currently experiencing chest pain?",
+  "Is the pain worse when you take a deep breath or cough?",
+  "Are you feeling short of breath?",
+  "Have you had a fever since the surgery?",
+  "Do you have a cough?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of high blood pressure?",
+  "Have you noticed any discharge from your wound?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "trigger or provoking activity",
+  "medication and anaesthetic exposure",
+  "interictal EEG",
+  "antiseizure medication trial"
+ ],
+ "results": [
+  "1. trigger or provoking activity: action-induced and restricted to a few body segments, suggesting cortical-reflex myoclonus",
+  "2. medication and anaesthetic exposure: propofol and thiopentone for coronary artery bypass grafting with aortic valve replacement; jerks began 6 days later (day 3 in the second case)",
+  "3. interictal EEG: occasional OCCIPITAL SHARP WAVES only (normal in the second patient) - no ictal pattern",
+  "4. antiseizure medication trial: complete resolution within 4 days on clonazepam 0.25 mg twice daily and levetiracetam 500 mg twice daily, with no relapse on follow-up"
+ ],
+ "dx_raw": "DIAGNOSIS: Postoperative action myoclonus (cortical reflex type) secondary to propofol and thiopentone exposure.\n1. Lance-Adams syndrome (post-hypoxic myoclonus) related to cardiopulmonary bypass\n2. Epilepsia partialis continua secondary to a focal postoperative brain lesion (e.g., small embolic stroke)\n3. Metabolic myoclonus (e.g., uremic or hepatic encephalopathy)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Postoperative action myoclonus (cortical reflex type) secondary to propofol and thiopentone exposure.",
+ "decisive_served": [
+  "trigger or provoking activity",
+  "medication and anaesthetic exposure",
+  "interictal EEG",
+  "antiseizure medication trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8886,
+   "completion_tokens": 1614,
+   "total_tokens": 10500,
+   "cost": 0.00456492,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00456492,
+    "upstream_inference_prompt_cost": 0.00262812,
+    "upstream_inference_completions_cost": 0.0019368
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1510,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9382,
+   "completion_tokens": 5517,
+   "total_tokens": 14899,
+   "cost": 0.00730596,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8871,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00730596,
+    "upstream_inference_prompt_cost": 0.00068556,
+    "upstream_inference_completions_cost": 0.0066204
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5422,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 83.1
+}

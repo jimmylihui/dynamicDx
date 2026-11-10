@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Do you have a family history of essential tremor?",
+  "Does the shaking improve after drinking alcohol?",
+  "Is the shaking present when your arms are resting in your lap?",
+  "Do you take any medications for psychiatric conditions or asthma?",
+  "Have you noticed any slowness of movement, stiffness, or balance problems?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform a detailed neurological examination including assessment of tone, reflexes, and coordination to rule out subtle parkinsonian signs or cerebellar ataxia.",
+  "Order serum thyroid-stimulating hormone (TSH) level.",
+  "Order comprehensive metabolic panel including liver function tests and renal function.",
+  "Order serum ceruloplasmin and 24-hour urine copper levels.",
+  "Obtain MRI of the brain with attention to the basal ganglia and cerebellum."
+ ],
+ "served": [
+  "muscle tone examination",
+  "reflexes and plantar responses",
+  "coordination examination (limb and truncal)",
+  "TSH / free T4",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum copper and caeruloplasmin",
+  "24-hour urinary copper",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Perform a detailed neurological examination including assessment of tone, reflexes, and coordination to rule out subtle parkinsonian signs or cerebellar ataxia.",
+  "     muscle tone examination: normal",
+  "     reflexes and plantar responses: normal",
+  "     coordination examination (limb and truncal): normal",
+  "2. Order serum thyroid-stimulating hormone (TSH) level.",
+  "     TSH / free T4: normal - not thyrotoxic",
+  "3. Order comprehensive metabolic panel including liver function tests and renal function.",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "4. Order serum ceruloplasmin and 24-hour urine copper levels.",
+  "     serum copper and caeruloplasmin: normal",
+  "     24-hour urinary copper: normal",
+  "5. Obtain MRI of the brain with attention to the basal ganglia and cerebellum.",
+  "     brain MRI: no brain lesion on unenhanced MRI with diffusion imaging"
+ ],
+ "dx_raw": "DIAGNOSIS: Drug-induced tremor (likely due to an unreported medication or substance)\n1. Psychogenic tremor\n2. Wilson disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Perform a detailed neurological examination including assessment of tone, reflexes, and coordination to rule out subtle parkinsonian signs or cerebellar ataxia.\n2. Order serum thyroid-stimulating hormone (TSH) level.\n3. Order comprehensive metabolic panel including liver function tests and renal function.\n4. Order serum ceruloplasmin and 24-hour urine copper levels.\n5. Obtain MRI of the brain with attention to the basal ganglia and cerebellum.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Drug-induced tremor (likely due to an unreported medication or substance)",
+ "decisive_served": [
+  "TSH / free T4"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 194,
+   "completion_tokens": 73,
+   "total_tokens": 267,
+   "cost": 6.341e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.341e-05,
+    "upstream_inference_prompt_cost": 2.91e-05,
+    "upstream_inference_completions_cost": 3.431e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 515,
+   "completion_tokens": 103,
+   "total_tokens": 618,
+   "cost": 0.00012566,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00012566,
+    "upstream_inference_prompt_cost": 7.725e-05,
+    "upstream_inference_completions_cost": 4.841e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 927,
+   "completion_tokens": 33,
+   "total_tokens": 960,
+   "cost": 8.5952e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.5952e-05,
+    "upstream_inference_prompt_cost": 7.0442e-05,
+    "upstream_inference_completions_cost": 1.551e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_thyrotoxic_PMC11639689.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.4
+}

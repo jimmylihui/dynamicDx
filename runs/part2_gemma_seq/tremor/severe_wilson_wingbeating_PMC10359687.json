@@ -1,0 +1,129 @@
+{
+ "questions": [
+  "Does the patient have a history of epilepsy?",
+  "Is the tremor present at rest?",
+  "Does the tremor improve with alcohol?",
+  "Is there a family history of tremor?",
+  "Does the patient have any other neurological deficits, such as weakness or sensory loss?",
+  "Did the tremor start or worsen after stopping zonisamide?",
+  "Is the weakness or sensory loss localized to one side of the body?",
+  "Does the patient have a history of stroke?",
+  "Does the patient have a history of multiple sclerosis?",
+  "Is the tremor primarily an intention tremor (worsening as the hand reaches the target)?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Brain MRI",
+  "Nerve conduction studies",
+  "Blood tests for B12, folate, and glucose"
+ ],
+ "served": [
+  "brain MRI",
+  "nerve conduction studies",
+  "vitamin B12 / folate",
+  "glucose / HbA1c"
+ ],
+ "results": [
+  "R1 ASK Does the patient have a history of epilepsy?; Is the tremor present at rest?; Does the tremor improve with alcohol?; Is there a family history of tremor?; Does the patient have any other neurological deficits, such as weakness or sensory loss? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R2 ASK Did the tremor start or worsen after stopping zonisamide?; Is the weakness or sensory loss localized to one side of the body?; Does the patient have a history of stroke?; Does the patient have a history of multiple sclerosis?; Is the tremor primarily an intention tremor (worsening as the hand reaches the target)? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Brain MRI; Nerve conduction studies; Blood tests for B12, folate, and glucose -> [['brain MRI'], ['nerve conduction studies'], ['vitamin B12 / folate', 'glucose / HbA1c']]",
+  "R4 DIAGNOSIS Essential tremor, idiopathic -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Does the patient have a history of epilepsy?",
+    "Is the tremor present at rest?",
+    "Does the tremor improve with alcohol?",
+    "Is there a family history of tremor?",
+    "Does the patient have any other neurological deficits, such as weakness or sensory loss?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Did the tremor start or worsen after stopping zonisamide?",
+    "Is the weakness or sensory loss localized to one side of the body?",
+    "Does the patient have a history of stroke?",
+    "Does the patient have a history of multiple sclerosis?",
+    "Is the tremor primarily an intention tremor (worsening as the hand reaches the target)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Brain MRI",
+    "Nerve conduction studies",
+    "Blood tests for B12, folate, and glucose"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ],
+    [
+     "nerve conduction studies"
+    ],
+    [
+     "vitamin B12 / folate",
+     "glucose / HbA1c"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Essential tremor, idiopathic"
+  }
+ ],
+ "dx": "Essential tremor, idiopathic",
+ "dx_raw": "DIAGNOSIS: Essential tremor, idiopathic",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0078,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 364.0
+}

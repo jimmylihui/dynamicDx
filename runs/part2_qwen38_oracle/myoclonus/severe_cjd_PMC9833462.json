@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Are you currently experiencing severe pain?",
+  "Is the pain located in your abdomen or pelvis?",
+  "Did this pain start suddenly?",
+  "Have you had a fever recently?",
+  "Do you have any known allergies to medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "brain MRI",
+  "CSF 14-3-3 / RT-QuIC (prion)",
+  "history of the precipitating event",
+  "intrathecal baclofen trial"
+ ],
+ "results": [
+  "1. brain MRI: hypoxic-ischaemic injury",
+  "2. CSF 14-3-3 / RT-QuIC (prion): negative - excludes Creutzfeldt-Jakob disease",
+  "3. history of the precipitating event: cardiac arrest with resuscitation; myoclonus and contractures developed afterwards",
+  "4. intrathecal baclofen trial: 50 mcg bolus on day 1, 75 mcg on day 2; Unified Myoclonus Rating Scale improved progressively with dose; sleep and positioning improved"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-hypoxic myoclonus (Lance-Adams syndrome) secondary to hypoxic-ischemic brain injury following cardiac arrest\n\n1. Action myoclonus due to chronic acquired hepatocerebral degeneration\n2. Epilepsia partialis continua (focal motor status epilepticus)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Post-hypoxic myoclonus (Lance-Adams syndrome) secondary to hypoxic-ischemic brain injury following cardiac arrest",
+ "decisive_served": [
+  "brain MRI",
+  "CSF 14-3-3 / RT-QuIC (prion)",
+  "history of the precipitating event",
+  "intrathecal baclofen trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 55,
+   "total_tokens": 4878,
+   "cost": 0.0007493,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007493,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.585e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5176,
+   "completion_tokens": 71,
+   "total_tokens": 5247,
+   "cost": 0.00020945,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020945,
+    "upstream_inference_prompt_cost": 0.00017608,
+    "upstream_inference_completions_cost": 3.337e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.8
+}

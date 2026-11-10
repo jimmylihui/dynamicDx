@@ -1,0 +1,127 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the movement of your legs and arms something you are doing on purpose?",
+  "Do you have a known history of Parkinson's disease?",
+  "Do you have a family history of similar movement problems or dementia?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside neurological examination to assess for rigidity, cogwheeling, and resting tremor",
+  "MRI of the brain",
+  "Serum glucose"
+ ],
+ "served": [
+  "muscle tone examination",
+  "posture and pull test",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "blood glucose"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing any pain?; Is the movement of your legs and arms something you are doing on purpose?; Do you have a known history of Parkinson's disease? -> ['no', 'no', 'no']",
+  "R2 ORDER Bedside neurological examination to assess for rigidity, cogwheeling, and resting tremor -> [['muscle tone examination', 'posture and pull test']]",
+  "R3 ASK Do you have a family history of similar movement problems or dementia? -> ['no']",
+  "R4 ORDER MRI of the brain -> [['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences']]",
+  "R5 ORDER Serum glucose -> [['blood glucose']]",
+  "R6 DIAGNOSIS Non-ketotic hyperglycemic hemichorea-hemiballismus -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing any pain?",
+    "Is the movement of your legs and arms something you are doing on purpose?",
+    "Do you have a known history of Parkinson's disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Bedside neurological examination to assess for rigidity, cogwheeling, and resting tremor"
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "posture and pull test"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a family history of similar movement problems or dementia?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "MRI of the brain"
+   ],
+   "result": [
+    [
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Serum glucose"
+   ],
+   "result": [
+    [
+     "blood glucose"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Non-ketotic hyperglycemic hemichorea-hemiballismus"
+  }
+ ],
+ "dx": "Non-ketotic hyperglycemic hemichorea-hemiballismus",
+ "dx_raw": "DIAGNOSIS: Non-ketotic hyperglycemic hemichorea-hemiballismus",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0047,
+ "n_frames": 32,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 30.5
+}

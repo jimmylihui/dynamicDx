@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Did the weakness in your face and leg start suddenly?",
+  "Can you raise your eyebrow on the weak side of your face?",
+  "Is your arm on the same side as your weak leg also weak?",
+  "Is your speech slurred?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Do you have a history of atrial fibrillation?",
+  "Do you smoke?",
+  "Do you have pain in your ear on the affected side?",
+  "Can you completely close your eye on the affected side?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "nerve conduction studies",
+  "whole exome sequencing",
+  "MRI brain with contrast",
+  "MRI spine"
+ ],
+ "results": [
+  "1. nerve conduction studies: demyelinating sensorimotor neuropathy",
+  "2. whole exome sequencing: heterozygous likely pathogenic FBLN5 c.1117C>T (p.Arg373Cys) - CMT1H",
+  "3. MRI brain with contrast: bilateral contrast enhancement and THICKENING of cranial nerves III through XII",
+  "4. MRI spine: symmetrical thickening of the lumbosacral nerve roots"
+ ],
+ "dx_raw": "DIAGNOSIS: Charcot-Marie-Tooth disease type 1H (CMT1H) due to heterozygous FBLN5 c.1117C>T (p.Arg373Cys) mutation, with hypertrophic neuropathy involving cranial nerves and cauda equina.\n\nAlternatives to consider:\n1. Chronic inflammatory demyelinating polyneuropathy (CIDP) — but the definitive pathogenic FBLN5 variant makes this far less likely.\n2. Hereditary demyelinating neuropathy with liability to pressure palsies (HNPP) from PMP22 deletion — typically has a different phenotype and is not associated with FBLN5.\n3. A different FBLN5-associated connective tissue/neurologic overlap (e.g., cutis laxa/age-related macular degeneration spectrum) coincident with an acquired demyelinating neuropathy — unlikely given the integrated genetic and imaging findings.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Charcot-Marie-Tooth disease type 1H (CMT1H) due to heterozygous FBLN5 c.1117C>T (p.Arg373Cys) mutation, with hypertrophic neuropathy involving cranial nerves and cauda equina.",
+ "decisive_served": [
+  "nerve conduction studies",
+  "whole exome sequencing",
+  "MRI brain with contrast",
+  "MRI spine"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 5525,
+   "total_tokens": 12587,
+   "cost": 0.00871092,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00871092,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.00663
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5413,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7518,
+   "completion_tokens": 1143,
+   "total_tokens": 8661,
+   "cost": 0.00193572,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00193572,
+    "upstream_inference_prompt_cost": 0.00056412,
+    "upstream_inference_completions_cost": 0.0013716
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 963,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_gca_ophthalmoplegia_PMC12960836.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 82.0
+}

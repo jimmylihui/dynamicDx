@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your chest?",
+  "Does the pain radiate to your left arm or jaw?",
+  "Do you have a history of heart disease?",
+  "Are you short of breath at rest?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Complete blood count with differential",
+  "Comprehensive metabolic panel",
+  "Urinalysis",
+  "Chest X-ray"
+ ],
+ "served": [
+  "full blood count, renal and liver profile",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Complete blood count with differential",
+  "     full blood count, renal and liver profile: normal",
+  "2. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "3. Urinalysis",
+  "     urinalysis: normal",
+  "4. Chest X-ray",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: No acute pathology identified (Asymptomatic)\n1. Anxiety disorder\n2. Musculoskeletal strain\n3. Early viral prodrome",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Complete blood count with differential\n2. Comprehensive metabolic panel\n3. Urinalysis\n4. Chest X-ray",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "No acute pathology identified (Asymptomatic)",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 58,
+   "total_tokens": 224,
+   "cost": 5.216e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.216e-05,
+    "upstream_inference_prompt_cost": 2.49e-05,
+    "upstream_inference_completions_cost": 2.726e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 457,
+   "completion_tokens": 25,
+   "total_tokens": 482,
+   "cost": 4.5996e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 4.5996e-05,
+    "upstream_inference_prompt_cost": 3.4246e-05,
+    "upstream_inference_completions_cost": 1.175e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 656,
+   "completion_tokens": 35,
+   "total_tokens": 691,
+   "cost": 8.0546e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.0546e-05,
+    "upstream_inference_prompt_cost": 6.4096e-05,
+    "upstream_inference_completions_cost": 1.645e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "psp_richardson_PMC11082598.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 20.6
+}

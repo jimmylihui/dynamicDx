@@ -1,0 +1,181 @@
+{
+ "questions": [
+  "Are you currently seeing double?",
+  "Did the eye misalignment or double vision begin suddenly?",
+  "Did it begin after an injury to your face or head?",
+  "Have you recently had surgery involving your nose, eye, or face?",
+  "Is the double vision present when both eyes are open but absent when either eye is covered?",
+  "Do you have eye pain, especially when moving the eye?",
+  "Has your vision in either eye become blurred or decreased?",
+  "Is one eyelid drooping?",
+  "Do the pupils look different in size?",
+  "Do you have a severe headache, vomiting, weakness, numbness, trouble speaking, or difficulty walking?",
+  "Do you have swelling or bruising around either eye?",
+  "Do you have fever or redness of the eye?",
+  "Have you had similar episodes before?",
+  "Do you have diabetes, high blood pressure, or another neurologic or eye condition?",
+  "Have you recently taken any new medication or recreational drug?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Comprehensive ocular motility examination with alternate-cover testing, prism measurements, and assessment of head-tilt response",
+  "Forced-duction testing of the affected eye",
+  "Thin-slice CT of the orbits and facial bones without contrast",
+  "Complete ophthalmologic examination, including dilated fundus examination and formal visual fields",
+  "Orthoptic Hess-Lancaster or Lees screen examination"
+ ],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "smooth pursuit and saccades",
+  "adduction in horizontal gaze (each eye)",
+  "abducting nystagmus of the fellow eye",
+  "vertical gaze and convergence",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "forced duction test",
+  "fundoscopy",
+  "visual fields (perimetry)"
+ ],
+ "results": [
+  "1. Comprehensive ocular motility examination with alternate-cover testing, prism measurements, and assessment of head-tilt response",
+  "     nystagmus: direction and whether it changes with gaze: no nystagmus",
+  "     smooth pursuit and saccades: normal",
+  "     adduction in horizontal gaze (each eye): limited adduction of the RIGHT eye that fails to cross the midline, with abducting nystagmus of the left eye on left gaze - mimics an INO",
+  "     abducting nystagmus of the fellow eye: absent",
+  "     vertical gaze and convergence: normal",
+  "     skew deviation / alternating cover test: no vertical misalignment",
+  "     ocular torsion and head tilt: none",
+  "2. Forced-duction testing of the affected eye",
+  "     forced duction test: restriction consistent with a mechanical cause",
+  "3. Thin-slice CT of the orbits and facial bones without contrast",
+  "     not performed / not available",
+  "4. Complete ophthalmologic examination, including dilated fundus examination and formal visual fields",
+  "     fundoscopy: normal",
+  "     visual fields (perimetry): full",
+  "5. Orthoptic Hess-Lancaster or Lees screen examination",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Traumatic right medial orbital wall blowout fracture with entrapment of the right medial rectus muscle, causing restrictive adduction deficit that mimics internuclear ophthalmoplegia\n\nAlternative 1: Traumatic right medial rectus muscle contusion, laceration, or post-traumatic scarring causing mechanical restriction\n\nAlternative 2: Right orbital hematoma or soft-tissue impingement producing mechanical restriction\n\nAlternative 3: Traumatic right oculomotor nerve palsy (less likely given the positive forced-duction test)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Comprehensive ocular motility examination with alternate-cover testing, prism measurements, and assessment of head-tilt response\n2. Forced-duction testing of the affected eye\n3. Thin-slice CT of the orbits and facial bones without contrast\n4. Complete ophthalmologic examination, including dilated fundus examination and formal visual fields\n5. Orthoptic Hess-Lancaster or Lees screen examination",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Traumatic right medial orbital wall blowout fracture with entrapment of the right medial rectus muscle, causing restrictive adduction deficit that mimics internuclear ophthalmoplegia",
+ "decisive_served": [
+  "adduction in horizontal gaze (each eye)",
+  "forced duction test"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 275,
+   "completion_tokens": 728,
+   "total_tokens": 1003,
+   "cost": 0.0009286,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009286,
+    "upstream_inference_prompt_cost": 5.5e-05,
+    "upstream_inference_completions_cost": 0.0008736
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 907,
+   "completion_tokens": 206,
+   "total_tokens": 1113,
+   "cost": 0.0004286,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004286,
+    "upstream_inference_prompt_cost": 0.0001814,
+    "upstream_inference_completions_cost": 0.0002472
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 119,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1328,
+   "completion_tokens": 301,
+   "total_tokens": 1629,
+   "cost": 0.00069305,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1325,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00069305,
+    "upstream_inference_prompt_cost": 0.00033185,
+    "upstream_inference_completions_cost": 0.0003612
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 183,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 31.3
+}

@@ -1,0 +1,158 @@
+{
+ "questions": [
+  "Are you currently experiencing pain in your right leg?",
+  "Did you have a fall or injury recently that caused this difficulty walking?",
+  "Do you have a history of arthritis in your hips or knees?",
+  "Have you had any previous surgeries on your legs or spine?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Gait assessment",
+  "Lower extremity muscle strength testing",
+  "Deep tendon reflexes (patellar, Achilles)",
+  "Babinski sign",
+  "Cerebellar function tests (finger-to-nose, heel-to-shin)",
+  "Romberg test",
+  "Sensory examination of the lower extremities"
+ ],
+ "served": [
+  "gait observation including turning and doorways",
+  "freezing-of-gait provocation (doorway, turning, dual task)",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "reflexes, plantar responses and frontal release signs",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)",
+  "posture and pull test",
+  "sensory examination (pinprick, vibration, proprioception)"
+ ],
+ "results": [
+  "1. Gait assessment",
+  "     gait observation including turning and doorways: not recorded",
+  "     freezing-of-gait provocation (doorway, turning, dual task): start hesitation and freezing, worst on turning and on passing through a doorway; MDS-UPDRS III 35, Hoehn and Yahr 2.5",
+  "2. Lower extremity muscle strength testing",
+  "     limb strength (MRC) examination: normal",
+  "3. Deep tendon reflexes (patellar, Achilles)",
+  "     deep tendon reflexes and plantar responses: brisk reflexes; normal plantar responses",
+  "4. Babinski sign",
+  "     reflexes, plantar responses and frontal release signs: reflexes brisk, plantar responses normal",
+  "5. Cerebellar function tests (finger-to-nose, heel-to-shin)",
+  "     cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait): normal",
+  "6. Romberg test",
+  "     posture and pull test: retropulsion; recovers in 2-3 steps",
+  "7. Sensory examination of the lower extremities",
+  "     sensory examination (pinprick, vibration, proprioception): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic Parkinson's disease (Hoehn and Yahr stage 2.5)\n1. Progressive supranuclear palsy\n2. Vascular parkinsonism",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Gait assessment\n2. Lower extremity muscle strength testing\n3. Deep tendon reflexes (patellar, Achilles)\n4. Babinski sign\n5. Cerebellar function tests (finger-to-nose, heel-to-shin)\n6. Romberg test\n7. Sensory examination of the lower extremities",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic Parkinson's disease (Hoehn and Yahr stage 2.5)",
+ "decisive_served": [
+  "freezing-of-gait provocation (doorway, turning, dual task)"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 61,
+   "total_tokens": 4884,
+   "cost": 0.00075212,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075212,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.867e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5114,
+   "completion_tokens": 71,
+   "total_tokens": 5185,
+   "cost": 0.00020015,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020015,
+    "upstream_inference_prompt_cost": 0.00016678,
+    "upstream_inference_completions_cost": 3.337e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5532,
+   "completion_tokens": 41,
+   "total_tokens": 5573,
+   "cost": 0.000180142,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000180142,
+    "upstream_inference_prompt_cost": 0.000160872,
+    "upstream_inference_completions_cost": 1.927e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.2,
+ "video": "hornet_sting_parkinsonism_PMC11021691.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 17.2
+}

@@ -1,0 +1,159 @@
+{
+ "questions": [
+  "Do you have a history of Parkinson's disease?",
+  "Have you been taking any antipsychotic medications recently?",
+  "Did these symptoms start suddenly, within the last few days?",
+  "Do you have a fever or feel generally unwell?",
+  "Have you experienced any recent head trauma?",
+  "Do you have difficulty swallowing?",
+  "Are your eyes deviated upward or downward involuntarily?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain with attention to the midbrain and basal ganglia",
+  "DaTscan (dopamine transporter SPECT imaging)",
+  "Serum ceruloplasmin and 24-hour urine copper"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)",
+  "DAT-SPECT / FP-CIT PET",
+  "serum copper and caeruloplasmin",
+  "24-hour urinary copper",
+  "serum ceruloplasmin"
+ ],
+ "results": [
+  "1. MRI of the brain with attention to the midbrain and basal ganglia",
+  "     MRI brain with gadolinium: mild midbrain atrophy with hummingbird sign; no abnormal enhancement",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): mild hummingbird sign with cerebral atrophy",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): normal",
+  "     MRI brain - cortical atrophy pattern: no focal atrophy",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal",
+  "2. DaTscan (dopamine transporter SPECT imaging)",
+  "     DAT-SPECT / FP-CIT PET: not performed",
+  "3. Serum ceruloplasmin and 24-hour urine copper",
+  "     serum copper and caeruloplasmin: normal",
+  "     24-hour urinary copper: normal",
+  "     serum ceruloplasmin: normal - excludes Wilson disease"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy (PSP)\nCorticobasal Degeneration\nMultiple System Atrophy",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with attention to the midbrain and basal ganglia\n2. DaTscan (dopamine transporter SPECT imaging)\n3. Serum ceruloplasmin and 24-hour urine copper",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Progressive Supranuclear Palsy (PSP)",
+ "decisive_served": [
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "serum ceruloplasmin"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 200,
+   "completion_tokens": 91,
+   "total_tokens": 291,
+   "cost": 7.277e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.277e-05,
+    "upstream_inference_prompt_cost": 3e-05,
+    "upstream_inference_completions_cost": 4.277e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 565,
+   "completion_tokens": 47,
+   "total_tokens": 612,
+   "cost": 0.00010684,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010684,
+    "upstream_inference_prompt_cost": 8.475e-05,
+    "upstream_inference_completions_cost": 2.209e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 943,
+   "completion_tokens": 28,
+   "total_tokens": 971,
+   "cost": 8.6002e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.6002e-05,
+    "upstream_inference_prompt_cost": 7.2842e-05,
+    "upstream_inference_completions_cost": 1.316e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "psp_richardson_PMC11082598.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 18.5
+}

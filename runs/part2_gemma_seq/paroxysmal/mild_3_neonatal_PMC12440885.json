@@ -1,0 +1,161 @@
+{
+ "questions": [
+  "Was there a traumatic head injury?",
+  "Was there a surgical procedure on the head?",
+  "Does the child have a fever?",
+  "Is the child experiencing seizures?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Brain MRI",
+  "Blood glucose and electrolytes",
+  "Serum lactate and ammonia",
+  "Serum lactate",
+  "CSF analysis",
+  "Genetic testing for mitochondrial diseases",
+  "Muscle biopsy",
+  "Serum lactate",
+  "Plasma amino acids",
+  "Urine organic acids",
+  "Genetic testing for POLG and other mitochondrial genes"
+ ],
+ "served": [
+  "brain MRI",
+  "glucose, calcium, magnesium, sodium",
+  "serum ammonia",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel",
+  "metabolic screen (tandem mass spectrometry, urine organic acids)",
+  "genetic testing (exome / epilepsy panel)"
+ ],
+ "results": [
+  "R1 ASK Was there a traumatic head injury?; Was there a surgical procedure on the head?; Does the child have a fever?; Is the child experiencing seizures? -> ['no', 'no', 'no', 'yes']",
+  "R2 ORDER Brain MRI; Blood glucose and electrolytes; Serum lactate and ammonia -> [['brain MRI'], ['glucose, calcium, magnesium, sodium'], ['serum ammonia']]",
+  "R3 ORDER Serum lactate; CSF analysis; Genetic testing for mitochondrial diseases; Muscle biopsy -> [[], ['CSF opening pressure', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF cytology and flow cytometry', 'CSF culture and viral PCR', 'CSF autoimmune encephalitis panel'], [], []]",
+  "R4 ORDER Serum lactate; Plasma amino acids; Urine organic acids; Genetic testing for POLG and other mitochondrial genes -> [[], [], ['metabolic screen (tandem mass spectrometry, urine organic acids)'], ['genetic testing (exome / epilepsy panel)']]",
+  "R5 DIAGNOSIS CSNK2B-related neurodevelopmental disorder -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Was there a traumatic head injury?",
+    "Was there a surgical procedure on the head?",
+    "Does the child have a fever?",
+    "Is the child experiencing seizures?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Brain MRI",
+    "Blood glucose and electrolytes",
+    "Serum lactate and ammonia"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ],
+    [
+     "glucose, calcium, magnesium, sodium"
+    ],
+    [
+     "serum ammonia"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Serum lactate",
+    "CSF analysis",
+    "Genetic testing for mitochondrial diseases",
+    "Muscle biopsy"
+   ],
+   "result": [
+    [],
+    [
+     "CSF opening pressure",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF cytology and flow cytometry",
+     "CSF culture and viral PCR",
+     "CSF autoimmune encephalitis panel"
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Serum lactate",
+    "Plasma amino acids",
+    "Urine organic acids",
+    "Genetic testing for POLG and other mitochondrial genes"
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "metabolic screen (tandem mass spectrometry, urine organic acids)"
+    ],
+    [
+     "genetic testing (exome / epilepsy panel)"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "CSNK2B-related neurodevelopmental disorder"
+  }
+ ],
+ "dx": "CSNK2B-related neurodevelopmental disorder",
+ "dx_raw": "DIAGNOSIS: CSNK2B-related neurodevelopmental disorder",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "genetic testing (exome / epilepsy panel)"
+ ],
+ "n_decisive": 2,
+ "cost_usd": 0.0059,
+ "n_frames": 32,
+ "duration_s": 15.6,
+ "video": "mild_3_neonatal_PMC12440885.mp4",
+ "line": "paroxysmal",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 443.5
+}

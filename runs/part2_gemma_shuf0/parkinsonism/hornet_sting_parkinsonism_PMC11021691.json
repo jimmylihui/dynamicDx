@@ -1,0 +1,163 @@
+{
+ "questions": [
+  "Did the difficulty walking start suddenly?",
+  "Is there pain in your leg?",
+  "Is the weakness on the left side of your body?",
+  "Have you had a stroke recently?",
+  "Have you had surgery on your leg or hip recently?",
+  "Do you have a history of Parkinson's disease?",
+  "Do you feel numbness or tingling in your limbs?",
+  "Did you fall recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Brain MRI",
+  "Lumbar puncture (CSF tap test)",
+  "Cognitive assessment (MMSE)",
+  "Bladder scan"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)",
+  "CSF opening pressure",
+  "mental status / cognitive screen",
+  "cognitive screen (MoCA / MMSE / frontal assessment battery)",
+  "urodynamics / post-void residual"
+ ],
+ "results": [
+  "1. Brain MRI",
+  "     MRI brain with gadolinium: progressive bilateral caudate and putaminal necrotic lesions without specific enhancement",
+  "     MRI diffusion-weighted sequences: bilateral caudate and putaminal restricted diffusion",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): normal midbrain, ratio within normal limits",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): BILATERAL PUTAMEN AND CAUDATE hyperintensity on T2 and FLAIR with patchy restricted diffusion suggesting NECROSIS, and T1 hyperintensity in the ventral putamen; the lesions progressed over serial scans",
+  "     MRI brain - cortical atrophy pattern: no focal atrophy",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal",
+  "2. Lumbar puncture (CSF tap test)",
+  "     CSF opening pressure: normal",
+  "3. Cognitive assessment (MMSE)",
+  "     mental status / cognitive screen: normal",
+  "     cognitive screen (MoCA / MMSE / frontal assessment battery): normal",
+  "4. Bladder scan",
+  "     urodynamics / post-void residual: not performed"
+ ],
+ "dx_raw": "DIAGNOSIS: Wilson's disease (copper accumulation)\nCreutzfeldt-Jakob disease\nManganese toxicity\nMethanol poisoning",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Brain MRI\n2. Lumbar puncture (CSF tap test)\n3. Cognitive assessment (MMSE)\n4. Bladder scan",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Wilson's disease (copper accumulation)",
+ "decisive_served": [
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1681,
+   "total_tokens": 10379,
+   "cost": 0.00144134,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00144134,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00057154
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1551,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9062,
+   "completion_tokens": 829,
+   "total_tokens": 9891,
+   "cost": 0.00118806,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00118806,
+    "upstream_inference_prompt_cost": 0.0009062,
+    "upstream_inference_completions_cost": 0.00028186
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 798,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9443,
+   "completion_tokens": 4193,
+   "total_tokens": 13636,
+   "cost": 0.00236992,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00236992,
+    "upstream_inference_prompt_cost": 0.0009443,
+    "upstream_inference_completions_cost": 0.00142562
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3935,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.2,
+ "video": "hornet_sting_parkinsonism_PMC11021691.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 268.5
+}

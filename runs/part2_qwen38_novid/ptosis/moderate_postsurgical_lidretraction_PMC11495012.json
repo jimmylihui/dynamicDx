@@ -1,0 +1,153 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your chest?",
+  "Does the pain radiate to your left arm or jaw?",
+  "Do you have a history of heart disease?",
+  "Are you short of breath?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "Physical examination of the head, eyes, ears, nose, and throat",
+  "Cardiac auscultation",
+  "Pulmonary auscultation",
+  "Abdominal palpation"
+ ],
+ "served": [
+  "vital signs",
+  "ocular motility examination",
+  "pupil examination (size, light reaction)",
+  "cover test / ocular alignment",
+  "visual acuity and colour vision",
+  "proptosis / exophthalmometry",
+  "pain and periorbital inspection"
+ ],
+ "results": [
+  "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation",
+  "     vital signs: normal, afebrile",
+  "2. Physical examination of the head, eyes, ears, nose, and throat",
+  "     ocular motility examination: full in all directions",
+  "     pupil examination (size, light reaction): equal and reactive",
+  "     cover test / ocular alignment: orthophoric",
+  "     visual acuity and colour vision: normal",
+  "     proptosis / exophthalmometry: no proptosis",
+  "     pain and periorbital inspection: no lagophthalmos and no corneal erosion",
+  "3. Cardiac auscultation",
+  "     not performed / not available",
+  "4. Pulmonary auscultation",
+  "     not performed / not available",
+  "5. Abdominal palpation",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Normal healthy individual with no acute pathology identified\nAlternative 1: Asymptomatic chronic condition (e.g., hypertension, diabetes) not yet detected by basic vitals\nAlternative 2: Functional somatic syndrome or anxiety disorder presenting without pain or dyspnea",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Vital signs including blood pressure, heart rate, respiratory rate, temperature, and oxygen saturation\n2. Physical examination of the head, eyes, ears, nose, and throat\n3. Cardiac auscultation\n4. Pulmonary auscultation\n5. Abdominal palpation",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Normal healthy individual with no acute pathology identified",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 56,
+   "total_tokens": 222,
+   "cost": 5.122e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.122e-05,
+    "upstream_inference_prompt_cost": 2.49e-05,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 453,
+   "completion_tokens": 60,
+   "total_tokens": 513,
+   "cost": 6.1846e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.1846e-05,
+    "upstream_inference_prompt_cost": 3.3646e-05,
+    "upstream_inference_completions_cost": 2.82e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 791,
+   "completion_tokens": 59,
+   "total_tokens": 850,
+   "cost": 0.000112076,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000112076,
+    "upstream_inference_prompt_cost": 8.4346e-05,
+    "upstream_inference_completions_cost": 2.773e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 45.3
+}

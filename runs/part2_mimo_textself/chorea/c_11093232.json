@@ -1,0 +1,185 @@
+{
+ "questions": [
+  "Did these movements start suddenly?",
+  "Do you have a family history of similar movements or neurological conditions?",
+  "Are you taking any antipsychotic medications?",
+  "Have you had any recent infections?",
+  "Do you have any history of liver disease?",
+  "Has your thyroid been checked recently?",
+  "Are the movements present when you are asleep?",
+  "Have you noticed any changes in your thinking or memory?",
+  "Do you have any difficulty walking or maintaining balance?",
+  "Have you experienced any unexplained weight loss?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI brain with focus on basal ganglia",
+  "Genetic testing for Huntington's disease (CAG trinucleotide repeat)",
+  "Serum ceruloplasmin and copper studies",
+  "Complete metabolic panel including liver and thyroid function",
+  "Anti-NMDA receptor antibodies",
+  "Neuropsychological testing",
+  "CT chest/abdomen/pelvis"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "brain MRI with contrast",
+  "HTT CAG repeat testing (Huntington disease)",
+  "Huntington HTT CAG repeat testing",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "thyroid function (TSH, free T4)",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "CSF autoimmune encephalitis panel",
+  "autoimmune encephalopathy / paraneoplastic antibody panel",
+  "mental status / cognitive screen",
+  "cognitive and behavioural assessment (MMSE / FAB)",
+  "CT chest, abdomen and pelvis"
+ ],
+ "results": [
+  "1. MRI brain with focus on basal ganglia",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     brain MRI with contrast: 1.5T with gadolinium - frontal-predominant atrophy but NO focal lesion, with normal basal ganglia structure and volume",
+  "2. Genetic testing for Huntington's disease (CAG trinucleotide repeat)",
+  "     HTT CAG repeat testing (Huntington disease): normal repeat length",
+  "     Huntington HTT CAG repeat testing: normal repeat length",
+  "3. Serum ceruloplasmin and copper studies",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin: normal",
+  "4. Complete metabolic panel including liver and thyroid function",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     thyroid function (TSH, free T4): normal",
+  "5. Anti-NMDA receptor antibodies",
+  "     serum paraneoplastic / neuronal autoantibody panel: negative",
+  "     CSF autoimmune encephalitis panel: negative",
+  "     autoimmune encephalopathy / paraneoplastic antibody panel: NEGATIVE in serum and CSF - seronegative",
+  "6. Neuropsychological testing",
+  "     mental status / cognitive screen: progressive disorientation, tangential speech, grandiose hallucinations and euphoric affect",
+  "     cognitive and behavioural assessment (MMSE / FAB): progressive disorientation, tangential speech, grandiose hallucinations and euphoric affect",
+  "7. CT chest/abdomen/pelvis",
+  "     CT chest, abdomen and pelvis: no malignancy or infection"
+ ],
+ "dx_raw": "DIAGNOSIS: Seronegative autoimmune encephalitis with chorea\n\nHuntington disease-like 2 or other genetic chorea syndrome\nNeurodegeneration with brain iron accumulation (adult-onset, minimal iron deposition on early imaging)\nLate-onset sporadic Creutzfeldt-Jakob disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI brain with focus on basal ganglia\n2. Genetic testing for Huntington's disease (CAG trinucleotide repeat)\n3. Serum ceruloplasmin and copper studies\n4. Complete metabolic panel including liver and thyroid function\n5. Anti-NMDA receptor antibodies\n6. Neuropsychological testing\n7. CT chest/abdomen/pelvis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Seronegative autoimmune encephalitis with chorea",
+ "decisive_served": [
+  "brain MRI with contrast",
+  "autoimmune encephalopathy / paraneoplastic antibody panel"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 488,
+   "completion_tokens": 295,
+   "total_tokens": 783,
+   "cost": 0.0001245776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001245776,
+    "upstream_inference_prompt_cost": 4.19776e-05,
+    "upstream_inference_completions_cost": 8.26e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 180,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 909,
+   "completion_tokens": 584,
+   "total_tokens": 1493,
+   "cost": 0.0002293144,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002293144,
+    "upstream_inference_prompt_cost": 6.57944e-05,
+    "upstream_inference_completions_cost": 0.00016352
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 503,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1428,
+   "completion_tokens": 1337,
+   "total_tokens": 2765,
+   "cost": 0.0004513488,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 896,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004513488,
+    "upstream_inference_prompt_cost": 7.69888e-05,
+    "upstream_inference_completions_cost": 0.00037436
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1268,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11093232.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 67.3
+}

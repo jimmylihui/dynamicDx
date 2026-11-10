@@ -1,0 +1,197 @@
+{
+ "questions": [
+  "Are you currently in pain?",
+  "Are you having any difficulty breathing?",
+  "Have you had chest pain in the last 24 hours?",
+  "Do you have any pre-existing medical conditions?",
+  "Are you currently taking any medications?",
+  "Have you unintentionally lost weight in the past 6 months?",
+  "Do you have a fever or feel feverish?",
+  "Do you smoke cigarettes?",
+  "Do you have any allergies to medications?",
+  "Have you had any recent travel outside the country?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Measure blood pressure, heart rate, respiratory rate, oxygen saturation, and temperature",
+  "General physical examination including cardiovascular, respiratory, abdominal, and neurological systems",
+  "Urinalysis",
+  "Full blood count",
+  "Urea and electrolytes",
+  "Liver function tests",
+  "Fasting glucose and HbA1c",
+  "Lipid profile",
+  "Chest X-ray"
+ ],
+ "served": [
+  "vital signs",
+  "gait examination",
+  "finger-nose / heel-shin testing",
+  "Romberg test",
+  "bedside eye-movement exam",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "urinalysis",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "glucose / HbA1c",
+  "blood glucose and HbA1c"
+ ],
+ "results": [
+  "1. Measure blood pressure, heart rate, respiratory rate, oxygen saturation, and temperature",
+  "     vital signs: normal, afebrile",
+  "2. General physical examination including cardiovascular, respiratory, abdominal, and neurological systems",
+  "     gait examination: wide-based, unsteady gait",
+  "     finger-nose / heel-shin testing: dysmetria",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "     bedside eye-movement exam: normal",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): limb and truncal ataxia",
+  "     posture and pull test: impaired postural stability and positive pull test",
+  "     fundoscopy: normal",
+  "3. Urinalysis",
+  "     urinalysis: normal",
+  "4. Full blood count",
+  "     full blood count: normal",
+  "5. Urea and electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "6. Liver function tests",
+  "     liver function tests: normal",
+  "7. Fasting glucose and HbA1c",
+  "     glucose / HbA1c: normal",
+  "     blood glucose and HbA1c: normal",
+  "8. Lipid profile",
+  "     not performed / not available",
+  "9. Chest X-ray",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute cerebellar infarction (ischaemic stroke) — most likely in the PICA or SCA territory\n\nAlternatives:\n1. Cerebellar haemorrhage\n2. Demyelinating lesion (multiple sclerosis) involving the cerebellum or brainstem\n3. Cerebellar mass lesion (primary or metastatic tumour)",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Measure blood pressure, heart rate, respiratory rate, oxygen saturation, and temperature\n2. General physical examination including cardiovascular, respiratory, abdominal, and neurological systems\n3. ECG\n4. Urinalysis\n5. Full blood count\n6. Urea and electrolytes\n7. Liver function tests\n8. Fasting glucose and HbA1c\n9. Lipid profile\n10. Chest X-ray",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Acute cerebellar infarction (ischaemic stroke) — most likely in the PICA or SCA territory",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 5944,
+   "total_tokens": 6258,
+   "cost": 0.007155,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.007155,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.0071328
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6678,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 721,
+   "completion_tokens": 381,
+   "total_tokens": 1102,
+   "cost": 0.00064614,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00064614,
+    "upstream_inference_prompt_cost": 0.00018894,
+    "upstream_inference_completions_cost": 0.0004572
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 344,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1204,
+   "completion_tokens": 1033,
+   "total_tokens": 2237,
+   "cost": 0.00154272,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00154272,
+    "upstream_inference_prompt_cost": 0.00030312,
+    "upstream_inference_completions_cost": 0.0012396
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1104,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_ms_demyelinating_PMC13085407.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 111.1
+}

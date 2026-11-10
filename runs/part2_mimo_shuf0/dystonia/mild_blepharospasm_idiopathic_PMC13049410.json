@@ -1,0 +1,168 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the pain located on your face?",
+  "Are you currently undergoing a medical or cosmetic procedure?",
+  "Is the sensation sharp or stinging?",
+  "Do you have any numbness or weakness?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Complete neurological examination",
+  "Assessment of vital signs",
+  "Detailed pain history focusing on location and quality (since face was denied)",
+  "Evaluation for temporal headache or migraine symptoms",
+  "Focused abdominal examination",
+  "Electrocardiogram if any cardiac risk factors"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "speech assessment",
+  "eye movements and reflexes",
+  "cognitive screen"
+ ],
+ "results": [
+  "1. Complete neurological examination",
+  "     cranial nerve examination: involuntary blepharospasm with perioral and jaw dystonic spasms, provoked by speech and eating; otherwise normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "     speech assessment: normal",
+  "     eye movements and reflexes: normal",
+  "     cognitive screen: normal",
+  "2. Assessment of vital signs",
+  "     not performed / not available",
+  "3. Detailed pain history focusing on location and quality (since face was denied)",
+  "     not performed / not available",
+  "4. Evaluation for temporal headache or migraine symptoms",
+  "     not performed / not available",
+  "5. Focused abdominal examination",
+  "     not performed / not available",
+  "6. Electrocardiogram if any cardiac risk factors",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Meige syndrome\n\nTardive dyskinesia\n\nHemifacial spasm\n\nFunctional neurological disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Complete neurological examination\n2. Assessment of vital signs\n3. Detailed pain history focusing on location and quality (since face was denied)\n4. Evaluation for temporal headache or migraine symptoms\n5. Focused abdominal examination\n6. Electrocardiogram if any cardiac risk factors",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Meige syndrome",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14782,
+   "completion_tokens": 1707,
+   "total_tokens": 16489,
+   "cost": 0.0025210976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0025210976,
+    "upstream_inference_prompt_cost": 0.0020431376,
+    "upstream_inference_completions_cost": 0.00047796
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1654,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 15056,
+   "completion_tokens": 651,
+   "total_tokens": 15707,
+   "cost": 0.000270536,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000270536,
+    "upstream_inference_prompt_cost": 8.8256e-05,
+    "upstream_inference_completions_cost": 0.00018228
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 592,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 15435,
+   "completion_tokens": 738,
+   "total_tokens": 16173,
+   "cost": 0.000304052,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 15040,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000304052,
+    "upstream_inference_prompt_cost": 9.7412e-05,
+    "upstream_inference_completions_cost": 0.00020664
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 708,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.6,
+ "video": "mild_blepharospasm_idiopathic_PMC13049410.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 80.8
+}

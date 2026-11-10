@@ -1,0 +1,190 @@
+{
+ "questions": [
+  "Do you have pain in your right knee?",
+  "Is the pain worse when you go up or down stairs?",
+  "Have you noticed any swelling around the kneecap?",
+  "Do you have pain in your left knee?",
+  "Is the pain worse when you go up or down stairs?",
+  "Have you noticed any swelling around the kneecap?",
+  "Do you have pain in your right hip?",
+  "Do you have pain in your left hip?",
+  "Do you have pain in your right ankle?",
+  "Do you have pain in your left ankle?",
+  "Do you have pain in your lower back?",
+  "Do you have pain in your right foot?",
+  "Do you have pain in your left foot?",
+  "Do you have pain in your right knee?",
+  "Do you have pain in your left knee?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Do you have pain in your right knee?; Is the pain worse when you go up or down stairs?; Have you noticed any swelling around the kneecap? -> ['no', 'no', 'no']",
+  "R2 ASK Do you have pain in your left knee?; Is the pain worse when you go up or down stairs?; Have you noticed any swelling around the kneecap? -> ['no', 'no', 'no']",
+  "R3 ASK Do you have pain in your right hip?; Do you have pain in your left hip? -> ['no', 'no']",
+  "R4 ASK Do you have pain in your right ankle? -> ['no']",
+  "R5 ASK Do you have pain in your left ankle? -> ['no']",
+  "R6 ASK Do you have pain in your lower back? -> ['no']",
+  "R7 ASK Do you have pain in your right foot? -> ['no']",
+  "R8 ASK Do you have pain in your left foot? -> ['no']",
+  "R9 ASK Do you have pain in your right knee? -> ['no']",
+  "R10 ASK Do you have pain in your left knee? -> ['no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Osteoarthritis of the left knee -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your right knee?",
+    "Is the pain worse when you go up or down stairs?",
+    "Have you noticed any swelling around the kneecap?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your left knee?",
+    "Is the pain worse when you go up or down stairs?",
+    "Have you noticed any swelling around the kneecap?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your right hip?",
+    "Do you have pain in your left hip?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your right ankle?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your left ankle?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your lower back?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your right foot?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your left foot?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your right knee?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your left knee?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Osteoarthritis of the left knee"
+  }
+ ],
+ "dx": "Osteoarthritis of the left knee",
+ "dx_raw": "DIAGNOSIS: Osteoarthritis of the left knee",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0025,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 63.1
+}

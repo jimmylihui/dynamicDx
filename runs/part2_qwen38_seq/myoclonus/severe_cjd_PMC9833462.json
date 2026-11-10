@@ -1,0 +1,186 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the pain located in your abdomen or pelvis?",
+  "Did you recently give birth?",
+  "Is the pain located in your head or neck?",
+  "Are you currently experiencing difficulty breathing?",
+  "Is the pain located in your chest?",
+  "Is the pain located in your back or spine?",
+  "Is the pain located in your legs?",
+  "Is the pain located in your arms?",
+  "Are you currently experiencing a headache?",
+  "Are you currently experiencing nausea or vomiting?",
+  "Are you currently experiencing dizziness or lightheadedness?",
+  "Are you currently experiencing a fever?",
+  "Are you currently experiencing any numbness or tingling?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Are you currently experiencing pain?; Is the pain located in your abdomen or pelvis?; Did you recently give birth? -> ['yes', 'no', 'no']",
+  "R2 ASK Is the pain located in your head or neck?; Are you currently experiencing difficulty breathing? -> ['no', 'no']",
+  "R3 ASK Is the pain located in your chest?; Is the pain located in your back or spine? -> ['no', 'no']",
+  "R4 ASK Is the pain located in your legs? -> ['no']",
+  "R5 ASK Is the pain located in your arms? -> ['no']",
+  "R6 ASK Are you currently experiencing a headache? -> ['no']",
+  "R7 ASK Are you currently experiencing nausea or vomiting? -> ['no']",
+  "R8 ASK Are you currently experiencing dizziness or lightheadedness? -> ['no']",
+  "R9 ASK Are you currently experiencing a fever? -> ['no']",
+  "R10 ASK Are you currently experiencing any numbness or tingling? -> ['no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Acute pain crisis (etiology undetermined) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing pain?",
+    "Is the pain located in your abdomen or pelvis?",
+    "Did you recently give birth?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Is the pain located in your head or neck?",
+    "Are you currently experiencing difficulty breathing?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Is the pain located in your chest?",
+    "Is the pain located in your back or spine?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Is the pain located in your legs?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Is the pain located in your arms?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing a headache?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing nausea or vomiting?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing dizziness or lightheadedness?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing a fever?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing any numbness or tingling?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Acute pain crisis (etiology undetermined)"
+  }
+ ],
+ "dx": "Acute pain crisis (etiology undetermined)",
+ "dx_raw": "DIAGNOSIS: Acute pain crisis (etiology undetermined)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0021,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 64.8
+}

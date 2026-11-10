@@ -1,0 +1,146 @@
+{
+ "questions": [
+  "Are you experiencing pain?",
+  "Is the pain located in your lower back or legs?",
+  "Do you have a fever?",
+  "Have you had any recent trauma or injury?",
+  "Are you currently taking any medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's spontaneous movements and posture while lying on the examination table",
+  "Assess muscle tone in the upper and lower extremities for rigidity or spasticity",
+  "Perform a deep tendon reflex examination (patellar, Achilles, biceps, triceps)",
+  "Check plantar responses (Babinski sign)",
+  "Evaluate cranial nerve function, specifically looking for facial grimacing or tongue protrusion"
+ ],
+ "served": [
+  "posture and pull test",
+  "muscle tone examination",
+  "deep tendon reflexes and plantar responses",
+  "deep tendon reflexes and plantar responses",
+  "cranial nerve examination"
+ ],
+ "results": [
+  "1. Observe the patient's spontaneous movements and posture while lying on the examination table",
+  "     posture and pull test: normal",
+  "2. Assess muscle tone in the upper and lower extremities for rigidity or spasticity",
+  "     muscle tone examination: normal",
+  "3. Perform a deep tendon reflex examination (patellar, Achilles, biceps, triceps)",
+  "     deep tendon reflexes and plantar responses: normal",
+  "4. Check plantar responses (Babinski sign)",
+  "     deep tendon reflexes and plantar responses: normal",
+  "5. Evaluate cranial nerve function, specifically looking for facial grimacing or tongue protrusion",
+  "     cranial nerve examination: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional movement disorder (psychogenic) presenting with involuntary choreiform movements of the limbs and trunk\n\n1. Tardive dyskinesia\n2. Acute dystonic reaction",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient's spontaneous movements and posture while lying on the examination table\n2. Assess muscle tone in the upper and lower extremities for rigidity or spasticity\n3. Perform a deep tendon reflex examination (patellar, Achilles, biceps, triceps)\n4. Check plantar responses (Babinski sign)\n5. Evaluate cranial nerve function, specifically looking for facial grimacing or tongue protrusion",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional movement disorder (psychogenic) presenting with involuntary choreiform movements of the limbs and trunk",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 53,
+   "total_tokens": 4876,
+   "cost": 0.00074836,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074836,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.491e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5102,
+   "completion_tokens": 91,
+   "total_tokens": 5193,
+   "cost": 0.00020775,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020775,
+    "upstream_inference_prompt_cost": 0.00016498,
+    "upstream_inference_completions_cost": 4.277e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5432,
+   "completion_tokens": 42,
+   "total_tokens": 5474,
+   "cost": 0.000199916,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4736,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000199916,
+    "upstream_inference_prompt_cost": 0.000180176,
+    "upstream_inference_completions_cost": 1.974e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 52.3
+}

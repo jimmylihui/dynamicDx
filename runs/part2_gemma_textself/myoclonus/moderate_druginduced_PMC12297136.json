@@ -1,0 +1,134 @@
+{
+ "questions": [
+  "Are you in pain?",
+  "Have you been unable to pass gas or stool?",
+  "Have you been vomiting?",
+  "Do you have a history of liver disease?",
+  "Do you have a history of heart failure?",
+  "Do you have a history of cancer?",
+  "Do you have a fever?",
+  "Was the surgery that caused the scar recent?",
+  "Are you experiencing shortness of breath?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Abdominal CT scan",
+  "Paracentesis"
+ ],
+ "served": [],
+ "results": [
+  "1. Abdominal CT scan",
+  "     not performed / not available",
+  "2. Paracentesis",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Pseudomyxoma peritonei caused by a mucinous appendiceal tumor\n\n1. Massive urinary retention\n2. Ascites due to nephrotic syndrome\n3. Giant incisional hernia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Abdominal CT scan\n2. Paracentesis",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Pseudomyxoma peritonei caused by a mucinous appendiceal tumor",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 229,
+   "completion_tokens": 1282,
+   "total_tokens": 1511,
+   "cost": 0.00045878,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00045878,
+    "upstream_inference_prompt_cost": 2.29e-05,
+    "upstream_inference_completions_cost": 0.00043588
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1124,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 601,
+   "completion_tokens": 1529,
+   "total_tokens": 2130,
+   "cost": 0.00057996,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00057996,
+    "upstream_inference_prompt_cost": 6.01e-05,
+    "upstream_inference_completions_cost": 0.00051986
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1440,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 739,
+   "completion_tokens": 5926,
+   "total_tokens": 6665,
+   "cost": 0.00208874,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00208874,
+    "upstream_inference_prompt_cost": 7.39e-05,
+    "upstream_inference_completions_cost": 0.00201484
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5608,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 249.3
+}

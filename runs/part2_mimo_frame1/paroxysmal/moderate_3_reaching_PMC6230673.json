@@ -1,0 +1,181 @@
+{
+ "questions": [
+  "Are you experiencing pain in your body right now?",
+  "Did this distressing situation start suddenly, within the last few hours?",
+  "Do you have difficulty moving your arms or legs, aside from the restraints?",
+  "Have you lost consciousness in the past day?",
+  "Do you feel dizzy or like the room is spinning?",
+  "Are you aware of where you are right now?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Neurological examination",
+  "Complete metabolic panel including ammonia and lactate",
+  "Thyroid function tests",
+  "CT head without contrast",
+  "Urine drug screen",
+  "Lumbar puncture",
+  "Lorazepam challenge"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "serum ammonia",
+  "thyroid function (TSH, free T4)",
+  "CT head",
+  "toxicology screen (urine and serum)",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. Neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: increased tone in the right limbs",
+  "     limb strength (MRC) examination: right-sided hemiplegia, MRC grade 1",
+  "     deep tendon reflexes and plantar responses: brisk right-sided reflexes with extensor right plantar response",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "2. Complete metabolic panel including ammonia and lactate",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal",
+  "     serum ammonia: normal",
+  "3. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal",
+  "4. CT head without contrast",
+  "     CT head: left frontal post-traumatic gliosis and encephalomalacia",
+  "5. Urine drug screen",
+  "     toxicology screen (urine and serum): normal",
+  "6. Lumbar puncture",
+  "     lumbar puncture / CSF: normal",
+  "7. Lorazepam challenge",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-traumatic epilepsy with ictal or post-ictal state\n\nAlternative diagnoses:\n1. Psychogenic/non-epileptic seizure disorder\n2. Conversion disorder (functional neurological symptom disorder)\n3. Acute-on-chronic encephalopathy secondary to left frontal traumatic brain injury",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Neurological examination\n2. Complete metabolic panel including ammonia and lactate\n3. Thyroid function tests\n4. CT head without contrast\n5. EEG\n6. Urine drug screen\n7. Lumbar puncture\n8. Lorazepam challenge",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Post-traumatic epilepsy with ictal or post-ictal state",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 576,
+   "completion_tokens": 570,
+   "total_tokens": 1146,
+   "cost": 0.0002138976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002138976,
+    "upstream_inference_prompt_cost": 5.42976e-05,
+    "upstream_inference_completions_cost": 0.0001596
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 480,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 923,
+   "completion_tokens": 526,
+   "total_tokens": 1449,
+   "cost": 0.0002501576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002501576,
+    "upstream_inference_prompt_cost": 0.0001028776,
+    "upstream_inference_completions_cost": 0.00014728
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 469,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1350,
+   "completion_tokens": 779,
+   "total_tokens": 2129,
+   "cost": 0.0003807776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003807776,
+    "upstream_inference_prompt_cost": 0.0001626576,
+    "upstream_inference_completions_cost": 0.00021812
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 712,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 119.3
+}

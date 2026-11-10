@@ -1,0 +1,184 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you feel dizzy or lightheaded when you try to stand up straight?",
+  "Have you had a recent fall or injury before coming here today?",
+  "Do you feel like your legs are weak or heavy when you try to walk?",
+  "Do you have a history of back pain or sciatica?",
+  "Do you have difficulty lifting your toes off the ground (foot drop)?",
+  "Do you have any numbness or tingling in your legs?",
+  "Do you have difficulty climbing stairs or rising from a chair?",
+  "Do you have difficulty walking on your heels?",
+  "Do you have difficulty walking on your toes?",
+  "Do you have difficulty walking on your heels?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Perform a focused neurological examination, specifically assessing muscle tone (spasticity vs rigidity), deep tendon reflexes, and checking for clonus in the lower extremities."
+ ],
+ "served": [
+  "muscle tone examination",
+  "deep tendon reflexes and plantar responses"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing any pain?; Do you feel dizzy or lightheaded when you try to stand up straight?; Have you had a recent fall or injury before coming here today? -> ['no', 'no', 'no']",
+  "R2 ORDER Perform a focused neurological examination, specifically assessing muscle tone (spasticity vs rigidity), deep tendon reflexes, and checking for clonus in the lower extremities. -> [['muscle tone examination', 'deep tendon reflexes and plantar responses']]",
+  "R3 ASK Do you feel like your legs are weak or heavy when you try to walk? -> ['yes']",
+  "R4 ASK Do you have a history of back pain or sciatica? -> ['no']",
+  "R5 ASK Do you have difficulty lifting your toes off the ground (foot drop)? -> ['no']",
+  "R6 ASK Do you have any numbness or tingling in your legs? -> ['no']",
+  "R7 ASK Do you have difficulty climbing stairs or rising from a chair? -> ['no']",
+  "R8 ASK Do you have difficulty walking on your heels? -> ['no']",
+  "R9 ASK Do you have difficulty walking on your toes? -> ['no']",
+  "R10 ASK Do you have difficulty walking on your heels? -> ['no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Functional gait disorder -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing any pain?",
+    "Do you feel dizzy or lightheaded when you try to stand up straight?",
+    "Have you had a recent fall or injury before coming here today?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Perform a focused neurological examination, specifically assessing muscle tone (spasticity vs rigidity), deep tendon reflexes, and checking for clonus in the lower extremities."
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "deep tendon reflexes and plantar responses"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you feel like your legs are weak or heavy when you try to walk?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of back pain or sciatica?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty lifting your toes off the ground (foot drop)?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have any numbness or tingling in your legs?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty climbing stairs or rising from a chair?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty walking on your heels?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty walking on your toes?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty walking on your heels?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Functional gait disorder"
+  }
+ ],
+ "dx": "Functional gait disorder",
+ "dx_raw": "DIAGNOSIS: Functional gait disorder",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "cost_usd": 0.0052,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_paraneoplastic_PMC12741441.mp4",
+ "line": "ataxia",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 55.1
+}

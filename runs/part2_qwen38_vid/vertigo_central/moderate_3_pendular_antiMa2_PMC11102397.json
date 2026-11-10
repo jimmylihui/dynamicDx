@@ -1,0 +1,150 @@
+{
+ "questions": [
+  "Do you have a known history of thyroid disease, such as Graves' disease?",
+  "Is the swelling and redness around your right eye (the one on the left side of the screen) significantly worse than the left?",
+  "Have you recently had any trauma to your face or eyes?",
+  "Are you currently experiencing double vision?",
+  "Does moving your eyes cause pain?",
+  "Have you noticed any recent changes in your vision, such as blurriness or loss of sight?",
+  "Do you have a fever or feel generally unwell?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Measure intraocular pressure in both eyes",
+  "Assess for relative afferent pupillary defect (RAPD) using the swinging flashlight test",
+  "Perform fundoscopy to evaluate the optic disc and retina",
+  "Order serum thyroid-stimulating hormone (TSH), free T4, and TSI/TRAb antibodies",
+  "Obtain a CT scan of the orbits with contrast"
+ ],
+ "served": [
+  "fundoscopy",
+  "TSH / free T4",
+  "anti-thyroid antibodies",
+  "MRI sella and orbits"
+ ],
+ "results": [
+  "1. Measure intraocular pressure in both eyes",
+  "     not performed / not available",
+  "2. Assess for relative afferent pupillary defect (RAPD) using the swinging flashlight test",
+  "     not performed / not available",
+  "3. Perform fundoscopy to evaluate the optic disc and retina",
+  "     fundoscopy: normal",
+  "4. Order serum thyroid-stimulating hormone (TSH), free T4, and TSI/TRAb antibodies",
+  "     TSH / free T4: normal",
+  "     anti-thyroid antibodies: normal",
+  "5. Obtain a CT scan of the orbits with contrast",
+  "     MRI sella and orbits: normal pituitary and orbits"
+ ],
+ "dx_raw": "DIAGNOSIS: Bilateral blepharochalasis\nBlepharitis\nAllergic conjunctivitis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Measure intraocular pressure in both eyes\n2. Assess for relative afferent pupillary defect (RAPD) using the swinging flashlight test\n3. Perform fundoscopy to evaluate the optic disc and retina\n4. Order serum thyroid-stimulating hormone (TSH), free T4, and TSI/TRAb antibodies\n5. Obtain a CT scan of the orbits with contrast",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Bilateral blepharochalasis",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 121,
+   "total_tokens": 4944,
+   "cost": 0.00078032,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00078032,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 5.687e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5246,
+   "completion_tokens": 79,
+   "total_tokens": 5325,
+   "cost": 0.00022371,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00022371,
+    "upstream_inference_prompt_cost": 0.00018658,
+    "upstream_inference_completions_cost": 3.713e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5557,
+   "completion_tokens": 28,
+   "total_tokens": 5585,
+   "cost": 0.000177782,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000177782,
+    "upstream_inference_prompt_cost": 0.000164622,
+    "upstream_inference_completions_cost": 1.316e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 58.5
+}

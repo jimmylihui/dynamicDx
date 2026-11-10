@@ -1,0 +1,130 @@
+{
+ "questions": [
+  "Are you experiencing pain in your face or jaw?",
+  "Do you have a history of teeth grinding or clenching?",
+  "Have you noticed any recent changes in your vision?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Measure intraocular pressure",
+  "Perform slit-lamp examination of the anterior segment",
+  "Conduct dilated fundus examination"
+ ],
+ "served": [
+  "fundoscopy"
+ ],
+ "results": [
+  "1. Measure intraocular pressure",
+  "     not performed / not available",
+  "2. Perform slit-lamp examination of the anterior segment",
+  "     not performed / not available",
+  "3. Conduct dilated fundus examination",
+  "     fundoscopy: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute angle-closure glaucoma\nDifferential diagnosis: Optic neuritis\nDifferential diagnosis: Central retinal vein occlusion\nDifferential diagnosis: Migraine with aura",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Measure intraocular pressure\n2. Perform slit-lamp examination of the anterior segment\n3. Conduct dilated fundus examination",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Acute angle-closure glaucoma",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 296,
+   "completion_tokens": 42,
+   "total_tokens": 338,
+   "cost": 6.414e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.414e-05,
+    "upstream_inference_prompt_cost": 4.44e-05,
+    "upstream_inference_completions_cost": 1.974e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 545,
+   "completion_tokens": 28,
+   "total_tokens": 573,
+   "cost": 9.491e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.491e-05,
+    "upstream_inference_prompt_cost": 8.175e-05,
+    "upstream_inference_completions_cost": 1.316e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 722,
+   "completion_tokens": 44,
+   "total_tokens": 766,
+   "cost": 7.7524e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.7524e-05,
+    "upstream_inference_prompt_cost": 5.6844e-05,
+    "upstream_inference_completions_cost": 2.068e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_gca_ophthalmoplegia_PMC12960836.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.7
+}

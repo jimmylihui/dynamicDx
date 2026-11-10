@@ -1,0 +1,167 @@
+{
+ "questions": [
+  "Is the pain on the right side of your body?",
+  "Is the pain sharp or burning?",
+  "Does the pain travel up your arm toward your shoulder?",
+  "Do you feel dizzy or lightheaded right now?",
+  "Are you having any trouble breathing?",
+  "Did something happen to your right arm or hand recently?",
+  "Do you feel any weakness in your right arm?",
+  "Is it hard to move the fingers on your right hand?",
+  "Do you feel any tingling or numbness in your right hand or arm?",
+  "Have you had this pain before?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Urgent non-contrast CT head",
+  "Continuous cardiac rhythm monitoring",
+  "Point-of-care blood glucose measurement",
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Serum calcium and magnesium levels",
+  "Serum prolactin level",
+  "Electroencephalography (EEG)"
+ ],
+ "served": [
+  "CT head",
+  "blood glucose and HbA1c",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "liver function",
+  "serum calcium, magnesium and phosphate"
+ ],
+ "results": [
+  "1. Urgent non-contrast CT head",
+  "     CT head: normal",
+  "2. Continuous cardiac rhythm monitoring",
+  "     not performed / not available",
+  "3. Point-of-care blood glucose measurement",
+  "     blood glucose and HbA1c: normal",
+  "4. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "5. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function: normal",
+  "6. Serum calcium and magnesium levels",
+  "     serum calcium, magnesium and phosphate: normal",
+  "7. Serum prolactin level",
+  "     not performed / not available",
+  "8. Electroencephalography (EEG)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Epileptic seizure, likely a focal motor seizure with secondary generalization, in a patient with an underlying neurodevelopmental condition\n\nPsychogenic non-epileptic events\n\nParoxysmal dyskinesia\n\nMedication-induced acute dystonic reaction",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "Based on the clinical presentation in the video—showing what appears to be a sudden onset of altered consciousness with rightward slumping, possible left-sided weakness, and what may be tonic posturing or seizure activity—here are my ordered investigations:\n\n1. Urgent non-contrast CT head\n2. Continuous cardiac rhythm monitoring\n3. Point-of-care blood glucose measurement\n4. Complete blood count\n5. Comprehensive metabolic panel\n6. Serum calcium and magnesium levels\n7. Serum prolactin level\n8. Electroencephalography (EEG)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Epileptic seizure, likely a focal motor seizure with secondary generalization, in a patient with an underlying neurodevelopmental condition",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 15295,
+   "completion_tokens": 454,
+   "total_tokens": 15749,
+   "cost": 0.0001785896,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 15232,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001785896,
+    "upstream_inference_prompt_cost": 5.14696e-05,
+    "upstream_inference_completions_cost": 0.00012712
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 326,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 15742,
+   "completion_tokens": 646,
+   "total_tokens": 16388,
+   "cost": 0.0002949296,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 15232,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002949296,
+    "upstream_inference_prompt_cost": 0.0001140496,
+    "upstream_inference_completions_cost": 0.00018088
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 529,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 16094,
+   "completion_tokens": 634,
+   "total_tokens": 16728,
+   "cost": 0.000279384,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 15680,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000279384,
+    "upstream_inference_prompt_cost": 0.000101864,
+    "upstream_inference_completions_cost": 0.00017752
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 574,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_secondary_structural_PMC12962376.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 37.5
+}

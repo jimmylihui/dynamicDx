@@ -1,0 +1,226 @@
+{
+ "questions": [
+  "Are you currently experiencing a medical emergency?",
+  "Are you having severe difficulty breathing?",
+  "Are you having chest pain or pressure?",
+  "Have you suddenly developed weakness or numbness on one side of your body?",
+  "Are you having sudden trouble speaking, seeing, or understanding?",
+  "Have you fainted or become difficult to wake?",
+  "Are you having severe or rapidly worsening pain?",
+  "Are you bleeding heavily?",
+  "Are you having thoughts of harming yourself or someone else?",
+  "Do you currently have a fever?",
+  "Is your main reason for referral a symptom you are currently experiencing?",
+  "Is that symptom pain?",
+  "Is that symptom a change in your breathing?",
+  "Is that symptom related to your heart or circulation?",
+  "Is that symptom related to your stomach or bowel movements?",
+  "Is that symptom related to urination?",
+  "Is that symptom related to your skin?",
+  "Is that symptom related to movement, strength, sensation, or balance?",
+  "Is that symptom related to your mood, thinking, or memory?",
+  "Is that symptom related to vision, hearing, or swallowing?",
+  "Were you referred because of an abnormal examination finding?",
+  "Were you referred because of an abnormal blood or urine test?",
+  "Were you referred because of an abnormal scan, X-ray, or other test?",
+  "Have your symptoms been present for more than one month?",
+  "Have your symptoms been getting worse?",
+  "Have you had this problem before?",
+  "Do you have any diagnosed medical conditions?",
+  "Do you take any prescription medicines regularly?",
+  "Have you recently started or stopped a medicine?",
+  "Do you have any medication allergies?",
+  "Have you recently had an operation, injury, infection, or hospital admission?",
+  "Could you be pregnant?",
+  "Do you use tobacco, vaping products, alcohol, or recreational drugs?",
+  "Does anyone in your immediate family have a serious medical condition relevant to your referral?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "yes",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "yes",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "yes",
+  "32": "no",
+  "33": "no",
+  "34": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "Focused neurological examination of the lower limbs, including strength, sensation, reflexes, gait, and perineal sensation",
+  "Digital rectal examination with assessment of anal tone",
+  "Bladder scan for post-void residual volume",
+  "Urinalysis by dipstick and microscopy",
+  "Urine culture",
+  "Serum creatinine, urea, electrolytes, glucose, and complete blood count",
+  "Urgent MRI of the lumbosacral spine",
+  "Electromyography and nerve-conduction studies of the lower limbs if MRI is nondiagnostic and symptoms persist"
+ ],
+ "served": [
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "gait and coordination",
+  "urinalysis",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose",
+  "full blood count",
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. Focused neurological examination of the lower limbs, including strength, sensation, reflexes, gait, and perineal sensation",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     gait and coordination: normal",
+  "2. Digital rectal examination with assessment of anal tone",
+  "     not performed / not available",
+  "3. Bladder scan for post-void residual volume",
+  "     not performed / not available",
+  "4. Urinalysis by dipstick and microscopy",
+  "     urinalysis: leukocyturia; negative ketones",
+  "5. Urine culture",
+  "     not performed / not available",
+  "6. Serum creatinine, urea, electrolytes, glucose, and complete blood count",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     blood glucose: 799 mg/dL (normal 74-106)",
+  "     full blood count: normal",
+  "7. Urgent MRI of the lumbosacral spine",
+  "     not performed / not available",
+  "8. Electromyography and nerve-conduction studies of the lower limbs if MRI is nondiagnostic and symptoms persist",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperosmolar hyperglycemic state due to previously undiagnosed type 2 diabetes mellitus\n\nALTERNATIVE: Severe stress hyperglycemia related to recent surgery or acute illness\n\nALTERNATIVE: Steroid-induced diabetes mellitus\n\nALTERNATIVE: Urinary tract infection causing leukocyturia and urinary symptoms",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Focused neurological examination of the lower limbs, including strength, sensation, reflexes, gait, and perineal sensation\n2. Digital rectal examination with assessment of anal tone\n3. Bladder scan for post-void residual volume\n4. Urinalysis by dipstick and microscopy\n5. Urine culture\n6. Serum creatinine, urea, electrolytes, glucose, and complete blood count\n7. Urgent MRI of the lumbosacral spine\n8. Electromyography and nerve-conduction studies of the lower limbs if MRI is nondiagnostic and symptoms persist",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperosmolar hyperglycemic state due to previously undiagnosed type 2 diabetes mellitus",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 144,
+   "completion_tokens": 807,
+   "total_tokens": 951,
+   "cost": 0.0004986,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004986,
+    "upstream_inference_prompt_cost": 1.44e-05,
+    "upstream_inference_completions_cost": 0.0004842
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 393,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1275,
+   "completion_tokens": 218,
+   "total_tokens": 1493,
+   "cost": 0.0002901,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1272,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002901,
+    "upstream_inference_prompt_cost": 0.0001593,
+    "upstream_inference_completions_cost": 0.0001308
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 89,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1752,
+   "completion_tokens": 405,
+   "total_tokens": 2157,
+   "cost": 0.000315645,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1272,
+    "cache_write_tokens": 477,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000315645,
+    "upstream_inference_prompt_cost": 7.2645e-05,
+    "upstream_inference_completions_cost": 0.000243
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 333,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 26.7
+}

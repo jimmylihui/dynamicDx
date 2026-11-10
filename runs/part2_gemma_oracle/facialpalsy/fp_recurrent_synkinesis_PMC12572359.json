@@ -1,0 +1,112 @@
+{
+ "questions": [
+  "Do you have pain in the area you are pointing to?",
+  "Is the pain sudden and sharp?",
+  "Do you have numbness in that area?",
+  "Do you have weakness in your face?",
+  "Do you have a tremor in that area?",
+  "Did this start suddenly?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "synkinesis assessment (eye closure with platysma/frontalis)",
+  "palpebral fissure width both sides",
+  "family history",
+  "MRI brain and internal auditory canal with contrast",
+  "clinical course"
+ ],
+ "results": [
+  "1. synkinesis assessment (eye closure with platysma/frontalis): co-contraction of eye closure with the left platysma and left frontalis; right lower-lip curling on speech and mastication",
+  "2. palpebral fissure width both sides: narrowed LEFT palpebral fissure from established synkinesis",
+  "3. family history: five of fourteen siblings have had a facial palsy; two affected brothers had recurrent episodes with synkinesis",
+  "4. MRI brain and internal auditory canal with contrast: no tumour, no perineural enhancement, no central lesion",
+  "5. clinical course: left facial palsy treated with acyclovir 400 mg five times daily for 10 days and prednisone 50 mg for five days with taper; right palsy at age 64 with retroauricular pain, hyperacusis and dysgeusia; right synkinesis appeared five months later"
+ ],
+ "dx_raw": "DIAGNOSIS: Familial Bell's palsy\nMelkersson-Rosenthal syndrome\nSarcoidosis\nLyme disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Familial Bell's palsy",
+ "decisive_served": [
+  "synkinesis assessment (eye closure with platysma/frontalis)",
+  "palpebral fissure width both sides",
+  "family history",
+  "MRI brain and internal auditory canal with contrast",
+  "clinical course"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 3540,
+   "total_tokens": 12238,
+   "cost": 0.0020734,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0020734,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0012036
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3084,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9139,
+   "completion_tokens": 2843,
+   "total_tokens": 11982,
+   "cost": 0.00188052,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00188052,
+    "upstream_inference_prompt_cost": 0.0009139,
+    "upstream_inference_completions_cost": 0.00096662
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2775,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "fp_recurrent_synkinesis_PMC12572359.mp4",
+ "line": "facialpalsy",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 204.5
+}

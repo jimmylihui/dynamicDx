@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Do you have a history of diabetes?",
+  "Have you noticed any recent changes in your vision, such as blurriness or double vision?",
+  "Do you have high blood pressure?",
+  "Do you have a history of thyroid problems?",
+  "Do you have a history of myasthenia gravis?",
+  "Are you currently taking any medications for myasthenia gravis?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside examination of extraocular movements"
+ ],
+ "served": [
+  "ocular motility examination"
+ ],
+ "results": [
+  "R1 ASK Do you have a history of diabetes?; Have you noticed any recent changes in your vision, such as blurriness or double vision?; Do you have high blood pressure? -> ['no', 'no', 'no']",
+  "R2 ASK Do you have a history of thyroid problems? -> ['no']",
+  "R3 ORDER Bedside examination of extraocular movements -> [['ocular motility examination']]",
+  "R4 ASK Do you have a history of myasthenia gravis? -> ['yes']",
+  "R5 ASK Are you currently taking any medications for myasthenia gravis? -> ['no']",
+  "R6 DIAGNOSIS Myasthenia gravis -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?",
+    "Have you noticed any recent changes in your vision, such as blurriness or double vision?",
+    "Do you have high blood pressure?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of thyroid problems?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Bedside examination of extraocular movements"
+   ],
+   "result": [
+    [
+     "ocular motility examination"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of myasthenia gravis?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking any medications for myasthenia gravis?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Myasthenia gravis"
+  }
+ ],
+ "dx": "Myasthenia gravis",
+ "dx_raw": "DIAGNOSIS: Myasthenia gravis",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0015,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_mg_ptosis_PMC8064859.mp4",
+ "line": "ptosis",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 25.5
+}

@@ -1,0 +1,131 @@
+{
+ "questions": [
+  "Is your primary symptom pain?"
+ ],
+ "answers": {
+  "1": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Full physical examination"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy"
+ ],
+ "results": [
+  "1. Full physical examination",
+  "     cranial nerve examination: dysarthria, dysphagia, broken pursuit eye movements and orofacial dyskinesia",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal limb and neck tone with leftward truncal dystonic flexion and antecollis",
+  "     limb strength (MRC) examination: normal power",
+  "     deep tendon reflexes and plantar responses: normal reflexes and flexor plantar responses",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): chorea and orofacial dyskinesia; limb coordination normal",
+  "     posture and pull test: about 70 degrees of leftward trunk tilt on walking with antecollis; normal stance and tilt disappears when recumbent",
+  "     fundoscopy: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Huntington's disease caused by CAG repeat expansion in the HTT gene\n\nWilson's disease\nNeuroacanthocytosis\nTardive dyskinesia",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Full physical examination",
+ "rationale": [
+  null
+ ],
+ "dx": "Huntington's disease caused by CAG repeat expansion in the HTT gene",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 155,
+   "completion_tokens": 1275,
+   "total_tokens": 1430,
+   "cost": 0.000449,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000449,
+    "upstream_inference_prompt_cost": 1.55e-05,
+    "upstream_inference_completions_cost": 0.0004335
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1258,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 323,
+   "completion_tokens": 1143,
+   "total_tokens": 1466,
+   "cost": 0.00042092,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00042092,
+    "upstream_inference_prompt_cost": 3.23e-05,
+    "upstream_inference_completions_cost": 0.00038862
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1171,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 596,
+   "completion_tokens": 6515,
+   "total_tokens": 7111,
+   "cost": 0.0022747,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0022747,
+    "upstream_inference_prompt_cost": 5.96e-05,
+    "upstream_inference_completions_cost": 0.0022151
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5696,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 296.5
+}

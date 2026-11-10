@@ -1,0 +1,150 @@
+{
+ "questions": [
+  "Did these mouth and tongue movements start suddenly today?",
+  "Did they begin within the last 24 hours?",
+  "Have you had any weakness or numbness on one side of your body?",
+  "Has one side of your face drooped?",
+  "Are you having trouble understanding what people say?",
+  "Are you having trouble finding or forming words?",
+  "Have you had any loss of awareness or memory during these episodes?",
+  "Have you had shaking or jerking of an arm or leg?",
+  "Have you had a sudden severe headache?",
+  "Are you having trouble swallowing?",
+  "Are you having trouble breathing?",
+  "Have you had a fever or recent infection?",
+  "Have you had similar episodes before?",
+  "Do the movements continue while you are asleep?",
+  "Can you voluntarily stop the movements for a few seconds?",
+  "Do you feel an urge or inner restlessness before the movements?",
+  "Do the movements improve when you are distracted?",
+  "Have you recently started or increased a medication?",
+  "Do you take medication for psychosis, nausea, or depression?",
+  "Have you taken any recreational drugs or excess medication recently?",
+  "Do you have Parkinson’s disease or another movement disorder?",
+  "Have you ever had a stroke or transient ischemic attack?",
+  "Have you ever had a seizure?",
+  "Have you recently fallen or sustained a head injury?",
+  "Have you had new problems walking or keeping your balance?",
+  "Have you noticed changes in your voice or slurred speech?",
+  "Have you had involuntary movements elsewhere in your face or body?",
+  "Have you recently stopped taking any regular medication?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "action specificity and task dependence",
+  "medication and toxin exposure history",
+  "dystonia rating scale (BFM / OMDRS)"
+ ],
+ "results": [
+  "1. action specificity and task dependence: dystonia appears on INITIATING SPEECH; asymptomatic at rest",
+  "2. medication and toxin exposure history: methotrexate 15 mg weekly for six years for psoriatic arthritis; the dystonia improved after switching to sulfasalazine",
+  "3. dystonia rating scale (BFM / OMDRS): Oromandibular Dystonia Rating Scale 177 at baseline, 103 three months after the drug switch, 75 after adding botulinum toxin"
+ ],
+ "dx_raw": "DIAGNOSIS: Methotrexate-induced task-specific oromandibular dystonia (speech-induced focal dystonia)\n\nALTERNATIVE 1: Idiopathic task-specific oromandibular dystonia\n\nALTERNATIVE 2: Tardive or drug-induced dystonia from an unreported exposure\n\nALTERNATIVE 3: Functional (psychogenic) oromandibular dystonia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Methotrexate-induced task-specific oromandibular dystonia (speech-induced focal dystonia)",
+ "decisive_served": [
+  "action specificity and task dependence",
+  "medication and toxin exposure history",
+  "dystonia rating scale (BFM / OMDRS)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 18604,
+   "completion_tokens": 668,
+   "total_tokens": 19272,
+   "cost": 0.00058711,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 18601,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00058711,
+    "upstream_inference_prompt_cost": 0.00018631,
+    "upstream_inference_completions_cost": 0.0004008
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 322,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 19626,
+   "completion_tokens": 195,
+   "total_tokens": 19821,
+   "cost": 0.00043106,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 18601,
+    "cache_write_tokens": 1022,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00043106,
+    "upstream_inference_prompt_cost": 0.00031406,
+    "upstream_inference_completions_cost": 0.000117
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 107,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "moderate_tardive_PMC10656108.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 14.7
+}

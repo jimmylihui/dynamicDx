@@ -1,0 +1,202 @@
+{
+ "questions": [
+  "Do you have pain right now?",
+  "Is the pain in your chest?",
+  "Is the pain in your head?",
+  "Is the pain in your abdomen?",
+  "Is the pain in your back?",
+  "Is the pain in your neck?",
+  "Is the pain in your arms or legs?",
+  "Is the pain in a joint?",
+  "Did the pain start suddenly?",
+  "Is the pain severe?",
+  "Is the pain constant?",
+  "Have you had a fever?",
+  "Do you have shortness of breath?",
+  "Do you have a cough?",
+  "Do you feel nauseous?",
+  "Have you vomited?",
+  "Have you had diarrhea?",
+  "Do you feel weak?",
+  "Have you had dizziness?",
+  "Have you had any numbness or tingling?",
+  "Have you had vision changes?",
+  "Have you had a rash?",
+  "Have you lost weight without trying?",
+  "Do you have any medical conditions?",
+  "Do you take any medications?",
+  "Do you smoke?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Blood pressure measurement",
+  "Comprehensive metabolic panel",
+  "Complete blood count",
+  "Fasting lipid panel",
+  "Hemoglobin A1c",
+  "Thyroid stimulating hormone",
+  "Urinalysis"
+ ],
+ "served": [
+  "vital signs",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "renal function (urea, creatinine)",
+  "electrolytes (Na, K, Ca, Mg)",
+  "glucose",
+  "full blood count",
+  "blood glucose and HbA1c",
+  "TSH / free T4",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Blood pressure measurement",
+  "     vital signs: normal, afebrile",
+  "2. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     renal function (urea, creatinine): normal",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     glucose: normal",
+  "3. Complete blood count",
+  "     full blood count: normal",
+  "4. Fasting lipid panel",
+  "     not performed / not available",
+  "5. Hemoglobin A1c",
+  "     blood glucose and HbA1c: normal",
+  "6. Thyroid stimulating hormone",
+  "     TSH / free T4: normal",
+  "7. Urinalysis",
+  "     urinalysis: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: No active disease identified (well-patient encounter)\n1. Subclinical hypothyroidism (despite normal TSH, consider early/central hypothyroid state)\n2. Occult malignancy (early, not yet manifest)\n3. Health anxiety / somatization disorder (symptoms resolved or unreported)",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Blood pressure measurement\n2. Comprehensive metabolic panel\n3. Complete blood count\n4. Fasting lipid panel\n5. Hemoglobin A1c\n6. Thyroid stimulating hormone\n7. Urinalysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "No active disease identified (well-patient encounter)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 7706,
+   "total_tokens": 8020,
+   "cost": 0.0092694,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0092694,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.0092472
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7806,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1019,
+   "completion_tokens": 2857,
+   "total_tokens": 3876,
+   "cost": 0.00367602,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00367602,
+    "upstream_inference_prompt_cost": 0.00024762,
+    "upstream_inference_completions_cost": 0.0034284
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3298,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1297,
+   "completion_tokens": 308,
+   "total_tokens": 1605,
+   "cost": 0.00054702,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 882,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00054702,
+    "upstream_inference_prompt_cost": 0.00017742,
+    "upstream_inference_completions_cost": 0.0003696
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 313,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "severe_sspe_PMC13071100.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 140.7
+}

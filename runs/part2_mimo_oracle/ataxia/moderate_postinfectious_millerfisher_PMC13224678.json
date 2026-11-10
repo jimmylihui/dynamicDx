@@ -1,0 +1,137 @@
+{
+ "questions": [
+  "Do you have shortness of breath?",
+  "Do you have a cough?",
+  "Do you cough up any sputum or phlegm?",
+  "Do you have chest pain when breathing or coughing?",
+  "Have you had a fever in the past week?",
+  "Do you have night sweats?",
+  "Have you had any recent cold or flu?",
+  "Do you smoke or have a history of smoking?",
+  "Do you have any allergies that trigger your symptoms?",
+  "Have you ever been diagnosed with asthma or COPD?",
+  "Do your symptoms worsen with physical activity?",
+  "Do you use any medications for your breathing?",
+  "Have you ever had a chest X-ray or breathing tests done?",
+  "Do you have any other medical conditions, like heart disease?",
+  "Have you traveled recently or been exposed to someone with a respiratory illness?",
+  "Do your symptoms improve with rest?",
+  "Do you have swelling in your legs?",
+  "Do you have difficulty breathing when lying down?",
+  "Have you had any weight loss recently?",
+  "Do you have any skin rashes or joint pain?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "nerve conduction studies / EMG",
+  "EEG",
+  "somatosensory evoked potentials",
+  "SARS-CoV-2 testing"
+ ],
+ "results": [
+  "1. nerve conduction studies / EMG: rhythmic bursts in both hands, synchronised with the visible jerks",
+  "2. EEG: no abnormality, and no EEG-EMG correlation on video-EEG - the myoclonus is subcortical",
+  "3. somatosensory evoked potentials: NO giant SSEP - argues against a cortical origin",
+  "4. SARS-CoV-2 testing: recent COVID-19 infection"
+ ],
+ "dx_raw": "DIAGNOSIS: COVID-19 associated subcortical myoclonus\nALTERNATIVES: Functional neurological disorder (myoclonus)\nSporadic Creutzfeldt-Jakob disease\nDrug-induced myoclonus",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "COVID-19 associated subcortical myoclonus",
+ "decisive_served": [
+  "nerve conduction studies / EMG",
+  "EEG",
+  "somatosensory evoked potentials",
+  "SARS-CoV-2 testing"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 10175,
+   "completion_tokens": 772,
+   "total_tokens": 10947,
+   "cost": 0.0016143176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0016143176,
+    "upstream_inference_prompt_cost": 0.0013981576,
+    "upstream_inference_completions_cost": 0.00021616
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 523,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 10960,
+   "completion_tokens": 3148,
+   "total_tokens": 14108,
+   "cost": 0.0010284736,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 10112,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010284736,
+    "upstream_inference_prompt_cost": 0.0001470336,
+    "upstream_inference_completions_cost": 0.00088144
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3093,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "moderate_postinfectious_millerfisher_PMC13224678.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 48.6
+}

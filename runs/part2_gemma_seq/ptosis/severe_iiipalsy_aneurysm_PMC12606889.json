@@ -1,0 +1,99 @@
+{
+ "questions": [
+  "Did the symptoms start suddenly?",
+  "Do you have a severe headache?",
+  "Do you have diabetes?",
+  "Do you have hypertension?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Pupil light reflex test",
+  "Extraocular muscle movement examination",
+  "MRI of the brain and orbits"
+ ],
+ "served": [
+  "pupil examination (size, light reaction)",
+  "ocular motility examination",
+  "MRI orbits",
+  "MRI brain with contrast"
+ ],
+ "results": [
+  "R1 ASK Did the symptoms start suddenly?; Do you have a severe headache?; Do you have diabetes?; Do you have hypertension? -> ['no', 'no', 'no', 'no']",
+  "R2 ORDER Pupil light reflex test; Extraocular muscle movement examination; MRI of the brain and orbits -> [['pupil examination (size, light reaction)'], ['ocular motility examination'], ['MRI orbits', 'MRI brain with contrast']]",
+  "R3 DIAGNOSIS Pupillary oscillations caused by aberrant regeneration of the oculomotor nerve -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did the symptoms start suddenly?",
+    "Do you have a severe headache?",
+    "Do you have diabetes?",
+    "Do you have hypertension?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Pupil light reflex test",
+    "Extraocular muscle movement examination",
+    "MRI of the brain and orbits"
+   ],
+   "result": [
+    [
+     "pupil examination (size, light reaction)"
+    ],
+    [
+     "ocular motility examination"
+    ],
+    [
+     "MRI orbits",
+     "MRI brain with contrast"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "diagnosis",
+   "text": "Pupillary oscillations caused by aberrant regeneration of the oculomotor nerve"
+  }
+ ],
+ "dx": "Pupillary oscillations caused by aberrant regeneration of the oculomotor nerve",
+ "dx_raw": "DIAGNOSIS: Pupillary oscillations caused by aberrant regeneration of the oculomotor nerve",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 2,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "MRI orbits",
+  "pupil examination (size, light reaction)"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0052,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_iiipalsy_aneurysm_PMC12606889.mp4",
+ "line": "ptosis",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 316.8
+}

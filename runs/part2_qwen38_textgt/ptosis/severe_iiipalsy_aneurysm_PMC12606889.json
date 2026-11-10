@@ -1,0 +1,153 @@
+{
+ "questions": [
+  "Is the eye with the larger pupil unable to move inward?",
+  "Does the patient have a history of diabetes mellitus?",
+  "Is there pain behind or around the affected eye?",
+  "Did the symptoms begin suddenly?",
+  "Is there drooping of the eyelid on the same side as the larger pupil?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside examination for fatigable ptosis and diplopia with sustained upgaze",
+  "Ice pack test on the affected eyelid",
+  "Serum acetylcholine receptor antibodies",
+  "Serum muscle-specific kinase (MuSK) antibodies",
+  "Repetitive nerve stimulation electromyography",
+  "Single-fiber electromyography"
+ ],
+ "served": [
+  "sustained upgaze fatigability test",
+  "ocular motility examination",
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "anti-MuSK antibodies",
+  "repetitive nerve stimulation",
+  "single-fibre EMG"
+ ],
+ "results": [
+  "1. Bedside examination for fatigable ptosis and diplopia with sustained upgaze",
+  "     sustained upgaze fatigability test: no fatigable droop",
+  "     ocular motility examination: exotropia, hypotropia and motility impairment - a right oculomotor nerve palsy",
+  "2. Ice pack test on the affected eyelid",
+  "     ice-pack test: negative",
+  "3. Serum acetylcholine receptor antibodies",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "4. Serum muscle-specific kinase (MuSK) antibodies",
+  "     anti-MuSK antibodies: negative",
+  "5. Repetitive nerve stimulation electromyography",
+  "     repetitive nerve stimulation: normal",
+  "6. Single-fiber electromyography",
+  "     single-fibre EMG: normal jitter"
+ ],
+ "dx_raw": "DIAGNOSIS: Right oculomotor nerve palsy secondary to posterior communicating artery aneurysm\nAlternative 1: Cavernous sinus syndrome (e.g., due to tumor or thrombosis)\nAlternative 2: Midbrain infarction",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination for fatigable ptosis and diplopia with sustained upgaze\n2. Ice pack test on the affected eyelid\n3. Serum acetylcholine receptor antibodies\n4. Serum muscle-specific kinase (MuSK) antibodies\n5. Repetitive nerve stimulation electromyography\n6. Single-fiber electromyography",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Right oculomotor nerve palsy secondary to posterior communicating artery aneurysm",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 181,
+   "completion_tokens": 70,
+   "total_tokens": 251,
+   "cost": 6.005e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.005e-05,
+    "upstream_inference_prompt_cost": 2.715e-05,
+    "upstream_inference_completions_cost": 3.29e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 496,
+   "completion_tokens": 73,
+   "total_tokens": 569,
+   "cost": 0.00010871,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010871,
+    "upstream_inference_prompt_cost": 7.44e-05,
+    "upstream_inference_completions_cost": 3.431e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 833,
+   "completion_tokens": 53,
+   "total_tokens": 886,
+   "cost": 0.000115556,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000115556,
+    "upstream_inference_prompt_cost": 9.0646e-05,
+    "upstream_inference_completions_cost": 2.491e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_iiipalsy_aneurysm_PMC12606889.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.8
+}

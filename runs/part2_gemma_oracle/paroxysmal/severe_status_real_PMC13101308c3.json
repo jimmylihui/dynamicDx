@@ -1,0 +1,108 @@
+{
+ "questions": [
+  "Was this a planned surgery?",
+  "Did you have a traumatic injury to your face?",
+  "Is your jaw wired shut?",
+  "Are you having difficulty breathing?",
+  "Did you lose consciousness?",
+  "Are you experiencing any numbness in your face?",
+  "Do you have a fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "awareness and recall during the event",
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. awareness and recall during the event: awareness recovers between seizures - this is not status epilepticus",
+  "2. interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "3. video-EEG monitoring of a typical event: ictal BODY TURNING, often preceded by head version, but the EEG shows classic GENERALIZED spike-wave or polyspike discharges WITHOUT consistent lateralization"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic Generalized Epilepsy\nFrontal Lobe Epilepsy\nJuvenile Myoclonic Epilepsy\nFocal epilepsy with secondary generalization",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Idiopathic Generalized Epilepsy",
+ "decisive_served": [
+  "awareness and recall during the event",
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1449,
+   "total_tokens": 10147,
+   "cost": 0.00136246,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00136246,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00049266
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1334,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9066,
+   "completion_tokens": 4515,
+   "total_tokens": 13581,
+   "cost": 0.0024417,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0024417,
+    "upstream_inference_prompt_cost": 0.0009066,
+    "upstream_inference_completions_cost": 0.0015351
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4451,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 176.6
+}

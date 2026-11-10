@@ -1,0 +1,108 @@
+{
+ "questions": [
+  "Have you been taking any medications regularly, especially anti-psychotics or metoclopramide (for nausea), in the last year?",
+  "Do you have a family history of Huntington's disease or similar movement disorders?",
+  "Did these movements begin abruptly (over minutes or hours)?",
+  "Are you experiencing any memory loss, confusion, or changes in your personality?",
+  "Do you have a history of liver disease?",
+  "Do you have a history of schizophrenia?",
+  "Have you had a recent fever or infection?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "action specificity and task dependence",
+  "medication and toxin exposure history",
+  "dystonia rating scale (BFM / OMDRS)"
+ ],
+ "results": [
+  "1. action specificity and task dependence: dystonia appears on INITIATING SPEECH; asymptomatic at rest",
+  "2. medication and toxin exposure history: methotrexate 15 mg weekly for six years for psoriatic arthritis; the dystonia improved after switching to sulfasalazine",
+  "3. dystonia rating scale (BFM / OMDRS): Oromandibular Dystonia Rating Scale 177 at baseline, 103 three months after the drug switch, 75 after adding botulinum toxin"
+ ],
+ "dx_raw": "DIAGNOSIS: Methotrexate-induced oromandibular dystonia\nIdiopathic (cryptogenic) oromandibular dystonia\nTardive dystonia secondary to an undisclosed dopamine receptor blocking agent (e.g., metoclopramide or an antipsychotic)\nSymptomatic focal dystonia secondary to a structural lesion of the basal ganglia (e.g., stroke or tumor)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Methotrexate-induced oromandibular dystonia",
+ "decisive_served": [
+  "action specificity and task dependence",
+  "medication and toxin exposure history",
+  "dystonia rating scale (BFM / OMDRS)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 21046,
+   "completion_tokens": 2136,
+   "total_tokens": 23182,
+   "cost": 0.00883932,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00883932,
+    "upstream_inference_prompt_cost": 0.00627612,
+    "upstream_inference_completions_cost": 0.0025632
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2028,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 21496,
+   "completion_tokens": 1898,
+   "total_tokens": 23394,
+   "cost": 0.00367896,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 21031,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00367896,
+    "upstream_inference_prompt_cost": 0.00140136,
+    "upstream_inference_completions_cost": 0.0022776
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1820,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "moderate_tardive_PMC10656108.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 49.8
+}

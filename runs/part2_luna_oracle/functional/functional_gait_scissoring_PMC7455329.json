@@ -1,0 +1,130 @@
+{
+ "questions": [
+  "Has your walking changed noticeably from how you usually walk?",
+  "Do you take short, shuffling steps?",
+  "Do your feet ever feel stuck to the floor when you start walking or turn?",
+  "Do you have difficulty turning around?",
+  "Have you fallen or nearly fallen recently?",
+  "Do you feel unsteady or lose your balance while walking?",
+  "Do you have slowness or stiffness in your arms or legs?",
+  "Do you have a tremor when your hands or legs are relaxed?",
+  "Is one side of your body weaker than the other?",
+  "Do you have numbness or tingling in either leg or foot?",
+  "Do you have pain in your back, hips, knees, ankles, or feet when walking?",
+  "Do you feel dizzy or light-headed when you stand up?",
+  "Did this walking problem begin suddenly?",
+  "Have you ever had a stroke, head injury, or other neurological illness?",
+  "Have you recently started or changed any medications?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "tandem gait",
+  "walking backward",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "results": [
+  "1. deep tendon reflexes and plantar responses: normal reflexes, FLEXOR plantar responses, no clonus",
+  "2. tandem gait: better than free walking",
+  "3. walking backward: the scissoring DISAPPEARS on walking backward; in spasticity it persists",
+  "4. gait with a distracting or automatic task (dancing, counting backwards): the pattern changes or normalises",
+  "5. muscle tone (spasticity, rigidity, paratonia): normal tone on passive movement despite the scissoring gait"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder presenting as a functional (psychogenic) scissoring gait\n\nAlternatives: Bilateral lower-limb dystonia causing a scissoring gait  \nAlternatives: Early upper-motor-neuron disorder, such as cervical myelopathy or multiple sclerosis  \nAlternatives: Parkinsonian gait disorder",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional neurological symptom disorder presenting as a functional (psychogenic) scissoring gait",
+ "decisive_served": [
+  "deep tendon reflexes and plantar responses",
+  "tandem gait",
+  "walking backward",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7532,
+   "completion_tokens": 694,
+   "total_tokens": 8226,
+   "cost": 0.00049199,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7529,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00049199,
+    "upstream_inference_prompt_cost": 7.559e-05,
+    "upstream_inference_completions_cost": 0.0004164
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 480,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 8226,
+   "completion_tokens": 188,
+   "total_tokens": 8414,
+   "cost": 0.00027514,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7529,
+    "cache_write_tokens": 694,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00027514,
+    "upstream_inference_prompt_cost": 0.00016234,
+    "upstream_inference_completions_cost": 0.0001128
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 115,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.7,
+ "video": "functional_gait_scissoring_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 16.8
+}

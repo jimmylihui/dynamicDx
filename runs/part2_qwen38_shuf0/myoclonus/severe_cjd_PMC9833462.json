@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the pain located in your chest?",
+  "Do you have a fever?",
+  "Are you having difficulty breathing?",
+  "Have you had any recent surgery or trauma?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside examination of the neck to identify the specific type of collar and inspect for surgical incisions or trauma",
+  "CT scan of the cervical spine without contrast",
+  "MRI of the cervical spine with and without contrast",
+  "Complete blood count (CBC) with differential",
+  "C-reactive protein (CRP) and Erythrocyte Sedimentation Rate (ESR)"
+ ],
+ "served": [
+  "MRI cervical and thoracic spine",
+  "full blood count",
+  "ESR / CRP"
+ ],
+ "results": [
+  "1. Bedside examination of the neck to identify the specific type of collar and inspect for surgical incisions or trauma",
+  "     not performed / not available",
+  "2. CT scan of the cervical spine without contrast",
+  "     MRI cervical and thoracic spine: normal",
+  "3. MRI of the cervical spine with and without contrast",
+  "     not performed / not available",
+  "4. Complete blood count (CBC) with differential",
+  "     full blood count: normal",
+  "5. C-reactive protein (CRP) and Erythrocyte Sedimentation Rate (ESR)",
+  "     ESR / CRP: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-operative status following cervical spine surgery (e.g., anterior cervical discectomy and fusion)\n\n1. Cervical dystonia\n2. Functional neurological disorder (psychogenic movement disorder)\n3. Medication-induced acute dystonic reaction",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Bedside examination of the neck to identify the specific type of collar and inspect for surgical incisions or trauma\n2. CT scan of the cervical spine without contrast\n3. MRI of the cervical spine with and without contrast\n4. Complete blood count (CBC) with differential\n5. C-reactive protein (CRP) and Erythrocyte Sedimentation Rate (ESR)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Post-operative status following cervical spine surgery (e.g., anterior cervical discectomy and fusion)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 50,
+   "total_tokens": 4873,
+   "cost": 0.00074695,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074695,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.35e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5096,
+   "completion_tokens": 83,
+   "total_tokens": 5179,
+   "cost": 0.00020309,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020309,
+    "upstream_inference_prompt_cost": 0.00016408,
+    "upstream_inference_completions_cost": 3.901e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5403,
+   "completion_tokens": 56,
+   "total_tokens": 5459,
+   "cost": 0.000184994,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4864,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000184994,
+    "upstream_inference_prompt_cost": 0.000158674,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 13.7
+}

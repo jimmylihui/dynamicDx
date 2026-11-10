@@ -1,0 +1,169 @@
+{
+ "questions": [
+  "Is pain your main symptom?",
+  "Have your symptoms been present for more than 2 weeks?",
+  "Are your symptoms getting worse over time?",
+  "Have you lost weight unintentionally in the past 6 months?",
+  "Have you had fevers or night sweats in the past month?",
+  "Have you noticed any bleeding from anywhere unusual?",
+  "Do you have any previously diagnosed medical conditions?",
+  "Are you currently taking any prescription medications?",
+  "Do you have any medication allergies?",
+  "Do you currently smoke cigarettes?",
+  "Do you drink alcohol more than a few times per week?",
+  "Has any first-degree relative (parent, sibling, or child) had cancer?",
+  "Has any first-degree relative had heart disease or stroke before age 60?",
+  "Have you had any previous surgeries?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Thyroid stimulating hormone",
+  "Urinalysis",
+  "Electrocardiogram",
+  "C-reactive protein"
+ ],
+ "served": [
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "liver function and albumin/globulin",
+  "TSH / free T4",
+  "urinalysis",
+  "ESR and CRP"
+ ],
+ "results": [
+  "1. Complete blood count",
+  "     full blood count: normal",
+  "2. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     liver function and albumin/globulin: normal",
+  "3. Thyroid stimulating hormone",
+  "     TSH / free T4: normal",
+  "4. Urinalysis",
+  "     urinalysis: normal",
+  "5. Electrocardiogram",
+  "     not performed / not available",
+  "6. C-reactive protein",
+  "     ESR and CRP: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Somatic symptom disorder (functional somatic symptom syndrome)\n\nAlternative 1: Major depressive disorder presenting with somatic symptoms\nAlternative 2: Generalized anxiety disorder with somatic manifestation\nAlternative 3: Chronic fatigue syndrome / myalgic encephalomyelitis",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete blood count\n2. Comprehensive metabolic panel\n3. Thyroid stimulating hormone\n4. Urinalysis\n5. Electrocardiogram\n6. C-reactive protein",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Somatic symptom disorder (functional somatic symptom syndrome)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 2499,
+   "total_tokens": 2813,
+   "cost": 0.003021,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.003021,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.0029988
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2690,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 865,
+   "completion_tokens": 807,
+   "total_tokens": 1672,
+   "cost": 0.00116982,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00116982,
+    "upstream_inference_prompt_cost": 0.00020142,
+    "upstream_inference_completions_cost": 0.0009684
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 885,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1096,
+   "completion_tokens": 410,
+   "total_tokens": 1506,
+   "cost": 0.00063984,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 754,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00063984,
+    "upstream_inference_prompt_cost": 0.00014784,
+    "upstream_inference_completions_cost": 0.000492
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 470,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 58.3
+}

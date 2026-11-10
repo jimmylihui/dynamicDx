@@ -1,0 +1,119 @@
+{
+ "questions": [
+  "Did you have recent nasal or facial surgery?",
+  "Did you have recent trauma to your face or nose?",
+  "Are you experiencing double vision?",
+  "Do you have pain when moving your right eye?",
+  "Do you have numbness in your right cheek or upper lip?",
+  "Do you have numbness in your right upper teeth or gums?",
+  "Is your vision blurry in your right eye?",
+  "Do you have severe pain or pressure behind your right eye?",
+  "Is the swelling around your right eye getting worse?",
+  "Are you currently taking any blood-thinning medications?",
+  "Do you have a history of bleeding or clotting disorders?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "adduction in horizontal gaze (each eye)",
+  "MRI sella and orbits",
+  "CT head (non-contrast)",
+  "forced duction test"
+ ],
+ "results": [
+  "1. adduction in horizontal gaze (each eye): limited adduction of the RIGHT eye that fails to cross the midline, with abducting nystagmus of the left eye on left gaze - mimics an INO",
+  "2. MRI sella and orbits: subtle MEDIAL ORBITAL WALL FRACTURE with medial rectus involvement; no brainstem pathology",
+  "3. CT head (non-contrast): multiple skull fractures and epidural haemorrhage; NO evidence of brainstem injury",
+  "4. forced duction test: restriction consistent with a mechanical cause"
+ ],
+ "dx_raw": "DIAGNOSIS: Pseudo-internuclear ophthalmoplegia (pseudo-INO) of the right eye due to entrapment of the right medial rectus in a medial orbital wall fracture.\nAlternatives:\n- Traumatic direct injury to the right medial rectus muscle (without entrapment)\n- Orbital haematoma causing secondary mechanical restriction of the medial rectus\n- True traumatic internuclear ophthalmoplegia from a missed brainstem injury (less likely given normal CT brainstem and positive forced duction test)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Pseudo-internuclear ophthalmoplegia (pseudo-INO) of the right eye due to entrapment of the right medial rectus in a medial orbital wall fracture.",
+ "decisive_served": [
+  "adduction in horizontal gaze (each eye)",
+  "MRI sella and orbits",
+  "CT head (non-contrast)",
+  "forced duction test"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4630,
+   "completion_tokens": 1623,
+   "total_tokens": 6253,
+   "cost": 0.00329892,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00329892,
+    "upstream_inference_prompt_cost": 0.00135132,
+    "upstream_inference_completions_cost": 0.0019476
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1489,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5162,
+   "completion_tokens": 341,
+   "total_tokens": 5503,
+   "cost": 0.0008502,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4615,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008502,
+    "upstream_inference_prompt_cost": 0.000441,
+    "upstream_inference_completions_cost": 0.0004092
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 237,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 24.0
+}

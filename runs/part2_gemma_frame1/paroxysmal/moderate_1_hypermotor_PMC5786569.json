@@ -1,0 +1,179 @@
+{
+ "questions": [
+  "Are you experiencing pain?",
+  "Do you have a fever?",
+  "Do you have shortness of breath?",
+  "Do you have a cough?",
+  "Do you have chest pain?",
+  "Do you have abdominal pain?",
+  "Do you have a headache?",
+  "Have you experienced any sudden weakness or numbness?",
+  "Have you lost consciousness?",
+  "Are you experiencing nausea or vomiting?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs",
+  "Full physical examination",
+  "Complete blood count",
+  "Basic metabolic panel",
+  "Urinalysis",
+  "Electrocardiogram (ECG)"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "neurological examination between events",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "glucose, calcium, magnesium, sodium",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Vital signs",
+  "     not performed / not available",
+  "2. Full physical examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "     neurological examination between events: normal",
+  "3. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "4. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "5. Urinalysis",
+  "     urinalysis: normal",
+  "6. Electrocardiogram (ECG)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Cataplexy caused by Narcolepsy\nAbsence seizures\nPsychogenic non-epileptic seizures (PNES)\nFocal impaired awareness seizures",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Vital signs\n2. Full physical examination\n3. Complete blood count\n4. Basic metabolic panel\n5. Urinalysis\n6. Electrocardiogram (ECG)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Cataplexy caused by Narcolepsy",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 426,
+   "completion_tokens": 1045,
+   "total_tokens": 1471,
+   "cost": 0.0003979,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003979,
+    "upstream_inference_prompt_cost": 4.26e-05,
+    "upstream_inference_completions_cost": 0.0003553
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 889,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 800,
+   "completion_tokens": 1524,
+   "total_tokens": 2324,
+   "cost": 0.00059816,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00059816,
+    "upstream_inference_prompt_cost": 8e-05,
+    "upstream_inference_completions_cost": 0.00051816
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1477,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1123,
+   "completion_tokens": 4740,
+   "total_tokens": 5863,
+   "cost": 0.0017239,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0017239,
+    "upstream_inference_prompt_cost": 0.0001123,
+    "upstream_inference_completions_cost": 0.0016116
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4390,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 259.4
+}

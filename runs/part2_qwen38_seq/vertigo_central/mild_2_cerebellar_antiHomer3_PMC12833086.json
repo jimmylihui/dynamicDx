@@ -1,0 +1,120 @@
+{
+ "questions": [
+  "Are you currently experiencing double vision?",
+  "Do you have a history of thyroid disease (such as Graves' disease)?",
+  "Have you noticed any drooping of your eyelids or weakness in your arms/legs that gets worse with activity?",
+  "Do you have a history of migraines?",
+  "Have you had any recent viral illnesses or infections in the last few weeks?",
+  "Do you have a history of anxiety or panic attacks?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Measure the patient's heart rate and blood pressure while lying supine, then immediately upon standing, and again after 3 minutes of standing.",
+  "Perform a bedside neurological examination of the extraocular muscles, specifically testing for convergence (ability to turn eyes inward) and accommodation (pupil constriction with near focus)."
+ ],
+ "served": [
+  "vertical gaze and convergence"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing double vision?; Do you have a history of thyroid disease (such as Graves' disease)?; Have you noticed any drooping of your eyelids or weakness in your arms/legs that gets worse with activity? -> ['no', 'no', 'no']",
+  "R2 ORDER Measure the patient's heart rate and blood pressure while lying supine, then immediately upon standing, and again after 3 minutes of standing. -> [[]]",
+  "R3 ASK Do you have a history of migraines?; Have you had any recent viral illnesses or infections in the last few weeks? -> ['no', 'no']",
+  "R4 ORDER Perform a bedside neurological examination of the extraocular muscles, specifically testing for convergence (ability to turn eyes inward) and accommodation (pupil constriction with near focus). -> [['vertical gaze and convergence']]",
+  "R5 ASK Do you have a history of anxiety or panic attacks? -> ['no']",
+  "R6 DIAGNOSIS Voluntary eye crossing -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing double vision?",
+    "Do you have a history of thyroid disease (such as Graves' disease)?",
+    "Have you noticed any drooping of your eyelids or weakness in your arms/legs that gets worse with activity?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Measure the patient's heart rate and blood pressure while lying supine, then immediately upon standing, and again after 3 minutes of standing."
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of migraines?",
+    "Have you had any recent viral illnesses or infections in the last few weeks?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Perform a bedside neurological examination of the extraocular muscles, specifically testing for convergence (ability to turn eyes inward) and accommodation (pupil constriction with near focus)."
+   ],
+   "result": [
+    [
+     "vertical gaze and convergence"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of anxiety or panic attacks?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Voluntary eye crossing"
+  }
+ ],
+ "dx": "Voluntary eye crossing",
+ "dx_raw": "DIAGNOSIS: Voluntary eye crossing",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0015,
+ "n_frames": 32,
+ "duration_s": 25.4,
+ "video": "mild_2_cerebellar_antiHomer3_PMC12833086.mp4",
+ "line": "vertigo_central",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 34.3
+}

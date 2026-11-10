@@ -1,0 +1,107 @@
+{
+ "questions": [
+  "Have you had surgery on your head recently?",
+  "Was the surgery due to an injury?",
+  "Is the area currently painful?",
+  "Have you experienced headaches or dizziness?",
+  "Is there any fluid leaking from the area?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "family history",
+  "genetic testing (targeted panel or exome)",
+  "brain MRI",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. family history: mother, sister and grandmother affected - autosomal dominant pattern",
+  "2. genetic testing (targeted panel or exome): novel heterozygous NONSENSE variant in POU4F1; present in the symptomatic mother, sister and grandmother and absent in a healthy uncle",
+  "3. brain MRI: significant cerebellar atrophy with dilatation of the fourth ventricle",
+  "4. lumbar puncture / CSF: no oligoclonal bands - against multiple sclerosis"
+ ],
+ "dx_raw": "DIAGNOSIS: POU4F1-associated multisystem neurodegenerative disorder (characterized by autosomal dominant cerebellar ataxia, sensory neuropathy, and optic atrophy).\n\nSpinocerebellar ataxia (SCA)\nMultiple system atrophy (MSA)\nMitochondrial neurodegenerative disorder",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "POU4F1-associated multisystem neurodegenerative disorder (characterized by autosomal dominant cerebellar ataxia, sensory neuropathy, and optic atrophy).",
+ "decisive_served": [
+  "family history",
+  "genetic testing (targeted panel or exome)",
+  "brain MRI",
+  "lumbar puncture / CSF"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 1370,
+   "total_tokens": 6425,
+   "cost": 0.0010649576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010649576,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.0003836
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1317,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5383,
+   "completion_tokens": 1326,
+   "total_tokens": 6709,
+   "cost": 0.0004399976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004399976,
+    "upstream_inference_prompt_cost": 6.87176e-05,
+    "upstream_inference_completions_cost": 0.00037128
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1253,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 38.2
+}

@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Is the patient currently taking any medications?",
+  "Has the patient had a fever recently?",
+  "Does the patient have a known diagnosis of epilepsy or seizures?",
+  "Did these symptoms start suddenly today?",
+  "Is the patient able to speak normally right now?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "smooth pursuit and saccades",
+  "facial dysmorphism and general examination",
+  "genetic testing (exome)",
+  "MRI brain with DWI"
+ ],
+ "results": [
+  "1. smooth pursuit and saccades: ocular motor apraxia - failure to initiate voluntary horizontal saccades with compensatory head thrusts",
+  "2. facial dysmorphism and general examination: facial dysmorphism in all patients - broad nasal bridge and low-set ears most common",
+  "3. genetic testing (exome): pathogenic variants in ciliopathy genes on exome sequencing",
+  "4. MRI brain with DWI: MOLAR TOOTH SIGN with cerebellar vermis hypoplasia and horizontally aligned superior cerebellar peduncles"
+ ],
+ "dx_raw": "DIAGNOSIS: Joubert syndrome (caused by pathogenic variants in ciliopathy genes)\nALTERNATIVES: COACH syndrome\nALTERNATIVES: Arima syndrome",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Joubert syndrome (caused by pathogenic variants in ciliopathy genes)",
+ "decisive_served": [
+  "smooth pursuit and saccades",
+  "facial dysmorphism and general examination",
+  "genetic testing (exome)",
+  "MRI brain with DWI"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 60,
+   "total_tokens": 4883,
+   "cost": 0.00075165,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075165,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.82e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5181,
+   "completion_tokens": 42,
+   "total_tokens": 5223,
+   "cost": 0.00019657,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00019657,
+    "upstream_inference_prompt_cost": 0.00017683,
+    "upstream_inference_completions_cost": 1.974e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_3_joubert_apraxia_PMC8490194.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 22.6
+}

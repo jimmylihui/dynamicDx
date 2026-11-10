@@ -1,0 +1,154 @@
+{
+ "questions": [
+  "Do you have a known diagnosis of epilepsy?",
+  "Did your symptoms begin or worsen after stopping the medication zonisamide?",
+  "Do you experience involuntary, irregular jerking movements of your limbs?",
+  "Do these movements occur while you are at rest?",
+  "Do these movements disappear when you fall asleep?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform the finger-to-nose test bilaterally",
+  "Assess for rebound phenomenon (checking for dysmetria)",
+  "Observe the patient's gait and stance for ataxia",
+  "Order a non-contrast CT scan of the head",
+  "Order an MRI of the brain with attention to the cerebellum"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "coordination examination (limb and truncal)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "posture and pull test",
+  "gait examination",
+  "CT head",
+  "MRI brain with gadolinium",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Perform the finger-to-nose test bilaterally",
+  "     coordination examination (limb and truncal): unilateral wing-beating tremor",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): absent",
+  "2. Assess for rebound phenomenon (checking for dysmetria)",
+  "     coordination examination (limb and truncal): unilateral wing-beating tremor",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): absent",
+  "3. Observe the patient's gait and stance for ataxia",
+  "     posture and pull test: parkinsonian postural instability",
+  "     gait examination: normal",
+  "4. Order a non-contrast CT scan of the head",
+  "     CT head: normal",
+  "5. Order an MRI of the brain with attention to the cerebellum",
+  "     MRI brain with gadolinium: diffuse cerebral atrophy",
+  "     brain MRI: no structural lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Zonisamide-responsive palatal tremor (likely secondary to hypertrophic olivary degeneration)\n1. Idiopathic adult-onset myoclonus\n2. Functional movement disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Perform the finger-to-nose test bilaterally\n2. Assess for rebound phenomenon (checking for dysmetria)\n3. Observe the patient's gait and stance for ataxia\n4. Order a non-contrast CT scan of the head\n5. Order an MRI of the brain with attention to the cerebellum",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Zonisamide-responsive palatal tremor (likely secondary to hypertrophic olivary degeneration)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4311,
+   "completion_tokens": 71,
+   "total_tokens": 4382,
+   "cost": 0.00068002,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00068002,
+    "upstream_inference_prompt_cost": 0.00064665,
+    "upstream_inference_completions_cost": 3.337e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 4626,
+   "completion_tokens": 72,
+   "total_tokens": 4698,
+   "cost": 0.000196028,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 3968,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000196028,
+    "upstream_inference_prompt_cost": 0.000162188,
+    "upstream_inference_completions_cost": 3.384e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 4994,
+   "completion_tokens": 45,
+   "total_tokens": 5039,
+   "cost": 0.00016993,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00016993,
+    "upstream_inference_prompt_cost": 0.00014878,
+    "upstream_inference_completions_cost": 2.115e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 56.3
+}

@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Is it pain?",
+  "Is it numbness?",
+  "Is it weakness?",
+  "Was there an injury?",
+  "Did it start suddenly?",
+  "Is it in your right leg?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Sensory examination of the left leg",
+  "Neurological examination of the left leg (reflexes and strength)",
+  "MRI of the lumbar spine",
+  "Nerve conduction studies and EMG of the left leg"
+ ],
+ "served": [
+  "sensory examination (pinprick, vibration, proprioception)",
+  "sensory examination (vibration, pinprick)",
+  "limb strength (MRC) examination",
+  "reflexes and plantar responses",
+  "limb power and wasting",
+  "nerve conduction studies",
+  "needle electromyography",
+  "nerve conduction studies / EMG"
+ ],
+ "results": [
+  "1. Sensory examination of the left leg",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     sensory examination (vibration, pinprick): normal",
+  "2. Neurological examination of the left leg (reflexes and strength)",
+  "     limb strength (MRC) examination: normal",
+  "     reflexes and plantar responses: normal",
+  "     limb power and wasting: normal bulk and power",
+  "3. MRI of the lumbar spine",
+  "     not performed / not available",
+  "4. Nerve conduction studies and EMG of the left leg",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal",
+  "     nerve conduction studies / EMG: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional Neurological Symptom Disorder due to psychological distress\n\nSmall fiber neuropathy\nSomatic symptom disorder\nMultiple sclerosis",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Sensory examination of the left leg\n2. Neurological examination of the left leg (reflexes and strength)\n3. MRI of the lumbar spine\n4. Nerve conduction studies and EMG of the left leg",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional Neurological Symptom Disorder due to psychological distress",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1912,
+   "total_tokens": 10610,
+   "cost": 0.00151988,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00151988,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00065008
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1670,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8962,
+   "completion_tokens": 1090,
+   "total_tokens": 10052,
+   "cost": 0.0012668,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012668,
+    "upstream_inference_prompt_cost": 0.0008962,
+    "upstream_inference_completions_cost": 0.0003706
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1037,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9241,
+   "completion_tokens": 2164,
+   "total_tokens": 11405,
+   "cost": 0.00165986,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00165986,
+    "upstream_inference_prompt_cost": 0.0009241,
+    "upstream_inference_completions_cost": 0.00073576
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2255,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 167.5
+}

@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does your eyelid droop get worse as the day goes on or after using your eyes?",
+  "Do you have difficulty swallowing or speaking clearly?",
+  "Do you have weakness in your arms or legs?",
+  "Is one eye more affected than the other?",
+  "Do you have a history of thyroid disease?",
+  "Do you have pain when moving your eyes?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Ice pack test",
+  "Serum acetylcholine receptor antibodies",
+  "Repetitive nerve stimulation"
+ ],
+ "served": [
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "repetitive nerve stimulation"
+ ],
+ "results": [
+  "1. Ice pack test",
+  "     ice-pack test: POSITIVE",
+  "2. Serum acetylcholine receptor antibodies",
+  "     anti-acetylcholine receptor antibodies: 10.32 nmol/L (normal <0.50) - strongly POSITIVE",
+  "3. Repetitive nerve stimulation",
+  "     repetitive nerve stimulation: decremental response"
+ ],
+ "dx_raw": "DIAGNOSIS: Myasthenia Gravis (autoimmune, anti-acetylcholine receptor antibody positive)\nLambert-Eaton Myasthenic Syndrome\nOcular Myositis",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Ice pack test\n2. Serum acetylcholine receptor antibodies\n3. Repetitive nerve stimulation",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Myasthenia Gravis (autoimmune, anti-acetylcholine receptor antibody positive)",
+ "decisive_served": [
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "repetitive nerve stimulation"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 177,
+   "completion_tokens": 91,
+   "total_tokens": 268,
+   "cost": 6.932e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.932e-05,
+    "upstream_inference_prompt_cost": 2.655e-05,
+    "upstream_inference_completions_cost": 4.277e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 542,
+   "completion_tokens": 23,
+   "total_tokens": 565,
+   "cost": 9.211e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.211e-05,
+    "upstream_inference_prompt_cost": 8.13e-05,
+    "upstream_inference_completions_cost": 1.081e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 739,
+   "completion_tokens": 42,
+   "total_tokens": 781,
+   "cost": 6.1982e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.1982e-05,
+    "upstream_inference_prompt_cost": 4.2242e-05,
+    "upstream_inference_completions_cost": 1.974e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "mild_cpeo_mitochondrial_PMC9350803.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.7
+}

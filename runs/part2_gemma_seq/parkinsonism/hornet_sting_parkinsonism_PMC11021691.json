@@ -1,0 +1,167 @@
+{
+ "questions": [
+  "Do you have urinary incontinence?",
+  "Do you have memory loss or cognitive decline?",
+  "Do you feel like your feet are \"stuck to the floor\" when you try to walk?",
+  "Do you have a resting tremor in your hands?",
+  "Do you have a history of head trauma or brain surgery?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Do you have a history of stroke?",
+  "Do you have difficulty swallowing?",
+  "Do you have a history of falls?",
+  "Have you taken any new medications or supplements recently?",
+  "Have you been exposed to any chemicals, toxins, or unusual fumes?",
+  "Have you noticed any changes in your mood, personality, or behavior?",
+  "Do you have any difficulty with balance or coordination other than the \"stuck\" feeling?",
+  "Do you have any vision changes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Brain MRI",
+  "Vitamin B12 level",
+  "Large volume lumbar puncture (CSF tap test)"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)",
+  "vitamin B12"
+ ],
+ "results": [
+  "R1 ASK Do you have urinary incontinence?; Do you have memory loss or cognitive decline?; Do you feel like your feet are \"stuck to the floor\" when you try to walk?; Do you have a resting tremor in your hands?; Do you have a history of head trauma or brain surgery? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R2 ASK Do you have high blood pressure?; Do you have diabetes?; Do you have a history of stroke?; Do you have difficulty swallowing?; Do you have a history of falls? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Brain MRI; Vitamin B12 level; Large volume lumbar puncture (CSF tap test) -> [['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)', 'MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)', 'MRI brain - cortical atrophy pattern', 'MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)'], ['vitamin B12'], []]",
+  "R4 ASK Have you taken any new medications or supplements recently?; Have you been exposed to any chemicals, toxins, or unusual fumes?; Have you noticed any changes in your mood, personality, or behavior?; Do you have any difficulty with balance or coordination other than the \"stuck\" feeling?; Do you have any vision changes? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R5 DIAGNOSIS Methanol poisoning -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have urinary incontinence?",
+    "Do you have memory loss or cognitive decline?",
+    "Do you feel like your feet are \"stuck to the floor\" when you try to walk?",
+    "Do you have a resting tremor in your hands?",
+    "Do you have a history of head trauma or brain surgery?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have high blood pressure?",
+    "Do you have diabetes?",
+    "Do you have a history of stroke?",
+    "Do you have difficulty swallowing?",
+    "Do you have a history of falls?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Brain MRI",
+    "Vitamin B12 level",
+    "Large volume lumbar puncture (CSF tap test)"
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium",
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences",
+     "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+     "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+     "MRI brain - cortical atrophy pattern",
+     "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
+    ],
+    [
+     "vitamin B12"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you taken any new medications or supplements recently?",
+    "Have you been exposed to any chemicals, toxins, or unusual fumes?",
+    "Have you noticed any changes in your mood, personality, or behavior?",
+    "Do you have any difficulty with balance or coordination other than the \"stuck\" feeling?",
+    "Do you have any vision changes?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Methanol poisoning"
+  }
+ ],
+ "dx": "Methanol poisoning",
+ "dx_raw": "DIAGNOSIS: Methanol poisoning",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)"
+ ],
+ "n_decisive": 6,
+ "cost_usd": 0.0079,
+ "n_frames": 32,
+ "duration_s": 23.2,
+ "video": "hornet_sting_parkinsonism_PMC11021691.mp4",
+ "line": "parkinsonism",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 566.6
+}

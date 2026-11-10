@@ -1,0 +1,168 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Do the movements occur only when you are awake?",
+  "Have you had a recent head injury?",
+  "Do you have a history of seizures or epilepsy?",
+  "Is there a family history of movement disorders?",
+  "Do you consume alcohol daily?",
+  "Have you recently stopped using alcohol or sedatives abruptly?",
+  "Do you have a known diagnosis of Parkinson's disease?",
+  "Have you recently started or increased the dose of an antipsychotic medication?",
+  "Do you have a history of stroke?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Review current medication list for pro-convulsant or movement-disorder-inducing agents",
+  "Electroencephalogram (EEG) during sleep and wakefulness",
+  "Serum electrolytes, glucose, calcium, magnesium, renal and liver function tests",
+  "MRI of the brain with epilepsy protocol"
+ ],
+ "served": [
+  "medication and anaesthetic exposure",
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "full blood count and biochemistry",
+  "glucose, calcium, magnesium, sodium",
+  "liver and renal function",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Review current medication list for pro-convulsant or movement-disorder-inducing agents",
+  "     medication and anaesthetic exposure: nothing relevant",
+  "2. Electroencephalogram (EEG) during sleep and wakefulness",
+  "     interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "     video-EEG monitoring of a typical event: ictal BODY TURNING, often preceded by head version, but the EEG shows classic GENERALIZED spike-wave or polyspike discharges WITHOUT consistent lateralization",
+  "3. Serum electrolytes, glucose, calcium, magnesium, renal and liver function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal",
+  "     full blood count and biochemistry: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "     liver and renal function: normal",
+  "4. MRI of the brain with epilepsy protocol",
+  "     brain MRI: no focal epileptogenic lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Genetic generalized epilepsy (likely Juvenile Myoclonic Epilepsy) presenting with myoclonic jerks and frontal release signs\nAlternative 1: Frontal lobe epilepsy with hypermotor seizures mimicking myoclonus\nAlternative 2: Psychogenic non-epileptic events (functional movement disorder)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Review current medication list for pro-convulsant or movement-disorder-inducing agents\n2. Electroencephalogram (EEG) during sleep and wakefulness\n3. Serum electrolytes, glucose, calcium, magnesium, renal and liver function tests\n4. MRI of the brain with epilepsy protocol",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Genetic generalized epilepsy (likely Juvenile Myoclonic Epilepsy) presenting with myoclonic jerks and frontal release signs",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 194,
+   "completion_tokens": 126,
+   "total_tokens": 320,
+   "cost": 8.832e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.832e-05,
+    "upstream_inference_prompt_cost": 2.91e-05,
+    "upstream_inference_completions_cost": 5.922e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 641,
+   "completion_tokens": 64,
+   "total_tokens": 705,
+   "cost": 0.00012623,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00012623,
+    "upstream_inference_prompt_cost": 9.615e-05,
+    "upstream_inference_completions_cost": 3.008e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1048,
+   "completion_tokens": 71,
+   "total_tokens": 1119,
+   "cost": 0.000121962,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000121962,
+    "upstream_inference_prompt_cost": 8.8592e-05,
+    "upstream_inference_completions_cost": 3.337e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.7
+}

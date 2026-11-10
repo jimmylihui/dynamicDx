@@ -1,0 +1,125 @@
+{
+ "questions": [
+  "Did these involuntary arm and hand movements begin suddenly?",
+  "Do the movements occur when you are relaxed or distracted?",
+  "Can you voluntarily stop the movements when asked?",
+  "Do you experience weakness or numbness in the affected arm?",
+  "Do you lose awareness or consciousness during the episodes?",
+  "Have you had a recent stroke, head injury, or infection?",
+  "Are you taking any antipsychotic or anti-nausea medicines?",
+  "Do the movements disappear when you are asleep?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Perform a focused neurological examination, including strength, sensation, tone, reflexes, plantar responses, coordination, gait, and assessment of whether the movements are distractible, suppressible, or entrainable.",
+  "MRI brain with diffusion-weighted/ADC, T1/T2/FLAIR, GRE/SWI, and contrast sequences, specifically assessing the basal ganglia and thalamus.",
+  "MRI angiography of the intracranial and cervical arteries."
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "reflexes and plantar responses",
+  "gait examination",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "brain MRI"
+ ],
+ "results": [
+  "R1 ASK Did these involuntary arm and hand movements begin suddenly?; Do the movements occur when you are relaxed or distracted?; Can you voluntarily stop the movements when asked?; Do you experience weakness or numbness in the affected arm?; Do you lose awareness or consciousness during the episodes?; Have you had a recent stroke, head injury, or infection?; Are you taking any antipsychotic or anti-nausea medicines?; Do the movements disappear when you are asleep? -> ['no', 'yes', 'no', 'yes', 'no', 'yes', 'no', 'no']",
+  "R2 ORDER Perform a focused neurological examination, including strength, sensation, tone, reflexes, plantar responses, coordination, gait, and assessment of whether the movements are distractible, suppressible, or entrainable.; MRI brain with diffusion-weighted/ADC, T1/T2/FLAIR, GRE/SWI, and contrast sequences, specifically assessing the basal ganglia and thalamus.; MRI angiography of the intracranial and cervical arteries. -> [['muscle tone examination', 'limb strength (MRC) examination', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'reflexes and plantar responses', 'gait examination'], ['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'brain MRI'], []]",
+  "R3 DIAGNOSIS Holmes (rubral/thalamic) tremor of the contralateral upper limb, caused by a left thalamic tuberculoma, persisting after antituberculous treatment despite lesion regression. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did these involuntary arm and hand movements begin suddenly?",
+    "Do the movements occur when you are relaxed or distracted?",
+    "Can you voluntarily stop the movements when asked?",
+    "Do you experience weakness or numbness in the affected arm?",
+    "Do you lose awareness or consciousness during the episodes?",
+    "Have you had a recent stroke, head injury, or infection?",
+    "Are you taking any antipsychotic or anti-nausea medicines?",
+    "Do the movements disappear when you are asleep?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "yes",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Perform a focused neurological examination, including strength, sensation, tone, reflexes, plantar responses, coordination, gait, and assessment of whether the movements are distractible, suppressible, or entrainable.",
+    "MRI brain with diffusion-weighted/ADC, T1/T2/FLAIR, GRE/SWI, and contrast sequences, specifically assessing the basal ganglia and thalamus.",
+    "MRI angiography of the intracranial and cervical arteries."
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "limb strength (MRC) examination",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)",
+     "reflexes and plantar responses",
+     "gait examination"
+    ],
+    [
+     "MRI brain with gadolinium",
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences",
+     "brain MRI"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "diagnosis",
+   "text": "Holmes (rubral/thalamic) tremor of the contralateral upper limb, caused by a left thalamic tuberculoma, persisting after antituberculous treatment despite lesion regression."
+  }
+ ],
+ "dx": "Holmes (rubral/thalamic) tremor of the contralateral upper limb, caused by a left thalamic tuberculoma, persisting after antituberculous treatment despite lesion regression.",
+ "dx_raw": "DIAGNOSIS: Holmes (rubral/thalamic) tremor of the contralateral upper limb, caused by a left thalamic tuberculoma, persisting after antituberculous treatment despite lesion regression.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 2,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0064,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 38.2
+}

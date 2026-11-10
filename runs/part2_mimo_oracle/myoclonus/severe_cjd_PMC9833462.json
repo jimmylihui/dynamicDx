@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Is the pain in your head severe?",
+  "Did you recently suffer a head injury?",
+  "Are you experiencing dizziness?",
+  "Is the pain in your leg severe?",
+  "Are you experiencing nausea?",
+  "Do you have difficulty speaking?",
+  "Are you feeling confused?",
+  "Have you lost consciousness recently?",
+  "Are you experiencing numbness in your limbs?",
+  "Is your vision blurry?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "brain MRI",
+  "CSF 14-3-3 / RT-QuIC (prion)",
+  "history of the precipitating event",
+  "intrathecal baclofen trial"
+ ],
+ "results": [
+  "1. brain MRI: hypoxic-ischaemic injury",
+  "2. CSF 14-3-3 / RT-QuIC (prion): negative - excludes Creutzfeldt-Jakob disease",
+  "3. history of the precipitating event: cardiac arrest with resuscitation; myoclonus and contractures developed afterwards",
+  "4. intrathecal baclofen trial: 50 mcg bolus on day 1, 75 mcg on day 2; Unified Myoclonus Rating Scale improved progressively with dose; sleep and positioning improved"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-hypoxic myoclonus (Lance-Adams syndrome) with contractures, secondary to hypoxic-ischaemic brain injury from cardiac arrest.\n\nAlternatives:  \n1. Spasticity secondary to hypoxic-ischaemic brain injury.  \n2. Creutzfeldt-Jakob disease (though excluded by CSF results).  \n3. Progressive myoclonic epilepsy.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Post-hypoxic myoclonus (Lance-Adams syndrome) with contractures, secondary to hypoxic-ischaemic brain injury from cardiac arrest.",
+ "decisive_served": [
+  "brain MRI",
+  "CSF 14-3-3 / RT-QuIC (prion)",
+  "history of the precipitating event",
+  "intrathecal baclofen trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 302,
+   "total_tokens": 5357,
+   "cost": 0.0007659176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007659176,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 8.456e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 212,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5496,
+   "completion_tokens": 524,
+   "total_tokens": 6020,
+   "cost": 0.0002312576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002312576,
+    "upstream_inference_prompt_cost": 8.45376e-05,
+    "upstream_inference_completions_cost": 0.00014672
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 434,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 19.4
+}

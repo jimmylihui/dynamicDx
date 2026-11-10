@@ -1,0 +1,122 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Is the weakness in both legs?",
+  "Do you have any bladder or bowel control issues?",
+  "Do you have numbness or tingling in your legs?",
+  "Have you had a recent injury to your back or legs?",
+  "Is pain the main reason you use crutches?",
+  "Do you have diabetes?",
+  "Do you have a history of stroke?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "walking backward",
+  "running",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "trial of benzodiazepine (diazepam)",
+  "anti-GAD65 antibodies",
+  "needle EMG (continuous motor unit activity at rest)"
+ ],
+ "results": [
+  "1. walking backward: the slow, guarded, wide-based pattern PERSISTS",
+  "2. running: cannot run; the pattern does not normalise",
+  "3. gait with a distracting or automatic task (dancing, counting backwards): no change - the gait is not distractible",
+  "4. muscle tone (spasticity, rigidity, paratonia): genuine axial and lower-limb rigidity on passive movement",
+  "5. trial of benzodiazepine (diazepam): clear improvement in stiffness and in the gait",
+  "6. anti-GAD65 antibodies: MARKEDLY ELEVATED (high-titre, typically >2000 U/mL) - diagnostic in this clinical context",
+  "7. needle EMG (continuous motor unit activity at rest): CONTINUOUS motor unit activity at rest in agonist and antagonist simultaneously, abolished by diazepam"
+ ],
+ "dx_raw": "DIAGNOSIS: Stiff Person Syndrome caused by anti-GAD65 antibodies\n\nStiff-limb syndrome\nNeuromyotonia\nParaneoplastic stiff person syndrome",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Stiff Person Syndrome caused by anti-GAD65 antibodies",
+ "decisive_served": [
+  "walking backward",
+  "running",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "trial of benzodiazepine (diazepam)",
+  "anti-GAD65 antibodies",
+  "needle EMG (continuous motor unit activity at rest)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8762,
+   "completion_tokens": 1966,
+   "total_tokens": 10728,
+   "cost": 0.00154464,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00154464,
+    "upstream_inference_prompt_cost": 0.0008762,
+    "upstream_inference_completions_cost": 0.00066844
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1795,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9245,
+   "completion_tokens": 727,
+   "total_tokens": 9972,
+   "cost": 0.00117168,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00117168,
+    "upstream_inference_prompt_cost": 0.0009245,
+    "upstream_inference_completions_cost": 0.00024718
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 706,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 233.5
+}

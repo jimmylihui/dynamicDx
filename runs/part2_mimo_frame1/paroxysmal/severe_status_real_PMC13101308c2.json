@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Did an accident or fall cause injury to your leg?",
+  "Are you feeling pain in your leg right now?",
+  "Have you had a fever in the last 24 hours?",
+  "Was surgery done on your leg before coming to this hospital?",
+  "Do you have numbness or tingling in your toes?",
+  "Are you having trouble breathing or chest pain?",
+  "Have you felt nauseous or lost your appetite today?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Doppler ultrasound of lower extremity veins on the affected side",
+  "Doppler assessment of arterial pulses in the affected leg",
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Wound inspection of the dressing site"
+ ],
+ "served": [
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests"
+ ],
+ "results": [
+  "1. Doppler ultrasound of lower extremity veins on the affected side",
+  "     not performed / not available",
+  "2. Doppler assessment of arterial pulses in the affected leg",
+  "     not performed / not available",
+  "3. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "4. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "5. Wound inspection of the dressing site",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Venous leg ulcer\n\nChronic venous insufficiency with lower extremity skin breakdown\nPost-traumatic wound under outpatient management\nDiabetic foot ulcer",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Doppler ultrasound of lower extremity veins on the affected side\n2. Doppler assessment of arterial pulses in the affected leg\n3. Complete blood count\n4. Comprehensive metabolic panel\n5. Wound inspection of the dressing site",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Venous leg ulcer",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 528,
+   "completion_tokens": 569,
+   "total_tokens": 1097,
+   "cost": 0.0002068976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002068976,
+    "upstream_inference_prompt_cost": 4.75776e-05,
+    "upstream_inference_completions_cost": 0.00015932
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 468,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 901,
+   "completion_tokens": 530,
+   "total_tokens": 1431,
+   "cost": 0.0002481976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002481976,
+    "upstream_inference_prompt_cost": 9.97976e-05,
+    "upstream_inference_completions_cost": 0.0001484
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 479,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1146,
+   "completion_tokens": 490,
+   "total_tokens": 1636,
+   "cost": 0.0002712976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002712976,
+    "upstream_inference_prompt_cost": 0.0001340976,
+    "upstream_inference_completions_cost": 0.0001372
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 451,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 114.7
+}

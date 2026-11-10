@@ -1,0 +1,119 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Do you have difficulty swallowing?",
+  "Have you had a recent head injury or fall?",
+  "Do you have a family history of movement disorders or dementia?",
+  "Are you currently taking any medications, particularly antipsychotics or metoclopramide?",
+  "Do you have a history of diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform a focused neurological examination, specifically assessing cranial nerves (including facial symmetry and eye movements) and checking for involuntary choreiform or athetoid movements of the face and limbs."
+ ],
+ "served": [
+  "cranial nerve examination",
+  "eye movements and reflexes"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing pain?; Do you have difficulty swallowing?; Have you had a recent head injury or fall? -> ['no', 'no', 'no']",
+  "R2 ORDER Perform a focused neurological examination, specifically assessing cranial nerves (including facial symmetry and eye movements) and checking for involuntary choreiform or athetoid movements of the face and limbs. -> [['cranial nerve examination', 'eye movements and reflexes']]",
+  "R3 ASK Do you have a family history of movement disorders or dementia? -> ['no']",
+  "R4 ASK Are you currently taking any medications, particularly antipsychotics or metoclopramide? -> ['no']",
+  "R5 ASK Do you have a history of diabetes? -> ['no']",
+  "R6 DIAGNOSIS Oromandibular dyskinesia -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing pain?",
+    "Do you have difficulty swallowing?",
+    "Have you had a recent head injury or fall?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Perform a focused neurological examination, specifically assessing cranial nerves (including facial symmetry and eye movements) and checking for involuntary choreiform or athetoid movements of the face and limbs."
+   ],
+   "result": [
+    [
+     "cranial nerve examination",
+     "eye movements and reflexes"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a family history of movement disorders or dementia?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking any medications, particularly antipsychotics or metoclopramide?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Oromandibular dyskinesia"
+  }
+ ],
+ "dx": "Oromandibular dyskinesia",
+ "dx_raw": "DIAGNOSIS: Oromandibular dyskinesia",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0038,
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "moderate_tardive_PMC10656108.mp4",
+ "line": "dystonia",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 28.0
+}

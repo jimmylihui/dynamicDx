@@ -1,0 +1,171 @@
+{
+ "questions": [
+  "Are you experiencing any pain or discomfort?",
+  "Have you had any recent injuries?",
+  "Have you been experiencing symptoms like fever, cough, or shortness of breath?",
+  "Do you have any chronic conditions such as diabetes, heart disease, or high blood pressure?",
+  "Have you had any recent surgeries or hospitalizations?",
+  "Are you currently taking any medications or supplements?",
+  "Have you noticed any changes in your appetite or weight recently?",
+  "Have you had any changes in your bowel or bladder habits?",
+  "Have you been experiencing any joint pain or stiffness?",
+  "Have you had any headaches or dizziness?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Thyroid function tests",
+  "Fasting blood glucose",
+  "Urinalysis",
+  "Chest X-ray",
+  "12-lead electrocardiogram",
+  "Pulse oximetry"
+ ],
+ "served": [
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "liver function and albumin/globulin",
+  "TSH / free T4",
+  "glucose / HbA1c",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Complete blood count",
+  "     full blood count: normal",
+  "2. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: mildly raised transaminases with reduced albumin",
+  "     liver function and albumin/globulin: albumin 35.1 g/L (ref 35-52), globulin 30.8 g/L RAISED (ref 15-30), A/G ratio 1.14 LOW (ref 1.2-2.4)",
+  "3. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "4. Fasting blood glucose",
+  "     glucose / HbA1c: normal",
+  "5. Urinalysis",
+  "     urinalysis: normal",
+  "6. Chest X-ray",
+  "     not performed / not available",
+  "7. 12-lead electrocardiogram",
+  "     not performed / not available",
+  "8. Pulse oximetry",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Multiple myeloma\n\nChronic liver disease with secondary hypergammaglobulinemia\n\nAutoimmune disease (e.g., systemic lupus erythematosus)\n\nMonoclonal gammopathy of undetermined significance (MGUS)",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete blood count\n2. Comprehensive metabolic panel\n3. Thyroid function tests\n4. Fasting blood glucose\n5. Urinalysis\n6. Chest X-ray\n7. 12-lead electrocardiogram\n8. Pulse oximetry",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Multiple myeloma",
+ "decisive_served": [
+  "liver function and albumin/globulin"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14783,
+   "completion_tokens": 368,
+   "total_tokens": 15151,
+   "cost": 0.000153076,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000153076,
+    "upstream_inference_prompt_cost": 5.0036e-05,
+    "upstream_inference_completions_cost": 0.00010304
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 233,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 15244,
+   "completion_tokens": 633,
+   "total_tokens": 15877,
+   "cost": 0.000291816,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000291816,
+    "upstream_inference_prompt_cost": 0.000114576,
+    "upstream_inference_completions_cost": 0.00017724
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 574,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 15604,
+   "completion_tokens": 587,
+   "total_tokens": 16191,
+   "cost": 0.0002590896,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 15232,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002590896,
+    "upstream_inference_prompt_cost": 9.47296e-05,
+    "upstream_inference_completions_cost": 0.00016436
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 530,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.4,
+ "video": "moderate_hepatic_cirrhosis_PMC13166699.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 71.8
+}

@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Is your primary concern related to movement or coordination?",
+  "Is your primary concern related to breathing or your heart?",
+  "Is your primary concern related to pain?",
+  "Is your primary concern related to a fever or infection?",
+  "Do you have tremors?",
+  "Do you have muscle stiffness?",
+  "Do you have balance problems?",
+  "Do you have a slow start to your movements?",
+  "Do you have weakness or numbness?",
+  "Do you have difficulty speaking?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Finger-to-nose test",
+  "Heel-to-shin test",
+  "Rapid alternating movements",
+  "Gait assessment",
+  "MRI of the brain"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "coordination examination (limb and truncal)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Finger-to-nose test",
+  "     coordination examination (limb and truncal): normal",
+  "2. Heel-to-shin test",
+  "     coordination examination (limb and truncal): normal",
+  "3. Rapid alternating movements",
+  "     coordination examination (limb and truncal): normal",
+  "4. Gait assessment",
+  "     posture and pull test: normal",
+  "5. MRI of the brain",
+  "     brain MRI: cranioencephalic MRI showed no abnormality"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional Neurological Disorder\n\nSomatic Symptom Disorder\nAnxiety disorder\nEarly-stage neurodegenerative disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Finger-to-nose test\n2. Heel-to-shin test\n3. Rapid alternating movements\n4. Gait assessment\n5. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional Neurological Disorder",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 4971,
+   "total_tokens": 5391,
+   "cost": 0.00173214,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00173214,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00169014
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4655,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 828,
+   "completion_tokens": 1517,
+   "total_tokens": 2345,
+   "cost": 0.00059858,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00059858,
+    "upstream_inference_prompt_cost": 8.28e-05,
+    "upstream_inference_completions_cost": 0.00051578
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1449,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1057,
+   "completion_tokens": 3265,
+   "total_tokens": 4322,
+   "cost": 0.0012158,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012158,
+    "upstream_inference_prompt_cost": 0.0001057,
+    "upstream_inference_completions_cost": 0.0011101
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3129,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 19.9,
+ "video": "moderate_tardive_PMC10656108.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 621.7
+}

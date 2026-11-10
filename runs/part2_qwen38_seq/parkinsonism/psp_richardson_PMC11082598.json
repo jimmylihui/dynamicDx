@@ -1,0 +1,104 @@
+{
+ "questions": [
+  "Do you have a history of Parkinson's disease?",
+  "Are you currently taking any medications for muscle stiffness or spasms?",
+  "Have you had any recent falls or injuries to your spine?",
+  "Do you have difficulty walking or feel like your feet are stuck to the floor?",
+  "Do you have difficulty looking up or down?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Assess muscle tone in the upper and lower limbs (check for rigidity, spasticity, or paratonia)"
+ ],
+ "served": [
+  "muscle tone examination"
+ ],
+ "results": [
+  "R1 ASK Do you have a history of Parkinson's disease?; Are you currently taking any medications for muscle stiffness or spasms?; Have you had any recent falls or injuries to your spine? -> ['no', 'no', 'no']",
+  "R2 ORDER Assess muscle tone in the upper and lower limbs (check for rigidity, spasticity, or paratonia) -> [['muscle tone examination']]",
+  "R3 ASK Do you have difficulty walking or feel like your feet are stuck to the floor? -> ['no']",
+  "R4 ASK Do you have difficulty looking up or down? -> ['yes']",
+  "R5 DIAGNOSIS Progressive Supranuclear Palsy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of Parkinson's disease?",
+    "Are you currently taking any medications for muscle stiffness or spasms?",
+    "Have you had any recent falls or injuries to your spine?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Assess muscle tone in the upper and lower limbs (check for rigidity, spasticity, or paratonia)"
+   ],
+   "result": [
+    [
+     "muscle tone examination"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty walking or feel like your feet are stuck to the floor?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty looking up or down?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Progressive Supranuclear Palsy"
+  }
+ ],
+ "dx": "Progressive Supranuclear Palsy",
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "cost_usd": 0.0013,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "psp_richardson_PMC11082598.mp4",
+ "line": "parkinsonism",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 30.1
+}

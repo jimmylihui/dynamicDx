@@ -1,0 +1,193 @@
+{
+ "questions": [
+  "Did these episodes begin after the child was given metoclopramide, domperidone, prochlorperazine, or another medicine for vomiting?",
+  "During the episode, is the child unresponsive or unable to respond normally?",
+  "Does the child have fever?",
+  "Does the child have repeated episodes of upward eye deviation with tongue protrusion?",
+  "Has the child had any generalized shaking or loss of consciousness?",
+  "Do the episodes consist of sustained upward or sideways deviation of both eyes with the child remaining conscious and responsive?",
+  "Do the episodes last minutes to hours and recur several times per day?",
+  "Are the episodes triggered or worsened by fatigue, illness, emotional stress, or excitement?",
+  "Is the child completely normal between episodes?",
+  "Did the episodes begin during infancy, before the age of one year?",
+  "Has the child had delayed motor or language development?",
+  "Does the child have persistent low muscle tone or weakness between episodes?",
+  "Does the child have involuntary twisting or stiffening of the neck, trunk, arms, or legs?",
+  "During episodes, does the child have sweating, irritability, nasal congestion, or difficulty sleeping?",
+  "Has the child had feeding difficulty, choking, or poor weight gain since infancy?",
+  "Are the abnormal eye movements accompanied by sustained tongue protrusion or other abnormal mouth movements?",
+  "Has the child lost previously acquired skills or developed repetitive hand-wringing or hand-to-mouth movements?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Prolonged video-electroencephalography (EEG) monitoring with simultaneous recording of the typical eye-deviation episodes",
+  "Comprehensive pediatric ophthalmologic examination, including assessment for nystagmus, saccades, ocular alignment, and funduscopy",
+  "Brain MRI with attention to the brainstem, cerebellum, and basal ganglia"
+ ],
+ "served": [
+  "video-oculography / eye-movement recording",
+  "EEG",
+  "fundoscopy",
+  "nystagmus: direction and whether it changes with gaze",
+  "smooth pursuit and saccades",
+  "adduction in horizontal gaze (each eye)",
+  "abducting nystagmus of the fellow eye",
+  "vertical gaze and convergence",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "pupil size and light reaction",
+  "ptosis / lid position",
+  "visual fields (perimetry)",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI brain with DWI"
+ ],
+ "results": [
+  "R1 ASK Did these episodes begin after the child was given metoclopramide, domperidone, prochlorperazine, or another medicine for vomiting?; During the episode, is the child unresponsive or unable to respond normally?; Does the child have fever?; Does the child have repeated episodes of upward eye deviation with tongue protrusion?; Has the child had any generalized shaking or loss of consciousness? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Do the episodes consist of sustained upward or sideways deviation of both eyes with the child remaining conscious and responsive?; Do the episodes last minutes to hours and recur several times per day?; Are the episodes triggered or worsened by fatigue, illness, emotional stress, or excitement?; Is the child completely normal between episodes?; Did the episodes begin during infancy, before the age of one year?; Has the child had delayed motor or language development? -> ['no', 'no', 'no', 'no', 'yes', 'yes']",
+  "R3 ASK Does the child have persistent low muscle tone or weakness between episodes?; Does the child have involuntary twisting or stiffening of the neck, trunk, arms, or legs?; During episodes, does the child have sweating, irritability, nasal congestion, or difficulty sleeping?; Has the child had feeding difficulty, choking, or poor weight gain since infancy?; Are the abnormal eye movements accompanied by sustained tongue protrusion or other abnormal mouth movements?; Has the child lost previously acquired skills or developed repetitive hand-wringing or hand-to-mouth movements? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Prolonged video-electroencephalography (EEG) monitoring with simultaneous recording of the typical eye-deviation episodes; Comprehensive pediatric ophthalmologic examination, including assessment for nystagmus, saccades, ocular alignment, and funduscopy; Brain MRI with attention to the brainstem, cerebellum, and basal ganglia -> [['video-oculography / eye-movement recording', 'EEG'], ['fundoscopy', 'nystagmus: direction and whether it changes with gaze', 'smooth pursuit and saccades', 'adduction in horizontal gaze (each eye)', 'abducting nystagmus of the fellow eye', 'vertical gaze and convergence', 'skew deviation / alternating cover test', 'ocular torsion and head tilt', 'pupil size and light reaction', 'ptosis / lid position', 'visual fields (perimetry)'], ['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI brain with DWI']]",
+  "R5 DIAGNOSIS Joubert syndrome (a congenital genetic ciliopathy—most likely autosomal recessive—with cerebellar vermis hypoplasia and brainstem malformation, manifesting as ocular motor apraxia and developmental delay; the specific gene is not established). -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did these episodes begin after the child was given metoclopramide, domperidone, prochlorperazine, or another medicine for vomiting?",
+    "During the episode, is the child unresponsive or unable to respond normally?",
+    "Does the child have fever?",
+    "Does the child have repeated episodes of upward eye deviation with tongue protrusion?",
+    "Has the child had any generalized shaking or loss of consciousness?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do the episodes consist of sustained upward or sideways deviation of both eyes with the child remaining conscious and responsive?",
+    "Do the episodes last minutes to hours and recur several times per day?",
+    "Are the episodes triggered or worsened by fatigue, illness, emotional stress, or excitement?",
+    "Is the child completely normal between episodes?",
+    "Did the episodes begin during infancy, before the age of one year?",
+    "Has the child had delayed motor or language development?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "yes"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Does the child have persistent low muscle tone or weakness between episodes?",
+    "Does the child have involuntary twisting or stiffening of the neck, trunk, arms, or legs?",
+    "During episodes, does the child have sweating, irritability, nasal congestion, or difficulty sleeping?",
+    "Has the child had feeding difficulty, choking, or poor weight gain since infancy?",
+    "Are the abnormal eye movements accompanied by sustained tongue protrusion or other abnormal mouth movements?",
+    "Has the child lost previously acquired skills or developed repetitive hand-wringing or hand-to-mouth movements?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Prolonged video-electroencephalography (EEG) monitoring with simultaneous recording of the typical eye-deviation episodes",
+    "Comprehensive pediatric ophthalmologic examination, including assessment for nystagmus, saccades, ocular alignment, and funduscopy",
+    "Brain MRI with attention to the brainstem, cerebellum, and basal ganglia"
+   ],
+   "result": [
+    [
+     "video-oculography / eye-movement recording",
+     "EEG"
+    ],
+    [
+     "fundoscopy",
+     "nystagmus: direction and whether it changes with gaze",
+     "smooth pursuit and saccades",
+     "adduction in horizontal gaze (each eye)",
+     "abducting nystagmus of the fellow eye",
+     "vertical gaze and convergence",
+     "skew deviation / alternating cover test",
+     "ocular torsion and head tilt",
+     "pupil size and light reaction",
+     "ptosis / lid position",
+     "visual fields (perimetry)"
+    ],
+    [
+     "MRI brain with gadolinium",
+     "MRI diffusion-weighted sequences",
+     "MRI brain with DWI"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Joubert syndrome (a congenital genetic ciliopathy—most likely autosomal recessive—with cerebellar vermis hypoplasia and brainstem malformation, manifesting as ocular motor apraxia and developmental delay; the specific gene is not established)."
+  }
+ ],
+ "dx": "Joubert syndrome (a congenital genetic ciliopathy—most likely autosomal recessive—with cerebellar vermis hypoplasia and brainstem malformation, manifesting as ocular motor apraxia and developmental delay; the specific gene is not established).",
+ "dx_raw": "DIAGNOSIS: Joubert syndrome (a congenital genetic ciliopathy—most likely autosomal recessive—with cerebellar vermis hypoplasia and brainstem malformation, manifesting as ocular motor apraxia and developmental delay; the specific gene is not established).",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "MRI brain with DWI",
+  "smooth pursuit and saccades"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0044,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_3_joubert_apraxia_PMC8490194.mp4",
+ "line": "vertigo_central",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 42.1
+}

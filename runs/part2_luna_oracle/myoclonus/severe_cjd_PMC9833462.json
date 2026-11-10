@@ -1,0 +1,133 @@
+{
+ "questions": [
+  "Are you having difficulty breathing right now?",
+  "Can you understand what I am saying?",
+  "Are you able to answer me reliably with yes or no?",
+  "Are you experiencing severe pain right now?",
+  "Do you have chest pain?",
+  "Did this episode begin suddenly?",
+  "Did you lose consciousness before or during this episode?",
+  "Have you had shaking, stiffening, or other seizure-like movements?",
+  "Have you bitten your tongue or lost bladder control?",
+  "Do you have a severe headache?",
+  "Did you recently fall or hit your head?",
+  "Do you have new weakness or numbness on one side of your body?",
+  "Are you having trouble speaking or seeing?",
+  "Have you recently had surgery or a medical procedure?",
+  "Is there a tube in your neck to help you breathe?",
+  "Have you taken any alcohol, recreational drugs, or extra medication today?",
+  "Have you had a similar episode before?",
+  "Are you pregnant?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "yes",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "brain MRI",
+  "CSF 14-3-3 / RT-QuIC (prion)",
+  "history of the precipitating event",
+  "intrathecal baclofen trial"
+ ],
+ "results": [
+  "1. brain MRI: hypoxic-ischaemic injury",
+  "2. CSF 14-3-3 / RT-QuIC (prion): negative - excludes Creutzfeldt-Jakob disease",
+  "3. history of the precipitating event: cardiac arrest with resuscitation; myoclonus and contractures developed afterwards",
+  "4. intrathecal baclofen trial: 50 mcg bolus on day 1, 75 mcg on day 2; Unified Myoclonus Rating Scale improved progressively with dose; sleep and positioning improved"
+ ],
+ "dx_raw": "DIAGNOSIS: Lance–Adams syndrome (chronic post-hypoxic myoclonus with contractures/spasticity) caused by hypoxic-ischaemic brain injury following cardiac arrest and resuscitation.\n\nAlternative 1: Acute post-hypoxic myoclonus/status epilepticus.\n\nAlternative 2: Hypoxic brain injury–related dystonia and spasticity without Lance–Adams syndrome.\n\nAlternative 3: Autoimmune stiff-person spectrum disorder.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Lance–Adams syndrome (chronic post-hypoxic myoclonus with contractures/spasticity) caused by hypoxic-ischaemic brain injury following cardiac arrest and resuscitation.",
+ "decisive_served": [
+  "brain MRI",
+  "CSF 14-3-3 / RT-QuIC (prion)",
+  "history of the precipitating event",
+  "intrathecal baclofen trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 727,
+   "total_tokens": 6403,
+   "cost": 0.00049323,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00049323,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0004362
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6387,
+   "completion_tokens": 379,
+   "total_tokens": 6766,
+   "cost": 0.000373305,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 711,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000373305,
+    "upstream_inference_prompt_cost": 0.000145905,
+    "upstream_inference_completions_cost": 0.0002274
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 276,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 17.3
+}

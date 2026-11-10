@@ -1,0 +1,141 @@
+{
+ "questions": [
+  "Do you have a history of Parkinson's disease?",
+  "Have you had a stroke in the past?",
+  "Do you experience pain when walking?",
+  "Is your balance significantly worse with your eyes closed?",
+  "Do you have numbness or tingling in your feet?",
+  "Have you had any recent falls?",
+  "Do you take medications for blood pressure or anxiety?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain",
+  "MRI of the cervical and thoracic spine"
+ ],
+ "served": [
+  "MRI brain",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI cervical and thoracic spine"
+ ],
+ "results": [
+  "1. MRI of the brain",
+  "     MRI brain: normal",
+  "     MRI brain with gadolinium: normal",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "2. MRI of the cervical and thoracic spine",
+  "     MRI cervical and thoracic spine: normal cord"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic Normal Pressure Hydrocephalus (INPH)\nAlternative 1: Cerebellar Degeneration\nAlternative 2: Frontal Lobe Gait Disorder",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain\n2. MRI of the cervical and thoracic spine",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Idiopathic Normal Pressure Hydrocephalus (INPH)",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 192,
+   "completion_tokens": 85,
+   "total_tokens": 277,
+   "cost": 6.875e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.875e-05,
+    "upstream_inference_prompt_cost": 2.88e-05,
+    "upstream_inference_completions_cost": 3.995e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 545,
+   "completion_tokens": 17,
+   "total_tokens": 562,
+   "cost": 8.974e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.974e-05,
+    "upstream_inference_prompt_cost": 8.175e-05,
+    "upstream_inference_completions_cost": 7.99e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 727,
+   "completion_tokens": 40,
+   "total_tokens": 767,
+   "cost": 5.9242e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.9242e-05,
+    "upstream_inference_prompt_cost": 4.0442e-05,
+    "upstream_inference_completions_cost": 1.88e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.0
+}

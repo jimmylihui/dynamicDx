@@ -1,0 +1,177 @@
+{
+ "questions": [
+  "Do you have a history of liver disease, such as cirrhosis or hepatitis?",
+  "Do you have a history of kidney failure or are you currently on dialysis?",
+  "Do you have a history of chronic lung disease, such as COPD or emphysema?",
+  "Have you been feeling more confused, drowsy, or disoriented than usual?",
+  "Have you started taking any new medications in the past few weeks?",
+  "Do you have a history of diabetes?",
+  "Have you had any recent fevers, chills, or signs of an infection?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Fingerstick capillary blood glucose",
+  "Basic metabolic panel",
+  "Venous blood gas",
+  "Complete blood count with differential",
+  "Comprehensive metabolic panel / Liver function tests",
+  "Urinalysis with culture",
+  "Blood cultures",
+  "Chest X-ray"
+ ],
+ "served": [
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "renal function and eGFR",
+  "blood glucose",
+  "venous blood gas",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "renal function and eGFR",
+  "blood glucose",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Fingerstick capillary blood glucose",
+  "     blood glucose: 799 mg/dL (normal 74-106)",
+  "2. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     renal function and eGFR: normal",
+  "     blood glucose: 799 mg/dL (normal 74-106)",
+  "3. Venous blood gas",
+  "     venous blood gas: normal",
+  "4. Complete blood count with differential",
+  "     full blood count: normal",
+  "5. Comprehensive metabolic panel / Liver function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     renal function and eGFR: normal",
+  "     blood glucose: 799 mg/dL (normal 74-106)",
+  "6. Urinalysis with culture",
+  "     urinalysis: leukocyturia; negative ketones",
+  "7. Blood cultures",
+  "     not performed / not available",
+  "8. Chest X-ray",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperosmolar Hyperglycemic State (HHS) precipitated by a urinary tract infection\n1. Diabetic ketoacidosis (less likely given normal venous blood gas and absent urine ketones)\n2. Acute urosepsis without concomitant hyperglycemic crisis\n3. Uncontrolled type 2 diabetes mellitus without acute decompensation",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Fingerstick capillary blood glucose\n2. Basic metabolic panel\n3. Venous blood gas\n4. Complete blood count with differential\n5. Comprehensive metabolic panel / Liver function tests\n6. Urinalysis with culture\n7. Blood cultures\n8. Chest X-ray",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperosmolar Hyperglycemic State (HHS) precipitated by a urinary tract infection",
+ "decisive_served": [
+  "blood glucose",
+  "blood glucose",
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 2454,
+   "total_tokens": 22892,
+   "cost": 0.00903852,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00903852,
+    "upstream_inference_prompt_cost": 0.00609372,
+    "upstream_inference_completions_cost": 0.0029448
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2339,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 20848,
+   "completion_tokens": 1880,
+   "total_tokens": 22728,
+   "cost": 0.00360888,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20423,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00360888,
+    "upstream_inference_prompt_cost": 0.00135288,
+    "upstream_inference_completions_cost": 0.002256
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1823,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 21191,
+   "completion_tokens": 2102,
+   "total_tokens": 23293,
+   "cost": 0.00387978,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20833,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00387978,
+    "upstream_inference_prompt_cost": 0.00135738,
+    "upstream_inference_completions_cost": 0.0025224
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2035,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 82.4
+}

@@ -1,0 +1,167 @@
+{
+ "questions": [
+  "Do you know where you are?",
+  "Do you remember what happened?",
+  "Do you feel short of breath?",
+  "Do you have a headache?",
+  "Do you feel any weakness in your limbs?",
+  "Do you feel any numbness in your limbs?",
+  "Do you have a history of stroke?",
+  "Do you have a history of seizures?",
+  "Do you have a history of brain injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "CT Head (non-contrast)",
+  "Blood glucose",
+  "Arterial blood gas",
+  "Comprehensive metabolic panel",
+  "Toxicology screen",
+  "MRI Brain"
+ ],
+ "served": [
+  "CT head",
+  "blood glucose and HbA1c",
+  "glucose",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "glucose",
+  "renal function (urea, creatinine)",
+  "toxicology screen (urine and serum)",
+  "toxicology screen",
+  "brain MRI"
+ ],
+ "results": [
+  "1. CT Head (non-contrast)",
+  "     CT head: hypoxic-ischaemic brain injury",
+  "2. Blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "     glucose: normal",
+  "3. Arterial blood gas",
+  "     not performed / not available",
+  "4. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     glucose: normal",
+  "     renal function (urea, creatinine): normal",
+  "5. Toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "     toxicology screen: negative",
+  "6. MRI Brain",
+  "     brain MRI: hypoxic-ischaemic injury"
+ ],
+ "dx_raw": "DIAGNOSIS: Hypoxic-ischaemic brain injury due to cardiac arrest\n\n1. Hypoxic-ischaemic brain injury due to near-drowning\n2. Hypoxic-ischaemic brain injury due to asphyxiation\n3. Post-anoxic encephalopathy",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. CT Head (non-contrast)\n2. Blood glucose\n3. Arterial blood gas\n4. Comprehensive metabolic panel\n5. Toxicology screen\n6. MRI Brain\n7. EEG",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hypoxic-ischaemic brain injury due to cardiac arrest",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1646,
+   "total_tokens": 10344,
+   "cost": 0.00142944,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00142944,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00055964
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1486,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9072,
+   "completion_tokens": 614,
+   "total_tokens": 9686,
+   "cost": 0.00111596,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00111596,
+    "upstream_inference_prompt_cost": 0.0009072,
+    "upstream_inference_completions_cost": 0.00020876
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 615,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9345,
+   "completion_tokens": 1312,
+   "total_tokens": 10657,
+   "cost": 0.00138058,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00138058,
+    "upstream_inference_prompt_cost": 0.0009345,
+    "upstream_inference_completions_cost": 0.00044608
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1265,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 167.7
+}

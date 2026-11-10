@@ -1,0 +1,164 @@
+{
+ "questions": [
+  "Did these symptoms start suddenly?",
+  "Do you have weakness in your arm or leg?",
+  "Do you have difficulty speaking?",
+  "Do you have double vision?",
+  "Do you have numbness or tingling?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of heart disease?",
+  "Do you have a history of smoking?",
+  "Do you have a history of atrial fibrillation?",
+  "Do you have a severe headache?",
+  "Do you have difficulty swallowing?",
+  "Do you feel dizzy?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Ice pack test",
+  "Acetylcholine receptor antibody test",
+  "Muscle-specific kinase antibody test",
+  "Repetitive nerve stimulation",
+  "CT chest"
+ ],
+ "served": [
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "repetitive nerve stimulation",
+  "CT chest, abdomen and pelvis",
+  "CT chest / abdomen / pelvis (occult tumour)"
+ ],
+ "results": [
+  "1. Ice pack test",
+  "     not performed / not available",
+  "2. Acetylcholine receptor antibody test",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "3. Muscle-specific kinase antibody test",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "4. Repetitive nerve stimulation",
+  "     repetitive nerve stimulation: normal",
+  "5. CT chest",
+  "     CT chest, abdomen and pelvis: no tumour found",
+  "     CT chest / abdomen / pelvis (occult tumour): no tumour found - idiopathic rather than paraneoplastic"
+ ],
+ "dx_raw": "DIAGNOSIS: Chronic Progressive External Ophthalmoplegia (CPEO) due to mitochondrial DNA mutation\n\n1. Seronegative Myasthenia Gravis\n2. Oculopharyngeal Muscular Dystrophy\n3. Myotonic Dystrophy",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Ice pack test\n2. Acetylcholine receptor antibody test\n3. Muscle-specific kinase antibody test\n4. Repetitive nerve stimulation\n5. CT chest",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Chronic Progressive External Ophthalmoplegia (CPEO) due to mitochondrial DNA mutation",
+ "decisive_served": [
+  "CT chest / abdomen / pelvis (occult tumour)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2606,
+   "total_tokens": 11304,
+   "cost": 0.00175584,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00175584,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00088604
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2239,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9176,
+   "completion_tokens": 993,
+   "total_tokens": 10169,
+   "cost": 0.00125522,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00125522,
+    "upstream_inference_prompt_cost": 0.0009176,
+    "upstream_inference_completions_cost": 0.00033762
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 917,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9436,
+   "completion_tokens": 4048,
+   "total_tokens": 13484,
+   "cost": 0.00231992,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00231992,
+    "upstream_inference_prompt_cost": 0.0009436,
+    "upstream_inference_completions_cost": 0.00137632
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3782,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.8,
+ "video": "moderate_2_opsoclonus_PMC13135425.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 260.3
+}

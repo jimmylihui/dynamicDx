@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Do you know where you are?",
+  "Do you know why you are restrained?",
+  "Do you have a history of psychiatric illness?",
+  "Have you used any drugs or alcohol recently?",
+  "Do you feel any physical pain?",
+  "Do you have a severe headache?",
+  "Do you feel weakness in your limbs?",
+  "Do you have a history of seizures?",
+  "Do you feel confused?",
+  "Are you feeling agitated?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "witnessed description of the event",
+  "head injury history",
+  "neurological examination between events",
+  "interictal EEG"
+ ],
+ "results": [
+  "1. witnessed description of the event: the right arm reaches and grasps and takes a DYSTONIC posture during the movement, despite a manual muscle testing score of 1 - the movement is ictal, not voluntary",
+  "2. head injury history: traumatic brain injury after being thrown from a horse",
+  "3. neurological examination between events: right-sided hemiplegia, manual muscle testing grade 1",
+  "4. interictal EEG: repetitive sharp waves predominantly in the LEFT FRONTAL area during sleep, with pseudocontinuous 3 Hz slow waves in the same region on awakening"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-traumatic epilepsy due to traumatic brain injury\n\n1. Focal motor seizures due to a brain tumor\n2. Focal motor seizures due to a cerebral infarct\n3. Focal motor seizures due to an arteriovenous malformation",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Post-traumatic epilepsy due to traumatic brain injury",
+ "decisive_served": [
+  "witnessed description of the event",
+  "head injury history",
+  "neurological examination between events",
+  "interictal EEG"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8762,
+   "completion_tokens": 2765,
+   "total_tokens": 11527,
+   "cost": 0.0018163,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0018163,
+    "upstream_inference_prompt_cost": 0.0008762,
+    "upstream_inference_completions_cost": 0.0009401
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2571,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9227,
+   "completion_tokens": 1312,
+   "total_tokens": 10539,
+   "cost": 0.00136878,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00136878,
+    "upstream_inference_prompt_cost": 0.0009227,
+    "upstream_inference_completions_cost": 0.00044608
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1320,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 159.3
+}

@@ -1,0 +1,111 @@
+{
+ "questions": [
+  "Do you have a family history of similar movements?",
+  "Are you taking any medications for mental health?",
+  "Did these movements start suddenly?",
+  "Have you noticed changes in your mood or personality?",
+  "Have you had a recent sore throat or fever?",
+  "Have you ever had a stroke?",
+  "Do you have joint pain or skin rashes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "anti-aquaporin-4 and anti-MOG antibodies",
+  "cervical and whole spine MRI",
+  "needle EMG of the affected muscles",
+  "corticosteroid trial"
+ ],
+ "results": [
+  "1. anti-aquaporin-4 and anti-MOG antibodies: BOTH NEGATIVE - not neuromyelitis optica or MOG-antibody disease",
+  "2. cervical and whole spine MRI: LONGITUDINALLY EXTENSIVE T2 lesion confined to the cervical cord",
+  "3. needle EMG of the affected muscles: prolonged bursts, overflow activation and simultaneous agonist-antagonist contraction, with NO denervation or myopathy - confirms dystonic hypertonia",
+  "4. corticosteroid trial: high-dose intravenous methylprednisolone 1 g/day for five days followed by an oral taper"
+ ],
+ "dx_raw": "DIAGNOSIS: Stiff Person Syndrome caused by anti-GAD65 antibodies\n\n1. Seronegative Neuromyelitis Optica Spectrum Disorder (NMOSD)\n2. Paraneoplastic Stiff Person Syndrome\n3. Autoimmune myelitis",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Stiff Person Syndrome caused by anti-GAD65 antibodies",
+ "decisive_served": [
+  "anti-aquaporin-4 and anti-MOG antibodies",
+  "cervical and whole spine MRI",
+  "needle EMG of the affected muscles",
+  "corticosteroid trial"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1028,
+   "total_tokens": 9726,
+   "cost": 0.00121932,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00121932,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00034952
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 933,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9112,
+   "completion_tokens": 3731,
+   "total_tokens": 12843,
+   "cost": 0.00217974,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00217974,
+    "upstream_inference_prompt_cost": 0.0009112,
+    "upstream_inference_completions_cost": 0.00126854
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3480,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_secondary_structural_PMC12962376.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 157.4
+}

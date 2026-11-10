@@ -1,0 +1,125 @@
+{
+ "questions": [
+  "Have you been losing weight without trying?",
+  "Do you have a chronic cough?",
+  "Do you have fevers?",
+  "Do you have night sweats?",
+  "Do you have chronic diarrhea?",
+  "Have you noticed any lumps or swellings in your neck, armpits, or groin?",
+  "Do you have a poor appetite?",
+  "Do you have abdominal pain?",
+  "Do you have white patches in your mouth?",
+  "Have you ever been tested for HIV?",
+  "Do you feel excessively thirsty or do you urinate frequently?",
+  "Have you been in close contact with anyone who has tuberculosis?",
+  "Do you have any difficulty breathing?",
+  "Do you have any skin rashes or severe itching?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "dystonia gene panel",
+  "lysosomal enzyme assay (beta-galactosidase, hexosaminidase)"
+ ],
+ "results": [
+  "1. slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "2. copper / caeruloplasmin / 24 h urinary copper: NORMAL - excludes Wilson disease",
+  "3. dystonia gene panel: biallelic GLB1 variants",
+  "4. lysosomal enzyme assay (beta-galactosidase, hexosaminidase): REDUCED beta-galactosidase, with 5-10% residual activity - type-III GM1 gangliosidosis"
+ ],
+ "dx_raw": "DIAGNOSIS: Type III (chronic/adult) GM1 gangliosidosis, caused by biallelic pathogenic variants in the GLB1 gene resulting in deficient lysosomal beta-galactosidase activity (5-10% of normal).\n\nAlternatives to consider:\n1. Niemann-Pick disease type C (NPC1/NPC2) - treatable with miglustat; can mimic with dystonia/chorea\n2. Neurodegeneration with brain iron accumulation (e.g., PKAN, PLA2G6-associated dystonia-parkinsonism)\n3. Idiopathic/isolated dystonia (DYT-TOR1A, DYT-GCH1, etc.) - though the biallelic GLB1 findings make this very unlikely",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Type III (chronic/adult) GM1 gangliosidosis, caused by biallelic pathogenic variants in the GLB1 gene resulting in deficient lysosomal beta-galactosidase activity (5-10% of normal).",
+ "decisive_served": [
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "dystonia gene panel",
+  "lysosomal enzyme assay (beta-galactosidase, hexosaminidase)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 3796,
+   "total_tokens": 10858,
+   "cost": 0.00663612,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00663612,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0045552
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3646,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7627,
+   "completion_tokens": 619,
+   "total_tokens": 8246,
+   "cost": 0.00133962,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00133962,
+    "upstream_inference_prompt_cost": 0.00059682,
+    "upstream_inference_completions_cost": 0.0007428
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 466,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_PMC12904113.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 58.4
+}

@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you have any numbness or tingling on the left side of your body?",
+  "Do you have difficulty speaking?",
+  "Did you lose consciousness?",
+  "Do you have a history of heart disease?",
+  "Did you have a head injury?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Non-contrast CT head",
+  "Blood glucose",
+  "MRI brain",
+  "Carotid Doppler ultrasound"
+ ],
+ "served": [
+  "CT head (non-contrast)",
+  "blood glucose",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences"
+ ],
+ "results": [
+  "1. Non-contrast CT head",
+  "     CT head (non-contrast): ischaemic stroke - 92.9% of the series were ischaemic and one was haemorrhagic",
+  "2. Blood glucose",
+  "     blood glucose: normal - non-ketotic hyperglycaemia was an exclusion criterion for this series",
+  "3. MRI brain",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the lentiform nucleus",
+  "     MRI susceptibility-weighted sequences: normal",
+  "4. Carotid Doppler ultrasound",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Lacunar infarct due to hypertensive small vessel disease\n\n1. Embolic stroke\n2. Cerebral small vessel disease\n3. Hypoxic-ischaemic encephalopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Non-contrast CT head\n2. Blood glucose\n3. ECG\n4. MRI brain\n5. Carotid Doppler ultrasound",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Lacunar infarct due to hypertensive small vessel disease",
+ "decisive_served": [
+  "CT head (non-contrast)",
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1897,
+   "total_tokens": 10595,
+   "cost": 0.00151478,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00151478,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00064498
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1739,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9054,
+   "completion_tokens": 862,
+   "total_tokens": 9916,
+   "cost": 0.00119848,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00119848,
+    "upstream_inference_prompt_cost": 0.0009054,
+    "upstream_inference_completions_cost": 0.00029308
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 841,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9286,
+   "completion_tokens": 1070,
+   "total_tokens": 10356,
+   "cost": 0.0012924,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012924,
+    "upstream_inference_prompt_cost": 0.0009286,
+    "upstream_inference_completions_cost": 0.0003638
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1052,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 5431.7
+}

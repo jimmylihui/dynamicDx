@@ -1,0 +1,136 @@
+{
+ "questions": [
+  "Do you have a fever?",
+  "Have you taken any antipsychotic medications recently?",
+  "Have you had any seizures?",
+  "Have you experienced hallucinations or delusions?",
+  "Have you had a recent viral infection?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Anti-GAD65 antibody test",
+  "Electromyography (EMG)",
+  "Anti-amphiphysin antibody test"
+ ],
+ "served": [
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "needle electromyography",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "paraneoplastic / onconeural antibody panel"
+ ],
+ "results": [
+  "1. Anti-GAD65 antibody test",
+  "     serum paraneoplastic / neuronal autoantibody panel: normal",
+  "2. Electromyography (EMG)",
+  "     needle electromyography: normal",
+  "3. Anti-amphiphysin antibody test",
+  "     serum paraneoplastic / neuronal autoantibody panel: normal",
+  "     paraneoplastic / onconeural antibody panel: negative"
+ ],
+ "dx_raw": "DIAGNOSIS: Stiff Person Syndrome caused by anti-glycine receptor antibodies\n\nAlternatives:\n1. Catatonia\n2. Anti-NMDA receptor encephalitis\n3. Stiff-limb syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Anti-GAD65 antibody test\n2. Electromyography (EMG)\n3. Anti-amphiphysin antibody test",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Stiff Person Syndrome caused by anti-glycine receptor antibodies",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 186,
+   "completion_tokens": 5776,
+   "total_tokens": 5962,
+   "cost": 0.00198244,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00198244,
+    "upstream_inference_prompt_cost": 1.86e-05,
+    "upstream_inference_completions_cost": 0.00196384
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5180,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 454,
+   "completion_tokens": 936,
+   "total_tokens": 1390,
+   "cost": 0.00036364,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00036364,
+    "upstream_inference_prompt_cost": 4.54e-05,
+    "upstream_inference_completions_cost": 0.00031824
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 881,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 661,
+   "completion_tokens": 7838,
+   "total_tokens": 8499,
+   "cost": 0.00273102,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00273102,
+    "upstream_inference_prompt_cost": 6.61e-05,
+    "upstream_inference_completions_cost": 0.00266492
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7259,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "psp_richardson_PMC11082598.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 2438.2
+}

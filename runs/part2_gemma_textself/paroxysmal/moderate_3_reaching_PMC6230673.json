@@ -1,0 +1,173 @@
+{
+ "questions": [
+  "Do you know where you are?",
+  "Do you know why you are restrained?",
+  "Are you in pain?",
+  "Are you seeing or hearing things that others do not?",
+  "Do you feel unable to move your body despite wanting to?",
+  "Do you feel your muscles are stiff?",
+  "Are you experiencing involuntary movements?",
+  "Have you had a seizure?",
+  "Did you take any drugs or medications recently?",
+  "Do you feel agitated?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Blood glucose",
+  "Comprehensive metabolic panel",
+  "Serum creatine kinase",
+  "Serum ammonia",
+  "Toxicology screen",
+  "Head CT"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "liver and renal function",
+  "glucose, calcium, magnesium, sodium",
+  "creatine kinase",
+  "serum ammonia",
+  "toxicology screen (urine and serum)",
+  "toxicology and drug levels",
+  "CT head"
+ ],
+ "results": [
+  "1. Blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "2. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal",
+  "     liver and renal function: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "3. Serum creatine kinase",
+  "     creatine kinase: normal",
+  "4. Serum ammonia",
+  "     serum ammonia: normal",
+  "5. Toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "     toxicology and drug levels: negative",
+  "6. Head CT",
+  "     CT head: left frontal post-traumatic gliosis and encephalomalacia"
+ ],
+ "dx_raw": "DIAGNOSIS: Frontal lobe epilepsy due to post-traumatic encephalomalacia\n\nPost-traumatic encephalopathy\nNon-convulsive status epilepticus\nFrontal lobe syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Blood glucose\n2. Comprehensive metabolic panel\n3. Serum creatine kinase\n4. Serum ammonia\n5. Toxicology screen\n6. EEG\n7. Head CT",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Frontal lobe epilepsy due to post-traumatic encephalomalacia",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 204,
+   "completion_tokens": 3929,
+   "total_tokens": 4133,
+   "cost": 0.00135626,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00135626,
+    "upstream_inference_prompt_cost": 2.04e-05,
+    "upstream_inference_completions_cost": 0.00133586
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3606,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 606,
+   "completion_tokens": 2608,
+   "total_tokens": 3214,
+   "cost": 0.00094732,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00094732,
+    "upstream_inference_prompt_cost": 6.06e-05,
+    "upstream_inference_completions_cost": 0.00088672
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2523,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 901,
+   "completion_tokens": 2005,
+   "total_tokens": 2906,
+   "cost": 0.0007718,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007718,
+    "upstream_inference_prompt_cost": 9.01e-05,
+    "upstream_inference_completions_cost": 0.0006817
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2091,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 257.9
+}

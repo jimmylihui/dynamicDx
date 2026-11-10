@@ -1,0 +1,186 @@
+{
+ "questions": [
+  "Does anyone in your family have a tremor?",
+  "Does the shaking happen when your hands are resting?",
+  "Does alcohol improve the tremor?",
+  "Do you feel slow or stiff?",
+  "Do you have trouble with your balance?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside neurological examination",
+  "Magnetic resonance imaging (MRI) of the brain",
+  "Dopamine transporter imaging (DaTscan)",
+  "Thyroid function tests",
+  "Serum ceruloplasmin"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "tremor at rest",
+  "postural tremor (arms outstretched)",
+  "kinetic / intention tremor (finger-nose)",
+  "tremor frequency estimate",
+  "asterixis (wrist extension)",
+  "limb power and wasting",
+  "reflexes and plantar responses",
+  "sensory examination (vibration, pinprick)",
+  "foot deformity (pes cavus)",
+  "cerebellar signs (dysmetria, dysdiadochokinesia)",
+  "gait examination",
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "brain MRI",
+  "DAT-SPECT",
+  "TSH / free T4",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper"
+ ],
+ "results": [
+  "1. Bedside neurological examination",
+  "     cranial nerve examination: miosis",
+  "     mental status / cognitive screen: MMSE 23/30 and Frontal Assessment Battery 9/18",
+  "     muscle tone examination: parkinsonian rigidity",
+  "     limb strength (MRC) examination: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): unilateral wing-beating tremor",
+  "     posture and pull test: parkinsonian postural instability",
+  "     fundoscopy: normal",
+  "     tremor at rest: absent",
+  "     postural tremor (arms outstretched): present",
+  "     kinetic / intention tremor (finger-nose): absent",
+  "     tremor frequency estimate: not measured",
+  "     asterixis (wrist extension): absent",
+  "     limb power and wasting: normal bulk and power",
+  "     reflexes and plantar responses: normal",
+  "     sensory examination (vibration, pinprick): normal",
+  "     foot deformity (pes cavus): none",
+  "     cerebellar signs (dysmetria, dysdiadochokinesia): absent",
+  "     gait examination: normal",
+  "     cognitive screen (MMSE / MoCA / FAB): MMSE 23/30 and Frontal Assessment Battery 9/18 - frontal/executive dysfunction",
+  "2. Magnetic resonance imaging (MRI) of the brain",
+  "     brain MRI: no structural lesion",
+  "3. Dopamine transporter imaging (DaTscan)",
+  "     DAT-SPECT: specific binding ratios 3.94 right and 3.82 left striatum",
+  "4. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "5. Serum ceruloplasmin",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease"
+ ],
+ "dx_raw": "DIAGNOSIS: Wilson disease\n\nSlit-lamp examination for Kayser-Fleischer rings\nLiver biopsy with quantitative hepatic copper quantification\nOculomotor examination\n\nNeurodegeneration with brain iron accumulation (specifically PKAN)\nSpinocerebellar ataxia type 3 (Machado-Joseph disease)\nDentatorubral-pallidoluysian atrophy (DRPLA)",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Bedside neurological examination\n2. Magnetic resonance imaging (MRI) of the brain\n3. Dopamine transporter imaging (DaTscan)\n4. Thyroid function tests\n5. Serum ceruloplasmin",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Wilson disease",
+ "decisive_served": [
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "copper / caeruloplasmin / 24 h urinary copper"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4543,
+   "completion_tokens": 3163,
+   "total_tokens": 7706,
+   "cost": 0.000907004,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000907004,
+    "upstream_inference_prompt_cost": 2.1364e-05,
+    "upstream_inference_completions_cost": 0.00088564
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3108,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 4819,
+   "completion_tokens": 3527,
+   "total_tokens": 8346,
+   "cost": 0.001047564,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001047564,
+    "upstream_inference_prompt_cost": 6.0004e-05,
+    "upstream_inference_completions_cost": 0.00098756
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3462,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5356,
+   "completion_tokens": 1167,
+   "total_tokens": 6523,
+   "cost": 0.00041804,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4800,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00041804,
+    "upstream_inference_prompt_cost": 9.128e-05,
+    "upstream_inference_completions_cost": 0.00032676
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1074,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 120.8
+}

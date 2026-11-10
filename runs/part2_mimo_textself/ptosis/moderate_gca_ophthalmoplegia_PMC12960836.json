@@ -1,0 +1,186 @@
+{
+ "questions": [
+  "Do your eyelid drooping or eye movement difficulties get worse with sustained use, such as reading or watching TV?",
+  "Do you have double vision?",
+  "Did the symptoms start suddenly, within the last day or so?",
+  "Is the weakness affecting both sides of your body, including your legs and arms?",
+  "Do you have difficulty swallowing or speaking?",
+  "Have you had any recent infections or illnesses?",
+  "Are you taking any new medications?",
+  "Is there a family history of muscle weakness or autoimmune disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Detailed bedside neurological examination including pupils, facial symmetry, limb power, tone, reflexes, and sensation",
+  "Brain MRI with thin cuts through the midbrain, with and without contrast",
+  "Nerve conduction studies and electromyography of the affected limb",
+  "Serum glucose and HbA1c",
+  "Erythrocyte sedimentation rate and C-reactive protein",
+  "Lumbar puncture for cerebrospinal fluid analysis"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "pupil examination (size, light reaction)",
+  "MRI brain with contrast",
+  "nerve conduction studies",
+  "needle electromyography",
+  "glucose / HbA1c",
+  "ESR / CRP",
+  "lumbar puncture / CSF",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel"
+ ],
+ "results": [
+  "1. Detailed bedside neurological examination including pupils, facial symmetry, limb power, tone, reflexes, and sensation",
+  "     cranial nerve examination: bilateral abduction limitation, worse on the right, with diplopia in all directions",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: mild distal limb weakness",
+  "     deep tendon reflexes and plantar responses: reduced or absent reflexes; flexor plantar responses",
+  "     sensory examination (pinprick, vibration, proprioception): distal loss of vibration and proprioception",
+  "     pupil examination (size, light reaction): equal and reactive",
+  "2. Brain MRI with thin cuts through the midbrain, with and without contrast",
+  "     MRI brain with contrast: bilateral contrast enhancement and THICKENING of cranial nerves III through XII",
+  "3. Nerve conduction studies and electromyography of the affected limb",
+  "     nerve conduction studies: demyelinating sensorimotor neuropathy",
+  "     needle electromyography: chronic neurogenic changes",
+  "4. Serum glucose and HbA1c",
+  "     glucose / HbA1c: normal",
+  "5. Erythrocyte sedimentation rate and C-reactive protein",
+  "     ESR / CRP: normal - against giant cell arteritis",
+  "6. Lumbar puncture for cerebrospinal fluid analysis",
+  "     lumbar puncture / CSF: protein mildly raised at 73 mg/dL",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: mildly raised at 73 mg/dL",
+  "     CSF glucose: normal",
+  "     CSF oligoclonal bands and IgG index: normal",
+  "     CSF cytology and flow cytometry: normal",
+  "     CSF culture and viral PCR: normal",
+  "     CSF autoimmune encephalitis panel: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Chronic inflammatory demyelinating polyneuropathy (CIDP) with cranial nerve involvement\n\nThe constellation of findings — chronic progressive course, demyelinating sensorimotor neuropathy on nerve conduction studies, elevated CSF protein with normal cell count (albuminocytologic dissociation), multiple cranial nerve enhancement and thickening on MRI, and absent reflexes — fits the diagnostic criteria for CIDP. The cranial nerve involvement (III–XII thickening) represents the cranial variant or cranial predilection that can occur in this condition, explaining the ocular motility deficits, ptosis, and heel-walking difficulty.\n\n---\n\n1. Neurolymphomatosis (leptomeningeal or perineural lymphomatous infiltration)\n2. Neurosarcoidosis\n3. Chronic atypical inflammatory demyelinating polyneuropathy (treating CIDP variants separately given MRI patterns)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Detailed bedside neurological examination including pupils, facial symmetry, limb power, tone, reflexes, and sensation\n2. Brain MRI with thin cuts through the midbrain, with and without contrast\n3. Nerve conduction studies and electromyography of the affected limb\n4. Serum glucose and HbA1c\n5. Erythrocyte sedimentation rate and C-reactive protein\n6. Lumbar puncture for cerebrospinal fluid analysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Chronic inflammatory demyelinating polyneuropathy (CIDP) with cranial nerve involvement",
+ "decisive_served": [
+  "MRI brain with contrast",
+  "nerve conduction studies"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 453,
+   "completion_tokens": 2535,
+   "total_tokens": 2988,
+   "cost": 0.0007468776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007468776,
+    "upstream_inference_prompt_cost": 3.70776e-05,
+    "upstream_inference_completions_cost": 0.0007098
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2422,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 860,
+   "completion_tokens": 645,
+   "total_tokens": 1505,
+   "cost": 0.0002395344,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002395344,
+    "upstream_inference_prompt_cost": 5.89344e-05,
+    "upstream_inference_completions_cost": 0.0001806
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 546,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1434,
+   "completion_tokens": 929,
+   "total_tokens": 2363,
+   "cost": 0.0003467296,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 832,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003467296,
+    "upstream_inference_prompt_cost": 8.66096e-05,
+    "upstream_inference_completions_cost": 0.00026012
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 729,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_gca_ophthalmoplegia_PMC12960836.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 69.9
+}

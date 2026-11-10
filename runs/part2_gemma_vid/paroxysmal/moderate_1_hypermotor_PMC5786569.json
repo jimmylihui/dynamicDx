@@ -1,0 +1,134 @@
+{
+ "questions": [
+  "Do you remember dreaming during these episodes?",
+  "Do you feel confused for several minutes after waking up?",
+  "Do you have a history of epilepsy?",
+  "Do you feel a sudden sense of intense fear or panic during these episodes?",
+  "Do you snore loudly or wake up gasping for air?",
+  "Do you injure yourself or others during these episodes?",
+  "Do you take any medications for depression or anxiety?",
+  "Do you have a tremor or stiffness in your limbs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Polysomnography with extended EEG monitoring",
+  "Brain MRI"
+ ],
+ "served": [
+  "video-polygraphy (EEG with EMG)",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Polysomnography with extended EEG monitoring",
+  "     video-polygraphy (EEG with EMG): not performed",
+  "2. Brain MRI",
+  "     brain MRI: no epileptogenic lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Nocturnal Frontal Lobe Epilepsy\nREM Sleep Behavior Disorder\nConfusional arousal\nSleepwalking",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Polysomnography with extended EEG monitoring\n2. Brain MRI",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Nocturnal Frontal Lobe Epilepsy",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8890,
+   "completion_tokens": 1910,
+   "total_tokens": 10800,
+   "cost": 0.0015384,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0015384,
+    "upstream_inference_prompt_cost": 0.000889,
+    "upstream_inference_completions_cost": 0.0006494
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1752,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9288,
+   "completion_tokens": 948,
+   "total_tokens": 10236,
+   "cost": 0.00125112,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00125112,
+    "upstream_inference_prompt_cost": 0.0009288,
+    "upstream_inference_completions_cost": 0.00032232
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1001,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9439,
+   "completion_tokens": 3364,
+   "total_tokens": 12803,
+   "cost": 0.00208766,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00208766,
+    "upstream_inference_prompt_cost": 0.0009439,
+    "upstream_inference_completions_cost": 0.00114376
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3203,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 199.8
+}

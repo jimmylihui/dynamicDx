@@ -1,0 +1,175 @@
+{
+ "questions": [
+  "Has the abdominal swelling developed gradually over weeks or months?",
+  "Have you had any abdominal pain?",
+  "Do you have a history of liver disease or cirrhosis?",
+  "Do you have a history of heart failure or heart problems?",
+  "Have you ever been diagnosed with cancer?",
+  "Do you drink alcohol regularly or heavily?",
+  "Have you been having normal bowel movements and passing gas?",
+  "Have you had any nausea or vomiting?",
+  "Have you had any fevers or chills?",
+  "Have you lost weight unintentionally recently?",
+  "Do you have a history of tuberculosis?",
+  "Have you had any previous abdominal surgeries?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bladder scan (bedside ultrasound) to assess for urinary retention",
+  "Erect chest and supine abdominal radiograph",
+  "CT abdomen and pelvis with IV contrast",
+  "Full blood count",
+  "Urea, electrolytes and creatinine",
+  "Serum lactate",
+  "C-reactive protein",
+  "Arterial blood gas (given supplemental oxygen requirement)"
+ ],
+ "served": [
+  "CT chest, abdomen and pelvis",
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "renal function (urea, creatinine)",
+  "electrolytes (Na, K, Ca, Mg)",
+  "ESR / CRP"
+ ],
+ "results": [
+  "1. Bladder scan (bedside ultrasound) to assess for urinary retention",
+  "     not performed / not available",
+  "2. Erect chest and supine abdominal radiograph",
+  "     not performed / not available",
+  "3. CT abdomen and pelvis with IV contrast",
+  "     CT chest, abdomen and pelvis: normal",
+  "     CT chest / abdomen / pelvis (occult tumour): no malignancy",
+  "4. Full blood count",
+  "     full blood count: white cells mildly raised at 11.8 x10^9/L",
+  "5. Urea, electrolytes and creatinine",
+  "     serum electrolytes, urea and creatinine: urea nitrogen 24 mg/dL and creatinine 1.62 mg/dL, stable",
+  "     renal function (urea, creatinine): blood urea nitrogen 24 mg/dL, creatinine 1.62 mg/dL - stable",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "6. Serum lactate",
+  "     not performed / not available",
+  "7. C-reactive protein",
+  "     ESR / CRP: normal",
+  "8. Arterial blood gas (given supplemental oxygen requirement)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Ogilvie's syndrome (acute colonic pseudo-obstruction), likely secondary to his acute severe illness and supportive therapies.\n\n1. Sigmoid or cecal volvulus\n2. Severe faecal impaction with overflow obstruction\n3. Medication-induced colonic ileus (e.g. opioid or anticholinergic)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Bladder scan (bedside ultrasound) to assess for urinary retention\n2. Erect chest and supine abdominal radiograph\n3. CT abdomen and pelvis with IV contrast\n4. Full blood count\n5. Urea, electrolytes and creatinine\n6. Serum lactate\n7. C-reactive protein\n8. Arterial blood gas (given supplemental oxygen requirement)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Ogilvie's syndrome (acute colonic pseudo-obstruction), likely secondary to his acute severe illness and supportive therapies.",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 447,
+   "completion_tokens": 6568,
+   "total_tokens": 7015,
+   "cost": 0.00798834,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00798834,
+    "upstream_inference_prompt_cost": 0.00010674,
+    "upstream_inference_completions_cost": 0.0078816
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7237,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 916,
+   "completion_tokens": 2252,
+   "total_tokens": 3168,
+   "cost": 0.0028884,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 370,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0028884,
+    "upstream_inference_prompt_cost": 0.000186,
+    "upstream_inference_completions_cost": 0.0027024
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2435,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1311,
+   "completion_tokens": 1879,
+   "total_tokens": 3190,
+   "cost": 0.00243642,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 882,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00243642,
+    "upstream_inference_prompt_cost": 0.00018162,
+    "upstream_inference_completions_cost": 0.0022548
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2085,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 134.1
+}

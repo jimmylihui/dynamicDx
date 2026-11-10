@@ -1,0 +1,199 @@
+{
+ "questions": [
+  "Do you have a history of diabetes?",
+  "Do you have a history of hypertension (high blood pressure)?",
+  "Have you ever had a stroke or mini-stroke?",
+  "Do you have a family history of neurological diseases like Parkinson's or Essential Tremor?",
+  "Is the shaking in your hands worse when you are trying to hold them still, like holding a cup or writing?",
+  "Do you have a history of thyroid problems?",
+  "Are you currently taking any medications, including asthma inhalers or antidepressants?",
+  "Do you consume a lot of caffeine (coffee, tea, energy drinks)?",
+  "Do you have numbness or tingling in your feet?",
+  "Do you have a history of excessive alcohol consumption?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Perform a neurological examination focusing on tremor characteristics (rest vs. action/postural), tone, and reflexes.",
+  "Check deep tendon reflexes in the upper limbs (biceps, triceps, brachioradialis).",
+  "Serum Vitamin B12 level",
+  "Serum TSH level",
+  "Serum protein electrophoresis"
+ ],
+ "served": [
+  "tremor at rest",
+  "postural tremor (arms outstretched)",
+  "kinetic / intention tremor (finger-nose)",
+  "tremor frequency estimate",
+  "muscle tone examination",
+  "reflexes and plantar responses",
+  "vitamin B12 with methylmalonic acid",
+  "TSH / free T4"
+ ],
+ "results": [
+  "R1 ASK Do you have a history of diabetes?; Do you have a history of hypertension (high blood pressure)?; Have you ever had a stroke or mini-stroke?; Do you have a family history of neurological diseases like Parkinson's or Essential Tremor?; Is the shaking in your hands worse when you are trying to hold them still, like holding a cup or writing? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R2 ORDER Perform a neurological examination focusing on tremor characteristics (rest vs. action/postural), tone, and reflexes. -> [['tremor at rest', 'postural tremor (arms outstretched)', 'kinetic / intention tremor (finger-nose)', 'tremor frequency estimate', 'muscle tone examination', 'reflexes and plantar responses']]",
+  "R3 ASK Do you have a history of thyroid problems?; Are you currently taking any medications, including asthma inhalers or antidepressants?; Do you consume a lot of caffeine (coffee, tea, energy drinks)? -> ['no', 'no', 'no']",
+  "R4 ORDER Check deep tendon reflexes in the upper limbs (biceps, triceps, brachioradialis). -> [['reflexes and plantar responses']]",
+  "R5 ASK Do you have numbness or tingling in your feet? -> ['yes']",
+  "R6 ASK Do you have a history of excessive alcohol consumption? -> ['no']",
+  "R7 ORDER Serum Vitamin B12 level -> [['vitamin B12 with methylmalonic acid']]",
+  "R8 ORDER Serum TSH level -> [['TSH / free T4']]",
+  "R9 ORDER Serum protein electrophoresis -> [[]]",
+  "R10 DIAGNOSIS Essential tremor -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?",
+    "Do you have a history of hypertension (high blood pressure)?",
+    "Have you ever had a stroke or mini-stroke?",
+    "Do you have a family history of neurological diseases like Parkinson's or Essential Tremor?",
+    "Is the shaking in your hands worse when you are trying to hold them still, like holding a cup or writing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Perform a neurological examination focusing on tremor characteristics (rest vs. action/postural), tone, and reflexes."
+   ],
+   "result": [
+    [
+     "tremor at rest",
+     "postural tremor (arms outstretched)",
+     "kinetic / intention tremor (finger-nose)",
+     "tremor frequency estimate",
+     "muscle tone examination",
+     "reflexes and plantar responses"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of thyroid problems?",
+    "Are you currently taking any medications, including asthma inhalers or antidepressants?",
+    "Do you consume a lot of caffeine (coffee, tea, energy drinks)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Check deep tendon reflexes in the upper limbs (biceps, triceps, brachioradialis)."
+   ],
+   "result": [
+    [
+     "reflexes and plantar responses"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have numbness or tingling in your feet?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of excessive alcohol consumption?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Serum Vitamin B12 level"
+   ],
+   "result": [
+    [
+     "vitamin B12 with methylmalonic acid"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Serum TSH level"
+   ],
+   "result": [
+    [
+     "TSH / free T4"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Serum protein electrophoresis"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Essential tremor"
+  }
+ ],
+ "dx": "Essential tremor",
+ "dx_raw": "DIAGNOSIS: Essential tremor",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.005,
+ "n_frames": 32,
+ "duration_s": 21.7,
+ "video": "mild_neuropathic_CMT_PMC11600610.mp4",
+ "line": "tremor",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 54.3
+}

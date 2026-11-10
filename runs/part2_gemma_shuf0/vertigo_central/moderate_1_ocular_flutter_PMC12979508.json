@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have double vision?",
+  "Do you have a severe headache?",
+  "Is the drooping worse at the end of the day?",
+  "Have you had a recent injury to your eye?",
+  "Do you have any weakness in other muscles?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Pupillary light reflex examination",
+  "Ice pack test",
+  "Repetitive nerve stimulation",
+  "Anti-AChR antibodies"
+ ],
+ "served": [
+  "pupil size and light reaction",
+  "repetitive nerve stimulation",
+  "anti-acetylcholine receptor antibodies"
+ ],
+ "results": [
+  "1. Pupillary light reflex examination",
+  "     pupil size and light reaction: equal and reactive",
+  "2. Ice pack test",
+  "     not performed / not available",
+  "3. Repetitive nerve stimulation",
+  "     repetitive nerve stimulation: normal",
+  "4. Anti-AChR antibodies",
+  "     anti-acetylcholine receptor antibodies: negative"
+ ],
+ "dx_raw": "DIAGNOSIS: Botulism caused by Clostridium botulinum toxin\n\nMyasthenia gravis\nMiller Fisher syndrome\nLambert-Eaton myasthenic syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Pupillary light reflex examination\n2. Ice pack test\n3. Repetitive nerve stimulation\n4. Anti-AChR antibodies",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Botulism caused by Clostridium botulinum toxin",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1778,
+   "total_tokens": 10476,
+   "cost": 0.00147432,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00147432,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00060452
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1508,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9000,
+   "completion_tokens": 1330,
+   "total_tokens": 10330,
+   "cost": 0.0013522,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013522,
+    "upstream_inference_prompt_cost": 0.0009,
+    "upstream_inference_completions_cost": 0.0004522
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1240,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9195,
+   "completion_tokens": 4415,
+   "total_tokens": 13610,
+   "cost": 0.0024206,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0024206,
+    "upstream_inference_prompt_cost": 0.0009195,
+    "upstream_inference_completions_cost": 0.0015011
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4003,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.2,
+ "video": "moderate_1_ocular_flutter_PMC12979508.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 267.3
+}

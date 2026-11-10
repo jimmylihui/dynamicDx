@@ -1,0 +1,107 @@
+{
+ "questions": [
+  "Did you have an accident?",
+  "Was it a car accident?",
+  "Did you fall?",
+  "Do you remember what happened?",
+  "Have you had surgery recently?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of heart disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "2. video-EEG monitoring of a typical event: ictal body turning preceded by head version; although the clinical onset looked focal, the EEG showed generalized beta fast activity for 0.5 s followed by a generalized 2.5-3 Hz spike-wave discharge with maximum bifrontal amplitude"
+ ],
+ "dx_raw": "DIAGNOSIS: Juvenile Myoclonic Epilepsy, genetic cause.\nIdiopathic Generalized Epilepsy\nGeneralized Tonic-Clonic Seizures\nAbsence Epilepsy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Juvenile Myoclonic Epilepsy, genetic cause.",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1904,
+   "total_tokens": 10602,
+   "cost": 0.00151716,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00151716,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00064736
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1698,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9089,
+   "completion_tokens": 2400,
+   "total_tokens": 11489,
+   "cost": 0.0017249,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0017249,
+    "upstream_inference_prompt_cost": 0.0009089,
+    "upstream_inference_completions_cost": 0.000816
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2277,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.8,
+ "video": "severe_1_generalized_PMC13101308.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 200.6
+}

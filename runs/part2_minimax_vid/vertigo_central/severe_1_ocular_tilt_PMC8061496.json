@@ -1,0 +1,163 @@
+{
+ "questions": [
+  "Have you ever had a sudden episode of blurry vision in one eye that was painful when you moved the eye?",
+  "Have you ever had an episode of numbness or tingling in your arms or legs that lasted for several days?",
+  "Have you ever had an episode of weakness in your arms or legs that lasted for several days?",
+  "Do you ever experience an electric shock-like sensation down your back or arms when you bend your neck forward?",
+  "Do your symptoms get worse in the heat or when you have a fever?",
+  "Do you have any problems with your balance or walking?",
+  "Do you have any problems with bladder control, such as urgency or frequency?",
+  "Have you ever been diagnosed with a stroke?",
+  "Are you over 50 years of age?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Test ocular convergence",
+  "MRI of the brain and brainstem with contrast",
+  "Visual evoked potentials",
+  "Lumbar puncture for cerebrospinal fluid analysis"
+ ],
+ "served": [
+  "vertical gaze and convergence",
+  "MRI brain with gadolinium",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel",
+  "lumbar puncture / CSF",
+  "CSF metagenomic sequencing"
+ ],
+ "results": [
+  "1. Test ocular convergence",
+  "     vertical gaze and convergence: normal",
+  "2. MRI of the brain and brainstem with contrast",
+  "     MRI brain with gadolinium: left rostral pontine and caudal mesencephalic infarcts without enhancement",
+  "3. Visual evoked potentials",
+  "     not performed / not available",
+  "4. Lumbar puncture for cerebrospinal fluid analysis",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal",
+  "     CSF oligoclonal bands and IgG index: normal",
+  "     CSF cytology and flow cytometry: normal",
+  "     CSF culture and viral PCR: normal",
+  "     CSF autoimmune encephalitis panel: normal",
+  "     lumbar puncture / CSF: normal cells and protein; no oligoclonal bands",
+  "     CSF metagenomic sequencing: no pathogen sequences"
+ ],
+ "dx_raw": "DIAGNOSIS: Brainstem infarction (ischemic stroke) of the left rostral pons and caudal mesencephalon causing bilateral internuclear ophthalmoplegia\n\nALTERNATIVES:\n1. Multiple sclerosis (demyelinating plaques misinterpreted as infarcts)\n2. Neurosarcoidosis\n3. Brainstem neoplasm (e.g., glioma) with non-enhancing appearance",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Test ocular convergence\n2. MRI of the brain and brainstem with contrast\n3. Visual evoked potentials\n4. Lumbar puncture for cerebrospinal fluid analysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Brainstem infarction (ischemic stroke) of the left rostral pons and caudal mesencephalon causing bilateral internuclear ophthalmoplegia",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 3032,
+   "total_tokens": 10094,
+   "cost": 0.00572964,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00572964,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.0036384
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3062,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7572,
+   "completion_tokens": 4909,
+   "total_tokens": 12481,
+   "cost": 0.00647616,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00647616,
+    "upstream_inference_prompt_cost": 0.00058536,
+    "upstream_inference_completions_cost": 0.0058908
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5047,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7870,
+   "completion_tokens": 5469,
+   "total_tokens": 13339,
+   "cost": 0.00711468,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7538,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00711468,
+    "upstream_inference_prompt_cost": 0.00055188,
+    "upstream_inference_completions_cost": 0.0065628
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6171,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 171.9
+}

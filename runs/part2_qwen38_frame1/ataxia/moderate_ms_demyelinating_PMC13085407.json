@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Are you experiencing pain in your legs or feet?",
+  "Do you have a history of diabetes?",
+  "Have you had any recent injuries to your lower body?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's gait and stance from a distance",
+  "Perform a Romberg test",
+  "Assess lower extremity muscle strength (manual muscle testing)",
+  "Check deep tendon reflexes in the lower limbs",
+  "Evaluate sensory function in the lower extremities (light touch, vibration, proprioception)"
+ ],
+ "served": [
+  "gait examination",
+  "posture and pull test",
+  "Romberg test",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)"
+ ],
+ "results": [
+  "1. Observe the patient's gait and stance from a distance",
+  "     gait examination: wide-based, unsteady gait",
+  "     posture and pull test: impaired postural stability and positive pull test",
+  "2. Perform a Romberg test",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "3. Assess lower extremity muscle strength (manual muscle testing)",
+  "     limb strength (MRC) examination: normal",
+  "4. Check deep tendon reflexes in the lower limbs",
+  "     deep tendon reflexes and plantar responses: normal",
+  "5. Evaluate sensory function in the lower extremities (light touch, vibration, proprioception)",
+  "     sensory examination (pinprick, vibration, proprioception): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Cerebellar ataxia (likely due to chronic alcohol use or other toxic-metabolic causes)\n1. Idiopathic late-onset cerebellar ataxia\n2. Normal pressure hydrocephalus",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient's gait and stance from a distance\n2. Perform a Romberg test\n3. Assess lower extremity muscle strength (manual muscle testing)\n4. Check deep tendon reflexes in the lower limbs\n5. Evaluate sensory function in the lower extremities (light touch, vibration, proprioception)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Cerebellar ataxia (likely due to chronic alcohol use or other toxic-metabolic causes)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 600,
+   "completion_tokens": 38,
+   "total_tokens": 638,
+   "cost": 0.00010786,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010786,
+    "upstream_inference_prompt_cost": 9e-05,
+    "upstream_inference_completions_cost": 1.786e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 841,
+   "completion_tokens": 69,
+   "total_tokens": 910,
+   "cost": 0.000107124,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000107124,
+    "upstream_inference_prompt_cost": 7.4694e-05,
+    "upstream_inference_completions_cost": 3.243e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1163,
+   "completion_tokens": 51,
+   "total_tokens": 1214,
+   "cost": 0.00011266,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 640,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011266,
+    "upstream_inference_prompt_cost": 8.869e-05,
+    "upstream_inference_completions_cost": 2.397e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_ms_demyelinating_PMC13085407.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 12.8
+}

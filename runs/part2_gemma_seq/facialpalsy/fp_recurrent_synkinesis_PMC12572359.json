@@ -1,0 +1,123 @@
+{
+ "questions": [
+  "Did the facial weakness start suddenly?",
+  "Do you have weakness in your right arm or leg?",
+  "Do you have difficulty speaking?",
+  "Are you able to wrinkle your forehead?",
+  "Do you have pain in your ear?",
+  "Do you have any rashes or blisters in or around your ear?",
+  "Have you had a fever recently?",
+  "Have you had a tick bite or a bullseye rash recently?",
+  "Do you have any hearing loss or ringing in your ears?",
+  "Did the weakness develop over more than a week?",
+  "Do you have any lumps in your neck or jaw area?",
+  "Do you have any redness or pain in your eyes?",
+  "Do you have any shortness of breath or cough?",
+  "Do you have any joint pain?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Did the facial weakness start suddenly?; Do you have weakness in your right arm or leg?; Do you have difficulty speaking?; Are you able to wrinkle your forehead? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Do you have pain in your ear?; Do you have any rashes or blisters in or around your ear?; Have you had a fever recently?; Have you had a tick bite or a bullseye rash recently?; Do you have any hearing loss or ringing in your ears? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Did the weakness develop over more than a week?; Do you have any lumps in your neck or jaw area?; Do you have any redness or pain in your eyes?; Do you have any shortness of breath or cough?; Do you have any joint pain? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 DIAGNOSIS Bell's palsy, idiopathic cause -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did the facial weakness start suddenly?",
+    "Do you have weakness in your right arm or leg?",
+    "Do you have difficulty speaking?",
+    "Are you able to wrinkle your forehead?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have pain in your ear?",
+    "Do you have any rashes or blisters in or around your ear?",
+    "Have you had a fever recently?",
+    "Have you had a tick bite or a bullseye rash recently?",
+    "Do you have any hearing loss or ringing in your ears?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did the weakness develop over more than a week?",
+    "Do you have any lumps in your neck or jaw area?",
+    "Do you have any redness or pain in your eyes?",
+    "Do you have any shortness of breath or cough?",
+    "Do you have any joint pain?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Bell's palsy, idiopathic cause"
+  }
+ ],
+ "dx": "Bell's palsy, idiopathic cause",
+ "dx_raw": "DIAGNOSIS: Bell's palsy, idiopathic cause",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0049,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "fp_recurrent_synkinesis_PMC12572359.mp4",
+ "line": "facialpalsy",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 176.3
+}

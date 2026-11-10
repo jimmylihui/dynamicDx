@@ -1,0 +1,135 @@
+{
+ "questions": [
+  "Is the tremor present when your hand is at rest?",
+  "Have you noticed a slowness in your movements?",
+  "Do you feel stiffness in your muscles?",
+  "Have you had any falls or balance problems?",
+  "Has your handwriting become smaller?",
+  "Have you noticed a loss of smell?",
+  "Do you have constipation?",
+  "Do you have trouble sleeping?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Thyroid function tests",
+  "Trial of propranolol"
+ ],
+ "served": [
+  "thyroid function (TSH, free T4)",
+  "TSH, free T4 and free T3"
+ ],
+ "results": [
+  "1. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH, free T4 and free T3: normal",
+  "2. Trial of propranolol",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Essential tremor\n\nDrug-induced tremor\nDystonic tremor\nCerebellar tremor",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Thyroid function tests\n2. Trial of propranolol",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Essential tremor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1930,
+   "total_tokens": 10628,
+   "cost": 0.001526,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001526,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0006562
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1834,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9050,
+   "completion_tokens": 2725,
+   "total_tokens": 11775,
+   "cost": 0.0018315,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0018315,
+    "upstream_inference_prompt_cost": 0.000905,
+    "upstream_inference_completions_cost": 0.0009265
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2537,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9207,
+   "completion_tokens": 826,
+   "total_tokens": 10033,
+   "cost": 0.00120154,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00120154,
+    "upstream_inference_prompt_cost": 0.0009207,
+    "upstream_inference_completions_cost": 0.00028084
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 808,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11093232.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 479.2
+}

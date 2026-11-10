@@ -1,0 +1,108 @@
+{
+ "questions": [
+  "Do you have any yellowing of the skin or eyes?",
+  "Have you experienced any sudden changes in your mood or personality?",
+  "Is there a family history of similar movement problems?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "Serum ceruloplasmin level",
+  "24-hour urinary copper excretion",
+  "Liver function tests",
+  "Brain MRI"
+ ],
+ "served": [
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "24-hour urinary copper",
+  "liver function",
+  "brain MRI"
+ ],
+ "results": [
+  "R1 ASK Do you have any yellowing of the skin or eyes?; Have you experienced any sudden changes in your mood or personality?; Is there a family history of similar movement problems? -> ['no', 'no', 'no']",
+  "R2 ORDER Slit-lamp examination for Kayser-Fleischer rings; Serum ceruloplasmin level; 24-hour urinary copper excretion; Liver function tests; Brain MRI -> [['slit-lamp examination for Kayser-Fleischer rings'], ['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['24-hour urinary copper', 'copper / caeruloplasmin / 24 h urinary copper'], ['liver function'], ['brain MRI']]",
+  "R3 DIAGNOSIS GM1 gangliosidosis type III (beta-galactosidase deficiency) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have any yellowing of the skin or eyes?",
+    "Have you experienced any sudden changes in your mood or personality?",
+    "Is there a family history of similar movement problems?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Slit-lamp examination for Kayser-Fleischer rings",
+    "Serum ceruloplasmin level",
+    "24-hour urinary copper excretion",
+    "Liver function tests",
+    "Brain MRI"
+   ],
+   "result": [
+    [
+     "slit-lamp examination for Kayser-Fleischer rings"
+    ],
+    [
+     "serum copper and caeruloplasmin",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "24-hour urinary copper",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "liver function"
+    ],
+    [
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "diagnosis",
+   "text": "GM1 gangliosidosis type III (beta-galactosidase deficiency)"
+  }
+ ],
+ "dx": "GM1 gangliosidosis type III (beta-galactosidase deficiency)",
+ "dx_raw": "DIAGNOSIS: GM1 gangliosidosis type III (beta-galactosidase deficiency)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 2,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0038,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_PMC12904113.mp4",
+ "line": "dystonia",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 229.8
+}

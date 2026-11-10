@@ -1,0 +1,190 @@
+{
+ "questions": [
+  "Is the pain in your leg severe?",
+  "Did this problem start suddenly, or has it been getting worse over time?",
+  "Have you had any recent surgery, trauma, or long periods of immobility (like a long flight)?",
+  "Is the affected leg (the one that looks shorter) your right leg?",
+  "Did you have a fever or feel generally unwell before this started?",
+  "Do you have any history of cancer, osteoporosis, or long-term steroid use?",
+  "Is the pain located in your left hip or groin?",
+  "Did you hear a popping sound when this started?",
+  "Is the affected leg your left leg?",
+  "Is the pain located in your left knee?",
+  "Is the pain located in your left lower leg (calf or shin)?",
+  "Is the pain located in your left hip or groin?",
+  "Is the pain located in your left thigh?",
+  "Is the pain located in your left ankle or foot?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "X-ray of the left femur"
+ ],
+ "served": [],
+ "results": [
+  "R1 ASK Is the pain in your leg severe?; Did this problem start suddenly, or has it been getting worse over time?; Have you had any recent surgery, trauma, or long periods of immobility (like a long flight)? -> ['no', 'yes', 'no']",
+  "R2 ASK Is the affected leg (the one that looks shorter) your right leg?; Did you have a fever or feel generally unwell before this started?; Do you have any history of cancer, osteoporosis, or long-term steroid use? -> ['no', 'no', 'yes']",
+  "R3 ASK Is the pain located in your left hip or groin?; Did you hear a popping sound when this started? -> ['no', 'no']",
+  "R4 ASK Is the affected leg your left leg? -> ['yes']",
+  "R5 ORDER X-ray of the left femur -> [[]]",
+  "R6 ASK Is the pain located in your left knee? -> ['no']",
+  "R7 ASK Is the pain located in your left lower leg (calf or shin)? -> ['no']",
+  "R8 ASK Is the pain located in your left hip or groin? -> ['no']",
+  "R9 ASK Is the pain located in your left thigh? -> ['no']",
+  "R10 ASK Is the pain located in your left ankle or foot? -> ['no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Pathological fracture of the left femur secondary to metastatic bone disease -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is the pain in your leg severe?",
+    "Did this problem start suddenly, or has it been getting worse over time?",
+    "Have you had any recent surgery, trauma, or long periods of immobility (like a long flight)?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Is the affected leg (the one that looks shorter) your right leg?",
+    "Did you have a fever or feel generally unwell before this started?",
+    "Do you have any history of cancer, osteoporosis, or long-term steroid use?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Is the pain located in your left hip or groin?",
+    "Did you hear a popping sound when this started?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Is the affected leg your left leg?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "X-ray of the left femur"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Is the pain located in your left knee?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Is the pain located in your left lower leg (calf or shin)?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Is the pain located in your left hip or groin?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Is the pain located in your left thigh?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Is the pain located in your left ankle or foot?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Pathological fracture of the left femur secondary to metastatic bone disease"
+  }
+ ],
+ "dx": "Pathological fracture of the left femur secondary to metastatic bone disease",
+ "dx_raw": "DIAGNOSIS: Pathological fracture of the left femur secondary to metastatic bone disease",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "cost_usd": 0.0023,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 50.7
+}

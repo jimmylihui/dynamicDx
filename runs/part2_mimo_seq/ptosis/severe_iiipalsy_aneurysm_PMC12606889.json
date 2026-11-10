@@ -1,0 +1,182 @@
+{
+ "questions": [
+  "When did you first notice the difference in your pupil size?",
+  "Have you experienced any double vision?",
+  "Have you had any pain in or around your eye?",
+  "Have you noticed any drooping of your left eyelid?",
+  "Are you able to look down and read something, or look up at something on a high shelf without difficulty?",
+  "Have you noticed if the pupil difference becomes less noticeable when you focus on something close to you?",
+  "Did the pupil size difference and eye movement difficulty start suddenly or gradually over time?",
+  "Have you experienced any headaches, especially in the back of your head or around the eyes?",
+  "Have you had any tremors, stiffness, or problems with balance and walking?",
+  "Have you ever been treated for syphilis in the past?",
+  "Do you have any history of trauma to the head or eyes?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Magnetic resonance angiography (MRA) of the intracranial vessels, focusing on the circle of Willis and posterior communicating arteries, to evaluate for aneurysm.",
+  "Formal pupillometry assessment - measure pupil diameters in ambient light, test for relative afferent pupillary defect (RAPD), and document the near response in detail.",
+  "Assessment of ptosis - measure palpebral fissure heights in primary gaze and assess for any subtle eyelid retraction or weakness.",
+  "MRI brain with dedicated thin-cut sequences through the midbrain (axial and sagittal T2-weighted, FLAIR, and diffusion-weighted imaging) to evaluate for structural lesion or infarction in the mesencephalic tegmentum.",
+  "Blood tests: complete blood count, erythrocyte sedimentation rate (ESR), C-reactive protein (CRP), serum angiotensin-converting enzyme (ACE) level, and antinuclear antibody (ANA).",
+  "Detailed examination of the tonic pupil - specifically assess for tonic near response (sustained constriction during accommodation) and look for vermiform/segmental pupillary oscillations under slit lamp examination."
+ ],
+ "served": [
+  "CT / MR angiography (circle of Willis)",
+  "pupil examination (size, light reaction)",
+  "lid position and measurement (MRD1 both sides)",
+  "MRI diffusion-weighted sequences",
+  "ESR / CRP",
+  "full blood count",
+  "antinuclear antibodies and anti-dsDNA"
+ ],
+ "results": [
+  "R1 ASK When did you first notice the difference in your pupil size?; Have you experienced any double vision?; Have you had any pain in or around your eye?; Have you noticed any drooping of your left eyelid? -> ['yes', 'no', 'no', 'no']",
+  "R2 ASK Are you able to look down and read something, or look up at something on a high shelf without difficulty?; Have you noticed if the pupil difference becomes less noticeable when you focus on something close to you? -> ['no', 'no']",
+  "R3 ASK Did the pupil size difference and eye movement difficulty start suddenly or gradually over time?; Have you experienced any headaches, especially in the back of your head or around the eyes?; Have you had any tremors, stiffness, or problems with balance and walking? -> ['no', 'no', 'no']",
+  "R4 ORDER Magnetic resonance angiography (MRA) of the intracranial vessels, focusing on the circle of Willis and posterior communicating arteries, to evaluate for aneurysm.; Formal pupillometry assessment - measure pupil diameters in ambient light, test for relative afferent pupillary defect (RAPD), and document the near response in detail.; Assessment of ptosis - measure palpebral fissure heights in primary gaze and assess for any subtle eyelid retraction or weakness. -> [['CT / MR angiography (circle of Willis)'], ['pupil examination (size, light reaction)'], ['lid position and measurement (MRD1 both sides)']]",
+  "R5 ORDER MRI brain with dedicated thin-cut sequences through the midbrain (axial and sagittal T2-weighted, FLAIR, and diffusion-weighted imaging) to evaluate for structural lesion or infarction in the mesencephalic tegmentum.; Blood tests: complete blood count, erythrocyte sedimentation rate (ESR), C-reactive protein (CRP), serum angiotensin-converting enzyme (ACE) level, and antinuclear antibody (ANA).; Detailed examination of the tonic pupil - specifically assess for tonic near response (sustained constriction during accommodation) and look for vermiform/segmental pupillary oscillations under slit lamp examination. -> [['MRI diffusion-weighted sequences'], ['ESR / CRP', 'full blood count', 'antinuclear antibodies and anti-dsDNA'], ['pupil examination (size, light reaction)']]",
+  "R6 ASK Have you ever been treated for syphilis in the past?; Do you have any history of trauma to the head or eyes? -> ['no', 'no']",
+  "R7 DIAGNOSIS Parinaud syndrome (dorsal midbrain syndrome) with right tonic pupil, due to a structural lesion in the dorsal midbrain - recommend urgent formal MRI brain report review (T2/FLAIR sequences through midbrain not reported) to identify pineal region mass, aqueductal stenosis, or mesencephalic infarction as the underlying cause. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "When did you first notice the difference in your pupil size?",
+    "Have you experienced any double vision?",
+    "Have you had any pain in or around your eye?",
+    "Have you noticed any drooping of your left eyelid?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Are you able to look down and read something, or look up at something on a high shelf without difficulty?",
+    "Have you noticed if the pupil difference becomes less noticeable when you focus on something close to you?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did the pupil size difference and eye movement difficulty start suddenly or gradually over time?",
+    "Have you experienced any headaches, especially in the back of your head or around the eyes?",
+    "Have you had any tremors, stiffness, or problems with balance and walking?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Magnetic resonance angiography (MRA) of the intracranial vessels, focusing on the circle of Willis and posterior communicating arteries, to evaluate for aneurysm.",
+    "Formal pupillometry assessment - measure pupil diameters in ambient light, test for relative afferent pupillary defect (RAPD), and document the near response in detail.",
+    "Assessment of ptosis - measure palpebral fissure heights in primary gaze and assess for any subtle eyelid retraction or weakness."
+   ],
+   "result": [
+    [
+     "CT / MR angiography (circle of Willis)"
+    ],
+    [
+     "pupil examination (size, light reaction)"
+    ],
+    [
+     "lid position and measurement (MRD1 both sides)"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "MRI brain with dedicated thin-cut sequences through the midbrain (axial and sagittal T2-weighted, FLAIR, and diffusion-weighted imaging) to evaluate for structural lesion or infarction in the mesencephalic tegmentum.",
+    "Blood tests: complete blood count, erythrocyte sedimentation rate (ESR), C-reactive protein (CRP), serum angiotensin-converting enzyme (ACE) level, and antinuclear antibody (ANA).",
+    "Detailed examination of the tonic pupil - specifically assess for tonic near response (sustained constriction during accommodation) and look for vermiform/segmental pupillary oscillations under slit lamp examination."
+   ],
+   "result": [
+    [
+     "MRI diffusion-weighted sequences"
+    ],
+    [
+     "ESR / CRP",
+     "full blood count",
+     "antinuclear antibodies and anti-dsDNA"
+    ],
+    [
+     "pupil examination (size, light reaction)"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Have you ever been treated for syphilis in the past?",
+    "Do you have any history of trauma to the head or eyes?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Parinaud syndrome (dorsal midbrain syndrome) with right tonic pupil, due to a structural lesion in the dorsal midbrain - recommend urgent formal MRI brain report review (T2/FLAIR sequences through midbrain not reported) to identify pineal region mass, aqueductal stenosis, or mesencephalic infarction as the underlying cause."
+  }
+ ],
+ "dx": "Parinaud syndrome (dorsal midbrain syndrome) with right tonic pupil, due to a structural lesion in the dorsal midbrain - recommend urgent formal MRI brain report review (T2/FLAIR sequences through midbrain not reported) to identify pineal region mass, aqueductal stenosis, or mesencephalic infarction as the underlying cause.",
+ "dx_raw": "DIAGNOSIS: Parinaud syndrome (dorsal midbrain syndrome) with right tonic pupil, due to a structural lesion in the dorsal midbrain - recommend urgent formal MRI brain report review (T2/FLAIR sequences through midbrain not reported) to identify pineal region mass, aqueductal stenosis, or mesencephalic infarction as the underlying cause.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "CT / MR angiography (circle of Willis)",
+  "pupil examination (size, light reaction)"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.003,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_iiipalsy_aneurysm_PMC12606889.mp4",
+ "line": "ptosis",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 207.1
+}

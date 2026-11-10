@@ -1,0 +1,125 @@
+{
+ "questions": [
+  "Did the child recently sustain a head injury?",
+  "Did the child have a witnessed seizure with rhythmic jerking of all four limbs before this video?",
+  "Was there loss of consciousness during the episode?",
+  "Did the child have fever before the episode?",
+  "Has the child had similar episodes before?",
+  "During these episodes, can the child respond appropriately to spoken questions or commands?",
+  "Does the child remember what happened after the episode ends?",
+  "Can the episodes be stopped by distraction or gentle reassurance?",
+  "Are the episodes triggered by emotional stress, being observed, or interactions with caregivers?",
+  "Is there confusion or unusual sleepiness for more than 10 minutes afterward?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Prolonged video-electroencephalography (EEG) monitoring during a typical episode, including hyperventilation and photic stimulation.",
+  "Bedside capillary blood glucose during an episode."
+ ],
+ "served": [
+  "video-EEG monitoring of a typical event",
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium"
+ ],
+ "results": [
+  "R1 ASK Did the child recently sustain a head injury?; Did the child have a witnessed seizure with rhythmic jerking of all four limbs before this video?; Was there loss of consciousness during the episode?; Did the child have fever before the episode?; Has the child had similar episodes before? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R2 ASK During these episodes, can the child respond appropriately to spoken questions or commands?; Does the child remember what happened after the episode ends?; Can the episodes be stopped by distraction or gentle reassurance?; Are the episodes triggered by emotional stress, being observed, or interactions with caregivers?; Is there confusion or unusual sleepiness for more than 10 minutes afterward? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Prolonged video-electroencephalography (EEG) monitoring during a typical episode, including hyperventilation and photic stimulation.; Bedside capillary blood glucose during an episode. -> [['video-EEG monitoring of a typical event'], ['blood glucose and HbA1c', 'glucose, calcium, magnesium, sodium']]",
+  "R4 DIAGNOSIS Jeavons syndrome (epilepsy with eyelid myoclonia and absences), an idiopathic/genetic generalized epilepsy syndrome. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did the child recently sustain a head injury?",
+    "Did the child have a witnessed seizure with rhythmic jerking of all four limbs before this video?",
+    "Was there loss of consciousness during the episode?",
+    "Did the child have fever before the episode?",
+    "Has the child had similar episodes before?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "During these episodes, can the child respond appropriately to spoken questions or commands?",
+    "Does the child remember what happened after the episode ends?",
+    "Can the episodes be stopped by distraction or gentle reassurance?",
+    "Are the episodes triggered by emotional stress, being observed, or interactions with caregivers?",
+    "Is there confusion or unusual sleepiness for more than 10 minutes afterward?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Prolonged video-electroencephalography (EEG) monitoring during a typical episode, including hyperventilation and photic stimulation.",
+    "Bedside capillary blood glucose during an episode."
+   ],
+   "result": [
+    [
+     "video-EEG monitoring of a typical event"
+    ],
+    [
+     "blood glucose and HbA1c",
+     "glucose, calcium, magnesium, sodium"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Jeavons syndrome (epilepsy with eyelid myoclonia and absences), an idiopathic/genetic generalized epilepsy syndrome."
+  }
+ ],
+ "dx": "Jeavons syndrome (epilepsy with eyelid myoclonia and absences), an idiopathic/genetic generalized epilepsy syndrome.",
+ "dx_raw": "DIAGNOSIS: Jeavons syndrome (epilepsy with eyelid myoclonia and absences), an idiopathic/genetic generalized epilepsy syndrome.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "cost_usd": 0.004,
+ "n_frames": 32,
+ "duration_s": 15.6,
+ "video": "mild_3_neonatal_PMC12440885.mp4",
+ "line": "paroxysmal",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 29.0
+}

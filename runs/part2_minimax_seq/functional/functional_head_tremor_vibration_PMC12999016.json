@@ -1,0 +1,239 @@
+{
+ "questions": [
+  "Have you noticed any shaking or tremor in your hands or head?",
+  "Do you have any difficulty with your balance or walking?",
+  "Have you been taking any medications recently, especially for nausea or psychiatric conditions?",
+  "Does the tremor occur when your hands are at rest, sitting still?",
+  "Does the tremor get worse when you try to use your hands, like holding a cup?",
+  "Has anyone in your family had a similar tremor?",
+  "Does the tremor occur when you hold your arms out in front of you?",
+  "Does the tremor get worse as you reach the end of a movement, like touching your finger to your nose?",
+  "Have you noticed any changes in your handwriting?",
+  "Does the tremor only happen in specific situations, like when you are anxious or in public?",
+  "Does the tremor improve after you drink a small amount of alcohol?",
+  "Does the tremor affect your voice or head?",
+  "Is the head tremor a \"yes-yes\" nodding motion?",
+  "Is the head tremor a \"no-no\" side-to-side motion?",
+  "Does the tremor occur when you are lying down completely relaxed?",
+  "Does the tremor worsen when you turn your head to the side?",
+  "Can you voluntarily stop the tremor if you concentrate on it?",
+  "Does the tremor disappear completely when you lean your head back against a headrest?",
+  "Do you have any neck pain or abnormal posture of your neck?",
+  "Does the tremor get worse when you write or do fine motor tasks with your hands?",
+  "Have you noticed any twisting or tilting of your neck?",
+  "Does the tremor only occur when you are standing or walking?",
+  "Does the tremor disappear when you sit down or lie down?",
+  "Does the tremor involve your legs?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "yes",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Trial of holding the patient's head still to see if the tremor is abolished by positional support (clinical test for dystonic tremor).",
+  "Observe the tremor characteristics during sustained posture (arms extended) and during action (finger-to-nose) to differentiate between essential, dystonic, and functional tremors."
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "posture and pull test"
+ ],
+ "results": [
+  "R1 ASK Have you noticed any shaking or tremor in your hands or head?; Do you have any difficulty with your balance or walking?; Have you been taking any medications recently, especially for nausea or psychiatric conditions? -> ['yes', 'no', 'no']",
+  "R2 ASK Does the tremor occur when your hands are at rest, sitting still?; Does the tremor get worse when you try to use your hands, like holding a cup?; Has anyone in your family had a similar tremor? -> ['no', 'no', 'no']",
+  "R3 ASK Does the tremor occur when you hold your arms out in front of you?; Does the tremor get worse as you reach the end of a movement, like touching your finger to your nose?; Have you noticed any changes in your handwriting? -> ['no', 'no', 'no']",
+  "R4 ASK Does the tremor only happen in specific situations, like when you are anxious or in public?; Does the tremor improve after you drink a small amount of alcohol?; Does the tremor affect your voice or head? -> ['no', 'no', 'yes']",
+  "R5 ASK Is the head tremor a \"yes-yes\" nodding motion?; Is the head tremor a \"no-no\" side-to-side motion?; Does the tremor occur when you are lying down completely relaxed? -> ['no', 'yes', 'no']",
+  "R6 ASK Does the tremor worsen when you turn your head to the side?; Can you voluntarily stop the tremor if you concentrate on it?; Does the tremor disappear completely when you lean your head back against a headrest? -> ['no', 'no', 'no']",
+  "R7 ORDER Trial of holding the patient's head still to see if the tremor is abolished by positional support (clinical test for dystonic tremor). -> [[]]",
+  "R8 ASK Do you have any neck pain or abnormal posture of your neck?; Does the tremor get worse when you write or do fine motor tasks with your hands?; Have you noticed any twisting or tilting of your neck? -> ['no', 'no', 'no']",
+  "R9 ORDER Observe the tremor characteristics during sustained posture (arms extended) and during action (finger-to-nose) to differentiate between essential, dystonic, and functional tremors. -> [['coordination examination (limb and truncal)', 'posture and pull test']]",
+  "R10 ASK Does the tremor only occur when you are standing or walking?; Does the tremor disappear when you sit down or lie down?; Does the tremor involve your legs? -> ['no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Functional (psychogenic) head tremor. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any shaking or tremor in your hands or head?",
+    "Do you have any difficulty with your balance or walking?",
+    "Have you been taking any medications recently, especially for nausea or psychiatric conditions?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Does the tremor occur when your hands are at rest, sitting still?",
+    "Does the tremor get worse when you try to use your hands, like holding a cup?",
+    "Has anyone in your family had a similar tremor?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Does the tremor occur when you hold your arms out in front of you?",
+    "Does the tremor get worse as you reach the end of a movement, like touching your finger to your nose?",
+    "Have you noticed any changes in your handwriting?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Does the tremor only happen in specific situations, like when you are anxious or in public?",
+    "Does the tremor improve after you drink a small amount of alcohol?",
+    "Does the tremor affect your voice or head?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Is the head tremor a \"yes-yes\" nodding motion?",
+    "Is the head tremor a \"no-no\" side-to-side motion?",
+    "Does the tremor occur when you are lying down completely relaxed?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Does the tremor worsen when you turn your head to the side?",
+    "Can you voluntarily stop the tremor if you concentrate on it?",
+    "Does the tremor disappear completely when you lean your head back against a headrest?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Trial of holding the patient's head still to see if the tremor is abolished by positional support (clinical test for dystonic tremor)."
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have any neck pain or abnormal posture of your neck?",
+    "Does the tremor get worse when you write or do fine motor tasks with your hands?",
+    "Have you noticed any twisting or tilting of your neck?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Observe the tremor characteristics during sustained posture (arms extended) and during action (finger-to-nose) to differentiate between essential, dystonic, and functional tremors."
+   ],
+   "result": [
+    [
+     "coordination examination (limb and truncal)",
+     "posture and pull test"
+    ]
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Does the tremor only occur when you are standing or walking?",
+    "Does the tremor disappear when you sit down or lie down?",
+    "Does the tremor involve your legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Functional (psychogenic) head tremor."
+  }
+ ],
+ "dx": "Functional (psychogenic) head tremor.",
+ "dx_raw": "DIAGNOSIS: Functional (psychogenic) head tremor.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0114,
+ "n_frames": 32,
+ "duration_s": 22.9,
+ "video": "functional_head_tremor_vibration_PMC12999016.mp4",
+ "line": "functional",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 79.3
+}

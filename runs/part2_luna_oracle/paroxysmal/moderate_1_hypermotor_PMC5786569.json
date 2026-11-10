@@ -1,0 +1,128 @@
+{
+ "questions": [
+  "Did this event occur while you were asleep or only partly awake?",
+  "Do you remember what happened during the event?",
+  "Did you leave the bed or perform complex actions without being fully aware?",
+  "Were you confused or difficult to awaken during or immediately after the event?",
+  "Did anyone observe rhythmic jerking, stiffening, staring, or unresponsiveness?",
+  "Did you bite your tongue or lose bladder or bowel control?",
+  "Did you injure yourself or anyone else?",
+  "Have similar episodes happened before?",
+  "Do these episodes usually occur during the first few hours of sleep?",
+  "Have you recently had severe sleep deprivation, psychological stress, fever, or illness?",
+  "Do you use alcohol, recreational drugs, sleep aids, or other medications that could affect sleep?",
+  "Have you ever had seizures, fainting episodes, head injury, or another neurological disorder?",
+  "Do you snore loudly, stop breathing, or gasp during sleep?",
+  "Have you recently experienced hallucinations, unusual beliefs, or abnormal behavior while fully awake?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "duration of the events",
+  "time of day / relation to sleep",
+  "head injury history",
+  "advanced diffusion imaging / tractography",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. duration of the events: about 15 seconds",
+  "2. time of day / relation to sleep: predominantly out of sleep at night",
+  "3. head injury history: mild repetitive non-penetrating traumatic brain injury, none requiring hospitalisation",
+  "4. advanced diffusion imaging / tractography: multishell diffusion MRI showed disrupted white matter tracts",
+  "5. video-EEG monitoring of a typical event: the diagnosis was made on SEMIOLOGY from clinically documented video-EEG; there was NO interpretable ictal EEG correlate because of movement artefact"
+ ],
+ "dx_raw": "DIAGNOSIS: Sleep-related hypermotor epilepsy (formerly nocturnal frontal-lobe epilepsy), likely post-traumatic from repetitive mild traumatic brain injury with disrupted white-matter tracts.\n\nAlternative: NREM parasomnia, such as confusional arousals or sleepwalking.\n\nAlternative: REM sleep behavior disorder.\n\nAlternative: Sleep-related dissociative (psychogenic nonepileptic) episodes.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Sleep-related hypermotor epilepsy (formerly nocturnal frontal-lobe epilepsy), likely post-traumatic from repetitive mild traumatic brain injury with disrupted white-matter tracts.",
+ "decisive_served": [
+  "duration of the events",
+  "time of day / relation to sleep",
+  "head injury history",
+  "advanced diffusion imaging / tractography",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8748,
+   "completion_tokens": 459,
+   "total_tokens": 9207,
+   "cost": 0.00036315,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8745,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00036315,
+    "upstream_inference_prompt_cost": 8.775e-05,
+    "upstream_inference_completions_cost": 0.0002754
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 221,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9478,
+   "completion_tokens": 573,
+   "total_tokens": 10051,
+   "cost": 0.0005228,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 8745,
+    "cache_write_tokens": 730,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005228,
+    "upstream_inference_prompt_cost": 0.000179,
+    "upstream_inference_completions_cost": 0.0003438
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 488,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 24.4
+}

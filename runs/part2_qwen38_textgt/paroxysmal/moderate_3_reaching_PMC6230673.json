@@ -1,0 +1,150 @@
+{
+ "questions": [
+  "Is the movement accompanied by a loss of consciousness?",
+  "Does the patient have a history of epilepsy?",
+  "Is the movement preceded by an aura or warning sensation?",
+  "Does the patient experience confusion or amnesia after the episode?",
+  "Is the arm movement rhythmic and repetitive?",
+  "Has the patient had a recent head injury?",
+  "Is the patient currently taking any medications for seizures?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "yes",
+  "6": "yes",
+  "7": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Urgent non-contrast CT head",
+  "MRI brain with epilepsy protocol",
+  "Video EEG monitoring"
+ ],
+ "served": [
+  "CT head",
+  "brain MRI",
+  "brain MRI",
+  "advanced diffusion imaging / tractography",
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "video-polygraphy (EEG with EMG)"
+ ],
+ "results": [
+  "1. Urgent non-contrast CT head",
+  "     CT head: left frontal post-traumatic gliosis and encephalomalacia",
+  "2. MRI brain with epilepsy protocol",
+  "     brain MRI: post-traumatic encephalomalacia",
+  "     brain MRI: post-traumatic encephalomalacia",
+  "     advanced diffusion imaging / tractography: not performed",
+  "3. Video EEG monitoring",
+  "     interictal EEG: repetitive sharp waves predominantly in the LEFT FRONTAL area during sleep, with pseudocontinuous 3 Hz slow waves in the same region on awakening",
+  "     video-EEG monitoring of a typical event: no ictal correlate captured",
+  "     video-polygraphy (EEG with EMG): not performed"
+ ],
+ "dx_raw": "DIAGNOSIS: Focal aware seizure (simple partial seizure) secondary to post-traumatic epilepsy\nAlternative 1: Psychogenic non-epileptic seizure (PNES)\nAlternative 2: Frontal lobe epilepsy with rapid secondary generalization or subtle awareness loss",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Urgent non-contrast CT head\n2. MRI brain with epilepsy protocol\n3. Video EEG monitoring",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Focal aware seizure (simple partial seizure) secondary to post-traumatic epilepsy",
+ "decisive_served": [
+  "interictal EEG"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 182,
+   "completion_tokens": 90,
+   "total_tokens": 272,
+   "cost": 6.96e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.96e-05,
+    "upstream_inference_prompt_cost": 2.73e-05,
+    "upstream_inference_completions_cost": 4.23e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 545,
+   "completion_tokens": 23,
+   "total_tokens": 568,
+   "cost": 9.256e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.256e-05,
+    "upstream_inference_prompt_cost": 8.175e-05,
+    "upstream_inference_completions_cost": 1.081e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 816,
+   "completion_tokens": 57,
+   "total_tokens": 873,
+   "cost": 8.0582e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.0582e-05,
+    "upstream_inference_prompt_cost": 5.3792e-05,
+    "upstream_inference_completions_cost": 2.679e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 10.9
+}

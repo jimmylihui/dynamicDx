@@ -1,0 +1,190 @@
+{
+ "questions": [
+  "Have you noticed these involuntary eye movements for more than a few days?",
+  "Do you experience dizziness or vertigo (a spinning sensation)?",
+  "Have you had any recent hearing loss or ringing in the ears (tinnitus)?",
+  "Do you have a history of multiple sclerosis or other neurological conditions?",
+  "Have you recently consumed alcohol or used sedative medications?",
+  "Have you experienced any weakness, numbness, or difficulty with speech or swallowing?",
+  "Have you had a recent cold, flu, or upper respiratory infection?",
+  "Is the nystagmus (eye movement) constant, or does it come and go?",
+  "Does the nystagmus change direction when you look to the left versus the right?",
+  "Have you noticed any double vision?",
+  "Do you experience nausea or vomiting along with the vertigo?",
+  "Does the nystagmus worsen or change when you lie down or turn your head to a particular side?",
+  "Have you had any recent illness, even a mild one, in the past few weeks?",
+  "Is your hearing completely normal in both ears?",
+  "Do you have any history of migraine headaches?",
+  "Do you have a history of high blood pressure, diabetes, high cholesterol, or smoking?",
+  "Have you had any previous strokes or TIAs?",
+  "Do you have atrial fibrillation or any heart rhythm problems?",
+  "Have you had any recent neck trauma or manipulation?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI brain with diffusion-weighted imaging (DWI) and gadolinium contrast",
+  "Bedside examination: test of skew deviation (alternate cover test) and head impulse test",
+  "Fundoscopy to look for papilledema"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI brain with DWI",
+  "skew deviation / alternating cover test",
+  "head impulse test",
+  "fundoscopy"
+ ],
+ "results": [
+  "R1 ASK Have you noticed these involuntary eye movements for more than a few days?; Do you experience dizziness or vertigo (a spinning sensation)?; Have you had any recent hearing loss or ringing in the ears (tinnitus)?; Do you have a history of multiple sclerosis or other neurological conditions?; Have you recently consumed alcohol or used sedative medications? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R2 ASK Have you experienced any weakness, numbness, or difficulty with speech or swallowing?; Have you had a recent cold, flu, or upper respiratory infection?; Is the nystagmus (eye movement) constant, or does it come and go?; Does the nystagmus change direction when you look to the left versus the right?; Have you noticed any double vision? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R3 ASK Do you experience nausea or vomiting along with the vertigo?; Does the nystagmus worsen or change when you lie down or turn your head to a particular side?; Have you had any recent illness, even a mild one, in the past few weeks?; Is your hearing completely normal in both ears?; Do you have any history of migraine headaches? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ORDER MRI brain with diffusion-weighted imaging (DWI) and gadolinium contrast; Bedside examination: test of skew deviation (alternate cover test) and head impulse test; Fundoscopy to look for papilledema -> [['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI brain with DWI'], ['skew deviation / alternating cover test', 'head impulse test'], ['fundoscopy']]",
+  "R5 ASK Do you have a history of high blood pressure, diabetes, high cholesterol, or smoking?; Have you had any previous strokes or TIAs?; Do you have atrial fibrillation or any heart rhythm problems?; Have you had any recent neck trauma or manipulation? -> ['no', 'no', 'no', 'no']",
+  "R6 DIAGNOSIS Acute brainstem stroke - left paramedian pontine and midbrain infarction due to occlusion of paramedian perforating branches of the basilar artery -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you noticed these involuntary eye movements for more than a few days?",
+    "Do you experience dizziness or vertigo (a spinning sensation)?",
+    "Have you had any recent hearing loss or ringing in the ears (tinnitus)?",
+    "Do you have a history of multiple sclerosis or other neurological conditions?",
+    "Have you recently consumed alcohol or used sedative medications?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you experienced any weakness, numbness, or difficulty with speech or swallowing?",
+    "Have you had a recent cold, flu, or upper respiratory infection?",
+    "Is the nystagmus (eye movement) constant, or does it come and go?",
+    "Does the nystagmus change direction when you look to the left versus the right?",
+    "Have you noticed any double vision?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you experience nausea or vomiting along with the vertigo?",
+    "Does the nystagmus worsen or change when you lie down or turn your head to a particular side?",
+    "Have you had any recent illness, even a mild one, in the past few weeks?",
+    "Is your hearing completely normal in both ears?",
+    "Do you have any history of migraine headaches?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "MRI brain with diffusion-weighted imaging (DWI) and gadolinium contrast",
+    "Bedside examination: test of skew deviation (alternate cover test) and head impulse test",
+    "Fundoscopy to look for papilledema"
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium",
+     "MRI diffusion-weighted sequences",
+     "MRI brain with DWI"
+    ],
+    [
+     "skew deviation / alternating cover test",
+     "head impulse test"
+    ],
+    [
+     "fundoscopy"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of high blood pressure, diabetes, high cholesterol, or smoking?",
+    "Have you had any previous strokes or TIAs?",
+    "Do you have atrial fibrillation or any heart rhythm problems?",
+    "Have you had any recent neck trauma or manipulation?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Acute brainstem stroke - left paramedian pontine and midbrain infarction due to occlusion of paramedian perforating branches of the basilar artery"
+  }
+ ],
+ "dx": "Acute brainstem stroke - left paramedian pontine and midbrain infarction due to occlusion of paramedian perforating branches of the basilar artery",
+ "dx_raw": "DIAGNOSIS: Acute brainstem stroke - left paramedian pontine and midbrain infarction due to occlusion of paramedian perforating branches of the basilar artery",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "MRI brain with DWI",
+  "skew deviation / alternating cover test"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0262,
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 48.7
+}

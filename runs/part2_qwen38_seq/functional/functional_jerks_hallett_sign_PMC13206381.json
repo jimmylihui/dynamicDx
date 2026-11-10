@@ -1,0 +1,123 @@
+{
+ "questions": [
+  "Do you have a history of diabetes?",
+  "Do you experience numbness or tingling in your feet?",
+  "Do you have difficulty walking or feel unsteady on your feet?",
+  "Do you have a history of heavy alcohol use?",
+  "Have you had any recent viral illnesses or infections?",
+  "Do you have a history of migraines?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside neurological examination (specifically testing deep tendon reflexes)",
+  "Bedside neurological examination (specifically testing extraocular movements and pupillary response)"
+ ],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "cranial nerve examination"
+ ],
+ "results": [
+  "R1 ASK Do you have a history of diabetes?; Do you experience numbness or tingling in your feet?; Do you have difficulty walking or feel unsteady on your feet? -> ['no', 'no', 'no']",
+  "R2 ASK Do you have a history of heavy alcohol use?; Have you had any recent viral illnesses or infections? -> ['no', 'no']",
+  "R3 ORDER Bedside neurological examination (specifically testing deep tendon reflexes) -> [['deep tendon reflexes and plantar responses']]",
+  "R4 ASK Do you have a history of migraines? -> ['no']",
+  "R5 ORDER Bedside neurological examination (specifically testing extraocular movements and pupillary response) -> [['cranial nerve examination']]",
+  "R6 DIAGNOSIS Normal neurological examination -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?",
+    "Do you experience numbness or tingling in your feet?",
+    "Do you have difficulty walking or feel unsteady on your feet?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of heavy alcohol use?",
+    "Have you had any recent viral illnesses or infections?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Bedside neurological examination (specifically testing deep tendon reflexes)"
+   ],
+   "result": [
+    [
+     "deep tendon reflexes and plantar responses"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of migraines?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Bedside neurological examination (specifically testing extraocular movements and pupillary response)"
+   ],
+   "result": [
+    [
+     "cranial nerve examination"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Normal neurological examination"
+  }
+ ],
+ "dx": "Normal neurological examination",
+ "dx_raw": "DIAGNOSIS: Normal neurological examination",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0016,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 27.4
+}

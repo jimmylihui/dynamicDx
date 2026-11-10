@@ -1,0 +1,161 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Did this start suddenly?",
+  "Do you have pain in your eye or head?",
+  "Do you have a fever?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Have you had a recent head injury?",
+  "Do you have a history of thyroid disease?",
+  "Do you have any other weakness or numbness in your body?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI of the brain and spinal cord with gadolinium",
+  "Lumbar puncture for CSF analysis",
+  "Visual evoked potentials"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI cervical and thoracic spine",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. MRI of the brain and spinal cord with gadolinium",
+  "     MRI brain with gadolinium: left rostral pontine and caudal mesencephalic infarcts without enhancement",
+  "     MRI cervical and thoracic spine: normal",
+  "2. Lumbar puncture for CSF analysis",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal",
+  "     CSF oligoclonal bands and IgG index: normal",
+  "     CSF cytology and flow cytometry: normal",
+  "     CSF culture and viral PCR: normal",
+  "     CSF autoimmune encephalitis panel: normal",
+  "     lumbar puncture / CSF: normal cells and protein; no oligoclonal bands",
+  "3. Visual evoked potentials",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Ischemic stroke of the left rostral pons and caudal midbrain due to basilar artery branch occlusion.\nAlternatives:\n1. Left 6th nerve nucleus infarct\n2. Cardioembolic stroke\n3. Lacunar infarct",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain and spinal cord with gadolinium\n2. Lumbar puncture for CSF analysis\n3. Visual evoked potentials",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Ischemic stroke of the left rostral pons and caudal midbrain due to basilar artery branch occlusion.",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8697,
+   "completion_tokens": 4296,
+   "total_tokens": 12993,
+   "cost": 0.00233034,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00233034,
+    "upstream_inference_prompt_cost": 0.0008697,
+    "upstream_inference_completions_cost": 0.00146064
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3953,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9069,
+   "completion_tokens": 1269,
+   "total_tokens": 10338,
+   "cost": 0.00133836,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00133836,
+    "upstream_inference_prompt_cost": 0.0009069,
+    "upstream_inference_completions_cost": 0.00043146
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1125,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9341,
+   "completion_tokens": 4821,
+   "total_tokens": 14162,
+   "cost": 0.00257324,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00257324,
+    "upstream_inference_prompt_cost": 0.0009341,
+    "upstream_inference_completions_cost": 0.00163914
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4303,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 667.2
+}

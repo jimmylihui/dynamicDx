@@ -1,0 +1,111 @@
+{
+ "questions": [
+  "Do you have a history of seizures?",
+  "Do you have a family history of similar movement disorders?",
+  "Do you have a history of Parkinson's disease?",
+  "Do you have a history of alcohol abuse?",
+  "Do you have any cognitive or memory problems?",
+  "Do you have any mood or personality changes?",
+  "Do you have a history of head trauma?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "genetic testing (targeted panel or exome)",
+  "skin biopsy"
+ ],
+ "results": [
+  "1. cognitive screen (MMSE / MoCA / FAB): MMSE 23/30 and Frontal Assessment Battery 9/18 - frontal/executive dysfunction",
+  "2. copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease",
+  "3. genetic testing (targeted panel or exome): NOTCH2NLC GGC repeat expansion - genetically confirmed NIID",
+  "4. skin biopsy: eosinophilic, p62- and ubiquitin-POSITIVE intranuclear inclusions in adipocytes, sweat gland cells and fibroblasts - diagnostic of NIID"
+ ],
+ "dx_raw": "DIAGNOSIS: Neuronal Intranuclear Inclusion Disease (NIID) caused by NOTCH2NLC GGC repeat expansion\n\nAlternative diagnoses:\n1. Frontotemporal dementia\n2. Corticobasal degeneration\n3. Huntington's disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Neuronal Intranuclear Inclusion Disease (NIID) caused by NOTCH2NLC GGC repeat expansion",
+ "decisive_served": [
+  "cognitive screen (MMSE / MoCA / FAB)",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "genetic testing (targeted panel or exome)",
+  "skin biopsy"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8346,
+   "completion_tokens": 3991,
+   "total_tokens": 12337,
+   "cost": 0.00219154,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00219154,
+    "upstream_inference_prompt_cost": 0.0008346,
+    "upstream_inference_completions_cost": 0.00135694
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3923,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 8767,
+   "completion_tokens": 520,
+   "total_tokens": 9287,
+   "cost": 0.0010535,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010535,
+    "upstream_inference_prompt_cost": 0.0008767,
+    "upstream_inference_completions_cost": 0.0001768
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 480,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 403.3
+}

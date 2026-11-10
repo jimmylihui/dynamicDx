@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Did you attempt to end your own life recently?",
+  "Do you hear voices that other people cannot hear?",
+  "Do you believe that other people are plotting against you or trying to harm you?",
+  "Do you feel like you have special powers or a unique mission that others do not understand?",
+  "Have you been sleeping very little or not at all recently?",
+  "Do you feel extremely energetic, restless, or like your thoughts are racing?",
+  "Do you feel completely hopeless or worthless right now?",
+  "Do you feel like you are being controlled by an outside force or machine?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "witnessed description of the event",
+  "head injury history",
+  "neurological examination between events",
+  "interictal EEG"
+ ],
+ "results": [
+  "1. witnessed description of the event: the right arm reaches and grasps and takes a DYSTONIC posture during the movement, despite a manual muscle testing score of 1 - the movement is ictal, not voluntary",
+  "2. head injury history: traumatic brain injury after being thrown from a horse",
+  "3. neurological examination between events: right-sided hemiplegia, manual muscle testing grade 1",
+  "4. interictal EEG: repetitive sharp waves predominantly in the LEFT FRONTAL area during sleep, with pseudocontinuous 3 Hz slow waves in the same region on awakening"
+ ],
+ "dx_raw": "DIAGNOSIS: Focal motor seizures (epilepsia partialis continua) secondary to traumatic brain injury\n\n1. Post-traumatic epilepsy\n2. Psychogenic non-epileptic seizures (PNES)\n3. Functional neurological disorder",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Focal motor seizures (epilepsia partialis continua) secondary to traumatic brain injury",
+ "decisive_served": [
+  "witnessed description of the event",
+  "head injury history",
+  "neurological examination between events",
+  "interictal EEG"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6359,
+   "completion_tokens": 140,
+   "total_tokens": 6499,
+   "cost": 0.00101965,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00101965,
+    "upstream_inference_prompt_cost": 0.00095385,
+    "upstream_inference_completions_cost": 6.58e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6898,
+   "completion_tokens": 53,
+   "total_tokens": 6951,
+   "cost": 0.000253466,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6016,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000253466,
+    "upstream_inference_prompt_cost": 0.000228556,
+    "upstream_inference_completions_cost": 2.491e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.8
+}

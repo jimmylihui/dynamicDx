@@ -1,0 +1,148 @@
+{
+ "questions": [
+  "Does the drooping get worse as the day progresses?",
+  "Do you have double vision?",
+  "Did this start suddenly?",
+  "Do you have weakness in other parts of your body?",
+  "Do you have difficulty swallowing or speaking?",
+  "Have you had this since birth?",
+  "Was there a recent injury to your head or eyes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "yes",
+  "7": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Repetitive nerve stimulation",
+  "Single-fiber EMG",
+  "Serum Creatine Kinase",
+  "Genetic testing for congenital myasthenic syndromes and myopathies",
+  "Muscle biopsy"
+ ],
+ "served": [
+  "repetitive nerve stimulation",
+  "single-fibre electromyography",
+  "creatine kinase",
+  "genetic testing (targeted panel or exome)"
+ ],
+ "results": [
+  "1. Repetitive nerve stimulation",
+  "     repetitive nerve stimulation: normal",
+  "2. Single-fiber EMG",
+  "     single-fibre electromyography: normal",
+  "3. Serum Creatine Kinase",
+  "     creatine kinase: normal",
+  "4. Genetic testing for congenital myasthenic syndromes and myopathies",
+  "     genetic testing (targeted panel or exome): novel heterozygous NONSENSE variant in POU4F1; present in the symptomatic mother, sister and grandmother and absent in a healthy uncle",
+  "5. Muscle biopsy",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Congenital ptosis caused by a POU4F1 mutation\n\n1. Congenital myasthenic syndrome\n2. Congenital myopathy\n3. Myotonic dystrophy",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Repetitive nerve stimulation\n2. Single-fiber EMG\n3. Serum Creatine Kinase\n4. Genetic testing for congenital myasthenic syndromes and myopathies\n5. Muscle biopsy",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Congenital ptosis caused by a POU4F1 mutation",
+ "decisive_served": [
+  "genetic testing (targeted panel or exome)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1271,
+   "total_tokens": 9969,
+   "cost": 0.00130194,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00130194,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00043214
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1133,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9030,
+   "completion_tokens": 932,
+   "total_tokens": 9962,
+   "cost": 0.00121988,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00121988,
+    "upstream_inference_prompt_cost": 0.000903,
+    "upstream_inference_completions_cost": 0.00031688
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 913,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9281,
+   "completion_tokens": 920,
+   "total_tokens": 10201,
+   "cost": 0.0012409,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012409,
+    "upstream_inference_prompt_cost": 0.0009281,
+    "upstream_inference_completions_cost": 0.0003128
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 847,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 151.9
+}

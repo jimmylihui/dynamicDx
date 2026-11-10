@@ -1,0 +1,118 @@
+{
+ "questions": [
+  "Have you had this eye movement since you were a child?",
+  "Have you always had significantly reduced vision in both eyes?",
+  "Does the shaking of your eyes decrease when you look at an object very close to your face?",
+  "Is your vision worse in bright light?",
+  "Do you ever feel dizzy, as if the room is spinning around you?",
+  "Does anyone else in your family have a similar eye condition?",
+  "Do you have any hearing loss or ringing in your ears?",
+  "Do you have any weakness, numbness, or difficulty with your speech?",
+  "Are you currently taking any prescription medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "MRI brain with DWI",
+  "CT / MR angiography (posterior circulation)"
+ ],
+ "results": [
+  "1. nystagmus: direction and whether it changes with gaze: ipsilesional torsional nystagmus",
+  "2. skew deviation / alternating cover test: skew deviation with LATERAL ALTERNATION - right eye hypotropic, left eye hypertropic",
+  "3. ocular torsion and head tilt: RIGHT-sided head tilt; right eye excyclotorted and left eye incyclotorted - the complete ocular tilt reaction",
+  "4. MRI brain with DWI: LEFT rostral pontine infarct and a caudal mesencephalic infarct extending along the paramedian line to the midline",
+  "5. CT / MR angiography (posterior circulation): TOP-OF-THE-BASILAR OCCLUSION; thrombectomy was deferred as he was well preserved"
+ ],
+ "dx_raw": "DIAGNOSIS: Top of the basilar syndrome (acute ischemic stroke of the posterior circulation) due to top-of-the-basilar artery occlusion/thrombosis\n\n1. Wernicke encephalopathy\n2. Brainstem encephalitis (e.g., Bickerstaff brainstem encephalitis)\n3. Multiple sclerosis with a paramedian brainstem plaque",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Top of the basilar syndrome (acute ischemic stroke of the posterior circulation) due to top-of-the-basilar artery occlusion/thrombosis",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "MRI brain with DWI",
+  "CT / MR angiography (posterior circulation)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2706,
+   "total_tokens": 9768,
+   "cost": 0.00532812,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00532812,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0032472
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2577,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7617,
+   "completion_tokens": 4150,
+   "total_tokens": 11767,
+   "cost": 0.00557382,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00557382,
+    "upstream_inference_prompt_cost": 0.00059382,
+    "upstream_inference_completions_cost": 0.00498
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4079,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 81.9
+}

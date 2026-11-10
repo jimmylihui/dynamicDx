@@ -1,0 +1,157 @@
+{
+ "questions": [
+  "Were you conscious during the jerks?",
+  "Did you lose control of your bladder or bowels?",
+  "Did you bite your tongue?",
+  "Do you have a history of epilepsy?",
+  "Are you currently taking any medications?",
+  "Did you recently stop drinking alcohol?",
+  "Did you experience confusion after the event?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Review the medication list for agents known to lower seizure threshold or cause myoclonus (e.g., tramadol, bupropion, antipsychotics, lithium)",
+  "Serum electrolytes including calcium, magnesium, and sodium",
+  "Renal function tests (BUN/Creatinine) and liver function tests",
+  "Blood glucose level"
+ ],
+ "served": [
+  "medication review",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "electrolytes (Na, K, Ca, Mg)",
+  "renal function (urea, creatinine)",
+  "liver function tests",
+  "liver function and ammonia",
+  "glucose",
+  "blood glucose and HbA1c"
+ ],
+ "results": [
+  "1. Review the medication list for agents known to lower seizure threshold or cause myoclonus (e.g., tramadol, bupropion, antipsychotics, lithium)",
+  "     medication review: long-term risperidone with concomitant sertraline; myoclonus resolved completely within 24 h of withdrawing RISPERIDONE alone",
+  "2. Serum electrolytes including calcium, magnesium, and sodium",
+  "     serum electrolytes, urea and creatinine: urea nitrogen 24 mg/dL and creatinine 1.62 mg/dL, stable",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "3. Renal function tests (BUN/Creatinine) and liver function tests",
+  "     renal function (urea, creatinine): blood urea nitrogen 24 mg/dL, creatinine 1.62 mg/dL - stable",
+  "     liver function tests: normal",
+  "     liver function and ammonia: normal",
+  "4. Blood glucose level",
+  "     glucose: normal",
+  "     blood glucose and HbA1c: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Drug-induced myoclonus secondary to risperidone\nAlternative: Serotonin syndrome (mild/atypical presentation)\nAlternative: Uremic encephalopathy",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Review the medication list for agents known to lower seizure threshold or cause myoclonus (e.g., tramadol, bupropion, antipsychotics, lithium)\n2. Serum electrolytes including calcium, magnesium, and sodium\n3. Renal function tests (BUN/Creatinine) and liver function tests\n4. Blood glucose level",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Drug-induced myoclonus secondary to risperidone",
+ "decisive_served": [
+  "medication review"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 182,
+   "completion_tokens": 75,
+   "total_tokens": 257,
+   "cost": 6.255e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.255e-05,
+    "upstream_inference_prompt_cost": 2.73e-05,
+    "upstream_inference_completions_cost": 3.525e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 515,
+   "completion_tokens": 75,
+   "total_tokens": 590,
+   "cost": 0.0001125,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001125,
+    "upstream_inference_prompt_cost": 7.725e-05,
+    "upstream_inference_completions_cost": 3.525e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 928,
+   "completion_tokens": 41,
+   "total_tokens": 969,
+   "cost": 8.9862e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.9862e-05,
+    "upstream_inference_prompt_cost": 7.0592e-05,
+    "upstream_inference_completions_cost": 1.927e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.4
+}

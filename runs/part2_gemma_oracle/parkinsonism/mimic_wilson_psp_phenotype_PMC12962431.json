@@ -1,0 +1,120 @@
+{
+ "questions": [
+  "Do you have a history of thyroid disease?",
+  "Do you experience heart palpitations?",
+  "Have you had unexplained weight loss?",
+  "Do you feel excessively hot?",
+  "Do you have tremors in your hands?",
+  "Do you have double vision?",
+  "Do you smoke?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "24-hour urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "wing-beating tremor on sustained shoulder abduction",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)",
+  "serum ceruloplasmin",
+  "ATP7B sequencing",
+  "abdominal ultrasound and liver elastography"
+ ],
+ "results": [
+  "1. 24-hour urinary copper: ELEVATED at 265.77 ug/day",
+  "2. slit-lamp examination for Kayser-Fleischer rings: KAYSER-FLEISCHER RINGS PRESENT in both eyes",
+  "3. wing-beating tremor on sustained shoulder abduction: PRESENT and asymmetric, right worse than left - this does not belong to PSP",
+  "4. cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait): dysmetria, dysdiadochokinesia and abnormal tandem gait; Severity of Ataxia Rating Scale 20 - cerebellar signs do not belong to PSP either",
+  "5. serum ceruloplasmin: MARKEDLY REDUCED at 6.2 mg/dL",
+  "6. ATP7B sequencing: homozygous pathogenic ATP7B c.2145C>T p.Tyr715* in exon 8 on whole exome sequencing - confirms Wilson disease",
+  "7. abdominal ultrasound and liver elastography: mildly altered hepatic echotexture; ARFI elastography shows portal fibrosis"
+ ],
+ "dx_raw": "DIAGNOSIS: Wilson disease caused by homozygous ATP7B mutation\n\nPrimary biliary cholangitis\nPrimary sclerosing cholangitis\nChronic hepatitis",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Wilson disease caused by homozygous ATP7B mutation",
+ "decisive_served": [
+  "24-hour urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "wing-beating tremor on sustained shoulder abduction",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)",
+  "serum ceruloplasmin",
+  "ATP7B sequencing",
+  "abdominal ultrasound and liver elastography"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 3989,
+   "total_tokens": 12687,
+   "cost": 0.00222606,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00222606,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00135626
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3580,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9183,
+   "completion_tokens": 935,
+   "total_tokens": 10118,
+   "cost": 0.0012362,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012362,
+    "upstream_inference_prompt_cost": 0.0009183,
+    "upstream_inference_completions_cost": 0.0003179
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 905,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_wilson_psp_phenotype_PMC12962431.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 170.6
+}

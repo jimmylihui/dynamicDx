@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Did the facial asymmetry begin suddenly, within minutes or hours?",
+  "Did it begin within the past 24 hours?",
+  "Have you had any weakness or numbness in an arm or leg?",
+  "Have you had trouble speaking, understanding speech, walking, or maintaining your balance?",
+  "Have you had a sudden severe headache, dizziness, double vision, or loss of vision?",
+  "Is the weakness affecting the entire side of your face, including your forehead?",
+  "Are you unable to fully close the affected eye?",
+  "Has the affected eye become unusually dry, watery, or sensitive to light?",
+  "Have you noticed drooling or difficulty drinking without spilling?",
+  "Have you had new difficulty tasting food?",
+  "Have you had pain around the ear or jaw on the affected side?",
+  "Have you noticed a rash or blisters in or around that ear?",
+  "Have you had hearing loss, ringing in the ear, or unusual sensitivity to sound on that side?",
+  "Have you recently had a cold, flu-like illness, or COVID-19?",
+  "Have you recently had an insect or tick bite?",
+  "Have you had a similar episode of facial weakness before?",
+  "Have you previously had a stroke or transient ischemic attack?",
+  "Have you recently received Botox, facial injections, dental treatment, or facial surgery?",
+  "Do the facial movements or asymmetry come and go rather than remain constant?",
+  "Are the episodes triggered by speaking, chewing, smiling, or closing your eyes?",
+  "Do you have involuntary twitching or spasms on one side of your face?",
+  "Do you have diabetes, high blood pressure, high cholesterol, atrial fibrillation, or a history of smoking?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "yes",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "yes",
+  "21": "yes",
+  "22": "yes"
+ },
+ "n_yes_answers": 7,
+ "orders": [],
+ "served": [
+  "synkinesis assessment (eye closure with platysma/frontalis)",
+  "palpebral fissure width both sides",
+  "family history",
+  "MRI brain and internal auditory canal with contrast",
+  "clinical course"
+ ],
+ "results": [
+  "1. synkinesis assessment (eye closure with platysma/frontalis): co-contraction of eye closure with the left platysma and left frontalis; right lower-lip curling on speech and mastication",
+  "2. palpebral fissure width both sides: narrowed LEFT palpebral fissure from established synkinesis",
+  "3. family history: five of fourteen siblings have had a facial palsy; two affected brothers had recurrent episodes with synkinesis",
+  "4. MRI brain and internal auditory canal with contrast: no tumour, no perineural enhancement, no central lesion",
+  "5. clinical course: left facial palsy treated with acyclovir 400 mg five times daily for 10 days and prednisone 50 mg for five days with taper; right palsy at age 64 with retroauricular pain, hyperacusis and dysgeusia; right synkinesis appeared five months later"
+ ],
+ "dx_raw": "DIAGNOSIS: Familial recurrent Bell’s palsy (hereditary recurrent bilateral peripheral facial nerve palsy), most consistent with an autosomal-dominant genetic predisposition causing recurrent idiopathic facial-nerve neuropathy with postparalytic synkinesis.\n\nALTERNATIVE: Melkersson–Rosenthal syndrome (recurrent facial palsy variant).\n\nALTERNATIVE: Recurrent Ramsay Hunt syndrome due to varicella-zoster reactivation without rash.\n\nALTERNATIVE: Lyme neuroborreliosis causing recurrent bilateral facial palsy.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Familial recurrent Bell’s palsy (hereditary recurrent bilateral peripheral facial nerve palsy), most consistent with an autosomal-dominant genetic predisposition causing recurrent idiopathic facial-nerve neuropathy with postparalytic synkinesis.",
+ "decisive_served": [
+  "synkinesis assessment (eye closure with platysma/frontalis)",
+  "palpebral fissure width both sides",
+  "family history",
+  "MRI brain and internal auditory canal with contrast",
+  "clinical course"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 17964,
+   "completion_tokens": 539,
+   "total_tokens": 18503,
+   "cost": 0.00050331,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00050331,
+    "upstream_inference_prompt_cost": 0.00017991,
+    "upstream_inference_completions_cost": 0.0003234
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 175,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 19071,
+   "completion_tokens": 253,
+   "total_tokens": 19324,
+   "cost": 0.000470085,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 1107,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000470085,
+    "upstream_inference_prompt_cost": 0.000318285,
+    "upstream_inference_completions_cost": 0.0001518
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 134,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "fp_recurrent_synkinesis_PMC12572359.mp4",
+ "line": "facialpalsy",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 20.7
+}

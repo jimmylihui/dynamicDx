@@ -1,0 +1,257 @@
+{
+ "questions": [
+  "Do you have a tremor in your hands?",
+  "Do you have weakness on one side of your body?",
+  "Do you have difficulty walking or keeping your balance?",
+  "Do you feel dizzy or like the room is spinning?",
+  "Do you have numbness or tingling in your legs or feet?",
+  "Do you have any urinary incontinence?",
+  "Do you have memory problems or confusion?",
+  "Do you have stiffness or slowness in your movements?",
+  "Have you had any recent falls?",
+  "Do you have difficulty starting to walk, as if your feet are stuck to the floor?",
+  "Do you have visual problems or difficulty looking up or down?",
+  "Have you noticed any changes in your handwriting (becoming smaller)?",
+  "When you walk, do your feet feel like they are stuck to the floor (magnetic gait)?",
+  "Do you shuffle your feet when you walk?",
+  "Do you have any trouble with your sense of smell?",
+  "Do you have vivid visual hallucinations (seeing things that aren't there)?",
+  "Do you have fluctuations in your alertness or attention throughout the day?",
+  "Do you have sudden drops in blood pressure when standing (feeling lightheaded)?",
+  "Do you have difficulty with tasks that require fine motor skills (like buttoning a shirt)?",
+  "Have you noticed any changes in your personality or behavior?",
+  "Do you have any pain or stiffness in your neck or shoulders?",
+  "Do you have difficulty looking down (e.g., reading a book on your lap)?",
+  "Have you had any sudden jerky movements or falls?",
+  "Do you have any trouble with your speech (slurred or soft voice)?",
+  "Do you have sudden urges to urinate or difficulty holding your urine?",
+  "Have you had any weakness or numbness on one side of your body that came on suddenly?",
+  "Do you have any trouble with your vision (blurred or double vision)?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "yes",
+  "24": "yes",
+  "25": "no",
+  "26": "no",
+  "27": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "Perform a Romberg test",
+  "Perform a finger-to-nose test to assess for dysmetria",
+  "Assess for nystagmus on lateral gaze"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "cranial nerve examination"
+ ],
+ "results": [
+  "R1 ASK Do you have a tremor in your hands?; Do you have weakness on one side of your body?; Do you have difficulty walking or keeping your balance? -> ['no', 'no', 'yes']",
+  "R2 ASK Do you feel dizzy or like the room is spinning?; Do you have numbness or tingling in your legs or feet?; Do you have any urinary incontinence? -> ['no', 'no', 'no']",
+  "R3 ORDER Perform a Romberg test; Perform a finger-to-nose test to assess for dysmetria; Assess for nystagmus on lateral gaze -> [['coordination examination (limb and truncal)'], ['coordination examination (limb and truncal)'], ['cranial nerve examination']]",
+  "R4 ASK Do you have memory problems or confusion?; Do you have stiffness or slowness in your movements?; Have you had any recent falls? -> ['yes', 'yes', 'no']",
+  "R5 ASK Do you have difficulty starting to walk, as if your feet are stuck to the floor?; Do you have visual problems or difficulty looking up or down?; Have you noticed any changes in your handwriting (becoming smaller)? -> ['no', 'no', 'no']",
+  "R6 ASK When you walk, do your feet feel like they are stuck to the floor (magnetic gait)?; Do you shuffle your feet when you walk?; Do you have any trouble with your sense of smell? -> ['no', 'no', 'no']",
+  "R7 ASK Do you have vivid visual hallucinations (seeing things that aren't there)?; Do you have fluctuations in your alertness or attention throughout the day?; Do you have sudden drops in blood pressure when standing (feeling lightheaded)? -> ['no', 'no', 'no']",
+  "R8 ASK Do you have difficulty with tasks that require fine motor skills (like buttoning a shirt)?; Have you noticed any changes in your personality or behavior?; Do you have any pain or stiffness in your neck or shoulders? -> ['no', 'no', 'no']",
+  "R9 ASK Do you have difficulty looking down (e.g., reading a book on your lap)?; Have you had any sudden jerky movements or falls?; Do you have any trouble with your speech (slurred or soft voice)? -> ['no', 'yes', 'yes']",
+  "R10 ASK Do you have sudden urges to urinate or difficulty holding your urine?; Have you had any weakness or numbness on one side of your body that came on suddenly?; Do you have any trouble with your vision (blurred or double vision)? -> ['no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Progressive Supranuclear Palsy (PSP) due to 4R tauopathy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have a tremor in your hands?",
+    "Do you have weakness on one side of your body?",
+    "Do you have difficulty walking or keeping your balance?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you feel dizzy or like the room is spinning?",
+    "Do you have numbness or tingling in your legs or feet?",
+    "Do you have any urinary incontinence?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Perform a Romberg test",
+    "Perform a finger-to-nose test to assess for dysmetria",
+    "Assess for nystagmus on lateral gaze"
+   ],
+   "result": [
+    [
+     "coordination examination (limb and truncal)"
+    ],
+    [
+     "coordination examination (limb and truncal)"
+    ],
+    [
+     "cranial nerve examination"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have memory problems or confusion?",
+    "Do you have stiffness or slowness in your movements?",
+    "Have you had any recent falls?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty starting to walk, as if your feet are stuck to the floor?",
+    "Do you have visual problems or difficulty looking up or down?",
+    "Have you noticed any changes in your handwriting (becoming smaller)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "When you walk, do your feet feel like they are stuck to the floor (magnetic gait)?",
+    "Do you shuffle your feet when you walk?",
+    "Do you have any trouble with your sense of smell?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have vivid visual hallucinations (seeing things that aren't there)?",
+    "Do you have fluctuations in your alertness or attention throughout the day?",
+    "Do you have sudden drops in blood pressure when standing (feeling lightheaded)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty with tasks that require fine motor skills (like buttoning a shirt)?",
+    "Have you noticed any changes in your personality or behavior?",
+    "Do you have any pain or stiffness in your neck or shoulders?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty looking down (e.g., reading a book on your lap)?",
+    "Have you had any sudden jerky movements or falls?",
+    "Do you have any trouble with your speech (slurred or soft voice)?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "yes"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you have sudden urges to urinate or difficulty holding your urine?",
+    "Have you had any weakness or numbness on one side of your body that came on suddenly?",
+    "Do you have any trouble with your vision (blurred or double vision)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Progressive Supranuclear Palsy (PSP) due to 4R tauopathy"
+  }
+ ],
+ "dx": "Progressive Supranuclear Palsy (PSP) due to 4R tauopathy",
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy (PSP) due to 4R tauopathy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0512,
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "severe_sspe_PMC13071100.mp4",
+ "line": "myoclonus",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 100.7
+}

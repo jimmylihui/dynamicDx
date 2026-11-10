@@ -1,0 +1,173 @@
+{
+ "questions": [
+  "Have you had previous episodes that were very similar to this one?",
+  "Did the episode begin abruptly, without a gradual awakening?",
+  "Did the episode last less than two minutes?",
+  "Did you remain completely unaware of your surroundings during the episode?",
+  "Were you unable to respond when someone spoke to or touched you?",
+  "Do you remember anything that happened during the episode?",
+  "Were you confused or unusually sleepy for more than 10 minutes afterward?",
+  "Have these episodes ever occurred more than once in the same night?",
+  "Do the episodes usually occur at about the same time after falling asleep?",
+  "Do you regularly act out dreams, sleepwalk, or have night terrors?",
+  "Have you bitten the side of your tongue during or after an episode?",
+  "Did you lose control of your bladder during this episode?",
+  "Did you sustain an injury during the episode?",
+  "Did you have a severe headache or generalized muscle soreness afterward?",
+  "Have you ever had a seizure while awake?",
+  "Have you ever been diagnosed with epilepsy?",
+  "Is there a family history of epilepsy or unexplained sudden death?",
+  "Have you recently missed sleep or had substantial sleep deprivation?",
+  "Have you recently used alcohol, recreational drugs, or a new medication?",
+  "Have you had fever, head injury, or another acute illness recently?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Overnight video-polysomnography with a full 10–20 scalp EEG montage and synchronized audiovisual recording",
+  "Prolonged video-EEG monitoring including sleep, preferably capturing a typical event",
+  "Brain MRI with an epilepsy protocol",
+  "Routine awake and sleep EEG with hyperventilation and photic stimulation"
+ ],
+ "served": [
+  "video-oculography / eye-movement recording",
+  "video-polygraphy (EEG with EMG)",
+  "video-EEG monitoring of a typical event",
+  "brain MRI",
+  "interictal EEG"
+ ],
+ "results": [
+  "1. Overnight video-polysomnography with a full 10–20 scalp EEG montage and synchronized audiovisual recording",
+  "     video-oculography / eye-movement recording: normal",
+  "     video-polygraphy (EEG with EMG): not performed",
+  "2. Prolonged video-EEG monitoring including sleep, preferably capturing a typical event",
+  "     video-EEG monitoring of a typical event: the diagnosis was made on SEMIOLOGY from clinically documented video-EEG; there was NO interpretable ictal EEG correlate because of movement artefact",
+  "3. Brain MRI with an epilepsy protocol",
+  "     brain MRI: no epileptogenic lesion",
+  "4. Routine awake and sleep EEG with hyperventilation and photic stimulation",
+  "     interictal EEG: no epileptiform discharges"
+ ],
+ "dx_raw": "DIAGNOSIS: Sleep-related hypermotor epilepsy (nocturnal frontal-lobe focal epilepsy), MRI-negative and of unknown/cryptogenic etiology\n\nALTERNATIVES: NREM parasomnia (confusional arousal or sleepwalking)\n\nSleep-related dissociative/functional episodes\n\nNocturnal panic attacks",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Overnight video-polysomnography with a full 10–20 scalp EEG montage and synchronized audiovisual recording\n2. Prolonged video-EEG monitoring including sleep, preferably capturing a typical event\n3. Brain MRI with an epilepsy protocol\n4. Routine awake and sleep EEG with hyperventilation and photic stimulation",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Sleep-related hypermotor epilepsy (nocturnal frontal-lobe focal epilepsy), MRI-negative and of unknown/cryptogenic etiology",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 231,
+   "completion_tokens": 802,
+   "total_tokens": 1033,
+   "cost": 0.0005043,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005043,
+    "upstream_inference_prompt_cost": 2.31e-05,
+    "upstream_inference_completions_cost": 0.0004812
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1036,
+   "completion_tokens": 193,
+   "total_tokens": 1229,
+   "cost": 0.000245225,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1033,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000245225,
+    "upstream_inference_prompt_cost": 0.000129425,
+    "upstream_inference_completions_cost": 0.0001158
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 121,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1357,
+   "completion_tokens": 313,
+   "total_tokens": 1670,
+   "cost": 0.000238555,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1033,
+    "cache_write_tokens": 321,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000238555,
+    "upstream_inference_prompt_cost": 5.0755e-05,
+    "upstream_inference_completions_cost": 0.0001878
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 243,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 30.0
+}

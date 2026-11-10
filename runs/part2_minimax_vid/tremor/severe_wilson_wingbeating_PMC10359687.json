@@ -1,0 +1,181 @@
+{
+ "questions": [
+  "Did the abnormal movements shown in the first part of the video begin abruptly, over a period of hours to a few days?",
+  "Are you currently taking a medication called zonisamide?",
+  "Did you need to wear a neck brace because of pain or injury caused by the movements?",
+  "Do you have a family history of similar movement disorders or early dementia?",
+  "Have you noticed any changes in your memory, behavior, or mood?",
+  "Have you had a recent infection, such as a sore throat or fever?",
+  "Do you have a history of liver disease or jaundice?",
+  "Do you have a history of rheumatic fever or heart valve problems?",
+  "Do the movements disappear completely when you are asleep?",
+  "Do you have any difficulty speaking or swallowing?",
+  "Have you ever experienced a seizure or loss of consciousness?",
+  "Do you have any weakness or numbness in your arms or legs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Genetic testing for CAG trinucleotide repeat expansion in the HTT gene",
+  "MRI of the brain with attention to the basal ganglia",
+  "Peripheral blood smear to look for acanthocytes",
+  "Serum ceruloplasmin level",
+  "Comprehensive metabolic panel including liver function tests and creatine kinase",
+  "Thyroid function tests",
+  "Complete blood count"
+ ],
+ "served": [
+  "genetic testing (targeted panel or exome)",
+  "brain MRI",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "liver function and albumin/globulin",
+  "creatine kinase",
+  "TSH / free T4",
+  "full blood count"
+ ],
+ "results": [
+  "1. Genetic testing for CAG trinucleotide repeat expansion in the HTT gene",
+  "     genetic testing (targeted panel or exome): NOTCH2NLC GGC repeat expansion - genetically confirmed NIID",
+  "2. MRI of the brain with attention to the basal ganglia",
+  "     brain MRI: no structural lesion",
+  "3. Peripheral blood smear to look for acanthocytes",
+  "     not performed / not available",
+  "4. Serum ceruloplasmin level",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease",
+  "5. Comprehensive metabolic panel including liver function tests and creatine kinase",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal",
+  "     liver function and albumin/globulin: normal",
+  "     creatine kinase: normal",
+  "6. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "7. Complete blood count",
+  "     full blood count: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Neuronal Intranuclear Inclusion Disease (NIID) due to pathogenic GGC repeat expansion in the NOTCH2NLC gene\n\n1. Huntington's disease (despite negative HTT testing, repeat expansion disorders can have phenocopies)\n2. Chorea-acanthocytosis (not excluded due to unavailable acanthocyte testing)\n3. Other NOTCH2NLC-related repeat expansion disorders (e.g., FMR1, RFC1) presenting with overlapping movement and cognitive features",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Genetic testing for CAG trinucleotide repeat expansion in the HTT gene\n2. MRI of the brain with attention to the basal ganglia\n3. Peripheral blood smear to look for acanthocytes\n4. Serum ceruloplasmin level\n5. Comprehensive metabolic panel including liver function tests and creatine kinase\n6. Thyroid function tests\n7. Complete blood count",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Neuronal Intranuclear Inclusion Disease (NIID) due to pathogenic GGC repeat expansion in the NOTCH2NLC gene",
+ "decisive_served": [
+  "genetic testing (targeted panel or exome)",
+  "copper / caeruloplasmin / 24 h urinary copper"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6454,
+   "completion_tokens": 6824,
+   "total_tokens": 13278,
+   "cost": 0.01009764,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01009764,
+    "upstream_inference_prompt_cost": 0.00190884,
+    "upstream_inference_completions_cost": 0.0081888
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7321,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7037,
+   "completion_tokens": 1052,
+   "total_tokens": 8089,
+   "cost": 0.00184086,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6386,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00184086,
+    "upstream_inference_prompt_cost": 0.00057846,
+    "upstream_inference_completions_cost": 0.0012624
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1149,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7424,
+   "completion_tokens": 481,
+   "total_tokens": 7905,
+   "cost": 0.00114888,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6898,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00114888,
+    "upstream_inference_prompt_cost": 0.00057168,
+    "upstream_inference_completions_cost": 0.0005772
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 488,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 126.9
+}

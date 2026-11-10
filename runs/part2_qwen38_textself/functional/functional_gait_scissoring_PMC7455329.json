@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Do you have a history of chronic alcohol abuse?",
+  "Do you experience numbness or tingling in your feet?",
+  "Do you have difficulty seeing in dim light or at night?",
+  "Do you have a known diagnosis of multiple sclerosis?",
+  "Do you have a family history of similar walking difficulties?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Finger-to-nose and heel-to-shin testing",
+  "Romberg test",
+  "MRI of the brain with attention to the cerebellum"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "Romberg test, repeated with distraction",
+  "MRI brain",
+  "MRI brain with gadolinium"
+ ],
+ "results": [
+  "1. Finger-to-nose and heel-to-shin testing",
+  "     coordination examination (limb and truncal): normal",
+  "2. Romberg test",
+  "     Romberg test, repeated with distraction: negative",
+  "3. MRI of the brain with attention to the cerebellum",
+  "     MRI brain: normal, no periventricular lesions",
+  "     MRI brain with gadolinium: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional gait disorder (psychogenic ataxia)\nAlternative: Cerebellar vermis lesion not visible on standard MRI sequences\nAlternative: Early spinocerebellar ataxia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Finger-to-nose and heel-to-shin testing\n2. Romberg test\n3. MRI of the brain with attention to the cerebellum",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional gait disorder (psychogenic ataxia)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 187,
+   "completion_tokens": 69,
+   "total_tokens": 256,
+   "cost": 6.048e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.048e-05,
+    "upstream_inference_prompt_cost": 2.805e-05,
+    "upstream_inference_completions_cost": 3.243e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 500,
+   "completion_tokens": 32,
+   "total_tokens": 532,
+   "cost": 9.004e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.004e-05,
+    "upstream_inference_prompt_cost": 7.5e-05,
+    "upstream_inference_completions_cost": 1.504e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 713,
+   "completion_tokens": 44,
+   "total_tokens": 757,
+   "cost": 9.3326e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.3326e-05,
+    "upstream_inference_prompt_cost": 7.2646e-05,
+    "upstream_inference_completions_cost": 2.068e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.7,
+ "video": "functional_gait_scissoring_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.3
+}

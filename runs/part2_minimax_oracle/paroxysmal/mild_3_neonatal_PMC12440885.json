@@ -1,0 +1,101 @@
+{
+ "questions": [
+  "Did you have an operation on your eyes?",
+  "Is your head hurting?",
+  "Do you feel sick to your stomach?",
+  "Are you feeling dizzy?",
+  "Is the pain getting worse?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "genetic testing (exome / epilepsy panel)",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. genetic testing (exome / epilepsy panel): missense variant in exon 4 of CSNK2B (NM_001320.7 c.268A>C, p.Thr90Pro), likely pathogenic by ACMG; threonine 90 is evolutionarily conserved",
+  "2. video-EEG monitoring of a typical event: eyelid myoclonia with absences - the Jeavons phenotype"
+ ],
+ "dx_raw": "DIAGNOSIS: Poirier-Bienvenu neurodevelopmental syndrome due to a pathogenic CSNK2B variant, presenting with eyelid myoclonia with absences (Jeavons phenotype)\n1. Jeavons syndrome (idiopathic generalized epilepsy with eyelid myoclonia)\n2. CHD2-related developmental and epileptic encephalopathy\n3. Early-onset absence epilepsy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Poirier-Bienvenu neurodevelopmental syndrome due to a pathogenic CSNK2B variant, presenting with eyelid myoclonia with absences (Jeavons phenotype)",
+ "decisive_served": [
+  "genetic testing (exome / epilepsy panel)",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 10710,
+   "completion_tokens": 2889,
+   "total_tokens": 13599,
+   "cost": 0.00664212,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00664212,
+    "upstream_inference_prompt_cost": 0.00317532,
+    "upstream_inference_completions_cost": 0.0034668
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2846,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 11000,
+   "completion_tokens": 1921,
+   "total_tokens": 12921,
+   "cost": 0.0030384,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 10695,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0030384,
+    "upstream_inference_prompt_cost": 0.0007332,
+    "upstream_inference_completions_cost": 0.0023052
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1848,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.6,
+ "video": "mild_3_neonatal_PMC12440885.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 62.0
+}

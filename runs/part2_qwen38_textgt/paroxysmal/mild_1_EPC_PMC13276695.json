@@ -1,0 +1,128 @@
+{
+ "questions": [
+  "Is the jerking confined to one side of your body?",
+  "Are you fully aware and able to speak during these episodes?",
+  "Does the jerking spread to other parts of your body over time?",
+  "Have you ever had a seizure before this started?",
+  "Do you have a history of stroke or brain injury?",
+  "Are you currently taking any anti-seizure medications?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI of the brain with contrast"
+ ],
+ "served": [
+  "MRI brain with gadolinium"
+ ],
+ "results": [
+  "1. MRI of the brain with contrast",
+  "     MRI brain with gadolinium: restricted diffusion with matching T2/FLAIR hyperintensity in the right caudate, anterior lentiform nucleus, cingulate gyrus and insula, with less prominent right frontal, parietal and temporal cortical involvement; no abnormal enhancement"
+ ],
+ "dx_raw": "DIAGNOSIS: Creutzfeldt-Jakob disease (sporadic)\nAlternative 1: Autoimmune encephalitis (e.g., anti-LGI1 or anti-NMDAR)\nAlternative 2: Status epilepticus with post-ictal MRI changes",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with contrast\n2. EEG",
+ "rationale": [
+  null
+ ],
+ "dx": "Creutzfeldt-Jakob disease (sporadic)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 186,
+   "completion_tokens": 87,
+   "total_tokens": 273,
+   "cost": 6.879e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.879e-05,
+    "upstream_inference_prompt_cost": 2.79e-05,
+    "upstream_inference_completions_cost": 4.089e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 539,
+   "completion_tokens": 12,
+   "total_tokens": 551,
+   "cost": 8.649e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.649e-05,
+    "upstream_inference_prompt_cost": 8.085e-05,
+    "upstream_inference_completions_cost": 5.64e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 721,
+   "completion_tokens": 59,
+   "total_tokens": 780,
+   "cost": 6.7272e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.7272e-05,
+    "upstream_inference_prompt_cost": 3.9542e-05,
+    "upstream_inference_completions_cost": 2.773e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.8
+}

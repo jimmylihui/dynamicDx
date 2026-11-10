@@ -1,0 +1,150 @@
+{
+ "questions": [
+  "Do you have a known thyroid condition?",
+  "Do you have double vision?",
+  "Have you noticed any unexplained weight loss?",
+  "Do you feel more sensitive to heat than others?",
+  "Do you experience heart palpitations?",
+  "Is there pain associated with these changes?",
+  "Do you have a fever?",
+  "Do your eyes feel dry or gritty?",
+  "Do you feel pressure behind your eyes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "TSH and Free T4",
+  "TSH receptor antibodies",
+  "CT orbit with contrast",
+  "Urinalysis",
+  "Serum albumin"
+ ],
+ "served": [
+  "TSH / free T4",
+  "anti-thyroid antibodies",
+  "urinalysis",
+  "liver function tests"
+ ],
+ "results": [
+  "1. TSH and Free T4",
+  "     TSH / free T4: normal",
+  "2. TSH receptor antibodies",
+  "     anti-thyroid antibodies: normal",
+  "3. CT orbit with contrast",
+  "     not performed / not available",
+  "4. Urinalysis",
+  "     urinalysis: normal",
+  "5. Serum albumin",
+  "     liver function tests: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Dermatomyositis\nSystemic lupus erythematosus\nAllergic contact dermatitis\nChronic venous insufficiency",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. TSH and Free T4\n2. TSH receptor antibodies\n3. CT orbit with contrast\n4. Urinalysis\n5. Serum albumin",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Dermatomyositis",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2127,
+   "total_tokens": 10825,
+   "cost": 0.00159298,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00159298,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00072318
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1911,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9070,
+   "completion_tokens": 726,
+   "total_tokens": 9796,
+   "cost": 0.00115384,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00115384,
+    "upstream_inference_prompt_cost": 0.000907,
+    "upstream_inference_completions_cost": 0.00024684
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 702,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9274,
+   "completion_tokens": 1172,
+   "total_tokens": 10446,
+   "cost": 0.00132588,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00132588,
+    "upstream_inference_prompt_cost": 0.0009274,
+    "upstream_inference_completions_cost": 0.00039848
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1130,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 141.5
+}

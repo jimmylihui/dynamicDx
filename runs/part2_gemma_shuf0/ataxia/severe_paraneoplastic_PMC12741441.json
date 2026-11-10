@@ -1,0 +1,141 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Do you have weakness on one side of your body?",
+  "Do you have difficulty speaking?",
+  "Do you feel dizzy?",
+  "Do you have numbness or tingling in your limbs?",
+  "Is there pain associated with your difficulty walking?",
+  "Do you have a history of high blood pressure?",
+  "Do you have diabetes?",
+  "Have you had a recent fall or head injury?",
+  "Do you have tremors in your hands?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Brain MRI",
+  "Large volume lumbar puncture (CSF tap test)"
+ ],
+ "served": [
+  "brain MRI",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. Brain MRI",
+  "     brain MRI: no structural lesion accounting for the syndrome",
+  "2. Large volume lumbar puncture (CSF tap test)",
+  "     lumbar puncture / CSF: normal cells, protein and glucose; no oligoclonal bands"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional Gait Disorder\nVitamin E deficiency\nGluten ataxia\nParaneoplastic cerebellar degeneration",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Brain MRI\n2. Large volume lumbar puncture (CSF tap test)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Functional Gait Disorder",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2047,
+   "total_tokens": 10745,
+   "cost": 0.00156578,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00156578,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00069598
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1825,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9104,
+   "completion_tokens": 745,
+   "total_tokens": 9849,
+   "cost": 0.0011637,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011637,
+    "upstream_inference_prompt_cost": 0.0009104,
+    "upstream_inference_completions_cost": 0.0002533
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 758,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9265,
+   "completion_tokens": 3444,
+   "total_tokens": 12709,
+   "cost": 0.00209746,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00209746,
+    "upstream_inference_prompt_cost": 0.0009265,
+    "upstream_inference_completions_cost": 0.00117096
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3400,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_paraneoplastic_PMC12741441.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 329.5
+}

@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Do you have a resting tremor in your hands?",
+  "Have you noticed a decrease in the size of your handwriting?",
+  "Do you feel that your muscles are stiff or rigid?",
+  "Have you experienced any falls recently?",
+  "Do you have difficulty initiating movement, such as getting out of a chair?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe gait for turning en bloc and check for retropulsion on pull test",
+  "Assess for frontal release signs (glabellar tap, snout reflex)",
+  "Check for apraxia of gait by asking patient to mimic walking in place while seated",
+  "MRI brain with attention to ventricular size and periventricular white matter changes"
+ ],
+ "served": [
+  "gait examination",
+  "posture and pull test",
+  "gait examination",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Observe gait for turning en bloc and check for retropulsion on pull test",
+  "     gait examination: wide-based, unsteady gait",
+  "     posture and pull test: impaired postural stability and positive pull test",
+  "2. Assess for frontal release signs (glabellar tap, snout reflex)",
+  "     not performed / not available",
+  "3. Check for apraxia of gait by asking patient to mimic walking in place while seated",
+  "     gait examination: wide-based, unsteady gait",
+  "4. MRI brain with attention to ventricular size and periventricular white matter changes",
+  "     brain MRI: cerebellar atrophy at one year; serial imaging over five years shows progressive ISOLATED cerebellar atrophy with no supratentorial abnormality"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic Late-Onset Cerebellar Ataxia (ILOCA)\nSpinocerebellar Ataxia Type 6 (SCA6)\nMultiple System Atrophy - Cerebellar type (MSA-C)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe gait for turning en bloc and check for retropulsion on pull test\n2. Assess for frontal release signs (glabellar tap, snout reflex)\n3. Check for apraxia of gait by asking patient to mimic walking in place while seated\n4. MRI brain with attention to ventricular size and periventricular white matter changes",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic Late-Onset Cerebellar Ataxia (ILOCA)",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 189,
+   "completion_tokens": 70,
+   "total_tokens": 259,
+   "cost": 6.125e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.125e-05,
+    "upstream_inference_prompt_cost": 2.835e-05,
+    "upstream_inference_completions_cost": 3.29e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 504,
+   "completion_tokens": 77,
+   "total_tokens": 581,
+   "cost": 0.00011179,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011179,
+    "upstream_inference_prompt_cost": 7.56e-05,
+    "upstream_inference_completions_cost": 3.619e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 846,
+   "completion_tokens": 54,
+   "total_tokens": 900,
+   "cost": 0.000117976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000117976,
+    "upstream_inference_prompt_cost": 9.2596e-05,
+    "upstream_inference_completions_cost": 2.538e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_ms_demyelinating_PMC13085407.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.0
+}

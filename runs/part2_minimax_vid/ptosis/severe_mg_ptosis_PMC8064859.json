@@ -1,0 +1,191 @@
+{
+ "questions": [
+  "Have you noticed weakness on one side of your face?",
+  "Have you experienced any weakness in your arm or leg?",
+  "Did the facial weakness begin suddenly?",
+  "Do you have any pain in or around the ear on the weak side?",
+  "Have you noticed any blisters or rash on your ear or face?",
+  "Do you have difficulty completely closing your eye on the weak side?",
+  "Do you have any changes in your sense of taste?",
+  "Do you have any ringing in your ear or sensitivity to loud sounds on the weak side?",
+  "Have you had a recent viral illness?",
+  "Do you have a severe headache?",
+  "Do you have any history of diabetes or high blood pressure?",
+  "Do you have any dizziness or vertigo?",
+  "Have you had any recent head injury?",
+  "Do you have any double vision?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside examination of facial nerve motor function (raise eyebrows, close eyes tightly, smile, puff cheeks, frown)",
+  "Bedside examination of limb strength, tone, and reflexes",
+  "Bedside examination for parkinsonian features (tremor, rigidity, bradykinesia, postural instability)",
+  "MRI brain with diffusion-weighted imaging",
+  "MR angiography of the head and neck",
+  "Lipid panel",
+  "HbA1c",
+  "Carotid Doppler ultrasound",
+  "Acetylcholine receptor antibodies"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "muscle tone examination",
+  "posture and pull test",
+  "MRI diffusion-weighted sequences",
+  "CT / MR angiography (circle of Willis)",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies"
+ ],
+ "results": [
+  "1. Bedside examination of facial nerve motor function (raise eyebrows, close eyes tightly, smile, puff cheeks, frown)",
+  "     cranial nerve examination: asymmetrical fatigable ptosis; otherwise normal",
+  "2. Bedside examination of limb strength, tone, and reflexes",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal limb power",
+  "     deep tendon reflexes and plantar responses: normal",
+  "3. Bedside examination for parkinsonian features (tremor, rigidity, bradykinesia, postural instability)",
+  "     muscle tone examination: normal",
+  "     posture and pull test: normal",
+  "4. MRI brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: normal",
+  "5. MR angiography of the head and neck",
+  "     CT / MR angiography (circle of Willis): no aneurysm",
+  "6. Lipid panel",
+  "     not performed / not available",
+  "7. HbA1c",
+  "     blood glucose and HbA1c: normal",
+  "     glucose / HbA1c: normal",
+  "8. Carotid Doppler ultrasound",
+  "     not performed / not available",
+  "9. Acetylcholine receptor antibodies",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: elevated acetylcholine receptor antibodies, 16.63 nmol/L",
+  "     anti-acetylcholine receptor antibodies: 16.63 nmol/L - elevated"
+ ],
+ "dx_raw": "DIAGNOSIS: Ocular myasthenia gravis - autoimmune disease caused by antibodies against postsynaptic nicotinic acetylcholine receptors at the neuromuscular junction\nLambert-Eaton myasthenic syndrome\nThyroid eye disease with associated myasthenia\nOculopharyngeal muscular dystrophy",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Bedside examination of facial nerve motor function (raise eyebrows, close eyes tightly, smile, puff cheeks, frown)\n2. Bedside examination of limb strength, tone, and reflexes\n3. Bedside examination for parkinsonian features (tremor, rigidity, bradykinesia, postural instability)\n4. MRI brain with diffusion-weighted imaging\n5. MR angiography of the head and neck\n6. ECG\n7. Lipid panel\n8. HbA1c\n9. Carotid Doppler ultrasound\n10. Acetylcholine receptor antibodies",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Ocular myasthenia gravis - autoimmune disease caused by antibodies against postsynaptic nicotinic acetylcholine receptors at the neuromuscular junction",
+ "decisive_served": [
+  "anti-acetylcholine receptor antibodies"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2029,
+   "total_tokens": 9091,
+   "cost": 0.00286188,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7048,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00286188,
+    "upstream_inference_prompt_cost": 0.00042708,
+    "upstream_inference_completions_cost": 0.0024348
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2034,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7631,
+   "completion_tokens": 4510,
+   "total_tokens": 12141,
+   "cost": 0.00601506,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00601506,
+    "upstream_inference_prompt_cost": 0.00060306,
+    "upstream_inference_completions_cost": 0.005412
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4889,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8111,
+   "completion_tokens": 387,
+   "total_tokens": 8498,
+   "cost": 0.00108858,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7538,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00108858,
+    "upstream_inference_prompt_cost": 0.00062418,
+    "upstream_inference_completions_cost": 0.0004644
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 387,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_mg_ptosis_PMC8064859.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 476.0
+}

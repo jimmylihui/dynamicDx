@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Has the patient noticed slowness of movement?",
+  "Does the patient experience muscle stiffness?",
+  "Is the tremor only on the right side of the body?",
+  "Has the tremor been present for more than one year?",
+  "Did the tremor start after the age of 50?",
+  "Is there a family history of Parkinson's disease or similar movement disorder?",
+  "Has the patient been taking any medications that could cause tremor?",
+  "Does the tremor reduce or disappear during sleep?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Detailed neurological examination including tone, power, reflexes, and gait assessment",
+  "Brain MRI with iron-sensitive sequences",
+  "Serum ceruloplasmin and 24-hour urinary copper",
+  "Surface EMG of the affected limb to characterize tremor frequency and pattern",
+  "Accelerometry recording of the tremor"
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "gait and coordination",
+  "MRI susceptibility-weighted sequences",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin"
+ ],
+ "results": [
+  "1. Detailed neurological examination including tone, power, reflexes, and gait assessment",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     gait and coordination: normal",
+  "2. Brain MRI with iron-sensitive sequences",
+  "     MRI susceptibility-weighted sequences: normal",
+  "3. Serum ceruloplasmin and 24-hour urinary copper",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin: normal",
+  "4. Surface EMG of the affected limb to characterize tremor frequency and pattern",
+  "     not performed / not available",
+  "5. Accelerometry recording of the tremor",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional (psychogenic) tremor\n\nDystonic tremor\nEssential tremor of the lower limbs\nWilson's disease (though copper studies make this unlikely)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Detailed neurological examination including tone, power, reflexes, and gait assessment\n2. Brain MRI with iron-sensitive sequences\n3. Serum ceruloplasmin and 24-hour urinary copper\n4. Surface EMG of the affected limb to characterize tremor frequency and pattern\n5. Accelerometry recording of the tremor",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional (psychogenic) tremor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 459,
+   "completion_tokens": 1439,
+   "total_tokens": 1898,
+   "cost": 0.0004408376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004408376,
+    "upstream_inference_prompt_cost": 3.79176e-05,
+    "upstream_inference_completions_cost": 0.00040292
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1328,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 862,
+   "completion_tokens": 615,
+   "total_tokens": 1477,
+   "cost": 0.0002314144,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002314144,
+    "upstream_inference_prompt_cost": 5.92144e-05,
+    "upstream_inference_completions_cost": 0.0001722
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 543,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1179,
+   "completion_tokens": 716,
+   "total_tokens": 1895,
+   "cost": 0.0002513896,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 832,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002513896,
+    "upstream_inference_prompt_cost": 5.09096e-05,
+    "upstream_inference_completions_cost": 0.00020048
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 673,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 55.3
+}

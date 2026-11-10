@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have double vision?",
+  "Do you have any weakness in your right arm or leg?",
+  "Do you have any difficulty speaking?",
+  "Do you have any numbness on the right side of your body?",
+  "Do you have a severe headache?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Have you had a recent head injury?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Pupil examination",
+  "CT Angiography of the head",
+  "MRI of the brain"
+ ],
+ "served": [
+  "pupil size and light reaction",
+  "CT / MR angiography (posterior circulation)",
+  "CT / MR angiography (circle of Willis)",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI brain with DWI",
+  "MRI susceptibility-weighted sequences"
+ ],
+ "results": [
+  "1. Pupil examination",
+  "     pupil size and light reaction: equal and reactive",
+  "2. CT Angiography of the head",
+  "     CT / MR angiography (posterior circulation): TOP-OF-THE-BASILAR OCCLUSION; thrombectomy was deferred as he was well preserved",
+  "     CT / MR angiography (circle of Willis): normal / non-contributory",
+  "3. MRI of the brain",
+  "     MRI brain with gadolinium: left rostral pontine and caudal mesencephalic infarcts without enhancement",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the left rostral pons and caudal mesencephalon extending along the paramedian line to the midline",
+  "     MRI brain with DWI: LEFT rostral pontine infarct and a caudal mesencephalic infarct extending along the paramedian line to the midline",
+  "     MRI susceptibility-weighted sequences: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Left rostral pontine and caudal mesencephalic infarct due to top-of-the-basilar artery occlusion\n\n1. Basilar artery thrombosis\n2. Embolic stroke of the posterior circulation\n3. One-and-a-half syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Pupil examination\n2. CT Angiography of the head\n3. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Left rostral pontine and caudal mesencephalic infarct due to top-of-the-basilar artery occlusion",
+ "decisive_served": [
+  "CT / MR angiography (posterior circulation)",
+  "MRI brain with DWI"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 419,
+   "completion_tokens": 4841,
+   "total_tokens": 5260,
+   "cost": 0.00168784,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00168784,
+    "upstream_inference_prompt_cost": 4.19e-05,
+    "upstream_inference_completions_cost": 0.00164594
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4537,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 795,
+   "completion_tokens": 650,
+   "total_tokens": 1445,
+   "cost": 0.0003005,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003005,
+    "upstream_inference_prompt_cost": 7.95e-05,
+    "upstream_inference_completions_cost": 0.000221
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 674,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1086,
+   "completion_tokens": 1729,
+   "total_tokens": 2815,
+   "cost": 0.00069646,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00069646,
+    "upstream_inference_prompt_cost": 0.0001086,
+    "upstream_inference_completions_cost": 0.00058786
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1592,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 229.1
+}

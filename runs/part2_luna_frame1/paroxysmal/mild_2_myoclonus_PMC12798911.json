@@ -1,0 +1,194 @@
+{
+ "questions": [
+  "Are you having pain right now?",
+  "Is the pain in your chest?",
+  "Is the pain in your abdomen?",
+  "Did the pain begin suddenly?",
+  "Is the pain severe?",
+  "Are you having difficulty breathing?",
+  "Have you fainted or felt close to fainting?",
+  "Have you had a recent injury or accident?",
+  "Have you had surgery recently?",
+  "Do you have a fever?",
+  "Have you been vomiting?",
+  "Is there blood in your vomit?",
+  "Have you noticed blood in your stool?",
+  "Have you been unable to pass stool or gas?",
+  "Have you had difficulty urinating?",
+  "Are you bleeding vaginally?",
+  "Could you be pregnant?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Do you take blood-thinning medication?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Measure temperature, blood pressure, heart rate, respiratory rate, oxygen saturation, and capillary glucose.",
+  "Perform a focused cardiopulmonary examination.",
+  "Inspect and palpate the surgical site for erythema, warmth, swelling, discharge, wound separation, fluctuance, or tenderness.",
+  "Perform a complete abdominal examination, including assessment for distension, bowel sounds, guarding, and palpable masses.",
+  "Review the operative report, postoperative notes, medication chart, and surgical pathology report.",
+  "Complete blood count with differential.",
+  "Serum electrolytes, urea, creatinine, glucose, liver enzymes, bilirubin, and albumin.",
+  "12-lead electrocardiogram.",
+  "Chest radiograph."
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "blood glucose and HbA1c"
+ ],
+ "results": [
+  "1. Measure temperature, blood pressure, heart rate, respiratory rate, oxygen saturation, and capillary glucose.",
+  "     blood glucose and HbA1c: normal",
+  "2. Perform a focused cardiopulmonary examination.",
+  "     not performed / not available",
+  "3. Inspect and palpate the surgical site for erythema, warmth, swelling, discharge, wound separation, fluctuance, or tenderness.",
+  "     not performed / not available",
+  "4. Perform a complete abdominal examination, including assessment for distension, bowel sounds, guarding, and palpable masses.",
+  "     not performed / not available",
+  "5. Review the operative report, postoperative notes, medication chart, and surgical pathology report.",
+  "     not performed / not available",
+  "6. Complete blood count with differential.",
+  "     full blood count and biochemistry: normal",
+  "7. Serum electrolytes, urea, creatinine, glucose, liver enzymes, bilirubin, and albumin.",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     blood glucose and HbA1c: normal",
+  "8. 12-lead electrocardiogram.",
+  "     not performed / not available",
+  "9. Chest radiograph.",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Postoperative state following breast surgery for breast carcinoma (most likely breast cancer)\n\nALTERNATIVE 1: Postoperative chest-wall wound following non-oncologic breast surgery\n\nALTERNATIVE 2: Postoperative dressing over a median sternotomy or other thoracic surgical incision\n\nALTERNATIVE 3: Breast or chest-wall malignancy without sufficient information to determine the specific histology",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Measure temperature, blood pressure, heart rate, respiratory rate, oxygen saturation, and capillary glucose.\n2. Perform a focused cardiopulmonary examination.\n3. Inspect and palpate the surgical site for erythema, warmth, swelling, discharge, wound separation, fluctuance, or tenderness.\n4. Perform a complete abdominal examination, including assessment for distension, bowel sounds, guarding, and palpable masses.\n5. Review the operative report, postoperative notes, medication chart, and surgical pathology report.\n6. Complete blood count with differential.\n7. Serum electrolytes, urea, creatinine, glucose, liver enzymes, bilirubin, and albumin.\n8. 12-lead electrocardiogram.\n9. Chest radiograph.",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Postoperative state following breast surgery for breast carcinoma (most likely breast cancer)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 371,
+   "completion_tokens": 479,
+   "total_tokens": 850,
+   "cost": 0.000649,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000649,
+    "upstream_inference_prompt_cost": 7.42e-05,
+    "upstream_inference_completions_cost": 0.0005748
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 294,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 974,
+   "completion_tokens": 672,
+   "total_tokens": 1646,
+   "cost": 0.0010012,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010012,
+    "upstream_inference_prompt_cost": 0.0001948,
+    "upstream_inference_completions_cost": 0.0008064
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 514,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1466,
+   "completion_tokens": 603,
+   "total_tokens": 2069,
+   "cost": 0.00108995,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1463,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00108995,
+    "upstream_inference_prompt_cost": 0.00036635,
+    "upstream_inference_completions_cost": 0.0007236
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 38.2
+}

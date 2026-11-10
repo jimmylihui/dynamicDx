@@ -1,0 +1,200 @@
+{
+ "questions": [
+  "Are you experiencing any pain in your legs?",
+  "Do you have a history of diabetes?",
+  "Have you had any recent trauma to your back or legs?",
+  "Do you have a history of epilepsy or seizures?",
+  "Are you currently taking any medications, such as antipsychotics or muscle relaxants?",
+  "Do you feel like your legs are moving on their own without you wanting them to?",
+  "Do you have a history of Parkinson's disease?",
+  "Do you have a history of stroke or brain injury?",
+  "Do you have a history of kidney disease or are you on dialysis?",
+  "Do you have a history of thyroid problems?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Assess lower extremity muscle tone (spasticity vs flaccidity)",
+  "Test deep tendon reflexes at the knee and ankle",
+  "Perform Babinski sign test",
+  "Assess for waxy flexibility (catalepsy) by passively positioning the patient's limbs and observing if they remain in that position",
+  "Assess for frontal release signs (glabellar tap, snout reflex)"
+ ],
+ "served": [
+  "muscle tone examination",
+  "deep tendon reflexes and plantar responses",
+  "mental status / cognitive screen"
+ ],
+ "results": [
+  "R1 ASK Are you experiencing any pain in your legs?; Do you have a history of diabetes?; Have you had any recent trauma to your back or legs? -> ['no', 'no', 'no']",
+  "R2 ORDER Assess lower extremity muscle tone (spasticity vs flaccidity); Test deep tendon reflexes at the knee and ankle; Perform Babinski sign test -> [['muscle tone examination'], ['deep tendon reflexes and plantar responses'], ['deep tendon reflexes and plantar responses']]",
+  "R3 ASK Do you have a history of epilepsy or seizures?; Are you currently taking any medications, such as antipsychotics or muscle relaxants? -> ['no', 'no']",
+  "R4 ORDER Assess for waxy flexibility (catalepsy) by passively positioning the patient's limbs and observing if they remain in that position -> [['muscle tone examination']]",
+  "R5 ASK Do you feel like your legs are moving on their own without you wanting them to? -> ['yes']",
+  "R6 ORDER Assess for frontal release signs (glabellar tap, snout reflex) -> [['mental status / cognitive screen']]",
+  "R7 ASK Do you have a history of Parkinson's disease? -> ['no']",
+  "R8 ASK Do you have a history of stroke or brain injury? -> ['no']",
+  "R9 ASK Do you have a history of kidney disease or are you on dialysis? -> ['no']",
+  "R10 ASK Do you have a history of thyroid problems? -> ['no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Functional movement disorder (psychogenic myoclonus) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you experiencing any pain in your legs?",
+    "Do you have a history of diabetes?",
+    "Have you had any recent trauma to your back or legs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Assess lower extremity muscle tone (spasticity vs flaccidity)",
+    "Test deep tendon reflexes at the knee and ankle",
+    "Perform Babinski sign test"
+   ],
+   "result": [
+    [
+     "muscle tone examination"
+    ],
+    [
+     "deep tendon reflexes and plantar responses"
+    ],
+    [
+     "deep tendon reflexes and plantar responses"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of epilepsy or seizures?",
+    "Are you currently taking any medications, such as antipsychotics or muscle relaxants?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Assess for waxy flexibility (catalepsy) by passively positioning the patient's limbs and observing if they remain in that position"
+   ],
+   "result": [
+    [
+     "muscle tone examination"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you feel like your legs are moving on their own without you wanting them to?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Assess for frontal release signs (glabellar tap, snout reflex)"
+   ],
+   "result": [
+    [
+     "mental status / cognitive screen"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of Parkinson's disease?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of stroke or brain injury?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of kidney disease or are you on dialysis?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of thyroid problems?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Functional movement disorder (psychogenic myoclonus)"
+  }
+ ],
+ "dx": "Functional movement disorder (psychogenic myoclonus)",
+ "dx_raw": "DIAGNOSIS: Functional movement disorder (psychogenic myoclonus)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0022,
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 56.9
+}

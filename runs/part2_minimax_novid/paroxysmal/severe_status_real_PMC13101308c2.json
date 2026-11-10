@@ -1,0 +1,192 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain or discomfort?",
+  "Is the pain in your chest?",
+  "Is the pain in your abdomen?",
+  "Is the pain in your head?",
+  "Is the pain in your back?",
+  "Is the pain in your joints or muscles?",
+  "Are you having any difficulty breathing?",
+  "Have you had any sudden weakness, numbness, or trouble speaking?",
+  "Have you had any unexplained weight loss?",
+  "Have you had any fevers, chills, or night sweats?",
+  "Have you had any nausea or vomiting?",
+  "Have you had any changes in your bowel habits (diarrhea, constipation, or blood)?",
+  "Have you had any changes in urination (frequency, pain, or blood)?",
+  "Have you had any dizziness or fainting?",
+  "Have you had any palpitations or rapid heartbeat?",
+  "Have you had any skin changes, rashes, or itching?",
+  "Have you had any swelling in your legs or ankles?",
+  "Do you have any chronic medical conditions (e.g., diabetes, high blood pressure, asthma)?",
+  "Are you currently taking any prescription medications?",
+  "Do you have any allergies to medications?",
+  "Do you currently smoke or use tobacco?",
+  "Do you drink alcohol regularly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "yes",
+  "20": "no",
+  "21": "no",
+  "22": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "12-lead electrocardiogram (ECG)",
+  "Complete blood count (CBC)",
+  "Basic metabolic panel (BMP) including electrolytes, blood urea nitrogen, creatinine, and glucose",
+  "Hemoglobin A1c (HbA1c)",
+  "Lipid panel (total cholesterol, LDL, HDL, triglycerides)",
+  "Thyroid-stimulating hormone (TSH)",
+  "Urinalysis",
+  "Liver function tests (ALT, AST, alkaline phosphatase, bilirubin)"
+ ],
+ "served": [
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose and HbA1c",
+  "blood glucose and HbA1c",
+  "thyroid function (TSH, free T4)",
+  "urinalysis",
+  "liver function tests"
+ ],
+ "results": [
+  "1. 12-lead electrocardiogram (ECG)",
+  "     not performed / not available",
+  "2. Complete blood count (CBC)",
+  "     full blood count and biochemistry: normal",
+  "3. Basic metabolic panel (BMP) including electrolytes, blood urea nitrogen, creatinine, and glucose",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     blood glucose and HbA1c: normal",
+  "4. Hemoglobin A1c (HbA1c)",
+  "     blood glucose and HbA1c: normal",
+  "5. Lipid panel (total cholesterol, LDL, HDL, triglycerides)",
+  "     not performed / not available",
+  "6. Thyroid-stimulating hormone (TSH)",
+  "     thyroid function (TSH, free T4): normal",
+  "7. Urinalysis",
+  "     urinalysis: normal",
+  "8. Liver function tests (ALT, AST, alkaline phosphatase, bilirubin)",
+  "     liver function tests: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: No active disease identified – asymptomatic adult on unspecified maintenance pharmacotherapy with normal screening laboratory studies.\n\nAlternatives:\n1. Well-controlled pre-existing chronic condition (specific diagnosis undetermined without medication reconciliation)\n2. Primary cardiovascular prevention (e.g., statin and/or low-dose aspirin)\n3. Hormonal contraception or other prophylactic therapy in an otherwise healthy individual",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. 12-lead electrocardiogram (ECG)\n2. Complete blood count (CBC)\n3. Basic metabolic panel (BMP) including electrolytes, blood urea nitrogen, creatinine, and glucose\n4. Hemoglobin A1c (HbA1c)\n5. Lipid panel (total cholesterol, LDL, HDL, triglycerides)\n6. Thyroid-stimulating hormone (TSH)\n7. Urinalysis\n8. Liver function tests (ALT, AST, alkaline phosphatase, bilirubin)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "No active disease identified – asymptomatic adult on unspecified maintenance pharmacotherapy with normal screening laboratory studies.",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 9625,
+   "total_tokens": 9939,
+   "cost": 0.0115722,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0115722,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.01155
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 10528,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1097,
+   "completion_tokens": 799,
+   "total_tokens": 1896,
+   "cost": 0.00122982,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00122982,
+    "upstream_inference_prompt_cost": 0.00027102,
+    "upstream_inference_completions_cost": 0.0009588
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1472,
+   "completion_tokens": 811,
+   "total_tokens": 2283,
+   "cost": 0.0011724,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1010,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011724,
+    "upstream_inference_prompt_cost": 0.0001992,
+    "upstream_inference_completions_cost": 0.0009732
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 904,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 146.2
+}

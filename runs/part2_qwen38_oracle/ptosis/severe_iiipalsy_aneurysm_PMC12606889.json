@@ -1,0 +1,115 @@
+{
+ "questions": [
+  "Do you have a history of diabetes?",
+  "Did the weakness in your face start suddenly, waking up with it or noticing it over a few hours?",
+  "Is the affected side of your face the one on the left of this screen (your right)?",
+  "Are you unable to close the eye on the affected side completely?",
+  "Have you noticed any changes in your hearing, such as sounds seeming unusually loud on the affected side?",
+  "Do you have a rash or blisters inside or around your ear?",
+  "Do you have a severe headache or neck stiffness?",
+  "Do you have weakness or numbness in your arm or leg on the same side as your face?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "pupil examination (size, light reaction)",
+  "MRI orbits",
+  "CT / MR angiography (circle of Willis)",
+  "ocular surgical history"
+ ],
+ "results": [
+  "1. pupil examination (size, light reaction): mild anisocoria; the RIGHT pupil is unreactive to dim light, with involuntary pupillary spasms that are irregular in both frequency and duration and unrelated to eye position",
+  "2. MRI orbits: atrophy of the extraocular muscles, particularly the medial rectus - a long-standing, not acute, palsy",
+  "3. CT / MR angiography (circle of Willis): NO aneurysm",
+  "4. ocular surgical history: previous strabismus surgery and levator muscle surgery"
+ ],
+ "dx_raw": "DIAGNOSIS: Adie's tonic pupil (idiopathic postganglionic parasympathetic denervation) with associated strabismus and ptosis, status post corrective surgery",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Adie's tonic pupil (idiopathic postganglionic parasympathetic denervation) with associated strabismus and ptosis, status post corrective surgery",
+ "decisive_served": [
+  "pupil examination (size, light reaction)",
+  "MRI orbits",
+  "CT / MR angiography (circle of Willis)",
+  "ocular surgical history"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 149,
+   "total_tokens": 4972,
+   "cost": 0.00079348,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00079348,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 7.003e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5369,
+   "completion_tokens": 40,
+   "total_tokens": 5409,
+   "cost": 0.00022383,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00022383,
+    "upstream_inference_prompt_cost": 0.00020503,
+    "upstream_inference_completions_cost": 1.88e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_iiipalsy_aneurysm_PMC12606889.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 18.4
+}

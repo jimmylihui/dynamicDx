@@ -1,0 +1,209 @@
+{
+ "questions": [
+  "Has the swelling around your eye been present for less than one week?",
+  "Is the affected eye painful?",
+  "Have you had any recent fever or chills?",
+  "Have you noticed any change in your vision in that eye?",
+  "Do you have double vision?",
+  "Are you a smoker?",
+  "Have you had any recent upper respiratory infection or sinus infection?",
+  "Do you have any history of thyroid problems?",
+  "Have you noticed any redness of the eye?",
+  "Have you had any recent trauma to the area?",
+  "Do you have any history of cancer?",
+  "Do you have diabetes?",
+  "Have you noticed the eye bulging more when you strain or bend forward?",
+  "Do you have headaches?",
+  "Have you noticed any nasal congestion on the same side?",
+  "Is there any discharge from the eye?",
+  "Have you lost any weight recently without trying?",
+  "Do you feel heat intolerance or palpitations?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "CT scan of the orbits and paranasal sinuses with intravenous contrast",
+  "Full blood count with differential",
+  "C-reactive protein",
+  "Measurement of proptosis with Hertel exophthalmometry",
+  "Assessment of extraocular movements in all cardinal gazes",
+  "Pupillary examination for a relative afferent pupillary defect",
+  "Visual acuity testing with Snellen chart",
+  "Slit-lamp examination of the anterior segment",
+  "Eversion of both upper eyelids to inspect the tarsal conjunctiva",
+  "Fundoscopy",
+  "Blood glucose level",
+  "Palpation of the preauricular and submandibular lymph nodes"
+ ],
+ "served": [
+  "CT sinuses",
+  "full blood count",
+  "ESR / CRP",
+  "proptosis / exophthalmometry",
+  "ocular motility examination",
+  "pupil examination (size, light reaction)",
+  "visual acuity and colour vision",
+  "fundoscopy",
+  "blood glucose and HbA1c",
+  "glucose / HbA1c"
+ ],
+ "results": [
+  "1. CT scan of the orbits and paranasal sinuses with intravenous contrast",
+  "     CT sinuses: invasive sinus disease extending to the orbit",
+  "2. Full blood count with differential",
+  "     full blood count: leukocytosis, white cells 21.4 x10^9/L",
+  "3. C-reactive protein",
+  "     ESR / CRP: normal",
+  "4. Measurement of proptosis with Hertel exophthalmometry",
+  "     proptosis / exophthalmometry: no proptosis",
+  "5. Assessment of extraocular movements in all cardinal gazes",
+  "     ocular motility examination: failure to adduct the right eye",
+  "6. Pupillary examination for a relative afferent pupillary defect",
+  "     pupil examination (size, light reaction): equal and reactive",
+  "7. Visual acuity testing with Snellen chart",
+  "     visual acuity and colour vision: normal",
+  "8. Slit-lamp examination of the anterior segment",
+  "     not performed / not available",
+  "9. Eversion of both upper eyelids to inspect the tarsal conjunctiva",
+  "     not performed / not available",
+  "10. Fundoscopy",
+  "     fundoscopy: right optic disc edema",
+  "11. Blood glucose level",
+  "     blood glucose and HbA1c: glucose 385 mg/dL; HbA1c elevated",
+  "     glucose / HbA1c: non-fasting glucose 385 mg/dL - NEWLY DIAGNOSED diabetes",
+  "12. Palpation of the preauricular and submandibular lymph nodes",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Rhinocerebral mucormycosis with orbital and orbital apex invasion in newly diagnosed diabetes mellitus.\n\nAlternative 1: Invasive sino-orbital aspergillosis.\nAlternative 2: Bacterial orbital cellulitis from acute invasive sinusitis with cavernous sinus thrombosis.\nAlternative 3: Sino-nasal malignancy (squamous cell carcinoma or non-Hodgkin lymphoma) with orbital invasion.",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. CT scan of the orbits and paranasal sinuses with intravenous contrast\n2. Full blood count with differential\n3. C-reactive protein\n4. Measurement of proptosis with Hertel exophthalmometry\n5. Assessment of extraocular movements in all cardinal gazes\n6. Pupillary examination for a relative afferent pupillary defect\n7. Visual acuity testing with Snellen chart\n8. Slit-lamp examination of the anterior segment\n9. Eversion of both upper eyelids to inspect the tarsal conjunctiva\n10. Fundoscopy\n11. Blood glucose level\n12. Palpation of the preauricular and submandibular lymph nodes",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Rhinocerebral mucormycosis with orbital and orbital apex invasion in newly diagnosed diabetes mellitus.",
+ "decisive_served": [
+  "CT sinuses",
+  "glucose / HbA1c"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 1034,
+   "completion_tokens": 404,
+   "total_tokens": 1438,
+   "cost": 0.00075732,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075732,
+    "upstream_inference_prompt_cost": 0.00027252,
+    "upstream_inference_completions_cost": 0.0004848
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 207,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1663,
+   "completion_tokens": 763,
+   "total_tokens": 2426,
+   "cost": 0.00116994,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1019,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00116994,
+    "upstream_inference_prompt_cost": 0.00025434,
+    "upstream_inference_completions_cost": 0.0009156
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 624,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 2205,
+   "completion_tokens": 1295,
+   "total_tokens": 3500,
+   "cost": 0.00181998,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1648,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00181998,
+    "upstream_inference_prompt_cost": 0.00026598,
+    "upstream_inference_completions_cost": 0.001554
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1216,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 37.5
+}

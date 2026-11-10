@@ -1,0 +1,161 @@
+{
+ "questions": [
+  "Did you hit your head?",
+  "Did you lose consciousness?",
+  "Is your jaw broken?",
+  "Did you fall?",
+  "Are you in pain?",
+  "Do you have a headache?",
+  "Do you feel nauseous?",
+  "Is your vision blurry?",
+  "Do you feel numbness in your limbs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Physical examination of the head and neck (including removal of the bandage)",
+  "Neurological examination",
+  "Vital signs",
+  "Review of medical records"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "neurological examination between events"
+ ],
+ "results": [
+  "1. Physical examination of the head and neck (including removal of the bandage)",
+  "     not performed / not available",
+  "2. Neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "     neurological examination between events: normal",
+  "3. Vital signs",
+  "     not performed / not available",
+  "4. Review of medical records",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-operative state following orthognathic surgery\n\nPost-operative state following maxillofacial surgery\nPost-operative state following a craniotomy\nLymphedema of the head and neck",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Physical examination of the head and neck (including removal of the bandage)\n2. Neurological examination\n3. Vital signs\n4. Review of medical records",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Post-operative state following orthognathic surgery",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2299,
+   "total_tokens": 10997,
+   "cost": 0.00165146,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00165146,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00078166
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1965,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9034,
+   "completion_tokens": 1400,
+   "total_tokens": 10434,
+   "cost": 0.0013794,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013794,
+    "upstream_inference_prompt_cost": 0.0009034,
+    "upstream_inference_completions_cost": 0.000476
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1341,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9318,
+   "completion_tokens": 4857,
+   "total_tokens": 14175,
+   "cost": 0.00258318,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00258318,
+    "upstream_inference_prompt_cost": 0.0009318,
+    "upstream_inference_completions_cost": 0.00165138
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4371,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 320.2
+}

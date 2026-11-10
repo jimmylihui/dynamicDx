@@ -1,0 +1,173 @@
+{
+ "questions": [
+  "Did this problem with your eyes start suddenly?",
+  "Do you see double?",
+  "Do you have pain in or around your eye?",
+  "Is one of your eyelids drooping?",
+  "Do you have a headache?",
+  "Have you had any recent head injury?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you have any slurred speech or trouble speaking?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Acetylcholine receptor antibody blood test",
+  "CT chest with contrast (for thymoma)",
+  "Anti-MuSK antibody blood test",
+  "Single fiber EMG",
+  "Ice pack test at bedside",
+  "Thyroid function tests",
+  "Repetitive nerve stimulation study"
+ ],
+ "served": [
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "CT chest (thymus)",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-MuSK antibodies",
+  "single-fibre EMG",
+  "ice-pack test",
+  "thyroid function (TSH, free T4)",
+  "TSH / free T4 / TRAb",
+  "repetitive nerve stimulation"
+ ],
+ "results": [
+  "1. Acetylcholine receptor antibody blood test",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: acetylcholine receptor antibodies strongly positive, 10.32 nmol/L",
+  "     anti-acetylcholine receptor antibodies: 10.32 nmol/L (normal <0.50) - strongly POSITIVE",
+  "2. CT chest with contrast (for thymoma)",
+  "     CT chest (thymus): no thymic abnormality",
+  "3. Anti-MuSK antibody blood test",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: acetylcholine receptor antibodies strongly positive, 10.32 nmol/L",
+  "     anti-MuSK antibodies: negative",
+  "4. Single fiber EMG",
+  "     single-fibre EMG: normal jitter",
+  "5. Ice pack test at bedside",
+  "     ice-pack test: POSITIVE",
+  "6. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH / free T4 / TRAb: normal, TRAb negative",
+  "7. Repetitive nerve stimulation study",
+  "     repetitive nerve stimulation: decremental response"
+ ],
+ "dx_raw": "DIAGNOSIS: Acetylcholine receptor antibody-positive generalized myasthenia gravis (without thymoma on imaging).\n\n1. Thymic hyperplasia (still possible despite normal CT, as CT can miss early/mild hyperplasia)\n2. Ocular myasthenia gravis with mild generalized features (less likely given definite limb weakness and positive RNS)\n3. Seronegative myasthenia gravis with false-positive AChR antibody (very unlikely given markedly elevated titre with confirmatory decremental RNS and positive ice pack test)",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Acetylcholine receptor antibody blood test\n2. CT chest with contrast (for thymoma)\n3. Anti-MuSK antibody blood test\n4. Single fiber EMG\n5. Ice pack test at bedside\n6. Thyroid function tests\n7. Repetitive nerve stimulation study",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Acetylcholine receptor antibody-positive generalized myasthenia gravis (without thymoma on imaging).",
+ "decisive_served": [
+  "anti-acetylcholine receptor antibodies",
+  "ice-pack test",
+  "repetitive nerve stimulation"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2090,
+   "total_tokens": 9152,
+   "cost": 0.00459924,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00459924,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.002508
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2169,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7457,
+   "completion_tokens": 1773,
+   "total_tokens": 9230,
+   "cost": 0.00267846,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00267846,
+    "upstream_inference_prompt_cost": 0.00055086,
+    "upstream_inference_completions_cost": 0.0021276
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1805,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7826,
+   "completion_tokens": 417,
+   "total_tokens": 8243,
+   "cost": 0.0010698,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7410,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010698,
+    "upstream_inference_prompt_cost": 0.0005694,
+    "upstream_inference_completions_cost": 0.0005004
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 336,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "mild_cpeo_mitochondrial_PMC9350803.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 65.1
+}

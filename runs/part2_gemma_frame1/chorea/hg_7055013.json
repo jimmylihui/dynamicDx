@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Are you experiencing shortness of breath?",
+  "Do you have chest pain?",
+  "Is there pain in your legs?",
+  "Do you have a fever?",
+  "Is the swelling in both legs?",
+  "Do you have a history of heart failure?",
+  "Do you have a history of kidney disease?",
+  "Do you have a history of liver disease?",
+  "Have you had any recent surgeries?",
+  "Have you traveled long distances recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Compression ultrasound of the legs",
+  "D-dimer blood test"
+ ],
+ "served": [],
+ "results": [
+  "1. Compression ultrasound of the legs",
+  "     not performed / not available",
+  "2. D-dimer blood test",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-thrombotic syndrome caused by previous deep vein thrombosis\n\n1. Deep vein thrombosis\n2. Lymphedema\n3. Chronic venous insufficiency",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Compression ultrasound of the legs\n2. D-dimer blood test",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Post-thrombotic syndrome caused by previous deep vein thrombosis",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 408,
+   "completion_tokens": 1847,
+   "total_tokens": 2255,
+   "cost": 0.00066878,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00066878,
+    "upstream_inference_prompt_cost": 4.08e-05,
+    "upstream_inference_completions_cost": 0.00062798
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1665,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 804,
+   "completion_tokens": 694,
+   "total_tokens": 1498,
+   "cost": 0.00031636,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00031636,
+    "upstream_inference_prompt_cost": 8.04e-05,
+    "upstream_inference_completions_cost": 0.00023596
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 675,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 948,
+   "completion_tokens": 3556,
+   "total_tokens": 4504,
+   "cost": 0.00130384,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00130384,
+    "upstream_inference_prompt_cost": 9.48e-05,
+    "upstream_inference_completions_cost": 0.00120904
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3385,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 206.5
+}

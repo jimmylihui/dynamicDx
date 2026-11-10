@@ -1,0 +1,220 @@
+{
+ "questions": [
+  "Do you have a specific health concern or symptom that brought you here today?",
+  "Have you been experiencing pain?",
+  "Is the pain in your chest?",
+  "Is the pain in your abdomen?",
+  "Is the pain in your head?",
+  "Is the pain in your back or neck?",
+  "Is the pain in a joint or muscle?",
+  "Have you been experiencing shortness of breath?",
+  "Have you had a fever in the past week?",
+  "Have you noticed any weakness or numbness in your arms or legs?",
+  "Have you had any bleeding that concerns you?",
+  "Have you been experiencing nausea or vomiting?",
+  "Have you had any changes in your bowel movements?",
+  "Have you had any difficulty urinating?",
+  "Have you noticed any changes in your vision?",
+  "Have you had any difficulty speaking or understanding speech?",
+  "Have you experienced dizziness or loss of balance?",
+  "Have you noticed any skin changes or rashes?",
+  "Have you experienced unintended weight loss?",
+  "Have you been feeling more tired than usual?",
+  "Do you have any chronic medical conditions?",
+  "Do you take any prescription medications?",
+  "Are you allergic to any medications?",
+  "Have you ever had surgery?",
+  "Do you currently smoke?",
+  "Do you drink alcohol regularly?",
+  "Do you use any recreational drugs?",
+  "Is there any family history of serious illness?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "yes",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Bedside capillary blood glucose",
+  "Non-contrast CT head",
+  "MRI brain with diffusion-weighted imaging",
+  "Carotid duplex ultrasound",
+  "Transthoracic echocardiogram",
+  "Fasting lipid panel",
+  "Hemoglobin A1c",
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Prothrombin time and partial thromboplastin time",
+  "Troponin I"
+ ],
+ "served": [
+  "blood glucose",
+  "CT head (non-contrast)",
+  "MRI diffusion-weighted sequences",
+  "blood glucose and HbA1c",
+  "HbA1c",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests"
+ ],
+ "results": [
+  "1. Bedside capillary blood glucose",
+  "     blood glucose: NORMAL - no diabetes and no hyperglycaemia",
+  "2. Non-contrast CT head",
+  "     CT head (non-contrast): no haemorrhage, no hyperdensity, no infarct",
+  "3. MRI brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: normal",
+  "4. Carotid duplex ultrasound",
+  "     not performed / not available",
+  "5. Transthoracic echocardiogram",
+  "     not performed / not available",
+  "6. Fasting lipid panel",
+  "     not performed / not available",
+  "7. Hemoglobin A1c",
+  "     blood glucose and HbA1c: normal",
+  "     HbA1c: normal",
+  "8. Complete blood count",
+  "     full blood count: normal",
+  "9. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "10. Prothrombin time and partial thromboplastin time",
+  "     not performed / not available",
+  "11. Troponin I",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Transient ischemic attack (TIA) of the left hemisphere language cortex (DWI-negative on MRI)\n\nAlternatives:\n1. Migraine with aphasic aura\n2. Focal seizure with post-ictal (Todd's) aphasia\n3. Functional neurological symptom disorder (non-organic aphasia)",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Bedside capillary blood glucose\n2. ECG\n3. Non-contrast CT head\n4. MRI brain with diffusion-weighted imaging\n5. Carotid duplex ultrasound\n6. Transthoracic echocardiogram\n7. Fasting lipid panel\n8. Hemoglobin A1c\n9. Complete blood count\n10. Comprehensive metabolic panel\n11. Prothrombin time and partial thromboplastin time\n12. Troponin I",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Transient ischemic attack (TIA) of the left hemisphere language cortex (DWI-negative on MRI)",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 10734,
+   "total_tokens": 11048,
+   "cost": 0.012903,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.012903,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.0128808
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 11874,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1179,
+   "completion_tokens": 1475,
+   "total_tokens": 2654,
+   "cost": 0.00206562,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00206562,
+    "upstream_inference_prompt_cost": 0.00029562,
+    "upstream_inference_completions_cost": 0.00177
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1498,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1571,
+   "completion_tokens": 2724,
+   "total_tokens": 4295,
+   "cost": 0.00346698,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1138,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00346698,
+    "upstream_inference_prompt_cost": 0.00019818,
+    "upstream_inference_completions_cost": 0.0032688
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3181,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 183.5
+}

@@ -1,0 +1,207 @@
+{
+ "questions": [
+  "Are you having trouble breathing or chest pain right now?",
+  "Did the weakness or inability to move begin suddenly?",
+  "Is the main problem weakness or loss of movement on one side of your body?",
+  "Is your face drooping or is your speech difficult to understand?",
+  "Do you have new numbness or loss of sensation?",
+  "Is the affected limb painful?",
+  "Is the limb swollen, red, warm, or noticeably different in color?",
+  "Did this problem begin after an injury, fall, surgery, or injection?",
+  "Do you have a fever?",
+  "Have you recently been confused, fainted, or had a seizure?",
+  "Have you had a stroke or similar episode before?",
+  "Do you have diabetes, high blood pressure, or a blood-clotting disorder?",
+  "Are you taking blood thinners?",
+  "Have you recently had prolonged immobility, a long trip, or a previous blood clot?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "yes",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Complete neurological examination, including mental status, cranial nerves, strength, tone, reflexes, coordination, sensation, and gait",
+  "NIH Stroke Scale assessment",
+  "Noncontrast CT scan of the head",
+  "MRI of the brain with diffusion-weighted imaging",
+  "Point-of-care blood glucose",
+  "Complete blood count, electrolytes, renal and liver function tests",
+  "Electrocardiogram",
+  "Blood pressure measurement in both arms",
+  "Carotid duplex ultrasound",
+  "Transthoracic echocardiogram with bubble study"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "gait and coordination",
+  "CT head (non-contrast)",
+  "MRI diffusion-weighted sequences",
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "renal function and eGFR",
+  "full blood count",
+  "vital signs"
+ ],
+ "results": [
+  "1. Complete neurological examination, including mental status, cranial nerves, strength, tone, reflexes, coordination, sensation, and gait",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: increased tone in the limbs",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): involuntary choreiform movements impair coordination",
+  "     gait and coordination: normal",
+  "2. NIH Stroke Scale assessment",
+  "     not performed / not available",
+  "3. Noncontrast CT scan of the head",
+  "     CT head (non-contrast): no haemorrhage, no hyperdensity, no infarct",
+  "4. MRI of the brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the bilateral striatum",
+  "5. Point-of-care blood glucose",
+  "     blood glucose: 799 mg/dL (normal 74-106)",
+  "6. Complete blood count, electrolytes, renal and liver function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     renal function and eGFR: normal",
+  "     full blood count: normal",
+  "7. Electrocardiogram",
+  "     not performed / not available",
+  "8. Blood pressure measurement in both arms",
+  "     vital signs: normal, afebrile",
+  "9. Carotid duplex ultrasound",
+  "     not performed / not available",
+  "10. Transthoracic echocardiogram with bubble study",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperglycemia-induced bilateral striatal chorea (diabetic striatopathy) due to severe nonketotic hyperglycemia\n\nALTERNATIVE: Bilateral basal-ganglia ischemic infarction\n\nALTERNATIVE: Huntington disease\n\nALTERNATIVE: Acquired metabolic/toxic basal-ganglia injury",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Complete neurological examination, including mental status, cranial nerves, strength, tone, reflexes, coordination, sensation, and gait\n2. NIH Stroke Scale assessment\n3. Noncontrast CT scan of the head\n4. MRI of the brain with diffusion-weighted imaging\n5. Point-of-care blood glucose\n6. Complete blood count, electrolytes, renal and liver function tests\n7. Electrocardiogram\n8. Blood pressure measurement in both arms\n9. Carotid duplex ultrasound\n10. Transthoracic echocardiogram with bubble study",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperglycemia-induced bilateral striatal chorea (diabetic striatopathy) due to severe nonketotic hyperglycemia",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 697,
+   "completion_tokens": 555,
+   "total_tokens": 1252,
+   "cost": 0.0008054,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008054,
+    "upstream_inference_prompt_cost": 0.0001394,
+    "upstream_inference_completions_cost": 0.000666
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 351,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1308,
+   "completion_tokens": 296,
+   "total_tokens": 1604,
+   "cost": 0.00068205,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1305,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00068205,
+    "upstream_inference_prompt_cost": 0.00032685,
+    "upstream_inference_completions_cost": 0.0003552
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 173,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1855,
+   "completion_tokens": 201,
+   "total_tokens": 2056,
+   "cost": 0.00040465,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1305,
+    "cache_write_tokens": 547,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00040465,
+    "upstream_inference_prompt_cost": 0.00016345,
+    "upstream_inference_completions_cost": 0.0002412
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 127,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 39.2
+}

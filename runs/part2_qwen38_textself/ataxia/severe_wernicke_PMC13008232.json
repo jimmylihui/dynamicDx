@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Do you have a history of heavy alcohol use?",
+  "Do you experience dizziness or vertigo when moving your head?",
+  "Do you have numbness or tingling in your feet?",
+  "Do you have difficulty seeing in dim light or at night?",
+  "Do you have a family history of similar walking problems?",
+  "Do you have urinary incontinence?",
+  "Do you have memory loss or cognitive decline?",
+  "Do you have tremors in your hands?",
+  "Do you have muscle stiffness or rigidity?",
+  "Do you have a history of stroke or transient ischemic attacks?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain"
+ ],
+ "served": [
+  "brain MRI"
+ ],
+ "results": [
+  "1. MRI of the brain",
+  "     brain MRI: bilateral symmetric hyperintensity in the mammillary bodies, thalami and periaqueductal midbrain, with the LENTIFORM FORK SIGN; reversed after treatment"
+ ],
+ "dx_raw": "DIAGNOSIS: Wernicke's encephalopathy due to thiamine deficiency",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain",
+ "rationale": [
+  null
+ ],
+ "dx": "Wernicke's encephalopathy due to thiamine deficiency",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 191,
+   "completion_tokens": 136,
+   "total_tokens": 327,
+   "cost": 9.257e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.257e-05,
+    "upstream_inference_prompt_cost": 2.865e-05,
+    "upstream_inference_completions_cost": 6.392e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 658,
+   "completion_tokens": 6,
+   "total_tokens": 664,
+   "cost": 0.00010152,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010152,
+    "upstream_inference_prompt_cost": 9.87e-05,
+    "upstream_inference_completions_cost": 2.82e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 812,
+   "completion_tokens": 20,
+   "total_tokens": 832,
+   "cost": 6.2592e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.2592e-05,
+    "upstream_inference_prompt_cost": 5.3192e-05,
+    "upstream_inference_completions_cost": 9.4e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.7
+}

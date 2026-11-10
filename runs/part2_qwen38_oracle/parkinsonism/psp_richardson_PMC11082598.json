@@ -1,0 +1,118 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a history of stroke or brain injury?",
+  "Is your weakness primarily on one side of the body?",
+  "Do you feel dizzy when you stand up?",
+  "Have you had a recent fall?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "vertical saccades and gaze range (up and down)",
+  "doll's head (oculocephalic) manoeuvre",
+  "applause sign (three-clap test)",
+  "limb rigidity and axial (neck) rigidity",
+  "serum ceruloplasmin",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)"
+ ],
+ "results": [
+  "1. vertical saccades and gaze range (up and down): both upgaze and downgaze RESTRICTED, vertical worse than horizontal; horizontal gaze preserved",
+  "2. doll's head (oculocephalic) manoeuvre: the gaze restriction is OVERCOME - this is supranuclear, not a nerve or muscle palsy",
+  "3. applause sign (three-clap test): POSITIVE",
+  "4. limb rigidity and axial (neck) rigidity: SEVERE in the neck, mild in the upper limbs - axial predominance",
+  "5. serum ceruloplasmin: normal - excludes Wilson disease",
+  "6. neuronal surface antibody panel including anti-IgLON5: negative - excludes anti-IgLON5 disease",
+  "7. MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): mild hummingbird sign with cerebral atrophy"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy (PSP) - a sporadic 4-repeat tauopathy\n\n1. Corticobasal Degeneration (CBD)\n2. Parkinson's Disease (PD)\n3. Multiple System Atrophy (MSA)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Progressive Supranuclear Palsy (PSP) - a sporadic 4-repeat tauopathy",
+ "decisive_served": [
+  "vertical saccades and gaze range (up and down)",
+  "doll's head (oculocephalic) manoeuvre",
+  "applause sign (three-clap test)",
+  "limb rigidity and axial (neck) rigidity",
+  "serum ceruloplasmin",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 60,
+   "total_tokens": 4883,
+   "cost": 0.00075165,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075165,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.82e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5247,
+   "completion_tokens": 58,
+   "total_tokens": 5305,
+   "cost": 0.00021399,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00021399,
+    "upstream_inference_prompt_cost": 0.00018673,
+    "upstream_inference_completions_cost": 2.726e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "psp_richardson_PMC11082598.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.7
+}

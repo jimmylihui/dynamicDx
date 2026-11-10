@@ -1,0 +1,244 @@
+{
+ "questions": [
+  "Have you experienced numbness, tingling, or weakness in your limbs recently?",
+  "Have you had any issues with balance, walking, or coordination?",
+  "Did you have any infections or illnesses in the weeks before these symptoms appeared?",
+  "Have you noticed any changes in your vision, speech, or swallowing?",
+  "Has anyone close to you mentioned that you seem more stiff, slow, or have a tremor lately?",
+  "Have you noticed any change in your handwriting becoming smaller or more cramped?",
+  "Have you had any difficulty with smell or noticed a reduced sense of smell?",
+  "Do you feel like your movements are slower than they used to be?",
+  "Have you noticed your arm not swinging as much when you walk?",
+  "Have your friends or family said your voice has become softer or quieter?",
+  "Have you noticed your face becoming less expressive, like people asking if you're upset when you're not?",
+  "Have you ever fallen or felt like you were going to fall when standing still or turning quickly?",
+  "Have you been told by others that you don't blink when someone is talking to you?",
+  "Do you feel that you are more emotional or tearful than usual lately?",
+  "Have you experienced any stiffness in your neck or jaw?",
+  "Have you noticed any tremor when your hands are resting in your lap?",
+  "Have you ever been told you have Wilson's disease or any liver problems?",
+  "Have your family members noticed any personality changes or difficulty with multitasking?",
+  "Have you been started on any new medications recently, including those for nausea or mood?",
+  "Have you noticed any involuntary movements of your face, hands, or body?",
+  "Can you describe what the involuntary movements look like - are they brief jerks, writhing movements, or sustained postures?",
+  "Where in your body do you notice these movements most - face, hands, or elsewhere?",
+  "Are the movements present all the time or do they come and go?",
+  "Have you ever taken any antipsychotic medications or anti-nausea medications like metoclopramide or prochlorperazine?",
+  "Do you feel an urge or tension in your body before the movements happen, like something is building up?",
+  "Can you temporarily suppress or hold back the movements for a short period if you try?",
+  "Do you ever make any unusual sounds, throat clearing, or sniffing?",
+  "Did these movements start when you were a child or teenager?",
+  "Are the movements worse when you are stressed, tired, or anxious?",
+  "How long ago did you first notice these movements starting?",
+  "Is there any family history of similar movements or neurological conditions like Huntington's disease?",
+  "Have you ever used recreational drugs or had heavy alcohol use?",
+  "Have you been taking any medications for mood, psychosis, nausea, or digestive problems - even over-the-counter ones?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "yes",
+  "21": "yes",
+  "22": "yes",
+  "23": "yes",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "no",
+  "33": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Have you experienced numbness, tingling, or weakness in your limbs recently?; Have you had any issues with balance, walking, or coordination?; Did you have any infections or illnesses in the weeks before these symptoms appeared?; Have you noticed any changes in your vision, speech, or swallowing? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Has anyone close to you mentioned that you seem more stiff, slow, or have a tremor lately?; Have you noticed any change in your handwriting becoming smaller or more cramped?; Have you had any difficulty with smell or noticed a reduced sense of smell?; Do you feel like your movements are slower than they used to be? -> ['no', 'no', 'no', 'no']",
+  "R3 ASK Have you noticed your arm not swinging as much when you walk?; Have your friends or family said your voice has become softer or quieter?; Have you noticed your face becoming less expressive, like people asking if you're upset when you're not?; Have you ever fallen or felt like you were going to fall when standing still or turning quickly? -> ['no', 'no', 'no', 'no']",
+  "R4 ASK Have you been told by others that you don't blink when someone is talking to you?; Do you feel that you are more emotional or tearful than usual lately?; Have you experienced any stiffness in your neck or jaw?; Have you noticed any tremor when your hands are resting in your lap? -> ['no', 'no', 'no', 'no']",
+  "R5 ASK Have you ever been told you have Wilson's disease or any liver problems?; Have your family members noticed any personality changes or difficulty with multitasking?; Have you been started on any new medications recently, including those for nausea or mood?; Have you noticed any involuntary movements of your face, hands, or body? -> ['no', 'no', 'no', 'yes']",
+  "R6 ASK Can you describe what the involuntary movements look like - are they brief jerks, writhing movements, or sustained postures?; Where in your body do you notice these movements most - face, hands, or elsewhere?; Are the movements present all the time or do they come and go?; Have you ever taken any antipsychotic medications or anti-nausea medications like metoclopramide or prochlorperazine? -> ['yes', 'yes', 'yes', 'no']",
+  "R7 ASK Do you feel an urge or tension in your body before the movements happen, like something is building up?; Can you temporarily suppress or hold back the movements for a short period if you try?; Do you ever make any unusual sounds, throat clearing, or sniffing?; Did these movements start when you were a child or teenager?; Are the movements worse when you are stressed, tired, or anxious? -> ['no', 'no', 'no', 'no', 'no']",
+  "R8 ASK How long ago did you first notice these movements starting?; Is there any family history of similar movements or neurological conditions like Huntington's disease?; Have you ever used recreational drugs or had heavy alcohol use?; Have you been taking any medications for mood, psychosis, nausea, or digestive problems - even over-the-counter ones? -> ['no', 'no', 'no', 'no']",
+  "R9 DIAGNOSIS Functional Movement Disorder (Functional Neurological Disorder) - the patient exhibits involuntary movements that appear inconsistent with organic neurological disease, with no evidence of structural, metabolic, or pharmacological causes; the examination is likely to show distractibility, variability, and signs incongruent with recognized neurological conditions. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you experienced numbness, tingling, or weakness in your limbs recently?",
+    "Have you had any issues with balance, walking, or coordination?",
+    "Did you have any infections or illnesses in the weeks before these symptoms appeared?",
+    "Have you noticed any changes in your vision, speech, or swallowing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Has anyone close to you mentioned that you seem more stiff, slow, or have a tremor lately?",
+    "Have you noticed any change in your handwriting becoming smaller or more cramped?",
+    "Have you had any difficulty with smell or noticed a reduced sense of smell?",
+    "Do you feel like your movements are slower than they used to be?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you noticed your arm not swinging as much when you walk?",
+    "Have your friends or family said your voice has become softer or quieter?",
+    "Have you noticed your face becoming less expressive, like people asking if you're upset when you're not?",
+    "Have you ever fallen or felt like you were going to fall when standing still or turning quickly?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you been told by others that you don't blink when someone is talking to you?",
+    "Do you feel that you are more emotional or tearful than usual lately?",
+    "Have you experienced any stiffness in your neck or jaw?",
+    "Have you noticed any tremor when your hands are resting in your lap?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you ever been told you have Wilson's disease or any liver problems?",
+    "Have your family members noticed any personality changes or difficulty with multitasking?",
+    "Have you been started on any new medications recently, including those for nausea or mood?",
+    "Have you noticed any involuntary movements of your face, hands, or body?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Can you describe what the involuntary movements look like - are they brief jerks, writhing movements, or sustained postures?",
+    "Where in your body do you notice these movements most - face, hands, or elsewhere?",
+    "Are the movements present all the time or do they come and go?",
+    "Have you ever taken any antipsychotic medications or anti-nausea medications like metoclopramide or prochlorperazine?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you feel an urge or tension in your body before the movements happen, like something is building up?",
+    "Can you temporarily suppress or hold back the movements for a short period if you try?",
+    "Do you ever make any unusual sounds, throat clearing, or sniffing?",
+    "Did these movements start when you were a child or teenager?",
+    "Are the movements worse when you are stressed, tired, or anxious?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "How long ago did you first notice these movements starting?",
+    "Is there any family history of similar movements or neurological conditions like Huntington's disease?",
+    "Have you ever used recreational drugs or had heavy alcohol use?",
+    "Have you been taking any medications for mood, psychosis, nausea, or digestive problems - even over-the-counter ones?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Functional Movement Disorder (Functional Neurological Disorder) - the patient exhibits involuntary movements that appear inconsistent with organic neurological disease, with no evidence of structural, metabolic, or pharmacological causes; the examination is likely to show distractibility, variability, and signs incongruent with recognized neurological conditions."
+  }
+ ],
+ "dx": "Functional Movement Disorder (Functional Neurological Disorder) - the patient exhibits involuntary movements that appear inconsistent with organic neurological disease, with no evidence of structural, metabolic, or pharmacological causes; the examination is likely to show distractibility, variability, and signs incongruent with recognized neurological conditions.",
+ "dx_raw": "ORDER:\n1. Formal assessment for functional neurological disorder - including Hoover's sign, drift with pronation, give-way weakness testing, and attentional distraction maneuvers\n2. Assessment for entrainment of movements with rhythmic tapping\n3. Evaluation of consistency of movements with distraction and attention shifts\n\nDIAGNOSIS: Functional Movement Disorder (Functional Neurological Disorder) - the patient exhibits involuntary movements that appear inconsistent with organic neurological disease, with no evidence of structural, metabolic, or pharmacological causes; the examination is likely to show distractibility, variability, and signs incongruent with recognized neurological conditions.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0027,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 209.8
+}

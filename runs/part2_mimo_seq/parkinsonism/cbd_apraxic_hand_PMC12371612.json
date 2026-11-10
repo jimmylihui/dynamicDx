@@ -1,0 +1,177 @@
+{
+ "questions": [
+  "1. Is the slowness or stiffness worse on one side of your body?",
+  "Do you notice a tremor in your hands when they are resting in your lap?",
+  "1. Does your hand ever move on its own without you wanting it to?",
+  "Do you sometimes find your hand gets \"stuck\" or grabs things involuntarily?",
+  "Have you noticed your walking becoming unsteady?",
+  "Do you have stiffness or slowness in the same arm that has the jerks?",
+  "1. How long have you noticed these jerky movements in your hand?",
+  "Have you had any changes in your memory or thinking recently?",
+  "Have you had any recent infections, surgeries, or been ill before this started?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "yes",
+  "9": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "1. Finger-to-nose test",
+  "Rapid alternating movements test (dysdiadochokinesia)",
+  "Postural tremor assessment (arms outstretched)",
+  "1. MRI brain (with focus on cortical and basal ganglia structures)",
+  "EEG (electroencephalogram)",
+  "Blood tests: CBC, CMP, TSH, B12, folate, copper, ceruloplasmin"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)",
+  "tremor characterisation (rest, postural, action)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "EEG",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "vitamin B12",
+  "serum folate",
+  "serum copper and caeruloplasmin",
+  "serum ceruloplasmin",
+  "full blood count, renal and liver profile"
+ ],
+ "results": [
+  "R1 ASK 1. Is the slowness or stiffness worse on one side of your body?; Do you notice a tremor in your hands when they are resting in your lap? -> ['no', 'no']",
+  "R2 ORDER 1. Finger-to-nose test; Rapid alternating movements test (dysdiadochokinesia); Postural tremor assessment (arms outstretched) -> [['coordination examination (limb and truncal)', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)'], ['coordination examination (limb and truncal)', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)'], ['tremor characterisation (rest, postural, action)']]",
+  "R3 ASK 1. Does your hand ever move on its own without you wanting it to?; Do you sometimes find your hand gets \"stuck\" or grabs things involuntarily?; Have you noticed your walking becoming unsteady?; Do you have stiffness or slowness in the same arm that has the jerks? -> ['yes', 'no', 'no', 'no']",
+  "R4 ASK 1. How long have you noticed these jerky movements in your hand?; Have you had any changes in your memory or thinking recently?; Have you had any recent infections, surgeries, or been ill before this started? -> ['yes', 'yes', 'no']",
+  "R5 ORDER 1. MRI brain (with focus on cortical and basal ganglia structures); EEG (electroencephalogram); Blood tests: CBC, CMP, TSH, B12, folate, copper, ceruloplasmin -> [['MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)', 'MRI brain - cortical atrophy pattern'], ['EEG'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'vitamin B12', 'serum folate', 'serum copper and caeruloplasmin', 'serum ceruloplasmin', 'full blood count, renal and liver profile']]",
+  "R6 DIAGNOSIS Corticobasal syndrome secondary to corticobasal degeneration -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "1. Is the slowness or stiffness worse on one side of your body?",
+    "Do you notice a tremor in your hands when they are resting in your lap?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "1. Finger-to-nose test",
+    "Rapid alternating movements test (dysdiadochokinesia)",
+    "Postural tremor assessment (arms outstretched)"
+   ],
+   "result": [
+    [
+     "coordination examination (limb and truncal)",
+     "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
+    ],
+    [
+     "coordination examination (limb and truncal)",
+     "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
+    ],
+    [
+     "tremor characterisation (rest, postural, action)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "1. Does your hand ever move on its own without you wanting it to?",
+    "Do you sometimes find your hand gets \"stuck\" or grabs things involuntarily?",
+    "Have you noticed your walking becoming unsteady?",
+    "Do you have stiffness or slowness in the same arm that has the jerks?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "1. How long have you noticed these jerky movements in your hand?",
+    "Have you had any changes in your memory or thinking recently?",
+    "Have you had any recent infections, surgeries, or been ill before this started?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "1. MRI brain (with focus on cortical and basal ganglia structures)",
+    "EEG (electroencephalogram)",
+    "Blood tests: CBC, CMP, TSH, B12, folate, copper, ceruloplasmin"
+   ],
+   "result": [
+    [
+     "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+     "MRI brain - cortical atrophy pattern"
+    ],
+    [
+     "EEG"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests",
+     "vitamin B12",
+     "serum folate",
+     "serum copper and caeruloplasmin",
+     "serum ceruloplasmin",
+     "full blood count, renal and liver profile"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Corticobasal syndrome secondary to corticobasal degeneration"
+  }
+ ],
+ "dx": "Corticobasal syndrome secondary to corticobasal degeneration",
+ "dx_raw": "DIAGNOSIS: Corticobasal syndrome secondary to corticobasal degeneration",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "MRI brain - cortical atrophy pattern"
+ ],
+ "n_decisive": 7,
+ "cost_usd": 0.0025,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "cbd_apraxic_hand_PMC12371612.mp4",
+ "line": "parkinsonism",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 176.1
+}

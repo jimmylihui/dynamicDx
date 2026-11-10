@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Do you have any pain in your eyes?",
+  "Do you have any double vision?",
+  "Have you noticed any change in your vision?",
+  "Are you concerned about the appearance of the area under your eyes?",
+  "Do you have a history of thyroid disease?",
+  "Do you have a history of allergies?",
+  "Do you experience frequent eye dryness?",
+  "Do you have a history of poor sleep?",
+  "Is this appearance under your eyes a new development?",
+  "Do your family members have similar under-eye hollows?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "lid position and measurement (MRD1 both sides)",
+  "TSH / free T4 / TRAb",
+  "surgical history"
+ ],
+ "results": [
+  "1. lid position and measurement (MRD1 both sides): MRD1 raised on the LEFT (retraction); right lid height normal - the right eye is NOT ptotic",
+  "2. TSH / free T4 / TRAb: normal, TRAb negative - excludes thyroid eye disease",
+  "3. surgical history: closed-approach structural rhinoplasty; retraction noted on postoperative day 6"
+ ],
+ "dx_raw": "DIAGNOSIS: Left upper eyelid retraction caused by structural rhinoplasty\n\nThyroid eye disease\nIdiopathic eyelid retraction\nSympathetic overactivity",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Left upper eyelid retraction caused by structural rhinoplasty",
+ "decisive_served": [
+  "lid position and measurement (MRD1 both sides)",
+  "TSH / free T4 / TRAb",
+  "surgical history"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2798,
+   "total_tokens": 11496,
+   "cost": 0.00182112,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00182112,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00095132
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2602,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9165,
+   "completion_tokens": 1222,
+   "total_tokens": 10387,
+   "cost": 0.00133198,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00133198,
+    "upstream_inference_prompt_cost": 0.0009165,
+    "upstream_inference_completions_cost": 0.00041548
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1260,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 145.6
+}

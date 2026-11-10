@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Do you have a known thyroid condition?",
+  "Have you experienced unintentional weight loss?",
+  "Do you feel your heart racing or have palpitations?",
+  "Do you feel unusually hot or sensitive to heat?",
+  "Did these symptoms develop suddenly over a few days?",
+  "Do you have a fever?",
+  "Is there pain associated with your eye movements?",
+  "Do you have double vision?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "CT Chest with contrast",
+  "CT Orbits",
+  "Thyroid Function Tests"
+ ],
+ "served": [
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. CT Chest with contrast",
+  "     not performed / not available",
+  "2. CT Orbits",
+  "     not performed / not available",
+  "3. Thyroid Function Tests",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Thyroid Eye Disease caused by TSH receptor antibodies\n\n1. IgG4-related orbital disease\n2. Sarcoidosis\n3. Orbital inflammatory syndrome (Pseudotumor)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. CT Chest with contrast\n2. CT Orbits\n3. Thyroid Function Tests",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Thyroid Eye Disease caused by TSH receptor antibodies",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 264,
+   "completion_tokens": 2074,
+   "total_tokens": 2338,
+   "cost": 0.00073156,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00073156,
+    "upstream_inference_prompt_cost": 2.64e-05,
+    "upstream_inference_completions_cost": 0.00070516
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1971,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 622,
+   "completion_tokens": 1947,
+   "total_tokens": 2569,
+   "cost": 0.00072418,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00072418,
+    "upstream_inference_prompt_cost": 6.22e-05,
+    "upstream_inference_completions_cost": 0.00066198
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1823,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 780,
+   "completion_tokens": 5346,
+   "total_tokens": 6126,
+   "cost": 0.00189564,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00189564,
+    "upstream_inference_prompt_cost": 7.8e-05,
+    "upstream_inference_completions_cost": 0.00181764
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4995,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 280.3
+}

@@ -1,0 +1,133 @@
+{
+ "questions": [
+  "Did the shaking begin suddenly or over a period of hours to days?",
+  "Can the shaking stop when you deliberately relax the hand or become distracted?",
+  "Does the shaking change noticeably in speed or severity from moment to moment?",
+  "Does it lessen when you voluntarily copy the same movement with the other hand?",
+  "Does the shaking occur when the hand is completely at rest?",
+  "Does it mainly occur when you hold the hand out or use it?",
+  "Do you have weakness in the affected arm or hand?",
+  "Do you have numbness or altered sensation in that arm or hand?",
+  "Do you have difficulty speaking, seeing, walking, or maintaining your balance?",
+  "Have you had a recent head, neck, or limb injury?",
+  "Have you recently started, stopped, or changed the dose of any medication?",
+  "Do you use stimulant drugs, excess caffeine, or thyroid medication?",
+  "Have you had similar shaking elsewhere in your body?",
+  "Does anyone in your family have a tremor or Parkinson’s disease?",
+  "Have you been under unusual stress or emotional strain recently?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "co-activation sign on passive movement of the affected limb",
+  "'whack-a-mole' sign (restrain the affected limb and watch the others)",
+  "variability of amplitude, frequency and axis over the examination",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "results": [
+  "1. distractibility testing (complex motor task with the unaffected side): POSITIVE - the tremor decreases or stops when the left arm performs a task such as drinking from a cup",
+  "2. entrainment testing (tap to an externally paced rhythm): POSITIVE - amplitude falls and the rhythm becomes irregular under repetitive voluntary movement of the other side",
+  "3. co-activation sign on passive movement of the affected limb: POSITIVE - movement of the contralateral arm co-activates the hand with an increase in tremor intensity",
+  "4. 'whack-a-mole' sign (restrain the affected limb and watch the others): POSITIVE - passive fixation of the hand increases movement in the arm and shoulder",
+  "5. variability of amplitude, frequency and axis over the examination: irregular, variable frequency around 4-6 Hz, at times combined with myoclonic jerks",
+  "6. video-EEG monitoring with limb surface electrodes: 24 h recording with right-arm surface electrodes: irregular tremor, relatively high frequency with irregularities, no epileptiform correlate"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional tremor as a functional neurological movement disorder (nonepileptic, nonstructural tremor with functional motor-network dysfunction)\n\nAlternative: Dystonic tremor  \nAlternative: Cortical myoclonus  \nAlternative: Essential tremor",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional tremor as a functional neurological movement disorder (nonepileptic, nonstructural tremor with functional motor-network dysfunction)",
+ "decisive_served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "co-activation sign on passive movement of the affected limb",
+  "'whack-a-mole' sign (restrain the affected limb and watch the others)",
+  "variability of amplitude, frequency and axis over the examination",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 620,
+   "total_tokens": 6296,
+   "cost": 0.001081425,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 5673,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001081425,
+    "upstream_inference_prompt_cost": 0.000709425,
+    "upstream_inference_completions_cost": 0.000372
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 371,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6536,
+   "completion_tokens": 304,
+   "total_tokens": 6840,
+   "cost": 0.00034693,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 860,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00034693,
+    "upstream_inference_prompt_cost": 0.00016453,
+    "upstream_inference_completions_cost": 0.0001824
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 246,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 20.8
+}

@@ -1,0 +1,220 @@
+{
+ "questions": [
+  "Is there a specific problem or symptom that brought you in to see me today?",
+  "Is your main problem pain or discomfort?",
+  "Is the pain in your chest?",
+  "Is the pain in your abdomen?",
+  "Is the pain in your head?",
+  "Is the pain in your back?",
+  "Is the pain in a joint or limb?",
+  "Did the problem begin suddenly (within seconds or minutes)?",
+  "Have you had this problem for less than one week?",
+  "Is the pain severe (8 out of 10 or worse)?",
+  "Have you had a fever or felt feverish?",
+  "Are you short of breath?",
+  "Have you coughed up blood?",
+  "Have you had nausea or vomiting?",
+  "Have you had blood in your stool, or black, tarry stools?",
+  "Have you had weakness, numbness, or tingling on one side of your body?",
+  "Have you had trouble speaking or finding words?",
+  "Have you fainted or lost consciousness?",
+  "Have you unintentionally lost weight in the past 6 months?",
+  "Do you have any chronic medical conditions (such as diabetes, high blood pressure, heart disease, or lung disease)?",
+  "Do you take any prescription medications?",
+  "Do you have any allergies to medications?",
+  "Do you currently smoke cigarettes?",
+  "Do you drink alcohol regularly?",
+  "Do you use any recreational or illicit drugs?",
+  "Are you over the age of 50?",
+  "Are you biologically female?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "yes",
+  "21": "yes",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "Vital signs (blood pressure, heart rate, oxygen saturation, temperature)",
+  "12-lead ECG",
+  "Bedside finger-stick capillary blood glucose",
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Coagulation studies (PT/PTT/INR)",
+  "Cardiac troponin",
+  "Visual acuity testing",
+  "Fundoscopic examination",
+  "Urinalysis"
+ ],
+ "served": [
+  "vital signs",
+  "glucose",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "renal function (urea, creatinine)",
+  "liver function and ammonia",
+  "electrolytes (Na, K, Ca, Mg)",
+  "glucose",
+  "fundoscopy",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Vital signs (blood pressure, heart rate, oxygen saturation, temperature)",
+  "     vital signs: normal, afebrile",
+  "2. 12-lead ECG",
+  "     not performed / not available",
+  "3. Bedside finger-stick capillary blood glucose",
+  "     glucose: normal",
+  "4. Complete blood count",
+  "     full blood count: white cells mildly raised at 11.8 x10^9/L",
+  "5. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: urea nitrogen 24 mg/dL and creatinine 1.62 mg/dL, stable",
+  "     liver function tests: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     renal function (urea, creatinine): blood urea nitrogen 24 mg/dL, creatinine 1.62 mg/dL - stable",
+  "     liver function and ammonia: normal",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     glucose: normal",
+  "6. Coagulation studies (PT/PTT/INR)",
+  "     not performed / not available",
+  "7. Cardiac troponin",
+  "     not performed / not available",
+  "8. Visual acuity testing",
+  "     not performed / not available",
+  "9. Fundoscopic examination",
+  "     fundoscopy: normal",
+  "10. Urinalysis",
+  "     urinalysis: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Vestibular neuritis (acute unilateral peripheral vestibulopathy, likely post-viral)\n\n1. Viral labyrinthitis (vestibular neuritis with cochlear involvement)\n2. Benign paroxysmal positional vertigo (BPPV)\n3. Sudden sensorineural hearing loss (with associated vestibulopathy)",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Vital signs (blood pressure, heart rate, oxygen saturation, temperature)\n2. 12-lead ECG\n3. Bedside finger-stick capillary blood glucose\n4. Complete blood count\n5. Comprehensive metabolic panel\n6. Coagulation studies (PT/PTT/INR)\n7. Cardiac troponin\n8. Visual acuity testing\n9. Fundoscopic examination\n10. Urinalysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Vestibular neuritis (acute unilateral peripheral vestibulopathy, likely post-viral)",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 8950,
+   "total_tokens": 9264,
+   "cost": 0.0107622,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0107622,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.01074
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9316,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1218,
+   "completion_tokens": 5302,
+   "total_tokens": 6520,
+   "cost": 0.00666972,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00666972,
+    "upstream_inference_prompt_cost": 0.00030732,
+    "upstream_inference_completions_cost": 0.0063624
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5611,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1654,
+   "completion_tokens": 5038,
+   "total_tokens": 6692,
+   "cost": 0.00626868,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1138,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00626868,
+    "upstream_inference_prompt_cost": 0.00022308,
+    "upstream_inference_completions_cost": 0.0060456
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5533,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 226.2
+}

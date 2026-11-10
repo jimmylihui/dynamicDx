@@ -1,0 +1,162 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Do you have a known history of Parkinson's disease or another movement disorder?",
+  "Have these movements been present for more than 6 months?",
+  "Have you recently started taking any new medications, including over-the-counter drugs or supplements?",
+  "Do you have a fever?",
+  "Do you have a history of diabetes?",
+  "Do you have a family history of movement disorders?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Assess for rigidity in the upper limbs (passive range of motion)",
+  "Finger-to-nose test",
+  "Serum glucose"
+ ],
+ "served": [
+  "muscle tone examination",
+  "coordination examination (limb and truncal)",
+  "blood glucose"
+ ],
+ "results": [
+  "R1 ASK Are you currently taking any medications?; Do you have a known history of Parkinson's disease or another movement disorder?; Have these movements been present for more than 6 months? -> ['no', 'no', 'no']",
+  "R2 ORDER Assess for rigidity in the upper limbs (passive range of motion) -> [['muscle tone examination']]",
+  "R3 ASK Have you recently started taking any new medications, including over-the-counter drugs or supplements? -> ['no']",
+  "R4 ASK Do you have a fever? -> ['no']",
+  "R5 ASK Do you have a history of diabetes? -> ['yes']",
+  "R6 ORDER Finger-to-nose test -> [['coordination examination (limb and truncal)']]",
+  "R7 ASK Do you have a family history of movement disorders? -> ['no']",
+  "R8 ORDER Serum glucose -> [['blood glucose']]",
+  "R9 DIAGNOSIS Diabetic striatopathy (hemichorea-hemiballismus) secondary to non-ketotic hyperglycemia -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking any medications?",
+    "Do you have a known history of Parkinson's disease or another movement disorder?",
+    "Have these movements been present for more than 6 months?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Assess for rigidity in the upper limbs (passive range of motion)"
+   ],
+   "result": [
+    [
+     "muscle tone examination"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you recently started taking any new medications, including over-the-counter drugs or supplements?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a fever?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Finger-to-nose test"
+   ],
+   "result": [
+    [
+     "coordination examination (limb and truncal)"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have a family history of movement disorders?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Serum glucose"
+   ],
+   "result": [
+    [
+     "blood glucose"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Diabetic striatopathy (hemichorea-hemiballismus) secondary to non-ketotic hyperglycemia"
+  }
+ ],
+ "dx": "Diabetic striatopathy (hemichorea-hemiballismus) secondary to non-ketotic hyperglycemia",
+ "dx_raw": "DIAGNOSIS: Diabetic striatopathy (hemichorea-hemiballismus) secondary to non-ketotic hyperglycemia",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0046,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 62.3
+}

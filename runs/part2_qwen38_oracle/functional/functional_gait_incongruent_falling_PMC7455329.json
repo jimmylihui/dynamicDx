@@ -1,0 +1,115 @@
+{
+ "questions": [
+  "Did you experience a sudden loss of consciousness before falling?",
+  "Do you have a history of heart disease or arrhythmias?",
+  "Are you currently taking any medications that lower blood pressure?",
+  "Did you feel dizzy, lightheaded, or see tunnel vision immediately prior to the fall?",
+  "Have you had similar episodes of falling without warning in the past?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "Hoover sign / hip-abductor sign",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "MRC power in all four limbs",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "results": [
+  "1. Hoover sign / hip-abductor sign: POSITIVE",
+  "2. gait with a distracting or automatic task (dancing, counting backwards): the pattern changes or normalises",
+  "3. observation for excessive slowness or uneconomic posture: INCONGRUENT - repeated falls with no injury at all, and an unaided recovery each time",
+  "4. knee buckling / astasia-abasia on walking: POSITIVE - the patient sinks to the floor twice during one corridor walk, slowly and without a protective reaction",
+  "5. MRC power in all four limbs: 5/5 throughout - a slow controlled descent of this kind requires intact quadriceps strength",
+  "6. video-EEG monitoring with limb surface electrodes: no ictal discharge accompanies the falls"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological disorder (conversion disorder) presenting as functional gait disorder and psychogenic non-epileptic falls.\n\n1. Malingering\n2. Cataplexy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional neurological disorder (conversion disorder) presenting as functional gait disorder and psychogenic non-epileptic falls.",
+ "decisive_served": [
+  "Hoover sign / hip-abductor sign",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "MRC power in all four limbs",
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6359,
+   "completion_tokens": 83,
+   "total_tokens": 6442,
+   "cost": 0.00099286,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00099286,
+    "upstream_inference_prompt_cost": 0.00095385,
+    "upstream_inference_completions_cost": 3.901e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6807,
+   "completion_tokens": 43,
+   "total_tokens": 6850,
+   "cost": 0.000235116,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6016,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000235116,
+    "upstream_inference_prompt_cost": 0.000214906,
+    "upstream_inference_completions_cost": 2.021e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 25.9
+}

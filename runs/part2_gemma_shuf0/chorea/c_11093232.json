@@ -1,0 +1,143 @@
+{
+ "questions": [
+  "Does the tremor occur when your hand is resting?",
+  "Have you noticed your movements becoming slower?",
+  "Do you feel stiffness in your limbs?",
+  "Do you have trouble with your balance or walking?",
+  "Have you noticed your handwriting becoming smaller?",
+  "Do you have a tremor in your other hand?",
+  "Do you have a family history of tremors?",
+  "Do you have a loss of smell?",
+  "Do you act out your dreams during sleep?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain",
+  "Finger-to-nose test",
+  "Spiral drawing test"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "coordination examination (limb and truncal)"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     not performed / not available",
+  "2. Finger-to-nose test",
+  "     coordination examination (limb and truncal): hemichorea affecting one side",
+  "3. Spiral drawing test",
+  "     coordination examination (limb and truncal): hemichorea affecting one side"
+ ],
+ "dx_raw": "DIAGNOSIS: Hemichorea due to non-ketotic hyperglycemia\nHemichorea due to ischemic stroke\nHemichorea due to intracerebral hemorrhage\nHuntington's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Finger-to-nose test\n3. Spiral drawing test",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Hemichorea due to non-ketotic hyperglycemia",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1990,
+   "total_tokens": 10688,
+   "cost": 0.0015464,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0015464,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0006766
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1876,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9094,
+   "completion_tokens": 1435,
+   "total_tokens": 10529,
+   "cost": 0.0013973,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013973,
+    "upstream_inference_prompt_cost": 0.0009094,
+    "upstream_inference_completions_cost": 0.0004879
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1374,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9273,
+   "completion_tokens": 1744,
+   "total_tokens": 11017,
+   "cost": 0.00152026,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00152026,
+    "upstream_inference_prompt_cost": 0.0009273,
+    "upstream_inference_completions_cost": 0.00059296
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1669,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11093232.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 223.7
+}

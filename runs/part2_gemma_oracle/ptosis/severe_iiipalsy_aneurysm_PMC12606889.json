@@ -1,0 +1,127 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have any pain around your right eye?",
+  "Do you have any numbness in your right face?",
+  "Do you have double vision?",
+  "Do you have a drooping eyelid on the right side?",
+  "Do you have any weakness in other parts of your body?",
+  "Do you have any balance problems?",
+  "Do you have any loss of reflexes?",
+  "Have you had a recent infection?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of hypertension?",
+  "Have you had any recent head trauma?",
+  "Do you have any fever?",
+  "Have you lost weight recently?",
+  "Do you have any history of cancer?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "pupil examination (size, light reaction)",
+  "MRI orbits",
+  "CT / MR angiography (circle of Willis)",
+  "ocular surgical history"
+ ],
+ "results": [
+  "1. pupil examination (size, light reaction): mild anisocoria; the RIGHT pupil is unreactive to dim light, with involuntary pupillary spasms that are irregular in both frequency and duration and unrelated to eye position",
+  "2. MRI orbits: atrophy of the extraocular muscles, particularly the medial rectus - a long-standing, not acute, palsy",
+  "3. CT / MR angiography (circle of Willis): NO aneurysm",
+  "4. ocular surgical history: previous strabismus surgery and levator muscle surgery"
+ ],
+ "dx_raw": "DIAGNOSIS: Cavernous sinus syndrome caused by a carotid-cavernous fistula\n\nCavernous sinus syndrome caused by a cavernous sinus tumor\nCavernous sinus syndrome caused by previous cavernous sinus thrombosis\nChronic oculomotor nerve palsy caused by previous trauma",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Cavernous sinus syndrome caused by a carotid-cavernous fistula",
+ "decisive_served": [
+  "pupil examination (size, light reaction)",
+  "MRI orbits",
+  "CT / MR angiography (circle of Willis)",
+  "ocular surgical history"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 8395,
+   "total_tokens": 17093,
+   "cost": 0.0037241,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0037241,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0028543
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7096,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9303,
+   "completion_tokens": 7320,
+   "total_tokens": 16623,
+   "cost": 0.0034191,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0034191,
+    "upstream_inference_prompt_cost": 0.0009303,
+    "upstream_inference_completions_cost": 0.0024888
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6684,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_iiipalsy_aneurysm_PMC12606889.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 468.5
+}

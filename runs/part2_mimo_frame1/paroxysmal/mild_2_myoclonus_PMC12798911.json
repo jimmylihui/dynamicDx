@@ -1,0 +1,143 @@
+{
+ "questions": [
+  "Did you have surgery on your stomach?",
+  "Are you in pain right now?",
+  "Is the pain severe?",
+  "Do you feel nauseous?",
+  "Is the dressing wet?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Remove dressing and inspect wound",
+  "Vital signs including temperature",
+  "Chest X-ray",
+  "Complete blood count",
+  "C-reactive protein"
+ ],
+ "served": [
+  "full blood count and biochemistry",
+  "ESR and CRP"
+ ],
+ "results": [
+  "1. Remove dressing and inspect wound",
+  "     not performed / not available",
+  "2. Vital signs including temperature",
+  "     not performed / not available",
+  "3. Chest X-ray",
+  "     not performed / not available",
+  "4. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "5. C-reactive protein",
+  "     ESR and CRP: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Chest wall injury with supportive dressing\n\nAlternative diagnoses:\n1. Post-procedural wound (patient unaware of reason or in denial)\n2. Rib contusion/strain\n3. Psychiatric disorder with somatic complaint",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Remove dressing and inspect wound\n2. Vital signs including temperature\n3. Chest X-ray\n4. Complete blood count\n5. C-reactive protein",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Chest wall injury with supportive dressing",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 576,
+   "completion_tokens": 2058,
+   "total_tokens": 2634,
+   "cost": 0.0006305376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006305376,
+    "upstream_inference_prompt_cost": 5.42976e-05,
+    "upstream_inference_completions_cost": 0.00057624
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2015,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 830,
+   "completion_tokens": 316,
+   "total_tokens": 1146,
+   "cost": 0.0001783376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001783376,
+    "upstream_inference_prompt_cost": 8.98576e-05,
+    "upstream_inference_completions_cost": 8.848e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 281,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1032,
+   "completion_tokens": 260,
+   "total_tokens": 1292,
+   "cost": 0.0001909376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001909376,
+    "upstream_inference_prompt_cost": 0.0001181376,
+    "upstream_inference_completions_cost": 7.28e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 209,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 124.5
+}

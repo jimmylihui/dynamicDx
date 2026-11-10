@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your abdomen?",
+  "Did the pain start suddenly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's gait and balance while walking",
+  "Perform a Romberg test",
+  "Assess deep tendon reflexes in the lower extremities",
+  "Check proprioception (joint position sense) in the toes"
+ ],
+ "served": [
+  "gait observation including turning and doorways",
+  "posture and pull test",
+  "deep tendon reflexes and plantar responses",
+  "reflexes, plantar responses and frontal release signs",
+  "sensory examination (pinprick, vibration, proprioception)"
+ ],
+ "results": [
+  "1. Observe the patient's gait and balance while walking",
+  "     gait observation including turning and doorways: not recorded",
+  "2. Perform a Romberg test",
+  "     posture and pull test: retropulsion; recovers in 2-3 steps",
+  "3. Assess deep tendon reflexes in the lower extremities",
+  "     deep tendon reflexes and plantar responses: brisk reflexes; normal plantar responses",
+  "     reflexes, plantar responses and frontal release signs: reflexes brisk, plantar responses normal",
+  "4. Check proprioception (joint position sense) in the toes",
+  "     sensory examination (pinprick, vibration, proprioception): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Normal pressure hydrocephalus (idiopathic)\nVascular parkinsonism (subcortical arteriosclerotic encephalopathy)\nProgressive supranuclear palsy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient's gait and balance while walking\n2. Perform a Romberg test\n3. Assess deep tendon reflexes in the lower extremities\n4. Check proprioception (joint position sense) in the toes",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Normal pressure hydrocephalus (idiopathic)",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 296,
+   "completion_tokens": 30,
+   "total_tokens": 326,
+   "cost": 5.85e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.85e-05,
+    "upstream_inference_prompt_cost": 4.44e-05,
+    "upstream_inference_completions_cost": 1.41e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 521,
+   "completion_tokens": 49,
+   "total_tokens": 570,
+   "cost": 0.00010118,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010118,
+    "upstream_inference_prompt_cost": 7.815e-05,
+    "upstream_inference_completions_cost": 2.303e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 807,
+   "completion_tokens": 45,
+   "total_tokens": 852,
+   "cost": 9.0744e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.0744e-05,
+    "upstream_inference_prompt_cost": 6.9594e-05,
+    "upstream_inference_completions_cost": 2.115e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 23.2,
+ "video": "hornet_sting_parkinsonism_PMC11021691.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.7
+}

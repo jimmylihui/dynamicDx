@@ -1,0 +1,196 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the pain in your head?",
+  "Did this episode start suddenly?",
+  "Were you unconscious at any point during this episode?",
+  "Have you had a seizure?",
+  "Do you have a history of epilepsy?",
+  "Are you diabetic?",
+  "Have you recently injured your head?",
+  "Are you currently able to see clearly?",
+  "Do you have weakness on one side of your body?",
+  "Are you able to speak normally now?",
+  "Have you vomited?",
+  "Do you have a fever?",
+  "Do you have a history of high blood pressure?",
+  "Are you currently pregnant?",
+  "Do you have any numbness or tingling?",
+  "Did you lose control of your bladder or bowels?",
+  "Were you exercising when this started?",
+  "Do you have a history of heart problems?",
+  "Are you taking any medications regularly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "yes",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Non-contrast CT head",
+  "MRI brain with diffusion-weighted imaging",
+  "CT angiogram of cervical and intracranial arteries",
+  "12-lead ECG",
+  "Transthoracic echocardiogram with agitated saline contrast bubble study",
+  "Carotid and vertebral duplex ultrasound",
+  "Lipid panel",
+  "HbA1c",
+  "Coagulation profile (PT, aPTT, INR)",
+  "Thrombophilia screen (including antiphospholipid antibodies, protein C, protein S, antithrombin, factor V Leiden, prothrombin gene mutation)"
+ ],
+ "served": [
+  "CT head",
+  "MRI diffusion-weighted sequences",
+  "brain MRI",
+  "blood glucose and HbA1c"
+ ],
+ "results": [
+  "1. Non-contrast CT head",
+  "     CT head: normal",
+  "2. MRI brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: normal",
+  "     brain MRI: no epileptogenic lesion",
+  "3. CT angiogram of cervical and intracranial arteries",
+  "     not performed / not available",
+  "4. 12-lead ECG",
+  "     not performed / not available",
+  "5. Transthoracic echocardiogram with agitated saline contrast bubble study",
+  "     not performed / not available",
+  "6. Carotid and vertebral duplex ultrasound",
+  "     not performed / not available",
+  "7. Lipid panel",
+  "     not performed / not available",
+  "8. HbA1c",
+  "     blood glucose and HbA1c: normal",
+  "9. Coagulation profile (PT, aPTT, INR)",
+  "     not performed / not available",
+  "10. Thrombophilia screen (including antiphospholipid antibodies, protein C, protein S, antithrombin, factor V Leiden, prothrombin gene mutation)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Subclavian steal syndrome due to atherosclerotic stenosis of the subclavian artery proximal to the ipsilateral vertebral artery origin\n\nVertebrobasilar TIA from another cause (e.g., cardioembolic)\nMigraine with brainstem aura\nParoxysmal cardiac arrhythmia with cerebral hypoperfusion",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Non-contrast CT head\n2. MRI brain with diffusion-weighted imaging\n3. CT angiogram of cervical and intracranial arteries\n4. 12-lead ECG\n5. Transthoracic echocardiogram with agitated saline contrast bubble study\n6. Carotid and vertebral duplex ultrasound\n7. Lipid panel\n8. HbA1c\n9. Coagulation profile (PT, aPTT, INR)\n10. Thrombophilia screen (including antiphospholipid antibodies, protein C, protein S, antithrombin, factor V Leiden, prothrombin gene mutation)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Subclavian steal syndrome due to atherosclerotic stenosis of the subclavian artery proximal to the ipsilateral vertebral artery origin",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 711,
+   "completion_tokens": 344,
+   "total_tokens": 1055,
+   "cost": 0.00058866,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00058866,
+    "upstream_inference_prompt_cost": 0.00017586,
+    "upstream_inference_completions_cost": 0.0004128
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 156,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1332,
+   "completion_tokens": 1290,
+   "total_tokens": 2622,
+   "cost": 0.00191016,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00191016,
+    "upstream_inference_prompt_cost": 0.00036216,
+    "upstream_inference_completions_cost": 0.001548
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1169,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1753,
+   "completion_tokens": 1009,
+   "total_tokens": 2762,
+   "cost": 0.00169902,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00169902,
+    "upstream_inference_prompt_cost": 0.00048822,
+    "upstream_inference_completions_cost": 0.0012108
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 945,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "moderate_2_shadowbox_PMC9062418.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 46.2
+}

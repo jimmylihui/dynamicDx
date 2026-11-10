@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Is the pain in your abdomen?",
+  "Is the pain on your right side?",
+  "Did the pain start suddenly?",
+  "Does the pain radiate to your back?",
+  "Do you have a fever?",
+  "Do you have nausea?",
+  "Have you noticed blood in your urine?",
+  "Is the pain sharp?",
+  "Is the pain constant?",
+  "Does it hurt more when you move?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "trial of antithyroid treatment"
+ ],
+ "results": [
+  "1. blood glucose: normal",
+  "2. TSH, free T4 and free T3: T3 8.26 nmol/L (normal 0.92-2.79) and free T4 58.13 pmol/L (normal 11.50-22.70) with suppressed TSH",
+  "3. thyrotropin receptor antibodies (TRAb): positive - Graves' disease diagnosed in April 2021 and treated with methimazole 10 mg daily",
+  "4. trial of antithyroid treatment: radioiodine (131-I); the chorea resolved"
+ ],
+ "dx_raw": "DIAGNOSIS: Thyrotoxic chorea due to Graves' disease\n\nHuntington's disease\nSydenham's chorea\nWilson's disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Thyrotoxic chorea due to Graves' disease",
+ "decisive_served": [
+  "blood glucose",
+  "TSH, free T4 and free T3",
+  "thyrotropin receptor antibodies (TRAb)",
+  "trial of antithyroid treatment"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 913,
+   "total_tokens": 9611,
+   "cost": 0.00118022,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00118022,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00031042
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9172,
+   "completion_tokens": 437,
+   "total_tokens": 9609,
+   "cost": 0.00106578,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00106578,
+    "upstream_inference_prompt_cost": 0.0009172,
+    "upstream_inference_completions_cost": 0.00014858
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 370,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "c_9815763.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 48.2
+}

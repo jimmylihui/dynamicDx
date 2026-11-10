@@ -1,0 +1,187 @@
+{
+ "questions": [
+  "Have you noticed slowness in your movements or difficulty initiating movement?",
+  "Do you feel stiffness or rigidity in your right arm or leg?",
+  "Does anyone in your family have a tremor?",
+  "Does drinking alcohol reduce the tremor?",
+  "Do you have trouble with your balance when walking?",
+  "Has your handwriting become smaller than it used to be?",
+  "Have you lost your sense of smell?",
+  "Do you act out your dreams while sleeping?",
+  "Are you over 50 years old?",
+  "Are you currently taking any medications?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Slit lamp examination of the cornea for Kayser-Fleischer rings",
+  "Serum ceruloplasmin level",
+  "24-hour urinary copper excretion",
+  "Serum copper level",
+  "Liver function tests including AST, ALT, bilirubin, and albumin",
+  "MRI brain with focus on basal ganglia and brainstem",
+  "DaTscan (dopamine transporter SPECT imaging)",
+  "Therapeutic trial of levodopa-carbidopa",
+  "Serum ferritin and transferrin saturation",
+  "Thyroid function tests (TSH, free T4)"
+ ],
+ "served": [
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "liver function tests",
+  "liver function and albumin/globulin",
+  "brain MRI",
+  "DAT-SPECT",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. Slit lamp examination of the cornea for Kayser-Fleischer rings",
+  "     slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "2. Serum ceruloplasmin level",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal",
+  "3. 24-hour urinary copper excretion",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal",
+  "4. Serum copper level",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal",
+  "5. Liver function tests including AST, ALT, bilirubin, and albumin",
+  "     liver function tests: normal",
+  "     liver function and albumin/globulin: normal",
+  "6. MRI brain with focus on basal ganglia and brainstem",
+  "     brain MRI: thalamic lesion (tuberculoma) that DECREASED in size after anti-tuberculous treatment, with no gliosis",
+  "7. DaTscan (dopamine transporter SPECT imaging)",
+  "     DAT-SPECT: normal striatal uptake",
+  "8. Therapeutic trial of levodopa-carbidopa",
+  "     not performed / not available",
+  "9. Serum ferritin and transferrin saturation",
+  "     not performed / not available",
+  "10. Thyroid function tests (TSH, free T4)",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Symptomatic (lesional) unilateral rest and action tremor due to thalamic tuberculoma (post-tuberculous thalamic syndrome)\nRubral (Holmes-type) tremor from thalamic tuberculoma\nPsychogenic tremor\nDystonic tremor",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Slit lamp examination of the cornea for Kayser-Fleischer rings\n2. Serum ceruloplasmin level\n3. 24-hour urinary copper excretion\n4. Serum copper level\n5. Liver function tests including AST, ALT, bilirubin, and albumin\n6. MRI brain with focus on basal ganglia and brainstem\n7. DaTscan (dopamine transporter SPECT imaging)\n8. Therapeutic trial of levodopa-carbidopa\n9. Serum ferritin and transferrin saturation\n10. Thyroid function tests (TSH, free T4)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Symptomatic (lesional) unilateral rest and action tremor due to thalamic tuberculoma (post-tuberculous thalamic syndrome)",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 490,
+   "completion_tokens": 4339,
+   "total_tokens": 4829,
+   "cost": 0.00532644,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00532644,
+    "upstream_inference_prompt_cost": 0.00011964,
+    "upstream_inference_completions_cost": 0.0052068
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4615,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 915,
+   "completion_tokens": 1370,
+   "total_tokens": 2285,
+   "cost": 0.0018297,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 370,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0018297,
+    "upstream_inference_prompt_cost": 0.0001857,
+    "upstream_inference_completions_cost": 0.001644
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1338,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1427,
+   "completion_tokens": 1563,
+   "total_tokens": 2990,
+   "cost": 0.00227634,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00227634,
+    "upstream_inference_prompt_cost": 0.00040074,
+    "upstream_inference_completions_cost": 0.0018756
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1716,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 100.5
+}

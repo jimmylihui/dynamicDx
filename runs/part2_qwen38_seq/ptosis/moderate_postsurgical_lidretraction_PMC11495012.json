@@ -1,0 +1,184 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does the double vision disappear when you cover either eye?",
+  "Have you noticed your eyelids drooping, especially later in the day or after reading/watching TV?",
+  "Do you have any difficulty swallowing, speaking clearly, or lifting your arms?",
+  "Do you have a history of thyroid disease (such as Graves' disease or Hashimoto's)?",
+  "Have you had any recent trauma to the face or eyes?",
+  "Do you have pain when moving your eyes?",
+  "Has anyone told you that one eye looks like it is bulging forward compared to the other?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Hertel exophthalmometry (to measure the degree of proptosis/exophthalmos)",
+  "Orbital MRI with contrast",
+  "Serum acetylcholine receptor antibodies",
+  "Serum thyroid function tests (TSH, Free T4)",
+  "Serum creatine kinase",
+  "Serum anti-MuSK antibodies"
+ ],
+ "served": [
+  "proptosis / exophthalmometry",
+  "MRI orbits",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "thyroid function (TSH, free T4)",
+  "creatine kinase",
+  "anti-MuSK antibodies"
+ ],
+ "results": [
+  "R1 ASK Do you have double vision?; Does the double vision disappear when you cover either eye?; Have you noticed your eyelids drooping, especially later in the day or after reading/watching TV?; Do you have any difficulty swallowing, speaking clearly, or lifting your arms? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Do you have a history of thyroid disease (such as Graves' disease or Hashimoto's)?; Have you had any recent trauma to the face or eyes?; Do you have pain when moving your eyes?; Has anyone told you that one eye looks like it is bulging forward compared to the other? -> ['no', 'no', 'no', 'no']",
+  "R3 ORDER Hertel exophthalmometry (to measure the degree of proptosis/exophthalmos) -> [['proptosis / exophthalmometry']]",
+  "R4 ORDER Orbital MRI with contrast -> [['MRI orbits']]",
+  "R5 ORDER Serum acetylcholine receptor antibodies -> [['acetylcholine receptor, MuSK and LRP4 antibodies', 'anti-acetylcholine receptor antibodies']]",
+  "R6 ORDER Serum thyroid function tests (TSH, Free T4) -> [['thyroid function (TSH, free T4)']]",
+  "R7 ORDER Serum creatine kinase -> [['creatine kinase']]",
+  "R8 ORDER Serum anti-MuSK antibodies -> [['anti-MuSK antibodies']]",
+  "R9 DIAGNOSIS Ocular myasthenia gravis (seronegative) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have double vision?",
+    "Does the double vision disappear when you cover either eye?",
+    "Have you noticed your eyelids drooping, especially later in the day or after reading/watching TV?",
+    "Do you have any difficulty swallowing, speaking clearly, or lifting your arms?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of thyroid disease (such as Graves' disease or Hashimoto's)?",
+    "Have you had any recent trauma to the face or eyes?",
+    "Do you have pain when moving your eyes?",
+    "Has anyone told you that one eye looks like it is bulging forward compared to the other?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Hertel exophthalmometry (to measure the degree of proptosis/exophthalmos)"
+   ],
+   "result": [
+    [
+     "proptosis / exophthalmometry"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Orbital MRI with contrast"
+   ],
+   "result": [
+    [
+     "MRI orbits"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Serum acetylcholine receptor antibodies"
+   ],
+   "result": [
+    [
+     "acetylcholine receptor, MuSK and LRP4 antibodies",
+     "anti-acetylcholine receptor antibodies"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Serum thyroid function tests (TSH, Free T4)"
+   ],
+   "result": [
+    [
+     "thyroid function (TSH, free T4)"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Serum creatine kinase"
+   ],
+   "result": [
+    [
+     "creatine kinase"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Serum anti-MuSK antibodies"
+   ],
+   "result": [
+    [
+     "anti-MuSK antibodies"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Ocular myasthenia gravis (seronegative)"
+  }
+ ],
+ "dx": "Ocular myasthenia gravis (seronegative)",
+ "dx_raw": "DIAGNOSIS: Ocular myasthenia gravis (seronegative)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.002,
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 43.8
+}

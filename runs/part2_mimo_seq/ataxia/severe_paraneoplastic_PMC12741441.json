@@ -1,0 +1,162 @@
+{
+ "questions": [
+  "Have you experienced a recent head injury or stroke episode?",
+  "Do you feel dizzy or have double vision when trying to move?",
+  "Is there any numbness or tingling in your lower limbs?",
+  "Has this difficulty with walking developed gradually over weeks/months?",
+  "Are you taking any medications for mental health or nausea?",
+  "Do you notice any trembling or shaking of your hands, especially at rest?",
+  "Has your thinking or memory become slower recently?",
+  "Have you had any trouble controlling your bladder?",
+  "Is your voice becoming softer or quieter?",
+  "Have you noticed any forgetfulness or changes in your memory recently?",
+  "Have you had any recent falls?",
+  "Do you find yourself shuffling your feet when you walk?",
+  "Does anyone at home say you've been moving more slowly or differently lately?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Brain MRI (with attention to ventricular size and Evans index measurement)",
+  "Gait assessment - can you try walking backward and sideways?",
+  "Large volume lumbar puncture (therapeutic tap - drain 30-50ml CSF) to assess gait improvement",
+  "Request specific measurement of ventricular size (Evans index) from the MRI"
+ ],
+ "served": [
+  "brain MRI",
+  "gait examination",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "R1 ASK Have you experienced a recent head injury or stroke episode?; Do you feel dizzy or have double vision when trying to move?; Is there any numbness or tingling in your lower limbs?; Has this difficulty with walking developed gradually over weeks/months? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Are you taking any medications for mental health or nausea?; Do you notice any trembling or shaking of your hands, especially at rest?; Has your thinking or memory become slower recently?; Have you had any trouble controlling your bladder?; Is your voice becoming softer or quieter? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Brain MRI (with attention to ventricular size and Evans index measurement); Gait assessment - can you try walking backward and sideways? -> [['brain MRI'], ['gait examination']]",
+  "R4 ASK Have you noticed any forgetfulness or changes in your memory recently?; Have you had any recent falls?; Do you find yourself shuffling your feet when you walk?; Does anyone at home say you've been moving more slowly or differently lately? -> ['no', 'yes', 'no', 'no']",
+  "R5 ORDER Large volume lumbar puncture (therapeutic tap - drain 30-50ml CSF) to assess gait improvement; Request specific measurement of ventricular size (Evans index) from the MRI -> [['lumbar puncture / CSF'], ['brain MRI']]",
+  "R6 DIAGNOSIS Normal pressure hydrocephalus - gait apraxia/predominant gait disturbance variant with normal ventricular size on imaging, suggesting possible NPH with atypical/imaging-negative presentation, or alternatively idiopathic gait apraxia of the elderly -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you experienced a recent head injury or stroke episode?",
+    "Do you feel dizzy or have double vision when trying to move?",
+    "Is there any numbness or tingling in your lower limbs?",
+    "Has this difficulty with walking developed gradually over weeks/months?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Are you taking any medications for mental health or nausea?",
+    "Do you notice any trembling or shaking of your hands, especially at rest?",
+    "Has your thinking or memory become slower recently?",
+    "Have you had any trouble controlling your bladder?",
+    "Is your voice becoming softer or quieter?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Brain MRI (with attention to ventricular size and Evans index measurement)",
+    "Gait assessment - can you try walking backward and sideways?"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ],
+    [
+     "gait examination"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any forgetfulness or changes in your memory recently?",
+    "Have you had any recent falls?",
+    "Do you find yourself shuffling your feet when you walk?",
+    "Does anyone at home say you've been moving more slowly or differently lately?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Large volume lumbar puncture (therapeutic tap - drain 30-50ml CSF) to assess gait improvement",
+    "Request specific measurement of ventricular size (Evans index) from the MRI"
+   ],
+   "result": [
+    [
+     "lumbar puncture / CSF"
+    ],
+    [
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Normal pressure hydrocephalus - gait apraxia/predominant gait disturbance variant with normal ventricular size on imaging, suggesting possible NPH with atypical/imaging-negative presentation, or alternatively idiopathic gait apraxia of the elderly"
+  }
+ ],
+ "dx": "Normal pressure hydrocephalus - gait apraxia/predominant gait disturbance variant with normal ventricular size on imaging, suggesting possible NPH with atypical/imaging-negative presentation, or alternatively idiopathic gait apraxia of the elderly",
+ "dx_raw": "ASK:\n1. After the lumbar puncture, did your walking improve at all?\n2. Are there any frontal release signs present (grasp reflex, palmomental reflex, glabellar tap)?\n3. Was the Evans index (ratio of frontal horn width to brain width) measured on the MRI - is it greater than 0.3?\n4. Do you have any difficulty with initiating movement or turning?\n\nDIAGNOSIS: Normal pressure hydrocephalus - gait apraxia/predominant gait disturbance variant with normal ventricular size on imaging, suggesting possible NPH with atypical/imaging-negative presentation, or alternatively idiopathic gait apraxia of the elderly",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "cost_usd": 0.0033,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_paraneoplastic_PMC12741441.mp4",
+ "line": "ataxia",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 84.8
+}

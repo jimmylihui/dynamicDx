@@ -1,0 +1,104 @@
+{
+ "questions": [
+  "Do you have a history of stroke or brain injury?",
+  "Do you experience numbness or tingling in your legs?",
+  "Does the leg weakness get worse after walking for a while and improve with rest?",
+  "Do you have any known back problems, such as a herniated disc or spinal stenosis?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "serum lithium and drug levels",
+  "brain MRI",
+  "medication history"
+ ],
+ "results": [
+  "1. serum lithium and drug levels: serum lithium 4.07 mmol/L on admission; CSF lithium 2.45 mmol/L; later fell below 0.2 mmol/L",
+  "2. brain MRI: cerebellar atrophy at one year; serial imaging over five years shows progressive ISOLATED cerebellar atrophy with no supratentorial abnormality",
+  "3. medication history: no prior lithium use and no psychiatric indication - the exposure was accidental"
+ ],
+ "dx_raw": "DIAGNOSIS: Lithium-induced cerebellar degeneration (SILENT syndrome)\n\n1. Spinocerebellar ataxia\n2. Multiple system atrophy, cerebellar type (MSA-C)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Lithium-induced cerebellar degeneration (SILENT syndrome)",
+ "decisive_served": [
+  "serum lithium and drug levels",
+  "brain MRI",
+  "medication history"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14551,
+   "completion_tokens": 70,
+   "total_tokens": 14621,
+   "cost": 0.00221555,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00221555,
+    "upstream_inference_prompt_cost": 0.00218265,
+    "upstream_inference_completions_cost": 3.29e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 14912,
+   "completion_tokens": 48,
+   "total_tokens": 14960,
+   "cost": 0.000355488,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14208,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000355488,
+    "upstream_inference_prompt_cost": 0.000332928,
+    "upstream_inference_completions_cost": 2.256e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_ms_demyelinating_PMC13085407.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 13.1
+}

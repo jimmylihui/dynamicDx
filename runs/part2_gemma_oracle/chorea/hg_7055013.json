@@ -1,0 +1,120 @@
+{
+ "questions": [
+  "Is this a new symptom?",
+  "Does the shaking happen when your muscles are completely relaxed?",
+  "Have you recently stopped drinking alcohol?",
+  "Are you taking any medications for psychiatric conditions?",
+  "Do you have a history of Parkinson's disease?",
+  "Do you have tremors in other parts of your body?",
+  "Do you feel a strong internal urge to move your legs?",
+  "Do you have any muscle stiffness?",
+  "Do you have a history of thyroid disease?",
+  "Have you had a fever in the last 24 hours?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "CT head (non-contrast)",
+  "trial of glucose correction with insulin"
+ ],
+ "results": [
+  "1. blood glucose: 690 mg/dL with a NORMAL anion gap",
+  "2. HbA1c: 14.7%",
+  "3. ketones (blood or urine): negative - non-ketotic",
+  "4. CT head (non-contrast): HYPERDENSITY in the LEFT basal ganglia with mild involvement of the right basal ganglia - contralateral to the chorea",
+  "5. trial of glucose correction with insulin: insulin alleviated her symptoms"
+ ],
+ "dx_raw": "DIAGNOSIS: Non-ketotic hyperglycemic hemichorea caused by severe hyperglycemia\n\nAlternatives:\n1. Ischemic stroke of the basal ganglia\n2. Hemorrhagic stroke of the basal ganglia\n3. Huntington's disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Non-ketotic hyperglycemic hemichorea caused by severe hyperglycemia",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "CT head (non-contrast)",
+  "trial of glucose correction with insulin"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8314,
+   "completion_tokens": 1808,
+   "total_tokens": 10122,
+   "cost": 0.00144612,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00144612,
+    "upstream_inference_prompt_cost": 0.0008314,
+    "upstream_inference_completions_cost": 0.00061472
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1672,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 8802,
+   "completion_tokens": 625,
+   "total_tokens": 9427,
+   "cost": 0.0010927,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010927,
+    "upstream_inference_prompt_cost": 0.0008802,
+    "upstream_inference_completions_cost": 0.0002125
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 539,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 130.8
+}

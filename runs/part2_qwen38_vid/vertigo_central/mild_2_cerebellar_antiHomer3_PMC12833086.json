@@ -1,0 +1,141 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does the double vision disappear when you cover one eye?",
+  "Did this problem start suddenly?",
+  "Do you have a severe headache right now?",
+  "Is your eyelid drooping on either side?",
+  "Do you have pain when moving your eyes?",
+  "Have you had any recent head or neck trauma?",
+  "Do you have numbness, weakness, or difficulty speaking?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Measure horizontal deviation in primary gaze, right gaze, and left gaze using prism cover test",
+  "Perform forced duction test on the lateral rectus muscles",
+  "Order MRI of the brain and orbits with attention to the cavernous sinuses and cranial nerves VI"
+ ],
+ "served": [
+  "forced duction test",
+  "MRI sella and orbits"
+ ],
+ "results": [
+  "1. Measure horizontal deviation in primary gaze, right gaze, and left gaze using prism cover test",
+  "     not performed / not available",
+  "2. Perform forced duction test on the lateral rectus muscles",
+  "     forced duction test: not performed",
+  "3. Order MRI of the brain and orbits with attention to the cavernous sinuses and cranial nerves VI",
+  "     MRI sella and orbits: normal pituitary and orbits"
+ ],
+ "dx_raw": "DIAGNOSIS: Bilateral abducens nerve palsy\nBilateral internuclear ophthalmoplegia\nMyasthenia gravis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Measure horizontal deviation in primary gaze, right gaze, and left gaze using prism cover test\n2. Perform forced duction test on the lateral rectus muscles\n3. Order MRI of the brain and orbits with attention to the cavernous sinuses and cranial nerves VI",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Bilateral abducens nerve palsy",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 97,
+   "total_tokens": 4920,
+   "cost": 0.00076904,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00076904,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 4.559e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5202,
+   "completion_tokens": 57,
+   "total_tokens": 5259,
+   "cost": 0.00020677,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020677,
+    "upstream_inference_prompt_cost": 0.00017998,
+    "upstream_inference_completions_cost": 2.679e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5446,
+   "completion_tokens": 31,
+   "total_tokens": 5477,
+   "cost": 0.000162542,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000162542,
+    "upstream_inference_prompt_cost": 0.000147972,
+    "upstream_inference_completions_cost": 1.457e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.4,
+ "video": "mild_2_cerebellar_antiHomer3_PMC12833086.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.0
+}

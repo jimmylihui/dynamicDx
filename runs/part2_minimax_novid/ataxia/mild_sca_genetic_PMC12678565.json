@@ -1,0 +1,162 @@
+{
+ "questions": [
+  "Do you have a specific symptom that brought you in today?",
+  "Are you currently in pain?",
+  "Is your pain in your chest?",
+  "Is your pain in your abdomen?",
+  "Have you had a fever in the past 2 weeks?",
+  "Are you experiencing shortness of breath?",
+  "Have you lost weight without trying in the past 6 months?",
+  "Have you noticed any bleeding (blood in stool, urine, or when coughing)?",
+  "Have you had any weakness or numbness on one side of your body?",
+  "Do you have any chronic medical conditions?",
+  "Do you take any prescription medications?",
+  "Do you have any medication allergies?",
+  "Do you currently smoke?",
+  "Do you drink alcohol most days?",
+  "Do you have a family history of cancer, heart disease, or stroke at a young age?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Complete blood count with differential",
+  "Comprehensive metabolic panel",
+  "Thyroid stimulating hormone (TSH)",
+  "Urinalysis"
+ ],
+ "served": [
+  "full blood count",
+  "renal and liver function",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "TSH / free T4",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Complete blood count with differential",
+  "     full blood count: normal",
+  "2. Comprehensive metabolic panel",
+  "     renal and liver function: normal",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "3. Thyroid stimulating hormone (TSH)",
+  "     TSH / free T4: normal",
+  "4. Urinalysis",
+  "     urinalysis: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Somatic symptom disorder (functional complaint with no objective organic pathology on initial workup)\n1. Unidentified early organic disease not yet detectable on basic screening tests\n2. Generalized anxiety disorder presenting with somatic features\n3. Benign self-limited condition that will resolve spontaneously",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete blood count with differential\n2. Comprehensive metabolic panel\n3. Thyroid stimulating hormone (TSH)\n4. Urinalysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Somatic symptom disorder (functional complaint with no objective organic pathology on initial workup)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 8320,
+   "total_tokens": 8634,
+   "cost": 0.0100062,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0100062,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.009984
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9070,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 888,
+   "completion_tokens": 2898,
+   "total_tokens": 3786,
+   "cost": 0.00368592,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00368592,
+    "upstream_inference_prompt_cost": 0.00020832,
+    "upstream_inference_completions_cost": 0.0034776
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3187,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1088,
+   "completion_tokens": 409,
+   "total_tokens": 1497,
+   "cost": 0.00063624,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 754,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00063624,
+    "upstream_inference_prompt_cost": 0.00014544,
+    "upstream_inference_completions_cost": 0.0004908
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 455,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_sca_genetic_PMC12678565.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 149.5
+}

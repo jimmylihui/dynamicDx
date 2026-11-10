@@ -1,0 +1,174 @@
+{
+ "questions": [
+  "Do you have shortness of breath?",
+  "Do you use oxygen therapy?",
+  "Do you have a diagnosis of COPD?",
+  "Do you have a diagnosis of heart failure?",
+  "Do you have a chronic cough?",
+  "Do you smoke?",
+  "Do you have swelling in your legs?",
+  "Do you feel short of breath when lying flat?",
+  "Have your symptoms worsened in the last week?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs",
+  "Physical examination",
+  "Blood glucose",
+  "24-hour urinary free cortisol"
+ ],
+ "served": [
+  "vital signs",
+  "gait examination",
+  "finger-nose / heel-shin testing",
+  "Romberg test",
+  "bedside eye-movement exam",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "glucose / HbA1c",
+  "blood glucose and HbA1c"
+ ],
+ "results": [
+  "1. Vital signs",
+  "     vital signs: normal, afebrile",
+  "2. Physical examination",
+  "     gait examination: wide-based, unsteady gait",
+  "     finger-nose / heel-shin testing: dysmetria",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "     bedside eye-movement exam: normal",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): mild limb and truncal ataxia",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "3. Blood glucose",
+  "     glucose / HbA1c: normal",
+  "     blood glucose and HbA1c: normal",
+  "4. 24-hour urinary free cortisol",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Alcoholic cerebellar degeneration due to chronic alcohol abuse\n\nAlternatives:\n1. Paraneoplastic cerebellar degeneration\n2. Hereditary cerebellar ataxia (e.g., Spinocerebellar Ataxia)\n3. Vitamin E deficiency",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Vital signs\n2. Physical examination\n3. Blood glucose\n4. 24-hour urinary free cortisol",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Alcoholic cerebellar degeneration due to chronic alcohol abuse",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 426,
+   "completion_tokens": 845,
+   "total_tokens": 1271,
+   "cost": 0.0003299,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003299,
+    "upstream_inference_prompt_cost": 4.26e-05,
+    "upstream_inference_completions_cost": 0.0002873
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 717,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 798,
+   "completion_tokens": 6470,
+   "total_tokens": 7268,
+   "cost": 0.0022796,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0022796,
+    "upstream_inference_prompt_cost": 7.98e-05,
+    "upstream_inference_completions_cost": 0.0021998
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6290,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1130,
+   "completion_tokens": 6322,
+   "total_tokens": 7452,
+   "cost": 0.00226248,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00226248,
+    "upstream_inference_prompt_cost": 0.000113,
+    "upstream_inference_completions_cost": 0.00214948
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6098,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 22.4,
+ "video": "moderate_postinfectious_millerfisher_PMC13224678.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 590.9
+}

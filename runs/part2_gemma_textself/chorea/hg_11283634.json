@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Did you hit your head?",
+  "Do you have diabetes?",
+  "Did your symptoms start suddenly?",
+  "Do you have a history of seizures?",
+  "Do you feel weakness on one side of your body?",
+  "Do you have a severe headache?",
+  "Have you taken any medications or drugs recently?",
+  "Do you feel feverish?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of heart disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Blood glucose level",
+  "Arterial blood gas and electrolytes",
+  "CT head",
+  "Serum creatinine and urea",
+  "Full blood count"
+ ],
+ "served": [
+  "blood glucose",
+  "serum electrolytes, urea and creatinine",
+  "CT head (non-contrast)",
+  "serum electrolytes, urea and creatinine",
+  "full blood count"
+ ],
+ "results": [
+  "1. Blood glucose level",
+  "     blood glucose: 2.25 g/L (normal 0.70-1.10) - non-ketotic hyperglycaemia",
+  "2. Arterial blood gas and electrolytes",
+  "     serum electrolytes, urea and creatinine: creatinine 17 mg/L, eGFR 31 mL/min/1.73 m2",
+  "3. CT head",
+  "     CT head (non-contrast): no haemorrhage, no hyperdensity, no infarct",
+  "4. Serum creatinine and urea",
+  "     serum electrolytes, urea and creatinine: creatinine 17 mg/L, eGFR 31 mL/min/1.73 m2",
+  "5. Full blood count",
+  "     full blood count: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Non-ketotic hyperglycemic hemichorea-hemiballismus caused by non-ketotic hyperglycemia\n\nHyperosmolar hyperglycemic state\nUremic encephalopathy\nIschemic stroke",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Blood glucose level\n2. Arterial blood gas and electrolytes\n3. CT head\n4. Serum creatinine and urea\n5. Full blood count",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Non-ketotic hyperglycemic hemichorea-hemiballismus caused by non-ketotic hyperglycemia",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 198,
+   "completion_tokens": 4823,
+   "total_tokens": 5021,
+   "cost": 0.00165962,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00165962,
+    "upstream_inference_prompt_cost": 1.98e-05,
+    "upstream_inference_completions_cost": 0.00163982
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4567,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 600,
+   "completion_tokens": 1133,
+   "total_tokens": 1733,
+   "cost": 0.00044522,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00044522,
+    "upstream_inference_prompt_cost": 6e-05,
+    "upstream_inference_completions_cost": 0.00038522
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1101,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 888,
+   "completion_tokens": 5855,
+   "total_tokens": 6743,
+   "cost": 0.0020795,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0020795,
+    "upstream_inference_prompt_cost": 8.88e-05,
+    "upstream_inference_completions_cost": 0.0019907
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4877,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 436.8
+}

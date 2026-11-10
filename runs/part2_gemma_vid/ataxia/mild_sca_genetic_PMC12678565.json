@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Do you have numbness or tingling in your feet?",
+  "Do you feel dizzy?",
+  "Have you had a recent fall?",
+  "Are you taking any new medications?",
+  "Do you have a history of neurological disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain",
+  "Large volume lumbar puncture (CSF tap test)"
+ ],
+ "served": [
+  "brain MRI",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     brain MRI: cerebellar atrophy on sagittal T1 and axial FLAIR",
+  "2. Large volume lumbar puncture (CSF tap test)",
+  "     lumbar puncture / CSF: normal cells, protein and glucose; no oligoclonal bands"
+ ],
+ "dx_raw": "DIAGNOSIS: Spinocerebellar ataxia due to genetic mutation\n1. Alcoholic cerebellar degeneration due to chronic alcohol consumption\n2. Paraneoplastic cerebellar degeneration due to an underlying malignancy\n3. Multiple system atrophy due to alpha-synucleinopathy",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Large volume lumbar puncture (CSF tap test)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Spinocerebellar ataxia due to genetic mutation",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1569,
+   "total_tokens": 10267,
+   "cost": 0.00140326,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00140326,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00053346
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1476,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 8990,
+   "completion_tokens": 669,
+   "total_tokens": 9659,
+   "cost": 0.00112646,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00112646,
+    "upstream_inference_prompt_cost": 0.000899,
+    "upstream_inference_completions_cost": 0.00022746
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 695,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9154,
+   "completion_tokens": 3293,
+   "total_tokens": 12447,
+   "cost": 0.00203502,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00203502,
+    "upstream_inference_prompt_cost": 0.0009154,
+    "upstream_inference_completions_cost": 0.00111962
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3194,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_sca_genetic_PMC12678565.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 202.3
+}

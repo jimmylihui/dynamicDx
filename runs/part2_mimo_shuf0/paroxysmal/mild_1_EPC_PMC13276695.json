@@ -1,0 +1,160 @@
+{
+ "questions": [
+  "Is this evaluation being performed to assess a potential heart rhythm abnormality?",
+  "Have you recently experienced your heart skipping beats, racing, or feeling like it momentarily stops?",
+  "Have you had episodes of dizziness, fainting, or chest discomfort?",
+  "Do you have a personal history of heart disease, arrhythmia, or cardiac treatment?",
+  "Is there a family history of early heart conditions, sudden cardiac events, or rhythm disorders?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Are you experiencing any muscle weakness?",
+  "Do you have numbness, tingling, or abnormal sensations in your limbs?",
+  "Have you noticed any muscle twitching or fasciculations?",
+  "Do you have difficulty with fine motor tasks like buttoning shirts or writing?",
+  "Have you experienced muscle cramps, stiffness, or spasms?",
+  "Do you have trouble walking, climbing stairs, or rising from a chair?",
+  "Have you noticed any difficulty swallowing or speaking?"
+ ],
+ "served": [
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "needle electromyography",
+  "coordination examination (limb and truncal)",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "cranial nerve examination"
+ ],
+ "results": [
+  "1. Are you experiencing any muscle weakness?",
+  "     limb strength (MRC) examination: normal",
+  "2. Do you have numbness, tingling, or abnormal sensations in your limbs?",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "3. Have you noticed any muscle twitching or fasciculations?",
+  "     needle electromyography: brief time-locked EMG bursts under 100 ms in the left wrist flexors and extensors",
+  "4. Do you have difficulty with fine motor tasks like buttoning shirts or writing?",
+  "     coordination examination (limb and truncal): normal",
+  "5. Have you experienced muscle cramps, stiffness, or spasms?",
+  "     muscle tone examination: normal",
+  "6. Do you have trouble walking, climbing stairs, or rising from a chair?",
+  "     limb strength (MRC) examination: normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "7. Have you noticed any difficulty swallowing or speaking?",
+  "     cranial nerve examination: normal"
+ ],
+ "dx_raw": "DIAGNOSOS: Benign Fasciculation Syndrome\n\n1. Early Motor Neuron Disease (presymptomatic)\n2. Multifocal Motor Neuropathy\n3. Spinal Muscular Atrophy (mild/hSMN1 carrier)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Are you experiencing any muscle weakness?\n2. Do you have numbness, tingling, or abnormal sensations in your limbs?\n3. Have you noticed any muscle twitching or fasciculations?\n4. Do you have difficulty with fine motor tasks like buttoning shirts or writing?\n5. Have you experienced muscle cramps, stiffness, or spasms?\n6. Do you have trouble walking, climbing stairs, or rising from a chair?\n7. Have you noticed any difficulty swallowing or speaking?",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Benign Fasciculation Syndrome",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 12223,
+   "completion_tokens": 508,
+   "total_tokens": 12731,
+   "cost": 0.0018271176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0018271176,
+    "upstream_inference_prompt_cost": 0.0016848776,
+    "upstream_inference_completions_cost": 0.00014224
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 413,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 12581,
+   "completion_tokens": 419,
+   "total_tokens": 13000,
+   "cost": 0.000210308,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 12160,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000210308,
+    "upstream_inference_prompt_cost": 9.2988e-05,
+    "upstream_inference_completions_cost": 0.00011732
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 316,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 12991,
+   "completion_tokens": 1030,
+   "total_tokens": 14021,
+   "cost": 0.0003861032,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 12544,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003861032,
+    "upstream_inference_prompt_cost": 9.77032e-05,
+    "upstream_inference_completions_cost": 0.0002884
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 975,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_1_EPC_PMC13276695.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 61.9
+}

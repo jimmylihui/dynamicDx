@@ -1,0 +1,141 @@
+{
+ "questions": [
+  "Are you taking any medication for nausea or mental health?",
+  "Have you recently had a high fever or headache?",
+  "Do you feel stiff or slow in your movements?",
+  "Do bright lights make these eye movements happen?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Visual acuity testing (both eyes)",
+  "Assessment of whether the nystagmus can be voluntarily suppressed",
+  "Fundoscopic examination",
+  "Smooth pursuit and saccade assessment",
+  "MRI brain with attention to posterior fossa"
+ ],
+ "served": [
+  "fundoscopy",
+  "smooth pursuit and saccades"
+ ],
+ "results": [
+  "1. Visual acuity testing (both eyes)",
+  "     not performed / not available",
+  "2. Assessment of whether the nystagmus can be voluntarily suppressed",
+  "     not performed / not available",
+  "3. Fundoscopic examination",
+  "     fundoscopy: normal",
+  "4. Smooth pursuit and saccade assessment",
+  "     smooth pursuit and saccades: normal",
+  "5. MRI brain with attention to posterior fossa",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Voluntary nystagmus (a learned ability, not a pathological condition)\n\nAlternative 1: Familial/genetic nystagmus with voluntary component\nAlternative 2: Manifest latent nystagmus\nAlternative 3: Oculomotor dysmetria (less likely given normal saccades)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "The video shows a close-up of the patient demonstrating what appears to be **voluntary nystagmus** - rapid, pendular eye movements that she can start and stop at will, present in multiple gaze directions. This is a recognized phenomenon where certain individuals can consciously produce nystagmus.\n\nLet me formulate appropriate investigations:\n\n1. Visual acuity testing (both eyes)\n2. Assessment of whether the nystagmus can be voluntarily suppressed\n3. Fundoscopic examination\n4. Smooth pursuit and saccade assessment\n5. MRI brain with attention to posterior fossa",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Voluntary nystagmus (a learned ability, not a pathological condition)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 4738,
+   "total_tokens": 9793,
+   "cost": 0.00203434,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00203434,
+    "upstream_inference_prompt_cost": 0.0007077,
+    "upstream_inference_completions_cost": 0.00132664
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4688,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5318,
+   "completion_tokens": 800,
+   "total_tokens": 6118,
+   "cost": 0.0002836176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002836176,
+    "upstream_inference_prompt_cost": 5.96176e-05,
+    "upstream_inference_completions_cost": 0.000224
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 681,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5620,
+   "completion_tokens": 299,
+   "total_tokens": 5919,
+   "cost": 0.0001417136,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5312,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001417136,
+    "upstream_inference_prompt_cost": 5.79936e-05,
+    "upstream_inference_completions_cost": 8.372e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 228,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 75.0
+}

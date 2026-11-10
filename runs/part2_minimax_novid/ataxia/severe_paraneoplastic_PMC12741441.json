@@ -1,0 +1,162 @@
+{
+ "questions": [
+  "Is pain your main symptom today?",
+  "Is the pain in your chest?",
+  "Did the pain start suddenly (within minutes)?",
+  "Is the pain severe (8 or more out of 10)?",
+  "Does the pain radiate to your left arm, neck, or jaw?",
+  "Does the pain get worse with physical exertion?",
+  "Are you short of breath?",
+  "Do you feel sweaty, nauseous, or lightheaded with the pain?",
+  "Have you had this exact pain before?",
+  "Do you have any history of heart disease, high blood pressure, diabetes, or high cholesterol?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Vital signs (BP, heart rate, respiratory rate, temperature, oxygen saturation, fingerstick glucose)",
+  "12-lead ECG",
+  "Complete blood count",
+  "Comprehensive metabolic panel (including liver function tests)",
+  "Urinalysis"
+ ],
+ "served": [
+  "vital signs",
+  "glucose / HbA1c",
+  "blood glucose and HbA1c",
+  "full blood count",
+  "renal and liver function",
+  "electrolytes (Na, K, Ca, Mg)",
+  "liver function tests",
+  "serum electrolytes, urea and creatinine",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Vital signs (BP, heart rate, respiratory rate, temperature, oxygen saturation, fingerstick glucose)",
+  "     vital signs: normal, afebrile",
+  "     glucose / HbA1c: normal",
+  "     blood glucose and HbA1c: normal",
+  "2. 12-lead ECG",
+  "     not performed / not available",
+  "3. Complete blood count",
+  "     full blood count: normal",
+  "4. Comprehensive metabolic panel (including liver function tests)",
+  "     renal and liver function: normal",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     liver function tests: normal",
+  "     serum electrolytes, urea and creatinine: normal",
+  "5. Urinalysis",
+  "     urinalysis: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: No identifiable acute medical pathology (no specific organic disease established on available data; essentially a well patient or a non-organic/functional complaint)\n\n1. Somatic symptom disorder (functional / non-organic complaint)\n2. Early undifferentiated viral illness (not yet manifesting objective findings)\n3. Mild anxiety or somatic manifestation of psychological distress",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Vital signs (BP, heart rate, respiratory rate, temperature, oxygen saturation, fingerstick glucose)\n2. 12-lead ECG\n3. Complete blood count\n4. Comprehensive metabolic panel (including liver function tests)\n5. TSH\n6. Urinalysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "No identifiable acute medical pathology (no specific organic disease established on available data; essentially a well patient or a non-organic/functional complaint)",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 5379,
+   "total_tokens": 5693,
+   "cost": 0.006477,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.006477,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.0064548
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5785,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 763,
+   "completion_tokens": 3607,
+   "total_tokens": 4370,
+   "cost": 0.00449922,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00449922,
+    "upstream_inference_prompt_cost": 0.00017082,
+    "upstream_inference_completions_cost": 0.0043284
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3854,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1055,
+   "completion_tokens": 781,
+   "total_tokens": 1836,
+   "cost": 0.00110346,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 626,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00110346,
+    "upstream_inference_prompt_cost": 0.00016626,
+    "upstream_inference_completions_cost": 0.0009372
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 850,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_paraneoplastic_PMC12741441.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 139.3
+}

@@ -1,0 +1,142 @@
+{
+ "questions": [
+  "Were you awake when these jerks occurred?",
+  "Do these jerks occur only as you are falling asleep?",
+  "Have you ever had a seizure that caused you to lose consciousness?",
+  "Do you feel confused after the jerks occur?",
+  "Do you have a history of kidney or liver disease?",
+  "Have you recently stopped taking any medication or alcohol?",
+  "Are you taking any new medications?",
+  "Have you noticed a recent decline in your memory or thinking?",
+  "Does lack of sleep make these jerks more frequent?",
+  "Do you have a fever?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Polysomnography",
+  "MRI Brain"
+ ],
+ "served": [
+  "brain MRI"
+ ],
+ "results": [
+  "1. Polysomnography",
+  "     not performed / not available",
+  "2. MRI Brain",
+  "     brain MRI: hypoxic-ischaemic injury"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-hypoxic myoclonus due to hypoxic-ischaemic encephalopathy\nLance-Adams Syndrome\nMyoclonic status epilepticus\nHypoxic-ischaemic encephalopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Polysomnography\n2. MRI Brain",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Post-hypoxic myoclonus due to hypoxic-ischaemic encephalopathy",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 170,
+   "completion_tokens": 4288,
+   "total_tokens": 4458,
+   "cost": 0.00147492,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00147492,
+    "upstream_inference_prompt_cost": 1.7e-05,
+    "upstream_inference_completions_cost": 0.00145792
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3905,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 620,
+   "completion_tokens": 897,
+   "total_tokens": 1517,
+   "cost": 0.00036698,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00036698,
+    "upstream_inference_prompt_cost": 6.2e-05,
+    "upstream_inference_completions_cost": 0.00030498
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 838,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 758,
+   "completion_tokens": 2882,
+   "total_tokens": 3640,
+   "cost": 0.00105568,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00105568,
+    "upstream_inference_prompt_cost": 7.58e-05,
+    "upstream_inference_completions_cost": 0.00097988
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2681,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 300.1
+}

@@ -1,0 +1,127 @@
+{
+ "questions": [
+  "Did these abnormal hand or arm movements begin suddenly?",
+  "Are the movements involuntary?",
+  "Do they occur when your arms are held out, but improve when your arms are relaxed?",
+  "Do the movements affect both arms equally?",
+  "Have you noticed weakness or clumsiness on one side of your body?",
+  "Have you had numbness or loss of sensation on one side?",
+  "Have you had difficulty speaking, understanding speech, seeing, or walking?",
+  "Have you had a severe or unusual headache with these symptoms?",
+  "Have you experienced confusion, excessive sleepiness, or loss of consciousness?",
+  "Do you have a history of liver disease?",
+  "Do you have a history of kidney disease?",
+  "Do you have diabetes or recent abnormal blood-sugar levels?",
+  "Have you recently started, stopped, or increased any medication?",
+  "Have you recently used alcohol, sedatives, opioids, or other recreational drugs?",
+  "Have these movements been getting progressively worse?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "limb power and wasting",
+  "foot deformity (pes cavus)",
+  "genetic testing (targeted panel or exome)",
+  "nerve conduction studies / EMG"
+ ],
+ "results": [
+  "1. limb power and wasting: distal weakness - 4+/5 in the upper limbs, 3/5 in the lower limbs bilaterally",
+  "2. foot deformity (pes cavus): pes cavus present",
+  "3. genetic testing (targeted panel or exome): heterozygous deletion in MPZ and MFN2; ambiguous copy number decrease in PMP22 exons 2-3 - CMT2A",
+  "4. nerve conduction studies / EMG: moderate to severe motor polyneuropathy, axonal more than demyelinating"
+ ],
+ "dx_raw": "DIAGNOSIS: Charcot–Marie–Tooth disease type 2A (CMT2A), an autosomal-dominant axonal hereditary motor-sensory polyneuropathy caused by a heterozygous pathogenic MFN2 deletion/variant.\n\nAlternative: Charcot–Marie–Tooth disease type 1B due to the heterozygous MPZ deletion.\n\nAlternative: Hereditary neuropathy with liability to pressure palsies due to a PMP22 exon 2–3 deletion.\n\nAlternative: A combined or blended hereditary neuropathy from pathogenic variants involving both MFN2 and MPZ.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Charcot–Marie–Tooth disease type 2A (CMT2A), an autosomal-dominant axonal hereditary motor-sensory polyneuropathy caused by a heterozygous pathogenic MFN2 deletion/variant.",
+ "decisive_served": [
+  "limb power and wasting",
+  "foot deformity (pes cavus)",
+  "genetic testing (targeted panel or exome)",
+  "nerve conduction studies / EMG"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 17964,
+   "completion_tokens": 719,
+   "total_tokens": 18683,
+   "cost": 0.00061131,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00061131,
+    "upstream_inference_prompt_cost": 0.00017991,
+    "upstream_inference_completions_cost": 0.0004314
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 506,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 18665,
+   "completion_tokens": 288,
+   "total_tokens": 18953,
+   "cost": 0.000440335,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 701,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000440335,
+    "upstream_inference_prompt_cost": 0.000267535,
+    "upstream_inference_completions_cost": 0.0001728
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 156,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.7,
+ "video": "mild_neuropathic_CMT_PMC11600610.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 16.5
+}

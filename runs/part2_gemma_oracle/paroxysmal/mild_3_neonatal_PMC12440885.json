@@ -1,0 +1,101 @@
+{
+ "questions": [
+  "Does your head hurt?",
+  "Did you fall?",
+  "Do you feel sick?",
+  "Are you dizzy?",
+  "Do you feel sleepy?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "genetic testing (exome / epilepsy panel)",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. genetic testing (exome / epilepsy panel): missense variant in exon 4 of CSNK2B (NM_001320.7 c.268A>C, p.Thr90Pro), likely pathogenic by ACMG; threonine 90 is evolutionarily conserved",
+  "2. video-EEG monitoring of a typical event: eyelid myoclonia with absences - the Jeavons phenotype"
+ ],
+ "dx_raw": "DIAGNOSIS: Eyelid Myoclonia with Absences (EMA) caused by a CSNK2B mutation\n\nJuvenile Myoclonic Epilepsy\nChildhood Absence Epilepsy\nOther genetic forms of EMA",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Eyelid Myoclonia with Absences (EMA) caused by a CSNK2B mutation",
+ "decisive_served": [
+  "genetic testing (exome / epilepsy panel)",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8410,
+   "completion_tokens": 1340,
+   "total_tokens": 9750,
+   "cost": 0.0012966,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012966,
+    "upstream_inference_prompt_cost": 0.000841,
+    "upstream_inference_completions_cost": 0.0004556
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1235,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 8695,
+   "completion_tokens": 766,
+   "total_tokens": 9461,
+   "cost": 0.00112994,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00112994,
+    "upstream_inference_prompt_cost": 0.0008695,
+    "upstream_inference_completions_cost": 0.00026044
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 668,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.6,
+ "video": "mild_3_neonatal_PMC12440885.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 67.1
+}

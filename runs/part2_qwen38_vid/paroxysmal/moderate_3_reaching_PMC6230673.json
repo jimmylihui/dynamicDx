@@ -1,0 +1,165 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Did you attempt to harm yourself recently?",
+  "Were you brought here by the police or against your will?",
+  "Do you hear voices that other people cannot hear?",
+  "Do you believe that other people are plotting against you?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Urine toxicology screen",
+  "Serum ethanol level",
+  "Complete blood count with differential",
+  "Comprehensive metabolic panel including liver function tests",
+  "Thyroid stimulating hormone (TSH) and free T4",
+  "Vitamin B12 and folate levels",
+  "Rapid plasma reagin (RPR) or Venereal Disease Research Laboratory (VDRL) test",
+  "HIV antibody/antigen test"
+ ],
+ "served": [
+  "toxicology screen (urine and serum)",
+  "serum ethanol",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "thyroid function (TSH, free T4)",
+  "vitamin B12 with methylmalonic acid",
+  "serum folate",
+  "HIV and syphilis serology",
+  "HIV and syphilis serology"
+ ],
+ "results": [
+  "1. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "2. Serum ethanol level",
+  "     serum ethanol: normal",
+  "3. Complete blood count with differential",
+  "     full blood count and biochemistry: normal",
+  "4. Comprehensive metabolic panel including liver function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "5. Thyroid stimulating hormone (TSH) and free T4",
+  "     thyroid function (TSH, free T4): normal",
+  "6. Vitamin B12 and folate levels",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "     serum folate: normal",
+  "7. Rapid plasma reagin (RPR) or Venereal Disease Research Laboratory (VDRL) test",
+  "     HIV and syphilis serology: normal",
+  "8. HIV antibody/antigen test",
+  "     HIV and syphilis serology: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute psychotic disorder (likely Schizophrenia)\nDifferential Diagnosis: Brief Psychotic Disorder\nDifferential Diagnosis: Delusional Disorder\nDifferential Diagnosis: Bipolar I Disorder with psychotic features",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Urine toxicology screen\n2. Serum ethanol level\n3. Complete blood count with differential\n4. Comprehensive metabolic panel including liver function tests\n5. Thyroid stimulating hormone (TSH) and free T4\n6. Vitamin B12 and folate levels\n7. Rapid plasma reagin (RPR) or Venereal Disease Research Laboratory (VDRL) test\n8. HIV antibody/antigen test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Acute psychotic disorder (likely Schizophrenia)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6359,
+   "completion_tokens": 63,
+   "total_tokens": 6422,
+   "cost": 0.00098346,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00098346,
+    "upstream_inference_prompt_cost": 0.00095385,
+    "upstream_inference_completions_cost": 2.961e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6658,
+   "completion_tokens": 89,
+   "total_tokens": 6747,
+   "cost": 0.000234386,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6016,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000234386,
+    "upstream_inference_prompt_cost": 0.000192556,
+    "upstream_inference_completions_cost": 4.183e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7040,
+   "completion_tokens": 47,
+   "total_tokens": 7087,
+   "cost": 0.000203338,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000203338,
+    "upstream_inference_prompt_cost": 0.000181248,
+    "upstream_inference_completions_cost": 2.209e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.2
+}

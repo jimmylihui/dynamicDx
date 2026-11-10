@@ -1,0 +1,133 @@
+{
+ "questions": [
+  "Are you currently experiencing a severe headache?",
+  "Did the headache start very suddenly?",
+  "Is this the worst headache of your life?",
+  "Do you have a stiff neck?",
+  "Do you have a fever?",
+  "Are you feeling nauseous or have you vomited?",
+  "Do you have any weakness or numbness in your limbs?",
+  "Are you sensitive to light?",
+  "Have you had similar headaches before?",
+  "Do you snore loudly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Polysomnography (sleep study) with video and EEG monitoring"
+ ],
+ "served": [
+  "video-polygraphy (EEG with EMG)"
+ ],
+ "results": [
+  "1. Polysomnography (sleep study) with video and EEG monitoring",
+  "     video-polygraphy (EEG with EMG): not performed"
+ ],
+ "dx_raw": "DIAGNOSIS: Non-REM parasomnia (Confusional Arousal / Somnambulism), caused by incomplete arousal from deep NREM sleep\nAlternatives:\nNocturnal frontal lobe epilepsy\nREM sleep behavior disorder\nObstructive sleep apnea",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Polysomnography (sleep study) with video and EEG monitoring",
+ "rationale": [
+  null
+ ],
+ "dx": "Non-REM parasomnia (Confusional Arousal / Somnambulism), caused by incomplete arousal from deep NREM sleep",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 9494,
+   "completion_tokens": 3052,
+   "total_tokens": 12546,
+   "cost": 0.00648324,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00648324,
+    "upstream_inference_prompt_cost": 0.00282084,
+    "upstream_inference_completions_cost": 0.0036624
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3170,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9885,
+   "completion_tokens": 3495,
+   "total_tokens": 13380,
+   "cost": 0.00488958,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9458,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00488958,
+    "upstream_inference_prompt_cost": 0.00069558,
+    "upstream_inference_completions_cost": 0.004194
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3865,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 10024,
+   "completion_tokens": 1858,
+   "total_tokens": 11882,
+   "cost": 0.00287472,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9842,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00287472,
+    "upstream_inference_prompt_cost": 0.00064512,
+    "upstream_inference_completions_cost": 0.0022296
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2035,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 122.7
+}

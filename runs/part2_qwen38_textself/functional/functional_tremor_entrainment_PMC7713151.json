@@ -1,0 +1,171 @@
+{
+ "questions": [
+  "Do you have a family history of Parkinson's disease?",
+  "Have you noticed any slowing of your movements or stiffness in your limbs?",
+  "Do you experience constipation, loss of smell, or acting out dreams during sleep?",
+  "Are you currently taking any medications for nausea, psychosis, or mood disorders?",
+  "Does the tremor improve when you intentionally move your hand to perform a task?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform a detailed neurological examination assessing for bradykinesia, rigidity, and postural instability",
+  "Order a DaTscan (dopamine transporter SPECT imaging)"
+ ],
+ "served": [
+  "posture and pull test",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "finger-tapping for bradykinesia and decrement",
+  "MRC power in all four limbs",
+  "sensory examination (including midline splitting, allodynia)",
+  "cognitive screen",
+  "tandem gait",
+  "walking backward",
+  "running",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "Romberg test, repeated with distraction",
+  "observation for excessive slowness or uneconomic posture",
+  "knee buckling / astasia-abasia on walking",
+  "cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "fundoscopy",
+  "video-oculography / eye-movement recording",
+  "DaTSCAN (dopamine transporter SPECT)"
+ ],
+ "results": [
+  "1. Perform a detailed neurological examination assessing for bradykinesia, rigidity, and postural instability",
+  "     posture and pull test: normal",
+  "     muscle tone (spasticity, rigidity, paratonia): normal",
+  "     finger-tapping for bradykinesia and decrement: no decrement - argues against Parkinson disease",
+  "     MRC power in all four limbs: 5/5 throughout",
+  "     sensory examination (including midline splitting, allodynia): burning pain with pronounced sensitivity to touch, fulfilling allodynia criteria",
+  "     cognitive screen: normal",
+  "     tandem gait: normal",
+  "     walking backward: same pattern as walking forward",
+  "     running: not attempted",
+  "     gait with a distracting or automatic task (dancing, counting backwards): unchanged",
+  "     Romberg test, repeated with distraction: negative",
+  "     observation for excessive slowness or uneconomic posture: no bradykinesia, no parkinsonian features",
+  "     knee buckling / astasia-abasia on walking: not present",
+  "     cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus): normal",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): burning pain with pronounced touch sensitivity; vibration and proprioception normal",
+  "     coordination examination (limb and truncal): normal",
+  "     fundoscopy: normal",
+  "     video-oculography / eye-movement recording: normal",
+  "2. Order a DaTscan (dopamine transporter SPECT imaging)",
+  "     DaTSCAN (dopamine transporter SPECT): normal tracer uptake"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional tremor (psychogenic movement disorder)\nAlternative 1: Essential tremor\nAlternative 2: Drug-induced parkinsonism",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Perform a detailed neurological examination assessing for bradykinesia, rigidity, and postural instability\n2. Order a DaTscan (dopamine transporter SPECT imaging)",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Functional tremor (psychogenic movement disorder)",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 194,
+   "completion_tokens": 87,
+   "total_tokens": 281,
+   "cost": 6.999e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.999e-05,
+    "upstream_inference_prompt_cost": 2.91e-05,
+    "upstream_inference_completions_cost": 4.089e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 543,
+   "completion_tokens": 39,
+   "total_tokens": 582,
+   "cost": 9.978e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.978e-05,
+    "upstream_inference_prompt_cost": 8.145e-05,
+    "upstream_inference_completions_cost": 1.833e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1037,
+   "completion_tokens": 33,
+   "total_tokens": 1070,
+   "cost": 0.000102452,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000102452,
+    "upstream_inference_prompt_cost": 8.6942e-05,
+    "upstream_inference_completions_cost": 1.551e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_tremor_entrainment_PMC7713151.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 13.3
+}

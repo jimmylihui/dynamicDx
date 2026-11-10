@@ -1,0 +1,150 @@
+{
+ "questions": [
+  "Is the pain located on the left side of your chest?",
+  "Does the pain spread to your left arm or jaw?",
+  "Does it feel like a heavy pressure or squeezing in your chest?",
+  "Does the pain get worse when you walk or exercise?",
+  "Are you feeling short of breath?",
+  "Do you feel dizzy or nauseous?",
+  "Does the pain get worse when you breathe in deeply?",
+  "Does pressing on the chest wall make the pain worse?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "12-lead electrocardiogram",
+  "Serum troponin",
+  "Chest X-ray",
+  "Esophageal pH monitoring",
+  "Upper gastrointestinal endoscopy",
+  "Esophageal manometry"
+ ],
+ "served": [],
+ "results": [
+  "1. 12-lead electrocardiogram",
+  "     not performed / not available",
+  "2. Serum troponin",
+  "     not performed / not available",
+  "3. Chest X-ray",
+  "     not performed / not available",
+  "4. Esophageal pH monitoring",
+  "     not performed / not available",
+  "5. Upper gastrointestinal endoscopy",
+  "     not performed / not available",
+  "6. Esophageal manometry",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological movement disorder (functional dystonia/abnormal movements)\n\nAlternatives:\n1. Tardive dyskinesia from prior dopamine-blocking medication exposure\n2. Focal dystonia (cervical/upper limb)\n3. Wilson's disease with associated movement abnormalities",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. 12-lead electrocardiogram\n2. Serum troponin\n3. Chest X-ray\n4. Esophageal pH monitoring\n5. Upper gastrointestinal endoscopy\n6. Esophageal manometry",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional neurological movement disorder (functional dystonia/abnormal movements)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14783,
+   "completion_tokens": 3012,
+   "total_tokens": 17795,
+   "cost": 0.00291298,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00291298,
+    "upstream_inference_prompt_cost": 0.00206962,
+    "upstream_inference_completions_cost": 0.00084336
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2910,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 15170,
+   "completion_tokens": 607,
+   "total_tokens": 15777,
+   "cost": 0.000274176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000274176,
+    "upstream_inference_prompt_cost": 0.000104216,
+    "upstream_inference_completions_cost": 0.00016996
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 557,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 15404,
+   "completion_tokens": 542,
+   "total_tokens": 15946,
+   "cost": 0.0002272704,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 15168,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002272704,
+    "upstream_inference_prompt_cost": 7.55104e-05,
+    "upstream_inference_completions_cost": 0.00015176
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 479,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_holmes_structural_PMC13093780.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 83.2
+}

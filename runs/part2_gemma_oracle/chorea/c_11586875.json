@@ -1,0 +1,118 @@
+{
+ "questions": [
+  "Are these movements involuntary?",
+  "Did these movements start suddenly?",
+  "Do you have any weakness in your limbs?",
+  "Do you have a history of stroke?",
+  "Do you have difficulty speaking?",
+  "Have you started any new medications recently?",
+  "Do you have a family history of similar movements?",
+  "Are you feeling confused?",
+  "Do you have a fever?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "brain MRI with contrast",
+  "trial of glucose correction with insulin"
+ ],
+ "results": [
+  "1. blood glucose: 799 mg/dL (normal 74-106)",
+  "2. HbA1c: 11%",
+  "3. ketones (blood or urine): NEGATIVE - non-ketotic",
+  "4. brain MRI with contrast: HYPOSIGNAL involving the corpus striatum bilaterally, extending to the medial cerebral crus on T2 and FLAIR, with mild T1 HYPERSIGNAL in the basal nuclei",
+  "5. trial of glucose correction with insulin: diazepam and insulin gave partial improvement, but the extrapyramidal symptoms persisted; she was readmitted a year later with a hyperosmolar episode"
+ ],
+ "dx_raw": "DIAGNOSIS: Non-ketotic hyperglycemic chorea\nHuntington's disease\nHemichorea-hemiballismus due to stroke\nSydenham's chorea",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Non-ketotic hyperglycemic chorea",
+ "decisive_served": [
+  "blood glucose",
+  "HbA1c",
+  "ketones (blood or urine)",
+  "brain MRI with contrast",
+  "trial of glucose correction with insulin"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 2795,
+   "total_tokens": 11493,
+   "cost": 0.0018201,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0018201,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0009503
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2723,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9150,
+   "completion_tokens": 559,
+   "total_tokens": 9709,
+   "cost": 0.00110506,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00110506,
+    "upstream_inference_prompt_cost": 0.000915,
+    "upstream_inference_completions_cost": 0.00019006
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 514,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 169.7
+}

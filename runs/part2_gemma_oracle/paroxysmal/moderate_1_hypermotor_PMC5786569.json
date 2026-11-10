@@ -1,0 +1,112 @@
+{
+ "questions": [
+  "Do you remember these episodes?",
+  "Do you wake up gasping for air?",
+  "Do you feel excessively sleepy during the day?",
+  "Has a partner told you that you act out your dreams?",
+  "Do you snore loudly?",
+  "Do you experience a feeling of intense fear or panic when you wake up?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "duration of the events",
+  "time of day / relation to sleep",
+  "head injury history",
+  "advanced diffusion imaging / tractography",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. duration of the events: about 15 seconds",
+  "2. time of day / relation to sleep: predominantly out of sleep at night",
+  "3. head injury history: mild repetitive non-penetrating traumatic brain injury, none requiring hospitalisation",
+  "4. advanced diffusion imaging / tractography: multishell diffusion MRI showed disrupted white matter tracts",
+  "5. video-EEG monitoring of a typical event: the diagnosis was made on SEMIOLOGY from clinically documented video-EEG; there was NO interpretable ictal EEG correlate because of movement artefact"
+ ],
+ "dx_raw": "DIAGNOSIS: Frontal lobe epilepsy caused by traumatic brain injury\n\nConfusional arousal\nSleep terrors\nREM sleep behavior disorder",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Frontal lobe epilepsy caused by traumatic brain injury",
+ "decisive_served": [
+  "duration of the events",
+  "time of day / relation to sleep",
+  "head injury history",
+  "advanced diffusion imaging / tractography",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8890,
+   "completion_tokens": 1767,
+   "total_tokens": 10657,
+   "cost": 0.00148978,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00148978,
+    "upstream_inference_prompt_cost": 0.000889,
+    "upstream_inference_completions_cost": 0.00060078
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1626,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9273,
+   "completion_tokens": 1647,
+   "total_tokens": 10920,
+   "cost": 0.00148728,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00148728,
+    "upstream_inference_prompt_cost": 0.0009273,
+    "upstream_inference_completions_cost": 0.00055998
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1706,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 113.0
+}

@@ -1,0 +1,239 @@
+{
+ "questions": [
+  "Do you experience double vision?",
+  "Do you feel weakness in your arms, legs, or hands?",
+  "Is the drooping of your eyelids more noticeable at the end of the day or after you have been active?",
+  "Do you have any difficulty swallowing or speaking?",
+  "Was this present at birth?",
+  "Did this develop gradually over years?",
+  "Do you have any muscle stiffness after using them?",
+  "Do you have any difficulty breathing?",
+  "Do you have any involuntary jerky movements in your limbs or trunk?",
+  "Do you have any difficulty with balance or coordination (ataxia)?",
+  "Have you noticed any changes in your mood, personality, or memory recently?",
+  "Do you have any history of cancer or a known tumor?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Deep tendon reflexes examination",
+  "Ice pack test",
+  "Pupil examination",
+  "Extraocular muscle movement examination",
+  "Tensilon test",
+  "MRI Brain and Spine",
+  "CT Chest/Abdomen/Pelvis",
+  "CSF analysis (protein, cells, and autoimmune/paraneoplastic panel)",
+  "Serum autoimmune/paraneoplastic panel",
+  "Anti-GQ1b antibody test"
+ ],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "pupil size and light reaction",
+  "nystagmus: direction and whether it changes with gaze",
+  "smooth pursuit and saccades",
+  "adduction in horizontal gaze (each eye)",
+  "abducting nystagmus of the fellow eye",
+  "vertical gaze and convergence",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI cervical and thoracic spine",
+  "MRI brain with DWI",
+  "CT chest, abdomen and pelvis",
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF autoimmune encephalitis panel",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)"
+ ],
+ "results": [
+  "R1 ASK Do you experience double vision?; Do you feel weakness in your arms, legs, or hands?; Is the drooping of your eyelids more noticeable at the end of the day or after you have been active?; Do you have any difficulty swallowing or speaking? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Was this present at birth?; Did this develop gradually over years?; Do you have any muscle stiffness after using them?; Do you have any difficulty breathing? -> ['no', 'no', 'no', 'no']",
+  "R3 ORDER Deep tendon reflexes examination; Ice pack test; Pupil examination -> [['deep tendon reflexes and plantar responses'], [], ['pupil size and light reaction']]",
+  "R4 ORDER Extraocular muscle movement examination; Tensilon test -> [['nystagmus: direction and whether it changes with gaze', 'smooth pursuit and saccades', 'adduction in horizontal gaze (each eye)', 'abducting nystagmus of the fellow eye', 'vertical gaze and convergence', 'skew deviation / alternating cover test', 'ocular torsion and head tilt'], []]",
+  "R5 ASK Do you have any involuntary jerky movements in your limbs or trunk?; Do you have any difficulty with balance or coordination (ataxia)?; Have you noticed any changes in your mood, personality, or memory recently?; Do you have any history of cancer or a known tumor? -> ['no', 'yes', 'no', 'no']",
+  "R6 ORDER MRI Brain and Spine; CT Chest/Abdomen/Pelvis; CSF analysis (protein, cells, and autoimmune/paraneoplastic panel); Serum autoimmune/paraneoplastic panel -> [['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'MRI cervical and thoracic spine', 'MRI brain with DWI'], ['CT chest, abdomen and pelvis', 'CT chest / abdomen / pelvis (occult tumour)'], ['CSF cell count and differential', 'CSF protein', 'CSF autoimmune encephalitis panel'], ['serum paraneoplastic / neuronal autoantibody panel', 'paraneoplastic and autoimmune antibody panel (serum)']]",
+  "R7 ORDER Anti-GQ1b antibody test -> [['anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)']]",
+  "R8 DIAGNOSIS Bickerstaff Brainstem Syndrome caused by anti-GT1a antibodies -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you experience double vision?",
+    "Do you feel weakness in your arms, legs, or hands?",
+    "Is the drooping of your eyelids more noticeable at the end of the day or after you have been active?",
+    "Do you have any difficulty swallowing or speaking?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Was this present at birth?",
+    "Did this develop gradually over years?",
+    "Do you have any muscle stiffness after using them?",
+    "Do you have any difficulty breathing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Deep tendon reflexes examination",
+    "Ice pack test",
+    "Pupil examination"
+   ],
+   "result": [
+    [
+     "deep tendon reflexes and plantar responses"
+    ],
+    [],
+    [
+     "pupil size and light reaction"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Extraocular muscle movement examination",
+    "Tensilon test"
+   ],
+   "result": [
+    [
+     "nystagmus: direction and whether it changes with gaze",
+     "smooth pursuit and saccades",
+     "adduction in horizontal gaze (each eye)",
+     "abducting nystagmus of the fellow eye",
+     "vertical gaze and convergence",
+     "skew deviation / alternating cover test",
+     "ocular torsion and head tilt"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have any involuntary jerky movements in your limbs or trunk?",
+    "Do you have any difficulty with balance or coordination (ataxia)?",
+    "Have you noticed any changes in your mood, personality, or memory recently?",
+    "Do you have any history of cancer or a known tumor?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "MRI Brain and Spine",
+    "CT Chest/Abdomen/Pelvis",
+    "CSF analysis (protein, cells, and autoimmune/paraneoplastic panel)",
+    "Serum autoimmune/paraneoplastic panel"
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium",
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences",
+     "MRI cervical and thoracic spine",
+     "MRI brain with DWI"
+    ],
+    [
+     "CT chest, abdomen and pelvis",
+     "CT chest / abdomen / pelvis (occult tumour)"
+    ],
+    [
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF autoimmune encephalitis panel"
+    ],
+    [
+     "serum paraneoplastic / neuronal autoantibody panel",
+     "paraneoplastic and autoimmune antibody panel (serum)"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Anti-GQ1b antibody test"
+   ],
+   "result": [
+    [
+     "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Bickerstaff Brainstem Syndrome caused by anti-GT1a antibodies"
+  }
+ ],
+ "dx": "Bickerstaff Brainstem Syndrome caused by anti-GT1a antibodies",
+ "dx_raw": "DIAGNOSIS: Bickerstaff Brainstem Syndrome caused by anti-GT1a antibodies",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "CT chest / abdomen / pelvis (occult tumour)",
+  "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)",
+  "smooth pursuit and saccades"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0112,
+ "n_frames": 32,
+ "duration_s": 15.2,
+ "video": "moderate_1_ocular_flutter_PMC12979508.mp4",
+ "line": "vertigo_central",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 414.5
+}

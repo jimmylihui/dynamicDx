@@ -1,0 +1,172 @@
+{
+ "questions": [
+  "Are you awake and alert right now?",
+  "Did this start suddenly (within minutes)?",
+  "Have you lost consciousness at any point today?",
+  "Do you feel weakness or numbness anywhere else in your body?",
+  "Are you aware of your eyes being closed or rolled back right now?",
+  "Did you have any head injury recently?",
+  "Do you have a history of seizures?",
+  "Have you experienced any severe headache or vomiting?",
+  "Have you had a recent fever or felt unwell?",
+  "Do you have any numbness or tingling in your face or limbs?",
+  "Are you currently taking any medications?",
+  "Has anything like this ever happened to you before?",
+  "Have you been under unusual emotional stress recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "yes",
+  "13": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "What medications are you currently taking? (or confirm the specific medication name)",
+  "Urgent electroencephalogram (EEG)",
+  "Brain MRI without contrast",
+  "Basic metabolic panel including calcium and magnesium",
+  "Emergency benzodiazepine trial (intravenous lorazepam)"
+ ],
+ "served": [
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "EEG",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)",
+  "MRI brain - cortical atrophy pattern",
+  "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate"
+ ],
+ "results": [
+  "1. What medications are you currently taking? (or confirm the specific medication name)",
+  "     medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium): trazodone, paroxetine, hydrocortisone and verapamil - no dopamine blocker",
+  "2. Urgent electroencephalogram (EEG)",
+  "     EEG: not performed",
+  "3. Brain MRI without contrast",
+  "     MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): no hummingbird sign",
+  "     MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity): putaminal atrophy with the rim sign and putaminal hypointensity on susceptibility-weighted imaging",
+  "     MRI brain - cortical atrophy pattern: no focal atrophy",
+  "     MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly): normal",
+  "4. Basic metabolic panel including calcium and magnesium",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "5. Emergency benzodiazepine trial (intravenous lorazepam)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOPSIS: Drug-induced oculogyric crisis, most likely secondary to paroxetine or trazodone\n\nAlternative considerations:\n1. Early multiple system atrophy (MSA-P) - given putaminal atrophy, rim sign, and SWI hypointensity, though parkinsonism and autonomic dysfunction not yet evident\n2. Neurodegeneration with brain iron accumulation (NBIA) - given SWI hypointensity in basal ganglia\n3. Wilson's disease - basal ganglia changes can occur, though typically different pattern",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. What medications are you currently taking? (or confirm the specific medication name)\n2. Urgent electroencephalogram (EEG)\n3. Brain MRI without contrast\n4. Basic metabolic panel including calcium and magnesium\n5. Emergency benzodiazepine trial (intravenous lorazepam)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "DIAGNOPSIS: Drug-induced oculogyric crisis, most likely secondary to paroxetine or trazodone",
+ "decisive_served": [
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)",
+  "MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 404,
+   "completion_tokens": 1028,
+   "total_tokens": 1432,
+   "cost": 0.0003092768,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003092768,
+    "upstream_inference_prompt_cost": 2.14368e-05,
+    "upstream_inference_completions_cost": 0.00028784
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 867,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 934,
+   "completion_tokens": 708,
+   "total_tokens": 1642,
+   "cost": 0.0002763152,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002763152,
+    "upstream_inference_prompt_cost": 7.80752e-05,
+    "upstream_inference_completions_cost": 0.00019824
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 643,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1345,
+   "completion_tokens": 711,
+   "total_tokens": 2056,
+   "cost": 0.0002644488,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 896,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002644488,
+    "upstream_inference_prompt_cost": 6.53688e-05,
+    "upstream_inference_completions_cost": 0.00019908
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 597,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 39.8
+}

@@ -1,0 +1,210 @@
+{
+ "questions": [
+  "Do you have any memory of waking up and getting out of bed during the night?",
+  "Has your bed partner ever observed you eating or drinking while you appear to be asleep?",
+  "Do you find food wrappers, crumbs, or dirty dishes in your bed or room the morning after these episodes?",
+  "Are you currently taking any prescription sleep medications, such as Zolpidem (Ambien) or Eszopiclone (Lunesta)?",
+  "Do you sleep alone, or is there someone who could observe you during sleep?",
+  "Has anyone ever mentioned to you that you do strange things in your sleep, such as sleepwalking or talking?",
+  "Have you noticed any unexplained weight gain or difficulty managing your weight?",
+  "Do you ever wake up with unexplained stomach discomfort or feeling overly full?",
+  "Do you take any over-the-counter medications at night, such as antihistamines, diphenhydramine (Benadryl), or melatonin?",
+  "Do you use your phone or tablet while in bed before falling asleep?",
+  "How long does it typically take you to fall asleep after getting into bed?",
+  "Do you have trouble falling asleep, trouble staying asleep, or both?",
+  "Do you feel rested and refreshed when you wake up in the morning?",
+  "When you do wake up during the night, are you able to fall back asleep easily?",
+  "Have you ever noticed that you cannot explain how certain food items or snacks ended up consumed or missing from your kitchen?",
+  "Do you eat during the day normally, or have you noticed changes in your appetite?",
+  "Are you a light sleeper who wakes easily to noises?",
+  "Do you feel anxious or stressed during the day?",
+  "Do you have any medical conditions such as diabetes, thyroid problems, or reflux?",
+  "Have you ever had a head injury or concussion?",
+  "Do you have any family history of seizures or epilepsy?",
+  "Have you ever had any episodes during the day where you \"space out\" or stare blankly?",
+  "Do you take any recreational substances or drink alcohol in the evening?",
+  "Do you notice any jerking movements of your arms or legs during sleep?",
+  "When did you have your head injury - was it recent or in the past?",
+  "Did you lose consciousness during your head injury?",
+  "Did these strange sleep behaviors start after your head injury, or were they happening before?",
+  "How often do these episodes occur - every night, a few times a week, or less frequently?",
+  "Do you ever injure yourself during these episodes, such as falling out of bed or hitting furniture?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "yes",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "yes",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Do you have any memory of waking up and getting out of bed during the night?; Has your bed partner ever observed you eating or drinking while you appear to be asleep?; Do you find food wrappers, crumbs, or dirty dishes in your bed or room the morning after these episodes?; Are you currently taking any prescription sleep medications, such as Zolpidem (Ambien) or Eszopiclone (Lunesta)? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Do you sleep alone, or is there someone who could observe you during sleep?; Has anyone ever mentioned to you that you do strange things in your sleep, such as sleepwalking or talking?; Have you noticed any unexplained weight gain or difficulty managing your weight?; Do you ever wake up with unexplained stomach discomfort or feeling overly full?; Do you take any over-the-counter medications at night, such as antihistamines, diphenhydramine (Benadryl), or melatonin? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Do you use your phone or tablet while in bed before falling asleep?; How long does it typically take you to fall asleep after getting into bed?; Do you have trouble falling asleep, trouble staying asleep, or both?; Do you feel rested and refreshed when you wake up in the morning?; When you do wake up during the night, are you able to fall back asleep easily? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Have you ever noticed that you cannot explain how certain food items or snacks ended up consumed or missing from your kitchen?; Do you eat during the day normally, or have you noticed changes in your appetite?; Are you a light sleeper who wakes easily to noises?; Do you feel anxious or stressed during the day?; Do you have any medical conditions such as diabetes, thyroid problems, or reflux? -> ['no', 'no', 'no', 'no', 'no']",
+  "R5 ASK Have you ever had a head injury or concussion?; Do you have any family history of seizures or epilepsy?; Have you ever had any episodes during the day where you \"space out\" or stare blankly?; Do you take any recreational substances or drink alcohol in the evening?; Do you notice any jerking movements of your arms or legs during sleep? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R6 ASK When did you have your head injury - was it recent or in the past?; Did you lose consciousness during your head injury?; Did these strange sleep behaviors start after your head injury, or were they happening before?; How often do these episodes occur - every night, a few times a week, or less frequently?; Do you ever injure yourself during these episodes, such as falling out of bed or hitting furniture? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R7 DIAGNOSIS Nocturnal frontal lobe epilepsy secondary to post-traumatic brain injury from previous head trauma -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have any memory of waking up and getting out of bed during the night?",
+    "Has your bed partner ever observed you eating or drinking while you appear to be asleep?",
+    "Do you find food wrappers, crumbs, or dirty dishes in your bed or room the morning after these episodes?",
+    "Are you currently taking any prescription sleep medications, such as Zolpidem (Ambien) or Eszopiclone (Lunesta)?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you sleep alone, or is there someone who could observe you during sleep?",
+    "Has anyone ever mentioned to you that you do strange things in your sleep, such as sleepwalking or talking?",
+    "Have you noticed any unexplained weight gain or difficulty managing your weight?",
+    "Do you ever wake up with unexplained stomach discomfort or feeling overly full?",
+    "Do you take any over-the-counter medications at night, such as antihistamines, diphenhydramine (Benadryl), or melatonin?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you use your phone or tablet while in bed before falling asleep?",
+    "How long does it typically take you to fall asleep after getting into bed?",
+    "Do you have trouble falling asleep, trouble staying asleep, or both?",
+    "Do you feel rested and refreshed when you wake up in the morning?",
+    "When you do wake up during the night, are you able to fall back asleep easily?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you ever noticed that you cannot explain how certain food items or snacks ended up consumed or missing from your kitchen?",
+    "Do you eat during the day normally, or have you noticed changes in your appetite?",
+    "Are you a light sleeper who wakes easily to noises?",
+    "Do you feel anxious or stressed during the day?",
+    "Do you have any medical conditions such as diabetes, thyroid problems, or reflux?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Have you ever had a head injury or concussion?",
+    "Do you have any family history of seizures or epilepsy?",
+    "Have you ever had any episodes during the day where you \"space out\" or stare blankly?",
+    "Do you take any recreational substances or drink alcohol in the evening?",
+    "Do you notice any jerking movements of your arms or legs during sleep?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "When did you have your head injury - was it recent or in the past?",
+    "Did you lose consciousness during your head injury?",
+    "Did these strange sleep behaviors start after your head injury, or were they happening before?",
+    "How often do these episodes occur - every night, a few times a week, or less frequently?",
+    "Do you ever injure yourself during these episodes, such as falling out of bed or hitting furniture?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Nocturnal frontal lobe epilepsy secondary to post-traumatic brain injury from previous head trauma"
+  }
+ ],
+ "dx": "Nocturnal frontal lobe epilepsy secondary to post-traumatic brain injury from previous head trauma",
+ "dx_raw": "DIAGNOSIS: Nocturnal frontal lobe epilepsy secondary to post-traumatic brain injury from previous head trauma",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.003,
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 200.1
+}

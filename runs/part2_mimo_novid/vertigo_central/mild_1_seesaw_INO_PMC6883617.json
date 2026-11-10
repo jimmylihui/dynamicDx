@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Are you having any pain right now?"
+ ],
+ "answers": {
+  "1": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Are you having any pain right now? -> no",
+  "Are you experiencing any shortness of breath?"
+ ],
+ "served": [],
+ "results": [
+  "1. Are you having any pain right now? -> no",
+  "     not performed / not available",
+  "2. Are you experiencing any shortness of breath?",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Insufficient clinical information to establish a diagnosis.\n\nAlternative considerations:\n1. Asymptomatic condition identified on routine screening\n2. Chronic disease requiring routine follow-up\n3. Preventive care referral",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Are you having any pain right now? -> no\n\n2. Are you experiencing any shortness of breath?",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Insufficient clinical information to establish a diagnosis.",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 1510,
+   "total_tokens": 1895,
+   "cost": 0.000432796,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000432796,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 0.0004228
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1497,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 557,
+   "completion_tokens": 261,
+   "total_tokens": 818,
+   "cost": 0.000107156,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000107156,
+    "upstream_inference_prompt_cost": 3.4076e-05,
+    "upstream_inference_completions_cost": 7.308e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 234,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 714,
+   "completion_tokens": 472,
+   "total_tokens": 1186,
+   "cost": 0.0001618736,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001618736,
+    "upstream_inference_prompt_cost": 2.97136e-05,
+    "upstream_inference_completions_cost": 0.00013216
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 424,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.2,
+ "video": "mild_1_seesaw_INO_PMC6883617.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 36.8
+}

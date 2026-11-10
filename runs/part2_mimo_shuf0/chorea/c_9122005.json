@@ -1,0 +1,162 @@
+{
+ "questions": [
+  "Do you feel pain in your legs?",
+  "Is the pain only in your left leg?",
+  "Is the pain only in your right leg?",
+  "Do you have pain in both legs?",
+  "Is the pain constant?",
+  "Did you recently injure your leg?",
+  "Is there swelling in your legs?",
+  "Do you have numbness in your legs?",
+  "Do you have weakness in your legs?",
+  "Can you walk without assistance?",
+  "Have you had surgery on your legs?",
+  "Do you have fever?",
+  "Do you have any other symptoms?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain",
+  "Serum ceruloplasmin level",
+  "24-hour urine copper",
+  "Thyroid function tests",
+  "Slit lamp examination"
+ ],
+ "served": [
+  "copper / caeruloplasmin",
+  "24-hour urinary copper",
+  "thyroid function (TSH, free T4)",
+  "TSH, free T4 and free T3"
+ ],
+ "results": [
+  "1. MRI of the brain",
+  "     not performed / not available",
+  "2. Serum ceruloplasmin level",
+  "     copper / caeruloplasmin: normal",
+  "3. 24-hour urine copper",
+  "     24-hour urinary copper: normal",
+  "4. Thyroid function tests",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH, free T4 and free T3: normal",
+  "5. Slit lamp examination",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Stereotypic Movement Disorder\n\nAlternative 1: Functional Neurological Disorder\nAlternative 2: Autism Spectrum Disorder\nAlternative 3: Tourette Syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. **MRI of the brain**\n2. **Serum ceruloplasmin level**\n3. **24-hour urine copper**\n4. **Thyroid function tests**\n5. **Slit lamp examination**",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Stereotypic Movement Disorder",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 1687,
+   "total_tokens": 6742,
+   "cost": 0.00118006,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00118006,
+    "upstream_inference_prompt_cost": 0.0007077,
+    "upstream_inference_completions_cost": 0.00047236
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1558,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5521,
+   "completion_tokens": 3780,
+   "total_tokens": 9301,
+   "cost": 0.0011464376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011464376,
+    "upstream_inference_prompt_cost": 8.80376e-05,
+    "upstream_inference_completions_cost": 0.0010584
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3732,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5765,
+   "completion_tokens": 4941,
+   "total_tokens": 10706,
+   "cost": 0.0014354312,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5504,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014354312,
+    "upstream_inference_prompt_cost": 5.19512e-05,
+    "upstream_inference_completions_cost": 0.00138348
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4902,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 359.1
+}

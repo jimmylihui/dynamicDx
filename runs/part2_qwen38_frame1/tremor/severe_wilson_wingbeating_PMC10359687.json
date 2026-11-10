@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Are you experiencing difficulty breathing?",
+  "Do you have a fever?",
+  "Is your neck stiff or painful to move?",
+  "Have you had any recent trauma to your head or neck?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Visual inspection of the neck and cervical spine for masses, swelling, or skin changes",
+  "Palpation of the anterior and posterior neck structures",
+  "Range of motion assessment of the cervical spine",
+  "Neurological examination of the upper extremities"
+ ],
+ "served": [
+  "limb power and wasting",
+  "reflexes and plantar responses",
+  "sensory examination (vibration, pinprick)"
+ ],
+ "results": [
+  "1. Visual inspection of the neck and cervical spine for masses, swelling, or skin changes",
+  "     not performed / not available",
+  "2. Palpation of the anterior and posterior neck structures",
+  "     not performed / not available",
+  "3. Range of motion assessment of the cervical spine",
+  "     not performed / not available",
+  "4. Neurological examination of the upper extremities",
+  "     limb power and wasting: normal bulk and power",
+  "     reflexes and plantar responses: normal",
+  "     sensory examination (vibration, pinprick): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Elective cervical spine surgery (e.g., for degenerative disc disease or spondylosis)\nAlternative 1: Cervical radiculopathy\nAlternative 2: Cervical myelopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Visual inspection of the neck and cervical spine for masses, swelling, or skin changes\n2. Palpation of the anterior and posterior neck structures\n3. Range of motion assessment of the cervical spine\n4. Neurological examination of the upper extremities",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Elective cervical spine surgery (e.g., for degenerative disc disease or spondylosis)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 280,
+   "completion_tokens": 45,
+   "total_tokens": 325,
+   "cost": 6.315e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.315e-05,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 2.115e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 539,
+   "completion_tokens": 54,
+   "total_tokens": 593,
+   "cost": 0.00010623,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010623,
+    "upstream_inference_prompt_cost": 8.085e-05,
+    "upstream_inference_completions_cost": 2.538e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 803,
+   "completion_tokens": 48,
+   "total_tokens": 851,
+   "cost": 9.1554e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.1554e-05,
+    "upstream_inference_prompt_cost": 6.8994e-05,
+    "upstream_inference_completions_cost": 2.256e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 16.6
+}

@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Do you have pain in your legs?",
+  "Have you had any recent falls or injuries to your legs?",
+  "Is the pain constant or intermittent?",
+  "Have you taken any medications for the pain?",
+  "Do you feel numbness or tingling in your legs?",
+  "Is the pain worse when you walk?",
+  "Do you have any swelling or redness in your legs?",
+  "Have you been diagnosed with diabetes or any condition affecting circulation?",
+  "Is the pain in both legs or only one?",
+  "Have you had any recent illnesses or infections?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "serum thiamine (vitamin B1)",
+  "brain MRI",
+  "empirical IV thiamine trial"
+ ],
+ "results": [
+  "1. serum thiamine (vitamin B1): 0.97 ng/mL (reference 1.7-10) - LOW; 2539.27 ng/mL after supplementation, 2.24 ng/mL on maintenance",
+  "2. brain MRI: bilateral symmetric hyperintensity in the mammillary bodies, thalami and periaqueductal midbrain, with the LENTIFORM FORK SIGN; reversed after treatment",
+  "3. empirical IV thiamine trial: marked clinical and radiological improvement"
+ ],
+ "dx_raw": "DIAGNOSIS: Wernicke's encephalopathy due to thiamine (vitamin B1) deficiency\n\nKorsakoff syndrome (thiamine deficiency-related)\n\nHepatic encephalopathy\n\nMarchiafava-Bignami disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Wernicke's encephalopathy due to thiamine (vitamin B1) deficiency",
+ "decisive_served": [
+  "serum thiamine (vitamin B1)",
+  "brain MRI",
+  "empirical IV thiamine trial"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14783,
+   "completion_tokens": 1704,
+   "total_tokens": 16487,
+   "cost": 0.0025203976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0025203976,
+    "upstream_inference_prompt_cost": 0.0020432776,
+    "upstream_inference_completions_cost": 0.00047712
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1581,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15283,
+   "completion_tokens": 727,
+   "total_tokens": 16010,
+   "cost": 0.000323596,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000323596,
+    "upstream_inference_prompt_cost": 0.000120036,
+    "upstream_inference_completions_cost": 0.00020356
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 668,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 44.2
+}

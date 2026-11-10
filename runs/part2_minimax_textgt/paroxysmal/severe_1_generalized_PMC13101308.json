@@ -1,0 +1,194 @@
+{
+ "questions": [
+  "Have you ever had a seizure before this one?",
+  "Did you experience any warning or strange sensation just before the seizure started?",
+  "Do you have weakness in any part of your body right now?",
+  "Have you ever had a serious head injury, stroke, or brain surgery?",
+  "Do you have a family history of epilepsy?",
+  "Do you drink alcohol heavily or have you recently stopped drinking?",
+  "Do you use any recreational drugs?",
+  "Did you bite your tongue during the seizure?",
+  "Have you had a fever or felt unwell in the past few days?",
+  "Are you over 40 years old?",
+  "Do you have diabetes?",
+  "Did the seizure occur shortly after waking from sleep?",
+  "Did you lose control of your bladder during the seizure?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Routine EEG with hyperventilation and photic stimulation",
+  "MRI brain with epilepsy protocol",
+  "Serum sodium, potassium, calcium, and magnesium",
+  "Serum glucose",
+  "Complete blood count",
+  "Liver and renal function tests",
+  "Serum prolactin level",
+  "Urine toxicology screen",
+  "Sleep-deprived EEG if initial EEG is non-diagnostic"
+ ],
+ "served": [
+  "interictal EEG",
+  "brain MRI",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "glucose, calcium, magnesium, sodium",
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium",
+  "full blood count and biochemistry",
+  "liver function tests",
+  "serum electrolytes, urea and creatinine",
+  "liver and renal function",
+  "toxicology screen (urine and serum)",
+  "toxicology and drug levels",
+  "interictal EEG"
+ ],
+ "results": [
+  "1. Routine EEG with hyperventilation and photic stimulation",
+  "     interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally",
+  "2. MRI brain with epilepsy protocol",
+  "     brain MRI: no focal epileptogenic lesion",
+  "3. Serum sodium, potassium, calcium, and magnesium",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "4. Serum glucose",
+  "     blood glucose and HbA1c: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "5. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "6. Liver and renal function tests",
+  "     liver function tests: normal",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver and renal function: normal",
+  "7. Serum prolactin level",
+  "     not performed / not available",
+  "8. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "     toxicology and drug levels: negative",
+  "9. Sleep-deprived EEG if initial EEG is non-diagnostic",
+  "     interictal EEG: runs of generalized polyspikes and spike-wave discharges at 2-3 Hz lasting 3-4 s, predominating bifrontally and occasionally shifting laterally"
+ ],
+ "dx_raw": "DIAGNOSIS: Genetic (idiopathic) generalized epilepsy, most consistent with juvenile myoclonic epilepsy\n\nAlternatives:\n1. Generalized epilepsy with generalized tonic-clonic seizures alone (without myoclonic component, as not directly confirmed)\n2. Focal epilepsy with rapid secondary bilateral synchrony on EEG\n3. Unclassified generalized epilepsy pending longer-term EEG/video-telemetry to capture a typical event and characterize the body turning (versive movement)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Routine EEG with hyperventilation and photic stimulation\n2. MRI brain with epilepsy protocol\n3. Serum sodium, potassium, calcium, and magnesium\n4. Serum glucose\n5. Complete blood count\n6. Liver and renal function tests\n7. Serum prolactin level\n8. Urine toxicology screen\n9. ECG\n10. Sleep-deprived EEG if initial EEG is non-diagnostic",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Genetic (idiopathic) generalized epilepsy, most consistent with juvenile myoclonic epilepsy",
+ "decisive_served": [
+  "interictal EEG",
+  "interictal EEG"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 328,
+   "completion_tokens": 3704,
+   "total_tokens": 4032,
+   "cost": 0.00451584,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00451584,
+    "upstream_inference_prompt_cost": 7.104e-05,
+    "upstream_inference_completions_cost": 0.0044448
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3910,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 864,
+   "completion_tokens": 847,
+   "total_tokens": 1711,
+   "cost": 0.00124824,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00124824,
+    "upstream_inference_prompt_cost": 0.00023184,
+    "upstream_inference_completions_cost": 0.0010164
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 904,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1329,
+   "completion_tokens": 923,
+   "total_tokens": 2252,
+   "cost": 0.00144822,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00144822,
+    "upstream_inference_prompt_cost": 0.00034062,
+    "upstream_inference_completions_cost": 0.0011076
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 949,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.8,
+ "video": "severe_1_generalized_PMC13101308.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 87.2
+}

@@ -1,0 +1,228 @@
+{
+ "questions": [
+  "Is the patient conscious?",
+  "Did the symptoms start suddenly?",
+  "Is there a history of head trauma?",
+  "Is the patient breathing spontaneously?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Blood glucose level",
+  "Pupil examination",
+  "Glasgow Coma Scale (GCS) assessment",
+  "CT head (non-contrast)",
+  "Arterial Blood Gas (ABG)",
+  "Toxicology screen",
+  "Liver function tests (LFTs)",
+  "Renal function tests (BUN/Creatinine)",
+  "Serum electrolytes",
+  "MRI brain",
+  "Lumbar puncture (CSF analysis)",
+  "Serum lactate",
+  "Serum CK",
+  "Core temperature measurement",
+  "Lorazepam challenge (IV)",
+  "Arterial Blood Gas (ABG)",
+  "Serum lactate",
+  "Detailed neurological exam (reflexes, plantar response)"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "blood glucose",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "CT head (non-contrast)",
+  "toxicology screen (urine and serum)",
+  "liver function tests",
+  "serum electrolytes, urea and creatinine",
+  "renal function and eGFR",
+  "sodium and serum osmolality",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel",
+  "creatine kinase",
+  "vital signs",
+  "deep tendon reflexes and plantar responses"
+ ],
+ "results": [
+  "R1 ASK Is the patient conscious?; Did the symptoms start suddenly?; Is there a history of head trauma?; Is the patient breathing spontaneously? -> ['no', 'no', 'no', 'no']",
+  "R2 ORDER Blood glucose level; Pupil examination; Glasgow Coma Scale (GCS) assessment; CT head (non-contrast); Arterial Blood Gas (ABG); Toxicology screen; Liver function tests (LFTs); Renal function tests (BUN/Creatinine); Serum electrolytes -> [['blood glucose and HbA1c', 'blood glucose'], ['cranial nerve examination'], ['mental status / cognitive screen'], ['CT head (non-contrast)'], [], ['toxicology screen (urine and serum)'], ['liver function tests'], ['serum electrolytes, urea and creatinine', 'renal function and eGFR'], ['serum electrolytes, urea and creatinine', 'sodium and serum osmolality']]",
+  "R3 ORDER MRI brain; Lumbar puncture (CSF analysis); Serum lactate -> [['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences'], ['CSF opening pressure', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF cytology and flow cytometry', 'CSF culture and viral PCR', 'CSF autoimmune encephalitis panel'], []]",
+  "R4 ORDER Serum CK; Core temperature measurement -> [['creatine kinase'], ['vital signs']]",
+  "R5 ORDER Lorazepam challenge (IV) -> [[]]",
+  "R6 ORDER Arterial Blood Gas (ABG); Serum lactate; Detailed neurological exam (reflexes, plantar response) -> [[], [], ['deep tendon reflexes and plantar responses']]",
+  "R7 DIAGNOSIS Non-ketotic hyperglycemic hemichorea-hemiballismus caused by non-ketotic hyperglycemia -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Is the patient conscious?",
+    "Did the symptoms start suddenly?",
+    "Is there a history of head trauma?",
+    "Is the patient breathing spontaneously?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Blood glucose level",
+    "Pupil examination",
+    "Glasgow Coma Scale (GCS) assessment",
+    "CT head (non-contrast)",
+    "Arterial Blood Gas (ABG)",
+    "Toxicology screen",
+    "Liver function tests (LFTs)",
+    "Renal function tests (BUN/Creatinine)",
+    "Serum electrolytes"
+   ],
+   "result": [
+    [
+     "blood glucose and HbA1c",
+     "blood glucose"
+    ],
+    [
+     "cranial nerve examination"
+    ],
+    [
+     "mental status / cognitive screen"
+    ],
+    [
+     "CT head (non-contrast)"
+    ],
+    [],
+    [
+     "toxicology screen (urine and serum)"
+    ],
+    [
+     "liver function tests"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "renal function and eGFR"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "sodium and serum osmolality"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "MRI brain",
+    "Lumbar puncture (CSF analysis)",
+    "Serum lactate"
+   ],
+   "result": [
+    [
+     "MRI diffusion-weighted sequences",
+     "MRI susceptibility-weighted sequences"
+    ],
+    [
+     "CSF opening pressure",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF cytology and flow cytometry",
+     "CSF culture and viral PCR",
+     "CSF autoimmune encephalitis panel"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Serum CK",
+    "Core temperature measurement"
+   ],
+   "result": [
+    [
+     "creatine kinase"
+    ],
+    [
+     "vital signs"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Lorazepam challenge (IV)"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Arterial Blood Gas (ABG)",
+    "Serum lactate",
+    "Detailed neurological exam (reflexes, plantar response)"
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "deep tendon reflexes and plantar responses"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Non-ketotic hyperglycemic hemichorea-hemiballismus caused by non-ketotic hyperglycemia"
+  }
+ ],
+ "dx": "Non-ketotic hyperglycemic hemichorea-hemiballismus caused by non-ketotic hyperglycemia",
+ "dx_raw": "DIAGNOSIS: Non-ketotic hyperglycemic hemichorea-hemiballismus caused by non-ketotic hyperglycemia",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0138,
+ "n_frames": 32,
+ "duration_s": 8.1,
+ "video": "hg_11283634.mp4",
+ "line": "chorea",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 1194.1
+}

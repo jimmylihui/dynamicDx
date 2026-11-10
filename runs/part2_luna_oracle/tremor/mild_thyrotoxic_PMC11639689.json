@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Are you experiencing involuntary shaking or trembling of your hands or arms?",
+  "Did these movements begin suddenly?",
+  "Are the movements present when your hands are completely at rest?",
+  "Do they worsen when you hold your arms out or use your hands?",
+  "Do the movements decrease or stop when you are distracted?",
+  "Can you voluntarily stop the movements for a few seconds?",
+  "Do the movements change when you copy a rhythm with the other hand?",
+  "Is one side affected more than the other?",
+  "Do you have weakness in either arm or hand?",
+  "Do you have numbness, tingling, or loss of sensation?",
+  "Have you had problems with balance, walking, speech, or vision?",
+  "Have you had episodes of loss of awareness, fainting, or seizures?",
+  "Did this begin after an injury, illness, major stress, or upsetting event?",
+  "Have you recently started or changed any medications?",
+  "Do you use caffeine, stimulants, recreational drugs, or alcohol heavily?",
+  "Have you or a close relative ever had similar movements or a diagnosed neurological disorder?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "limb power and wasting",
+  "TSH / free T4",
+  "cervical spine MRI (including flexion views)",
+  "nerve conduction studies / EMG",
+  "surface EMG of forearm flexors and extensors"
+ ],
+ "results": [
+  "1. limb power and wasting: mild distal finger muscle wasting",
+  "2. TSH / free T4: normal - not thyrotoxic",
+  "3. cervical spine MRI (including flexion views): ON NECK FLEXION, prominent flow voids in a widened posterior epidural space from C6 to T3 - diagnostic of Hirayama disease",
+  "4. nerve conduction studies / EMG: normal conduction velocity with NEUROGENIC changes in the C7-C8 myotome",
+  "5. surface EMG of forearm flexors and extensors: synchronous discharges at about 8 Hz in both forearm flexors and extensors"
+ ],
+ "dx_raw": "DIAGNOSIS: Hirayama disease (flexion-induced cervical myelopathy/monomelic amyotrophy) with an action tremor caused by dynamic compression and ischemia of the lower cervical anterior horn cells, predominantly affecting the C7–C8 myotomes.\n\nALTERNATIVE: Essential tremor\n\nALTERNATIVE: Functional tremor\n\nALTERNATIVE: Tremor secondary to structural cervical cord disease other than Hirayama disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Hirayama disease (flexion-induced cervical myelopathy/monomelic amyotrophy) with an action tremor caused by dynamic compression and ischemia of the lower cervical anterior horn cells, predominantly affecting the C7–C8 myotomes.",
+ "decisive_served": [
+  "limb power and wasting",
+  "TSH / free T4",
+  "cervical spine MRI (including flexion views)",
+  "nerve conduction studies / EMG",
+  "surface EMG of forearm flexors and extensors"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 644,
+   "total_tokens": 6320,
+   "cost": 0.00044343,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00044343,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0003864
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 406,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6449,
+   "completion_tokens": 302,
+   "total_tokens": 6751,
+   "cost": 0.000334855,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 773,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000334855,
+    "upstream_inference_prompt_cost": 0.000153655,
+    "upstream_inference_completions_cost": 0.0001812
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 205,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_thyrotoxic_PMC11639689.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 15.9
+}

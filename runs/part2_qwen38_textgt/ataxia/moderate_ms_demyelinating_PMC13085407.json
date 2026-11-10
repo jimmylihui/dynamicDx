@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Do you have a history of heavy alcohol consumption?",
+  "Do you experience numbness or tingling in your feet?",
+  "Do you have difficulty seeing in low light conditions?",
+  "Do you have a family history of neurological disorders?",
+  "Have you had recent head trauma?",
+  "Do you experience dizziness when standing up quickly?",
+  "Do you have a known diagnosis of diabetes mellitus?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Romberg test",
+  "Finger-to-nose and heel-to-shin testing",
+  "Serum Vitamin B12 level",
+  "MRI of the brain"
+ ],
+ "served": [
+  "Romberg test",
+  "finger-nose / heel-shin testing",
+  "vitamin B12 / folate",
+  "vitamin B12 with methylmalonic acid",
+  "brain MRI",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences"
+ ],
+ "results": [
+  "1. Romberg test",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "2. Finger-to-nose and heel-to-shin testing",
+  "     finger-nose / heel-shin testing: dysmetria",
+  "3. Serum Vitamin B12 level",
+  "     vitamin B12 / folate: normal",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "4. MRI of the brain",
+  "     brain MRI: cerebellar atrophy at one year; serial imaging over five years shows progressive ISOLATED cerebellar atrophy with no supratentorial abnormality",
+  "     MRI brain with gadolinium: progressive isolated cerebellar atrophy with no supratentorial abnormality and no abnormal enhancement",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic Late-Onset Cerebellar Ataxia (ILOCA)\n1. Sporadic Adult-Onset Ataxia of Unknown Etiology\n2. Paraneoplastic Cerebellar Degeneration\n3. Autosomal Dominant Spinocerebellar Ataxia",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Romberg test\n2. Finger-to-nose and heel-to-shin testing\n3. Serum Vitamin B12 level\n4. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic Late-Onset Cerebellar Ataxia (ILOCA)",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 176,
+   "completion_tokens": 90,
+   "total_tokens": 266,
+   "cost": 6.87e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.87e-05,
+    "upstream_inference_prompt_cost": 2.64e-05,
+    "upstream_inference_completions_cost": 4.23e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 539,
+   "completion_tokens": 34,
+   "total_tokens": 573,
+   "cost": 9.683e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.683e-05,
+    "upstream_inference_prompt_cost": 8.085e-05,
+    "upstream_inference_completions_cost": 1.598e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 848,
+   "completion_tokens": 64,
+   "total_tokens": 912,
+   "cost": 8.8672e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.8672e-05,
+    "upstream_inference_prompt_cost": 5.8592e-05,
+    "upstream_inference_completions_cost": 3.008e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_ms_demyelinating_PMC13085407.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 11.8
+}

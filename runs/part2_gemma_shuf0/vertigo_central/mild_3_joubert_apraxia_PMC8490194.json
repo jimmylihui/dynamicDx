@@ -1,0 +1,152 @@
+{
+ "questions": [
+  "Is the child responding to your voice?",
+  "Is this a new symptom?",
+  "Has the child had a fever?",
+  "Has the child had a seizure before?",
+  "Is the child meeting developmental milestones?",
+  "Were there any complications during delivery?",
+  "Was the child born prematurely?",
+  "Has the child had a history of neonatal jaundice?",
+  "Does the child have a larger than normal head size?",
+  "Has the child had any recent head trauma?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain",
+  "Whole Exome Sequencing",
+  "Plasma amino acids and urine organic acids analysis"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI brain with DWI",
+  "genetic testing (exome)"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     MRI brain with gadolinium: cerebellar vermis hypoplasia with molar tooth sign; no abnormal enhancement",
+  "     MRI diffusion-weighted sequences: molar tooth sign with cerebellar vermis hypoplasia; no restricted diffusion",
+  "     MRI brain with DWI: MOLAR TOOTH SIGN with cerebellar vermis hypoplasia and horizontally aligned superior cerebellar peduncles",
+  "2. Whole Exome Sequencing",
+  "     genetic testing (exome): pathogenic variants in ciliopathy genes on exome sequencing",
+  "3. Plasma amino acids and urine organic acids analysis",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Joubert Syndrome caused by pathogenic variants in ciliopathy genes\n\nAlternatives:\n1. Joubert Syndrome Related Disorder (JSRD)\n2. Senior-Løken Syndrome\n3. Ciliopathy with cerebellar vermis hypoplasia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. EEG\n3. Whole Exome Sequencing\n4. Plasma amino acids and urine organic acids analysis",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Joubert Syndrome caused by pathogenic variants in ciliopathy genes",
+ "decisive_served": [
+  "MRI brain with DWI",
+  "genetic testing (exome)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 5942,
+   "total_tokens": 14640,
+   "cost": 0.00289008,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00289008,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00202028
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5695,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9104,
+   "completion_tokens": 624,
+   "total_tokens": 9728,
+   "cost": 0.00112256,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00112256,
+    "upstream_inference_prompt_cost": 0.0009104,
+    "upstream_inference_completions_cost": 0.00021216
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 664,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9346,
+   "completion_tokens": 529,
+   "total_tokens": 9875,
+   "cost": 0.00111446,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00111446,
+    "upstream_inference_prompt_cost": 0.0009346,
+    "upstream_inference_completions_cost": 0.00017986
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 471,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_3_joubert_apraxia_PMC8490194.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 301.5
+}

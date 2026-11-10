@@ -1,0 +1,186 @@
+{
+ "questions": [
+  "Is the main reason for your visit today related to your arms or hands?",
+  "Are you experiencing weakness in your arms or hands?",
+  "Did your symptoms start suddenly?",
+  "Are you experiencing any numbness or tingling in your arms or hands?",
+  "Have you ever had a stroke or TIA before?",
+  "Are you currently experiencing any pain in your arms or shoulders?",
+  "Do you have a history of high blood pressure?",
+  "Do you have diabetes?",
+  "Are you experiencing any dizziness or loss of balance?",
+  "Have you had any trouble with your speech or vision today?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Bedside examination of rapid alternating movements",
+  "Bedside examination of tandem gait",
+  "MRI of the brain with and without contrast",
+  "Serum vitamin B12 level",
+  "Serum ceruloplasmin level",
+  "Complete blood count",
+  "Basic metabolic panel",
+  "Thyroid stimulating hormone level",
+  "Serum vitamin E level",
+  "Anti-Purkinje cell antibodies"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "coordination examination (limb and truncal)",
+  "MRI brain with gadolinium",
+  "brain MRI",
+  "vitamin B12 with methylmalonic acid",
+  "copper / caeruloplasmin",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "renal function (urea, creatinine)",
+  "glucose",
+  "TSH / free T4",
+  "serum vitamin E",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "autoimmune and paraneoplastic antibody panel"
+ ],
+ "results": [
+  "1. Bedside examination of rapid alternating movements",
+  "     coordination examination (limb and truncal): limb and truncal ataxia with action myoclonus",
+  "2. Bedside examination of tandem gait",
+  "     coordination examination (limb and truncal): limb and truncal ataxia with action myoclonus",
+  "3. MRI of the brain with and without contrast",
+  "     MRI brain with gadolinium: mild diffuse atrophy only, no enhancement",
+  "     brain MRI: mild diffuse atrophy only",
+  "4. Serum vitamin B12 level",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "5. Serum ceruloplasmin level",
+  "     copper / caeruloplasmin: normal",
+  "6. Complete blood count",
+  "     full blood count: normal",
+  "7. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     renal function (urea, creatinine): normal",
+  "     glucose: normal",
+  "8. Thyroid stimulating hormone level",
+  "     TSH / free T4: normal",
+  "9. Serum vitamin E level",
+  "     serum vitamin E: normal",
+  "10. Anti-Purkinje cell antibodies",
+  "     serum paraneoplastic / neuronal autoantibody panel: normal",
+  "     autoimmune and paraneoplastic antibody panel: negative across AMPA, amphiphysin, CV2.1, DPPX, GABA-B, GAD65, Hu, NMDA, PNMA2, recoverin, Ri, SOX1, Titin, Tr"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive myoclonus–ataxia syndrome, likely genetic in origin (e.g. Unverricht–Lundborg disease)\n\nAlternatives to consider:\n1. Coeliac disease–associated myoclonus-ataxia\n2. Anti-mGluR1 antibody–associated cerebellar ataxia with myoclonus\n3. Mitochondrial myoclonus-ataxia (e.g. MERRF)",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Bedside examination of rapid alternating movements\n2. Bedside examination of tandem gait\n3. MRI of the brain with and without contrast\n4. Serum vitamin B12 level\n5. Serum ceruloplasmin level\n6. Complete blood count\n7. Basic metabolic panel\n8. Thyroid stimulating hormone level\n9. Serum vitamin E level\n10. Anti-Purkinje cell antibodies",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Progressive myoclonus–ataxia syndrome, likely genetic in origin (e.g. Unverricht–Lundborg disease)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 755,
+   "total_tokens": 7817,
+   "cost": 0.00299724,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00299724,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.000906
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 731,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7505,
+   "completion_tokens": 5177,
+   "total_tokens": 12682,
+   "cost": 0.00677766,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00677766,
+    "upstream_inference_prompt_cost": 0.00056526,
+    "upstream_inference_completions_cost": 0.0062124
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5589,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7980,
+   "completion_tokens": 1832,
+   "total_tokens": 9812,
+   "cost": 0.002814,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7410,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.002814,
+    "upstream_inference_prompt_cost": 0.0006156,
+    "upstream_inference_completions_cost": 0.0021984
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1887,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "moderate_coeliac_PMC10548079.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 124.1
+}

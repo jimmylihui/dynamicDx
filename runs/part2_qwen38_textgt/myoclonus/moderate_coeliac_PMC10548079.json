@@ -1,0 +1,143 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Do you have a history of diabetes?",
+  "Have you had a stroke or transient ischemic attack in the past?",
+  "Do you consume alcohol regularly?",
+  "Is there a family history of movement disorders?",
+  "Did these symptoms start suddenly?",
+  "Do you have a known diagnosis of Parkinson's disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Serum ceruloplasmin and 24-hour urinary copper",
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "MRI of the brain with attention to the basal ganglia"
+ ],
+ "served": [
+  "24-hour urinary copper",
+  "copper / caeruloplasmin",
+  "MRI brain with gadolinium",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Serum ceruloplasmin and 24-hour urinary copper",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin: normal",
+  "2. Slit-lamp examination for Kayser-Fleischer rings",
+  "     not performed / not available",
+  "3. MRI of the brain with attention to the basal ganglia",
+  "     MRI brain with gadolinium: mild diffuse atrophy only, no enhancement",
+  "     brain MRI: mild diffuse atrophy only"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic adult-onset action myoclonus\nAlternative 1: Essential tremor with cerebellar signs\nAlternative 2: Early-stage spinocerebellar ataxia",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Serum ceruloplasmin and 24-hour urinary copper\n2. Slit-lamp examination for Kayser-Fleischer rings\n3. MRI of the brain with attention to the basal ganglia",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic adult-onset action myoclonus",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 186,
+   "completion_tokens": 81,
+   "total_tokens": 267,
+   "cost": 6.597e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.597e-05,
+    "upstream_inference_prompt_cost": 2.79e-05,
+    "upstream_inference_completions_cost": 3.807e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 531,
+   "completion_tokens": 44,
+   "total_tokens": 575,
+   "cost": 0.00010033,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010033,
+    "upstream_inference_prompt_cost": 7.965e-05,
+    "upstream_inference_completions_cost": 2.068e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 777,
+   "completion_tokens": 43,
+   "total_tokens": 820,
+   "cost": 6.8152e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.8152e-05,
+    "upstream_inference_prompt_cost": 4.7942e-05,
+    "upstream_inference_completions_cost": 2.021e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "moderate_coeliac_PMC10548079.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 20.5
+}

@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Does the drooping of your eyelids get worse as the day goes on?",
+  "Do you have double vision?",
+  "Do you have difficulty swallowing?",
+  "Do you have difficulty speaking?",
+  "Do you feel short of breath?",
+  "Do you have weakness in your arms or legs?",
+  "Did this start suddenly?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Repetitive Nerve Stimulation",
+  "Single Fiber EMG",
+  "Acetylcholine receptor antibodies",
+  "Voltage-gated calcium channel antibodies",
+  "Creatine Kinase (CK)"
+ ],
+ "served": [
+  "repetitive nerve stimulation",
+  "single-fibre electromyography",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "creatine kinase"
+ ],
+ "results": [
+  "1. Repetitive Nerve Stimulation",
+  "     repetitive nerve stimulation: normal",
+  "2. Single Fiber EMG",
+  "     single-fibre electromyography: normal",
+  "3. Acetylcholine receptor antibodies",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "4. Voltage-gated calcium channel antibodies",
+  "     not performed / not available",
+  "5. Creatine Kinase (CK)",
+  "     creatine kinase: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Myotonic Dystrophy Type 1\n\n1. Myotonic Dystrophy Type 2\n2. Chronic Progressive External Ophthalmoplegia (CPEO)\n3. Facioscapulohumeral Muscular Dystrophy (FSHD)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Repetitive Nerve Stimulation\n2. Single Fiber EMG\n3. Acetylcholine receptor antibodies\n4. Voltage-gated calcium channel antibodies\n5. Creatine Kinase (CK)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Myotonic Dystrophy Type 1",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1778,
+   "total_tokens": 10476,
+   "cost": 0.00147432,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00147432,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00060452
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1696,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9022,
+   "completion_tokens": 1416,
+   "total_tokens": 10438,
+   "cost": 0.00138364,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00138364,
+    "upstream_inference_prompt_cost": 0.0009022,
+    "upstream_inference_completions_cost": 0.00048144
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1313,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9249,
+   "completion_tokens": 4318,
+   "total_tokens": 13567,
+   "cost": 0.00239302,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00239302,
+    "upstream_inference_prompt_cost": 0.0009249,
+    "upstream_inference_completions_cost": 0.00146812
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3989,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 6935.6
+}

@@ -1,0 +1,158 @@
+{
+ "questions": [
+  "Did the weakness start recently?",
+  "Did the weakness start in your legs and move upwards?",
+  "Have you had a recent respiratory or gastrointestinal infection?",
+  "Do you have numbness or tingling in your hands or feet?",
+  "Are you having any difficulty breathing?",
+  "Are you having any difficulty swallowing?",
+  "Is the weakness symmetric on both sides of your body?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Nerve Conduction Studies and Electromyography (NCS/EMG)",
+  "Anti-GM1 antibody test",
+  "MRI of the brachial plexus",
+  "Lumbar puncture for CSF analysis"
+ ],
+ "served": [
+  "nerve conduction studies",
+  "needle electromyography",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF cytology and flow cytometry",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel",
+  "lumbar puncture / CSF (cells, protein, oligoclonal bands)"
+ ],
+ "results": [
+  "1. Nerve Conduction Studies and Electromyography (NCS/EMG)",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: long and variable-latency voluntary-type muscle bursts",
+  "2. Anti-GM1 antibody test",
+  "     not performed / not available",
+  "3. MRI of the brachial plexus",
+  "     not performed / not available",
+  "4. Lumbar puncture for CSF analysis",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal",
+  "     CSF oligoclonal bands and IgG index: normal",
+  "     CSF cytology and flow cytometry: normal",
+  "     CSF culture and viral PCR: normal",
+  "     CSF autoimmune encephalitis panel: normal",
+  "     lumbar puncture / CSF (cells, protein, oligoclonal bands): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Neuromyotonia (Isaacs' Syndrome) caused by voltage-gated potassium channel (VGKC) antibodies\n\nMyotonic Dystrophy Type 1\nMyotonic Dystrophy Type 2\nMyotonia Congenita",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Nerve Conduction Studies and Electromyography (NCS/EMG)\n2. Anti-GM1 antibody test\n3. MRI of the brachial plexus\n4. Lumbar puncture for CSF analysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Neuromyotonia (Isaacs' Syndrome) caused by voltage-gated potassium channel (VGKC) antibodies",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8986,
+   "completion_tokens": 1308,
+   "total_tokens": 10294,
+   "cost": 0.00134332,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00134332,
+    "upstream_inference_prompt_cost": 0.0008986,
+    "upstream_inference_completions_cost": 0.00044472
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1245,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9332,
+   "completion_tokens": 899,
+   "total_tokens": 10231,
+   "cost": 0.00123886,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00123886,
+    "upstream_inference_prompt_cost": 0.0009332,
+    "upstream_inference_completions_cost": 0.00030566
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 871,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9637,
+   "completion_tokens": 4045,
+   "total_tokens": 13682,
+   "cost": 0.002339,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.002339,
+    "upstream_inference_prompt_cost": 0.0009637,
+    "upstream_inference_completions_cost": 0.0013753
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3774,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 223.6
+}

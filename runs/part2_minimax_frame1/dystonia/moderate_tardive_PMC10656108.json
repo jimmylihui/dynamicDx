@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Is the main reason for your visit pain somewhere?",
+  "Is the pain in your face or head?",
+  "Is the pain on one side only?",
+  "Did the symptoms start within the last week?",
+  "Did this begin suddenly?",
+  "Have you had a fever?",
+  "Have you noticed any weakness in your arms or legs?",
+  "Have you had any vision changes?",
+  "Do you have any numbness or tingling?",
+  "Have you had a recent fall or injury?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Have you had a stroke before?",
+  "Are you experiencing dizziness?",
+  "Is the pain worse when you chew or open your mouth?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "I would like to perform a general physical examination, including checking your pulse, blood pressure, and temperature. (A single test cannot cover all of these, so I would need a group of bedside tests. However, since the instructions state \"one investigation per line, I will provide a group of tests.)"
+ ],
+ "served": [],
+ "results": [
+  "1. I would like to perform a general physical examination, including checking your pulse, blood pressure, and temperature. (A single test cannot cover all of these, so I would need a group of bedside tests. However, since the instructions state \"one investigation per line, I will provide a group of tests.)",
+  "     not performed / not available"
+ ],
+ "dx_raw": "I cannot make a specific diagnosis from this consultation. The history is entirely negative (no pain, no neurological symptoms, no fever, no dizziness, no relevant comorbidities), and the physical examination was not performed. Without positive findings, any diagnosis I offer would be a guess rather than an evidence-based conclusion.\n\nIf forced to commit to a most likely scenario given the demographic (older man in a clinical setting with IV access), the possibilities are essentially unlimited without further data. A reasonable next step would be to ask open-ended questions about what actually brought him in, since none of my screening questions identified a chief complaint.\n\nDIAGNOSIS: Insufficient information to make a specific diagnosis.\n\n1. No acute medical condition identified (well-patient visit)\n2. An undisclosed chronic condition not captured by symptom-based screening\n3. A condition requiring examination findings (e.g., skin, ENT, or musculoskeletal) to diagnose, which I have been unable to elicit\n\nAdditional history, physical examination, and basic investigations (CBC, basic metabolic panel, urinalysis) would be required before any specific diagnosis could be entertained.",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. I would like to perform a general physical examination, including checking your pulse, blood pressure, and temperature. (A single test cannot cover all of these, so I would need a group of bedside tests. However, since the instructions state \"one investigation per line, I will provide a group of tests.)",
+ "rationale": [
+  null
+ ],
+ "dx": "Insufficient information to make a specific diagnosis.",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 958,
+   "completion_tokens": 510,
+   "total_tokens": 1468,
+   "cost": 0.00086172,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00086172,
+    "upstream_inference_prompt_cost": 0.00024972,
+    "upstream_inference_completions_cost": 0.000612
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 362,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1474,
+   "completion_tokens": 64,
+   "total_tokens": 1538,
+   "cost": 0.00048132,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00048132,
+    "upstream_inference_prompt_cost": 0.00040452,
+    "upstream_inference_completions_cost": 7.68e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1702,
+   "completion_tokens": 2300,
+   "total_tokens": 4002,
+   "cost": 0.00323316,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00323316,
+    "upstream_inference_prompt_cost": 0.00047316,
+    "upstream_inference_completions_cost": 0.00276
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2080,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 19.9,
+ "video": "moderate_tardive_PMC10656108.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 44.0
+}

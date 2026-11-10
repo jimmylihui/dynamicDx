@@ -1,0 +1,172 @@
+{
+ "questions": [
+  "Do you have problems with your memory or thinking?",
+  "Do you have problems with bladder control or urinary incontinence?",
+  "Have you ever taken antipsychotic medications?",
+  "Have you ever taken metoclopramide?",
+  "Have you ever taken prochlorperazine?",
+  "Do you have a family history of similar movement disorders?",
+  "Have you noticed any changes in your mood or personality?",
+  "Do you have any tremors?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI of the brain",
+  "Romberg test",
+  "Finger-to-nose test",
+  "Heel-to-shin test",
+  "Proprioception test of the lower limbs",
+  "Slit-lamp examination",
+  "Serum ceruloplasmin",
+  "24-hour urinary copper excretion"
+ ],
+ "served": [
+  "posture and pull test",
+  "coordination examination (limb and truncal)",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "serum ceruloplasmin",
+  "24-hour urinary copper"
+ ],
+ "results": [
+  "R1 ASK Do you have problems with your memory or thinking?; Do you have problems with bladder control or urinary incontinence? -> ['no', 'no']",
+  "R2 ORDER MRI of the brain -> [[]]",
+  "R3 ORDER Romberg test; Finger-to-nose test; Heel-to-shin test; Proprioception test of the lower limbs -> [['posture and pull test'], ['coordination examination (limb and truncal)'], ['coordination examination (limb and truncal)'], ['sensory examination (pinprick, vibration, proprioception)']]",
+  "R4 ASK Have you ever taken antipsychotic medications?; Have you ever taken metoclopramide?; Have you ever taken prochlorperazine? -> ['no', 'no', 'no']",
+  "R5 ASK Do you have a family history of similar movement disorders?; Have you noticed any changes in your mood or personality?; Do you have any tremors? -> ['no', 'no', 'no']",
+  "R6 ORDER Slit-lamp examination; Serum ceruloplasmin; 24-hour urinary copper excretion -> [['slit-lamp examination for Kayser-Fleischer rings'], ['serum ceruloplasmin'], ['24-hour urinary copper']]",
+  "R7 DIAGNOSIS Anti-NMDA receptor encephalitis caused by antibodies against the NMDA receptor -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have problems with your memory or thinking?",
+    "Do you have problems with bladder control or urinary incontinence?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "MRI of the brain"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Romberg test",
+    "Finger-to-nose test",
+    "Heel-to-shin test",
+    "Proprioception test of the lower limbs"
+   ],
+   "result": [
+    [
+     "posture and pull test"
+    ],
+    [
+     "coordination examination (limb and truncal)"
+    ],
+    [
+     "coordination examination (limb and truncal)"
+    ],
+    [
+     "sensory examination (pinprick, vibration, proprioception)"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you ever taken antipsychotic medications?",
+    "Have you ever taken metoclopramide?",
+    "Have you ever taken prochlorperazine?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a family history of similar movement disorders?",
+    "Have you noticed any changes in your mood or personality?",
+    "Do you have any tremors?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Slit-lamp examination",
+    "Serum ceruloplasmin",
+    "24-hour urinary copper excretion"
+   ],
+   "result": [
+    [
+     "slit-lamp examination for Kayser-Fleischer rings"
+    ],
+    [
+     "serum ceruloplasmin"
+    ],
+    [
+     "24-hour urinary copper"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Anti-NMDA receptor encephalitis caused by antibodies against the NMDA receptor"
+  }
+ ],
+ "dx": "Anti-NMDA receptor encephalitis caused by antibodies against the NMDA receptor",
+ "dx_raw": "DIAGNOSIS: Anti-NMDA receptor encephalitis caused by antibodies against the NMDA receptor",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0097,
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 860.5
+}

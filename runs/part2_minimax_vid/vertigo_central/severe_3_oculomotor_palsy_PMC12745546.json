@@ -1,0 +1,177 @@
+{
+ "questions": [
+  "Have you noticed any sudden loss of vision?",
+  "Are you experiencing pain in your eyes?",
+  "Do you see double?",
+  "Is your eye red?",
+  "Do you have any discharge from your eyes?",
+  "Is your vision blurry?",
+  "Are your eyes itchy?",
+  "Do your eyes feel dry or gritty?",
+  "Have you noticed any drooping of your eyelids?",
+  "Do you see flashes or floaters?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Pupillary light reflex assessment",
+  "Ice pack test",
+  "Cogan's lid twitch test",
+  "Sustained upgaze fatigability test",
+  "Serum acetylcholine receptor antibody testing",
+  "Anti-MuSK antibody testing",
+  "MRI of brain and orbits with gadolinium contrast",
+  "Thyroid function tests",
+  "Repetitive nerve stimulation electromyography"
+ ],
+ "served": [
+  "pupil size and light reaction",
+  "ptosis / lid position",
+  "ptosis / lid position",
+  "ptosis / lid position",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "MRI brain with gadolinium",
+  "TSH / free T4",
+  "repetitive nerve stimulation"
+ ],
+ "results": [
+  "1. Pupillary light reflex assessment",
+  "     pupil size and light reaction: pupils EQUALLY REACTIVE - pupil-sparing",
+  "2. Ice pack test",
+  "     ptosis / lid position: partial ptosis",
+  "3. Cogan's lid twitch test",
+  "     ptosis / lid position: partial ptosis",
+  "4. Sustained upgaze fatigability test",
+  "     ptosis / lid position: partial ptosis",
+  "5. Serum acetylcholine receptor antibody testing",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "6. Anti-MuSK antibody testing",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "7. MRI of brain and orbits with gadolinium contrast",
+  "     MRI brain with gadolinium: small dorsal paramedian midbrain infarct",
+  "8. Thyroid function tests",
+  "     TSH / free T4: normal",
+  "9. Repetitive nerve stimulation electromyography",
+  "     repetitive nerve stimulation: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Dorsal paramedian midbrain infarction involving the oculomotor nucleus complex (central caudal subnucleus) causing bilateral partial third-nerve palsies with pupil sparing\n1. Seronegative myasthenia gravis with coincidental small midbrain infarct\n2. Demyelinating plaque (multiple sclerosis) of the dorsal midbrain\n3. Brainstem encephalitis (e.g., Bickerstaff) involving the oculomotor nuclei",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Pupillary light reflex assessment\n2. Ice pack test\n3. Cogan's lid twitch test\n4. Sustained upgaze fatigability test\n5. Serum acetylcholine receptor antibody testing\n6. Anti-MuSK antibody testing\n7. MRI of brain and orbits with gadolinium contrast\n8. Thyroid function tests\n9. Repetitive nerve stimulation electromyography",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Dorsal paramedian midbrain infarction involving the oculomotor nucleus complex (central caudal subnucleus) causing bilateral partial third-nerve palsies with pupil sparing",
+ "decisive_served": [
+  "pupil size and light reaction"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 5906,
+   "total_tokens": 26344,
+   "cost": 0.01319124,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01319124,
+    "upstream_inference_prompt_cost": 0.00610404,
+    "upstream_inference_completions_cost": 0.0070872
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6158,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 20817,
+   "completion_tokens": 814,
+   "total_tokens": 21631,
+   "cost": 0.00234078,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20338,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00234078,
+    "upstream_inference_prompt_cost": 0.00136398,
+    "upstream_inference_completions_cost": 0.0009768
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 752,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 21193,
+   "completion_tokens": 2997,
+   "total_tokens": 24190,
+   "cost": 0.00498102,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20722,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00498102,
+    "upstream_inference_prompt_cost": 0.00138462,
+    "upstream_inference_completions_cost": 0.0035964
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3302,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 20.2,
+ "video": "severe_3_oculomotor_palsy_PMC12745546.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 147.7
+}

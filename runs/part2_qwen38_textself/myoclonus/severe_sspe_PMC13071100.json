@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Is the shaking present when your hand is completely at rest in your lap?",
+  "Does the shaking stop or significantly decrease when you reach for an object, such as picking up a cup?",
+  "Do you have a family history of tremors or Parkinson's disease?",
+  "Have you noticed any slowness in your movements or stiffness in your right arm?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Clinical assessment of tremor frequency and amplitude using a smartphone accelerometer or digital pen during rest, posture holding, and action tasks",
+  "DaTscan (Dopamine Transporter SPECT imaging)",
+  "Trial of propranolol"
+ ],
+ "served": [
+  "observation of the jerks",
+  "provocation by action or posture",
+  "Unified Myoclonus Rating Scale"
+ ],
+ "results": [
+  "1. Clinical assessment of tremor frequency and amplitude using a smartphone accelerometer or digital pen during rest, posture holding, and action tasks",
+  "     observation of the jerks: periodic myoclonus with a SLOW relaxation phase involving bilateral shoulder abductors and hip flexors",
+  "     provocation by action or posture: not clearly action-sensitive",
+  "     Unified Myoclonus Rating Scale: normal / non-contributory",
+  "2. DaTscan (Dopamine Transporter SPECT imaging)",
+  "     not performed / not available",
+  "3. Trial of propranolol",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Cortical myoclonus (likely secondary to underlying neurodegenerative disease or metabolic encephalopathy)\nEssential tremor with atypical features\nParkinson's disease with early postural instability",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Clinical assessment of tremor frequency and amplitude using a smartphone accelerometer or digital pen during rest, posture holding, and action tasks\n2. DaTscan (Dopamine Transporter SPECT imaging)\n3. Trial of propranolol",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Cortical myoclonus (likely secondary to underlying neurodegenerative disease or metabolic encephalopathy)",
+ "decisive_served": [
+  "observation of the jerks"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 189,
+   "completion_tokens": 78,
+   "total_tokens": 267,
+   "cost": 6.501e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.501e-05,
+    "upstream_inference_prompt_cost": 2.835e-05,
+    "upstream_inference_completions_cost": 3.666e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 516,
+   "completion_tokens": 50,
+   "total_tokens": 566,
+   "cost": 0.0001009,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001009,
+    "upstream_inference_prompt_cost": 7.74e-05,
+    "upstream_inference_completions_cost": 2.35e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 790,
+   "completion_tokens": 48,
+   "total_tokens": 838,
+   "cost": 7.2452e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.2452e-05,
+    "upstream_inference_prompt_cost": 4.9892e-05,
+    "upstream_inference_completions_cost": 2.256e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "severe_sspe_PMC13071100.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.7
+}

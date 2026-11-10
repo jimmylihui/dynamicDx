@@ -1,0 +1,126 @@
+{
+ "questions": [
+  "Have you had these symptoms for more than six months?",
+  "Do you have tremors in your hands?",
+  "Do you feel stiffness in your muscles?",
+  "Do you take smaller steps when you walk?",
+  "Have you had any falls recently?",
+  "Did these symptoms start suddenly?",
+  "Do you have trouble with your memory?",
+  "Do you feel dizzy when you stand up?",
+  "Is the weakness primarily on one side of your body?",
+  "Do you have a history of stroke?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "vertical saccades and gaze range (up and down)",
+  "doll's head (oculocephalic) manoeuvre",
+  "applause sign (three-clap test)",
+  "limb rigidity and axial (neck) rigidity",
+  "serum ceruloplasmin",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)"
+ ],
+ "results": [
+  "1. vertical saccades and gaze range (up and down): both upgaze and downgaze RESTRICTED, vertical worse than horizontal; horizontal gaze preserved",
+  "2. doll's head (oculocephalic) manoeuvre: the gaze restriction is OVERCOME - this is supranuclear, not a nerve or muscle palsy",
+  "3. applause sign (three-clap test): POSITIVE",
+  "4. limb rigidity and axial (neck) rigidity: SEVERE in the neck, mild in the upper limbs - axial predominance",
+  "5. serum ceruloplasmin: normal - excludes Wilson disease",
+  "6. neuronal surface antibody panel including anti-IgLON5: negative - excludes anti-IgLON5 disease",
+  "7. MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio): mild hummingbird sign with cerebral atrophy"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy (PSP) caused by tauopathy\n\nCorticobasal Degeneration\nMultiple System Atrophy\nParkinson's disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Progressive Supranuclear Palsy (PSP) caused by tauopathy",
+ "decisive_served": [
+  "vertical saccades and gaze range (up and down)",
+  "doll's head (oculocephalic) manoeuvre",
+  "applause sign (three-clap test)",
+  "limb rigidity and axial (neck) rigidity",
+  "serum ceruloplasmin",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1720,
+   "total_tokens": 10418,
+   "cost": 0.0014546,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014546,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0005848
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1588,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9241,
+   "completion_tokens": 1255,
+   "total_tokens": 10496,
+   "cost": 0.0013508,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013508,
+    "upstream_inference_prompt_cost": 0.0009241,
+    "upstream_inference_completions_cost": 0.0004267
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1185,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "psp_richardson_PMC11082598.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 108.2
+}

@@ -1,0 +1,104 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a history of substance abuse or alcohol dependence?",
+  "Have you been admitted to this facility against your will?",
+  "Do you have a history of seizures or epilepsy?",
+  "Have you been diagnosed with a psychiatric condition such as schizophrenia or bipolar disorder?",
+  "Do you have a history of severe head trauma?",
+  "Do you have a history of severe head trauma?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Are you currently experiencing any pain?; Do you have a history of substance abuse or alcohol dependence?; Have you been admitted to this facility against your will? -> ['no', 'no', 'no']",
+  "R2 ASK Do you have a history of seizures or epilepsy?; Have you been diagnosed with a psychiatric condition such as schizophrenia or bipolar disorder? -> ['no', 'no']",
+  "R3 ASK Do you have a history of severe head trauma? -> ['yes']",
+  "R4 ASK Do you have a history of severe head trauma? -> ['yes']",
+  "R5 DIAGNOSIS Post-traumatic epilepsy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing any pain?",
+    "Do you have a history of substance abuse or alcohol dependence?",
+    "Have you been admitted to this facility against your will?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of seizures or epilepsy?",
+    "Have you been diagnosed with a psychiatric condition such as schizophrenia or bipolar disorder?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of severe head trauma?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of severe head trauma?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Post-traumatic epilepsy"
+  }
+ ],
+ "dx": "Post-traumatic epilepsy",
+ "dx_raw": "DIAGNOSIS: Post-traumatic epilepsy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0017,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 25.5
+}

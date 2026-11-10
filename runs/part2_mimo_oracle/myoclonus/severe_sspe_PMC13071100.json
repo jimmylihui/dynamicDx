@@ -1,0 +1,110 @@
+{
+ "questions": [
+  "Are you experiencing dizziness or vertigo?",
+  "Do you feel unsteady when you walk?",
+  "Did you suffer a recent head or neck injury?",
+  "Do you have numbness or tingling in your legs?",
+  "Is this your first time experiencing these symptoms?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "observation of the jerks",
+  "anti-measles antibody titres (serum)",
+  "EEG",
+  "lumbar puncture / CSF",
+  "measles vaccination and infection history"
+ ],
+ "results": [
+  "1. observation of the jerks: periodic myoclonus with a SLOW relaxation phase involving bilateral shoulder abductors and hip flexors",
+  "2. anti-measles antibody titres (serum): raised, with CSF-restricted synthesis",
+  "3. EEG: periodic slow wave complexes TIME-LOCKED to the myoclonic jerks",
+  "4. lumbar puncture / CSF: intrathecal synthesis of anti-measles IgG",
+  "5. measles vaccination and infection history: measles in infancy; SSPE typically follows 4-12 years later, but onset here was in adulthood"
+ ],
+ "dx_raw": "DIAGNOSIS: Subacute sclerosing panencephalitis (SSPE) due to persistent wild-type measles virus infection of the central nervous system\n\nAlternative diagnoses:\n1. Autoimmune encephalitis with rhythmic movement disorder\n2. Creutzfeldt-Jakob disease (sporadic)\n3. Hashimoto encephalopathy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Subacute sclerosing panencephalitis (SSPE) due to persistent wild-type measles virus infection of the central nervous system",
+ "decisive_served": [
+  "observation of the jerks",
+  "anti-measles antibody titres (serum)",
+  "EEG",
+  "lumbar puncture / CSF",
+  "measles vaccination and infection history"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 3573,
+   "total_tokens": 8628,
+   "cost": 0.0016817976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0016817976,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00100044
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3509,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5422,
+   "completion_tokens": 290,
+   "total_tokens": 5712,
+   "cost": 0.0001553776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001553776,
+    "upstream_inference_prompt_cost": 7.41776e-05,
+    "upstream_inference_completions_cost": 8.12e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 213,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "severe_sspe_PMC13071100.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 51.6
+}

@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Are you experiencing any pain?",
+  "Do you have any weakness in your face?",
+  "Did this start suddenly?",
+  "Have you had any recent facial procedures?",
+  "Do you have any numbness in your face?",
+  "Is your vision affected?",
+  "Do you have a fever?",
+  "Do you have a headache?",
+  "Do you have any difficulty speaking?",
+  "Do you have any difficulty swallowing?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Temporal artery palpation",
+  "MRI Brain"
+ ],
+ "served": [
+  "brain MRI"
+ ],
+ "results": [
+  "1. Temporal artery palpation",
+  "     not performed / not available",
+  "2. MRI Brain",
+  "     brain MRI: no structural lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Giant Cell Arteritis caused by autoimmune vasculitis\n\n1. Tension-type headache\n2. Migraine\n3. Polymyalgia rheumatica",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. ESR\n2. CRP\n3. Temporal artery palpation\n4. MRI Brain",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Giant Cell Arteritis caused by autoimmune vasculitis",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8697,
+   "completion_tokens": 2600,
+   "total_tokens": 11297,
+   "cost": 0.0017537,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0017537,
+    "upstream_inference_prompt_cost": 0.0008697,
+    "upstream_inference_completions_cost": 0.000884
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2368,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9081,
+   "completion_tokens": 2560,
+   "total_tokens": 11641,
+   "cost": 0.0017785,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0017785,
+    "upstream_inference_prompt_cost": 0.0009081,
+    "upstream_inference_completions_cost": 0.0008704
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2426,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9224,
+   "completion_tokens": 3066,
+   "total_tokens": 12290,
+   "cost": 0.00196484,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00196484,
+    "upstream_inference_prompt_cost": 0.0009224,
+    "upstream_inference_completions_cost": 0.00104244
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2910,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.6,
+ "video": "mild_blepharospasm_idiopathic_PMC13049410.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 292.4
+}

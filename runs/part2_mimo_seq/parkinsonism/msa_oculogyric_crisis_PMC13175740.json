@@ -1,0 +1,144 @@
+{
+ "questions": [
+  "Has this problem with controlling your eye movements started in the last few months?",
+  "Do you have any double vision when you try to move your eyes in these directions?",
+  "Have you had any recent head trauma or a serious infection like meningitis before this started?",
+  "Have you experienced any falls, especially falling backwards, that started before the eye problems?",
+  "Do you feel any stiffness in your neck or have difficulty with your balance when walking?",
+  "Have you noticed any tremor or stiffness in your arms or legs?",
+  "Do you have any difficulty swallowing food or drinks?",
+  "Do you find yourself having uncontrollable episodes of laughing or crying that don't match how you actually feel?",
+  "Did the neck stiffness start around the same time as the eye movement problems, or did it come first?",
+  "Have you had any unexplained weight loss over the past year?",
+  "Have you noticed any changes in your mood, such as feeling unusually low, anxious, or irritable?",
+  "Do you have a family member with a similar movement or neurological condition?",
+  "Do you ever stop breathing during sleep, or has anyone told you that you snore heavily or gasp for air at night?",
+  "Have you ever been told you might have Parkinson's disease or been started on any Parkinson's medications like levodopa?",
+  "If you were tried on levodopa or similar medication, did it help your symptoms?",
+  "Have you noticed any problems with your thinking or memory, or difficulty planning and organizing tasks?",
+  "Have you become more apathetic or lost interest in activities you used to enjoy?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "yes",
+  "15": "no",
+  "16": "no",
+  "17": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Has this problem with controlling your eye movements started in the last few months?; Do you have any double vision when you try to move your eyes in these directions?; Have you had any recent head trauma or a serious infection like meningitis before this started? -> ['no', 'no', 'no']",
+  "R2 ASK Have you experienced any falls, especially falling backwards, that started before the eye problems?; Do you feel any stiffness in your neck or have difficulty with your balance when walking?; Have you noticed any tremor or stiffness in your arms or legs?; Do you have any difficulty swallowing food or drinks?; Do you find yourself having uncontrollable episodes of laughing or crying that don't match how you actually feel? -> ['no', 'yes', 'yes', 'no', 'no']",
+  "R3 ASK Did the neck stiffness start around the same time as the eye movement problems, or did it come first?; Have you had any unexplained weight loss over the past year?; Have you noticed any changes in your mood, such as feeling unusually low, anxious, or irritable?; Do you have a family member with a similar movement or neurological condition?; Do you ever stop breathing during sleep, or has anyone told you that you snore heavily or gasp for air at night? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Have you ever been told you might have Parkinson's disease or been started on any Parkinson's medications like levodopa?; If you were tried on levodopa or similar medication, did it help your symptoms?; Have you noticed any problems with your thinking or memory, or difficulty planning and organizing tasks?; Have you become more apathetic or lost interest in activities you used to enjoy? -> ['yes', 'no', 'no', 'no']",
+  "R5 DIAGNOSIS Progressive Supranuclear Palsy (Richardson's syndrome), characterized by vertical supranuclear gaze palsy (predominantly affecting downgaze), axial rigidity with prominent neck stiffness, parkinsonism unresponsive to levodopa, and early postural instability with falls. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Has this problem with controlling your eye movements started in the last few months?",
+    "Do you have any double vision when you try to move your eyes in these directions?",
+    "Have you had any recent head trauma or a serious infection like meningitis before this started?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you experienced any falls, especially falling backwards, that started before the eye problems?",
+    "Do you feel any stiffness in your neck or have difficulty with your balance when walking?",
+    "Have you noticed any tremor or stiffness in your arms or legs?",
+    "Do you have any difficulty swallowing food or drinks?",
+    "Do you find yourself having uncontrollable episodes of laughing or crying that don't match how you actually feel?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did the neck stiffness start around the same time as the eye movement problems, or did it come first?",
+    "Have you had any unexplained weight loss over the past year?",
+    "Have you noticed any changes in your mood, such as feeling unusually low, anxious, or irritable?",
+    "Do you have a family member with a similar movement or neurological condition?",
+    "Do you ever stop breathing during sleep, or has anyone told you that you snore heavily or gasp for air at night?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you ever been told you might have Parkinson's disease or been started on any Parkinson's medications like levodopa?",
+    "If you were tried on levodopa or similar medication, did it help your symptoms?",
+    "Have you noticed any problems with your thinking or memory, or difficulty planning and organizing tasks?",
+    "Have you become more apathetic or lost interest in activities you used to enjoy?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Progressive Supranuclear Palsy (Richardson's syndrome), characterized by vertical supranuclear gaze palsy (predominantly affecting downgaze), axial rigidity with prominent neck stiffness, parkinsonism unresponsive to levodopa, and early postural instability with falls."
+  }
+ ],
+ "dx": "Progressive Supranuclear Palsy (Richardson's syndrome), characterized by vertical supranuclear gaze palsy (predominantly affecting downgaze), axial rigidity with prominent neck stiffness, parkinsonism unresponsive to levodopa, and early postural instability with falls.",
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy (Richardson's syndrome), characterized by vertical supranuclear gaze palsy (predominantly affecting downgaze), axial rigidity with prominent neck stiffness, parkinsonism unresponsive to levodopa, and early postural instability with falls.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "cost_usd": 0.0016,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 88.6
+}

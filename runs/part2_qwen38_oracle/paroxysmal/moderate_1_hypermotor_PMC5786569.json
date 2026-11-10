@@ -1,0 +1,112 @@
+{
+ "questions": [
+  "Are you currently taking any prescription medications?",
+  "Do you have a history of seizures or epilepsy?",
+  "Have you been experiencing significant stress, anxiety, or depression recently?",
+  "Do you use alcohol or recreational drugs?",
+  "Did you witness this episode yourself, or are you reporting it based on the video recording?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "duration of the events",
+  "time of day / relation to sleep",
+  "head injury history",
+  "advanced diffusion imaging / tractography",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. duration of the events: about 15 seconds",
+  "2. time of day / relation to sleep: predominantly out of sleep at night",
+  "3. head injury history: mild repetitive non-penetrating traumatic brain injury, none requiring hospitalisation",
+  "4. advanced diffusion imaging / tractography: multishell diffusion MRI showed disrupted white matter tracts",
+  "5. video-EEG monitoring of a typical event: the diagnosis was made on SEMIOLOGY from clinically documented video-EEG; there was NO interpretable ictal EEG correlate because of movement artefact"
+ ],
+ "dx_raw": "DIAGNOSIS: Hypermotor seizures (formerly known as Nocturnal Frontal Lobe Epilepsy) secondary to traumatic brain injury",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Hypermotor seizures (formerly known as Nocturnal Frontal Lobe Epilepsy) secondary to traumatic brain injury",
+ "decisive_served": [
+  "duration of the events",
+  "time of day / relation to sleep",
+  "head injury history",
+  "advanced diffusion imaging / tractography",
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6871,
+   "completion_tokens": 72,
+   "total_tokens": 6943,
+   "cost": 0.00106449,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00106449,
+    "upstream_inference_prompt_cost": 0.00103065,
+    "upstream_inference_completions_cost": 3.384e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7256,
+   "completion_tokens": 31,
+   "total_tokens": 7287,
+   "cost": 0.000228218,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000228218,
+    "upstream_inference_prompt_cost": 0.000213648,
+    "upstream_inference_completions_cost": 1.457e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.4
+}

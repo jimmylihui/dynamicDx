@@ -1,0 +1,168 @@
+{
+ "questions": [
+  "Did you have a car accident?",
+  "Did you fall?",
+  "Do you remember what happened?",
+  "Have you had surgery recently?",
+  "Are you experiencing any numbness or tingling?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of bleeding disorders?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Non-contrast CT head",
+  "Full neurological examination",
+  "Blood glucose level",
+  "Toxicology screen",
+  "X-ray of the right leg"
+ ],
+ "served": [
+  "CT head",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "blood glucose and HbA1c",
+  "glucose, calcium, magnesium, sodium",
+  "toxicology screen (urine and serum)",
+  "toxicology and drug levels"
+ ],
+ "results": [
+  "1. Non-contrast CT head",
+  "     CT head: normal",
+  "2. Full neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: mild developmental cognitive delay",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "3. Blood glucose level",
+  "     blood glucose and HbA1c: normal",
+  "     glucose, calcium, magnesium, sodium: normal",
+  "4. Toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "     toxicology and drug levels: negative",
+  "5. X-ray of the right leg",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Concussion due to head trauma\n\n1. Post-ictal state following a seizure\n2. Transient Global Amnesia\n3. Psychogenic amnesia",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Non-contrast CT head\n2. Full neurological examination\n3. Blood glucose level\n4. Toxicology screen\n5. X-ray of the right leg",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Concussion due to head trauma",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1195,
+   "total_tokens": 9893,
+   "cost": 0.0012761,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012761,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.0004063
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1078,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9040,
+   "completion_tokens": 783,
+   "total_tokens": 9823,
+   "cost": 0.00117022,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00117022,
+    "upstream_inference_prompt_cost": 0.000904,
+    "upstream_inference_completions_cost": 0.00026622
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 747,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9352,
+   "completion_tokens": 2588,
+   "total_tokens": 11940,
+   "cost": 0.00181512,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00181512,
+    "upstream_inference_prompt_cost": 0.0009352,
+    "upstream_inference_completions_cost": 0.00087992
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2432,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.8,
+ "video": "severe_1_generalized_PMC13101308.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 160.7
+}

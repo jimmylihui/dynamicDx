@@ -1,0 +1,375 @@
+{
+ "questions": [
+  "Have you ever had a stroke?",
+  "Do you have any weakness in your right leg or foot?",
+  "Do you have any numbness or tingling in your right leg?",
+  "Do you have any back pain?",
+  "Do you have any difficulty controlling your bladder or bowels?",
+  "Do you have any pain or weakness in your right foot specifically?",
+  "Do you have any swelling in your right ankle or foot?",
+  "Do you have any history of injury to your right foot or ankle?",
+  "Do you have any diabetes?",
+  "Do you have any history of blood clots or deep vein thrombosis (DVT)?",
+  "Do you have any history of heart problems?",
+  "Have you been running or doing any unusual physical activity recently?",
+  "Do you drink alcohol regularly?",
+  "Have you noticed any problems with your speech or slurring your words?",
+  "Have you noticed any problems with your vision or double vision?",
+  "Do you have any history of cancer?",
+  "Have you ever been exposed to heavy metals or toxic chemicals at work?",
+  "Do you have any history of multiple sclerosis or neurological disease in your family?",
+  "Have you had any recent infections or fevers?",
+  "Do you have any headache or vomiting?",
+  "Do you have a history of alcoholism or recent heavy alcohol consumption?",
+  "Do you eat a regular balanced diet with adequate nutrition?",
+  "Have you lost a significant amount of weight recently or do you eat poorly?",
+  "Do you take any medications regularly, especially diuretics?",
+  "Do you have any history of gastric bypass or bariatric surgery?",
+  "Have you had persistent vomiting recently?",
+  "Do you have any history of HIV or immunodeficiency?",
+  "Do you have any history of malnutrition or eating disorders?",
+  "Have you been on dialysis for a long time?",
+  "Did you start dialysis recently (within the last few months)?",
+  "Did you have an acute kidney injury that required starting dialysis?",
+  "Have you had prolonged fasting or very poor oral intake before starting dialysis?",
+  "Have you been receiving intravenous glucose or fluids without thiamine supplementation?",
+  "Did you develop your walking and speech problems after starting dialysis?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "yes",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "yes",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "no",
+  "33": "no",
+  "34": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Observe gait pattern (walking assessment) - careful observation of the patient's walking pattern, looking specifically for circumduction, foot drop, Trendelenburg gait, or antalgic gait.",
+  "Tandem walking test (heel-to-toe walking)",
+  "Romberg test",
+  "Single leg stance test on the right leg",
+  "Manual muscle testing of right lower extremity (hip flexion, knee extension, ankle dorsiflexion, ankle plantarflexion, great toe extension)",
+  "MRI brain",
+  "Finger-to-nose test and rapid alternating movements (dysdiadochokinesia testing) on the left upper extremity",
+  "Hypometric/overshoot testing - observe for past pointing",
+  "Nystagmus testing (saccadic eye movements, smooth pursuit, convergence)",
+  "Palatal/uvular examination for symmetry",
+  "Jaw jerk reflex",
+  "Serum thiamine (vitamin B1) level",
+  "Serum vitamin B12 level",
+  "Serum folate level",
+  "Complete blood count (CBC)",
+  "Comprehensive metabolic panel (CMP) including liver function tests and albumin",
+  "Serum prealbumin (transthyretin) level for acute malnutrition assessment",
+  "Urinalysis",
+  "Serum ketone bodies (beta-hydroxybutyrate) - to evaluate for metabolic acidosis from starvation"
+ ],
+ "served": [
+  "gait examination",
+  "coordination examination (limb and truncal)",
+  "Romberg test",
+  "limb strength (MRC) examination",
+  "brain MRI",
+  "finger-nose / heel-shin testing",
+  "bedside eye-movement exam",
+  "cranial nerve examination",
+  "serum thiamine (vitamin B1)",
+  "vitamin B12 / folate",
+  "vitamin B12 with methylmalonic acid",
+  "serum folate",
+  "full blood count",
+  "renal and liver function",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "urinalysis"
+ ],
+ "results": [
+  "R1 ASK Have you ever had a stroke?; Do you have any weakness in your right leg or foot?; Do you have any numbness or tingling in your right leg?; Do you have any back pain?; Do you have any difficulty controlling your bladder or bowels? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Do you have any pain or weakness in your right foot specifically?; Do you have any swelling in your right ankle or foot?; Do you have any history of injury to your right foot or ankle?; Do you have any diabetes?; Do you have any history of blood clots or deep vein thrombosis (DVT)?; Do you have any history of heart problems?; Have you been running or doing any unusual physical activity recently? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Observe gait pattern (walking assessment) - careful observation of the patient's walking pattern, looking specifically for circumduction, foot drop, Trendelenburg gait, or antalgic gait.; Tandem walking test (heel-to-toe walking); Romberg test; Single leg stance test on the right leg; Manual muscle testing of right lower extremity (hip flexion, knee extension, ankle dorsiflexion, ankle plantarflexion, great toe extension) -> [['gait examination'], ['gait examination', 'coordination examination (limb and truncal)'], ['Romberg test'], [], ['limb strength (MRC) examination']]",
+  "R4 ASK Do you drink alcohol regularly?; Have you noticed any problems with your speech or slurring your words?; Have you noticed any problems with your vision or double vision?; Do you have any history of cancer?; Have you ever been exposed to heavy metals or toxic chemicals at work?; Do you have any history of multiple sclerosis or neurological disease in your family?; Have you had any recent infections or fevers?; Do you have any headache or vomiting? -> ['no', 'yes', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R5 ORDER MRI brain; Finger-to-nose test and rapid alternating movements (dysdiadochokinesia testing) on the left upper extremity; Hypometric/overshoot testing - observe for past pointing; Nystagmus testing (saccadic eye movements, smooth pursuit, convergence); Palatal/uvular examination for symmetry; Jaw jerk reflex -> [['brain MRI'], ['finger-nose / heel-shin testing', 'coordination examination (limb and truncal)'], ['finger-nose / heel-shin testing', 'coordination examination (limb and truncal)'], ['bedside eye-movement exam'], ['cranial nerve examination'], ['cranial nerve examination']]",
+  "R6 ASK Do you have a history of alcoholism or recent heavy alcohol consumption?; Do you eat a regular balanced diet with adequate nutrition?; Have you lost a significant amount of weight recently or do you eat poorly?; Do you take any medications regularly, especially diuretics?; Do you have any history of gastric bypass or bariatric surgery?; Have you had persistent vomiting recently?; Do you have any history of HIV or immunodeficiency?; Do you have any history of malnutrition or eating disorders? -> ['no', 'no', 'yes', 'no', 'no', 'no', 'no', 'no']",
+  "R7 ORDER Serum thiamine (vitamin B1) level; Serum vitamin B12 level; Serum folate level; Complete blood count (CBC); Comprehensive metabolic panel (CMP) including liver function tests and albumin; Serum prealbumin (transthyretin) level for acute malnutrition assessment; Urinalysis; Serum ketone bodies (beta-hydroxybutyrate) - to evaluate for metabolic acidosis from starvation -> [['serum thiamine (vitamin B1)'], ['vitamin B12 / folate', 'vitamin B12 with methylmalonic acid'], ['vitamin B12 / folate', 'serum folate'], ['full blood count'], ['renal and liver function', 'serum electrolytes, urea and creatinine', 'liver function tests'], [], ['urinalysis'], []]",
+  "R8 ASK Have you been on dialysis for a long time? -> ['no']",
+  "R9 ASK Did you start dialysis recently (within the last few months)?; Did you have an acute kidney injury that required starting dialysis?; Have you had prolonged fasting or very poor oral intake before starting dialysis?; Have you been receiving intravenous glucose or fluids without thiamine supplementation?; Did you develop your walking and speech problems after starting dialysis? -> ['no', 'no', 'no', 'no', 'no']",
+  "R10 DIAGNOSIS Wernicke encephalopathy due to thiamine (vitamin B1) deficiency, precipitated by malnutrition in the setting of end-stage renal disease on maintenance haemodialysis (chronic thiamine loss through dialysate and inadequate nutritional intake). -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you ever had a stroke?",
+    "Do you have any weakness in your right leg or foot?",
+    "Do you have any numbness or tingling in your right leg?",
+    "Do you have any back pain?",
+    "Do you have any difficulty controlling your bladder or bowels?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do you have any pain or weakness in your right foot specifically?",
+    "Do you have any swelling in your right ankle or foot?",
+    "Do you have any history of injury to your right foot or ankle?",
+    "Do you have any diabetes?",
+    "Do you have any history of blood clots or deep vein thrombosis (DVT)?",
+    "Do you have any history of heart problems?",
+    "Have you been running or doing any unusual physical activity recently?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Observe gait pattern (walking assessment) - careful observation of the patient's walking pattern, looking specifically for circumduction, foot drop, Trendelenburg gait, or antalgic gait.",
+    "Tandem walking test (heel-to-toe walking)",
+    "Romberg test",
+    "Single leg stance test on the right leg",
+    "Manual muscle testing of right lower extremity (hip flexion, knee extension, ankle dorsiflexion, ankle plantarflexion, great toe extension)"
+   ],
+   "result": [
+    [
+     "gait examination"
+    ],
+    [
+     "gait examination",
+     "coordination examination (limb and truncal)"
+    ],
+    [
+     "Romberg test"
+    ],
+    [],
+    [
+     "limb strength (MRC) examination"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you drink alcohol regularly?",
+    "Have you noticed any problems with your speech or slurring your words?",
+    "Have you noticed any problems with your vision or double vision?",
+    "Do you have any history of cancer?",
+    "Have you ever been exposed to heavy metals or toxic chemicals at work?",
+    "Do you have any history of multiple sclerosis or neurological disease in your family?",
+    "Have you had any recent infections or fevers?",
+    "Do you have any headache or vomiting?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "MRI brain",
+    "Finger-to-nose test and rapid alternating movements (dysdiadochokinesia testing) on the left upper extremity",
+    "Hypometric/overshoot testing - observe for past pointing",
+    "Nystagmus testing (saccadic eye movements, smooth pursuit, convergence)",
+    "Palatal/uvular examination for symmetry",
+    "Jaw jerk reflex"
+   ],
+   "result": [
+    [
+     "brain MRI"
+    ],
+    [
+     "finger-nose / heel-shin testing",
+     "coordination examination (limb and truncal)"
+    ],
+    [
+     "finger-nose / heel-shin testing",
+     "coordination examination (limb and truncal)"
+    ],
+    [
+     "bedside eye-movement exam"
+    ],
+    [
+     "cranial nerve examination"
+    ],
+    [
+     "cranial nerve examination"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of alcoholism or recent heavy alcohol consumption?",
+    "Do you eat a regular balanced diet with adequate nutrition?",
+    "Have you lost a significant amount of weight recently or do you eat poorly?",
+    "Do you take any medications regularly, especially diuretics?",
+    "Do you have any history of gastric bypass or bariatric surgery?",
+    "Have you had persistent vomiting recently?",
+    "Do you have any history of HIV or immunodeficiency?",
+    "Do you have any history of malnutrition or eating disorders?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Serum thiamine (vitamin B1) level",
+    "Serum vitamin B12 level",
+    "Serum folate level",
+    "Complete blood count (CBC)",
+    "Comprehensive metabolic panel (CMP) including liver function tests and albumin",
+    "Serum prealbumin (transthyretin) level for acute malnutrition assessment",
+    "Urinalysis",
+    "Serum ketone bodies (beta-hydroxybutyrate) - to evaluate for metabolic acidosis from starvation"
+   ],
+   "result": [
+    [
+     "serum thiamine (vitamin B1)"
+    ],
+    [
+     "vitamin B12 / folate",
+     "vitamin B12 with methylmalonic acid"
+    ],
+    [
+     "vitamin B12 / folate",
+     "serum folate"
+    ],
+    [
+     "full blood count"
+    ],
+    [
+     "renal and liver function",
+     "serum electrolytes, urea and creatinine",
+     "liver function tests"
+    ],
+    [],
+    [
+     "urinalysis"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Have you been on dialysis for a long time?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Did you start dialysis recently (within the last few months)?",
+    "Did you have an acute kidney injury that required starting dialysis?",
+    "Have you had prolonged fasting or very poor oral intake before starting dialysis?",
+    "Have you been receiving intravenous glucose or fluids without thiamine supplementation?",
+    "Did you develop your walking and speech problems after starting dialysis?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Wernicke encephalopathy due to thiamine (vitamin B1) deficiency, precipitated by malnutrition in the setting of end-stage renal disease on maintenance haemodialysis (chronic thiamine loss through dialysate and inadequate nutritional intake)."
+  }
+ ],
+ "dx": "Wernicke encephalopathy due to thiamine (vitamin B1) deficiency, precipitated by malnutrition in the setting of end-stage renal disease on maintenance haemodialysis (chronic thiamine loss through dialysate and inadequate nutritional intake).",
+ "dx_raw": "DIAGNOSIS: Wernicke encephalopathy due to thiamine (vitamin B1) deficiency, precipitated by malnutrition in the setting of end-stage renal disease on maintenance haemodialysis (chronic thiamine loss through dialysate and inadequate nutritional intake).",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "brain MRI",
+  "serum thiamine (vitamin B1)"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0208,
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 94.8
+}

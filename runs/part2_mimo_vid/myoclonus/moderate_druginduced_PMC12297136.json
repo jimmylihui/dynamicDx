@@ -1,0 +1,141 @@
+{
+ "questions": [
+  "Did this swelling start suddenly?",
+  "Is the swelling painful or tender to touch?",
+  "Have you been vomiting?",
+  "Have you experienced unexplained weight loss recently?",
+  "Do you have a history of hernias?",
+  "Have you had any abdominal surgery before?",
+  "Have you had a recent injury to your abdomen?",
+  "Do you have a history of cancer?",
+  "Have you noticed any change in your bowel habits?",
+  "Have you been feeling bloated or distended?",
+  "Does the swelling get worse when you cough or strain?",
+  "Is there any skin redness or warmth over the swelling?",
+  "Have you had a fever?",
+  "Do you have a history of liver disease or heavy alcohol use?",
+  "Is the swelling located near your belly button?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside abdominal ultrasound"
+ ],
+ "served": [],
+ "results": [
+  "1. Bedside abdominal ultrasound",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Large right inguinal hernia with omental content\n\nAlternatives:\n1. Femoral hernia\n2. Inguinoscrotal hernia with hydrocele\n3. Abdominal wall lipoma",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Bedside abdominal ultrasound",
+ "rationale": [
+  null
+ ],
+ "dx": "Large right inguinal hernia with omental content",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 9663,
+   "completion_tokens": 609,
+   "total_tokens": 10272,
+   "cost": 0.00020622,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9600,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020622,
+    "upstream_inference_prompt_cost": 3.57e-05,
+    "upstream_inference_completions_cost": 0.00017052
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 435,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 10227,
+   "completion_tokens": 3448,
+   "total_tokens": 13675,
+   "cost": 0.0010801,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9600,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010801,
+    "upstream_inference_prompt_cost": 0.00011466,
+    "upstream_inference_completions_cost": 0.00096544
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3439,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 10342,
+   "completion_tokens": 729,
+   "total_tokens": 11071,
+   "cost": 0.0002558528,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 10176,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002558528,
+    "upstream_inference_prompt_cost": 5.17328e-05,
+    "upstream_inference_completions_cost": 0.00020412
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 676,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 86.3
+}

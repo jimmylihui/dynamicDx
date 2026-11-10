@@ -1,0 +1,189 @@
+{
+ "questions": [
+  "Did this head injury happen from a fall?",
+  "Did the injury happen within the last 24 hours?",
+  "Was there any loss of consciousness after the injury?",
+  "Have you been vomiting since the injury?",
+  "Do you have a headache right now?",
+  "Is the pain worse in the morning?",
+  "Have you had any seizures?",
+  "Is there any weakness in your arms or legs?",
+  "Is your vision blurry or double?",
+  "Have you had any clear fluid or blood coming from your nose or ears?",
+  "Did you hit the back of your head?",
+  "Were you wearing a helmet at the time of injury?",
+  "Have you been able to walk normally since the injury?",
+  "Is there any numbness or tingling anywhere?",
+  "Have you had a fever since the injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Non-contrast CT scan of the head",
+  "Romberg test",
+  "Finger-to-nose test",
+  "Heel-to-shin test",
+  "Tandem walking assessment",
+  "Fundoscopy",
+  "MRI brain",
+  "Skull radiograph",
+  "Complete blood count",
+  "Coagulation profile"
+ ],
+ "served": [
+  "CT head",
+  "posture and pull test",
+  "coordination examination (limb and truncal)",
+  "coordination examination (limb and truncal)",
+  "coordination examination (limb and truncal)",
+  "fundoscopy",
+  "brain MRI",
+  "full blood count and biochemistry"
+ ],
+ "results": [
+  "1. Non-contrast CT scan of the head",
+  "     CT head: normal",
+  "2. Romberg test",
+  "     posture and pull test: normal",
+  "3. Finger-to-nose test",
+  "     coordination examination (limb and truncal): normal",
+  "4. Heel-to-shin test",
+  "     coordination examination (limb and truncal): normal",
+  "5. Tandem walking assessment",
+  "     coordination examination (limb and truncal): normal",
+  "6. Fundoscopy",
+  "     fundoscopy: normal",
+  "7. MRI brain",
+  "     brain MRI: punctate FLAIR hyperintensities in the local white matter of both frontal lobes",
+  "8. Skull radiograph",
+  "     not performed / not available",
+  "9. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "10. Coagulation profile",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Diffuse axonal injury (Grade I, lobar) from blunt head trauma\n1. Post-traumatic contusions with chronic gliosis\n2. Non-accidental (abusive) head trauma with cerebral injury\n3. Sequelae of prior traumatic brain injury with residual white matter change",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Non-contrast CT scan of the head\n2. Romberg test\n3. Finger-to-nose test\n4. Heel-to-shin test\n5. Tandem walking assessment\n6. Fundoscopy\n7. MRI brain\n8. Skull radiograph\n9. Complete blood count\n10. Coagulation profile",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Diffuse axonal injury (Grade I, lobar) from blunt head trauma",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 635,
+   "completion_tokens": 583,
+   "total_tokens": 1218,
+   "cost": 0.00085242,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00085242,
+    "upstream_inference_prompt_cost": 0.00015282,
+    "upstream_inference_completions_cost": 0.0006996
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 413,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1195,
+   "completion_tokens": 1303,
+   "total_tokens": 2498,
+   "cost": 0.00188466,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00188466,
+    "upstream_inference_prompt_cost": 0.00032106,
+    "upstream_inference_completions_cost": 0.0015636
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1235,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1531,
+   "completion_tokens": 1247,
+   "total_tokens": 2778,
+   "cost": 0.00191802,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00191802,
+    "upstream_inference_prompt_cost": 0.00042162,
+    "upstream_inference_completions_cost": 0.0014964
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1184,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 15.6,
+ "video": "mild_3_neonatal_PMC12440885.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 54.0
+}

@@ -1,0 +1,175 @@
+{
+ "questions": [
+  "Are you showing me a tremor?",
+  "Does the tremor get worse when you hold your arms out and bring your hands close to your face?",
+  "Have you ever been diagnosed with Wilson's disease?",
+  "Have you ever had liver problems, such as jaundice or hepatitis?",
+  "Do you have a family history of Wilson's disease or early-onset liver disease?",
+  "Do you have any difficulty with your speech, such as slurring?",
+  "Do you have any difficulty swallowing, or do you drool?",
+  "Do you experience stiffness, rigidity, or slowness in your movements?",
+  "Do you have any psychiatric symptoms, such as depression, anxiety, or mood changes?",
+  "Have you ever been told you have Kayser-Fleischer rings or copper deposits in your eyes?",
+  "Does drinking alcohol improve your tremor?",
+  "Do you have any problems with your balance or walking?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI of the brain (with attention to the cerebellum and basal ganglia)",
+  "Serum thyroid stimulating hormone (TSH) and free thyroxine (T4) levels",
+  "Serum ceruloplasmin level",
+  "Liver function tests (ALT, AST, alkaline phosphatase, bilirubin, albumin, INR)",
+  "Serum electrolytes, blood urea nitrogen, creatinine, and random blood glucose",
+  "Complete blood count",
+  "Urine toxicology screen"
+ ],
+ "served": [
+  "brain MRI",
+  "TSH / free T4",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "liver function tests",
+  "liver function and albumin/globulin",
+  "prothrombin time",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose and HbA1c",
+  "full blood count",
+  "toxicology screen (urine and serum)"
+ ],
+ "results": [
+  "1. MRI of the brain (with attention to the cerebellum and basal ganglia)",
+  "     brain MRI: no structural lesion",
+  "2. Serum thyroid stimulating hormone (TSH) and free thyroxine (T4) levels",
+  "     TSH / free T4: normal",
+  "3. Serum ceruloplasmin level",
+  "     serum copper and caeruloplasmin: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal",
+  "4. Liver function tests (ALT, AST, alkaline phosphatase, bilirubin, albumin, INR)",
+  "     liver function tests: normal",
+  "     liver function and albumin/globulin: normal",
+  "     prothrombin time: normal",
+  "5. Serum electrolytes, blood urea nitrogen, creatinine, and random blood glucose",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     blood glucose and HbA1c: normal",
+  "6. Complete blood count",
+  "     full blood count: normal",
+  "7. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Essential tremor\nEnhanced physiological tremor\nDystonic tremor\nCerebellar outflow tremor",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI of the brain (with attention to the cerebellum and basal ganglia)\n2. Serum thyroid stimulating hormone (TSH) and free thyroxine (T4) levels\n3. Serum ceruloplasmin level\n4. Liver function tests (ALT, AST, alkaline phosphatase, bilirubin, albumin, INR)\n5. Serum electrolytes, blood urea nitrogen, creatinine, and random blood glucose\n6. Complete blood count\n7. Urine toxicology screen",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Essential tremor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 6175,
+   "total_tokens": 26613,
+   "cost": 0.01351404,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01351404,
+    "upstream_inference_prompt_cost": 0.00610404,
+    "upstream_inference_completions_cost": 0.00741
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6778,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 21017,
+   "completion_tokens": 1898,
+   "total_tokens": 22915,
+   "cost": 0.00370158,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20338,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00370158,
+    "upstream_inference_prompt_cost": 0.00142398,
+    "upstream_inference_completions_cost": 0.0022776
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2052,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 21410,
+   "completion_tokens": 2561,
+   "total_tokens": 23971,
+   "cost": 0.00446148,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20978,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00446148,
+    "upstream_inference_prompt_cost": 0.00138828,
+    "upstream_inference_completions_cost": 0.0030732
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2883,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.7,
+ "video": "mild_neuropathic_CMT_PMC11600610.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 164.1
+}

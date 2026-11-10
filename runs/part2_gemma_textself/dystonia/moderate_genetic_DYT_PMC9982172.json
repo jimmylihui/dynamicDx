@@ -1,0 +1,135 @@
+{
+ "questions": [
+  "Do you have a tremor in your hands or legs when you are resting?",
+  "Did these symptoms start on one side of your body?",
+  "Are you taking any medications for psychiatric conditions or nausea?",
+  "Have you experienced frequent falls?",
+  "Do you have difficulty looking down?",
+  "Do you feel dizzy or faint when you stand up?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain",
+  "Levodopa trial",
+  "DaTscan"
+ ],
+ "served": [
+  "brain MRI",
+  "DAT-SPECT"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     brain MRI: no structural lesion",
+  "2. Levodopa trial",
+  "     not performed / not available",
+  "3. DaTscan",
+  "     DAT-SPECT: normal striatal uptake"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional Parkinsonism (psychogenic)\nDrug-induced parkinsonism\nVascular parkinsonism\nNormal pressure hydrocephalus",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Levodopa trial\n3. DaTscan",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional Parkinsonism (psychogenic)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 323,
+   "completion_tokens": 1976,
+   "total_tokens": 2299,
+   "cost": 0.00070414,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00070414,
+    "upstream_inference_prompt_cost": 3.23e-05,
+    "upstream_inference_completions_cost": 0.00067184
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1911,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 651,
+   "completion_tokens": 1035,
+   "total_tokens": 1686,
+   "cost": 0.000417,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000417,
+    "upstream_inference_prompt_cost": 6.51e-05,
+    "upstream_inference_completions_cost": 0.0003519
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1039,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 808,
+   "completion_tokens": 7289,
+   "total_tokens": 8097,
+   "cost": 0.00255906,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00255906,
+    "upstream_inference_prompt_cost": 8.08e-05,
+    "upstream_inference_completions_cost": 0.00247826
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6855,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_genetic_DYT_PMC9982172.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 318.5
+}

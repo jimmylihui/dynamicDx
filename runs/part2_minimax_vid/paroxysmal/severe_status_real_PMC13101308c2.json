@@ -1,0 +1,156 @@
+{
+ "questions": [
+  "Are you in pain?",
+  "Is it your leg that hurts?",
+  "Do you know where you are right now?",
+  "Are you having trouble breathing?",
+  "Do you drink alcohol every day?",
+  "Do you feel like you need to urinate?",
+  "Did you fall today?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Fingerstick blood glucose",
+  "Urinalysis",
+  "Basic metabolic panel",
+  "Complete blood count",
+  "Non-contrast CT head",
+  "Blood cultures",
+  "Ammonia level"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "urinalysis",
+  "serum electrolytes, urea and creatinine",
+  "full blood count and biochemistry",
+  "CT head",
+  "serum ammonia"
+ ],
+ "results": [
+  "1. Fingerstick blood glucose",
+  "     blood glucose and HbA1c: normal",
+  "2. Urinalysis",
+  "     urinalysis: normal",
+  "3. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "4. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "5. Non-contrast CT head",
+  "     CT head: normal",
+  "6. Blood cultures",
+  "     not performed / not available",
+  "7. Ammonia level",
+  "     serum ammonia: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Toxic alcohol ingestion (methanol or ethylene glycol poisoning)\nALTERNATIVES:\nSepsis-associated encephalopathy\nMeningoencephalitis\nNon-convulsive status epilepticus",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Fingerstick blood glucose\n2. Urinalysis\n3. Basic metabolic panel\n4. Complete blood count\n5. ECG\n6. Non-contrast CT head\n7. Blood cultures\n8. Ammonia level",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Toxic alcohol ingestion (methanol or ethylene glycol poisoning)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2313,
+   "total_tokens": 9375,
+   "cost": 0.00486684,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00486684,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.0027756
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2446,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7368,
+   "completion_tokens": 340,
+   "total_tokens": 7708,
+   "cost": 0.00093216,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00093216,
+    "upstream_inference_prompt_cost": 0.00052416,
+    "upstream_inference_completions_cost": 0.000408
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 326,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7608,
+   "completion_tokens": 2360,
+   "total_tokens": 9968,
+   "cost": 0.00336672,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7282,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00336672,
+    "upstream_inference_prompt_cost": 0.00053472,
+    "upstream_inference_completions_cost": 0.002832
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2667,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 11.2,
+ "video": "severe_status_real_PMC13101308c2.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 90.0
+}

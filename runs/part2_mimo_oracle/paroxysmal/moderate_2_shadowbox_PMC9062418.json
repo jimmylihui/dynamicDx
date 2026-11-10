@@ -1,0 +1,106 @@
+{
+ "questions": [
+  "Did you recently have surgery on your head?",
+  "Did this walking problem exist before the surgery?",
+  "Do you feel unsteady on your feet?",
+  "Do you find yourself falling backward easily?",
+  "Do you feel dizzy?",
+  "Do you have a headache?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "provocation testing (the suspected trigger)"
+ ],
+ "results": [
+  "1. interictal EEG: intermittent sharp waves from the LEFT FRONTAL to anterior temporal regions",
+  "2. video-EEG monitoring of a typical event: moderate-amplitude rhythmic THETA waves intermittently during the versive seizures",
+  "3. provocation testing (the suspected trigger): supervised shadowboxing of 3 minutes per trial reproduced the seizures, with induction latencies of about 11 seconds and durations around 18 seconds"
+ ],
+ "dx_raw": "DIAGNOSY: Reflex epilepsy (exercise-induced focal motor seizures) secondary to a left frontal cortical lesion\n\nFrontal lobe epilepsy with seizures precipitated by physical exertion (shadowboxing)\n\nLeft frontotemporal cortical dysplasia causing focal aware motor seizures with versive features, specifically provoked by intense exercise\n\nFocal epilepsy with exertion-triggered seizures, likely due to left frontal structural abnormality",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Reflex epilepsy (exercise-induced focal motor seizures) secondary to a left frontal cortical lesion",
+ "decisive_served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event",
+  "provocation testing (the suspected trigger)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 9663,
+   "completion_tokens": 4075,
+   "total_tokens": 13738,
+   "cost": 0.0024674776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0024674776,
+    "upstream_inference_prompt_cost": 0.0013264776,
+    "upstream_inference_completions_cost": 0.001141
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3986,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 10024,
+   "completion_tokens": 487,
+   "total_tokens": 10511,
+   "cost": 0.0002226,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9600,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002226,
+    "upstream_inference_prompt_cost": 8.624e-05,
+    "upstream_inference_completions_cost": 0.00013636
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 401,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_2_shadowbox_PMC9062418.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 62.8
+}

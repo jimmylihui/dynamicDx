@@ -1,0 +1,290 @@
+{
+ "questions": [
+  "Was there a recent head injury?",
+  "Do you have a history of epilepsy?",
+  "Did you experience an aura before the event?",
+  "Have you had any recent brain surgery?",
+  "Was the aura a smell or taste?",
+  "Was the aura a feeling of deja vu?",
+  "Was the aura a gastric sensation?",
+  "Was the aura visual?",
+  "Was the aura auditory?",
+  "Is the bandage on your head for a medical condition?",
+  "Do you have a ventriculoperitoneal shunt?",
+  "Was the aura a feeling of fear or anxiety?",
+  "Was the aura a rising sensation in your stomach?",
+  "Was the aura a tingling sensation in your limbs?",
+  "Do you have a history of psychiatric disorders?",
+  "Were you admitted to the hospital for a specific reason before this event?",
+  "Was the aura a feeling of dizziness or lightheadedness?",
+  "Was the aura a feeling of nausea?",
+  "Are you in the hospital for a planned procedure?",
+  "Are you in the hospital for a chronic condition?",
+  "Was the aura a feeling of detachment from your body?",
+  "Was the aura a feeling of the world becoming unreal?",
+  "Are you taking any medications?",
+  "Do you use any recreational drugs?",
+  "Was the aura a strong emotion?",
+  "Were you laughing before the fall?",
+  "Were you surprised before the fall?",
+  "Do you have excessive daytime sleepiness?",
+  "Did you lose consciousness during the fall?",
+  "Did you experience any confusion or disorientation after the fall?",
+  "Did you have any tongue biting or urinary incontinence?",
+  "Was the aura a feeling of \"something about to happen\" without a specific sensation?",
+  "Do you have a history of fainting or \"blacking out\"?",
+  "Do you experience sleep paralysis?",
+  "Do you experience hallucinations when falling asleep or waking up?",
+  "Was the aura a feeling of your muscles suddenly becoming weak?",
+  "Was the aura a feeling of being pushed or pulled?",
+  "Do you have a history of Meniere's disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no",
+  "32": "no",
+  "33": "no",
+  "34": "no",
+  "35": "no",
+  "36": "no",
+  "37": "no",
+  "38": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Non-contrast head CT"
+ ],
+ "served": [
+  "CT head"
+ ],
+ "results": [
+  "R1 ASK Was there a recent head injury?; Do you have a history of epilepsy?; Did you experience an aura before the event? -> ['no', 'no', 'yes']",
+  "R2 ASK Have you had any recent brain surgery?; Was the aura a smell or taste?; Was the aura a feeling of deja vu?; Was the aura a gastric sensation? -> ['no', 'no', 'no', 'no']",
+  "R3 ORDER Non-contrast head CT -> [['CT head']]",
+  "R4 ASK Was the aura visual?; Was the aura auditory?; Is the bandage on your head for a medical condition?; Do you have a ventriculoperitoneal shunt? -> ['no', 'no', 'no', 'no']",
+  "R5 ASK Was the aura a feeling of fear or anxiety?; Was the aura a rising sensation in your stomach?; Was the aura a tingling sensation in your limbs?; Do you have a history of psychiatric disorders?; Were you admitted to the hospital for a specific reason before this event? -> ['no', 'no', 'no', 'no', 'no']",
+  "R6 ASK Was the aura a feeling of dizziness or lightheadedness?; Was the aura a feeling of nausea?; Are you in the hospital for a planned procedure?; Are you in the hospital for a chronic condition? -> ['no', 'no', 'no', 'no']",
+  "R7 ASK Was the aura a feeling of detachment from your body?; Was the aura a feeling of the world becoming unreal?; Are you taking any medications?; Do you use any recreational drugs? -> ['no', 'no', 'no', 'no']",
+  "R8 ASK Was the aura a strong emotion?; Were you laughing before the fall?; Were you surprised before the fall?; Do you have excessive daytime sleepiness? -> ['no', 'no', 'no', 'no']",
+  "R9 ASK Did you lose consciousness during the fall?; Did you experience any confusion or disorientation after the fall?; Did you have any tongue biting or urinary incontinence?; Was the aura a feeling of \"something about to happen\" without a specific sensation?; Do you have a history of fainting or \"blacking out\"? -> ['no', 'no', 'no', 'no', 'no']",
+  "R10 ASK Do you experience sleep paralysis?; Do you experience hallucinations when falling asleep or waking up?; Was the aura a feeling of your muscles suddenly becoming weak?; Was the aura a feeling of being pushed or pulled?; Do you have a history of Meniere's disease? -> ['no', 'no', 'no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Atonic seizure due to epilepsy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Was there a recent head injury?",
+    "Do you have a history of epilepsy?",
+    "Did you experience an aura before the event?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you had any recent brain surgery?",
+    "Was the aura a smell or taste?",
+    "Was the aura a feeling of deja vu?",
+    "Was the aura a gastric sensation?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Non-contrast head CT"
+   ],
+   "result": [
+    [
+     "CT head"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Was the aura visual?",
+    "Was the aura auditory?",
+    "Is the bandage on your head for a medical condition?",
+    "Do you have a ventriculoperitoneal shunt?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Was the aura a feeling of fear or anxiety?",
+    "Was the aura a rising sensation in your stomach?",
+    "Was the aura a tingling sensation in your limbs?",
+    "Do you have a history of psychiatric disorders?",
+    "Were you admitted to the hospital for a specific reason before this event?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Was the aura a feeling of dizziness or lightheadedness?",
+    "Was the aura a feeling of nausea?",
+    "Are you in the hospital for a planned procedure?",
+    "Are you in the hospital for a chronic condition?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Was the aura a feeling of detachment from your body?",
+    "Was the aura a feeling of the world becoming unreal?",
+    "Are you taking any medications?",
+    "Do you use any recreational drugs?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Was the aura a strong emotion?",
+    "Were you laughing before the fall?",
+    "Were you surprised before the fall?",
+    "Do you have excessive daytime sleepiness?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Did you lose consciousness during the fall?",
+    "Did you experience any confusion or disorientation after the fall?",
+    "Did you have any tongue biting or urinary incontinence?",
+    "Was the aura a feeling of \"something about to happen\" without a specific sensation?",
+    "Do you have a history of fainting or \"blacking out\"?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "ask",
+   "items": [
+    "Do you experience sleep paralysis?",
+    "Do you experience hallucinations when falling asleep or waking up?",
+    "Was the aura a feeling of your muscles suddenly becoming weak?",
+    "Was the aura a feeling of being pushed or pulled?",
+    "Do you have a history of Meniere's disease?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Atonic seizure due to epilepsy"
+  }
+ ],
+ "dx": "Atonic seizure due to epilepsy",
+ "dx_raw": "DIAGNOSIS: Atonic seizure due to epilepsy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0173,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_2_shadowbox_PMC9062418.mp4",
+ "line": "paroxysmal",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 1652.9
+}

@@ -1,0 +1,104 @@
+{
+ "questions": [
+  "Do your eyes move involuntarily even when you are trying to keep them still?",
+  "Do you experience double vision?",
+  "Do you experience a sensation that the environment is moving or shaking?",
+  "Did these eye movements begin suddenly?",
+  "Do you have weakness, numbness, difficulty speaking, or poor coordination?",
+  "Have you recently taken sedatives, anticonvulsants, recreational drugs, or other new medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Bedside ocular motility examination with assessment of pursuits and saccades, pupils, ptosis, and alternate cover testing in primary gaze and in all directions of gaze.",
+  "MRI of the brain and brainstem with and without gadolinium contrast."
+ ],
+ "served": [
+  "smooth pursuit and saccades",
+  "skew deviation / alternating cover test",
+  "pupil size and light reaction",
+  "ptosis / lid position",
+  "MRI brain with gadolinium"
+ ],
+ "results": [
+  "R1 ASK Do your eyes move involuntarily even when you are trying to keep them still?; Do you experience double vision?; Do you experience a sensation that the environment is moving or shaking?; Did these eye movements begin suddenly?; Do you have weakness, numbness, difficulty speaking, or poor coordination?; Have you recently taken sedatives, anticonvulsants, recreational drugs, or other new medications? -> ['no', 'yes', 'no', 'no', 'yes', 'no']",
+  "R2 ORDER Bedside ocular motility examination with assessment of pursuits and saccades, pupils, ptosis, and alternate cover testing in primary gaze and in all directions of gaze.; MRI of the brain and brainstem with and without gadolinium contrast. -> [['smooth pursuit and saccades', 'skew deviation / alternating cover test', 'pupil size and light reaction', 'ptosis / lid position'], ['MRI brain with gadolinium']]",
+  "R3 DIAGNOSIS Left pontomesencephalic ischemic stroke (rostral pontine/caudal midbrain infarction) causing a central alternating skew deviation and binocular diplopia. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do your eyes move involuntarily even when you are trying to keep them still?",
+    "Do you experience double vision?",
+    "Do you experience a sensation that the environment is moving or shaking?",
+    "Did these eye movements begin suddenly?",
+    "Do you have weakness, numbness, difficulty speaking, or poor coordination?",
+    "Have you recently taken sedatives, anticonvulsants, recreational drugs, or other new medications?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Bedside ocular motility examination with assessment of pursuits and saccades, pupils, ptosis, and alternate cover testing in primary gaze and in all directions of gaze.",
+    "MRI of the brain and brainstem with and without gadolinium contrast."
+   ],
+   "result": [
+    [
+     "smooth pursuit and saccades",
+     "skew deviation / alternating cover test",
+     "pupil size and light reaction",
+     "ptosis / lid position"
+    ],
+    [
+     "MRI brain with gadolinium"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "diagnosis",
+   "text": "Left pontomesencephalic ischemic stroke (rostral pontine/caudal midbrain infarction) causing a central alternating skew deviation and binocular diplopia."
+  }
+ ],
+ "dx": "Left pontomesencephalic ischemic stroke (rostral pontine/caudal midbrain infarction) causing a central alternating skew deviation and binocular diplopia.",
+ "dx_raw": "DIAGNOSIS: Left pontomesencephalic ischemic stroke (rostral pontine/caudal midbrain infarction) causing a central alternating skew deviation and binocular diplopia.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 2,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "skew deviation / alternating cover test"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0029,
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 22.8
+}

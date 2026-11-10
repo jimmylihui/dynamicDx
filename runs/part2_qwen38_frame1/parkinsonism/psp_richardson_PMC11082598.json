@@ -1,0 +1,159 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Did this condition start suddenly?",
+  "Do you have a history of stroke?",
+  "Is one side of your body weaker than the other?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's gait and stance while standing unsupported",
+  "Assess lower extremity muscle tone (spasticity vs. rigidity)",
+  "Perform a comprehensive neurological examination including deep tendon reflexes and plantar responses",
+  "Order MRI of the brain and spine"
+ ],
+ "served": [
+  "gait observation including turning and doorways",
+  "posture and pull test",
+  "muscle tone examination",
+  "limb rigidity and axial (neck) rigidity",
+  "reflexes, plantar responses and frontal release signs",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "fundoscopy",
+  "MRI brain with gadolinium",
+  "MRI cervical and thoracic spine"
+ ],
+ "results": [
+  "1. Observe the patient's gait and stance while standing unsupported",
+  "     gait observation including turning and doorways: not recorded",
+  "     posture and pull test: axial instability with early falls; abnormal pull test",
+  "2. Assess lower extremity muscle tone (spasticity vs. rigidity)",
+  "     muscle tone examination: severe axial neck rigidity; mild upper-limb rigidity",
+  "     limb rigidity and axial (neck) rigidity: SEVERE in the neck, mild in the upper limbs - axial predominance",
+  "3. Perform a comprehensive neurological examination including deep tendon reflexes and plantar responses",
+  "     reflexes, plantar responses and frontal release signs: normal, flexor plantars",
+  "     cranial nerve examination: supranuclear vertical gaze palsy with preserved horizontal gaze; severe dysarthria and dysphagia",
+  "     mental status / cognitive screen: MoCA 24/30; frontal assessment battery 13/18",
+  "     limb strength (MRC) examination: normal power",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal limb coordination; impaired truncal stability",
+  "     fundoscopy: normal",
+  "4. Order MRI of the brain and spine",
+  "     MRI brain with gadolinium: mild midbrain atrophy with hummingbird sign; no abnormal enhancement",
+  "     MRI cervical and thoracic spine: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive Supranuclear Palsy (PSP)\n1. Multiple System Atrophy (MSA-Parkinsonian type)\n2. Corticobasal Degeneration (CBD)\n3. Parkinson's Disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Observe the patient's gait and stance while standing unsupported\n2. Assess lower extremity muscle tone (spasticity vs. rigidity)\n3. Perform a comprehensive neurological examination including deep tendon reflexes and plantar responses\n4. Order MRI of the brain and spine",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Progressive Supranuclear Palsy (PSP)",
+ "decisive_served": [
+  "limb rigidity and axial (neck) rigidity"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 296,
+   "completion_tokens": 43,
+   "total_tokens": 339,
+   "cost": 6.461e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.461e-05,
+    "upstream_inference_prompt_cost": 4.44e-05,
+    "upstream_inference_completions_cost": 2.021e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 551,
+   "completion_tokens": 60,
+   "total_tokens": 611,
+   "cost": 0.00011085,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011085,
+    "upstream_inference_prompt_cost": 8.265e-05,
+    "upstream_inference_completions_cost": 2.82e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1004,
+   "completion_tokens": 51,
+   "total_tokens": 1055,
+   "cost": 0.000123114,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000123114,
+    "upstream_inference_prompt_cost": 9.9144e-05,
+    "upstream_inference_completions_cost": 2.397e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 29.5,
+ "video": "psp_richardson_PMC11082598.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 17.5
+}

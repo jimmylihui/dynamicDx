@@ -1,0 +1,173 @@
+{
+ "questions": [
+  "Do you have trouble controlling your bladder or bowels?",
+  "Have you had weakness in your legs since childhood?",
+  "Can you feel it when someone touches your legs?",
+  "Have you ever had a serious injury to your back?",
+  "Have you been getting progressively weaker over time?",
+  "Do your legs feel stiff?",
+  "Do you have weakness in your arms or hands?",
+  "Do you have any pain in your back or legs?",
+  "Is there anyone in your family with a similar condition?",
+  "Do you have any difficulty breathing?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Electromyography and nerve conduction studies of the lower limbs",
+  "MRI of the lumbosacral spine",
+  "Serum creatine kinase level",
+  "Inspection of the tongue and leg muscles for fasciculations",
+  "Testing of deep tendon reflexes at the knees, ankles, and upper limbs",
+  "Testing of the plantar responses for an upgoing toe",
+  "Lumbar puncture with CSF protein, cell count, and cytology"
+ ],
+ "served": [
+  "nerve conduction studies / EMG",
+  "nerve conduction studies",
+  "needle electromyography",
+  "creatine kinase",
+  "deep tendon reflexes and plantar responses",
+  "deep tendon reflexes and plantar responses",
+  "lumbar puncture / CSF",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF cytology and flow cytometry"
+ ],
+ "results": [
+  "1. Electromyography and nerve conduction studies of the lower limbs",
+  "     nerve conduction studies / EMG: normal",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal",
+  "2. MRI of the lumbosacral spine",
+  "     not performed / not available",
+  "3. Serum creatine kinase level",
+  "     creatine kinase: normal",
+  "4. Inspection of the tongue and leg muscles for fasciculations",
+  "     not performed / not available",
+  "5. Testing of deep tendon reflexes at the knees, ankles, and upper limbs",
+  "     deep tendon reflexes and plantar responses: normal",
+  "6. Testing of the plantar responses for an upgoing toe",
+  "     deep tendon reflexes and plantar responses: normal",
+  "7. Lumbar puncture with CSF protein, cell count, and cytology",
+  "     lumbar puncture / CSF: normal protein and cellularity but CSF-restricted oligoclonal bands present - inflammatory",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF cytology and flow cytometry: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Primary progressive multiple sclerosis presenting as a progressive inflammatory myelopathy\nAlternative 1: Spinal dural arteriovenous fistula causing a congestive myelopathy\nAlternative 2: Spondylotic cervical or thoracic myelopathy with coexisting incidental CSF oligoclonal bands\nAlternative 3: Neuromyelitis optica spectrum disorder with seronegative AQP4 antibodies",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Electromyography and nerve conduction studies of the lower limbs\n2. MRI of the lumbosacral spine\n3. Serum creatine kinase level\n4. Inspection of the tongue and leg muscles for fasciculations\n5. Testing of deep tendon reflexes at the knees, ankles, and upper limbs\n6. Testing of the plantar responses for an upgoing toe\n7. Lumbar puncture with CSF protein, cell count, and cytology",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Primary progressive multiple sclerosis presenting as a progressive inflammatory myelopathy",
+ "decisive_served": [
+  "lumbar puncture / CSF"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2590,
+   "total_tokens": 9652,
+   "cost": 0.00519924,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00519924,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.003108
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2813,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7487,
+   "completion_tokens": 2172,
+   "total_tokens": 9659,
+   "cost": 0.00316626,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00316626,
+    "upstream_inference_prompt_cost": 0.00055986,
+    "upstream_inference_completions_cost": 0.0026064
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2363,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7876,
+   "completion_tokens": 641,
+   "total_tokens": 8517,
+   "cost": 0.0013536,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7410,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013536,
+    "upstream_inference_prompt_cost": 0.0005844,
+    "upstream_inference_completions_cost": 0.0007692
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 647,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 96.1
+}

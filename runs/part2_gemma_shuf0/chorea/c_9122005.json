@@ -1,0 +1,181 @@
+{
+ "questions": [
+  "Is this a new symptom?",
+  "Do you have a fever?",
+  "Do you have a known diagnosis of Parkinson's disease?",
+  "Have you recently started any new medications?",
+  "Have you had a stroke in the past?",
+  "Is the shaking worse when you are resting?",
+  "Do you have a history of liver or kidney disease?",
+  "Do you have a history of thyroid disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Full neurological examination",
+  "Brain MRI",
+  "Medication review",
+  "Blood glucose and electrolytes",
+  "ANA screen"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "medication and vaccination history",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose and HbA1c",
+  "sodium and serum osmolality",
+  "blood glucose",
+  "antinuclear antibodies and anti-dsDNA",
+  "antinuclear antibody and rheumatological screen"
+ ],
+ "results": [
+  "1. Full neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: reduced tone in the right limbs",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): right-sided hemichorea-hemiballismus",
+  "     posture and pull test: involuntary right-sided choreiform and ballistic movements",
+  "     fundoscopy: normal",
+  "2. Brain MRI",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "3. Medication review",
+  "     medication and vaccination history: second dose of the Pfizer-BioNTech COVID-19 vaccine 21 days after the first; symptoms began acutely afterwards",
+  "4. Blood glucose and electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     blood glucose and HbA1c: normal",
+  "     sodium and serum osmolality: normal",
+  "     blood glucose: NORMAL - no diabetes and no hyperglycaemia",
+  "5. ANA screen",
+  "     antinuclear antibodies and anti-dsDNA: normal",
+  "     antinuclear antibody and rheumatological screen: negative"
+ ],
+ "dx_raw": "DIAGNOSIS: Hemichorea-hemiballismus caused by Pfizer-BioNTech COVID-19 vaccination\nAutoimmune basal ganglia encephalitis\nNon-ketotic hyperglycemic hemichorea\nIschemic stroke of the subthalamic nucleus",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Full neurological examination\n2. Brain MRI\n3. Medication review\n4. Blood glucose and electrolytes\n5. ANA screen",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hemichorea-hemiballismus caused by Pfizer-BioNTech COVID-19 vaccination",
+ "decisive_served": [
+  "medication and vaccination history",
+  "blood glucose"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1961,
+   "total_tokens": 10659,
+   "cost": 0.00153654,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00153654,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00066674
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1786,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9064,
+   "completion_tokens": 978,
+   "total_tokens": 10042,
+   "cost": 0.00123892,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00123892,
+    "upstream_inference_prompt_cost": 0.0009064,
+    "upstream_inference_completions_cost": 0.00033252
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 959,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9447,
+   "completion_tokens": 598,
+   "total_tokens": 10045,
+   "cost": 0.00114802,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00114802,
+    "upstream_inference_prompt_cost": 0.0009447,
+    "upstream_inference_completions_cost": 0.00020332
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 552,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 168.5
+}

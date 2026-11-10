@@ -1,0 +1,137 @@
+{
+ "questions": [
+  "Did the bulging of your eyes begin suddenly?",
+  "Have you had any recent loss or worsening of vision?",
+  "Do you have severe eye pain or a severe headache?",
+  "Do you see double?",
+  "Are your eye movements painful or restricted?",
+  "Have you noticed loss of color vision in either eye?",
+  "Have you had recent trauma or surgery involving your head, face, or eyes?",
+  "Is either eye becoming increasingly red or swollen?",
+  "Have you had fever?",
+  "Have you noticed a pulsating sensation or sound in either eye?",
+  "Have you previously been diagnosed with thyroid disease?",
+  "Have you recently had weight loss, excessive sweating, heat intolerance, or a fast heartbeat?",
+  "Have you noticed hand tremors, anxiety, or frequent bowel movements?",
+  "Have you had neck swelling or a thyroid operation?",
+  "Have you had similar eye protrusion in the past?",
+  "Is one eye more prominent than the other?",
+  "Do you smoke or use nicotine?",
+  "Have you recently taken steroids or any new medication?",
+  "Do you have diabetes, high blood pressure, or a history of blood clots?",
+  "Have you had recent sinus, dental, or facial infections?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "yes",
+  "20": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "adduction in horizontal gaze (each eye)",
+  "MRI brain with DWI",
+  "MRI sella and orbits"
+ ],
+ "results": [
+  "1. nystagmus: direction and whether it changes with gaze: see-saw nystagmus",
+  "2. adduction in horizontal gaze (each eye): adduction paresis of the LEFT eye with dissociated abducting paresis of the right eye on rightward gaze - internuclear ophthalmoplegia",
+  "3. MRI brain with DWI: bilateral dorsomedial PONTINE and LEFT THALAMIC infarction",
+  "4. MRI sella and orbits: normal - no parasellar or suprasellar mass"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute ischemic brainstem stroke causing bilateral internuclear ophthalmoplegia and see-saw nystagmus, due to bilateral dorsomedial pontine and left thalamic infarction (likely hypertensive small-vessel ischemia).\n\nAlternative 1: Posterior-circulation large-vessel ischemia, such as basilar artery perforator infarction.\n\nAlternative 2: Demyelinating brainstem disease, such as multiple sclerosis.\n\nAlternative 3: Ocular myasthenia gravis.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Acute ischemic brainstem stroke causing bilateral internuclear ophthalmoplegia and see-saw nystagmus, due to bilateral dorsomedial pontine and left thalamic infarction (likely hypertensive small-vessel ischemia).",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "adduction in horizontal gaze (each eye)",
+  "MRI brain with DWI",
+  "MRI sella and orbits"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 430,
+   "total_tokens": 6106,
+   "cost": 0.00031503,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00031503,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.000258
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 168,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6492,
+   "completion_tokens": 495,
+   "total_tokens": 6987,
+   "cost": 0.00045603,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 816,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00045603,
+    "upstream_inference_prompt_cost": 0.00015903,
+    "upstream_inference_completions_cost": 0.000297
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 383,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.2,
+ "video": "mild_1_seesaw_INO_PMC6883617.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 17.6
+}

@@ -1,0 +1,111 @@
+{
+ "questions": [
+  "Have you noticed any weakness in your arms or legs?",
+  "Did your symptoms start suddenly?",
+  "Have you experienced any trouble speaking or seeing clearly?",
+  "Do you feel any numbness or tingling in your body?",
+  "Have you had any difficulty controlling your bladder or bowels?",
+  "Have you experienced any recent severe headaches?",
+  "Have you had a recent injury to your head or back?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "speed of onset",
+  "blood glucose",
+  "CT head (non-contrast)",
+  "brain MRI with contrast"
+ ],
+ "results": [
+  "1. speed of onset: chorea was the INITIAL manifestation of the stroke in 57% of the series; two patients within 24 hours, three between days 2 and 5",
+  "2. blood glucose: normal - non-ketotic hyperglycaemia was an exclusion criterion for this series",
+  "3. CT head (non-contrast): ischaemic stroke - 92.9% of the series were ischaemic and one was haemorrhagic",
+  "4. brain MRI with contrast: lesions in the LENTIFORM NUCLEUS (50%), insula (35.7%), caudate (14.3%) and thalamus (14.3%); cortical in 35.7%, deep in 35.7%, both in 28.6%"
+ ],
+ "dx_raw": "DIAGNOSIS: Ischemic stroke presenting with chorea  \nAlternatives:  \n1. Hemorrhagic stroke with chorea  \n2. Other vascular lesions affecting the basal ganglia  \n3. Non-stroke causes of acute chorea (e.g., metabolic, toxic, or autoimmune)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Ischemic stroke presenting with chorea",
+ "decisive_served": [
+  "speed of onset",
+  "blood glucose",
+  "CT head (non-contrast)",
+  "brain MRI with contrast"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 1203,
+   "total_tokens": 6258,
+   "cost": 0.0010181976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010181976,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00033684
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1114,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5532,
+   "completion_tokens": 707,
+   "total_tokens": 6239,
+   "cost": 0.0002875376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002875376,
+    "upstream_inference_prompt_cost": 8.95776e-05,
+    "upstream_inference_completions_cost": 0.00019796
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 643,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.0,
+ "video": "c_10051035.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 35.5
+}

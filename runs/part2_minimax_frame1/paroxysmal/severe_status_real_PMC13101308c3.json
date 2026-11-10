@@ -1,0 +1,207 @@
+{
+ "questions": [
+  "Are you able to hear me clearly?",
+  "Did you come to the hospital because of an injury or accident?",
+  "Did you hit your head?",
+  "Are you currently in pain?",
+  "Is the pain in your head?",
+  "Did you lose consciousness at any point before or after arriving at the hospital?",
+  "Do you remember the events leading up to why you are here?",
+  "Are you feeling nauseous or have you vomited?",
+  "Do you have any neck pain?",
+  "Can you feel me lightly touch your hands and feet?",
+  "Are you able to move all of your arms and legs normally?",
+  "Are your vision and hearing normal right now?",
+  "Do you have any chest pain or difficulty breathing?",
+  "Do you have any bleeding from your ears or nose?",
+  "Have you had any seizure activity?",
+  "Do you have any medical conditions you are aware of?",
+  "Are you taking any medications regularly?",
+  "Do you have any allergies to medications?",
+  "Have you consumed any alcohol or drugs in the last 24 hours?",
+  "Is there any chance you could be pregnant?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "yes",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Non-contrast CT scan of the head",
+  "MRI brain with and without gadolinium contrast",
+  "Continuous electroencephalography (EEG) monitoring",
+  "Lumbar puncture with CSF analysis including cell count, protein, glucose, Gram stain, bacterial culture, and HSV PCR",
+  "Serum autoimmune encephalitis antibody panel",
+  "Basic metabolic panel, complete blood count, and coagulation studies",
+  "Urine toxicology screen",
+  "Serum ammonia and lactate levels",
+  "MR venography of the brain"
+ ],
+ "served": [
+  "CT head",
+  "MRI brain with gadolinium",
+  "brain MRI",
+  "video-EEG monitoring of a typical event",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF culture and viral PCR",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "serum electrolytes, urea and creatinine",
+  "full blood count and biochemistry",
+  "toxicology screen (urine and serum)",
+  "serum ammonia"
+ ],
+ "results": [
+  "1. Non-contrast CT scan of the head",
+  "     CT head: normal",
+  "2. MRI brain with and without gadolinium contrast",
+  "     MRI brain with gadolinium: normal",
+  "     brain MRI: no focal epileptogenic lesion",
+  "3. Continuous electroencephalography (EEG) monitoring",
+  "     video-EEG monitoring of a typical event: ictal BODY TURNING, often preceded by head version, but the EEG shows classic GENERALIZED spike-wave or polyspike discharges WITHOUT consistent lateralization",
+  "4. Lumbar puncture with CSF analysis including cell count, protein, glucose, Gram stain, bacterial culture, and HSV PCR",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal",
+  "     CSF culture and viral PCR: normal",
+  "5. Serum autoimmune encephalitis antibody panel",
+  "     serum paraneoplastic / neuronal autoantibody panel: normal",
+  "6. Basic metabolic panel, complete blood count, and coagulation studies",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     full blood count and biochemistry: normal",
+  "7. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "8. Serum ammonia and lactate levels",
+  "     serum ammonia: normal",
+  "9. MR venography of the brain",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic (genetic) generalized epilepsy - new-onset generalized tonic-clonic seizure with postictal sensorimotor and cognitive deficits; the video-EEG finding of ictal body turning and head version with generalized spike-wave and polyspike discharges without lateralization is characteristic of this disorder\n1. Frontal lobe epilepsy with rapid secondary bilateral synchrony (less likely given the absence of consistent EEG lateralization and a normal MRI)\n2. Acute symptomatic seizure from an occult metabolic, toxic, or inflammatory cause not yet identified (workup to date is unrevealing)\n3. Non-convulsive status epilepticus of uncertain etiology as the cause of the prolonged encephalopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Non-contrast CT scan of the head\n2. MRI brain with and without gadolinium contrast\n3. Continuous electroencephalography (EEG) monitoring\n4. Lumbar puncture with CSF analysis including cell count, protein, glucose, Gram stain, bacterial culture, and HSV PCR\n5. Serum autoimmune encephalitis antibody panel\n6. Basic metabolic panel, complete blood count, and coagulation studies\n7. Urine toxicology screen\n8. Serum ammonia and lactate levels\n9. MR venography of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Idiopathic (genetic) generalized epilepsy - new-onset generalized tonic-clonic seizure with postictal sensorimotor and cognitive deficits; the video-EEG finding of ictal body turning and head version with generalized spike-wave and polyspike discharges without lateralization is characteristic of this disorder",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 521,
+   "completion_tokens": 478,
+   "total_tokens": 999,
+   "cost": 0.00069222,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00069222,
+    "upstream_inference_prompt_cost": 0.00011862,
+    "upstream_inference_completions_cost": 0.0005736
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 242,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1238,
+   "completion_tokens": 736,
+   "total_tokens": 1974,
+   "cost": 0.00121716,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00121716,
+    "upstream_inference_prompt_cost": 0.00033396,
+    "upstream_inference_completions_cost": 0.0008832
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 630,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1702,
+   "completion_tokens": 1196,
+   "total_tokens": 2898,
+   "cost": 0.00190812,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00190812,
+    "upstream_inference_prompt_cost": 0.00047292,
+    "upstream_inference_completions_cost": 0.0014352
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1057,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 19.8,
+ "video": "severe_status_real_PMC13101308c3.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 64.7
+}

@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Do you have a fever or feel hot and cold?",
+  "Have you had any recent falls or injuries?",
+  "Are you having trouble breathing?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Full neurological examination including cranial nerves, motor strength, sensation, reflexes, and coordination",
+  "CT scan of the head without contrast",
+  "X-ray of the cervical spine"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "CT head"
+ ],
+ "results": [
+  "1. Full neurological examination including cranial nerves, motor strength, sensation, reflexes, and coordination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "2. CT scan of the head without contrast",
+  "     CT head: normal",
+  "3. X-ray of the cervical spine",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Musculoskeletal soft tissue injury (e.g., contusion or strain) secondary to recent fall\n1. Cervical spine ligamentous injury (whiplash-associated disorder)\n2. Occult rib fracture\n3. Post-traumatic anxiety",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Full neurological examination including cranial nerves, motor strength, sensation, reflexes, and coordination\n2. CT scan of the head without contrast\n3. X-ray of the cervical spine",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Musculoskeletal soft tissue injury (e.g., contusion or strain) secondary to recent fall",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 360,
+   "completion_tokens": 45,
+   "total_tokens": 405,
+   "cost": 7.515e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.515e-05,
+    "upstream_inference_prompt_cost": 5.4e-05,
+    "upstream_inference_completions_cost": 2.115e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 619,
+   "completion_tokens": 40,
+   "total_tokens": 659,
+   "cost": 0.00011165,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011165,
+    "upstream_inference_prompt_cost": 9.285e-05,
+    "upstream_inference_completions_cost": 1.88e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 901,
+   "completion_tokens": 57,
+   "total_tokens": 958,
+   "cost": 0.000110484,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000110484,
+    "upstream_inference_prompt_cost": 8.3694e-05,
+    "upstream_inference_completions_cost": 2.679e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 20.8
+}

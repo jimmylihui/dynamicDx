@@ -1,0 +1,207 @@
+{
+ "questions": [
+  "Are you in pain right now?",
+  "Did you recently suffer a head injury or have brain surgery?",
+  "Is the bandage on your forehead from an accident?",
+  "Are you having difficulty breathing?",
+  "Can you move your right arm?",
+  "Can you move your left arm?",
+  "Can you move your legs?",
+  "Do you have a headache?",
+  "Have you had a fever in the last few days?",
+  "Do you have trouble swallowing water or food?",
+  "Is your vision blurry or double?",
+  "Do you feel nauseous or have you vomited?",
+  "Did you lose consciousness after the injury?",
+  "Have you had any seizures since the injury?",
+  "Are you able to speak?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Assess for vertical eye movements and blinking on command",
+  "Pupillary light reflex test",
+  "Oculocephalic (doll's eye) reflex test",
+  "Corneal reflex test",
+  "MRI brain with diffusion-weighted imaging",
+  "CT angiography of the head and neck vessels",
+  "Lumbar puncture for CSF analysis",
+  "Nerve conduction studies and electromyography",
+  "Serum anti-ganglioside antibody panel (including anti-GQ1b)",
+  "Ice water caloric testing",
+  "Arterial blood gas",
+  "Bedside edrophonium (Tensilon) test"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "cranial nerve examination",
+  "cranial nerve examination",
+  "cranial nerve examination",
+  "MRI diffusion-weighted sequences",
+  "brain MRI",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "lumbar puncture / CSF",
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. Assess for vertical eye movements and blinking on command",
+  "     cranial nerve examination: normal",
+  "2. Pupillary light reflex test",
+  "     cranial nerve examination: normal",
+  "3. Oculocephalic (doll's eye) reflex test",
+  "     cranial nerve examination: normal",
+  "4. Corneal reflex test",
+  "     cranial nerve examination: normal",
+  "5. MRI brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: restricted diffusion consistent with hypoxic-ischaemic injury",
+  "     brain MRI: hypoxic-ischaemic injury",
+  "6. CT angiography of the head and neck vessels",
+  "     not performed / not available",
+  "7. Lumbar puncture for CSF analysis",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: normal",
+  "     CSF protein: normal",
+  "     CSF glucose: normal",
+  "     lumbar puncture / CSF: normal cells, protein and glucose; no oligoclonal bands",
+  "8. Nerve conduction studies and electromyography",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal",
+  "9. Serum anti-ganglioside antibody panel (including anti-GQ1b)",
+  "     not performed / not available",
+  "10. Ice water caloric testing",
+  "     not performed / not available",
+  "11. Arterial blood gas",
+  "     not performed / not available",
+  "12. Bedside edrophonium (Tensilon) test",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Locked-in syndrome caused by hypoxic-ischaemic injury (ventral pontine infarction, most likely from basilar artery occlusion)\nLocked-in syndrome due to osmotic demyelination (central pontine myelinolysis)\nBrainstem encephalitis (infectious or autoimmune)\nConversion disorder / functional neurological disorder mimicking locked-in syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Assess for vertical eye movements and blinking on command\n2. Pupillary light reflex test\n3. Oculocephalic (doll's eye) reflex test\n4. Corneal reflex test\n5. MRI brain with diffusion-weighted imaging\n6. CT angiography of the head and neck vessels\n7. Lumbar puncture for CSF analysis\n8. Nerve conduction studies and electromyography\n9. Serum anti-ganglioside antibody panel (including anti-GQ1b)\n10. Ice water caloric testing\n11. Arterial blood gas\n12. Bedside edrophonium (Tensilon) test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Locked-in syndrome caused by hypoxic-ischaemic injury (ventral pontine infarction, most likely from basilar artery occlusion)",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2402,
+   "total_tokens": 9464,
+   "cost": 0.00497364,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00497364,
+    "upstream_inference_prompt_cost": 0.00209124,
+    "upstream_inference_completions_cost": 0.0028824
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2424,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7586,
+   "completion_tokens": 754,
+   "total_tokens": 8340,
+   "cost": 0.00149436,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7026,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00149436,
+    "upstream_inference_prompt_cost": 0.00058956,
+    "upstream_inference_completions_cost": 0.0009048
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 703,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8086,
+   "completion_tokens": 719,
+   "total_tokens": 8805,
+   "cost": 0.00147948,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7538,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00147948,
+    "upstream_inference_prompt_cost": 0.00061668,
+    "upstream_inference_completions_cost": 0.0008628
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 755,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_cjd_PMC9833462.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 75.9
+}

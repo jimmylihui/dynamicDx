@@ -1,0 +1,188 @@
+{
+ "questions": [
+  "Do you have a fever?",
+  "Are you experiencing pain anywhere?",
+  "Have you been experiencing these symptoms for more than a week?",
+  "Did your symptoms begin suddenly?",
+  "Are you coughing or having trouble breathing?",
+  "Do you have nausea, vomiting, or diarrhea?",
+  "Is the pain severe enough to limit your daily activities?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Comprehensive physical examination",
+  "Complete blood count with differential",
+  "Comprehensive metabolic panel",
+  "Thyroid function tests",
+  "Urinalysis"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "distribution of the movements (one side, both, face, limbs)",
+  "effect of voluntary action and anxiety",
+  "vital signs",
+  "cognitive and behavioural assessment (MMSE / FAB)",
+  "speech assessment",
+  "gait and coordination",
+  "skin examination",
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "blood glucose",
+  "renal function and eGFR",
+  "thyroid function (TSH, free T4)",
+  "TSH, free T4 and free T3",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Comprehensive physical examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): right upper limb chorea; otherwise normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "     distribution of the movements (one side, both, face, limbs): unilateral right upper limb; chorea complicates under 2% of Graves' cases and the median age in the literature is 23",
+  "     effect of voluntary action and anxiety: no clear change",
+  "     vital signs: normal, afebrile",
+  "     cognitive and behavioural assessment (MMSE / FAB): normal",
+  "     speech assessment: normal",
+  "     gait and coordination: normal",
+  "     skin examination: no rash",
+  "2. Complete blood count with differential",
+  "     full blood count: normal",
+  "3. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     blood glucose: normal",
+  "     renal function and eGFR: normal",
+  "4. Thyroid function tests",
+  "     thyroid function (TSH, free T4): suppressed TSH with elevated free T4",
+  "     TSH, free T4 and free T3: T3 8.26 nmol/L (normal 0.92-2.79) and free T4 58.13 pmol/L (normal 11.50-22.70) with suppressed TSH",
+  "5. Urinalysis",
+  "     urinalysis: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Graves' disease with thyrotoxic chorea\n\nAlternative considerations:\n1. Hashitoxicosis (early destructive thyroiditis with transient hyperthyroidism) coincidental with unrelated chorea\n2. Wilson's disease\n3. Antiphospholipid antibody syndrome",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Comprehensive physical examination\n2. Complete blood count with differential\n3. Comprehensive metabolic panel\n4. Thyroid function tests\n5. Urinalysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Graves' disease with thyrotoxic chorea",
+ "decisive_served": [
+  "blood glucose",
+  "TSH, free T4 and free T3"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 296,
+   "total_tokens": 681,
+   "cost": 9.2876e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.2876e-05,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 8.288e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 219,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 715,
+   "completion_tokens": 507,
+   "total_tokens": 1222,
+   "cost": 0.0001893752,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001893752,
+    "upstream_inference_prompt_cost": 4.74152e-05,
+    "upstream_inference_completions_cost": 0.00014196
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 472,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1211,
+   "completion_tokens": 554,
+   "total_tokens": 1765,
+   "cost": 0.0002280712,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 704,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002280712,
+    "upstream_inference_prompt_cost": 7.29512e-05,
+    "upstream_inference_completions_cost": 0.00015512
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 490,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "c_9815763.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 99.4
+}

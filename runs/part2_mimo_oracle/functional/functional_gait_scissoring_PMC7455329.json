@@ -1,0 +1,118 @@
+{
+ "questions": [
+  "Are you experiencing pain in your legs, knees, or feet while walking?",
+  "Do you feel unsteady or off-balance as you move down this hallway?",
+  "Have you had a recent injury to your leg, knee, ankle, or foot (within the past 2 weeks)?",
+  "Have you fallen while walking in the past month?",
+  "Do you have numbness or tingling in your legs or feet?",
+  "Did this walking difficulty start suddenly, within the last 2 days?",
+  "Do you take any medications that might cause dizziness or affect balance?",
+  "Have you ever been diagnosed with a neurological condition (like a stroke, Parkinson's, or multiple sclerosis)?",
+  "Does this walking problem get worse as you walk for a longer time?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "tandem gait",
+  "walking backward",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "results": [
+  "1. deep tendon reflexes and plantar responses: normal reflexes, FLEXOR plantar responses, no clonus",
+  "2. tandem gait: better than free walking",
+  "3. walking backward: the scissoring DISAPPEARS on walking backward; in spasticity it persists",
+  "4. gait with a distracting or automatic task (dancing, counting backwards): the pattern changes or normalises",
+  "5. muscle tone (spasticity, rigidity, paratonia): normal tone on passive movement despite the scissoring gait"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional gait disorder (functional neurological symptom disorder affecting gait, conversion disorder affecting gait)\nFALSIFICATION: Brain and spine MRI to rule out structural lesions; neurophysiological studies if needed.\nALTERNATIVE DIAGNOSES:\n1. Malingering\n2. Early Parkinson's disease\n3. Normal pressure hydrocephalus",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional gait disorder (functional neurological symptom disorder affecting gait, conversion disorder affecting gait)",
+ "decisive_served": [
+  "deep tendon reflexes and plantar responses",
+  "tandem gait",
+  "walking backward",
+  "gait with a distracting or automatic task (dancing, counting backwards)",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6591,
+   "completion_tokens": 913,
+   "total_tokens": 7504,
+   "cost": 0.0011520376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011520376,
+    "upstream_inference_prompt_cost": 0.0008963976,
+    "upstream_inference_completions_cost": 0.00025564
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 741,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7177,
+   "completion_tokens": 791,
+   "total_tokens": 7968,
+   "cost": 0.0003306184,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003306184,
+    "upstream_inference_prompt_cost": 0.0001091384,
+    "upstream_inference_completions_cost": 0.00022148
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 715,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.7,
+ "video": "functional_gait_scissoring_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 30.6
+}

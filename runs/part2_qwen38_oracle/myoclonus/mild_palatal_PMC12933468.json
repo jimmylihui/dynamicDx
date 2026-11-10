@@ -1,0 +1,119 @@
+{
+ "questions": [
+  "Do you have a sore throat?",
+  "Do you have difficulty swallowing?",
+  "Have you had a fever recently?",
+  "Do you have pain in your ears?",
+  "Do you have a cough?",
+  "Do you have a runny or stuffy nose?",
+  "Do you have swollen glands in your neck?",
+  "Do you have white patches on your tonsils?",
+  "Do you have bad breath?",
+  "Do you have a headache?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "observation of the jerks",
+  "effect of sleep",
+  "MRI brainstem / dentato-rubro-olivary pathway",
+  "HLA-B51 and Behcet's assessment (pathergy, ophthalmology review)"
+ ],
+ "results": [
+  "1. observation of the jerks: rhythmic palatal movements at 2-3 Hz with bilateral acoustic clicks, louder on the right",
+  "2. effect of sleep: palatal tremor PERSISTS in sleep - characteristic of palatal tremor rather than true myoclonus",
+  "3. MRI brainstem / dentato-rubro-olivary pathway: inflammatory brainstem involvement in the Guillain-Mollaret triangle",
+  "4. HLA-B51 and Behcet's assessment (pathergy, ophthalmology review): consistent with Behcet's disease"
+ ],
+ "dx_raw": "DIAGNOSIS: Symptomatic palatal tremor secondary to Behcet's disease\n\n1. Essential palatal tremor\n2. Palatal myoclonus secondary to other inflammatory brainstem lesions (e.g., Multiple Sclerosis)\n3. Oromandibular dystonia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Symptomatic palatal tremor secondary to Behcet's disease",
+ "decisive_served": [
+  "observation of the jerks",
+  "effect of sleep",
+  "MRI brainstem / dentato-rubro-olivary pathway",
+  "HLA-B51 and Behcet's assessment (pathergy, ophthalmology review)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4822,
+   "completion_tokens": 107,
+   "total_tokens": 4929,
+   "cost": 0.00077359,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00077359,
+    "upstream_inference_prompt_cost": 0.0007233,
+    "upstream_inference_completions_cost": 5.029e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5296,
+   "completion_tokens": 62,
+   "total_tokens": 5358,
+   "cost": 0.00022322,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00022322,
+    "upstream_inference_prompt_cost": 0.00019408,
+    "upstream_inference_completions_cost": 2.914e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 9.0,
+ "video": "mild_palatal_PMC12933468.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.6
+}

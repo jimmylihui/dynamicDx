@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Are you conscious and aware of your surroundings during these movements?",
+  "Can you remember what happens during each episode?",
+  "Can you voluntarily stop the movements when asked?",
+  "Do you have any trouble breathing during an episode?",
+  "Do you lose bladder or bowel control during an episode?",
+  "Have you bitten your tongue during an episode?",
+  "Do the movements occur continuously, or do they come in separate attacks?",
+  "Did these movements begin suddenly?",
+  "Did they start after receiving a new medicine or an increased dose?",
+  "Have you recently taken metoclopramide, prochlorperazine, promethazine, haloperidol, or another anti-nausea or psychiatric medication?",
+  "Do you have painful muscle spasms or stiffness in your jaw, neck, or back?",
+  "Do you have a fever?",
+  "Have you recently had a head injury, stroke, infection, or abnormal blood-salt result?",
+  "Have you ever had seizures or similar movements before?",
+  "Have you recently used or stopped alcohol, opioids, benzodiazepines, or recreational drugs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "sodium and serum osmolality",
+  "morning cortisol, ACTH and pituitary hormones",
+  "brain MRI with contrast"
+ ],
+ "results": [
+  "1. sodium and serum osmolality: HYPONATRAEMIA with LOW serum osmolality, euvolaemic",
+  "2. morning cortisol, ACTH and pituitary hormones: LOW ACTH, low prolactin and low testosterone - secondary adrenal insufficiency with anterior pituitary failure",
+  "3. brain MRI with contrast: EMPTY SELLA sign"
+ ],
+ "dx_raw": "DIAGNOSIS: Primary empty sella syndrome causing anterior hypopituitarism (secondary adrenal insufficiency) with hypotonic euvolemic hyponatraemic encephalopathy/seizures\n\nALTERNATIVE: SIADH causing hypotonic euvolemic hyponatraemia\n\nALTERNATIVE: Lymphocytic hypophysitis causing secondary adrenal insufficiency and pituitary failure\n\nALTERNATIVE: Structural or infiltrative hypothalamic–pituitary disease causing panhypopituitarism",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Primary empty sella syndrome causing anterior hypopituitarism (secondary adrenal insufficiency) with hypotonic euvolemic hyponatraemic encephalopathy/seizures",
+ "decisive_served": [
+  "sodium and serum osmolality",
+  "morning cortisol, ACTH and pituitary hormones",
+  "brain MRI with contrast"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 16748,
+   "completion_tokens": 476,
+   "total_tokens": 17224,
+   "cost": 0.00045335,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 16745,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00045335,
+    "upstream_inference_prompt_cost": 0.00016775,
+    "upstream_inference_completions_cost": 0.0002856
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 241,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 17451,
+   "completion_tokens": 290,
+   "total_tokens": 17741,
+   "cost": 0.000429625,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 16745,
+    "cache_write_tokens": 703,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000429625,
+    "upstream_inference_prompt_cost": 0.000255625,
+    "upstream_inference_completions_cost": 0.000174
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 180,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 16.2,
+ "video": "c_11098550.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 14.6
+}

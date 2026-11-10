@@ -1,0 +1,133 @@
+{
+ "questions": [
+  "Did the symptoms start on one side of your body?",
+  "Are you taking any medications for psychiatric conditions?",
+  "Have you noticed a loss of your sense of smell?",
+  "Do you suffer from chronic constipation?",
+  "Do you experience vivid dreams that cause you to move in your sleep?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI Brain",
+  "Levodopa trial",
+  "DaTscan"
+ ],
+ "served": [
+  "MRI brain",
+  "DaTSCAN (dopamine transporter SPECT)"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     MRI brain: normal for age",
+  "2. Levodopa trial",
+  "     not performed / not available",
+  "3. DaTscan",
+  "     DaTSCAN (dopamine transporter SPECT): normal tracer uptake"
+ ],
+ "dx_raw": "DIAGNOSIS: Catatonia due to a psychiatric disorder\n\nFunctional Parkinsonism\nVascular Parkinsonism\nDrug-induced parkinsonism",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Levodopa trial\n3. DaTscan",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Catatonia due to a psychiatric disorder",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 264,
+   "completion_tokens": 2441,
+   "total_tokens": 2705,
+   "cost": 0.00085634,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00085634,
+    "upstream_inference_prompt_cost": 2.64e-05,
+    "upstream_inference_completions_cost": 0.00082994
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2391,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 564,
+   "completion_tokens": 1952,
+   "total_tokens": 2516,
+   "cost": 0.00072008,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00072008,
+    "upstream_inference_prompt_cost": 5.64e-05,
+    "upstream_inference_completions_cost": 0.00066368
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1845,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 726,
+   "completion_tokens": 6759,
+   "total_tokens": 7485,
+   "cost": 0.00237066,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 32,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00237066,
+    "upstream_inference_prompt_cost": 7.26e-05,
+    "upstream_inference_completions_cost": 0.00229806
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6103,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.9,
+ "video": "functional_head_tremor_vibration_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 317.4
+}

@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Did you have normal facial symmetry and eye movement at birth?",
+  "Do your eyes move together when you look to the side?",
+  "Does your eyelid droop on the same side as the asymmetry?",
+  "Do you experience double vision?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform the Bell's phenomenon test by asking the patient to close their eyes tightly while you observe for globe elevation and lid closure symmetry",
+  "Assess for synkinesis by observing involuntary mouth movement during eye closure and involuntary eye closure during smiling or brow raising",
+  "Order MRI of the brain with attention to the cerebellopontine angle and facial nerve course"
+ ],
+ "served": [
+  "eye closure",
+  "forehead movement",
+  "synkinesis assessment (eye closure with platysma/frontalis)",
+  "MRI brain and internal auditory canal with contrast"
+ ],
+ "results": [
+  "1. Perform the Bell's phenomenon test by asking the patient to close their eyes tightly while you observe for globe elevation and lid closure symmetry",
+  "     eye closure: complete both sides",
+  "     forehead movement: symmetrical",
+  "2. Assess for synkinesis by observing involuntary mouth movement during eye closure and involuntary eye closure during smiling or brow raising",
+  "     synkinesis assessment (eye closure with platysma/frontalis): co-contraction of eye closure with the left platysma and left frontalis; right lower-lip curling on speech and mastication",
+  "3. Order MRI of the brain with attention to the cerebellopontine angle and facial nerve course",
+  "     MRI brain and internal auditory canal with contrast: no tumour, no perineural enhancement, no central lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Congenital facial synkinesis (aberrant regeneration of the facial nerve)\nAlternative 1: Moebius syndrome\nAlternative 2: Hemifacial spasm",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Perform the Bell's phenomenon test by asking the patient to close their eyes tightly while you observe for globe elevation and lid closure symmetry\n2. Assess for synkinesis by observing involuntary mouth movement during eye closure and involuntary eye closure during smiling or brow raising\n3. Order MRI of the brain with attention to the cerebellopontine angle and facial nerve course",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Congenital facial synkinesis (aberrant regeneration of the facial nerve)",
+ "decisive_served": [
+  "synkinesis assessment (eye closure with platysma/frontalis)",
+  "MRI brain and internal auditory canal with contrast"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 194,
+   "completion_tokens": 56,
+   "total_tokens": 250,
+   "cost": 5.542e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.542e-05,
+    "upstream_inference_prompt_cost": 2.91e-05,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 477,
+   "completion_tokens": 74,
+   "total_tokens": 551,
+   "cost": 0.00010633,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010633,
+    "upstream_inference_prompt_cost": 7.155e-05,
+    "upstream_inference_completions_cost": 3.478e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 813,
+   "completion_tokens": 42,
+   "total_tokens": 855,
+   "cost": 0.000107386,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000107386,
+    "upstream_inference_prompt_cost": 8.7646e-05,
+    "upstream_inference_completions_cost": 1.974e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "fp_recurrent_synkinesis_PMC12572359.mp4",
+ "line": "facialpalsy",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 17.6
+}

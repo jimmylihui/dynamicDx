@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the movement of your legs something you are doing on purpose?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of Parkinson's disease?",
+  "Do you have a history of seizures or epilepsy?",
+  "Are you currently taking any medications?",
+  "Do you have a history of stroke?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "yes"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Observe the leg movements during distraction (e.g., ask patient to perform mental arithmetic or move unaffected limb)",
+  "Electroencephalogram"
+ ],
+ "served": [
+  "EEG"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing pain?; Is the movement of your legs something you are doing on purpose? -> ['no', 'no']",
+  "R2 ORDER Observe the leg movements during distraction (e.g., ask patient to perform mental arithmetic or move unaffected limb) -> [[]]",
+  "R3 ASK Do you have a history of diabetes? -> ['yes']",
+  "R4 ASK Do you have a history of Parkinson's disease? -> ['no']",
+  "R5 ASK Do you have a history of seizures or epilepsy? -> ['yes']",
+  "R6 ASK Are you currently taking any medications? -> ['no']",
+  "R7 ORDER Electroencephalogram -> [['EEG']]",
+  "R8 ASK Do you have a history of stroke? -> ['yes']",
+  "R9 DIAGNOSIS Post-stroke movement disorder -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing pain?",
+    "Is the movement of your legs something you are doing on purpose?"
+   ],
+   "result": [
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Observe the leg movements during distraction (e.g., ask patient to perform mental arithmetic or move unaffected limb)"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of Parkinson's disease?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of seizures or epilepsy?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Are you currently taking any medications?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Electroencephalogram"
+   ],
+   "result": [
+    [
+     "EEG"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of stroke?"
+   ],
+   "result": [
+    "yes"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Post-stroke movement disorder"
+  }
+ ],
+ "dx": "Post-stroke movement disorder",
+ "dx_raw": "DIAGNOSIS: Post-stroke movement disorder",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0044,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hg_7055013.mp4",
+ "line": "chorea",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 45.8
+}

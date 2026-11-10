@@ -1,0 +1,191 @@
+{
+ "questions": [
+  "Is the primary reason for your visit related to your eyes?",
+  "Is your vision blurred?",
+  "Do you have double vision?",
+  "Do you have bulging of your eyes?",
+  "Do you have pain in or behind your eyes?",
+  "Do you have redness or swelling of your eyelids?",
+  "Have you lost weight without trying?",
+  "Do you have a rapid or irregular heartbeat?",
+  "Do you feel hot or sweaty?",
+  "Do you have tremors in your hands?",
+  "Do you have increased anxiety or irritability?",
+  "Do you have muscle weakness?",
+  "Do you have diarrhea or frequent bowel movements?",
+  "Do you have a family history of thyroid disease?",
+  "Do you smoke?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Full bedside ophthalmic examination (visual acuity, pupillary reflexes, extraocular movements in all cardinal gazes, Hertel exophthalmometry, lid position and lid lag assessment, slit lamp, fundoscopy)",
+  "Thyroid function tests (TSH, free T4, free T3)",
+  "TSH receptor antibodies (TRAb)",
+  "Anti-thyroid peroxidase antibodies",
+  "Orbital CT or MRI with contrast",
+  "Acetylcholine receptor antibodies",
+  "Ice pack test (for myasthenia)"
+ ],
+ "served": [
+  "fundoscopy",
+  "lid position and measurement (MRD1 both sides)",
+  "ocular motility examination",
+  "pupil examination (size, light reaction)",
+  "visual acuity and colour vision",
+  "proptosis / exophthalmometry",
+  "thyroid function (TSH, free T4)",
+  "TSH / free T4 / TRAb",
+  "anti-thyroid antibodies",
+  "MRI orbits",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "ice-pack test"
+ ],
+ "results": [
+  "1. Full bedside ophthalmic examination (visual acuity, pupillary reflexes, extraocular movements in all cardinal gazes, Hertel exophthalmometry, lid position and lid lag assessment, slit lamp, fundoscopy)",
+  "     fundoscopy: normal",
+  "     lid position and measurement (MRD1 both sides): MRD1 raised on the LEFT (retraction); right lid height normal - the right eye is NOT ptotic",
+  "     ocular motility examination: full in all directions",
+  "     pupil examination (size, light reaction): equal and reactive",
+  "     visual acuity and colour vision: normal",
+  "     proptosis / exophthalmometry: no proptosis",
+  "2. Thyroid function tests (TSH, free T4, free T3)",
+  "     thyroid function (TSH, free T4): normal",
+  "3. TSH receptor antibodies (TRAb)",
+  "     TSH / free T4 / TRAb: normal, TRAb negative - excludes thyroid eye disease",
+  "4. Anti-thyroid peroxidase antibodies",
+  "     anti-thyroid antibodies: normal",
+  "5. Orbital CT or MRI with contrast",
+  "     MRI orbits: no extraocular muscle enlargement, no mass",
+  "6. Acetylcholine receptor antibodies",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "7. Ice pack test (for myasthenia)",
+  "     ice-pack test: negative"
+ ],
+ "dx_raw": "**DIAGNOSIS:** Right involutional (aponeurotic) ptosis with left compensatory upper lid retraction via Hering's law\n\n**Alternatives considered:**\n1. Idiopathic unilateral (left) upper lid retraction (e.g., localized sympathetic overactivity of Müller's muscle)\n2. Seronegative ocular myasthenia gravis (despite negative AChR/MuSK/LRP4 antibodies and negative ice-pack test, up to 50% of ocular MG is seronegative; consider single-fibre EMG)\n3. Early/preclinical thyroid eye disease (euthyroid Graves' orbitopathy) with low-titre or waxing TRAb, despite normal MRI and serology",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Full bedside ophthalmic examination (visual acuity, pupillary reflexes, extraocular movements in all cardinal gazes, Hertel exophthalmometry, lid position and lid lag assessment, slit lamp, fundoscopy)\n2. Thyroid function tests (TSH, free T4, free T3)\n3. TSH receptor antibodies (TRAb)\n4. Anti-thyroid peroxidase antibodies\n5. Orbital CT or MRI with contrast\n6. Acetylcholine receptor antibodies\n7. Ice pack test (for myasthenia)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "** Right involutional (aponeurotic) ptosis with left compensatory upper lid retraction via Hering's law",
+ "decisive_served": [
+  "lid position and measurement (MRD1 both sides)",
+  "TSH / free T4 / TRAb"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 5121,
+   "total_tokens": 12183,
+   "cost": 0.00822612,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00822612,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0061452
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4972,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7580,
+   "completion_tokens": 3774,
+   "total_tokens": 11354,
+   "cost": 0.00511152,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00511152,
+    "upstream_inference_prompt_cost": 0.00058272,
+    "upstream_inference_completions_cost": 0.0045288
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3664,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 8073,
+   "completion_tokens": 5941,
+   "total_tokens": 14014,
+   "cost": 0.0077355,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7565,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0077355,
+    "upstream_inference_prompt_cost": 0.0006063,
+    "upstream_inference_completions_cost": 0.0071292
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5799,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 152.7
+}

@@ -1,0 +1,117 @@
+{
+ "questions": [
+  "Do you have a known history of thyroid disease?",
+  "Do you have double vision?",
+  "Do you experience a gritty or foreign body sensation in your eyes?",
+  "Have you noticed any bulging of your eyes?",
+  "Do you have pain in your eyes?",
+  "Do you wear contact lenses?",
+  "Is there a family history of autoimmune disease?",
+  "Do you have a history of cancer?",
+  "Do you experience dry mouth?",
+  "Do you have any discharge from your eyes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "adduction in horizontal gaze (each eye)",
+  "MRI brain with DWI",
+  "MRI sella and orbits"
+ ],
+ "results": [
+  "1. nystagmus: direction and whether it changes with gaze: see-saw nystagmus",
+  "2. adduction in horizontal gaze (each eye): adduction paresis of the LEFT eye with dissociated abducting paresis of the right eye on rightward gaze - internuclear ophthalmoplegia",
+  "3. MRI brain with DWI: bilateral dorsomedial PONTINE and LEFT THALAMIC infarction",
+  "4. MRI sella and orbits: normal - no parasellar or suprasellar mass"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute posterior circulation ischemic stroke (distal basilar artery occlusion)\nVertebrobasilar dolichoectasia\nMultiple sclerosis\nCNS vasculitis",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Acute posterior circulation ischemic stroke (distal basilar artery occlusion)",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "adduction in horizontal gaze (each eye)",
+  "MRI brain with DWI",
+  "MRI sella and orbits"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2577,
+   "total_tokens": 9639,
+   "cost": 0.00517332,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00517332,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0030924
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2473,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7523,
+   "completion_tokens": 2326,
+   "total_tokens": 9849,
+   "cost": 0.00335682,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00335682,
+    "upstream_inference_prompt_cost": 0.00056562,
+    "upstream_inference_completions_cost": 0.0027912
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2292,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.2,
+ "video": "mild_1_seesaw_INO_PMC6883617.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 63.6
+}

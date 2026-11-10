@@ -1,0 +1,188 @@
+{
+ "questions": [
+  "\"Did this condition begin suddenly or gradually?\"",
+  "\"Have you experienced any significant emotional distress or trauma recently?\"",
+  "\"Do your symptoms seem to fluctuate or get worse when you focus on them?\"",
+  "\"Are the movements in both arms the same, or is one side worse?\"",
+  "\"Do you feel any weakness in your arms or legs?\"",
+  "\"Is there anyone in your family with tremors or movement problems?\"",
+  "\"Has anyone noticed a change in your handwriting recently?\"",
+  "\"Have you noticed any changes in your thinking or memory recently?\"",
+  "\"Have you had any seizures or jerking movements while sleeping?\"",
+  "\"Do you have any difficulty with your vision or eye movements?\"",
+  "\"Are you taking any medications currently?\"",
+  "\"Do you consume alcohol regularly?\"",
+  "\"Have you had any viral illness or infection before your symptoms started?\"",
+  "\"Do you have any history of cancer?\"",
+  "\"Have you noticed any swallowing difficulties or speech changes?\""
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "\"Perform detailed neurological examination of the limbs.\"",
+  "\"Test for distractibility - ask the patient to perform a complex task with one hand while observing the movements in the other arm.\"",
+  "\"Order serum vitamin E levels and liver function tests.\"",
+  "\"Test for anti-GAD antibodies (anti-glutamic acid decarboxylase).\"",
+  "\"Order celiac disease screening (anti-tissue transglutaminase antibodies).\"",
+  "\"Perform ophthalmological examination for Kayser-Fleischer rings.\""
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "serum vitamin E"
+ ],
+ "results": [
+  "R1 ASK \"Did this condition begin suddenly or gradually?\"; \"Have you experienced any significant emotional distress or trauma recently?\"; \"Do your symptoms seem to fluctuate or get worse when you focus on them?\" -> ['no', 'no', 'no']",
+  "R2 ASK \"Are the movements in both arms the same, or is one side worse?\"; \"Do you feel any weakness in your arms or legs?\"; \"Is there anyone in your family with tremors or movement problems?\"; \"Has anyone noticed a change in your handwriting recently?\" -> ['yes', 'no', 'no', 'no']",
+  "R3 ORDER \"Perform detailed neurological examination of the limbs.\"; \"Test for distractibility - ask the patient to perform a complex task with one hand while observing the movements in the other arm.\" -> [['muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)'], []]",
+  "R4 ASK \"Have you noticed any changes in your thinking or memory recently?\"; \"Have you had any seizures or jerking movements while sleeping?\"; \"Do you have any difficulty with your vision or eye movements?\"; \"Are you taking any medications currently?\" -> ['no', 'no', 'no', 'no']",
+  "R5 ORDER \"Order serum vitamin E levels and liver function tests.\"; \"Test for anti-GAD antibodies (anti-glutamic acid decarboxylase).\"; \"Order celiac disease screening (anti-tissue transglutaminase antibodies).\"; \"Perform ophthalmological examination for Kayser-Fleischer rings.\" -> [['serum vitamin E'], [], [], []]",
+  "R6 ASK \"Do you consume alcohol regularly?\"; \"Have you had any viral illness or infection before your symptoms started?\"; \"Do you have any history of cancer?\"; \"Have you noticed any swallowing difficulties or speech changes?\" -> ['no', 'no', 'no', 'no']",
+  "R7 DIAGNOSIS Autoimmune cerebellar ataxia with anti-GAD antibodies (anti-glutamic acid decarboxylase antibody-positive cerebellar ataxia) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "\"Did this condition begin suddenly or gradually?\"",
+    "\"Have you experienced any significant emotional distress or trauma recently?\"",
+    "\"Do your symptoms seem to fluctuate or get worse when you focus on them?\""
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "\"Are the movements in both arms the same, or is one side worse?\"",
+    "\"Do you feel any weakness in your arms or legs?\"",
+    "\"Is there anyone in your family with tremors or movement problems?\"",
+    "\"Has anyone noticed a change in your handwriting recently?\""
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "\"Perform detailed neurological examination of the limbs.\"",
+    "\"Test for distractibility - ask the patient to perform a complex task with one hand while observing the movements in the other arm.\""
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "limb strength (MRC) examination",
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "\"Have you noticed any changes in your thinking or memory recently?\"",
+    "\"Have you had any seizures or jerking movements while sleeping?\"",
+    "\"Do you have any difficulty with your vision or eye movements?\"",
+    "\"Are you taking any medications currently?\""
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "\"Order serum vitamin E levels and liver function tests.\"",
+    "\"Test for anti-GAD antibodies (anti-glutamic acid decarboxylase).\"",
+    "\"Order celiac disease screening (anti-tissue transglutaminase antibodies).\"",
+    "\"Perform ophthalmological examination for Kayser-Fleischer rings.\""
+   ],
+   "result": [
+    [
+     "serum vitamin E"
+    ],
+    [],
+    [],
+    []
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "\"Do you consume alcohol regularly?\"",
+    "\"Have you had any viral illness or infection before your symptoms started?\"",
+    "\"Do you have any history of cancer?\"",
+    "\"Have you noticed any swallowing difficulties or speech changes?\""
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Autoimmune cerebellar ataxia with anti-GAD antibodies (anti-glutamic acid decarboxylase antibody-positive cerebellar ataxia)"
+  }
+ ],
+ "dx": "Autoimmune cerebellar ataxia with anti-GAD antibodies (anti-glutamic acid decarboxylase antibody-positive cerebellar ataxia)",
+ "dx_raw": "DIAGNOSIS: Autoimmune cerebellar ataxia with anti-GAD antibodies (anti-glutamic acid decarboxylase antibody-positive cerebellar ataxia)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0036,
+ "n_frames": 32,
+ "duration_s": 22.0,
+ "video": "moderate_coeliac_PMC10548079.mp4",
+ "line": "myoclonus",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 244.8
+}

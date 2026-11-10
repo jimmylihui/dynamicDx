@@ -1,0 +1,170 @@
+{
+ "questions": [
+  "Are you experiencing any pain?",
+  "Do you have a fever or chills?",
+  "Have you had any seizures recently?",
+  "Did these symptoms start suddenly after a stressful event or emotional upset?",
+  "Do you have a history of diabetes?",
+  "Have you been drinking large amounts of water recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Observe the patient's movements for 60 seconds to characterize the abnormal posturing and check for distractibility or entrainment",
+  "Check for pupillary response to light",
+  "Fingerstick blood glucose",
+  "Serum electrolytes"
+ ],
+ "served": [
+  "distribution of the movements (one side, both, face, limbs)",
+  "effect of voluntary action and anxiety",
+  "effect of sleep",
+  "speed of onset",
+  "cranial nerve examination",
+  "blood glucose",
+  "blood glucose and HbA1c",
+  "serum electrolytes, urea and creatinine"
+ ],
+ "results": [
+  "R1 ASK Are you experiencing any pain?; Do you have a fever or chills?; Have you had any seizures recently? -> ['no', 'no', 'no']",
+  "R2 ORDER Observe the patient's movements for 60 seconds to characterize the abnormal posturing and check for distractibility or entrainment -> [['distribution of the movements (one side, both, face, limbs)', 'effect of voluntary action and anxiety', 'effect of sleep', 'speed of onset']]",
+  "R3 ASK Did these symptoms start suddenly after a stressful event or emotional upset? -> ['no']",
+  "R4 ORDER Check for pupillary response to light -> [['cranial nerve examination']]",
+  "R5 ASK Do you have a history of diabetes? -> ['no']",
+  "R6 ORDER Fingerstick blood glucose -> [['blood glucose', 'blood glucose and HbA1c']]",
+  "R7 ORDER Serum electrolytes -> [['serum electrolytes, urea and creatinine']]",
+  "R8 ASK Have you been drinking large amounts of water recently? -> ['no']",
+  "R9 DIAGNOSIS Hyponatremic encephalopathy -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you experiencing any pain?",
+    "Do you have a fever or chills?",
+    "Have you had any seizures recently?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Observe the patient's movements for 60 seconds to characterize the abnormal posturing and check for distractibility or entrainment"
+   ],
+   "result": [
+    [
+     "distribution of the movements (one side, both, face, limbs)",
+     "effect of voluntary action and anxiety",
+     "effect of sleep",
+     "speed of onset"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did these symptoms start suddenly after a stressful event or emotional upset?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Check for pupillary response to light"
+   ],
+   "result": [
+    [
+     "cranial nerve examination"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Fingerstick blood glucose"
+   ],
+   "result": [
+    [
+     "blood glucose",
+     "blood glucose and HbA1c"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Serum electrolytes"
+   ],
+   "result": [
+    [
+     "serum electrolytes, urea and creatinine"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Have you been drinking large amounts of water recently?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Hyponatremic encephalopathy"
+  }
+ ],
+ "dx": "Hyponatremic encephalopathy",
+ "dx_raw": "DIAGNOSIS: Hyponatremic encephalopathy",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0045,
+ "n_frames": 32,
+ "duration_s": 16.2,
+ "video": "c_11098550.mp4",
+ "line": "chorea",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 42.2
+}

@@ -1,0 +1,116 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does the double vision get worse when you look to the side?",
+  "Do you have any weakness or numbness in your limbs?",
+  "Do you have any problems with your balance?",
+  "Do you have any difficulty speaking?",
+  "Do you have any difficulty swallowing?",
+  "Did these symptoms start suddenly?",
+  "Have you ever been diagnosed with multiple sclerosis?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "repetitive nerve stimulation",
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "MRI orbits",
+  "trial of pyridostigmine and prednisolone"
+ ],
+ "results": [
+  "1. repetitive nerve stimulation: decremental response",
+  "2. ice-pack test: POSITIVE",
+  "3. anti-acetylcholine receptor antibodies: 10.32 nmol/L (normal <0.50) - strongly POSITIVE",
+  "4. MRI orbits: SEVERE THINNING of all extraocular muscles; exotropia of the right eye",
+  "5. trial of pyridostigmine and prednisolone: ptosis and limb weakness improved; the ophthalmoparesis did NOT"
+ ],
+ "dx_raw": "DIAGNOSIS: Myasthenia Gravis and Chronic Progressive External Ophthalmoplegia (CPEO) caused by anti-acetylcholine receptor antibodies and mitochondrial DNA mutations\n\nMyasthenia Gravis\nChronic Progressive External Ophthalmoplegia\nKearns-Sayre Syndrome",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Myasthenia Gravis and Chronic Progressive External Ophthalmoplegia (CPEO) caused by anti-acetylcholine receptor antibodies and mitochondrial DNA mutations",
+ "decisive_served": [
+  "repetitive nerve stimulation",
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "MRI orbits",
+  "trial of pyridostigmine and prednisolone"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 4763,
+   "total_tokens": 13461,
+   "cost": 0.00248922,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00248922,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00161942
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4334,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9117,
+   "completion_tokens": 3315,
+   "total_tokens": 12432,
+   "cost": 0.0020388,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0020388,
+    "upstream_inference_prompt_cost": 0.0009117,
+    "upstream_inference_completions_cost": 0.0011271
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3272,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "mild_cpeo_mitochondrial_PMC9350803.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 227.3
+}

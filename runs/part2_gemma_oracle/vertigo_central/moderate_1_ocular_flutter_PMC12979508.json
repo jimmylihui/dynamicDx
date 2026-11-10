@@ -1,0 +1,110 @@
+{
+ "questions": [
+  "Are you unable to move your body?",
+  "Are you unable to speak?",
+  "Did this happen suddenly?",
+  "Did you have a stroke?",
+  "Do you have a headache?",
+  "Do you have pain?",
+  "Do you have double vision?",
+  "Is your vision blurry?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "smooth pursuit and saccades",
+  "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)",
+  "CT chest / abdomen / pelvis (occult tumour)"
+ ],
+ "results": [
+  "1. smooth pursuit and saccades: rapid conjugate HORIZONTAL saccadic oscillations WITHOUT intersaccadic intervals - ocular flutter",
+  "2. anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2): ISOLATED anti-GT1a IgG POSITIVE; anti-GQ1b, anti-GM1 and anti-GM2 all NEGATIVE",
+  "3. CT chest / abdomen / pelvis (occult tumour): no malignancy - argues against a paraneoplastic cause"
+ ],
+ "dx_raw": "DIAGNOSIS: Bickerstaff Brainstem Syndrome caused by anti-GT1a antibodies\n\nMiller Fisher Syndrome\nOpsoclonus-Myoclonus Syndrome\nParaneoplastic brainstem encephalitis",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Bickerstaff Brainstem Syndrome caused by anti-GT1a antibodies",
+ "decisive_served": [
+  "smooth pursuit and saccades",
+  "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)",
+  "CT chest / abdomen / pelvis (occult tumour)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 3727,
+   "total_tokens": 12425,
+   "cost": 0.00213698,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00213698,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00126718
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3259,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9075,
+   "completion_tokens": 3111,
+   "total_tokens": 12186,
+   "cost": 0.00196524,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00196524,
+    "upstream_inference_prompt_cost": 0.0009075,
+    "upstream_inference_completions_cost": 0.00105774
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3022,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.2,
+ "video": "moderate_1_ocular_flutter_PMC12979508.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 217.9
+}

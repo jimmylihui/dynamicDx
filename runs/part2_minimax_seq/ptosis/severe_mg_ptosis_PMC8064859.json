@@ -1,0 +1,138 @@
+{
+ "questions": [
+  "Do you currently have double vision?",
+  "Have you noticed any drooping of your eyelids?",
+  "Do you have any weakness in your arms or legs?",
+  "Is the drooping worse at the end of the day or with use (fatigable)?",
+  "Have you had any difficulty swallowing food or choking while eating?",
+  "Is there anyone else in your family with similar drooping eyelids?",
+  "Is the drooping present in both eyes or just one?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Sustained upgaze test (ask patient to look up for 1 minute and observe for worsening ptosis/diplopia)",
+  "Acetylcholine receptor (AChR) antibody test",
+  "CT chest (to look for thymoma)"
+ ],
+ "served": [
+  "sustained upgaze fatigability test",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "CT chest (thymus)"
+ ],
+ "results": [
+  "R1 ASK Do you currently have double vision?; Have you noticed any drooping of your eyelids?; Do you have any weakness in your arms or legs? -> ['no', 'yes', 'no']",
+  "R2 ASK Is the drooping worse at the end of the day or with use (fatigable)?; Have you had any difficulty swallowing food or choking while eating?; Is there anyone else in your family with similar drooping eyelids?; Is the drooping present in both eyes or just one? -> ['yes', 'no', 'no', 'no']",
+  "R3 ORDER Sustained upgaze test (ask patient to look up for 1 minute and observe for worsening ptosis/diplopia) -> [['sustained upgaze fatigability test']]",
+  "R4 ORDER Acetylcholine receptor (AChR) antibody test -> [['acetylcholine receptor, MuSK and LRP4 antibodies', 'anti-acetylcholine receptor antibodies']]",
+  "R5 ORDER CT chest (to look for thymoma) -> [['CT chest (thymus)']]",
+  "R6 DIAGNOSIS Ocular myasthenia gravis (autoimmune, AChR antibody positive, without thymoma on imaging) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you currently have double vision?",
+    "Have you noticed any drooping of your eyelids?",
+    "Do you have any weakness in your arms or legs?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Is the drooping worse at the end of the day or with use (fatigable)?",
+    "Have you had any difficulty swallowing food or choking while eating?",
+    "Is there anyone else in your family with similar drooping eyelids?",
+    "Is the drooping present in both eyes or just one?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Sustained upgaze test (ask patient to look up for 1 minute and observe for worsening ptosis/diplopia)"
+   ],
+   "result": [
+    [
+     "sustained upgaze fatigability test"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Acetylcholine receptor (AChR) antibody test"
+   ],
+   "result": [
+    [
+     "acetylcholine receptor, MuSK and LRP4 antibodies",
+     "anti-acetylcholine receptor antibodies"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "CT chest (to look for thymoma)"
+   ],
+   "result": [
+    [
+     "CT chest (thymus)"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "diagnosis",
+   "text": "Ocular myasthenia gravis (autoimmune, AChR antibody positive, without thymoma on imaging)"
+  }
+ ],
+ "dx": "Ocular myasthenia gravis (autoimmune, AChR antibody positive, without thymoma on imaging)",
+ "dx_raw": "DIAGNOSIS: Ocular myasthenia gravis (autoimmune, AChR antibody positive, without thymoma on imaging)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 5,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "anti-acetylcholine receptor antibodies",
+  "sustained upgaze fatigability test"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0063,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_mg_ptosis_PMC8064859.mp4",
+ "line": "ptosis",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 40.8
+}

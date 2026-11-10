@@ -1,0 +1,172 @@
+{
+ "questions": [
+  "Is the swelling in your right leg the main reason for your visit today?",
+  "Is the right leg painful?",
+  "Did the swelling begin suddenly?",
+  "Have you been bedridden or immobile for a long period recently?",
+  "Have you had any surgery in the last few weeks?",
+  "Have you ever had a blood clot in your leg or lungs before?",
+  "Is the skin on the swollen leg red or warm?",
+  "Have you had a fever?",
+  "Do you have any chest pain?",
+  "Do you have any shortness of breath?",
+  "Do you have a history of heart failure?",
+  "Do you have a history of kidney disease?",
+  "Do you have a history of liver disease?",
+  "Do you have visible varicose veins in that leg?",
+  "Have you recently injured your right leg?",
+  "Does walking make the pain in your leg worse?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Electrocardiogram",
+  "Chest X-ray",
+  "Urinalysis"
+ ],
+ "served": [
+  "full blood count",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "blood glucose",
+  "urinalysis"
+ ],
+ "results": [
+  "1. Complete blood count",
+  "     full blood count: normal",
+  "2. Comprehensive metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     blood glucose: 30.63 mmol/L (551.3 mg/dL) with glycosuria and NO ketonuria",
+  "3. Electrocardiogram",
+  "     not performed / not available",
+  "4. Chest X-ray",
+  "     not performed / not available",
+  "5. Urinalysis",
+  "     urinalysis: glycosuria without ketonuria"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperosmolar Hyperglycemic State (HHS) due to medication non-compliance in a patient with Type 2 Diabetes Mellitus\n\n1. Uncomplicated severe hyperglycemia without progression to HHS\n2. Diabetic Ketoacidosis in early/atypical presentation\n3. New-onset Type 1 Diabetes Mellitus (less likely given age and absence of ketosis)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Complete blood count\n2. Comprehensive metabolic panel\n3. Electrocardiogram\n4. Chest X-ray\n5. Urinalysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperosmolar Hyperglycemic State (HHS) due to medication non-compliance in a patient with Type 2 Diabetes Mellitus",
+ "decisive_served": [
+  "blood glucose"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 11926,
+   "completion_tokens": 2953,
+   "total_tokens": 14879,
+   "cost": 0.00708372,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00708372,
+    "upstream_inference_prompt_cost": 0.00354012,
+    "upstream_inference_completions_cost": 0.0035436
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2768,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 12521,
+   "completion_tokens": 3778,
+   "total_tokens": 16299,
+   "cost": 0.00543126,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 11911,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00543126,
+    "upstream_inference_prompt_cost": 0.00089766,
+    "upstream_inference_completions_cost": 0.0045336
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3749,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 12752,
+   "completion_tokens": 492,
+   "total_tokens": 13244,
+   "cost": 0.00141456,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 12506,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00141456,
+    "upstream_inference_prompt_cost": 0.00082416,
+    "upstream_inference_completions_cost": 0.0005904
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 414,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "hyperglycemic_hemichorea_PMC12596229.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 79.0
+}

@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Are you currently taking any prescription medications?",
+  "Do you have a history of seizures or epilepsy?",
+  "Have you been diagnosed with a sleep disorder, such as REM Sleep Behavior Disorder?",
+  "Do you experience vivid dreams that you physically act out?",
+  "Have you ever injured yourself or your bed partner while sleeping?",
+  "Do you take any supplements or over-the-counter medications for sleep?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "In-lab polysomnography with extended EEG montage and synchronized video recording",
+  "Serum prolactin level measured within 20 minutes of a witnessed event",
+  "MRI of the brain with epilepsy protocol"
+ ],
+ "served": [
+  "video-EEG monitoring of a typical event",
+  "brain MRI"
+ ],
+ "results": [
+  "1. In-lab polysomnography with extended EEG montage and synchronized video recording",
+  "     video-EEG monitoring of a typical event: the diagnosis was made on SEMIOLOGY from clinically documented video-EEG; there was NO interpretable ictal EEG correlate because of movement artefact",
+  "2. Serum prolactin level measured within 20 minutes of a witnessed event",
+  "     not performed / not available",
+  "3. MRI of the brain with epilepsy protocol",
+  "     brain MRI: no epileptogenic lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: REM Sleep Behavior Disorder (RBD)\nAlternative 1: Nocturnal Frontal Lobe Epilepsy (NFLE) / Sleep-related Hypermotor Epilepsy (SHE)\nAlternative 2: Non-rapid eye movement (NREM) parasomnia (e.g., confusional arousal or sleep terrors)\nAlternative 3: Psychogenic non-epileptic events (PNEE) occurring during sleep",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. In-lab polysomnography with extended EEG montage and synchronized video recording\n2. Serum prolactin level measured within 20 minutes of a witnessed event\n3. MRI of the brain with epilepsy protocol",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "REM Sleep Behavior Disorder (RBD)",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6871,
+   "completion_tokens": 88,
+   "total_tokens": 6959,
+   "cost": 0.00107201,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00107201,
+    "upstream_inference_prompt_cost": 0.00103065,
+    "upstream_inference_completions_cost": 4.136e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7224,
+   "completion_tokens": 46,
+   "total_tokens": 7270,
+   "cost": 0.000230468,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000230468,
+    "upstream_inference_prompt_cost": 0.000208848,
+    "upstream_inference_completions_cost": 2.162e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7477,
+   "completion_tokens": 97,
+   "total_tokens": 7574,
+   "cost": 0.00022378,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7040,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00022378,
+    "upstream_inference_prompt_cost": 0.00017819,
+    "upstream_inference_completions_cost": 4.559e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.1,
+ "video": "moderate_1_hypermotor_PMC5786569.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 13.2
+}

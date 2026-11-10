@@ -1,0 +1,172 @@
+{
+ "questions": [
+  "Did this unsteadiness start suddenly?",
+  "Have you been drinking alcohol today?",
+  "Is your speech slurred?",
+  "Do you feel the room is spinning around you?",
+  "Did you hit your head recently?",
+  "Are you seeing double?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Urgent CT head non-contrast",
+  "Full blood count",
+  "Serum electrolytes and glucose",
+  "Liver function tests",
+  "Serum B12 level",
+  "Toxicology screen",
+  "MRI brain with posterior fossa protocol",
+  "Lumbar puncture"
+ ],
+ "served": [
+  "CT head",
+  "full blood count, renal and liver profile",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose and HbA1c",
+  "liver function tests",
+  "full blood count, renal and liver profile",
+  "vitamin B12 with methylmalonic acid",
+  "vitamin B12",
+  "drug and toxin screen",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "CSF opening pressure",
+  "lumbar puncture / CSF (cells, protein, Abeta42/40, total tau, p-tau)"
+ ],
+ "results": [
+  "1. Urgent CT head non-contrast",
+  "     CT head: normal",
+  "2. Full blood count",
+  "     full blood count, renal and liver profile: haemogram, glucose, renal, liver, electrolytes and thyroid all normal",
+  "3. Serum electrolytes and glucose",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     blood glucose and HbA1c: normal",
+  "4. Liver function tests",
+  "     liver function tests: normal",
+  "     full blood count, renal and liver profile: haemogram, glucose, renal, liver, electrolytes and thyroid all normal",
+  "5. Serum B12 level",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "     vitamin B12: normal",
+  "6. Toxicology screen",
+  "     drug and toxin screen: negative",
+  "7. MRI brain with posterior fossa protocol",
+  "     MRI brain with gadolinium: normal",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "8. Lumbar puncture",
+  "     CSF opening pressure: normal",
+  "     lumbar puncture / CSF (cells, protein, Abeta42/40, total tau, p-tau): not performed"
+ ],
+ "dx_raw": "DIAGNOSIS: Autoimmune cerebellar ataxia (anti-GAD antibody associated)\n\nAnti-GAD antibody titres\nAnti-neuronal antibody panel (including anti-Yo, anti-Hu, anti-Tr, anti-Ri)\nCT chest, abdomen and pelvis (to exclude underlying malignancy)\nAnti-GQ1b antibodies\nScreen for coeliac disease (anti-tissue transglutaminase antibodies)\nSerum protein electrophoresis",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Urgent CT head non-contrast\n2. Full blood count\n3. Serum electrolytes and glucose\n4. Liver function tests\n5. Serum B12 level\n6. Toxicology screen\n7. MRI brain with posterior fossa protocol\n8. Lumbar puncture",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Autoimmune cerebellar ataxia (anti-GAD antibody associated)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 2689,
+   "total_tokens": 7744,
+   "cost": 0.0007757176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007757176,
+    "upstream_inference_prompt_cost": 2.27976e-05,
+    "upstream_inference_completions_cost": 0.00075292
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2631,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5342,
+   "completion_tokens": 590,
+   "total_tokens": 5932,
+   "cost": 0.0002281776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002281776,
+    "upstream_inference_prompt_cost": 6.29776e-05,
+    "upstream_inference_completions_cost": 0.0001652
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 527,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5746,
+   "completion_tokens": 718,
+   "total_tokens": 6464,
+   "cost": 0.0002766736,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5312,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002766736,
+    "upstream_inference_prompt_cost": 7.56336e-05,
+    "upstream_inference_completions_cost": 0.00020104
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 620,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.3,
+ "video": "mimic_iglon5_pisa_PMC13080482.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 74.5
+}

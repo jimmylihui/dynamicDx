@@ -1,0 +1,191 @@
+{
+ "questions": [
+  "Are you currently experiencing any pain?",
+  "Is the pain located in your chest or upper abdomen?",
+  "Does the pain radiate to your back, neck, or arms?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of high cholesterol?",
+  "Do you have a history of cancer?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Bedside examination of the right eye (inspection for proptosis, lid retraction, and fundoscopy)",
+  "Bedside examination of the right eye (inspection for proptosis, lid retraction, and fundoscopy)",
+  "Bedside examination of the right eye (inspection for proptosis, lid retraction, and fundoscopy)",
+  "Bedside examination of the right eye (inspection for proptosis, lid retraction, and fundoscopy)",
+  "Bedside examination of the right eye",
+  "Bedside examination of the right eye"
+ ],
+ "served": [
+  "fundoscopy"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing any pain?; Is the pain located in your chest or upper abdomen?; Does the pain radiate to your back, neck, or arms?; Do you have a history of high blood pressure? -> ['no', 'no', 'no', 'no']",
+  "R2 ORDER Bedside examination of the right eye (inspection for proptosis, lid retraction, and fundoscopy) -> [['fundoscopy']]",
+  "R3 ASK Do you have a history of diabetes? -> ['no']",
+  "R4 ASK Do you have a history of high cholesterol? -> ['no']",
+  "R5 ORDER Bedside examination of the right eye (inspection for proptosis, lid retraction, and fundoscopy) -> [['fundoscopy']]",
+  "R6 ASK Do you have a history of cancer? -> ['no']",
+  "R7 ORDER Bedside examination of the right eye (inspection for proptosis, lid retraction, and fundoscopy) -> [['fundoscopy']]",
+  "R8 ORDER Bedside examination of the right eye (inspection for proptosis, lid retraction, and fundoscopy) -> [['fundoscopy']]",
+  "R9 ORDER Bedside examination of the right eye -> [['fundoscopy']]",
+  "R10 ORDER Bedside examination of the right eye -> [['fundoscopy']]",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Right eye enucleation -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing any pain?",
+    "Is the pain located in your chest or upper abdomen?",
+    "Does the pain radiate to your back, neck, or arms?",
+    "Do you have a history of high blood pressure?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Bedside examination of the right eye (inspection for proptosis, lid retraction, and fundoscopy)"
+   ],
+   "result": [
+    [
+     "fundoscopy"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of high cholesterol?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Bedside examination of the right eye (inspection for proptosis, lid retraction, and fundoscopy)"
+   ],
+   "result": [
+    [
+     "fundoscopy"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of cancer?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Bedside examination of the right eye (inspection for proptosis, lid retraction, and fundoscopy)"
+   ],
+   "result": [
+    [
+     "fundoscopy"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Bedside examination of the right eye (inspection for proptosis, lid retraction, and fundoscopy)"
+   ],
+   "result": [
+    [
+     "fundoscopy"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Bedside examination of the right eye"
+   ],
+   "result": [
+    [
+     "fundoscopy"
+    ]
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "Bedside examination of the right eye"
+   ],
+   "result": [
+    [
+     "fundoscopy"
+    ]
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Right eye enucleation"
+  }
+ ],
+ "dx": "Right eye enucleation",
+ "dx_raw": "DIAGNOSIS: Right eye enucleation",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0027,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_2_myoclonus_PMC12798911.mp4",
+ "line": "paroxysmal",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 56.5
+}

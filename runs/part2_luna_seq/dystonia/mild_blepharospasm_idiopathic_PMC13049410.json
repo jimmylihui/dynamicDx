@@ -1,0 +1,235 @@
+{
+ "questions": [
+  "Are these facial movements involuntary and difficult to suppress?",
+  "Do you experience an uncomfortable urge or tension before making the movements that is relieved afterward?",
+  "Do the movements disappear during sleep?",
+  "Have you been taking antipsychotic, anti-nausea, or antidepressant medication regularly for several months or longer?",
+  "Do you also have involuntary movements of your tongue, jaw, or limbs?",
+  "Do the involuntary facial contractions affect both sides of your face equally?",
+  "Do they mainly consist of forceful, involuntary squeezing of both eyelids shut?",
+  "Can you temporarily reduce the contractions by touching your face, wearing tinted glasses, or performing another “sensory trick”?",
+  "Are the contractions worse with bright light, stress, fatigue, or speaking?",
+  "Did these symptoms begin gradually, rather than suddenly?",
+  "Do the contractions predominantly involve one side of your face, beginning around one eye and spreading downward?",
+  "During an episode, do you remain fully conscious and able to respond normally?",
+  "Do individual episodes last seconds to minutes and recur in attacks?",
+  "Do the movements occur only while you are awake?",
+  "Have you had any sudden weakness, numbness, loss of speech, or loss of coordination with these episodes?",
+  "After an episode, are you confused, unusually sleepy, or unable to remember what happened?",
+  "Have you ever bitten your tongue or lost bladder control during an episode?",
+  "Do the episodes begin with a sudden abnormal sensation, fear, déjà vu, unusual smell, or rising feeling in the stomach?",
+  "Do the facial movements occur in brief, stereotyped episodes that are very similar each time?",
+  "Have the episodes ever been recorded while you are asleep?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Video-EEG monitoring with simultaneous facial-muscle EMG to determine whether the episodes are epileptic seizures.",
+  "Brain MRI with epilepsy protocol, including thin-cut imaging through the temporal lobes and brainstem.",
+  "Neurologic examination during an observed episode, documenting awareness, eye deviation, limb involvement, and response to commands.",
+  "Prolonged video-EEG with simultaneous **surface EMG electrodes over the bilateral orbicularis oculi, corrugator, nasalis, and orbicularis oris muscles**, capturing several typical episodes.",
+  "Bedside examination for **distractibility, variability, entrainment, and suggestibility** of the facial movements during a typical episode.",
+  "Serum electrolytes, calcium, magnesium, glucose, thyroid-stimulating hormone, and ceruloplasmin.",
+  "Overnight video-polysomnography with extended 10–20 EEG and simultaneous surface EMG of the bilateral orbicularis oculi, corrugator, nasalis, orbicularis oris, and masseter muscles, documenting whether typical movements occur during sleep.",
+  "A monitored therapeutic trial of botulinum toxin type A injected by a movement-disorders specialist into the clinically active facial muscles, beginning with the orbicularis oculi and adding perioral muscles if involved."
+ ],
+ "served": [
+  "needle EMG of the affected muscles",
+  "brain MRI",
+  "mental status / cognitive screen",
+  "limb strength (MRC) examination",
+  "eye movements and reflexes",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "serum copper and caeruloplasmin",
+  "TSH / free T4",
+  "copper / caeruloplasmin / 24 h urinary copper"
+ ],
+ "results": [
+  "R1 ASK Are these facial movements involuntary and difficult to suppress?; Do you experience an uncomfortable urge or tension before making the movements that is relieved afterward?; Do the movements disappear during sleep?; Have you been taking antipsychotic, anti-nausea, or antidepressant medication regularly for several months or longer?; Do you also have involuntary movements of your tongue, jaw, or limbs? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R2 ASK Do the involuntary facial contractions affect both sides of your face equally?; Do they mainly consist of forceful, involuntary squeezing of both eyelids shut?; Can you temporarily reduce the contractions by touching your face, wearing tinted glasses, or performing another “sensory trick”?; Are the contractions worse with bright light, stress, fatigue, or speaking?; Did these symptoms begin gradually, rather than suddenly? -> ['no', 'no', 'no', 'yes', 'no']",
+  "R3 ASK Do the contractions predominantly involve one side of your face, beginning around one eye and spreading downward?; During an episode, do you remain fully conscious and able to respond normally?; Do individual episodes last seconds to minutes and recur in attacks?; Do the movements occur only while you are awake?; Have you had any sudden weakness, numbness, loss of speech, or loss of coordination with these episodes? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ORDER Video-EEG monitoring with simultaneous facial-muscle EMG to determine whether the episodes are epileptic seizures.; Brain MRI with epilepsy protocol, including thin-cut imaging through the temporal lobes and brainstem.; Neurologic examination during an observed episode, documenting awareness, eye deviation, limb involvement, and response to commands. -> [['needle EMG of the affected muscles'], ['brain MRI'], ['mental status / cognitive screen', 'limb strength (MRC) examination', 'eye movements and reflexes']]",
+  "R5 ORDER Prolonged video-EEG with simultaneous **surface EMG electrodes over the bilateral orbicularis oculi, corrugator, nasalis, and orbicularis oris muscles**, capturing several typical episodes.; Bedside examination for **distractibility, variability, entrainment, and suggestibility** of the facial movements during a typical episode.; Serum electrolytes, calcium, magnesium, glucose, thyroid-stimulating hormone, and ceruloplasmin. -> [[], [], ['serum electrolytes, urea and creatinine', 'serum calcium, magnesium and phosphate', 'blood glucose and HbA1c', 'serum copper and caeruloplasmin', 'TSH / free T4', 'copper / caeruloplasmin / 24 h urinary copper']]",
+  "R6 ASK After an episode, are you confused, unusually sleepy, or unable to remember what happened?; Have you ever bitten your tongue or lost bladder control during an episode?; Do the episodes begin with a sudden abnormal sensation, fear, déjà vu, unusual smell, or rising feeling in the stomach?; Do the facial movements occur in brief, stereotyped episodes that are very similar each time?; Have the episodes ever been recorded while you are asleep? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 ORDER Overnight video-polysomnography with extended 10–20 EEG and simultaneous surface EMG of the bilateral orbicularis oculi, corrugator, nasalis, orbicularis oris, and masseter muscles, documenting whether typical movements occur during sleep.; A monitored therapeutic trial of botulinum toxin type A injected by a movement-disorders specialist into the clinically active facial muscles, beginning with the orbicularis oculi and adding perioral muscles if involved. -> [[], []]",
+  "R8 DIAGNOSIS Idiopathic segmental cranial dystonia (Meige syndrome), causing bilateral blepharospasm with orofacial dystonic grimacing; no evidence currently supports a structural, metabolic, medication-induced, or epileptic cause. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are these facial movements involuntary and difficult to suppress?",
+    "Do you experience an uncomfortable urge or tension before making the movements that is relieved afterward?",
+    "Do the movements disappear during sleep?",
+    "Have you been taking antipsychotic, anti-nausea, or antidepressant medication regularly for several months or longer?",
+    "Do you also have involuntary movements of your tongue, jaw, or limbs?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Do the involuntary facial contractions affect both sides of your face equally?",
+    "Do they mainly consist of forceful, involuntary squeezing of both eyelids shut?",
+    "Can you temporarily reduce the contractions by touching your face, wearing tinted glasses, or performing another “sensory trick”?",
+    "Are the contractions worse with bright light, stress, fatigue, or speaking?",
+    "Did these symptoms begin gradually, rather than suddenly?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do the contractions predominantly involve one side of your face, beginning around one eye and spreading downward?",
+    "During an episode, do you remain fully conscious and able to respond normally?",
+    "Do individual episodes last seconds to minutes and recur in attacks?",
+    "Do the movements occur only while you are awake?",
+    "Have you had any sudden weakness, numbness, loss of speech, or loss of coordination with these episodes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Video-EEG monitoring with simultaneous facial-muscle EMG to determine whether the episodes are epileptic seizures.",
+    "Brain MRI with epilepsy protocol, including thin-cut imaging through the temporal lobes and brainstem.",
+    "Neurologic examination during an observed episode, documenting awareness, eye deviation, limb involvement, and response to commands."
+   ],
+   "result": [
+    [
+     "needle EMG of the affected muscles"
+    ],
+    [
+     "brain MRI"
+    ],
+    [
+     "mental status / cognitive screen",
+     "limb strength (MRC) examination",
+     "eye movements and reflexes"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "Prolonged video-EEG with simultaneous **surface EMG electrodes over the bilateral orbicularis oculi, corrugator, nasalis, and orbicularis oris muscles**, capturing several typical episodes.",
+    "Bedside examination for **distractibility, variability, entrainment, and suggestibility** of the facial movements during a typical episode.",
+    "Serum electrolytes, calcium, magnesium, glucose, thyroid-stimulating hormone, and ceruloplasmin."
+   ],
+   "result": [
+    [],
+    [],
+    [
+     "serum electrolytes, urea and creatinine",
+     "serum calcium, magnesium and phosphate",
+     "blood glucose and HbA1c",
+     "serum copper and caeruloplasmin",
+     "TSH / free T4",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "After an episode, are you confused, unusually sleepy, or unable to remember what happened?",
+    "Have you ever bitten your tongue or lost bladder control during an episode?",
+    "Do the episodes begin with a sudden abnormal sensation, fear, déjà vu, unusual smell, or rising feeling in the stomach?",
+    "Do the facial movements occur in brief, stereotyped episodes that are very similar each time?",
+    "Have the episodes ever been recorded while you are asleep?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Overnight video-polysomnography with extended 10–20 EEG and simultaneous surface EMG of the bilateral orbicularis oculi, corrugator, nasalis, orbicularis oris, and masseter muscles, documenting whether typical movements occur during sleep.",
+    "A monitored therapeutic trial of botulinum toxin type A injected by a movement-disorders specialist into the clinically active facial muscles, beginning with the orbicularis oculi and adding perioral muscles if involved."
+   ],
+   "result": [
+    [],
+    []
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Idiopathic segmental cranial dystonia (Meige syndrome), causing bilateral blepharospasm with orofacial dystonic grimacing; no evidence currently supports a structural, metabolic, medication-induced, or epileptic cause."
+  }
+ ],
+ "dx": "Idiopathic segmental cranial dystonia (Meige syndrome), causing bilateral blepharospasm with orofacial dystonic grimacing; no evidence currently supports a structural, metabolic, medication-induced, or epileptic cause.",
+ "dx_raw": "DIAGNOSIS: Idiopathic segmental cranial dystonia (Meige syndrome), causing bilateral blepharospasm with orofacial dystonic grimacing; no evidence currently supports a structural, metabolic, medication-induced, or epileptic cause.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0111,
+ "n_frames": 32,
+ "duration_s": 6.6,
+ "video": "mild_blepharospasm_idiopathic_PMC13049410.mp4",
+ "line": "dystonia",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 70.1
+}

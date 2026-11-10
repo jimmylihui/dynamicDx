@@ -1,0 +1,163 @@
+{
+ "questions": [
+  "Does the shaking occur when your hands are resting?",
+  "Did this start on only one side of your body?",
+  "Do you feel that your movements have become slower?",
+  "Do you feel stiffness in your muscles?",
+  "Have you noticed a loss of your sense of smell?",
+  "Do you act out your dreams while sleeping?",
+  "Do you have trouble with your balance or walking?",
+  "Does the shaking get worse as you reach for an object?",
+  "Have you had a stroke?",
+  "Are you taking any medications for psychiatric conditions?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Finger-to-nose test",
+  "Rapid alternating movements",
+  "Joint position sense examination",
+  "MRI Brain",
+  "Vitamin B12 level",
+  "Thyroid function tests"
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "coordination examination (limb and truncal)",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "brain MRI with contrast",
+  "vitamin B12 with methylmalonic acid",
+  "thyroid function (TSH, free T4)"
+ ],
+ "results": [
+  "1. Finger-to-nose test",
+  "     coordination examination (limb and truncal): normal",
+  "2. Rapid alternating movements",
+  "     coordination examination (limb and truncal): normal",
+  "3. Joint position sense examination",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "4. MRI Brain",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     brain MRI with contrast: normal basal ganglia, no focal lesion",
+  "5. Vitamin B12 level",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "6. Thyroid function tests",
+  "     thyroid function (TSH, free T4): TSH suppressed at <0.01 mIU/L; free T4 elevated at 3.85 ng/dL"
+ ],
+ "dx_raw": "DIAGNOSIS: Hyperthyroidism\n\n1. Apathetic hyperthyroidism\n2. Essential tremor\n3. Toxic multinodular goiter",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Finger-to-nose test\n2. Rapid alternating movements\n3. Joint position sense examination\n4. MRI Brain\n5. Vitamin B12 level\n6. Thyroid function tests",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Hyperthyroidism",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 232,
+   "completion_tokens": 1202,
+   "total_tokens": 1434,
+   "cost": 0.00043188,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00043188,
+    "upstream_inference_prompt_cost": 2.32e-05,
+    "upstream_inference_completions_cost": 0.00040868
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1003,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 672,
+   "completion_tokens": 3210,
+   "total_tokens": 3882,
+   "cost": 0.0011586,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011586,
+    "upstream_inference_prompt_cost": 6.72e-05,
+    "upstream_inference_completions_cost": 0.0010914
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2944,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 977,
+   "completion_tokens": 3407,
+   "total_tokens": 4384,
+   "cost": 0.00125608,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00125608,
+    "upstream_inference_prompt_cost": 9.77e-05,
+    "upstream_inference_completions_cost": 0.00115838
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3293,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11973688.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 252.7
+}

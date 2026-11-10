@@ -1,0 +1,194 @@
+{
+ "questions": [
+  "Do you have a tremor or shaking in your hands?",
+  "Do you feel stiffness in your arms or legs?",
+  "Do you feel slow in your movements?",
+  "Do you have trouble with your balance?",
+  "Do you experience urinary incontinence?",
+  "Do you have problems with your memory?",
+  "Do you have a history of liver disease?",
+  "Do you have a history of psychiatric illness?",
+  "Are you currently taking any antipsychotic medications?",
+  "Do you have a family history of movement disorders?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Brain MRI with and without contrast",
+  "Serum vitamin B12 level",
+  "Serum folate level",
+  "Thyroid function test (TSH)",
+  "Complete blood count",
+  "Comprehensive metabolic panel",
+  "Syphilis serology (RPR/VDRL)",
+  "HIV serology",
+  "Montreal Cognitive Assessment (MoCA)",
+  "Lumbar puncture with opening pressure measurement (if MRI shows ventriculomegaly suggestive of normal pressure hydrocephalus)"
+ ],
+ "served": [
+  "brain MRI",
+  "MRI brain with gadolinium",
+  "vitamin B12 / folate",
+  "vitamin B12 / folate",
+  "serum folate",
+  "TSH / free T4",
+  "full blood count",
+  "renal and liver function",
+  "electrolytes (Na, K, Ca, Mg)",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "blood glucose and HbA1c",
+  "HIV / syphilis serology",
+  "HIV / syphilis serology",
+  "mental status / cognitive screen",
+  "lumbar puncture / CSF",
+  "CSF opening pressure"
+ ],
+ "results": [
+  "1. Brain MRI with and without contrast",
+  "     brain MRI: bilateral symmetric hyperintensity in the mammillary bodies, thalami and periaqueductal midbrain, with the LENTIFORM FORK SIGN; reversed after treatment",
+  "     MRI brain with gadolinium: abnormal; bilateral symmetric mammillary body, thalamic and periaqueductal midbrain hyperintensities with lentiform fork sign",
+  "2. Serum vitamin B12 level",
+  "     vitamin B12 / folate: normal",
+  "3. Serum folate level",
+  "     vitamin B12 / folate: normal",
+  "     serum folate: normal",
+  "4. Thyroid function test (TSH)",
+  "     TSH / free T4: normal",
+  "5. Complete blood count",
+  "     full blood count: normal",
+  "6. Comprehensive metabolic panel",
+  "     renal and liver function: end-stage renal disease on maintenance haemodialysis",
+  "     electrolytes (Na, K, Ca, Mg): normal",
+  "     serum electrolytes, urea and creatinine: abnormal; end-stage renal failure with elevated urea and creatinine",
+  "     liver function tests: normal",
+  "     blood glucose and HbA1c: normal; HbA1c 5.9%",
+  "7. Syphilis serology (RPR/VDRL)",
+  "     HIV / syphilis serology: negative",
+  "8. HIV serology",
+  "     HIV / syphilis serology: negative",
+  "9. Montreal Cognitive Assessment (MoCA)",
+  "     mental status / cognitive screen: MMSE 23/30",
+  "10. Lumbar puncture with opening pressure measurement (if MRI shows ventriculomegaly suggestive of normal pressure hydrocephalus)",
+  "     lumbar puncture / CSF: normal cells, protein and glucose; no oligoclonal bands",
+  "     CSF opening pressure: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Uremic encephalopathy due to end-stage renal disease on maintenance haemodialysis\n\n1. Wernicke (thiamine deficiency) encephalopathy\n2. Hypoxic-ischaemic encephalopathy\n3. Osmotic demyelination syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Brain MRI with and without contrast\n2. Serum vitamin B12 level\n3. Serum folate level\n4. Thyroid function test (TSH)\n5. Complete blood count\n6. Comprehensive metabolic panel\n7. Syphilis serology (RPR/VDRL)\n8. HIV serology\n9. Montreal Cognitive Assessment (MoCA)\n10. Lumbar puncture with opening pressure measurement (if MRI shows ventriculomegaly suggestive of normal pressure hydrocephalus)",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Uremic encephalopathy due to end-stage renal disease on maintenance haemodialysis",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 6565,
+   "total_tokens": 27003,
+   "cost": 0.01398204,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01398204,
+    "upstream_inference_prompt_cost": 0.00610404,
+    "upstream_inference_completions_cost": 0.007878
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6896,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 20849,
+   "completion_tokens": 1556,
+   "total_tokens": 22405,
+   "cost": 0.00324078,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20338,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00324078,
+    "upstream_inference_prompt_cost": 0.00137358,
+    "upstream_inference_completions_cost": 0.0018672
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1580,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 21383,
+   "completion_tokens": 886,
+   "total_tokens": 22269,
+   "cost": 0.00250482,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20722,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00250482,
+    "upstream_inference_prompt_cost": 0.00144162,
+    "upstream_inference_completions_cost": 0.0010632
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 965,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.9,
+ "video": "severe_wernicke_PMC13008232.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 125.4
+}

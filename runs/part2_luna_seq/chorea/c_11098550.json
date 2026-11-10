@@ -1,0 +1,289 @@
+{
+ "questions": [
+  "Are you fully aware of your surroundings during these movements?",
+  "Did these movements begin after you were given a medication for nausea, vomiting, or psychosis?",
+  "Do you have painful muscle spasms triggered by touch, sound, or movement?",
+  "Have you had a recent wound, especially a puncture wound?",
+  "Have you had a fever?",
+  "Can you briefly suppress or stop the movements when you try?",
+  "Do you feel an uncomfortable urge or inner restlessness that is relieved by moving?",
+  "Do the movements disappear completely when you are asleep?",
+  "Did the movements start suddenly within the last few days?",
+  "Have you recently used, stopped, or withdrawn from alcohol, opioids, stimulants, or sedative medications?",
+  "Do you have weakness, numbness, or loss of coordination on one side of your body?",
+  "Do you have a parent, sibling, or child with Huntington disease or unexplained progressive involuntary movements?",
+  "Have you had progressive personality change, depression, irritability, memory problems, or impaired judgment over the past several months or years?",
+  "Have you recently had a sore throat or other infection followed by joint pains, rash, or involuntary movements?",
+  "Have you had episodes of confusion, seizures, memory loss, or abnormal behavior?",
+  "Have you had weight loss, darkening of the skin, persistent nausea or vomiting, dizziness on standing, or unusual salt craving?",
+  "Have you been drinking excessive amounts of water or taking diuretics or other medicines before these movements began?",
+  "Have you had a recent pregnancy, miscarriage, or childbirth?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "yes",
+  "16": "no",
+  "17": "no",
+  "18": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Bedside neurological examination including assessment of tone, reflexes, strength, sensation, coordination, eye movements, and characterization of the involuntary movements during distraction and voluntary tasks",
+  "Serum electrolytes including sodium, potassium, calcium, magnesium, phosphate, bicarbonate, glucose, renal function, and liver enzymes",
+  "Complete blood count, creatine kinase, thyroid-stimulating hormone, vitamin B12, and copper/ceruloplasmin levels",
+  "Urine toxicology screen including stimulants, cocaine, opioids, and sedative-hypnotics",
+  "Brain MRI with diffusion-weighted imaging of the basal ganglia",
+  "EEG, including video-EEG monitoring, to assess for epileptiform activity or an encephalopathic pattern",
+  "Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, oligoclonal bands, IgG index, and microbiological studies",
+  "Serum and CSF autoimmune encephalitis antibody panel, specifically including anti–NMDA receptor (GluN1), LGI1, CASPR2, GABA-B, AMPA, and DPPX antibodies",
+  "Pelvic ultrasound or pelvic MRI to evaluate for an ovarian teratoma",
+  "Serum cortisol and ACTH, serum and urine osmolality, and urine sodium to characterize the hyponatremia and exclude endocrine causes",
+  "Contrast-enhanced MRI of the pituitary and hypothalamus, including dedicated sellar sequences, to evaluate for pituitary or hypothalamic structural disease",
+  "Measure serum 8 AM cortisol, free T4, TSH, IGF-1, LH, FSH, estradiol, and repeat ACTH and prolactin",
+  "Dynamic ACTH (cosyntropin) stimulation test, with cortisol measured at baseline, 30 minutes, and 60 minutes",
+  "Serum antidiuretic hormone (copeptin, if available) and urine osmolality with urine sodium obtained simultaneously with serum osmolality and sodium"
+ ],
+ "served": [
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "effect of voluntary action and anxiety",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose",
+  "full blood count",
+  "creatine kinase",
+  "thyroid function (TSH, free T4)",
+  "vitamin B12 with methylmalonic acid",
+  "copper / caeruloplasmin",
+  "toxicology screen (urine and serum)",
+  "MRI diffusion-weighted sequences",
+  "EEG",
+  "lumbar puncture / CSF",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF culture and viral PCR",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "CSF autoimmune encephalitis panel",
+  "autoimmune encephalopathy / paraneoplastic antibody panel",
+  "sodium and serum osmolality",
+  "morning cortisol, ACTH and pituitary hormones",
+  "brain MRI with contrast"
+ ],
+ "results": [
+  "R1 ASK Are you fully aware of your surroundings during these movements?; Did these movements begin after you were given a medication for nausea, vomiting, or psychosis?; Do you have painful muscle spasms triggered by touch, sound, or movement?; Have you had a recent wound, especially a puncture wound?; Have you had a fever? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R2 ASK Can you briefly suppress or stop the movements when you try?; Do you feel an uncomfortable urge or inner restlessness that is relieved by moving?; Do the movements disappear completely when you are asleep?; Did the movements start suddenly within the last few days?; Have you recently used, stopped, or withdrawn from alcohol, opioids, stimulants, or sedative medications?; Do you have weakness, numbness, or loss of coordination on one side of your body? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R3 ORDER Bedside neurological examination including assessment of tone, reflexes, strength, sensation, coordination, eye movements, and characterization of the involuntary movements during distraction and voluntary tasks; Serum electrolytes including sodium, potassium, calcium, magnesium, phosphate, bicarbonate, glucose, renal function, and liver enzymes; Complete blood count, creatine kinase, thyroid-stimulating hormone, vitamin B12, and copper/ceruloplasmin levels; Urine toxicology screen including stimulants, cocaine, opioids, and sedative-hypnotics; Brain MRI with diffusion-weighted imaging of the basal ganglia -> [['muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'effect of voluntary action and anxiety'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'serum calcium, magnesium and phosphate', 'blood glucose'], ['full blood count', 'creatine kinase', 'thyroid function (TSH, free T4)', 'vitamin B12 with methylmalonic acid', 'copper / caeruloplasmin'], ['toxicology screen (urine and serum)'], ['MRI diffusion-weighted sequences']]",
+  "R4 ASK Do you have a parent, sibling, or child with Huntington disease or unexplained progressive involuntary movements?; Have you had progressive personality change, depression, irritability, memory problems, or impaired judgment over the past several months or years?; Have you recently had a sore throat or other infection followed by joint pains, rash, or involuntary movements?; Have you had episodes of confusion, seizures, memory loss, or abnormal behavior?; Have you had weight loss, darkening of the skin, persistent nausea or vomiting, dizziness on standing, or unusual salt craving?; Have you been drinking excessive amounts of water or taking diuretics or other medicines before these movements began?; Have you had a recent pregnancy, miscarriage, or childbirth? -> ['no', 'yes', 'no', 'yes', 'no', 'no', 'no']",
+  "R5 ORDER EEG, including video-EEG monitoring, to assess for epileptiform activity or an encephalopathic pattern; Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, oligoclonal bands, IgG index, and microbiological studies; Serum and CSF autoimmune encephalitis antibody panel, specifically including anti–NMDA receptor (GluN1), LGI1, CASPR2, GABA-B, AMPA, and DPPX antibodies; Pelvic ultrasound or pelvic MRI to evaluate for an ovarian teratoma; Serum cortisol and ACTH, serum and urine osmolality, and urine sodium to characterize the hyponatremia and exclude endocrine causes -> [['EEG'], ['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF culture and viral PCR'], ['serum paraneoplastic / neuronal autoantibody panel', 'CSF autoimmune encephalitis panel', 'autoimmune encephalopathy / paraneoplastic antibody panel'], [], ['sodium and serum osmolality', 'morning cortisol, ACTH and pituitary hormones']]",
+  "R6 ORDER Contrast-enhanced MRI of the pituitary and hypothalamus, including dedicated sellar sequences, to evaluate for pituitary or hypothalamic structural disease; Measure serum 8 AM cortisol, free T4, TSH, IGF-1, LH, FSH, estradiol, and repeat ACTH and prolactin; Dynamic ACTH (cosyntropin) stimulation test, with cortisol measured at baseline, 30 minutes, and 60 minutes; Serum antidiuretic hormone (copeptin, if available) and urine osmolality with urine sodium obtained simultaneously with serum osmolality and sodium -> [['brain MRI with contrast'], ['thyroid function (TSH, free T4)', 'morning cortisol, ACTH and pituitary hormones'], [], ['sodium and serum osmolality']]",
+  "R7 DIAGNOSIS Acquired generalized chorea caused by hypopituitarism from empty-sella syndrome—particularly secondary adrenal insufficiency with central hypothyroidism, producing euvolemic hypotonic hyponatremia and neuropsychiatric symptoms. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you fully aware of your surroundings during these movements?",
+    "Did these movements begin after you were given a medication for nausea, vomiting, or psychosis?",
+    "Do you have painful muscle spasms triggered by touch, sound, or movement?",
+    "Have you had a recent wound, especially a puncture wound?",
+    "Have you had a fever?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Can you briefly suppress or stop the movements when you try?",
+    "Do you feel an uncomfortable urge or inner restlessness that is relieved by moving?",
+    "Do the movements disappear completely when you are asleep?",
+    "Did the movements start suddenly within the last few days?",
+    "Have you recently used, stopped, or withdrawn from alcohol, opioids, stimulants, or sedative medications?",
+    "Do you have weakness, numbness, or loss of coordination on one side of your body?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Bedside neurological examination including assessment of tone, reflexes, strength, sensation, coordination, eye movements, and characterization of the involuntary movements during distraction and voluntary tasks",
+    "Serum electrolytes including sodium, potassium, calcium, magnesium, phosphate, bicarbonate, glucose, renal function, and liver enzymes",
+    "Complete blood count, creatine kinase, thyroid-stimulating hormone, vitamin B12, and copper/ceruloplasmin levels",
+    "Urine toxicology screen including stimulants, cocaine, opioids, and sedative-hypnotics",
+    "Brain MRI with diffusion-weighted imaging of the basal ganglia"
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "limb strength (MRC) examination",
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)",
+     "effect of voluntary action and anxiety"
+    ],
+    [
+     "serum electrolytes, urea and creatinine",
+     "liver function tests",
+     "serum calcium, magnesium and phosphate",
+     "blood glucose"
+    ],
+    [
+     "full blood count",
+     "creatine kinase",
+     "thyroid function (TSH, free T4)",
+     "vitamin B12 with methylmalonic acid",
+     "copper / caeruloplasmin"
+    ],
+    [
+     "toxicology screen (urine and serum)"
+    ],
+    [
+     "MRI diffusion-weighted sequences"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a parent, sibling, or child with Huntington disease or unexplained progressive involuntary movements?",
+    "Have you had progressive personality change, depression, irritability, memory problems, or impaired judgment over the past several months or years?",
+    "Have you recently had a sore throat or other infection followed by joint pains, rash, or involuntary movements?",
+    "Have you had episodes of confusion, seizures, memory loss, or abnormal behavior?",
+    "Have you had weight loss, darkening of the skin, persistent nausea or vomiting, dizziness on standing, or unusual salt craving?",
+    "Have you been drinking excessive amounts of water or taking diuretics or other medicines before these movements began?",
+    "Have you had a recent pregnancy, miscarriage, or childbirth?"
+   ],
+   "result": [
+    "no",
+    "yes",
+    "no",
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "order",
+   "items": [
+    "EEG, including video-EEG monitoring, to assess for epileptiform activity or an encephalopathic pattern",
+    "Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, oligoclonal bands, IgG index, and microbiological studies",
+    "Serum and CSF autoimmune encephalitis antibody panel, specifically including anti–NMDA receptor (GluN1), LGI1, CASPR2, GABA-B, AMPA, and DPPX antibodies",
+    "Pelvic ultrasound or pelvic MRI to evaluate for an ovarian teratoma",
+    "Serum cortisol and ACTH, serum and urine osmolality, and urine sodium to characterize the hyponatremia and exclude endocrine causes"
+   ],
+   "result": [
+    [
+     "EEG"
+    ],
+    [
+     "lumbar puncture / CSF",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF culture and viral PCR"
+    ],
+    [
+     "serum paraneoplastic / neuronal autoantibody panel",
+     "CSF autoimmune encephalitis panel",
+     "autoimmune encephalopathy / paraneoplastic antibody panel"
+    ],
+    [],
+    [
+     "sodium and serum osmolality",
+     "morning cortisol, ACTH and pituitary hormones"
+    ]
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Contrast-enhanced MRI of the pituitary and hypothalamus, including dedicated sellar sequences, to evaluate for pituitary or hypothalamic structural disease",
+    "Measure serum 8 AM cortisol, free T4, TSH, IGF-1, LH, FSH, estradiol, and repeat ACTH and prolactin",
+    "Dynamic ACTH (cosyntropin) stimulation test, with cortisol measured at baseline, 30 minutes, and 60 minutes",
+    "Serum antidiuretic hormone (copeptin, if available) and urine osmolality with urine sodium obtained simultaneously with serum osmolality and sodium"
+   ],
+   "result": [
+    [
+     "brain MRI with contrast"
+    ],
+    [
+     "thyroid function (TSH, free T4)",
+     "morning cortisol, ACTH and pituitary hormones"
+    ],
+    [],
+    [
+     "sodium and serum osmolality"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "diagnosis",
+   "text": "Acquired generalized chorea caused by hypopituitarism from empty-sella syndrome—particularly secondary adrenal insufficiency with central hypothyroidism, producing euvolemic hypotonic hyponatremia and neuropsychiatric symptoms."
+  }
+ ],
+ "dx": "Acquired generalized chorea caused by hypopituitarism from empty-sella syndrome—particularly secondary adrenal insufficiency with central hypothyroidism, producing euvolemic hypotonic hyponatremia and neuropsychiatric symptoms.",
+ "dx_raw": "DIAGNOSIS: Acquired generalized chorea caused by hypopituitarism from empty-sella syndrome—particularly secondary adrenal insufficiency with central hypothyroidism, producing euvolemic hypotonic hyponatremia and neuropsychiatric symptoms.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 6,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "brain MRI with contrast",
+  "morning cortisol, ACTH and pituitary hormones",
+  "sodium and serum osmolality"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.0093,
+ "n_frames": 32,
+ "duration_s": 16.2,
+ "video": "c_11098550.mp4",
+ "line": "chorea",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 75.9
+}

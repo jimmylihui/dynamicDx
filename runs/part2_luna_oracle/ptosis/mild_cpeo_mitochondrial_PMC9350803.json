@@ -1,0 +1,134 @@
+{
+ "questions": [
+  "Are your eyes moving involuntarily even when you try to keep them still?",
+  "Did these abnormal eye movements begin suddenly?",
+  "Have you had them before this episode?",
+  "Do the episodes come and go?",
+  "Do they worsen when you look to either side?",
+  "Do you see double during these episodes?",
+  "Do you have blurred or reduced vision?",
+  "Do you feel dizzy or as though the room is spinning?",
+  "Do you have trouble walking or keeping your balance?",
+  "Do you have a new severe headache?",
+  "Do you have weakness, numbness, facial drooping, or difficulty speaking?",
+  "Have you recently had a head injury?",
+  "Have you recently had a fever or infection?",
+  "Have you started or increased any medication recently?",
+  "Have you taken anti-nausea, psychiatric, seizure, or recreational drugs recently?",
+  "Do you have a history of thyroid disease?",
+  "Do you have a history of seizures or other neurological disease?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [],
+ "served": [
+  "repetitive nerve stimulation",
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "MRI orbits",
+  "trial of pyridostigmine and prednisolone"
+ ],
+ "results": [
+  "1. repetitive nerve stimulation: decremental response",
+  "2. ice-pack test: POSITIVE",
+  "3. anti-acetylcholine receptor antibodies: 10.32 nmol/L (normal <0.50) - strongly POSITIVE",
+  "4. MRI orbits: SEVERE THINNING of all extraocular muscles; exotropia of the right eye",
+  "5. trial of pyridostigmine and prednisolone: ptosis and limb weakness improved; the ophthalmoparesis did NOT"
+ ],
+ "dx_raw": "DIAGNOSIS: Anti-acetylcholine-receptor antibody–mediated autoimmune generalized myasthenia gravis with chronic ocular involvement causing severe extraocular-muscle atrophy and fixed right exotropia\n\nALTERNATIVE: Chronic progressive external ophthalmoplegia due to mitochondrial myopathy\n\nALTERNATIVE: Thyroid-associated orbitopathy\n\nALTERNATIVE: Other chronic external ophthalmoplegia from an ocular motor neuropathy or myopathy",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Anti-acetylcholine-receptor antibody–mediated autoimmune generalized myasthenia gravis with chronic ocular involvement causing severe extraocular-muscle atrophy and fixed right exotropia",
+ "decisive_served": [
+  "repetitive nerve stimulation",
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "MRI orbits",
+  "trial of pyridostigmine and prednisolone"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 562,
+   "total_tokens": 6238,
+   "cost": 0.00039423,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00039423,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.0003372
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 331,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6394,
+   "completion_tokens": 395,
+   "total_tokens": 6789,
+   "cost": 0.00038378,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 718,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00038378,
+    "upstream_inference_prompt_cost": 0.00014678,
+    "upstream_inference_completions_cost": 0.000237
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 301,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "mild_cpeo_mitochondrial_PMC9350803.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 15.7
+}

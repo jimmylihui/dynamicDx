@@ -1,0 +1,157 @@
+{
+ "questions": [
+  "Are you experiencing pain in your legs or feet?",
+  "Do you feel unsteady or like you might fall when walking?",
+  "Have you noticed any weakness in your legs?",
+  "Do you have a history of diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "yes",
+  "4": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Gait and balance assessment including tandem gait, Romberg test, and heel-toe walking",
+  "Neurological examination of lower limbs including muscle strength testing, deep tendon reflexes, Babinski sign, and sensory testing (vibration, proprioception, pinprick)",
+  "Complete blood count with differential, comprehensive metabolic panel, vitamin B12 level, folate level, thyroid function tests, and hemoglobin A1c",
+  "MRI of the brain and entire spine"
+ ],
+ "served": [
+  "tandem gait",
+  "Romberg test, repeated with distraction",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "MRC power in all four limbs",
+  "full blood count, renal and liver profile",
+  "vitamin B12 and vitamin E",
+  "serum folate",
+  "TSH / free T4",
+  "glucose / HbA1c",
+  "MRI brain",
+  "MRI cervical and thoracic spine"
+ ],
+ "results": [
+  "1. Gait and balance assessment including tandem gait, Romberg test, and heel-toe walking",
+  "     tandem gait: normal",
+  "     Romberg test, repeated with distraction: negative",
+  "2. Neurological examination of lower limbs including muscle strength testing, deep tendon reflexes, Babinski sign, and sensory testing (vibration, proprioception, pinprick)",
+  "     deep tendon reflexes and plantar responses: normal, flexor plantars",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     MRC power in all four limbs: 5/5 throughout - a slow controlled descent of this kind requires intact quadriceps strength",
+  "3. Complete blood count with differential, comprehensive metabolic panel, vitamin B12 level, folate level, thyroid function tests, and hemoglobin A1c",
+  "     full blood count, renal and liver profile: normal",
+  "     vitamin B12 and vitamin E: normal",
+  "     serum folate: normal",
+  "     TSH / free T4: normal",
+  "     glucose / HbA1c: normal",
+  "4. MRI of the brain and entire spine",
+  "     MRI brain: normal",
+  "     MRI cervical and thoracic spine: normal cord, no compression"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological disorder (functional gait disorder)\nAlternative diagnosis: Cerebellar ataxia\nAlternative diagnosis: Vestibular dysfunction",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Gait and balance assessment including tandem gait, Romberg test, and heel-toe walking\n2. Neurological examination of lower limbs including muscle strength testing, deep tendon reflexes, Babinski sign, and sensory testing (vibration, proprioception, pinprick)\n3. Complete blood count with differential, comprehensive metabolic panel, vitamin B12 level, folate level, thyroid function tests, and hemoglobin A1c\n4. MRI of the brain and entire spine",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Functional neurological disorder (functional gait disorder)",
+ "decisive_served": [
+  "MRC power in all four limbs"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 344,
+   "completion_tokens": 52,
+   "total_tokens": 396,
+   "cost": 7.604e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.604e-05,
+    "upstream_inference_prompt_cost": 5.16e-05,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 617,
+   "completion_tokens": 102,
+   "total_tokens": 719,
+   "cost": 0.00014049,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00014049,
+    "upstream_inference_prompt_cost": 9.255e-05,
+    "upstream_inference_completions_cost": 4.794e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1071,
+   "completion_tokens": 35,
+   "total_tokens": 1106,
+   "cost": 0.000125644,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000125644,
+    "upstream_inference_prompt_cost": 0.000109194,
+    "upstream_inference_completions_cost": 1.645e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 9.1
+}

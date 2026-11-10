@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Is the bruising around your eyes from a recent injury?",
+  "Did you hit your head during this injury?",
+  "Are you currently experiencing double vision?",
+  "Do you have difficulty moving one or both of your eyes upward?",
+  "Have you had any previous eye surgeries?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "CT scan of the orbits and brain with thin cuts",
+  "MRI of the brain and orbits with contrast",
+  "Lumbar puncture"
+ ],
+ "served": [
+  "CT head (non-contrast)",
+  "MRI sella and orbits",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. CT scan of the orbits and brain with thin cuts",
+  "     CT head (non-contrast): multiple skull fractures and epidural haemorrhage; NO evidence of brainstem injury",
+  "2. MRI of the brain and orbits with contrast",
+  "     MRI sella and orbits: subtle MEDIAL ORBITAL WALL FRACTURE with medial rectus involvement; no brainstem pathology",
+  "3. Lumbar puncture",
+  "     lumbar puncture / CSF: normal cells and protein; no oligoclonal bands"
+ ],
+ "dx_raw": "DIAGNOSIS: Traumatic medial rectus muscle entrapment secondary to a medial orbital wall (lamina papyracea) fracture\n\n1. Traumatic oculomotor nerve (CN III) palsy\n2. Orbital compartment syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. CT scan of the orbits and brain with thin cuts\n2. MRI of the brain and orbits with contrast\n3. Lumbar puncture",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Traumatic medial rectus muscle entrapment secondary to a medial orbital wall (lamina papyracea) fracture",
+ "decisive_served": [
+  "CT head (non-contrast)",
+  "MRI sella and orbits"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 3287,
+   "completion_tokens": 64,
+   "total_tokens": 3351,
+   "cost": 0.00052313,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00052313,
+    "upstream_inference_prompt_cost": 0.00049305,
+    "upstream_inference_completions_cost": 3.008e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 3588,
+   "completion_tokens": 31,
+   "total_tokens": 3619,
+   "cost": 0.000158274,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 2944,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000158274,
+    "upstream_inference_prompt_cost": 0.000143704,
+    "upstream_inference_completions_cost": 1.457e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 3825,
+   "completion_tokens": 52,
+   "total_tokens": 3877,
+   "cost": 0.000135086,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 3456,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000135086,
+    "upstream_inference_prompt_cost": 0.000110646,
+    "upstream_inference_completions_cost": 2.444e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 12.5
+}

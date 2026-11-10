@@ -1,0 +1,110 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does the double vision disappear when you cover either eye?",
+  "Have you noticed your eyelids drooping, particularly later in the day or after reading/watching TV?",
+  "Do you have a history of diabetes or high blood pressure?",
+  "Do you have a headache?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Fundoscopy",
+  "Erythrocyte sedimentation rate"
+ ],
+ "served": [
+  "fundoscopy",
+  "ESR / CRP"
+ ],
+ "results": [
+  "R1 ASK Do you have double vision?; Does the double vision disappear when you cover either eye?; Have you noticed your eyelids drooping, particularly later in the day or after reading/watching TV?; Do you have a history of diabetes or high blood pressure? -> ['yes', 'no', 'no', 'no']",
+  "R2 ORDER Fundoscopy -> [['fundoscopy']]",
+  "R3 ASK Do you have a headache? -> ['no']",
+  "R4 ORDER Erythrocyte sedimentation rate -> [['ESR / CRP']]",
+  "R5 DIAGNOSIS Idiopathic intracranial hypertension -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have double vision?",
+    "Does the double vision disappear when you cover either eye?",
+    "Have you noticed your eyelids drooping, particularly later in the day or after reading/watching TV?",
+    "Do you have a history of diabetes or high blood pressure?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Fundoscopy"
+   ],
+   "result": [
+    [
+     "fundoscopy"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have a headache?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Erythrocyte sedimentation rate"
+   ],
+   "result": [
+    [
+     "ESR / CRP"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Idiopathic intracranial hypertension"
+  }
+ ],
+ "dx": "Idiopathic intracranial hypertension",
+ "dx_raw": "DIAGNOSIS: Idiopathic intracranial hypertension",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0034,
+ "n_frames": 32,
+ "duration_s": 20.2,
+ "video": "severe_3_oculomotor_palsy_PMC12745546.mp4",
+ "line": "vertigo_central",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 33.2
+}

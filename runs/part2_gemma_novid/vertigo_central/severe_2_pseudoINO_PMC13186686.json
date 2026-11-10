@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Are you experiencing chest pain?",
+  "Are you having difficulty breathing?",
+  "Have you lost consciousness?",
+  "Do you have a severe, sudden-onset headache?",
+  "Do you have a fever?",
+  "Are you experiencing severe abdominal pain?",
+  "Have you noticed sudden weakness or numbness in your limbs?",
+  "Is your primary symptom related to your digestive system?",
+  "Is your primary symptom related to your musculoskeletal system?",
+  "Is your primary symptom related to your skin?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Electrocardiogram (ECG)",
+  "Blood glucose level",
+  "Orthostatic blood pressure measurement",
+  "Serum electrolytes",
+  "Brain CT scan"
+ ],
+ "served": [
+  "blood glucose and HbA1c",
+  "glucose / HbA1c",
+  "serum electrolytes, urea and creatinine",
+  "CT head (non-contrast)"
+ ],
+ "results": [
+  "1. Electrocardiogram (ECG)",
+  "     not performed / not available",
+  "2. Blood glucose level",
+  "     blood glucose and HbA1c: normal",
+  "     glucose / HbA1c: normal",
+  "3. Orthostatic blood pressure measurement",
+  "     not performed / not available",
+  "4. Serum electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "5. Brain CT scan",
+  "     CT head (non-contrast): multiple skull fractures and epidural haemorrhage; NO evidence of brainstem injury"
+ ],
+ "dx_raw": "DIAGNOSIS: Epidural hemorrhage due to traumatic head injury\nSubdural hematoma\nTraumatic brain injury\nIntracerebral hemorrhage",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Electrocardiogram (ECG)\n2. Blood glucose level\n3. Orthostatic blood pressure measurement\n4. Serum electrolytes\n5. Brain CT scan",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Epidural hemorrhage due to traumatic head injury",
+ "decisive_served": [
+  "CT head (non-contrast)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 155,
+   "completion_tokens": 2386,
+   "total_tokens": 2541,
+   "cost": 0.00082674,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00082674,
+    "upstream_inference_prompt_cost": 1.55e-05,
+    "upstream_inference_completions_cost": 0.00081124
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2342,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 565,
+   "completion_tokens": 1183,
+   "total_tokens": 1748,
+   "cost": 0.00045872,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 160,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00045872,
+    "upstream_inference_prompt_cost": 5.65e-05,
+    "upstream_inference_completions_cost": 0.00040222
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1117,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 801,
+   "completion_tokens": 631,
+   "total_tokens": 1432,
+   "cost": 0.00029464,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 544,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00029464,
+    "upstream_inference_prompt_cost": 8.01e-05,
+    "upstream_inference_completions_cost": 0.00021454
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 631,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 17.8,
+ "video": "severe_2_pseudoINO_PMC13186686.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 439.5
+}

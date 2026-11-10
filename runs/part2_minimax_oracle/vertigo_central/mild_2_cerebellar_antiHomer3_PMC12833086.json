@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Do you have pain in your eyes?",
+  "Have you noticed your eyes protruding?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you have any drooping of your eyelids?",
+  "Do you have palpitations?",
+  "Have you lost weight without trying?",
+  "Do you have tremors in your hands?",
+  "Do you have a family history of thyroid disease?",
+  "Do you have any numbness or tingling?",
+  "Do you have any difficulty swallowing?",
+  "Do you feel dizzy when you look to the side?",
+  "Do your eyes feel dry or gritty?",
+  "Do you have any neck swelling?",
+  "Do you have any headaches?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CSF metagenomic sequencing",
+  "immunotherapy trial"
+ ],
+ "results": [
+  "1. paraneoplastic and autoimmune antibody panel (serum): anti-Homer3 antibodies POSITIVE",
+  "2. CSF metagenomic sequencing: eight sequences of HUMAN HERPESVIRUS 7",
+  "3. immunotherapy trial: dizziness and gait improved with immunotherapy; relapse prompted rituximab, with partial improvement"
+ ],
+ "dx_raw": "DIAGNOSIS: Anti-Homer3 antibody-associated autoimmune cerebellitis/brainstem encephalitis, likely triggered by HHV-7 reactivation (post-infectious autoimmune encephalitis).\n1. Paraneoplastic cerebellar degeneration with anti-Homer3 antibodies (occult malignancy, e.g., lung adenocarcinoma, not yet identified).\n2. Primary HHV-7 encephalitis with secondary autoimmune response.\n3. Other antibody-mediated encephalitis (e.g., anti-mGluR1, anti-CASPR2, or anti-ITPR1) with HHV-7 as an incidental or contributing factor.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Anti-Homer3 antibody-associated autoimmune cerebellitis/brainstem encephalitis, likely triggered by HHV-7 reactivation (post-infectious autoimmune encephalitis).",
+ "decisive_served": [
+  "paraneoplastic and autoimmune antibody panel (serum)",
+  "CSF metagenomic sequencing",
+  "immunotherapy trial"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 15167,
+   "total_tokens": 22229,
+   "cost": 0.02028132,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.02028132,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0182004
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 15017,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7597,
+   "completion_tokens": 1431,
+   "total_tokens": 9028,
+   "cost": 0.00230502,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00230502,
+    "upstream_inference_prompt_cost": 0.00058782,
+    "upstream_inference_completions_cost": 0.0017172
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1310,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.4,
+ "video": "mild_2_cerebellar_antiHomer3_PMC12833086.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 193.4
+}

@@ -1,0 +1,223 @@
+{
+ "questions": [
+  "Do you have involuntary twisting or turning movements of your neck that you cannot stop or control?",
+  "Do these movements cause you any pain or discomfort?",
+  "Did these symptoms begin suddenly, or have they developed gradually over weeks to months?",
+  "Have you taken any new medications (like antipsychotics, anti-nausea drugs) in the past few weeks before these movements started?",
+  "Did these neck movements start when you were a child or teenager?",
+  "Do you have any family members with similar movements or any neurological condition?",
+  "Do you ever notice your hands shaking or any other unusual movements?",
+  "Have you ever been told you have any liver problems?",
+  "Has the abnormal movement ever affected any other body part besides your neck, like your arm, leg, or jaw?",
+  "Do the neck movements stop completely when you are sleeping?",
+  "Has anyone in your extended family (aunts, uncles, cousins) ever had similar involuntary movements, even if mild?",
+  "Have you ever tried any treatment for these movements, such as injections or medications?",
+  "Do the movements seem to get worse during times of stress or anxiety?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Passive range of motion of the neck - test rotation, lateral bending, and extension/flexion",
+  "Palpation and inspection of the sternocleidomastoid muscles bilaterally for any tightness, fibrosis, or asymmetry",
+  "Cervical spine X-ray (AP, lateral, and open-mouth odontoid views)",
+  "Complete liver function tests (AST, ALT, alkaline phosphatase, bilirubin, albumin)",
+  "24-hour urinary copper excretion",
+  "Serum copper level",
+  "Brain MRI with specific attention to basal ganglia (T1, T2, FLAIR, SWI) - looking for brain iron accumulation, structural abnormalities, or atrophy patterns",
+  "Beta-galactosidase enzyme activity assay (leukocytes or fibroblasts)",
+  "GLB1 gene mutation analysis"
+ ],
+ "served": [
+  "muscle tone examination",
+  "liver function",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "serum copper and caeruloplasmin",
+  "MRI susceptibility-weighted sequences",
+  "brain MRI",
+  "lysosomal enzyme assay (beta-galactosidase, hexosaminidase)",
+  "dystonia gene panel"
+ ],
+ "results": [
+  "R1 ASK Do you have involuntary twisting or turning movements of your neck that you cannot stop or control?; Do these movements cause you any pain or discomfort?; Did these symptoms begin suddenly, or have they developed gradually over weeks to months?; Have you taken any new medications (like antipsychotics, anti-nausea drugs) in the past few weeks before these movements started? -> ['no', 'no', 'no', 'no']",
+  "R2 ORDER Passive range of motion of the neck - test rotation, lateral bending, and extension/flexion; Palpation and inspection of the sternocleidomastoid muscles bilaterally for any tightness, fibrosis, or asymmetry; Cervical spine X-ray (AP, lateral, and open-mouth odontoid views) -> [[], ['muscle tone examination'], []]",
+  "R3 ASK Did these neck movements start when you were a child or teenager?; Do you have any family members with similar movements or any neurological condition?; Do you ever notice your hands shaking or any other unusual movements?; Have you ever been told you have any liver problems? -> ['yes', 'no', 'yes', 'no']",
+  "R4 ORDER Complete liver function tests (AST, ALT, alkaline phosphatase, bilirubin, albumin); 24-hour urinary copper excretion; Serum copper level -> [['liver function'], ['24-hour urinary copper', 'copper / caeruloplasmin / 24 h urinary copper'], ['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper']]",
+  "R5 ASK Has the abnormal movement ever affected any other body part besides your neck, like your arm, leg, or jaw?; Do the neck movements stop completely when you are sleeping?; Has anyone in your extended family (aunts, uncles, cousins) ever had similar involuntary movements, even if mild?; Have you ever tried any treatment for these movements, such as injections or medications? -> ['yes', 'no', 'no', 'no']",
+  "R6 ASK Do the movements seem to get worse during times of stress or anxiety? -> ['no']",
+  "R7 ORDER Brain MRI with specific attention to basal ganglia (T1, T2, FLAIR, SWI) - looking for brain iron accumulation, structural abnormalities, or atrophy patterns -> [['MRI susceptibility-weighted sequences', 'brain MRI']]",
+  "R8 ORDER Beta-galactosidase enzyme activity assay (leukocytes or fibroblasts); GLB1 gene mutation analysis -> [['lysosomal enzyme assay (beta-galactosidase, hexosaminidase)'], ['dystonia gene panel']]",
+  "R9 DIAGNOSIS GM1 gangliosidosis type III (late-onset) due to biallelic GLB1 gene mutations, causing partial deficiency of beta-galactosidase enzyme with residual activity of 5-10%, presenting as generalized dystonia with onset in childhood/adolescence. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you have involuntary twisting or turning movements of your neck that you cannot stop or control?",
+    "Do these movements cause you any pain or discomfort?",
+    "Did these symptoms begin suddenly, or have they developed gradually over weeks to months?",
+    "Have you taken any new medications (like antipsychotics, anti-nausea drugs) in the past few weeks before these movements started?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Passive range of motion of the neck - test rotation, lateral bending, and extension/flexion",
+    "Palpation and inspection of the sternocleidomastoid muscles bilaterally for any tightness, fibrosis, or asymmetry",
+    "Cervical spine X-ray (AP, lateral, and open-mouth odontoid views)"
+   ],
+   "result": [
+    [],
+    [
+     "muscle tone examination"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Did these neck movements start when you were a child or teenager?",
+    "Do you have any family members with similar movements or any neurological condition?",
+    "Do you ever notice your hands shaking or any other unusual movements?",
+    "Have you ever been told you have any liver problems?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Complete liver function tests (AST, ALT, alkaline phosphatase, bilirubin, albumin)",
+    "24-hour urinary copper excretion",
+    "Serum copper level"
+   ],
+   "result": [
+    [
+     "liver function"
+    ],
+    [
+     "24-hour urinary copper",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "serum copper and caeruloplasmin",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Has the abnormal movement ever affected any other body part besides your neck, like your arm, leg, or jaw?",
+    "Do the neck movements stop completely when you are sleeping?",
+    "Has anyone in your extended family (aunts, uncles, cousins) ever had similar involuntary movements, even if mild?",
+    "Have you ever tried any treatment for these movements, such as injections or medications?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do the movements seem to get worse during times of stress or anxiety?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Brain MRI with specific attention to basal ganglia (T1, T2, FLAIR, SWI) - looking for brain iron accumulation, structural abnormalities, or atrophy patterns"
+   ],
+   "result": [
+    [
+     "MRI susceptibility-weighted sequences",
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Beta-galactosidase enzyme activity assay (leukocytes or fibroblasts)",
+    "GLB1 gene mutation analysis"
+   ],
+   "result": [
+    [
+     "lysosomal enzyme assay (beta-galactosidase, hexosaminidase)"
+    ],
+    [
+     "dystonia gene panel"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "GM1 gangliosidosis type III (late-onset) due to biallelic GLB1 gene mutations, causing partial deficiency of beta-galactosidase enzyme with residual activity of 5-10%, presenting as generalized dystonia with onset in childhood/adolescence."
+  }
+ ],
+ "dx": "GM1 gangliosidosis type III (late-onset) due to biallelic GLB1 gene mutations, causing partial deficiency of beta-galactosidase enzyme with residual activity of 5-10%, presenting as generalized dystonia with onset in childhood/adolescence.",
+ "dx_raw": "DIAGNOSIS: GM1 gangliosidosis type III (late-onset) due to biallelic GLB1 gene mutations, causing partial deficiency of beta-galactosidase enzyme with residual activity of 5-10%, presenting as generalized dystonia with onset in childhood/adolescence.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "dystonia gene panel",
+  "lysosomal enzyme assay (beta-galactosidase, hexosaminidase)"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0022,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_PMC12904113.mp4",
+ "line": "dystonia",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 210.6
+}

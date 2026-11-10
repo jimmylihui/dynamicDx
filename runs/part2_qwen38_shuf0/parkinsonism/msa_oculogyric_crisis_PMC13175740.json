@@ -1,0 +1,137 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does the double vision disappear when you cover one eye?",
+  "Did this problem start suddenly?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of high blood pressure?",
+  "Do you have pain in or behind your eye?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Ice pack test",
+  "Serum acetylcholine receptor antibodies",
+  "CT chest with contrast"
+ ],
+ "served": [
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "CT chest / abdomen / pelvis (tumour search)"
+ ],
+ "results": [
+  "1. Ice pack test",
+  "     not performed / not available",
+  "2. Serum acetylcholine receptor antibodies",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "3. CT chest with contrast",
+  "     CT chest / abdomen / pelvis (tumour search): no malignancy"
+ ],
+ "dx_raw": "DIAGNOSIS: Chronic Progressive External Ophthalmoplegia (CPEO)\nMyasthenia Gravis\nThyroid Eye Disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Ice pack test\n2. Serum acetylcholine receptor antibodies\n3. CT chest with contrast",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Chronic Progressive External Ophthalmoplegia (CPEO)",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 69,
+   "total_tokens": 4892,
+   "cost": 0.00075588,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00075588,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 3.243e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5138,
+   "completion_tokens": 23,
+   "total_tokens": 5161,
+   "cost": 0.00018119,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00018119,
+    "upstream_inference_prompt_cost": 0.00017038,
+    "upstream_inference_completions_cost": 1.081e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5326,
+   "completion_tokens": 32,
+   "total_tokens": 5358,
+   "cost": 0.000145012,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000145012,
+    "upstream_inference_prompt_cost": 0.000129972,
+    "upstream_inference_completions_cost": 1.504e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 19.0
+}

@@ -1,0 +1,106 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Do you have a history of thyroid disease?",
+  "Have you recently had an eye injury or surgery?",
+  "Do you wear contact lenses?",
+  "Are you experiencing double vision?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "smooth pursuit and saccades",
+  "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)",
+  "CT chest / abdomen / pelvis (occult tumour)"
+ ],
+ "results": [
+  "1. smooth pursuit and saccades: rapid conjugate HORIZONTAL saccadic oscillations WITHOUT intersaccadic intervals - ocular flutter",
+  "2. anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2): ISOLATED anti-GT1a IgG POSITIVE; anti-GQ1b, anti-GM1 and anti-GM2 all NEGATIVE",
+  "3. CT chest / abdomen / pelvis (occult tumour): no malignancy - argues against a paraneoplastic cause"
+ ],
+ "dx_raw": "DIAGNOSIS: Ocular flutter associated with isolated anti-GT1a IgG positivity (likely post-infectious or autoimmune brainstem encephalitis)\n\n1. Miller Fisher syndrome (incomplete variant presenting with ocular motor abnormalities)\n2. Paraneoplastic opsoclonus-myoclonus syndrome (despite negative CT, occult malignancy cannot be fully excluded without further workup like PET-CT or mammography)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Ocular flutter associated with isolated anti-GT1a IgG positivity (likely post-infectious or autoimmune brainstem encephalitis)",
+ "decisive_served": [
+  "smooth pursuit and saccades",
+  "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)",
+  "CT chest / abdomen / pelvis (occult tumour)"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 53,
+   "total_tokens": 4876,
+   "cost": 0.00074836,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00074836,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 2.491e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5166,
+   "completion_tokens": 94,
+   "total_tokens": 5260,
+   "cost": 0.00021876,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00021876,
+    "upstream_inference_prompt_cost": 0.00017458,
+    "upstream_inference_completions_cost": 4.418e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.2,
+ "video": "moderate_1_ocular_flutter_PMC12979508.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.0
+}

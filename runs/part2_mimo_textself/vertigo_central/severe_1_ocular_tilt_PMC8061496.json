@@ -1,0 +1,145 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Do you feel dizzy?",
+  "Do you hear ringing or have hearing loss in one or both ears?",
+  "Are you currently taking any new medications?",
+  "Have you had a recent head injury?",
+  "Has this type of eye movement been present since childhood?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Bedside HINTS examination (head impulse test, assessment of nystagmus, and test of skew)",
+  "MRI brain with diffusion-weighted imaging",
+  "Dix-Hallpike manoeuvre"
+ ],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "skew deviation / alternating cover test",
+  "head impulse test",
+  "MRI diffusion-weighted sequences",
+  "MRI brain with DWI"
+ ],
+ "results": [
+  "1. Bedside HINTS examination (head impulse test, assessment of nystagmus, and test of skew)",
+  "     nystagmus: direction and whether it changes with gaze: ipsilesional torsional nystagmus",
+  "     skew deviation / alternating cover test: skew deviation with LATERAL ALTERNATION - right eye hypotropic, left eye hypertropic",
+  "     head impulse test: normal - no corrective saccade",
+  "2. MRI brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the left rostral pons and caudal mesencephalon extending along the paramedian line to the midline",
+  "     MRI brain with DWI: LEFT rostral pontine infarct and a caudal mesencephalic infarct extending along the paramedian line to the midline",
+  "3. Dix-Hallpike manoeuvre",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute left paramedian pontine and caudal mesencephalic infarction causing a central vestibular syndrome\n\nWallenberg syndrome (lateral medullary infarction)\nAcute vestibular syndrome due to vestibular neuritis\nMultiple sclerosis with brainstem plaque",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Bedside HINTS examination (head impulse test, assessment of nystagmus, and test of skew)\n2. MRI brain with diffusion-weighted imaging\n3. Dix-Hallpike manoeuvre",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Acute left paramedian pontine and caudal mesencephalic infarction causing a central vestibular syndrome",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "skew deviation / alternating cover test",
+  "MRI brain with DWI"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 446,
+   "completion_tokens": 214,
+   "total_tokens": 660,
+   "cost": 9.60176e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.60176e-05,
+    "upstream_inference_prompt_cost": 3.60976e-05,
+    "upstream_inference_completions_cost": 5.992e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 148,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 749,
+   "completion_tokens": 531,
+   "total_tokens": 1280,
+   "cost": 0.0002008552,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002008552,
+    "upstream_inference_prompt_cost": 5.21752e-05,
+    "upstream_inference_completions_cost": 0.00014868
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 485,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1076,
+   "completion_tokens": 872,
+   "total_tokens": 1948,
+   "cost": 0.0002982112,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 704,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002982112,
+    "upstream_inference_prompt_cost": 5.40512e-05,
+    "upstream_inference_completions_cost": 0.00024416
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 807,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 30.3
+}

@@ -1,0 +1,111 @@
+{
+ "questions": [
+  "Do you feel an irresistible urge to press your hair down like this?",
+  "Does the appearance of this specific part of your hair bother you a great deal?",
+  "Does the hair immediately stand back up when you let go of it?",
+  "Does pressing your hair down relieve a feeling of anxiety?",
+  "Do you find yourself doing this for more than an hour a day?",
+  "Does pressing on this area cause any physical pain?",
+  "Have you noticed any hair loss in this area?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "family history",
+  "genetic testing (targeted panel or exome)",
+  "brain MRI",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. family history: mother, sister and grandmother affected - autosomal dominant pattern",
+  "2. genetic testing (targeted panel or exome): novel heterozygous NONSENSE variant in POU4F1; present in the symptomatic mother, sister and grandmother and absent in a healthy uncle",
+  "3. brain MRI: significant cerebellar atrophy with dilatation of the fourth ventricle",
+  "4. lumbar puncture / CSF: no oligoclonal bands - against multiple sclerosis"
+ ],
+ "dx_raw": "DIAGNOSIS: Autosomal dominant cerebellar ataxia caused by a heterozygous nonsense variant in POU4F1 (POU4F1 haploinsufficiency).\n\nALTERNATIVES:\n1. Multiple system atrophy, cerebellar type (MSA-C) – would be sporadic and lacks the strong autosomal dominant family history with segregation of the variant.\n2. Another genetic spinocerebellar ataxia not captured by the panel (e.g., SCA48 due to STUB1) – the segregation of the POU4F1 variant with disease makes this unlikely.\n3. Immune-mediated cerebellar ataxia (e.g., paraneoplastic or anti-GAD associated) – absence of CSF oligoclonal bands and the clear autosomal dominant family history argue against this.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Autosomal dominant cerebellar ataxia caused by a heterozygous nonsense variant in POU4F1 (POU4F1 haploinsufficiency).",
+ "decisive_served": [
+  "family history",
+  "genetic testing (targeted panel or exome)",
+  "brain MRI",
+  "lumbar puncture / CSF"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7062,
+   "completion_tokens": 2461,
+   "total_tokens": 9523,
+   "cost": 0.00503412,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00503412,
+    "upstream_inference_prompt_cost": 0.00208092,
+    "upstream_inference_completions_cost": 0.0029532
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2358,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 7488,
+   "completion_tokens": 5298,
+   "total_tokens": 12786,
+   "cost": 0.00691272,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7047,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00691272,
+    "upstream_inference_prompt_cost": 0.00055512,
+    "upstream_inference_completions_cost": 0.0063576
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5146,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 97.4
+}

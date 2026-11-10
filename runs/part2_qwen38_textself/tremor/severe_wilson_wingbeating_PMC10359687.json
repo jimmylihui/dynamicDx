@@ -1,0 +1,153 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Do you have a family history of similar movement disorders?",
+  "Have you experienced recent weight loss or fever?",
+  "Do you have a known history of liver disease?",
+  "Have you had a recent streptococcal infection?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Review current medication list for dopamine receptor blocking agents or other chorea-inducing drugs",
+  "Serum ceruloplasmin and 24-hour urinary copper",
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "MRI of the brain"
+ ],
+ "served": [
+  "medication, supplement and herbal history",
+  "serum copper and caeruloplasmin",
+  "24-hour urinary copper",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "brain MRI",
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences"
+ ],
+ "results": [
+  "1. Review current medication list for dopamine receptor blocking agents or other chorea-inducing drugs",
+  "     medication, supplement and herbal history: nothing relevant",
+  "2. Serum ceruloplasmin and 24-hour urinary copper",
+  "     serum copper and caeruloplasmin: normal",
+  "     24-hour urinary copper: normal",
+  "     copper / caeruloplasmin / 24 h urinary copper: normal - excludes Wilson disease",
+  "3. Slit-lamp examination for Kayser-Fleischer rings",
+  "     slit-lamp examination for Kayser-Fleischer rings: no rings",
+  "4. MRI of the brain",
+  "     brain MRI: no structural lesion",
+  "     MRI brain with gadolinium: diffuse cerebral atrophy",
+  "     MRI diffusion-weighted sequences: corticomedullary junction DWI high-intensity signals",
+  "     MRI susceptibility-weighted sequences: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Creutzfeldt-Jakob disease (sporadic)\nVariant Creutzfeldt-Jakob disease\nAutoimmune encephalitis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Review current medication list for dopamine receptor blocking agents or other chorea-inducing drugs\n2. Serum ceruloplasmin and 24-hour urinary copper\n3. Slit-lamp examination for Kayser-Fleischer rings\n4. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Creutzfeldt-Jakob disease (sporadic)",
+ "decisive_served": [
+  "copper / caeruloplasmin / 24 h urinary copper"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 194,
+   "completion_tokens": 63,
+   "total_tokens": 257,
+   "cost": 5.871e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.871e-05,
+    "upstream_inference_prompt_cost": 2.91e-05,
+    "upstream_inference_completions_cost": 2.961e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 495,
+   "completion_tokens": 56,
+   "total_tokens": 551,
+   "cost": 0.00010057,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010057,
+    "upstream_inference_prompt_cost": 7.425e-05,
+    "upstream_inference_completions_cost": 2.632e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 831,
+   "completion_tokens": 35,
+   "total_tokens": 866,
+   "cost": 0.000106796,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000106796,
+    "upstream_inference_prompt_cost": 9.0346e-05,
+    "upstream_inference_completions_cost": 1.645e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.2
+}

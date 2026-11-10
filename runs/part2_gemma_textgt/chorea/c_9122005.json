@@ -1,0 +1,130 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Do you have diabetes?",
+  "Do you feel weakness in the affected limbs?",
+  "Do you have a severe headache?",
+  "Do you have high blood pressure?",
+  "Are you having trouble speaking?",
+  "Do you feel numbness in the affected limbs?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "yes",
+  "7": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "MRI Brain"
+ ],
+ "served": [
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Hemichorea-hemiballismus due to non-ketotic hyperglycemia\n\n1. Functional movement disorder\n2. Lacunar stroke\n3. Huntington's disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "gt",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI Brain",
+ "rationale": [
+  null
+ ],
+ "dx": "Hemichorea-hemiballismus due to non-ketotic hyperglycemia",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 166,
+   "completion_tokens": 1289,
+   "total_tokens": 1455,
+   "cost": 0.00045486,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00045486,
+    "upstream_inference_prompt_cost": 1.66e-05,
+    "upstream_inference_completions_cost": 0.00043826
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1129,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 478,
+   "completion_tokens": 800,
+   "total_tokens": 1278,
+   "cost": 0.0003198,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003198,
+    "upstream_inference_prompt_cost": 4.78e-05,
+    "upstream_inference_completions_cost": 0.000272
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 788,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 602,
+   "completion_tokens": 6281,
+   "total_tokens": 6883,
+   "cost": 0.00219574,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00219574,
+    "upstream_inference_prompt_cost": 6.02e-05,
+    "upstream_inference_completions_cost": 0.00213554
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5851,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 243.0
+}

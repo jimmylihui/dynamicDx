@@ -1,0 +1,150 @@
+{
+ "questions": [
+  "Was there a sudden onset of this difficulty?",
+  "Is the weakness present in both legs?",
+  "Is there pain associated with the walking difficulty?",
+  "Do you have numbness or tingling in your legs?",
+  "Is the weakness progressive?",
+  "Have you had a spinal cord injury?",
+  "Do you have bladder or bowel dysfunction?",
+  "Have you had a stroke?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Neurological examination of the lower limbs",
+  "MRI of the lumbar spine",
+  "Electromyography (EMG) and Nerve Conduction Studies (NCS) of the lower limbs"
+ ],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "muscle tone (spasticity, rigidity, paratonia)",
+  "MRC power in all four limbs",
+  "nerve conduction studies",
+  "needle electromyography"
+ ],
+ "results": [
+  "1. Neurological examination of the lower limbs",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     muscle tone (spasticity, rigidity, paratonia): genuine axial and lower-limb rigidity on passive movement",
+  "     MRC power in all four limbs: 5/5 throughout",
+  "2. MRI of the lumbar spine",
+  "     not performed / not available",
+  "3. Electromyography (EMG) and Nerve Conduction Studies (NCS) of the lower limbs",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Stiff Person Syndrome (autoimmune)\nProgressive Supranuclear Palsy\nMultiple System Atrophy\nGeneralized Dystonia",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Neurological examination of the lower limbs\n2. MRI of the lumbar spine\n3. Electromyography (EMG) and Nerve Conduction Studies (NCS) of the lower limbs",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Stiff Person Syndrome (autoimmune)",
+ "decisive_served": [
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8762,
+   "completion_tokens": 1217,
+   "total_tokens": 9979,
+   "cost": 0.00128998,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00128998,
+    "upstream_inference_prompt_cost": 0.0008762,
+    "upstream_inference_completions_cost": 0.00041378
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1128,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9114,
+   "completion_tokens": 995,
+   "total_tokens": 10109,
+   "cost": 0.0012497,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012497,
+    "upstream_inference_prompt_cost": 0.0009114,
+    "upstream_inference_completions_cost": 0.0003383
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 975,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9393,
+   "completion_tokens": 1692,
+   "total_tokens": 11085,
+   "cost": 0.00151458,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00151458,
+    "upstream_inference_prompt_cost": 0.0009393,
+    "upstream_inference_completions_cost": 0.00057528
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1602,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 135.8
+}

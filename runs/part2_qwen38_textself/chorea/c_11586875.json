@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Are you currently taking any medications?",
+  "Have you recently started or changed the dose of any medication?",
+  "Do you have a family history of similar movement disorders?",
+  "Have you had a recent streptococcal infection (such as strep throat)?",
+  "Do you have a known diagnosis of Huntington's disease?",
+  "Do you have a known diagnosis of Wilson's disease?",
+  "Is there a possibility that you are pregnant?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "Serum ceruloplasmin level",
+  "24-hour urinary copper excretion",
+  "MRI of the brain"
+ ],
+ "served": [
+  "skin examination",
+  "copper / caeruloplasmin",
+  "24-hour urinary copper",
+  "brain MRI with contrast",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences"
+ ],
+ "results": [
+  "1. Slit-lamp examination for Kayser-Fleischer rings",
+  "     skin examination: no rash",
+  "2. Serum ceruloplasmin level",
+  "     copper / caeruloplasmin: normal",
+  "3. 24-hour urinary copper excretion",
+  "     24-hour urinary copper: normal",
+  "4. MRI of the brain",
+  "     brain MRI with contrast: HYPOSIGNAL involving the corpus striatum bilaterally, extending to the medial cerebral crus on T2 and FLAIR, with mild T1 HYPERSIGNAL in the basal nuclei",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the bilateral striatum",
+  "     MRI susceptibility-weighted sequences: no abnormal susceptibility"
+ ],
+ "dx_raw": "DIAGNOSIS: Acute bilateral striatal necrosis secondary to mitochondrial complex I deficiency (Leigh syndrome)\n1. Carbon monoxide poisoning\n2. Methanol poisoning",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Slit-lamp examination for Kayser-Fleischer rings\n2. Serum ceruloplasmin level\n3. 24-hour urinary copper excretion\n4. MRI of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Acute bilateral striatal necrosis secondary to mitochondrial complex I deficiency (Leigh syndrome)",
+ "decisive_served": [
+  "brain MRI with contrast"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 197,
+   "completion_tokens": 99,
+   "total_tokens": 296,
+   "cost": 7.608e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.608e-05,
+    "upstream_inference_prompt_cost": 2.955e-05,
+    "upstream_inference_completions_cost": 4.653e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 578,
+   "completion_tokens": 42,
+   "total_tokens": 620,
+   "cost": 0.00010644,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010644,
+    "upstream_inference_prompt_cost": 8.67e-05,
+    "upstream_inference_completions_cost": 1.974e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 863,
+   "completion_tokens": 37,
+   "total_tokens": 900,
+   "cost": 7.8232e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.8232e-05,
+    "upstream_inference_prompt_cost": 6.0842e-05,
+    "upstream_inference_completions_cost": 1.739e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11586875.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 7.7
+}

@@ -1,0 +1,176 @@
+{
+ "questions": [
+  "Did the child have a seizure?",
+  "Did the child have a fever?",
+  "Is this the first time this has happened?",
+  "Did the child lose consciousness?",
+  "Did the child vomit?",
+  "Is there a family history of seizures?",
+  "Did the child suffer a recent head injury?",
+  "Has the child been ill in the past week?",
+  "Is the child currently awake and alert?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Video EEG monitoring",
+  "MRI of the brain",
+  "Complete blood count",
+  "Serum electrolytes",
+  "Blood glucose level",
+  "Lumbar puncture for CSF analysis",
+  "Urine toxicology screen",
+  "Liver function tests",
+  "Renal function tests"
+ ],
+ "served": [
+  "video-EEG monitoring of a typical event",
+  "brain MRI",
+  "full blood count and biochemistry",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose and HbA1c",
+  "lumbar puncture / CSF",
+  "toxicology screen (urine and serum)",
+  "liver function tests",
+  "liver and renal function"
+ ],
+ "results": [
+  "1. Video EEG monitoring",
+  "     video-EEG monitoring of a typical event: eyelid myoclonia with absences - the Jeavons phenotype",
+  "2. MRI of the brain",
+  "     brain MRI: punctate FLAIR hyperintensities in the local white matter of both frontal lobes",
+  "3. Complete blood count",
+  "     full blood count and biochemistry: normal",
+  "4. Serum electrolytes",
+  "     serum electrolytes, urea and creatinine: normal",
+  "5. Blood glucose level",
+  "     blood glucose and HbA1c: normal",
+  "6. Lumbar puncture for CSF analysis",
+  "     lumbar puncture / CSF: normal",
+  "7. Urine toxicology screen",
+  "     toxicology screen (urine and serum): normal",
+  "8. Liver function tests",
+  "     liver function tests: normal",
+  "9. Renal function tests",
+  "     liver and renal function: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Jeavons syndrome (eyelid myoclonia with absences) - a genetic idiopathic generalized epilepsy syndrome, likely due to a developmental channelopathy/polygenic susceptibility.\n\n1. Photosensitive occipital lobe epilepsy\n2. GLUT1 deficiency syndrome\n3. Lafora disease (progressive myoclonus epilepsy)",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Video EEG monitoring\n2. MRI of the brain\n3. Complete blood count\n4. Serum electrolytes\n5. Blood glucose level\n6. Lumbar puncture for CSF analysis\n7. Urine toxicology screen\n8. Liver function tests\n9. Renal function tests",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Jeavons syndrome (eyelid myoclonia with absences) - a genetic idiopathic generalized epilepsy syndrome, likely due to a developmental channelopathy/polygenic susceptibility.",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 10710,
+   "completion_tokens": 1814,
+   "total_tokens": 12524,
+   "cost": 0.00535236,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 156,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00535236,
+    "upstream_inference_prompt_cost": 0.00317556,
+    "upstream_inference_completions_cost": 0.0021768
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1727,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 11074,
+   "completion_tokens": 59,
+   "total_tokens": 11133,
+   "cost": 0.0008262,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 10695,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008262,
+    "upstream_inference_prompt_cost": 0.0007554,
+    "upstream_inference_completions_cost": 7.08e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 11395,
+   "completion_tokens": 469,
+   "total_tokens": 11864,
+   "cost": 0.00131298,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 11118,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00131298,
+    "upstream_inference_prompt_cost": 0.00075018,
+    "upstream_inference_completions_cost": 0.0005628
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 400,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.6,
+ "video": "mild_3_neonatal_PMC12440885.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 50.6
+}

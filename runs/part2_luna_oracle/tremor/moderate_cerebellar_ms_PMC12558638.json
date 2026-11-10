@@ -1,0 +1,125 @@
+{
+ "questions": [
+  "Are you having trouble breathing, swallowing, or speaking?",
+  "Have your lips, tongue, or throat become swollen?",
+  "Did the facial swelling or redness begin suddenly?",
+  "Is the affected skin itchy or associated with hives?",
+  "Is it painful or tender to touch?",
+  "Do you have a fever or chills?",
+  "Do you have pain with eye movement or any change in vision?",
+  "Have you developed a severe headache, weakness, numbness, or confusion?",
+  "Have you recently started a new medication or supplement?",
+  "Have you recently eaten a new food or been exposed to an insect sting?",
+  "Have you applied a new cream, cosmetic, hair product, or facial treatment?",
+  "Have you had any recent dental work, sinus symptoms, or skin injury near the face?",
+  "Have you had similar episodes of facial redness or swelling before?",
+  "Is the redness or swelling spreading or worsening?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "family history",
+  "genetic testing (targeted panel or exome)",
+  "brain MRI",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. family history: mother, sister and grandmother affected - autosomal dominant pattern",
+  "2. genetic testing (targeted panel or exome): novel heterozygous NONSENSE variant in POU4F1; present in the symptomatic mother, sister and grandmother and absent in a healthy uncle",
+  "3. brain MRI: significant cerebellar atrophy with dilatation of the fourth ventricle",
+  "4. lumbar puncture / CSF: no oligoclonal bands - against multiple sclerosis"
+ ],
+ "dx_raw": "DIAGNOSIS: POU4F1-associated autosomal-dominant cerebellar ataxia/neurodevelopmental disorder caused by a heterozygous loss-of-function (nonsense) POU4F1 variant, with cerebellar atrophy.\n\nAlternative 1: Other autosomal-dominant spinocerebellar ataxia caused by an undetected pathogenic variant.\n\nAlternative 2: Fragile X–associated tremor/ataxia syndrome.\n\nAlternative 3: Multiple sclerosis with cerebellar involvement.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "POU4F1-associated autosomal-dominant cerebellar ataxia/neurodevelopmental disorder caused by a heterozygous loss-of-function (nonsense) POU4F1 variant, with cerebellar atrophy.",
+ "decisive_served": [
+  "family history",
+  "genetic testing (targeted panel or exome)",
+  "brain MRI",
+  "lumbar puncture / CSF"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 560,
+   "total_tokens": 6236,
+   "cost": 0.00039303,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00039303,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.000336
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 360,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6333,
+   "completion_tokens": 631,
+   "total_tokens": 6964,
+   "cost": 0.000517755,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 657,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000517755,
+    "upstream_inference_prompt_cost": 0.000139155,
+    "upstream_inference_completions_cost": 0.0003786
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 17.6
+}

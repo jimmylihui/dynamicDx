@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Have you had repeated falls or near-falls, especially falling backward?",
+  "Have your walking or balance problems progressively worsened?",
+  "Do you have difficulty starting to walk or episodes when your feet feel “stuck” to the floor?",
+  "Have your movements become noticeably slower?",
+  "Do you have stiffness in your arms, legs, or neck?",
+  "Have you noticed a tremor when your hands are resting?",
+  "Have you had difficulty turning around or taking small, shuffling steps?",
+  "Do you have trouble looking downward or moving your eyes?",
+  "Have you experienced double vision?",
+  "Have you had weakness or numbness on one side of your body?",
+  "Did these symptoms begin suddenly?",
+  "Have you had dizziness or a spinning sensation when standing or walking?",
+  "Have you had urinary urgency or loss of bladder control?",
+  "Have you had worsening memory or difficulty thinking?",
+  "Have family members noticed changes in your personality or behavior?",
+  "Have you experienced visual hallucinations?",
+  "Do you act out your dreams or move violently during sleep?",
+  "Have you had difficulty swallowing or frequent choking?",
+  "Have you noticed changes in your speech or voice?",
+  "Have you previously been diagnosed with Parkinson’s disease or another neurological disorder?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment')",
+  "variability of amplitude, frequency and axis over the examination",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "results": [
+  "1. distractibility testing (complex motor task with the unaffected side): POSITIVE and prominent - the head tremor abates during a non-finger motor task",
+  "2. entrainment testing (tap to an externally paced rhythm): POSITIVE",
+  "3. suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment'): tremor changes with the sham stimulus",
+  "4. variability of amplitude, frequency and axis over the examination: amplitude and directionality both vary during the examination",
+  "5. muscle tone (spasticity, rigidity, paratonia): normal; no dystonic head posture, no sensory trick"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological symptom disorder with functional (psychogenic) head tremor, caused by abnormal functional motor control rather than structural or degenerative neurological disease.\nALTERNATIVE: Essential tremor.\nALTERNATIVE: Dystonic tremor.\nALTERNATIVE: Cerebellar or other structural neurological tremor.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional neurological symptom disorder with functional (psychogenic) head tremor, caused by abnormal functional motor control rather than structural or degenerative neurological disease.",
+ "decisive_served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment')",
+  "variability of amplitude, frequency and axis over the examination",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5676,
+   "completion_tokens": 625,
+   "total_tokens": 6301,
+   "cost": 0.00043203,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00043203,
+    "upstream_inference_prompt_cost": 5.703e-05,
+    "upstream_inference_completions_cost": 0.000375
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 355,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 6526,
+   "completion_tokens": 303,
+   "total_tokens": 6829,
+   "cost": 0.00034508,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5673,
+    "cache_write_tokens": 850,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00034508,
+    "upstream_inference_prompt_cost": 0.00016328,
+    "upstream_inference_completions_cost": 0.0001818
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 231,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 26.2,
+ "video": "functional_head_tremor_distractibility_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 17.5
+}

@@ -1,0 +1,140 @@
+{
+ "questions": [
+  "Can you wrinkle your forehead?",
+  "Do you have weakness in your arm or leg?",
+  "Are you having trouble speaking?",
+  "Did this happen suddenly?",
+  "Do you have pain in your ear?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Physical examination of the parotid gland and external auditory canal",
+  "MRI of the brain and internal auditory canal",
+  "Lyme serology"
+ ],
+ "served": [
+  "ear and mastoid examination",
+  "parotid and neck palpation",
+  "MRI brain and internal auditory canal with contrast",
+  "Lyme serology (ELISA and immunoblot)"
+ ],
+ "results": [
+  "1. Physical examination of the parotid gland and external auditory canal",
+  "     ear and mastoid examination: normal, no vesicles",
+  "     parotid and neck palpation: no mass",
+  "2. MRI of the brain and internal auditory canal",
+  "     MRI brain and internal auditory canal with contrast: no tumour, no perineural enhancement, no central lesion",
+  "3. Lyme serology",
+  "     Lyme serology (ELISA and immunoblot): negative"
+ ],
+ "dx_raw": "DIAGNOSIS: Bell's palsy\nSarcoidosis\nDiabetes mellitus\nMelkersson-Rosenthal syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Physical examination of the parotid gland and external auditory canal\n2. MRI of the brain and internal auditory canal\n3. Lyme serology",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Bell's palsy",
+ "decisive_served": [
+  "MRI brain and internal auditory canal with contrast"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 994,
+   "total_tokens": 1414,
+   "cost": 0.00037996,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00037996,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.00033796
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 922,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 686,
+   "completion_tokens": 609,
+   "total_tokens": 1295,
+   "cost": 0.00027566,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00027566,
+    "upstream_inference_prompt_cost": 6.86e-05,
+    "upstream_inference_completions_cost": 0.00020706
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 606,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 902,
+   "completion_tokens": 1995,
+   "total_tokens": 2897,
+   "cost": 0.0007685,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007685,
+    "upstream_inference_prompt_cost": 9.02e-05,
+    "upstream_inference_completions_cost": 0.0006783
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1870,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 28.0,
+ "video": "fp_recurrent_synkinesis_PMC12572359.mp4",
+ "line": "facialpalsy",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 119.1
+}

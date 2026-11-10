@@ -1,0 +1,115 @@
+{
+ "questions": [
+  "Have you ever had these unplanned leg movements before today?",
+  "Do you feel pain in your legs when these movements happen?",
+  "Did these movements start after an injury or illness?",
+  "Have these movements become more frequent over time?",
+  "Do you have tingling or numbness in your legs along with these movements?",
+  "Can you stop these movements on your own when you try?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "medication and vaccination history",
+  "blood glucose",
+  "brain MRI with contrast",
+  "FDG-PET brain",
+  "lumbar puncture / CSF",
+  "trial of immunotherapy"
+ ],
+ "results": [
+  "1. medication and vaccination history: second dose of the Pfizer-BioNTech COVID-19 vaccine 21 days after the first; symptoms began acutely afterwards",
+  "2. blood glucose: NORMAL - no diabetes and no hyperglycaemia",
+  "3. brain MRI with contrast: no lesion and no abnormal signal in the basal ganglia",
+  "4. FDG-PET brain: INCREASED right putamen fixation compared with the left; NORMALISED after corticosteroids, mirroring the clinical course",
+  "5. lumbar puncture / CSF: intrathecal immunoglobulin synthesis with oligoclonal bands; otherwise normal",
+  "6. trial of immunotherapy: five days of intravenous corticosteroids with significant improvement; he could sit in a chair and start physiotherapy ten days later"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-vaccination Autoimmune Basal Ganglia Encephalitis\n1. Sydenham's chorea\n2. Anti-NMDA receptor encephalitis\n3. Functional neurological disorder",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Post-vaccination Autoimmune Basal Ganglia Encephalitis",
+ "decisive_served": [
+  "medication and vaccination history",
+  "blood glucose",
+  "brain MRI with contrast",
+  "FDG-PET brain",
+  "lumbar puncture / CSF",
+  "trial of immunotherapy"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 386,
+   "total_tokens": 5441,
+   "cost": 0.0007894376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007894376,
+    "upstream_inference_prompt_cost": 0.0006813576,
+    "upstream_inference_completions_cost": 0.00010808
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 294,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5521,
+   "completion_tokens": 1864,
+   "total_tokens": 7385,
+   "cost": 0.0006099576,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006099576,
+    "upstream_inference_prompt_cost": 8.80376e-05,
+    "upstream_inference_completions_cost": 0.00052192
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1814,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 12.9,
+ "video": "c_9122005.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 32.4
+}

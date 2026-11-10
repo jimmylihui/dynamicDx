@@ -1,0 +1,112 @@
+{
+ "questions": [
+  "Did these symptoms start suddenly?",
+  "Do you have numbness in your face?",
+  "Do you have weakness on one side of your body?",
+  "Do you feel dizzy?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of diabetes?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment')",
+  "variability of amplitude, frequency and axis over the examination",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "results": [
+  "1. distractibility testing (complex motor task with the unaffected side): POSITIVE and prominent - the head tremor abates during a non-finger motor task",
+  "2. entrainment testing (tap to an externally paced rhythm): POSITIVE",
+  "3. suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment'): tremor changes with the sham stimulus",
+  "4. variability of amplitude, frequency and axis over the examination: amplitude and directionality both vary during the examination",
+  "5. muscle tone (spasticity, rigidity, paratonia): normal; no dystonic head posture, no sensory trick"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional tremor (Functional Neurological Disorder)\nEssential tremor\nDystonic tremor\nParkinson's disease",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Functional tremor (Functional Neurological Disorder)",
+ "decisive_served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)",
+  "suggestibility / sham stimulus (tuning fork or vibration applied as 'treatment')",
+  "variability of amplitude, frequency and axis over the examination",
+  "muscle tone (spasticity, rigidity, paratonia)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1571,
+   "total_tokens": 10269,
+   "cost": 0.00140394,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00140394,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00053414
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1505,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9076,
+   "completion_tokens": 1158,
+   "total_tokens": 10234,
+   "cost": 0.00130132,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00130132,
+    "upstream_inference_prompt_cost": 0.0009076,
+    "upstream_inference_completions_cost": 0.00039372
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1194,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 26.2,
+ "video": "functional_head_tremor_distractibility_PMC12999016.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 92.9
+}

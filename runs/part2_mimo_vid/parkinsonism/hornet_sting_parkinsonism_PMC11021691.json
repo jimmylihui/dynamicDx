@@ -1,0 +1,150 @@
+{
+ "questions": [
+  "Is the left side of your body weak?",
+  "Did this problem start suddenly?",
+  "Have you had any trouble speaking?",
+  "Do you feel numb on the left side?",
+  "Have you had a recent fall?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "yes",
+  "4": "no",
+  "5": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Non-contrast CT head",
+  "MRI brain with diffusion-weighted imaging",
+  "Complete blood count",
+  "Basic metabolic panel",
+  "Coagulation studies",
+  "Carotid duplex ultrasound",
+  "Transthoracic echocardiogram"
+ ],
+ "served": [
+  "CT head",
+  "MRI diffusion-weighted sequences",
+  "full blood count, renal and liver profile",
+  "serum electrolytes, urea and creatinine"
+ ],
+ "results": [
+  "1. Non-contrast CT head",
+  "     CT head: bilateral caudate and putaminal lesions",
+  "2. MRI brain with diffusion-weighted imaging",
+  "     MRI diffusion-weighted sequences: bilateral caudate and putaminal restricted diffusion",
+  "3. Complete blood count",
+  "     full blood count, renal and liver profile: normal",
+  "4. Basic metabolic panel",
+  "     serum electrolytes, urea and creatinine: normal",
+  "5. Coagulation studies",
+  "     not performed / not available",
+  "6. Carotid duplex ultrasound",
+  "     not performed / not available",
+  "7. Transthoracic echocardiogram",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Methanol poisoning\n\nAlternative 1: Bilateral basal ganglia infarction secondary to vasculitis\nAlternative 2: Carbon monoxide poisoning\nAlternative 3: Creutzfeldt-Jakob disease",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Non-contrast CT head\n2. MRI brain with diffusion-weighted imaging\n3. Complete blood count\n4. Basic metabolic panel\n5. Coagulation studies\n6. ECG\n7. Carotid duplex ultrasound\n8. Transthoracic echocardiogram",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Methanol poisoning",
+ "decisive_served": [],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 3691,
+   "total_tokens": 8746,
+   "cost": 0.0010562776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010562776,
+    "upstream_inference_prompt_cost": 2.27976e-05,
+    "upstream_inference_completions_cost": 0.00103348
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3589,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5374,
+   "completion_tokens": 1411,
+   "total_tokens": 6785,
+   "cost": 0.0004625376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004625376,
+    "upstream_inference_prompt_cost": 6.74576e-05,
+    "upstream_inference_completions_cost": 0.00039508
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1348,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5663,
+   "completion_tokens": 615,
+   "total_tokens": 6278,
+   "cost": 0.0002362136,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5312,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002362136,
+    "upstream_inference_prompt_cost": 6.40136e-05,
+    "upstream_inference_completions_cost": 0.0001722
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 563,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 23.2,
+ "video": "hornet_sting_parkinsonism_PMC11021691.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 89.5
+}

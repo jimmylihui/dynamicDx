@@ -1,0 +1,173 @@
+{
+ "questions": [
+  "Did your symptoms start suddenly?",
+  "Are you currently experiencing double vision?",
+  "Do you have pain in or around the affected eye?",
+  "Is the drooping of your eyelid worse at the end of the day or when you are tired?",
+  "Do you have any weakness in your arms, legs, or face?",
+  "Do you have diabetes?",
+  "Do you have high blood pressure?",
+  "Have you had a recent infection or fever?",
+  "Is your vision blurred in the affected eye?",
+  "Do you have any difficulty swallowing or speaking?",
+  "Have you ever had a similar episode before?",
+  "Do you have a history of thyroid problems?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Test extraocular movements in the affected left eye",
+  "Check visual acuity in the left eye",
+  "Assess for proptosis in the left eye using Hertel exophthalmometry",
+  "Check pupillary light reflexes in both eyes",
+  "CT scan of the orbits and paranasal sinuses with contrast",
+  "Full blood count with differential",
+  "C-reactive protein",
+  "Blood cultures"
+ ],
+ "served": [
+  "ocular motility examination",
+  "visual acuity and colour vision",
+  "proptosis / exophthalmometry",
+  "pupil examination (size, light reaction)",
+  "CT sinuses",
+  "full blood count",
+  "ESR / CRP"
+ ],
+ "results": [
+  "1. Test extraocular movements in the affected left eye",
+  "     ocular motility examination: failure to adduct the right eye",
+  "2. Check visual acuity in the left eye",
+  "     visual acuity and colour vision: normal",
+  "3. Assess for proptosis in the left eye using Hertel exophthalmometry",
+  "     proptosis / exophthalmometry: no proptosis",
+  "4. Check pupillary light reflexes in both eyes",
+  "     pupil examination (size, light reaction): equal and reactive",
+  "5. CT scan of the orbits and paranasal sinuses with contrast",
+  "     CT sinuses: invasive sinus disease extending to the orbit",
+  "6. Full blood count with differential",
+  "     full blood count: leukocytosis, white cells 21.4 x10^9/L",
+  "7. C-reactive protein",
+  "     ESR / CRP: normal",
+  "8. Blood cultures",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Invasive fungal sinusitis (e.g., mucormycosis) with right orbital extension causing a right cranial nerve III palsy.\n1. Cavernous sinus thrombosis secondary to bacterial sinusitis\n2. Complicated bacterial sinusitis (orbital apex or superior orbital fissure syndrome)\n3. Tolosa-Hunt syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Test extraocular movements in the affected left eye\n2. Check visual acuity in the left eye\n3. Assess for proptosis in the left eye using Hertel exophthalmometry\n4. Check pupillary light reflexes in both eyes\n5. CT scan of the orbits and paranasal sinuses with contrast\n6. Full blood count with differential\n7. C-reactive protein\n8. Blood cultures",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Invasive fungal sinusitis (e.g., mucormycosis) with right orbital extension causing a right cranial nerve III palsy.",
+ "decisive_served": [
+  "CT sinuses"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 23478,
+   "completion_tokens": 918,
+   "total_tokens": 24396,
+   "cost": 0.00811764,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 114,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00811764,
+    "upstream_inference_prompt_cost": 0.00701604,
+    "upstream_inference_completions_cost": 0.0011016
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 862,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 23961,
+   "completion_tokens": 891,
+   "total_tokens": 24852,
+   "cost": 0.0026391,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 23410,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0026391,
+    "upstream_inference_prompt_cost": 0.0015699,
+    "upstream_inference_completions_cost": 0.0010692
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 882,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 24326,
+   "completion_tokens": 3700,
+   "total_tokens": 28026,
+   "cost": 0.00599652,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 23922,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00599652,
+    "upstream_inference_prompt_cost": 0.00155652,
+    "upstream_inference_completions_cost": 0.00444
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4045,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 14.6,
+ "video": "severe_orbital_mucor_PMC10414977.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 87.7
+}

@@ -1,0 +1,134 @@
+{
+ "questions": [
+  "Is the child currently taking any medication?",
+  "Did the episodes begin after a head injury or significant illness with fever?",
+  "Do the episodes occur primarily upon waking up?",
+  "Are there any known genetic disorders in the family history?",
+  "Does the child have a history of developmental delay or intellectual disability?",
+  "Do the episodes happen more frequently when the child is tired or stressed?",
+  "Has the child ever had a prolonged seizure lasting more than five minutes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Video-electroencephalography (EEG)"
+ ],
+ "served": [
+  "interictal EEG",
+  "video-EEG monitoring of a typical event"
+ ],
+ "results": [
+  "1. Video-electroencephalography (EEG)",
+  "     interictal EEG: no epileptiform discharges",
+  "     video-EEG monitoring of a typical event: eyelid myoclonia with absences - the Jeavons phenotype"
+ ],
+ "dx_raw": "DIAGNOSIS: Jeavons syndrome (Eyelid Myoclonia with Absences)\n1. Childhood absence epilepsy\n2. Juvenile myoclonic epilepsy",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Video-electroencephalography (EEG)",
+ "rationale": [
+  null
+ ],
+ "dx": "Jeavons syndrome (Eyelid Myoclonia with Absences)",
+ "decisive_served": [
+  "video-EEG monitoring of a typical event"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 183,
+   "completion_tokens": 103,
+   "total_tokens": 286,
+   "cost": 7.586e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.586e-05,
+    "upstream_inference_prompt_cost": 2.745e-05,
+    "upstream_inference_completions_cost": 4.841e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 572,
+   "completion_tokens": 13,
+   "total_tokens": 585,
+   "cost": 9.191e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.191e-05,
+    "upstream_inference_prompt_cost": 8.58e-05,
+    "upstream_inference_completions_cost": 6.11e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 740,
+   "completion_tokens": 37,
+   "total_tokens": 777,
+   "cost": 5.9782e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.9782e-05,
+    "upstream_inference_prompt_cost": 4.2392e-05,
+    "upstream_inference_completions_cost": 1.739e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 15.6,
+ "video": "mild_3_neonatal_PMC12440885.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 12.3
+}

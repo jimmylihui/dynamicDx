@@ -1,0 +1,110 @@
+{
+ "questions": [
+  "Have you noticed any weakness in your arms or legs?",
+  "Have you had any changes in your hearing?",
+  "Do you have any ringing in your ears (tinnitus)?",
+  "Have you had any dizziness or vertigo?",
+  "Do you have any numbness or tingling?",
+  "Have you had any pain in your face, neck, or head?",
+  "Have you noticed any changes in your ability to taste?",
+  "Do you have any difficulty chewing or swallowing?",
+  "Have you noticed any changes in your facial appearance?",
+  "Do you have any involuntary movements of your face?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 INVALID \n\n:\n1. Are you experiencing any weakness in your arms or legs?\n2. Have you noticed any changes in your vision?\n3. Do you have any numbness or tingling sensations?\n4. Are you having any difficulty with -> ",
+  "R2 ASK Have you noticed any weakness in your arms or legs?; Have you had any changes in your hearing?; Do you have any ringing in your ears (tinnitus)?; Have you had any dizziness or vertigo?; Do you have any numbness or tingling? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 INVALID \n\n:\n1. Do you have any pain anywhere in your body?\n2. Have you had any recent falls?\n3. Do you have any bladder or bowel control problems?\n4. Have you noticed any changes in your sense of touch?\n5. Do -> ",
+  "R4 ASK Have you had any pain in your face, neck, or head?; Have you noticed any changes in your ability to taste?; Do you have any difficulty chewing or swallowing?; Have you noticed any changes in your facial appearance?; Do you have any involuntary movements of your face? -> ['no', 'no', 'no', 'no', 'no']",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Neurological examination of cranial nerves - no definitive neurological deficit identified based on negative responses to cranial nerve screening questions. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "invalid",
+   "text": "\n\n:\n1. Are you experiencing any weakness in your arms or legs?\n2. Have you noticed any changes in your vision?\n3. Do you have any numbness or tingling sensations?\n4. Are you having any difficulty with"
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any weakness in your arms or legs?",
+    "Have you had any changes in your hearing?",
+    "Do you have any ringing in your ears (tinnitus)?",
+    "Have you had any dizziness or vertigo?",
+    "Do you have any numbness or tingling?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "invalid",
+   "text": "\n\n:\n1. Do you have any pain anywhere in your body?\n2. Have you had any recent falls?\n3. Do you have any bladder or bowel control problems?\n4. Have you noticed any changes in your sense of touch?\n5. Do"
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Have you had any pain in your face, neck, or head?",
+    "Have you noticed any changes in your ability to taste?",
+    "Do you have any difficulty chewing or swallowing?",
+    "Have you noticed any changes in your facial appearance?",
+    "Do you have any involuntary movements of your face?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Neurological examination of cranial nerves - no definitive neurological deficit identified based on negative responses to cranial nerve screening questions."
+  }
+ ],
+ "dx": "Neurological examination of cranial nerves - no definitive neurological deficit identified based on negative responses to cranial nerve screening questions.",
+ "dx_raw": "DIAGNOSIS: Neurological examination of cranial nerves - no definitive neurological deficit identified based on negative responses to cranial nerve screening questions.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 2,
+ "stopped_early": false,
+ "invalid_replies": 3,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.006,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 45.1
+}

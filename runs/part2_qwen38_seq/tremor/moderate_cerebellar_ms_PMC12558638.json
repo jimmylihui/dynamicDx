@@ -1,0 +1,165 @@
+{
+ "questions": [
+  "Are you currently experiencing a headache?",
+  "Is the pain located specifically in your forehead or around your eyes?",
+  "Do you have any history of sinus infections or allergies?",
+  "Are you currently experiencing any pain or discomfort anywhere on your head?",
+  "Do you have a history of migraines?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of herpes zoster (shingles) affecting your face or eye?",
+  "Do you have a history of trauma or injury to your forehead?",
+  "Do you have a history of trigeminal neuralgia?",
+  "Do you have a history of chronic daily headaches?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Palpation of the supraorbital notch (testing for Tinel's sign)"
+ ],
+ "served": [],
+ "results": [
+  "R1 ASK Are you currently experiencing a headache?; Is the pain located specifically in your forehead or around your eyes?; Do you have any history of sinus infections or allergies? -> ['no', 'no', 'no']",
+  "R2 ORDER Palpation of the supraorbital notch (testing for Tinel's sign) -> [[]]",
+  "R3 ASK Are you currently experiencing any pain or discomfort anywhere on your head? -> ['no']",
+  "R4 ASK Do you have a history of migraines? -> ['no']",
+  "R5 ASK Do you have a history of diabetes? -> ['no']",
+  "R6 ASK Do you have a history of herpes zoster (shingles) affecting your face or eye? -> ['no']",
+  "R7 ASK Do you have a history of trauma or injury to your forehead? -> ['no']",
+  "R8 ASK Do you have a history of trigeminal neuralgia? -> ['no']",
+  "R9 ASK Do you have a history of chronic daily headaches? -> ['no']",
+  "R10 DIAGNOSIS Supraorbital neuralgia -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing a headache?",
+    "Is the pain located specifically in your forehead or around your eyes?",
+    "Do you have any history of sinus infections or allergies?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Palpation of the supraorbital notch (testing for Tinel's sign)"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing any pain or discomfort anywhere on your head?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of migraines?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of diabetes?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of herpes zoster (shingles) affecting your face or eye?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of trauma or injury to your forehead?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of trigeminal neuralgia?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "ask",
+   "items": [
+    "Do you have a history of chronic daily headaches?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "diagnosis",
+   "text": "Supraorbital neuralgia"
+  }
+ ],
+ "dx": "Supraorbital neuralgia",
+ "dx_raw": "DIAGNOSIS: Supraorbital neuralgia",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 9,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.002,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_cerebellar_ms_PMC12558638.mp4",
+ "line": "tremor",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 70.2
+}

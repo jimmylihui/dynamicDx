@@ -1,0 +1,192 @@
+{
+ "questions": [
+  "Are you currently experiencing severe or rapidly worsening symptoms?",
+  "Are you having chest pain or pressure?",
+  "Are you having significant difficulty breathing?",
+  "Have you fainted or nearly fainted?",
+  "Are you experiencing new weakness, numbness, facial drooping, trouble speaking, confusion, or loss of vision?",
+  "Are you having a sudden, severe, or unusual headache?",
+  "Are you having severe abdominal pain?",
+  "Are you vomiting blood or passing bloody or black stools?",
+  "Are you bleeding heavily from any site?",
+  "Do you have a high fever or shaking chills?",
+  "Could you be pregnant?",
+  "Are you having thoughts of harming yourself or someone else?",
+  "Do you have a specific symptom or health concern you want evaluated today?",
+  "Did this concern begin recently?",
+  "Is the concern getting worse?",
+  "Have you had this problem before?",
+  "Do you have any diagnosed medical conditions?",
+  "Have you had any recent injury, surgery, hospitalization, or infection?",
+  "Are you taking any prescription or over-the-counter medicines?",
+  "Do you have any medication or food allergies?",
+  "Do you use tobacco, alcohol, or recreational drugs?",
+  "Is there a significant medical condition that runs in your immediate family?",
+  "Has this problem significantly affected your ability to eat, drink, sleep, work, or perform usual activities?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "yes",
+  "18": "no",
+  "19": "yes",
+  "20": "no",
+  "21": "no",
+  "22": "no",
+  "23": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Complete physical examination, including vital signs and orthostatic blood pressure measurement",
+  "Medication reconciliation, including the indication and dose of each medication",
+  "Review of prior medical records, diagnoses, laboratory results, and imaging reports"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "speech assessment",
+  "eye movements and reflexes",
+  "cognitive screen",
+  "medication and toxin exposure history"
+ ],
+ "results": [
+  "1. Complete physical examination, including vital signs and orthostatic blood pressure measurement",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "     speech assessment: normal",
+  "     eye movements and reflexes: normal",
+  "     cognitive screen: normal",
+  "2. Medication reconciliation, including the indication and dose of each medication",
+  "     medication and toxin exposure history: methotrexate 15 mg weekly for six years for psoriatic arthritis; the dystonia improved after switching to sulfasalazine",
+  "3. Review of prior medical records, diagnoses, laboratory results, and imaging reports",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Methotrexate-induced secondary dystonia (a delayed adverse drug reaction to chronic low-dose methotrexate)\n\nALTERNATIVE: Idiopathic focal dystonia\n\nALTERNATIVE: Functional neurological movement disorder\n\nALTERNATIVE: Dystonia secondary to another medication or metabolic cause",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Complete physical examination, including vital signs and orthostatic blood pressure measurement\n2. Medication reconciliation, including the indication and dose of each medication\n3. Review of prior medical records, diagnoses, laboratory results, and imaging reports",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Methotrexate-induced secondary dystonia (a delayed adverse drug reaction to chronic low-dose methotrexate)",
+ "decisive_served": [
+  "medication and toxin exposure history"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 144,
+   "completion_tokens": 694,
+   "total_tokens": 838,
+   "cost": 0.0004308,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004308,
+    "upstream_inference_prompt_cost": 1.44e-05,
+    "upstream_inference_completions_cost": 0.0004164
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 401,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 978,
+   "completion_tokens": 360,
+   "total_tokens": 1338,
+   "cost": 0.0003138,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003138,
+    "upstream_inference_prompt_cost": 9.78e-05,
+    "upstream_inference_completions_cost": 0.000216
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 307,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1318,
+   "completion_tokens": 283,
+   "total_tokens": 1601,
+   "cost": 0.000334475,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 1315,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000334475,
+    "upstream_inference_prompt_cost": 0.000164675,
+    "upstream_inference_completions_cost": 0.0001698
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 216,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "moderate_tardive_PMC10656108.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 35.1
+}

@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Is the oscillation strictly horizontal?",
+  "Does the oscillation change direction when you look to one side versus the other?",
+  "Do you have a history of multiple sclerosis?",
+  "Do you have a history of stroke or brainstem injury?",
+  "Do you have congenital nystagmus (present since birth)?",
+  "Do you experience oscillopsia (the sensation that the environment is moving)?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain with attention to the posterior fossa and craniocervical junction",
+  "CT scan of the head and cervical spine"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI susceptibility-weighted sequences",
+  "MRI brain with DWI",
+  "MRI sella and orbits",
+  "diffusion tensor imaging",
+  "diffusion tensor tractography",
+  "CT head (non-contrast)",
+  "MRI cervical and thoracic spine",
+  "CT / MR angiography (posterior circulation)",
+  "CT / MR angiography (circle of Willis)"
+ ],
+ "results": [
+  "1. MRI of the brain with attention to the posterior fossa and craniocervical junction",
+  "     MRI brain with gadolinium: normal",
+  "     MRI diffusion-weighted sequences: normal",
+  "     MRI susceptibility-weighted sequences: normal",
+  "     MRI brain with DWI: no acute infarct, no lesion",
+  "     MRI sella and orbits: normal pituitary and orbits",
+  "     diffusion tensor imaging: not performed",
+  "     diffusion tensor tractography: not performed",
+  "2. CT scan of the head and cervical spine",
+  "     CT head (non-contrast): normal",
+  "     MRI cervical and thoracic spine: normal",
+  "     CT / MR angiography (posterior circulation): normal",
+  "     CT / MR angiography (circle of Willis): normal / non-contributory"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic pendular nystagmus\n1. Paraneoplastic cerebellar degeneration (e.g., anti-Yo, anti-Hu, or anti-Ri antibodies)\n2. Toxic-metabolic encephalopathy (e.g., lithium, amiodarone, or heavy metal toxicity)\n3. Early spinocerebellar ataxia",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain with attention to the posterior fossa and craniocervical junction\n2. CT scan of the head and cervical spine",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Idiopathic pendular nystagmus",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 182,
+   "completion_tokens": 91,
+   "total_tokens": 273,
+   "cost": 7.007e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.007e-05,
+    "upstream_inference_prompt_cost": 2.73e-05,
+    "upstream_inference_completions_cost": 4.277e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 543,
+   "completion_tokens": 31,
+   "total_tokens": 574,
+   "cost": 9.602e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.602e-05,
+    "upstream_inference_prompt_cost": 8.145e-05,
+    "upstream_inference_completions_cost": 1.457e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 832,
+   "completion_tokens": 82,
+   "total_tokens": 914,
+   "cost": 9.4732e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.4732e-05,
+    "upstream_inference_prompt_cost": 5.6192e-05,
+    "upstream_inference_completions_cost": 3.854e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 16.7
+}

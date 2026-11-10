@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Do you have a known history of thyroid disease?",
+  "Have you experienced any recent double vision?",
+  "Do your eyes feel dry, gritty, or painful?",
+  "Has anyone commented that your eyes look unusually large or bulging?",
+  "Do you have a history of diabetes or high blood pressure?",
+  "Have you had any recent head trauma or facial injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "MRI brain with DWI",
+  "CT / MR angiography (posterior circulation)"
+ ],
+ "results": [
+  "1. nystagmus: direction and whether it changes with gaze: ipsilesional torsional nystagmus",
+  "2. skew deviation / alternating cover test: skew deviation with LATERAL ALTERNATION - right eye hypotropic, left eye hypertropic",
+  "3. ocular torsion and head tilt: RIGHT-sided head tilt; right eye excyclotorted and left eye incyclotorted - the complete ocular tilt reaction",
+  "4. MRI brain with DWI: LEFT rostral pontine infarct and a caudal mesencephalic infarct extending along the paramedian line to the midline",
+  "5. CT / MR angiography (posterior circulation): TOP-OF-THE-BASILAR OCCLUSION; thrombectomy was deferred as he was well preserved"
+ ],
+ "dx_raw": "DIAGNOSIS: Ocular tilt reaction secondary to acute ischemic stroke (left rostral pontine and caudal mesencephalic infarction) caused by top-of-the-basilar syndrome.\n\n1. Skew deviation with ocular torsion due to a brainstem lesion (e.g., demyelinating plaque in Multiple Sclerosis or space-occupying lesion).\n2. Acute vestibular neuritis presenting with skew deviation and nystagmus.\n3. Internuclear ophthalmoplegia (INO) associated with a midbrain/pontine vascular event.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Ocular tilt reaction secondary to acute ischemic stroke (left rostral pontine and caudal mesencephalic infarction) caused by top-of-the-basilar syndrome.",
+ "decisive_served": [
+  "nystagmus: direction and whether it changes with gaze",
+  "skew deviation / alternating cover test",
+  "ocular torsion and head tilt",
+  "MRI brain with DWI",
+  "CT / MR angiography (posterior circulation)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4822,
+   "completion_tokens": 83,
+   "total_tokens": 4905,
+   "cost": 0.00076231,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00076231,
+    "upstream_inference_prompt_cost": 0.0007233,
+    "upstream_inference_completions_cost": 3.901e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5279,
+   "completion_tokens": 123,
+   "total_tokens": 5402,
+   "cost": 0.00024934,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00024934,
+    "upstream_inference_prompt_cost": 0.00019153,
+    "upstream_inference_completions_cost": 5.781e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.7,
+ "video": "severe_1_ocular_tilt_PMC8061496.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 17.5
+}

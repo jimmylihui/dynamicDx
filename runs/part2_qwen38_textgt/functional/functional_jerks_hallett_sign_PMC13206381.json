@@ -1,0 +1,129 @@
+{
+ "questions": [
+  "Is the patient currently taking any medications?",
+  "Does the patient have a known history of epilepsy or seizure disorders?",
+  "Has the patient recently experienced significant psychological stress or trauma?",
+  "Does the patient report difficulty with voluntary movement or coordination in other contexts?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Perform the tendon reflex examination with the patient's eyes closed",
+  "Perform the tendon reflex examination with the patient distracted by mental arithmetic"
+ ],
+ "served": [
+  "deep tendon reflexes and plantar responses",
+  "deep tendon reflexes and plantar responses"
+ ],
+ "results": [
+  "1. Perform the tendon reflex examination with the patient's eyes closed",
+  "     deep tendon reflexes and plantar responses: normal",
+  "2. Perform the tendon reflex examination with the patient distracted by mental arithmetic",
+  "     deep tendon reflexes and plantar responses: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Functional neurological disorder (psychogenic hyperreflexia)\nAlternative 1: Anxiety state with heightened startle response\nAlternative 2: Early or mild upper motor neuron lesion not yet manifesting as structural reflex changes",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Perform the tendon reflex examination with the patient's eyes closed\n2. Perform the tendon reflex examination with the patient distracted by mental arithmetic",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Functional neurological disorder (psychogenic hyperreflexia)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 198,
+   "completion_tokens": 57,
+   "total_tokens": 255,
+   "cost": 5.649e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.649e-05,
+    "upstream_inference_prompt_cost": 2.97e-05,
+    "upstream_inference_completions_cost": 2.679e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 483,
+   "completion_tokens": 28,
+   "total_tokens": 511,
+   "cost": 8.561e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.561e-05,
+    "upstream_inference_prompt_cost": 7.245e-05,
+    "upstream_inference_completions_cost": 1.316e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 666,
+   "completion_tokens": 49,
+   "total_tokens": 715,
+   "cost": 8.8626e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 8.8626e-05,
+    "upstream_inference_prompt_cost": 6.5596e-05,
+    "upstream_inference_completions_cost": 2.303e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "functional_jerks_hallett_sign_PMC13206381.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 13.1
+}

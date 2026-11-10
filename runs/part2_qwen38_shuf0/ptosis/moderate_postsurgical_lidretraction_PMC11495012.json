@@ -1,0 +1,155 @@
+{
+ "questions": [
+  "Do you have double vision?",
+  "Does the double vision disappear if you cover one eye?",
+  "Is the double vision present when looking at distant objects?",
+  "Is the double vision present when looking at near objects?",
+  "Do you have a history of diabetes?",
+  "Do you have a history of high blood pressure?",
+  "Do you have a history of thyroid disease?",
+  "Do you have a headache?",
+  "Do you have pain behind your eyes?",
+  "Do you have drooping of the upper eyelid?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Ice pack test",
+  "Serum acetylcholine receptor antibodies",
+  "Serum muscle-specific kinase (MuSK) antibodies",
+  "CT scan of the chest",
+  "Edrophonium test"
+ ],
+ "served": [
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "anti-MuSK antibodies",
+  "CT chest (thymus)"
+ ],
+ "results": [
+  "1. Ice pack test",
+  "     ice-pack test: negative",
+  "2. Serum acetylcholine receptor antibodies",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "3. Serum muscle-specific kinase (MuSK) antibodies",
+  "     anti-MuSK antibodies: negative",
+  "4. CT scan of the chest",
+  "     CT chest (thymus): no thymic mass",
+  "5. Edrophonium test",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Chronic progressive external ophthalmoplegia (CPEO)\n\n1. Myasthenia Gravis\n2. Thyroid Eye Disease\n3. Mitochondrial Myopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Ice pack test\n2. Serum acetylcholine receptor antibodies\n3. Serum muscle-specific kinase (MuSK) antibodies\n4. CT scan of the chest\n5. Edrophonium test",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Chronic progressive external ophthalmoplegia (CPEO)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 122,
+   "total_tokens": 4945,
+   "cost": 0.00078079,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00078079,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 5.734e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5260,
+   "completion_tokens": 43,
+   "total_tokens": 5303,
+   "cost": 0.00020889,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020889,
+    "upstream_inference_prompt_cost": 0.00018868,
+    "upstream_inference_completions_cost": 2.021e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5495,
+   "completion_tokens": 43,
+   "total_tokens": 5538,
+   "cost": 0.000175532,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000175532,
+    "upstream_inference_prompt_cost": 0.000155322,
+    "upstream_inference_completions_cost": 2.021e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 15.0
+}

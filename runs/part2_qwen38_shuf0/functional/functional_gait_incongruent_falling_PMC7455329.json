@@ -1,0 +1,150 @@
+{
+ "questions": [
+  "Did you fall?",
+  "Are you currently experiencing pain?",
+  "Do you have a history of seizures or epilepsy?",
+  "Have you recently started any new medications?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Orthostatic vital signs (blood pressure and heart rate measured supine, then at 1 and 3 minutes standing)",
+  "12-lead electrocardiogram",
+  "Continuous cardiac telemetry monitoring",
+  "Basic metabolic panel (including glucose and electrolytes)",
+  "Complete blood count"
+ ],
+ "served": [
+  "video-EEG monitoring with limb surface electrodes",
+  "serum electrolytes, urea and creatinine",
+  "serum calcium, magnesium and phosphate",
+  "blood glucose and HbA1c",
+  "venous blood gas",
+  "full blood count, renal and liver profile"
+ ],
+ "results": [
+  "1. Orthostatic vital signs (blood pressure and heart rate measured supine, then at 1 and 3 minutes standing)",
+  "     not performed / not available",
+  "2. 12-lead electrocardiogram",
+  "     not performed / not available",
+  "3. Continuous cardiac telemetry monitoring",
+  "     video-EEG monitoring with limb surface electrodes: no ictal discharge accompanies the falls",
+  "4. Basic metabolic panel (including glucose and electrolytes)",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     serum calcium, magnesium and phosphate: normal",
+  "     blood glucose and HbA1c: normal",
+  "     venous blood gas: normal",
+  "5. Complete blood count",
+  "     full blood count, renal and liver profile: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Drop attacks (atonic seizures)\nAtonic seizures\nCataplexy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Orthostatic vital signs (blood pressure and heart rate measured supine, then at 1 and 3 minutes standing)\n2. 12-lead electrocardiogram\n3. Continuous cardiac telemetry monitoring\n4. Basic metabolic panel (including glucose and electrolytes)\n5. Complete blood count",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Drop attacks (atonic seizures)",
+ "decisive_served": [
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6359,
+   "completion_tokens": 40,
+   "total_tokens": 6399,
+   "cost": 0.00097265,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00097265,
+    "upstream_inference_prompt_cost": 0.00095385,
+    "upstream_inference_completions_cost": 1.88e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 6608,
+   "completion_tokens": 66,
+   "total_tokens": 6674,
+   "cost": 0.000216076,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6016,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000216076,
+    "upstream_inference_prompt_cost": 0.000185056,
+    "upstream_inference_completions_cost": 3.102e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 6930,
+   "completion_tokens": 24,
+   "total_tokens": 6954,
+   "cost": 0.000210332,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6272,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000210332,
+    "upstream_inference_prompt_cost": 0.000199052,
+    "upstream_inference_completions_cost": 1.128e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 18.4
+}

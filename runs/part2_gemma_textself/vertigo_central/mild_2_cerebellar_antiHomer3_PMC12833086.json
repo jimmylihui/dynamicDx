@@ -1,0 +1,149 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have a diagnosis of multiple sclerosis?",
+  "Have you had similar neurological symptoms in the past?",
+  "Are you over 50 years old?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Do you have any weakness or numbness in your limbs?",
+  "Have you ever had a loss of vision in one eye?",
+  "Do your eyelids droop more as the day progresses?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain and brainstem with and without contrast",
+  "Lumbar puncture for CSF analysis",
+  "Visual Evoked Potentials"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "CSF opening pressure",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "lumbar puncture / CSF"
+ ],
+ "results": [
+  "1. MRI of the brain and brainstem with and without contrast",
+  "     MRI brain with gadolinium: normal",
+  "2. Lumbar puncture for CSF analysis",
+  "     CSF opening pressure: normal",
+  "     CSF cell count and differential: inflammatory changes",
+  "     CSF protein: elevated",
+  "     CSF glucose: normal",
+  "     lumbar puncture / CSF: inflammatory changes",
+  "3. Visual Evoked Potentials",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Multiple Sclerosis caused by autoimmune demyelination of the central nervous system.\nNeuromyelitis Optica Spectrum Disorder\nMOG antibody-associated disease\nNeurosyphilis",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. MRI of the brain and brainstem with and without contrast\n2. Lumbar puncture for CSF analysis\n3. Visual Evoked Potentials",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Multiple Sclerosis caused by autoimmune demyelination of the central nervous system.",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 201,
+   "completion_tokens": 3494,
+   "total_tokens": 3695,
+   "cost": 0.00120806,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00120806,
+    "upstream_inference_prompt_cost": 2.01e-05,
+    "upstream_inference_completions_cost": 0.00118796
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3255,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 595,
+   "completion_tokens": 761,
+   "total_tokens": 1356,
+   "cost": 0.00031824,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00031824,
+    "upstream_inference_prompt_cost": 5.95e-05,
+    "upstream_inference_completions_cost": 0.00025874
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 718,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 808,
+   "completion_tokens": 2967,
+   "total_tokens": 3775,
+   "cost": 0.00108958,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00108958,
+    "upstream_inference_prompt_cost": 8.08e-05,
+    "upstream_inference_completions_cost": 0.00100878
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2927,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.4,
+ "video": "mild_2_cerebellar_antiHomer3_PMC12833086.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 245.1
+}

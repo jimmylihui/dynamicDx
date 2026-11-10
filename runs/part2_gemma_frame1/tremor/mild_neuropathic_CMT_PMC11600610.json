@@ -1,0 +1,162 @@
+{
+ "questions": [
+  "Do you have a headache?",
+  "Is the pain located around your eyes or forehead?",
+  "Do you have a fever?",
+  "Do you have a runny or stuffy nose?",
+  "Is the pain worse when you lean forward?",
+  "Are you experiencing any changes in your vision?",
+  "Have you had a recent head injury?",
+  "Do you feel nauseous?",
+  "Is the pain on both sides of your head?",
+  "Do you have a history of migraines?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Visual field testing",
+  "Fundoscopy",
+  "MRI of the brain and orbits",
+  "Full neurological examination"
+ ],
+ "served": [
+  "fundoscopy",
+  "brain MRI",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test"
+ ],
+ "results": [
+  "1. Visual field testing",
+  "     not performed / not available",
+  "2. Fundoscopy",
+  "     fundoscopy: normal",
+  "3. MRI of the brain and orbits",
+  "     brain MRI: no structural lesion",
+  "4. Full neurological examination",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: distal weakness: upper limbs 4+/5, lower limbs 3/5 bilaterally",
+  "     sensory examination (pinprick, vibration, proprioception): mild vibratory sensory loss",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: postural tremor; pull test normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Charcot-Marie-Tooth disease (genetic mutation)\nChronic inflammatory demyelinating polyneuropathy (CIDP)\nFriedreich's ataxia\nVitamin B12 deficiency",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Visual field testing\n2. Fundoscopy\n3. MRI of the brain and orbits\n4. Full neurological examination",
+ "rationale": [
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Charcot-Marie-Tooth disease (genetic mutation)",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 420,
+   "completion_tokens": 1180,
+   "total_tokens": 1600,
+   "cost": 0.0004432,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004432,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.0004012
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 952,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 832,
+   "completion_tokens": 918,
+   "total_tokens": 1750,
+   "cost": 0.00039532,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00039532,
+    "upstream_inference_prompt_cost": 8.32e-05,
+    "upstream_inference_completions_cost": 0.00031212
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 871,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1099,
+   "completion_tokens": 3858,
+   "total_tokens": 4957,
+   "cost": 0.00142162,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00142162,
+    "upstream_inference_prompt_cost": 0.0001099,
+    "upstream_inference_completions_cost": 0.00131172
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3534,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 1,
+ "duration_s": 21.7,
+ "video": "mild_neuropathic_CMT_PMC11600610.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 243.4
+}

@@ -1,0 +1,141 @@
+{
+ "questions": [
+  "Is the eye movement abnormality present only when looking down?",
+  "Do you have a history of head trauma?",
+  "Have you been diagnosed with multiple sclerosis?",
+  "Do you experience double vision?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain and orbits with attention to the midbrain",
+  "CT angiography of the head"
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "MRI diffusion-weighted sequences",
+  "MRI sella and orbits",
+  "diffusion tensor imaging",
+  "diffusion tensor tractography",
+  "CT / MR angiography (posterior circulation)",
+  "CT / MR angiography (circle of Willis)"
+ ],
+ "results": [
+  "1. MRI of the brain and orbits with attention to the midbrain",
+  "     MRI brain with gadolinium: bilateral dorsomedial pontine and left thalamic infarction",
+  "     MRI diffusion-weighted sequences: restricted diffusion in the bilateral dorsomedial pons and left thalamus",
+  "     MRI sella and orbits: normal - no parasellar or suprasellar mass",
+  "     diffusion tensor imaging: not performed",
+  "     diffusion tensor tractography: not performed",
+  "2. CT angiography of the head",
+  "     CT / MR angiography (posterior circulation): slender left anterior cerebral artery and stenosis of the ipsilateral posterior cerebral artery",
+  "     CT / MR angiography (circle of Willis): normal / non-contributory"
+ ],
+ "dx_raw": "DIAGNOSIS: Ocular bobbing secondary to bilateral dorsomedial pontine infarction\nAlternative 1: Ocular dipping secondary to metabolic encephalopathy or hypoxic-ischemic injury\nAlternative 2: Paroxysmal vertical nystagmus associated with posterior fossa pathology",
+ "order_style": "open",
+ "novideo": true,
+ "signtext": "gt",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain and orbits with attention to the midbrain\n2. CT angiography of the head",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Ocular bobbing secondary to bilateral dorsomedial pontine infarction",
+ "decisive_served": [
+  "MRI sella and orbits"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 184,
+   "completion_tokens": 46,
+   "total_tokens": 230,
+   "cost": 4.922e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 4.922e-05,
+    "upstream_inference_prompt_cost": 2.76e-05,
+    "upstream_inference_completions_cost": 2.162e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 447,
+   "completion_tokens": 23,
+   "total_tokens": 470,
+   "cost": 7.786e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.786e-05,
+    "upstream_inference_prompt_cost": 6.705e-05,
+    "upstream_inference_completions_cost": 1.081e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 720,
+   "completion_tokens": 63,
+   "total_tokens": 783,
+   "cost": 0.000103306,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000103306,
+    "upstream_inference_prompt_cost": 7.3696e-05,
+    "upstream_inference_completions_cost": 2.961e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.2,
+ "video": "mild_1_seesaw_INO_PMC6883617.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 14.6
+}

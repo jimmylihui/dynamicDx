@@ -1,0 +1,127 @@
+{
+ "questions": [
+  "Can you feel touch normally in both legs?",
+  "Can you voluntarily move both legs and feet?",
+  "Do you have complete inability to move either leg?",
+  "Do you have numbness or tingling in either leg?",
+  "Have you lost control of your bladder or bowels?",
+  "Did these symptoms begin suddenly?",
+  "Did they begin after a fall, accident, or other injury?",
+  "Do you have severe back or neck pain?",
+  "Have you had any loss of consciousness or seizure?",
+  "Do you have weakness or numbness in either arm?",
+  "Have doctors told you that scans of your spine or brain showed an injury?",
+  "Were you able to walk normally before this episode?",
+  "Have you ever had a similar episode before?",
+  "Do your symptoms become better when you are distracted?",
+  "Are you currently under major emotional or psychological stress?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "witnessed description of the event",
+  "head injury history",
+  "neurological examination between events",
+  "interictal EEG"
+ ],
+ "results": [
+  "1. witnessed description of the event: the right arm reaches and grasps and takes a DYSTONIC posture during the movement, despite a manual muscle testing score of 1 - the movement is ictal, not voluntary",
+  "2. head injury history: traumatic brain injury after being thrown from a horse",
+  "3. neurological examination between events: right-sided hemiplegia, manual muscle testing grade 1",
+  "4. interictal EEG: repetitive sharp waves predominantly in the LEFT FRONTAL area during sleep, with pseudocontinuous 3 Hz slow waves in the same region on awakening"
+ ],
+ "dx_raw": "DIAGNOSIS: Post-traumatic left frontal lobe focal epilepsy, causing ictal right-arm dystonic/complex motor seizures in the setting of right hemiplegia\n\nAlternative: Focal motor seizures arising from the left supplementary motor or premotor cortex due to traumatic brain injury\n\nAlternative: Structural post-traumatic epilepsy from an occult left frontal contusion or scar\n\nAlternative: Psychogenic nonepileptic events (unlikely given the ictal dystonia and concordant left-frontal epileptiform EEG)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Post-traumatic left frontal lobe focal epilepsy, causing ictal right-arm dystonic/complex motor seizures in the setting of right hemiplegia",
+ "decisive_served": [
+  "witnessed description of the event",
+  "head injury history",
+  "neurological examination between events",
+  "interictal EEG"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 7532,
+   "completion_tokens": 706,
+   "total_tokens": 8238,
+   "cost": 0.00049919,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7529,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00049919,
+    "upstream_inference_prompt_cost": 7.559e-05,
+    "upstream_inference_completions_cost": 0.0004236
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 516,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 8192,
+   "completion_tokens": 351,
+   "total_tokens": 8543,
+   "cost": 0.00036869,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 7529,
+    "cache_write_tokens": 660,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00036869,
+    "upstream_inference_prompt_cost": 0.00015809,
+    "upstream_inference_completions_cost": 0.0002106
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 243,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_3_reaching_PMC6230673.mp4",
+ "line": "paroxysmal",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 21.5
+}

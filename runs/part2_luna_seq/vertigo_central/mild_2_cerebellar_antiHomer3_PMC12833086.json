@@ -1,0 +1,276 @@
+{
+ "questions": [
+  "Do you experience a sensation that the environment is moving or bouncing when your eyes move?",
+  "Have these abnormal eye movements been present since childhood?",
+  "Did these eye movements begin suddenly within the last few days or weeks?",
+  "Do you have double vision?",
+  "Do you have dizziness, imbalance, weakness, numbness, difficulty speaking, or severe headache?",
+  "Are you taking anticonvulsants, sedatives, lithium, or other psychiatric medications?",
+  "Do the eye movements worsen when you look to either side?",
+  "Can you intentionally start and stop the abnormal eye movements?",
+  "Do the eye movements consist of rapid, back-and-forth horizontal movements?",
+  "Do they occur only when you try to make them happen or when you deliberately shift your gaze?",
+  "Have you had recent fever, viral illness, vaccination, or infection?",
+  "Have you had hearing loss, ringing in the ears, or a spinning sensation?",
+  "Do you have recurrent headaches, light sensitivity, or visual aura?",
+  "Have you ever had episodes of loss of consciousness, seizures, or confusion?",
+  "Have you had prior episodes of weakness, numbness, imbalance, or speech difficulty that resolved?",
+  "Do the abnormal eye movements occur during, immediately before, or immediately after your seizures?",
+  "Are your seizures characterized by brief staring spells with impaired awareness?",
+  "Do rapid blinking or upward jerking of the eyes occur when you close your eyes?",
+  "Are your seizures triggered by flashing lights or visual patterns?",
+  "Have you had sudden brief jerks of your arms, especially shortly after waking?",
+  "Have you had generalized convulsive seizures with stiffening and rhythmic jerking?",
+  "Do you have a family history of epilepsy or similar abnormal eye movements?",
+  "Have you had developmental delay, progressive memory or coordination problems, or cognitive decline?",
+  "Do you have difficulty walking, clumsiness, or trouble coordinating your hands?",
+  "Do you have involuntary jerks or tremors other than during the seizures?",
+  "Have the abnormal eye movements progressively worsened over time?",
+  "Have you had unexplained weight loss, night sweats, or an underlying cancer diagnosis?",
+  "Have you had a recent tick bite, diarrheal illness, or exposure to contaminated food or water?",
+  "Have you ever had liver disease, jaundice, psychiatric changes, or a tremor?",
+  "Have you noticed a brown ring around the colored part of either eye?",
+  "Did the generalized seizures begin before the abnormal eye movements?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "yes",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "yes",
+  "22": "no",
+  "23": "no",
+  "24": "yes",
+  "25": "no",
+  "26": "no",
+  "27": "no",
+  "28": "no",
+  "29": "no",
+  "30": "no",
+  "31": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "MRI of the brain and brainstem with and without gadolinium contrast, including thin-section imaging of the cerebellum and internal auditory canals.",
+  "Prolonged video-electroencephalography (EEG) monitoring with simultaneous video recording and eye-movement channels, including attempted capture of the abnormal eye movements and sleep.",
+  "Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, oligoclonal bands, IgG index, infectious PCR panel, and paired serum/CSF autoimmune encephalitis and paraneoplastic antibody panels, including anti-GAD65, NMDA-receptor, AMPA-receptor, GABA-B-receptor, LGI1, CASPR2, Hu, Ri, Yo, Ma2, and CRMP5 antibodies.",
+  "Serum anti-GAD65 antibody level.",
+  "Genetic testing for progressive myoclonus epilepsy and cerebellar ataxia genes, including **KCNC1**, **SACS**, **STXBP1**, and common spinocerebellar ataxia repeat expansions."
+ ],
+ "served": [
+  "MRI brain with gadolinium",
+  "video-oculography / eye-movement recording",
+  "EEG",
+  "lumbar puncture / CSF",
+  "CSF cell count and differential",
+  "CSF protein",
+  "CSF glucose",
+  "CSF oligoclonal bands and IgG index",
+  "CSF culture and viral PCR",
+  "CSF autoimmune encephalitis panel",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "paraneoplastic and autoimmune antibody panel (serum)"
+ ],
+ "results": [
+  "R1 ASK Do you experience a sensation that the environment is moving or bouncing when your eyes move?; Have these abnormal eye movements been present since childhood?; Did these eye movements begin suddenly within the last few days or weeks?; Do you have double vision?; Do you have dizziness, imbalance, weakness, numbness, difficulty speaking, or severe headache?; Are you taking anticonvulsants, sedatives, lithium, or other psychiatric medications?; Do the eye movements worsen when you look to either side? -> ['no', 'no', 'no', 'no', 'yes', 'no', 'no']",
+  "R2 ORDER MRI of the brain and brainstem with and without gadolinium contrast, including thin-section imaging of the cerebellum and internal auditory canals. -> [['MRI brain with gadolinium']]",
+  "R3 ASK Can you intentionally start and stop the abnormal eye movements?; Do the eye movements consist of rapid, back-and-forth horizontal movements?; Do they occur only when you try to make them happen or when you deliberately shift your gaze?; Have you had recent fever, viral illness, vaccination, or infection?; Have you had hearing loss, ringing in the ears, or a spinning sensation?; Do you have recurrent headaches, light sensitivity, or visual aura?; Have you ever had episodes of loss of consciousness, seizures, or confusion?; Have you had prior episodes of weakness, numbness, imbalance, or speech difficulty that resolved? -> ['no', 'no', 'no', 'no', 'no', 'no', 'yes', 'no']",
+  "R4 ORDER Prolonged video-electroencephalography (EEG) monitoring with simultaneous video recording and eye-movement channels, including attempted capture of the abnormal eye movements and sleep. -> [['video-oculography / eye-movement recording', 'EEG']]",
+  "R5 ASK Do the abnormal eye movements occur during, immediately before, or immediately after your seizures?; Are your seizures characterized by brief staring spells with impaired awareness?; Do rapid blinking or upward jerking of the eyes occur when you close your eyes?; Are your seizures triggered by flashing lights or visual patterns?; Have you had sudden brief jerks of your arms, especially shortly after waking?; Have you had generalized convulsive seizures with stiffening and rhythmic jerking?; Do you have a family history of epilepsy or similar abnormal eye movements?; Have you had developmental delay, progressive memory or coordination problems, or cognitive decline? -> ['no', 'no', 'no', 'no', 'no', 'yes', 'no', 'no']",
+  "R6 ASK Do you have difficulty walking, clumsiness, or trouble coordinating your hands?; Do you have involuntary jerks or tremors other than during the seizures?; Have the abnormal eye movements progressively worsened over time?; Have you had unexplained weight loss, night sweats, or an underlying cancer diagnosis?; Have you had a recent tick bite, diarrheal illness, or exposure to contaminated food or water?; Have you ever had liver disease, jaundice, psychiatric changes, or a tremor?; Have you noticed a brown ring around the colored part of either eye?; Did the generalized seizures begin before the abnormal eye movements? -> ['yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R7 ORDER Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, oligoclonal bands, IgG index, infectious PCR panel, and paired serum/CSF autoimmune encephalitis and paraneoplastic antibody panels, including anti-GAD65, NMDA-receptor, AMPA-receptor, GABA-B-receptor, LGI1, CASPR2, Hu, Ri, Yo, Ma2, and CRMP5 antibodies.; Serum anti-GAD65 antibody level.; Genetic testing for progressive myoclonus epilepsy and cerebellar ataxia genes, including **KCNC1**, **SACS**, **STXBP1**, and common spinocerebellar ataxia repeat expansions. -> [['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF culture and viral PCR', 'CSF autoimmune encephalitis panel', 'serum paraneoplastic / neuronal autoantibody panel', 'paraneoplastic and autoimmune antibody panel (serum)'], ['serum paraneoplastic / neuronal autoantibody panel', 'paraneoplastic and autoimmune antibody panel (serum)'], []]",
+  "R8 DIAGNOSIS Anti-Homer3 antibody–associated autoimmune cerebellar encephalitis (autoimmune cerebellar ataxia with epileptic seizures and saccadic eye-movement abnormalities), with concurrent HHV-7 detected in CSF; no evidence currently establishes an underlying malignancy. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do you experience a sensation that the environment is moving or bouncing when your eyes move?",
+    "Have these abnormal eye movements been present since childhood?",
+    "Did these eye movements begin suddenly within the last few days or weeks?",
+    "Do you have double vision?",
+    "Do you have dizziness, imbalance, weakness, numbness, difficulty speaking, or severe headache?",
+    "Are you taking anticonvulsants, sedatives, lithium, or other psychiatric medications?",
+    "Do the eye movements worsen when you look to either side?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "MRI of the brain and brainstem with and without gadolinium contrast, including thin-section imaging of the cerebellum and internal auditory canals."
+   ],
+   "result": [
+    [
+     "MRI brain with gadolinium"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Can you intentionally start and stop the abnormal eye movements?",
+    "Do the eye movements consist of rapid, back-and-forth horizontal movements?",
+    "Do they occur only when you try to make them happen or when you deliberately shift your gaze?",
+    "Have you had recent fever, viral illness, vaccination, or infection?",
+    "Have you had hearing loss, ringing in the ears, or a spinning sensation?",
+    "Do you have recurrent headaches, light sensitivity, or visual aura?",
+    "Have you ever had episodes of loss of consciousness, seizures, or confusion?",
+    "Have you had prior episodes of weakness, numbness, imbalance, or speech difficulty that resolved?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Prolonged video-electroencephalography (EEG) monitoring with simultaneous video recording and eye-movement channels, including attempted capture of the abnormal eye movements and sleep."
+   ],
+   "result": [
+    [
+     "video-oculography / eye-movement recording",
+     "EEG"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Do the abnormal eye movements occur during, immediately before, or immediately after your seizures?",
+    "Are your seizures characterized by brief staring spells with impaired awareness?",
+    "Do rapid blinking or upward jerking of the eyes occur when you close your eyes?",
+    "Are your seizures triggered by flashing lights or visual patterns?",
+    "Have you had sudden brief jerks of your arms, especially shortly after waking?",
+    "Have you had generalized convulsive seizures with stiffening and rhythmic jerking?",
+    "Do you have a family history of epilepsy or similar abnormal eye movements?",
+    "Have you had developmental delay, progressive memory or coordination problems, or cognitive decline?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty walking, clumsiness, or trouble coordinating your hands?",
+    "Do you have involuntary jerks or tremors other than during the seizures?",
+    "Have the abnormal eye movements progressively worsened over time?",
+    "Have you had unexplained weight loss, night sweats, or an underlying cancer diagnosis?",
+    "Have you had a recent tick bite, diarrheal illness, or exposure to contaminated food or water?",
+    "Have you ever had liver disease, jaundice, psychiatric changes, or a tremor?",
+    "Have you noticed a brown ring around the colored part of either eye?",
+    "Did the generalized seizures begin before the abnormal eye movements?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, oligoclonal bands, IgG index, infectious PCR panel, and paired serum/CSF autoimmune encephalitis and paraneoplastic antibody panels, including anti-GAD65, NMDA-receptor, AMPA-receptor, GABA-B-receptor, LGI1, CASPR2, Hu, Ri, Yo, Ma2, and CRMP5 antibodies.",
+    "Serum anti-GAD65 antibody level.",
+    "Genetic testing for progressive myoclonus epilepsy and cerebellar ataxia genes, including **KCNC1**, **SACS**, **STXBP1**, and common spinocerebellar ataxia repeat expansions."
+   ],
+   "result": [
+    [
+     "lumbar puncture / CSF",
+     "CSF cell count and differential",
+     "CSF protein",
+     "CSF glucose",
+     "CSF oligoclonal bands and IgG index",
+     "CSF culture and viral PCR",
+     "CSF autoimmune encephalitis panel",
+     "serum paraneoplastic / neuronal autoantibody panel",
+     "paraneoplastic and autoimmune antibody panel (serum)"
+    ],
+    [
+     "serum paraneoplastic / neuronal autoantibody panel",
+     "paraneoplastic and autoimmune antibody panel (serum)"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "diagnosis",
+   "text": "Anti-Homer3 antibody–associated autoimmune cerebellar encephalitis (autoimmune cerebellar ataxia with epileptic seizures and saccadic eye-movement abnormalities), with concurrent HHV-7 detected in CSF; no evidence currently establishes an underlying malignancy."
+  }
+ ],
+ "dx": "Anti-Homer3 antibody–associated autoimmune cerebellar encephalitis (autoimmune cerebellar ataxia with epileptic seizures and saccadic eye-movement abnormalities), with concurrent HHV-7 detected in CSF; no evidence currently establishes an underlying malignancy.",
+ "dx_raw": "DIAGNOSIS: Anti-Homer3 antibody–associated autoimmune cerebellar encephalitis (autoimmune cerebellar ataxia with epileptic seizures and saccadic eye-movement abnormalities), with concurrent HHV-7 detected in CSF; no evidence currently establishes an underlying malignancy.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 7,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "paraneoplastic and autoimmune antibody panel (serum)"
+ ],
+ "n_decisive": 3,
+ "cost_usd": 0.007,
+ "n_frames": 32,
+ "duration_s": 25.4,
+ "video": "mild_2_cerebellar_antiHomer3_PMC12833086.mp4",
+ "line": "vertigo_central",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 79.6
+}

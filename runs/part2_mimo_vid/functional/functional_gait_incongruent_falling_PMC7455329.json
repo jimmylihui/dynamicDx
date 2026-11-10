@@ -1,0 +1,167 @@
+{
+ "questions": [
+  "Did you feel dizzy or lightheaded before you fell to the floor?",
+  "Are you experiencing any chest pain right now?",
+  "Do you have a known history of heart disease?",
+  "Have you felt short of breath in the minutes before your collapse?",
+  "Do you take any medications for high blood pressure or heart conditions?",
+  "Have you had any recent head trauma or head injury?",
+  "Do you have a history of seizures or epilepsy?",
+  "Have you had any near-falls or similar episodes of sudden weakness recently?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Do you often feel excessively sleepy during the day or doze off unexpectedly?",
+  "Complete blood count",
+  "Basic metabolic panel including glucose",
+  "Electrocardiogram",
+  "Continuous cardiac rhythm monitoring for 24 hours",
+  "Electroencephalogram",
+  "Polysomnography with Multiple Sleep Latency Test",
+  "Magnetic resonance imaging of the brain"
+ ],
+ "served": [
+  "full blood count, renal and liver profile",
+  "serum electrolytes, urea and creatinine",
+  "blood glucose and HbA1c",
+  "back-averaged EEG for a Bereitschaftspotential before the movements",
+  "video-EEG monitoring with limb surface electrodes",
+  "MRI brain"
+ ],
+ "results": [
+  "1. Do you often feel excessively sleepy during the day or doze off unexpectedly?",
+  "     not performed / not available",
+  "2. Complete blood count",
+  "     full blood count, renal and liver profile: normal",
+  "3. Basic metabolic panel including glucose",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     blood glucose and HbA1c: normal",
+  "4. Electrocardiogram",
+  "     not performed / not available",
+  "5. Continuous cardiac rhythm monitoring for 24 hours",
+  "     not performed / not available",
+  "6. Electroencephalogram",
+  "     back-averaged EEG for a Bereitschaftspotential before the movements: not performed",
+  "     video-EEG monitoring with limb surface electrodes: no ictal discharge accompanies the falls",
+  "7. Polysomnography with Multiple Sleep Latency Test",
+  "     not performed / not available",
+  "8. Magnetic resonance imaging of the brain",
+  "     MRI brain: normal"
+ ],
+ "dx_raw": "DIAGNOSY: Cataplexy associated with Narcolepsy Type 1\n\n1. Psychogenic non-epileptic drop attacks\n2. Recurrent drop attacks of unknown etiology\n3. Orthostatic hypotension with recurrent falls",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Do you often feel excessively sleepy during the day or doze off unexpectedly?\n2. Complete blood count\n3. Basic metabolic panel including glucose\n4. Electrocardiogram\n5. Continuous cardiac rhythm monitoring for 24 hours\n6. Electroencephalogram\n7. Polysomnography with Multiple Sleep Latency Test\n8. Magnetic resonance imaging of the brain",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Cataplexy associated with Narcolepsy Type 1",
+ "decisive_served": [
+  "video-EEG monitoring with limb surface electrodes"
+ ],
+ "n_decisive": 6,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 6591,
+   "completion_tokens": 492,
+   "total_tokens": 7083,
+   "cost": 0.0001648584,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001648584,
+    "upstream_inference_prompt_cost": 2.70984e-05,
+    "upstream_inference_completions_cost": 0.00013776
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 376,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 7004,
+   "completion_tokens": 665,
+   "total_tokens": 7669,
+   "cost": 0.0002711184,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6528,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002711184,
+    "upstream_inference_prompt_cost": 8.49184e-05,
+    "upstream_inference_completions_cost": 0.0001862
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 582,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 7371,
+   "completion_tokens": 479,
+   "total_tokens": 7850,
+   "cost": 0.0002089528,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 6976,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002089528,
+    "upstream_inference_prompt_cost": 7.48328e-05,
+    "upstream_inference_completions_cost": 0.00013412
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 423,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 19.9,
+ "video": "functional_gait_incongruent_falling_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 56.4,
+ "dx_old": "DIAGNOSY: Cataplexy associated with Narcolepsy Type 1"
+}

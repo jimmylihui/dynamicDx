@@ -1,0 +1,176 @@
+{
+ "questions": [
+  "Does the eyelid drooping or double vision get worse as the day goes on?",
+  "Is the weakness or drooping more noticeable after you've used your eyes, like reading or watching TV?",
+  "Does it affect both eyes equally, or is one side clearly worse than the other?",
+  "Do you have any trouble swallowing, chewing, or speaking?",
+  "Do you have any shortness of breath or difficulty breathing, especially when lying down?",
+  "Do you have any muscle weakness in your arms, legs, or neck?",
+  "Have you noticed any bulging of your eyes?",
+  "Have you experienced any recent illness, like a cold or infection?",
+  "Are you taking any new medications?",
+  "Do you have any trouble turning your head or lifting your arms above your head?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Ice pack test",
+  "Serum acetylcholine receptor antibody level",
+  "Serum anti-MuSK antibody level",
+  "Repetitive nerve stimulation study",
+  "Single-fiber electromyography",
+  "CT chest with contrast",
+  "Thyroid function tests (TSH, free T4)",
+  "CT orbits"
+ ],
+ "served": [
+  "ice-pack test",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-acetylcholine receptor antibodies",
+  "acetylcholine receptor, MuSK and LRP4 antibodies",
+  "anti-MuSK antibodies",
+  "repetitive nerve stimulation",
+  "single-fibre EMG",
+  "CT chest (thymus)",
+  "thyroid function (TSH, free T4)",
+  "TSH / free T4 / TRAb"
+ ],
+ "results": [
+  "1. Ice pack test",
+  "     ice-pack test: negative",
+  "2. Serum acetylcholine receptor antibody level",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "     anti-acetylcholine receptor antibodies: negative",
+  "3. Serum anti-MuSK antibody level",
+  "     acetylcholine receptor, MuSK and LRP4 antibodies: normal",
+  "     anti-MuSK antibodies: negative",
+  "4. Repetitive nerve stimulation study",
+  "     repetitive nerve stimulation: normal",
+  "5. Single-fiber electromyography",
+  "     single-fibre EMG: normal jitter",
+  "6. CT chest with contrast",
+  "     CT chest (thymus): no thymic mass",
+  "7. Thyroid function tests (TSH, free T4)",
+  "     thyroid function (TSH, free T4): normal",
+  "     TSH / free T4 / TRAb: normal, TRAb negative - excludes thyroid eye disease",
+  "8. CT orbits",
+  "     not performed / not available"
+ ],
+ "dx_raw": "Looking at this case, I need to reconcile several key points:\n\n**The clinical picture:**\n- Asymmetric ptosis with impaired upgaze\n- Apparent worsening/fatigability on repeated examination\n- No bulbar, respiratory, or limb weakness\n\n**The critical test results:**\n- Ice pack test: **Negative**\n- AChR antibodies: **Negative**\n- MuSK antibodies: **Negative**\n- Repetitive nerve stimulation: **Normal**\n- Single-fiber EMG: **Normal**\n- No thymoma\n- Thyroid function/TRAbs: **Normal**\n\nThe complete normality of the MG workup—including the most sensitive test (SFEMG)—along with the patient's own denial of true fatigability, effectively excludes myasthenia gravis. What the examiner saw as \"worsening\" is likely fixed limitation becoming more apparent with repeated testing, not true neuromuscular fatigability.\n\nThe combination of progressive ptosis, impaired elevation (selectively affecting upgaze early), asymmetric involvement, normal MG workup, and absence of systemic weakness points to a chronic myopathic process of the extraocular muscles.\n\nDIAGNOSIS: Chronic progressive external ophthalmoplegia (CPEO)\n\nSeronegative ocular myasthenia gravis\nOculopharyngeal muscular dystrophy\nKearns-Sayre syndrome",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Ice pack test\n2. Serum acetylcholine receptor antibody level\n3. Serum anti-MuSK antibody level\n4. Repetitive nerve stimulation study\n5. Single-fiber electromyography\n6. CT chest with contrast\n7. Thyroid function tests (TSH, free T4)\n8. CT orbits",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Chronic progressive external ophthalmoplegia (CPEO)",
+ "decisive_served": [
+  "TSH / free T4 / TRAb"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 481,
+   "completion_tokens": 483,
+   "total_tokens": 964,
+   "cost": 0.0001762376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001762376,
+    "upstream_inference_prompt_cost": 4.09976e-05,
+    "upstream_inference_completions_cost": 0.00013524
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 314,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1010,
+   "completion_tokens": 1069,
+   "total_tokens": 2079,
+   "cost": 0.0003792544,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 448,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003792544,
+    "upstream_inference_prompt_cost": 7.99344e-05,
+    "upstream_inference_completions_cost": 0.00029932
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 996,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1380,
+   "completion_tokens": 4114,
+   "total_tokens": 5494,
+   "cost": 0.001213408,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 960,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001213408,
+    "upstream_inference_prompt_cost": 6.1488e-05,
+    "upstream_inference_completions_cost": 0.00115192
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3825,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 21.4,
+ "video": "moderate_postsurgical_lidretraction_PMC11495012.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 99.7
+}

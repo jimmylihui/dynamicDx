@@ -1,0 +1,124 @@
+{
+ "questions": [
+  "Did these abnormal eye movements start suddenly within the last 24 hours?",
+  "Do your eyes move involuntarily even when you are trying to keep them still?",
+  "Do you see double?",
+  "Have you noticed any loss or blurring of vision in either eye?",
+  "Do you have severe dizziness or a spinning sensation?",
+  "Do you have trouble walking, poor balance, weakness, numbness, facial drooping, slurred speech, or difficulty swallowing?",
+  "Do you have a new severe headache, vomiting, or neck pain?",
+  "Do you have eye pain, redness, light sensitivity, or discharge?",
+  "Have you recently had a head injury or been exposed to a toxin or new medication?",
+  "Have you had similar episodes before?",
+  "Do you have a history of stroke, seizures, multiple sclerosis, diabetes, thyroid disease, or other neurological illness?",
+  "Have you recently had a viral illness, ear infection, or significant hearing loss?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "yes",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "adduction in horizontal gaze (each eye)",
+  "pupil size and light reaction",
+  "MRI brain with DWI",
+  "diffusion tensor tractography",
+  "CT / MR angiography (circle of Willis)"
+ ],
+ "results": [
+  "1. adduction in horizontal gaze (each eye): on left gaze the right eye fails to adduct, and the contralateral eye shows NO abducting nystagmus - unlike a classic INO",
+  "2. pupil size and light reaction: pupils EQUALLY REACTIVE - pupil-sparing",
+  "3. MRI brain with DWI: small DORSAL PARAMEDIAN MIDBRAIN INFARCT on diffusion-weighted imaging",
+  "4. diffusion tensor tractography: reduced integrity of the IPSILATERAL medial longitudinal fasciculus",
+  "5. CT / MR angiography (circle of Willis): no aneurysm"
+ ],
+ "dx_raw": "DIAGNOSIS: Right unilateral internuclear ophthalmoplegia without abducting nystagmus, caused by a small pupil-sparing dorsal paramedian midbrain ischemic infarct involving the right medial longitudinal fasciculus.\n\nALTERNATIVE 1: Partial right oculomotor fascicular palsy from the midbrain infarct.\n\nALTERNATIVE 2: Ocular myasthenia gravis causing isolated adduction weakness.\n\nALTERNATIVE 3: Brainstem skew deviation from a small dorsal midbrain stroke.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Right unilateral internuclear ophthalmoplegia without abducting nystagmus, caused by a small pupil-sparing dorsal paramedian midbrain ischemic infarct involving the right medial longitudinal fasciculus.",
+ "decisive_served": [
+  "adduction in horizontal gaze (each eye)",
+  "pupil size and light reaction",
+  "MRI brain with DWI",
+  "diffusion tensor tractography",
+  "CT / MR angiography (circle of Willis)"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 17964,
+   "completion_tokens": 413,
+   "total_tokens": 18377,
+   "cost": 0.00042771,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00042771,
+    "upstream_inference_prompt_cost": 0.00017991,
+    "upstream_inference_completions_cost": 0.0002478
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 206,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 18647,
+   "completion_tokens": 522,
+   "total_tokens": 19169,
+   "cost": 0.000578485,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 683,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000578485,
+    "upstream_inference_prompt_cost": 0.000265285,
+    "upstream_inference_completions_cost": 0.0003132
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 410,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 20.2,
+ "video": "severe_3_oculomotor_palsy_PMC12745546.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 15.2
+}

@@ -1,0 +1,291 @@
+{
+ "questions": [
+  "Do your eyes move or roll upward involuntarily?",
+  "Do you have episodes of involuntary muscle contractions or abnormal posturing elsewhere in your body?",
+  "Did these episodes begin after starting or increasing a medication, especially an antipsychotic or anti-nausea drug?",
+  "Are you fully conscious and aware during the episodes?",
+  "Are the abnormal movements limited to your eyes and face?",
+  "Do the episodes consist of rapid, repetitive blinking or forceful eyelid closure?",
+  "Do they occur more often with bright light, stress, or fatigue?",
+  "Can you voluntarily stop the movements when they begin?",
+  "Have you had any recent facial injury, infection, or dental procedure?",
+  "Do your eyes make rapid, involuntary movements from side to side or in multiple directions?",
+  "Do you experience double vision during these episodes?",
+  "Do you feel dizzy or as though the room is moving when this happens?",
+  "Do you have difficulty walking or keeping your balance?",
+  "Did these abnormal eye movements begin suddenly?",
+  "Did your symptoms begin before age 50?",
+  "Does anyone in your biological family have similar problems with balance, walking, abnormal movements, or speech?",
+  "Do you have slurred speech or difficulty swallowing?",
+  "Do you have urinary urgency, urinary retention, erectile dysfunction, or dizziness on standing?",
+  "Have you experienced memory decline, personality change, hallucinations, or excessive daytime sleepiness?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "yes",
+  "18": "no",
+  "19": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Perform a complete neurological examination, including assessment of cranial nerves, eye movements, muscle tone, strength, reflexes, sensation, coordination, and gait.",
+  "Perform the pull test and tandem-walking test.",
+  "Perform a bedside cerebellar examination with finger-to-nose and heel-to-shin testing.",
+  "MRI brain with T1/T2/FLAIR sequences, including midsagittal imaging to assess for midbrain (“hummingbird”) atrophy, pontocerebellar atrophy, and middle cerebellar peduncle changes.",
+  "A monitored therapeutic trial of adequate-dose levodopa/carbidopa for at least 4–6 weeks, assessing rigidity, bradykinesia, gait, and postural instability.",
+  "Perform targeted genetic and metabolic testing for adult-onset progressive ataxia with vertical supranuclear gaze palsy: NPC1/NPC2 sequencing and oxysterol/lyso-sphingomyelin-509 testing, plus a spinocerebellar ataxia repeat-expansion panel including SCA2, SCA3, SCA6, SCA17, and FGF14 GAA expansion.",
+  "Perform serum and CSF autoimmune/paraneoplastic ataxia testing, including anti-IgLON5, anti-mGluR1, anti-DPPX, anti-GAD65, anti-Hu, anti-Yo, anti-Ri, anti-Ma2, and anti-CRMP5 antibodies.",
+  "Perform cerebrospinal-fluid testing for 14-3-3 protein, oligoclonal bands, IgG index, and infectious studies including HIV, syphilis, and Whipple disease PCR.",
+  "Perform genetic testing for CAG-repeat expansions causing spinocerebellar ataxia type 2 (ATXN2) and spinocerebellar ataxia type 3/Machado–Joseph disease (ATXN3), with full repeat sizing.",
+  "Perform genetic testing for spinocerebellar ataxia type 1 (ATXN1), type 6 (CACNA1A), and type 17 (TBP), including repeat sizing.",
+  "Perform a monitored therapeutic trial of carbidopa/levodopa at an adequate dose for at least 4–6 weeks, documenting objective changes in rigidity, bradykinesia, gait, postural instability, dysarthria, and cerebellar signs."
+ ],
+ "served": [
+  "cranial nerve examination",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "vertical saccades and gaze range (up and down)",
+  "smooth pursuit and saccade velocity",
+  "gait observation including turning and doorways",
+  "posture and pull test",
+  "pull test / retropulsion",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)",
+  "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)",
+  "serum paraneoplastic / neuronal autoantibody panel",
+  "paraneoplastic / onconeural antibody panel",
+  "neuronal surface antibody panel including anti-IgLON5",
+  "CSF autoimmune encephalitis panel",
+  "HIV and syphilis serology",
+  "CSF oligoclonal bands and IgG index",
+  "CSF culture and viral PCR"
+ ],
+ "results": [
+  "R1 ASK Do your eyes move or roll upward involuntarily?; Do you have episodes of involuntary muscle contractions or abnormal posturing elsewhere in your body?; Did these episodes begin after starting or increasing a medication, especially an antipsychotic or anti-nausea drug?; Are you fully conscious and aware during the episodes? -> ['no', 'no', 'no', 'yes']",
+  "R2 ASK Are the abnormal movements limited to your eyes and face?; Do the episodes consist of rapid, repetitive blinking or forceful eyelid closure?; Do they occur more often with bright light, stress, or fatigue?; Can you voluntarily stop the movements when they begin?; Have you had any recent facial injury, infection, or dental procedure? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Do your eyes make rapid, involuntary movements from side to side or in multiple directions?; Do you experience double vision during these episodes?; Do you feel dizzy or as though the room is moving when this happens?; Do you have difficulty walking or keeping your balance?; Did these abnormal eye movements begin suddenly? -> ['no', 'no', 'no', 'yes', 'no']",
+  "R4 ORDER Perform a complete neurological examination, including assessment of cranial nerves, eye movements, muscle tone, strength, reflexes, sensation, coordination, and gait.; Perform the pull test and tandem-walking test.; Perform a bedside cerebellar examination with finger-to-nose and heel-to-shin testing. -> [['cranial nerve examination', 'muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'vertical saccades and gaze range (up and down)', 'smooth pursuit and saccade velocity', 'gait observation including turning and doorways'], ['posture and pull test', 'pull test / retropulsion', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)'], ['coordination examination (limb and truncal)', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)']]",
+  "R5 ASK Did your symptoms begin before age 50?; Does anyone in your biological family have similar problems with balance, walking, abnormal movements, or speech?; Do you have slurred speech or difficulty swallowing?; Do you have urinary urgency, urinary retention, erectile dysfunction, or dizziness on standing?; Have you experienced memory decline, personality change, hallucinations, or excessive daytime sleepiness? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R6 ORDER MRI brain with T1/T2/FLAIR sequences, including midsagittal imaging to assess for midbrain (“hummingbird”) atrophy, pontocerebellar atrophy, and middle cerebellar peduncle changes.; A monitored therapeutic trial of adequate-dose levodopa/carbidopa for at least 4–6 weeks, assessing rigidity, bradykinesia, gait, and postural instability. -> [['MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)'], []]",
+  "R7 ORDER Perform targeted genetic and metabolic testing for adult-onset progressive ataxia with vertical supranuclear gaze palsy: NPC1/NPC2 sequencing and oxysterol/lyso-sphingomyelin-509 testing, plus a spinocerebellar ataxia repeat-expansion panel including SCA2, SCA3, SCA6, SCA17, and FGF14 GAA expansion. -> [[]]",
+  "R8 ORDER Perform serum and CSF autoimmune/paraneoplastic ataxia testing, including anti-IgLON5, anti-mGluR1, anti-DPPX, anti-GAD65, anti-Hu, anti-Yo, anti-Ri, anti-Ma2, and anti-CRMP5 antibodies.; Perform cerebrospinal-fluid testing for 14-3-3 protein, oligoclonal bands, IgG index, and infectious studies including HIV, syphilis, and Whipple disease PCR. -> [['serum paraneoplastic / neuronal autoantibody panel', 'paraneoplastic / onconeural antibody panel', 'neuronal surface antibody panel including anti-IgLON5', 'CSF autoimmune encephalitis panel'], ['HIV and syphilis serology', 'CSF oligoclonal bands and IgG index', 'CSF culture and viral PCR']]",
+  "R9 ORDER Perform genetic testing for CAG-repeat expansions causing spinocerebellar ataxia type 2 (ATXN2) and spinocerebellar ataxia type 3/Machado–Joseph disease (ATXN3), with full repeat sizing.; Perform genetic testing for spinocerebellar ataxia type 1 (ATXN1), type 6 (CACNA1A), and type 17 (TBP), including repeat sizing. -> [[], []]",
+  "R10 ORDER Perform a monitored therapeutic trial of carbidopa/levodopa at an adequate dose for at least 4–6 weeks, documenting objective changes in rigidity, bradykinesia, gait, postural instability, dysarthria, and cerebellar signs. -> [[]]",
+  "R11 FORCED_DIAGNOSIS DIAGNOSIS: Spinocerebellar ataxia type 2 (SCA2) due to a pathogenic CAG-repeat expansion in the **ATXN2** gene, presenting as an atypical parkinsonian–cerebellar syndrome mimicking progressive supranu -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Do your eyes move or roll upward involuntarily?",
+    "Do you have episodes of involuntary muscle contractions or abnormal posturing elsewhere in your body?",
+    "Did these episodes begin after starting or increasing a medication, especially an antipsychotic or anti-nausea drug?",
+    "Are you fully conscious and aware during the episodes?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Are the abnormal movements limited to your eyes and face?",
+    "Do the episodes consist of rapid, repetitive blinking or forceful eyelid closure?",
+    "Do they occur more often with bright light, stress, or fatigue?",
+    "Can you voluntarily stop the movements when they begin?",
+    "Have you had any recent facial injury, infection, or dental procedure?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do your eyes make rapid, involuntary movements from side to side or in multiple directions?",
+    "Do you experience double vision during these episodes?",
+    "Do you feel dizzy or as though the room is moving when this happens?",
+    "Do you have difficulty walking or keeping your balance?",
+    "Did these abnormal eye movements begin suddenly?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Perform a complete neurological examination, including assessment of cranial nerves, eye movements, muscle tone, strength, reflexes, sensation, coordination, and gait.",
+    "Perform the pull test and tandem-walking test.",
+    "Perform a bedside cerebellar examination with finger-to-nose and heel-to-shin testing."
+   ],
+   "result": [
+    [
+     "cranial nerve examination",
+     "muscle tone examination",
+     "limb strength (MRC) examination",
+     "deep tendon reflexes and plantar responses",
+     "sensory examination (pinprick, vibration, proprioception)",
+     "coordination examination (limb and truncal)",
+     "vertical saccades and gaze range (up and down)",
+     "smooth pursuit and saccade velocity",
+     "gait observation including turning and doorways"
+    ],
+    [
+     "posture and pull test",
+     "pull test / retropulsion",
+     "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
+    ],
+    [
+     "coordination examination (limb and truncal)",
+     "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Did your symptoms begin before age 50?",
+    "Does anyone in your biological family have similar problems with balance, walking, abnormal movements, or speech?",
+    "Do you have slurred speech or difficulty swallowing?",
+    "Do you have urinary urgency, urinary retention, erectile dysfunction, or dizziness on standing?",
+    "Have you experienced memory decline, personality change, hallucinations, or excessive daytime sleepiness?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "MRI brain with T1/T2/FLAIR sequences, including midsagittal imaging to assess for midbrain (“hummingbird”) atrophy, pontocerebellar atrophy, and middle cerebellar peduncle changes.",
+    "A monitored therapeutic trial of adequate-dose levodopa/carbidopa for at least 4–6 weeks, assessing rigidity, bradykinesia, gait, and postural instability."
+   ],
+   "result": [
+    [
+     "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Perform targeted genetic and metabolic testing for adult-onset progressive ataxia with vertical supranuclear gaze palsy: NPC1/NPC2 sequencing and oxysterol/lyso-sphingomyelin-509 testing, plus a spinocerebellar ataxia repeat-expansion panel including SCA2, SCA3, SCA6, SCA17, and FGF14 GAA expansion."
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "order",
+   "items": [
+    "Perform serum and CSF autoimmune/paraneoplastic ataxia testing, including anti-IgLON5, anti-mGluR1, anti-DPPX, anti-GAD65, anti-Hu, anti-Yo, anti-Ri, anti-Ma2, and anti-CRMP5 antibodies.",
+    "Perform cerebrospinal-fluid testing for 14-3-3 protein, oligoclonal bands, IgG index, and infectious studies including HIV, syphilis, and Whipple disease PCR."
+   ],
+   "result": [
+    [
+     "serum paraneoplastic / neuronal autoantibody panel",
+     "paraneoplastic / onconeural antibody panel",
+     "neuronal surface antibody panel including anti-IgLON5",
+     "CSF autoimmune encephalitis panel"
+    ],
+    [
+     "HIV and syphilis serology",
+     "CSF oligoclonal bands and IgG index",
+     "CSF culture and viral PCR"
+    ]
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "order",
+   "items": [
+    "Perform genetic testing for CAG-repeat expansions causing spinocerebellar ataxia type 2 (ATXN2) and spinocerebellar ataxia type 3/Machado–Joseph disease (ATXN3), with full repeat sizing.",
+    "Perform genetic testing for spinocerebellar ataxia type 1 (ATXN1), type 6 (CACNA1A), and type 17 (TBP), including repeat sizing."
+   ],
+   "result": [
+    [],
+    []
+   ]
+  },
+  {
+   "round": 10,
+   "kind": "order",
+   "items": [
+    "Perform a monitored therapeutic trial of carbidopa/levodopa at an adequate dose for at least 4–6 weeks, documenting objective changes in rigidity, bradykinesia, gait, postural instability, dysarthria, and cerebellar signs."
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 11,
+   "kind": "forced_diagnosis",
+   "text": "DIAGNOSIS: Spinocerebellar ataxia type 2 (SCA2) due to a pathogenic CAG-repeat expansion in the **ATXN2** gene, presenting as an atypical parkinsonian–cerebellar syndrome mimicking progressive supranu"
+  }
+ ],
+ "dx": "Spinocerebellar ataxia type 2 (SCA2) due to a pathogenic CAG-repeat expansion in the **ATXN2** gene, presenting as an atypical parkinsonian–cerebellar syndrome mimicking progressive supranuclear palsy.",
+ "dx_raw": "DIAGNOSIS: Spinocerebellar ataxia type 2 (SCA2) due to a pathogenic CAG-repeat expansion in the **ATXN2** gene, presenting as an atypical parkinsonian–cerebellar syndrome mimicking progressive supranuclear palsy.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 10,
+ "stopped_early": false,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
+ ],
+ "n_decisive": 7,
+ "cost_usd": 0.0145,
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_wilson_psp_phenotype_PMC12962431.mp4",
+ "line": "parkinsonism",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 117.4
+}

@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Does the shaking happen when your hand is resting in your lap?",
+  "Does alcohol make the shaking better?",
+  "Do your parents have a tremor?",
+  "Have you fallen down recently?",
+  "Is the shaking getting worse?",
+  "Have you started any new medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [],
+ "served": [
+  "skin examination",
+  "autoimmune encephalopathy / paraneoplastic antibody panel",
+  "brain MRI with contrast",
+  "PET-CT or CT body (occult malignancy)",
+  "trial of immunotherapy"
+ ],
+ "results": [
+  "1. skin examination: a painless, non-pruritic confluent erythematous rash on the left arm one day before the chorea began; it improved with doxycycline and clindamycin but the chorea did not",
+  "2. autoimmune encephalopathy / paraneoplastic antibody panel: NEGATIVE in serum and CSF - seronegative",
+  "3. brain MRI with contrast: 1.5T with gadolinium - frontal-predominant atrophy but NO focal lesion, with normal basal ganglia structure and volume",
+  "4. PET-CT or CT body (occult malignancy): skull base to thighs - no malignancy and no infection",
+  "5. trial of immunotherapy: empirical IVIg produced DRAMATIC improvement of the hemichorea - the diagnosis rests on the treatment response"
+ ],
+ "dx_raw": "DIAGNOSIS: Autoimmune chorea\n\nSydenham's chorea\nLyme disease\nParaneoplastic chorea",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Autoimmune chorea",
+ "decisive_served": [
+  "skin examination",
+  "autoimmune encephalopathy / paraneoplastic antibody panel",
+  "brain MRI with contrast",
+  "PET-CT or CT body (occult malignancy)",
+  "trial of immunotherapy"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 14783,
+   "completion_tokens": 2642,
+   "total_tokens": 17425,
+   "cost": 0.0027830376,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 192,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0027830376,
+    "upstream_inference_prompt_cost": 0.0020432776,
+    "upstream_inference_completions_cost": 0.00073976
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2573,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 15222,
+   "completion_tokens": 6566,
+   "total_tokens": 21788,
+   "cost": 0.001949976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 14720,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001949976,
+    "upstream_inference_prompt_cost": 0.000111496,
+    "upstream_inference_completions_cost": 0.00183848
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6535,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11093232.mp4",
+ "line": "chorea",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 107.6
+}

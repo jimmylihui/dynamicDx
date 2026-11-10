@@ -1,0 +1,174 @@
+{
+ "questions": [
+  "Did this start suddenly?",
+  "Do you have numbness or tingling in your feet?",
+  "Do you feel dizzy or like the room is spinning?",
+  "Do you have trouble speaking clearly?",
+  "Do you have double vision?",
+  "Are you taking any new medications?",
+  "Do you drink alcohol frequently?",
+  "Do you have diabetes?",
+  "Have you had a recent head injury?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI Brain",
+  "Bedside neurological examination",
+  "Blood tests (B12, folate, thyroid function)"
+ ],
+ "served": [
+  "brain MRI",
+  "gait examination",
+  "finger-nose / heel-shin testing",
+  "Romberg test",
+  "bedside eye-movement exam",
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy",
+  "TSH / free T4",
+  "vitamin B12 / folate",
+  "serum folate"
+ ],
+ "results": [
+  "1. MRI Brain",
+  "     brain MRI: cerebellar atrophy on sagittal T1 and axial FLAIR",
+  "2. Bedside neurological examination",
+  "     gait examination: wide-based, unsteady gait",
+  "     finger-nose / heel-shin testing: dysmetria",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "     bedside eye-movement exam: normal",
+  "     cranial nerve examination: normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): limb and truncal ataxia",
+  "     posture and pull test: normal",
+  "     fundoscopy: normal",
+  "3. Blood tests (B12, folate, thyroid function)",
+  "     TSH / free T4: normal",
+  "     vitamin B12 / folate: normal",
+  "     serum folate: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Spinocerebellar Ataxia (genetic mutation)\nMultiple System Atrophy (cerebellar type)\nParaneoplastic cerebellar degeneration\nAutoimmune cerebellar ataxia",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": true,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI Brain\n2. Bedside neurological examination\n3. Blood tests (B12, folate, thyroid function)",
+ "rationale": [
+  null,
+  null,
+  null
+ ],
+ "dx": "Spinocerebellar Ataxia (genetic mutation)",
+ "decisive_served": [
+  "brain MRI"
+ ],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 8698,
+   "completion_tokens": 1584,
+   "total_tokens": 10282,
+   "cost": 0.00140836,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00140836,
+    "upstream_inference_prompt_cost": 0.0008698,
+    "upstream_inference_completions_cost": 0.00053856
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1421,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 9064,
+   "completion_tokens": 808,
+   "total_tokens": 9872,
+   "cost": 0.00118112,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00118112,
+    "upstream_inference_prompt_cost": 0.0009064,
+    "upstream_inference_completions_cost": 0.00027472
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 796,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 9401,
+   "completion_tokens": 3077,
+   "total_tokens": 12478,
+   "cost": 0.00198628,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00198628,
+    "upstream_inference_prompt_cost": 0.0009401,
+    "upstream_inference_completions_cost": 0.00104618
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2986,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "mild_sca_genetic_PMC12678565.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 224.5
+}

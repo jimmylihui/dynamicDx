@@ -1,0 +1,135 @@
+{
+ "questions": [
+  "Do you have difficulty opening your eyelids?",
+  "Have you experienced any falls or balance problems recently?",
+  "Do you have a history of diabetes or hypertension?",
+  "Do you experience double vision when looking straight ahead?",
+  "Is the difficulty moving your eyes worse in the morning and better later in the day?",
+  "Do you have a family history of similar eye movement problems?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Neurological examination of vertical gaze, including the doll's eye maneuver (oculocephalic reflex)",
+  "MRI of the brain with attention to the midbrain and dorsal pons"
+ ],
+ "served": [
+  "vertical gaze and convergence",
+  "ocular torsion and head tilt",
+  "MRI brain with gadolinium"
+ ],
+ "results": [
+  "1. Neurological examination of vertical gaze, including the doll's eye maneuver (oculocephalic reflex)",
+  "     vertical gaze and convergence: normal",
+  "     ocular torsion and head tilt: none",
+  "2. MRI of the brain with attention to the midbrain and dorsal pons",
+  "     MRI brain with gadolinium: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Progressive supranuclear palsy (PSP)\nAlternative 1: Corticobasal degeneration\nAlternative 2: Multiple system atrophy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. Neurological examination of vertical gaze, including the doll's eye maneuver (oculocephalic reflex)\n2. MRI of the brain with attention to the midbrain and dorsal pons",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Progressive supranuclear palsy (PSP)",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 185,
+   "completion_tokens": 85,
+   "total_tokens": 270,
+   "cost": 6.77e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 6.77e-05,
+    "upstream_inference_prompt_cost": 2.775e-05,
+    "upstream_inference_completions_cost": 3.995e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 534,
+   "completion_tokens": 39,
+   "total_tokens": 573,
+   "cost": 9.843e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.843e-05,
+    "upstream_inference_prompt_cost": 8.01e-05,
+    "upstream_inference_completions_cost": 1.833e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 744,
+   "completion_tokens": 36,
+   "total_tokens": 780,
+   "cost": 5.9912e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.9912e-05,
+    "upstream_inference_prompt_cost": 4.2992e-05,
+    "upstream_inference_completions_cost": 1.692e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.8,
+ "video": "moderate_3_pendular_antiMa2_PMC11102397.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 8.4
+}

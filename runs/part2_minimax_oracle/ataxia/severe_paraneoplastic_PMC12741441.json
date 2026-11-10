@@ -1,0 +1,115 @@
+{
+ "questions": [
+  "Is the primary reason for your visit today difficulty with walking?",
+  "Did this difficulty with walking begin suddenly, over hours or days?",
+  "Do you have a tremor or shaking in your hands when they are at rest?",
+  "Do your arms or legs feel stiff or rigid?",
+  "Has your handwriting become noticeably smaller?",
+  "Do you have any trouble with your memory or thinking?",
+  "Do you have any trouble controlling your bladder, such as urgency or incontinence?",
+  "Is one side of your body weaker than the other?",
+  "Do you have pain in your lower back or legs that worsens with walking?",
+  "Does it feel like your feet are stuck to the floor when you try to start walking?",
+  "Do you feel dizzy or lightheaded when you stand up?",
+  "Do you have numbness or tingling in your legs or feet?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "bedside eye-movement exam",
+  "paraneoplastic antibody panel (serum)"
+ ],
+ "results": [
+  "1. bedside eye-movement exam: vertical gaze palsy progressing to complete external ophthalmoplegia",
+  "2. paraneoplastic antibody panel (serum): anti-Ri (ANNA-2) POSITIVE"
+ ],
+ "dx_raw": "DIAGNOSIS: Paraneoplastic brainstem encephalitis associated with anti-Ri (ANNA-2) antibodies\n1. Paraneoplastic opsoclonus-myoclonus-ataxia syndrome (anti-Ri related)\n2. Paraneoplastic cerebellar degeneration with brainstem involvement (anti-Ri related)\n3. Anti-Ri paraneoplastic syndrome with underlying occult breast or small cell lung carcinoma",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Paraneoplastic brainstem encephalitis associated with anti-Ri (ANNA-2) antibodies",
+ "decisive_served": [
+  "bedside eye-movement exam",
+  "paraneoplastic antibody panel (serum)"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 20438,
+   "completion_tokens": 3450,
+   "total_tokens": 23888,
+   "cost": 0.01023372,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 157,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01023372,
+    "upstream_inference_prompt_cost": 0.00609372,
+    "upstream_inference_completions_cost": 0.00414
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3273,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 20991,
+   "completion_tokens": 615,
+   "total_tokens": 21606,
+   "cost": 0.00213378,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 20423,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00213378,
+    "upstream_inference_prompt_cost": 0.00139578,
+    "upstream_inference_completions_cost": 0.000738
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 532,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_paraneoplastic_PMC12741441.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 54.9
+}

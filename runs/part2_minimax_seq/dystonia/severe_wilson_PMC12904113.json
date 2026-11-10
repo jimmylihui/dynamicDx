@@ -1,0 +1,228 @@
+{
+ "questions": [
+  "Have you had progressive weakness in your arms and legs for more than 6 months?",
+  "Do you have difficulty climbing stairs or getting up from the floor?",
+  "Have you noticed your muscles getting visibly thinner over time?",
+  "Does anyone in your family have similar muscle weakness or wasting?",
+  "Have you noticed any abnormal twisting or stiff postures in your hands, feet, or neck?",
+  "Did your symptoms start in childhood or adolescence?",
+  "Have you ever had involuntary movements, tremors, or jerky movements?",
+  "Are your symptoms worse on one side of the body?",
+  "Are your symptoms worse at a particular time of day (e.g., evening)?",
+  "Does levodopa (a trial of levodopa/carbidopa) improve your symptoms?",
+  "Has a trial of levodopa ever been tried?",
+  "Do you experience slowness of movement in addition to stiffness?",
+  "Have you had any skeletal abnormalities (e.g., short stature, hip dysplasia, or spine issues)?",
+  "Have you ever had corneal clouding or a heart murmur?",
+  "Have you had any developmental delay or cognitive impairment?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "yes",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Neurological examination focusing on gait, coordination, and muscle tone",
+  "Serum ceruloplasmin level",
+  "24-hour urinary copper excretion",
+  "Slit-lamp examination for Kayser-Fleischer rings",
+  "Therapeutic trial of levodopa/carbidopa (e.g., 100/25 mg TDS for 4 weeks)",
+  "MRI brain with focus on basal ganglia",
+  "Serum/urine oligosaccharide and mucopolysaccharide screening (TLC)",
+  "Leukocyte or fibroblast beta-galactosidase enzyme assay",
+  "Urinary keratan sulfate excretion"
+ ],
+ "served": [
+  "muscle tone examination",
+  "coordination examination (limb and truncal)",
+  "serum copper and caeruloplasmin",
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "24-hour urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "brain MRI",
+  "lysosomal enzyme assay (beta-galactosidase, hexosaminidase)"
+ ],
+ "results": [
+  "R1 ASK Have you had progressive weakness in your arms and legs for more than 6 months?; Do you have difficulty climbing stairs or getting up from the floor?; Have you noticed your muscles getting visibly thinner over time?; Does anyone in your family have similar muscle weakness or wasting? -> ['no', 'no', 'no', 'no']",
+  "R2 ORDER Neurological examination focusing on gait, coordination, and muscle tone -> [['muscle tone examination', 'coordination examination (limb and truncal)']]",
+  "R3 ASK Have you noticed any abnormal twisting or stiff postures in your hands, feet, or neck?; Did your symptoms start in childhood or adolescence?; Have you ever had involuntary movements, tremors, or jerky movements?; Are your symptoms worse on one side of the body? -> ['yes', 'yes', 'no', 'no']",
+  "R4 ORDER Serum ceruloplasmin level; 24-hour urinary copper excretion; Slit-lamp examination for Kayser-Fleischer rings -> [['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['24-hour urinary copper', 'copper / caeruloplasmin / 24 h urinary copper'], ['slit-lamp examination for Kayser-Fleischer rings']]",
+  "R5 ASK Are your symptoms worse at a particular time of day (e.g., evening)?; Does levodopa (a trial of levodopa/carbidopa) improve your symptoms?; Has a trial of levodopa ever been tried?; Do you experience slowness of movement in addition to stiffness? -> ['no', 'no', 'no', 'no']",
+  "R6 ORDER Therapeutic trial of levodopa/carbidopa (e.g., 100/25 mg TDS for 4 weeks); MRI brain with focus on basal ganglia -> [[], ['brain MRI']]",
+  "R7 ORDER Serum/urine oligosaccharide and mucopolysaccharide screening (TLC); Leukocyte or fibroblast beta-galactosidase enzyme assay; Urinary keratan sulfate excretion -> [[], ['lysosomal enzyme assay (beta-galactosidase, hexosaminidase)'], []]",
+  "R8 ASK Have you had any skeletal abnormalities (e.g., short stature, hip dysplasia, or spine issues)?; Have you ever had corneal clouding or a heart murmur?; Have you had any developmental delay or cognitive impairment? -> ['yes', 'no', 'no']",
+  "R9 DIAGNOSIS GM1 gangliosidosis (type III, juvenile/adult chronic form) due to deficient lysosomal beta-galactosidase (GLB1 gene mutation), presenting with progressive dystonia and skeletal dysplasia. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you had progressive weakness in your arms and legs for more than 6 months?",
+    "Do you have difficulty climbing stairs or getting up from the floor?",
+    "Have you noticed your muscles getting visibly thinner over time?",
+    "Does anyone in your family have similar muscle weakness or wasting?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Neurological examination focusing on gait, coordination, and muscle tone"
+   ],
+   "result": [
+    [
+     "muscle tone examination",
+     "coordination examination (limb and truncal)"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Have you noticed any abnormal twisting or stiff postures in your hands, feet, or neck?",
+    "Did your symptoms start in childhood or adolescence?",
+    "Have you ever had involuntary movements, tremors, or jerky movements?",
+    "Are your symptoms worse on one side of the body?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "order",
+   "items": [
+    "Serum ceruloplasmin level",
+    "24-hour urinary copper excretion",
+    "Slit-lamp examination for Kayser-Fleischer rings"
+   ],
+   "result": [
+    [
+     "serum copper and caeruloplasmin",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "24-hour urinary copper",
+     "copper / caeruloplasmin / 24 h urinary copper"
+    ],
+    [
+     "slit-lamp examination for Kayser-Fleischer rings"
+    ]
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "Are your symptoms worse at a particular time of day (e.g., evening)?",
+    "Does levodopa (a trial of levodopa/carbidopa) improve your symptoms?",
+    "Has a trial of levodopa ever been tried?",
+    "Do you experience slowness of movement in addition to stiffness?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "order",
+   "items": [
+    "Therapeutic trial of levodopa/carbidopa (e.g., 100/25 mg TDS for 4 weeks)",
+    "MRI brain with focus on basal ganglia"
+   ],
+   "result": [
+    [],
+    [
+     "brain MRI"
+    ]
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "order",
+   "items": [
+    "Serum/urine oligosaccharide and mucopolysaccharide screening (TLC)",
+    "Leukocyte or fibroblast beta-galactosidase enzyme assay",
+    "Urinary keratan sulfate excretion"
+   ],
+   "result": [
+    [],
+    [
+     "lysosomal enzyme assay (beta-galactosidase, hexosaminidase)"
+    ],
+    []
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Have you had any skeletal abnormalities (e.g., short stature, hip dysplasia, or spine issues)?",
+    "Have you ever had corneal clouding or a heart murmur?",
+    "Have you had any developmental delay or cognitive impairment?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "GM1 gangliosidosis (type III, juvenile/adult chronic form) due to deficient lysosomal beta-galactosidase (GLB1 gene mutation), presenting with progressive dystonia and skeletal dysplasia."
+  }
+ ],
+ "dx": "GM1 gangliosidosis (type III, juvenile/adult chronic form) due to deficient lysosomal beta-galactosidase (GLB1 gene mutation), presenting with progressive dystonia and skeletal dysplasia.",
+ "dx_raw": "DIAGNOSIS: GM1 gangliosidosis (type III, juvenile/adult chronic form) due to deficient lysosomal beta-galactosidase (GLB1 gene mutation), presenting with progressive dystonia and skeletal dysplasia.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "copper / caeruloplasmin / 24 h urinary copper",
+  "lysosomal enzyme assay (beta-galactosidase, hexosaminidase)",
+  "slit-lamp examination for Kayser-Fleischer rings"
+ ],
+ "n_decisive": 4,
+ "cost_usd": 0.0115,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_PMC12904113.mp4",
+ "line": "dystonia",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 56.9
+}

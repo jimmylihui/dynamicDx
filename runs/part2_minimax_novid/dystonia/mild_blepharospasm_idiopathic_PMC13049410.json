@@ -1,0 +1,198 @@
+{
+ "questions": [
+  "Do you have a specific symptom or concern that brought you here today?",
+  "Is your main symptom pain?",
+  "Is the pain in your chest?",
+  "Is the pain in your abdomen?",
+  "Is the pain in your head?",
+  "Is the pain in your back or neck?",
+  "Is the pain in a joint, muscle, or limb?",
+  "Is your main symptom shortness of breath?",
+  "Is your main symptom fatigue or weakness?",
+  "Have you had a fever or felt feverish?",
+  "Have you lost weight without trying?",
+  "Have you noticed any blood in your stool, urine, vomit, or sputum?",
+  "Do you have any chronic medical conditions?",
+  "Do you take any medications regularly?",
+  "Do you have any allergies to medications?",
+  "Do you currently smoke?",
+  "Has anyone in your family had cancer, heart disease, or stroke at a young age (before 60)?",
+  "Do you have any thoughts of harming yourself or that life is not worth living?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [
+  "Comprehensive bedside neurological examination including cranial nerves, motor strength, sensation, coordination, gait, and reflexes",
+  "Fundoscopic examination for papilledema",
+  "Blood pressure measurement in both arms",
+  "MRI brain with and without intravenous contrast",
+  "Complete blood count, erythrocyte sedimentation rate, and C-reactive protein",
+  "Serum electrolytes, renal and liver function tests",
+  "Thyroid stimulating hormone"
+ ],
+ "served": [
+  "cranial nerve examination",
+  "mental status / cognitive screen",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "eye movements and reflexes",
+  "fundoscopy",
+  "MRI brain with gadolinium",
+  "full blood count and biochemistry",
+  "ESR / CRP",
+  "serum electrolytes, urea and creatinine",
+  "liver function",
+  "TSH / free T4"
+ ],
+ "results": [
+  "1. Comprehensive bedside neurological examination including cranial nerves, motor strength, sensation, coordination, gait, and reflexes",
+  "     cranial nerve examination: involuntary blepharospasm with perioral and jaw dystonic spasms, provoked by speech and eating; otherwise normal",
+  "     mental status / cognitive screen: normal",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): normal",
+  "     posture and pull test: normal",
+  "     eye movements and reflexes: normal",
+  "2. Fundoscopic examination for papilledema",
+  "     fundoscopy: normal",
+  "3. Blood pressure measurement in both arms",
+  "     not performed / not available",
+  "4. MRI brain with and without intravenous contrast",
+  "     MRI brain with gadolinium: normal",
+  "5. Complete blood count, erythrocyte sedimentation rate, and C-reactive protein",
+  "     full blood count and biochemistry: normal",
+  "     ESR / CRP: normal",
+  "6. Serum electrolytes, renal and liver function tests",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function: normal",
+  "7. Thyroid stimulating hormone",
+  "     TSH / free T4: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Task-specific oromandibular dystonia (cranial dystonia, Meige-like spectrum) of idiopathic/primary origin, presenting as speech- and eating-induced blepharospasm with perioral and jaw dystonia.\n\nAlternatives:\n1. Drug-induced (tardive) oromandibular dystonia from dopamine receptor blocker exposure\n2. Secondary dystonia from a basal ganglia lesion not yet identified (consider repeat MRI with thicker basal ganglia cuts or Wilson's disease screening)\n3. Functional / psychogenic facial dystonia",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Comprehensive bedside neurological examination including cranial nerves, motor strength, sensation, coordination, gait, and reflexes\n2. Fundoscopic examination for papilledema\n3. Blood pressure measurement in both arms\n4. MRI brain with and without intravenous contrast\n5. Complete blood count, erythrocyte sedimentation rate, and C-reactive protein\n6. Serum electrolytes, renal and liver function tests\n7. Thyroid stimulating hormone",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Task-specific oromandibular dystonia (cranial dystonia, Meige-like spectrum) of idiopathic/primary origin, presenting as speech- and eating-induced blepharospasm with perioral and jaw dystonia.",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 314,
+   "completion_tokens": 14156,
+   "total_tokens": 14470,
+   "cost": 0.0170094,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 300,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0170094,
+    "upstream_inference_prompt_cost": 2.22e-05,
+    "upstream_inference_completions_cost": 0.0169872
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 14968,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 977,
+   "completion_tokens": 2424,
+   "total_tokens": 3401,
+   "cost": 0.00314382,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00314382,
+    "upstream_inference_prompt_cost": 0.00023502,
+    "upstream_inference_completions_cost": 0.0029088
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2755,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1414,
+   "completion_tokens": 113,
+   "total_tokens": 1527,
+   "cost": 0.00050172,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 242,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00050172,
+    "upstream_inference_prompt_cost": 0.00036612,
+    "upstream_inference_completions_cost": 0.0001356
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 6.6,
+ "video": "mild_blepharospasm_idiopathic_PMC13049410.mp4",
+ "line": "dystonia",
+ "space": "none",
+ "model": "minimax/minimax-m3",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 184.7
+}

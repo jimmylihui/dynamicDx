@@ -1,0 +1,114 @@
+{
+ "questions": [
+  "Are you currently taking any medications for a thyroid condition?",
+  "Do you have a known history of Graves' disease?",
+  "Have you ever received radioactive iodine treatment?",
+  "Do you experience double vision when looking at objects?",
+  "Do your eyes feel gritty, dry, or painful?",
+  "Is there a family history of autoimmune diseases like thyroid problems?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "repetitive nerve stimulation",
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "MRI orbits",
+  "trial of pyridostigmine and prednisolone"
+ ],
+ "results": [
+  "1. repetitive nerve stimulation: decremental response",
+  "2. ice-pack test: POSITIVE",
+  "3. anti-acetylcholine receptor antibodies: 10.32 nmol/L (normal <0.50) - strongly POSITIVE",
+  "4. MRI orbits: SEVERE THINNING of all extraocular muscles; exotropia of the right eye",
+  "5. trial of pyridostigmine and prednisolone: ptosis and limb weakness improved; the ophthalmoparesis did NOT"
+ ],
+ "dx_raw": "DIAGNOSIS: Myasthenia Gravis (Anti-AChR antibody positive) with secondary disuse atrophy of the extraocular muscles\n\n1. Chronic Progressive External Ophthalmoplegia (CPEO) / Mitochondrial Myopathy\n2. Thyroid Eye Disease (Graves' Ophthalmopathy) - specifically the \"burnt-out\" or fibrotic stage causing restrictive strabismus and muscle thinning\n3. Congenital Fibrosis of the Extraocular Muscles (CFEOM)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Myasthenia Gravis (Anti-AChR antibody positive) with secondary disuse atrophy of the extraocular muscles",
+ "decisive_served": [
+  "repetitive nerve stimulation",
+  "ice-pack test",
+  "anti-acetylcholine receptor antibodies",
+  "MRI orbits",
+  "trial of pyridostigmine and prednisolone"
+ ],
+ "n_decisive": 5,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 4823,
+   "completion_tokens": 82,
+   "total_tokens": 4905,
+   "cost": 0.00076199,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00076199,
+    "upstream_inference_prompt_cost": 0.00072345,
+    "upstream_inference_completions_cost": 3.854e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 5222,
+   "completion_tokens": 109,
+   "total_tokens": 5331,
+   "cost": 0.00023421,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4480,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00023421,
+    "upstream_inference_prompt_cost": 0.00018298,
+    "upstream_inference_completions_cost": 5.123e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 22.4,
+ "video": "mild_cpeo_mitochondrial_PMC9350803.mp4",
+ "line": "ptosis",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 13.1
+}

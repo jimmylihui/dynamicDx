@@ -1,0 +1,151 @@
+{
+ "questions": [
+  "Are you experiencing double vision?",
+  "Did this symptom start suddenly?",
+  "Is the double vision constant or does it come and go?",
+  "Do you have any weakness in your face, arms, or legs?",
+  "Are you having any trouble with balance or walking?",
+  "Do you have any pain in or around your eyes?",
+  "Have you recently had any head injury or infection?",
+  "Do you have high blood pressure or diabetes?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Bedside neurological examination including fundoscopy and assessment of all cranial nerves",
+  "Dix-Hallpike manoeuvre",
+  "Cerebellar signs assessment including heel-shin test and finger-to-nose test",
+  "MRI brain with contrast",
+  "MRI of the internal auditory canals",
+  "Blood tests including CBC, glucose, HbA1c, TSH, and vitamin B12 levels",
+  "Lumbar puncture with opening pressure and CSF analysis"
+ ],
+ "served": [],
+ "results": [
+  "1. Bedside neurological examination including fundoscopy and assessment of all cranial nerves",
+  "     not performed / not available",
+  "2. Dix-Hallpike manoeuvre",
+  "     not performed / not available",
+  "3. Cerebellar signs assessment including heel-shin test and finger-to-nose test",
+  "     not performed / not available",
+  "4. MRI brain with contrast",
+  "     not performed / not available",
+  "5. MRI of the internal auditory canals",
+  "     not performed / not available",
+  "6. Blood tests including CBC, glucose, HbA1c, TSH, and vitamin B12 levels",
+  "     not performed / not available",
+  "7. Lumbar puncture with opening pressure and CSF analysis",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Benign paroxysmal positional vertigo (BPPV)\n\nMultiple sclerosis\nVestibular neuritis\nCerebellar degeneration",
+ "order_style": "open",
+ "novideo": false,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Bedside neurological examination including fundoscopy and assessment of all cranial nerves\n2. Dix-Hallpike manoeuvre\n3. Cerebellar signs assessment including heel-shin test and finger-to-nose test\n4. MRI brain with contrast\n5. MRI of the internal auditory canals\n6. Blood tests including CBC, glucose, HbA1c, TSH, and vitamin B12 levels\n7. Lumbar puncture with opening pressure and CSF analysis",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Benign paroxysmal positional vertigo (BPPV)",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 5055,
+   "completion_tokens": 1039,
+   "total_tokens": 6094,
+   "cost": 0.0003137176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003137176,
+    "upstream_inference_prompt_cost": 2.27976e-05,
+    "upstream_inference_completions_cost": 0.00029092
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 942,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 5430,
+   "completion_tokens": 690,
+   "total_tokens": 6120,
+   "cost": 0.0002684976,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 4992,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002684976,
+    "upstream_inference_prompt_cost": 7.52976e-05,
+    "upstream_inference_completions_cost": 0.0001932
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 585,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 5779,
+   "completion_tokens": 513,
+   "total_tokens": 6292,
+   "cost": 0.0002151128,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 5376,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002151128,
+    "upstream_inference_prompt_cost": 7.14728e-05,
+    "upstream_inference_completions_cost": 0.00014364
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 474,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 25.4,
+ "video": "mild_2_cerebellar_antiHomer3_PMC12833086.mp4",
+ "line": "vertigo_central",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 56.0
+}

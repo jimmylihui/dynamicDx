@@ -1,0 +1,173 @@
+{
+ "questions": [
+  "Do you have any trembling in your hands or body?",
+  "Do you feel stiff in your limbs?",
+  "Do you have any numbness or loss of feeling in your feet?",
+  "Have you noticed any problems with your memory?",
+  "Do you have any trouble controlling your bladder?",
+  "Is your gait worse when you close your eyes?",
+  "Have you had any double vision?",
+  "Did this walking problem start suddenly?",
+  "Do you have any pain in your back or legs?",
+  "Have you ever been diagnosed with a neurological condition?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "yes",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "MRI of the brain",
+  "MRI of the whole spine (sagittal and axial)",
+  "EMG and nerve conduction studies (upper and lower limbs)",
+  "Lumbar puncture",
+  "Serum B12 level",
+  "Serum copper and ceruloplasmin",
+  "HTLV-1 serology",
+  "Genetic testing for hereditary spastic paraplegia"
+ ],
+ "served": [
+  "MRI brain",
+  "MRI cervical and thoracic spine",
+  "nerve conduction studies",
+  "needle electromyography",
+  "lumbar puncture / CSF (cells, protein, oligoclonal bands)",
+  "vitamin B12 with methylmalonic acid",
+  "vitamin B12 and vitamin E",
+  "copper and ceruloplasmin"
+ ],
+ "results": [
+  "1. MRI of the brain",
+  "     MRI brain: normal",
+  "2. MRI of the whole spine (sagittal and axial)",
+  "     MRI cervical and thoracic spine: normal cord",
+  "3. EMG and nerve conduction studies (upper and lower limbs)",
+  "     nerve conduction studies: normal",
+  "     needle electromyography: normal",
+  "4. Lumbar puncture",
+  "     lumbar puncture / CSF (cells, protein, oligoclonal bands): oligoclonal bands may be present",
+  "5. Serum B12 level",
+  "     vitamin B12 with methylmalonic acid: normal",
+  "     vitamin B12 and vitamin E: normal",
+  "6. Serum copper and ceruloplasmin",
+  "     copper and ceruloplasmin: normal",
+  "7. HTLV-1 serology",
+  "     not performed / not available",
+  "8. Genetic testing for hereditary spastic paraplegia",
+  "     not performed / not available"
+ ],
+ "dx_raw": "DIAGNOSIS: Primary lateral sclerosis\n\nHereditary spastic paraplegia  \nMultiple sclerosis  \nHTLV-1 associated myelopathy",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain\n2. MRI of the whole spine (sagittal and axial)\n3. EMG and nerve conduction studies (upper and lower limbs)\n4. Lumbar puncture\n5. Serum B12 level\n6. Serum copper and ceruloplasmin\n7. HTLV-1 serology\n8. Genetic testing for hereditary spastic paraplegia",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Primary lateral sclerosis",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 411,
+   "completion_tokens": 2932,
+   "total_tokens": 3343,
+   "cost": 0.0008433768,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 256,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008433768,
+    "upstream_inference_prompt_cost": 2.24168e-05,
+    "upstream_inference_completions_cost": 0.00082096
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2812,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 844,
+   "completion_tokens": 713,
+   "total_tokens": 1557,
+   "cost": 0.0002651152,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002651152,
+    "upstream_inference_prompt_cost": 6.54752e-05,
+    "upstream_inference_completions_cost": 0.00019964
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 627,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1218,
+   "completion_tokens": 2197,
+   "total_tokens": 3415,
+   "cost": 0.0006715296,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 832,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006715296,
+    "upstream_inference_prompt_cost": 5.63696e-05,
+    "upstream_inference_completions_cost": 0.00061516
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2165,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 61.0
+}

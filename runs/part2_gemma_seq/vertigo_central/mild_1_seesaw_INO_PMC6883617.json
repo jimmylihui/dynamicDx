@@ -1,0 +1,111 @@
+{
+ "questions": [
+  "Did this happen suddenly?",
+  "Do you have any weakness in your arms or legs?",
+  "Do you have any numbness or tingling?",
+  "Do you have any difficulty speaking?",
+  "Have you ever been diagnosed with multiple sclerosis?",
+  "Do you have high blood pressure?",
+  "Do you have diabetes?",
+  "Do you have a history of heart disease or atrial fibrillation?",
+  "Do you have any dizziness or vertigo?",
+  "Do you have any trouble swallowing?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "yes",
+  "8": "no",
+  "9": "yes",
+  "10": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [
+  "MRI of the brain and brainstem"
+ ],
+ "served": [],
+ "results": [
+  "R1 ASK Did this happen suddenly?; Do you have any weakness in your arms or legs?; Do you have any numbness or tingling?; Do you have any difficulty speaking?; Have you ever been diagnosed with multiple sclerosis? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R2 ORDER MRI of the brain and brainstem -> [[]]",
+  "R3 ASK Do you have high blood pressure?; Do you have diabetes?; Do you have a history of heart disease or atrial fibrillation?; Do you have any dizziness or vertigo?; Do you have any trouble swallowing? -> ['yes', 'yes', 'no', 'yes', 'no']",
+  "R4 DIAGNOSIS Bilateral internuclear ophthalmoplegia due to brainstem stroke -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Did this happen suddenly?",
+    "Do you have any weakness in your arms or legs?",
+    "Do you have any numbness or tingling?",
+    "Do you have any difficulty speaking?",
+    "Have you ever been diagnosed with multiple sclerosis?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "MRI of the brain and brainstem"
+   ],
+   "result": [
+    []
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have high blood pressure?",
+    "Do you have diabetes?",
+    "Do you have a history of heart disease or atrial fibrillation?",
+    "Do you have any dizziness or vertigo?",
+    "Do you have any trouble swallowing?"
+   ],
+   "result": [
+    "yes",
+    "yes",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Bilateral internuclear ophthalmoplegia due to brainstem stroke"
+  }
+ ],
+ "dx": "Bilateral internuclear ophthalmoplegia due to brainstem stroke",
+ "dx_raw": "DIAGNOSIS: Bilateral internuclear ophthalmoplegia due to brainstem stroke",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 4,
+ "cost_usd": 0.0055,
+ "n_frames": 32,
+ "duration_s": 21.2,
+ "video": "mild_1_seesaw_INO_PMC6883617.mp4",
+ "line": "vertigo_central",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 145.0
+}

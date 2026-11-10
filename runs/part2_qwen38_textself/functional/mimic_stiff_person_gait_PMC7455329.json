@@ -1,0 +1,132 @@
+{
+ "questions": [
+  "Do you have a history of chronic alcohol abuse?",
+  "Have you had any recent head trauma or surgery?",
+  "Do you experience double vision?",
+  "Do you have difficulty with fine motor tasks like buttoning a shirt?",
+  "Do you have numbness or tingling in your feet?",
+  "Is the unsteadiness worse when your eyes are closed?",
+  "Do you have a family history of similar walking difficulties?",
+  "Have you recently started any new medications?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "MRI of the brain"
+ ],
+ "served": [
+  "MRI brain"
+ ],
+ "results": [
+  "1. MRI of the brain",
+  "     MRI brain: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Idiopathic late-onset cerebellar ataxia\nFunctional neurological disorder (functional gait disorder)\nVitamin E deficiency",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "leading": null,
+ "order_raw": "1. MRI of the brain",
+ "rationale": [
+  null
+ ],
+ "dx": "Idiopathic late-onset cerebellar ataxia",
+ "decisive_served": [],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 198,
+   "completion_tokens": 106,
+   "total_tokens": 304,
+   "cost": 7.952e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 7.952e-05,
+    "upstream_inference_prompt_cost": 2.97e-05,
+    "upstream_inference_completions_cost": 4.982e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 597,
+   "completion_tokens": 6,
+   "total_tokens": 603,
+   "cost": 9.237e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 9.237e-05,
+    "upstream_inference_prompt_cost": 8.955e-05,
+    "upstream_inference_completions_cost": 2.82e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 718,
+   "completion_tokens": 32,
+   "total_tokens": 750,
+   "cost": 5.4132e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 512,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 5.4132e-05,
+    "upstream_inference_prompt_cost": 3.9092e-05,
+    "upstream_inference_completions_cost": 1.504e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_stiff_person_gait_PMC7455329.mp4",
+ "line": "functional",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 6.9
+}

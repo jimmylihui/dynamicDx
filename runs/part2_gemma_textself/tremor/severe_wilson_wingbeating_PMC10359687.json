@@ -1,0 +1,131 @@
+{
+ "questions": [
+  "Do you have a history of seizures?",
+  "Do you experience sudden, brief, involuntary muscle jerks?",
+  "Was zonisamide prescribed to you for epilepsy?",
+  "Did these symptoms start in childhood or adolescence?",
+  "Have you noticed a decline in your cognitive abilities?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Genetic testing for HTT gene",
+  "MRI Brain"
+ ],
+ "served": [
+  "genetic testing (targeted panel or exome)",
+  "brain MRI"
+ ],
+ "results": [
+  "1. Genetic testing for HTT gene",
+  "     genetic testing (targeted panel or exome): NOTCH2NLC GGC repeat expansion - genetically confirmed NIID",
+  "2. MRI Brain",
+  "     brain MRI: no structural lesion"
+ ],
+ "dx_raw": "DIAGNOSIS: Neuronal Intranuclear Inclusion Disease (NIID) caused by NOTCH2NLC GGC repeat expansion\n\nHuntington's disease\nSpinocerebellar ataxia\nCreutzfeldt-Jakob disease",
+ "order_style": "open",
+ "novideo": false,
+ "signtext": "self",
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Genetic testing for HTT gene\n2. MRI Brain",
+ "rationale": [
+  null,
+  null
+ ],
+ "dx": "Neuronal Intranuclear Inclusion Disease (NIID) caused by NOTCH2NLC GGC repeat expansion",
+ "decisive_served": [
+  "genetic testing (targeted panel or exome)"
+ ],
+ "n_decisive": 4,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 267,
+   "completion_tokens": 6194,
+   "total_tokens": 6461,
+   "cost": 0.00213266,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00213266,
+    "upstream_inference_prompt_cost": 2.67e-05,
+    "upstream_inference_completions_cost": 0.00210596
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5948,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 561,
+   "completion_tokens": 3526,
+   "total_tokens": 4087,
+   "cost": 0.00125494,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00125494,
+    "upstream_inference_prompt_cost": 5.61e-05,
+    "upstream_inference_completions_cost": 0.00119884
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3269,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 718,
+   "completion_tokens": 388,
+   "total_tokens": 1106,
+   "cost": 0.00020372,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00020372,
+    "upstream_inference_prompt_cost": 7.18e-05,
+    "upstream_inference_completions_cost": 0.00013192
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 339,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_wilson_wingbeating_PMC10359687.mp4",
+ "line": "tremor",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 290.7
+}

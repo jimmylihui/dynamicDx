@@ -1,0 +1,109 @@
+{
+ "questions": [
+  "Are you experiencing abdominal pain?",
+  "Do you have a fever or chills?",
+  "Have you had nausea or vomiting?",
+  "Is your abdomen feeling bloated or distended?",
+  "Have you passed gas recently?",
+  "Have you had a bowel movement recently?",
+  "Did this problem start suddenly?",
+  "Does the pain move to any other part of your body, like your back or chest?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "yes",
+  "8": "no"
+ },
+ "n_yes_answers": 1,
+ "orders": [],
+ "served": [
+  "medication review",
+  "serotonin syndrome criteria (Hunter)"
+ ],
+ "results": [
+  "1. medication review: long-term risperidone with concomitant sertraline; myoclonus resolved completely within 24 h of withdrawing RISPERIDONE alone",
+  "2. serotonin syndrome criteria (Hunter): NOT met - no clonus, hyperreflexia, fever or autonomic instability"
+ ],
+ "dx_raw": "DIAGNOSIS: Risperidone-induced myoclonus\n\n1. Serotonin syndrome\n2. Neuroleptic Malignant Syndrome (NMS)",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "shuffled": false,
+ "chief": false,
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Risperidone-induced myoclonus",
+ "decisive_served": [
+  "medication review",
+  "serotonin syndrome criteria (Hunter)"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 9431,
+   "completion_tokens": 94,
+   "total_tokens": 9525,
+   "cost": 0.00145883,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00145883,
+    "upstream_inference_prompt_cost": 0.00141465,
+    "upstream_inference_completions_cost": 4.418e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 9818,
+   "completion_tokens": 36,
+   "total_tokens": 9854,
+   "cost": 0.000271828,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 9088,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000271828,
+    "upstream_inference_prompt_cost": 0.000254908,
+    "upstream_inference_completions_cost": 1.692e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_druginduced_PMC12297136.mp4",
+ "line": "myoclonus",
+ "space": "none",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 16.8
+}

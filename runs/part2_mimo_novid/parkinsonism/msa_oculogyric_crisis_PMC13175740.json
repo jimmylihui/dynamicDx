@@ -1,0 +1,216 @@
+{
+ "questions": [
+  "Are you experiencing any chest pain?",
+  "Are you having difficulty breathing?",
+  "Are you experiencing any severe bleeding?",
+  "Are you confused or having difficulty speaking?",
+  "Do you have a fever?",
+  "Have you had any recent injuries?",
+  "Are you experiencing severe abdominal pain?",
+  "Have you had any fainting or loss of consciousness?",
+  "Are you pregnant or could you be pregnant?",
+  "Are you taking any medications regularly?",
+  "Is the problem primarily a pain issue?",
+  "Is the problem primarily a digestive issue (vomiting, diarrhea)?",
+  "Is the problem primarily a skin issue (rash, lesion)?",
+  "Is the problem primarily a musculoskeletal issue (joint/muscle pain, swelling)?",
+  "Is the problem primarily related to your vision or hearing?",
+  "Is the problem primarily a urinary issue (pain, frequency)?",
+  "Is the problem primarily a neurological issue (weakness, numbness, dizziness)?",
+  "Is the problem primarily related to mood or anxiety?",
+  "Did the symptoms start suddenly?",
+  "Are the symptoms getting worse?",
+  "Is the problem something you've experienced before?",
+  "Are you here for a new, undiagnosed problem?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "yes",
+  "9": "no",
+  "10": "yes",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "yes",
+  "17": "yes",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "yes",
+  "22": "no"
+ },
+ "n_yes_answers": 5,
+ "orders": [
+  "Orthostatic blood pressure and heart rate measurements (lying, sitting, and standing).",
+  "12-lead electrocardiogram.",
+  "Complete blood count.",
+  "Comprehensive metabolic panel.",
+  "Urinalysis with microscopy and culture.",
+  "Thyroid stimulating hormone level.",
+  "Electroencephalogram.",
+  "Brain MRI with and without contrast.",
+  "Continuous cardiac rhythm monitoring (Holter monitor for 24-48 hours).",
+  "Neurological examination focusing on gait, reflexes, and cognitive assessment.",
+  "Medication review (for potential side effects contributing to symptoms)."
+ ],
+ "served": [
+  "lying-and-standing blood pressure",
+  "full blood count, renal and liver profile",
+  "serum electrolytes, urea and creatinine",
+  "liver function tests",
+  "blood glucose and HbA1c",
+  "urinalysis",
+  "TSH / free T4",
+  "EEG",
+  "MRI brain with gadolinium",
+  "gait observation including turning and doorways",
+  "cognitive screen (MoCA / MMSE / frontal assessment battery)",
+  "reflexes, plantar responses and frontal release signs",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)"
+ ],
+ "results": [
+  "1. Orthostatic blood pressure and heart rate measurements (lying, sitting, and standing).",
+  "     lying-and-standing blood pressure: 130 mmHg systolic seated falling to 100 mmHg standing WITHOUT a compensatory rise in pulse rate",
+  "2. 12-lead electrocardiogram.",
+  "     not performed / not available",
+  "3. Complete blood count.",
+  "     full blood count, renal and liver profile: normal",
+  "4. Comprehensive metabolic panel.",
+  "     serum electrolytes, urea and creatinine: normal",
+  "     liver function tests: normal",
+  "     blood glucose and HbA1c: normal",
+  "5. Urinalysis with microscopy and culture.",
+  "     urinalysis: normal",
+  "6. Thyroid stimulating hormone level.",
+  "     TSH / free T4: normal",
+  "7. Electroencephalogram.",
+  "     EEG: not performed",
+  "8. Brain MRI with and without contrast.",
+  "     MRI brain with gadolinium: putaminal atrophy with the rim sign and putaminal hypointensity on susceptibility-weighted imaging",
+  "9. Continuous cardiac rhythm monitoring (Holter monitor for 24-48 hours).",
+  "     not performed / not available",
+  "10. Neurological examination focusing on gait, reflexes, and cognitive assessment.",
+  "     gait observation including turning and doorways: not recorded",
+  "     cognitive screen (MoCA / MMSE / frontal assessment battery): normal",
+  "     reflexes, plantar responses and frontal release signs: normal, flexor plantars",
+  "11. Medication review (for potential side effects contributing to symptoms).",
+  "     medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium): trazodone, paroxetine, hydrocortisone and verapamil - no dopamine blocker"
+ ],
+ "dx_raw": "DIAGNOSIS: Multiple system atrophy, parkinsonian type (MSA-P)\n\nThe combination of neurogenic orthostatic hypotension (significant BP drop without compensatory tachycardia), the pathognomonic putaminal rim sign on susceptibility-weighted MRI, urinary symptoms, and preserved cognition in a patient with recurrent syncope points firmly to MSA-P.\n\nAlternatives considered:\n1. Parkinson's disease with autonomic failure\n2. Pure autonomic failure with coincidental putaminal findings\n3. Progressive supranuclear palsy with autonomic dysfunction",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Orthostatic blood pressure and heart rate measurements (lying, sitting, and standing).\n2. 12-lead electrocardiogram.\n3. Complete blood count.\n4. Comprehensive metabolic panel.\n5. Urinalysis with microscopy and culture.\n6. Thyroid stimulating hormone level.\n7. Electroencephalogram.\n8. Brain MRI with and without contrast.\n9. Continuous cardiac rhythm monitoring (Holter monitor for 24-48 hours).\n10. Neurological examination focusing on gait, reflexes, and cognitive assessment.\n11. Medication review (for potential side effects contributing to symptoms).",
+ "rationale": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "dx": "Multiple system atrophy, parkinsonian type (MSA-P)",
+ "decisive_served": [
+  "lying-and-standing blood pressure",
+  "medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 385,
+   "completion_tokens": 459,
+   "total_tokens": 844,
+   "cost": 0.000138516,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 320,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000138516,
+    "upstream_inference_prompt_cost": 9.996e-06,
+    "upstream_inference_completions_cost": 0.00012852
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 187,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 1180,
+   "completion_tokens": 1609,
+   "total_tokens": 2789,
+   "cost": 0.0005630352,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 384,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005630352,
+    "upstream_inference_prompt_cost": 0.0001125152,
+    "upstream_inference_completions_cost": 0.00045052
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1476,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 1776,
+   "completion_tokens": 753,
+   "total_tokens": 2529,
+   "cost": 0.0003014256,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1152,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003014256,
+    "upstream_inference_prompt_cost": 9.05856e-05,
+    "upstream_inference_completions_cost": 0.00021084
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 630,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "msa_oculogyric_crisis_PMC13175740.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "xiaomi/mimo-v2.5",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 61.8
+}

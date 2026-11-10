@@ -1,0 +1,91 @@
+{
+ "questions": [
+  "Are you currently experiencing pain?",
+  "Is the pain located in your face or head?",
+  "Does the pain feel like a sharp, electric shock?",
+  "Do you have difficulty opening your mouth when you try to speak or eat?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no"
+ },
+ "n_yes_answers": 0,
+ "orders": [
+  "Ask the patient to squeeze her eyes shut and wrinkle her nose as hard as possible (to assess for facial nerve spasm vs voluntary grimacing)."
+ ],
+ "served": [
+  "cranial nerve examination"
+ ],
+ "results": [
+  "R1 ASK Are you currently experiencing pain?; Is the pain located in your face or head?; Does the pain feel like a sharp, electric shock? -> ['no', 'no', 'no']",
+  "R2 ORDER Ask the patient to squeeze her eyes shut and wrinkle her nose as hard as possible (to assess for facial nerve spasm vs voluntary grimacing). -> [['cranial nerve examination']]",
+  "R3 ASK Do you have difficulty opening your mouth when you try to speak or eat? -> ['no']",
+  "R4 DIAGNOSIS Meige syndrome (segmental dystonia involving blepharospasm and oromandibular dystonia) -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Are you currently experiencing pain?",
+    "Is the pain located in your face or head?",
+    "Does the pain feel like a sharp, electric shock?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "order",
+   "items": [
+    "Ask the patient to squeeze her eyes shut and wrinkle her nose as hard as possible (to assess for facial nerve spasm vs voluntary grimacing)."
+   ],
+   "result": [
+    [
+     "cranial nerve examination"
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Do you have difficulty opening your mouth when you try to speak or eat?"
+   ],
+   "result": [
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "diagnosis",
+   "text": "Meige syndrome (segmental dystonia involving blepharospasm and oromandibular dystonia)"
+  }
+ ],
+ "dx": "Meige syndrome (segmental dystonia involving blepharospasm and oromandibular dystonia)",
+ "dx_raw": "DIAGNOSIS: Meige syndrome (segmental dystonia involving blepharospasm and oromandibular dystonia)",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 3,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 3,
+ "cost_usd": 0.0031,
+ "n_frames": 32,
+ "duration_s": 6.6,
+ "video": "mild_blepharospasm_idiopathic_PMC13049410.mp4",
+ "line": "dystonia",
+ "model": "qwen/qwen3.8-flash",
+ "reasoning": {
+  "enabled": false
+ },
+ "elapsed_s": 19.6
+}

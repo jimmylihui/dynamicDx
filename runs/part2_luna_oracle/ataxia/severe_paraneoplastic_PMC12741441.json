@@ -1,0 +1,121 @@
+{
+ "questions": [
+  "Did this walking problem begin suddenly, within the last few days?",
+  "Do you have new weakness or numbness on one side of your body?",
+  "Have you had facial drooping, trouble speaking, or sudden vision changes?",
+  "Have you recently fallen or been unable to walk without assistance?",
+  "Do you have severe back pain with weakness or numbness in both legs?",
+  "Have you lost control of your bladder or bowels?",
+  "Do you feel dizzy or as though the room is spinning when you walk?",
+  "Do you have pain in either leg or foot when standing or walking?",
+  "Do your legs feel stiff, cramped, or difficult to move?",
+  "Do you have shaking or tremors when your hands or legs are at rest?",
+  "Have you noticed worsening balance or coordination over weeks or months?",
+  "Do you have numbness or reduced sensation in both feet?",
+  "Have you recently had an infection, injury, surgery, or hospitalization?",
+  "Do you have diabetes, multiple sclerosis, Parkinson’s disease, or a previous stroke?",
+  "Are you taking any new medicines that make you sleepy, weak, or unsteady?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "yes",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "yes",
+  "10": "no",
+  "11": "yes",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [],
+ "served": [
+  "bedside eye-movement exam",
+  "paraneoplastic antibody panel (serum)"
+ ],
+ "results": [
+  "1. bedside eye-movement exam: vertical gaze palsy progressing to complete external ophthalmoplegia",
+  "2. paraneoplastic antibody panel (serum): anti-Ri (ANNA-2) POSITIVE"
+ ],
+ "dx_raw": "DIAGNOSIS: Anti-Ri (ANNA-2)–associated paraneoplastic brainstem encephalitis causing progressive external ophthalmoplegia and gait dysfunction, most likely due to an occult breast or gynecologic carcinoma.\n\nALTERNATIVE: Progressive supranuclear palsy (PSP).\n\nALTERNATIVE: Anti-Ma2–associated paraneoplastic brainstem/diencephalic encephalitis.\n\nALTERNATIVE: Miller Fisher syndrome or another immune-mediated ophthalmoplegic neuropathy.",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Anti-Ri (ANNA-2)–associated paraneoplastic brainstem encephalitis causing progressive external ophthalmoplegia and gait dysfunction, most likely due to an occult breast or gynecologic carcinoma.",
+ "decisive_served": [
+  "bedside eye-movement exam",
+  "paraneoplastic antibody panel (serum)"
+ ],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 17964,
+   "completion_tokens": 465,
+   "total_tokens": 18429,
+   "cost": 0.00045891,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00045891,
+    "upstream_inference_prompt_cost": 0.00017991,
+    "upstream_inference_completions_cost": 0.000279
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 204,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 18674,
+   "completion_tokens": 287,
+   "total_tokens": 18961,
+   "cost": 0.00044086,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 710,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00044086,
+    "upstream_inference_prompt_cost": 0.00026866,
+    "upstream_inference_completions_cost": 0.0001722
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 179,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "severe_paraneoplastic_PMC12741441.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 16.7
+}

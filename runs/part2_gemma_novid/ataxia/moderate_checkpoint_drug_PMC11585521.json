@@ -1,0 +1,139 @@
+{
+ "questions": [
+  "Are you experiencing pain?"
+ ],
+ "answers": {
+  "1": "yes"
+ },
+ "n_yes_answers": 1,
+ "orders": [
+  "Full physical examination including vital signs."
+ ],
+ "served": [
+  "vital signs",
+  "gait examination",
+  "finger-nose / heel-shin testing",
+  "Romberg test",
+  "bedside eye-movement exam",
+  "cranial nerve examination",
+  "muscle tone examination",
+  "limb strength (MRC) examination",
+  "deep tendon reflexes and plantar responses",
+  "sensory examination (pinprick, vibration, proprioception)",
+  "coordination examination (limb and truncal)",
+  "posture and pull test",
+  "fundoscopy"
+ ],
+ "results": [
+  "1. Full physical examination including vital signs.",
+  "     vital signs: normal, afebrile",
+  "     gait examination: wide-based, unsteady gait",
+  "     finger-nose / heel-shin testing: dysmetria",
+  "     Romberg test: negative - swaying is not worse with the eyes closed",
+  "     bedside eye-movement exam: normal",
+  "     cranial nerve examination: horizontal gaze-evoked nystagmus",
+  "     muscle tone examination: normal",
+  "     limb strength (MRC) examination: normal",
+  "     deep tendon reflexes and plantar responses: normal",
+  "     sensory examination (pinprick, vibration, proprioception): normal",
+  "     coordination examination (limb and truncal): limb and truncal ataxia with dysmetria",
+  "     posture and pull test: broad-based stance and impaired pull response",
+  "     fundoscopy: normal"
+ ],
+ "dx_raw": "DIAGNOSIS: Cerebellar infarct due to vertebral artery dissection\nCerebellar hemorrhage\nCerebellar tumor\nMultiple sclerosis",
+ "order_style": "open",
+ "novideo": true,
+ "role": "doctor",
+ "leading": null,
+ "order_raw": "1. Full physical examination including vital signs.",
+ "rationale": [
+  null
+ ],
+ "dx": "Cerebellar infarct due to vertebral artery dissection",
+ "decisive_served": [],
+ "n_decisive": 2,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 155,
+   "completion_tokens": 2583,
+   "total_tokens": 2738,
+   "cost": 0.00089372,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00089372,
+    "upstream_inference_prompt_cost": 1.55e-05,
+    "upstream_inference_completions_cost": 0.00087822
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2564,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {
+   "prompt_tokens": 321,
+   "completion_tokens": 791,
+   "total_tokens": 1112,
+   "cost": 0.00030104,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00030104,
+    "upstream_inference_prompt_cost": 3.21e-05,
+    "upstream_inference_completions_cost": 0.00026894
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 772,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "dx": {
+   "prompt_tokens": 602,
+   "completion_tokens": 5439,
+   "total_tokens": 6041,
+   "cost": 0.00190946,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00190946,
+    "upstream_inference_prompt_cost": 6.02e-05,
+    "upstream_inference_completions_cost": 0.00184926
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5201,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "moderate_checkpoint_drug_PMC11585521.mp4",
+ "line": "ataxia",
+ "space": "none",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 1930.8
+}

@@ -1,0 +1,130 @@
+{
+ "questions": [
+  "Are your eyes moving involuntarily or shaking without you trying to move them?",
+  "Do you currently see double?",
+  "Did these eye symptoms begin suddenly?",
+  "Do you have severe dizziness or a spinning sensation?",
+  "Do you have a severe or new headache?",
+  "Have you had weakness, numbness, facial drooping, or difficulty speaking?",
+  "Have you had loss of balance or trouble walking?",
+  "Have you fainted or lost awareness?",
+  "Have you had a recent head injury?",
+  "Have you had fever, vomiting, or a stiff neck?",
+  "Have you recently used alcohol, recreational drugs, or a new medication?",
+  "Have you ever had similar episodes before?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "yes",
+  "7": "yes",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no"
+ },
+ "n_yes_answers": 2,
+ "orders": [],
+ "served": [
+  "24-hour urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "wing-beating tremor on sustained shoulder abduction",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)",
+  "serum ceruloplasmin",
+  "ATP7B sequencing",
+  "abdominal ultrasound and liver elastography"
+ ],
+ "results": [
+  "1. 24-hour urinary copper: ELEVATED at 265.77 ug/day",
+  "2. slit-lamp examination for Kayser-Fleischer rings: KAYSER-FLEISCHER RINGS PRESENT in both eyes",
+  "3. wing-beating tremor on sustained shoulder abduction: PRESENT and asymmetric, right worse than left - this does not belong to PSP",
+  "4. cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait): dysmetria, dysdiadochokinesia and abnormal tandem gait; Severity of Ataxia Rating Scale 20 - cerebellar signs do not belong to PSP either",
+  "5. serum ceruloplasmin: MARKEDLY REDUCED at 6.2 mg/dL",
+  "6. ATP7B sequencing: homozygous pathogenic ATP7B c.2145C>T p.Tyr715* in exon 8 on whole exome sequencing - confirms Wilson disease",
+  "7. abdominal ultrasound and liver elastography: mildly altered hepatic echotexture; ARFI elastography shows portal fibrosis"
+ ],
+ "dx_raw": "DIAGNOSIS: Neurologic Wilson disease (hepatolenticular degeneration) due to homozygous pathogenic ATP7B c.2145C>T (p.Tyr715*) mutation causing impaired copper excretion and copper accumulation, with hepatic portal fibrosis\n\nALTERNATIVE: Huntington disease\n\nALTERNATIVE: Progressive supranuclear palsy\n\nALTERNATIVE: Hereditary spinocerebellar ataxia",
+ "order_style": "oracle",
+ "novideo": false,
+ "signtext": "",
+ "role": "doctor",
+ "order_raw": "",
+ "rationale": [],
+ "leading": null,
+ "dx": "Neurologic Wilson disease (hepatolenticular degeneration) due to homozygous pathogenic ATP7B c.2145C>T (p.Tyr715*) mutation causing impaired copper excretion and copper accumulation, with hepatic portal fibrosis",
+ "decisive_served": [
+  "24-hour urinary copper",
+  "slit-lamp examination for Kayser-Fleischer rings",
+  "wing-beating tremor on sustained shoulder abduction",
+  "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)",
+  "serum ceruloplasmin",
+  "ATP7B sequencing",
+  "abdominal ultrasound and liver elastography"
+ ],
+ "n_decisive": 7,
+ "usage": {
+  "ask": {
+   "prompt_tokens": 17964,
+   "completion_tokens": 383,
+   "total_tokens": 18347,
+   "cost": 0.00040971,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00040971,
+    "upstream_inference_prompt_cost": 0.00017991,
+    "upstream_inference_completions_cost": 0.0002298
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 229,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  },
+  "order": {},
+  "dx": {
+   "prompt_tokens": 18640,
+   "completion_tokens": 156,
+   "total_tokens": 18796,
+   "cost": 0.00035801,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17961,
+    "cache_write_tokens": 676,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00035801,
+    "upstream_inference_prompt_cost": 0.00026441,
+    "upstream_inference_completions_cost": 9.36e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 63,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   },
+   "finish_reason": "stop"
+  }
+ },
+ "n_frames": 32,
+ "duration_s": 29.5,
+ "video": "mimic_wilson_psp_phenotype_PMC12962431.mp4",
+ "line": "parkinsonism",
+ "space": "none",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 13.8
+}

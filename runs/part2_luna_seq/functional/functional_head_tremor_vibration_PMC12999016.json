@@ -1,0 +1,167 @@
+{
+ "questions": [
+  "Have you noticed shaking or trembling in your hands?",
+  "Is the shaking worse when you are using your hands or holding something?",
+  "Does one hand shake more than the other?",
+  "Have you noticed stiffness or slowness of movement?",
+  "Have you had any problems with balance or walking?",
+  "Do you have involuntary jerking or writhing movements of your arms, legs, or face?",
+  "Do you have neck pain or involuntary turning or tilting of your head?",
+  "Have you ever had a stroke or other neurological illness?",
+  "Does the shaking occur mainly when your hands are completely at rest?",
+  "Does the shaking lessen or stop when you reach for or hold an object?",
+  "Does alcohol temporarily reduce the shaking?",
+  "Does anyone in your family have a similar tremor?",
+  "Did the shaking begin suddenly?",
+  "Are you taking medicines such as lithium, valproate, stimulants, or bronchodilators?",
+  "Have you had symptoms of an overactive thyroid, such as weight loss, heat intolerance, sweating, or a racing heartbeat?",
+  "Does the tremor vary noticeably in speed or severity during the day?",
+  "Can you briefly stop or suppress the tremor if you concentrate on doing so?",
+  "Did the tremor begin after a stressful event, emotional upset, injury, or illness?",
+  "Do you have other unexplained neurological symptoms, such as episodes of weakness, numbness, abnormal walking, or non-epileptic seizures?"
+ ],
+ "answers": {
+  "1": "yes",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "yes",
+  "14": "no",
+  "15": "no",
+  "16": "yes",
+  "17": "no",
+  "18": "no",
+  "19": "no"
+ },
+ "n_yes_answers": 3,
+ "orders": [
+  "Bedside tremor examination with the patient extending both arms, writing a sentence, drawing an Archimedes spiral, and performing a finger-to-nose test, while assessing tremor frequency, regularity, distractibility, and entrainment during contralateral finger tapping."
+ ],
+ "served": [
+  "coordination examination (limb and truncal)",
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)"
+ ],
+ "results": [
+  "R1 ASK Have you noticed shaking or trembling in your hands?; Is the shaking worse when you are using your hands or holding something?; Does one hand shake more than the other?; Have you noticed stiffness or slowness of movement?; Have you had any problems with balance or walking?; Do you have involuntary jerking or writhing movements of your arms, legs, or face?; Do you have neck pain or involuntary turning or tilting of your head?; Have you ever had a stroke or other neurological illness? -> ['yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Does the shaking occur mainly when your hands are completely at rest?; Does the shaking lessen or stop when you reach for or hold an object?; Does alcohol temporarily reduce the shaking?; Does anyone in your family have a similar tremor?; Did the shaking begin suddenly?; Are you taking medicines such as lithium, valproate, stimulants, or bronchodilators?; Have you had symptoms of an overactive thyroid, such as weight loss, heat intolerance, sweating, or a racing heartbeat? -> ['no', 'no', 'no', 'no', 'yes', 'no', 'no']",
+  "R3 ORDER Bedside tremor examination with the patient extending both arms, writing a sentence, drawing an Archimedes spiral, and performing a finger-to-nose test, while assessing tremor frequency, regularity, distractibility, and entrainment during contralateral finger tapping. -> [['coordination examination (limb and truncal)', 'distractibility testing (complex motor task with the unaffected side)', 'entrainment testing (tap to an externally paced rhythm)']]",
+  "R4 ASK Does the tremor vary noticeably in speed or severity during the day?; Can you briefly stop or suppress the tremor if you concentrate on doing so?; Did the tremor begin after a stressful event, emotional upset, injury, or illness?; Do you have other unexplained neurological symptoms, such as episodes of weakness, numbness, abnormal walking, or non-epileptic seizures? -> ['yes', 'no', 'no', 'no']",
+  "R5 DIAGNOSIS Functional (psychogenic) tremor as a functional neurological movement disorder, characterized by a variable, distractible, and entrainable head/hand tremor. -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Have you noticed shaking or trembling in your hands?",
+    "Is the shaking worse when you are using your hands or holding something?",
+    "Does one hand shake more than the other?",
+    "Have you noticed stiffness or slowness of movement?",
+    "Have you had any problems with balance or walking?",
+    "Do you have involuntary jerking or writhing movements of your arms, legs, or face?",
+    "Do you have neck pain or involuntary turning or tilting of your head?",
+    "Have you ever had a stroke or other neurological illness?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Does the shaking occur mainly when your hands are completely at rest?",
+    "Does the shaking lessen or stop when you reach for or hold an object?",
+    "Does alcohol temporarily reduce the shaking?",
+    "Does anyone in your family have a similar tremor?",
+    "Did the shaking begin suddenly?",
+    "Are you taking medicines such as lithium, valproate, stimulants, or bronchodilators?",
+    "Have you had symptoms of an overactive thyroid, such as weight loss, heat intolerance, sweating, or a racing heartbeat?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "yes",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "order",
+   "items": [
+    "Bedside tremor examination with the patient extending both arms, writing a sentence, drawing an Archimedes spiral, and performing a finger-to-nose test, while assessing tremor frequency, regularity, distractibility, and entrainment during contralateral finger tapping."
+   ],
+   "result": [
+    [
+     "coordination examination (limb and truncal)",
+     "distractibility testing (complex motor task with the unaffected side)",
+     "entrainment testing (tap to an externally paced rhythm)"
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Does the tremor vary noticeably in speed or severity during the day?",
+    "Can you briefly stop or suppress the tremor if you concentrate on doing so?",
+    "Did the tremor begin after a stressful event, emotional upset, injury, or illness?",
+    "Do you have other unexplained neurological symptoms, such as episodes of weakness, numbness, abnormal walking, or non-epileptic seizures?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "diagnosis",
+   "text": "Functional (psychogenic) tremor as a functional neurological movement disorder, characterized by a variable, distractible, and entrainable head/hand tremor."
+  }
+ ],
+ "dx": "Functional (psychogenic) tremor as a functional neurological movement disorder, characterized by a variable, distractible, and entrainable head/hand tremor.",
+ "dx_raw": "DIAGNOSIS: Functional (psychogenic) tremor as a functional neurological movement disorder, characterized by a variable, distractible, and entrainable head/hand tremor.",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 4,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [
+  "distractibility testing (complex motor task with the unaffected side)",
+  "entrainment testing (tap to an externally paced rhythm)"
+ ],
+ "n_decisive": 5,
+ "cost_usd": 0.0036,
+ "n_frames": 32,
+ "duration_s": 22.9,
+ "video": "functional_head_tremor_vibration_PMC12999016.mp4",
+ "line": "functional",
+ "model": "openai/gpt-5.6-luna",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 35.8
+}

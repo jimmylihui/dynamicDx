@@ -1,0 +1,248 @@
+{
+ "questions": [
+  "Does the tremor occur primarily when your hand is at rest?",
+  "Have you noticed that your movements have become slower?",
+  "Do you feel stiffness in your limbs?",
+  "Have you had any falls recently?",
+  "Does anyone else in your family have a similar tremor?",
+  "Does the tremor improve if you drink a small amount of alcohol?",
+  "Have you noticed any difficulty with your balance or walking?",
+  "Do you have any history of head injury or a stroke?",
+  "Are you taking any medications?",
+  "Do you have any history of thyroid problems?",
+  "Do you have any history of liver or kidney disease?",
+  "Do you experience any anxiety or palpitations?",
+  "Do you have any difficulty with fine motor tasks, like buttoning a shirt or writing?",
+  "Is the tremor present in both hands?",
+  "Does the tremor get worse as your hand gets closer to an object you are trying to touch?",
+  "Do you have any weakness or numbness in your left arm or hand?",
+  "Have you noticed any changes in the size or shape of your muscles in your arm?",
+  "If you perform a task with your other hand, does the tremor in your left hand stop or decrease?",
+  "Have you noticed that your handwriting has become smaller?",
+  "Do you have any trouble with your balance when you turn around?",
+  "Do you experience any involuntary movements in other parts of your body?",
+  "Do you have diabetes?",
+  "Are the other involuntary movements also on the left side of your body?",
+  "Are these movements sudden, jerky, and unpredictable?",
+  "Have you noticed any changes in your mood or personality?",
+  "Where in your body do you experience these other involuntary movements?",
+  "Can you describe these movements? Are they more like a shaking, a twisting, or a repetitive gesture?",
+  "When did the mood and personality changes first begin?",
+  "Have you noticed any memory loss or difficulty concentrating?",
+  "Do you have any difficulty speaking or swallowing?",
+  "Do you see things that other people don't see, like small animals or people?",
+  "Do you ever feel like one of your limbs has a mind of its own and moves without your control?",
+  "Do you have vivid dreams where you act out your dreams in your sleep?",
+  "Have you noticed that you have trouble recognizing objects or people's faces?"
+ ],
+ "answers": {
+  "1": "no",
+  "2": "no",
+  "3": "no",
+  "4": "no",
+  "5": "no",
+  "6": "no",
+  "7": "no",
+  "8": "no",
+  "9": "no",
+  "10": "no",
+  "11": "no",
+  "12": "no",
+  "13": "no",
+  "14": "no",
+  "15": "no",
+  "16": "no",
+  "17": "no",
+  "18": "no",
+  "19": "no",
+  "20": "no",
+  "21": "yes",
+  "22": "no",
+  "23": "no",
+  "24": "no",
+  "25": "yes",
+  "26": "yes",
+  "27": "no",
+  "28": "no",
+  "29": "yes",
+  "30": "no",
+  "31": "no",
+  "32": "no",
+  "33": "no",
+  "34": "no"
+ },
+ "n_yes_answers": 4,
+ "orders": [],
+ "served": [],
+ "results": [
+  "R1 ASK Does the tremor occur primarily when your hand is at rest?; Have you noticed that your movements have become slower?; Do you feel stiffness in your limbs?; Have you had any falls recently? -> ['no', 'no', 'no', 'no']",
+  "R2 ASK Does anyone else in your family have a similar tremor?; Does the tremor improve if you drink a small amount of alcohol?; Have you noticed any difficulty with your balance or walking?; Do you have any history of head injury or a stroke? -> ['no', 'no', 'no', 'no']",
+  "R3 ASK Are you taking any medications?; Do you have any history of thyroid problems?; Do you have any history of liver or kidney disease?; Do you experience any anxiety or palpitations?; Do you have any difficulty with fine motor tasks, like buttoning a shirt or writing? -> ['no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Is the tremor present in both hands?; Does the tremor get worse as your hand gets closer to an object you are trying to touch?; Do you have any weakness or numbness in your left arm or hand?; Have you noticed any changes in the size or shape of your muscles in your arm? -> ['no', 'no', 'no', 'no']",
+  "R5 ASK If you perform a task with your other hand, does the tremor in your left hand stop or decrease?; Have you noticed that your handwriting has become smaller?; Do you have any trouble with your balance when you turn around?; Do you experience any involuntary movements in other parts of your body? -> ['no', 'no', 'no', 'yes']",
+  "R6 ASK Do you have diabetes?; Are the other involuntary movements also on the left side of your body?; Are these movements sudden, jerky, and unpredictable?; Have you noticed any changes in your mood or personality? -> ['no', 'no', 'no', 'yes']",
+  "R7 ASK Where in your body do you experience these other involuntary movements?; Can you describe these movements? Are they more like a shaking, a twisting, or a repetitive gesture?; When did the mood and personality changes first begin?; Have you noticed any memory loss or difficulty concentrating?; Do you have any difficulty speaking or swallowing? -> ['yes', 'no', 'no', 'yes', 'no']",
+  "R8 ASK Do you see things that other people don't see, like small animals or people?; Do you ever feel like one of your limbs has a mind of its own and moves without your control?; Do you have vivid dreams where you act out your dreams in your sleep?; Have you noticed that you have trouble recognizing objects or people's faces? -> ['no', 'no', 'no', 'no']",
+  "R9 DIAGNOSIS Corticobasal Degeneration caused by tau protein accumulation -> "
+ ],
+ "trace": [
+  {
+   "round": 1,
+   "kind": "ask",
+   "items": [
+    "Does the tremor occur primarily when your hand is at rest?",
+    "Have you noticed that your movements have become slower?",
+    "Do you feel stiffness in your limbs?",
+    "Have you had any falls recently?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 2,
+   "kind": "ask",
+   "items": [
+    "Does anyone else in your family have a similar tremor?",
+    "Does the tremor improve if you drink a small amount of alcohol?",
+    "Have you noticed any difficulty with your balance or walking?",
+    "Do you have any history of head injury or a stroke?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 3,
+   "kind": "ask",
+   "items": [
+    "Are you taking any medications?",
+    "Do you have any history of thyroid problems?",
+    "Do you have any history of liver or kidney disease?",
+    "Do you experience any anxiety or palpitations?",
+    "Do you have any difficulty with fine motor tasks, like buttoning a shirt or writing?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 4,
+   "kind": "ask",
+   "items": [
+    "Is the tremor present in both hands?",
+    "Does the tremor get worse as your hand gets closer to an object you are trying to touch?",
+    "Do you have any weakness or numbness in your left arm or hand?",
+    "Have you noticed any changes in the size or shape of your muscles in your arm?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 5,
+   "kind": "ask",
+   "items": [
+    "If you perform a task with your other hand, does the tremor in your left hand stop or decrease?",
+    "Have you noticed that your handwriting has become smaller?",
+    "Do you have any trouble with your balance when you turn around?",
+    "Do you experience any involuntary movements in other parts of your body?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 6,
+   "kind": "ask",
+   "items": [
+    "Do you have diabetes?",
+    "Are the other involuntary movements also on the left side of your body?",
+    "Are these movements sudden, jerky, and unpredictable?",
+    "Have you noticed any changes in your mood or personality?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "yes"
+   ]
+  },
+  {
+   "round": 7,
+   "kind": "ask",
+   "items": [
+    "Where in your body do you experience these other involuntary movements?",
+    "Can you describe these movements? Are they more like a shaking, a twisting, or a repetitive gesture?",
+    "When did the mood and personality changes first begin?",
+    "Have you noticed any memory loss or difficulty concentrating?",
+    "Do you have any difficulty speaking or swallowing?"
+   ],
+   "result": [
+    "yes",
+    "no",
+    "no",
+    "yes",
+    "no"
+   ]
+  },
+  {
+   "round": 8,
+   "kind": "ask",
+   "items": [
+    "Do you see things that other people don't see, like small animals or people?",
+    "Do you ever feel like one of your limbs has a mind of its own and moves without your control?",
+    "Do you have vivid dreams where you act out your dreams in your sleep?",
+    "Have you noticed that you have trouble recognizing objects or people's faces?"
+   ],
+   "result": [
+    "no",
+    "no",
+    "no",
+    "no"
+   ]
+  },
+  {
+   "round": 9,
+   "kind": "diagnosis",
+   "text": "Corticobasal Degeneration caused by tau protein accumulation"
+  }
+ ],
+ "dx": "Corticobasal Degeneration caused by tau protein accumulation",
+ "dx_raw": "DIAGNOSIS: Corticobasal Degeneration caused by tau protein accumulation",
+ "protocol": "multiround",
+ "maxround": 10,
+ "n_rounds": 8,
+ "stopped_early": true,
+ "invalid_replies": 0,
+ "novideo": false,
+ "role": "doctor",
+ "decisive_served": [],
+ "n_decisive": 5,
+ "cost_usd": 0.0133,
+ "n_frames": 32,
+ "duration_s": 28.0,
+ "video": "c_11093232.mp4",
+ "line": "chorea",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": {
+  "enabled": true
+ },
+ "elapsed_s": 847.6
+}
