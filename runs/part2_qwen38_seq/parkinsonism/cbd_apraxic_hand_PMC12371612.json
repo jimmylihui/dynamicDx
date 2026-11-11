@@ -14,20 +14,20 @@
   "Do you have a history of high blood pressure, diabetes, or smoking?"
  ],
  "answers": {
-  "1": "no",
-  "2": "yes",
-  "3": "no",
-  "4": "yes",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
   "5": "yes",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "yes",
-  "11": "no",
-  "12": "no"
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown"
  },
- "n_yes_answers": 4,
+ "n_yes_answers": 1,
  "orders": [
   "Perform a detailed sensory examination of the right hand, specifically testing light touch and pinprick in the median nerve distribution (thumb, index, middle, radial half of ring finger) versus the ulnar nerve distribution (little finger, medial half of ring finger).",
   "Perform a sensory examination of the left hand to determine if astereognosis is bilateral or unilateral.",
@@ -43,12 +43,12 @@
   "MRI susceptibility-weighted sequences"
  ],
  "results": [
-  "R1 ASK Do you have any numbness or tingling in your hands?; Is the weakness in your hand worse on one side than the other?; Have you noticed any muscle wasting in your hands? -> ['no', 'yes', 'no']",
-  "R2 ASK Is the weakness in your right hand?; Do you have any difficulty with fine motor tasks like buttoning a shirt or writing?; Have you had any neck pain or recent trauma to your neck or shoulder? -> ['yes', 'yes', 'no']",
+  "R1 ASK Do you have any numbness or tingling in your hands?; Is the weakness in your hand worse on one side than the other?; Have you noticed any muscle wasting in your hands? -> ['unknown', 'unknown', 'unknown']",
+  "R2 ASK Is the weakness in your right hand?; Do you have any difficulty with fine motor tasks like buttoning a shirt or writing?; Have you had any neck pain or recent trauma to your neck or shoulder? -> ['unknown', 'yes', 'unknown']",
   "R3 ORDER Perform a detailed sensory examination of the right hand, specifically testing light touch and pinprick in the median nerve distribution (thumb, index, middle, radial half of ring finger) versus the ulnar nerve distribution (little finger, medial half of ring finger). -> [['sensory examination (pinprick, vibration, proprioception)']]",
-  "R4 ASK Do you have any difficulty with balance or walking?; Have you noticed any changes in your vision, such as double vision or loss of sight in one eye?; Do you have any weakness or numbness in your legs? -> ['no', 'no', 'no']",
+  "R4 ASK Do you have any difficulty with balance or walking?; Have you noticed any changes in your vision, such as double vision or loss of sight in one eye?; Do you have any weakness or numbness in your legs? -> ['unknown', 'unknown', 'unknown']",
   "R5 ORDER Perform a sensory examination of the left hand to determine if astereognosis is bilateral or unilateral. -> [['cortical sensory testing (astereognosis, sensory inattention)']]",
-  "R6 ASK Do you have any difficulty with speech or understanding others?; Have you noticed any weakness in your face, particularly around the mouth or eyes?; Do you have a history of high blood pressure, diabetes, or smoking? -> ['yes', 'no', 'no']",
+  "R6 ASK Do you have any difficulty with speech or understanding others?; Have you noticed any weakness in your face, particularly around the mouth or eyes?; Do you have a history of high blood pressure, diabetes, or smoking? -> ['unknown', 'unknown', 'unknown']",
   "R7 ORDER Perform a detailed neurological examination of the cranial nerves, specifically looking for subtle facial droop or tongue deviation. -> [['cranial nerve examination']]",
   "R8 ORDER MRI of the brain -> [['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences']]",
   "R9 DIAGNOSIS Corticobasal Degeneration -> "
@@ -63,9 +63,9 @@
     "Have you noticed any muscle wasting in your hands?"
    ],
    "result": [
-    "no",
-    "yes",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -77,9 +77,9 @@
     "Have you had any neck pain or recent trauma to your neck or shoulder?"
    ],
    "result": [
+    "unknown",
     "yes",
-    "yes",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -103,9 +103,9 @@
     "Do you have any weakness or numbness in your legs?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -129,9 +129,9 @@
     "Do you have a history of high blood pressure, diabetes, or smoking?"
    ],
    "result": [
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

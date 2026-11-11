@@ -13,19 +13,19 @@
   "Do you have a history of cataracts requiring surgery at a young age?"
  ],
  "answers": {
-  "1": "yes",
-  "2": "no",
+  "1": "unknown",
+  "2": "unknown",
   "3": "yes",
-  "4": "no",
+  "4": "unknown",
   "5": "yes",
-  "6": "no",
+  "6": "unknown",
   "7": "no",
-  "8": "no",
-  "9": "yes",
-  "10": "no",
-  "11": "no"
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown"
  },
- "n_yes_answers": 4,
+ "n_yes_answers": 2,
  "orders": [
   "Serum creatine kinase",
   "Genetic testing for DMPK gene expansion"
@@ -34,9 +34,9 @@
   "creatine kinase"
  ],
  "results": [
-  "R1 ASK Do you have difficulty lifting the front part of your foot (foot drop)?; Have you noticed any weakness in your hands or arms?; Do you have double vision or drooping eyelids?; Do you have difficulty swallowing or speaking clearly?; Is there a family history of similar walking difficulties or muscle problems? -> ['yes', 'no', 'yes', 'no', 'yes']",
-  "R2 ASK Do your symptoms fluctuate, being worse later in the day or after activity?; Have you noticed any improvement with rest?; Do you have difficulty climbing stairs or rising from a chair? -> ['no', 'no', 'no']",
-  "R3 ASK Do you have difficulty with balance or coordination?; Have you noticed any numbness or tingling in your hands or feet?; Do you have a history of cataracts requiring surgery at a young age? -> ['yes', 'no', 'no']",
+  "R1 ASK Do you have difficulty lifting the front part of your foot (foot drop)?; Have you noticed any weakness in your hands or arms?; Do you have double vision or drooping eyelids?; Do you have difficulty swallowing or speaking clearly?; Is there a family history of similar walking difficulties or muscle problems? -> ['unknown', 'unknown', 'yes', 'unknown', 'yes']",
+  "R2 ASK Do your symptoms fluctuate, being worse later in the day or after activity?; Have you noticed any improvement with rest?; Do you have difficulty climbing stairs or rising from a chair? -> ['unknown', 'no', 'unknown']",
+  "R3 ASK Do you have difficulty with balance or coordination?; Have you noticed any numbness or tingling in your hands or feet?; Do you have a history of cataracts requiring surgery at a young age? -> ['unknown', 'unknown', 'unknown']",
   "R4 ORDER Serum creatine kinase -> [['creatine kinase']]",
   "R5 ORDER Genetic testing for DMPK gene expansion -> [[]]",
   "R6 DIAGNOSIS Myotonic dystrophy -> "
@@ -53,10 +53,10 @@
     "Is there a family history of similar walking difficulties or muscle problems?"
    ],
    "result": [
+    "unknown",
+    "unknown",
     "yes",
-    "no",
-    "yes",
-    "no",
+    "unknown",
     "yes"
    ]
   },
@@ -69,9 +69,9 @@
     "Do you have difficulty climbing stairs or rising from a chair?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -83,9 +83,9 @@
     "Do you have a history of cataracts requiring surgery at a young age?"
    ],
    "result": [
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

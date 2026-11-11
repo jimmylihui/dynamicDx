@@ -30,36 +30,36 @@
   "Have you ever had a stroke or TIA before?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "yes",
-  "9": "no",
-  "10": "yes",
-  "11": "no",
-  "12": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
   "13": "yes",
-  "14": "no",
-  "15": "no",
-  "16": "no",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
   "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no",
-  "22": "no",
-  "23": "no",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
+  "22": "unknown",
+  "23": "unknown",
   "24": "yes",
   "25": "yes",
   "26": "no",
-  "27": "no",
-  "28": "no"
+  "27": "unknown",
+  "28": "unknown"
  },
- "n_yes_answers": 5,
+ "n_yes_answers": 3,
  "orders": [
   "Non-contrast CT scan of the head",
   "Blood glucose level",
@@ -72,13 +72,13 @@
   "MRI susceptibility-weighted sequences"
  ],
  "results": [
-  "R1 ASK Are you experiencing pain in your hip, groin, or thigh right now?; Did you fall or have any trauma to the hip area before coming in?; Can you lift the leg that is bothering you off the bed?; Have you been able to bear weight on that leg at all since this started? -> ['no', 'no', 'no', 'no']",
-  "R2 ASK How long has your leg been like this - hours, days, or weeks?; Do you have any history of cancer?; Have you had any fever, night sweats, or weight loss recently?; Do you have any numbness or weakness elsewhere in your body? -> ['no', 'no', 'no', 'yes']",
-  "R3 ASK Is the weakness on the same side of your body as the leg that won't move?; Did the weakness come on suddenly?; Are you having any trouble speaking or understanding speech?; Are you having any facial droop or vision problems? -> ['no', 'yes', 'no', 'no']",
-  "R4 ASK Is the weakness in your arms or your legs?; Do you have any back pain?; Have you had any recent illness, infection, or vaccination before this started?; Do you have any trouble with your bladder or bowel control? -> ['yes', 'no', 'no', 'no']",
-  "R5 ASK Is the weakness in both arms and both legs?; Did the weakness start in your legs and move upward?; Have you noticed any difficulty breathing or swallowing?; Have you had any recent diarrhea or stomach illness? -> ['no', 'no', 'no', 'no']",
-  "R6 ASK Is the weakness only in one arm?; Is the weakness only in one leg?; Did the weakness start in your face and move down your body?; Do you have any history of high blood pressure, diabetes, or heart problems? -> ['no', 'no', 'no', 'yes']",
-  "R7 ASK Do you have high blood pressure?; Do you have diabetes?; Do you have heart problems?; Have you ever had a stroke or TIA before? -> ['yes', 'no', 'no', 'no']",
+  "R1 ASK Are you experiencing pain in your hip, groin, or thigh right now?; Did you fall or have any trauma to the hip area before coming in?; Can you lift the leg that is bothering you off the bed?; Have you been able to bear weight on that leg at all since this started? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK How long has your leg been like this - hours, days, or weeks?; Do you have any history of cancer?; Have you had any fever, night sweats, or weight loss recently?; Do you have any numbness or weakness elsewhere in your body? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK Is the weakness on the same side of your body as the leg that won't move?; Did the weakness come on suddenly?; Are you having any trouble speaking or understanding speech?; Are you having any facial droop or vision problems? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R4 ASK Is the weakness in your arms or your legs?; Do you have any back pain?; Have you had any recent illness, infection, or vaccination before this started?; Do you have any trouble with your bladder or bowel control? -> ['yes', 'unknown', 'unknown', 'unknown']",
+  "R5 ASK Is the weakness in both arms and both legs?; Did the weakness start in your legs and move upward?; Have you noticed any difficulty breathing or swallowing?; Have you had any recent diarrhea or stomach illness? -> ['no', 'unknown', 'unknown', 'unknown']",
+  "R6 ASK Is the weakness only in one arm?; Is the weakness only in one leg?; Did the weakness start in your face and move down your body?; Do you have any history of high blood pressure, diabetes, or heart problems? -> ['unknown', 'unknown', 'unknown', 'yes']",
+  "R7 ASK Do you have high blood pressure?; Do you have diabetes?; Do you have heart problems?; Have you ever had a stroke or TIA before? -> ['yes', 'no', 'unknown', 'unknown']",
   "R8 ORDER Non-contrast CT scan of the head; Blood glucose level; MRI of the brain -> [['CT head (non-contrast)'], ['blood glucose'], ['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences']]",
   "R9 DIAGNOSIS Acute ischaemic stroke involving the lentiform nucleus (lacunar infarct), likely due to hypertensive small vessel disease. -> "
  ],
@@ -93,10 +93,10 @@
     "Have you been able to bear weight on that leg at all since this started?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -109,10 +109,10 @@
     "Do you have any numbness or weakness elsewhere in your body?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "yes"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -125,10 +125,10 @@
     "Are you having any facial droop or vision problems?"
    ],
    "result": [
-    "no",
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -142,9 +142,9 @@
    ],
    "result": [
     "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -158,9 +158,9 @@
    ],
    "result": [
     "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -173,9 +173,9 @@
     "Do you have any history of high blood pressure, diabetes, or heart problems?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
     "yes"
    ]
   },
@@ -191,8 +191,8 @@
    "result": [
     "yes",
     "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {

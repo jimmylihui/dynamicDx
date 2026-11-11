@@ -14,16 +14,16 @@
  "answers": {
   "1": "yes",
   "2": "yes",
-  "3": "yes",
-  "4": "no",
-  "5": "no",
-  "6": "no",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
   "7": "yes",
-  "8": "yes",
-  "9": "no",
-  "10": "no"
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown"
  },
- "n_yes_answers": 5,
+ "n_yes_answers": 3,
  "orders": [
   "Bedside tremor entrainment test: have the patient tap a regular rhythm with the unaffected hand while observing whether the affected-hand tremor changes frequency, entrains, or stops.",
   "Bedside neurologic examination for bradykinesia, rigidity, cerebellar signs, and upper-motor-neuron signs."
@@ -36,9 +36,9 @@
   "finger-tapping for bradykinesia and decrement"
  ],
  "results": [
-  "R1 ASK Do you have involuntary shaking or jerking of the hand being examined?; Does the shaking lessen or stop when you are distracted or performing a task with the other hand?; Did these symptoms begin suddenly?; Do you have weakness or numbness in that arm?; Do you have similar shaking in the other hand? -> ['yes', 'yes', 'yes', 'no', 'no']",
+  "R1 ASK Do you have involuntary shaking or jerking of the hand being examined?; Does the shaking lessen or stop when you are distracted or performing a task with the other hand?; Did these symptoms begin suddenly?; Do you have weakness or numbness in that arm?; Do you have similar shaking in the other hand? -> ['yes', 'yes', 'unknown', 'unknown', 'unknown']",
   "R2 ORDER Bedside tremor entrainment test: have the patient tap a regular rhythm with the unaffected hand while observing whether the affected-hand tremor changes frequency, entrains, or stops.; Bedside neurologic examination for bradykinesia, rigidity, cerebellar signs, and upper-motor-neuron signs. -> [['entrainment testing (tap to an externally paced rhythm)'], ['deep tendon reflexes and plantar responses', 'muscle tone (spasticity, rigidity, paratonia)', 'cerebellar examination (finger-nose, dysdiadochokinesis, nystagmus)', 'finger-tapping for bradykinesia and decrement']]",
-  "R3 ASK Did the shaking start during or shortly after a significant emotional or physical stressor?; Is the shaking absent when you are asleep?; Does the shaking vary markedly in speed or pattern from one moment to another?; Have you ever had similar unexplained neurological symptoms that later resolved?; Are you taking any medication or substance known to cause tremor, such as salbutamol, lithium, valproate, stimulants, or excess caffeine? -> ['no', 'yes', 'yes', 'no', 'no']",
+  "R3 ASK Did the shaking start during or shortly after a significant emotional or physical stressor?; Is the shaking absent when you are asleep?; Does the shaking vary markedly in speed or pattern from one moment to another?; Have you ever had similar unexplained neurological symptoms that later resolved?; Are you taking any medication or substance known to cause tremor, such as salbutamol, lithium, valproate, stimulants, or excess caffeine? -> ['unknown', 'yes', 'unknown', 'unknown', 'unknown']",
   "R4 DIAGNOSIS Functional neurological symptom disorder with functional (psychogenic) tremor, characterized by sudden-onset, unilateral, variable, distractible and entrainable tremor without objective neurological abnormalities; no specific precipitating cause is identified. -> "
  ],
  "trace": [
@@ -55,9 +55,9 @@
    "result": [
     "yes",
     "yes",
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -90,11 +90,11 @@
     "Are you taking any medication or substance known to cause tremor, such as salbutamol, lithium, valproate, stimulants, or excess caffeine?"
    ],
    "result": [
-    "no",
+    "unknown",
     "yes",
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

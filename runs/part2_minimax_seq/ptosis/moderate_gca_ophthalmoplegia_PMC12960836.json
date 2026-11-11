@@ -28,34 +28,34 @@
   "Have you had nerve conduction studies previously showing demyelination?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "yes",
-  "7": "yes",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "yes",
-  "19": "no",
-  "20": "no",
-  "21": "no",
-  "22": "no",
-  "23": "no",
-  "24": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
+  "22": "unknown",
+  "23": "unknown",
+  "24": "unknown",
   "25": "yes",
-  "26": "no"
+  "26": "unknown"
  },
- "n_yes_answers": 4,
+ "n_yes_answers": 1,
  "orders": [
   "Serum creatine kinase (CK)",
   "Serum lactate (resting)",
@@ -86,14 +86,14 @@
   "fundoscopy"
  ],
  "results": [
-  "R1 ASK Have you noticed any muscle twitching or fasciculations?; Have you noticed any muscle wasting or thinning?; Any difficulty with speech or swallowing?; Any shortness of breath or breathing difficulty?; Any weakness in your hands or fingers?; How long have these symptoms been present - months or years?; Has anyone in your family had similar symptoms? -> ['no', 'no', 'no', 'no', 'no', 'yes', 'yes']",
-  "R2 ASK Have you noticed any drooping of your eyelids (ptosis)?; Do you get tired quickly with physical activity or exercise?; Have you had any heart problems or hearing loss?; Did your symptoms start before age 40?; Does your mother or any maternal relatives have similar symptoms? -> ['no', 'no', 'no', 'no', 'no']",
-  "R3 ASK Does your father or any paternal relatives have similar symptoms?; Did symptoms start in your 40s, 50s, or 60s?; Have you noticed any tremor or stiffness in your movements?; Any balance problems or falling?; Any numbness, tingling, or sensory changes? -> ['no', 'no', 'no', 'no', 'no']",
-  "R4 ASK Did your symptoms start in childhood, adolescence, or young adulthood?; Have you had any episodes of stroke-like symptoms or seizures?; Have you had diabetes?; Any history of migraine?; Do you have any other affected relatives besides immediate family? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R1 ASK Have you noticed any muscle twitching or fasciculations?; Have you noticed any muscle wasting or thinning?; Any difficulty with speech or swallowing?; Any shortness of breath or breathing difficulty?; Any weakness in your hands or fingers?; How long have these symptoms been present - months or years?; Has anyone in your family had similar symptoms? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Have you noticed any drooping of your eyelids (ptosis)?; Do you get tired quickly with physical activity or exercise?; Have you had any heart problems or hearing loss?; Did your symptoms start before age 40?; Does your mother or any maternal relatives have similar symptoms? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK Does your father or any paternal relatives have similar symptoms?; Did symptoms start in your 40s, 50s, or 60s?; Have you noticed any tremor or stiffness in your movements?; Any balance problems or falling?; Any numbness, tingling, or sensory changes? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R4 ASK Did your symptoms start in childhood, adolescence, or young adulthood?; Have you had any episodes of stroke-like symptoms or seizures?; Have you had diabetes?; Any history of migraine?; Do you have any other affected relatives besides immediate family? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R5 INVALID Looking at the patient again - young onset, family history, chronic progressive ophthalmoplegia + distal weakness (foot drop), inherit -> ",
   "R6 ORDER Serum creatine kinase (CK); Serum lactate (resting); Electromyography (EMG) and nerve conduction studies; Muscle biopsy with histochemistry (including cytochrome c oxidase and succinate dehydrogenase staining); Genetic testing for POLG, TWNK (C10orf2), and SLC25A4 (ANT1) mutations -> [['creatine kinase', 'creatine kinase and lactate'], ['creatine kinase and lactate'], ['nerve conduction studies', 'needle electromyography'], [], []]",
   "R7 ORDER Genetic testing for POLG, TWNK, and SLC25A4 gene mutations; Muscle biopsy with histochemistry and mtDNA analysis (if genetic testing unavailable); Serum phytanic acid level; MRI brain and spinal cord; Cardiac evaluation (ECG, echocardiogram) -> [['whole exome sequencing'], ['mitochondrial genetics (mtDNA deletion)'], [], ['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'MRI cervical and thoracic spine', 'MRI spine'], []]",
-  "R8 ASK Has anyone in your family had a genetic test done to confirm the same variant?; Do you have any skin changes - such as loose, redundant, or inelastic skin?; Do you have any visual problems or vision loss?; Have you had nerve conduction studies previously showing demyelination? -> ['no', 'no', 'yes', 'no']",
+  "R8 ASK Has anyone in your family had a genetic test done to confirm the same variant?; Do you have any skin changes - such as loose, redundant, or inelastic skin?; Do you have any visual problems or vision loss?; Have you had nerve conduction studies previously showing demyelination? -> ['unknown', 'unknown', 'yes', 'unknown']",
   "R9 ORDER Thymidine phosphorylase activity (plasma) - for MNGIE; mtDNA sequencing for multiple deletions; Skin biopsy for fibroblast studies; Ophthalmologic evaluation with fundoscopy -> [[], ['mitochondrial genetics (mtDNA deletion)'], [], ['fundoscopy']]",
   "R10 DIAGNOSIS Charcot-Marie-Tooth disease type 1H (CMT1H) due to heterozygous FBLN5 gene mutation, with associated ophthalmoplegia and visual disturbance. -> "
  ],
@@ -111,13 +111,13 @@
     "Has anyone in your family had similar symptoms?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "yes",
-    "yes"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -131,11 +131,11 @@
     "Does your mother or any maternal relatives have similar symptoms?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -149,11 +149,11 @@
     "Any numbness, tingling, or sensory changes?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -167,11 +167,11 @@
     "Do you have any other affected relatives besides immediate family?"
    ],
    "result": [
-    "yes",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -242,10 +242,10 @@
     "Have you had nerve conduction studies previously showing demyelination?"
    ],
    "result": [
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {

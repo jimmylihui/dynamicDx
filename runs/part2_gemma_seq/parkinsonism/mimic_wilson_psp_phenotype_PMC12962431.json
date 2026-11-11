@@ -12,18 +12,18 @@
   "Does the patient have a resting tremor?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
+  "1": "unknown",
+  "2": "unknown",
   "3": "yes",
   "4": "no",
-  "5": "no",
-  "6": "yes",
-  "7": "no",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
   "8": "no",
   "9": "yes",
-  "10": "no"
+  "10": "unknown"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 2,
  "orders": [
   "Thyroid function tests (TSH, Free T4, Free T3)",
   "MRI of the brain and orbits",
@@ -39,9 +39,9 @@
   "cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)"
  ],
  "results": [
-  "R1 ASK Does the patient have a headache?; Does the patient have nausea?; Does the patient have gait instability?; Does the patient have urinary incontinence?; Is the patient confused? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R1 ASK Does the patient have a headache?; Does the patient have nausea?; Does the patient have gait instability?; Does the patient have urinary incontinence?; Is the patient confused? -> ['unknown', 'unknown', 'yes', 'no', 'unknown']",
   "R2 ORDER Thyroid function tests (TSH, Free T4, Free T3); MRI of the brain and orbits; Fundoscopy; Blood pressure measurement; Finger-to-nose test -> [['TSH / free T4'], ['MRI brain with gadolinium'], ['fundoscopy'], [], ['coordination examination (limb and truncal)', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)']]",
-  "R3 ASK Does the patient have vertical gaze palsy?; Does the patient have orthostatic hypotension?; Does the patient have bladder dysfunction?; Does the patient have a history of falls?; Does the patient have a resting tremor? -> ['yes', 'no', 'no', 'yes', 'no']",
+  "R3 ASK Does the patient have vertical gaze palsy?; Does the patient have orthostatic hypotension?; Does the patient have bladder dysfunction?; Does the patient have a history of falls?; Does the patient have a resting tremor? -> ['unknown', 'unknown', 'no', 'yes', 'unknown']",
   "R4 DIAGNOSIS Spinocerebellar Ataxia Type 17 (SCA17) -> "
  ],
  "trace": [
@@ -56,11 +56,11 @@
     "Is the patient confused?"
    ],
    "result": [
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "yes",
     "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -101,11 +101,11 @@
     "Does the patient have a resting tremor?"
    ],
    "result": [
-    "yes",
+    "unknown",
+    "unknown",
     "no",
-    "no",
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {

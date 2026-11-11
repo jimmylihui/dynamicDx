@@ -12,18 +12,18 @@
   "Do you have a history of migraine headaches?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "yes",
-  "4": "no",
-  "5": "no",
-  "6": "yes",
-  "7": "yes",
-  "8": "no",
-  "9": "no",
-  "10": "no"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 0,
  "orders": [
   "Perform the forced duction test to differentiate restrictive from paralytic strabismus.",
   "Measure intraocular pressure in primary gaze and on upgaze (to check for elevation-induced IOP rise).",
@@ -42,15 +42,15 @@
   "anti-thyroid antibodies"
  ],
  "results": [
-  "R1 ASK Do you have a known history of thyroid disease (such as Graves' disease or hyperthyroidism)?; Have you noticed your eyes appearing to bulge forward recently?; Do you experience double vision when looking at objects? -> ['no', 'no', 'yes']",
+  "R1 ASK Do you have a known history of thyroid disease (such as Graves' disease or hyperthyroidism)?; Have you noticed your eyes appearing to bulge forward recently?; Do you experience double vision when looking at objects? -> ['unknown', 'unknown', 'unknown']",
   "R2 ORDER Perform the forced duction test to differentiate restrictive from paralytic strabismus.; Measure intraocular pressure in primary gaze and on upgaze (to check for elevation-induced IOP rise).; Examine the pupils for relative afferent pupillary defect (RAPD) and perform visual field testing by confrontation. -> [['forced duction test'], [], ['pupil size and light reaction', 'visual fields (perimetry)']]",
-  "R3 ASK Do you have a history of diabetes mellitus?; Do you have a history of hypertension?; Did the double vision start suddenly or gradually? -> ['no', 'no', 'yes']",
-  "R4 ASK Did the double vision start suddenly (over hours to days)?; Do you have a history of head trauma or recent surgery? -> ['yes', 'no']",
+  "R3 ASK Do you have a history of diabetes mellitus?; Do you have a history of hypertension?; Did the double vision start suddenly or gradually? -> ['unknown', 'unknown', 'unknown']",
+  "R4 ASK Did the double vision start suddenly (over hours to days)?; Do you have a history of head trauma or recent surgery? -> ['unknown', 'unknown']",
   "R5 ORDER MRI of the orbits with fat suppression (STIR sequences) to evaluate for extraocular muscle enlargement and tendon involvement. -> [['MRI sella and orbits']]",
-  "R6 ASK Do you have a history of myasthenia gravis or other autoimmune diseases? -> ['no']",
+  "R6 ASK Do you have a history of myasthenia gravis or other autoimmune diseases? -> ['unknown']",
   "R7 ORDER Bedside ice pack test (apply ice to the ptotic eyelid for 2 minutes and observe for improvement in lid elevation). -> [['ptosis / lid position']]",
   "R8 ORDER Serum thyroid function tests (TSH, Free T4) and Thyroid Stimulating Immunoglobulin (TSI). -> [['TSH / free T4', 'anti-thyroid antibodies']]",
-  "R9 ASK Do you have a history of migraine headaches? -> ['no']",
+  "R9 ASK Do you have a history of migraine headaches? -> ['unknown']",
   "R10 DIAGNOSIS Idiopathic orbital inflammatory disease (orbital myositis) -> "
  ],
  "trace": [
@@ -63,9 +63,9 @@
     "Do you experience double vision when looking at objects?"
    ],
    "result": [
-    "no",
-    "no",
-    "yes"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -96,9 +96,9 @@
     "Did the double vision start suddenly or gradually?"
    ],
    "result": [
-    "no",
-    "no",
-    "yes"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -109,8 +109,8 @@
     "Do you have a history of head trauma or recent surgery?"
    ],
    "result": [
-    "yes",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -132,7 +132,7 @@
     "Do you have a history of myasthenia gravis or other autoimmune diseases?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -167,7 +167,7 @@
     "Do you have a history of migraine headaches?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

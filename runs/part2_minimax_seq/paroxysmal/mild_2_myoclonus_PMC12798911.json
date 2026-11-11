@@ -23,27 +23,27 @@
  ],
  "answers": {
   "1": "yes",
-  "2": "yes",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
   "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no"
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 1,
  "orders": [
   "Chest X-ray (PA and lateral)",
   "Complete blood count (CBC)",
@@ -64,16 +64,16 @@
   "serum electrolytes, urea and creatinine"
  ],
  "results": [
-  "R1 ASK Did you have surgery recently?; If yes, was it heart surgery (through the breastbone)?; Do you have chest pain right now?; Are you having shortness of breath?; Have you noticed any fever, redness, or discharge from your wound? -> ['yes', 'yes', 'no', 'no', 'no']",
-  "R2 ASK When was your heart surgery performed (how many days ago)?; Have you noticed any clicking, popping, or movement of your breastbone?; Do you feel your heart beating fast or irregularly?; Have you had any recent fevers or chills?; Are you able to take a deep breath comfortably? -> ['no', 'no', 'no', 'no', 'no']",
-  "R3 ASK Are you currently taking any medications (like blood thinners or antibiotics)?; Did the hospital staff or anyone explain what was done during your surgery?; Are you currently admitted to the hospital?; Have you been eating and drinking normally since the surgery?; Do you have any pain anywhere in your body? -> ['no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Did you have surgery recently?; If yes, was it heart surgery (through the breastbone)?; Do you have chest pain right now?; Are you having shortness of breath?; Have you noticed any fever, redness, or discharge from your wound? -> ['yes', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK When was your heart surgery performed (how many days ago)?; Have you noticed any clicking, popping, or movement of your breastbone?; Do you feel your heart beating fast or irregularly?; Have you had any recent fevers or chills?; Are you able to take a deep breath comfortably? -> ['unknown', 'unknown', 'unknown', 'no', 'unknown']",
+  "R3 ASK Are you currently taking any medications (like blood thinners or antibiotics)?; Did the hospital staff or anyone explain what was done during your surgery?; Are you currently admitted to the hospital?; Have you been eating and drinking normally since the surgery?; Do you have any pain anywhere in your body? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R4 ORDER Chest X-ray (PA and lateral); Complete blood count (CBC); Serum electrolytes and renal function tests -> [[], ['full blood count and biochemistry'], ['serum electrolytes, urea and creatinine']]",
   "R5 ORDER Chest X-ray (PA and lateral); Wound swab for culture and sensitivity -> [[], []]",
   "R6 ORDER Two-week follow-up clinical assessment -> [[]]",
   "R7 ORDER Echocardiogram (transthoracic); Wound inspection and palpation for sternal instability -> [[], []]",
   "R8 ORDER Physical examination of the chest wound (inspection, palpation for tenderness, warmth, swelling, and sternal stability) -> [[]]",
   "R9 ORDER Direct visual inspection of the surgical wound; ECG (electrocardiogram); Echocardiogram; Blood cultures -> [[], [], [], []]",
-  "R10 ASK Does the chest pain radiate to your left arm, neck, or jaw?; Is the chest pain worse when you lie flat?; Does the pain improve when you lean forward?; Have you noticed any swelling or fluid collection under the wound?; Do you have any difficulty swallowing? -> ['no', 'no', 'no', 'no', 'no']",
+  "R10 ASK Does the chest pain radiate to your left arm, neck, or jaw?; Is the chest pain worse when you lie flat?; Does the pain improve when you lean forward?; Have you noticed any swelling or fluid collection under the wound?; Do you have any difficulty swallowing? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Uncomplicated healing median sternotomy wound status post cardiac surgery -> "
  ],
  "trace": [
@@ -89,10 +89,10 @@
    ],
    "result": [
     "yes",
-    "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -106,11 +106,11 @@
     "Are you able to take a deep breath comfortably?"
    ],
    "result": [
+    "unknown",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -124,11 +124,11 @@
     "Do you have any pain anywhere in your body?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -220,11 +220,11 @@
     "Do you have any difficulty swallowing?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

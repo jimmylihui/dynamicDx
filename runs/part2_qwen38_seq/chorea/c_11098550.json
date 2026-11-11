@@ -8,12 +8,12 @@
   "Have you been drinking large amounts of water recently?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown"
  },
  "n_yes_answers": 0,
  "orders": [
@@ -33,14 +33,14 @@
   "serum electrolytes, urea and creatinine"
  ],
  "results": [
-  "R1 ASK Are you experiencing any pain?; Do you have a fever or chills?; Have you had any seizures recently? -> ['no', 'no', 'no']",
+  "R1 ASK Are you experiencing any pain?; Do you have a fever or chills?; Have you had any seizures recently? -> ['unknown', 'unknown', 'unknown']",
   "R2 ORDER Observe the patient's movements for 60 seconds to characterize the abnormal posturing and check for distractibility or entrainment -> [['distribution of the movements (one side, both, face, limbs)', 'effect of voluntary action and anxiety', 'effect of sleep', 'speed of onset']]",
-  "R3 ASK Did these symptoms start suddenly after a stressful event or emotional upset? -> ['no']",
+  "R3 ASK Did these symptoms start suddenly after a stressful event or emotional upset? -> ['unknown']",
   "R4 ORDER Check for pupillary response to light -> [['cranial nerve examination']]",
-  "R5 ASK Do you have a history of diabetes? -> ['no']",
+  "R5 ASK Do you have a history of diabetes? -> ['unknown']",
   "R6 ORDER Fingerstick blood glucose -> [['blood glucose', 'blood glucose and HbA1c']]",
   "R7 ORDER Serum electrolytes -> [['serum electrolytes, urea and creatinine']]",
-  "R8 ASK Have you been drinking large amounts of water recently? -> ['no']",
+  "R8 ASK Have you been drinking large amounts of water recently? -> ['unknown']",
   "R9 DIAGNOSIS Hyponatremic encephalopathy -> "
  ],
  "trace": [
@@ -53,9 +53,9 @@
     "Have you had any seizures recently?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -80,7 +80,7 @@
     "Did these symptoms start suddenly after a stressful event or emotional upset?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -102,7 +102,7 @@
     "Do you have a history of diabetes?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -137,7 +137,7 @@
     "Have you been drinking large amounts of water recently?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

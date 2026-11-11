@@ -34,40 +34,40 @@
   "Have you had symptoms such as difficulty with eye movements, rigidity, or slowed movement?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "yes",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "yes",
+  "10": "unknown",
   "11": "yes",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "yes",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
   "22": "no",
-  "23": "no",
-  "24": "no",
-  "25": "no",
+  "23": "unknown",
+  "24": "unknown",
+  "25": "unknown",
   "26": "no",
-  "27": "no",
-  "28": "no",
+  "27": "unknown",
+  "28": "unknown",
   "29": "yes",
-  "30": "no",
+  "30": "unknown",
   "31": "no",
-  "32": "no"
+  "32": "unknown"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 4,
  "orders": [
   "Bedside cranial-nerve examination focused on bulbar function: sustained counting aloud, repetition of lingual and labial phrases, inspection of palate elevation while saying “ah,” tongue protrusion and side-to-side movement, and bilateral gag-reflex testing.",
   "Formal speech-and-swallow evaluation with water swallow test.",
@@ -96,13 +96,13 @@
   "dystonia gene panel"
  ],
  "results": [
-  "R1 ASK Do you have episodes of weakness or inability to move that come and go?; Do these episodes occur only when someone is watching or examining you?; Do you have numbness or altered sensation?; Have you ever lost consciousness during an episode?; Do you have difficulty speaking or swallowing?; Do you have double vision or drooping eyelids that worsen with activity?; Do you have a history of seizures?; Do you have anxiety, depression, or significant psychological stress? -> ['no', 'no', 'no', 'no', 'yes', 'no', 'no', 'no']",
+  "R1 ASK Do you have episodes of weakness or inability to move that come and go?; Do these episodes occur only when someone is watching or examining you?; Do you have numbness or altered sensation?; Have you ever lost consciousness during an episode?; Do you have difficulty speaking or swallowing?; Do you have double vision or drooping eyelids that worsen with activity?; Do you have a history of seizures?; Do you have anxiety, depression, or significant psychological stress? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R2 ORDER Bedside cranial-nerve examination focused on bulbar function: sustained counting aloud, repetition of lingual and labial phrases, inspection of palate elevation while saying “ah,” tongue protrusion and side-to-side movement, and bilateral gag-reflex testing.; Formal speech-and-swallow evaluation with water swallow test.; Bedside cranial-nerve examination focused on bulbar function: sustained counting aloud, repetition of lingual and labial phrases, inspection of palate elevation while saying “ah,” tongue protrusion and side-to-side movement, and bilateral gag-reflex testing.; Formal speech-and-swallow evaluation with water swallow test. -> [['cranial nerve examination'], ['speech assessment'], ['cranial nerve examination'], ['speech assessment']]",
-  "R3 ASK Does your speech become strained or “spasmodic” mainly when you try to speak in sentences?; Is your voice noticeably better when whispering or singing?; Do you have involuntary jerking or abnormal posturing of your neck, face, jaw, or limbs?; Did the speech problem begin suddenly?; Do you experience abnormal breathing or noisy breathing when speaking? -> ['no', 'no', 'yes', 'no', 'no']",
-  "R4 ASK Are the involuntary movements most prominent in your face, jaw, or tongue?; Are they lessened by touching your face or by another “sensory trick”?; Can you temporarily suppress the movements when asked?; Do the movements worsen with speaking or other voluntary actions?; Do you take, or have you previously taken, antipsychotic or anti-nausea medications such as haloperidol, risperidone, metoclopramide, or prochlorperazine?; Does anyone in your biological family have similar involuntary movements or an early neurodegenerative disorder?; Do you have progressive problems with coordination, memory, or personality? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Does your speech become strained or “spasmodic” mainly when you try to speak in sentences?; Is your voice noticeably better when whispering or singing?; Do you have involuntary jerking or abnormal posturing of your neck, face, jaw, or limbs?; Did the speech problem begin suddenly?; Do you experience abnormal breathing or noisy breathing when speaking? -> ['yes', 'unknown', 'yes', 'unknown', 'unknown']",
+  "R4 ASK Are the involuntary movements most prominent in your face, jaw, or tongue?; Are they lessened by touching your face or by another “sensory trick”?; Can you temporarily suppress the movements when asked?; Do the movements worsen with speaking or other voluntary actions?; Do you take, or have you previously taken, antipsychotic or anti-nausea medications such as haloperidol, risperidone, metoclopramide, or prochlorperazine?; Does anyone in your biological family have similar involuntary movements or an early neurodegenerative disorder?; Do you have progressive problems with coordination, memory, or personality? -> ['yes', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R5 ORDER Bedside movement-disorder examination assessing variability, distractibility with mental and contralateral motor tasks, entrainment of any tremor or rhythmic movement, suggestibility, and consistency across repeated voluntary maneuvers.; Video laryngoscopy during sustained vowel, conversational speech, whispering, and singing to assess for laryngeal dystonia or functional dysphonia. -> [['action specificity and task dependence'], ['speech assessment']]",
-  "R6 ASK Do the involuntary movements disappear completely when you are asleep?; Do they vary substantially from one moment to the next?; Are the movements absent when you are distracted by a complex mental task?; Did the movements and speech problem begin after an injury, illness, or major stressful event?; Have brain MRI or other neurological tests previously shown no structural abnormality? -> ['no', 'no', 'no', 'no', 'no']",
-  "R7 ASK Did the abnormal movements begin before the age of 26?; Did the movements start in one limb and then spread to other body regions?; Have the movements progressively worsened over time?; Do you have sustained twisting or abnormal postures of the neck, trunk, arms, or legs?; Do you have tremor in addition to the abnormal postures?; Have you ever had a good response to levodopa?; Have you had symptoms such as difficulty with eye movements, rigidity, or slowed movement? -> ['no', 'no', 'no', 'yes', 'no', 'no', 'no']",
+  "R6 ASK Do the involuntary movements disappear completely when you are asleep?; Do they vary substantially from one moment to the next?; Are the movements absent when you are distracted by a complex mental task?; Did the movements and speech problem begin after an injury, illness, or major stressful event?; Have brain MRI or other neurological tests previously shown no structural abnormality? -> ['unknown', 'no', 'unknown', 'unknown', 'unknown']",
+  "R7 ASK Did the abnormal movements begin before the age of 26?; Did the movements start in one limb and then spread to other body regions?; Have the movements progressively worsened over time?; Do you have sustained twisting or abnormal postures of the neck, trunk, arms, or legs?; Do you have tremor in addition to the abnormal postures?; Have you ever had a good response to levodopa?; Have you had symptoms such as difficulty with eye movements, rigidity, or slowed movement? -> ['no', 'unknown', 'unknown', 'yes', 'unknown', 'no', 'unknown']",
   "R8 ORDER MRI of the brain with and without contrast, including basal-ganglia sequences.; Serum ceruloplasmin and serum copper, 24-hour urinary copper, liver-function tests, and slit-lamp examination for Kayser–Fleischer rings.; Electromyography of the affected muscles during rest, voluntary contraction, and the abnormal postures, assessing for dystonic co-contraction. -> [['MRI brain with gadolinium', 'brain MRI'], ['serum copper and caeruloplasmin', '24-hour urinary copper', 'liver function', 'slit-lamp examination for Kayser-Fleischer rings', 'copper / caeruloplasmin / 24 h urinary copper'], ['needle EMG of the affected muscles']]",
   "R9 ORDER Comprehensive genetic testing for isolated dystonia, including sequencing and deletion/duplication analysis of TOR1A, THAP1, GNAL, and other established primary-dystonia genes.; Surface EMG of the involved muscles during rest, voluntary movement, and the sustained abnormal postures to document dystonic co-contraction. -> [['dystonia gene panel'], []]",
   "R10 DIAGNOSIS DYT6 (DYT-THAP1) isolated dystonia—an autosomal-dominant neurodevelopmental dystonia caused by the heterozygous pathogenic THAP1 c.505C>T (p.Arg169*) variant, with prominent laryngeal/speech dystonia and dystonic posturing. -> "
@@ -122,14 +122,14 @@
     "Do you have anxiety, depression, or significant psychological stress?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -167,11 +167,11 @@
     "Do you experience abnormal breathing or noisy breathing when speaking?"
    ],
    "result": [
-    "no",
-    "no",
     "yes",
-    "no",
-    "no"
+    "unknown",
+    "yes",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -187,13 +187,13 @@
     "Do you have progressive problems with coordination, memory, or personality?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "yes",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -223,11 +223,11 @@
     "Have brain MRI or other neurological tests previously shown no structural abnormality?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -244,12 +244,12 @@
    ],
    "result": [
     "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "yes",
+    "unknown",
     "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {

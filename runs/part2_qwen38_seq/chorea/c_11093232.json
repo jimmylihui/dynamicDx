@@ -22,28 +22,28 @@
   "Do you have a history of high blood pressure?"
  ],
  "answers": {
-  "1": "yes",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "yes",
-  "10": "no",
-  "11": "no",
-  "12": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
   "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
   "19": "no",
-  "20": "no"
+  "20": "unknown"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 0,
  "orders": [
   "MRI of the brain"
  ],
@@ -52,16 +52,16 @@
   "MRI susceptibility-weighted sequences"
  ],
  "results": [
-  "R1 ASK Are you experiencing involuntary movements in your right hand?; Do these movements feel like a \"pill-rolling\" motion (thumb rubbing against fingers)?; Is the movement present when your hand is resting on your lap? -> ['yes', 'no', 'no']",
-  "R2 ASK Do you have a history of taking medications for nausea, vomiting, or psychiatric conditions (such as antipsychotics or metoclopramide)?; Does the movement occur when you are holding your hand up against gravity?; Does the movement stop if you concentrate on keeping your hand still? -> ['no', 'no', 'no']",
-  "R3 ASK Do you have a history of diabetes?; Have you had any recent episodes of low blood sugar or high blood sugar?; Is the movement present when your hand is completely relaxed on your lap? -> ['no', 'no', 'yes']",
-  "R4 ASK Do you have a history of stroke or transient ischemic attack (TIA)?; Have you had any recent head trauma?; Is the movement present when you are trying to use your hand for a task, like writing or buttoning a shirt? -> ['no', 'no', 'no']",
-  "R5 ASK Do you have a history of thyroid problems?; Have you had any recent infections or fevers?; Is the movement present when your hand is completely relaxed on your lap? -> ['no', 'no', 'no']",
-  "R6 ASK Do you have a history of kidney disease or liver disease?; Have you had any recent changes in your medications, including over-the-counter drugs or supplements? -> ['no', 'no']",
-  "R7 ASK Do you have a family history of movement disorders or dementia? -> ['no']",
+  "R1 ASK Are you experiencing involuntary movements in your right hand?; Do these movements feel like a \"pill-rolling\" motion (thumb rubbing against fingers)?; Is the movement present when your hand is resting on your lap? -> ['unknown', 'unknown', 'unknown']",
+  "R2 ASK Do you have a history of taking medications for nausea, vomiting, or psychiatric conditions (such as antipsychotics or metoclopramide)?; Does the movement occur when you are holding your hand up against gravity?; Does the movement stop if you concentrate on keeping your hand still? -> ['unknown', 'unknown', 'unknown']",
+  "R3 ASK Do you have a history of diabetes?; Have you had any recent episodes of low blood sugar or high blood sugar?; Is the movement present when your hand is completely relaxed on your lap? -> ['unknown', 'unknown', 'unknown']",
+  "R4 ASK Do you have a history of stroke or transient ischemic attack (TIA)?; Have you had any recent head trauma?; Is the movement present when you are trying to use your hand for a task, like writing or buttoning a shirt? -> ['unknown', 'unknown', 'unknown']",
+  "R5 ASK Do you have a history of thyroid problems?; Have you had any recent infections or fevers?; Is the movement present when your hand is completely relaxed on your lap? -> ['no', 'unknown', 'unknown']",
+  "R6 ASK Do you have a history of kidney disease or liver disease?; Have you had any recent changes in your medications, including over-the-counter drugs or supplements? -> ['unknown', 'unknown']",
+  "R7 ASK Do you have a family history of movement disorders or dementia? -> ['unknown']",
   "R8 ASK Do you have a history of cancer? -> ['no']",
   "R9 ORDER MRI of the brain -> [['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences']]",
-  "R10 ASK Do you have a history of high blood pressure? -> ['no']",
+  "R10 ASK Do you have a history of high blood pressure? -> ['unknown']",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Hemiballismus secondary to a lacunar infarction of the subthalamic nucleus -> "
  ],
  "trace": [
@@ -74,9 +74,9 @@
     "Is the movement present when your hand is resting on your lap?"
    ],
    "result": [
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -88,9 +88,9 @@
     "Does the movement stop if you concentrate on keeping your hand still?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -102,9 +102,9 @@
     "Is the movement present when your hand is completely relaxed on your lap?"
    ],
    "result": [
-    "no",
-    "no",
-    "yes"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -116,9 +116,9 @@
     "Is the movement present when you are trying to use your hand for a task, like writing or buttoning a shirt?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -131,8 +131,8 @@
    ],
    "result": [
     "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -143,8 +143,8 @@
     "Have you had any recent changes in your medications, including over-the-counter drugs or supplements?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -154,7 +154,7 @@
     "Do you have a family history of movement disorders or dementia?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -187,7 +187,7 @@
     "Do you have a history of high blood pressure?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

@@ -22,28 +22,28 @@
   "Have you ever been tested for HIV?"
  ],
  "answers": {
-  "1": "yes",
-  "2": "yes",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "yes",
-  "11": "no",
-  "12": "no",
-  "13": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
   "14": "yes",
-  "15": "yes",
-  "16": "no",
+  "15": "unknown",
+  "16": "unknown",
   "17": "yes",
-  "18": "no",
-  "19": "no",
-  "20": "no"
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown"
  },
- "n_yes_answers": 6,
+ "n_yes_answers": 2,
  "orders": [
   "Focused neurological examination of the upper limbs assessing for:",
   "Assessment of the movements during specific tasks: finger tapping, reaching, and while the limbs are completely at rest",
@@ -70,13 +70,13 @@
   "liver function and albumin/globulin"
  ],
  "results": [
-  "R1 ASK Do these hand movements occur when you are trying to relax, or only when you're moving or focused on something else?; Did these movements start on one side first, or both hands at the same time?; Have you ever had a head injury, stroke, or been diagnosed with a movement disorder before?; Do these movements get worse when you're feeling anxious or stressed? -> ['yes', 'yes', 'no', 'no']",
+  "R1 ASK Do these hand movements occur when you are trying to relax, or only when you're moving or focused on something else?; Did these movements start on one side first, or both hands at the same time?; Have you ever had a head injury, stroke, or been diagnosed with a movement disorder before?; Do these movements get worse when you're feeling anxious or stressed? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R2 ORDER Focused neurological examination of the upper limbs assessing for:; Assessment of the movements during specific tasks: finger tapping, reaching, and while the limbs are completely at rest -> [['muscle tone examination', 'limb strength (MRC) examination', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'reflexes and plantar responses'], ['tremor at rest', 'kinetic / intention tremor (finger-nose)']]",
-  "R3 ASK Do you take any medications regularly, including over-the-counter drugs?; Is there anyone else in your family who has had similar involuntary movements?; Have you noticed any stiffness, slowness, or difficulty with balance?; Did anyone ever tell you these movements are \"all in your head\" or suggest they might be psychological? -> ['no', 'no', 'no', 'no']",
-  "R4 ASK How old are you?; When did you first notice these movements, and have they been getting worse over time?; Have you noticed any changes in your speech, swallowing, or writing?; Have you had your eyes examined recently, and were there any abnormalities noted (e.g., rings around the cornea)? -> ['no', 'yes', 'no', 'no']",
-  "R5 ASK Can you tell me how old you are in years?; Are the movements worse in one hand than the other?; When your hands are completely relaxed in your lap, do the movements continue or stop?; Do you ever notice the movements disappearing entirely for periods, such as during sleep? -> ['no', 'yes', 'yes', 'no']",
+  "R3 ASK Do you take any medications regularly, including over-the-counter drugs?; Is there anyone else in your family who has had similar involuntary movements?; Have you noticed any stiffness, slowness, or difficulty with balance?; Did anyone ever tell you these movements are \"all in your head\" or suggest they might be psychological? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R4 ASK How old are you?; When did you first notice these movements, and have they been getting worse over time?; Have you noticed any changes in your speech, swallowing, or writing?; Have you had your eyes examined recently, and were there any abnormalities noted (e.g., rings around the cornea)? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R5 ASK Can you tell me how old you are in years?; Are the movements worse in one hand than the other?; When your hands are completely relaxed in your lap, do the movements continue or stop?; Do you ever notice the movements disappearing entirely for periods, such as during sleep? -> ['unknown', 'yes', 'unknown', 'unknown']",
   "R6 ORDER Head and brain MRI with contrast, specifically looking for structural lesions in the posterior fossa, cerebellum, brainstem, thalamus, and basal ganglia; Serum ceruloplasmin level; 24-hour urine copper excretion; Complete metabolic panel including liver function tests -> [['MRI brain with gadolinium', 'brain MRI'], ['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['24-hour urinary copper', 'copper / caeruloplasmin / 24 h urinary copper'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'liver function and albumin/globulin']]",
-  "R7 ASK Have you ever been treated for tuberculosis (TB), and did you complete the full course of treatment?; Have you had symptoms like fever, night sweats, weight loss, or a persistent cough?; Has anyone in your household been diagnosed with tuberculosis?; Have you ever been tested for HIV? -> ['yes', 'no', 'no', 'no']",
+  "R7 ASK Have you ever been treated for tuberculosis (TB), and did you complete the full course of treatment?; Have you had symptoms like fever, night sweats, weight loss, or a persistent cough?; Has anyone in your household been diagnosed with tuberculosis?; Have you ever been tested for HIV? -> ['yes', 'unknown', 'unknown', 'unknown']",
   "R8 DIAGNOSIS Post-tuberculous movement disorder (thalamic tremor syndrome) secondary to left thalamic tuberculoma, presenting with mixed rest and intention tremor with ipsilateral cerebellar signs, following treatment for tuberculosis. -> "
  ],
  "trace": [
@@ -90,10 +90,10 @@
     "Do these movements get worse when you're feeling anxious or stressed?"
    ],
    "result": [
-    "yes",
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -127,10 +127,10 @@
     "Did anyone ever tell you these movements are \"all in your head\" or suggest they might be psychological?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -143,10 +143,10 @@
     "Have you had your eyes examined recently, and were there any abnormalities noted (e.g., rings around the cornea)?"
    ],
    "result": [
-    "no",
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -159,10 +159,10 @@
     "Do you ever notice the movements disappearing entirely for periods, such as during sleep?"
    ],
    "result": [
-    "no",
+    "unknown",
     "yes",
-    "yes",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -205,9 +205,9 @@
    ],
    "result": [
     "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

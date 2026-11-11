@@ -27,33 +27,33 @@
   "Has anyone told you what the lump might be before?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
   "16": "yes",
-  "17": "no",
-  "18": "yes",
-  "19": "no",
-  "20": "no",
-  "21": "yes",
-  "22": "yes",
-  "23": "no",
-  "24": "no",
-  "25": "no"
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
+  "22": "unknown",
+  "23": "unknown",
+  "24": "unknown",
+  "25": "unknown"
  },
- "n_yes_answers": 4,
+ "n_yes_answers": 1,
  "orders": [
   "Contrast-enhanced CT scan of the chest focusing on the anterior mediastinum and chest wall",
   "Core needle biopsy of the anterior chest wall mass",
@@ -73,15 +73,15 @@
   "ESR and CRP"
  ],
  "results": [
-  "R1 ASK Has the swelling in your neck been growing progressively over several months?; Have you experienced any unexplained weight loss recently?; Do you suffer from drenching night sweats?; Is the swelling painful to the touch? -> ['no', 'no', 'no', 'no']",
-  "R2 ASK How long have you noticed this lump on your chest?; Do you have any difficulty breathing or shortness of breath?; Do you feel any lumps in your armpits or neck?; Have you ever been treated for cancer before? -> ['no', 'no', 'no', 'no']",
-  "R3 ASK Did the lump appear suddenly or did you first notice it some time ago?; Do you have a cough?; Have you noticed any changes in your voice?; Do you smoke or have you smoked in the past? -> ['no', 'no', 'no', 'no']",
+  "R1 ASK Has the swelling in your neck been growing progressively over several months?; Have you experienced any unexplained weight loss recently?; Do you suffer from drenching night sweats?; Is the swelling painful to the touch? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK How long have you noticed this lump on your chest?; Do you have any difficulty breathing or shortness of breath?; Do you feel any lumps in your armpits or neck?; Have you ever been treated for cancer before? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK Did the lump appear suddenly or did you first notice it some time ago?; Do you have a cough?; Have you noticed any changes in your voice?; Do you smoke or have you smoked in the past? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R4 ORDER Contrast-enhanced CT scan of the chest focusing on the anterior mediastinum and chest wall; Core needle biopsy of the anterior chest wall mass; Serum LDH, hCG, and AFP levels; Thyroid function tests -> [[], [], [], ['thyroid function (TSH, free T4)']]",
   "R5 ORDER Chest X-ray (posteroanterior view); Ultrasound of the anterior chest wall mass; Complete blood count; Erythrocyte sedimentation rate (ESR) -> [[], [], ['full blood count and biochemistry'], ['ESR and CRP']]",
   "R6 ORDER Chest X-ray (posteroanterior and lateral views); Ultrasound of the anterior chest wall mass with Doppler; Measurement of the mass size in centimeters -> [[], [], []]",
-  "R7 ASK Is the lump attached to the bone underneath or does it move freely?; Can you pinch the skin over the lump away from the lump?; Is the lump getting bigger very slowly over years?; Have you ever had any chest surgery in the past?; Does anyone in your family have conditions affecting the bones or cartilage? -> ['no', 'no', 'no', 'yes', 'no']",
-  "R8 ASK What type of chest surgery did you have?; How many years ago was the surgery performed?; Is the lump right where the surgical scar is?; Was the surgery for a similar lump or for something else (like heart or lung surgery)? -> ['yes', 'no', 'no', 'yes']",
-  "R9 ASK Was the surgery for your heart (like bypass surgery or valve replacement)?; Can you describe the lump - is it rubbery and移动 easily, or is it rock hard?; Is the lump located in the center of your chest over the breastbone, or more to one side?; Has anyone told you what the lump might be before? -> ['yes', 'no', 'no', 'no']",
+  "R7 ASK Is the lump attached to the bone underneath or does it move freely?; Can you pinch the skin over the lump away from the lump?; Is the lump getting bigger very slowly over years?; Have you ever had any chest surgery in the past?; Does anyone in your family have conditions affecting the bones or cartilage? -> ['unknown', 'unknown', 'unknown', 'yes', 'unknown']",
+  "R8 ASK What type of chest surgery did you have?; How many years ago was the surgery performed?; Is the lump right where the surgical scar is?; Was the surgery for a similar lump or for something else (like heart or lung surgery)? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R9 ASK Was the surgery for your heart (like bypass surgery or valve replacement)?; Can you describe the lump - is it rubbery and移动 easily, or is it rock hard?; Is the lump located in the center of your chest over the breastbone, or more to one side?; Has anyone told you what the lump might be before? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R10 DIAGNOSIS Sternal wound complication (likely sternal dehiscence or seroma) following cardiac surgery -> "
  ],
  "trace": [
@@ -95,10 +95,10 @@
     "Is the swelling painful to the touch?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -111,10 +111,10 @@
     "Have you ever been treated for cancer before?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -127,10 +127,10 @@
     "Do you smoke or have you smoked in the past?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -196,11 +196,11 @@
     "Does anyone in your family have conditions affecting the bones or cartilage?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -213,10 +213,10 @@
     "Was the surgery for a similar lump or for something else (like heart or lung surgery)?"
    ],
    "result": [
-    "yes",
-    "no",
-    "no",
-    "yes"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -229,10 +229,10 @@
     "Has anyone told you what the lump might be before?"
    ],
    "result": [
-    "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

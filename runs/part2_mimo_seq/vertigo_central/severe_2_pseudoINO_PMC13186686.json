@@ -10,16 +10,16 @@
   "\"Have you had any recent weight loss or loss of appetite?\""
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "yes",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown"
  },
- "n_yes_answers": 1,
+ "n_yes_answers": 0,
  "orders": [
   "1. Cold calorics test (vestibulo-ocular reflex testing)",
   "1. Brain MRI with special attention to the pons and brainstem (looking for central pontine myelinolysis or extrapontine demyelination)"
@@ -30,15 +30,15 @@
   "MRI brain with DWI"
  ],
  "results": [
-  "R1 ASK \"Did you stop breathing or have a cardiac arrest recently?\" -> ['no']",
+  "R1 ASK \"Did you stop breathing or have a cardiac arrest recently?\" -> ['unknown']",
   "R2 ORDER 1. Cold calorics test (vestibulo-ocular reflex testing) -> [['video-oculography / eye-movement recording']]",
-  "R3 ASK \"Do you drink alcohol regularly or heavily?\" -> ['no']",
-  "R4 ASK \"Have you had vomiting or nausea recently?\" -> ['no']",
-  "R5 ASK \"Have you had any numbness, tingling, or weakness anywhere?\" -> ['yes']",
-  "R6 ASK \"Where exactly are you experiencing the numbness or weakness - is it on one side of your body?\" -> ['no']",
-  "R7 ASK \"Were you given IV fluids in the hospital - perhaps for dehydration before or after your surgery?\" -> ['no']",
-  "R8 ASK \"Have you had bariatric surgery or gastric bypass in the past?\" -> ['no']",
-  "R9 ASK \"Have you had any recent weight loss or loss of appetite?\" -> ['no']",
+  "R3 ASK \"Do you drink alcohol regularly or heavily?\" -> ['unknown']",
+  "R4 ASK \"Have you had vomiting or nausea recently?\" -> ['unknown']",
+  "R5 ASK \"Have you had any numbness, tingling, or weakness anywhere?\" -> ['unknown']",
+  "R6 ASK \"Where exactly are you experiencing the numbness or weakness - is it on one side of your body?\" -> ['unknown']",
+  "R7 ASK \"Were you given IV fluids in the hospital - perhaps for dehydration before or after your surgery?\" -> ['unknown']",
+  "R8 ASK \"Have you had bariatric surgery or gastric bypass in the past?\" -> ['unknown']",
+  "R9 ASK \"Have you had any recent weight loss or loss of appetite?\" -> ['unknown']",
   "R10 ORDER 1. Brain MRI with special attention to the pons and brainstem (looking for central pontine myelinolysis or extrapontine demyelination) -> [['MRI diffusion-weighted sequences', 'MRI brain with DWI']]",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Functional neurological disorder (conversion disorder) with functional internuclear ophthalmoplegia, manifesting as bilateral internuclear ophthalmoplegia with impaired voluntary eye openin -> "
  ],
@@ -50,7 +50,7 @@
     "\"Did you stop breathing or have a cardiac arrest recently?\""
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -72,7 +72,7 @@
     "\"Do you drink alcohol regularly or heavily?\""
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -82,7 +82,7 @@
     "\"Have you had vomiting or nausea recently?\""
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -92,7 +92,7 @@
     "\"Have you had any numbness, tingling, or weakness anywhere?\""
    ],
    "result": [
-    "yes"
+    "unknown"
    ]
   },
   {
@@ -102,7 +102,7 @@
     "\"Where exactly are you experiencing the numbness or weakness - is it on one side of your body?\""
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -112,7 +112,7 @@
     "\"Were you given IV fluids in the hospital - perhaps for dehydration before or after your surgery?\""
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -122,7 +122,7 @@
     "\"Have you had bariatric surgery or gastric bypass in the past?\""
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -132,7 +132,7 @@
     "\"Have you had any recent weight loss or loss of appetite?\""
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

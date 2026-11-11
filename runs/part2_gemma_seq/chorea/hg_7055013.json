@@ -21,23 +21,23 @@
  "answers": {
   "1": "yes",
   "2": "no",
-  "3": "no",
+  "3": "unknown",
   "4": "yes",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
   "12": "yes",
   "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "yes",
   "17": "yes"
  },
- "n_yes_answers": 4,
+ "n_yes_answers": 5,
  "orders": [
   "Blood glucose level",
   "MRI brain (T1 and T2 weighted)"
@@ -47,9 +47,9 @@
   "blood glucose"
  ],
  "results": [
-  "R1 ASK Are these movements involuntary?; Do you have a family history of similar movements?; Have you noticed any changes in your mood or personality?; Do you have difficulty with your balance?; Have you taken antipsychotic medications? -> ['yes', 'no', 'no', 'yes', 'no']",
-  "R2 ASK Do you have any tremors in your hands?; Have you noticed any stiffness or rigidity in your muscles?; Have you experienced any cognitive decline or memory loss?; Have you had any recent head injuries or strokes?; Do you have any history of liver or kidney disease?; Have you had a recent sore throat or fever? -> ['no', 'no', 'no', 'no', 'no', 'no']",
-  "R3 ASK Do you have a history of diabetes?; Have you been diagnosed with any thyroid problems?; Have you noticed any new skin rashes or joint pain?; Have you had any recent changes in your weight or appetite?; Have you experienced any difficulty speaking or swallowing? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R1 ASK Are these movements involuntary?; Do you have a family history of similar movements?; Have you noticed any changes in your mood or personality?; Do you have difficulty with your balance?; Have you taken antipsychotic medications? -> ['yes', 'no', 'unknown', 'yes', 'unknown']",
+  "R2 ASK Do you have any tremors in your hands?; Have you noticed any stiffness or rigidity in your muscles?; Have you experienced any cognitive decline or memory loss?; Have you had any recent head injuries or strokes?; Do you have any history of liver or kidney disease?; Have you had a recent sore throat or fever? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK Do you have a history of diabetes?; Have you been diagnosed with any thyroid problems?; Have you noticed any new skin rashes or joint pain?; Have you had any recent changes in your weight or appetite?; Have you experienced any difficulty speaking or swallowing? -> ['yes', 'no', 'unknown', 'unknown', 'yes']",
   "R4 ORDER Blood glucose level; MRI brain (T1 and T2 weighted) -> [['blood glucose and HbA1c', 'blood glucose'], []]",
   "R5 ASK Are the movements primarily on one side of your body? -> ['yes']",
   "R6 DIAGNOSIS Hemichorea-hemiballismus due to non-ketotic hyperglycemia -> "
@@ -68,9 +68,9 @@
    "result": [
     "yes",
     "no",
-    "no",
+    "unknown",
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -85,12 +85,12 @@
     "Have you had a recent sore throat or fever?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -106,9 +106,9 @@
    "result": [
     "yes",
     "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "yes"
    ]
   },
   {

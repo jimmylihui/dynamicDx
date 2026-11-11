@@ -7,13 +7,13 @@
   "Do you have a history of seizures or epilepsy?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "yes"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown"
  },
- "n_yes_answers": 1,
+ "n_yes_answers": 0,
  "orders": [
   "Check vital signs (heart rate, blood pressure, respiratory rate, oxygen saturation)",
   "Perform a focused neurological examination (cranial nerves, motor strength, sensation, coordination)"
@@ -27,10 +27,10 @@
   "coordination examination (limb and truncal)"
  ],
  "results": [
-  "R1 ASK Are you currently experiencing any pain?; Do you have a known history of blood clots (DVT or PE)?; Have you had recent surgery, trauma, or prolonged immobilization? -> ['no', 'no', 'no']",
+  "R1 ASK Are you currently experiencing any pain?; Do you have a known history of blood clots (DVT or PE)?; Have you had recent surgery, trauma, or prolonged immobilization? -> ['unknown', 'unknown', 'unknown']",
   "R2 ORDER Check vital signs (heart rate, blood pressure, respiratory rate, oxygen saturation); Perform a focused neurological examination (cranial nerves, motor strength, sensation, coordination) -> [[], ['cranial nerve examination', 'muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)']]",
-  "R3 ASK Are you experiencing any difficulty breathing or shortness of breath? -> ['no']",
-  "R4 ASK Do you have a history of seizures or epilepsy? -> ['yes']",
+  "R3 ASK Are you experiencing any difficulty breathing or shortness of breath? -> ['unknown']",
+  "R4 ASK Do you have a history of seizures or epilepsy? -> ['unknown']",
   "R5 DIAGNOSIS Epilepsy -> "
  ],
  "trace": [
@@ -43,9 +43,9 @@
     "Have you had recent surgery, trauma, or prolonged immobilization?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -74,7 +74,7 @@
     "Are you experiencing any difficulty breathing or shortness of breath?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -84,7 +84,7 @@
     "Do you have a history of seizures or epilepsy?"
    ],
    "result": [
-    "yes"
+    "unknown"
    ]
   },
   {

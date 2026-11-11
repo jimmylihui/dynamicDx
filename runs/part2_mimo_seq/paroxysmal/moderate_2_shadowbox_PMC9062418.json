@@ -15,21 +15,21 @@
   "Have you ever had an EEG test or brain MRI before?"
  ],
  "answers": {
-  "1": "no",
+  "1": "unknown",
   "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "yes",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no"
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown"
  },
- "n_yes_answers": 1,
+ "n_yes_answers": 0,
  "orders": [
   "Check if the patient is currently wearing an EEG (electroencephalogram) cap and what it shows right now",
   "Ask the nurse to confirm whether music or rhythmic sounds were playing in the room when these movements began",
@@ -48,9 +48,9 @@
   "family history of epilepsy or febrile convulsions"
  ],
  "results": [
-  "R1 ASK Have you had surgery on your head in the last 24 hours?; Did you suffer a recent head injury or blow to the head?; Do you currently feel dizzy or unsteady on your feet? -> ['no', 'no', 'no']",
-  "R2 ASK Are you aware of what you're doing right now?; Do you remember falling asleep or losing consciousness recently?; Has this happened to you before?; Can you control your movements right now?; Is there someone who can tell me if you have a history of seizures? -> ['no', 'no', 'yes', 'no', 'no']",
-  "R3 ASK Do you have a known diagnosis of epilepsy?; Were you admitted specifically to have your brain waves monitored?; Before these episodes happen, do you ever smell or taste anything strange?; Do you see any flashing lights or unusual patterns before they start?; Have you ever had an EEG test or brain MRI before? -> ['no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Have you had surgery on your head in the last 24 hours?; Did you suffer a recent head injury or blow to the head?; Do you currently feel dizzy or unsteady on your feet? -> ['unknown', 'no', 'unknown']",
+  "R2 ASK Are you aware of what you're doing right now?; Do you remember falling asleep or losing consciousness recently?; Has this happened to you before?; Can you control your movements right now?; Is there someone who can tell me if you have a history of seizures? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK Do you have a known diagnosis of epilepsy?; Were you admitted specifically to have your brain waves monitored?; Before these episodes happen, do you ever smell or taste anything strange?; Do you see any flashing lights or unusual patterns before they start?; Have you ever had an EEG test or brain MRI before? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R4 ORDER Check if the patient is currently wearing an EEG (electroencephalogram) cap and what it shows right now; Ask the nurse to confirm whether music or rhythmic sounds were playing in the room when these movements began; Perform a bedside examination of muscle tone and reflexes during and after the movements -> [['interictal EEG'], ['trigger or provoking activity'], ['muscle tone examination', 'deep tendon reflexes and plantar responses']]",
   "R5 ORDER Perform a brain MRI with epilepsy protocol to look for any structural abnormality in the left frontal or temporal region; Ask the patient: Did your first seizure happen after any illness, infection, or head injury?; Ask: Do any of your family members have epilepsy or seizure disorders? -> [['brain MRI'], ['head injury history'], ['family history of epilepsy or febrile convulsions']]",
   "R6 DIAGNOSIS Focal epilepsy with exercise-induced seizures, idiopathic/unknown etiology, arising from left frontal-temporal region -> "
@@ -65,9 +65,9 @@
     "Do you currently feel dizzy or unsteady on your feet?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -81,11 +81,11 @@
     "Is there someone who can tell me if you have a history of seizures?"
    ],
    "result": [
-    "no",
-    "no",
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -99,11 +99,11 @@
     "Have you ever had an EEG test or brain MRI before?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

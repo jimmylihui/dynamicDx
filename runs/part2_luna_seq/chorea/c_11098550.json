@@ -20,26 +20,26 @@
   "Have you had a recent pregnancy, miscarriage, or childbirth?"
  ],
  "answers": {
-  "1": "yes",
-  "2": "no",
-  "3": "no",
-  "4": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
   "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
   "9": "no",
-  "10": "no",
-  "11": "no",
+  "10": "unknown",
+  "11": "unknown",
   "12": "no",
-  "13": "yes",
-  "14": "no",
-  "15": "yes",
-  "16": "no",
-  "17": "no",
-  "18": "no"
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 0,
  "orders": [
   "Bedside neurological examination including assessment of tone, reflexes, strength, sensation, coordination, eye movements, and characterization of the involuntary movements during distraction and voluntary tasks",
   "Serum electrolytes including sodium, potassium, calcium, magnesium, phosphate, bicarbonate, glucose, renal function, and liver enzymes",
@@ -89,10 +89,10 @@
   "brain MRI with contrast"
  ],
  "results": [
-  "R1 ASK Are you fully aware of your surroundings during these movements?; Did these movements begin after you were given a medication for nausea, vomiting, or psychosis?; Do you have painful muscle spasms triggered by touch, sound, or movement?; Have you had a recent wound, especially a puncture wound?; Have you had a fever? -> ['yes', 'no', 'no', 'no', 'no']",
-  "R2 ASK Can you briefly suppress or stop the movements when you try?; Do you feel an uncomfortable urge or inner restlessness that is relieved by moving?; Do the movements disappear completely when you are asleep?; Did the movements start suddenly within the last few days?; Have you recently used, stopped, or withdrawn from alcohol, opioids, stimulants, or sedative medications?; Do you have weakness, numbness, or loss of coordination on one side of your body? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Are you fully aware of your surroundings during these movements?; Did these movements begin after you were given a medication for nausea, vomiting, or psychosis?; Do you have painful muscle spasms triggered by touch, sound, or movement?; Have you had a recent wound, especially a puncture wound?; Have you had a fever? -> ['unknown', 'unknown', 'unknown', 'unknown', 'no']",
+  "R2 ASK Can you briefly suppress or stop the movements when you try?; Do you feel an uncomfortable urge or inner restlessness that is relieved by moving?; Do the movements disappear completely when you are asleep?; Did the movements start suddenly within the last few days?; Have you recently used, stopped, or withdrawn from alcohol, opioids, stimulants, or sedative medications?; Do you have weakness, numbness, or loss of coordination on one side of your body? -> ['unknown', 'unknown', 'unknown', 'no', 'unknown', 'unknown']",
   "R3 ORDER Bedside neurological examination including assessment of tone, reflexes, strength, sensation, coordination, eye movements, and characterization of the involuntary movements during distraction and voluntary tasks; Serum electrolytes including sodium, potassium, calcium, magnesium, phosphate, bicarbonate, glucose, renal function, and liver enzymes; Complete blood count, creatine kinase, thyroid-stimulating hormone, vitamin B12, and copper/ceruloplasmin levels; Urine toxicology screen including stimulants, cocaine, opioids, and sedative-hypnotics; Brain MRI with diffusion-weighted imaging of the basal ganglia -> [['muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'effect of voluntary action and anxiety'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'serum calcium, magnesium and phosphate', 'blood glucose'], ['full blood count', 'creatine kinase', 'thyroid function (TSH, free T4)', 'vitamin B12 with methylmalonic acid', 'copper / caeruloplasmin'], ['toxicology screen (urine and serum)'], ['MRI diffusion-weighted sequences']]",
-  "R4 ASK Do you have a parent, sibling, or child with Huntington disease or unexplained progressive involuntary movements?; Have you had progressive personality change, depression, irritability, memory problems, or impaired judgment over the past several months or years?; Have you recently had a sore throat or other infection followed by joint pains, rash, or involuntary movements?; Have you had episodes of confusion, seizures, memory loss, or abnormal behavior?; Have you had weight loss, darkening of the skin, persistent nausea or vomiting, dizziness on standing, or unusual salt craving?; Have you been drinking excessive amounts of water or taking diuretics or other medicines before these movements began?; Have you had a recent pregnancy, miscarriage, or childbirth? -> ['no', 'yes', 'no', 'yes', 'no', 'no', 'no']",
+  "R4 ASK Do you have a parent, sibling, or child with Huntington disease or unexplained progressive involuntary movements?; Have you had progressive personality change, depression, irritability, memory problems, or impaired judgment over the past several months or years?; Have you recently had a sore throat or other infection followed by joint pains, rash, or involuntary movements?; Have you had episodes of confusion, seizures, memory loss, or abnormal behavior?; Have you had weight loss, darkening of the skin, persistent nausea or vomiting, dizziness on standing, or unusual salt craving?; Have you been drinking excessive amounts of water or taking diuretics or other medicines before these movements began?; Have you had a recent pregnancy, miscarriage, or childbirth? -> ['no', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R5 ORDER EEG, including video-EEG monitoring, to assess for epileptiform activity or an encephalopathic pattern; Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, oligoclonal bands, IgG index, and microbiological studies; Serum and CSF autoimmune encephalitis antibody panel, specifically including anti–NMDA receptor (GluN1), LGI1, CASPR2, GABA-B, AMPA, and DPPX antibodies; Pelvic ultrasound or pelvic MRI to evaluate for an ovarian teratoma; Serum cortisol and ACTH, serum and urine osmolality, and urine sodium to characterize the hyponatremia and exclude endocrine causes -> [['EEG'], ['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF culture and viral PCR'], ['serum paraneoplastic / neuronal autoantibody panel', 'CSF autoimmune encephalitis panel', 'autoimmune encephalopathy / paraneoplastic antibody panel'], [], ['sodium and serum osmolality', 'morning cortisol, ACTH and pituitary hormones']]",
   "R6 ORDER Contrast-enhanced MRI of the pituitary and hypothalamus, including dedicated sellar sequences, to evaluate for pituitary or hypothalamic structural disease; Measure serum 8 AM cortisol, free T4, TSH, IGF-1, LH, FSH, estradiol, and repeat ACTH and prolactin; Dynamic ACTH (cosyntropin) stimulation test, with cortisol measured at baseline, 30 minutes, and 60 minutes; Serum antidiuretic hormone (copeptin, if available) and urine osmolality with urine sodium obtained simultaneously with serum osmolality and sodium -> [['brain MRI with contrast'], ['thyroid function (TSH, free T4)', 'morning cortisol, ACTH and pituitary hormones'], [], ['sodium and serum osmolality']]",
   "R7 DIAGNOSIS Acquired generalized chorea caused by hypopituitarism from empty-sella syndrome—particularly secondary adrenal insufficiency with central hypothyroidism, producing euvolemic hypotonic hyponatremia and neuropsychiatric symptoms. -> "
@@ -109,10 +109,10 @@
     "Have you had a fever?"
    ],
    "result": [
-    "yes",
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
     "no"
    ]
   },
@@ -128,12 +128,12 @@
     "Do you have weakness, numbness, or loss of coordination on one side of your body?"
    ],
    "result": [
+    "unknown",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -190,12 +190,12 @@
    ],
    "result": [
     "no",
-    "yes",
-    "no",
-    "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

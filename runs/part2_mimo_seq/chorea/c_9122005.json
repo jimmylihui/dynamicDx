@@ -19,25 +19,25 @@
   "\"Do you have any rashes, mouth sores, or joint pain?\""
  ],
  "answers": {
-  "1": "yes",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
   "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
   "13": "yes",
   "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no"
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 1,
  "orders": [
   "Glasgow Catatonia Rating Scale assessment (checking for mutism, posturing, grimacing, withdrawal, stereotypies, mannerisms,依托体位)",
   "Full neurological examination (tone, reflexes, clonus, plantars, cranial nerves)",
@@ -77,15 +77,15 @@
   "CT chest, abdomen and pelvis"
  ],
  "results": [
-  "R1 ASK \"Did you feel your leg drop or jerk involuntarily?\"; \"Do you feel confused, sleepy, or 'foggy' in your thinking right now?\"; \"Do you have a history of liver disease, cirrhosis, or heavy alcohol use?\" -> ['yes', 'no', 'no']",
+  "R1 ASK \"Did you feel your leg drop or jerk involuntarily?\"; \"Do you feel confused, sleepy, or 'foggy' in your thinking right now?\"; \"Do you have a history of liver disease, cirrhosis, or heavy alcohol use?\" -> ['unknown', 'unknown', 'unknown']",
   "R2 ORDER Glasgow Catatonia Rating Scale assessment (checking for mutism, posturing, grimacing, withdrawal, stereotypies, mannerisms,依托体位); Full neurological examination (tone, reflexes, clonus, plantars, cranial nerves) -> [[], ['cranial nerve examination', 'muscle tone examination', 'deep tendon reflexes and plantar responses']]",
-  "R3 ASK \"Did this start suddenly, like flipping a switch?\"; \"Have you ever had similar episodes before?\"; \"Are you under significant emotional stress or has anything traumatic happened recently?\" -> ['no', 'no', 'no']",
-  "R4 ASK \"How old are you?\"; \"Have you started any new medications in the past few weeks or months?\"; \"Have you had any recent infections, like a cold, flu, or anything requiring antibiotics?\" -> ['no', 'no', 'no']",
-  "R5 ASK \"Do you know where you are right now?\"; \"Can you tell me your name?\" -> ['no', 'no']",
+  "R3 ASK \"Did this start suddenly, like flipping a switch?\"; \"Have you ever had similar episodes before?\"; \"Are you under significant emotional stress or has anything traumatic happened recently?\" -> ['unknown', 'unknown', 'unknown']",
+  "R4 ASK \"How old are you?\"; \"Have you started any new medications in the past few weeks or months?\"; \"Have you had any recent infections, like a cold, flu, or anything requiring antibiotics?\" -> ['unknown', 'unknown', 'no']",
+  "R5 ASK \"Do you know where you are right now?\"; \"Can you tell me your name?\" -> ['unknown', 'unknown']",
   "R6 ORDER Brain MRI (without contrast, focusing on temporal lobes, basal ganglia); Lumbar puncture with CSF analysis including cell count, protein, glucose, oligoclonal bands, autoimmune encephalitis panel (anti-NMDA receptor antibodies); EEG (electroencephalogram); Pelvic ultrasound (to screen for ovarian teratoma) -> [['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences'], ['CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF autoimmune encephalitis panel'], ['EEG'], []]",
-  "R7 ASK \"Can you tell me what year it is?\"; \"Do you notice the movements more when you try to move the leg yourself, or are they happening on their own?\"; \"Have you had any numbness, tingling, or weakness anywhere else in your body before?\" -> ['no', 'yes', 'no']",
+  "R7 ASK \"Can you tell me what year it is?\"; \"Do you notice the movements more when you try to move the leg yourself, or are they happening on their own?\"; \"Have you had any numbness, tingling, or weakness anywhere else in your body before?\" -> ['unknown', 'yes', 'no']",
   "R8 ORDER Anti-thyroid peroxidase (TPO) and anti-thyroglobulin antibodies (screen for Hashimoto's encephalopathy); Serum ACE level and chest X-ray (screen for neurosarcoidosis); Pelvic MRI (to screen for ovarian teratoma - important in autoimmune encephalitis with movement disorder); Expanded paraneoplastic antibody panel (including amphiphysin, CV2/CRMP5, Ma2, Ri, Hu, Yo) -> [['anti-thyroid antibodies'], [], [], ['serum paraneoplastic / neuronal autoantibody panel', 'autoimmune encephalopathy / paraneoplastic antibody panel']]",
-  "R9 ASK \"Do you have any headaches?\"; \"Have you noticed any blurry vision or double vision at any point?\"; \"Do you have any rashes, mouth sores, or joint pain?\" -> ['no', 'no', 'no']",
+  "R9 ASK \"Do you have any headaches?\"; \"Have you noticed any blurry vision or double vision at any point?\"; \"Do you have any rashes, mouth sores, or joint pain?\" -> ['unknown', 'unknown', 'unknown']",
   "R10 ORDER RPR and FTA-ABS (neurosyphilis screening); CBC with differential, ESR, CRP; ANA and ANCA (systemic autoimmune screen); Chest CT with contrast; Pelvic MRI with contrast -> [['HIV and syphilis serology'], ['full blood count', 'inflammatory markers (ESR, CRP)'], ['antinuclear antibody and rheumatological screen'], ['CT chest, abdomen and pelvis'], []]",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Seronegative autoimmune encephalitis with intrathecal immunoglobulin synthesis -> "
  ],
@@ -99,9 +99,9 @@
     "\"Do you have a history of liver disease, cirrhosis, or heavy alcohol use?\""
    ],
    "result": [
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -129,9 +129,9 @@
     "\"Are you under significant emotional stress or has anything traumatic happened recently?\""
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -143,8 +143,8 @@
     "\"Have you had any recent infections, like a cold, flu, or anything requiring antibiotics?\""
    ],
    "result": [
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "no"
    ]
   },
@@ -156,8 +156,8 @@
     "\"Can you tell me your name?\""
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -196,7 +196,7 @@
     "\"Have you had any numbness, tingling, or weakness anywhere else in your body before?\""
    ],
    "result": [
-    "no",
+    "unknown",
     "yes",
     "no"
    ]
@@ -231,9 +231,9 @@
     "\"Do you have any rashes, mouth sores, or joint pain?\""
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

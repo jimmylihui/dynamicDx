@@ -6,10 +6,10 @@
   "Do you have a history of vascular disease or blood clots?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown"
  },
  "n_yes_answers": 0,
  "orders": [
@@ -21,11 +21,11 @@
   "sensory examination (pinprick, vibration, proprioception)"
  ],
  "results": [
-  "R1 ASK Do you have a history of diabetes?; Have you had an amputation on your right hand in the past? -> ['no', 'no']",
+  "R1 ASK Do you have a history of diabetes?; Have you had an amputation on your right hand in the past? -> ['unknown', 'unknown']",
   "R2 ORDER Perform a detailed neurological examination of the right upper extremity, specifically testing for active range of motion at the shoulder, elbow, and wrist joints, and assessing sensation in the median, ulnar, radial, and axillary nerve distributions -> [['joint range of motion', 'sensory examination (pinprick, vibration, proprioception)']]",
   "R3 ORDER Perform a detailed neurological examination of the right upper extremity, specifically testing for active range of motion at the shoulder, elbow, and wrist joints, and assessing sensation in the median, ulnar, radial, and axillary nerve distributions -> [['joint range of motion', 'sensory examination (pinprick, vibration, proprioception)']]",
-  "R4 ASK Did you lose your right hand due to a traumatic injury? -> ['no']",
-  "R5 ASK Do you have a history of vascular disease or blood clots? -> ['no']",
+  "R4 ASK Did you lose your right hand due to a traumatic injury? -> ['unknown']",
+  "R5 ASK Do you have a history of vascular disease or blood clots? -> ['unknown']",
   "R6 DIAGNOSIS Right transradial amputation -> "
  ],
  "trace": [
@@ -37,8 +37,8 @@
     "Have you had an amputation on your right hand in the past?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -74,7 +74,7 @@
     "Did you lose your right hand due to a traumatic injury?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -84,7 +84,7 @@
     "Do you have a history of vascular disease or blood clots?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

@@ -9,9 +9,9 @@
  ],
  "answers": {
   "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
   "5": "yes",
   "6": "no"
  },
@@ -26,9 +26,9 @@
   "brain MRI"
  ],
  "results": [
-  "R1 ASK Do you have a history of heavy alcohol consumption?; Have you noticed your legs becoming thinner or weaker recently?; Do you experience numbness, tingling, or pain in your feet or legs? -> ['no', 'no', 'no']",
+  "R1 ASK Do you have a history of heavy alcohol consumption?; Have you noticed your legs becoming thinner or weaker recently?; Do you experience numbness, tingling, or pain in your feet or legs? -> ['no', 'unknown', 'unknown']",
   "R2 ORDER Observe the patient's gait and perform a Romberg test (standing with feet together, eyes open then closed). -> [['gait examination', 'Romberg test']]",
-  "R3 ASK Do you have difficulty with fine motor tasks, such as buttoning a shirt or writing?; Have you experienced any changes in your speech, such as slurring? -> ['no', 'yes']",
+  "R3 ASK Do you have difficulty with fine motor tasks, such as buttoning a shirt or writing?; Have you experienced any changes in your speech, such as slurring? -> ['unknown', 'yes']",
   "R4 ASK Do you have a family history of similar walking or speech problems? -> ['no']",
   "R5 ORDER MRI of the brain -> [['brain MRI']]",
   "R6 DIAGNOSIS Sporadic Adult-Onset Ataxia -> "
@@ -44,8 +44,8 @@
    ],
    "result": [
     "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -69,7 +69,7 @@
     "Have you experienced any changes in your speech, such as slurring?"
    ],
    "result": [
-    "no",
+    "unknown",
     "yes"
    ]
   },

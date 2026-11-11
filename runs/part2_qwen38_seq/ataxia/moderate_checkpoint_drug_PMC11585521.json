@@ -16,37 +16,37 @@
   "Is the pain located in your left ankle or foot?"
  ],
  "answers": {
-  "1": "no",
-  "2": "yes",
-  "3": "no",
-  "4": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
   "5": "no",
   "6": "yes",
-  "7": "no",
-  "8": "no",
-  "9": "yes",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no"
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 1,
  "orders": [
   "X-ray of the left femur"
  ],
  "served": [],
  "results": [
-  "R1 ASK Is the pain in your leg severe?; Did this problem start suddenly, or has it been getting worse over time?; Have you had any recent surgery, trauma, or long periods of immobility (like a long flight)? -> ['no', 'yes', 'no']",
-  "R2 ASK Is the affected leg (the one that looks shorter) your right leg?; Did you have a fever or feel generally unwell before this started?; Do you have any history of cancer, osteoporosis, or long-term steroid use? -> ['no', 'no', 'yes']",
-  "R3 ASK Is the pain located in your left hip or groin?; Did you hear a popping sound when this started? -> ['no', 'no']",
-  "R4 ASK Is the affected leg your left leg? -> ['yes']",
+  "R1 ASK Is the pain in your leg severe?; Did this problem start suddenly, or has it been getting worse over time?; Have you had any recent surgery, trauma, or long periods of immobility (like a long flight)? -> ['unknown', 'unknown', 'unknown']",
+  "R2 ASK Is the affected leg (the one that looks shorter) your right leg?; Did you have a fever or feel generally unwell before this started?; Do you have any history of cancer, osteoporosis, or long-term steroid use? -> ['unknown', 'no', 'yes']",
+  "R3 ASK Is the pain located in your left hip or groin?; Did you hear a popping sound when this started? -> ['unknown', 'unknown']",
+  "R4 ASK Is the affected leg your left leg? -> ['unknown']",
   "R5 ORDER X-ray of the left femur -> [[]]",
-  "R6 ASK Is the pain located in your left knee? -> ['no']",
-  "R7 ASK Is the pain located in your left lower leg (calf or shin)? -> ['no']",
-  "R8 ASK Is the pain located in your left hip or groin? -> ['no']",
-  "R9 ASK Is the pain located in your left thigh? -> ['no']",
-  "R10 ASK Is the pain located in your left ankle or foot? -> ['no']",
+  "R6 ASK Is the pain located in your left knee? -> ['unknown']",
+  "R7 ASK Is the pain located in your left lower leg (calf or shin)? -> ['unknown']",
+  "R8 ASK Is the pain located in your left hip or groin? -> ['unknown']",
+  "R9 ASK Is the pain located in your left thigh? -> ['unknown']",
+  "R10 ASK Is the pain located in your left ankle or foot? -> ['unknown']",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Pathological fracture of the left femur secondary to metastatic bone disease -> "
  ],
  "trace": [
@@ -59,9 +59,9 @@
     "Have you had any recent surgery, trauma, or long periods of immobility (like a long flight)?"
    ],
    "result": [
-    "no",
-    "yes",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -73,7 +73,7 @@
     "Do you have any history of cancer, osteoporosis, or long-term steroid use?"
    ],
    "result": [
-    "no",
+    "unknown",
     "no",
     "yes"
    ]
@@ -86,8 +86,8 @@
     "Did you hear a popping sound when this started?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -97,7 +97,7 @@
     "Is the affected leg your left leg?"
    ],
    "result": [
-    "yes"
+    "unknown"
    ]
   },
   {
@@ -117,7 +117,7 @@
     "Is the pain located in your left knee?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -127,7 +127,7 @@
     "Is the pain located in your left lower leg (calf or shin)?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -137,7 +137,7 @@
     "Is the pain located in your left hip or groin?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -147,7 +147,7 @@
     "Is the pain located in your left thigh?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -157,7 +157,7 @@
     "Is the pain located in your left ankle or foot?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

@@ -17,23 +17,23 @@
   "\"Have you noticed any double vision recently?\""
  ],
  "answers": {
-  "1": "yes",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "yes",
-  "14": "no",
-  "15": "no"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "no",
+  "14": "unknown",
+  "15": "yes"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 1,
  "orders": [
   "MRI of the brain and cervical spine with gadolinium contrast",
   "Serum angiotensin-converting enzyme (ACE) level",
@@ -66,16 +66,16 @@
   "needle electromyography"
  ],
  "results": [
-  "R1 ASK \"Have you ever had a previous episode of double vision or vision loss in one eye?\"; \"Do you have any numbness or tingling in your legs or trunk?\" -> ['yes', 'no']",
+  "R1 ASK \"Have you ever had a previous episode of double vision or vision loss in one eye?\"; \"Do you have any numbness or tingling in your legs or trunk?\" -> ['unknown', 'unknown']",
   "R2 ORDER MRI of the brain and cervical spine with gadolinium contrast -> [['MRI brain with contrast', 'MRI spine']]",
-  "R3 ASK \"Has anyone in your family ever been diagnosed with a similar nerve condition?\"; \"Do you have any swelling in your ankles or feet?\" -> ['no', 'no']",
-  "R4 ASK \"Have you ever had a chest X-ray or CT scan that showed enlarged lymph nodes in your chest?\"; \"Do you have a chronic cough, shortness of breath, or skin rashes?\" -> ['no', 'no']",
+  "R3 ASK \"Has anyone in your family ever been diagnosed with a similar nerve condition?\"; \"Do you have any swelling in your ankles or feet?\" -> ['unknown', 'unknown']",
+  "R4 ASK \"Have you ever had a chest X-ray or CT scan that showed enlarged lymph nodes in your chest?\"; \"Do you have a chronic cough, shortness of breath, or skin rashes?\" -> ['unknown', 'unknown']",
   "R5 ORDER Serum angiotensin-converting enzyme (ACE) level; Serum IgG4 level; Serum calcium level; Chest X-ray -> [[], [], ['serum calcium, magnesium and phosphate'], []]",
   "R6 ORDER CT chest with contrast looking for bilateral hilar lymphadenopathy; Serum ACE level; Serum lysozyme level -> [['CT chest, abdomen and pelvis', 'CT chest (thymus)'], [], []]",
-  "R7 ASK \"Has anyone tested you for Lyme disease or HIV in the past?\"; \"Do you have any weakness in your face, difficulty swallowing, or hoarseness of voice?\"; \"Have you ever received IVIG or steroid treatments for any neurological condition?\" -> ['no', 'no', 'no']",
+  "R7 ASK \"Has anyone tested you for Lyme disease or HIV in the past?\"; \"Do you have any weakness in your face, difficulty swallowing, or hoarseness of voice?\"; \"Have you ever received IVIG or steroid treatments for any neurological condition?\" -> ['unknown', 'unknown', 'unknown']",
   "R8 ORDER Lumbar puncture with CSF analysis for opening pressure, protein, glucose, cell count, cytology, oligoclonal bands, and IgG index; Nerve conduction studies and electromyography of upper and lower extremities; Serum anti-ganglioside antibodies (anti-GM1, anti-GQ1b); Serum anti-AQP4 (aquaporin-4) antibodies; Serum anti-MOG (myelin oligodendrocyte glycoprotein) antibodies -> [['CSF opening pressure', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF cytology and flow cytometry', 'lumbar puncture / CSF'], ['nerve conduction studies', 'needle electromyography'], [], [], []]",
-  "R9 ASK \"Do you have any numbness or weakness specifically in your hands or fingers?\"; \"Have you noticed any cramping or twitching in your muscles?\"; \"Do you have any balance problems or difficulty walking in the dark?\" -> ['no', 'no', 'no']",
-  "R10 ASK \"Are you able to move your eyes fully in all directions, or do you have trouble looking in specific directions?\"; \"Do you have any weakness in your facial expressions, like trouble closing your eyes tightly or smiling?\"; \"Have you noticed any double vision recently?\" -> ['yes', 'no', 'no']",
+  "R9 ASK \"Do you have any numbness or weakness specifically in your hands or fingers?\"; \"Have you noticed any cramping or twitching in your muscles?\"; \"Do you have any balance problems or difficulty walking in the dark?\" -> ['unknown', 'unknown', 'unknown']",
+  "R10 ASK \"Are you able to move your eyes fully in all directions, or do you have trouble looking in specific directions?\"; \"Do you have any weakness in your facial expressions, like trouble closing your eyes tightly or smiling?\"; \"Have you noticed any double vision recently?\" -> ['no', 'unknown', 'yes']",
   "R11 FORCED_DIAGNOSIS DIAGNOSES: Chronic inflammatory demyelinating polyradiculoneuropathy (CIDP) with cranial nerve involvement (cranial variant), likely autoimmune/idiopathic\n\nThis diagnosis accounts for the key findings -> "
  ],
  "trace": [
@@ -87,8 +87,8 @@
     "\"Do you have any numbness or tingling in your legs or trunk?\""
    ],
    "result": [
-    "yes",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -112,8 +112,8 @@
     "\"Do you have any swelling in your ankles or feet?\""
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -124,8 +124,8 @@
     "\"Do you have a chronic cough, shortness of breath, or skin rashes?\""
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -172,9 +172,9 @@
     "\"Have you ever received IVIG or steroid treatments for any neurological condition?\""
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -215,9 +215,9 @@
     "\"Do you have any balance problems or difficulty walking in the dark?\""
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -229,9 +229,9 @@
     "\"Have you noticed any double vision recently?\""
    ],
    "result": [
-    "yes",
     "no",
-    "no"
+    "unknown",
+    "yes"
    ]
   },
   {

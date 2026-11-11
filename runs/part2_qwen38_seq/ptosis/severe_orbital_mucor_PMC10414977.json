@@ -10,14 +10,14 @@
   "Do you have any weakness in your arms or legs?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
   "7": "yes",
-  "8": "no"
+  "8": "unknown"
  },
  "n_yes_answers": 1,
  "orders": [
@@ -31,13 +31,13 @@
   "fundoscopy"
  ],
  "results": [
-  "R1 ASK Do you have a history of diabetes?; Did this problem start suddenly, or has it been getting worse gradually over time?; Are you experiencing any double vision? -> ['no', 'no', 'no']",
+  "R1 ASK Do you have a history of diabetes?; Did this problem start suddenly, or has it been getting worse gradually over time?; Are you experiencing any double vision? -> ['unknown', 'unknown', 'unknown']",
   "R2 ORDER Measure pupil size and reactivity to light in both eyes -> [['pupil examination (size, light reaction)']]",
-  "R3 ASK Is the drooping eyelid on the same side as your dominant hand?; Do you have any difficulty chewing or swallowing?; Do you have a history of high blood pressure? -> ['no', 'no', 'no']",
+  "R3 ASK Is the drooping eyelid on the same side as your dominant hand?; Do you have any difficulty chewing or swallowing?; Do you have a history of high blood pressure? -> ['unknown', 'unknown', 'unknown']",
   "R4 ORDER Perform the ice pack test on the affected eyelid -> [['ice-pack test']]",
   "R5 ASK Do you have any pain in or around the eye? -> ['yes']",
   "R6 ORDER Perform fundoscopy -> [['fundoscopy']]",
-  "R7 ASK Do you have any weakness in your arms or legs? -> ['no']",
+  "R7 ASK Do you have any weakness in your arms or legs? -> ['unknown']",
   "R8 DIAGNOSIS Right-sided oculomotor nerve (CN III) palsy secondary to a compressive lesion at the skull base -> "
  ],
  "trace": [
@@ -50,9 +50,9 @@
     "Are you experiencing any double vision?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -76,9 +76,9 @@
     "Do you have a history of high blood pressure?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -122,7 +122,7 @@
     "Do you have any weakness in your arms or legs?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

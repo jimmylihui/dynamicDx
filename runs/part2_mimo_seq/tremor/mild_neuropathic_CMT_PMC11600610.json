@@ -35,39 +35,39 @@
   "Has anyone in your extended family (cousins, aunts, uncles) had foot problems or difficulty walking?"
  ],
  "answers": {
-  "1": "no",
-  "2": "yes",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no",
-  "22": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "yes",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "yes",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
+  "22": "unknown",
   "23": "no",
-  "24": "no",
-  "25": "no",
+  "24": "unknown",
+  "25": "unknown",
   "26": "yes",
-  "27": "no",
-  "28": "no",
+  "27": "unknown",
+  "28": "unknown",
   "29": "no",
-  "30": "no",
-  "31": "yes",
-  "32": "no",
-  "33": "no"
+  "30": "unknown",
+  "31": "unknown",
+  "32": "unknown",
+  "33": "unknown"
  },
  "n_yes_answers": 3,
  "orders": [
@@ -95,16 +95,16 @@
   "CSF glucose"
  ],
  "results": [
-  "R1 ASK Did the weakness in your right arm come on suddenly?; Do you also have weakness in your right leg?; Is your speech normal? -> ['no', 'yes', 'no']",
-  "R2 ASK Have you had any headaches?; Have you had any seizures?; Has your vision changed in any way?; How long have you had these symptoms?; Have you ever been diagnosed with cancer? -> ['no', 'no', 'no', 'no', 'no']",
-  "R3 ASK Has your weakness been getting worse over time?; Is your speech slurred or are you having trouble finding words?; Have you had any numbness or tingling?; Are you left-handed or right-handed? -> ['no', 'no', 'no', 'no']",
-  "R4 ASK Have you hit your head recently?; Have you been on any blood thinners?; Do you have high blood pressure or diabetes?; Have you noticed any difficulty swallowing? -> ['no', 'no', 'no', 'no']",
-  "R5 ASK When did the weakness start - days, weeks, or months ago?; Have you had any problems with balance or coordination?; Have you noticed any weakness in your face?; Do you have any family history of neurological disease? -> ['no', 'no', 'no', 'no']",
-  "R6 ASK Have you noticed any personality changes recently?; Have you had any recent infections?; Have you lost weight unintentionally?; Have you had any fever? -> ['no', 'no', 'no', 'no']",
+  "R1 ASK Did the weakness in your right arm come on suddenly?; Do you also have weakness in your right leg?; Is your speech normal? -> ['unknown', 'unknown', 'unknown']",
+  "R2 ASK Have you had any headaches?; Have you had any seizures?; Has your vision changed in any way?; How long have you had these symptoms?; Have you ever been diagnosed with cancer? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK Has your weakness been getting worse over time?; Is your speech slurred or are you having trouble finding words?; Have you had any numbness or tingling?; Are you left-handed or right-handed? -> ['unknown', 'unknown', 'yes', 'unknown']",
+  "R4 ASK Have you hit your head recently?; Have you been on any blood thinners?; Do you have high blood pressure or diabetes?; Have you noticed any difficulty swallowing? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R5 ASK When did the weakness start - days, weeks, or months ago?; Have you had any problems with balance or coordination?; Have you noticed any weakness in your face?; Do you have any family history of neurological disease? -> ['unknown', 'yes', 'unknown', 'unknown']",
+  "R6 ASK Have you noticed any personality changes recently?; Have you had any recent infections?; Have you lost weight unintentionally?; Have you had any fever? -> ['unknown', 'unknown', 'no', 'unknown']",
   "R7 ORDER Formal assessment of pronator drift bilaterally; Assessment of deep tendon reflexes in all four limbs; Assessment for Babinski sign bilaterally; Testing of tone in all four limbs; Assessment of grip strength and fine motor dexterity bilaterally -> [['limb strength (MRC) examination'], ['reflexes and plantar responses'], ['reflexes and plantar responses'], ['muscle tone examination'], ['limb strength (MRC) examination', 'coordination examination (limb and truncal)']]",
   "R8 ORDER Nerve conduction studies and electromyography (EMG/NCS) of upper and lower limbs; Lumbar puncture with CSF analysis (protein, glucose, cell count); Test for Campylobacter jejuni antibodies (IgM and IgG); Test for anti-ganglioside antibodies (anti-GM1, anti-GQ1b) -> [['nerve conduction studies', 'needle electromyography', 'nerve conduction studies / EMG'], ['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose'], [], []]",
-  "R9 ASK Do you have any family members with foot problems or muscle weakness?; Do you wear special shoes or have high arches?; Do you drink alcohol regularly?; Have you taken any regular medications or supplements?; Have you been told you have diabetes or pre-diabetes? -> ['no', 'yes', 'no', 'no', 'no']",
-  "R10 ASK Have you always had the high arches in your feet?; Have you noticed any hammertoes or foot deformities?; Have you had these problems since you were a child or teenager?; Has anyone in your extended family (cousins, aunts, uncles) had foot problems or difficulty walking? -> ['no', 'yes', 'no', 'no']",
+  "R9 ASK Do you have any family members with foot problems or muscle weakness?; Do you wear special shoes or have high arches?; Do you drink alcohol regularly?; Have you taken any regular medications or supplements?; Have you been told you have diabetes or pre-diabetes? -> ['unknown', 'yes', 'unknown', 'unknown', 'no']",
+  "R10 ASK Have you always had the high arches in your feet?; Have you noticed any hammertoes or foot deformities?; Have you had these problems since you were a child or teenager?; Has anyone in your extended family (cousins, aunts, uncles) had foot problems or difficulty walking? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R11 FORCED_DIAGNOSIS DIAGNOS: Charcot-Marie-Tooth disease type 2 (CMT2), an inherited axonal sensorimotor neuropathy -> "
  ],
  "trace": [
@@ -117,9 +117,9 @@
     "Is your speech normal?"
    ],
    "result": [
-    "no",
-    "yes",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -133,11 +133,11 @@
     "Have you ever been diagnosed with cancer?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -150,10 +150,10 @@
     "Are you left-handed or right-handed?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "yes",
+    "unknown"
    ]
   },
   {
@@ -166,10 +166,10 @@
     "Have you noticed any difficulty swallowing?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -182,10 +182,10 @@
     "Do you have any family history of neurological disease?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "yes",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -198,10 +198,10 @@
     "Have you had any fever?"
    ],
    "result": [
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -269,10 +269,10 @@
     "Have you been told you have diabetes or pre-diabetes?"
    ],
    "result": [
-    "no",
+    "unknown",
     "yes",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "no"
    ]
   },
@@ -286,10 +286,10 @@
     "Has anyone in your extended family (cousins, aunts, uncles) had foot problems or difficulty walking?"
    ],
    "result": [
-    "no",
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

@@ -11,15 +11,15 @@
   "Do you have a history of seizures or epilepsy?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown"
  },
  "n_yes_answers": 0,
  "orders": [
@@ -40,14 +40,14 @@
   "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
  ],
  "results": [
-  "R1 ASK Are you currently experiencing any pain or discomfort?; Do you feel dizzy, lightheaded, or like you might fall when you walk?; Have you had a recent fever or infection? -> ['no', 'no', 'no']",
-  "R2 ASK Do you have a history of diabetes?; Do you feel numbness, tingling, or loss of sensation in your feet?; Have you had any recent head injuries or strokes? -> ['no', 'no', 'no']",
+  "R1 ASK Are you currently experiencing any pain or discomfort?; Do you feel dizzy, lightheaded, or like you might fall when you walk?; Have you had a recent fever or infection? -> ['unknown', 'unknown', 'unknown']",
+  "R2 ASK Do you have a history of diabetes?; Do you feel numbness, tingling, or loss of sensation in your feet?; Have you had any recent head injuries or strokes? -> ['unknown', 'unknown', 'unknown']",
   "R3 ORDER Perform a detailed neurological examination including assessment of muscle tone (for rigidity), deep tendon reflexes, and coordination tests (finger-to-nose, heel-to-shin). -> [['muscle tone examination', 'deep tendon reflexes and plantar responses', 'coordination examination (limb and truncal)']]",
-  "R4 ASK Do you have a family history of movement disorders, psychiatric illness, or early-onset dementia? -> ['no']",
+  "R4 ASK Do you have a family history of movement disorders, psychiatric illness, or early-onset dementia? -> ['unknown']",
   "R5 ORDER Peripheral blood smear for acanthocytes -> [[]]",
-  "R6 ASK Have you experienced any recent changes in your personality, mood, or behavior (such as irritability, depression, or apathy)? -> ['no']",
+  "R6 ASK Have you experienced any recent changes in your personality, mood, or behavior (such as irritability, depression, or apathy)? -> ['unknown']",
   "R7 ORDER MRI of the brain -> [['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)', 'MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)', 'MRI brain - cortical atrophy pattern', 'MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)']]",
-  "R8 ASK Do you have a history of seizures or epilepsy? -> ['no']",
+  "R8 ASK Do you have a history of seizures or epilepsy? -> ['unknown']",
   "R9 DIAGNOSIS Chorea-acanthocytosis -> "
  ],
  "trace": [
@@ -60,9 +60,9 @@
     "Have you had a recent fever or infection?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -74,9 +74,9 @@
     "Have you had any recent head injuries or strokes?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -100,7 +100,7 @@
     "Do you have a family history of movement disorders, psychiatric illness, or early-onset dementia?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -120,7 +120,7 @@
     "Have you experienced any recent changes in your personality, mood, or behavior (such as irritability, depression, or apathy)?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -148,7 +148,7 @@
     "Do you have a history of seizures or epilepsy?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

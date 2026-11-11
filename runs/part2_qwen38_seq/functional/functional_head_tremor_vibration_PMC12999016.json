@@ -7,11 +7,11 @@
   "Do you have a history of essential tremor?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown"
  },
  "n_yes_answers": 0,
  "orders": [
@@ -30,16 +30,16 @@
   "MRC power in all four limbs"
  ],
  "results": [
-  "R1 ASK Do you have a history of Parkinson's disease?; Are you currently taking any medications for Parkinson's disease? -> ['no', 'no']",
+  "R1 ASK Do you have a history of Parkinson's disease?; Are you currently taking any medications for Parkinson's disease? -> ['unknown', 'unknown']",
   "R2 ORDER Observe the patient's hands at rest on his lap for 30 seconds to check for a pill-rolling tremor or other involuntary movements. -> [['observation for excessive slowness or uneconomic posture']]",
-  "R3 ASK Do you have a history of diabetes? -> ['no']",
+  "R3 ASK Do you have a history of diabetes? -> ['unknown']",
   "R4 ORDER Perform a bedside neurological examination of the cranial nerves, specifically testing for extraocular movements and ptosis. -> [['cranial nerve examination', 'video-oculography / eye-movement recording']]",
   "R5 ORDER Perform a bedside neurological examination of the upper limbs, specifically testing for muscle tone (rigidity) and strength. -> [['muscle tone (spasticity, rigidity, paratonia)', 'MRC power in all four limbs']]",
   "R6 ORDER Perform a bedside neurological examination of the lower limbs, specifically testing for muscle tone (rigidity) and strength. -> [['muscle tone (spasticity, rigidity, paratonia)', 'MRC power in all four limbs']]",
-  "R7 ASK Do you have a history of stroke? -> ['no']",
+  "R7 ASK Do you have a history of stroke? -> ['unknown']",
   "R8 ORDER Perform a bedside neurological examination of the face, specifically testing for facial symmetry and involuntary movements (e.g., blepharospasm). -> [['cranial nerve examination']]",
   "R9 ORDER Perform a bedside neurological examination of the neck, specifically palpating the sternocleidomastoid and trapezius muscles for tone abnormalities or asymmetry. -> [[]]",
-  "R10 ASK Do you have a history of essential tremor? -> ['no']",
+  "R10 ASK Do you have a history of essential tremor? -> ['unknown']",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Cervical dystonia (spasmodic torticollis) -> "
  ],
  "trace": [
@@ -51,8 +51,8 @@
     "Are you currently taking any medications for Parkinson's disease?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -74,7 +74,7 @@
     "Do you have a history of diabetes?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -123,7 +123,7 @@
     "Do you have a history of stroke?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -155,7 +155,7 @@
     "Do you have a history of essential tremor?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

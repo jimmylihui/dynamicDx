@@ -9,15 +9,15 @@
   "Do you have any pain in or around your eye?"
  ],
  "answers": {
-  "1": "yes",
+  "1": "unknown",
   "2": "yes",
   "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
   "7": "no"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 1,
  "orders": [
   "Neurological examination including pupil assessment, external ophthalmoplegia, and deep tendon reflexes.",
   "MRI of the brain and orbits."
@@ -30,7 +30,7 @@
   "MRI sella and orbits"
  ],
  "results": [
-  "R1 ASK Did this happen suddenly?; Do you have double vision?; Do you have a headache?; Is the drooping of your eyelid worse in the evening?; Do you have diabetes?; Do you have high blood pressure?; Do you have any pain in or around your eye? -> ['yes', 'yes', 'no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Did this happen suddenly?; Do you have double vision?; Do you have a headache?; Is the drooping of your eyelid worse in the evening?; Do you have diabetes?; Do you have high blood pressure?; Do you have any pain in or around your eye? -> ['unknown', 'yes', 'no', 'unknown', 'unknown', 'unknown', 'no']",
   "R2 ORDER Neurological examination including pupil assessment, external ophthalmoplegia, and deep tendon reflexes.; MRI of the brain and orbits. -> [['cranial nerve examination', 'deep tendon reflexes and plantar responses', 'pupil size and light reaction'], ['MRI brain with gadolinium', 'MRI sella and orbits']]",
   "R3 DIAGNOSIS Left rostral pontine and caudal mesencephalic infarct due to ischemic stroke. -> "
  ],
@@ -48,12 +48,12 @@
     "Do you have any pain in or around your eye?"
    ],
    "result": [
+    "unknown",
     "yes",
-    "yes",
     "no",
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
     "no"
    ]
   },

@@ -8,8 +8,8 @@
  "answers": {
   "1": "yes",
   "2": "no",
-  "3": "no",
-  "4": "no"
+  "3": "unknown",
+  "4": "unknown"
  },
  "n_yes_answers": 1,
  "orders": [
@@ -27,10 +27,10 @@
   "anti-acetylcholine receptor antibodies"
  ],
  "results": [
-  "R1 ASK Are you currently experiencing double vision?; Do your eyes feel like they are bulging out of their sockets?; Have you been diagnosed with a thyroid condition in the past? -> ['yes', 'no', 'no']",
+  "R1 ASK Are you currently experiencing double vision?; Do your eyes feel like they are bulging out of their sockets?; Have you been diagnosed with a thyroid condition in the past? -> ['yes', 'no', 'unknown']",
   "R2 ORDER Measure the distance between the lateral orbital rims and the corneal apex (exophthalmometry) -> [['proptosis / exophthalmometry']]",
   "R3 ORDER Cover-uncover test -> [['cover test / ocular alignment']]",
-  "R4 ASK Do you have difficulty opening your eyelids? -> ['no']",
+  "R4 ASK Do you have difficulty opening your eyelids? -> ['unknown']",
   "R5 ORDER Fundoscopy -> [['fundoscopy']]",
   "R6 ORDER Serum thyroid function tests -> [['thyroid function (TSH, free T4)']]",
   "R7 ORDER Serum acetylcholine receptor antibodies -> [['anti-acetylcholine receptor antibodies']]",
@@ -48,7 +48,7 @@
    "result": [
     "yes",
     "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -82,7 +82,7 @@
     "Do you have difficulty opening your eyelids?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

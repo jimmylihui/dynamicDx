@@ -19,23 +19,23 @@
  ],
  "answers": {
   "1": "yes",
-  "2": "no",
+  "2": "unknown",
   "3": "no",
   "4": "no",
-  "5": "no",
+  "5": "unknown",
   "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "yes",
-  "10": "no",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
   "11": "yes",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no"
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 2,
  "orders": [
   "Have the patient hold their arms outstretched in front of them with fingers spread wide for 30 seconds.",
   "Ask the patient to draw a tight Archimedes spiral on a piece of paper.",
@@ -54,14 +54,14 @@
   "copper / caeruloplasmin / 24 h urinary copper"
  ],
  "results": [
-  "R1 ASK Is the tremor in your hands completely absent when they are fully relaxed at rest?; Does the tremor become much worse when you try to perform a deliberate action, such as writing or drinking from a cup?; Do any of your first-degree relatives (parents, siblings, or children) have a similar tremor?; Does drinking a small amount of alcohol (like a glass of wine or beer) significantly reduce or temporarily abolish the tremor? -> ['yes', 'no', 'no', 'no']",
-  "R2 ASK Are you currently taking any regular medications, including over-the-counter drugs or supplements (for example, an asthma inhaler, antidepressant, or lithium)?; Have you noticed any recent unintentional weight loss, feeling unusually hot, or palpitations?; Do you feel any stiffness, slowness, or difficulty with fine movements like buttoning a shirt?; Have you noticed any tremor in your legs or a change in the quality of your voice?; Did the tremor begin suddenly, or has it gradually worsened over months to years? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R1 ASK Is the tremor in your hands completely absent when they are fully relaxed at rest?; Does the tremor become much worse when you try to perform a deliberate action, such as writing or drinking from a cup?; Do any of your first-degree relatives (parents, siblings, or children) have a similar tremor?; Does drinking a small amount of alcohol (like a glass of wine or beer) significantly reduce or temporarily abolish the tremor? -> ['yes', 'unknown', 'no', 'no']",
+  "R2 ASK Are you currently taking any regular medications, including over-the-counter drugs or supplements (for example, an asthma inhaler, antidepressant, or lithium)?; Have you noticed any recent unintentional weight loss, feeling unusually hot, or palpitations?; Do you feel any stiffness, slowness, or difficulty with fine movements like buttoning a shirt?; Have you noticed any tremor in your legs or a change in the quality of your voice?; Did the tremor begin suddenly, or has it gradually worsened over months to years? -> ['unknown', 'no', 'unknown', 'unknown', 'unknown']",
   "R3 ORDER Have the patient hold their arms outstretched in front of them with fingers spread wide for 30 seconds. -> [['postural tremor (arms outstretched)']]",
   "R4 ORDER Ask the patient to draw a tight Archimedes spiral on a piece of paper. -> [['kinetic / intention tremor (finger-nose)']]",
-  "R5 ASK Have you ever sustained a significant head injury, stroke, or do you have a history of multiple sclerosis?; Is the tremor equally severe in both hands, or is one hand noticeably worse than the other?; Does your handwriting appear unusually large or shaky compared to a few years ago?; Did the tremor only appear after starting a new medication? -> ['no', 'yes', 'no', 'no']",
+  "R5 ASK Have you ever sustained a significant head injury, stroke, or do you have a history of multiple sclerosis?; Is the tremor equally severe in both hands, or is one hand noticeably worse than the other?; Does your handwriting appear unusually large or shaky compared to a few years ago?; Did the tremor only appear after starting a new medication? -> ['unknown', 'yes', 'unknown', 'unknown']",
   "R6 ORDER Perform the finger-to-nose maneuver to assess for a kinetic/intention component of the tremor. -> [['coordination examination (limb and truncal)', 'kinetic / intention tremor (finger-nose)']]",
   "R7 ORDER Gently tap the patient's lower lip to assess for perioral tremor (a sign of medication-induced tremor). -> [['tremor at rest']]",
-  "R8 ASK Does the tremor worsen significantly during periods of stress, anxiety, sleep deprivation, or after drinking several cups of coffee?; Does the tremor completely disappear when you are lying down, sleeping, or completely relaxed?; Have you had any recent blood tests to check your thyroid function or blood sugar levels? -> ['no', 'no', 'no']",
+  "R8 ASK Does the tremor worsen significantly during periods of stress, anxiety, sleep deprivation, or after drinking several cups of coffee?; Does the tremor completely disappear when you are lying down, sleeping, or completely relaxed?; Have you had any recent blood tests to check your thyroid function or blood sugar levels? -> ['unknown', 'unknown', 'unknown']",
   "R9 ORDER Order a blood test for serum ceruloplasmin and a complete thyroid function panel (TSH, Free T4). -> [['serum copper and caeruloplasmin', 'TSH / free T4', 'copper / caeruloplasmin / 24 h urinary copper']]",
   "R10 ORDER Perform a rapid-acting beta-blocker trial (e.g., administer propranolol 20mg orally) and observe for tremor reduction over the next hour. -> [[]]",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Essential tremor (idiopathic, sporadic form) - a bilateral, symmetric postural/action tremor of unknown etiology, without evidence of drug-induced, metabolic (thyroid, Wilson's), parkinsoni -> "
@@ -78,7 +78,7 @@
    ],
    "result": [
     "yes",
-    "no",
+    "unknown",
     "no",
     "no"
    ]
@@ -94,11 +94,11 @@
     "Did the tremor begin suddenly, or has it gradually worsened over months to years?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "yes"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -135,10 +135,10 @@
     "Did the tremor only appear after starting a new medication?"
    ],
    "result": [
-    "no",
+    "unknown",
     "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -175,9 +175,9 @@
     "Have you had any recent blood tests to check your thyroid function or blood sugar levels?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

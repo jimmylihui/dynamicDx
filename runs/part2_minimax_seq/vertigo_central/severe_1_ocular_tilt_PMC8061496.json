@@ -21,27 +21,27 @@
   "Have you had any recent neck trauma or manipulation?"
  ],
  "answers": {
-  "1": "no",
-  "2": "yes",
+  "1": "unknown",
+  "2": "unknown",
   "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
   "7": "no",
-  "8": "no",
-  "9": "no",
+  "8": "unknown",
+  "9": "unknown",
   "10": "yes",
-  "11": "no",
-  "12": "no",
-  "13": "no",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
   "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no"
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 1,
  "orders": [
   "MRI brain with diffusion-weighted imaging (DWI) and gadolinium contrast",
   "Bedside examination: test of skew deviation (alternate cover test) and head impulse test",
@@ -56,11 +56,11 @@
   "fundoscopy"
  ],
  "results": [
-  "R1 ASK Have you noticed these involuntary eye movements for more than a few days?; Do you experience dizziness or vertigo (a spinning sensation)?; Have you had any recent hearing loss or ringing in the ears (tinnitus)?; Do you have a history of multiple sclerosis or other neurological conditions?; Have you recently consumed alcohol or used sedative medications? -> ['no', 'yes', 'no', 'no', 'no']",
-  "R2 ASK Have you experienced any weakness, numbness, or difficulty with speech or swallowing?; Have you had a recent cold, flu, or upper respiratory infection?; Is the nystagmus (eye movement) constant, or does it come and go?; Does the nystagmus change direction when you look to the left versus the right?; Have you noticed any double vision? -> ['no', 'no', 'no', 'no', 'yes']",
-  "R3 ASK Do you experience nausea or vomiting along with the vertigo?; Does the nystagmus worsen or change when you lie down or turn your head to a particular side?; Have you had any recent illness, even a mild one, in the past few weeks?; Is your hearing completely normal in both ears?; Do you have any history of migraine headaches? -> ['no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Have you noticed these involuntary eye movements for more than a few days?; Do you experience dizziness or vertigo (a spinning sensation)?; Have you had any recent hearing loss or ringing in the ears (tinnitus)?; Do you have a history of multiple sclerosis or other neurological conditions?; Have you recently consumed alcohol or used sedative medications? -> ['unknown', 'unknown', 'no', 'unknown', 'unknown']",
+  "R2 ASK Have you experienced any weakness, numbness, or difficulty with speech or swallowing?; Have you had a recent cold, flu, or upper respiratory infection?; Is the nystagmus (eye movement) constant, or does it come and go?; Does the nystagmus change direction when you look to the left versus the right?; Have you noticed any double vision? -> ['unknown', 'no', 'unknown', 'unknown', 'yes']",
+  "R3 ASK Do you experience nausea or vomiting along with the vertigo?; Does the nystagmus worsen or change when you lie down or turn your head to a particular side?; Have you had any recent illness, even a mild one, in the past few weeks?; Is your hearing completely normal in both ears?; Do you have any history of migraine headaches? -> ['unknown', 'unknown', 'unknown', 'no', 'unknown']",
   "R4 ORDER MRI brain with diffusion-weighted imaging (DWI) and gadolinium contrast; Bedside examination: test of skew deviation (alternate cover test) and head impulse test; Fundoscopy to look for papilledema -> [['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI brain with DWI'], ['skew deviation / alternating cover test', 'head impulse test'], ['fundoscopy']]",
-  "R5 ASK Do you have a history of high blood pressure, diabetes, high cholesterol, or smoking?; Have you had any previous strokes or TIAs?; Do you have atrial fibrillation or any heart rhythm problems?; Have you had any recent neck trauma or manipulation? -> ['no', 'no', 'no', 'no']",
+  "R5 ASK Do you have a history of high blood pressure, diabetes, high cholesterol, or smoking?; Have you had any previous strokes or TIAs?; Do you have atrial fibrillation or any heart rhythm problems?; Have you had any recent neck trauma or manipulation? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R6 DIAGNOSIS Acute brainstem stroke - left paramedian pontine and midbrain infarction due to occlusion of paramedian perforating branches of the basilar artery -> "
  ],
  "trace": [
@@ -75,11 +75,11 @@
     "Have you recently consumed alcohol or used sedative medications?"
    ],
    "result": [
+    "unknown",
+    "unknown",
     "no",
-    "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -93,10 +93,10 @@
     "Have you noticed any double vision?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "yes"
    ]
   },
@@ -111,11 +111,11 @@
     "Do you have any history of migraine headaches?"
    ],
    "result": [
+    "unknown",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -151,10 +151,10 @@
     "Have you had any recent neck trauma or manipulation?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

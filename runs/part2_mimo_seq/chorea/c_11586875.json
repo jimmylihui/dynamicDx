@@ -16,22 +16,22 @@
   "Is there any family history of Huntington's disease or other neurological conditions?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "yes",
-  "6": "no",
-  "7": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
   "8": "no",
-  "9": "no",
+  "9": "unknown",
   "10": "yes",
   "11": "yes",
-  "12": "no",
-  "13": "no",
-  "14": "no"
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 2,
  "orders": [
   "Bedside neurological examination focusing on assessment for asterixis (sustained arm extension posture for 10-15 seconds).",
   "Comprehensive metabolic panel (CMP) including liver function tests, kidney function, glucose, and electrolytes",
@@ -54,13 +54,13 @@
   "venous blood gas"
  ],
  "results": [
-  "R1 ASK Are you experiencing involuntary, repetitive movements of your hands?; Have you had any recent viral infection or illness before these movements began?; Do you have a personal or family history of movement disorders or autoimmune diseases?; Do these movements occur only when you rest, or also when you attempt to move your hands? -> ['no', 'no', 'no', 'no']",
+  "R1 ASK Are you experiencing involuntary, repetitive movements of your hands?; Have you had any recent viral infection or illness before these movements began?; Do you have a personal or family history of movement disorders or autoimmune diseases?; Do these movements occur only when you rest, or also when you attempt to move your hands? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R2 ORDER Bedside neurological examination focusing on assessment for asterixis (sustained arm extension posture for 10-15 seconds). -> [['posture and pull test']]",
-  "R3 ASK What condition are you currently hospitalized for?; Do you have any liver or kidney disease?; Are you taking any new medications recently, including antibiotics or pain medications?; Have you noticed any confusion, drowsiness, or changes in your thinking recently?; Do you consume alcohol regularly? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R3 ASK What condition are you currently hospitalized for?; Do you have any liver or kidney disease?; Are you taking any new medications recently, including antibiotics or pain medications?; Have you noticed any confusion, drowsiness, or changes in your thinking recently?; Do you consume alcohol regularly? -> ['unknown', 'unknown', 'unknown', 'no', 'unknown']",
   "R4 ORDER Comprehensive metabolic panel (CMP) including liver function tests, kidney function, glucose, and electrolytes; Serum ammonia level; Arterial blood gas (ABG); Medication reconciliation - review all current medications including over-the-counter and supplements -> [['serum electrolytes, urea and creatinine', 'liver function tests', 'blood glucose and HbA1c'], ['serum ammonia'], [], ['medication and vaccination history']]",
-  "R5 ASK Have you been experiencing increased thirst, frequent urination, or unexplained weight loss recently?; Do you know if you have been diagnosed with diabetes?; Have you been feeling nauseous or vomited recently? -> ['yes', 'yes', 'no']",
+  "R5 ASK Have you been experiencing increased thirst, frequent urination, or unexplained weight loss recently?; Do you know if you have been diagnosed with diabetes?; Have you been feeling nauseous or vomited recently? -> ['yes', 'yes', 'unknown']",
   "R6 ORDER Serum beta-hydroxybutyrate (ketone) level; Serum osmolality (calculated); Venous blood gas (pH and bicarbonate) -> [['ketones (blood or urine)'], ['sodium and serum osmolality'], ['venous blood gas']]",
-  "R7 ASK Have you noticed any stiffness, slowness of movement, or tremor before these movements started?; Is there any family history of Huntington's disease or other neurological conditions? -> ['no', 'no']",
+  "R7 ASK Have you noticed any stiffness, slowness of movement, or tremor before these movements started?; Is there any family history of Huntington's disease or other neurological conditions? -> ['unknown', 'unknown']",
   "R8 DIAGNOSIS Hemichorea-hemiballismus secondary to severe non-ketotic hyperglycemia (hyperosmolar hyperglycemic state) -> "
  ],
  "trace": [
@@ -74,10 +74,10 @@
     "Do these movements occur only when you rest, or also when you attempt to move your hands?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -103,11 +103,11 @@
     "Do you consume alcohol regularly?"
    ],
    "result": [
-    "yes",
+    "unknown",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -145,7 +145,7 @@
    "result": [
     "yes",
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -176,8 +176,8 @@
     "Is there any family history of Huntington's disease or other neurological conditions?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {

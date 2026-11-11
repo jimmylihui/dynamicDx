@@ -23,27 +23,27 @@
  ],
  "answers": {
   "1": "yes",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
   "9": "no",
-  "10": "no",
-  "11": "yes",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no"
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 1,
  "orders": [
   "Full neurological examination focusing on cerebellar signs",
   "Serum thyroid function tests (TSH, T3, T4)",
@@ -77,10 +77,10 @@
  ],
  "results": [
   "R1 INVALID \n\n:\n1. Are you experiencing a tremor or shaking in your hands?\n2. Is the tremor worse when your hands are at rest?\n3. Do you have any stiffness or slowness of movement?\n4. Have you noticed any changes -> ",
-  "R2 ASK Are you experiencing a tremor or shaking in your hands?; Is the tremor worse when your hands are at rest?; Do you have any stiffness or slowness of movement?; Have you noticed any changes in your handwriting?; Do you have any trouble with balance or walking? -> ['yes', 'no', 'no', 'no', 'no']",
-  "R3 ASK Does the tremor get worse when you try to perform an action like drinking from a cup?; Is the tremor worse when you are anxious or stressed?; Have you noticed the tremor improving after you drink alcohol?; Does anyone in your family have a similar tremor?; Are you currently taking any medications? -> ['no', 'no', 'no', 'no', 'no']",
-  "R4 ASK Is the tremor present only in one hand or both hands?; Does the tremor involve your head or voice?; Does the tremor worsen when you try to hold a specific posture, like holding your arms out in front of you?; Do you have any history of thyroid problems?; Do you drink a lot of caffeine? -> ['yes', 'no', 'no', 'no', 'no']",
-  "R5 ASK Is the tremor a fine, rapid shaking?; Is the tremor a coarse, slower shaking?; Does the tremor improve or worsen completely?; Is the tremor constant or intermittent?; Do you have any weakness in that hand? -> ['no', 'no', 'no', 'no', 'no']",
+  "R2 ASK Are you experiencing a tremor or shaking in your hands?; Is the tremor worse when your hands are at rest?; Do you have any stiffness or slowness of movement?; Have you noticed any changes in your handwriting?; Do you have any trouble with balance or walking? -> ['yes', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK Does the tremor get worse when you try to perform an action like drinking from a cup?; Is the tremor worse when you are anxious or stressed?; Have you noticed the tremor improving after you drink alcohol?; Does anyone in your family have a similar tremor?; Are you currently taking any medications? -> ['unknown', 'unknown', 'unknown', 'no', 'unknown']",
+  "R4 ASK Is the tremor present only in one hand or both hands?; Does the tremor involve your head or voice?; Does the tremor worsen when you try to hold a specific posture, like holding your arms out in front of you?; Do you have any history of thyroid problems?; Do you drink a lot of caffeine? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R5 ASK Is the tremor a fine, rapid shaking?; Is the tremor a coarse, slower shaking?; Does the tremor improve or worsen completely?; Is the tremor constant or intermittent?; Do you have any weakness in that hand? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R6 ORDER Full neurological examination focusing on cerebellar signs; Serum thyroid function tests (TSH, T3, T4); Liver function tests; Serum electrolytes including calcium and magnesium; MRI brain -> [['cranial nerve examination', 'mental status / cognitive screen', 'muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'posture and pull test', 'fundoscopy', 'gait observation including turning and doorways', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)'], ['TSH / free T4'], ['liver function tests'], ['serum electrolytes, urea and creatinine', 'serum calcium, magnesium and phosphate'], ['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)', 'MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)', 'MRI brain - cortical atrophy pattern', 'MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)']]",
   "R7 DIAGNOSIS Corticobasal syndrome (CBS) - likely due to underlying corticobasal degeneration (CBD) or Alzheimer's disease pathology, presenting with asymmetric parkinsonism, apraxia, cortical sensory loss, myoclonus, and markedly asymmetric superior parietal and posterior frontal atrophy on MRI. -> "
  ],
@@ -102,10 +102,10 @@
    ],
    "result": [
     "yes",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -119,11 +119,11 @@
     "Are you currently taking any medications?"
    ],
    "result": [
+    "unknown",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -137,11 +137,11 @@
     "Do you drink a lot of caffeine?"
    ],
    "result": [
-    "yes",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -155,11 +155,11 @@
     "Do you have any weakness in that hand?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

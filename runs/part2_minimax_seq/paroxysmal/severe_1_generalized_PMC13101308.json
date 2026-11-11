@@ -8,14 +8,14 @@
   "Are your seizures typically triggered by specific stimuli such as flashing lights, emotional stress, sleep deprivation, or loud noises?"
  ],
  "answers": {
-  "1": "yes",
+  "1": "unknown",
   "2": "yes",
-  "3": "yes",
-  "4": "no",
+  "3": "unknown",
+  "4": "unknown",
   "5": "yes",
   "6": "no"
  },
- "n_yes_answers": 4,
+ "n_yes_answers": 2,
  "orders": [
   "Serum electrolytes, calcium, magnesium, and glucose level to rule out metabolic causes.",
   "MRI of the brain to rule out structural lesions.",
@@ -28,10 +28,10 @@
   "video-EEG monitoring of a typical event"
  ],
  "results": [
-  "R1 ASK Have you been experiencing episodes of seizures or loss of consciousness that brought you in for this EEG monitoring? -> ['yes']",
+  "R1 ASK Have you been experiencing episodes of seizures or loss of consciousness that brought you in for this EEG monitoring? -> ['unknown']",
   "R2 ASK During these episodes, do you lose awareness of your surroundings or are you aware but unable to respond? -> ['yes']",
-  "R3 ASK Have you experienced generalized tonic-clonic seizures (shaking of all four limbs, tongue biting, or urinary incontinence)? -> ['yes']",
-  "R4 ASK Have you had any recent head trauma, brain surgery, or neurological infections (meningitis/encephalitis)? -> ['no']",
+  "R3 ASK Have you experienced generalized tonic-clonic seizures (shaking of all four limbs, tongue biting, or urinary incontinence)? -> ['unknown']",
+  "R4 ASK Have you had any recent head trauma, brain surgery, or neurological infections (meningitis/encephalitis)? -> ['unknown']",
   "R5 ASK Is there a family history of epilepsy or seizure disorders? -> ['yes']",
   "R6 ORDER Serum electrolytes, calcium, magnesium, and glucose level to rule out metabolic causes. -> [['glucose, calcium, magnesium, sodium']]",
   "R7 ASK Are your seizures typically triggered by specific stimuli such as flashing lights, emotional stress, sleep deprivation, or loud noises? -> ['no']",
@@ -47,7 +47,7 @@
     "Have you been experiencing episodes of seizures or loss of consciousness that brought you in for this EEG monitoring?"
    ],
    "result": [
-    "yes"
+    "unknown"
    ]
   },
   {
@@ -67,7 +67,7 @@
     "Have you experienced generalized tonic-clonic seizures (shaking of all four limbs, tongue biting, or urinary incontinence)?"
    ],
    "result": [
-    "yes"
+    "unknown"
    ]
   },
   {
@@ -77,7 +77,7 @@
     "Have you had any recent head trauma, brain surgery, or neurological infections (meningitis/encephalitis)?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

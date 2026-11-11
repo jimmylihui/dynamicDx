@@ -9,13 +9,13 @@
   "Is the drooping present in both eyes or just one?"
  ],
  "answers": {
-  "1": "no",
+  "1": "unknown",
   "2": "yes",
-  "3": "no",
+  "3": "unknown",
   "4": "yes",
-  "5": "no",
+  "5": "unknown",
   "6": "no",
-  "7": "no"
+  "7": "unknown"
  },
  "n_yes_answers": 2,
  "orders": [
@@ -30,8 +30,8 @@
   "CT chest (thymus)"
  ],
  "results": [
-  "R1 ASK Do you currently have double vision?; Have you noticed any drooping of your eyelids?; Do you have any weakness in your arms or legs? -> ['no', 'yes', 'no']",
-  "R2 ASK Is the drooping worse at the end of the day or with use (fatigable)?; Have you had any difficulty swallowing food or choking while eating?; Is there anyone else in your family with similar drooping eyelids?; Is the drooping present in both eyes or just one? -> ['yes', 'no', 'no', 'no']",
+  "R1 ASK Do you currently have double vision?; Have you noticed any drooping of your eyelids?; Do you have any weakness in your arms or legs? -> ['unknown', 'yes', 'unknown']",
+  "R2 ASK Is the drooping worse at the end of the day or with use (fatigable)?; Have you had any difficulty swallowing food or choking while eating?; Is there anyone else in your family with similar drooping eyelids?; Is the drooping present in both eyes or just one? -> ['yes', 'unknown', 'no', 'unknown']",
   "R3 ORDER Sustained upgaze test (ask patient to look up for 1 minute and observe for worsening ptosis/diplopia) -> [['sustained upgaze fatigability test']]",
   "R4 ORDER Acetylcholine receptor (AChR) antibody test -> [['acetylcholine receptor, MuSK and LRP4 antibodies', 'anti-acetylcholine receptor antibodies']]",
   "R5 ORDER CT chest (to look for thymoma) -> [['CT chest (thymus)']]",
@@ -47,9 +47,9 @@
     "Do you have any weakness in your arms or legs?"
    ],
    "result": [
-    "no",
+    "unknown",
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -63,9 +63,9 @@
    ],
    "result": [
     "yes",
+    "unknown",
     "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {

@@ -18,22 +18,22 @@
   "Do you have a history of chronic alcohol use?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
   "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
   "15": "no",
-  "16": "no"
+  "16": "unknown"
  },
  "n_yes_answers": 0,
  "orders": [
@@ -53,15 +53,15 @@
   "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
  ],
  "results": [
-  "R1 ASK Are you currently experiencing pain in your right leg?; Did you have a stroke or brain injury in the past?; Do you feel like your right leg is dragging when you walk? -> ['no', 'no', 'no']",
-  "R2 ASK Do you have a history of diabetes?; Do you feel numbness or tingling in your feet?; Do you have difficulty lifting the front part of your foot (foot drop)? -> ['no', 'no', 'no']",
-  "R3 ASK Do you have a history of back pain or sciatica?; Have you had any recent falls or injuries to your legs?; Is the weakness in your leg constant, or does it come and go? -> ['no', 'no', 'no']",
+  "R1 ASK Are you currently experiencing pain in your right leg?; Did you have a stroke or brain injury in the past?; Do you feel like your right leg is dragging when you walk? -> ['unknown', 'unknown', 'unknown']",
+  "R2 ASK Do you have a history of diabetes?; Do you feel numbness or tingling in your feet?; Do you have difficulty lifting the front part of your foot (foot drop)? -> ['unknown', 'unknown', 'unknown']",
+  "R3 ASK Do you have a history of back pain or sciatica?; Have you had any recent falls or injuries to your legs?; Is the weakness in your leg constant, or does it come and go? -> ['unknown', 'unknown', 'unknown']",
   "R4 ORDER Neurological examination of the lower limbs (specifically testing muscle strength, tone, and reflexes) -> [['muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses']]",
-  "R5 ASK Do you have a history of Parkinson's disease?; Do you experience tremors in your hands or legs?; Have you noticed any changes in your handwriting or sense of smell? -> ['no', 'no', 'no']",
-  "R6 ASK Do you have a history of taking antipsychotic medications (such as haloperidol, risperidone, or olanzapine)?; Have you noticed any difficulty with balance or walking that started after beginning a new medication? -> ['no', 'no']",
+  "R5 ASK Do you have a history of Parkinson's disease?; Do you experience tremors in your hands or legs?; Have you noticed any changes in your handwriting or sense of smell? -> ['unknown', 'no', 'unknown']",
+  "R6 ASK Do you have a history of taking antipsychotic medications (such as haloperidol, risperidone, or olanzapine)?; Have you noticed any difficulty with balance or walking that started after beginning a new medication? -> ['unknown', 'unknown']",
   "R7 ASK Do you have a family history of movement disorders or Parkinson's disease? -> ['no']",
   "R8 ORDER MRI of the brain -> [['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)', 'MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)', 'MRI brain - cortical atrophy pattern', 'MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)']]",
-  "R9 ASK Do you have a history of chronic alcohol use? -> ['no']",
+  "R9 ASK Do you have a history of chronic alcohol use? -> ['unknown']",
   "R10 DIAGNOSIS Wilson disease -> "
  ],
  "trace": [
@@ -74,9 +74,9 @@
     "Do you feel like your right leg is dragging when you walk?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -88,9 +88,9 @@
     "Do you have difficulty lifting the front part of your foot (foot drop)?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -102,9 +102,9 @@
     "Is the weakness in your leg constant, or does it come and go?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -130,9 +130,9 @@
     "Have you noticed any changes in your handwriting or sense of smell?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -143,8 +143,8 @@
     "Have you noticed any difficulty with balance or walking that started after beginning a new medication?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -182,7 +182,7 @@
     "Do you have a history of chronic alcohol use?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

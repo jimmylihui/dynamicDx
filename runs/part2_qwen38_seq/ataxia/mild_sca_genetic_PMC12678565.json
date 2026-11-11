@@ -6,10 +6,10 @@
   "Do you consume alcohol regularly?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown"
  },
  "n_yes_answers": 0,
  "orders": [
@@ -39,12 +39,12 @@
   "genetic ataxia panel"
  ],
  "results": [
-  "R1 ASK Do you have a history of Parkinson's disease?; Are you currently taking any medications for movement disorders? -> ['no', 'no']",
+  "R1 ASK Do you have a history of Parkinson's disease?; Are you currently taking any medications for movement disorders? -> ['unknown', 'unknown']",
   "R2 ORDER Perform a detailed neurological examination including assessment of muscle tone (rigidity), presence of resting tremor, and postural reflexes -> [['muscle tone examination', 'posture and pull test', 'deep tendon reflexes and plantar responses']]",
-  "R3 ASK Do you have a history of multiple sclerosis? -> ['no']",
+  "R3 ASK Do you have a history of multiple sclerosis? -> ['unknown']",
   "R4 ORDER Perform a detailed neurological examination including assessment of extraocular movements (specifically looking for saccadic pursuit or nystagmus) and finger-to-nose testing -> [['gait examination', 'finger-nose / heel-shin testing', 'bedside eye-movement exam', 'cranial nerve examination', 'mental status / cognitive screen', 'muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'posture and pull test', 'fundoscopy']]",
   "R5 ORDER MRI of the brain with attention to the cerebellum and brainstem -> [['brain MRI']]",
-  "R6 ASK Do you consume alcohol regularly? -> ['no']",
+  "R6 ASK Do you consume alcohol regularly? -> ['unknown']",
   "R7 ORDER Serum Vitamin E level -> [['vitamin E']]",
   "R8 ORDER Serum paraneoplastic antibody panel (including anti-Yo, anti-Hu, anti-Ri, and anti-Tr) -> [['paraneoplastic antibody panel (serum)']]",
   "R9 ORDER Genetic testing for spinocerebellar ataxias (SCA panel) -> [['genetic ataxia panel']]",
@@ -59,8 +59,8 @@
     "Are you currently taking any medications for movement disorders?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -84,7 +84,7 @@
     "Do you have a history of multiple sclerosis?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -129,7 +129,7 @@
     "Do you consume alcohol regularly?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

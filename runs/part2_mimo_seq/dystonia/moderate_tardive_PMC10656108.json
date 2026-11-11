@@ -10,16 +10,16 @@
   "Is the problem related to involuntary movements or shaking?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
   "4": "no",
-  "5": "no",
-  "6": "yes",
-  "7": "yes",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
   "8": "yes"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 1,
  "orders": [
   "Perform a bedside examination of the cranial nerves, specifically testing facial sensation, hearing with a tuning fork, and eye movements.",
   "Perform a neurological examination of the upper limbs, specifically testing tone, power, reflexes, and checking for tremor."
@@ -32,15 +32,15 @@
   "deep tendon reflexes and plantar responses"
  ],
  "results": [
-  "R1 ASK Have you noticed any drooping of your eyelids or double vision recently? -> ['no']",
-  "R2 ASK Do you have any weakness or numbness on one side of your face? -> ['no']",
-  "R3 ASK Do you have any pain or tiredness in your jaw when chewing? -> ['no']",
+  "R1 ASK Have you noticed any drooping of your eyelids or double vision recently? -> ['unknown']",
+  "R2 ASK Do you have any weakness or numbness on one side of your face? -> ['unknown']",
+  "R3 ASK Do you have any pain or tiredness in your jaw when chewing? -> ['unknown']",
   "R4 ASK Have you noticed any weakness in your arms or legs? -> ['no']",
-  "R5 ASK Has anyone commented that your face looks uneven or that your smile has changed? -> ['no']",
+  "R5 ASK Has anyone commented that your face looks uneven or that your smile has changed? -> ['unknown']",
   "R6 ORDER Perform a bedside examination of the cranial nerves, specifically testing facial sensation, hearing with a tuning fork, and eye movements. -> [['cranial nerve examination', 'eye movements and reflexes']]",
   "R7 ORDER Perform a neurological examination of the upper limbs, specifically testing tone, power, reflexes, and checking for tremor. -> [['muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses']]",
-  "R8 ASK What symptoms brought you in to see the doctor today? -> ['yes']",
-  "R9 ASK Can you describe what the main problem is - is it related to movement, pain, or something else? -> ['yes']",
+  "R8 ASK What symptoms brought you in to see the doctor today? -> ['unknown']",
+  "R9 ASK Can you describe what the main problem is - is it related to movement, pain, or something else? -> ['unknown']",
   "R10 ASK Is the problem related to involuntary movements or shaking? -> ['yes']",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Essential tremor -> "
  ],
@@ -52,7 +52,7 @@
     "Have you noticed any drooping of your eyelids or double vision recently?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -62,7 +62,7 @@
     "Do you have any weakness or numbness on one side of your face?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -72,7 +72,7 @@
     "Do you have any pain or tiredness in your jaw when chewing?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -92,7 +92,7 @@
     "Has anyone commented that your face looks uneven or that your smile has changed?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -129,7 +129,7 @@
     "What symptoms brought you in to see the doctor today?"
    ],
    "result": [
-    "yes"
+    "unknown"
    ]
   },
   {
@@ -139,7 +139,7 @@
     "Can you describe what the main problem is - is it related to movement, pain, or something else?"
    ],
    "result": [
-    "yes"
+    "unknown"
    ]
   },
   {

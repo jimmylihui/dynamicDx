@@ -15,21 +15,21 @@
   "Is the patient's head size actually normal?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "yes",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
   "9": "yes",
-  "10": "no",
-  "11": "yes",
-  "12": "no",
-  "13": "no"
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 1,
  "orders": [
   "Fundoscopy"
  ],
@@ -37,16 +37,16 @@
   "fundoscopy"
  ],
  "results": [
-  "R1 ASK Is the patient a baby?; Did the patient have any fever recently?; Has the patient had any seizures or fits? -> ['no', 'no', 'no']",
-  "R2 ASK Is the patient a child under 5 years old?; Has the patient had any head trauma recently?; Does the patient have a history of headaches or vomiting? -> ['no', 'no', 'no']",
-  "R3 ASK Is the patient an adult? -> ['no']",
-  "R4 ASK Is the patient between 5 and 18 years old? -> ['yes']",
+  "R1 ASK Is the patient a baby?; Did the patient have any fever recently?; Has the patient had any seizures or fits? -> ['unknown', 'unknown', 'unknown']",
+  "R2 ASK Is the patient a child under 5 years old?; Has the patient had any head trauma recently?; Does the patient have a history of headaches or vomiting? -> ['unknown', 'unknown', 'unknown']",
+  "R3 ASK Is the patient an adult? -> ['unknown']",
+  "R4 ASK Is the patient between 5 and 18 years old? -> ['unknown']",
   "R5 ASK Does the patient have a history of delayed developmental milestones? -> ['yes']",
-  "R6 ASK Is the patient's speech significantly impaired or absent? -> ['no']",
-  "R7 ASK Is the patient's head size larger than average (macrocephaly)? -> ['yes']",
+  "R6 ASK Is the patient's speech significantly impaired or absent? -> ['unknown']",
+  "R7 ASK Is the patient's head size larger than average (macrocephaly)? -> ['unknown']",
   "R8 ORDER Fundoscopy -> [['fundoscopy']]",
-  "R9 ASK Is the patient's head circumference significantly above the 97th percentile? -> ['no']",
-  "R10 ASK Is the patient's head size actually normal? -> ['no']",
+  "R9 ASK Is the patient's head circumference significantly above the 97th percentile? -> ['unknown']",
+  "R10 ASK Is the patient's head size actually normal? -> ['unknown']",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Cerebral palsy -> "
  ],
  "trace": [
@@ -59,9 +59,9 @@
     "Has the patient had any seizures or fits?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -73,9 +73,9 @@
     "Does the patient have a history of headaches or vomiting?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -85,7 +85,7 @@
     "Is the patient an adult?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -95,7 +95,7 @@
     "Is the patient between 5 and 18 years old?"
    ],
    "result": [
-    "yes"
+    "unknown"
    ]
   },
   {
@@ -115,7 +115,7 @@
     "Is the patient's speech significantly impaired or absent?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -125,7 +125,7 @@
     "Is the patient's head size larger than average (macrocephaly)?"
    ],
    "result": [
-    "yes"
+    "unknown"
    ]
   },
   {
@@ -147,7 +147,7 @@
     "Is the patient's head circumference significantly above the 97th percentile?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -157,7 +157,7 @@
     "Is the patient's head size actually normal?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

@@ -18,20 +18,20 @@
   "Have you noticed any tremor in your hands, especially at rest?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
   "9": "no",
   "10": "yes",
   "11": "no",
   "12": "no",
   "13": "no",
-  "14": "no",
+  "14": "unknown",
   "15": "no",
   "16": "no"
  },
@@ -57,12 +57,12 @@
   "CSF opening pressure"
  ],
  "results": [
-  "R1 ASK Do you have pain in your lower back?; Do you feel numbness or tingling on the top of your right foot or the side of your shin?; Did the weakness start suddenly or gradually? -> ['no', 'no', 'no']",
-  "R2 ASK When did you first notice your right foot not working properly?; Do you work in a job that requires you to kneel for long periods?; Have you lost any weight recently without trying?; Do you have any difficulty swallowing or any twitching in your muscles? -> ['no', 'no', 'no', 'no']",
+  "R1 ASK Do you have pain in your lower back?; Do you feel numbness or tingling on the top of your right foot or the side of your shin?; Did the weakness start suddenly or gradually? -> ['unknown', 'unknown', 'unknown']",
+  "R2 ASK When did you first notice your right foot not working properly?; Do you work in a job that requires you to kneel for long periods?; Have you lost any weight recently without trying?; Do you have any difficulty swallowing or any twitching in your muscles? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R3 ORDER Manual muscle testing of right hip flexion (L2); Manual muscle testing of right knee extension (L3); Manual muscle testing of right ankle dorsiflexion (L4-L5); Manual muscle testing of right great toe extension (L5); Manual muscle testing of right ankle plantarflexion (S1-S2); Test tone in the right lower limb; Test right knee and ankle reflexes; Test for extensor plantar response (Babinski sign) on the right -> [['limb strength (MRC) examination'], ['limb strength (MRC) examination'], ['limb strength (MRC) examination'], ['limb strength (MRC) examination'], ['limb strength (MRC) examination'], ['muscle tone examination'], ['deep tendon reflexes and plantar responses', 'reflexes, plantar responses and frontal release signs'], ['deep tendon reflexes and plantar responses', 'reflexes, plantar responses and frontal release signs']]",
-  "R4 ASK Have you noticed any problems with your memory or thinking recently?; Do you have any trouble controlling your bladder or have you had any accidents?; Do you feel like your feet are stuck to the floor when you try to walk (magnetic gait)?; Has anyone in your family had Parkinson's disease? -> ['no', 'no', 'yes', 'no']",
+  "R4 ASK Have you noticed any problems with your memory or thinking recently?; Do you have any trouble controlling your bladder or have you had any accidents?; Do you feel like your feet are stuck to the floor when you try to walk (magnetic gait)?; Has anyone in your family had Parkinson's disease? -> ['unknown', 'no', 'yes', 'no']",
   "R5 ORDER Brain MRI to assess for ventriculomegaly disproportionate to cortical atrophy, periventricular transependymal signal, and Evan's index measurement; Lumbar puncture with opening pressure measurement and large volume tap (removal of 30-50 mL CSF) to assess for gait improvement (diagnostic and therapeutic tap for suspected NPH) -> [['MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)'], ['CSF opening pressure']]",
-  "R6 ASK Do you have any problems moving your eyes up and down when looking at something?; Do you feel dizzy or lightheaded when you stand up from sitting or lying down?; Do you have problems with erectile function?; Do you have nightmares or act out your dreams during sleep?; Have you noticed any tremor in your hands, especially at rest? -> ['no', 'no', 'no', 'no', 'no']",
+  "R6 ASK Do you have any problems moving your eyes up and down when looking at something?; Do you feel dizzy or lightheaded when you stand up from sitting or lying down?; Do you have problems with erectile function?; Do you have nightmares or act out your dreams during sleep?; Have you noticed any tremor in your hands, especially at rest? -> ['no', 'no', 'unknown', 'no', 'no']",
   "R7 DIAGNOSIS Normal pressure hydrocephalus - the triad of magnetic gait with feet feeling stuck to the floor, symmetric limb rigidity, and brisk reflexes is the classic presentation, though initial imaging was reported as normal and may require formal volumetric reassessment -> "
  ],
  "trace": [
@@ -75,9 +75,9 @@
     "Did the weakness start suddenly or gradually?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -90,10 +90,10 @@
     "Do you have any difficulty swallowing or any twitching in your muscles?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -148,7 +148,7 @@
     "Has anyone in your family had Parkinson's disease?"
    ],
    "result": [
-    "no",
+    "unknown",
     "no",
     "yes",
     "no"
@@ -183,7 +183,7 @@
    "result": [
     "no",
     "no",
-    "no",
+    "unknown",
     "no",
     "no"
    ]

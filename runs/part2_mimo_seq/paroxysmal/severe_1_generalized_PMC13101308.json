@@ -20,24 +20,24 @@
   "Did you see any flashing lights or have unusual sensations before the seizure started?"
  ],
  "answers": {
-  "1": "yes",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "yes",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
   "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
   "17": "yes",
-  "18": "no"
+  "18": "unknown"
  },
  "n_yes_answers": 2,
  "orders": [
@@ -56,11 +56,11 @@
   "video-EEG monitoring of a typical event"
  ],
  "results": [
-  "R1 ASK Have you experienced any seizures recently?; Did you fall and injure your right leg recently? -> ['yes', 'no']",
-  "R2 ASK Do you have a history of epilepsy or prior seizures before this episode?; Did you lose consciousness during the seizure?; Are you experiencing any confusion or memory problems right now?; Do you have any headache at the moment?; Was your right leg already in a cast before the seizure started? -> ['no', 'no', 'no', 'no', 'no']",
-  "R3 ASK When did the seizure occur - was it today or earlier?; How did your leg get injured if you didn't fall?; Have you noticed any weakness on one side of your body?; Have you had any fever recently?; Do you have a history of cancer? -> ['no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Have you experienced any seizures recently?; Did you fall and injure your right leg recently? -> ['unknown', 'unknown']",
+  "R2 ASK Do you have a history of epilepsy or prior seizures before this episode?; Did you lose consciousness during the seizure?; Are you experiencing any confusion or memory problems right now?; Do you have any headache at the moment?; Was your right leg already in a cast before the seizure started? -> ['unknown', 'yes', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK When did the seizure occur - was it today or earlier?; How did your leg get injured if you didn't fall?; Have you noticed any weakness on one side of your body?; Have you had any fever recently?; Do you have a history of cancer? -> ['unknown', 'unknown', 'unknown', 'no', 'unknown']",
   "R4 ORDER CT head without contrast; Complete blood count; Basic metabolic panel; Liver function tests -> [['CT head'], ['full blood count and biochemistry'], ['serum electrolytes, urea and creatinine'], ['liver function tests']]",
-  "R5 ASK Do you drink alcohol regularly?; Have you used any recreational drugs recently?; Are you taking any medications currently?; Have you been sleep deprived lately?; Do you have any family history of epilepsy or seizures?; Did you see any flashing lights or have unusual sensations before the seizure started? -> ['no', 'no', 'no', 'no', 'yes', 'no']",
+  "R5 ASK Do you drink alcohol regularly?; Have you used any recreational drugs recently?; Are you taking any medications currently?; Have you been sleep deprived lately?; Do you have any family history of epilepsy or seizures?; Did you see any flashing lights or have unusual sensations before the seizure started? -> ['unknown', 'unknown', 'unknown', 'unknown', 'yes', 'unknown']",
   "R6 ORDER Continuous EEG monitoring (the patient already appears to have EEG leads applied); Serum prolactin level -> [['video-EEG monitoring of a typical event'], []]",
   "R7 DIAGNOSIS Idiopathic generalized epilepsy (likely juvenile myoclonic epilepsy or juvenile absence epilepsy), characterized by generalized 2.5-3 Hz spike-wave discharges on EEG with bifrontal maximum, positive family history, normal neuroimaging, and first documented generalized seizure event -> "
  ],
@@ -73,8 +73,8 @@
     "Did you fall and injure your right leg recently?"
    ],
    "result": [
-    "yes",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -88,11 +88,11 @@
     "Was your right leg already in a cast before the seizure started?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "yes",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -106,11 +106,11 @@
     "Do you have a history of cancer?"
    ],
    "result": [
+    "unknown",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -149,12 +149,12 @@
     "Did you see any flashing lights or have unusual sensations before the seizure started?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {

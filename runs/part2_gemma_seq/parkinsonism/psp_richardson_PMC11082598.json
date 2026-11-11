@@ -10,16 +10,16 @@
   "Do you feel like your feet are \"stuck\" to the floor when you try to walk?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "yes",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
   "4": "yes",
   "5": "no",
-  "6": "no",
+  "6": "unknown",
   "7": "yes",
-  "8": "no"
+  "8": "unknown"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 2,
  "orders": [
   "Examination for axial rigidity (neck and trunk)",
   "MRI of the brain (looking for midbrain atrophy/hummingbird sign)"
@@ -29,8 +29,8 @@
   "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)"
  ],
  "results": [
-  "R1 ASK Do you have a tremor in your hands?; Do you feel that your movements have become slower?; Have you had frequent falls recently?; Do you have difficulty with your balance? -> ['no', 'no', 'yes', 'yes']",
-  "R2 ASK Do you have any problems with bladder control or urinary incontinence?; Have you or your family noticed any changes in your memory or thinking?; Do you have difficulty looking up or down?; Do you feel like your feet are \"stuck\" to the floor when you try to walk? -> ['no', 'no', 'yes', 'no']",
+  "R1 ASK Do you have a tremor in your hands?; Do you feel that your movements have become slower?; Have you had frequent falls recently?; Do you have difficulty with your balance? -> ['unknown', 'unknown', 'unknown', 'yes']",
+  "R2 ASK Do you have any problems with bladder control or urinary incontinence?; Have you or your family noticed any changes in your memory or thinking?; Do you have difficulty looking up or down?; Do you feel like your feet are \"stuck\" to the floor when you try to walk? -> ['no', 'unknown', 'yes', 'unknown']",
   "R3 ORDER Examination for axial rigidity (neck and trunk); MRI of the brain (looking for midbrain atrophy/hummingbird sign) -> [['limb rigidity and axial (neck) rigidity'], ['MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)']]",
   "R4 DIAGNOSIS Progressive Supranuclear Palsy (PSP) -> "
  ],
@@ -45,9 +45,9 @@
     "Do you have difficulty with your balance?"
    ],
    "result": [
-    "no",
-    "no",
-    "yes",
+    "unknown",
+    "unknown",
+    "unknown",
     "yes"
    ]
   },
@@ -62,9 +62,9 @@
    ],
    "result": [
     "no",
-    "no",
+    "unknown",
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {

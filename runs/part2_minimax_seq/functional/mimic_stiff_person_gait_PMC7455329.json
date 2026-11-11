@@ -36,42 +36,42 @@
   "Have you ever been diagnosed with diabetes?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "yes",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
   "5": "yes",
-  "6": "no",
+  "6": "unknown",
   "7": "no",
-  "8": "no",
+  "8": "unknown",
   "9": "no",
   "10": "no",
   "11": "yes",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no",
-  "22": "no",
-  "23": "no",
-  "24": "no",
-  "25": "no",
-  "26": "no",
-  "27": "no",
-  "28": "no",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
+  "22": "unknown",
+  "23": "unknown",
+  "24": "unknown",
+  "25": "unknown",
+  "26": "unknown",
+  "27": "unknown",
+  "28": "unknown",
   "29": "yes",
-  "30": "no",
-  "31": "no",
+  "30": "unknown",
+  "31": "unknown",
   "32": "no",
   "33": "no",
   "34": "yes"
  },
- "n_yes_answers": 5,
+ "n_yes_answers": 4,
  "orders": [
   "Transthoracic echocardiogram",
   "Bilateral lower extremity venous Doppler ultrasound",
@@ -96,15 +96,15 @@
   "vitamin B12 and vitamin E"
  ],
  "results": [
-  "R1 ASK Are you using the crutches because of pain in your legs or feet?; Have you recently had surgery, such as cardiac surgery, given the scar on your chest?; Do you have weakness in both legs, or just one?; Did you experience a sudden onset of weakness, or has it been progressive?; Do you have any history of diabetes, high blood pressure, or vascular disease? -> ['no', 'no', 'no', 'yes', 'yes']",
+  "R1 ASK Are you using the crutches because of pain in your legs or feet?; Have you recently had surgery, such as cardiac surgery, given the scar on your chest?; Do you have weakness in both legs, or just one?; Did you experience a sudden onset of weakness, or has it been progressive?; Do you have any history of diabetes, high blood pressure, or vascular disease? -> ['unknown', 'unknown', 'unknown', 'unknown', 'yes']",
   "R2 INVALID \n\n:\n1. Is the weakness in only one leg?\n2. Do you have any numbness or tingling in your legs?\n3. Do you have any back pain?\n4. Did you have heart surgery in the past, given the scar on your chest?\n5.  -> ",
-  "R3 ASK Is the weakness in only one leg?; Do you have any numbness or tingling in your legs?; Do you have any back pain?; Do you have any difficulty controlling your urine or bowel movements? -> ['no', 'no', 'no', 'no']",
-  "R4 ASK Is the weakness in your arms or hands as well?; Have you noticed any stiffness or heaviness in your legs?; Do you have a history of heart problems, such as a previous heart attack or heart failure?; Have you ever had a stroke or mini-stroke (TIA)?; Did you have surgery on your abdomen recently, or were you hospitalized for a long time? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R3 ASK Is the weakness in only one leg?; Do you have any numbness or tingling in your legs?; Do you have any back pain?; Do you have any difficulty controlling your urine or bowel movements? -> ['unknown', 'no', 'unknown', 'no']",
+  "R4 ASK Is the weakness in your arms or hands as well?; Have you noticed any stiffness or heaviness in your legs?; Do you have a history of heart problems, such as a previous heart attack or heart failure?; Have you ever had a stroke or mini-stroke (TIA)?; Did you have surgery on your abdomen recently, or were you hospitalized for a long time? -> ['no', 'yes', 'unknown', 'unknown', 'unknown']",
   "R5 ORDER Transthoracic echocardiogram; Bilateral lower extremity venous Doppler ultrasound; Ankle-brachial index (ABI) measurement; Lumbar spine MRI; Serum creatine kinase (CK) level -> [[], [], [], [], ['creatine kinase']]",
-  "R6 ASK Does the heaviness or stiffness in your legs worsen when you walk and improve when you rest?; Do you get cramping or pain in your calves when walking?; Have you noticed any skin changes on your legs, such as hair loss, shiny skin, or ulcers?; Do you have erectile dysfunction?; Have you ever been diagnosed with peripheral artery disease (PAD)? -> ['no', 'no', 'no', 'no', 'no']",
-  "R7 ASK Does the stiffness and heaviness worsen the longer you walk or stand, and improve when you sit down or lean forward?; Do you feel any pain in your lower back or buttocks when walking?; Have you noticed any weakness in your hip or thigh muscles, such as difficulty climbing stairs or getting up from a chair?; Do you have a history of smoking?; Have you ever been diagnosed with spinal stenosis? -> ['no', 'no', 'no', 'no', 'no']",
-  "R8 ASK Is the heaviness or stiffness worse in one leg than the other?; Have you had any recent trauma or injury to your legs or back?; Do you experience any tremors or shaking in your legs?; Have you been diagnosed with Parkinson's disease or any other movement disorder?; Do you feel unsteady on your feet, or do you sometimes fall? -> ['no', 'no', 'no', 'no', 'yes']",
-  "R9 ASK Is the unsteadiness worse when you turn or change direction quickly?; Do you feel dizzy or lightheaded when standing up?; Have you noticed any changes in your memory or thinking?; Do you have numbness or tingling in your feet?; Have you ever been diagnosed with diabetes? -> ['no', 'no', 'no', 'no', 'yes']",
+  "R6 ASK Does the heaviness or stiffness in your legs worsen when you walk and improve when you rest?; Do you get cramping or pain in your calves when walking?; Have you noticed any skin changes on your legs, such as hair loss, shiny skin, or ulcers?; Do you have erectile dysfunction?; Have you ever been diagnosed with peripheral artery disease (PAD)? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R7 ASK Does the stiffness and heaviness worsen the longer you walk or stand, and improve when you sit down or lean forward?; Do you feel any pain in your lower back or buttocks when walking?; Have you noticed any weakness in your hip or thigh muscles, such as difficulty climbing stairs or getting up from a chair?; Do you have a history of smoking?; Have you ever been diagnosed with spinal stenosis? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R8 ASK Is the heaviness or stiffness worse in one leg than the other?; Have you had any recent trauma or injury to your legs or back?; Do you experience any tremors or shaking in your legs?; Have you been diagnosed with Parkinson's disease or any other movement disorder?; Do you feel unsteady on your feet, or do you sometimes fall? -> ['unknown', 'unknown', 'unknown', 'unknown', 'yes']",
+  "R9 ASK Is the unsteadiness worse when you turn or change direction quickly?; Do you feel dizzy or lightheaded when standing up?; Have you noticed any changes in your memory or thinking?; Do you have numbness or tingling in your feet?; Have you ever been diagnosed with diabetes? -> ['unknown', 'unknown', 'no', 'no', 'yes']",
   "R10 ORDER MRI of the brain; MRI of the cervical and thoracic spine; Nerve conduction studies (NCS) and electromyography (EMG) of the lower limbs; Fasting blood glucose and HbA1c; Serum vitamin B12 level -> [['MRI brain'], ['MRI cervical and thoracic spine'], ['nerve conduction studies', 'needle electromyography'], ['blood glucose and HbA1c', 'glucose / HbA1c'], ['vitamin B12 with methylmalonic acid', 'vitamin B12 and vitamin E']]",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Diabetic peripheral neuropathy -> "
  ],
@@ -120,10 +120,10 @@
     "Do you have any history of diabetes, high blood pressure, or vascular disease?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "yes",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
     "yes"
    ]
   },
@@ -142,9 +142,9 @@
     "Do you have any difficulty controlling your urine or bowel movements?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "no",
+    "unknown",
     "no"
    ]
   },
@@ -161,9 +161,9 @@
    "result": [
     "no",
     "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -197,11 +197,11 @@
     "Have you ever been diagnosed with peripheral artery disease (PAD)?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -215,11 +215,11 @@
     "Have you ever been diagnosed with spinal stenosis?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -233,10 +233,10 @@
     "Do you feel unsteady on your feet, or do you sometimes fall?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
     "yes"
    ]
   },
@@ -251,8 +251,8 @@
     "Have you ever been diagnosed with diabetes?"
    ],
    "result": [
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "no",
     "no",
     "yes"

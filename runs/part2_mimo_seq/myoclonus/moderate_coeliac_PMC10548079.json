@@ -17,23 +17,23 @@
   "\"Have you noticed any swallowing difficulties or speech changes?\""
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "yes",
-  "5": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
   "6": "no",
-  "7": "no",
+  "7": "unknown",
   "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
   "13": "no",
   "14": "no",
-  "15": "no"
+  "15": "unknown"
  },
- "n_yes_answers": 1,
+ "n_yes_answers": 0,
  "orders": [
   "\"Perform detailed neurological examination of the limbs.\"",
   "\"Test for distractibility - ask the patient to perform a complex task with one hand while observing the movements in the other arm.\"",
@@ -51,12 +51,12 @@
   "serum vitamin E"
  ],
  "results": [
-  "R1 ASK \"Did this condition begin suddenly or gradually?\"; \"Have you experienced any significant emotional distress or trauma recently?\"; \"Do your symptoms seem to fluctuate or get worse when you focus on them?\" -> ['no', 'no', 'no']",
-  "R2 ASK \"Are the movements in both arms the same, or is one side worse?\"; \"Do you feel any weakness in your arms or legs?\"; \"Is there anyone in your family with tremors or movement problems?\"; \"Has anyone noticed a change in your handwriting recently?\" -> ['yes', 'no', 'no', 'no']",
+  "R1 ASK \"Did this condition begin suddenly or gradually?\"; \"Have you experienced any significant emotional distress or trauma recently?\"; \"Do your symptoms seem to fluctuate or get worse when you focus on them?\" -> ['unknown', 'unknown', 'unknown']",
+  "R2 ASK \"Are the movements in both arms the same, or is one side worse?\"; \"Do you feel any weakness in your arms or legs?\"; \"Is there anyone in your family with tremors or movement problems?\"; \"Has anyone noticed a change in your handwriting recently?\" -> ['unknown', 'unknown', 'no', 'unknown']",
   "R3 ORDER \"Perform detailed neurological examination of the limbs.\"; \"Test for distractibility - ask the patient to perform a complex task with one hand while observing the movements in the other arm.\" -> [['muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)'], []]",
-  "R4 ASK \"Have you noticed any changes in your thinking or memory recently?\"; \"Have you had any seizures or jerking movements while sleeping?\"; \"Do you have any difficulty with your vision or eye movements?\"; \"Are you taking any medications currently?\" -> ['no', 'no', 'no', 'no']",
+  "R4 ASK \"Have you noticed any changes in your thinking or memory recently?\"; \"Have you had any seizures or jerking movements while sleeping?\"; \"Do you have any difficulty with your vision or eye movements?\"; \"Are you taking any medications currently?\" -> ['no', 'unknown', 'unknown', 'unknown']",
   "R5 ORDER \"Order serum vitamin E levels and liver function tests.\"; \"Test for anti-GAD antibodies (anti-glutamic acid decarboxylase).\"; \"Order celiac disease screening (anti-tissue transglutaminase antibodies).\"; \"Perform ophthalmological examination for Kayser-Fleischer rings.\" -> [['serum vitamin E'], [], [], []]",
-  "R6 ASK \"Do you consume alcohol regularly?\"; \"Have you had any viral illness or infection before your symptoms started?\"; \"Do you have any history of cancer?\"; \"Have you noticed any swallowing difficulties or speech changes?\" -> ['no', 'no', 'no', 'no']",
+  "R6 ASK \"Do you consume alcohol regularly?\"; \"Have you had any viral illness or infection before your symptoms started?\"; \"Do you have any history of cancer?\"; \"Have you noticed any swallowing difficulties or speech changes?\" -> ['unknown', 'no', 'no', 'unknown']",
   "R7 DIAGNOSIS Autoimmune cerebellar ataxia with anti-GAD antibodies (anti-glutamic acid decarboxylase antibody-positive cerebellar ataxia) -> "
  ],
  "trace": [
@@ -69,9 +69,9 @@
     "\"Do your symptoms seem to fluctuate or get worse when you focus on them?\""
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -84,10 +84,10 @@
     "\"Has anyone noticed a change in your handwriting recently?\""
    ],
    "result": [
-    "yes",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -119,9 +119,9 @@
    ],
    "result": [
     "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -152,10 +152,10 @@
     "\"Have you noticed any swallowing difficulties or speech changes?\""
    ],
    "result": [
+    "unknown",
     "no",
     "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {

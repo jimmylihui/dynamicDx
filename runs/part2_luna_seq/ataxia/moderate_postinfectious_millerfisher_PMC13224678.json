@@ -23,29 +23,29 @@
   "Have you had persistent fever, headache, neck stiffness, or altered awareness since the COVID-19 infection?"
  ],
  "answers": {
-  "1": "no",
+  "1": "unknown",
   "2": "no",
   "3": "no",
-  "4": "yes",
-  "5": "no",
-  "6": "no",
-  "7": "yes",
-  "8": "no",
-  "9": "yes",
-  "10": "no",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
   "11": "yes",
-  "12": "yes",
-  "13": "no",
+  "12": "unknown",
+  "13": "unknown",
   "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no"
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown"
  },
- "n_yes_answers": 5,
+ "n_yes_answers": 1,
  "orders": [
   "Perform a detailed neurological examination, including observed gait, tandem gait, heel-to-shin and finger-to-nose testing, rapid alternating movements, Romberg test, pronator drift, muscle strength, tone, deep-tendon reflexes, plantar responses, and sensation.",
   "Obtain MRI of the brain with and without gadolinium, including the posterior fossa.",
@@ -78,11 +78,11 @@
   "SARS-CoV-2 testing"
  ],
  "results": [
-  "R1 ASK Did these abnormal hand and arm movements begin suddenly?; Do you feel weakness in both arms or hands?; Do you have numbness or tingling in your hands or feet?; Do you have difficulty walking because your legs feel weak or unsteady?; Are the movements involuntary and difficult to suppress?; Have you recently started or increased a medication, especially an antipsychotic or anti-nausea drug?; Have you had a recent infection, fever, or vaccination?; Have you experienced a recent fall, head injury, or stroke-like episode? -> ['no', 'no', 'no', 'yes', 'no', 'no', 'yes', 'no']",
+  "R1 ASK Did these abnormal hand and arm movements begin suddenly?; Do you feel weakness in both arms or hands?; Do you have numbness or tingling in your hands or feet?; Do you have difficulty walking because your legs feel weak or unsteady?; Are the movements involuntary and difficult to suppress?; Have you recently started or increased a medication, especially an antipsychotic or anti-nausea drug?; Have you had a recent infection, fever, or vaccination?; Have you experienced a recent fall, head injury, or stroke-like episode? -> ['unknown', 'no', 'no', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R2 ORDER Perform a detailed neurological examination, including observed gait, tandem gait, heel-to-shin and finger-to-nose testing, rapid alternating movements, Romberg test, pronator drift, muscle strength, tone, deep-tendon reflexes, plantar responses, and sensation.; Obtain MRI of the brain with and without gadolinium, including the posterior fossa. -> [['gait examination', 'finger-nose / heel-shin testing', 'Romberg test', 'muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)'], ['brain MRI', 'MRI brain with gadolinium']]",
-  "R3 ASK Did the unsteady gait and incoordination begin within days to a few weeks after the infection?; Is the incoordination steadily improving?; Do you have slurred speech or difficulty swallowing?; Do you experience double vision or oscillating/jumping vision?; Have you had recurrent episodes of similar incoordination in the past?; Do you regularly consume large amounts of alcohol?; Have you had poor nutrition, prolonged vomiting, or substantial recent weight loss?; Do you have a history of autoimmune disease, cancer, or gluten sensitivity? -> ['yes', 'no', 'yes', 'yes', 'no', 'no', 'no', 'no']",
+  "R3 ASK Did the unsteady gait and incoordination begin within days to a few weeks after the infection?; Is the incoordination steadily improving?; Do you have slurred speech or difficulty swallowing?; Do you experience double vision or oscillating/jumping vision?; Have you had recurrent episodes of similar incoordination in the past?; Do you regularly consume large amounts of alcohol?; Have you had poor nutrition, prolonged vomiting, or substantial recent weight loss?; Do you have a history of autoimmune disease, cancer, or gluten sensitivity? -> ['unknown', 'unknown', 'yes', 'unknown', 'unknown', 'no', 'unknown', 'unknown']",
   "R4 ORDER Lumbar puncture with cerebrospinal-fluid cell count, protein, glucose, oligoclonal bands, IgG index, bacterial culture, viral PCR (including HSV-1/2, VZV, EBV, CMV, and enterovirus), and CSF autoimmune/paraneoplastic cerebellar antibody panel.; Serum testing for anti-GAD65, anti-thyroid antibodies, tissue-transglutaminase IgA with total IgA, and paraneoplastic cerebellar antibodies.; Serum infectious testing guided by the recent illness, including SARS-CoV-2, influenza, VZV, EBV, and Mycoplasma pneumoniae. -> [['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF culture and viral PCR', 'CSF autoimmune encephalitis panel'], ['coeliac serology (anti-TTG)', 'paraneoplastic antibody panel (serum)', 'anti-GAD antibodies', 'anti-thyroid antibodies'], ['SARS-CoV-2 testing']]",
-  "R5 ASK Do the unsteady movements lessen or disappear when you are distracted or when you believe no one is watching?; Do the symptoms fluctuate markedly during the day or vary depending on the situation?; Can you walk normally at any time, such as when walking backward or while performing another task?; Did the symptoms begin during a period of significant emotional stress or psychological trauma?; Have you had persistent fever, headache, neck stiffness, or altered awareness since the COVID-19 infection? -> ['no', 'no', 'no', 'no', 'no']",
+  "R5 ASK Do the unsteady movements lessen or disappear when you are distracted or when you believe no one is watching?; Do the symptoms fluctuate markedly during the day or vary depending on the situation?; Can you walk normally at any time, such as when walking backward or while performing another task?; Did the symptoms begin during a period of significant emotional stress or psychological trauma?; Have you had persistent fever, headache, neck stiffness, or altered awareness since the COVID-19 infection? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R6 DIAGNOSIS Post-infectious acute cerebellar ataxia (COVID-19–associated cerebellitis), causing predominantly cerebellar dysfunction despite normal MRI and CSF. -> "
  ],
  "trace": [
@@ -100,14 +100,14 @@
     "Have you experienced a recent fall, head injury, or stroke-like episode?"
    ],
    "result": [
+    "unknown",
     "no",
     "no",
-    "no",
-    "yes",
-    "no",
-    "no",
-    "yes",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -148,14 +148,14 @@
     "Do you have a history of autoimmune disease, cancer, or gluten sensitivity?"
    ],
    "result": [
+    "unknown",
+    "unknown",
     "yes",
+    "unknown",
+    "unknown",
     "no",
-    "yes",
-    "yes",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -198,11 +198,11 @@
     "Have you had persistent fever, headache, neck stiffness, or altered awareness since the COVID-19 infection?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

@@ -10,14 +10,14 @@
   "Do you have a history of liver disease?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
   "4": "no",
-  "5": "no",
+  "5": "unknown",
   "6": "no",
-  "7": "no",
-  "8": "no"
+  "7": "unknown",
+  "8": "unknown"
  },
  "n_yes_answers": 0,
  "orders": [
@@ -38,15 +38,15 @@
   "EEG"
  ],
  "results": [
-  "R1 ASK Do you have a history of diabetes?; Have you had any recent trauma to your neck or head?; Do you feel like your right arm is \"not yours\" or feels foreign? -> ['no', 'no', 'no']",
+  "R1 ASK Do you have a history of diabetes?; Have you had any recent trauma to your neck or head?; Do you feel like your right arm is \"not yours\" or feels foreign? -> ['unknown', 'unknown', 'unknown']",
   "R2 ORDER Bedside neurological examination testing for motor strength, sensory loss (pinprick and proprioception), and deep tendon reflexes in all four extremities -> [['limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)']]",
   "R3 ORDER Finger-to-nose testing bilaterally -> [['coordination examination (limb and truncal)']]",
   "R4 ASK Do you have a history of heavy alcohol use? -> ['no']",
   "R5 ORDER MRI of the brain -> [['brain MRI', 'MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences']]",
-  "R6 ASK Have you had a heart attack or cardiac arrest in the past? -> ['no']",
+  "R6 ASK Have you had a heart attack or cardiac arrest in the past? -> ['unknown']",
   "R7 ASK Do you have a history of seizures or epilepsy? -> ['no']",
-  "R8 ASK Do you have a history of kidney disease or dialysis? -> ['no']",
-  "R9 ASK Do you have a history of liver disease? -> ['no']",
+  "R8 ASK Do you have a history of kidney disease or dialysis? -> ['unknown']",
+  "R9 ASK Do you have a history of liver disease? -> ['unknown']",
   "R10 ORDER Electroencephalogram -> [['EEG']]",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Corticobasal degeneration -> "
  ],
@@ -60,9 +60,9 @@
     "Do you feel like your right arm is \"not yours\" or feels foreign?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -123,7 +123,7 @@
     "Have you had a heart attack or cardiac arrest in the past?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -143,7 +143,7 @@
     "Do you have a history of kidney disease or dialysis?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -153,7 +153,7 @@
     "Do you have a history of liver disease?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

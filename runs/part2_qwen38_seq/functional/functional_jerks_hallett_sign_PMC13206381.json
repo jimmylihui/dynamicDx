@@ -8,12 +8,12 @@
   "Do you have a history of migraines?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown"
  },
  "n_yes_answers": 0,
  "orders": [
@@ -25,10 +25,10 @@
   "cranial nerve examination"
  ],
  "results": [
-  "R1 ASK Do you have a history of diabetes?; Do you experience numbness or tingling in your feet?; Do you have difficulty walking or feel unsteady on your feet? -> ['no', 'no', 'no']",
-  "R2 ASK Do you have a history of heavy alcohol use?; Have you had any recent viral illnesses or infections? -> ['no', 'no']",
+  "R1 ASK Do you have a history of diabetes?; Do you experience numbness or tingling in your feet?; Do you have difficulty walking or feel unsteady on your feet? -> ['unknown', 'unknown', 'unknown']",
+  "R2 ASK Do you have a history of heavy alcohol use?; Have you had any recent viral illnesses or infections? -> ['unknown', 'unknown']",
   "R3 ORDER Bedside neurological examination (specifically testing deep tendon reflexes) -> [['deep tendon reflexes and plantar responses']]",
-  "R4 ASK Do you have a history of migraines? -> ['no']",
+  "R4 ASK Do you have a history of migraines? -> ['unknown']",
   "R5 ORDER Bedside neurological examination (specifically testing extraocular movements and pupillary response) -> [['cranial nerve examination']]",
   "R6 DIAGNOSIS Normal neurological examination -> "
  ],
@@ -42,9 +42,9 @@
     "Do you have difficulty walking or feel unsteady on your feet?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -55,8 +55,8 @@
     "Have you had any recent viral illnesses or infections?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -78,7 +78,7 @@
     "Do you have a history of migraines?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

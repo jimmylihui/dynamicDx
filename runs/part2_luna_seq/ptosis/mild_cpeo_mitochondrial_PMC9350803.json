@@ -14,20 +14,20 @@
   "Do you have a history of autoimmune thyroid disease or other autoimmune disease?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "yes",
-  "5": "no",
-  "6": "no",
-  "7": "yes",
-  "8": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
   "9": "yes",
-  "10": "no",
-  "11": "no",
-  "12": "no"
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 1,
  "orders": [
   "Perform a complete bedside neurological examination, including visual acuity, pupils, ocular alignment and motility, smooth pursuit, saccades, gaze-evoked nystagmus, head-impulse test, alternate cover test, limb coordination, gait, strength, sensation, and reflexes.",
   "Obtain urgent MRI of the brain with diffusion-weighted imaging and MR angiography of the head and neck.",
@@ -54,9 +54,9 @@
   "single-fibre EMG"
  ],
  "results": [
-  "R1 ASK Do you feel that your vision is bouncing or moving when you look at objects?; Do you have dizziness or a spinning sensation?; Did these abnormal eye movements begin suddenly?; Do you have weakness, numbness, difficulty speaking, or trouble walking?; Have you recently taken sedatives, anticonvulsants, recreational drugs, or other new medications?; Do the eye movements persist when you close one eye? -> ['no', 'no', 'no', 'yes', 'no', 'no']",
+  "R1 ASK Do you feel that your vision is bouncing or moving when you look at objects?; Do you have dizziness or a spinning sensation?; Did these abnormal eye movements begin suddenly?; Do you have weakness, numbness, difficulty speaking, or trouble walking?; Have you recently taken sedatives, anticonvulsants, recreational drugs, or other new medications?; Do the eye movements persist when you close one eye? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R2 ORDER Perform a complete bedside neurological examination, including visual acuity, pupils, ocular alignment and motility, smooth pursuit, saccades, gaze-evoked nystagmus, head-impulse test, alternate cover test, limb coordination, gait, strength, sensation, and reflexes.; Obtain urgent MRI of the brain with diffusion-weighted imaging and MR angiography of the head and neck. -> [['cranial nerve examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'ocular motility examination', 'pupil examination (size, light reaction)', 'cover test / ocular alignment', 'visual acuity and colour vision'], ['MRI diffusion-weighted sequences', 'CT / MR angiography (circle of Willis)']]",
-  "R3 ASK Do your drooping eyelids and double vision fluctuate during the day?; Do they worsen after prolonged reading or sustained upward gaze and improve after rest?; Do you have double vision?; Do you have difficulty swallowing, speaking, chewing, or breathing?; Have you had similar episodes previously?; Do you have a history of autoimmune thyroid disease or other autoimmune disease? -> ['yes', 'no', 'yes', 'no', 'no', 'no']",
+  "R3 ASK Do your drooping eyelids and double vision fluctuate during the day?; Do they worsen after prolonged reading or sustained upward gaze and improve after rest?; Do you have double vision?; Do you have difficulty swallowing, speaking, chewing, or breathing?; Have you had similar episodes previously?; Do you have a history of autoimmune thyroid disease or other autoimmune disease? -> ['unknown', 'unknown', 'yes', 'unknown', 'unknown', 'unknown']",
   "R4 ORDER Perform an ice-pack test over each closed eyelid for 2 minutes, documenting the margin-reflex distance before and after.; Test serum acetylcholine-receptor (AChR) antibodies, including binding, blocking, and modulating antibodies.; Perform single-fiber electromyography of the frontalis or orbicularis oculi. -> [['ice-pack test', 'lid position and measurement (MRD1 both sides)'], ['acetylcholine receptor, MuSK and LRP4 antibodies', 'anti-acetylcholine receptor antibodies'], ['single-fibre EMG']]",
   "R5 DIAGNOSIS Autoimmune acetylcholine-receptor antibody–positive ocular myasthenia gravis, currently without clinical generalization. -> "
  ],
@@ -73,12 +73,12 @@
     "Do the eye movements persist when you close one eye?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -118,12 +118,12 @@
     "Do you have a history of autoimmune thyroid disease or other autoimmune disease?"
    ],
    "result": [
+    "unknown",
+    "unknown",
     "yes",
-    "no",
-    "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

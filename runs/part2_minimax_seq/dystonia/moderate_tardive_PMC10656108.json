@@ -33,39 +33,39 @@
   "Do the movements disappear during sleep?"
  ],
  "answers": {
-  "1": "yes",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "yes",
-  "7": "no",
-  "8": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
   "9": "yes",
   "10": "no",
   "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
   "16": "yes",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
   "22": "yes",
-  "23": "no",
-  "24": "no",
-  "25": "no",
-  "26": "no",
-  "27": "no",
-  "28": "no",
-  "29": "no",
-  "30": "no",
-  "31": "no"
+  "23": "unknown",
+  "24": "unknown",
+  "25": "unknown",
+  "26": "unknown",
+  "27": "unknown",
+  "28": "unknown",
+  "29": "unknown",
+  "30": "unknown",
+  "31": "unknown"
  },
- "n_yes_answers": 5,
+ "n_yes_answers": 3,
  "orders": [
   "Serum ceruloplasmin level",
   "Serum copper level",
@@ -96,14 +96,14 @@
   "TSH / free T4"
  ],
  "results": [
-  "R1 ASK Are the facial movements you are demonstrating involuntary?; Do these movements occur on one side of your face only?; Do you have any difficulty with speaking or eating?; Have you noticed these movements getting worse over time?; Do you experience any twitching around your eye? -> ['yes', 'no', 'no', 'no', 'no']",
-  "R2 ASK Are you currently taking any medications, especially for nausea, psychosis, or Parkinson's disease?; Have you been exposed to antipsychotic medications in the past?; Do you have a history of stroke or brain injury?; Do the movements involve your tongue or jaw?; Do you have any history of Huntington's disease in your family? -> ['yes', 'no', 'no', 'yes', 'no']",
-  "R3 ASK Are you currently taking metoclopramide (Reglan) for nausea or reflux?; Are you taking prochlorperazine (Compazine) for nausea?; Are you taking any medication for vertigo or dizziness? -> ['no', 'no', 'no']",
-  "R4 ASK Are you taking any medication for depression or anxiety?; Are you taking any anti-seizure or mood-stabilizing medications?; Have you been on the same medication for more than 3 months?; Did these movements start after starting a new medication?; Have you ever been on long-term levodopa therapy? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R1 ASK Are the facial movements you are demonstrating involuntary?; Do these movements occur on one side of your face only?; Do you have any difficulty with speaking or eating?; Have you noticed these movements getting worse over time?; Do you experience any twitching around your eye? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Are you currently taking any medications, especially for nausea, psychosis, or Parkinson's disease?; Have you been exposed to antipsychotic medications in the past?; Do you have a history of stroke or brain injury?; Do the movements involve your tongue or jaw?; Do you have any history of Huntington's disease in your family? -> ['unknown', 'unknown', 'unknown', 'yes', 'no']",
+  "R3 ASK Are you currently taking metoclopramide (Reglan) for nausea or reflux?; Are you taking prochlorperazine (Compazine) for nausea?; Are you taking any medication for vertigo or dizziness? -> ['no', 'unknown', 'unknown']",
+  "R4 ASK Are you taking any medication for depression or anxiety?; Are you taking any anti-seizure or mood-stabilizing medications?; Have you been on the same medication for more than 3 months?; Did these movements start after starting a new medication?; Have you ever been on long-term levodopa therapy? -> ['unknown', 'unknown', 'yes', 'unknown', 'unknown']",
   "R5 ORDER Serum ceruloplasmin level; Serum copper level; 24-hour urinary copper excretion; Liver function tests; MRI brain with focus on basal ganglia -> [['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['24-hour urinary copper', 'copper / caeruloplasmin / 24 h urinary copper'], ['liver function'], ['brain MRI']]",
-  "R6 ASK Have you had any involuntary writhing or twisting movements of your trunk or limbs?; Do you have any history of rheumatic fever or Sydenham's chorea?; Have you recently had a sore throat or fever?; Do you have any history of autoimmune disease, such as lupus?; Have you had any recent infections? -> ['no', 'no', 'no', 'yes', 'no']",
-  "R7 ASK Do you have systemic lupus erythematosus (SLE)?; Are you currently on corticosteroids for your autoimmune condition?; Have you had any abnormal blood clotting events or miscarriages? -> ['no', 'no', 'no']",
-  "R8 ASK Do you have a history of hyperthyroidism or thyroid disease?; Have you had any recent dental work or jaw trauma?; Do you experience these movements more when you are anxious or stressed?; Can you temporarily suppress the movements voluntarily?; Do the movements disappear during sleep? -> ['no', 'no', 'no', 'no', 'no']",
+  "R6 ASK Have you had any involuntary writhing or twisting movements of your trunk or limbs?; Do you have any history of rheumatic fever or Sydenham's chorea?; Have you recently had a sore throat or fever?; Do you have any history of autoimmune disease, such as lupus?; Have you had any recent infections? -> ['unknown', 'unknown', 'unknown', 'yes', 'unknown']",
+  "R7 ASK Do you have systemic lupus erythematosus (SLE)?; Are you currently on corticosteroids for your autoimmune condition?; Have you had any abnormal blood clotting events or miscarriages? -> ['unknown', 'unknown', 'unknown']",
+  "R8 ASK Do you have a history of hyperthyroidism or thyroid disease?; Have you had any recent dental work or jaw trauma?; Do you experience these movements more when you are anxious or stressed?; Can you temporarily suppress the movements voluntarily?; Do the movements disappear during sleep? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R9 ORDER Serum electrolytes (sodium, potassium, calcium, magnesium); Blood glucose; Antinuclear antibody (ANA) test; Anti-streptolysin O (ASO) titer; Thyroid function tests (TSH, free T4) -> [['serum electrolytes, urea and creatinine', 'serum calcium, magnesium and phosphate', 'calcium, phosphate and parathyroid hormone'], ['blood glucose and HbA1c'], ['antinuclear antibodies and anti-dsDNA'], [], ['TSH / free T4']]",
   "R10 ORDER Anti-streptolysin O (ASO) titer; Anti-basal ganglia antibodies; Throat swab for group A streptococcus; Electroencephalogram (EEG) -> [[], [], [], []]",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Orofacial dyskinesia of unclear etiology, likely tardive dyskinesia from undisclosed prior dopamine receptor blocker exposure, though Huntington's disease and Sydenham's chorea remain unexc -> "
@@ -120,11 +120,11 @@
     "Do you experience any twitching around your eye?"
    ],
    "result": [
-    "yes",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -138,9 +138,9 @@
     "Do you have any history of Huntington's disease in your family?"
    ],
    "result": [
-    "yes",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
     "yes",
     "no"
    ]
@@ -155,8 +155,8 @@
    ],
    "result": [
     "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -170,11 +170,11 @@
     "Have you ever been on long-term levodopa therapy?"
    ],
    "result": [
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -219,11 +219,11 @@
     "Have you had any recent infections?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -235,9 +235,9 @@
     "Have you had any abnormal blood clotting events or miscarriages?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -251,11 +251,11 @@
     "Do the movements disappear during sleep?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

@@ -37,43 +37,43 @@
   "Do you have any history of gastrointestinal disease or malabsorption?"
  ],
  "answers": {
-  "1": "no",
+  "1": "unknown",
   "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "yes",
-  "7": "no",
-  "8": "yes",
-  "9": "no",
-  "10": "no",
-  "11": "yes",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "yes",
-  "18": "no",
-  "19": "no",
-  "20": "no",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
   "21": "no",
   "22": "yes",
-  "23": "no",
-  "24": "no",
-  "25": "no",
-  "26": "no",
-  "27": "no",
-  "28": "no",
-  "29": "no",
-  "30": "no",
-  "31": "no",
-  "32": "no",
-  "33": "no",
-  "34": "no",
-  "35": "no"
+  "23": "unknown",
+  "24": "unknown",
+  "25": "unknown",
+  "26": "unknown",
+  "27": "unknown",
+  "28": "unknown",
+  "29": "unknown",
+  "30": "unknown",
+  "31": "unknown",
+  "32": "unknown",
+  "33": "unknown",
+  "34": "unknown",
+  "35": "unknown"
  },
- "n_yes_answers": 5,
+ "n_yes_answers": 1,
  "orders": [
   "Perform a bedside examination of the tremor (assess frequency, amplitude, and triggers)",
   "Check vital signs including blood pressure and heart rate",
@@ -117,15 +117,15 @@
   "abdominal ultrasound / liver imaging"
  ],
  "results": [
-  "R1 ASK Do you have a history of liver disease or cirrhosis?; Have you noticed any yellowing of your skin or eyes recently?; Do you have any history of kidney disease?; Have you been experiencing confusion or difficulty thinking clearly?; Do you have a history of lung disease or shortness of breath? -> ['no', 'no', 'no', 'no', 'no']",
-  "R2 ASK When did you first notice the tremor in your hands?; Do you have a family history of tremor or Parkinson's disease?; Are you currently taking any medications?; Do you drink alcohol, and if so, how much?; Have you noticed any stiffness or slowness in your movements? -> ['yes', 'no', 'yes', 'no', 'no']",
-  "R3 ASK What medications are you currently taking?; Does the tremor worsen when you are stressed or anxious?; Does the tremor improve when you drink alcohol?; Have you noticed the tremor is worse on one side of your body?; Do you have any difficulty with your balance or have you fallen recently? -> ['yes', 'no', 'no', 'no', 'no']",
-  "R4 ASK Can you tell me the names of the medications you are taking?; Does the tremor occur at rest or when you are moving your hands?; Have you noticed any changes in your handwriting?; Do you have any difficulty speaking or swallowing?; Have you experienced any numbness or tingling in your hands? -> ['no', 'yes', 'no', 'no', 'no']",
-  "R5 ASK Does the tremor occur when your hands are at rest?; Does the tremor occur when you are trying to hold a position, like holding your arms out?; Does the tremor occur when you are performing a specific task, like writing or pouring water?; Have you noticed any head tremor or voice changes?; Does caffeine or stimulant intake affect your tremor? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R1 ASK Do you have a history of liver disease or cirrhosis?; Have you noticed any yellowing of your skin or eyes recently?; Do you have any history of kidney disease?; Have you been experiencing confusion or difficulty thinking clearly?; Do you have a history of lung disease or shortness of breath? -> ['unknown', 'no', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK When did you first notice the tremor in your hands?; Do you have a family history of tremor or Parkinson's disease?; Are you currently taking any medications?; Do you drink alcohol, and if so, how much?; Have you noticed any stiffness or slowness in your movements? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK What medications are you currently taking?; Does the tremor worsen when you are stressed or anxious?; Does the tremor improve when you drink alcohol?; Have you noticed the tremor is worse on one side of your body?; Do you have any difficulty with your balance or have you fallen recently? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R4 ASK Can you tell me the names of the medications you are taking?; Does the tremor occur at rest or when you are moving your hands?; Have you noticed any changes in your handwriting?; Do you have any difficulty speaking or swallowing?; Have you experienced any numbness or tingling in your hands? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R5 ASK Does the tremor occur when your hands are at rest?; Does the tremor occur when you are trying to hold a position, like holding your arms out?; Does the tremor occur when you are performing a specific task, like writing or pouring water?; Have you noticed any head tremor or voice changes?; Does caffeine or stimulant intake affect your tremor? -> ['no', 'yes', 'unknown', 'unknown', 'unknown']",
   "R6 ORDER Perform a bedside examination of the tremor (assess frequency, amplitude, and triggers); Check vital signs including blood pressure and heart rate; Perform a basic neurological examination (cranial nerves, motor, sensory, coordination); Order thyroid function tests (TSH, free T4); Order serum electrolytes and glucose levels -> [['tremor at rest', 'postural tremor (arms outstretched)', 'kinetic / intention tremor (finger-nose)', 'tremor frequency estimate'], [], ['cranial nerve examination', 'muscle tone examination', 'limb strength (MRC) examination', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)'], ['TSH / free T4'], ['serum electrolytes, urea and creatinine', 'blood glucose and HbA1c']]",
-  "R7 ASK Have you noticed any changes in your sense of smell?; Do you have any sleep disturbances, such as acting out your dreams?; Have you experienced any constipation or changes in bowel habits?; Do you have any history of depression or anxiety?; Have you noticed any changes in your facial expressions or blinking? -> ['no', 'no', 'no', 'no', 'no']",
+  "R7 ASK Have you noticed any changes in your sense of smell?; Do you have any sleep disturbances, such as acting out your dreams?; Have you experienced any constipation or changes in bowel habits?; Do you have any history of depression or anxiety?; Have you noticed any changes in your facial expressions or blinking? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R8 ORDER Order MRI brain with focus on basal ganglia and cerebellum; Order serum ceruloplasmin and 24-hour urinary copper; Order serum ammonia level; Order autoimmune panel (ANA, anti-dsDNA, rheumatoid factor); Order serum lactate and pyruvate levels -> [['brain MRI'], ['serum copper and caeruloplasmin', '24-hour urinary copper', 'copper / caeruloplasmin / 24 h urinary copper'], ['ammonia'], ['antinuclear antibodies and anti-dsDNA'], []]",
-  "R9 ASK Do you have any history of liver disease or portal hypertension?; Have you ever had a TIPS procedure or liver shunt?; Do you have any history of hepatitis or liver infections?; Have you been exposed to any manganese-containing substances or worked in mining/welding?; Do you have any history of gastrointestinal disease or malabsorption? -> ['no', 'no', 'no', 'no', 'no']",
+  "R9 ASK Do you have any history of liver disease or portal hypertension?; Have you ever had a TIPS procedure or liver shunt?; Do you have any history of hepatitis or liver infections?; Have you been exposed to any manganese-containing substances or worked in mining/welding?; Do you have any history of gastrointestinal disease or malabsorption? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R10 ORDER Order liver function tests (AST, ALT, bilirubin, albumin, INR); Order serum manganese level; Order abdominal ultrasound to assess liver and portal vein; Order serum alpha-fetoprotein; Order serum ammonia level repeat -> [['liver function tests', 'liver function and albumin/globulin', 'prothrombin time'], ['whole-blood manganese'], ['abdominal ultrasound / liver imaging'], [], ['ammonia']]",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Hepatic parkinsonism due to manganese deposition in the basal ganglia secondary to cryptogenic cirrhosis with portosystemic shunting -> "
  ],
@@ -141,11 +141,11 @@
     "Do you have a history of lung disease or shortness of breath?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -159,11 +159,11 @@
     "Have you noticed any stiffness or slowness in your movements?"
    ],
    "result": [
-    "yes",
-    "no",
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -177,11 +177,11 @@
     "Do you have any difficulty with your balance or have you fallen recently?"
    ],
    "result": [
-    "yes",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -195,11 +195,11 @@
     "Have you experienced any numbness or tingling in your hands?"
    ],
    "result": [
-    "no",
-    "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -215,9 +215,9 @@
    "result": [
     "no",
     "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -265,11 +265,11 @@
     "Have you noticed any changes in your facial expressions or blinking?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -311,11 +311,11 @@
     "Do you have any history of gastrointestinal disease or malabsorption?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

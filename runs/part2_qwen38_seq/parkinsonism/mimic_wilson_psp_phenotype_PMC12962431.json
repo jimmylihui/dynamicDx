@@ -9,27 +9,27 @@
   "Is the person performing this maneuver a medical student or trainee?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "yes"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown"
  },
- "n_yes_answers": 1,
+ "n_yes_answers": 0,
  "orders": [
   "Ask the person performing the maneuver to explain what they are doing and why (history of present illness)."
  ],
  "served": [],
  "results": [
-  "R1 ASK Is the person performing the eye examination a doctor or ophthalmologist?; Are you currently experiencing any pain in your eyes? -> ['no', 'no']",
+  "R1 ASK Is the person performing the eye examination a doctor or ophthalmologist?; Are you currently experiencing any pain in your eyes? -> ['unknown', 'unknown']",
   "R2 ORDER Ask the person performing the maneuver to explain what they are doing and why (history of present illness). -> [[]]",
-  "R3 ASK Is the person performing this maneuver a traditional healer or faith healer? -> ['no']",
-  "R4 ASK Is the person performing this maneuver a magician or illusionist? -> ['no']",
-  "R5 ASK Is the person performing this maneuver a relative or friend of yours? -> ['no']",
-  "R6 ASK Is the person performing this maneuver a stranger? -> ['no']",
-  "R7 ASK Is the person performing this maneuver a medical student or trainee? -> ['yes']",
+  "R3 ASK Is the person performing this maneuver a traditional healer or faith healer? -> ['unknown']",
+  "R4 ASK Is the person performing this maneuver a magician or illusionist? -> ['unknown']",
+  "R5 ASK Is the person performing this maneuver a relative or friend of yours? -> ['unknown']",
+  "R6 ASK Is the person performing this maneuver a stranger? -> ['unknown']",
+  "R7 ASK Is the person performing this maneuver a medical student or trainee? -> ['unknown']",
   "R8 DIAGNOSIS Medical student performing a physical examination maneuver (likely testing for lid lag or exophthalmos) on a patient with suspected thyroid eye disease (Graves' ophthalmopathy). -> "
  ],
  "trace": [
@@ -41,8 +41,8 @@
     "Are you currently experiencing any pain in your eyes?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -62,7 +62,7 @@
     "Is the person performing this maneuver a traditional healer or faith healer?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -72,7 +72,7 @@
     "Is the person performing this maneuver a magician or illusionist?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -82,7 +82,7 @@
     "Is the person performing this maneuver a relative or friend of yours?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -92,7 +92,7 @@
     "Is the person performing this maneuver a stranger?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -102,7 +102,7 @@
     "Is the person performing this maneuver a medical student or trainee?"
    ],
    "result": [
-    "yes"
+    "unknown"
    ]
   },
   {

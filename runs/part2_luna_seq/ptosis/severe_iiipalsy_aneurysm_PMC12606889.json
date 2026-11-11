@@ -17,23 +17,23 @@
   "Have you had recurrent episodes of blurred vision or eye pain in the right eye?"
  ],
  "answers": {
-  "1": "no",
+  "1": "unknown",
   "2": "no",
-  "3": "no",
+  "3": "unknown",
   "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no"
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "yes",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown"
  },
- "n_yes_answers": 0,
+ "n_yes_answers": 1,
  "orders": [
   "Examine and document pupil size and reactivity in bright and dim illumination, including direct and consensual light responses and the near response.",
   "Perform a slit-lamp examination for iris sphincter damage or pseudoexfoliation.",
@@ -58,10 +58,10 @@
   "limb and neck power"
  ],
  "results": [
-  "R1 ASK Did the unequal pupil size begin suddenly?; Have you had a severe headache or pain around the larger pupil?; Have you noticed double vision or drooping of the eyelid on the side of the larger pupil?; Have you had recent head or eye trauma?; Have you used any eye drops, scopolamine patches, or medications that could have contacted one eye? -> ['no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Did the unequal pupil size begin suddenly?; Have you had a severe headache or pain around the larger pupil?; Have you noticed double vision or drooping of the eyelid on the side of the larger pupil?; Have you had recent head or eye trauma?; Have you used any eye drops, scopolamine patches, or medications that could have contacted one eye? -> ['unknown', 'no', 'unknown', 'no', 'unknown']",
   "R2 ORDER Examine and document pupil size and reactivity in bright and dim illumination, including direct and consensual light responses and the near response.; Perform a slit-lamp examination for iris sphincter damage or pseudoexfoliation.; Perform a dilute pilocarpine (0.125%) eyedrop test in both eyes and reassess pupil sizes and near response after 30 minutes. -> [['pupil examination (size, light reaction)'], [], []]",
-  "R3 ASK Is the right pupil larger than the left in bright light?; Does the right pupil constrict better when focusing on a near target than when exposed to light?; Are the deep tendon reflexes in both legs reduced or absent?; Have you had abnormal sweating, dry mouth, constipation, or problems with heart-rate or blood-pressure regulation?; Have you had syphilis, diabetes, or a recent viral illness? -> ['no', 'no', 'no', 'no', 'no']",
-  "R4 ASK Does the right pupil intermittently enlarge or constrict over minutes, returning toward its usual size between episodes?; Do these episodes occur with headache or a personal history of migraine?; During an episode, does the right pupil become irregular or develop a sectoral “tadpole” shape?; Has the right pupil ever been documented to constrict to dilute pilocarpine?; Have you had recurrent episodes of blurred vision or eye pain in the right eye? -> ['no', 'no', 'no', 'no', 'no']",
+  "R3 ASK Is the right pupil larger than the left in bright light?; Does the right pupil constrict better when focusing on a near target than when exposed to light?; Are the deep tendon reflexes in both legs reduced or absent?; Have you had abnormal sweating, dry mouth, constipation, or problems with heart-rate or blood-pressure regulation?; Have you had syphilis, diabetes, or a recent viral illness? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R4 ASK Does the right pupil intermittently enlarge or constrict over minutes, returning toward its usual size between episodes?; Do these episodes occur with headache or a personal history of migraine?; During an episode, does the right pupil become irregular or develop a sectoral “tadpole” shape?; Has the right pupil ever been documented to constrict to dilute pilocarpine?; Have you had recurrent episodes of blurred vision or eye pain in the right eye? -> ['yes', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R5 ORDER Perform a complete ocular-motility and neurologic examination, specifically assessing for ptosis, extraocular-movement limitation, and a relative afferent pupillary defect.; Perform 0.125% dilute pilocarpine testing in both eyes, followed by 1% pilocarpine testing if the dilute test is negative.; Perform  Apraclonidine 0.5% testing in both eyes and reassess for reversal of anisocoria. -> [['cranial nerve examination', 'mental status / cognitive screen', 'muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'posture and pull test', 'fundoscopy', 'lid position and measurement (MRD1 both sides)', 'ocular motility examination', 'pupil examination (size, light reaction)', 'limb and neck power'], ['pupil examination (size, light reaction)'], ['pupil examination (size, light reaction)']]",
   "R6 DIAGNOSIS Right cyclic oculomotor nerve palsy (congenital/long-standing, with aberrant regeneration causing involuntary pupillary spasms), producing right ptosis, exotropia, hypotropia, ophthalmoplegia, and mild anisocoria. -> "
  ],
@@ -77,11 +77,11 @@
     "Have you used any eye drops, scopolamine patches, or medications that could have contacted one eye?"
    ],
    "result": [
+    "unknown",
     "no",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -111,11 +111,11 @@
     "Have you had syphilis, diabetes, or a recent viral illness?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -129,11 +129,11 @@
     "Have you had recurrent episodes of blurred vision or eye pain in the right eye?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "yes",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

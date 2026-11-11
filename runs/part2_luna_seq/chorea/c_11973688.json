@@ -29,35 +29,35 @@
   "Have you ever had seizures, a stroke, or a significant head injury?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "yes",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no",
-  "22": "no",
-  "23": "no",
-  "24": "no",
-  "25": "no",
-  "26": "no",
-  "27": "no"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
+  "22": "unknown",
+  "23": "unknown",
+  "24": "unknown",
+  "25": "unknown",
+  "26": "unknown",
+  "27": "unknown"
  },
- "n_yes_answers": 1,
+ "n_yes_answers": 0,
  "orders": [
   "Bedside neurologic examination including observation of the legs at rest, with arms outstretched, and during voluntary foot tapping; assessment of tone, strength, coordination, gait, and deep-tendon reflexes.",
   "Bedside examination for ankle clonus by briskly dorsiflexing each ankle.",
@@ -77,14 +77,14 @@
   "effect of voluntary action and anxiety"
  ],
  "results": [
-  "R1 ASK Do you feel an uncomfortable or irresistible urge to move your legs?; Are these leg symptoms worse when you are sitting or lying still?; Do the symptoms improve temporarily when you move your legs or walk?; Are the symptoms worse in the evening or at night?; Do you have pain, tingling, crawling, or burning sensations in your legs?; Are the movements involuntary rather than something you choose to do?; Do you take medication for nausea, dizziness, depression, or psychosis?; Have these movements started recently? -> ['no', 'no', 'no', 'no', 'no', 'yes', 'no', 'no']",
+  "R1 ASK Do you feel an uncomfortable or irresistible urge to move your legs?; Are these leg symptoms worse when you are sitting or lying still?; Do the symptoms improve temporarily when you move your legs or walk?; Are the symptoms worse in the evening or at night?; Do you have pain, tingling, crawling, or burning sensations in your legs?; Are the movements involuntary rather than something you choose to do?; Do you take medication for nausea, dizziness, depression, or psychosis?; Have these movements started recently? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R2 ORDER Bedside neurologic examination including observation of the legs at rest, with arms outstretched, and during voluntary foot tapping; assessment of tone, strength, coordination, gait, and deep-tendon reflexes.; Bedside examination for ankle clonus by briskly dorsiflexing each ankle.; Ask the patient to briefly suppress the leg movements and then perform a voluntary movement, assessing suppressibility, distractibility, and entrainment. -> [['muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'coordination examination (limb and truncal)', 'gait and coordination'], ['deep tendon reflexes and plantar responses'], ['effect of voluntary action and anxiety']]",
-  "R3 ASK Did these involuntary leg movements begin after a stressful life event, emotional upset, illness, injury, or medical procedure?; Do the movements stop completely when you are asleep?; Can you stop the movements completely when you concentrate on stopping them?; Do the movements change in speed, rhythm, or pattern from moment to moment? -> ['no', 'no', 'no', 'no']",
+  "R3 ASK Did these involuntary leg movements begin after a stressful life event, emotional upset, illness, injury, or medical procedure?; Do the movements stop completely when you are asleep?; Can you stop the movements completely when you concentrate on stopping them?; Do the movements change in speed, rhythm, or pattern from moment to moment? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R4 ORDER Surface EMG and accelerometry of both tibialis anterior and gastrocnemius muscles during rest, distraction, voluntary foot tapping, and attempted suppression, to characterize the movements and assess for tremor, myoclonus, or stereotypy.; Observe the movements during standing and walking, and during contralateral rhythmic foot tapping, assessing for entrainment, variability, and disappearance with gait. -> [[], ['effect of voluntary action and anxiety', 'gait and coordination']]",
   "R5 ORDER Bedside entrainment test: have the patient tap the contralateral hand at progressively paced frequencies while recording whether the leg movement frequency changes, pauses, or becomes entrained.; Bedside distractibility test: have the patient perform serial subtraction and alternating finger movements while observing whether the leg movements diminish, stop, or change.; Surface EMG of both legs during rest and these distraction and entrainment maneuvers. -> [['effect of voluntary action and anxiety'], ['effect of voluntary action and anxiety'], []]",
-  "R6 ASK Do the leg movements consist mainly of repetitive foot tapping or ankle movements rather than a shaking tremor?; Do you also make repetitive movements of your mouth, tongue, face, or fingers?; Have you ever taken antipsychotic medicines or medicines for nausea such as metoclopramide or prochlorperazine for several weeks or longer?; Do the movements become stronger or more frequent when you are emotionally excited or concentrating?; Do the movements occur while you are standing or walking, rather than only while seated? -> ['no', 'no', 'no', 'no', 'no']",
-  "R7 ASK Do you have memory problems or a diagnosis of dementia?; Do the movements occur only when you are seated and relaxed?; Are you aware of the movements while they are happening?; Do you feel an urge or inner need to perform the movements even though you previously denied discomfort in the legs?; Do the movements stop when you stand up or walk? -> ['no', 'no', 'no', 'no', 'no']",
-  "R8 ASK Are the movements sudden, brief jerks of one or both legs?; Are the movements rhythmic, regular shaking of the feet or legs?; Are the movements slow, twisting, or writhing rather than jerking or shaking?; Do the movements occur continuously for most of the time that you are seated?; Have you ever had seizures, a stroke, or a significant head injury? -> ['no', 'no', 'no', 'no', 'no']",
+  "R6 ASK Do the leg movements consist mainly of repetitive foot tapping or ankle movements rather than a shaking tremor?; Do you also make repetitive movements of your mouth, tongue, face, or fingers?; Have you ever taken antipsychotic medicines or medicines for nausea such as metoclopramide or prochlorperazine for several weeks or longer?; Do the movements become stronger or more frequent when you are emotionally excited or concentrating?; Do the movements occur while you are standing or walking, rather than only while seated? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R7 ASK Do you have memory problems or a diagnosis of dementia?; Do the movements occur only when you are seated and relaxed?; Are you aware of the movements while they are happening?; Do you feel an urge or inner need to perform the movements even though you previously denied discomfort in the legs?; Do the movements stop when you stand up or walk? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R8 ASK Are the movements sudden, brief jerks of one or both legs?; Are the movements rhythmic, regular shaking of the feet or legs?; Are the movements slow, twisting, or writhing rather than jerking or shaking?; Do the movements occur continuously for most of the time that you are seated?; Have you ever had seizures, a stroke, or a significant head injury? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R9 DIAGNOSIS Functional (psychogenic) movement disorder causing distractible, involuntary lower-limb movements, without evidence of an underlying structural neurologic disease or medication-induced cause. -> "
  ],
  "trace": [
@@ -102,14 +102,14 @@
     "Have these movements started recently?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -146,10 +146,10 @@
     "Do the movements change in speed, rhythm, or pattern from moment to moment?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -196,11 +196,11 @@
     "Do the movements occur while you are standing or walking, rather than only while seated?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -214,11 +214,11 @@
     "Do the movements stop when you stand up or walk?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -232,11 +232,11 @@
     "Have you ever had seizures, a stroke, or a significant head injury?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

@@ -26,28 +26,28 @@
  "answers": {
   "1": "no",
   "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "yes",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
   "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no",
-  "22": "no"
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
+  "22": "unknown"
  },
- "n_yes_answers": 0,
+ "n_yes_answers": 1,
  "orders": [
   "Bedside neurological examination including manual lower-limb strength testing, tone, deep-tendon reflexes, plantar responses, vibration and pinprick sensation, finger–nose and heel–shin testing, and observation of normal walking, tandem walking, toe walking, heel walking, walking backward, and a squat-to-stand.",
   "Bedside functional gait assessment with distraction and dual-task testing, including walking backward, tandem walking, running, hopping on each leg, tiptoe and heel walking, sudden turns, and the chair-gait test.",
@@ -61,11 +61,11 @@
   "coordination examination (limb and truncal)"
  ],
  "results": [
-  "R1 ASK Did this walking difficulty begin suddenly?; Do you feel weakness in either leg?; Do you have numbness or tingling in either leg?; Do you have back pain radiating into either leg?; Do you have difficulty controlling your bladder or bowels?; Have you ever had a stroke or other neurological illness?; Do you have diabetes?; Is walking easier when you are not being watched? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
-  "R2 ASK Do you have pain in your feet or ankles when you walk?; Do your legs feel stiff or difficult to move?; Do your feet ever involuntarily turn inward or cross over one another?; Do you have shaking or jerking movements in your legs?; Do you feel dizzy or unsteady, as if you might fall?; Have you had any recent injury, infection, or new medication before this problem began?; Does the walking problem vary substantially from one occasion to another?; Can you walk normally when running or walking backward? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Did this walking difficulty begin suddenly?; Do you feel weakness in either leg?; Do you have numbness or tingling in either leg?; Do you have back pain radiating into either leg?; Do you have difficulty controlling your bladder or bowels?; Have you ever had a stroke or other neurological illness?; Do you have diabetes?; Is walking easier when you are not being watched? -> ['no', 'no', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Do you have pain in your feet or ankles when you walk?; Do your legs feel stiff or difficult to move?; Do your feet ever involuntarily turn inward or cross over one another?; Do you have shaking or jerking movements in your legs?; Do you feel dizzy or unsteady, as if you might fall?; Have you had any recent injury, infection, or new medication before this problem began?; Does the walking problem vary substantially from one occasion to another?; Can you walk normally when running or walking backward? -> ['unknown', 'unknown', 'yes', 'unknown', 'unknown', 'unknown', 'no', 'unknown']",
   "R3 ORDER Bedside neurological examination including manual lower-limb strength testing, tone, deep-tendon reflexes, plantar responses, vibration and pinprick sensation, finger–nose and heel–shin testing, and observation of normal walking, tandem walking, toe walking, heel walking, walking backward, and a squat-to-stand. -> [['muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)']]",
   "R4 ORDER Bedside functional gait assessment with distraction and dual-task testing, including walking backward, tandem walking, running, hopping on each leg, tiptoe and heel walking, sudden turns, and the chair-gait test. -> [[]]",
-  "R5 ASK Have you actually fallen because of this walking problem?; Are you afraid of falling when you walk?; Did the walking problem begin during or after a period of major emotional stress?; Do you have significant anxiety or depression?; Can you stand unsupported for 30 seconds without holding onto anything?; Can you rise from a chair without using your arms? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R5 ASK Have you actually fallen because of this walking problem?; Are you afraid of falling when you walk?; Did the walking problem begin during or after a period of major emotional stress?; Do you have significant anxiety or depression?; Can you stand unsupported for 30 seconds without holding onto anything?; Can you rise from a chair without using your arms? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R6 ORDER Bedside examination for functional lower-limb weakness, including Hoover’s sign, hip-abduction sign, and observation of the patient rising from a chair and walking when attention is diverted. -> [['limb strength (MRC) examination']]",
   "R7 DIAGNOSIS Functional neurological symptom disorder presenting as a functional (psychogenic) gait disorder/astasia–abasia, with no evidence of an underlying structural neurological, sensory, or musculoskeletal cause. -> "
  ],
@@ -86,12 +86,12 @@
    "result": [
     "no",
     "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -108,14 +108,14 @@
     "Can you walk normally when running or walking backward?"
    ],
    "result": [
+    "unknown",
+    "unknown",
+    "yes",
+    "unknown",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -156,12 +156,12 @@
     "Can you rise from a chair without using your arms?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

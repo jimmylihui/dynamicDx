@@ -22,28 +22,28 @@
   "Have you been diagnosed with any heart condition or atrial fibrillation?"
  ],
  "answers": {
-  "1": "no",
+  "1": "unknown",
   "2": "no",
   "3": "yes",
-  "4": "no",
-  "5": "no",
+  "4": "unknown",
+  "5": "unknown",
   "6": "yes",
   "7": "yes",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "yes",
-  "14": "yes",
-  "15": "yes",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no"
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown"
  },
- "n_yes_answers": 6,
+ "n_yes_answers": 3,
  "orders": [
   "Visual acuity testing",
   "Pupillary examination for relative afferent pupillary defect",
@@ -75,13 +75,13 @@
   "glucose / HbA1c"
  ],
  "results": [
-  "R1 ASK Did you experience any trauma or injury to your eye recently?; Are you experiencing any pain in your eye?; Have you noticed any change in your vision?; Do you have any bleeding from the eye? -> ['no', 'no', 'yes', 'no']",
-  "R2 ASK Is the change in vision in one eye or both eyes?; Is your vision blurred, or are you seeing double?; Have you noticed any drooping of your eyelid?; Do you have any headache, jaw pain, or scalp tenderness? -> ['no', 'yes', 'yes', 'no']",
+  "R1 ASK Did you experience any trauma or injury to your eye recently?; Are you experiencing any pain in your eye?; Have you noticed any change in your vision?; Do you have any bleeding from the eye? -> ['unknown', 'no', 'yes', 'unknown']",
+  "R2 ASK Is the change in vision in one eye or both eyes?; Is your vision blurred, or are you seeing double?; Have you noticed any drooping of your eyelid?; Do you have any headache, jaw pain, or scalp tenderness? -> ['unknown', 'yes', 'yes', 'unknown']",
   "R3 ORDER Visual acuity testing; Pupillary examination for relative afferent pupillary defect; Extraocular movements assessment; Eyelid examination for ptosis -> [[], ['pupil size and light reaction'], ['nystagmus: direction and whether it changes with gaze', 'smooth pursuit and saccades', 'adduction in horizontal gaze (each eye)', 'abducting nystagmus of the fellow eye', 'vertical gaze and convergence'], ['ptosis / lid position']]",
-  "R4 ASK Do you have any double vision that changes with direction of gaze?; Do you have any weakness in your arms or legs?; Have you had any recent infection or illness before this started?; Do you have any difficulty swallowing or speaking? -> ['no', 'no', 'no', 'no']",
-  "R5 ASK Is the double vision in both eyes (binocular)?; Do the images appear side by side (horizontal) or one on top of the other (vertical)?; Does covering one eye make the double vision go away?; Have you ever been diagnosed with thyroid problems? -> ['yes', 'yes', 'yes', 'no']",
+  "R4 ASK Do you have any double vision that changes with direction of gaze?; Do you have any weakness in your arms or legs?; Have you had any recent infection or illness before this started?; Do you have any difficulty swallowing or speaking? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R5 ASK Is the double vision in both eyes (binocular)?; Do the images appear side by side (horizontal) or one on top of the other (vertical)?; Does covering one eye make the double vision go away?; Have you ever been diagnosed with thyroid problems? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R6 ORDER Forced duction test; Proptosis/exophthalmometry measurement; Thyroid function tests (TSH, free T4, free T3); MRI of the brain and orbits with contrast -> [['forced duction test'], [], ['TSH / free T4'], ['MRI brain with gadolinium', 'MRI sella and orbits']]",
-  "R7 ASK Do you have any history of stroke or mini-stroke (TIA)?; Do you have high blood pressure, diabetes, or high cholesterol?; Do you smoke?; Have you been diagnosed with any heart condition or atrial fibrillation? -> ['no', 'no', 'no', 'no']",
+  "R7 ASK Do you have any history of stroke or mini-stroke (TIA)?; Do you have high blood pressure, diabetes, or high cholesterol?; Do you smoke?; Have you been diagnosed with any heart condition or atrial fibrillation? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R8 ORDER Carotid Doppler ultrasound; Echocardiogram; Lipid panel; HbA1c -> [[], [], ['lipids and vascular risk assessment'], ['blood glucose and HbA1c', 'glucose / HbA1c']]",
   "R9 DIAGNOSIS WEBINO (Wall-Eyed Bilateral Internuclear Ophthalmoplegia) syndrome due to a dorsal paramedian midbrain perforator infarct affecting both medial longitudinal fasciculi, with associated partial ptosis and vertical gaze/convergence impairment, consistent with a small midbrain lacunar stroke. -> "
  ],
@@ -96,10 +96,10 @@
     "Do you have any bleeding from the eye?"
    ],
    "result": [
-    "no",
+    "unknown",
     "no",
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -112,10 +112,10 @@
     "Do you have any headache, jaw pain, or scalp tenderness?"
    ],
    "result": [
-    "no",
+    "unknown",
     "yes",
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -154,10 +154,10 @@
     "Do you have any difficulty swallowing or speaking?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -170,10 +170,10 @@
     "Have you ever been diagnosed with thyroid problems?"
    ],
    "result": [
-    "yes",
-    "yes",
-    "yes",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -209,10 +209,10 @@
     "Have you been diagnosed with any heart condition or atrial fibrillation?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

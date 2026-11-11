@@ -19,25 +19,25 @@
   "Do you have unsteadiness or poor coordination when walking, beyond the weakness and difficulty lifting your feet?"
  ],
  "answers": {
-  "1": "no",
-  "2": "yes",
-  "3": "yes",
-  "4": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
   "5": "yes",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
   "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no"
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 1,
  "orders": [
   "Perform a full bedside neurological examination, documenting strength in proximal and distal muscles of all four limbs, tone, deep-tendon reflexes, plantar responses, gait including heel walking, ocular movements, ptosis, pupils, facial and bulbar function, and fatigability with sustained upgaze and repeated limb movements.",
   "Perform nerve conduction studies and needle EMG, including motor and sensory responses, F-waves, and repetitive nerve stimulation.",
@@ -63,12 +63,12 @@
   "CSF culture and viral PCR"
  ],
  "results": [
-  "R1 ASK Did the weakness in your legs begin gradually over several weeks or months?; Is the weakness present in both legs?; Do you have difficulty lifting the front part of either foot while walking?; Do you have weakness in your hands or arms?; Have you noticed drooping of either eyelid or double vision?; Do you have numbness or tingling in your feet?; Do you have back pain radiating into either leg?; Have you had urinary or bowel problems? -> ['no', 'yes', 'yes', 'no', 'yes', 'no', 'no', 'no']",
-  "R2 ASK Do your drooping eyelid or double vision worsen when you are tired and improve after rest?; Does your leg weakness worsen with repeated walking or improve after rest?; Do you have difficulty swallowing, chewing, or speaking?; Do you have shortness of breath or difficulty taking a deep breath?; Have you had dry mouth, constipation, or unusually large or poorly reactive pupils?; Have you recently eaten home-canned food or other improperly preserved food?; Have you had diarrhea or a respiratory infection in the past month?; Have you recently found or removed a tick from your body? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Did the weakness in your legs begin gradually over several weeks or months?; Is the weakness present in both legs?; Do you have difficulty lifting the front part of either foot while walking?; Do you have weakness in your hands or arms?; Have you noticed drooping of either eyelid or double vision?; Do you have numbness or tingling in your feet?; Do you have back pain radiating into either leg?; Have you had urinary or bowel problems? -> ['unknown', 'unknown', 'unknown', 'unknown', 'yes', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Do your drooping eyelid or double vision worsen when you are tired and improve after rest?; Does your leg weakness worsen with repeated walking or improve after rest?; Do you have difficulty swallowing, chewing, or speaking?; Do you have shortness of breath or difficulty taking a deep breath?; Have you had dry mouth, constipation, or unusually large or poorly reactive pupils?; Have you recently eaten home-canned food or other improperly preserved food?; Have you had diarrhea or a respiratory infection in the past month?; Have you recently found or removed a tick from your body? -> ['unknown', 'no', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R3 ORDER Perform a full bedside neurological examination, documenting strength in proximal and distal muscles of all four limbs, tone, deep-tendon reflexes, plantar responses, gait including heel walking, ocular movements, ptosis, pupils, facial and bulbar function, and fatigability with sustained upgaze and repeated limb movements. -> [['cranial nerve examination', 'muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sustained upgaze fatigability test', 'ocular motility examination', 'pupil examination (size, light reaction)']]",
   "R4 ORDER Perform nerve conduction studies and needle EMG, including motor and sensory responses, F-waves, and repetitive nerve stimulation.; Perform lumbar puncture for cerebrospinal-fluid cell count, protein, glucose, and microbiology.; Test serum for anti-GQ1b and anti-GT1a IgG antibodies. -> [['nerve conduction studies', 'repetitive nerve stimulation', 'needle electromyography'], ['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF culture and viral PCR'], []]",
   "R5 ORDER Test serum for anti-GQ1b IgG and anti-GT1a IgG antibodies. -> [[]]",
-  "R6 ASK Do you have unsteadiness or poor coordination when walking, beyond the weakness and difficulty lifting your feet? -> ['no']",
+  "R6 ASK Do you have unsteadiness or poor coordination when walking, beyond the weakness and difficulty lifting your feet? -> ['unknown']",
   "R7 DIAGNOSIS Acute ophthalmoplegic neuropathy (incomplete Miller–Fisher syndrome), an anti-GQ1b–associated Guillain–Barré syndrome variant causing bilateral abducens palsy and areflexic distal weakness. -> "
  ],
  "trace": [
@@ -86,14 +86,14 @@
     "Have you had urinary or bowel problems?"
    ],
    "result": [
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
     "yes",
-    "yes",
-    "no",
-    "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -110,14 +110,14 @@
     "Have you recently found or removed a tick from your body?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -179,7 +179,7 @@
     "Do you have unsteadiness or poor coordination when walking, beyond the weakness and difficulty lifting your feet?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

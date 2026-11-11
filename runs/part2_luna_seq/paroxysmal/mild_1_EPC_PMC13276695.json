@@ -17,23 +17,23 @@
   "Did the affected arm feel weak or clumsy after the movements stopped?"
  ],
  "answers": {
-  "1": "no",
+  "1": "unknown",
   "2": "yes",
-  "3": "no",
-  "4": "no",
-  "5": "yes",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
   "14": "no",
-  "15": "no"
+  "15": "unknown"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 1,
  "orders": [
   "Perform a detailed neurological examination during the movement, including assessment of tone, strength, reflexes, sensation, coordination, and whether the posture is dystonic or parkinsonian.",
   "Perform surface EMG of the affected and contralateral arm during the movement, with accelerometry, to characterize the muscle activation pattern.",
@@ -69,9 +69,9 @@
   "autoimmune and paraneoplastic antibody panel"
  ],
  "results": [
-  "R1 ASK Did the involuntary movement begin suddenly during the consultation?; Were you fully conscious and able to understand what was happening when it occurred?; Have you experienced similar involuntary movements before?; Do you have a history of seizures or epilepsy?; Did the movement occur only in one arm? -> ['no', 'yes', 'no', 'no', 'yes']",
-  "R2 ASK Could you voluntarily stop the arm movement when asked?; Did the movement stop or change when you were asked to perform a mental task, such as counting backward?; Did you feel an urge or warning sensation immediately before the movement?; Was the movement preceded by pain, tingling, or numbness in that arm?; Did the movement continue when the arm was held or restrained by another person? -> ['no', 'no', 'no', 'no', 'no']",
-  "R3 ASK Was the arm movement rhythmic and repetitive?; Did it consist of brief, shock-like jerks rather than a sustained posture?; Did the movement occur while you were at rest, without attempting to use the arm?; Did the movement stop during sleep?; Did the affected arm feel weak or clumsy after the movements stopped? -> ['no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Did the involuntary movement begin suddenly during the consultation?; Were you fully conscious and able to understand what was happening when it occurred?; Have you experienced similar involuntary movements before?; Do you have a history of seizures or epilepsy?; Did the movement occur only in one arm? -> ['unknown', 'yes', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Could you voluntarily stop the arm movement when asked?; Did the movement stop or change when you were asked to perform a mental task, such as counting backward?; Did you feel an urge or warning sensation immediately before the movement?; Was the movement preceded by pain, tingling, or numbness in that arm?; Did the movement continue when the arm was held or restrained by another person? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK Was the arm movement rhythmic and repetitive?; Did it consist of brief, shock-like jerks rather than a sustained posture?; Did the movement occur while you were at rest, without attempting to use the arm?; Did the movement stop during sleep?; Did the affected arm feel weak or clumsy after the movements stopped? -> ['unknown', 'unknown', 'unknown', 'no', 'unknown']",
   "R4 ORDER Perform a detailed neurological examination during the movement, including assessment of tone, strength, reflexes, sensation, coordination, and whether the posture is dystonic or parkinsonian.; Perform surface EMG of the affected and contralateral arm during the movement, with accelerometry, to characterize the muscle activation pattern.; Obtain a routine EEG with simultaneous video-EEG monitoring while attempting to provoke the movement.; Obtain MRI of the brain with diffusion-weighted imaging and susceptibility-sensitive sequences. -> [['muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'posture and pull test'], [], ['interictal EEG', 'video-EEG monitoring of a typical event', 'provocation testing (the suspected trigger)'], ['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'brain MRI']]",
   "R5 ORDER Perform lumbar puncture for CSF real-time quaking-induced conversion (RT-QuIC) for misfolded prion protein.; Obtain CSF 14-3-3 protein and total tau concentrations.; Obtain CSF cell count, protein, glucose, oligoclonal bands, and infectious PCR testing including HSV-1/2 and VZV.; Obtain serum and CSF autoimmune encephalitis testing, including anti-NMDA receptor, LGI1, CASPR2, GABA-B, AMPA, and GAD65 antibodies. -> [['lumbar puncture / CSF', 'CSF 14-3-3 / RT-QuIC (prion)'], ['lumbar puncture / CSF', 'CSF 14-3-3 / RT-QuIC (prion)'], ['lumbar puncture / CSF', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF culture and viral PCR'], ['lumbar puncture / CSF', 'serum paraneoplastic / neuronal autoantibody panel', 'CSF autoimmune encephalitis panel', 'autoimmune and paraneoplastic antibody panel']]",
   "R6 DIAGNOSIS Sporadic Creutzfeldt–Jakob disease (prion protein misfolding causing rapidly progressive prion encephalopathy), presenting with a unilateral nonepileptic movement disorder. -> "
@@ -88,11 +88,11 @@
     "Did the movement occur only in one arm?"
    ],
    "result": [
-    "no",
+    "unknown",
     "yes",
-    "no",
-    "no",
-    "yes"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -106,11 +106,11 @@
     "Did the movement continue when the arm was held or restrained by another person?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -124,11 +124,11 @@
     "Did the affected arm feel weak or clumsy after the movements stopped?"
    ],
    "result": [
+    "unknown",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {

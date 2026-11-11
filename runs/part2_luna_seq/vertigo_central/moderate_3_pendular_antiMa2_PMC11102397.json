@@ -41,47 +41,47 @@
   "Do you have markedly stretchy skin, unusually flexible joints, or a history of poor wound healing?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
   "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "yes",
-  "10": "no",
-  "11": "yes",
-  "12": "no",
-  "13": "yes",
-  "14": "no",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
   "15": "yes",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "yes",
-  "21": "no",
-  "22": "no",
-  "23": "no",
-  "24": "no",
-  "25": "no",
-  "26": "no",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
+  "22": "unknown",
+  "23": "unknown",
+  "24": "unknown",
+  "25": "unknown",
+  "26": "unknown",
   "27": "yes",
-  "28": "no",
-  "29": "no",
-  "30": "no",
-  "31": "no",
-  "32": "no",
-  "33": "no",
-  "34": "no",
-  "35": "no",
-  "36": "no",
+  "28": "unknown",
+  "29": "unknown",
+  "30": "unknown",
+  "31": "unknown",
+  "32": "unknown",
+  "33": "unknown",
+  "34": "unknown",
+  "35": "unknown",
+  "36": "unknown",
   "37": "yes",
-  "38": "no",
-  "39": "no"
+  "38": "unknown",
+  "39": "unknown"
  },
- "n_yes_answers": 7,
+ "n_yes_answers": 3,
  "orders": [
   "Complete blood count with platelet count and peripheral blood smear",
   "Prothrombin time/INR and activated partial thromboplastin time",
@@ -116,16 +116,16 @@
   "fundoscopy"
  ],
  "results": [
-  "R1 ASK Did this eye swelling and bruising begin after an injury or blow to the face or head?; Do you have eye pain, especially pain when moving the affected eye?; Has your vision in that eye become blurred, doubled, or reduced?; Have you had fever or felt acutely unwell?; Is the affected eye bulging forward or difficult to move?; Are you taking blood thinners or do you have a bleeding disorder?; Did the swelling begin suddenly over minutes to hours?; Have you recently had a sinus infection, dental infection, or skin infection near the eye? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
-  "R2 ASK Have you noticed easy bruising or bleeding elsewhere on your body?; Have you had recurrent nosebleeds, bleeding gums, or unusually heavy menstrual bleeding?; Have you recently started or changed any medication or supplement, including aspirin, ibuprofen, steroids, or herbal products?; Have you had unexplained weight loss, persistent fatigue, night sweats, or bone pain?; Have you noticed swelling of your legs, foamy urine, or shortness of breath?; Have you had recurrent episodes of similar spontaneous bruising around the eyes?; Do you have a history of a blood disorder, liver disease, kidney disease, or cancer?; Have you had severe coughing, vomiting, straining, or repeated sneezing shortly before the bruising appeared? -> ['yes', 'no', 'yes', 'no', 'yes', 'no', 'yes', 'no']",
+  "R1 ASK Did this eye swelling and bruising begin after an injury or blow to the face or head?; Do you have eye pain, especially pain when moving the affected eye?; Has your vision in that eye become blurred, doubled, or reduced?; Have you had fever or felt acutely unwell?; Is the affected eye bulging forward or difficult to move?; Are you taking blood thinners or do you have a bleeding disorder?; Did the swelling begin suddenly over minutes to hours?; Have you recently had a sinus infection, dental infection, or skin infection near the eye? -> ['unknown', 'unknown', 'unknown', 'no', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Have you noticed easy bruising or bleeding elsewhere on your body?; Have you had recurrent nosebleeds, bleeding gums, or unusually heavy menstrual bleeding?; Have you recently started or changed any medication or supplement, including aspirin, ibuprofen, steroids, or herbal products?; Have you had unexplained weight loss, persistent fatigue, night sweats, or bone pain?; Have you noticed swelling of your legs, foamy urine, or shortness of breath?; Have you had recurrent episodes of similar spontaneous bruising around the eyes?; Do you have a history of a blood disorder, liver disease, kidney disease, or cancer?; Have you had severe coughing, vomiting, straining, or repeated sneezing shortly before the bruising appeared? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'yes', 'unknown']",
   "R3 ORDER Complete blood count with platelet count and peripheral blood smear; Prothrombin time/INR and activated partial thromboplastin time; Comprehensive metabolic panel including liver enzymes, creatinine, and serum albumin; Urinalysis with urine protein quantification; Serum and urine protein electrophoresis with immunofixation and serum free light-chain assay; ECG and NT-proBNP level -> [['full blood count and biochemistry'], [], ['serum electrolytes, urea and creatinine', 'liver function tests'], ['urinalysis'], [], []]",
-  "R4 ASK Is your known blood disorder, cancer, or other medical condition multiple myeloma, MGUS, or AL (light-chain) amyloidosis?; Have you ever been diagnosed with a monoclonal protein or abnormal plasma cells?; Have you had heart failure, an enlarged tongue, numbness or tingling in your hands or feet, or unexplained low blood pressure when standing?; Is the newly changed medication a corticosteroid, anticoagulant, antiplatelet drug, or chemotherapy/immunotherapy?; Have you had prolonged bleeding after surgery, dental work, or minor cuts despite a normal platelet count? -> ['no', 'no', 'no', 'yes', 'no']",
-  "R5 ASK Is the newly changed medication an anticoagulant such as warfarin, apixaban, rivaroxaban, dabigatran, or heparin?; Is it an antiplatelet drug such as aspirin, clopidogrel, or ticagrelor?; Is it a corticosteroid taken by mouth or injection rather than a cream or inhaler?; Did the periorbital bruising and increased bruising begin after starting or increasing that medication?; Have you stopped the medication since the bruising began?; Have you had black stools, blood in your urine, vomiting of blood, severe headache, or any other significant bleeding? -> ['no', 'no', 'no', 'no', 'no', 'yes']",
+  "R4 ASK Is your known blood disorder, cancer, or other medical condition multiple myeloma, MGUS, or AL (light-chain) amyloidosis?; Have you ever been diagnosed with a monoclonal protein or abnormal plasma cells?; Have you had heart failure, an enlarged tongue, numbness or tingling in your hands or feet, or unexplained low blood pressure when standing?; Is the newly changed medication a corticosteroid, anticoagulant, antiplatelet drug, or chemotherapy/immunotherapy?; Have you had prolonged bleeding after surgery, dental work, or minor cuts despite a normal platelet count? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R5 ASK Is the newly changed medication an anticoagulant such as warfarin, apixaban, rivaroxaban, dabigatran, or heparin?; Is it an antiplatelet drug such as aspirin, clopidogrel, or ticagrelor?; Is it a corticosteroid taken by mouth or injection rather than a cream or inhaler?; Did the periorbital bruising and increased bruising begin after starting or increasing that medication?; Have you stopped the medication since the bruising began?; Have you had black stools, blood in your urine, vomiting of blood, severe headache, or any other significant bleeding? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'yes']",
   "R6 ORDER Urgent prothrombin time/INR and activated partial thromboplastin time; Fibrinogen and thrombin time; Mixing study on any prolonged PT or aPTT; Factor VIII activity and factor VIII inhibitor (Bethesda assay); von Willebrand factor antigen, von Willebrand factor activity, and factor VIII level; Urgent assessment for active internal bleeding, including fecal occult blood testing and CT head without contrast if the severe headache is present or there is any neurologic symptom -> [[], [], [], [], [], ['CT head (non-contrast)']]",
   "R7 ORDER Repeat PT/INR, aPTT, fibrinogen, and thrombin time; Serum protein electrophoresis and immunofixation; Urine protein electrophoresis and immunofixation; Serum free κ and λ light-chain assay with ratio; Punch biopsy of affected periorbital skin with Congo-red staining and amyloid typing by mass spectrometry -> [[], [], [], [], []]",
-  "R8 ASK Is the newly changed medication an SSRI or SNRI antidepressant?; Is it a nonsteroidal anti-inflammatory drug such as ibuprofen or naproxen?; Is the significant bleeding gastrointestinal bleeding, such as black or bloody stools?; Are the bruises painful before they appear?; Do the bruises tend to occur during periods of emotional stress?; Have coagulation tests ever been abnormal in the past? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R8 ASK Is the newly changed medication an SSRI or SNRI antidepressant?; Is it a nonsteroidal anti-inflammatory drug such as ibuprofen or naproxen?; Is the significant bleeding gastrointestinal bleeding, such as black or bloody stools?; Are the bruises painful before they appear?; Do the bruises tend to occur during periods of emotional stress?; Have coagulation tests ever been abnormal in the past? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R9 ORDER Platelet function analysis (PFA-100/200 closure times) and platelet aggregation studies; Factor XIII activity assay; Serum cortisol level and, if low, ACTH stimulation test; Direct inspection of the mouth, skin, and scalp for additional purpura or mucosal bleeding; Ophthalmic examination including visual acuity, intraocular pressure, slit-lamp examination, and dilated fundus examination -> [[], [], [], ['facial dysmorphism and general examination'], ['fundoscopy']]",
-  "R10 ASK Is the newly changed medication an antihypertensive, especially amlodipine or another calcium-channel blocker?; Is it an anti-seizure medication, antibiotic, or herbal supplement?; Did the significant bleeding consist only of easy skin bruising and the periorbital discoloration?; Have you had any bleeding from the nose, gums, vagina, rectum, urine, or lungs?; Have you had episodes of sudden facial swelling, hives, wheezing, or abdominal pain since starting the medication?; Do you have markedly stretchy skin, unusually flexible joints, or a history of poor wound healing? -> ['no', 'no', 'no', 'yes', 'no', 'no']",
+  "R10 ASK Is the newly changed medication an antihypertensive, especially amlodipine or another calcium-channel blocker?; Is it an anti-seizure medication, antibiotic, or herbal supplement?; Did the significant bleeding consist only of easy skin bruising and the periorbital discoloration?; Have you had any bleeding from the nose, gums, vagina, rectum, urine, or lungs?; Have you had episodes of sudden facial swelling, hives, wheezing, or abdominal pain since starting the medication?; Do you have markedly stretchy skin, unusually flexible joints, or a history of poor wound healing? -> ['unknown', 'unknown', 'unknown', 'yes', 'unknown', 'unknown']",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Acquired von Willebrand syndrome causing a systemic mucocutaneous bleeding disorder with spontaneous bilateral periorbital purpura, most likely medication-associated. -> "
  ],
  "trace": [
@@ -143,14 +143,14 @@
     "Have you recently had a sinus infection, dental infection, or skin infection near the eye?"
    ],
    "result": [
+    "unknown",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -167,14 +167,14 @@
     "Have you had severe coughing, vomiting, straining, or repeated sneezing shortly before the bruising appeared?"
    ],
    "result": [
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
     "yes",
-    "no",
-    "yes",
-    "no",
-    "yes",
-    "no",
-    "yes",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -215,11 +215,11 @@
     "Have you had prolonged bleeding after surgery, dental work, or minor cuts despite a normal platelet count?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "yes",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -234,11 +234,11 @@
     "Have you had black stools, blood in your urine, vomiting of blood, severe headache, or any other significant bleeding?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
     "yes"
    ]
   },
@@ -294,12 +294,12 @@
     "Have coagulation tests ever been abnormal in the past?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -336,12 +336,12 @@
     "Do you have markedly stretchy skin, unusually flexible joints, or a history of poor wound healing?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
     "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {

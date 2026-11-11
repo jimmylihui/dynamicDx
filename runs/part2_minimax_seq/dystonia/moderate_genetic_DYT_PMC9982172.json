@@ -27,33 +27,33 @@
   "Have you experienced any unexplained weight loss or night sweats?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
   "5": "yes",
   "6": "yes",
-  "7": "no",
+  "7": "unknown",
   "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
   "12": "no",
-  "13": "no",
-  "14": "no",
+  "13": "unknown",
+  "14": "unknown",
   "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no",
-  "22": "no",
-  "23": "no",
-  "24": "no",
-  "25": "no"
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "yes",
+  "20": "unknown",
+  "21": "unknown",
+  "22": "unknown",
+  "23": "unknown",
+  "24": "unknown",
+  "25": "unknown"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 3,
  "orders": [
   "Serum ceruloplasmin level and 24-hour urinary copper",
   "MRI brain with focus on basal ganglia",
@@ -69,15 +69,15 @@
   "needle EMG of the affected muscles"
  ],
  "results": [
-  "R1 ASK Are you here today because of tremor or shaking in your hands?; Have you noticed any slowness or stiffness in your movements recently?; Are you currently taking any medications, particularly for psychiatric, stomach, or neurological conditions? -> ['no', 'no', 'no']",
-  "R2 ASK Have you or anyone in your family been diagnosed with a liver or neurological condition?; Have you noticed any changes in your speech or difficulty articulating words?; Have you had any involuntary movements of your face, jaw, or tongue?; Have you had any episodes of confusion, personality changes, or psychiatric symptoms? -> ['no', 'yes', 'yes', 'no']",
-  "R3 ASK Do you have a history of Kayser-Fleischer rings or any eye findings mentioned by a doctor?; Have you ever had liver disease, hepatitis, or abnormal liver function tests?; Have you been tested for Wilson's disease before? -> ['no', 'no', 'no']",
-  "R4 ASK Do you have a history of tetanus, dental infection, or recent injury?; Are you currently on any medications that affect dopamine (such as anti-nausea or antipsychotic drugs)?; Have you had any difficulty opening your mouth or swallowing? -> ['no', 'no', 'no']",
-  "R5 ASK Do you have a history of seizures, stroke, or brain injury?; Have you noticed any weakness on one side of your body?; Have you experienced any sensory changes, numbness, or tingling?; Do you have a history of migraines or severe headaches? -> ['no', 'no', 'no', 'no']",
-  "R6 ASK Does the dystonia worsen with stress or improve with sensory tricks (like touching your chin)?; Have you noticed the involuntary movements spreading to your neck or limbs?; Have you been evaluated by a movement disorder specialist before?; Is there a family history of similar involuntary movements or dystonia? -> ['no', 'no', 'no', 'no']",
+  "R1 ASK Are you here today because of tremor or shaking in your hands?; Have you noticed any slowness or stiffness in your movements recently?; Are you currently taking any medications, particularly for psychiatric, stomach, or neurological conditions? -> ['unknown', 'unknown', 'unknown']",
+  "R2 ASK Have you or anyone in your family been diagnosed with a liver or neurological condition?; Have you noticed any changes in your speech or difficulty articulating words?; Have you had any involuntary movements of your face, jaw, or tongue?; Have you had any episodes of confusion, personality changes, or psychiatric symptoms? -> ['unknown', 'yes', 'yes', 'unknown']",
+  "R3 ASK Do you have a history of Kayser-Fleischer rings or any eye findings mentioned by a doctor?; Have you ever had liver disease, hepatitis, or abnormal liver function tests?; Have you been tested for Wilson's disease before? -> ['no', 'unknown', 'unknown']",
+  "R4 ASK Do you have a history of tetanus, dental infection, or recent injury?; Are you currently on any medications that affect dopamine (such as anti-nausea or antipsychotic drugs)?; Have you had any difficulty opening your mouth or swallowing? -> ['unknown', 'no', 'unknown']",
+  "R5 ASK Do you have a history of seizures, stroke, or brain injury?; Have you noticed any weakness on one side of your body?; Have you experienced any sensory changes, numbness, or tingling?; Do you have a history of migraines or severe headaches? -> ['unknown', 'no', 'unknown', 'unknown']",
+  "R6 ASK Does the dystonia worsen with stress or improve with sensory tricks (like touching your chin)?; Have you noticed the involuntary movements spreading to your neck or limbs?; Have you been evaluated by a movement disorder specialist before?; Is there a family history of similar involuntary movements or dystonia? -> ['unknown', 'yes', 'unknown', 'unknown']",
   "R7 ORDER Serum ceruloplasmin level and 24-hour urinary copper; MRI brain with focus on basal ganglia -> [['serum copper and caeruloplasmin', '24-hour urinary copper', 'copper / caeruloplasmin / 24 h urinary copper'], ['brain MRI']]",
   "R8 ORDER Serum lactate and pyruvate levels; Electromyography (EMG) of the orofacial muscles -> [[], ['needle EMG of the affected muscles']]",
-  "R9 ASK Have you noticed any hearing loss, tinnitus, or vision problems?; Have you had any episodes of vertigo or imbalance?; Do you have any autoimmune conditions, such as lupus or rheumatoid arthritis?; Have you experienced any unexplained weight loss or night sweats? -> ['no', 'no', 'no', 'no']",
+  "R9 ASK Have you noticed any hearing loss, tinnitus, or vision problems?; Have you had any episodes of vertigo or imbalance?; Do you have any autoimmune conditions, such as lupus or rheumatoid arthritis?; Have you experienced any unexplained weight loss or night sweats? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R10 ORDER Trial of levodopa (e.g., 100/25 mg) to assess for dopa-responsive dystonia -> [[]]",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Idiopathic oromandibular dystonia (focal dystonia of unknown etiology) -> "
  ],
@@ -91,9 +91,9 @@
     "Are you currently taking any medications, particularly for psychiatric, stomach, or neurological conditions?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -106,10 +106,10 @@
     "Have you had any episodes of confusion, personality changes, or psychiatric symptoms?"
    ],
    "result": [
-    "no",
+    "unknown",
     "yes",
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -122,8 +122,8 @@
    ],
    "result": [
     "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -135,9 +135,9 @@
     "Have you had any difficulty opening your mouth or swallowing?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -150,10 +150,10 @@
     "Do you have a history of migraines or severe headaches?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -166,10 +166,10 @@
     "Is there a family history of similar involuntary movements or dystonia?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "yes",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -214,10 +214,10 @@
     "Have you experienced any unexplained weight loss or night sweats?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

@@ -6,12 +6,12 @@
   "Have you ever had a stroke or paralysis on the left side of your face?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
+  "1": "unknown",
+  "2": "unknown",
   "3": "yes",
-  "4": "yes"
+  "4": "unknown"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 1,
  "orders": [
   "Palpate the right masseter muscle"
  ],
@@ -19,9 +19,9 @@
   "cranial nerve examination"
  ],
  "results": [
-  "R1 ASK Do you have difficulty opening your mouth?; Have you noticed any swelling in your face or jaw?; Do you experience pain when chewing? -> ['no', 'no', 'yes']",
+  "R1 ASK Do you have difficulty opening your mouth?; Have you noticed any swelling in your face or jaw?; Do you experience pain when chewing? -> ['unknown', 'unknown', 'yes']",
   "R2 ORDER Palpate the right masseter muscle -> [['cranial nerve examination']]",
-  "R3 ASK Have you ever had a stroke or paralysis on the left side of your face? -> ['yes']",
+  "R3 ASK Have you ever had a stroke or paralysis on the left side of your face? -> ['unknown']",
   "R4 DIAGNOSIS Post-paralytic facial synkinesis (sequelae of left-sided facial nerve palsy) -> "
  ],
  "trace": [
@@ -34,8 +34,8 @@
     "Do you experience pain when chewing?"
    ],
    "result": [
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "yes"
    ]
   },
@@ -58,7 +58,7 @@
     "Have you ever had a stroke or paralysis on the left side of your face?"
    ],
    "result": [
-    "yes"
+    "unknown"
    ]
   },
   {

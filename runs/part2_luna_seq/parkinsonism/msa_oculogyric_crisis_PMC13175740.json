@@ -12,18 +12,18 @@
   "Have you had dream-enactment behaviors during sleep?"
  ],
  "answers": {
-  "1": "no",
+  "1": "unknown",
   "2": "no",
-  "3": "yes",
-  "4": "no",
+  "3": "unknown",
+  "4": "unknown",
   "5": "yes",
-  "6": "yes",
+  "6": "unknown",
   "7": "yes",
   "8": "yes",
-  "9": "no",
+  "9": "unknown",
   "10": "yes"
  },
- "n_yes_answers": 6,
+ "n_yes_answers": 4,
  "orders": [
   "Perform a bedside neurologic examination including characterization of the eye movements with fixation removed, assessment of saccades and smooth pursuit, alternate-cover testing, gait, limb coordination, and cranial nerves.",
   "MRI brain with and without gadolinium, including the brainstem and cerebellum."
@@ -37,9 +37,9 @@
   "MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)"
  ],
  "results": [
-  "R1 ASK Do you see double when looking to either side?; Have you had sudden weakness or numbness in your face, arm, or leg?; Have you had difficulty speaking, swallowing, or walking?; Have you recently had a severe headache?; Do your eyes make involuntary jerking or rolling movements even when you are not trying to move them? -> ['no', 'no', 'yes', 'no', 'yes']",
+  "R1 ASK Do you see double when looking to either side?; Have you had sudden weakness or numbness in your face, arm, or leg?; Have you had difficulty speaking, swallowing, or walking?; Have you recently had a severe headache?; Do your eyes make involuntary jerking or rolling movements even when you are not trying to move them? -> ['unknown', 'no', 'unknown', 'unknown', 'yes']",
   "R2 ORDER Perform a bedside neurologic examination including characterization of the eye movements with fixation removed, assessment of saccades and smooth pursuit, alternate-cover testing, gait, limb coordination, and cranial nerves.; MRI brain with and without gadolinium, including the brainstem and cerebellum. -> [['cranial nerve examination', 'coordination examination (limb and truncal)', 'gait observation including turning and doorways', 'smooth pursuit and saccade velocity'], ['MRI brain with gadolinium', 'MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)']]",
-  "R3 ASK Have you had urinary urgency, urinary incontinence, or difficulty emptying your bladder?; Have you had dizziness or fainting when standing up?; Have you developed slowness, stiffness, or a tremor predominantly on one side?; Have you had symptoms for less than three years?; Have you had dream-enactment behaviors during sleep? -> ['yes', 'yes', 'yes', 'no', 'yes']",
+  "R3 ASK Have you had urinary urgency, urinary incontinence, or difficulty emptying your bladder?; Have you had dizziness or fainting when standing up?; Have you developed slowness, stiffness, or a tremor predominantly on one side?; Have you had symptoms for less than three years?; Have you had dream-enactment behaviors during sleep? -> ['unknown', 'yes', 'yes', 'unknown', 'yes']",
   "R4 DIAGNOSIS Multiple system atrophy, parkinsonian type (MSA-P), a sporadic α-synucleinopathy causing neurodegeneration of the striatonigral and autonomic systems. -> "
  ],
  "trace": [
@@ -54,10 +54,10 @@
     "Do your eyes make involuntary jerking or rolling movements even when you are not trying to move them?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "yes",
-    "no",
+    "unknown",
+    "unknown",
     "yes"
    ]
   },
@@ -92,10 +92,10 @@
     "Have you had dream-enactment behaviors during sleep?"
    ],
    "result": [
+    "unknown",
     "yes",
     "yes",
-    "yes",
-    "no",
+    "unknown",
     "yes"
    ]
   },

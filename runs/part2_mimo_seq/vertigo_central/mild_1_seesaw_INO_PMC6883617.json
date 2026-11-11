@@ -44,46 +44,46 @@
  "answers": {
   "1": "no",
   "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
   "6": "yes",
   "7": "no",
-  "8": "no",
-  "9": "no",
+  "8": "unknown",
+  "9": "unknown",
   "10": "yes",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no",
-  "22": "no",
-  "23": "no",
-  "24": "no",
-  "25": "no",
-  "26": "no",
-  "27": "no",
-  "28": "no",
-  "29": "no",
-  "30": "no",
-  "31": "no",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "yes",
+  "21": "unknown",
+  "22": "unknown",
+  "23": "unknown",
+  "24": "unknown",
+  "25": "unknown",
+  "26": "unknown",
+  "27": "unknown",
+  "28": "unknown",
+  "29": "unknown",
+  "30": "unknown",
+  "31": "unknown",
   "32": "no",
-  "33": "no",
-  "34": "no",
+  "33": "unknown",
+  "34": "unknown",
   "35": "yes",
-  "36": "no",
-  "37": "no",
-  "38": "no",
-  "39": "no",
+  "36": "unknown",
+  "37": "unknown",
+  "38": "unknown",
+  "39": "unknown",
   "40": "no"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 4,
  "orders": [
   "Serum RPR (rapid plasma reagin) and treponemal antibody test for syphilis",
   "HIV screening test",
@@ -101,16 +101,16 @@
   "anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)"
  ],
  "results": [
-  "R1 ASK Have you noticed a gradual decrease in your vision in both eyes over a period of months or years?; Do you have any eye pain, redness, or discharge?; Have you ever had any previous eye surgeries or significant eye injuries? -> ['no', 'no', 'no']",
-  "R2 ASK Have you ever been told that your eyes move involuntarily or that you have \"nystagmus\"?; When did you first notice these unusual eye movements - have they been present since childhood?; Do you have any hearing problems or balance/dizziness issues?; Is there any family history of similar eye problems or neurological conditions?; Do these eye movements occur all the time or only when you look in certain directions? -> ['no', 'no', 'yes', 'no', 'no']",
-  "R3 ASK Do you drink alcohol regularly? If so, how much per week?; Have you experienced any confusion, memory problems, or difficulty walking recently?; Have you had any recent nausea, vomiting, or poor eating/appetite?; When exactly did the hearing and balance problems start - weeks, months, or years ago?; Do you have any numbness, tingning, or weakness in your limbs? -> ['no', 'yes', 'no', 'no', 'no']",
+  "R1 ASK Have you noticed a gradual decrease in your vision in both eyes over a period of months or years?; Do you have any eye pain, redness, or discharge?; Have you ever had any previous eye surgeries or significant eye injuries? -> ['no', 'no', 'unknown']",
+  "R2 ASK Have you ever been told that your eyes move involuntarily or that you have \"nystagmus\"?; When did you first notice these unusual eye movements - have they been present since childhood?; Do you have any hearing problems or balance/dizziness issues?; Is there any family history of similar eye problems or neurological conditions?; Do these eye movements occur all the time or only when you look in certain directions? -> ['unknown', 'unknown', 'yes', 'no', 'unknown']",
+  "R3 ASK Do you drink alcohol regularly? If so, how much per week?; Have you experienced any confusion, memory problems, or difficulty walking recently?; Have you had any recent nausea, vomiting, or poor eating/appetite?; When exactly did the hearing and balance problems start - weeks, months, or years ago?; Do you have any numbness, tingning, or weakness in your limbs? -> ['unknown', 'yes', 'unknown', 'unknown', 'unknown']",
   "R4 ORDER Serum RPR (rapid plasma reagin) and treponemal antibody test for syphilis; HIV screening test; Lumbar puncture for cerebrospinal fluid analysis including cell count, protein, glucose, VDRL, and oligoclonal bands; Anti-GQ1b antibody level; Quantitative immunoglobulin levels (IgG, IgA, IgM) -> [['HIV and syphilis serology'], ['HIV and syphilis serology'], ['CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'lumbar puncture / CSF'], ['anti-ganglioside antibodies (GQ1b, GT1a, GM1, GM2)'], []]",
-  "R5 ASK Have you or anyone noticed if your liver or spleen feels enlarged or have you had any abdominal fullness?; Have your eye movements and balance problems been getting progressively worse over time?; Is there any history of similar symptoms in more distant relatives (uncles, aunts, cousins)?; Do you have difficulty with coordinated movements like fine motor tasks? -> ['no', 'no', 'no', 'no']",
-  "R6 ASK How long have you had these symptoms - weeks, months, or years?; Do you have any swallowing difficulties or problems with your speech?; Have you noticed any stiffness, tremor, or difficulty with balance when walking?; Have you experienced any significant weight loss recently?; Do you have any diarrhea, abdominal pain, or joint pain?; Have you noticed any involuntary jerking movements of your face or limbs (myoclonus)? -> ['no', 'no', 'no', 'no', 'no', 'no']",
-  "R7 ASK Would you describe your symptoms as having developed over many years rather than weeks or months?; Can you walk in a straight line without swaying to one side?; Do you have any difficulty with rapid alternating movements of your hands?; Has anyone ever checked your eye movements systematically before, such as during a neurological exam?; Do you notice that your balance is worse in the dark or with your eyes closed? -> ['no', 'no', 'no', 'no', 'no']",
-  "R8 ASK Have you ever noticed any vision problems at night or difficulty seeing in dim light?; Do you have any skin changes, numbness in your hands and feet, or a weakened sense of smell?; Have you noticed any unusual bony bumps or thickening around your tendons, especially on your elbows or Achilles tendon?; Do you have any family members with similar neurological problems, hearing loss, or eye issues? -> ['no', 'no', 'no', 'no']",
-  "R9 ASK Do you take any regular medications, particularly metronidazole (Flagyl) or any antibiotics?; Are you saying that you have NOT noticed any change in your symptoms over time, or that you've had them for many years?; Have you ever been diagnosed with any chronic medical conditions such as diabetes, thyroid problems, or autoimmune diseases?; Have you traveled anywhere unusual or been exposed to any chemicals or toxins? -> ['no', 'no', 'yes', 'no']",
-  "R10 ASK What specific autoimmune condition have you been diagnosed with (for example: lupus, rheumatoid arthritis, multiple sclerosis, Sjögren's syndrome, or another condition)?; Are you currently taking any immunosuppressive medications for this condition (such as steroids, methotrexate, or biologics)?; Have you ever had any previous neurological episodes or been diagnosed with demyelinating disease?; Have you ever been told you have a tumor or cancer of any kind? -> ['no', 'no', 'no', 'no']",
+  "R5 ASK Have you or anyone noticed if your liver or spleen feels enlarged or have you had any abdominal fullness?; Have your eye movements and balance problems been getting progressively worse over time?; Is there any history of similar symptoms in more distant relatives (uncles, aunts, cousins)?; Do you have difficulty with coordinated movements like fine motor tasks? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R6 ASK How long have you had these symptoms - weeks, months, or years?; Do you have any swallowing difficulties or problems with your speech?; Have you noticed any stiffness, tremor, or difficulty with balance when walking?; Have you experienced any significant weight loss recently?; Do you have any diarrhea, abdominal pain, or joint pain?; Have you noticed any involuntary jerking movements of your face or limbs (myoclonus)? -> ['unknown', 'unknown', 'yes', 'unknown', 'unknown', 'unknown']",
+  "R7 ASK Would you describe your symptoms as having developed over many years rather than weeks or months?; Can you walk in a straight line without swaying to one side?; Do you have any difficulty with rapid alternating movements of your hands?; Has anyone ever checked your eye movements systematically before, such as during a neurological exam?; Do you notice that your balance is worse in the dark or with your eyes closed? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R8 ASK Have you ever noticed any vision problems at night or difficulty seeing in dim light?; Do you have any skin changes, numbness in your hands and feet, or a weakened sense of smell?; Have you noticed any unusual bony bumps or thickening around your tendons, especially on your elbows or Achilles tendon?; Do you have any family members with similar neurological problems, hearing loss, or eye issues? -> ['unknown', 'unknown', 'unknown', 'no']",
+  "R9 ASK Do you take any regular medications, particularly metronidazole (Flagyl) or any antibiotics?; Are you saying that you have NOT noticed any change in your symptoms over time, or that you've had them for many years?; Have you ever been diagnosed with any chronic medical conditions such as diabetes, thyroid problems, or autoimmune diseases?; Have you traveled anywhere unusual or been exposed to any chemicals or toxins? -> ['unknown', 'unknown', 'yes', 'unknown']",
+  "R10 ASK What specific autoimmune condition have you been diagnosed with (for example: lupus, rheumatoid arthritis, multiple sclerosis, Sjögren's syndrome, or another condition)?; Are you currently taking any immunosuppressive medications for this condition (such as steroids, methotrexate, or biologics)?; Have you ever had any previous neurological episodes or been diagnosed with demyelinating disease?; Have you ever been told you have a tumor or cancer of any kind? -> ['unknown', 'unknown', 'unknown', 'no']",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Superficial siderosis of the central nervous system, caused by chronic low-grade subarachnoid hemorrhage leading to hemosiderin deposition on the brain surface, cranial nerves (particularly -> "
  ],
  "trace": [
@@ -125,7 +125,7 @@
    "result": [
     "no",
     "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -139,11 +139,11 @@
     "Do these eye movements occur all the time or only when you look in certain directions?"
    ],
    "result": [
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "yes",
     "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -157,11 +157,11 @@
     "Do you have any numbness, tingning, or weakness in your limbs?"
    ],
    "result": [
-    "no",
+    "unknown",
     "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -204,10 +204,10 @@
     "Do you have difficulty with coordinated movements like fine motor tasks?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -222,12 +222,12 @@
     "Have you noticed any involuntary jerking movements of your face or limbs (myoclonus)?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "yes",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -241,11 +241,11 @@
     "Do you notice that your balance is worse in the dark or with your eyes closed?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -258,9 +258,9 @@
     "Do you have any family members with similar neurological problems, hearing loss, or eye issues?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
     "no"
    ]
   },
@@ -274,10 +274,10 @@
     "Have you traveled anywhere unusual or been exposed to any chemicals or toxins?"
    ],
    "result": [
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -290,9 +290,9 @@
     "Have you ever been told you have a tumor or cancer of any kind?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
     "no"
    ]
   },

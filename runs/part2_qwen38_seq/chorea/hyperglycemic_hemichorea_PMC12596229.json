@@ -10,16 +10,16 @@
   "Do you have a history of vitamin B12 deficiency?"
  ],
  "answers": {
-  "1": "yes",
-  "2": "no",
-  "3": "no",
-  "4": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
   "5": "yes",
-  "6": "no",
+  "6": "unknown",
   "7": "no",
-  "8": "no"
+  "8": "unknown"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 1,
  "orders": [
   "Perform a focused neurological examination of the lower limbs, specifically testing ankle jerk reflexes and plantar responses",
   "Perform a bedside examination of the feet, specifically looking for Charcot deformity (rocker-bottom foot)"
@@ -28,13 +28,13 @@
   "deep tendon reflexes and plantar responses"
  ],
  "results": [
-  "R1 ASK Do you have a history of diabetes?; Do you feel numbness or tingling in your feet?; Have you had any foot ulcers or sores recently? -> ['yes', 'no', 'no']",
+  "R1 ASK Do you have a history of diabetes?; Do you feel numbness or tingling in your feet?; Have you had any foot ulcers or sores recently? -> ['unknown', 'unknown', 'unknown']",
   "R2 ORDER Perform a focused neurological examination of the lower limbs, specifically testing ankle jerk reflexes and plantar responses -> [['deep tendon reflexes and plantar responses']]",
-  "R3 ASK Do you have a history of alcohol use? -> ['no']",
+  "R3 ASK Do you have a history of alcohol use? -> ['unknown']",
   "R4 ASK Do you have a history of high blood pressure? -> ['yes']",
-  "R5 ASK Have you ever had a stroke or mini-stroke? -> ['no']",
+  "R5 ASK Have you ever had a stroke or mini-stroke? -> ['unknown']",
   "R6 ASK Do you have a history of thyroid disease? -> ['no']",
-  "R7 ASK Do you have a history of vitamin B12 deficiency? -> ['no']",
+  "R7 ASK Do you have a history of vitamin B12 deficiency? -> ['unknown']",
   "R8 ORDER Perform a bedside examination of the feet, specifically looking for Charcot deformity (rocker-bottom foot) -> [[]]",
   "R9 DIAGNOSIS Diabetic neuropathy -> "
  ],
@@ -48,9 +48,9 @@
     "Have you had any foot ulcers or sores recently?"
    ],
    "result": [
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -72,7 +72,7 @@
     "Do you have a history of alcohol use?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -92,7 +92,7 @@
     "Have you ever had a stroke or mini-stroke?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -112,7 +112,7 @@
     "Do you have a history of vitamin B12 deficiency?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

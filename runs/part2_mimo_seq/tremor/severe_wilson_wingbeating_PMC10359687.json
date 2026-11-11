@@ -12,18 +12,18 @@
   "Have you tried levodopa or any dopamine-related medications previously?"
  ],
  "answers": {
-  "1": "no",
+  "1": "unknown",
   "2": "no",
   "3": "yes",
-  "4": "yes",
-  "5": "yes",
+  "4": "unknown",
+  "5": "unknown",
   "6": "yes",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no"
+  "7": "unknown",
+  "8": "unknown",
+  "9": "yes",
+  "10": "unknown"
  },
- "n_yes_answers": 4,
+ "n_yes_answers": 3,
  "orders": [
   "Levodopa challenge test (administer 200mg levodopa/carbidopa and assess tremor and rigidity before and after)"
  ],
@@ -32,9 +32,9 @@
   "tremor at rest"
  ],
  "results": [
-  "R1 ASK Is there a family history of tremor?; Does the tremor improve after consuming alcohol?; Did the tremor start more than 5 years ago? -> ['no', 'no', 'yes']",
-  "R2 ASK Does the tremor occur when your hands are resting in your lap, or only when you hold them up?; Has any other medication been tried for this tremor in the past?; Do you notice any stiffness or slowness in your movements?; Is the tremor present when you are trying to do precise tasks like writing or eating? -> ['yes', 'yes', 'yes', 'no']",
-  "R3 ASK Have you noticed any difficulty with balance or walking, such as shuffling or freezing?; Has the tremor started on one side of the body and stayed more prominent on that side?; Have you tried levodopa or any dopamine-related medications previously? -> ['no', 'no', 'no']",
+  "R1 ASK Is there a family history of tremor?; Does the tremor improve after consuming alcohol?; Did the tremor start more than 5 years ago? -> ['unknown', 'no', 'yes']",
+  "R2 ASK Does the tremor occur when your hands are resting in your lap, or only when you hold them up?; Has any other medication been tried for this tremor in the past?; Do you notice any stiffness or slowness in your movements?; Is the tremor present when you are trying to do precise tasks like writing or eating? -> ['unknown', 'unknown', 'yes', 'unknown']",
+  "R3 ASK Have you noticed any difficulty with balance or walking, such as shuffling or freezing?; Has the tremor started on one side of the body and stayed more prominent on that side?; Have you tried levodopa or any dopamine-related medications previously? -> ['unknown', 'yes', 'unknown']",
   "R4 ORDER Levodopa challenge test (administer 200mg levodopa/carbidopa and assess tremor and rigidity before and after) -> [['muscle tone examination', 'tremor at rest']]",
   "R5 DIAGNOSIS Parkinson's disease (idiopathic), supported by the triad of resting tremor, rigidity, bradykinesia, and a positive response to levodopa challenge. -> "
  ],
@@ -48,7 +48,7 @@
     "Did the tremor start more than 5 years ago?"
    ],
    "result": [
-    "no",
+    "unknown",
     "no",
     "yes"
    ]
@@ -63,10 +63,10 @@
     "Is the tremor present when you are trying to do precise tasks like writing or eating?"
    ],
    "result": [
+    "unknown",
+    "unknown",
     "yes",
-    "yes",
-    "yes",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -78,9 +78,9 @@
     "Have you tried levodopa or any dopamine-related medications previously?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "yes",
+    "unknown"
    ]
   },
   {

@@ -6,12 +6,12 @@
   "Do you have a history of diabetes?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no"
+  "1": "unknown",
+  "2": "yes",
+  "3": "unknown",
+  "4": "unknown"
  },
- "n_yes_answers": 0,
+ "n_yes_answers": 1,
  "orders": [
   "Measure intraocular pressure",
   "Orbital CT",
@@ -22,11 +22,11 @@
   "repetitive nerve stimulation"
  ],
  "results": [
-  "R1 ASK Did you recently have surgery on your nose?; Are you experiencing double vision? -> ['no', 'no']",
+  "R1 ASK Did you recently have surgery on your nose?; Are you experiencing double vision? -> ['unknown', 'yes']",
   "R2 ORDER Measure intraocular pressure -> [[]]",
-  "R3 ASK Do you have a history of an overactive thyroid gland? -> ['no']",
+  "R3 ASK Do you have a history of an overactive thyroid gland? -> ['unknown']",
   "R4 ORDER Orbital CT -> [['CT / MR angiography (posterior circulation)']]",
-  "R5 ASK Do you have a history of diabetes? -> ['no']",
+  "R5 ASK Do you have a history of diabetes? -> ['unknown']",
   "R6 ORDER Edrophonium test -> [['repetitive nerve stimulation']]",
   "R7 DIAGNOSIS Functional (psychogenic) gaze palsy -> "
  ],
@@ -39,8 +39,8 @@
     "Are you experiencing double vision?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "yes"
    ]
   },
   {
@@ -60,7 +60,7 @@
     "Do you have a history of an overactive thyroid gland?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -82,7 +82,7 @@
     "Do you have a history of diabetes?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

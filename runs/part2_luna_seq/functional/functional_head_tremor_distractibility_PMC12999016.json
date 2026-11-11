@@ -32,34 +32,34 @@
  "answers": {
   "1": "yes",
   "2": "no",
-  "3": "no",
+  "3": "unknown",
   "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "yes",
-  "16": "no",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
   "17": "no",
   "18": "yes",
-  "19": "no",
-  "20": "no",
-  "21": "no",
-  "22": "no",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
+  "22": "unknown",
   "23": "yes",
-  "24": "no",
-  "25": "no",
-  "26": "no",
-  "27": "no",
-  "28": "no"
+  "24": "unknown",
+  "25": "unknown",
+  "26": "unknown",
+  "27": "unknown",
+  "28": "unknown"
  },
- "n_yes_answers": 4,
+ "n_yes_answers": 3,
  "orders": [
   "Bedside tremor examination including observation at rest, with arms outstretched, during finger-to-nose testing, during writing and spiral drawing, and during contralateral rhythmic tapping, documenting tremor frequency, amplitude, distribution, and distractibility.",
   "Surface EMG with accelerometry of the tremulous limb during rest, posture, action, and contralateral rhythmic tapping."
@@ -69,9 +69,9 @@
   "surface EMG tremor analysis with accelerometry (frequency, coherence)"
  ],
  "results": [
-  "R1 ASK Have you noticed a tremor in your hands or elsewhere?; Have your movements become slower than they used to be?; Do you feel stiff or rigid?; Have you had repeated falls or episodes of losing your balance?; Have you had difficulty initiating walking or experienced freezing?; Have you used dopamine-blocking medicines such as antipsychotics or metoclopramide?; Have you had involuntary jerking or twisting movements of the face or limbs?; Have you noticed problems with memory or thinking?; Have you experienced visual hallucinations?; Have you had loss of smell or dream-enactment during sleep? -> ['yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
-  "R2 ASK Does the tremor occur when your hands are completely at rest?; Does it occur mainly when you hold your arms out or use your hands?; Is the tremor present in both hands?; Does it interfere with activities such as writing, drinking, or using utensils?; Do you also have a tremor of your head or voice?; Does drinking alcohol temporarily reduce the tremor?; Does anyone in your family have a similar tremor?; Did the tremor begin suddenly?; Has the tremor progressively worsened over several years?; Is the tremor worse on one side than the other? -> ['no', 'no', 'no', 'no', 'yes', 'no', 'no', 'yes', 'no', 'no']",
-  "R3 ASK Does the tremor disappear or lessen when you are distracted by a mental task, such as counting backward?; Does the tremor change or stop when you rhythmically tap with the opposite hand?; Does the tremor vary markedly in speed or amplitude from moment to moment?; Did the tremor begin during or soon after a stressful or emotionally upsetting event?; Do you have episodes of weakness or inability to move that cannot be explained by pain?; Do you have numbness or altered sensation in an irregular or sharply demarcated area?; Have you had previous episodes of other unexplained neurological symptoms?; Are you significantly worried that you have a serious neurological disease? -> ['no', 'no', 'yes', 'no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Have you noticed a tremor in your hands or elsewhere?; Have your movements become slower than they used to be?; Do you feel stiff or rigid?; Have you had repeated falls or episodes of losing your balance?; Have you had difficulty initiating walking or experienced freezing?; Have you used dopamine-blocking medicines such as antipsychotics or metoclopramide?; Have you had involuntary jerking or twisting movements of the face or limbs?; Have you noticed problems with memory or thinking?; Have you experienced visual hallucinations?; Have you had loss of smell or dream-enactment during sleep? -> ['yes', 'no', 'unknown', 'no', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Does the tremor occur when your hands are completely at rest?; Does it occur mainly when you hold your arms out or use your hands?; Is the tremor present in both hands?; Does it interfere with activities such as writing, drinking, or using utensils?; Do you also have a tremor of your head or voice?; Does drinking alcohol temporarily reduce the tremor?; Does anyone in your family have a similar tremor?; Did the tremor begin suddenly?; Has the tremor progressively worsened over several years?; Is the tremor worse on one side than the other? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'no', 'yes', 'unknown', 'unknown']",
+  "R3 ASK Does the tremor disappear or lessen when you are distracted by a mental task, such as counting backward?; Does the tremor change or stop when you rhythmically tap with the opposite hand?; Does the tremor vary markedly in speed or amplitude from moment to moment?; Did the tremor begin during or soon after a stressful or emotionally upsetting event?; Do you have episodes of weakness or inability to move that cannot be explained by pain?; Do you have numbness or altered sensation in an irregular or sharply demarcated area?; Have you had previous episodes of other unexplained neurological symptoms?; Are you significantly worried that you have a serious neurological disease? -> ['unknown', 'unknown', 'yes', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R4 ORDER Bedside tremor examination including observation at rest, with arms outstretched, during finger-to-nose testing, during writing and spiral drawing, and during contralateral rhythmic tapping, documenting tremor frequency, amplitude, distribution, and distractibility.; Surface EMG with accelerometry of the tremulous limb during rest, posture, action, and contralateral rhythmic tapping. -> [['distractibility testing (complex motor task with the unaffected side)'], ['surface EMG tremor analysis with accelerometry (frequency, coherence)']]",
   "R5 DIAGNOSIS Functional (psychogenic) tremor as a functional neurological disorder, supported by sudden onset, marked variability, prominent distractibility, and frequency shifts on accelerometry, without evidence of Parkinsonism or essential tremor. -> "
  ],
@@ -94,14 +94,14 @@
    "result": [
     "yes",
     "no",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -120,16 +120,16 @@
     "Is the tremor worse on one side than the other?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
     "no",
     "yes",
-    "no",
-    "no",
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -146,14 +146,14 @@
     "Are you significantly worried that you have a serious neurological disease?"
    ],
    "result": [
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "yes",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

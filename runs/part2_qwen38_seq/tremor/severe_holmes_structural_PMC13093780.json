@@ -7,13 +7,13 @@
   "Do you have a family history of tremor or other movement disorders?"
  ],
  "answers": {
-  "1": "no",
-  "2": "yes",
-  "3": "no",
-  "4": "no",
-  "5": "no"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown"
  },
- "n_yes_answers": 1,
+ "n_yes_answers": 0,
  "orders": [
   "Observe the patient's movements for 30 seconds to characterize them (e.g., writhing, jerking, tremor) and check if they suppress voluntarily or disappear with distraction.",
   "Bedside examination of extraocular movements (saccades, pursuit) and fundoscopy to look for Kayser-Fleischer rings.",
@@ -33,12 +33,12 @@
   "brain MRI"
  ],
  "results": [
-  "R1 ASK Are you currently experiencing any pain?; Do you feel like your body is moving on its own without you wanting it to? -> ['no', 'yes']",
+  "R1 ASK Are you currently experiencing any pain?; Do you feel like your body is moving on its own without you wanting it to? -> ['unknown', 'unknown']",
   "R2 ORDER Observe the patient's movements for 30 seconds to characterize them (e.g., writhing, jerking, tremor) and check if they suppress voluntarily or disappear with distraction. -> [['tremor at rest', 'postural tremor (arms outstretched)', 'kinetic / intention tremor (finger-nose)', 'effect of alcohol on the tremor', 'asterixis (wrist extension)', 'surface EMG of forearm flexors and extensors']]",
-  "R3 ASK Do you have a history of kidney or liver disease? -> ['no']",
-  "R4 ASK Do you have a history of diabetes? -> ['no']",
+  "R3 ASK Do you have a history of kidney or liver disease? -> ['unknown']",
+  "R4 ASK Do you have a history of diabetes? -> ['unknown']",
   "R5 ORDER Bedside examination of extraocular movements (saccades, pursuit) and fundoscopy to look for Kayser-Fleischer rings. -> [['cranial nerve examination', 'fundoscopy', 'video-oculography / eye-movement recording', 'slit-lamp examination for Kayser-Fleischer rings']]",
-  "R6 ASK Do you have a family history of tremor or other movement disorders? -> ['no']",
+  "R6 ASK Do you have a family history of tremor or other movement disorders? -> ['unknown']",
   "R7 ORDER MRI of the brain (T2/FLAIR sequences) to look for basal ganglia or cerebellar signal abnormalities. -> [['brain MRI']]",
   "R8 DIAGNOSIS Secondary tremor due to a thalamic tuberculoma (Mycobacterium tuberculosis infection) -> "
  ],
@@ -51,8 +51,8 @@
     "Do you feel like your body is moving on its own without you wanting it to?"
    ],
    "result": [
-    "no",
-    "yes"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -79,7 +79,7 @@
     "Do you have a history of kidney or liver disease?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -89,7 +89,7 @@
     "Do you have a history of diabetes?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -114,7 +114,7 @@
     "Do you have a family history of tremor or other movement disorders?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

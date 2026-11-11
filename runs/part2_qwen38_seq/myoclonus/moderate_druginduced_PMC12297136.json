@@ -6,23 +6,23 @@
   "Do you have a history of abdominal surgery?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "yes",
-  "4": "no"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown"
  },
- "n_yes_answers": 1,
+ "n_yes_answers": 0,
  "orders": [
   "Abdominal ultrasound",
   "Abdominal examination"
  ],
  "served": [],
  "results": [
-  "R1 ASK Is your abdomen swollen?; Do you have a history of liver disease or heavy alcohol use? -> ['no', 'no']",
+  "R1 ASK Is your abdomen swollen?; Do you have a history of liver disease or heavy alcohol use? -> ['unknown', 'unknown']",
   "R2 ORDER Abdominal ultrasound -> [[]]",
-  "R3 ASK Do you have a history of heart failure? -> ['yes']",
+  "R3 ASK Do you have a history of heart failure? -> ['unknown']",
   "R4 ORDER Abdominal examination -> [[]]",
-  "R5 ASK Do you have a history of abdominal surgery? -> ['no']",
+  "R5 ASK Do you have a history of abdominal surgery? -> ['unknown']",
   "R6 DIAGNOSIS Abdominal obesity -> "
  ],
  "trace": [
@@ -34,8 +34,8 @@
     "Do you have a history of liver disease or heavy alcohol use?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -55,7 +55,7 @@
     "Do you have a history of heart failure?"
    ],
    "result": [
-    "yes"
+    "unknown"
    ]
   },
   {
@@ -75,7 +75,7 @@
     "Do you have a history of abdominal surgery?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

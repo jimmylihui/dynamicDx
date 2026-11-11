@@ -22,28 +22,28 @@
   "Is one eyelid droops more than the other?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
   "5": "yes",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
   "17": "no",
   "18": "no",
-  "19": "no",
-  "20": "yes"
+  "19": "unknown",
+  "20": "unknown"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 1,
  "orders": [
   "TSH receptor antibodies (TRAb)",
   "Orbital MRI with fat suppression and contrast",
@@ -64,16 +64,16 @@
   "single-fibre electromyography"
  ],
  "results": [
-  "R1 ASK Have you noticed any unintended weight loss recently?; Have you been experiencing heart palpitations?; Do you feel more sensitive to heat than you used to?; Have you noticed any fine trembling in your hands? -> ['no', 'no', 'no', 'no']",
-  "R2 ASK Have you noticed any double vision or blurred vision?; Do you feel grittiness or dryness in your eyes?; Have you noticed any swelling or fullness around your eyes recently?; Do you have any pain with eye movements? -> ['yes', 'no', 'no', 'no']",
+  "R1 ASK Have you noticed any unintended weight loss recently?; Have you been experiencing heart palpitations?; Do you feel more sensitive to heat than you used to?; Have you noticed any fine trembling in your hands? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Have you noticed any double vision or blurred vision?; Do you feel grittiness or dryness in your eyes?; Have you noticed any swelling or fullness around your eyes recently?; Do you have any pain with eye movements? -> ['yes', 'unknown', 'unknown', 'unknown']",
   "R3 ORDER TSH receptor antibodies (TRAb); Orbital MRI with fat suppression and contrast -> [['anti-thyroid antibodies'], ['MRI sella and orbits']]",
   "R4 ORDER Ice pack test (apply ice to closed eyelids for 2 minutes, assess ptosis improvement); Anti-acetylcholine receptor (AChR) antibodies; Anti-MuSK antibodies; Repetitive nerve stimulation study (RNS) of facial and orbicularis oculi muscles -> [['ptosis / lid position'], ['acetylcholine receptor, MuSK and LRP4 antibodies', 'anti-acetylcholine receptor antibodies'], ['acetylcholine receptor, MuSK and LRP4 antibodies'], ['repetitive nerve stimulation']]",
   "R5 ORDER Anti-LRP4 antibodies; Single fiber EMG of orbicularis oculi -> [['acetylcholine receptor, MuSK and LRP4 antibodies'], ['single-fibre electromyography']]",
-  "R6 ASK Are you related to anyone else who has similar eye problems or difficulty with eye movements?; Do you have any hearing difficulties or weakness in your limbs that has progressed over time? -> ['no', 'no']",
-  "R7 ASK Has the drooping of your eyelids been present since birth or childhood?; Do you have to tilt your head back or raise your eyebrows to see clearly?; Do you have any difficulty swallowing or speaking? -> ['no', 'no', 'no']",
-  "R8 ASK Has the droopiness of your eyelids gotten worse gradually over months or years?; Do your eyes feel tired or worsen with prolonged use, such as driving or watching TV? -> ['no', 'no']",
-  "R9 ASK Have you had any recent surgery, trauma, or contact lens use involving your eyes?; Do you notice that the ptosis is worse in the evening compared to the morning? -> ['no', 'no']",
-  "R10 ASK Have you noticed any difference in the size of your pupils?; Do you have excessive drooping of the upper eyelids on both sides?; Is one eyelid droops more than the other? -> ['no', 'no', 'yes']",
+  "R6 ASK Are you related to anyone else who has similar eye problems or difficulty with eye movements?; Do you have any hearing difficulties or weakness in your limbs that has progressed over time? -> ['unknown', 'unknown']",
+  "R7 ASK Has the drooping of your eyelids been present since birth or childhood?; Do you have to tilt your head back or raise your eyebrows to see clearly?; Do you have any difficulty swallowing or speaking? -> ['unknown', 'unknown', 'unknown']",
+  "R8 ASK Has the droopiness of your eyelids gotten worse gradually over months or years?; Do your eyes feel tired or worsen with prolonged use, such as driving or watching TV? -> ['unknown', 'unknown']",
+  "R9 ASK Have you had any recent surgery, trauma, or contact lens use involving your eyes?; Do you notice that the ptosis is worse in the evening compared to the morning? -> ['unknown', 'no']",
+  "R10 ASK Have you noticed any difference in the size of your pupils?; Do you have excessive drooping of the upper eyelids on both sides?; Is one eyelid droops more than the other? -> ['no', 'unknown', 'unknown']",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Acquired unilateral ptosis, likely involutional (age-related levator aponeurosis dehiscence) -> "
  ],
  "trace": [
@@ -87,10 +87,10 @@
     "Have you noticed any fine trembling in your hands?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -104,9 +104,9 @@
    ],
    "result": [
     "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -174,8 +174,8 @@
     "Do you have any hearing difficulties or weakness in your limbs that has progressed over time?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -187,9 +187,9 @@
     "Do you have any difficulty swallowing or speaking?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -200,8 +200,8 @@
     "Do your eyes feel tired or worsen with prolonged use, such as driving or watching TV?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -212,7 +212,7 @@
     "Do you notice that the ptosis is worse in the evening compared to the morning?"
    ],
    "result": [
-    "no",
+    "unknown",
     "no"
    ]
   },
@@ -226,8 +226,8 @@
    ],
    "result": [
     "no",
-    "no",
-    "yes"
+    "unknown",
+    "unknown"
    ]
   },
   {

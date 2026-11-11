@@ -14,20 +14,20 @@
   "Have you had any recent infections or a history of cancer?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
+  "1": "unknown",
+  "2": "unknown",
   "3": "no",
-  "4": "no",
+  "4": "unknown",
   "5": "no",
-  "6": "no",
+  "6": "unknown",
   "7": "yes",
   "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "yes",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
   "12": "no"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 1,
  "orders": [
   "MRI of the brain",
   "Genetic testing for spinocerebellar ataxias (SCAs)"
@@ -37,9 +37,9 @@
   "genetic ataxia panel"
  ],
  "results": [
-  "R1 ASK Do you have memory loss?; Do you have urinary incontinence?; Do you have numbness or tingling in your feet?; Do you feel more unsteady when you close your eyes? -> ['no', 'no', 'no', 'no']",
-  "R2 ASK Did this start suddenly?; Do you drink alcohol regularly?; Do you have any difficulty speaking or slurring your words?; Do you have any double vision? -> ['no', 'no', 'yes', 'no']",
-  "R3 ASK Have you noticed any tremors in your hands?; Have you had any unexplained weight loss?; Do you have a family history of similar walking or speaking difficulties?; Have you had any recent infections or a history of cancer? -> ['no', 'no', 'yes', 'no']",
+  "R1 ASK Do you have memory loss?; Do you have urinary incontinence?; Do you have numbness or tingling in your feet?; Do you feel more unsteady when you close your eyes? -> ['unknown', 'unknown', 'no', 'unknown']",
+  "R2 ASK Did this start suddenly?; Do you drink alcohol regularly?; Do you have any difficulty speaking or slurring your words?; Do you have any double vision? -> ['no', 'unknown', 'yes', 'no']",
+  "R3 ASK Have you noticed any tremors in your hands?; Have you had any unexplained weight loss?; Do you have a family history of similar walking or speaking difficulties?; Have you had any recent infections or a history of cancer? -> ['unknown', 'unknown', 'unknown', 'no']",
   "R4 ORDER MRI of the brain; Genetic testing for spinocerebellar ataxias (SCAs) -> [['brain MRI'], ['genetic ataxia panel']]",
   "R5 DIAGNOSIS Spinocerebellar Ataxia type 8 (SCA8) caused by CAG repeat expansion in the ATXN8OS gene -> "
  ],
@@ -54,10 +54,10 @@
     "Do you feel more unsteady when you close your eyes?"
    ],
    "result": [
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -71,7 +71,7 @@
    ],
    "result": [
     "no",
-    "no",
+    "unknown",
     "yes",
     "no"
    ]
@@ -86,9 +86,9 @@
     "Have you had any recent infections or a history of cancer?"
    ],
    "result": [
-    "no",
-    "no",
-    "yes",
+    "unknown",
+    "unknown",
+    "unknown",
     "no"
    ]
   },

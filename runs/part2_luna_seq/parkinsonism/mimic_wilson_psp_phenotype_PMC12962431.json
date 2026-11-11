@@ -21,27 +21,27 @@
   "Have you experienced memory decline, personality change, hallucinations, or excessive daytime sleepiness?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "yes",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
   "11": "no",
-  "12": "no",
+  "12": "unknown",
   "13": "yes",
-  "14": "no",
-  "15": "no",
+  "14": "unknown",
+  "15": "unknown",
   "16": "no",
   "17": "yes",
-  "18": "no",
-  "19": "no"
+  "18": "unknown",
+  "19": "unknown"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 2,
  "orders": [
   "Perform a complete neurological examination, including assessment of cranial nerves, eye movements, muscle tone, strength, reflexes, sensation, coordination, and gait.",
   "Perform the pull test and tandem-walking test.",
@@ -78,11 +78,11 @@
   "CSF culture and viral PCR"
  ],
  "results": [
-  "R1 ASK Do your eyes move or roll upward involuntarily?; Do you have episodes of involuntary muscle contractions or abnormal posturing elsewhere in your body?; Did these episodes begin after starting or increasing a medication, especially an antipsychotic or anti-nausea drug?; Are you fully conscious and aware during the episodes? -> ['no', 'no', 'no', 'yes']",
-  "R2 ASK Are the abnormal movements limited to your eyes and face?; Do the episodes consist of rapid, repetitive blinking or forceful eyelid closure?; Do they occur more often with bright light, stress, or fatigue?; Can you voluntarily stop the movements when they begin?; Have you had any recent facial injury, infection, or dental procedure? -> ['no', 'no', 'no', 'no', 'no']",
-  "R3 ASK Do your eyes make rapid, involuntary movements from side to side or in multiple directions?; Do you experience double vision during these episodes?; Do you feel dizzy or as though the room is moving when this happens?; Do you have difficulty walking or keeping your balance?; Did these abnormal eye movements begin suddenly? -> ['no', 'no', 'no', 'yes', 'no']",
+  "R1 ASK Do your eyes move or roll upward involuntarily?; Do you have episodes of involuntary muscle contractions or abnormal posturing elsewhere in your body?; Did these episodes begin after starting or increasing a medication, especially an antipsychotic or anti-nausea drug?; Are you fully conscious and aware during the episodes? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Are the abnormal movements limited to your eyes and face?; Do the episodes consist of rapid, repetitive blinking or forceful eyelid closure?; Do they occur more often with bright light, stress, or fatigue?; Can you voluntarily stop the movements when they begin?; Have you had any recent facial injury, infection, or dental procedure? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK Do your eyes make rapid, involuntary movements from side to side or in multiple directions?; Do you experience double vision during these episodes?; Do you feel dizzy or as though the room is moving when this happens?; Do you have difficulty walking or keeping your balance?; Did these abnormal eye movements begin suddenly? -> ['unknown', 'no', 'unknown', 'yes', 'unknown']",
   "R4 ORDER Perform a complete neurological examination, including assessment of cranial nerves, eye movements, muscle tone, strength, reflexes, sensation, coordination, and gait.; Perform the pull test and tandem-walking test.; Perform a bedside cerebellar examination with finger-to-nose and heel-to-shin testing. -> [['cranial nerve examination', 'muscle tone examination', 'limb strength (MRC) examination', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'vertical saccades and gaze range (up and down)', 'smooth pursuit and saccade velocity', 'gait observation including turning and doorways'], ['posture and pull test', 'pull test / retropulsion', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)'], ['coordination examination (limb and truncal)', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)']]",
-  "R5 ASK Did your symptoms begin before age 50?; Does anyone in your biological family have similar problems with balance, walking, abnormal movements, or speech?; Do you have slurred speech or difficulty swallowing?; Do you have urinary urgency, urinary retention, erectile dysfunction, or dizziness on standing?; Have you experienced memory decline, personality change, hallucinations, or excessive daytime sleepiness? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R5 ASK Did your symptoms begin before age 50?; Does anyone in your biological family have similar problems with balance, walking, abnormal movements, or speech?; Do you have slurred speech or difficulty swallowing?; Do you have urinary urgency, urinary retention, erectile dysfunction, or dizziness on standing?; Have you experienced memory decline, personality change, hallucinations, or excessive daytime sleepiness? -> ['unknown', 'no', 'yes', 'unknown', 'unknown']",
   "R6 ORDER MRI brain with T1/T2/FLAIR sequences, including midsagittal imaging to assess for midbrain (“hummingbird”) atrophy, pontocerebellar atrophy, and middle cerebellar peduncle changes.; A monitored therapeutic trial of adequate-dose levodopa/carbidopa for at least 4–6 weeks, assessing rigidity, bradykinesia, gait, and postural instability. -> [['MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)'], []]",
   "R7 ORDER Perform targeted genetic and metabolic testing for adult-onset progressive ataxia with vertical supranuclear gaze palsy: NPC1/NPC2 sequencing and oxysterol/lyso-sphingomyelin-509 testing, plus a spinocerebellar ataxia repeat-expansion panel including SCA2, SCA3, SCA6, SCA17, and FGF14 GAA expansion. -> [[]]",
   "R8 ORDER Perform serum and CSF autoimmune/paraneoplastic ataxia testing, including anti-IgLON5, anti-mGluR1, anti-DPPX, anti-GAD65, anti-Hu, anti-Yo, anti-Ri, anti-Ma2, and anti-CRMP5 antibodies.; Perform cerebrospinal-fluid testing for 14-3-3 protein, oligoclonal bands, IgG index, and infectious studies including HIV, syphilis, and Whipple disease PCR. -> [['serum paraneoplastic / neuronal autoantibody panel', 'paraneoplastic / onconeural antibody panel', 'neuronal surface antibody panel including anti-IgLON5', 'CSF autoimmune encephalitis panel'], ['HIV and syphilis serology', 'CSF oligoclonal bands and IgG index', 'CSF culture and viral PCR']]",
@@ -101,10 +101,10 @@
     "Are you fully conscious and aware during the episodes?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "yes"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -118,11 +118,11 @@
     "Have you had any recent facial injury, infection, or dental procedure?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -136,11 +136,11 @@
     "Did these abnormal eye movements begin suddenly?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "no",
+    "unknown",
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -185,11 +185,11 @@
     "Have you experienced memory decline, personality change, hallucinations, or excessive daytime sleepiness?"
    ],
    "result": [
-    "no",
+    "unknown",
     "no",
     "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {

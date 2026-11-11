@@ -10,14 +10,14 @@
   "Have you been tested for thyroid problems recently?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
   "7": "no",
-  "8": "no"
+  "8": "unknown"
  },
  "n_yes_answers": 0,
  "orders": [
@@ -33,8 +33,8 @@
   "TSH / free T4"
  ],
  "results": [
-  "R1 ASK Did these involuntary hand movements start suddenly or gradually?; Have you experienced any changes in your coordination or balance recently?; Do you have a family history of neurological movement disorders?; Have you taken any new prescription or over-the-counter medications in the last month? -> ['no', 'no', 'no', 'no']",
-  "R2 ASK Were there any complications during your birth or early childhood?; Have you ever had a stroke, head injury, or brain surgery?; Do you have any history of liver disease or heavy alcohol use?; Have you been tested for thyroid problems recently? -> ['no', 'no', 'no', 'no']",
+  "R1 ASK Did these involuntary hand movements start suddenly or gradually?; Have you experienced any changes in your coordination or balance recently?; Do you have a family history of neurological movement disorders?; Have you taken any new prescription or over-the-counter medications in the last month? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Were there any complications during your birth or early childhood?; Have you ever had a stroke, head injury, or brain surgery?; Do you have any history of liver disease or heavy alcohol use?; Have you been tested for thyroid problems recently? -> ['unknown', 'unknown', 'no', 'unknown']",
   "R3 ORDER Comprehensive metabolic panel including electrolytes, kidney function, and liver function tests; Serum ammonia level; Arterial blood gas or oxygen saturation; Thyroid function tests (TSH and free T4) -> [['serum electrolytes, urea and creatinine', 'liver function tests'], ['ammonia'], [], ['TSH / free T4']]",
   "R4 DIAGNOSIS Asterixis (hepatic flap) secondary to hepatic encephalopathy, caused by chronic liver disease (likely cirrhosis, given reduced albumin and elevated transaminases) -> "
  ],
@@ -49,10 +49,10 @@
     "Have you taken any new prescription or over-the-counter medications in the last month?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -65,10 +65,10 @@
     "Have you been tested for thyroid problems recently?"
    ],
    "result": [
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {

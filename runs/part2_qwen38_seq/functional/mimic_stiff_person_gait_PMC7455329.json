@@ -11,15 +11,15 @@
   "Do you have a history of chronic alcohol use?"
  ],
  "answers": {
-  "1": "no",
+  "1": "unknown",
   "2": "yes",
   "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no"
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown"
  },
  "n_yes_answers": 1,
  "orders": [
@@ -32,11 +32,11 @@
   "sensory examination (pinprick, vibration, proprioception)"
  ],
  "results": [
-  "R1 ASK Are you currently experiencing any pain in your legs or feet?; Do you have a history of diabetes?; Do you feel numbness or tingling in your feet? -> ['no', 'yes', 'no']",
-  "R2 ASK Do you have a history of stroke?; Do you have a history of Parkinson's disease?; Is your right leg weaker than your left? -> ['no', 'no', 'no']",
-  "R3 ASK Do you have a history of back problems or spinal surgery?; Have you had any recent falls or injuries to your legs? -> ['no', 'no']",
+  "R1 ASK Are you currently experiencing any pain in your legs or feet?; Do you have a history of diabetes?; Do you feel numbness or tingling in your feet? -> ['unknown', 'yes', 'no']",
+  "R2 ASK Do you have a history of stroke?; Do you have a history of Parkinson's disease?; Is your right leg weaker than your left? -> ['unknown', 'unknown', 'unknown']",
+  "R3 ASK Do you have a history of back problems or spinal surgery?; Have you had any recent falls or injuries to your legs? -> ['unknown', 'unknown']",
   "R4 ORDER Bedside neurological examination of lower limbs (motor strength, tone, reflexes, and sensation) -> [['MRC power in all four limbs', 'muscle tone (spasticity, rigidity, paratonia)', 'deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)']]",
-  "R5 ASK Do you have a history of chronic alcohol use? -> ['no']",
+  "R5 ASK Do you have a history of chronic alcohol use? -> ['unknown']",
   "R6 DIAGNOSIS Parkinson's disease -> "
  ],
  "trace": [
@@ -49,7 +49,7 @@
     "Do you feel numbness or tingling in your feet?"
    ],
    "result": [
-    "no",
+    "unknown",
     "yes",
     "no"
    ]
@@ -63,9 +63,9 @@
     "Is your right leg weaker than your left?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -76,8 +76,8 @@
     "Have you had any recent falls or injuries to your legs?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -102,7 +102,7 @@
     "Do you have a history of chronic alcohol use?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

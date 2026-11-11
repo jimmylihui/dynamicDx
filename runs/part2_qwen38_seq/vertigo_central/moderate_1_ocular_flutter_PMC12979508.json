@@ -10,14 +10,14 @@
  ],
  "answers": {
   "1": "no",
-  "2": "no",
-  "3": "yes",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no"
+  "2": "unknown",
+  "3": "no",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown"
  },
- "n_yes_answers": 1,
+ "n_yes_answers": 0,
  "orders": [
   "Repetitive nerve stimulation (3 Hz) of the facial nerve",
   "Serum creatine kinase",
@@ -33,16 +33,16 @@
   "serum electrolytes, urea and creatinine"
  ],
  "results": [
-  "R1 ASK Do you have double vision?; Does your eyelid droop get worse when you look up for a long time or at the end of the day?; Have you noticed any weakness in your arms, legs, or difficulty swallowing? -> ['no', 'no', 'yes']",
-  "R2 ASK Do you have difficulty walking up stairs or getting out of a chair? -> ['no']",
-  "R3 ASK Do you have difficulty swallowing or chewing? -> ['no']",
+  "R1 ASK Do you have double vision?; Does your eyelid droop get worse when you look up for a long time or at the end of the day?; Have you noticed any weakness in your arms, legs, or difficulty swallowing? -> ['no', 'unknown', 'no']",
+  "R2 ASK Do you have difficulty walking up stairs or getting out of a chair? -> ['unknown']",
+  "R3 ASK Do you have difficulty swallowing or chewing? -> ['unknown']",
   "R4 ORDER Repetitive nerve stimulation (3 Hz) of the facial nerve -> [['repetitive nerve stimulation']]",
   "R5 ORDER Serum creatine kinase -> [['creatine kinase']]",
-  "R6 ASK Do you have difficulty opening your eyes after closing them tightly? -> ['no']",
+  "R6 ASK Do you have difficulty opening your eyes after closing them tightly? -> ['unknown']",
   "R7 ORDER Serum anti-acetylcholine receptor antibodies -> [['acetylcholine receptor, MuSK and LRP4 antibodies', 'anti-acetylcholine receptor antibodies']]",
   "R8 ORDER Serum anti-MuSK antibodies -> [['acetylcholine receptor, MuSK and LRP4 antibodies']]",
   "R9 ORDER Serum potassium -> [['serum electrolytes, urea and creatinine']]",
-  "R10 ASK Do you have difficulty releasing your grip after shaking hands? -> ['no']",
+  "R10 ASK Do you have difficulty releasing your grip after shaking hands? -> ['unknown']",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Seronegative myasthenia gravis -> "
  ],
  "trace": [
@@ -56,8 +56,8 @@
    ],
    "result": [
     "no",
-    "no",
-    "yes"
+    "unknown",
+    "no"
    ]
   },
   {
@@ -67,7 +67,7 @@
     "Do you have difficulty walking up stairs or getting out of a chair?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -77,7 +77,7 @@
     "Do you have difficulty swallowing or chewing?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -111,7 +111,7 @@
     "Do you have difficulty opening your eyes after closing them tightly?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -158,7 +158,7 @@
     "Do you have difficulty releasing your grip after shaking hands?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

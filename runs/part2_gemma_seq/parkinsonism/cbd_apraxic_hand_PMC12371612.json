@@ -8,14 +8,14 @@
   "Do you have difficulty performing simple, familiar tasks, such as buttoning a shirt or using a key, even though you know how to do them?"
  ],
  "answers": {
-  "1": "yes",
+  "1": "unknown",
   "2": "yes",
-  "3": "yes",
+  "3": "unknown",
   "4": "no",
   "5": "yes",
-  "6": "no"
+  "6": "unknown"
  },
- "n_yes_answers": 4,
+ "n_yes_answers": 2,
  "orders": [
   "Brain MRI."
  ],
@@ -26,8 +26,8 @@
   "MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)"
  ],
  "results": [
-  "R1 ASK Is the clumsiness or stiffness worse on one side of your body than the other?; Do you feel like one of your limbs sometimes moves without your intention or has a mind of its own?; Did these symptoms develop gradually over several months or years?; Have you noticed any difficulty with your balance or frequent falls? -> ['yes', 'yes', 'yes', 'no']",
-  "R2 ASK Have you noticed any changes in your personality, mood, or difficulty planning and organizing tasks?; Do you have difficulty performing simple, familiar tasks, such as buttoning a shirt or using a key, even though you know how to do them? -> ['yes', 'no']",
+  "R1 ASK Is the clumsiness or stiffness worse on one side of your body than the other?; Do you feel like one of your limbs sometimes moves without your intention or has a mind of its own?; Did these symptoms develop gradually over several months or years?; Have you noticed any difficulty with your balance or frequent falls? -> ['unknown', 'yes', 'unknown', 'no']",
+  "R2 ASK Have you noticed any changes in your personality, mood, or difficulty planning and organizing tasks?; Do you have difficulty performing simple, familiar tasks, such as buttoning a shirt or using a key, even though you know how to do them? -> ['yes', 'unknown']",
   "R3 ORDER Brain MRI. -> [['MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)', 'MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)', 'MRI brain - cortical atrophy pattern', 'MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)']]",
   "R4 DIAGNOSIS Corticobasal Degeneration -> "
  ],
@@ -42,9 +42,9 @@
     "Have you noticed any difficulty with your balance or frequent falls?"
    ],
    "result": [
+    "unknown",
     "yes",
-    "yes",
-    "yes",
+    "unknown",
     "no"
    ]
   },
@@ -57,7 +57,7 @@
    ],
    "result": [
     "yes",
-    "no"
+    "unknown"
    ]
   },
   {

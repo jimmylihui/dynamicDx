@@ -13,19 +13,19 @@
   "Do you have any history of trauma to the head or eyes?"
  ],
  "answers": {
-  "1": "yes",
-  "2": "no",
+  "1": "unknown",
+  "2": "unknown",
   "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
   "11": "no"
  },
- "n_yes_answers": 1,
+ "n_yes_answers": 0,
  "orders": [
   "Magnetic resonance angiography (MRA) of the intracranial vessels, focusing on the circle of Willis and posterior communicating arteries, to evaluate for aneurysm.",
   "Formal pupillometry assessment - measure pupil diameters in ambient light, test for relative afferent pupillary defect (RAPD), and document the near response in detail.",
@@ -44,12 +44,12 @@
   "antinuclear antibodies and anti-dsDNA"
  ],
  "results": [
-  "R1 ASK When did you first notice the difference in your pupil size?; Have you experienced any double vision?; Have you had any pain in or around your eye?; Have you noticed any drooping of your left eyelid? -> ['yes', 'no', 'no', 'no']",
-  "R2 ASK Are you able to look down and read something, or look up at something on a high shelf without difficulty?; Have you noticed if the pupil difference becomes less noticeable when you focus on something close to you? -> ['no', 'no']",
-  "R3 ASK Did the pupil size difference and eye movement difficulty start suddenly or gradually over time?; Have you experienced any headaches, especially in the back of your head or around the eyes?; Have you had any tremors, stiffness, or problems with balance and walking? -> ['no', 'no', 'no']",
+  "R1 ASK When did you first notice the difference in your pupil size?; Have you experienced any double vision?; Have you had any pain in or around your eye?; Have you noticed any drooping of your left eyelid? -> ['unknown', 'unknown', 'no', 'unknown']",
+  "R2 ASK Are you able to look down and read something, or look up at something on a high shelf without difficulty?; Have you noticed if the pupil difference becomes less noticeable when you focus on something close to you? -> ['unknown', 'unknown']",
+  "R3 ASK Did the pupil size difference and eye movement difficulty start suddenly or gradually over time?; Have you experienced any headaches, especially in the back of your head or around the eyes?; Have you had any tremors, stiffness, or problems with balance and walking? -> ['unknown', 'unknown', 'unknown']",
   "R4 ORDER Magnetic resonance angiography (MRA) of the intracranial vessels, focusing on the circle of Willis and posterior communicating arteries, to evaluate for aneurysm.; Formal pupillometry assessment - measure pupil diameters in ambient light, test for relative afferent pupillary defect (RAPD), and document the near response in detail.; Assessment of ptosis - measure palpebral fissure heights in primary gaze and assess for any subtle eyelid retraction or weakness. -> [['CT / MR angiography (circle of Willis)'], ['pupil examination (size, light reaction)'], ['lid position and measurement (MRD1 both sides)']]",
   "R5 ORDER MRI brain with dedicated thin-cut sequences through the midbrain (axial and sagittal T2-weighted, FLAIR, and diffusion-weighted imaging) to evaluate for structural lesion or infarction in the mesencephalic tegmentum.; Blood tests: complete blood count, erythrocyte sedimentation rate (ESR), C-reactive protein (CRP), serum angiotensin-converting enzyme (ACE) level, and antinuclear antibody (ANA).; Detailed examination of the tonic pupil - specifically assess for tonic near response (sustained constriction during accommodation) and look for vermiform/segmental pupillary oscillations under slit lamp examination. -> [['MRI diffusion-weighted sequences'], ['ESR / CRP', 'full blood count', 'antinuclear antibodies and anti-dsDNA'], ['pupil examination (size, light reaction)']]",
-  "R6 ASK Have you ever been treated for syphilis in the past?; Do you have any history of trauma to the head or eyes? -> ['no', 'no']",
+  "R6 ASK Have you ever been treated for syphilis in the past?; Do you have any history of trauma to the head or eyes? -> ['unknown', 'no']",
   "R7 DIAGNOSIS Parinaud syndrome (dorsal midbrain syndrome) with right tonic pupil, due to a structural lesion in the dorsal midbrain - recommend urgent formal MRI brain report review (T2/FLAIR sequences through midbrain not reported) to identify pineal region mass, aqueductal stenosis, or mesencephalic infarction as the underlying cause. -> "
  ],
  "trace": [
@@ -63,10 +63,10 @@
     "Have you noticed any drooping of your left eyelid?"
    ],
    "result": [
-    "yes",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -77,8 +77,8 @@
     "Have you noticed if the pupil difference becomes less noticeable when you focus on something close to you?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -90,9 +90,9 @@
     "Have you had any tremors, stiffness, or problems with balance and walking?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -145,7 +145,7 @@
     "Do you have any history of trauma to the head or eyes?"
    ],
    "result": [
-    "no",
+    "unknown",
     "no"
    ]
   },

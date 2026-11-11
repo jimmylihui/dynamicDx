@@ -20,26 +20,26 @@
   "Have you ever been told you have heart valve problems or rheumatic fever?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
   "5": "no",
-  "6": "no",
+  "6": "unknown",
   "7": "yes",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "yes",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no"
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 1,
  "orders": [
   "Complete blood count (CBC) with differential",
   "Serum copper and ceruloplasmin levels",
@@ -59,14 +59,14 @@
   "serum calcium, magnesium and phosphate"
  ],
  "results": [
-  "R1 ASK Are you experiencing pain or discomfort in your abdomen?; Is the repetitive rubbing motion of your hands intentional?; Can you easily stop the movement if you try to? -> ['no', 'no', 'no']",
-  "R2 ASK Have you recently had a sore throat or fever?; Does anyone in your family have a similar movement disorder?; Have you noticed changes in your mood, memory, or behavior recently? -> ['no', 'no', 'no']",
+  "R1 ASK Are you experiencing pain or discomfort in your abdomen?; Is the repetitive rubbing motion of your hands intentional?; Can you easily stop the movement if you try to? -> ['unknown', 'unknown', 'unknown']",
+  "R2 ASK Have you recently had a sore throat or fever?; Does anyone in your family have a similar movement disorder?; Have you noticed changes in your mood, memory, or behavior recently? -> ['unknown', 'no', 'unknown']",
   "R3 ORDER Complete blood count (CBC) with differential; Serum copper and ceruloplasmin levels; Brain MRI; Thyroid function tests (TSH, free T4) -> [['full blood count'], ['serum copper and caeruloplasmin', 'copper / caeruloplasmin / 24 h urinary copper'], ['brain MRI'], ['TSH / free T4']]",
-  "R4 ASK Have you been diagnosed with tuberculosis in the past?; Did you experience involuntary movements in your face, jaw, or limbs before starting any treatment?; Are you currently taking any medication for tuberculosis or movement disorders? -> ['yes', 'no', 'no']",
-  "R5 ASK Did the abnormal hand movements start after you were diagnosed with tuberculosis?; Do the movements disappear when you are asleep?; Do you have any weakness or numbness on one side of your body? -> ['no', 'no', 'yes']",
-  "R6 ASK Has the weakness or numbness been getting worse over time?; Do you have difficulty speaking or swallowing?; Do you feel anxious or restless, as if you cannot stay still? -> ['no', 'no', 'no']",
+  "R4 ASK Have you been diagnosed with tuberculosis in the past?; Did you experience involuntary movements in your face, jaw, or limbs before starting any treatment?; Are you currently taking any medication for tuberculosis or movement disorders? -> ['yes', 'unknown', 'unknown']",
+  "R5 ASK Did the abnormal hand movements start after you were diagnosed with tuberculosis?; Do the movements disappear when you are asleep?; Do you have any weakness or numbness on one side of your body? -> ['unknown', 'unknown', 'unknown']",
+  "R6 ASK Has the weakness or numbness been getting worse over time?; Do you have difficulty speaking or swallowing?; Do you feel anxious or restless, as if you cannot stay still? -> ['unknown', 'unknown', 'unknown']",
   "R7 ORDER Antistreptolysin O titer (ASO) and anti-DNase B; Sleep-deprived EEG; Serum electrolytes (sodium, potassium, calcium, magnesium) -> [[], [], ['serum electrolytes, urea and creatinine', 'serum calcium, magnesium and phosphate']]",
-  "R8 ASK Are the movements always present, even when you are resting quietly?; Do the movements spread to your face or jaw?; Have you ever been told you have heart valve problems or rheumatic fever? -> ['no', 'no', 'no']",
+  "R8 ASK Are the movements always present, even when you are resting quietly?; Do the movements spread to your face or jaw?; Have you ever been told you have heart valve problems or rheumatic fever? -> ['unknown', 'unknown', 'unknown']",
   "R9 DIAGNOSIS Post-tuberculous thalamic syndrome (chronic post-infectious thalamic lesion) presenting with unilateral sensory/motor deficit and persistent rubbing/compulsive hand movements. -> "
  ],
  "trace": [
@@ -79,9 +79,9 @@
     "Can you easily stop the movement if you try to?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -93,9 +93,9 @@
     "Have you noticed changes in your mood, memory, or behavior recently?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -133,8 +133,8 @@
    ],
    "result": [
     "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -146,9 +146,9 @@
     "Do you have any weakness or numbness on one side of your body?"
    ],
    "result": [
-    "no",
-    "no",
-    "yes"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -160,9 +160,9 @@
     "Do you feel anxious or restless, as if you cannot stay still?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -191,9 +191,9 @@
     "Have you ever been told you have heart valve problems or rheumatic fever?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

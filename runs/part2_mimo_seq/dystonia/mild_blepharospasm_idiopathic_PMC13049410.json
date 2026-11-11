@@ -18,22 +18,22 @@
  ],
  "answers": {
   "1": "yes",
-  "2": "no",
-  "3": "no",
-  "4": "yes",
-  "5": "no",
-  "6": "yes",
-  "7": "no",
-  "8": "yes",
-  "9": "no",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
   "10": "no",
-  "11": "yes",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no"
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown"
  },
- "n_yes_answers": 5,
+ "n_yes_answers": 1,
  "orders": [
   "Detailed neurological examination focusing on cranial nerves and limb strength/sensation",
   "Blood tests: CBC, ESR, CRP, ANA, anti-ganglioside antibodies (anti-GQ1b, anti-GM1)"
@@ -47,10 +47,10 @@
   "antinuclear antibodies and anti-dsDNA"
  ],
  "results": [
-  "R1 ASK Is this facial spasm around your eyes happening involuntarily, not on purpose when you move your face?; Does this spasm occur only when you close your eyes tightly, or does it also happen when your face is relaxed?; Have you had any recent injury to your face, or any infections like sinus/eye infections in the last few weeks?; Do you have any other symptoms like numbness, weakness, or pain in your face or the rest of your body along with this?; Is this spasm constant, or does it come and go throughout the day? -> ['yes', 'no', 'no', 'yes', 'no']",
-  "R2 ASK When you say you have other symptoms, is it numbness, weakness, or pain - and where specifically in your body?; Have you ever had an episode of facial paralysis (Bell's palsy) in the past, on either side of your face?; Which side of your face is affected by this spasm - is it both sides, or just one?; Does the spasm ever occur when your face is completely relaxed, or is it truly only when you actively close your eyes?; Are you aware of any family members with similar twitching or spasms? -> ['yes', 'no', 'yes', 'no', 'no']",
+  "R1 ASK Is this facial spasm around your eyes happening involuntarily, not on purpose when you move your face?; Does this spasm occur only when you close your eyes tightly, or does it also happen when your face is relaxed?; Have you had any recent injury to your face, or any infections like sinus/eye infections in the last few weeks?; Do you have any other symptoms like numbness, weakness, or pain in your face or the rest of your body along with this?; Is this spasm constant, or does it come and go throughout the day? -> ['yes', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK When you say you have other symptoms, is it numbness, weakness, or pain - and where specifically in your body?; Have you ever had an episode of facial paralysis (Bell's palsy) in the past, on either side of your face?; Which side of your face is affected by this spasm - is it both sides, or just one?; Does the spasm ever occur when your face is completely relaxed, or is it truly only when you actively close your eyes?; Are you aware of any family members with similar twitching or spasms? -> ['unknown', 'unknown', 'unknown', 'unknown', 'no']",
   "R3 ORDER Detailed neurological examination focusing on cranial nerves and limb strength/sensation; Blood tests: CBC, ESR, CRP, ANA, anti-ganglioside antibodies (anti-GQ1b, anti-GM1) -> [['cranial nerve examination', 'limb strength (MRC) examination', 'sensory examination (pinprick, vibration, proprioception)'], ['full blood count and biochemistry', 'ESR / CRP', 'antinuclear antibodies and anti-dsDNA']]",
-  "R4 ASK Are you currently taking any medications, or have you taken any in the past - especially anti-nausea medications, psychiatric medications, or antipsychotics?; If yes to any medications, when did you start taking them relative to when these spasms began?; Did the spasms start in your eyelids first and then spread to the mouth and jaw, or did they start all at once?; Have you ever had any brain surgery, stroke, or head trauma?; Do the spasms get better when you touch your chin or forehead (a sensory trick or \"geste antagoniste\")? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R4 ASK Are you currently taking any medications, or have you taken any in the past - especially anti-nausea medications, psychiatric medications, or antipsychotics?; If yes to any medications, when did you start taking them relative to when these spasms began?; Did the spasms start in your eyelids first and then spread to the mouth and jaw, or did they start all at once?; Have you ever had any brain surgery, stroke, or head trauma?; Do the spasms get better when you touch your chin or forehead (a sensory trick or \"geste antagoniste\")? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R5 DIAGNOSIS Drug-induced orofacial dystonia (tardive dystonia) secondary to dopamine receptor-blocking medication, presenting with blepharospasm, perioral dystonia, and jaw spasms -> "
  ],
  "trace": [
@@ -66,10 +66,10 @@
    ],
    "result": [
     "yes",
-    "no",
-    "no",
-    "yes",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -83,10 +83,10 @@
     "Are you aware of any family members with similar twitching or spasms?"
    ],
    "result": [
-    "yes",
-    "no",
-    "yes",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
     "no"
    ]
   },
@@ -121,11 +121,11 @@
     "Do the spasms get better when you touch your chin or forehead (a sensory trick or \"geste antagoniste\")?"
    ],
    "result": [
-    "yes",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

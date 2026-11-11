@@ -29,33 +29,33 @@
   "Do you have any history of endocrine problems, such as diabetes or short stature?"
  ],
  "answers": {
-  "1": "no",
+  "1": "unknown",
   "2": "no",
-  "3": "no",
+  "3": "unknown",
   "4": "yes",
   "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no",
-  "22": "no",
-  "23": "no",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
+  "22": "unknown",
+  "23": "unknown",
   "24": "yes",
   "25": "yes",
-  "26": "no",
-  "27": "no"
+  "26": "unknown",
+  "27": "unknown"
  },
  "n_yes_answers": 3,
  "orders": [
@@ -77,16 +77,16 @@
   "acetylcholine receptor, MuSK and LRP4 antibodies"
  ],
  "results": [
-  "R1 ASK Does the drooping of your eyelids get worse as the day progresses?; Do you experience double vision?; Do you have any difficulty swallowing or speaking?; Do you have any weakness in your arms or legs? -> ['no', 'no', 'no', 'yes']",
-  "R2 ASK Did the weakness start suddenly?; Is the weakness primarily in your shoulders and hips?; Do you have any shortness of breath?; Have you noticed any muscle wasting or changes in muscle bulk? -> ['no', 'no', 'no', 'no']",
-  "R3 ASK Do you have difficulty relaxing your grip after shaking someone's hand or holding an object?; Is the weakness in your limbs more noticeable in your hands and feet than in your shoulders and hips?; Have you noticed any changes in your heart rhythm or any fainting spells?; Do you have any cataracts or other vision problems besides the drooping eyelids? -> ['no', 'no', 'no', 'no']",
+  "R1 ASK Does the drooping of your eyelids get worse as the day progresses?; Do you experience double vision?; Do you have any difficulty swallowing or speaking?; Do you have any weakness in your arms or legs? -> ['unknown', 'no', 'unknown', 'yes']",
+  "R2 ASK Did the weakness start suddenly?; Is the weakness primarily in your shoulders and hips?; Do you have any shortness of breath?; Have you noticed any muscle wasting or changes in muscle bulk? -> ['no', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK Do you have difficulty relaxing your grip after shaking someone's hand or holding an object?; Is the weakness in your limbs more noticeable in your hands and feet than in your shoulders and hips?; Have you noticed any changes in your heart rhythm or any fainting spells?; Do you have any cataracts or other vision problems besides the drooping eyelids? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R4 ORDER Examination of extraocular eye movements; Serum Creatine Kinase (CK) level; Electromyography (EMG) and Nerve Conduction Study (NCS) -> [['cranial nerve examination'], ['creatine kinase'], ['nerve conduction studies', 'needle electromyography', 'nerve conduction studies / EMG']]",
-  "R5 ASK Is the weakness in your limbs a feeling of fatigue or heaviness rather than a loss of strength?; Does the weakness in your limbs improve after a period of rest?; Have you noticed any changes in your vision, such as blurred vision, that come and go?; Do you have any history of autoimmune diseases, such as thyroid problems or rheumatoid arthritis?; Have you had any recent viral infections or vaccinations before the symptoms started? -> ['no', 'no', 'no', 'no', 'no']",
-  "R6 ASK Do you have any weakness in your facial muscles, such as difficulty smiling or closing your eyes tightly?; Is the weakness in your arms and legs symmetric (the same on both sides)?; Do you have any difficulty climbing stairs or getting up from a chair?; Do you have any difficulty with fine motor tasks, like buttoning a shirt? -> ['no', 'no', 'no', 'no']",
+  "R5 ASK Is the weakness in your limbs a feeling of fatigue or heaviness rather than a loss of strength?; Does the weakness in your limbs improve after a period of rest?; Have you noticed any changes in your vision, such as blurred vision, that come and go?; Do you have any history of autoimmune diseases, such as thyroid problems or rheumatoid arthritis?; Have you had any recent viral infections or vaccinations before the symptoms started? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R6 ASK Do you have any weakness in your facial muscles, such as difficulty smiling or closing your eyes tightly?; Is the weakness in your arms and legs symmetric (the same on both sides)?; Do you have any difficulty climbing stairs or getting up from a chair?; Do you have any difficulty with fine motor tasks, like buttoning a shirt? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R7 ORDER Ice pack test for ptosis; Tensilon (edrophonium) test -> [[], []]",
-  "R8 ASK Does the weakness in your limbs improve after you start moving or exercising the muscles?; Do you have any history of smoking or a known malignancy? -> ['no', 'no']",
+  "R8 ASK Does the weakness in your limbs improve after you start moving or exercising the muscles?; Do you have any history of smoking or a known malignancy? -> ['unknown', 'unknown']",
   "R9 ORDER Anti-AChR antibody test; Anti-MuSK antibody test; Anti-LRP4 antibody test -> [['acetylcholine receptor, MuSK and LRP4 antibodies'], ['acetylcholine receptor, MuSK and LRP4 antibodies'], ['acetylcholine receptor, MuSK and LRP4 antibodies']]",
-  "R10 ASK Did you have these symptoms since childhood?; Do you have any difficulty with your balance or coordination?; Have you noticed any changes in your skin or hair?; Do you have any history of endocrine problems, such as diabetes or short stature? -> ['yes', 'yes', 'no', 'no']",
+  "R10 ASK Did you have these symptoms since childhood?; Do you have any difficulty with your balance or coordination?; Have you noticed any changes in your skin or hair?; Do you have any history of endocrine problems, such as diabetes or short stature? -> ['yes', 'yes', 'unknown', 'unknown']",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Congenital Myasthenic Syndrome due to a genetic mutation in a neuromuscular junction protein -> "
  ],
  "trace": [
@@ -100,9 +100,9 @@
     "Do you have any weakness in your arms or legs?"
    ],
    "result": [
+    "unknown",
     "no",
-    "no",
-    "no",
+    "unknown",
     "yes"
    ]
   },
@@ -117,9 +117,9 @@
    ],
    "result": [
     "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -132,10 +132,10 @@
     "Do you have any cataracts or other vision problems besides the drooping eyelids?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -171,11 +171,11 @@
     "Have you had any recent viral infections or vaccinations before the symptoms started?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -188,10 +188,10 @@
     "Do you have any difficulty with fine motor tasks, like buttoning a shirt?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -214,8 +214,8 @@
     "Do you have any history of smoking or a known malignancy?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -250,8 +250,8 @@
    "result": [
     "yes",
     "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {

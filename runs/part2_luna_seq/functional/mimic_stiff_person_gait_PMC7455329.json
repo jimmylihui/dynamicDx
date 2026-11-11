@@ -32,36 +32,36 @@
  ],
  "answers": {
   "1": "no",
-  "2": "no",
-  "3": "no",
+  "2": "unknown",
+  "3": "unknown",
   "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
   "8": "yes",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
   "18": "no",
-  "19": "no",
+  "19": "unknown",
   "20": "yes",
-  "21": "yes",
+  "21": "unknown",
   "22": "yes",
-  "23": "no",
-  "24": "no",
-  "25": "no",
+  "23": "unknown",
+  "24": "yes",
+  "25": "yes",
   "26": "yes",
   "27": "yes",
-  "28": "no",
+  "28": "unknown",
   "29": "yes"
  },
- "n_yes_answers": 7,
+ "n_yes_answers": 8,
  "orders": [
   "Perform a focused neurological examination, including manual muscle testing, deep-tendon reflexes, plantar responses, sensory testing (including proprioception and vibration), coordination, and assessment of gait with and without crutches.",
   "Perform a Romberg test and observe whether the patient can rise from a chair and stand unsupported.",
@@ -107,13 +107,13 @@
   "lumbar puncture / CSF (cells, protein, oligoclonal bands)"
  ],
  "results": [
-  "R1 ASK Did your difficulty walking begin suddenly?; Do you have pain in your back or legs when walking?; Do you feel weakness in both legs?; Do you have numbness or tingling in either leg?; Have you ever had a stroke or spinal cord injury?; Have you recently had surgery or an injury involving your back or legs?; Can you walk normally without the crutches when you are alone? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
-  "R2 ASK Do you feel that your legs may give way or that you might fall when you walk?; Are you afraid of falling even when you feel physically strong enough to walk?; Does your walking difficulty vary substantially from one occasion to another?; Can you walk better when distracted or when you think nobody is watching?; Can you walk backward without using the crutches?; Can you stand unsupported for at least 30 seconds?; Were these crutches prescribed by a healthcare professional?; Do you use the crutches because of a specific diagnosed medical condition? -> ['yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Did your difficulty walking begin suddenly?; Do you have pain in your back or legs when walking?; Do you feel weakness in both legs?; Do you have numbness or tingling in either leg?; Have you ever had a stroke or spinal cord injury?; Have you recently had surgery or an injury involving your back or legs?; Can you walk normally without the crutches when you are alone? -> ['no', 'unknown', 'unknown', 'no', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Do you feel that your legs may give way or that you might fall when you walk?; Are you afraid of falling even when you feel physically strong enough to walk?; Does your walking difficulty vary substantially from one occasion to another?; Can you walk better when distracted or when you think nobody is watching?; Can you walk backward without using the crutches?; Can you stand unsupported for at least 30 seconds?; Were these crutches prescribed by a healthcare professional?; Do you use the crutches because of a specific diagnosed medical condition? -> ['yes', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R3 ORDER Perform a focused neurological examination, including manual muscle testing, deep-tendon reflexes, plantar responses, sensory testing (including proprioception and vibration), coordination, and assessment of gait with and without crutches.; Perform a Romberg test and observe whether the patient can rise from a chair and stand unsupported. -> [['deep tendon reflexes and plantar responses', 'sensory examination (pinprick, vibration, proprioception)', 'coordination examination (limb and truncal)', 'MRC power in all four limbs'], ['Romberg test, repeated with distraction']]",
   "R4 ORDER Perform the Hoover sign test for functional leg weakness.; Observe the patient rising from a standard chair without using his arms and walking 10 metres without crutches, including turning and walking backward.; Observe the patient’s gait while performing a dual task, such as counting backward by sevens. -> [['Hoover sign / hip-abductor sign'], ['walking backward'], ['gait with a distracting or automatic task (dancing, counting backwards)']]",
-  "R5 ASK Do you feel dizzy or as though the room is moving when you stand or walk?; Do you feel unsteady because you cannot tell where your feet are in space?; Do you have double vision, blurred vision, or difficulty seeing while walking?; Have you had urinary urgency or incontinence along with any problems with thinking or memory?; Do you have tremor, stiffness, slowness, or difficulty initiating steps?; Do you drink alcohol heavily or take sedatives, sleeping tablets, or other medicines that make you drowsy?; Have you had progressive worsening of your walking over months or years?; Do you believe you are physically unable to walk without the crutches despite normal strength testing? -> ['no', 'no', 'no', 'no', 'yes', 'yes', 'yes', 'no']",
+  "R5 ASK Do you feel dizzy or as though the room is moving when you stand or walk?; Do you feel unsteady because you cannot tell where your feet are in space?; Do you have double vision, blurred vision, or difficulty seeing while walking?; Have you had urinary urgency or incontinence along with any problems with thinking or memory?; Do you have tremor, stiffness, slowness, or difficulty initiating steps?; Do you drink alcohol heavily or take sedatives, sleeping tablets, or other medicines that make you drowsy?; Have you had progressive worsening of your walking over months or years?; Do you believe you are physically unable to walk without the crutches despite normal strength testing? -> ['unknown', 'unknown', 'no', 'unknown', 'yes', 'unknown', 'yes', 'unknown']",
   "R6 ORDER Perform a formal movement-disorders examination for parkinsonism, including assessment of resting, postural, and kinetic tremor; rigidity; bradykinesia with finger tapping and toe tapping; facial expression; arm swing; postural stability; and pull test.; Obtain an MRI of the brain, including the posterior fossa, basal ganglia, and ventricular system.; Obtain serum vitamin B1 (thiamine), vitamin B12, folate, TSH, liver function tests, and blood alcohol level. -> [['posture and pull test', 'observation for excessive slowness or uneconomic posture', 'muscle tone (spasticity, rigidity, paratonia)', 'finger-tapping for bradykinesia and decrement'], ['MRI brain'], ['liver function tests', 'vitamin B12 with methylmalonic acid', 'serum folate', 'serum vitamin B1 (thiamine)', 'serum ethanol', 'TSH / free T4']]",
-  "R7 ASK Do you have painful muscle spasms triggered by sudden movement, touch, noise, or emotional stress?; Is the stiffness predominantly in your trunk, abdomen, or legs and worse when you try to walk?; Do you have an exaggerated startle response to unexpected sounds or touch?; Have you been diagnosed with type 1 diabetes, autoimmune thyroid disease, pernicious anemia, or another autoimmune disorder?; Have you had seizures or episodes of brief, unexplained muscle jerks?; Does alcohol or a benzodiazepine such as diazepam noticeably relieve the stiffness? -> ['no', 'no', 'yes', 'yes', 'no', 'yes']",
+  "R7 ASK Do you have painful muscle spasms triggered by sudden movement, touch, noise, or emotional stress?; Is the stiffness predominantly in your trunk, abdomen, or legs and worse when you try to walk?; Do you have an exaggerated startle response to unexpected sounds or touch?; Have you been diagnosed with type 1 diabetes, autoimmune thyroid disease, pernicious anemia, or another autoimmune disorder?; Have you had seizures or episodes of brief, unexplained muscle jerks?; Does alcohol or a benzodiazepine such as diazepam noticeably relieve the stiffness? -> ['yes', 'yes', 'yes', 'yes', 'unknown', 'yes']",
   "R8 ORDER Perform EMG of paraspinal and lower-limb muscles at rest, assessing for continuous involuntary motor-unit activity and abnormal co-contraction.; Test serum and CSF for anti-GAD65 antibodies, anti-amphiphysin antibodies, and glycine-receptor (GlyR) antibodies.; Perform a lumbar puncture for CSF cell count, protein, oligoclonal bands, and intrathecal anti-GAD65 antibodies. -> [['needle electromyography', 'needle EMG (continuous motor unit activity at rest)'], ['anti-GAD65 antibodies', 'serum paraneoplastic / neuronal autoantibody panel', 'CSF autoimmune encephalitis panel', 'neuronal surface / paraneoplastic antibody panel (amphiphysin, glycine receptor, DPPX)'], ['anti-GAD65 antibodies', 'CSF cell count and differential', 'CSF protein', 'CSF oligoclonal bands and IgG index', 'lumbar puncture / CSF (cells, protein, oligoclonal bands)']]",
   "R9 DIAGNOSIS Anti-GAD65–associated stiff-person spectrum disorder (classic stiff-person syndrome with predominantly lower-limb/axial rigidity), caused by autoimmune GAD65-mediated inhibition of motor pathways. -> "
  ],
@@ -132,12 +132,12 @@
    ],
    "result": [
     "no",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -155,13 +155,13 @@
    ],
    "result": [
     "yes",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -217,14 +217,14 @@
     "Do you believe you are physically unable to walk without the crutches despite normal strength testing?"
    ],
    "result": [
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
+    "unknown",
     "yes",
+    "unknown",
     "yes",
-    "yes",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -267,11 +267,11 @@
     "Does alcohol or a benzodiazepine such as diazepam noticeably relieve the stiffness?"
    ],
    "result": [
-    "no",
-    "no",
     "yes",
     "yes",
-    "no",
+    "yes",
+    "yes",
+    "unknown",
     "yes"
    ]
   },

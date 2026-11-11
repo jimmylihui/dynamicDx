@@ -30,34 +30,34 @@
  ],
  "answers": {
   "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
   "11": "yes",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
   "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no",
-  "22": "no",
-  "23": "no",
-  "24": "no",
-  "25": "no",
-  "26": "yes",
-  "27": "no"
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
+  "22": "unknown",
+  "23": "unknown",
+  "24": "unknown",
+  "25": "unknown",
+  "26": "unknown",
+  "27": "unknown"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 1,
  "orders": [
   "Perform a bedside neurological gait examination with normal walking, tandem walking, heel and toe walking, single-leg stance, hopping, and walking while distracted.",
   "MRI of the brain with and without gadolinium contrast, including posterior fossa and cerebellar sequences.",
@@ -80,10 +80,10 @@
   "liver function tests"
  ],
  "results": [
-  "R1 ASK Do you have weakness in either leg?; Do you have numbness or altered sensation in either leg?; Do you have pain in your legs or back when walking?; Do you feel dizzy or as though you may lose consciousness while walking?; Can you walk normally when you are alone or not being watched?; Have you recently experienced significant psychological stress or trauma?; Have you fallen despite being able to walk this far?; Do you have difficulty controlling your bladder or bowels? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Do you have weakness in either leg?; Do you have numbness or altered sensation in either leg?; Do you have pain in your legs or back when walking?; Do you feel dizzy or as though you may lose consciousness while walking?; Can you walk normally when you are alone or not being watched?; Have you recently experienced significant psychological stress or trauma?; Have you fallen despite being able to walk this far?; Do you have difficulty controlling your bladder or bowels? -> ['no', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R2 ORDER Perform a bedside neurological gait examination with normal walking, tandem walking, heel and toe walking, single-leg stance, hopping, and walking while distracted. -> [['gait examination']]",
-  "R3 ASK Did this unsteady walking begin suddenly, within the last few days?; Do you have trouble coordinating your hands, such as reaching accurately or writing?; Do you have slurred speech?; Do you have double vision or abnormal eye movements?; Do you have a persistent spinning sensation or severe imbalance even when sitting still?; Do you have hearing loss or ringing in either ear?; Have you recently consumed alcohol or taken sedatives, anticonvulsants, or other drugs that can impair coordination?; Do you have a severe headache, vomiting, or neck stiffness?; Have you had a recent head injury?; Do you have a family history of progressive balance or coordination problems? -> ['no', 'no', 'yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no']",
-  "R4 ASK Has the unsteady gait gradually worsened over weeks or months?; Has the slurred speech gradually worsened over weeks or months?; Do your walking or speech problems noticeably improve when you are distracted?; Do your symptoms vary substantially from one day to another?; Do you have difficulty swallowing or choking on food or liquids?; Do you have tremor or involuntary movements in your arms or legs?; Do you have stiffness, slowness, or reduced movement?; Do you have diabetes, thyroid disease, vitamin deficiency, or other chronic medical illness?; Are you taking any prescription or nonprescription medications regularly? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'yes', 'no']",
+  "R3 ASK Did this unsteady walking begin suddenly, within the last few days?; Do you have trouble coordinating your hands, such as reaching accurately or writing?; Do you have slurred speech?; Do you have double vision or abnormal eye movements?; Do you have a persistent spinning sensation or severe imbalance even when sitting still?; Do you have hearing loss or ringing in either ear?; Have you recently consumed alcohol or taken sedatives, anticonvulsants, or other drugs that can impair coordination?; Do you have a severe headache, vomiting, or neck stiffness?; Have you had a recent head injury?; Do you have a family history of progressive balance or coordination problems? -> ['unknown', 'unknown', 'yes', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'no', 'unknown']",
+  "R4 ASK Has the unsteady gait gradually worsened over weeks or months?; Has the slurred speech gradually worsened over weeks or months?; Do your walking or speech problems noticeably improve when you are distracted?; Do your symptoms vary substantially from one day to another?; Do you have difficulty swallowing or choking on food or liquids?; Do you have tremor or involuntary movements in your arms or legs?; Do you have stiffness, slowness, or reduced movement?; Do you have diabetes, thyroid disease, vitamin deficiency, or other chronic medical illness?; Are you taking any prescription or nonprescription medications regularly? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R5 ORDER MRI of the brain with and without gadolinium contrast, including posterior fossa and cerebellar sequences.; Serum vitamin B12, folate, copper, and ceruloplasmin levels.; Thyroid-stimulating hormone and free thyroxine levels.; Complete blood count, comprehensive metabolic panel, and serum glucose. -> [['brain MRI', 'MRI brain with gadolinium'], ['vitamin B12 / folate', 'copper / caeruloplasmin'], ['TSH / free T4'], ['full blood count', 'renal and liver function', 'electrolytes (Na, K, Ca, Mg)', 'glucose / HbA1c', 'serum electrolytes, urea and creatinine', 'liver function tests']]",
   "R6 DIAGNOSIS Thiamine (vitamin B1) deficiency–associated Wernicke encephalopathy causing cerebellar ataxia and dysarthria, precipitated by end-stage renal disease and maintenance haemodialysis (non-alcohol-related). -> "
  ],
@@ -103,13 +103,13 @@
    ],
    "result": [
     "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -140,16 +140,16 @@
     "Do you have a family history of progressive balance or coordination problems?"
    ],
    "result": [
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "yes",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {
@@ -167,15 +167,15 @@
     "Are you taking any prescription or nonprescription medications regularly?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "yes",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

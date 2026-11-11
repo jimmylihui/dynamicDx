@@ -17,21 +17,21 @@
   "Do the episodes stop if someone gently holds or bends the affected arm?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
   "10": "no",
   "11": "yes",
   "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no"
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown"
  },
  "n_yes_answers": 1,
  "orders": [
@@ -45,9 +45,9 @@
   "genetic testing (exome / epilepsy panel)"
  ],
  "results": [
-  "R1 ASK Did the head bandage/wrap on your head result from a recent surgery?; Have you hit your head or had a recent fall/injury before this visit?; Have you been experiencing headaches?; Have you been experiencing nausea or vomiting?; Have you had any fever? -> ['no', 'no', 'no', 'no', 'no']",
-  "R2 ASK Have you ever been diagnosed with epilepsy or seizures before?; Have you experienced sudden stiffening or jerking movements of your arms and legs?; Have you ever lost consciousness or stared blankly during an episode?; Were you admitted to the hospital for an EEG test?; Is there any family history of seizures or epilepsy? -> ['no', 'no', 'no', 'no', 'no']",
-  "R3 ASK Do your eyes sometimes look upward or deviate to one side during these episodes?; Do the episodes tend to happen when you are falling asleep or waking up?; Have you ever had a video-EEG monitoring study?; Have you been started on any anti-seizure medications?; Do the episodes stop if someone gently holds or bends the affected arm? -> ['yes', 'no', 'no', 'no', 'no']",
+  "R1 ASK Did the head bandage/wrap on your head result from a recent surgery?; Have you hit your head or had a recent fall/injury before this visit?; Have you been experiencing headaches?; Have you been experiencing nausea or vomiting?; Have you had any fever? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Have you ever been diagnosed with epilepsy or seizures before?; Have you experienced sudden stiffening or jerking movements of your arms and legs?; Have you ever lost consciousness or stared blankly during an episode?; Were you admitted to the hospital for an EEG test?; Is there any family history of seizures or epilepsy? -> ['unknown', 'unknown', 'unknown', 'unknown', 'no']",
+  "R3 ASK Do your eyes sometimes look upward or deviate to one side during these episodes?; Do the episodes tend to happen when you are falling asleep or waking up?; Have you ever had a video-EEG monitoring study?; Have you been started on any anti-seizure medications?; Do the episodes stop if someone gently holds or bends the affected arm? -> ['yes', 'no', 'unknown', 'unknown', 'unknown']",
   "R4 ORDER Video-EEG monitoring (24-hour) to capture the events and correlate with electroclinical findings; MRI brain with epilepsy protocol to evaluate for focal structural lesion -> [['video-EEG monitoring of a typical event'], ['brain MRI']]",
   "R5 ORDER Genetic testing for epilepsy panel (including GLUT1, SCN1A, and other epilepsy-related genes) -> [['genetic testing (exome / epilepsy panel)']]",
   "R6 DIAGNOSIS Jeavons syndrome (eyelid myoclonia with absences), associated with a likely pathogenic CSNK2B missense variant causing a CSNK2B-related neurodevelopmental disorder with epilepsy. -> "
@@ -64,11 +64,11 @@
     "Have you had any fever?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -82,10 +82,10 @@
     "Is there any family history of seizures or epilepsy?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
     "no"
    ]
   },
@@ -102,9 +102,9 @@
    "result": [
     "yes",
     "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

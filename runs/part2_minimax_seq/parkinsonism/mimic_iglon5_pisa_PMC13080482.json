@@ -44,50 +44,50 @@
   "Do you have any rapid eye movement sleep behavior disorder (acting out dreams)?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
+  "1": "unknown",
+  "2": "unknown",
   "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
   "8": "yes",
-  "9": "no",
+  "9": "unknown",
   "10": "no",
   "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no",
-  "22": "no",
-  "23": "no",
-  "24": "no",
-  "25": "no",
-  "26": "no",
-  "27": "no",
-  "28": "no",
-  "29": "no",
-  "30": "no",
-  "31": "no",
-  "32": "no",
-  "33": "no",
-  "34": "no",
-  "35": "no",
-  "36": "no",
-  "37": "no",
-  "38": "no",
-  "39": "no",
-  "40": "no",
-  "41": "no",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "yes",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
+  "22": "unknown",
+  "23": "unknown",
+  "24": "unknown",
+  "25": "unknown",
+  "26": "unknown",
+  "27": "unknown",
+  "28": "unknown",
+  "29": "unknown",
+  "30": "unknown",
+  "31": "unknown",
+  "32": "unknown",
+  "33": "unknown",
+  "34": "unknown",
+  "35": "unknown",
+  "36": "unknown",
+  "37": "unknown",
+  "38": "unknown",
+  "39": "unknown",
+  "40": "unknown",
+  "41": "unknown",
   "42": "no"
  },
- "n_yes_answers": 1,
+ "n_yes_answers": 2,
  "orders": [
   "MRI of the brain and spinal cord",
   "MRI of the lumbar spine",
@@ -155,16 +155,16 @@
   "HIV and syphilis serology"
  ],
  "results": [
-  "R1 ASK Have you been feeling dizzy or lightheaded?; Do you have any numbness or tingling in your legs or feet?; Have you noticed any weakness in your legs?; Do you have any difficulty with your vision or double vision?; Have you had any recent infections or fevers?; Do you have any history of diabetes?; Do you consume alcohol regularly? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
-  "R2 ASK Have you noticed any unsteadiness or imbalance when walking?; Do you feel like your legs are stiff or heavy?; Have you had any difficulty with your memory or thinking recently?; Do you have any urinary incontinence or difficulty controlling your bladder?; Have you had any recent headaches?; Do you have any history of stroke or neurological problems?; Have you fallen recently? -> ['yes', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Have you been feeling dizzy or lightheaded?; Do you have any numbness or tingling in your legs or feet?; Have you noticed any weakness in your legs?; Do you have any difficulty with your vision or double vision?; Have you had any recent infections or fevers?; Do you have any history of diabetes?; Do you consume alcohol regularly? -> ['unknown', 'unknown', 'no', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Have you noticed any unsteadiness or imbalance when walking?; Do you feel like your legs are stiff or heavy?; Have you had any difficulty with your memory or thinking recently?; Do you have any urinary incontinence or difficulty controlling your bladder?; Have you had any recent headaches?; Do you have any history of stroke or neurological problems?; Have you fallen recently? -> ['yes', 'unknown', 'no', 'no', 'unknown', 'unknown', 'unknown']",
   "R3 ORDER MRI of the brain and spinal cord; MRI of the lumbar spine; Nerve conduction studies and electromyography (EMG); Lumbar puncture for cerebrospinal fluid analysis; Vitamin B12 level; Thyroid function tests; Complete blood count (CBC) -> [['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences', 'MRI cervical and thoracic spine', 'MRI brain - midbrain (hummingbird sign, midbrain-to-pons ratio)', 'MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)', 'MRI brain - cortical atrophy pattern', 'MRI brain - white matter and ventricles (small-vessel disease, ventriculomegaly)', 'MRI whole spine'], [], ['nerve conduction studies', 'needle electromyography'], ['CSF opening pressure', 'CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF oligoclonal bands and IgG index', 'CSF cytology and flow cytometry', 'CSF culture and viral PCR', 'CSF autoimmune encephalitis panel', 'lumbar puncture / CSF (cells, protein, Abeta42/40, total tau, p-tau)'], ['vitamin B12 with methylmalonic acid', 'vitamin B12'], ['TSH / free T4'], ['full blood count, renal and liver profile']]",
-  "R4 ASK Do you feel unsteady only when walking in the dark or on uneven ground?; Have you noticed any tremor in your hands?; Do you have any slowness of movement?; Have you noticed any changes in your handwriting?; Do you have any difficulty with your sense of smell?; Have you had any changes in your bowel movements?; Do you have any family history of neurological disorders? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R4 ASK Do you feel unsteady only when walking in the dark or on uneven ground?; Have you noticed any tremor in your hands?; Do you have any slowness of movement?; Have you noticed any changes in your handwriting?; Do you have any difficulty with your sense of smell?; Have you had any changes in your bowel movements?; Do you have any family history of neurological disorders? -> ['unknown', 'unknown', 'yes', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R5 ORDER MRI of the lumbar spine; CT scan of the brain; Positron emission tomography (PET) scan of the brain; Genetic testing for hereditary ataxias (e.g., Friedreich's ataxia, spinocerebellar ataxias); Anti-GAD antibodies; Paraneoplastic panel (anti-Yo, anti-Hu, anti-Ri antibodies); Copper studies (serum ceruloplasmin, 24-hour urinary copper) -> [[], ['CT head'], ['FDG-PET brain'], ['whole exome / genome sequencing'], ['serum paraneoplastic / neuronal autoantibody panel'], ['serum paraneoplastic / neuronal autoantibody panel', 'paraneoplastic / onconeural antibody panel'], ['serum ceruloplasmin', '24-hour urinary copper']]",
-  "R6 ASK Do you feel like you are swaying or moving when you are actually still?; Have you noticed any hearing loss or ringing in your ears?; Do you have any pain in your neck or back?; Have you noticed any changes in your ability to feel temperature or vibration?; Do you have any difficulty with your coordination when using your hands?; Have you had any recent weight loss or night sweats?; Do you have any history of cancer? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R6 ASK Do you feel like you are swaying or moving when you are actually still?; Have you noticed any hearing loss or ringing in your ears?; Do you have any pain in your neck or back?; Have you noticed any changes in your ability to feel temperature or vibration?; Do you have any difficulty with your coordination when using your hands?; Have you had any recent weight loss or night sweats?; Do you have any history of cancer? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R7 ORDER MRI of the lumbar spine; Vestibular function tests (caloric testing, vestibular evoked myogenic potentials); Autonomic function tests; Skin biopsy for small fiber neuropathy (epidermal nerve fiber density); Repeat MRI brain with thin cuts through posterior fossa; Serum and urine toxicology screen; HIV and syphilis serology -> [[], [], ['autonomic function testing (tilt table, sympathetic skin response)'], [], [], ['drug and toxin screen'], ['HIV and syphilis serology']]",
-  "R8 ASK Do you feel unsteady only when you first stand up?; Have you noticed any palpitations or rapid heartbeat?; Do you feel more unsteady when you are tired?; Have you noticed any anxiety or panic attacks?; Do you have any history of migraine headaches?; Have you noticed any changes in your vision when you move your head?; Do you feel like your symptoms are worse in the morning or after rest? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R8 ASK Do you feel unsteady only when you first stand up?; Have you noticed any palpitations or rapid heartbeat?; Do you feel more unsteady when you are tired?; Have you noticed any anxiety or panic attacks?; Do you have any history of migraine headaches?; Have you noticed any changes in your vision when you move your head?; Do you feel like your symptoms are worse in the morning or after rest? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R9 ORDER MRI of the lumbar spine; Vestibular function tests (caloric testing, vestibular evoked myogenic potentials); Autonomic function tests (tilt table, sympathetic skin response); Skin biopsy for small fiber neuropathy (epidermal nerve fiber density); Repeat MRI brain with thin cuts through posterior fossa; Serum lactate and pyruvate; Very long chain fatty acids (VLCFA) for adrenoleukodystrophy/adrenomyeloneuropathy -> [[], [], ['autonomic function testing (tilt table, sympathetic skin response)'], [], [], [], []]",
-  "R10 ASK Do you feel unsteady only when walking but not when sitting or lying down?; Have you noticed any stiffness or rigidity in your legs?; Do you have any difficulty initiating walking?; Have you noticed any freezing of gait?; Do you feel like your feet are stuck to the floor?; Have you noticed any loss of smell?; Do you have any rapid eye movement sleep behavior disorder (acting out dreams)? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
+  "R10 ASK Do you feel unsteady only when walking but not when sitting or lying down?; Have you noticed any stiffness or rigidity in your legs?; Do you have any difficulty initiating walking?; Have you noticed any freezing of gait?; Do you feel like your feet are stuck to the floor?; Have you noticed any loss of smell?; Do you have any rapid eye movement sleep behavior disorder (acting out dreams)? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'no']",
   "R11 FORCED_DIAGNOSIS DIAGNOSIS: Functional gait disorder (functional neurological disorder) - chronic gait unsteadiness with normal neurological examination, normal MRI brain and spine, normal nerve conduction studies/EMG -> "
  ],
  "trace": [
@@ -181,13 +181,13 @@
     "Do you consume alcohol regularly?"
    ],
    "result": [
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -204,12 +204,12 @@
    ],
    "result": [
     "yes",
+    "unknown",
     "no",
     "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -277,13 +277,13 @@
     "Do you have any family history of neurological disorders?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "yes",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -335,13 +335,13 @@
     "Do you have any history of cancer?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -385,13 +385,13 @@
     "Do you feel like your symptoms are worse in the morning or after rest?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -431,12 +431,12 @@
     "Do you have any rapid eye movement sleep behavior disorder (acting out dreams)?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
     "no"
    ]
   },

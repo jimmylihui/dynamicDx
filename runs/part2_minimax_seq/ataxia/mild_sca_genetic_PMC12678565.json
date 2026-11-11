@@ -19,21 +19,21 @@
  "answers": {
   "1": "yes",
   "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
   "9": "no",
-  "10": "no",
+  "10": "yes",
   "11": "yes",
   "12": "yes",
-  "13": "no",
-  "14": "no",
-  "15": "no"
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 4,
  "orders": [
   "Tandem gait test (observed walking heel-to-toe in the hallway)",
   "Romberg test (standing with feet together, eyes open then closed)",
@@ -51,10 +51,10 @@
   "brain MRI"
  ],
  "results": [
-  "R1 ASK Have you noticed any unsteadiness or problems with your balance?; Do you have any numbness or tingling in your legs or feet?; Do you feel dizzy or like the room is spinning?; Have you had any problems with your memory or thinking recently?; Do you have any difficulty controlling your bladder or bowels? -> ['yes', 'no', 'no', 'no', 'no']",
-  "R2 ASK Do you feel unsteady mainly when walking in the dark or closing your eyes?; Have you noticed any tremor or stiffness in your hands or legs?; Do you have any neck pain?; Have you had any recent headaches?; Do you stumble or feel drunk-like when walking? -> ['no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Have you noticed any unsteadiness or problems with your balance?; Do you have any numbness or tingling in your legs or feet?; Do you feel dizzy or like the room is spinning?; Have you had any problems with your memory or thinking recently?; Do you have any difficulty controlling your bladder or bowels? -> ['yes', 'no', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Do you feel unsteady mainly when walking in the dark or closing your eyes?; Have you noticed any tremor or stiffness in your hands or legs?; Do you have any neck pain?; Have you had any recent headaches?; Do you stumble or feel drunk-like when walking? -> ['unknown', 'unknown', 'unknown', 'no', 'yes']",
   "R3 ORDER Tandem gait test (observed walking heel-to-toe in the hallway); Romberg test (standing with feet together, eyes open then closed); Assess gait initiation and arm swing; Finger-to-nose and heel-to-shin testing for appendicular ataxia -> [['gait examination'], ['Romberg test'], ['gait examination'], ['finger-nose / heel-shin testing', 'coordination examination (limb and truncal)']]",
-  "R4 ASK Has your walking gotten worse over time, gradually?; Do you have any family history of similar walking or balance problems?; Have you had any recent infections or diarrhea?; Do you drink alcohol, and if so, how much?; Have you ever been told you have a vitamin deficiency? -> ['yes', 'yes', 'no', 'no', 'no']",
+  "R4 ASK Has your walking gotten worse over time, gradually?; Do you have any family history of similar walking or balance problems?; Have you had any recent infections or diarrhea?; Do you drink alcohol, and if so, how much?; Have you ever been told you have a vitamin deficiency? -> ['yes', 'yes', 'unknown', 'unknown', 'unknown']",
   "R5 ORDER Genetic testing for spinocerebellar ataxia (SCA) panel (SCA1, 2, 3, 6, 7, 17, etc.); MRI of the brain with focus on cerebellum and brainstem -> [['genetic ataxia panel'], ['brain MRI']]",
   "R6 DIAGNOSIS Spinocerebellar ataxia type 8 (SCA8) — an autosomal dominant cerebellar ataxia caused by an expansion of the CTA/CTG trinucleotide repeat in the ATXN8OS gene (112 CTG repeats, pathological), presenting with progressive wide-based gait ataxia, limb dysmetria, and cerebellar atrophy on MRI. -> "
  ],
@@ -72,9 +72,9 @@
    "result": [
     "yes",
     "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -88,11 +88,11 @@
     "Do you stumble or feel drunk-like when walking?"
    ],
    "result": [
+    "unknown",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "yes"
    ]
   },
   {
@@ -133,9 +133,9 @@
    "result": [
     "yes",
     "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

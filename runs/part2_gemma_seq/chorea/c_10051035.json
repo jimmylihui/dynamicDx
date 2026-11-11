@@ -23,29 +23,29 @@
   "Do you have any other medical conditions?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "yes",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
   "4": "yes",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "yes",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no"
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "yes"
  },
- "n_yes_answers": 3,
+ "n_yes_answers": 2,
  "orders": [
   "Blood glucose level",
   "Non-contrast CT head",
@@ -57,9 +57,9 @@
   "MRI diffusion-weighted sequences"
  ],
  "results": [
-  "R1 ASK Do you have weakness in your right arm?; Do you have weakness in your right leg?; Did these symptoms start suddenly?; Do you have a history of hypertension?; Do you have a history of diabetes?; Do you have difficulty speaking?; Do you have a facial droop?; Do you have weakness in your left arm or leg? -> ['no', 'no', 'yes', 'yes', 'no', 'no', 'no', 'no']",
-  "R2 ASK Do you have any numbness or tingling in your arms or legs?; Do you have any vision changes, such as double vision or loss of vision in one eye?; Do you have any dizziness or balance problems?; Do you have a headache?; Do you have any difficulty swallowing?; Do you feel any \"heaviness\" in your left arm or leg, even if you don't feel \"weak\"?; Do you have any changes in your coordination or a feeling of clumsiness? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no']",
-  "R3 ASK Are you experiencing involuntary shaking or movements in your left arm and leg?; Did you lose consciousness or have a blackout when this started?; Do you have any history of seizures?; Do you have any pain in your neck or back?; Are you taking any medications for hypertension?; Do you have any other medical conditions? -> ['yes', 'no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Do you have weakness in your right arm?; Do you have weakness in your right leg?; Did these symptoms start suddenly?; Do you have a history of hypertension?; Do you have a history of diabetes?; Do you have difficulty speaking?; Do you have a facial droop?; Do you have weakness in your left arm or leg? -> ['unknown', 'unknown', 'unknown', 'yes', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Do you have any numbness or tingling in your arms or legs?; Do you have any vision changes, such as double vision or loss of vision in one eye?; Do you have any dizziness or balance problems?; Do you have a headache?; Do you have any difficulty swallowing?; Do you feel any \"heaviness\" in your left arm or leg, even if you don't feel \"weak\"?; Do you have any changes in your coordination or a feeling of clumsiness? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK Are you experiencing involuntary shaking or movements in your left arm and leg?; Did you lose consciousness or have a blackout when this started?; Do you have any history of seizures?; Do you have any pain in your neck or back?; Are you taking any medications for hypertension?; Do you have any other medical conditions? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown', 'yes']",
   "R4 ORDER Blood glucose level; Non-contrast CT head; MRI brain (including DWI) -> [['blood glucose'], ['CT head (non-contrast)'], ['MRI diffusion-weighted sequences']]",
   "R5 DIAGNOSIS Hemiballismus due to ischemic stroke of the basal ganglia -> "
  ],
@@ -78,14 +78,14 @@
     "Do you have weakness in your left arm or leg?"
    ],
    "result": [
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
     "yes",
-    "yes",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -101,13 +101,13 @@
     "Do you have any changes in your coordination or a feeling of clumsiness?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -122,12 +122,12 @@
     "Do you have any other medical conditions?"
    ],
    "result": [
-    "yes",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "yes"
    ]
   },
   {

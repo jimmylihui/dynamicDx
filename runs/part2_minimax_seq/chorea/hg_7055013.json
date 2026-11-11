@@ -27,33 +27,33 @@
   "Have you had any recent infections or illnesses?"
  ],
  "answers": {
-  "1": "no",
+  "1": "unknown",
   "2": "yes",
-  "3": "no",
-  "4": "no",
-  "5": "yes",
-  "6": "no",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
   "7": "yes",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
-  "13": "no",
-  "14": "no",
-  "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no",
-  "22": "no",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
+  "22": "unknown",
   "23": "yes",
-  "24": "no",
+  "24": "unknown",
   "25": "no"
  },
- "n_yes_answers": 4,
+ "n_yes_answers": 3,
  "orders": [
   "Ankle-brachial index (ABI) test",
   "Blood glucose level",
@@ -74,13 +74,13 @@
   "ketones (blood or urine)"
  ],
  "results": [
-  "R1 ASK Are you experiencing pain in your legs?; Do you have any history of diabetes?; Do you have a history of smoking?; Have you noticed any non-healing wounds or ulcers on your legs or feet?; Are you currently able to walk without pain? -> ['no', 'yes', 'no', 'no', 'yes']",
-  "R2 ASK Have you noticed any swelling in your legs or ankles?; Do you have a history of high blood pressure?; Do you have a history of kidney disease?; Do you have a history of heart failure or heart problems?; Have you ever been told you have protein in your urine? -> ['no', 'yes', 'no', 'no', 'no']",
-  "R3 ASK Have you noticed any changes in the color or appearance of the skin on your lower legs?; Do you have any itching or dryness on your legs?; Have you ever had cellulitis or a skin infection on your legs?; Are you on any medications for diabetes or blood pressure currently?; Have you noticed any hair loss on your lower legs? -> ['no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Are you experiencing pain in your legs?; Do you have any history of diabetes?; Do you have a history of smoking?; Have you noticed any non-healing wounds or ulcers on your legs or feet?; Are you currently able to walk without pain? -> ['unknown', 'yes', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Have you noticed any swelling in your legs or ankles?; Do you have a history of high blood pressure?; Do you have a history of kidney disease?; Do you have a history of heart failure or heart problems?; Have you ever been told you have protein in your urine? -> ['unknown', 'yes', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK Have you noticed any changes in the color or appearance of the skin on your lower legs?; Do you have any itching or dryness on your legs?; Have you ever had cellulitis or a skin infection on your legs?; Are you on any medications for diabetes or blood pressure currently?; Have you noticed any hair loss on your lower legs? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R4 ORDER Ankle-brachial index (ABI) test; Blood glucose level; Hemoglobin A1c; Basic metabolic panel (including creatinine); Lipid panel -> [[], ['blood glucose and HbA1c', 'blood glucose'], ['blood glucose and HbA1c', 'HbA1c'], ['serum electrolytes, urea and creatinine'], []]",
-  "R5 ASK Have you been experiencing increased thirst recently?; Have you noticed increased urination, especially at night?; Have you experienced any unintentional weight loss recently?; Have you had any episodes of nausea, vomiting, or abdominal pain?; Are you currently taking insulin or any diabetes medication? -> ['no', 'no', 'no', 'no', 'no']",
+  "R5 ASK Have you been experiencing increased thirst recently?; Have you noticed increased urination, especially at night?; Have you experienced any unintentional weight loss recently?; Have you had any episodes of nausea, vomiting, or abdominal pain?; Are you currently taking insulin or any diabetes medication? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
   "R6 ORDER Serum and urine osmolality; Urinalysis for ketones; Serum insulin level; Serum C-peptide level -> [['sodium and serum osmolality'], ['ketones (blood or urine)'], [], []]",
-  "R7 ASK Do you have a family history of diabetes?; Have you ever had pancreatitis or pancreatic disease?; Have you ever been told you have type 1 or type 2 diabetes?; Are you taking any steroids or other medications that could raise blood sugar?; Have you had any recent infections or illnesses? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R7 ASK Do you have a family history of diabetes?; Have you ever had pancreatitis or pancreatic disease?; Have you ever been told you have type 1 or type 2 diabetes?; Are you taking any steroids or other medications that could raise blood sugar?; Have you had any recent infections or illnesses? -> ['unknown', 'unknown', 'yes', 'unknown', 'no']",
   "R8 DIAGNOSIS Severe uncontrolled type 2 diabetes mellitus due to medication non-adherence (the patient is not taking any prescribed antihyperglycemic or antihypertensive therapy despite a known diagnosis), evidenced by random glucose 690 mg/dL and HbA1c 14.7% in a non-ketotic, normal anion gap patient. -> "
  ],
  "trace": [
@@ -95,11 +95,11 @@
     "Are you currently able to walk without pain?"
    ],
    "result": [
-    "no",
+    "unknown",
     "yes",
-    "no",
-    "no",
-    "yes"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -113,11 +113,11 @@
     "Have you ever been told you have protein in your urine?"
    ],
    "result": [
-    "no",
+    "unknown",
     "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -131,11 +131,11 @@
     "Have you noticed any hair loss on your lower legs?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -175,11 +175,11 @@
     "Are you currently taking insulin or any diabetes medication?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -213,10 +213,10 @@
     "Have you had any recent infections or illnesses?"
    ],
    "result": [
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "yes",
-    "no",
+    "unknown",
     "no"
    ]
   },

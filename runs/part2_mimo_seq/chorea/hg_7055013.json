@@ -18,24 +18,24 @@
   "When did you say the movements started - was it weeks ago, months ago, or years ago?"
  ],
  "answers": {
-  "1": "no",
-  "2": "yes",
-  "3": "no",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "yes",
-  "9": "no",
-  "10": "yes",
-  "11": "yes",
-  "12": "yes",
-  "13": "no",
-  "14": "no",
-  "15": "yes",
-  "16": "yes"
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
+  "13": "unknown",
+  "14": "unknown",
+  "15": "unknown",
+  "16": "unknown"
  },
- "n_yes_answers": 7,
+ "n_yes_answers": 0,
  "orders": [
   "Detailed neurological examination of the lower limbs including tone assessment, deep tendon reflexes (patellar and Achilles), Babinski sign, and assessment of any spasticity or rigidity",
   "Functional assessment: Can you walk across the room for me so I can observe your gait and see how these movements change during walking",
@@ -59,13 +59,13 @@
   "cognitive and behavioural assessment (MMSE / FAB)"
  ],
  "results": [
-  "R1 ASK Do these involuntary leg movements occur more when you are resting, rather than when you are actively trying to move your legs?; Have you ever experienced a head injury, stroke, or diagnosed neurological disorder prior to these symptoms starting?; Do you feel an uncomfortable, irresistible urge to move your legs before these movements begin?; Do these leg movements interfere with your ability to fall asleep? -> ['no', 'yes', 'no', 'no']",
+  "R1 ASK Do these involuntary leg movements occur more when you are resting, rather than when you are actively trying to move your legs?; Have you ever experienced a head injury, stroke, or diagnosed neurological disorder prior to these symptoms starting?; Do you feel an uncomfortable, irresistible urge to move your legs before these movements begin?; Do these leg movements interfere with your ability to fall asleep? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R2 ORDER Detailed neurological examination of the lower limbs including tone assessment, deep tendon reflexes (patellar and Achilles), Babinski sign, and assessment of any spasticity or rigidity; Functional assessment: Can you walk across the room for me so I can observe your gait and see how these movements change during walking -> [['muscle tone examination', 'deep tendon reflexes and plantar responses'], ['gait and coordination']]",
   "R3 ORDER Test for Hoover's sign - with the patient lying flat, ask them to lift the right leg against resistance while I place my hand under the left heel, then repeat on the other side; Distractibility assessment - while patient performs a cognitive task (counting backwards by 7s from 100), observe if the leg movements decrease or stop; Brain MRI (to evaluate for structural lesion related to reported prior stroke/head injury) -> [['limb strength (MRC) examination'], ['effect of voluntary action and anxiety'], ['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences']]",
-  "R4 ASK Did these leg movements begin shortly after the stroke or head injury you mentioned?; Are you currently taking any medications, or did you recently start or stop any medications before the movements began?; Do these movements start suddenly when you begin to stand up or start walking, and then stop once you're continuing the movement?; Do you feel in control of these movements, or do they feel like they happen to you automatically? -> ['no', 'no', 'no', 'yes']",
-  "R5 ASK Can you make the movements stop completely if you concentrate very hard on holding your legs perfectly still?; Have the movements been getting worse over time, better over time, or staying about the same?; Do the movements happen on both legs equally, or is one leg more affected than the other?; When exactly did you first notice these movements starting - weeks ago, months ago, or years ago? -> ['no', 'yes', 'yes', 'yes']",
+  "R4 ASK Did these leg movements begin shortly after the stroke or head injury you mentioned?; Are you currently taking any medications, or did you recently start or stop any medications before the movements began?; Do these movements start suddenly when you begin to stand up or start walking, and then stop once you're continuing the movement?; Do you feel in control of these movements, or do they feel like they happen to you automatically? -> ['unknown', 'unknown', 'unknown', 'unknown']",
+  "R5 ASK Can you make the movements stop completely if you concentrate very hard on holding your legs perfectly still?; Have the movements been getting worse over time, better over time, or staying about the same?; Do the movements happen on both legs equally, or is one leg more affected than the other?; When exactly did you first notice these movements starting - weeks ago, months ago, or years ago? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R6 ORDER Asking someone to hold a clipboard over my face while these movements are happening - observe if the movements change or stop when the patient thinks no one is watching (examiner steps out of room briefly); Specific assessment: When you're alone in bed and no one is around, do the movements still happen the same way?; FAB (Frontal Assessment Battery) - bedside cognitive/executive function screening -> [['effect of voluntary action and anxiety'], ['effect of sleep'], ['mental status / cognitive screen', 'cognitive and behavioural assessment (MMSE / FAB)']]",
-  "R7 ASK Are these movements always the same pattern each time, or do they change in how they look?; Did the movements start after a period of emotional stress or a difficult life event?; Do you notice any similar repetitive movements in your arms, hands, or other parts of your body?; When did you say the movements started - was it weeks ago, months ago, or years ago? -> ['no', 'no', 'yes', 'yes']",
+  "R7 ASK Are these movements always the same pattern each time, or do they change in how they look?; Did the movements start after a period of emotional stress or a difficult life event?; Do you notice any similar repetitive movements in your arms, hands, or other parts of your body?; When did you say the movements started - was it weeks ago, months ago, or years ago? -> ['unknown', 'unknown', 'unknown', 'unknown']",
   "R8 DIAGNOSIS Functional movement disorder (functional neurological symptom disorder, mixed type) - with bilateral lower extremity functional movements and probable upper extremity involvement, evidenced by normal neurological examination, normal brain imaging, variability in movement pattern, cessation during sleep, and inconsistent responses to surveillance testing -> "
  ],
  "trace": [
@@ -79,10 +79,10 @@
     "Do these leg movements interfere with your ability to fall asleep?"
    ],
    "result": [
-    "no",
-    "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -133,10 +133,10 @@
     "Do you feel in control of these movements, or do they feel like they happen to you automatically?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "yes"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -149,10 +149,10 @@
     "When exactly did you first notice these movements starting - weeks ago, months ago, or years ago?"
    ],
    "result": [
-    "no",
-    "yes",
-    "yes",
-    "yes"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -186,10 +186,10 @@
     "When did you say the movements started - was it weeks ago, months ago, or years ago?"
    ],
    "result": [
-    "no",
-    "no",
-    "yes",
-    "yes"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {

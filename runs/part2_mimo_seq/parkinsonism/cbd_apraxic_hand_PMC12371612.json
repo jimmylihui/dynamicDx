@@ -11,15 +11,15 @@
   "Have you had any recent infections, surgeries, or been ill before this started?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
+  "1": "unknown",
+  "2": "unknown",
   "3": "yes",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "yes",
+  "4": "yes",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
   "8": "yes",
-  "9": "no"
+  "9": "unknown"
  },
  "n_yes_answers": 3,
  "orders": [
@@ -46,10 +46,10 @@
   "full blood count, renal and liver profile"
  ],
  "results": [
-  "R1 ASK 1. Is the slowness or stiffness worse on one side of your body?; Do you notice a tremor in your hands when they are resting in your lap? -> ['no', 'no']",
+  "R1 ASK 1. Is the slowness or stiffness worse on one side of your body?; Do you notice a tremor in your hands when they are resting in your lap? -> ['unknown', 'unknown']",
   "R2 ORDER 1. Finger-to-nose test; Rapid alternating movements test (dysdiadochokinesia); Postural tremor assessment (arms outstretched) -> [['coordination examination (limb and truncal)', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)'], ['coordination examination (limb and truncal)', 'cerebellar testing (dysmetria, dysdiadochokinesia, tandem gait)'], ['tremor characterisation (rest, postural, action)']]",
-  "R3 ASK 1. Does your hand ever move on its own without you wanting it to?; Do you sometimes find your hand gets \"stuck\" or grabs things involuntarily?; Have you noticed your walking becoming unsteady?; Do you have stiffness or slowness in the same arm that has the jerks? -> ['yes', 'no', 'no', 'no']",
-  "R4 ASK 1. How long have you noticed these jerky movements in your hand?; Have you had any changes in your memory or thinking recently?; Have you had any recent infections, surgeries, or been ill before this started? -> ['yes', 'yes', 'no']",
+  "R3 ASK 1. Does your hand ever move on its own without you wanting it to?; Do you sometimes find your hand gets \"stuck\" or grabs things involuntarily?; Have you noticed your walking becoming unsteady?; Do you have stiffness or slowness in the same arm that has the jerks? -> ['yes', 'yes', 'unknown', 'unknown']",
+  "R4 ASK 1. How long have you noticed these jerky movements in your hand?; Have you had any changes in your memory or thinking recently?; Have you had any recent infections, surgeries, or been ill before this started? -> ['unknown', 'yes', 'unknown']",
   "R5 ORDER 1. MRI brain (with focus on cortical and basal ganglia structures); EEG (electroencephalogram); Blood tests: CBC, CMP, TSH, B12, folate, copper, ceruloplasmin -> [['MRI brain - putamen (atrophy, rim sign, hot cross bun, SWI hypointensity)', 'MRI brain - cortical atrophy pattern'], ['EEG'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'vitamin B12', 'serum folate', 'serum copper and caeruloplasmin', 'serum ceruloplasmin', 'full blood count, renal and liver profile']]",
   "R6 DIAGNOSIS Corticobasal syndrome secondary to corticobasal degeneration -> "
  ],
@@ -62,8 +62,8 @@
     "Do you notice a tremor in your hands when they are resting in your lap?"
    ],
    "result": [
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -99,9 +99,9 @@
    ],
    "result": [
     "yes",
-    "no",
-    "no",
-    "no"
+    "yes",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -113,9 +113,9 @@
     "Have you had any recent infections, surgeries, or been ill before this started?"
    ],
    "result": [
+    "unknown",
     "yes",
-    "yes",
-    "no"
+    "unknown"
    ]
   },
   {

@@ -9,13 +9,13 @@
   "Do you have a family history of movement disorders?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
   "5": "no",
   "6": "yes",
-  "7": "no"
+  "7": "unknown"
  },
  "n_yes_answers": 1,
  "orders": [
@@ -29,13 +29,13 @@
   "blood glucose"
  ],
  "results": [
-  "R1 ASK Are you currently taking any medications?; Do you have a known history of Parkinson's disease or another movement disorder?; Have these movements been present for more than 6 months? -> ['no', 'no', 'no']",
+  "R1 ASK Are you currently taking any medications?; Do you have a known history of Parkinson's disease or another movement disorder?; Have these movements been present for more than 6 months? -> ['unknown', 'unknown', 'unknown']",
   "R2 ORDER Assess for rigidity in the upper limbs (passive range of motion) -> [['muscle tone examination']]",
-  "R3 ASK Have you recently started taking any new medications, including over-the-counter drugs or supplements? -> ['no']",
+  "R3 ASK Have you recently started taking any new medications, including over-the-counter drugs or supplements? -> ['unknown']",
   "R4 ASK Do you have a fever? -> ['no']",
   "R5 ASK Do you have a history of diabetes? -> ['yes']",
   "R6 ORDER Finger-to-nose test -> [['coordination examination (limb and truncal)']]",
-  "R7 ASK Do you have a family history of movement disorders? -> ['no']",
+  "R7 ASK Do you have a family history of movement disorders? -> ['unknown']",
   "R8 ORDER Serum glucose -> [['blood glucose']]",
   "R9 DIAGNOSIS Diabetic striatopathy (hemichorea-hemiballismus) secondary to non-ketotic hyperglycemia -> "
  ],
@@ -49,9 +49,9 @@
     "Have these movements been present for more than 6 months?"
    ],
    "result": [
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -73,7 +73,7 @@
     "Have you recently started taking any new medications, including over-the-counter drugs or supplements?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {
@@ -115,7 +115,7 @@
     "Do you have a family history of movement disorders?"
    ],
    "result": [
-    "no"
+    "unknown"
    ]
   },
   {

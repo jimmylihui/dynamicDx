@@ -25,31 +25,31 @@
   "Do you have episodes in which the affected hand seems to move or act without your control?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
+  "1": "unknown",
+  "2": "unknown",
   "3": "yes",
-  "4": "no",
-  "5": "no",
-  "6": "no",
-  "7": "no",
-  "8": "no",
+  "4": "unknown",
+  "5": "unknown",
+  "6": "unknown",
+  "7": "unknown",
+  "8": "unknown",
   "9": "yes",
-  "10": "no",
-  "11": "no",
+  "10": "yes",
+  "11": "unknown",
   "12": "yes",
-  "13": "no",
-  "14": "no",
+  "13": "unknown",
+  "14": "unknown",
   "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
   "19": "no",
-  "20": "no",
-  "21": "no",
+  "20": "unknown",
+  "21": "unknown",
   "22": "no",
   "23": "yes"
  },
- "n_yes_answers": 4,
+ "n_yes_answers": 5,
  "orders": [
   "Perform a focused movement-disorders neurological examination, documenting whether the tremor is present at rest, with posture, or during action; assessing finger tapping and hand opening/closing for bradykinesia, passive-wrist rigidity, and gait with arm swing.",
   "Review the medication and substance history, specifically looking for dopamine-blocking drugs, stimulants, excessive caffeine, valproate, lithium, and β-agonists.",
@@ -78,10 +78,10 @@
   "FDG-PET brain"
  ],
  "results": [
-  "R1 ASK Do you have numbness or tingling in either hand or arm?; Do you have weakness in either hand or arm?; Are your symptoms worse on one side than the other?; Do you have neck pain that radiates into an arm?; Have you noticed difficulty with balance or walking?; Have you had any recent injury to your neck, shoulder, arm, or hand?; Do you have diabetes?; Have you ever been diagnosed with multiple sclerosis or another neurological condition? -> ['no', 'no', 'yes', 'no', 'no', 'no', 'no', 'no']",
-  "R2 ASK Do you have an involuntary tremor or shaking in either hand?; Do you have involuntary jerking or twitching of either arm or hand?; Do you have pain in either hand, wrist, elbow, or shoulder?; Do you have difficulty with fine hand movements, such as buttoning clothes or using utensils?; Do your hand movements become abnormal or worsen when you are asked to perform a task?; Do the abnormal movements improve when you are distracted? -> ['yes', 'no', 'no', 'yes', 'no', 'no']",
+  "R1 ASK Do you have numbness or tingling in either hand or arm?; Do you have weakness in either hand or arm?; Are your symptoms worse on one side than the other?; Do you have neck pain that radiates into an arm?; Have you noticed difficulty with balance or walking?; Have you had any recent injury to your neck, shoulder, arm, or hand?; Do you have diabetes?; Have you ever been diagnosed with multiple sclerosis or another neurological condition? -> ['unknown', 'unknown', 'yes', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Do you have an involuntary tremor or shaking in either hand?; Do you have involuntary jerking or twitching of either arm or hand?; Do you have pain in either hand, wrist, elbow, or shoulder?; Do you have difficulty with fine hand movements, such as buttoning clothes or using utensils?; Do your hand movements become abnormal or worsen when you are asked to perform a task?; Do the abnormal movements improve when you are distracted? -> ['yes', 'yes', 'unknown', 'yes', 'unknown', 'unknown']",
   "R3 ORDER Perform a focused movement-disorders neurological examination, documenting whether the tremor is present at rest, with posture, or during action; assessing finger tapping and hand opening/closing for bradykinesia, passive-wrist rigidity, and gait with arm swing.; Review the medication and substance history, specifically looking for dopamine-blocking drugs, stimulants, excessive caffeine, valproate, lithium, and β-agonists. -> [['tremor characterisation (rest, postural, action)', 'limb rigidity and axial (neck) rigidity', 'finger tapping for bradykinesia and decrement', 'gait observation including turning and doorways'], ['medication review (neuroleptics, antiemetics, valproate, calcium-channel blockers, lithium)']]",
-  "R4 ASK Did the tremor begin suddenly, over days or weeks, rather than gradually over months or years?; Is the tremor present when the affected hand is completely at rest?; Is the tremor mainly present when holding the hand out or using it?; Does the tremor lessen after drinking alcohol?; Does anyone in your family have a similar tremor?; Do you have stiffness or slowness of movement?; Do you have changes in handwriting, such as progressively smaller writing?; Do you have reduced sense of smell or loss of smell?; Do you have episodes in which the affected hand seems to move or act without your control? -> ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'yes']",
+  "R4 ASK Did the tremor begin suddenly, over days or weeks, rather than gradually over months or years?; Is the tremor present when the affected hand is completely at rest?; Is the tremor mainly present when holding the hand out or using it?; Does the tremor lessen after drinking alcohol?; Does anyone in your family have a similar tremor?; Do you have stiffness or slowness of movement?; Do you have changes in handwriting, such as progressively smaller writing?; Do you have reduced sense of smell or loss of smell?; Do you have episodes in which the affected hand seems to move or act without your control? -> ['no', 'unknown', 'unknown', 'unknown', 'no', 'unknown', 'unknown', 'no', 'yes']",
   "R5 ORDER MRI brain with and without contrast, including diffusion-weighted imaging, susceptibility-weighted imaging, and thin-slice sequences through the corpus callosum and medial frontal/parietal regions.; Formal neurological examination for cortical signs, including apraxia, cortical sensory loss, neglect, intermanual conflict, grasp reflex, and assessment for asymmetric rigidity, dystonia, and bradykinesia.; EEG to assess for focal seizures presenting as involuntary unilateral hand activity. -> [['MRI brain with gadolinium', 'MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences'], ['reflexes, plantar responses and frontal release signs', 'finger tapping for bradykinesia and decrement', 'dystonic posturing of the hand or foot', 'alien limb / limb levitation with the eyes closed', 'cortical sensory testing (astereognosis, sensory inattention)', 'ideomotor apraxia (imitation of meaningless gestures)'], ['EEG']]",
   "R6 ORDER Amyloid-β and phosphorylated-tau biomarkers, preferably via cerebrospinal-fluid analysis (Aβ42/40 ratio, total tau, and p-tau), to determine whether the corticobasal syndrome is due to Alzheimer disease pathology.; FDG-PET brain imaging to characterize the asymmetric frontoparietal hypometabolism and assess for an alternative neurodegenerative pattern. -> [['lumbar puncture / CSF (cells, protein, Abeta42/40, total tau, p-tau)'], ['FDG-PET brain']]",
   "R7 DIAGNOSIS Sporadic corticobasal degeneration (a 4-repeat tauopathy) causing an asymmetric corticobasal syndrome with right-sided posterior-variant alien limb, apraxia, cortical sensory loss, and dystonia; Alzheimer disease pathology is not supported. -> "
@@ -101,14 +101,14 @@
     "Have you ever been diagnosed with multiple sclerosis or another neurological condition?"
    ],
    "result": [
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "yes",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -124,11 +124,11 @@
    ],
    "result": [
     "yes",
-    "no",
-    "no",
     "yes",
-    "no",
-    "no"
+    "unknown",
+    "yes",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -166,12 +166,12 @@
    ],
    "result": [
     "no",
+    "unknown",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "no",
     "yes"
    ]

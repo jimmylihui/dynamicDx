@@ -25,31 +25,31 @@
   "Have you ever had similar episodes before?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
-  "5": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
+  "5": "unknown",
   "6": "yes",
-  "7": "no",
-  "8": "no",
-  "9": "no",
-  "10": "no",
-  "11": "no",
-  "12": "no",
+  "7": "unknown",
+  "8": "unknown",
+  "9": "unknown",
+  "10": "unknown",
+  "11": "unknown",
+  "12": "unknown",
   "13": "no",
-  "14": "yes",
+  "14": "unknown",
   "15": "no",
-  "16": "no",
-  "17": "no",
-  "18": "no",
-  "19": "no",
-  "20": "no",
-  "21": "no",
+  "16": "unknown",
+  "17": "unknown",
+  "18": "unknown",
+  "19": "unknown",
+  "20": "unknown",
+  "21": "unknown",
   "22": "no",
-  "23": "no"
+  "23": "unknown"
  },
- "n_yes_answers": 2,
+ "n_yes_answers": 1,
  "orders": [
   "Video-EEG monitoring during an episode",
   "Brain MRI with epilepsy protocol",
@@ -85,11 +85,11 @@
   "thyroid ultrasound"
  ],
  "results": [
-  "R1 ASK Do you feel an unbearable inner restlessness or urge to keep moving?; Did these symptoms begin after starting or increasing a medication?; Is the medication an antipsychotic, antidepressant, anti-nausea drug, or antihistamine?; Do the movements improve when you walk or move around?; Are you experiencing involuntary movements of your mouth, tongue, or face? -> ['no', 'no', 'no', 'no', 'no']",
-  "R2 ASK Are the repetitive arm and hand movements involuntary rather than intentional?; Can you briefly suppress or stop the movements when you try?; Do you feel an urge or rising discomfort immediately before each movement that is relieved afterward?; Do you have weakness, numbness, or loss of coordination in either arm or leg?; Do you have pain, stiffness, or cramping in the affected limb?; Have you had any recent emotional stress or frightening event before these movements began? -> ['yes', 'no', 'no', 'no', 'no', 'no']",
-  "R3 ASK Do the movements continue while you are asleep?; Did they begin suddenly within minutes or hours?; Are the movements occurring on only one side of your body?; Do the movements involve your trunk or legs as well as your arm?; Do you remain fully aware and able to respond normally during every episode?; Have you had a recent head injury, stroke-like episode, infection, or exposure to a toxin? -> ['no', 'no', 'yes', 'no', 'no', 'no']",
+  "R1 ASK Do you feel an unbearable inner restlessness or urge to keep moving?; Did these symptoms begin after starting or increasing a medication?; Is the medication an antipsychotic, antidepressant, anti-nausea drug, or antihistamine?; Do the movements improve when you walk or move around?; Are you experiencing involuntary movements of your mouth, tongue, or face? -> ['unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R2 ASK Are the repetitive arm and hand movements involuntary rather than intentional?; Can you briefly suppress or stop the movements when you try?; Do you feel an urge or rising discomfort immediately before each movement that is relieved afterward?; Do you have weakness, numbness, or loss of coordination in either arm or leg?; Do you have pain, stiffness, or cramping in the affected limb?; Have you had any recent emotional stress or frightening event before these movements began? -> ['yes', 'unknown', 'unknown', 'unknown', 'unknown', 'unknown']",
+  "R3 ASK Do the movements continue while you are asleep?; Did they begin suddenly within minutes or hours?; Are the movements occurring on only one side of your body?; Do the movements involve your trunk or legs as well as your arm?; Do you remain fully aware and able to respond normally during every episode?; Have you had a recent head injury, stroke-like episode, infection, or exposure to a toxin? -> ['unknown', 'no', 'unknown', 'no', 'unknown', 'unknown']",
   "R4 ORDER Video-EEG monitoring during an episode; Brain MRI with epilepsy protocol -> [['EEG'], ['MRI diffusion-weighted sequences', 'MRI susceptibility-weighted sequences']]",
-  "R5 ASK During the episodes, do you lose awareness completely or fail to respond when someone speaks to you?; Are the episodes highly variable in their movements or duration from one occurrence to another?; Can an episode be stopped by distraction, such as counting backward or performing a task with the other hand?; Do the movements persist when someone gently holds the affected arm?; Do you become confused or unusually sleepy after an episode?; Have you ever had similar episodes before? -> ['no', 'no', 'no', 'no', 'no', 'no']",
+  "R5 ASK During the episodes, do you lose awareness completely or fail to respond when someone speaks to you?; Are the episodes highly variable in their movements or duration from one occurrence to another?; Can an episode be stopped by distraction, such as counting backward or performing a task with the other hand?; Do the movements persist when someone gently holds the affected arm?; Do you become confused or unusually sleepy after an episode?; Have you ever had similar episodes before? -> ['unknown', 'unknown', 'unknown', 'unknown', 'no', 'unknown']",
   "R6 ORDER Point-of-care blood glucose and serum glucose; HbA1c; Serum electrolytes, calcium, magnesium, renal and liver function tests; Thyroid-stimulating hormone and free T4; Comprehensive medication and substance exposure review, including caffeine, stimulants, and herbal products -> [['blood glucose and HbA1c', 'blood glucose'], ['blood glucose and HbA1c', 'HbA1c'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'serum calcium, magnesium and phosphate', 'renal function and eGFR', 'sodium and serum osmolality'], ['thyroid function (TSH, free T4)', 'TSH, free T4 and free T3'], ['medication and vaccination history']]",
   "R7 ORDER Serum TSH-receptor antibodies (TRAb/TSI); Anti-thyroid peroxidase and anti-thyroglobulin antibodies; Neurological examination for chorea, including finger-to-nose, rapid alternating movements, gait, and assessment for orobuccolingual movements; Thyroid examination and thyroid ultrasound with Doppler to evaluate for Graves disease versus thyroiditis or a toxic nodule -> [['thyrotropin receptor antibodies (TRAb)'], ['anti-thyroid antibodies'], ['coordination examination (limb and truncal)', 'gait and coordination'], ['thyroid ultrasound']]",
   "R8 DIAGNOSIS Thyrotoxic hemichorea (right upper-limb chorea) due to uncontrolled Graves’ disease (Graves hyperthyroidism). -> "
@@ -106,11 +106,11 @@
     "Are you experiencing involuntary movements of your mouth, tongue, or face?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -126,11 +126,11 @@
    ],
    "result": [
     "yes",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -145,12 +145,12 @@
     "Have you had a recent head injury, stroke-like episode, infection, or exposure to a toxin?"
    ],
    "result": [
+    "unknown",
     "no",
+    "unknown",
     "no",
-    "yes",
-    "no",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
@@ -182,12 +182,12 @@
     "Have you ever had similar episodes before?"
    ],
    "result": [
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
     "no",
-    "no",
-    "no",
-    "no",
-    "no",
-    "no"
+    "unknown"
    ]
   },
   {

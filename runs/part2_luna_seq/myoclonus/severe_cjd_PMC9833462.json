@@ -12,16 +12,16 @@
   "Has the patient remained comatose since the hypoxic event?"
  ],
  "answers": {
-  "1": "no",
-  "2": "no",
-  "3": "no",
-  "4": "no",
+  "1": "unknown",
+  "2": "unknown",
+  "3": "unknown",
+  "4": "unknown",
   "5": "no",
-  "6": "no",
-  "7": "no",
+  "6": "unknown",
+  "7": "unknown",
   "8": "yes",
-  "9": "no",
-  "10": "no"
+  "9": "unknown",
+  "10": "unknown"
  },
  "n_yes_answers": 1,
  "orders": [
@@ -53,9 +53,9 @@
   "medication review"
  ],
  "results": [
-  "R1 ASK Did these abnormal movements begin after a traumatic brain injury?; Is the patient fully conscious and able to understand spoken commands?; Does she have recurrent, involuntary muscle spasms triggered by touch or noise?; Did she recently have a wound, surgery, or injection before these spasms began?; Has she had a fever? -> ['no', 'no', 'no', 'no', 'no']",
+  "R1 ASK Did these abnormal movements begin after a traumatic brain injury?; Is the patient fully conscious and able to understand spoken commands?; Does she have recurrent, involuntary muscle spasms triggered by touch or noise?; Did she recently have a wound, surgery, or injection before these spasms began?; Has she had a fever? -> ['unknown', 'unknown', 'unknown', 'unknown', 'no']",
   "R2 ORDER Continuous video-EEG monitoring to assess for nonconvulsive status epilepticus.; Noncontrast CT head followed by brain MRI with and without contrast.; Bedside capillary blood glucose and serum electrolytes, calcium, magnesium, renal and hepatic function, and toxicology screen.; Lumbar puncture for CSF cell count, protein, glucose, cultures, HSV/VZV PCR, and autoimmune encephalitis antibodies including anti-NMDA receptor antibody. -> [['EEG'], ['CT head', 'MRI brain with gadolinium', 'brain MRI'], ['serum electrolytes, urea and creatinine', 'liver function tests', 'toxicology screen (urine and serum)', 'renal function (urea, creatinine)', 'electrolytes (Na, K, Ca, Mg)', 'glucose', 'toxicology screen'], ['CSF cell count and differential', 'CSF protein', 'CSF glucose', 'CSF culture and viral PCR', 'CSF autoimmune encephalitis panel']]",
-  "R3 ASK Did the hypoxic brain injury follow a cardiac arrest or period of profound respiratory failure?; Did the abnormal movements begin after the patient regained consciousness from that hypoxic event?; Are the movements brief, shock-like jerks of the limbs or trunk (myoclonus), rather than sustained twisting postures?; Are the movements worsened by voluntary action or attempts to move?; Has the patient remained comatose since the hypoxic event? -> ['no', 'no', 'yes', 'no', 'no']",
+  "R3 ASK Did the hypoxic brain injury follow a cardiac arrest or period of profound respiratory failure?; Did the abnormal movements begin after the patient regained consciousness from that hypoxic event?; Are the movements brief, shock-like jerks of the limbs or trunk (myoclonus), rather than sustained twisting postures?; Are the movements worsened by voluntary action or attempts to move?; Has the patient remained comatose since the hypoxic event? -> ['unknown', 'unknown', 'yes', 'unknown', 'unknown']",
   "R4 ORDER Surface EMG of the affected muscles synchronized with EEG, including EEG–EMG back-averaging, to determine whether the jerks are cortical, subcortical, or spinal myoclonus.; Review the medication and anesthetic history, including recent withdrawal of sedatives, opioids, or anticonvulsants, and measure serum levels of any anticonvulsant medications. -> [['EEG', 'EEG-EMG polygraphy (back-averaging)'], ['medication review']]",
   "R5 DIAGNOSIS Non-epileptic subcortical post-hypoxic myoclonus due to hypoxic–ischemic brain injury (post-hypoxic myoclonus, without evidence of cortical seizure activity). -> "
  ],
@@ -71,10 +71,10 @@
     "Has she had a fever?"
    ],
    "result": [
-    "no",
-    "no",
-    "no",
-    "no",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown",
     "no"
    ]
   },
@@ -125,11 +125,11 @@
     "Has the patient remained comatose since the hypoxic event?"
    ],
    "result": [
-    "no",
-    "no",
+    "unknown",
+    "unknown",
     "yes",
-    "no",
-    "no"
+    "unknown",
+    "unknown"
    ]
   },
   {
