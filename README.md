@@ -20,13 +20,14 @@ used solely to *match* free text to record entries, never to write a finding.
 | `data/clips.json` | per clip: source article, licence, duration, frame rate, resolution, scene cuts, and the excerpt it was cut from (`excerpt`: source file, start and end time, crop box, rotation) |
 | `data/source_licences.json` | the 66 source articles with title, journal, year and licence |
 | `data/equivalent_entries.json` | the 90 verified equivalences between chart entries of the same case that report the same finding from the same kind of investigation, used when scoring τ (§3.3, Appendix C) |
+| `data/reported_only_chart.json` | the chart restricted to the 426 entries reported in the source articles (256 of them decisive), per case; the subset of `data/cases.json` with `p: reported`, as returned in the reported-only replay of Appendix C.4 |
 | `data/decidability.json` | the 22 clips the neurologist judged unidentifiable from video alone and the 49 judged identifiable (paper Appendix B) |
 | `data/reference_audit.json` | the visual-grounding audit of all 71 reference descriptions: 286 atomic claims, each classed observable / not observable (Appendix B) |
 | `pipeline/` | how a case report becomes a case (below) |
 | `prompts/PROMPTS.md` | every prompt, verbatim: the benchmark prompts of Appendix H (the model under test, the patient and chart matchers, retrieval, grading), then every other prompt the scripts send |
 | `eval/` | the evaluation harness: Stage 1 sweep and judge; Stage 2 batch and multi-round consultations; grader; paired bootstrap; `tau.py` (source-workup coverage τ with equivalent entries); `part2_lie2.py` (corrupted-history stress test, Appendix G) |
 | `eval/retrieval/` | literature retrieval and decontamination (§3.5.2, Appendix F; prompts in Appendix H): HPO normalisation, Europe PMC query and cause extraction, the source-PMCID / DOI / near-duplicate / answer-string filters |
-| `eval/controls/` | investigation-selection controls (Appendix C.3): ten-item budget, fixed checklist and random arms replayed from a Stage 2 video run (history held fixed, chart matched by the same DeepSeek matcher), and the τ decomposition of Appendix C |
+| `eval/controls/` | investigation-selection controls (Appendix C.3): ten-item budget, fixed checklist and random arms replayed from a Stage 2 video run (history held fixed, chart matched by the same DeepSeek matcher), the τ decomposition of Appendix C, and the reported-only replay of Appendix C.4 (`replay_reported.py`, `replay_reported_ci.py`) |
 | `eval/analysis/` | `decidability.py`: results by clinician-judged decidability (Appendix B, Tables 8 and 9), read from `data/decidability.json`, the Stage 1 judge output and the Stage 2 grades |
 | `window/` | teacher-guided temporal-window training (§3.5.1, Appendix I): the GPT-5.6-luna teacher, Qwen3.5-4B LoRA student training, two-pass out-of-fold inference for the Window, Random, sign-only and untrained arms, and the blinded sentence judge of Appendix D |
 | `scripts/fetch_videos.py` | downloads the source videos from Europe PMC, re-encodes them and cuts the 71 clips |
@@ -139,6 +140,16 @@ for f in results/part2_luna_vid/*/*.json; do o=${f#results/part2_luna_vid/}
   MODE=budget_single BUDGET_FILE=results/part2_luna_budget10/$o \
     python eval/controls/part2_orders.py $f results/part2_luna_budget_single/$o
 done
+
+# Charts with reported entries only (Appendix C.4): replay the diagnosis turn of the blind, video and
+# oracle consultations with the chart as served (o) and with every derived entry withheld (r), then
+# grade each cell and print the paired differences. Od (derived decisive entries only) is Appendix C.6.
+cp -r runs/part2_luna_vid runs/part2_luna_novid results/     # or use your own runs
+for c in Bo Br Vo Vr Oo Or Od; do
+  python eval/controls/replay_reported.py luna $c 4
+  ROOT=part2_luna_rep_$c python eval/part2_full_judge3.py 6
+done
+python eval/controls/replay_reported_ci.py                   # needs the cells of all five systems
 
 # Temporal-window training (§3.5.1, Appendix I; needs a GPU and window/requirements.txt)
 python window/teacher.py                                   # one teacher call per clip
